@@ -10,15 +10,7 @@ Keller, Kelner, cellerarius
 Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 Presbyter
-Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
-Pfalzgraf, Pfalzgrafen, Pfalzgrave, Pfalzgraven, Count Palatine
-Graf, Grafen, Grave, Count, Gräfin, Countess
-Burggraf, Burgrafen, Burgrave, Burgraven, Burgraf, Schlossburggraf
-Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
-Marggraf, Marggrafen, Marggrave, Marggraven
 Baron
-Abt, Abbot
-Herzog, Duke
 
 // ranks
 Ritter, Ritters, miles, milites, Knight
@@ -28,6 +20,21 @@ Knecht
 
 // epithets
 der Rote, Rufus
+
+// territorial titles
+Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
+Erzbischof, Erzbischove, Erzbischofe, Erzbischofs, Erzbischofes, Erzbischoff, Erzbischoffe, Erzbischoffs, Erzbischoffes, archiepiscopus, Archbishop
+Pfalzgraf, Pfalzgrafen, Pfalzgrave, Pfalzgraven, Count Palatine
+Burggraf, Burgrafen, Burgrave, Burgraven, Burgraf, Schlossburggraf
+Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
+Marggraf, Marggrafen, Marggrave, Marggraven
+Abt, Abbot
+Äbtissin, Aebtissin, Äbtissen, abbatissa, Abbess
+Herzog, Duke
+Kurfürst, Kurfürsten, Churfürst, Churfürsten, Kurfuerst, Churfuerst, Elector
+
+// family titles
+Graf, Grafen, Grave, Count, Gräfin, Countess
 
 // route titles
 König, Koenig, Kunig, künig, künigk, Königk, King
