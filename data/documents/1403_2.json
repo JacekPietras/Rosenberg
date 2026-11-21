@@ -4,27 +4,38 @@
     "to review",
     "NOW"
   ],
+  "transcribed": true,
   "entries": [
     {
       "source": "Abteilung Rheinland, AA 0030, Nr. 39",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-Vz_50754407-5a04-411f-9a39-7f4ce172760d",
-      "german": "Fürstenkorrespondenz (Mindensche Fehde und Ravensberger Angelegenheiten)\n\nDarin: Heinrich Herzog zu BRAUNSCHWEIG-LÜNEBURG: Streit mit Lübbecke; Tag zu Hagen mit Wilhelm von BERG, Elekten zu PADERBORN; Streit mit HILLEGUNDIS, Äbtissin zu Herford; Johann von HOYA, Bischof von HILDESHEIM: Sendung von Hilfstruppen; Schicksal des Elekten von PADERBORN; Erich Graf von HOYA: Sendung des Vogtes Johann ROSENBERG; Simon Edelherr zu LIPPE: Beraubung der Meierin zu BENNENTORP; Beraubung eines Bürgers zu BLOMBERG durch die von HÜCKESWAGEN (s. Sandow, Lippischer Kalender 1958, 104 ff.); Fehde mit Lubbert und Heinrich de Wend; Werner Edelherr zu LIPPE: Fehde der \"Kanne von LUDE\"; Otto von HOYA, Bischof von MÜNSTER: Gefangenhaltung des Hermann de BLAWE; Domkapitel und Stadt OSNABRÜCK: Zug vor ASCHEN; Kurt Graf von RIETBERG: Fehdesachen (Brüder von LINDEMANN); Konrad von d. RIETBERG, Domdechant zu KÖLN: Beraubung seines Knechtes auf dem SPARENBERGE; Johann Edelherr von RIETBERG: Freigabe eines Knechtes; Klas Graf von TECKLENBURG: Streit mit Heinrich Ledebur; Beraubung von Bürgern aus LINGEN; Plünderung der TECKLENBURGISCHEN Lande; Adolf Graf zu WALDECK: Sendung seines Sohnes; METTEL von WALDECK, Äbtissin von NEUENHERRSE: Zusammenkunft mit ihrem Bruder Heinrich; Gefangenschaft des Elekten von PADERBORN (s. Nr. 34)",
-      "english": "Princely correspondence (Minden feud and Ravensberg affairs)\n\nIncluding: Heinrich Duke of Braunschweig-Lüneburg: Dispute with Lübbecke; Meeting at Hagen with Wilhelm von Berg, Elect of Paderborn; Dispute with Hillegundis, Abbess of Herford; Johann von Hoya, Bishop of Hildesheim: Dispatch of troops; Fate of the Elect of Paderborn; Erich Count of Hoya: Dispatch of the vogt Johann Rosenberg; Simon Lord of Lippe: Robbery of the bailiff's wife at Bennentorp; Robbery of a citizen of Blomberg by those of Hückeswagen (see Sandow, Lippischer Kalender 1958, 104 ff.); Feud with Lubbert and Heinrich de Wend; Werner Lord of Lippe: Feud of the \"Kanne von Lude\"; Otto von Hoya, Bishop of Münster: Imprisonment of Hermann de Blawe; Cathedral chapter and city of Osnabrück: Campaign before Aschen; Kurt Count of Rietberg: Feud matters (brothers of Lindemann); Konrad von d. Rietberg, Domdechant at Köln: Robbery of his servant on the Sparenberge; Johann Lord of Rietberg: Release of a servant; Klas Count of Tecklenburg: Dispute with Heinrich Ledebur; Robbery of citizens from Lingen; Plundering of the Tecklenburg lands; Adolf Count von Waldeck: Dispatch of his son; Mettel von Waldeck, Abbess of Neuenherrse: Meeting with her brother Heinrich; Captivity of the Elect of Paderborn (see No. 34)",
-      "mention": [
+      "summary": "Fürstenkorrespondenz (Mindensche Fehde und Ravensberger Angelegenheiten)\n\nDarin: Heinrich Herzog zu BRAUNSCHWEIG-LÜNEBURG: Streit mit Lübbecke; Tag zu Hagen mit Wilhelm von BERG, Elekten zu PADERBORN; Streit mit HILLEGUNDIS, Äbtissin zu Herford; Johann von HOYA, Bischof von HILDESHEIM: Sendung von Hilfstruppen; Schicksal des Elekten von PADERBORN; Erich Graf von HOYA: Sendung des Vogtes Johann ROSENBERG; Simon Edelherr zu LIPPE: Beraubung der Meierin zu BENNENTORP; Beraubung eines Bürgers zu BLOMBERG durch die von HÜCKESWAGEN (s. Sandow, Lippischer Kalender 1958, 104 ff.); Fehde mit Lubbert und Heinrich de Wend; Werner Edelherr zu LIPPE: Fehde der \"Kanne von LUDE\"; Otto von HOYA, Bischof von MÜNSTER: Gefangenhaltung des Hermann de BLAWE; Domkapitel und Stadt OSNABRÜCK: Zug vor ASCHEN; Kurt Graf von RIETBERG: Fehdesachen (Brüder von LINDEMANN); Konrad von d. RIETBERG, Domdechant zu KÖLN: Beraubung seines Knechtes auf dem SPARENBERGE; Johann Edelherr von RIETBERG: Freigabe eines Knechtes; Klas Graf von TECKLENBURG: Streit mit Heinrich Ledebur; Beraubung von Bürgern aus LINGEN; Plünderung der TECKLENBURGISCHEN Lande; Adolf Graf zu WALDECK: Sendung seines Sohnes; METTEL von WALDECK, Äbtissin von NEUENHERRSE: Zusammenkunft mit ihrem Bruder Heinrich; Gefangenschaft des Elekten von PADERBORN (s. Nr. 34)",
+      "german": "[…] Minen vruntliken denst mit mynem grote to voren. leue here Ik bidde iu vruntliken\ndat gy louen willen Johanne Rosenberge mynem voghede bringere desses breues wes\nhe an iu werfft [?] to desser tijt van mynen weghen likerwijs offt Ik sulven by iu\nwere vnde mundliken mit iu redede vnde willen my dar an [?] to willen wesen\ndat wil Ik gerne tegen iu verdenen. Datum Stoltenouwe [?] mea [?] sub secreto\nErich van godes gnaden\nGreue to der Hoyen",
+      "english": "[…] My friendly service, with my greeting beforehand. Dear lord, I kindly ask you that you be willing to believe Johann Rosenberg, my Vogt, bearer of this letter, in whatever he negotiates [?] with you at this time on my behalf, just as if I myself were with you and spoke with you in person. And if you are willing to oblige me in this [?], I will gladly deserve it from you. Given at Stolzenau [?] under my secret [seal] [?].\n\nErich, by the grace of God, Count of Hoya",
+      "facts": [
         {
-          "person": "Adolf von Waldeck",
+          "person": "Hans Rosenberg",
           "personTitle": [
-            "Graf von Waldeck"
-          ]
+            "Vogt"
+          ],
+          "type": "generic",
+          "content": "served as Vogt of Erich von Hoya, Graf von Hoya."
         },
         {
           "person": "Hans Rosenberg",
           "personTitle": [
             "Vogt"
-          ]
+          ],
+          "type": "generic",
+          "content": "was the bearer of Erich von Hoya's letter to its addressee."
         },
         {
-          "place": "waldeck"
+          "person": "Hans Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ],
+          "type": "generic",
+          "content": "was to negotiate with the addressee on behalf of Erich von Hoya."
         }
       ],
       "img": [
@@ -71,7 +82,8 @@
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0012.jpg"
         },
         {
-          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0013.jpg"
+          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0013.jpg",
+          "deleted": true
         },
         {
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0014.jpg"
@@ -83,10 +95,29 @@
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0016.jpg"
         },
         {
-          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0017.jpg"
+          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0017.jpg",
+          "regions": [
+            {
+              "x": 0.6087,
+              "y": 0.1643,
+              "width": 0.1682,
+              "height": 0.1449,
+              "name": "text"
+            }
+          ],
+          "deleted": true
         },
         {
-          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0018.jpg"
+          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0018.jpg",
+          "regions": [
+            {
+              "x": 0.5193,
+              "y": 0.6455,
+              "width": 0.362,
+              "height": 0.163,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0019.jpg"
