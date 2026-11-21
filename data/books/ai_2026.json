@@ -399,6 +399,21 @@
       "english": "+ Jeckel Rosenberg\n+ Elisabeth\n  + Anna Rosenberg [1478-1499]"
     },
     {
+      "title": "Rosenbach, Breuberg and Franconia",
+      "label": "Rosenbach-Breuberg"
+    },
+    {
+      "english": "Lower-noble family originating in the lordship of Breuberg, with its ancestral seat at Rosenbach near Hainstadt. Its members held estates in the Odenwald and Franconia, belonged to the imperial knightly cantons of Odenwald and Baunach, and served in the Würzburg cathedral chapter and the Order of St John."
+    },
+    {
+      "subheading": "Estates",
+      "english": "Rosenbach near Hainstadt\nRaibach [1397]\nMichelstadt (castle fief) [1425]\nSandbach (pledged tithe) [1477]\nStammheim [1587-1699]\nLindheim (part ownership)"
+    },
+    {
+      "subheading": "Members",
+      "english": "Wiprecht von Rosenbach, Grand Prior of the Order of St John [1601-1607]\nJohann Hartmann von Rosenbach, Prince-Bishop of Würzburg [1673-1675]\nFranz Christoph von Rosenbach, Würzburg cathedral canon [1630-1687]"
+    },
+    {
       "title": "Rosenberg, Aachen",
       "label": "Aachen",
       "english": "Recorded: [1362-1381]"
@@ -548,6 +563,13 @@
     },
     {
       "img": "img/rosenberg-schloss-02.jpg"
+    },
+    {
+      "title": "Burg Rosenbach, Hainstadt, Hesse",
+      "label": [
+        "Rosenbach-Breuberg"
+      ],
+      "english": "Former ancestral seat of the noble von Rosenbach family in the hamlet of Rosenbach near Hainstadt, now part of Breuberg. The hamlet belonged to the lordship of Breuberg and later included an estate and a mill. Details of the castle's appearance and fate are uncertain."
     },
     {
       "title": "Rosenbach, Haslach, Bolzano, South Tyrol",
