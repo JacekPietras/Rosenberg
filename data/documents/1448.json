@@ -1,24 +1,35 @@
 {
   "date": "1448",
   "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "ISG FFM, H.06.01, 12 (in)",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=12371097",
-      "german": "Fehde mit Herbord Wecheholder von Butzbach, Michel von Bickenbach, Philipp von Frankenstein jun., Konz Phile von Ulmbach, Konz Echter, Engelhard von Rodenstein, Gerhard Forstmeister, Jorg von Rosenberg, Philipp von Riedern und Peter Fuchs von Kannenberg",
-      "english": "Feud with Herbord Wecheholder of Butzbach, Michael von Bickenbach, Philipp von Frankenstein Jr., Konz Phile of Ulmbach, Konz Echter, Engelhard von Rodenstein, Gerhard Forstmeister, Georg von Rosenberg, Philipp von Riedern and Peter Fuchs von Kannenberg",
+      "summary": "Fehde mit Herbord Wecheholder von Butzbach, Michel von Bickenbach, Philipp von Frankenstein jun., Konz Phile von Ulmbach, Konz Echter, Engelhard von Rodenstein, Gerhard Forstmeister, Jorg von Rosenberg, Philipp von Riedern und Peter Fuchs von Kannenberg",
+      "german": "Michel Herr zu Bickenbach [?], Engelhert zu Roden-\nstein, Philips zu Frankenstein der Junger [?],\nSifrid Zocke von Hoffenstein [?], Cuntz [?] Echter,\nCuntz [?] Phile von Ulmbach [?], Jorg Mudener [?] von\nRosenberg, Hans Rowolt [?] der Junger, Philips\nRabenolt [?], Philips vom Erbern [?] der elter,\nPhilips von Riedern der elter, Hans Kalb von\nVierheim [?] und Sigmund Crumer [?]",
+      "english": "Michel Herr of Bickenbach [?], Engelhert of Rodenstein, Philips of Frankenstein the Younger [?], Sifrid Zocke of Hoffenstein [?], Cuntz [?] Echter, Cuntz [?] Phile of Ulmbach [?], Jorg Mudener [?] of Rosenberg, Hans Rowolt [?] the Younger, Philips Rabenolt [?], Philips vom Erbern [?] the Elder, Philips of Riedern the Elder, Hans Kalb of Vierheim [?] and Sigmund Crumer [?]",
       "mention": [
         {
-          "person": "Engelhard von Rodenstein"
+          "place": "bickenbach"
         },
         {
-          "person": "Michael von Bickenbach"
+          "person": "Philipp of Frankenstein",
+          "personTitle": [
+            "der Jüngere"
+          ]
         },
         {
-          "person": "Philipp von Frankenstein"
+          "person": "Philipp of Riedern",
+          "personTitle": [
+            "der Ältere"
+          ]
         },
         {
-          "person": "Philipp von Riedern"
+          "place": "rodenstein"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
@@ -69,10 +80,10 @@
           "src": "https://digitalisate.frankfurt.de:443/isg_ffm/h.06.01/12/isg_ffm_h.06.01_nr_12_0010.jpg",
           "regions": [
             {
-              "x": 0.0785,
-              "y": 0.2245,
-              "width": 0.5058,
-              "height": 0.632,
+              "x": 0.1003,
+              "y": 0.4929,
+              "width": 0.4745,
+              "height": 0.2102,
               "name": "text"
             }
           ]
