@@ -1,15 +1,18 @@
 {
   "date": "1406-04-18",
-  "label": "Rorschach",
   "place": "Schaffhausen",
+  "label": "Rorschach",
   "transcribed": true,
   "entries": [
     {
       "source": "Haus-, Hof- u. StaatsA Wien, cod. 410, f.33, Nr.98., 7620",
-      "url": ["https://www.monasterium.net/mom/CSGXIII/7620/charter", "https://stadtarchiv.ch/inhalt/CS_Bd_13.pdf"],
+      "url": [
+        "https://www.monasterium.net/mom/CSGXIII/7620/charter",
+        "https://stadtarchiv.ch/inhalt/CS_Bd_13.pdf"
+      ],
+      "summary": "Herzog Friedrich von Österreich verleiht an Clara von Rosenberg die Mühle in Ossingen.",
       "german": "Item wir haben der erbern Claren von Rosemberg weylent Hartmans von Sehen seligen tochter vnd iren erben von sundern gnaden verlihen die mul ze Ossingen vnserr lehensch(aft), die weilent Hans von Sehen selig gelassen hat. Dat. Schaffh(usen) ut supra.",
       "english": "Duke Friedrich IV of Österreich has by special grace granted the honorable Clara von Rosenberg zu Herisau, daughter of the late Hartmann von Seen, and her heirs the mill at Ossingen, an Austrian fief, which the late Hans von Seen left behind. Given at Schaffhausen as above.",
-      "summary": "Herzog Friedrich von Österreich verleiht an Clara von Rosenberg die Mühle in Ossingen.",
       "facts": [
         {
           "person": "Clara von Rosenberg",
