@@ -5,7 +5,7 @@ description: Classify a Rosenberg project document by the family it concerns, us
 
 # Family document classification
 
-Use when asked which Rosenberg family a document concerns, including requests naming a document file or a record's `source` citation. The task includes updating that document's `label` with `Proposed: XXX`.
+Use when asked which Rosenberg family a document concerns, including requests naming a document file or a record's `source` citation. The task includes updating that document's `label` with `Proposed: XXX` and recording the classification analysis in its root-level `research` field.
 
 ## Locate and assess the document
 
@@ -37,6 +37,8 @@ If the evidence does not support a family from the permitted set, do not invent 
 ## Apply and report
 
 - Add exactly `Proposed: XXX`, replacing `XXX` with the chosen label. Ignore all existing labels when making the decision; preserve them and append the proposal to the existing string or array. Do not replace or correct other labels.
-- Do not change any other document field or content. Avoid adding a duplicate identical proposal if it is already present.
-- Preserve JSON structure and formatting as much as possible. Validate the edited JSON and review the diff to confirm the only change is the proposal label.
+- Update the document's root-level `research` string with a concise account of the analysis and attribution attempt. Record the strongest relevant source evidence, the competing family attribution considered, and why the evidence supports the chosen family or remains inconclusive. Distinguish what the document states from contextual inference. Refer to useful project records by filename; include external source URLs when they materially support the analysis. Do not present a tentative attribution as certain.
+- If the evidence is insufficient or families remain equally plausible, still record the research completed and the unresolved reason in `research`, but leave `label` unchanged. Do not overwrite useful prior research: retain it and append the new progress clearly, avoiding duplicate text.
+- Do not change other document fields or source text, translations, facts, or annotations. Avoid adding a duplicate identical proposal if it is already present.
+- Preserve JSON structure and formatting as much as possible. Validate the edited JSON and review the diff to confirm only `label` and `research` changed.
 - Report the selected file and citation, proposed family, concise evidence from the document and cross-document or web research, and the edit made. Distinguish direct evidence from inference and cite external web sources when used.

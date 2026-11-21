@@ -239,6 +239,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 
 .source-list { margin: 1rem 0 0; padding: .15rem 0 .15rem 1.25rem; color: var(--text); font-size: .9rem; }
 .facts { margin: 1rem 0 0; padding: .85rem 1rem .85rem 2rem; color: var(--text); background: var(--accent-soft); border: 1px solid #2d466a; border-radius: 7px; font-size: .9rem; }
+.document-research { margin: 1rem 0 0; padding: .85rem 1rem; color: var(--text); background: var(--surface-soft); border: 1px solid var(--line); border-radius: 7px; font-size: .9rem; }
+.document-research h3 { margin: 0 0 .35rem; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.document-research-text { white-space: pre-wrap; overflow-wrap: anywhere; }
 .fact-guess { background: #62401f; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .source-list ul { margin: .25rem 0; padding-left: 1.25rem; }

@@ -220,13 +220,16 @@ export function createDocumentRenderer({
         return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}${label}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
+    const research = typeof doc.research === 'string' && doc.research.trim()
+      ? `<section class="document-research" aria-label="Research"><h3>Research</h3><div class="document-research-text">${inlineMarkup(doc.research)}</div></section>`
+      : '';
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
     const deferredPersonLinks = state.active === 'documents' && path.startsWith('data/documents/')
       ? ` data-person-links-path="${escapeHtml(path)}" data-person-links-index="${index}"`
       : '';
-    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${content}</article>`;
+    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${research}${content}</article>`;
   }
 
   function renderDocumentWithPersonLinks(doc, path, index) {

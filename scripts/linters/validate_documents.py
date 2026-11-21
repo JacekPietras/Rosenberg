@@ -160,6 +160,14 @@ def order_document(document):
     if isinstance(labels, list) and len(labels) == 1:
         reordered["label"] = labels[0]
         changed = True
+    labels = reordered.get("label", [])
+    if isinstance(labels, str):
+        labels = [labels]
+    if "research" in reordered and not (
+        isinstance(labels, list) and "to review" in labels
+    ):
+        reordered.pop("research")
+        changed = True
     if reordered.get("deleted") == "true":
         reordered["deleted"] = True
         changed = True
@@ -324,7 +332,9 @@ def main(argv=None):
                         document.pop("label")
                 else:
                     labels = None
-                if labels is not None:
+                research_removed = "research" in document
+                document.pop("research", None)
+                if labels is not None or research_removed:
                     try:
                         original = path.read_text(encoding="utf-8")
                         trailing_newline = original.endswith("\n")
@@ -332,7 +342,12 @@ def main(argv=None):
                         if trailing_newline:
                             updated += "\n"
                         path.write_text(updated, encoding="utf-8")
-                        print(f"{display_path(path)}: removed review label from deleted document")
+                        action = (
+                            "removed review label from deleted document"
+                            if labels is not None
+                            else "removed research from document without review label"
+                        )
+                        print(f"{display_path(path)}: {action}")
                     except (OSError, UnicodeError) as exc:
                         print(f"{display_path(path)}: error: cannot normalize deleted document: {exc}")
                         errors += 1
