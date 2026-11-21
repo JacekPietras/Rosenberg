@@ -234,9 +234,14 @@ export function createDocumentRenderer({
 
   function renderDocumentWithPersonLinks(doc, path, index) {
     const previous = state.deferPersonNameRecognition;
+    const previousDeferredMarkupLinks = state.deferDocumentMarkupLinks;
     state.deferPersonNameRecognition = false;
+    state.deferDocumentMarkupLinks = false;
     try { return renderDocument(doc, path, index); }
-    finally { state.deferPersonNameRecognition = previous; }
+    finally {
+      state.deferPersonNameRecognition = previous;
+      state.deferDocumentMarkupLinks = previousDeferredMarkupLinks;
+    }
   }
 
   return { renderEntry, renderDocument, renderDocumentWithPersonLinks, reviewNameLabels };

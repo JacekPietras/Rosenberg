@@ -58,14 +58,17 @@ export function createEntityScreens({
       .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch)))
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex);
     if (!facts.length) return '';
-    const items = renderFactsView(facts, {
+    const previousDeferredLinks = state.deferDocumentMarkupLinks;
+    state.deferDocumentMarkupLinks = true;
+    let items;
+    try { items = renderFactsView(facts, {
       people,
       personNames: factPersonNames(),
       inlineMarkup,
       sourceHref: (fact) => fact.sourceHref,
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
-    });
-    return `<section class="entity-facts"><h3>Facts</h3>${items}</section>`;
+    }); } finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
+    return `<section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${items}</section>`;
   }
 
   function excerpt(value, pattern, linkEntities = true) {
@@ -129,7 +132,12 @@ export function createEntityScreens({
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
         return { ...fact, date, isGuess: source.pointer.includes('/guesses/'), sourceHref: documentNavigationUrl(source.path, index) };
       });
-      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><section class="entity-facts"><h3>Facts</h3>${renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref })}</section>`;
+      const previousDeferredLinks = state.deferDocumentMarkupLinks;
+      state.deferDocumentMarkupLinks = true;
+      let factsMarkup;
+      try { factsMarkup = renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref }); }
+      finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
+      return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${factsMarkup}</section>`;
     }
     if (String(state.person).startsWith('@evidence/')) return '<article class="document"><h2>Source identity changed</h2><p>This generated source group changed after rebuilding.</p><a href="?tab=tree">Open the family tree to choose its current source identities</a></article>';
     let person = exactAnchor ? resolution.person
@@ -201,5 +209,17 @@ export function createEntityScreens({
     return renderPage(place, mentions, 'place', pattern, (doc) => doc.place ? `<p class="place-record">Document place: ${inlineMarkup(doc.place)}</p>` : '', `${historyMarkup}${effigyMarkup}`, factMatches);
   }
 
-  return { renderPersonPage, renderPlacePage };
+  function renderEntityFactsWithLinks() {
+    const previousDeferredLinks = state.deferDocumentMarkupLinks;
+    state.deferDocumentMarkupLinks = false;
+    try {
+      const html = state.person ? renderPersonPage() : renderPlacePage();
+      const template = document.createElement('template');
+      template.innerHTML = html;
+      const facts = template.content.querySelector('.entity-facts');
+      return facts?.innerHTML || '';
+    } finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
+  }
+
+  return { renderPersonPage, renderPlacePage, renderEntityFactsWithLinks };
 }

@@ -18,6 +18,7 @@ export function createMarkupRenderer({ state }) {
 
   function linkedMarkup(value = '', linkEntities = true) {
     if (!linkEntities) return String(value);
+    if (state.deferDocumentMarkupLinks) return String(value);
     const tokens = []; const token = (markup) => { const key = `\u0000${tokens.length}\u0000`; tokens.push(markup); return key; };
     let text = String(value);
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person]));

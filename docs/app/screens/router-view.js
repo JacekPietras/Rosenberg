@@ -5,6 +5,7 @@ export async function renderActiveScreen({
   leafletMap,
   destroyMap,
   renderPersonPage,
+  renderEntityFactsWithLinks,
   setupPersonMap,
   renderPlacePage,
   renderSealsPage,
@@ -46,8 +47,31 @@ export async function renderActiveScreen({
   state.sealMarkerCleanup?.();
   state.sealMarkerCleanup = null;
   if (leafletMap && state.active !== 'map') destroyMap();
+  const setupDeferredEntityFacts = () => {
+    const targets = content.querySelectorAll('[data-deferred-entity-facts]');
+    if (!targets.length) return;
+    const hydrate = (target) => {
+      if (!target.isConnected) return;
+      target.innerHTML = renderEntityFactsWithLinks();
+      target.removeAttribute('data-deferred-entity-facts');
+    };
+    const schedule = (target) => {
+      const run = () => hydrate(target);
+      if (typeof requestIdleCallback === 'function') requestIdleCallback(run, { timeout: 1000 });
+      else setTimeout(run, 0);
+    };
+    if (typeof IntersectionObserver !== 'undefined') {
+      state.documentPersonLinkObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        state.documentPersonLinkObserver.unobserve(entry.target);
+        schedule(entry.target);
+      }), { rootMargin: '250px 0px' });
+      targets.forEach((target) => state.documentPersonLinkObserver.observe(target));
+    } else targets.forEach(schedule);
+  };
   if (state.person) {
     content.innerHTML = renderPersonPage();
+    setupDeferredEntityFacts();
     setupFamilyControls();
     setupSealAnnotations();
     setupPersonMap(state.person);
@@ -56,6 +80,7 @@ export async function renderActiveScreen({
   }
   if (state.place) {
     content.innerHTML = renderPlacePage();
+    setupDeferredEntityFacts();
     setupMentionNavigation('place-mention', 'a.place-link');
     return;
   }
@@ -100,6 +125,7 @@ export async function renderActiveScreen({
   state.yearHighlightCleanup?.();
   state.yearHighlightCleanup = null;
   const previousDeferredPersonRecognition = state.deferPersonNameRecognition;
+  const previousDeferredDocumentLinks = state.deferDocumentMarkupLinks;
   if (state.active === 'documents') state.deferPersonNameRecognition = true;
   const htmlStart = performance.now();
   if (state.active === 'documents') {
@@ -111,6 +137,7 @@ export async function renderActiveScreen({
     const slowDocuments = [];
     for (let index = 0; index < paths.length; index++) {
       const path = paths[index];
+      state.deferDocumentMarkupLinks = path.startsWith('data/documents/');
       const documentStart = performance.now();
       const html = renderDocument(state.documents.get(path), path, index);
       const duration = performance.now() - documentStart;
@@ -133,6 +160,7 @@ export async function renderActiveScreen({
     documentRenderTimings.domInsertMs = Math.round((performance.now() - domStart) * 10) / 10;
   }
   state.deferPersonNameRecognition = previousDeferredPersonRecognition;
+  state.deferDocumentMarkupLinks = previousDeferredDocumentLinks;
   function observeReviewLabelTargets(root) {
     const targets = [
       ...(root.matches?.('[data-review-label-path]') ? [root] : []),
