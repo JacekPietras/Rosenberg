@@ -1,22 +1,37 @@
 {
   "date": "1382-06-29",
   "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "AUR 1382",
       "url": "https://www.monasterium.net/mom/AT-HHStA/SbgE/AUR_1382.1/charter",
-      "german": "Absagebrief von Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kuntz von Rosenberg, Wilhelm von Huenheim (?) und Ras von Helmstat an Eb Pilgrim.",
-      "english": "Letter of repudiation from Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kunz von Rosenberg, Wilhelm von Huenheim (?), and Ras von Helmstat to Bishop Pilgrim.",
+      "summary": "Absagebrief von Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kuntz von Rosenberg, Wilhelm von Huenheim (?) und Ras von Helmstat an Eb Pilgrim.",
+      "german": "hern der Bischof von Saltzburg ich Weyreich von Trawtlingen\nHanns von Plawnhem Chunz von Rosenberg Wilhelm von Hunhem\nund Rasen von Helmstat lassen ew wissen daz wir in der hochgeboren\nfürsten unsers lieben genedigen hern Herczog Stephans Herczog Fridrichs Herczog\nRuffen [?] des jungen und Herczog Johansen von Bayrn fride und\nunfride sein wellen und wellen uns des gen ew bewart haben mit\ndem brief der geben ist zu der newenmarkt an sand peters und\nsand pauls tag mit Hannsen von Plawnhem aufgedruckten\ninsigl wann wir unser insigl all bey uns nicht haben",
+      "english": "Lord Bishop of Salzburg, I, Weyreich von Trawtlingen, Hanns von Plawnhem, Chunz von Rosenberg, Wilhelm von Hunhem and Rasen von Helmstat let you know that we wish to be in the peace and in the enmity of the high-born princes, our dear gracious lords Duke Stephan, Duke Friedrich, Duke Ruffen [?] the Younger and Duke Johann of Bavaria, and we wish to have secured ourselves against you thereby with this letter, which was given at Neumarkt on the day of St. Peter and St. Paul, with the impressed seal of Hanns von Plawnhem, because we do not all have our seals with us.",
       "mention": [
         {
           "place": "helmstadt"
+        },
+        {
+          "place": "rosenberg-town"
         }
       ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "sent an Absagebrief with Weyreich von Truchtlingen, Hans von Plaunheim, Wilhelm von Huenheim and Ras von Helmstatt to Archbishop Pilgrim."
+          "content": "issued a letter to the Bishop of Salzburg together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "declared to the Bishop of Salzburg, together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat, that they wish to be in the peace and enmity of Duke Stephan, Duke Friedrich and Duke Johann of Bavaria."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "issued the letter at Neumarkt on St. Peter and St. Paul's day, sealed with the impressed seal of Hans von Plawnhem because the issuers did not all have their own seals with them."
         }
       ],
       "img": [
