@@ -11,6 +11,7 @@ Domherr, canonicus, Kanoniker, Kanonikus
 Schultheiß, Schultheiss, scultetus
 Presbyter
 Baron
+Komtur
 
 // ranks
 Ritter, Ritters, miles, milites, Knight
