@@ -9,10 +9,25 @@
       "english": "Georg Zobel von Giebelstadt renounces claims and demands after Schloss Schüpf, of which he held a share, had been captured and destroyed in the feud between Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Rudolf zu Würzburg, Bischof on one side, and Jörg, Arnold, and Michael von Rosenberg on the other. Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof had restored him to his share and usage rights.\n\nTime span: August 31, 1477 (on Sunday before Giles)\n\nSealer: Georg Zobel von Giebelstadt",
       "mention": [
         {
+          "person": "Adolf",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Arnold von Rosenberg"
         },
         {
+          "person": "Diether",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "mainz"
         },
         {
           "person": "Michael von Rosenberg"

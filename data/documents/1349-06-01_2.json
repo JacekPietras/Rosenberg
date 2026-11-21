@@ -13,6 +13,9 @@
           "place": "burg-wildenstein"
         },
         {
+          "place": "mainz"
+        },
+        {
           "person": "Peter von Rosenberg"
         },
         {
@@ -28,6 +31,9 @@
       "mention": [
         {
           "place": "burg-wildenstein"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "rosenberg-town"

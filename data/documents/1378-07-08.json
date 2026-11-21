@@ -9,6 +9,9 @@
       "english": "Elect Adolf of Mainz transfers to the knight Eberhard Rüdt the archiepiscopal castle and the office at Wildenburg. L(itte)ra data Ebirhardo Ruden militi [-] uber das haus und amp Wildungen [sic!] fur 700 f. [a] Adolf [elected Archbishop zu Mainz and Bishop zu Speyer] transfers to his \"loved and faithful one,\" the knight Eberhard Rüdt (Ruden), the archiepiscopal castle (hus) and the office at Wildenburg (Wildenb(er)g). Eberhard has redeemed for the Archbishop for 700 small gulden, properties, annuities, people and courts in the Odenwald (Odenwalde), which the deceased Konrad Rüdt (Rude) had redeemed from Eberhard von Rosenberg, to whom they were pledged, for 800 small gulden. These annuities and revenues shall belong half to Eberhard, the other half shall be collected by the archiepiscopal cellarer at Amorbach (Amerbach) for the Archbishop. If the Archbishop has not fully paid Eberhard these 700 gulden but nevertheless wishes to dismiss him from the office, he must invest him and his heirs in half of the toll at Miltenberg (Miltenb(er)g), from which Eberhard can then withdraw the 700 gulden under the protection of the foundation. Eberhard may not withhold the house and office from the Archbishop, if the latter wishes it back, for outstanding sums (neither fur kost odir schaden). Archbishop Adolf announces that he will hang his seal next to that of the chapter consenting to this agreement. - Dated on the very day of Saint Kilian ... 1378.",
       "mention": [
         {
+          "person": "Adolf of Mainz"
+        },
+        {
           "person": "Eberhard Rüd",
           "personTitle": [
             "Ritter"
@@ -16,6 +19,9 @@
         },
         {
           "person": "Konrad Rüd"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "speyer"

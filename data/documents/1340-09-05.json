@@ -16,7 +16,13 @@
           "person": "Gerlach von Limpurg"
         },
         {
+          "person": "Heinrich of Mainz"
+        },
+        {
           "person": "Konrad Schenk von Erbach"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "speyer"
@@ -49,7 +55,19 @@
           "person": "Hans von Waldeck"
         },
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Heinrich zu Mainz"
+        },
+        {
           "person": "Konrad Schenk von Erbach"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "speyer"

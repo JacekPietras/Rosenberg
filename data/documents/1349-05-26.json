@@ -10,6 +10,18 @@
       "english": "Karl IV. promises in good faith to Heinrich von Virneburg, who calls himself Archbishop of Mainz, to Kuno von Falkenstein, Cathedral Provost, to the Canon Nikolaus vom Stein, to the knights and guardians of the Archbishopric of Mainz Eberhard von Rosenberg, Johann von Randeck, and Johann von Bellersheim, to the Custodian Heinrich von Bimbach, to the Canons Konrad von Rietburg, Konrad von Steckelberg, Heinrich Schetzel (von Waldeck), Friedrich Specht (von Bubenheim), Andreas von Brauneck, and Luther von Büches, to the Provost Konrad of St. Moritz at Mainz, and to the Kantor Friedrich of Aschaffenburg with all persons within and outside Mainz who have remained with them, that he shall never assist Archbishop Gerlach of Mainz if he wages war against them, nor on his behalf do anything against the Archbishopric, the aforesaid Heinrich, the Guardians, and the aforementioned persons.",
       "mention": [
         {
+          "person": "Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Gerlach of Mainz"
+        },
+        {
+          "place": "mainz"
+        },
+        {
           "place": "waldeck"
         }
       ],

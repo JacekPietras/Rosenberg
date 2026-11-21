@@ -9,6 +9,9 @@
       "english": "Georg von Rosenberg, Amtmann zu Bischofsheim, grants safe conduct to the Nuremberg merchant community on behalf of the Archbishop of Mainz for the Lenten fair in Frankfurt.",
       "mention": [
         {
+          "place": "mainz"
+        },
+        {
           "place": "nuremberg"
         }
       ],

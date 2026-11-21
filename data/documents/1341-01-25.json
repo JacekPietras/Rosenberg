@@ -18,10 +18,22 @@
           "person": "Hans von Hirschhorn"
         },
         {
+          "person": "Hans zu Mainz"
+        },
+        {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Konrad Schenk von Erbach",
           "personTitle": [
             "Ritter"
           ]
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "waldeck"

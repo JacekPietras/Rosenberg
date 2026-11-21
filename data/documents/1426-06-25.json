@@ -13,6 +13,12 @@
       "mention": [
         {
           "place": "bischofsheim"
+        },
+        {
+          "person": "Konrad",
+          "personTitle": [
+            "Kurfürst zu Mainz"
+          ]
         }
       ],
       "facts": [
@@ -39,6 +45,12 @@
         },
         {
           "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Konrad",
+          "personTitle": [
+            "Kurfürst zu Mainz"
+          ]
         }
       ]
     }

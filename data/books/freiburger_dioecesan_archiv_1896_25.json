@@ -737,6 +737,9 @@
       "english": "On September 3, 1342, Eberhard von Rosenberg was Vogt zu Dürn. In 1347, he had under his authority the serfs of the Empire in the Odenwald and along the Kocher. In 1349, he allowed Mainz to redeem Nagelsberg Castle for 400 pounds Heller.",
       "mention": [
         {
+          "place": "mainz"
+        },
+        {
           "place": "nagelsberg-castle"
         }
       ],
@@ -824,6 +827,11 @@
     {
       "german": "1354, 20. Jan., hat Ritter Eberhard v. R. Verhandlungen mit dem Kapitel Mainz wegen Schuldbriefen, welche der Ritter „zu haben vermiſſet“.",
       "english": "On January 20, 1354, Eberhard von Rosenberg, Ritter, negotiated with the Mainz chapter concerning debt certificates that the Ritter “had lost.”",
+      "mention": [
+        {
+          "place": "mainz"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -975,6 +983,14 @@
     {
       "german": "1363. Johann und Eberhard v. R. ſind Bürgen, als Erzbiſchof Gerlach von Mainz Külsheim und Gamburg verpfändet.",
       "english": "In 1363, Hans von Rosenberg and Eberhard von Rosenberg were sureties when Archbishop Gerlach of Mainz pledged Külsheim and Gamburg.",
+      "mention": [
+        {
+          "person": "Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -1059,6 +1075,12 @@
       "german": "1369 wurde Johannes de R. von Würzburg belehnt mit dem ca- strum Urhusen ſamt Zubehör. 1369, 29. Nov., iſt Hans v. R. Zeuge bei der Vergleichung des Erkinger Hofwart und ſeiner Ehefrau mit Erzbiſchof Gerlach zu Mainz wegen ihres Antheils an Nuwenfels.",
       "english": "In 1369, Hans von Rosenberg was enfeoffed by Würzburg with Urhausen Castle and its appurtenances. On November 29, 1369, Hans von Rosenberg witnessed the settlement between Erkinger Hofwart and his wife, on the one hand, and Archbishop Gerlach of Mainz, on the other, concerning their share in Nuwenfels.",
       "mention": [
+        {
+          "person": "Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
         {
           "place": "urhausen-castle"
         },
@@ -2868,6 +2890,9 @@
           "place": "boxberg"
         },
         {
+          "place": "mainz"
+        },
+        {
           "place": "oberschuepf"
         },
         {
@@ -3137,6 +3162,12 @@
       "german": "1493, Donnerstag nach Cantate, bekennt Erzbiſchof Bechtold von Mainz zu Amorbach, „daß ſich Spen und Irrungen zwiſchen Kunz von Dottenheim und Arnold v. R. erhoben hätten, die ſie vor ihn zu Ent⸗ſcheidung brachten“. Das Urtheil lautet: „Dieweil der genannte Kunz v. D. des Theils zu Schüpf in ſeiner Klage beſtimmt in Lebens Gewähr ge⸗171 weſen iſt und Arnold v. R. die Männer dazu gehörig laut fürbrachter Kundſchaft ihm hiefür mit Neigung hold und zu gewarten gedungen hat, da ſolches unbillig geſchehen, er ſolchen Bedrang abzuſtellen ſchuldig ſei, mit Bekehrung aufgehabender Nuzung, Koſten und Schäden nach richter—licher Mäßigung.“",
       "english": "On the Thursday after Cantate in 1493, Archbishop Bechtold of Mainz declared at Amorbach “that disputes and disagreements had arisen between Kunz von Dottenheim and Arnold von Rosenberg, which they had brought before him for a decision.” The judgment stated: “Since the said Kunz von D. had, in his complaint, established a life interest in that share of Schüpf, and Arnold von Rosenberg had, according to the testimony presented, willingly pledged the relevant men to serve him in that matter, this was done unlawfully. He must put an end to this encroachment and repay the use he has taken, as well as the costs and damages, in an amount to be assessed by the court.”",
       "mention": [
+        {
+          "person": "Berthold",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
         {
           "person": "Kunz von Dottenheim"
         },
@@ -3508,6 +3539,9 @@
           "place": "kupprichhausen"
         },
         {
+          "place": "mainz"
+        },
+        {
           "place": "wurzburg"
         }
       ],
@@ -3606,6 +3640,9 @@
       "mention": [
         {
           "place": "kupprichhausen"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "uiffingen"
@@ -4053,6 +4090,9 @@
       "mention": [
         {
           "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "mainz"
         }
       ],
       "facts": [
@@ -4557,6 +4597,12 @@
       "mention": [
         {
           "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Berthold",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
         },
         {
           "place": "oberschuepf"

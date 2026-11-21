@@ -621,6 +621,11 @@
     {
       "german": "1334 besorgte Ritter Eberhard von Rosenberg Geschäfte für den Erzbischof Balduin von Mainz zu Amöneberg, Geismar und Fritzlar; Reg. b. VII, 84.",
       "english": "In 1334, Eberhard von Rosenberg, Ritter conducted business for Archbishop Baldwin of Mainz in Amöneberg, Geismar, and Fritzlar; Reg. b. VII, 84.",
+      "mention": [
+        {
+          "place": "mainz"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
@@ -645,6 +650,9 @@
         },
         {
           "place": "burg-schweinberg"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "nagelsberg-castle"
@@ -752,6 +760,9 @@
       "german": "1347: E. v. R., der Vogt zu Dürne, hat unter sich die Leibeigenen des Reichs im Odenwald und am Kocher; D.A.=Beschreibung von Dehringen S. 158 u. 142; er heißt Vormünder des Stifts Mainz, Reg. b. VIII, 104; 1349 gestattet er dem Erzbisthum Mainz die Wiederlösung der Burg Nagelsberg um 400 ß Heller; Reg. b. VIII, 172. Eberhard war zu dieser Zeit ein Anhänger des Gegenbischofs Heinrich von Birnenburg, Gud. C. D. III, 344; 1354 hatte Ritter E. wegen Schuldbriefen eine Verhandlung mit dem Kapitel zu Mainz; Reg. b. VIII, 289.",
       "english": "1347: Eberhard von Rosenberg, the Vogt zu Dürn, has under his authority the serfs of the empire in the Odenwald and on the Kocher; D.A. \\= Description of Dehringen, pp. 158 and 142; he is referred to as the guardian of the Mainz chapter, Reg. b. VIII, 104; in 1349, he permitted the Archbishopric of Mainz to redeem the Nagelsberg Castle for 400 ß Heller; Reg. b. VIII, 172. At this time, Eberhard was a supporter of the rival bishop Heinrich von Birnenburg, Gud. C. D. III, 344; in 1354, Ritter Eberhard had a negotiation with the chapter in Mainz regarding debt documents; Reg. b. VIII, 289.",
       "mention": [
+        {
+          "place": "mainz"
+        },
         {
           "place": "nagelsberg-castle"
         }
@@ -2754,6 +2765,9 @@
           "person": "Eberhard von Rosenberg"
         },
         {
+          "place": "mainz"
+        },
+        {
           "place": "wurzburg"
         }
       ],
@@ -3964,6 +3978,9 @@
           "place": "boxberg"
         },
         {
+          "place": "mainz"
+        },
+        {
           "place": "rosenberg-town"
         },
         {
@@ -4962,6 +4979,9 @@
         },
         {
           "place": "limpurg"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "oberschuepf"

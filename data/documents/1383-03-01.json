@@ -9,6 +9,15 @@
       "english": "Archbishop Adolf I of Mainz regulates the repayment of his debts to the squire Kunz von Hartheim. L(itte)ra data eid(em) Conrado sup(er) 1.200 flor(enis). [Archbishop] Adolf [of Mainz] owes the squire (sturdy knight) Konrad (Cuntzen) von Hartheim, his 'dear faithful servant and friend', 1,200 well-weighted gulden, which he has lent in cash (an gereitem gelde), and which he has used for his own and the chapter's benefit. The Archbishop, his successors in office and the Mainz chapter (Mentze) pay Konrad annually on St. Martin's Day [November 11] from the cellarage of Buchen 110 gulden interest (zu tzinse). By virtue of this charter the Archbishop commands the current cellarist in Buchen to pay out the money accordingly. If Mainz wishes to redeem the annual revenue, which it can do at any time, it must announce this one quarter before St. Peter's Chair Day [February 22] in Hardheim. The 1,200 gulden plus the revenue or interest that may have appeared then must then be repaid on Peter's Day or in the following fourteen days in Miltenberg (Miltenb(er)g), Wertheim or Tauberbischofsheim (Bischeim), Kunz decides which city. If Konrad wants his money back, he must also announce this one quarter before St. Peter's Chair Day. The payment of the money then takes place as described above. Konrad may not make the repayment request in the next two years after the upcoming St. Peter's Chair Day. The Archbishop provides as guarantors: his 'dear faithful servant' and Viztum in Aschaffenburg (Asch(affenburg)) Eberhard von Fechenbach (Vechinbach), Marquard von Dürn, his Tauberbischofsheimer (Bischoffesheim) bailiff Egen Seman, Konrad von Fechenbach (Vechenbach), the Scheuerberger (Schurberg) bailiff Konrad (Conr(ad)) von Berlichingen, Hans Pilgrim (Bilgerin), Diether (Dither) Rüdt (Rude) and Hans von Rosenberg. If the Archbishop falls into payment default on the annual revenue or repayment of the principal debt, the creditors may summon the guarantors (at home or at court or word against word). These must then within the next fourteen days each send a servant and a horse to Miltenberg (Miltenb(er)g), Wertheim or Tauberbischofsheim (Bisch(eim)), Kunz decides which city, into a public inn assigned by Kunz. The servants and horses shall maintain billetting there (leisten) until the debt is settled. If servants or horses die or are no longer fit for service (verleisten), they must be replaced by equivalent ones by the affected guarantor. If a guarantor dies, Kunz may summon the Archbishop, who must within four weeks provide an equivalent guarantor as replacement. If he does not do this, the remaining guarantors after appropriate summons within 14 days each send a servant and a horse and maintain billetting until the replacement guarantor is provided. Mainz promises to amicably release the guarantors from the suretyship without oath and without harm to them. The guarantors acknowledge their suretyship and promise to faithfully observe all provisions. They announce they will hang their seals next to that of the Archbishop. - D. ut supra [in the year 1383 after Christ's birth when one sings in the holy church Letare].",
       "mention": [
         {
+          "person": "Adolf",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Adolf of Mainz"
+        },
+        {
           "place": "berlichingen"
         },
         {
@@ -25,6 +34,9 @@
           "personTitle": [
             "Edelknecht"
           ]
+        },
+        {
+          "place": "mainz"
         },
         {
           "person": "Marquard von Dürn"

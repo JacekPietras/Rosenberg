@@ -1333,6 +1333,17 @@
     "showOnMap": false
   },
   {
+    "id": "mainz",
+    "variations": [
+      "Mainz",
+      "Mentze",
+      "Meinz",
+      "Meincze",
+      "Mencze"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "ramschwag",
     "variations": [
       "Ramschwag"

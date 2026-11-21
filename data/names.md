@@ -60,7 +60,7 @@ Hartmut
 Hartnid, Hartel, Hertel, Hertneid, Härtel
 Haubt, Haupt
 Hector
-Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Jindrich
+Heinrich, Hainrich, Heinrici, Heinrico, Heinricus, Heintz, Heintze, Heinz, Heinzen, Hendrici, Henrich, Henricus, Heynrich, Jindrich
 Hen, Henne // Hans or Heinrich
 Hennell, Henel, Henil // Hans or Heinrich
 Herbord

@@ -7,6 +7,11 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641647",
       "german": "Streitigkeiten des Hans Carius von Rosenberg mit dem Erzstift Mainz um den Weinzehnt zu Osterburken.\n\nLaufzeit: 1550-1563",
       "english": "Disputes of Hans Eucharius von Rosenberg with the Electorate of Mainz over the wine tithe at Osterburken.\n\nDuration: 1550–1563",
+      "mention": [
+        {
+          "place": "mainz"
+        }
+      ],
       "facts": [
         {
           "person": "Hans Eucharius von Rosenberg",

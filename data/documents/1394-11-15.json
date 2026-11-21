@@ -7,6 +7,14 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1720646",
       "german": "Arnold von Rosenberg, Amtmann zu Ballenberg, reversiert gegenüber dem Erzbischof Konrad von Mainz.\n\nLaufzeit: 1394 November 15",
       "english": "Arnold von Rosenberg, Amtmann zu Ballenberg, reverses before Archbishop Konrad of Mainz.\n\nDate range: 1394 November 15",
+      "mention": [
+        {
+          "person": "Konrad",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Arnold von Rosenberg",

@@ -9,10 +9,25 @@
       "english": "Georg von Dottenheim renounces all claims and demands after he has regained his share of Schloss Schüpf with associated usage rights from Archbishop Dieter of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof. Previously, said castle had been captured in the feud of Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Rudolf zu Würzburg, Bischof against Jörg, Arnold, and Michael von Rosenberg.\n\nTime span: August 31, 1477 (on Sunday before Saint Giles' Day)\n\nSealer: Georg von Dottenheim",
       "mention": [
         {
+          "person": "Adolf",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Arnold von Rosenberg"
         },
         {
+          "person": "Diether",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "mainz"
         },
         {
           "person": "Michael von Rosenberg"

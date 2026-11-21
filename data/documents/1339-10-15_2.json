@@ -12,6 +12,12 @@
           "place": "bartenstein"
         },
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Konrad Schenk von Erbach"
         },
         {
@@ -19,6 +25,9 @@
         },
         {
           "person": "Kraft von Hohenlohe"
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "rieneck"

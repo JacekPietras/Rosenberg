@@ -9,7 +9,19 @@
       "english": "Archbishop Dietrich von Mainz praised the castle keep the castle fried to Boxberg between his predecessor Adolf and the Count Palatine Frederick and Bishop Rudolf von Würzburg.",
       "mention": [
         {
+          "person": "Adolf",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "place": "boxberg"
+        },
+        {
+          "person": "Dietrich",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ]
         },
         {
           "person": "Rudolf",

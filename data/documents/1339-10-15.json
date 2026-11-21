@@ -15,6 +15,12 @@
           "place": "bartenstein"
         },
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Konrad Schenk von Erbach"
         },
         {
@@ -25,6 +31,9 @@
           "personTitle": [
             "Graf"
           ]
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "rieneck"

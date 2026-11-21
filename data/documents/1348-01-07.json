@@ -23,10 +23,19 @@
           "person": "Hans von Katzenelnbogen"
         },
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "König Karl",
           "personTitle": [
             "König von Böhmen"
           ]
+        },
+        {
+          "place": "mainz"
         },
         {
           "place": "wurzburg"

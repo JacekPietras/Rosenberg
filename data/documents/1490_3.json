@@ -9,6 +9,12 @@
       "english": "Fief acknowledgment (Lehensrevers) of Hans von Rosenberg to Archbishop Berthold of Mainz concerning eight parts of Schüpfe with rights and appurtenances.",
       "mention": [
         {
+          "person": "Berthold",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "place": "oberschuepf"
         }
       ],

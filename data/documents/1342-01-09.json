@@ -9,10 +9,19 @@
       "english": "Dean Johann and knight Konrad of Rüdesheim (Rudis-), son of the deceased Conrad, judge, counselor and arbitrators, based on the evidence gathered by Konrad von Bickenbach, Herr, Lord Eberhard von Rosenberg, and Lord Wilderich of Vilmar (-mer), vicedominus at Aschaffenburg, knights, award to Konrad Schenk von Erbach the so-called \"common forest\" over which disputes had arisen between him and Archbishop Heinrich of Mainz.",
       "mention": [
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Konrad Schenk von Erbach"
         },
         {
           "person": "Konrad von Bickenbach"
+        },
+        {
+          "place": "mainz"
         }
       ],
       "facts": [

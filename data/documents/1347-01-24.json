@@ -10,10 +10,19 @@
       "english": "Imperial King [Ludwig] (1) responds to his prince Archbishop Heinrich III of Mainz, [imperial] archchancellor in German lands (per Germaniam), regarding his letter whereby the stewards [of the Mainz archbishopric] wished to terminate the guardianship, that (a) the letters of the Archbishop and the stewards arrived on St. Paul's day [the hermit] in Vienna, (b) he has written to the stewards that they should not terminate the guardianship but instead name him a day on which he will personally come to them, hear their complaints (brechen), and decide after consultation with them and the Archbishop, and (c) he has written to the [cathedral] chapter [of Mainz] that they should not relieve the stewards of the guardianship beforehand, (2) requests the Archbishop to restrain the stewards from terminating the guardianship until his arrival, since he wishes to protect with person and property the honor, benefit, and welfare of the Archbishop, but otherwise fears the disregard of both their honors, (3) assures that he will safeguard the honor of the Archbishop, the [arch]bishopric, and the [cathedral] chapter against Margrave [Friedrich II] of Meissen and Landgrave [Heinrich II] of Hesse, so that the Archbishop cannot reproach him with anything, and (4) promises, emphasizing the services rendered by the Archbishop, to eliminate all disadvantages that he suffers because of the [antibishop Gerlach] of Nassau and other reasons, with the counsel of the Archbishop, as long as he lives.",
       "mention": [
         {
+          "person": "Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "König Ludwig",
           "personTitle": [
             "König"
           ]
+        },
+        {
+          "place": "mainz"
         }
       ]
     }

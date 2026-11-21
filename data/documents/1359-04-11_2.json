@@ -10,6 +10,12 @@
       "english": "Charles IV., at the request of the dean and chapter of the Church of Utrecht, confirms the privilege of Emperor Frederick II for the ecclesiastical princes, dated Frankfurt April 26, 1220.\n\nWitnesses: Gerlach, Archbishop of Mainz; Wilhelm, Archbishop of Cologne; Rudolf, Duke of Saxony; Rupert the Younger, Count Palatine of the Rhine and Duke in Bavaria; Ernst, Archbishop of Prague; Johann, Bishop of Litoměřice, Chancellor; Peter, Duke of Bourbon; Wilhelm, Margrave of Meissen; Johann, Count of Nassau; Heinrich, Count von Schwarzburg; Burkhard, Burgrave of Magdeburg, Hofmeister; Rudolf von Wart; Hans von Rosenberg; Hoyer von Landstein",
       "mention": [
         {
+          "person": "Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Heinrich von Schwarzburg",
           "personTitle": [
             "Graf von Schwarzburg"
@@ -17,6 +23,9 @@
         },
         {
           "person": "Hoyer von Landstein"
+        },
+        {
+          "place": "mainz"
         },
         {
           "person": "Rudolf von Wart"
