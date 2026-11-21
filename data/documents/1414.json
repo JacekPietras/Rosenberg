@@ -1,0 +1,25 @@
+{
+  "date": "1414",
+  "label": [
+    "Franken",
+    "important"
+  ],
+  "entries": [
+    {
+      "source": "StAN, Reichsstadt Nürnberg, Handschriften ehem. 453",
+      "url": "https://www.gda.bayern.de/gvl/document/3ff2ec7a-dea1-4fce-b61d-4393b609cc35",
+      "german": "Hans von Rosenberg, Schultheiß 1414 (S.55).",
+      "english": "Hans von Rosenberg, Schultheiß of Nuremberg, 1414 (p. 55).",
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß zu Nürnberg"
+          ],
+          "type": "generic",
+          "content": "is listed among the chronicle’s coloured coats of arms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "date": "1434",
+  "label": [
+    "Franken",
+    "important"
+  ],
+  "entries": [
+    {
+      "source": "StAN, Reichsstadt Nürnberg, Handschriften ehem. 453",
+      "url": "https://www.gda.bayern.de/gvl/document/3ff2ec7a-dea1-4fce-b61d-4393b609cc35",
+      "german": "Teilnehmer am Ritterspiel zu Nürnberg 1434: Anshelm von Rosenberg (S.152).",
+      "english": "Participants in the tournament at Nuremberg in 1434 included Anselm von Rosenberg (p. 152).",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Anselm von Rosenberg",
+          "type": "generic",
+          "content": "participated in a tournament at Nuremberg."
+        }
+      ]
+    }
+  ]
+}
