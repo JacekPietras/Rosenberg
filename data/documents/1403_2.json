@@ -161,7 +161,16 @@
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0043.jpg"
         },
         {
-          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0044.jpg"
+          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0044.jpg",
+          "regions": [
+            {
+              "x": 0.5062,
+              "y": 0.5401,
+              "width": 0.3175,
+              "height": 0.293,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0045.jpg"
