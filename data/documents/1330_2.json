@@ -12,12 +12,11 @@
           "place": "grunsfeld"
         }
       ],
-      "guesses": [
+      "facts": [
         {
           "person": "Hans Pahl von Grünsfeld",
           "type": "spouse",
-          "of": "Anna von Rosenberg",
-          "content": "may be the Anna identified in the Personenindex as the wife of Johann under Pfahl von Grünsfeld; the index does not give Johann's given name or identify Anna as von Rosenberg."
+          "of": "Anna von Rosenberg"
         }
       ]
     }
