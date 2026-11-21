@@ -6,7 +6,7 @@ Raydenbach
 Stieber, Stiebar, Stiber
 Kemnater, Kempnater
 Schaffner
-Rodel
+Rödel, Rodel
 Zobel, Zobelin
 Geyer
 Pirchan
