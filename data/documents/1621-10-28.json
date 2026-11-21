@@ -8,7 +8,10 @@
       "english": "Guardians Albrecht Christoph von Rosenberg zu Rosenberg und Waldmannshofen and Georg Friedrich von Seckendorf zu Langenfeld, together with the named advisers including Georg Siegmund von Rosenberg zu Haldenbergstetten, made a marriage agreement for Philipp Ludwig von Seckendorf and Maria Margaretha von Gemmingen. Brigitta née von Rosenberg is named as the late wife of Hans Georg von Seckendorf; Anna Maria von Rosenberg née von Gemmingen is mentioned in connection with an inheritance.",
       "mention": [
         {
-          "person": "Anna Maria von Gemmingen"
+          "person": "Anna Maria von Gemmingen",
+          "personTitle": [
+            "von Rosenberg"
+          ]
         },
         {
           "person": "Georg Friedrich von Seckendorf"
@@ -47,7 +50,7 @@
         {
           "person": "Georg Siegmund von Rosenberg",
           "personTitle": [
-            "zu Haldenbergstetten"
+            "zu Haltenbergstetten"
           ],
           "type": "generic",
           "content": "advised the parties in the marriage agreement."

@@ -18,7 +18,10 @@
           "person": "Hen zu Rosenberg"
         },
         {
-          "person": "Peter zu Rosenberg"
+          "person": "Peter zu Rosenberg",
+          "personTitle": [
+            "Vizedom"
+          ]
         }
       ]
     }

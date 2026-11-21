@@ -9,7 +9,10 @@
       "english": "The widow Amalie von Sickingen née von Rosenberg cedes her claims to the village of Bofsheim to her sisters Felicitas Rüdt and Anna Susanna von Wollmershausen.\n\nDuration: September 12, 1595",
       "mention": [
         {
-          "person": "Amalie von Rosenberg"
+          "person": "Amalie von Rosenberg",
+          "personTitle": [
+            "von Sickingen"
+          ]
         }
       ],
       "facts": [

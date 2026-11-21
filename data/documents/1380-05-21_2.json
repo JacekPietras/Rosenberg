@@ -15,7 +15,10 @@
           "person": "Fürderer von Helmstadt"
         },
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstadt",
+          "personTitle": [
+            "genannt von Rosenberg"
+          ]
         },
         {
           "place": "helmstadt"

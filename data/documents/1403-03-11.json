@@ -60,7 +60,8 @@
         {
           "person": "Reinhard von Sickingen",
           "personTitle": [
-            "Vogt zu Heidelberg"
+            "Vogt zu Heidelberg",
+            "der Jüngere"
           ]
         },
         {
@@ -69,8 +70,14 @@
         {
           "person": "Wiprecht von Helmstadt",
           "personTitle": [
-            "Vogt zu Bretten",
             "der Ältere"
+          ]
+        },
+        {
+          "person": "Wiprecht von Helmstadt",
+          "personTitle": [
+            "Vogt zu Bretten",
+            "der Jüngere"
           ]
         }
       ]

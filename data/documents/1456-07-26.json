@@ -9,12 +9,6 @@
       "english": "Georg von Rosenberg, Amtmann zu Bischofsheim, on orders from his lord, the Archbishop of Mainz, grants safe conduct to the Nuremberg merchant community for the autumn fair in Frankfurt.",
       "mention": [
         {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Bischofsheim"
-          ]
-        },
-        {
           "place": "nuremberg"
         }
       ],
@@ -22,7 +16,7 @@
         {
           "person": "Georg von Rosenberg",
           "personTitle": [
-            "Amtmann zu Tauberbischofsheim"
+            "Amtmann zu Bischofsheim"
           ],
           "type": "generic",
           "content": "granted the Nuremberg merchants safe conduct to the Frankfurt Autumn Fair on the Archbishop of Mainz’s orders."

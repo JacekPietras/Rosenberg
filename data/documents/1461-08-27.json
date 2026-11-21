@@ -26,6 +26,18 @@
         {
           "person": "Hans Truchsess",
           "personTitle": [
+            "zu Aue"
+          ]
+        },
+        {
+          "person": "Hans Truchsess",
+          "personTitle": [
+            "zu Birkefel"
+          ]
+        },
+        {
+          "person": "Hans Truchsess",
+          "personTitle": [
             "zu Wetzhausen"
           ]
         },
@@ -43,9 +55,10 @@
           ]
         },
         {
-          "person": "Heinrich Zobel von Giebelstadt",
+          "person": "Heinrich Zobel",
           "personTitle": [
-            "Ritter"
+            "Ritter",
+            "zu Giebelstadt"
           ]
         },
         {
@@ -58,7 +71,10 @@
           "place": "lichtenstein"
         },
         {
-          "person": "Peter Truchsess"
+          "person": "Peter Truchsess",
+          "personTitle": [
+            "zu Wilperg"
+          ]
         },
         {
           "place": "rieneck"

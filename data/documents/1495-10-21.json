@@ -15,10 +15,10 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Hans Stieber"
-        },
-        {
-          "person": "Hans Stieber zu Aisch"
+          "person": "Hans Stieber",
+          "personTitle": [
+            "zu Aisch"
+          ]
         },
         {
           "person": "Martin von Sickingen"

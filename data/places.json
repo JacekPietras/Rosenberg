@@ -1996,6 +1996,16 @@
     "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century. Source: https://www.wirsberg.de/buergerservice-rathaus/chronik/ortsgeschichte ."
   },
   {
+    "id": "virnsberg",
+    "variations": [
+      "Virnsberg",
+      "Wirnsberg",
+      "Virnsperch",
+      "Wirnsperg"
+    ],
+    "showOnMap": false
+  },
+  {
     "variations": [
       "Wölchingen",
       "Wolchingen",

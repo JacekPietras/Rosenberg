@@ -9,7 +9,10 @@
       "english": "Deed of sale: Ursula von Rosenberg, née von Adelsheim, sells a rent at Weschartshausen to the St. John administrators of the parish church at Crailsheim for 50 Rhine gulden. - Sealer: Ursula von Rosenberg, née von Adelsheim.",
       "mention": [
         {
-          "person": "Ursula von Adelsheim"
+          "person": "Ursula von Adelsheim",
+          "personTitle": [
+            "von Rosenberg"
+          ]
         }
       ],
       "facts": [

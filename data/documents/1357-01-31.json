@@ -13,13 +13,6 @@
           "place": "buchen"
         },
         {
-          "person": "Eberhard von Wertheim",
-          "personTitle": [
-            "Graf",
-            "Junker"
-          ]
-        },
-        {
           "place": "lauda"
         },
         {
@@ -45,7 +38,8 @@
         {
           "person": "Eberhard von Wertheim",
           "personTitle": [
-            "Graf von Wertheim"
+            "Graf von Wertheim",
+            "Junker"
           ],
           "type": "spouse",
           "of": "Katharina"
@@ -95,7 +89,8 @@
         {
           "person": "Eberhard von Wertheim",
           "personTitle": [
-            "Graf von Wertheim"
+            "Graf von Wertheim",
+            "Junker"
           ],
           "type": "generic",
           "content": "could redeem the property each year within fourteen days before or after Cathedra Petri during the ten-year term."

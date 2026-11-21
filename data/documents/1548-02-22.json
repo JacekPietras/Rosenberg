@@ -10,7 +10,10 @@
       "english": "On the Feast of St Peter’s Chair in 1548, Bishop Melchior issued to Juliane Leutzenbrunnerin, now a widow, a further bond for an annual rent of 100 florins from the chamber revenues in return for 2,000 florins, reckoned at 15 batzen per florin. It could be redeemed each year on a quarter-year’s notice before the Feast of St Peter’s Chair. Recorded in the second register of Conrad’s contracts, fol. 328. The archive summary identifies the bishop as Melchior Zobel von Giebelstadt and Juliane as Juliana von Leutzenbronn, née von Rosenberg.",
       "mention": [
         {
-          "person": "Juliana von Rosenberg"
+          "person": "Juliana von Rosenberg",
+          "personTitle": [
+            "von Leutzenbronn"
+          ]
         },
         {
           "person": "Melchior Zobel von Giebelstadt"

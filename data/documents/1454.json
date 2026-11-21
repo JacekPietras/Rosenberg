@@ -36,7 +36,10 @@
           "person": "Margaretha Zobel"
         },
         {
-          "person": "Thomas von Wolffskeel"
+          "person": "Thomas von Wolffskeel",
+          "personTitle": [
+            "von Rosenberg"
+          ]
         },
         {
           "person": "Ursula von Berlichingen"

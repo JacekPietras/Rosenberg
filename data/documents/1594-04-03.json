@@ -9,7 +9,10 @@
       "english": "Wilhelm von Grumbach of Burggrumbach, Wolf von Grumbach of Burggrumbach and Schwanfeld, Bernolph von Gemmingen of Bürg, on behalf of Anna von Gemmingen née von Grumbach and Anna Wolfskeel née Wolfskeel, widow of Rottenbaur, all heirs of the late Konrad von Vellberg, sell to Konrad von Rosenberg of Gnözheim and Schüpf for 1,800 gulden the great and small tithe along with other dues and rights in Ober- and Unterschüpf.",
       "mention": [
         {
-          "person": "Anna von Grumbach"
+          "person": "Anna von Grumbach",
+          "personTitle": [
+            "von Gemmingen"
+          ]
         },
         {
           "person": "Anna Wolffskeel"

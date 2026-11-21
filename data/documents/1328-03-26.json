@@ -35,7 +35,10 @@
           ]
         },
         {
-          "person": "Ludwig called Mönch"
+          "person": "Ludwig",
+          "personTitle": [
+            "genannt Mönch"
+          ]
         },
         {
           "place": "rosenberg-town"

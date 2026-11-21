@@ -9,7 +9,10 @@
       "english": "Elchana von Rosenberg, née von Riedern, establishes in fulfillment of the last will of her deceased husband Konrad von Rosenberg a weekly mass at the parish church there and endows it with grain rents from her farm at Rosenberg.",
       "mention": [
         {
-          "person": "Elchana von Riedern"
+          "person": "Elchana von Riedern",
+          "personTitle": [
+            "von Rosenberg"
+          ]
         },
         {
           "person": "Konrad von Rosenberg"

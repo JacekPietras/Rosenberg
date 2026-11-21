@@ -12,16 +12,11 @@
           "person": "Eucharius von Hirschhorn"
         },
         {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "zu Essingen"
-          ]
-        },
-        {
           "person": "Hans von Talheim",
           "personTitle": [
             "Amtmann zu Odernheim",
-            "Ritter"
+            "Ritter",
+            "der Ältere"
           ]
         }
       ],
@@ -29,7 +24,7 @@
         {
           "person": "Hans von Rosenberg",
           "personTitle": [
-            "zu Usingen"
+            "zu Essingen"
           ],
           "type": "generic",
           "content": "sat in the Palatinate court in the inheritance dispute concerning Hugo vom Stein-Kallenfels."

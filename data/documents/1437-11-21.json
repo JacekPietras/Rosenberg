@@ -9,7 +9,10 @@
       "english": "Ulrich von Rosenberg the Younger sells to Hans Rüdt von Bödigheim of Eberstadt his quarter share in the great and small tithes at Sindolsheim for 400 guilders.\n\nTime span: November 21, 1437 (1437 Thursday before St. Catherine's Day)",
       "mention": [
         {
-          "person": "Hans Rüd von Bödigheim"
+          "person": "Hans Rüd von Bödigheim",
+          "personTitle": [
+            "zu Eberstadt"
+          ]
         },
         {
           "place": "sindolsheim-church"

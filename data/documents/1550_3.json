@@ -10,7 +10,10 @@
       "english": "In 1550, the aforesaid bond was redeemed and replaced by another for an annual rent of 50 florins from the chamber revenues in return for 1,000 florins, also reckoned at 15 batzen per florin. It was redeemable on a quarter-year’s notice before the Feast of St Peter’s Chair. Recorded in the same register, fol. 341. The archive summary identifies the bondholder as Juliana von Leutzenbronn, née von Rosenberg and the issuer as Bishop Melchior Zobel von Giebelstadt.",
       "mention": [
         {
-          "person": "Juliana von Rosenberg"
+          "person": "Juliana von Rosenberg",
+          "personTitle": [
+            "von Leutzenbronn"
+          ]
         },
         {
           "person": "Melchior Zobel von Giebelstadt",

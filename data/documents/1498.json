@@ -7,6 +7,14 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3324090",
       "german": "Witwe Christina von Wallenstein geb. von Rosenberg ./. Eitel von Vilbel (Velwyl) und Eitel von Reimburg: Tötung ihres Mannes Werner von Wallenstein im Burgfrieden zu Lindheim",
       "english": "Widow Christiana von Wallenstein, née von Rosenberg vs. Eitel von Vilbel (Velwyl) and Eitel von Reimburg: Killing of her husband Wernher von Wallenstein within the castle peace at Lindheim",
+      "mention": [
+        {
+          "person": "Christiana von Rosenberg",
+          "personTitle": [
+            "von Wallenstein"
+          ]
+        }
+      ],
       "facts": [
         {
           "person": "Wernher von Wallenstein",

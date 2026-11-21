@@ -10,11 +10,17 @@
       "facts": [
         {
           "person": "Ottilia von Rosenberg",
+          "personTitle": [
+            "Äbtissin"
+          ],
           "type": "generic",
           "content": "was abbess of the White Ladies at Mainz."
         },
         {
           "person": "Ottilia von Rosenberg",
+          "personTitle": [
+            "Äbtissin"
+          ],
           "type": "generic",
           "content": "admitted Dine von Großwinterheim as a nun at the convent of the White Ladies in Mainz."
         }

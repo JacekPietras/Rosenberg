@@ -18,7 +18,10 @@
           "person": "Kunz von Rosenberg"
         },
         {
-          "person": "Lorenz zu Würzburg"
+          "person": "Lorenz",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
         },
         {
           "place": "sindolsheim-church"

@@ -12,7 +12,10 @@
       "english": "Ulrich von Rosenberg the Younger sells with the consent of his brother Konrad von Rosenberg for 400 florins his quarter of the great and small tithe at Sindolsheim to Hans Rüdt von Bödigheim at Eberstadt, retaining the right of repurchase",
       "mention": [
         {
-          "person": "Hans Rüd von Bödigheim"
+          "person": "Hans Rüd von Bödigheim",
+          "personTitle": [
+            "zu Eberstadt"
+          ]
         },
         {
           "place": "sindolsheim-church"

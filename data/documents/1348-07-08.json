@@ -21,7 +21,7 @@
         {
           "person": "Kraft von Hohenlohe",
           "personTitle": [
-            "Graf"
+            "Graf von Hohenlohe"
           ]
         },
         {
@@ -42,13 +42,16 @@
       "english": "(in our castle at Prague) elevates, at the request of Duke Rudolf of Saxony and with the counsel and will of the electors, princes, and vassals of the Empire, the noble Albrecht and Johann, brothers of Mecklenburg, to princes and dukes of Mecklenburg; enfeoffs them with all rights which Duke Rudolf of Saxony previously possessed in their land, but has now relinquished for this purpose. Witnesses: Gerlach, Archbishop of Mainz, Rudolf the Elder, Duke of Saxony; Arnest, Archbishop of Prague, Ulrich, Bishop of Chur; the Dukes Barnim of Stettin, Friedrich of Teck, Wladislaw of Teschen; the Counts Rudolf of Ochsenstein, Kraft von Hohenlohe and Ulrich of Helfenstein; the nobles Wilhelm von Landstein, Simon of Lichtenberg, Walter of Geroldseck, Jodok of Rosenberg, Heinrich and Ulrich, brothers of Neuhaus, Burchard of Ellerbach, Burchard, Monk of Basel. Ego Nicolaus etc. Frank Altes und Neues Meklenburg 5,163. Gercken Cod. Brand. 2,605. Gercken Verm. Abhandl. 3,47.",
       "mention": [
         {
+          "person": "Heinrich of Neuhaus"
+        },
+        {
           "person": "Kraft von Hohenlohe"
         },
         {
-          "place": "neuhaus"
+          "place": "rosenberg-town"
         },
         {
-          "place": "rosenberg-town"
+          "person": "Ulrich of Neuhaus"
         },
         {
           "person": "Wilhelm von Landstein"
