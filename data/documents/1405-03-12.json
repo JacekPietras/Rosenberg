@@ -1,6 +1,7 @@
 {
   "date": "1405-03-12",
   "place": "Heidelberg",
+  "deleted": true,
   "entries": [
     {
       "source": "Oberrheinische Stadtrechte, Erste Abteilung: Fränkische Rechte [1895]",
@@ -35,6 +36,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }
