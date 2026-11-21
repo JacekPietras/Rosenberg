@@ -19,7 +19,7 @@ from given_names import name_groups
 from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[2]
-DOCUMENT_FIELDS = ("date", "place", "label", "transcribed", "deleted", "entries")
+DOCUMENT_FIELDS = ("date", "place", "label", "research", "transcribed", "deleted", "entries")
 ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "mention", "facts", "guesses", "img")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
@@ -375,6 +375,9 @@ def main(argv=None):
                 if key not in DOCUMENT_FIELDS and key != "abstract":
                     print(f"{display_path(path)}#/{key}: warning: unexpected document field {key!r}")
                     warnings += 1
+            if "research" in document and not isinstance(document["research"], str):
+                print(f"{display_path(path)}#/research: error: expected a string")
+                errors += 1
 
         def warn_abstract(value, location):
             nonlocal warnings

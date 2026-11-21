@@ -193,6 +193,7 @@ lists.
 ```json
 {
   "label": ["Schenk", "important"],
+  "research": "Analysis of the document and its possible attribution to a Rosenberg house.",
   "date": "1399-02-01",
   "place": "Boxberg",
   "transcribed": true,
@@ -214,6 +215,8 @@ lists.
 - `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
 - `label`: a string or array of strings, shown as badges. `important` gives a
   reddish background.
+- `research`: optional string for analysis of the document and attempts to
+  attribute it to a Rosenberg house.
 - Entries keep `source` (the citation) and `url` as either a string or an array
   of strings, when there is one reference/link or several; they also keep their
   text fields and `facts`.
