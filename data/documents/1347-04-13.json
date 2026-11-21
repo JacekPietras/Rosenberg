@@ -26,7 +26,7 @@
       ],
       "facts": [
         {
-          "person": "Eberhard von Rosenberg",
+          "person": "eberhard_genannt_von_zimmern",
           "personTitle": [
             "genannt von Zimmern"
           ],
@@ -39,7 +39,7 @@
             "Vogt zu Dürn"
           ],
           "type": "parent",
-          "of": "Eberhard von Rosenberg"
+          "of": "eberhard_son_of_vogt_zu_Durn"
         },
         {
           "person": "Hans von Rosenberg",
