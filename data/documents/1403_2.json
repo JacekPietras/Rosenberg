@@ -1,6 +1,9 @@
 {
   "date": "1403",
-  "label": ["to review","NOW"],
+  "label": [
+    "to review",
+    "NOW"
+  ],
   "entries": [
     {
       "source": "Abteilung Rheinland, AA 0030, Nr. 39",
@@ -149,7 +152,16 @@
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0039.jpg"
         },
         {
-          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0040.jpg"
+          "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0040.jpg",
+          "regions": [
+            {
+              "x": 0.517,
+              "y": 0.4715,
+              "width": 0.3335,
+              "height": 0.249,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0041.jpg"
