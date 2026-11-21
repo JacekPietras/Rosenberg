@@ -671,6 +671,7 @@ const rulePlaces = [
   { name: 'Leuchtenberg', variations: ['Leuchtenberg'] },
   { name: 'Pfalz', variations: ['Pfalz'] },
   { name: 'Vestenberg', variations: ['Vestenberg'] },
+  { name: 'Rügland', variations: ['Rügland'] },
 ];
 const ruleTitles = `${titles}\n${projectTitles}`;
 const splitTitles = (name) => splitPersonNameTitles(name, ruleTitles);
