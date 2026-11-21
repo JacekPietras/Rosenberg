@@ -75,10 +75,10 @@ Julius
 Karl, Carl
 Kasimir
 Kilian
-Konrad, Chunrad, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradts, Conradus, Conrat, Conratten, Cunrad, Cunradus, Cunrat, Cunreth, Chonradus, Cuonradus, Cvnrad, Cunradt, Cunrath, Conrath, Connrad, Connrat, Cunraden, Chunrado
+Konrad, Chonradus, Chunrad, Chunrado, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Connrad, Connrat, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradts, Conradus, Conrat, Conrath, Conratten, Cunrad, Cunraden, Cunradt, Cunradus, Cunrat, Cunrath, Cunreth, Cuonradus, Cvnrad
 Kraft, Krafto
 Kuno
-Kunz, Chunz, Concz, Conntzen, Contz, Contze, Conz, Conze, Cuncze, Cuntz, Cuntzen, Cunz, Guntz, Kontz, Konz, Kunczen, Kuntz, Kuncz, Kuncze, Cuncz, Cuntcz, Cuntze, Kuntze, Kunze, Concze, Conntz, Cunntz, Chuntz, Chuntze, Konze, Koncze // are shortened versions of Konrad, but not used as it\! [1401 March 5]
+Kunz, Chuntz, Chuntze, Chunz, Concz, Concze, Conntz, Conntzen, Contz, Contze, Conz, Conze, Cuncz, Cuncze, Cunntz, Cuntcz, Cuntz, Cuntze, Cuntzen, Cunz, Guntz, Koncze, Kontz, Konz, Konze, Kuncz, Kuncze, Kunczen, Kuntz, Kuntze, Kunze // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Kurt
 Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
 Leopold, Lupold, Luppold
