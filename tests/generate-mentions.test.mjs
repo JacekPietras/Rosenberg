@@ -22,3 +22,15 @@ test('keeps a locative landgrave designation out of the person name', () => {
     { person: 'Hans', personTitle: ['Landgraf zu Leuchtenberg'] },
   ]);
 });
+
+test('same-named people with different designations stay separate mentions', () => {
+  const found = recognizeMentions('Kunz von Rosenberg zu Reichelsburg, Kunz von Rosenberg zu Bartenstein');
+  assert.equal(found.length, 2);
+  assert.equal(found.every((item) => item.person === 'Kunz von Rosenberg' && item.personTitle.length === 1), true);
+});
+
+test('a bishop and an abbot of the same name are not merged', () => {
+  const found = recognizeMentions('Johann, Bishop of Würzburg, and Johann, Abbot of Fulda');
+  assert.equal(found.length, 2);
+  assert.equal(found.every((item) => item.personTitle.length === 1), true);
+});

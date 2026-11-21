@@ -1,5 +1,5 @@
 import { imageLabels } from '../image-labels.js';
-import { buildSourcePersonPattern } from './person-name-recognition.js?v=26';
+import { buildSourcePersonPattern } from './person-name-recognition.js?v=28';
 import { buildRelationshipGraph, verifyFamilyGraph, remapSourcePerson } from './relationships.js?v=14';
 
 export function createDataLoader({
@@ -70,7 +70,7 @@ export function createDataLoader({
         repository.getText('data/places.json'), repository.getText('data/people.json'),
         repository.getText('data/names.md'), repository.getText('data/nobiliary_particles.md'),
         Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
-        repository.getText('data/name-connectors.md'),
+        Promise.all(['data/name-connectors.md', 'data/title-seats.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
         repository.getText('data/by-names.md'),
         Promise.all(bookPathsForStartup.map(async (path) => [path, await repository.getJson(path)])),
       ]);
@@ -103,7 +103,7 @@ export function createDataLoader({
       repository.getText('data/nobiliary_particles.md'),
       repository.getText('data/names.md'),
       Promise.all(['data/titles-age.md', 'data/titles-office.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
-      repository.getText('data/name-connectors.md'),
+      Promise.all(['data/name-connectors.md', 'data/title-seats.md'].map((path) => repository.getText(path))).then((texts) => texts.join('\n')),
       repository.getText('data/by-names.md'),
       repository.getText('data/distinctFamilies.md'),
       repository.getJsonBatch

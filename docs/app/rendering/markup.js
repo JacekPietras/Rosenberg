@@ -1,7 +1,7 @@
 import { escapeHtml } from './html.js';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson } from '../data/relationships.js?v=14';
-import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=26';
+import { findPersonNameMentions, personMentionClass } from '../data/person-name-recognition.js?v=27';
 
 export function createMarkupRenderer({ state }) {
   const frakturUpper = [...'𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ'];
@@ -29,7 +29,7 @@ export function createMarkupRenderer({ state }) {
     const personReplacements = [];
     for (const group of coordinated) {
       let givenIndex = 0;
-      const sharedResidenceTitle = group.titles.find((title) => /^(?:zu|zum)\s+/iu.test(title));
+      const sharedResidenceTitle = group.residenceSurface;
       const givenListPattern = new RegExp(`(?:${group.givenNames.map((name) => name.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')).join('|')})`, 'giu');
       const linkedGivenList = group.givenList.replace(givenListPattern, (givenName) => {
         const routeIndex = givenIndex++;

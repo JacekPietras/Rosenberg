@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { moduleUrl } from './browser-module.mjs';
 
-const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, findPersonNameMentions, personMentionClass, personRouteName } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
+const { buildSourcePersonPattern, coordinatedByNameMatches, coordinatedByNameRouteNames, findPersonNameMentions, personMentionClass, personRouteName, splitPersonNameTitles } = await import(await moduleUrl(new URL('../docs/app/data/person-name-recognition.js', import.meta.url)));
 const names = '# Men\nArnold, Arnolt\nAnna\nKonrad, Conradus\nEberhard\nEbirhart\nGeorg\nHans\nHeinrich\nHartmut\nJohann\nMargaretha\nMichael\nPeter\nWilhelm\nWiprecht\n# Women\nElisabeth, Elsbeth\nJuliane';
 const particles = 'von\nv.\nvon.\nde\nan\nvan\nzu';
 const places = [{ name: 'Rosenberg', variations: ['Rosenberg'] }, { name: 'Uissigheim', variations: ['Uissigheim', 'Ussinkeim'] }, { name: 'Lauda', variations: ['Lauda'] }, { name: 'Amberg', variations: ['Amberg'] }, { name: 'Durn', variations: ['Durn', 'Dürn'] }, { name: 'Thüngen', variations: ['Thüngen'] }, { name: 'Michelsberg', variations: ['Michelsberg'] }, { name: 'Landstein', variations: ['Landstein'] }, { name: 'Helmstadt', variations: ['Helmstadt'] }, { name: 'Pappenheim', variations: ['Pappenheim'] }, { name: 'Bartenstein', variations: ['Bartenstein'] }, { name: 'Marschalk', variations: ['Marschalk'] }];
@@ -132,7 +132,7 @@ test('does not treat a coordinated place as a title of Count Boppo von Wertheim'
     projectNames, byNames, scenarioPlaces, scenarioPattern);
   assert.equal(result.singles.length, 1);
   assert.equal(result.singles[0]?.route, 'Boppe von Wertheim');
-  assert.deepEqual(result.singles[0]?.titles, ['Graf']);
+  assert.deepEqual(result.singles[0]?.titles, ['Graf von Wertheim']);
 });
 
 test('assigns an intervening office title to Konrad without attaching it to Eberhard', () => {
@@ -293,7 +293,7 @@ test('recognizes the phrase “which knight Eberhard von Rosenberg, Vogt of Dür
   assert.equal(singles.length, 1);
   assert.equal(singles[0].text, 'knight Eberhard von Rosenberg, Vogt of Dürn');
   assert.equal(singles[0].route, 'Eberhard von Rosenberg');
-  assert.deepEqual(singles[0].titles, ['Ritter', 'Vogt zu Dürn']);
+  assert.deepEqual(singles[0].titles, ['Ritter', 'Vogt zu Durn']);
 });
 
 test('recognizes a parenthetical given-name variant and translated office title', () => {
@@ -438,7 +438,7 @@ test('routes title variants to the title-free person name', () => {
 });
 
 test('routes spelling variants to the canonical given name and by-name', () => {
-  assert.equal(personRouteName('Hainrich Marschalken zu Pappenheim', titles, connectors, particles,
+  assert.equal(personRouteName('Hainrich Marschalken von Pappenheim', titles, connectors, particles,
     projectNames, byNames), 'Heinrich Marschalk von Pappenheim');
 });
 
@@ -541,10 +541,12 @@ test('recognizes coordinated brothers under their shared by-name and inherited p
 test('recognizes a three-person Oxford-comma list with a shared Marschalk surname', () => {
   const source = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk von Pappenheim concerning';
   assert.deepEqual(coordinatedByNameRouteNames(source, titles, connectors, particles, projectNames, byNames, places), [
-    'Siegmund Marschalk von Pappenheim',
-    'Haubt Marschalk von Pappenheim',
-    'Heinrich Marschalk von Pappenheim'
+    'Siegmund Marschalk',
+    'Haubt Marschalk',
+    'Heinrich Marschalk'
   ]);
+  const [group] = coordinatedByNameMatches(source, titles, connectors, particles, projectNames, byNames, places);
+  assert.deepEqual(group.members.map((member) => member.titles), [['zu Pappenheim'], ['zu Pappenheim'], ['zu Pappenheim']]);
 });
 
 test('recognizes every person in a coordinated von Rosenberg list', () => {
@@ -645,4 +647,224 @@ test('a by-name that is also a title stays in the family name', async () => {
   assert.deepEqual(routes('Georg Voit von Rosenberg der Jüngere'), ['Georg Voit von Rosenberg']);
   assert.deepEqual(routes('Hans Voit zu Rosenberg'), ['Hans Voit von Rosenberg']);
   assert.deepEqual(routes('Arnold von Rosenberg, Vogt'), ['Arnold von Rosenberg']);
+});
+
+const rulePlaces = [
+  ...places,
+  { name: 'Würzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] },
+  { name: 'Nürnberg', variations: ['Nürnberg', 'Nuremberg'] },
+  { name: 'Hainstadt', variations: ['Hainstadt', 'Heinstadt'] },
+  { name: 'Hanau', variations: ['Hanau'] },
+  { name: 'Aisch', variations: ['Aisch'] },
+  { name: 'Rieneck', variations: ['Rieneck'] },
+  { name: 'Wertheim', variations: ['Wertheim'] },
+  { name: 'Speyer', variations: ['Speyer'] },
+  { name: 'Fulda', variations: ['Fulda'] },
+  { name: 'Ebrach', variations: ['Ebrach'] },
+  { name: 'Franken', variations: ['Franken', 'Franconia'] },
+  { name: 'Heidelberg', variations: ['Heidelberg'] },
+  { name: 'Schaumberg', variations: ['Schaumberg'] },
+  { name: 'Böhmen', variations: ['Böhmen', 'Bohemia'] },
+  { name: 'Hardegg', variations: ['Hardegg'] },
+  { name: 'Schwarzburg', variations: ['Schwarzburg'] },
+  { name: 'Brunn', variations: ['Brunn'] },
+  { name: 'Leuchtenberg', variations: ['Leuchtenberg'] },
+  { name: 'Pfalz', variations: ['Pfalz'] },
+];
+const ruleTitles = `${titles}\n${projectTitles}`;
+const splitTitles = (name) => splitPersonNameTitles(name, ruleTitles);
+const ruleNames = `${projectNames}\nLudwig\nPhilipp\nJulius\nWenzel\nThomas\nDorothea\nHiltpold\nEglolf\nEgilolf\nFriedrich`;
+const ruleByNames = `${byNames}`;
+const seatsText = await readFile(new URL('../data/title-seats.md', import.meta.url), 'utf8');
+const ruleConnectors = `${connectors}\n${seatsText}`;
+const rulePattern = buildSourcePersonPattern(ruleNames, particles, rulePlaces, ruleTitles, ruleConnectors, ruleByNames);
+const mentionsIn = (text) => {
+  const result = findPersonNameMentions(text, ruleTitles, ruleConnectors, particles, ruleNames, ruleByNames, rulePlaces, rulePattern);
+  return [...result.singles, ...result.coordinated.flatMap((group) => group.members.map((member) => ({ ...member, text: group.text })))]
+    .map(({ route, titles: found }) => ({ route, titles: found }));
+};
+const routeOf = (name) => personRouteName(name, ruleTitles, ruleConnectors, particles, ruleNames, ruleByNames, rulePlaces);
+
+test('territorial titles take the place after them, never the family name', () => {
+  for (const [text, route, found] of [
+    ['Bishop Konrad of Würzburg', 'Konrad', ['Bischof zu Würzburg']],
+    ['Konrad zu Würzburg, Bischof', 'Konrad', ['Bischof zu Würzburg']],
+    ['Johann II zu Würzburg, Bischof', 'Hans', ['Bischof zu Würzburg']],
+    ['Heinrich zu Fulda, Abt', 'Heinrich', ['Abt zu Fulda']],
+    ['Otto zu Ebrach, Abt', 'Otto', ['Abt zu Ebrach']],
+    ['Philipp zu Speyer, Bischof', 'Philipp', ['Bischof zu Speyer']],
+    ['Johann, Abt von Fulda', 'Hans', ['Abt von Fulda']],
+    ['Friedrich, Bishop of Würzburg, Duke of Franconia', 'Friedrich', ['Bischof zu Würzburg', 'Herzog zu Franken']],
+    ['Julius, Bischof zu Würzburg, Herzog zu Franken', 'Julius', ['Bischof zu Würzburg', 'Herzog zu Franken']],
+    ['Burgrave Friedrich zu Nuremberg', 'Friedrich', ['Burggraf zu Nürnberg']],
+    ['Gerhard von Schwarzburg, Bischof', 'Gerhard von Schwarzburg', ['Bischof']],
+  ]) {
+    const found2 = mentionsIn(text);
+    assert.deepEqual(found2.slice(0, 1), [{ route, titles: found }], text);
+  }
+});
+
+test('a count takes the place as family name and keeps the source particle', () => {
+  for (const [text, route, found] of [
+    ['Thomas, Graf von Rieneck', 'Thomas von Rieneck', ['Graf von Rieneck']],
+    ['Count Thomas of Rieneck', 'Thomas von Rieneck', ['Graf von Rieneck']],
+    ['Count Thomas von Rieneck', 'Thomas von Rieneck', ['Graf von Rieneck']],
+    ['Graf Thomas von Rieneck', 'Thomas von Rieneck', ['Graf von Rieneck']],
+    ['Johann, Graf zu Hardegg', 'Hans zu Hardegg', ['Graf zu Hardegg']],
+    ['Junker Eberhart, Graf von Wertheim', 'Eberhard von Wertheim', ['Junker', 'Graf von Wertheim']],
+  ]) {
+    assert.deepEqual(mentionsIn(text).slice(0, 1), [{ route, titles: found }], text);
+  }
+});
+
+test('a king keeps the realm out of the route', () => {
+  assert.deepEqual(mentionsIn('King Wenzel of Bohemia').slice(0, 1), [{ route: 'König Wenzel', titles: ['König von Böhmen'] }]);
+  assert.deepEqual(mentionsIn('King Wenzel IV of Bohemia').slice(0, 1), [{ route: 'König Wenzel', titles: ['König von Böhmen'] }]);
+});
+
+test('by-name with zu is von only for Rosenberg; other places are designations', () => {
+  assert.deepEqual(mentionsIn('Hanns Truchseß zu Aue'), [{ route: 'Hans Truchsess', titles: ['zu Aue'] }]);
+  assert.deepEqual(mentionsIn('Hans Stieber zu Aisch'), [{ route: 'Hans Stieber', titles: ['zu Aisch'] }]);
+  assert.deepEqual(mentionsIn('Hans Schenk zu Rosenberg'), [{ route: 'Hans Schenk von Rosenberg', titles: [] }]);
+  assert.equal(routeOf('Hans Schenk von Rosenberg'), 'Hans Schenk von Rosenberg');
+});
+
+test('of between a name and a place is not guessed into a particle', () => {
+  assert.equal(routeOf('Hans of Wertheim'), 'Hans of Wertheim');
+});
+
+test('an unlisted title place is a capitalized non-article word', () => {
+  for (const text of [
+    'Peter zu Rosenberg, Vitzthum zu the Bartholomew church',
+    'Peter zu Rosenberg, Domherr zu the Bartholomew church',
+  ]) {
+    const [single] = mentionsIn(text);
+    assert.equal(single.route, 'Peter zu Rosenberg', text);
+    assert.ok(single.titles.every((found) => !/\bthe\b/iu.test(found)), `${text}: ${single.titles}`);
+  }
+  assert.deepEqual(mentionsIn('Konrad von Rosenberg, Vogt zu Bergen').at(0)?.titles, ['Vogt zu Bergen']);
+});
+
+test('title places and designations use the canonical place', () => {
+  assert.deepEqual(mentionsIn('Konrad von Rosenberg, Burggraf zu Nuremberg'), [{ route: 'Konrad von Rosenberg', titles: ['Burggraf zu Nürnberg'] }]);
+  assert.deepEqual(mentionsIn('Konrad von Rosenberg zu Heinstadt'), [{ route: 'Konrad von Rosenberg', titles: ['zu Hainstadt'] }]);
+});
+
+test('trailing punctuation never becomes part of a title or name', () => {
+  assert.deepEqual(mentionsIn('Georg von Rosenberg, Amtmann zu Hanau.'), [{ route: 'Georg von Rosenberg', titles: ['Amtmann zu Hanau'] }]);
+  assert.deepEqual(mentionsIn('Hans Stieber von Aisch.'), [{ route: 'Hans Stieber von Aisch', titles: [] }]);
+  assert.equal(findPersonNameMentions('Georg von Rosenberg, Amtmann zu Hanau.', ruleTitles, ruleConnectors, particles, ruleNames,
+    ruleByNames, rulePlaces, rulePattern).singles[0].text, 'Georg von Rosenberg, Amtmann zu Hanau');
+});
+
+test('a leading title place must be a place and a route is never empty of given names', () => {
+  assert.deepEqual(mentionsIn('Abbot of St. Burkard in Würzburg'), []);
+  assert.deepEqual(mentionsIn('Count of Schaumberg. Heinrich von Rosenberg'), [{ route: 'Heinrich von Rosenberg', titles: [] }]);
+});
+
+test('a bare place surname never crosses a sentence end', () => {
+  assert.deepEqual(mentionsIn('Count Palatine Friedrich IV.   Heidelberg, October 1'), []);
+  assert.deepEqual(mentionsIn('Count Palatine Friedrich IV. Heidelberg, October 1'), []);
+  assert.deepEqual(mentionsIn('Hans II. Heidelberg'), []);
+  assert.deepEqual(mentionsIn('Hans von Rosenberg. Heidelberg lies on the Neckar'), [{ route: 'Hans von Rosenberg', titles: [] }]);
+});
+
+test('an age title and a designation are separate canonical titles', () => {
+  assert.deepEqual(mentionsIn('Eberhard von Rosenberg der Junge, called von Thüngen'),
+    [{ route: 'Eberhard von Rosenberg', titles: ['der Junge', 'genannt von Thüngen'] }]);
+});
+
+test('a lone title word after one given name is a surname', () => {
+  assert.equal(routeOf('Georg Keller'), 'Georg Keller');
+  assert.equal(routeOf('Hans Schultheiß, Schultheiß zu Würzburg'), 'Hans Schultheiß');
+  assert.deepEqual(splitTitles('Georg Keller'), { name: 'Georg Keller', titles: [] });
+});
+
+test('a title before a given name belongs to the next person in a coordinated list', () => {
+  const source = 'Eglolf and Egilolf von Rosenberg, Abbot Hiltpold';
+  const [group] = coordinatedByNameMatches(source, ruleTitles, ruleConnectors, particles, ruleNames, ruleByNames, rulePlaces);
+  assert.deepEqual(group.members, [
+    { route: 'Eglolf von Rosenberg', titles: [] },
+    { route: 'Egilolf von Rosenberg', titles: [] },
+  ]);
+  assert.deepEqual(group.titles, []);
+  assert.equal(mentionsIn(source).length, 2);
+});
+
+test('a territorial title and a place after a coordinated list belong to the last person only', () => {
+  const [group] = coordinatedByNameMatches('Elector Ludwig and Philipp zu Speyer, Bischof', ruleTitles, ruleConnectors, particles,
+    ruleNames, ruleByNames, rulePlaces);
+  assert.deepEqual(group.members, [
+    { route: 'Ludwig', titles: ['Kurfürst'] },
+    { route: 'Philipp', titles: ['Bischof zu Speyer'] },
+  ]);
+});
+
+test('a birth name becomes the route while the married designation stays a title', () => {
+  assert.deepEqual(mentionsIn('Dorothea von Wertheim, Gräfin, née von Rieneck'),
+    [{ route: 'Dorothea von Rieneck', titles: ['von Wertheim', 'Graf'] }]);
+  assert.deepEqual(mentionsIn('Elisabeth von Rosenberg, née Marschalk von Pappenheim'),
+    [{ route: 'Elisabeth Marschalk von Pappenheim', titles: ['von Rosenberg'] }]);
+});
+
+test('every trailing title is returned', () => {
+  assert.deepEqual(mentionsIn('Konrad von Rosenberg, Ritter, Vogt zu Lauda, Amtmann zu Amberg'),
+    [{ route: 'Konrad von Rosenberg', titles: ['Ritter', 'Vogt zu Lauda', 'Amtmann zu Amberg'] }]);
+});
+
+test('dictionaries are built once per argument set', () => {
+  const first = buildSourcePersonPattern(ruleNames, particles, rulePlaces, ruleTitles, ruleConnectors, ruleByNames);
+  const second = buildSourcePersonPattern(ruleNames, particles, rulePlaces, ruleTitles, ruleConnectors, ruleByNames);
+  assert.equal(first.source, second.source);
+  const started = performance.now();
+  for (let index = 0; index < 200; index += 1) routeOf('Knight Hans von Rosenberg, Vogt zu Lauda');
+  assert.ok(performance.now() - started < 1000);
+});
+
+test('a lowercase unlisted word is not a title place and non-Latin1 text does not change matches', () => {
+  assert.deepEqual(mentionsIn('Konrad von Rosenberg, Vogt zu bergen'), [{ route: 'Konrad von Rosenberg', titles: ['Vogt'] }]);
+  assert.deepEqual(mentionsIn('⁵¹ Konrad von Rosenberg, Vogt zu Lauda'), [{ route: 'Konrad von Rosenberg', titles: ['Vogt zu Lauda'] }]);
+});
+
+test('a leading territorial title takes the place after the given name', () => {
+  for (const [text, route, found] of [
+    ['Bischof Konrad von Würzburg', 'Konrad', ['Bischof von Würzburg']],
+    ['Bishop Rudolf von Würzburg', 'Rudolf', ['Bischof von Würzburg']],
+    ['Bishop Rudolf of Würzburg', 'Rudolf', ['Bischof zu Würzburg']],
+    ['Gerhard von Schwarzburg, Bischof', 'Gerhard von Schwarzburg', ['Bischof']],
+  ]) assert.deepEqual(mentionsIn(text).slice(0, 1), [{ route, titles: found }], text);
+});
+
+test('ranks never take a place', () => {
+  assert.deepEqual(mentionsIn('Albrecht von Rosenberg, Ritter zu Boxberg'),
+    [{ route: 'Albrecht von Rosenberg', titles: ['Ritter', 'zu Boxberg'] }].map((item) => ({ ...item, titles: item.titles })));
+});
+
+test('a realm title takes only a listed realm after of or von', () => {
+  const only = (text) => mentionsIn(text).slice(0, 1);
+  assert.deepEqual(only('King Wenzel of Bohemia'), [{ route: 'König Wenzel', titles: ['König von Böhmen'] }]);
+  for (const text of ['King Wenzel of Bohemian', 'King Wenzel of Atlantis']) {
+    assert.deepEqual(only(text), [{ route: 'König Wenzel', titles: ['König'] }].slice(0, 1), text);
+  }
+  assert.deepEqual(only('King Wenzel of Bohemia’s'), [{ route: 'König Wenzel', titles: ['König'] }]);
+  assert.deepEqual(only('the Roman King Hans von Neitperg and Ulrich Riederer'), [{ route: 'Hans von Neitperg', titles: [] }]);
+});
+
+test('a possessive after a realm title or name is ignored', () => {
+  assert.deepEqual(mentionsIn("King Albrecht's charter").slice(0, 1), [{ route: 'König Albrecht', titles: ['König'] }]);
+});
+
+test('after a leading title von is the office place only for a listed seat or realm', () => {
+  const only = (text) => mentionsIn(text).slice(0, 1);
+  assert.deepEqual(only('Bishop Hans von Brunn'), [{ route: 'Hans von Brunn', titles: ['Bischof'] }]);
+  assert.deepEqual(only('Bishop Konrad von Thüngen'), [{ route: 'Konrad von Thüngen', titles: ['Bischof'] }]);
+  assert.deepEqual(only('Abbess Ottilia von Rosenberg'), [{ route: 'Ottilia von Rosenberg', titles: ['Äbtissin'] }]);
+  assert.deepEqual(only('Count Palatine Wolfgang von Rosenberg'), [{ route: 'Wolfgang von Rosenberg', titles: ['Pfalzgraf'] }]);
+  assert.deepEqual(only('Landgrave Hans von Rieneck'), [{ route: 'Hans von Rieneck', titles: ['Landgraf'] }]);
+  assert.deepEqual(only('Count Palatine Otto von Pfalz'), [{ route: 'Otto', titles: ['Pfalzgraf von Pfalz'] }]);
+  assert.deepEqual(only('King Philipp von Spanien'), [{ route: 'König Philipp', titles: ['König von Spanien'] }]);
+  assert.deepEqual(only('King Philipp of Spain'), [{ route: 'König Philipp', titles: ['König von Spanien'] }]);
+  const vomPattern = buildSourcePersonPattern(ruleNames, `${particles}\nvom`, rulePlaces, ruleTitles, ruleConnectors, ruleByNames);
+  const vom = findPersonNameMentions('Landgraf Hans vom Leuchtenberg', ruleTitles, ruleConnectors, `${particles}\nvom`, ruleNames, ruleByNames, rulePlaces, vomPattern);
+  assert.deepEqual(vom.singles.map(({ route, titles: found }) => ({ route, titles: found })), [{ route: 'Hans', titles: ['Landgraf von Leuchtenberg'] }]);
 });

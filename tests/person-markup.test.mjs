@@ -40,9 +40,9 @@ test('coordinated by-name mentions link each brother to the inherited place rout
     placePattern: buildPlacePattern(places) };
   const { inlineMarkup } = createMarkupRenderer({ state });
   const rendered = inlineMarkup('Hainrich Marschalk von Pappenheim, also acting for his brothers Goerg and Chuonrat Marschalken, acknowledges that he sold the Pappenheim convent');
-  assert.match(rendered, /href="\?person=Heinrich%20Marschalk%20zu%20Pappenheim"/u);
-  assert.match(rendered, /href="\?person=Georg%20Marschalk%20zu%20Pappenheim"/u);
-  assert.match(rendered, /href="\?person=Konrad%20Marschalk%20zu%20Pappenheim"/u);
+  assert.match(rendered, /href="\?person=Heinrich%20Marschalk%20von%20Pappenheim"/u);
+  assert.match(rendered, /href="\?person=Georg%20Marschalk%20von%20Pappenheim"/u);
+  assert.match(rendered, /href="\?person=Konrad%20Marschalk%20von%20Pappenheim"/u);
 });
 
 test('does not repeat a coordinated by-name before its trailing residence title', async () => {
@@ -96,7 +96,7 @@ test('links all three names in a coordinated Marschalk list', async () => {
   const { inlineMarkup } = createMarkupRenderer({ state });
   const text = 'Chuoncz Rosenkrancz declares that he has reached an amicable settlement with Sigmund, Haubt, and Hainrich Marschalken zu Pappenheim and all the Marschalk von Pappenheim concerning';
   const rendered = inlineMarkup(text);
-  for (const route of ['Siegmund Marschalk von Pappenheim', 'Haubt Marschalk von Pappenheim', 'Heinrich Marschalk von Pappenheim']) {
+  for (const route of ['Siegmund Marschalk', 'Haubt Marschalk', 'Heinrich Marschalk']) {
     assert.ok(rendered.includes(`href="?person=${encodeURIComponent(route)}"`), route);
   }
 });

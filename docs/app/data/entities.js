@@ -1,4 +1,4 @@
-const GENERIC_BUILDING_NAMES = new Set(['abbey', 'monastery', 'burg', 'old burg', 'schloss', 'wasserschloss', 'kirche', 'evangelische kirche', 'johanniskirche', 'friedhofskapelle']);
+export const GENERIC_BUILDING_NAMES = new Set(['abbey', 'monastery', 'burg', 'old burg', 'schloss', 'wasserschloss', 'kirche', 'evangelische kirche', 'johanniskirche', 'friedhofskapelle']);
 
 export function parsePlaces(json) {
   const places = JSON.parse(json);
@@ -72,4 +72,4 @@ export function buildPersonPattern(people) {
     : [];
 }
 
-export { buildSourcePersonPattern } from './person-name-recognition.js?v=26';
+export { buildSourcePersonPattern } from './person-name-recognition.js?v=28';

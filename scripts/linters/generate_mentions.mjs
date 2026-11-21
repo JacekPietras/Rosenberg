@@ -6,18 +6,16 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import {
-  buildSourcePersonPattern, findPersonNameMentions, parsePersonNameTitles, splitPersonNameTitles,
-} from '../../docs/app/data/person-name-recognition.js';
+import { buildSourcePersonPattern, findPersonNameMentions } from '../../docs/app/data/person-name-recognition.js';
 import { parsePlaces } from '../../docs/app/data/entities.js';
-import { canonicalTitles } from './title_forms.mjs';
+import { titleForms } from './title_forms.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const check = process.argv.includes('--check');
 const read = (path) => readFile(resolve(root, path), 'utf8').catch(() => '');
 const registry = new Map(JSON.parse(await read('data/people.json')).map((person) => [person.id, person.name]));
 const titleText = [await read('data/titles-age.md'), await read('data/titles-office.md')].filter(Boolean).join('\n');
-const args = [titleText, await read('data/name-connectors.md'), await read('data/nobiliary_particles.md'),
+const args = [titleText, [await read('data/name-connectors.md'), await read('data/title-seats.md')].join('\n'), await read('data/nobiliary_particles.md'),
   await read('data/names.md'), await read('data/by-names.md'), JSON.parse(await read('data/places.json'))];
 const pattern = buildSourcePersonPattern(args[3], args[2], args[5], args[0], args[1], args[4]);
 const places = parsePlaces(await read('data/places.json'));
@@ -33,91 +31,18 @@ const placePatterns = [...placeForms].map(([form, keys]) => ({
   keys,
   pattern: new RegExp(`(?<![\\p{L}\\p{N}])${form.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s*,\s*/g, '\\s*,\\s*').replace(/\s+/g, '\\s+')}(?![\\p{L}\\p{N}])`, 'giu'),
 }));
-const knownTitles = parsePersonNameTitles(titleText).sort((left, right) => right.length - left.length);
-const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
-const leadingTitle = knownTitles.length
-  ? new RegExp(`^(${knownTitles.map(escape).join('|')})(?:\\s+(?:zu|zum|an|of)\\s+[\\p{L}][\\p{L}'’.-]*)?[\\s,;]+`, 'iu') : null;
 
 
-const ageGroups = [];
-for (const line of (await read('data/titles-age.md')).split(/\r?\n/)) {
-  if (line.trim().startsWith('#')) ageGroups.push(new Set());
-  else if (ageGroups.length) parsePersonNameTitles(line).forEach((form) => ageGroups.at(-1).add(form.toLowerCase()));
-}
-const ageOf = (titles = []) => new Set(titles.flatMap((title) => ageGroups
-  .flatMap((group, index) => (group.has(title.toLowerCase()) ? [index] : []))));
-const sameAge = (left, right) => left.size === right.size && [...left].every((index) => right.has(index));
-
-// People with the same name are one mention unless both carry different age titles.
-function mergePeople(items) {
-  const groups = new Map();
-  const others = [];
-  for (const item of items) {
-    if (item.person === undefined) { others.push(item); continue; }
-    if (!groups.has(item.person)) groups.set(item.person, []);
-    groups.get(item.person).push(item);
-  }
-  const merged = [];
-  for (const [person, list] of groups) {
-    const clusters = [];
-    const plain = [];
-    for (const item of list) {
-      const age = ageOf(item.personTitle);
-      if (!age.size) { plain.push(item); continue; }
-      const cluster = clusters.find((entry) => sameAge(entry.age, age));
-      if (cluster) cluster.titles.push(...item.personTitle);
-      else clusters.push({ age, titles: [...item.personTitle] });
-    }
-    if (!clusters.length) clusters.push({ age: new Set(), titles: [] });
-    plain.forEach((item) => clusters[0].titles.push(...(item.personTitle || [])));
-    for (const cluster of clusters) {
-      const titles = consolidateTitles(cluster.titles).sort();
-      merged.push(titles.length ? { person, personTitle: titles } : { person });
-    }
-  }
-  return [...merged, ...others];
-}
-
-// A located office title already carries the office itself. If both forms are
-// extracted from one mention ("Bishop Hans zu Würzburg"), keep the specific
-// title and omit its bare duplicate ("Bischof").
-function consolidateTitles(titles) {
-  const canonical = canonicalTitles([...new Set(titles)]).flatMap((title) => {
-    const located = title.match(/^(.*?)\s+zu\s+(.+)$/iu);
-    const isAgeTitle = located && ageGroups.some((group) => group.has(located[1].toLocaleLowerCase()));
-    return isAgeTitle ? [located[1], `zu ${located[2]}`] : [title];
-  });
-  const locatedBases = new Set(canonical.flatMap((title) => {
-    const match = title.match(/^(.*?)\s+zu\s+/iu);
-    return match ? [match[1].toLocaleLowerCase()] : [];
-  }));
-  return [...new Set(canonical.filter((title) => !locatedBases.has(title.toLocaleLowerCase())))];
-}
-
-const innerTitle = knownTitles.length
-  ? new RegExp(`(?<=\\p{L}[\\s,;]+)(${knownTitles.map(escape).join('|')})(?=[\\s,;]+(?:von|v\\.|van|de|zu|vom)\\s)`, 'giu') : null;
-const byNameForms = new Set(parsePersonNameTitles(await read('data/by-names.md').then((text) => text.split(/\r?\n/)
-  .filter((line) => !line.trim().startsWith('#')).join('\n'))).map((form) => form.toLowerCase()));
-const innerTitles = (text) => (innerTitle ? [...text.matchAll(innerTitle)].map((match) => match[1])
-  .filter((title) => !byNameForms.has(title.toLowerCase())) : []);
-
-function surfaceTitles(text) {
-  const titles = [];
-  let rest = text;
-  for (let match = leadingTitle?.exec(rest); match; match = leadingTitle.exec(rest)) {
-    titles.push(match[1]);
-    rest = rest.slice(match[0].length);
-  }
-  const trailing = splitPersonNameTitles(rest, titleText);
-  return [...titles, ...innerTitles(trailing.name ?? rest), ...trailing.titles];
-}
+// Same-route items are one mention only when their titles are compatible.
+const mergePeople = (items) => titleForms.mergePeople(items);
+const consolidateTitles = (titles) => titleForms.consolidateTitles(titles);
 
 function recognizePeople(text) {
   const { coordinated, singles } = findPersonNameMentions(text, ...args, pattern);
   const spans = [...singles, ...coordinated].map(({ start, end }) => [start, end]);
   const people = [
-    ...singles.map((item) => ({ person: item.route, titles: [...surfaceTitles(item.text), ...(item.titles || [])] })),
-    ...coordinated.flatMap((group) => group.routes.map((person) => ({ person, titles: group.titles }))),
+    ...singles.map((item) => ({ person: item.route, titles: item.titles })),
+    ...coordinated.flatMap((group) => group.members.map((member) => ({ person: member.route, titles: member.titles }))),
   ];
   return { people, spans };
 }
@@ -178,16 +103,6 @@ const factTexts = (entry) => (Array.isArray(entry.facts) ? entry.facts : [])
     : fact?.type === 'death' && typeof fact.circumstances === 'string' ? [fact.circumstances] : []));
 
 
-const titleGroups = (await read('data/titles-age.md') + '\n' + await read('data/titles-office.md')).split(/\r?\n/)
-  .filter((line) => line.trim() && !/^\s*(#|\/\/)/u.test(line)).map((line) => parsePersonNameTitles(line));
-const groupOf = new Map(titleGroups.flatMap((group) => group.map((form) => [form.toLowerCase(), group[0].toLowerCase()])));
-const canonTitle = (title) => {
-  const text = title.toLowerCase();
-  const form = [...groupOf.keys()].filter((candidate) => text === candidate || text.startsWith(`${candidate} `))
-    .sort((left, right) => right.length - left.length)[0];
-  return form ? groupOf.get(form) + text.slice(form.length) : text;
-};
-
 // People already stated by a fact (or its nested facts), with their title sets.
 function statedPeople(value, found = new Map()) {
   const add = (person, titles) => {
@@ -203,15 +118,9 @@ function statedPeople(value, found = new Map()) {
   return found;
 }
 
-// A mention is stated when a fact names the same person with titles covering its own.
+// A mention is stated when a fact names the same person with compatible titles covering its own.
 function isStated(item, stated) {
-  const own = new Set((item.personTitle || []).map(canonTitle));
-  const age = ageOf(item.personTitle);
-  return (stated.get(item.person) || []).some((titles) => {
-    const have = new Set(titles.map(canonTitle));
-    const haveAge = ageOf(titles);
-    return [...own].every((title) => have.has(title)) && [...age].every((index) => haveAge.has(index));
-  });
+  return (stated.get(item.person) || []).some((titles) => titleForms.covers(titles, item.personTitle || []));
 }
 
 function regenerate(value, file, counter, issuance = []) {

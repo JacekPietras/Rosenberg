@@ -5,6 +5,8 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { resolve, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { splitPersonNameTitles } from '../../docs/app/data/person-name-recognition.js';
+import { acceptTitleSplit } from './name_guard.mjs';
+import { titleForms } from './title_forms.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const apply = !process.argv.includes('--check');
@@ -35,7 +37,7 @@ function visit(value, file, pointer, changes) {
           for (const [nameField, titleField] of [['person', 'personTitle'], ['of', 'ofTitle']]) {
             if (typeof fact[nameField] !== 'string') continue;
             const split = splitPersonNameTitles(fact[nameField], titleText);
-            if (!split.titles.length) continue;
+            if (!split.titles.length || !acceptTitleSplit(fact[nameField], split)) continue;
             changes.push({ fact, nameField, titleField, pointer: `${pointer}/${key}/${index}`,
               original: fact[nameField], ...split });
           }
@@ -59,7 +61,7 @@ for (const file of (await jsonFiles(resolve(root, 'data'))).filter((path) => !pa
     console.log(`${relative(root, file)}#${change.pointer}/${change.nameField}: ${JSON.stringify(change.original)} -> ${JSON.stringify(change.name)}; ${change.titleField} += ${JSON.stringify(moved)}`);
     if (apply) {
       change.fact[change.nameField] = change.name;
-      change.fact[change.titleField] = [...existing, ...moved];
+      change.fact[change.titleField] = titleForms.canonicalTitles([...existing, ...moved]);
     }
     findings += 1;
   }

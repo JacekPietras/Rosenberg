@@ -3,12 +3,13 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { personRouteName } from '../../docs/app/data/person-name-recognition.js';
+import { acceptNormalizedName } from './name_guard.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const read = (path) => readFile(resolve(root, path), 'utf8');
 const [names, byNames, particles, connectors, places, ageTitles, officeTitles, registry] = await Promise.all([
   read('data/names.md'), read('data/by-names.md'), read('data/nobiliary_particles.md'),
-  read('data/name-connectors.md'), read('data/places.json'), read('data/titles-age.md'),
+  Promise.all(['data/name-connectors.md', 'data/title-seats.md'].map(read)).then((texts) => texts.join('\n')), read('data/places.json'), read('data/titles-age.md'),
   read('data/titles-office.md'), read('data/people.json'),
 ]);
 const titleText = `${ageTitles}\n${officeTitles}`;
@@ -38,7 +39,7 @@ function visit(value, file, pointer, changes) {
             const name = fact[field];
             if (typeof name !== 'string' || knownIds.has(name) || name.includes('_')) continue;
             const canonical = personRouteName(name, ...args);
-            if (canonical && canonical !== name) {
+            if (canonical && canonical !== name && acceptNormalizedName(name, canonical)) {
               changes.push({ fact, field, pointer: `${pointer}/${key}/${index}`, name, canonical });
             }
           }
