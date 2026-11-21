@@ -865,10 +865,10 @@
     },
     {
       "german": "1359 empfangen Eberhard und Johannes v. R. Lehen in Bofsheim auf Verzicht Johannes' von Helmſtadt. 1359 empfängt Engelhard v. R., Edelknecht, Lehen in Rugheim; 1361 iſt er Ritter.",
-      "english": "In 1359, Eberhard von Rosenberg and Hans von Rosenberg received fiefs at Bofsheim after Hans von Helmstadt’s renunciation. In the same year, Engelhard von Rosenberg, Edelknecht, received fiefs at Rugheim; he was made a Ritter in 1361.",
+      "english": "In 1359, Eberhard von Rosenberg and Hans von Rosenberg received fiefs at Bofsheim after Hans von Helmstatt’s renunciation. In the same year, Engelhard von Rosenberg, Edelknecht, received fiefs at Rugheim; he was made a Ritter in 1361.",
       "mention": [
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstatt"
         },
         {
           "person": "Hans von Rosenberg"
@@ -2723,10 +2723,10 @@
     },
     {
       "german": "1454 iſt Elſe v. R. des Hans von Helmſtadt Ehefrau.",
-      "english": "In 1454, Elisabeth von Rosenberg was the wife of Hans von Helmstadt.",
+      "english": "In 1454, Elisabeth von Rosenberg was the wife of Hans von Helmstatt.",
       "facts": [
         {
-          "person": "Hans von Helmstadt",
+          "person": "Hans von Helmstatt",
           "type": "spouse",
           "of": "Elisabeth von Rosenberg",
           "date": "1454"

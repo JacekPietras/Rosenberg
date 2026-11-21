@@ -2066,15 +2066,15 @@
     },
     {
       "german": "*) Zu Rosenberg selbst war etwas später ein anderes Geschlecht noch in Mitbesitz gekommen; 1377 heißt Diether von Helmstadt alias dictus de Rosenberg (Mone XIII, 430). 1379 lebt Peter von Helmstadt gen. v. Rosenberg, Sohn der Anna v. Mure ges. zu Helmstadt und 1374 hat dieser Peter v. Helmstadt gen. v. Rosenberg mit seinem Bruder Raban Güter vertauscht, wobei siegelt Kunz Münch v. Rosenberg. 1396 ist Hans von Helmstadt gen. v. Rosenberg wieder sesshaft zu Helmstadt, Mone XV, 186, in einer Urkunde von 1412 aber heißt er doch wieder Hans v. Helmstadt genannt von Rosenberg.",
-      "english": "*) In Rosenberg itself, a different family had also come into co-ownership a bit later; in 1377, Diether von Helmstadt, also known as von Rosenberg (Mone XIII, 430), is mentioned. In 1379, Peter von Helmstadt, known as von Rosenberg, son of Anna von Mure, residing in Helmstadt, is mentioned, and in 1374, this Peter von Helmstadt, known as von Rosenberg, exchanged properties with his brother Raban, sealed by Kunz Mönch von Rosenberg. In 1396, Hans von Helmstadt, known as von Rosenberg, was again residing in Helmstadt (Mone XV, 186), but in a document from 1412, he is again referred to as Hans von Helmstadt, called von Rosenberg",
+      "english": "*) In Rosenberg itself, a different family had also come into co-ownership a bit later; in 1377, Diether von Helmstatt, also known as von Rosenberg (Mone XIII, 430), is mentioned. In 1379, Peter von Helmstatt, known as von Rosenberg, son of Anna von Mure, residing in Helmstadt, is mentioned, and in 1374, this Peter von Helmstatt, known as von Rosenberg, exchanged properties with his brother Raban, sealed by Kunz Mönch von Rosenberg. In 1396, Hans von Helmstatt, known as von Rosenberg, was again residing in Helmstadt (Mone XV, 186), but in a document from 1412, he is again referred to as Hans von Helmstatt, called von Rosenberg",
       "mention": [
         {
-          "place": "helmstadt"
+          "place": "helmstatt"
         }
       ],
       "facts": [
         {
-          "person": "Diether von Helmstadt",
+          "person": "Diether von Helmstatt",
           "personTitle": [
             "dictus de Rosenberg"
           ],
@@ -2082,7 +2082,7 @@
           "date": "1377"
         },
         {
-          "person": "Peter von Helmstadt",
+          "person": "Peter von Helmstatt",
           "personTitle": [
             "genannt von Rosenberg"
           ],
@@ -2093,23 +2093,23 @@
         {
           "person": "Anna von Mure",
           "type": "parent",
-          "of": "Peter von Helmstadt",
+          "of": "Peter von Helmstatt",
           "ofTitle": [
             "genannt von Rosenberg"
           ],
           "date": "1379"
         },
         {
-          "person": "Peter von Helmstadt",
+          "person": "Peter von Helmstatt",
           "personTitle": [
             "genannt von Rosenberg"
           ],
           "type": "sibling",
-          "of": "Raban von Helmstadt",
+          "of": "Raban von Helmstatt",
           "date": "1374"
         },
         {
-          "person": "Peter von Helmstadt",
+          "person": "Peter von Helmstatt",
           "personTitle": [
             "genannt von Rosenberg"
           ],
@@ -2124,7 +2124,7 @@
           "date": "1374"
         },
         {
-          "person": "Hans von Helmstadt",
+          "person": "Hans von Helmstatt",
           "personTitle": [
             "genannt von Rosenberg"
           ],
@@ -2136,10 +2136,10 @@
     },
     {
       "german": "Eberhard und (sein Bruder) Joannes de R. empfangen 1359 ad resignationem Johannis de Helmstat villam et judicium in Boßfheim c. s. pert. sicut ipse id tenuit et possedit.",
-      "english": "Eberhard and (his brother) Hans von Rosenberg received in 1359, upon the resignation of Hans von Helmstadt, the village and court in Boßfheim with its appurtenances, just as he had held and possessed it.",
+      "english": "Eberhard and (his brother) Hans von Rosenberg received in 1359, upon the resignation of Hans von Helmstatt, the village and court in Boßfheim with its appurtenances, just as he had held and possessed it.",
       "mention": [
         {
-          "person": "Hans von Helmstadt"
+          "person": "Hans von Helmstatt"
         }
       ],
       "facts": [
@@ -3686,10 +3686,10 @@
     },
     {
       "german": "1454 Else v. R. ux. des Hans v. Helmstadt; Mone VI, 331.",
-      "english": "1454: Elisabeth von Rosenberg, wife of Hans von Helmstadt; Mone VI, 331.",
+      "english": "1454: Elisabeth von Rosenberg, wife of Hans von Helmstatt; Mone VI, 331.",
       "facts": [
         {
-          "person": "Hans von Helmstadt",
+          "person": "Hans von Helmstatt",
           "type": "spouse",
           "of": "Elisabeth von Rosenberg",
           "date": "1454"

@@ -99,7 +99,7 @@ Pankraz
 Pauls, Paul, Paulus
 Peter, Petr, Petrus
 Philipp, Philips
-Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus, Ras, Rasen
+Raban, Rabanus, Raben, Rafan, Ras, Rasen, Raven, Rhaban, Rhabanus
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
@@ -109,7 +109,6 @@ Rüdiger, Rüdger
 Sebastian, Bastian
 Seibott
 Senant, Synant
-Wirich, Weyreich, Weyrich, Weirich
 Siboto
 Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit, Syfrit
 Siegmund, Siegemund, Sigismund, Sigmund
@@ -130,6 +129,7 @@ Wernher, Werner
 Wernlein, Wirdlin
 Wilhelm, Vilém, Wilhem
 Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
+Wirich, Weirich, Weyreich, Weyrich
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
 Wolfgang
