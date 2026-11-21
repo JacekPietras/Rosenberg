@@ -868,6 +868,9 @@
       "english": "In 1359, Eberhard von Rosenberg and Hans von Rosenberg received fiefs at Bofsheim after Hans von Helmstatt’s renunciation. In the same year, Engelhard von Rosenberg, Edelknecht, received fiefs at Rugheim; he was made a Ritter in 1361.",
       "mention": [
         {
+          "place": "boffsheim"
+        },
+        {
           "person": "Hans von Helmstatt"
         },
         {
@@ -1656,6 +1659,9 @@
       "english": "In 1401, Engelhard von Rosenberg received from Würzburg his share of Rosenberg, Bofsheim, Sindolsheim, Getzigheim, and Schweinburg. Hans von Rosenberg received the same fiefs.",
       "mention": [
         {
+          "place": "boffsheim"
+        },
+        {
           "place": "rosenberg-town"
         },
         {
@@ -1810,6 +1816,9 @@
       "german": "1407, feria tertia post palmarum, belehnt Biſchof Johann von Würzburg auf Bitten Eberhards v. R., des ältern, deſſen Sohn Ulrich mit den Lehen: Eberhards v. R. Theil an Bretzigheim, Bofsheim, Mekmül, Roſenberg und Burkheim. Dieſer Ulrich empfängt dieſe Lehen noch 1418; ſein Sohn Anſelm empfängt ſie 1421.",
       "english": "On the Tuesday after Palm Sunday in 1407, at Eberhard von Rosenberg der Ältere’s request, Bishop Hans zu Würzburg enfeoffed his son Ulrich with Eberhard’s share in Bretzingen, Bofsheim, Meckmühl, Rosenberg, and Burkheim. Ulrich received these fiefs again in 1418; his son Anselm received them in 1421.",
       "mention": [
+        {
+          "place": "boffsheim"
+        },
         {
           "place": "bretzingen"
         },
@@ -2131,6 +2140,11 @@
     {
       "german": "1421 empfängt Conz v. R., Hanſen Sohn, Güter zu Bofsheim ꝛe. 1422 iſt Kunne v. R., Lupolds v. Seldeneck Ehefrau.",
       "english": "In 1421, Kunz von Rosenberg, son of Hans, received property at Bofsheim and elsewhere. In 1422, Kunne von Rosenberg was the wife of Leopold von Seldeneck.",
+      "mention": [
+        {
+          "place": "boffsheim"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",
@@ -2392,6 +2406,9 @@
       "english": "In 1437, Konrad von Rosenberg was a Freischöffe (lay judge of the Westphalian Vehmic courts). He was probably the same man who, as a Ritter residing at Gnötzheim, received the tithe at Brechtheim as a Würzburg fief in 1439. In 1440, he stood surety for Count Palatine Ludwig and received fiefs at Rosenberg, Buch, Bremen, Bofsheim, and elsewhere.",
       "mention": [
         {
+          "place": "boffsheim"
+        },
+        {
           "place": "buch"
         },
         {
@@ -2595,6 +2612,9 @@
       "german": "1448 empfing er ſeinen Theil an Bofsheim, Bretzigheim, Brunnacker, Zimmern. 1443—1454 iſt er im Pfandbeſitz der Stadt Rötingen, von wo aus er 1454 einen Anſchlag gegen zur Meſſe nach Frankfurt reiſende Kaufleute macht. Im ſelben Jahr erhängte er ſich, und Würzburg zog ſeine Hinterlaſſenſchaft ein. Seiner Tochter Kunigunde, die ſpäter einen Hans Beſſerer heirathete, nahmen ſich ihre Vettern Georg Arnold und Friedrich v. R. an und verlangten Entſchädigung, die ihr auch mit 7500 fl. zu Theil wurde.",
       "english": "In 1448, Konrad received his share of Bofsheim, Bretzingen, Brunnacker, and Zimmern. From 1443 to 1454, he held the town of Röttingen in pledge. From there, in 1454, he organized an ambush against merchants traveling to the fair in Frankfurt. That same year he hanged himself, and Würzburg confiscated his estate. His daughter Kunigunde later married a Hans Besserer. Her cousins Georg Arnold von Rosenberg and Friedrich von Rosenberg took her under their protection and demanded compensation for her; she received 7,500 florins.",
       "mention": [
+        {
+          "place": "boffsheim"
+        },
         {
           "place": "bretzingen"
         },

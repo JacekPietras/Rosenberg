@@ -198,12 +198,14 @@
   {
     "id": "boffsheim",
     "variations": [
+      "Bofsheim",
+      "Bofftzen",
       "Boffsheim"
     ],
     "category": "village",
-    "lat": 49.4701713,
-    "lon": 9.4135756,
-    "description": "The von Rosenbergs held substantial property and tithe rights in Boffsheim, as well as patronage rights over the village church."
+    "lat": 49.471811,
+    "lon": 9.411914,
+    "description": "The von Rosenbergs held substantial property and tithe rights in Bofsheim, as well as patronage rights over the village church. LEO-BW describes the village and the Rosenbergs' share of its lordship in the 14th century.."
   },
   {
     "variations": [
@@ -1600,7 +1602,8 @@
   {
     "id": "schweigern",
     "variations": [
-      "Schweigern"
+      "Schweigern",
+      "Sweygern"
     ],
     "category": "village",
     "lat": 49.4903925,
@@ -1930,6 +1933,7 @@
       "Wehrkirche, Angeltürn",
       "Angerthal",
       "Angelthor",
+      "Angeltal",
       "Angeldarm",
       "Angelthorn"
     ],
