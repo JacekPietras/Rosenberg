@@ -1,9 +1,6 @@
 {
   "date": "1528-03-24",
-  "label": [
-    "to review",
-    "Vestenberg"
-  ],
+  "label": "Vestenberg",
   "entries": [
     {
       "source": "StAWü, Standbuch 1011, fol. 403v; Hohe Registratur des Lorenz Fries, entry 3765",
@@ -12,12 +9,10 @@
       "english": "Caspar von Vestenberg zu Rosenberg zu Rügland sold Konrad von Thüngen, Bischof zu Würzburg, two thirds of one twelfth of the wine and grain tithe at Iphofen for 150 gulden, subject to redemption on the feast of St Peter’s Chair with a quarter-year’s notice. Lorenz Fries compares the shares with those of Leonhard von Vestenberg and mentions Johann zu Schlüsselfeld and Konrad zu Breitenlohe. This is a register excerpt, not a complete transcription of the deed.",
       "mention": [
         {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
           "person": "Caspar von Vestenberg",
           "personTitle": [
-            "zu Rosenberg"
+            "zu Rosenberg",
+            "zu Rügland"
           ]
         },
         {
