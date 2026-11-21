@@ -16,7 +16,7 @@ Bartholomäus, Barthel, Barthelme, Barthelmä, Bartholomaeus, Bartholomä, Barth
 Batt
 Bernger, Berngern
 Bernhard
-Berthold, Bertold, Bertolt, Betzmann
+Berthold, Bertold, Bertolt, Betzmann, Bertholt
 Boppe, Bopp, Boppo, Poppo
 Burkhard, Burchard, Burkard
 Busso
@@ -118,7 +118,7 @@ Stephan, Stefan
 Steyn, Stein
 Thame
 Thomas, Thoma, Thoman
-Ulrich, Ulricus, Vlreich
+Ulrich, Ulricus, Vlreich, Vlricus
 Urban
 Valentin
 Veit

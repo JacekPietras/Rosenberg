@@ -6,7 +6,7 @@
       "source": "ISG FFM, S1-1004-05, 406",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10564670",
       "german": "Hans von Rosemberg reversiert, daß er durch seinen Sohn Jorgen (dem er \"macht brieffe\" erteilt hat) von Erzbischof Bertholt von Mainz den Hof zu Bucheym als Mannlehen empfangen und dieser den Lehenseid darüber geschworen hat. Vorbesitzer waren Fritz von Dhurn genannt Rieperg, dann die Eltern des A. Die Lehenurkunde vom selben Tag ist inseriert.\n\nSiegler: A. (fehlt).",
-      "english": "Hans von Rosenberg issues a deed of homage stating that, through his son Jorgen (to whom he has granted “power to issue letters”), he received the court at Bucheym from Archbishop Bertholt of Mainz as a fief held by knight service, and that his son swore the oath of fealty for it. The previous holders were Fritz von Dhurn, called Rieperg, and then the grantor’s parents. The fief charter from the same day is inserted.\n\nSeal: the grantor (missing).",
+      "english": "Hans von Rosenberg issues a deed of homage stating that, through his son Jorgen von Rosemberg (to whom he has granted “power to issue letters”), he received the court at Bucheym from Archbishop Bertholt zu Mainz as a fief held by knight service, and that his son swore the oath of fealty for it. The previous holders were Fritz von Dhurn, called Rieperg, and then the grantor’s parents. The fief charter from the same day is inserted.\n\nSeal: the grantor (missing).",
       "mention": [
         {
           "place": "mainz"
@@ -16,15 +16,15 @@
         {
           "person": "Hans von Rosenberg",
           "type": "parent",
-          "of": "Georg"
+          "of": "Georg von Rosemberg"
         },
         {
           "person": "Hans von Rosenberg",
           "type": "generic",
-          "content": "received the court at Bucheym from Archbishop Bertholt von Mainz as a Mannlehen through his son Jorgen."
+          "content": "received the court at Bucheym from Archbishop Bertholt von Mainz as a Mannlehen through his son Jorgen von Rosemberg."
         },
         {
-          "person": "Georg",
+          "person": "Georg von Rosemberg",
           "type": "generic",
           "content": "swore the oath of fealty for the fief of the court at Bucheym."
         }

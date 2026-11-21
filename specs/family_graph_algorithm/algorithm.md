@@ -17,7 +17,6 @@ the `tree.json` format is in [`json-formats.md`](../json-formats.md).
 | `data/kinship.md` | Tree positions allowed and excluded by kinship terms |
 | `data/places.json` | Place variants for titles and context |
 | `data/matching.json` | All weights, thresholds and limits |
-| `data/distinctFamilies.md` | Case-insensitive document labels excluded from collection |
 
 The output is one evidence view that includes guesses: nodes (identities),
 relationships, comparisons with their features and blocks, and `possiblySame`
@@ -26,9 +25,10 @@ only merged and ambiguous comparisons; the rest go to the gitignored
 `.cache/tree-debug.json`.
 
 Before validation or collection, the loader skips every document JSON marked
-`"deleted": true` and every document whose top-level `label` contains a
-case-insensitive match from `data/distinctFamilies.md`. Skipped documents add
-no facts, guesses, or prose observations to the reconstruction.
+`"deleted": true` and every document whose top-level `label` does not include
+`Franken` (case-insensitive). Other labels may also be present. Books, notes,
+and images are all collected regardless of labels. Skipped documents add no
+facts, guesses, or prose observations to the reconstruction.
 
 Contextual people and places come from the generated `mention` lists
 (see `specs/json-formats.md`): an entry's list covers its `english` text and the

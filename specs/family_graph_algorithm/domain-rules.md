@@ -6,6 +6,9 @@ files describe how they are met. When a rule changes, change it here first.
 
 ## Sources and evidence
 
+- Only non-deleted documents labeled `Franken` are used; additional labels do
+  not affect inclusion. All books, notes, and images are used regardless of
+  labels.
 - Documents and images are primary evidence; books and notes retell them and
   count half as much. A guess is a fact with lower weight, never a special case.
 - An unmarked mention means the person was alive at the fact's date. A deceased

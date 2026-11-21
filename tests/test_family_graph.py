@@ -53,7 +53,29 @@ class FamilyGraphTests(unittest.TestCase):
     def write(self, path, value):
         path = self.root / path
         path.parent.mkdir(parents=True, exist_ok=True)
+        if path.as_posix().find('/data/documents/') >= 0 and isinstance(value, dict) and 'label' not in value:
+            value = {**value, 'label': 'Franken'}
         path.write_text(value if isinstance(value, str) else json.dumps(value, ensure_ascii=False), encoding='utf-8')
+
+    def test_source_selection_requires_franken_only_for_documents(self):
+        self.write('data/people.json', [person('a', 'Alex')])
+        self.write('data/documents/included.json', {'label': ['Franken', 'Schenk'], 'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'included'}]})
+        self.write('data/documents/no-label.json', {'label': [], 'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'excluded'}]})
+        self.write('data/documents/other-label.json', {'label': 'Schenk', 'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'excluded'}]})
+        self.write('data/documents/deleted.json', {'label': 'Franken', 'deleted': True, 'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'excluded'}]})
+        self.write('data/books/book.json', {'label': 'Schenk', 'entries': [{'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'book', 'date': '1393'}]}]})
+        self.write('data/notes/note.json', {'label': 'Schenk', 'entries': [{'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'note', 'date': '1393'}]}]})
+        self.write('data/images/image.json', {'label': 'Schenk', 'entries': [{'date': '1393',
+                    'facts': [{'type': 'generic', 'person': 'Alex', 'content': 'image', 'date': '1393'}]}]})
+        inputs = load_inputs(self.root, validate=False)
+        self.assertEqual({'included', 'book', 'note', 'image'},
+                         {assertion.original['content'] for assertion in inputs.assertions})
 
     def inputs(self, people=None, facts=None, guesses=None):
         self.write('data/people.json', people or [person('a', 'Alex'), person('b', 'Bea'), person('c', 'Chris')])
