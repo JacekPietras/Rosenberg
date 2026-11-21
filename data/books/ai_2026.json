@@ -237,6 +237,32 @@
       "english": "Gozwin von Rosenberg [1175]\nKonrad von Rosenberg [1229]\nHartlieb von Rosenberg [1290]"
     },
     {
+      "title": "Rosenberger, Styria",
+      "label": "Styrian",
+      "img": [
+        {
+          "src": "https://wappenwiki.org/images/c/cb/Orsini-Rosenberg_Ancient.svg",
+          "name": "Ancient Orsini-Rosenberg arms"
+        },
+        {
+          "src": "https://wappenwiki.org/images/c/c6/Von_Graben.svg",
+          "name": "Von Graben arms"
+        }
+      ],
+      "english": "Recorded: [1301-1409]"
+    },
+    {
+      "english": "Rosenberger bearers are recorded in Styria and around Cilli (Celje). Wulfing I was associated with Rosenberg near St. Martin; Hermann served the Stubenberg family at Gutenberg. Hermann and Wulfing used seals with a five-petalled rose. The relationship between these bearers and other Styrian Rosenbergers is not established; a separate line including Rudlein used different arms."
+    },
+    {
+      "subheading": "Estates",
+      "english": "Rosenberg near St. Martin, northwest of Celje [1306-1329]\nGutenberg [1314]\nMaribor [1380]"
+    },
+    {
+      "subheading": "Members",
+      "english": "Hartnid (Hertel) der Rosenberger [1301-1331]\nWulfing I der Rosenberger [1306-1329]\nHerman von Rosenberg, castellan at Gutenberg [1314-1331]\nChunz ab dem Rosenberge [1331-1332]\nRudlein der Rosenberger and his sister Margaretha [1367-1383]\nHertel der Rosenberger [1380]\nHermann der Rosenberger [1380-1384]\nChristoph Rosenberger and Dorothea von Klöch [1402]\nWulfing II Rosenberger [1402-1409]"
+    },
+    {
       "title": "Grabner, Lower Austria",
       "label": "Grabner",
       "english": "A Lower Austrian branch of the Lords of Graben, called Grabner zu Rosenberg from 1487 and Grabner zu Rosenburg by the late 16th century. The biographies describe the early family as modest lower nobility; Christoph Grabner expanded and consolidated its estates, establishing the house’s wealth. His son Sebastian I inherited his estates, and his grandson Georg became one of the family’s leading landholders, jointly holding Pottenbrunn with his half-brother Josaphat from 1535 to 1562, as the Grabner rose to prominence among Protestant nobles in the 16th century. The claimed descent from the Lords of Graben is presented by the biographers as probable, not certain.",
@@ -396,7 +422,7 @@
       "label": [
         "Styrian"
       ],
-      "english": "A vanished castle at Rožni vrh, north of Celje. A 1937 local gazetteer recorded that the castle had stood in the village and that no trace remained. A later parish inventory lists a Rosenberg tower and a separate manor above Rožni vrh. [Local gazetteer](https://www.sistory.si/cdn/publikacije/1-1000/762/1937_Krajevni_leksikon_dravske_banovine.pdf) · [Parish inventory](https://www2.arnes.si/~rzjtopl/ziz/Ssmartn-Ssmih.pdf)"
+      "english": "A vanished castle at Rožni vrh, north of Celje. A 1937 local gazetteer recorded that the castle had stood in the village and that no trace remained. A later parish inventory lists a Rosenberg tower and a separate manor above Rožni vrh."
     },
     {
       "title": "Rosenberg, Graz, Austria",
@@ -405,7 +431,7 @@
         "Grabner",
         "Styrian"
       ],
-      "english": "The Rosenberg is a hill in Graz near Alt-Grabenhofen, the seat associated with the family later known as Orsini-Rosenberg. An account of the family connects its Rosenberg name, attested from 1322, with the hill. The evidence cited here does not establish a separate castle called Rosenberg on the hill. [Family account](https://austria-forum.org/af/AustriaWiki/Orsini-Rosenberg) · [History of the Rosenhain](https://www.historischerverein-stmk.at/wp-content/uploads/Z_Jg45_Adalbert-SIKORA-Der-Rosenhain-in-Graz.pdf)"
+      "english": "The Rosenberg is a hill in Graz near Alt-Grabenhofen, the seat associated with the family later known as Orsini-Rosenberg. An account of the family connects its Rosenberg name, attested from 1322, with the hill. The evidence cited here does not establish a separate castle called Rosenberg on the hill."
     },
     {
       "title": "Rossberg / Schenkenschloss, Würzburg",
@@ -422,14 +448,14 @@
       "label": [
         "Aachen"
       ],
-      "english": "Historic fortified-style farmstead, rather than a castle, in Horbach north-west of Aachen. First documented on 26 May 1274, when the knight Johannes de Porcheto acquired it; it was a fief of the archbishop of Cologne and from 1361 lay within the Jülich lordship of Heyden. The four-sided farmyard was formerly almost surrounded by water. The present complex incorporates older fabric, with the main portal dated 1784, a former barn dated 1825, and a stable bearing 1914 anchors. The estate name’s origin is unknown. Restored, it has housed the Aachen Chamber of Crafts’ Academy for Craft Design since 1994. [History](https://www.gut-rosenberg.de/downloads/akademie-fuer-handwerksdesign-geschichte-gutshof-gut-rosenberg-6332%2C632.pdf) · [Academy](https://www.gut-rosenberg.de/artikel/gut-rosenberg-6332%2C471%2C1186.html)"
+      "english": "Historic fortified-style farmstead, rather than a castle, in Horbach north-west of Aachen. First documented on 26 May 1274, when the knight Johannes de Porcheto acquired it; it was a fief of the archbishop of Cologne and from 1361 lay within the Jülich lordship of Heyden. The four-sided farmyard was formerly almost surrounded by water. The present complex incorporates older fabric, with the main portal dated 1784, a former barn dated 1825, and a stable bearing 1914 anchors. The estate name’s origin is unknown. Restored, it has housed the Aachen Chamber of Crafts’ Academy for Craft Design since 1994."
     },
     {
       "img": "img/Aachen_gut_rosenberg.jpg"
     },
     {
       "title": "Rosenberg Castle (Rosenburg am Kamp), Lower Austria",
-      "english": "Castle above the Kamp at the Taffa confluence in the Kamptal, near Horn; it was called Rosenberg until the 16th century. The local ministerial family is documented from 1175 to 1290. In 1290 Hartlieb von Rosenberg witnessed a charter at Altenburg; his low standing in the witness list has been taken to suggest that his family may already have lost the castle. In 1345 a charter was issued at Schloss Rosenberch in which Wulfing von Stallegg renounced certain revenues, showing the castle remained in use under the Stalleggers. In 1433, after a dispute with Jörg Grünpeck, Duke Albrecht V awarded Rosenburg to Wolfgang von Winden; the castle was reportedly occupied and damaged by Hussite forces that year. Johann von Winden owned it in 1467. Kaspar von Rogendorf acquired it around 1475–1478, and the Rogendorfs expanded the castle and built its late Gothic chapel, probably consecrated in 1484. That year the Abbot of Altenburg reportedly brought the monastery’s valuables there for safekeeping. In 1486 the Rogendorfs made substantial payments to King Matthias Corvinus to avert devastation and plundering. The Grabner brothers acquired the castle in 1487 and made the estate a major Protestant center in Lower Austria. Sebastian Grabner transformed the medieval fortress into a Renaissance palace in 1593–1597. After changing hands in the 17th century, the Hoyos family acquired the castle and lordship in 1681. Fires and neglect caused partial decay; restoration between 1859 and 1889 gave the complex much of its present character. [Local chronicle](https://www.rosenburg-mold.at/Chronik_Rosenburg) · [EBIDAT castle database](https://www.ms-visucom.de/cgi-bin/ebidat.pl?id=1928) · [Burgen-Austria history](https://www.burgen-austria.com/archive.php?id=375)",
+      "english": "Castle above the Kamp at the Taffa confluence in the Kamptal, near Horn; it was called Rosenberg until the 16th century. The local ministerial family is documented from 1175 to 1290. In 1290 Hartlieb von Rosenberg witnessed a charter at Altenburg; his low standing in the witness list has been taken to suggest that his family may already have lost the castle. In 1345 a charter was issued at Schloss Rosenberch in which Wulfing von Stallegg renounced certain revenues, showing the castle remained in use under the Stalleggers. In 1433, after a dispute with Jörg Grünpeck, Duke Albrecht V awarded Rosenburg to Wolfgang von Winden; the castle was reportedly occupied and damaged by Hussite forces that year. Johann von Winden owned it in 1467. Kaspar von Rogendorf acquired it around 1475–1478, and the Rogendorfs expanded the castle and built its late Gothic chapel, probably consecrated in 1484. That year the Abbot of Altenburg reportedly brought the monastery’s valuables there for safekeeping. In 1486 the Rogendorfs made substantial payments to King Matthias Corvinus to avert devastation and plundering. The Grabner brothers acquired the castle in 1487 and made the estate a major Protestant center in Lower Austria. Sebastian Grabner transformed the medieval fortress into a Renaissance palace in 1593–1597. After changing hands in the 17th century, the Hoyos family acquired the castle and lordship in 1681. Fires and neglect caused partial decay; restoration between 1859 and 1889 gave the complex much of its present character.",
       "label": [
         "Kamptal",
         "Grabner"
