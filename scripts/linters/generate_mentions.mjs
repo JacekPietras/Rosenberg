@@ -6,6 +6,8 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { relative, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { availableParallelism } from 'node:os';
+import { Worker, isMainThread, parentPort, workerData } from 'node:worker_threads';
 import { buildSourcePersonPattern, findPersonNameMentions } from '../../docs/app/data/person-name-recognition.js';
 import { parsePlaces } from '../../docs/app/data/entities.js';
 import { titleForms } from './title_forms.mjs';
@@ -163,12 +165,40 @@ function regenerate(value, file, counter, issuance = []) {
   });
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) await main();
+if (!isMainThread && workerData?.mentionFiles) {
+  parentPort.postMessage(await processFiles(workerData.mentionFiles));
+} else if (isMainThread && process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await main();
+}
 
 async function main() {
-const counter = { mentions: 0, files: 0, stale: 0 };
-for (const file of (await jsonFiles(resolve(root, 'data')))
-  .filter((path) => !/\/(tree|people|places|matching)\.json$/.test(path)).sort()) {
+const files = (await jsonFiles(resolve(root, 'data')))
+  .filter((path) => !/\/(tree|people|places|matching)\.json$/.test(path)).sort();
+const count = Math.min(4, availableParallelism(), files.length);
+const batches = Array.from({ length: count }, () => []);
+files.forEach((file, index) => batches[index % count].push(file));
+const results = await Promise.all(batches.map((mentionFiles) => new Promise((resolve, reject) => {
+  const worker = new Worker(new URL(import.meta.url), { workerData: { mentionFiles } });
+  worker.once('message', resolve);
+  worker.once('error', reject);
+  worker.once('exit', (code) => { if (code !== 0) reject(new Error(`Mention worker exited with code ${code}`)); });
+})));
+const counter = results.reduce((total, result) => ({
+  files: total.files + result.files, mentions: total.mentions + result.mentions,
+  stale: total.stale + result.stale,
+}), { files: 0, mentions: 0, stale: 0 });
+for (const file of results.flatMap((result) => result.changed).sort()) {
+  console.log(`${check ? 'Stale mentions' : 'Updated mentions'}: ${relative(root, file)}`);
+}
+if (counter.stale > 0) {
+  console.log(`Checked mentions: ${counter.files} files, ${counter.mentions} mentions, ${counter.stale} ${check ? 'stale' : 'updated'}.`);
+}
+process.exitCode = check && counter.stale ? 1 : 0;
+}
+
+async function processFiles(files) {
+const counter = { mentions: 0, files: 0, stale: 0, changed: [] };
+for (const file of files) {
   const original = await readFile(file, 'utf8');
   let data;
   try { data = JSON.parse(original); } catch { continue; }
@@ -177,11 +207,8 @@ for (const file of (await jsonFiles(resolve(root, 'data')))
   counter.files += 1;
   if (updated === original) continue;
   counter.stale += 1;
-  console.log(`${check ? 'Stale mentions' : 'Updated mentions'}: ${relative(root, file)}`);
+  counter.changed.push(file);
   if (!check) await writeFile(file, updated, 'utf8');
 }
-if (counter.stale > 0) {
-  console.log(`Checked mentions: ${counter.files} files, ${counter.mentions} mentions, ${counter.stale} ${check ? 'stale' : 'updated'}.`);
-}
-process.exitCode = check && counter.stale ? 1 : 0;
+return counter;
 }
