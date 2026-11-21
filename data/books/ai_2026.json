@@ -400,7 +400,11 @@
     },
     {
       "title": "Rosenbach, Breuberg and Franconia",
-      "label": "Rosenbach-Breuberg"
+      "label": "Rosenbach",
+      "img": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Rosenbachsiebmacher.JPG",
+        "name": "Coat of arms of the Rosenbach family"
+      }
     },
     {
       "english": "Lower-noble family originating in the lordship of Breuberg, with its ancestral seat at Rosenbach near Hainstadt. Its members held estates in the Odenwald and Franconia, belonged to the imperial knightly cantons of Odenwald and Baunach, and served in the Würzburg cathedral chapter and the Order of St John."
@@ -428,6 +432,28 @@
     {
       "subheading": "Members",
       "english": "Nicolaus von Rosenberg [1362-1381]\nGeirrart van Steinstroissen, his brother [1362]"
+    },
+    {
+      "title": "Vestenberg, Rügland and Rosenberg",
+      "label": "Vestenberg",
+      "english": "Recorded: [1298-1584]",
+      "img": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Vestenberg-Scheibler395ps.jpg",
+          "name": "Coat of arms of the von Vestenberg family"
+        }
+      ]
+    },
+    {
+      "english": "A branch of the Franconian Vestenberg family held Rosenberg Castle and the nearby seat at Rügland, west of Ansbach. The castle database EBIDAT reports Kraft von Vestenberg zu Rosenberg in 1325 and places the reunification of the Rügland and Rosenberg seats after the extinction of a Rügland line in 1437. These reports do not establish the identity of every person named von Vestenberg in the region. The family’s connection to the other Rosenberg houses described here has not been established."
+    },
+    {
+      "subheading": "Estates",
+      "english": "Rügland and Rosenberg [1298-1584]\nBorsbach (farm and Langwiese, exchanged) [1470]\nBerglein (property) [1485]\nSimmersdorf (tithe, sold) [1516]\nIphofen (share of wine and grain tithe, sold with right of redemption) [1528]\n\nHans von Vestenberg sold Rügland and Rosenberg to Ernst von Crailsheim in 1584. The municipal chronicle gives 3 September, while the municipality’s castle page gives 20 April; the relationship between the dates remains unclear."
+    },
+    {
+      "subheading": "Members",
+      "english": "Kraft von Vestenberg zu Rosenberg [1325]\nKraft von Vestenberg zu Rosenberg [1470]\nKaspar von Vestenberg zu Rügland und Rosenberg [1485]\nKaspar von Vestenberg zu Rügland [1516]\nKaspar von Vestenberg zu Rosenberg und Rügland [1528]\nHans Kraft von Vestenberg [1548]\nHans von Vestenberg [1584]\n\nThe repeated name Kraft does not by itself establish a relationship between the men. The municipality describes Kraft von Vestenberg zu Rosenberg und Elpersdorf, Ritter, as the last of the Rosenberg line in 1586; this is a secondary account and its relationship to the 1584 sale requires further research."
     },
     {
       "title": "Castles named Rosenberg"
@@ -567,7 +593,7 @@
     {
       "title": "Burg Rosenbach, Hainstadt, Hesse",
       "label": [
-        "Rosenbach-Breuberg"
+        "Rosenbach"
       ],
       "english": "Former ancestral seat of the noble von Rosenbach family in the hamlet of Rosenbach near Hainstadt, now part of Breuberg. The hamlet belonged to the lordship of Breuberg and later included an estate and a mill. Details of the castle's appearance and fate are uncertain."
     },
