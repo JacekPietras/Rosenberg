@@ -73,7 +73,7 @@ function recognizePlaces(text, spans) {
   return [...found].sort();
 }
 
-export function recognizeMentions(text, { placesOnly = false } = {}) {
+export function recognizeMentions(text, { placesOnly = false, stated = new Map() } = {}) {
   if (!pattern || typeof text !== 'string' || !text.trim()) return [];
   const plain = text.replace(/[\[\]]/g, ' ');
   const { people, spans } = placesOnly ? { people: [], spans: [] } : recognizePeople(plain);
@@ -82,7 +82,8 @@ export function recognizeMentions(text, { placesOnly = false } = {}) {
       ? { person, personTitle: consolidateTitles(titles).sort() } : { person })),
     ...recognizePlaces(plain, spans).map((place) => ({ place })),
   ];
-  const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));
+  const remaining = items.filter((item) => item.person === undefined || !isStated(item, stated));
+  const unique = new Map(mergePeople(remaining).map((item) => [JSON.stringify(item), item]));
   const name = (item) => item.person ?? item.place;
   return [...unique.values()].sort((left, right) => name(left).localeCompare(name(right))
     || JSON.stringify(left).localeCompare(JSON.stringify(right)));
@@ -135,10 +136,10 @@ function regenerate(value, file, counter, issuance = []) {
   const isEntry = !isDocument && (hasEnglish || Array.isArray(value.facts) || Array.isArray(value.guesses));
   if (isEntry) {
     const texts = [...(hasEnglish ? [value.english] : []), ...factTexts(value)];
-    const items = [...texts.flatMap((text) => recognizeMentions(text)), ...issuance];
+    const stated = statedPeople(value.facts ?? (value.type ? value : null));
+    const items = [...texts.flatMap((text) => recognizeMentions(text, { stated })), ...issuance];
     const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));
     const name = (item) => item.person ?? item.place;
-    const stated = statedPeople(value.facts ?? (value.type ? value : null));
     const mention = [...unique.values()]
       .filter((item) => item.person === undefined || !isStated(item, stated))
       .sort((left, right) => name(left).localeCompare(name(right))

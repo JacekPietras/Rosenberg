@@ -34,3 +34,11 @@ test('a bishop and an abbot of the same name are not merged', () => {
   assert.equal(found.length, 2);
   assert.equal(found.every((item) => item.personTitle.length === 1), true);
 });
+
+test('removes fact-backed occurrences before merging same-name titles', () => {
+  const stated = new Map([['Eberhard von Rosenberg', [['Vogt zu Dürn'], ['genannt von Zimmern'], ['der Jüngere']]]]);
+  assert.deepEqual(recognizeMentions(
+    'Lord Eberhard von Rosenberg, Vogt of Dürn, Eberhard von Rosenberg, called von Zimmern',
+    { stated },
+  ), []);
+});
