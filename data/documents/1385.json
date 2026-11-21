@@ -31,6 +31,15 @@
           "type": "generic",
           "content": "was in dispute with Hans Pfahl over rents from a farm at Rosenberg."
         }
+      ],
+      "guesses": [
+        {
+          "person": "Hans Pahl von Grünsfeld",
+          "personDeceased": true,
+          "type": "parent",
+          "of": "Hans Pahl",
+          "date": "1385"
+        }
       ]
     }
   ]

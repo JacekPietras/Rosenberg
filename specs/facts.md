@@ -128,8 +128,14 @@ it a `generic` guess, never a `parent` fact.
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
 Erligheim; documents a direct interaction with them (relative, witness, surety,
 arbitrator, transaction partner, other participant); or references Boxberg,
-Wölchingen, Uissigheim, Erligheim, Rosenberg, or Bartenstein. Keep relevant
-property and transaction facts even when they are not genealogical.
+Wölchingen, Uissigheim, Erligheim, Rosenberg, or Bartenstein. A person the
+source explicitly identifies as a relative of a target-family member remains
+relevant even when they bear another name or no family name. Also keep an
+explicit kinship fact about a named relative of a non-family participant when
+that participant has a direct role in a relevant target-family event and the
+source gives the relationship in that event. Do not infer family membership
+from the relationship or extend relevance through further unmentioned
+relatives. Keep relevant property and transaction facts even when they are not genealogical.
 
 A person documented as born into a target family remains relevant when later
 sources use a married name or another designation. Establish the identification
