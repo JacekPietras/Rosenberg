@@ -78,6 +78,7 @@ Kilian
 Konrad, Chonradus, Chunrad, Chunrado, Chunradus, Chunrat, Chuonrad, Chuonradus, Chuonrat, Chvnradus, Connrad, Connrat, Conrad, Conrade, Conradi, Conrado, Conrads, Conradt, Conradts, Conradus, Conrat, Conrath, Conratten, Cunrad, Cunraden, Cunradt, Cunradus, Cunrat, Cunrath, Cunreth, Cuonradus, Cvnrad
 Kraft, Krafto
 Kuno
+Hartnid, Hertneid
 Kunz, Chuntz, Chuntze, Chunz, Concz, Concze, Conntz, Conntzen, Contz, Contze, Conz, Conze, Cuncz, Cuncze, Cunntz, Cuntcz, Cuntz, Cuntze, Cuntzen, Cunz, Guntz, Koncze, Kontz, Konz, Konze, Kuncz, Kuncze, Kunczen, Kuntz, Kuntze, Kunze // are shortened versions of Konrad, but not used as it\! [1401 March 5]
 Kurt
 Leonhard, Lenhart, Leonardus, Leonhardus, Leonhart, Lienhart, Linhard, Linhart
