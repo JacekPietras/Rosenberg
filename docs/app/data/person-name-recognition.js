@@ -218,7 +218,7 @@ function composeSourceSource(d) {
   const trailingTitles = hasTitles ? `(?:[\\s,;]+${titleTail})*` : '';
   const namingConnector = alt.connector ? `(?:\\s+(?:${alt.connector}))?` : '';
   const placeNote = '(?:\\s*\\(-?[\\p{L}\\p{N}]+-?\\))?';
-  const placeClause = `${place}(?:\\s+(?:zu|zum|an)\\s+${place})?`;
+  const placeClause = `${place}(?:\\s+(?:zu|zum|an)\\s+${place})*`;
   const designation = alt.connector
     ? `(?:[\\s,;]+(?:${alt.connector})[\\s,;]+${particle}\\s+${placeClause})?` : '';
   const birth = alt.birth

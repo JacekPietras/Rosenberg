@@ -670,6 +670,7 @@ const rulePlaces = [
   { name: 'Brunn', variations: ['Brunn'] },
   { name: 'Leuchtenberg', variations: ['Leuchtenberg'] },
   { name: 'Pfalz', variations: ['Pfalz'] },
+  { name: 'Vestenberg', variations: ['Vestenberg'] },
 ];
 const ruleTitles = `${titles}\n${projectTitles}`;
 const splitTitles = (name) => splitPersonNameTitles(name, ruleTitles);
@@ -838,6 +839,12 @@ test('a leading territorial title takes the place after the given name', () => {
 test('ranks never take a place', () => {
   assert.deepEqual(mentionsIn('Albrecht von Rosenberg, Ritter zu Boxberg'),
     [{ route: 'Albrecht von Rosenberg', titles: ['Ritter', 'zu Boxberg'] }].map((item) => ({ ...item, titles: item.titles })));
+});
+
+test('recognizes two trailing zu-place titles', () => {
+  assert.deepEqual(mentionsIn('Caspar von Vestenberg zu Rügland zu Rosenberg received'), [
+    { route: 'Caspar von Vestenberg', titles: ['zu Rügland', 'zu Rosenberg'] },
+  ]);
 });
 
 test('a realm title takes only a listed realm after of or von', () => {
