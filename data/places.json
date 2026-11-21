@@ -1863,6 +1863,13 @@
     "showOnMap": false
   },
   {
+    "id": "reifenberg",
+    "variations": [
+      "Reifenberg"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "vestenberg",
     "variations": [
       "Vestenberg"

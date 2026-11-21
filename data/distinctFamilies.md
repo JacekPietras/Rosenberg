@@ -20,3 +20,4 @@ orsini
 styrian
 vestenberg
 rosenbach
+rosenegg
