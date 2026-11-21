@@ -12,7 +12,7 @@
         {
           "person": "Konrad",
           "personTitle": [
-            "genannt Rüd"
+            "genannt Rüd zu Starkenburg"
           ]
         },
         {
@@ -22,6 +22,9 @@
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "zu Dürn"
+          ],
           "type": "generic",
           "content": "was present for the accounts of Engelhard, the Mainz cellarer at Amorbach, as an official in Dürn."
         }
