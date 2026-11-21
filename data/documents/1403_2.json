@@ -1,10 +1,6 @@
 {
   "date": "1403",
-  "label": [
-    "to review",
-    "NOW",
-    "Proposed: Unrelated"
-  ],
+  "label": "Unrelated",
   "research": "Classification rests on the full transcription of the Erich von Hoya letter of credence, not only the archive regest. The letter names 'Johanne Rosenberge mynem voghede' as bearer and Erich, Graf von Hoya, as sender; the back note reads 'Erich Graf v. Hoya an domprovst Gerhard: Beglaubigung für den Voyt Johann Rosenberg'. The setting is the Minden/Münster feud correspondence of AA 0030 Nr. 39 (Lower Saxony/Westphalia). Nothing in it ties the Vogt to any family in data/books/ai_2026.json: no 'von', no estate, relative, seal or place of the Franken (Bauland/Odenwald), Schenk, Mönch, Sulzbach, Czechia or other listed families. The Franken Hans von Rosenberg, Ritter, of the same years (1401-10-03.json, 1402-11-29.json, 1403-06-16.json, 1404-01-19.json) acts in Franconia for the Nuremberg burgraves and the Roman king; identity with the Hoya Vogt would rest on the name alone and is not supported. No other record in data/documents names Johann Rosenberg as Vogt of Hoya (Hoya hits are only 1537_3.json, 1537_7.json, 1544_4.json, about Counts Johann and Jobst of Hoya). No web search was done. 'Unrelated' means no listed family is substantively concerned; the proposal is tentative and could change if a Lower Saxon or Westphalian Rosenberg link is found.",
   "transcribed": true,
   "entries": [
