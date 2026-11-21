@@ -31,7 +31,7 @@ Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
 Marggraf, Marggrafen, Marggrave, Marggraven
 Abt, Abbot
 Äbtissin, Aebtissin, Äbtissen, abbatissa, Abbess
-Herzog, Duke
+Herzog, Duke, Herczog
 Kurfürst, Kurfürsten, Churfürst, Churfürsten, Kurfuerst, Churfuerst, Elector
 
 // family titles

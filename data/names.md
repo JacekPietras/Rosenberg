@@ -99,7 +99,7 @@ Pankraz
 Pauls, Paul, Paulus
 Peter, Petr, Petrus
 Philipp, Philips
-Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus
+Raban, Rabanus, Raben, Rafan, Raven, Rhaban, Rhabanus, Ras, Rasen
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
@@ -109,6 +109,7 @@ Rüdiger, Rüdger
 Sebastian, Bastian
 Seibott
 Senant, Synant
+Wirich, Weyreich, Weyrich, Weirich
 Siboto
 Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit, Syfrit
 Siegmund, Siegemund, Sigismund, Sigmund

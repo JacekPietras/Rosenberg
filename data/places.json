@@ -781,11 +781,11 @@
     "id": "heidelberg"
   },
   {
-    "id": "helmstadt",
+    "id": "helmstatt",
     "variations": [
+      "Helmstatt",
       "Helmstadt",
-      "Helmstat",
-      "Helmstatt"
+      "Helmstat"
     ],
     "showOnMap": false
   },
@@ -2073,9 +2073,27 @@
     "showOnMap": false
   },
   {
+    "id": "hürnheim",
+    "variations": [
+      "Hürnheim",
+      "Hunhem"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "leyen",
     "variations": [
       "Leyen"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "treuchtlingen",
+    "variations": [
+      "Trawtlingen",
+      "Treuchtlingen",
+      "Truchtlingen",
+      "Treuchtling"
     ],
     "showOnMap": false
   },
