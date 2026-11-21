@@ -1,5 +1,6 @@
 {
   "date": "1456",
+  "deleted": true,
   "entries": [
     {
       "source": [
@@ -30,6 +31,5 @@
         }
       ]
     }
-  ],
-  "deleted": true
+  ]
 }
