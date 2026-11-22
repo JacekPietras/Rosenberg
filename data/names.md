@@ -54,7 +54,6 @@ Gozwin, Goczwin, Godezwin
 Götz, Gocze, Goczen, Goetz, Gotze, Gotzen, Gotzze, Götzze
 Hank
 Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
-Hansolf
 Hartlieb
 Hartmann
 Hartmut
@@ -140,7 +139,7 @@ Wolfgang
 Wolfram, Wolframus
 Wulfing
 Yttel
-Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph, Hansolf
+Zaisolph, Hansolf, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph
 Zeisel
 
 # Women
