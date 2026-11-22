@@ -11,16 +11,16 @@
       "url": "https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf",
       "german": "Georg von Rosenberg verkauft dem Kurfürsten mehrere Güter, dagegen dieser ihm das Schloß Winzingen einräumt, um es als ein mit 10,250 fl. ablösbares Mannlehen zu besitzen. (1544.)",
       "english": "Georg von Rosenberg sells several properties to the Elector, who in return grants him Schloss Winzingen as a male fief redeemable for 10,250 florins. (1544.)",
+      "mention": [
+        {
+          "place": "burg-winzingen"
+        }
+      ],
       "facts": [
         {
           "person": "Georg von Rosenberg",
           "type": "generic",
           "content": "conveyed several properties to Ludwig, Kurfürst von der Pfalz, in return for Burg Winzingen as a redeemable Mannlehen."
-        }
-      ],
-      "mention": [
-        {
-          "place": "burg-winzingen"
         }
       ]
     }

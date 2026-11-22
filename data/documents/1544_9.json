@@ -11,28 +11,6 @@
       "url": "https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf",
       "german": "Die Ablösungssumme des Schlosses Winzingen wird dem Georg von Rosenberg auf 7500 fl. herabgesetzt, mit der Bedingung, daß diese Einlösung nicht während seiner, seiner Ehefrau und seines Sohnes Michael Lebenszeit stattfinden darf.\n\nDie Zubehörden bestehen in Folgendem: 2 Weinberge unter und hinter dem Schlosse am Berge, die Solz genannt, welche die Haardter gegen die Kost in der Frohnde bauen müssen, 9 M. Weinberge hart am Schlosse gelegen, die bisher um ⅓ des Ertrags verpachtet waren, die Binsenwiese und etwa 24 Morgen Aecker im Hänloch, ferner eine jährliche Gülte von 74 Pfund Oel in Gimmeldingen und Königsbach fällig, das in der Frohnde zu liefernde Brenn- und Wingertsholz, das Holzrecht im Deidesheimer Walde, dem Kastanienwald unterhalb des Schlosses, jährlich 2 bis 3 M. Früchte tragend, die Fischerei im Gimmeldinger Bächel und bei Speyerdorf, endlich 5 Fuder Wein zu Wachenheim, 214 M. Korn, 20 M. Spelz und 280 M. Hafer zu Lambsheim, zuletzt noch 10 Gänse, 14 Capaunen und 56 Hühner, welche die Stadt Neustadt liefern muß.",
       "english": "The redemption price of Schloss Winzingen is reduced to 7,500 florins for Georg von Rosenberg, on condition that it cannot be redeemed during the lives of Georg, his wife, and his son Michael.\n\nThe appurtenances consist of two vineyards called the Solz below and behind the castle on the hill, which the people of Haardt must cultivate as compulsory labor in return for food; nine Morgen of vineyards close to the castle, previously leased for one third of the yield; the Binsenwiese and about 24 Morgen of fields in the Hänloch; an annual rent of 74 pounds of oil due at Gimmeldingen and Königsbach; firewood and vineyard wood to be delivered as compulsory labor; wood rights in the Deidesheim forest; the chestnut wood below the castle, producing two to three Malter of fruit annually; fishing in the Gimmeldingen stream and near Speyerdorf; five Fuder of wine at Wachenheim; 214 Malter of grain, 20 of spelt and 280 of oats at Lambsheim; and finally ten geese, fourteen capons and 56 chickens to be supplied by the town of Neustadt.",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "parent",
-          "of": "Michael von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "received a reduction of the redemption price for Burg Winzingen to 7,500 florins, with redemption barred during the lifetimes of himself, his wife, and his son Michael."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "held the Solz vineyards, adjoining vineyards previously leased for a share of their yield, the Binsenwiese, fields in the Hänloch, and the chestnut wood below Burg Winzingen as part of the fief. The fief also carried wood rights in the forest of Deidesheim and fishing rights in the Gimmeldingen stream and near Speyerdorf."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was entitled under the Winzingen fief to oil dues from Gimmeldingen and Königsbach an der Weinstraße, wine from Wachenheim an der Weinstraße, grain from Lambsheim, and poultry from Neustadt an der Weinstraße. Compulsory labor covered deliveries of firewood and vineyard wood and cultivation of the Solz vineyards by the inhabitants of Haardt in return for food."
-        }
-      ],
       "mention": [
         {
           "place": "burg-winzingen"
@@ -60,6 +38,28 @@
         },
         {
           "place": "wachenheim-an-der-weinstrasse"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "parent",
+          "of": "Michael von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "received a reduction of the redemption price for Burg Winzingen to 7,500 florins, with redemption barred during the lifetimes of himself, his wife, and his son Michael."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "held the Solz vineyards, adjoining vineyards previously leased for a share of their yield, the Binsenwiese, fields in the Hänloch, and the chestnut wood below Burg Winzingen as part of the fief. The fief also carried wood rights in the forest of Deidesheim and fishing rights in the Gimmeldingen stream and near Speyerdorf."
+        },
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was entitled under the Winzingen fief to oil dues from Gimmeldingen and Königsbach an der Weinstraße, wine from Wachenheim an der Weinstraße, grain from Lambsheim, and poultry from Neustadt an der Weinstraße. Compulsory labor covered deliveries of firewood and vineyard wood and cultivation of the Solz vineyards by the inhabitants of Haardt in return for food."
         }
       ]
     }
