@@ -530,6 +530,10 @@ def clean_facts(path, validator):
             for field in ('facts', 'guesses'):
                 for fact in value.get(field, []) if isinstance(value.get(field), list) else []:
                     if isinstance(fact, dict):
+                        if (fact.get('date') == inherited and inherited is not MISSING
+                                and 'date' in fact):
+                            del fact['date']
+                            print(f'{path}#/{field}: removed redundant fact date')
                         if sort_document_titles:
                             for title_field in ('personTitle', 'ofTitle'):
                                 titles = fact.get(title_field)
