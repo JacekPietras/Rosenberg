@@ -3,6 +3,60 @@
   "label": "Franken",
   "entries": [
     {
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 4018",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1767868",
+      "german": "Konrad von Rosenberg, Vicedom zu Amberg, bekennt, dass Pfalzgraf Ruprecht d. Ä. ihm um 810 Gulden das Haus Minneberg unter Vorbehalt der Wiederlösung versetzt hat.",
+      "english": "Konrad von Rosenberg, Vicedom zu Amberg, acknowledges that Count Palatine Rupert the Elder has pledged to him the house of Minneburg for 810 gulden, subject to the right of redemption.",
+      "mention": [
+        {
+          "place": "minneburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "received the house Minneburg as a redeemable pledge from Count Palatine Ruprecht der Ältere."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001767868%2F04_0001767868_0001_4-1767868-1.jpg",
+          "seals": [
+            {
+              "person": "vitztum_zu_Heidelberg",
+              "position": "0.3688,0.8554",
+              "size": 0.12700000000000003,
+              "width": 0.18,
+              "wideningRotation": -6,
+              "rotation": -13.1,
+              "type": "swans"
+            }
+          ],
+          "regions": [
+            {
+              "x": 0.1971,
+              "y": 0.1477,
+              "width": 0.6655,
+              "height": 0.4482,
+              "name": "text"
+            }
+          ]
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001767868%2F04_0001767868_0002_4-1767868-2.jpg",
+          "deleted": true
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001767868%2F04_0001767868_0003_4-1767868-3.jpg",
+          "deleted": true
+        }
+      ]
+    },
+    {
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 464,156v. — Gegenbrief d. d. juli 24. Or. Karlsr. G. L. A. — Vgl. Widder I,421.",
       "url": "https://digi.ub.uni-heidelberg.de/diglit/winkelmann1894/0254",
       "german": "Ruprecht verpfändet Conrad von Rosenberg, vitztum zu Heidelberg, das haus Minneberg, als es Ulrich Landschad inne gehabt hat, für 810 florentiner gulden.",
