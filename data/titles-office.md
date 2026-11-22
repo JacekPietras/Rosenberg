@@ -12,6 +12,7 @@ Schultheiß, Schultheiss, scultetus
 Presbyter
 Baron
 Komtur
+Deutschmeister, DM, D.M.
 
 // ranks
 Ritter, Ritters, miles, milites, Knight

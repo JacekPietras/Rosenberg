@@ -12,7 +12,10 @@
       "english": "Walter von Cronberg, Administrator of the High Mastership in Prussia and Master of the Teutonic Order in German and Italian lands, certifies that the hereditary rights as well as the bailiwick, lordship, and jurisdiction over the Üttingshof (hoff Uttingen) near Dainbach (Deynbach), which had previously been held by the Amt Neuhaus (Neuenhaus), have been transferred for 580 gulden to Nikolaus Vehe, Hospital Master of the Teutonic Order at Mergentheim. The deceased Dietrich von Cleen, Master of the Teutonic Order in German and Italian lands, had purchased the hereditary rights from Markus Ziegler and his wife Margarete, and the guardianship, sovereignty, and jurisdiction over the aforementioned farm from Thomas von Rosenberg, whose deceased father Arnold von Rosenberg had been awarded these rights by a judgment of the Royal Chamber Court against the deceased Hartmann von Stockheim, Deutschmeister.\n\nDuration: June 25, 1537 (in the afternoon after St. John the Baptist's day)\n\nSealer: Walter von Cronberg",
       "mention": [
         {
-          "person": "Hartmann von Stockheim"
+          "person": "Hartmann von Stockheim",
+          "personTitle": [
+            "Deutschmeister"
+          ]
         },
         {
           "place": "neuhaus"
