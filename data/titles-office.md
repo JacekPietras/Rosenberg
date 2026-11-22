@@ -34,7 +34,8 @@ Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
 Marggraf, Marggrafen, Marggrave, Marggraven
 Abt, Abbot
 Propst, Probst, Praepositus, Provost
-Domdekan, Domdechant, Domdecan, decanus
+Dompropst
+Domdekan, Domdechant, Domdecan, decanus, Dean
 Papst, Pope
 Äbtissin, Aebtissin, Äbtissen, abbatissa, Abbess
 Herzog, Duke, Herczog
