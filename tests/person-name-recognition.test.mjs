@@ -771,6 +771,20 @@ test('a bare place surname never crosses a sentence end', () => {
   assert.deepEqual(mentionsIn('Hans von Rosenberg. Heidelberg lies on the Neckar'), [{ route: 'Hans von Rosenberg', titles: [] }]);
 });
 
+test('recognizes a title after a bare place surname', () => {
+  const scenarioPlaces = [{ name: 'Rosenberg', variations: ['Rosenberg', 'Rosenberger'] },
+    { name: 'Oggersheim', variations: ['Oggersheim'] }];
+  const scenarioTitles = `${titles}\nSchultheiß`;
+  const sourcePattern = buildSourcePersonPattern(names, particles, scenarioPlaces, scenarioTitles, connectors, byNames);
+  const text = 'friend Michael Rosenberger, Schultheiß zu Oggersheim and son-in-law';
+  const found = findPersonNameMentions(text, scenarioTitles, connectors, particles, names, byNames, scenarioPlaces, sourcePattern);
+  assert.deepEqual(found.singles.map(({ text, route, titles }) => ({ text, route, titles })), [{
+    text: 'Michael Rosenberger, Schultheiß zu Oggersheim',
+    route: 'Michael Rosenberg',
+    titles: ['Schultheiß zu Oggersheim'],
+  }]);
+});
+
 test('an age title and a designation are separate canonical titles', () => {
   assert.deepEqual(mentionsIn('Eberhard von Rosenberg der Junge, called von Thüngen'),
     [{ route: 'Eberhard von Rosenberg', titles: ['der Junge', 'genannt von Thüngen'] }]);

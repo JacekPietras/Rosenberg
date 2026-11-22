@@ -228,7 +228,7 @@ function composeSourceSource(d) {
     ? `,?\\s+(?:${alt.byName})${N}(?:\\s+${particle}\\s+${place})?(?:\\s+(?:zu|zum)\\s+${placeAny})?${placeNote}${trailingTitles}`
     : never;
   const familySurname = `[\\s,]+(?:${particle}|von\\s+(?:und|u\\.|and)\\s+zu)\\s+${placeClause}${placeNote}${trailingTitles}${designation}(?:${birth})?`;
-  const barePlace = `(?<!\\.)(?:,\\s|\\s)${place}(?:${birth})?`;
+  const barePlace = `(?<!\\.)(?:,\\s|\\s)${place}${trailingTitles}(?:${birth})?`;
   const surname = `(?:${byNameSurname}|${familySurname}|${birth}|${barePlace})`;
 
   const full = `${leadingTitles}${leadingConnector}${names}${nameNote}(?:${ordinal})?${innerTitles}${namingConnector}${surname}${N}`;
