@@ -1,16 +1,19 @@
 {
   "date": "1494-03-29",
-  "label": "Franken",
+  "label": "Mainz",
   "transcribed": true,
   "entries": [
     {
       "source": "Die Inschriften der Stadt Mainz von frühmittelalterlicher Zeit bis 1650 (Die deutschen Inschriften, Band 2: Heidelberger Reihe, Band 2), Nr. 9",
       "url": "https://digi.hadw-bw.de/view/di002/0505/image,info",
-      "german": "St. Agnes Grabstein der Ottilia Rosenberg † 29. III. 1494\n`Anno Dni MCCCCXCI11I. IV Kal. Apr. 0 Referenda Mater et Domina OTILIA Rosenberg, Abbatissa huius Cenobii, cuius anima requiescat in pace.`\nAm 29. März 1494 starb die ehrwürdige Mutter und Frau Ottilia Rosenberg, Äbtissin dieses Klosters.",
+      "german": "St. Agnes Grabstein der Ottilia Rosenberg † 29. III. 1494\n`Anno Dni MCCCCXCIIII. IV Kal. Apr. 0 Referenda Mater et Domina OTILIA Rosenberg, Abbatissa huius Cenobii, cuius anima requiescat in pace.`\nAm 29. März 1494 starb die ehrwürdige Mutter und Frau Ottilia Rosenberg, Äbtissin dieses Klosters.",
       "english": "St. Agnes: Gravestone of Ottilia Rosenberg, who died on 29 March 1494.\nIn the year of the Lord 1494, on the fourth day before the Kalends of April [29 March], the reverend mother and lady OTILIA Rosenberg, abbess of this convent, whose soul may rest in peace.\nOn 29 March 1494 the venerable mother and lady Ottilia Rosenberg, abbess of this convent, died.",
       "mention": [
         {
-          "person": "Ottilia Rosenberg"
+          "person": "Ottilia Rosenberg",
+          "personTitle": [
+            "Äbtissin"
+          ]
         }
       ]
     }
