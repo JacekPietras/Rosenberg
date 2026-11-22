@@ -1,13 +1,18 @@
 {
   "date": "1371-07-24",
   "label": "Franken",
+  "transcribed": true,
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 4018",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1767868",
-      "german": "Konrad von Rosenberg, Vicedom zu Amberg, bekennt, dass Pfalzgraf Ruprecht d. Ä. ihm um 810 Gulden das Haus Minneberg unter Vorbehalt der Wiederlösung versetzt hat.",
-      "english": "Konrad von Rosenberg, Vicedom zu Amberg, acknowledges that Count Palatine Rupert the Elder has pledged to him the house of Minneburg for 810 gulden, subject to the right of redemption.",
+      "summary": "Konrad von Rosenberg, Vicedom zu Amberg, bekennt, dass Pfalzgraf Ruprecht d. Ä. ihm um 810 Gulden das Haus Minneberg unter Vorbehalt der Wiederlösung versetzt hat.",
+      "german": "Ich Conrad von Rosenberg vitztum zu Amberg bekennen und dun kunt offenbar mit disem brif fur\nmich und alle myn erben daz der durchluchtiste hochgeborn furste her Ruprecht der elter pfaltzgrave by\nRyn des heiligen Romischen richs obrist druchsesz und hertzog in Beyern myn lieber gnediger herre mir\nversetzit hat Mynnenberg daz hus mit allen rechten und zugehorunge als er ez innegehabt hat\nfur achthundert und zehen cleyn gulden von Florentze und wann er oder sin erben mir oder\nmynen erben die furgenanten achthundert und zehen cleyn gulden geben und bezalt hant so sollen ich\noder myn erben yme oder sinen erben daz furgenant hus Mynnenberg mit allen rechten und zuge-\nhorunge als ez hie furbenant und beschriben ist lediclichen und los ane allen furzog und hindernisse\nwidergeben und antwurten ane alle geverde und argeliste Ez ist auch also geredt daz Mynnenberg\ndaz hus unsers furgenanten herren hertzog Ruprechts des eltern und aller siner erben offen hus sin sal\nwider allermenglichen nymans usgenomen ane alle geverde Alle dise furgeschriben stucke und artikel\nund ir iclichen besunder globen ich Conrad von Rosenberg ritter furgenant fur mich und alle myn erben\nmit guten truwen an eidis stad veste und stete zu halten ane alle geverde und argeliste Des zu\norkund geben ich Conrad von Rosenberg furgenant fur mich und alle myn erben dem obgenanten myme\nherren hertzog Ruprecht dem eltern und sinen erben disen brif versigelt mit myme anhangenden\ningesigel Ich han auch gebeden Hannes vom Hirszhorn ritter mynen lieben oheim daz er\nzu gezugnisse aller obgeschriben stucke sin ingesigel by daz myn an disen brif gehangen hat\nUnd ich Hannes vom Hirszhorn ritter bekenne daz ich durch bede willen Conrads von Rosenberg\nfurgenant zu gezugnisse aller obgeschriben stucke myn ingesigel by daz sin an disen brif ge-\nhangen han Geben zu Heidelberg an sant Jacobs abend des heiligen aposteln nach Cristi\ngeburte drutzehenhundert jar und in dem eynen und siebentzigisten jar",
+      "english": "I, Konrad von Rosenberg, Vizedom zu Amberg, acknowledge and make known publicly with this letter for myself and all my heirs that the most illustrious, high-born prince, Lord Ruprecht der Ältere, Count Palatine by the Rhine, Arch-Steward (Truchsess) of the Holy Roman Empire and Duke in Bavaria, my dear gracious lord, has pledged to me Minneburg, the castle, with all rights and appurtenances, as he has held it, for eight hundred and ten small florins of Florence. And when he or his heirs have given and paid the aforesaid eight hundred and ten small florins to me or my heirs, I or my heirs shall give back and hand over the aforesaid castle Minneburg with all rights and appurtenances, as it is named and described here, freely and unencumbered, without any delay or hindrance, without any fraud or guile. It is also agreed that the castle Minneburg shall be an open house of our aforesaid lord Duke Ruprecht der Ältere and of all his heirs against everyone, excepting no one, without any fraud. All these articles and points written above, and each of them in particular, I, the aforesaid Konrad von Rosenberg, Ritter, promise for myself and all my heirs in good faith, in place of an oath, to keep firmly and steadfastly, without any fraud or guile. In witness of this, I, the aforesaid Konrad von Rosenberg, give for myself and all my heirs to my above-named lord Duke Ruprecht der Ältere and his heirs this letter sealed with my hanging seal. I have also asked Hans von Hirschhorn, Ritter, my dear Oheim, to hang his seal beside mine on this letter in witness of all the articles written above. And I, Hans von Hirschhorn, Ritter, acknowledge that at the request of the aforesaid Konrad von Rosenberg I have hung my seal beside his on this letter in witness of all the articles written above. Given at Heidelberg on St. James's Eve, the holy apostle, in the year after Christ's birth thirteen hundred and in the seventy-first year (24 July 1371).",
       "mention": [
+        {
+          "place": "heidelberg"
+        },
         {
           "place": "minneburg"
         }
@@ -16,10 +21,50 @@
         {
           "person": "vitztum_zu_Heidelberg",
           "personTitle": [
+            "Ritter",
             "Vizedom zu Amberg"
           ],
           "type": "generic",
-          "content": "received the house Minneburg as a redeemable pledge from Count Palatine Ruprecht der Ältere."
+          "content": "received the castle Minneburg with all rights and appurtenances as a redeemable pledge from Pfalzgraf Ruprecht der Ältere, Duke in Bavaria."
+        },
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Ritter",
+            "Vizedom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "agreed that Minneburg would be an open house of Pfalzgraf Ruprecht der Ältere and his heirs against everyone."
+        },
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Ritter",
+            "Vizedom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "sealed the pledge charter for Minneburg at Heidelberg."
+        },
+        {
+          "person": "Hans von Hirschhorn",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "kin",
+          "of": "vitztum_zu_Heidelberg",
+          "ofTitle": [
+            "Ritter",
+            "Vizedom zu Amberg"
+          ],
+          "term": "Oheim"
+        },
+        {
+          "person": "Hans von Hirschhorn",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "sealed as witness, at the request of Konrad von Rosenberg, his charter on the pledge of Minneburg."
         }
       ],
       "img": [
