@@ -30,7 +30,10 @@
           "place": "nuremberg"
         },
         {
-          "person": "Reichard von Maßbach"
+          "person": "Reichard von Maßbach",
+          "personTitle": [
+            "Domdekan"
+          ]
         },
         {
           "place": "wurzburg"

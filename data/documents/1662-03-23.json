@@ -12,7 +12,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans Hartmann von Rosenberg"
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan zu Würzburg"
+          ]
         },
         {
           "place": "mainz"
@@ -64,7 +67,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans Hartmann von Rosenberg"
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan zu Würzburg"
+          ]
         },
         {
           "place": "mainz"
@@ -116,7 +122,10 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans Hartmann von Rosenberg"
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan"
+          ]
         },
         {
           "place": "mainz"

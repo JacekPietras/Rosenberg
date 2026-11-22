@@ -9,7 +9,10 @@
       "english": "Dean Johannes of Mainz declares that with the knights: Conrad Schenk von Erbach (-pach); Eberhard von Rosenberg; Gotfrid called Stahel; Marshal Hans von Waldeck; Conrad called Rüdt (Ruede), burgrave in Starkenburg (-kin-); and other friends of the Archbishop of Mainz, he remained from December 1 (Tuesday after the feast of St. Andrew) evening (de sero) until December 4 (Friday immediately following) after breakfast (facto prandio) in the town of Bensheim on behalf of the Archbishop with the friends of the Dukes of Bavaria, and thereby spent 20 pounds 17 Heller in money and (of the provision of our lord) consumed 9 measures of rye flour in bread, 4 amas of French wine, 25 quartalia of millet, and 21 measures with 3 sum. of oats in fodder. The archiepiscopal cellarer Jakob in Starkenburg (-kin-) has supplied all this by virtue of his office (ratione officii sui) and receives this document regarding it.",
       "mention": [
         {
-          "person": "Hans of Mainz"
+          "person": "Hans",
+          "personTitle": [
+            "Domdekan zu Mainz"
+          ]
         },
         {
           "person": "Hans von Waldeck"

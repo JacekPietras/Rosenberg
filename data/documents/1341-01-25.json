@@ -15,10 +15,13 @@
           "place": "fulda-cathedral"
         },
         {
-          "person": "Hans von Hirschhorn"
+          "person": "Hans",
+          "personTitle": [
+            "Domdekan zu Mainz"
+          ]
         },
         {
-          "person": "Hans zu Mainz"
+          "person": "Hans von Hirschhorn"
         },
         {
           "person": "Heinrich",

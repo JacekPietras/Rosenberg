@@ -6,7 +6,12 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 4018",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1767868",
       "german": "Konrad von Rosenberg, Vicedom zu Amberg, bekennt, dass Pfalzgraf Ruprecht d. Ä. ihm um 810 Gulden das Haus Minneberg unter Vorbehalt der Wiederlösung versetzt hat.",
-      "english": "Konrad von Rosenberg, Vicedom (vice-dom) of Amberg, acknowledges that Count Palatine Rupert the Elder has pledged to him the house of Minneberg for 810 gulden, subject to the right of redemption.",
+      "english": "Konrad von Rosenberg, Vicedom (vice-dom) of Amberg, acknowledges that Count Palatine Rupert the Elder has pledged to him the house of Minneburg for 810 gulden, subject to the right of redemption.",
+      "mention": [
+        {
+          "place": "minneburg"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",

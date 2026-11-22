@@ -15,7 +15,10 @@
           "person": "Philipp von Hirschhorn"
         },
         {
-          "person": "Reichard von Maßbach"
+          "person": "Reichard von Maßbach",
+          "personTitle": [
+            "Domdekan"
+          ]
         },
         {
           "place": "rosenberg-town"

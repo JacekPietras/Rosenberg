@@ -15,13 +15,13 @@
       "english": "Before the regional court, Gregor Ledenther, scholaster of Neumünster Abbey, acting for himself and the chapter, successfully claimed all the possessions and rights of Ulrich von Rosenberg zu Röttingen in Röttingen and the Duchy of Franconia, especially the village of Riedenheim and its appurtenances. The issuer, Reichard von Maßbach, dean of Würzburg Cathedral and judge of the Duchy of Franconia, placed the recipients in possession and granted them legal protection.",
       "mention": [
         {
-          "person": "Reichard von Maßbach"
+          "person": "Reichard von Maßbach",
+          "personTitle": [
+            "Domdekan zu Würzburg"
+          ]
         },
         {
           "place": "roettingen"
-        },
-        {
-          "place": "wurzburg"
         }
       ],
       "facts": [

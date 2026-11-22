@@ -24,7 +24,10 @@
           "place": "speyer"
         },
         {
-          "person": "Ulrich von Helmstatt"
+          "person": "Ulrich von Helmstatt",
+          "personTitle": [
+            "Dompropst"
+          ]
         },
         {
           "place": "wallduern"
