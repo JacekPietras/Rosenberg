@@ -19,10 +19,13 @@
           "place": "mainz"
         },
         {
-          "place": "weinsberg"
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
         },
         {
-          "place": "wertheim-stiftskirche"
+          "place": "weinsberg"
         },
         {
           "place": "wildenberg-castle"

@@ -1,8 +1,6 @@
 {
   "date": "1408-02-28",
-  "label": [
-    "Helmstatt"
-  ],
+  "label": "Helmstatt",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 300",
@@ -25,6 +23,7 @@
         {
           "person": "Wiprecht von Helmstatt",
           "personTitle": [
+            "Ritter",
             "der Ältere"
           ]
         }
