@@ -2,7 +2,7 @@
   "date": "1468-12-05",
   "label": [
     "Franken",
-    "Gauangelloch"
+    "to review"
   ],
   "entries": [
     {
@@ -28,18 +28,6 @@
         },
         {
           "person": "Ulrich von Helmstatt"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "sibling",
-          "of": "Hans von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "consented with his siblings to their father Hans’s deed concerning the family properties and Ellwangen fief at Östringen; they promised Hans to leave the Östringen fief to their brother if their father alienated his Brandenburg fief."
         }
       ]
     }
