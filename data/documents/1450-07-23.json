@@ -1,8 +1,6 @@
 {
   "date": "1450-07-23",
-  "label": [
-    "Mönch"
-  ],
+  "label": "Mönch",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 44 Nr. 6336",
@@ -14,10 +12,10 @@
           "place": "gauangelloch"
         },
         {
-          "person": "Hans von Rosenberg"
+          "person": "Hans Mönch von Rosenberg"
         },
         {
-          "place": "rosenberg-town"
+          "person": "Konrad Mönch von Rosenberg"
         },
         {
           "person": "Ruprecht Mönch von Rosenberg"

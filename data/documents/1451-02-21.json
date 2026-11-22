@@ -9,22 +9,34 @@
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 115",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111053",
       "german": "Ritter Konrad von Rosenberg und seine Frau Margarethe von Seinsheim (\"Suonß-\"), Frau zu Schwarzenberg, quittieren Hans von Helmstatt und seiner Frau Anna Landschad über 2000 fl Zugeld [zum Heiratsvertrag] für deren Tochter Margarethe und ihren eigenen Sohn Erasmus.Siegler: Konrad von Rosenberg\n\nLaufzeit: 1451 (1451 Febr 21 - So v cathedra Petri)",
-      "english": "Knight Konrad von Rosenberg and his wife Margaretha von Seinsheim zu Schwarzenberg, acknowledge receipt from Hans von Helmstatt and his wife Anna Landschad of 2,000 guilders as bride price [for the marriage contract] for their daughter Margarethe and their own son Erasmus.\nSealer: Konrad von Rosenberg\n\nPeriod: 1451 (February 21, 1451 - Sunday before Cathedra Petri)",
-      "mention": [
-        {
-          "person": "Anna Landschad"
-        },
-        {
-          "person": "Hans von Helmstatt"
-        },
-        {
-          "person": "Margaretha von Seinsheim"
-        },
-        {
-          "place": "schwarzenberg"
-        }
-      ],
+      "english": "Knight Konrad von Rosenberg and his wife Margaretha von Seinsheim zu Schwarzenberg acknowledge receipt from Hans von Helmstatt and his wife Anna Landschad of 2,000 guilders as the marriage payment for their daughter Margaretha von Helmstatt and their own son Erasmus von Rosenberg.\nSealer: Konrad von Rosenberg\n\nPeriod: 1451 (February 21, 1451 - Sunday before Cathedra Petri)",
       "facts": [
+        {
+          "person": "Hans von Helmstatt",
+          "type": "parent",
+          "of": "Margaretha von Helmstatt"
+        },
+        {
+          "person": "Anna Landschad",
+          "type": "parent",
+          "of": "Margaretha von Helmstatt"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "parent",
+          "of": "Erasmus von Rosenberg"
+        },
+        {
+          "person": "Margaretha von Seinsheim",
+          "personTitle": [
+            "zu Schwarzenberg"
+          ],
+          "type": "parent",
+          "of": "Erasmus von Rosenberg"
+        },
         {
           "person": "Konrad von Rosenberg",
           "personTitle": [

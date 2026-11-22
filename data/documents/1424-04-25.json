@@ -1,14 +1,34 @@
 {
   "date": "1424-04-25",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 103",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753703",
       "german": "Bürgschaft des Konz [X.] d.Ä. von Rosenberg zu Reichelsburg, Konz [IX.] d. J. von Rosenberg zu Bartenstein, Konz von Ochsenfurt, Rüdiger Sützel, Hans von Dottenheim, Dietrich Geyer und Hartrach Truchseß für die nun bis 22. Feb. 1425 befristete Zahlung, 1424 Apr. 25",
-      "english": "Surety given by Konz von Rosenberg zu Reichelsburg der Ältere, Konz von Rosenberg zu Bartenstein der Jüngere, Konz von Ochsenfurt, Rüdiger Sützel, Hans von Dottenheim, Dietrich Geyer, and Hartrach Truchseß for the payment, now due by 22 February 1425, 25 April 1424."
+      "english": "Surety given by Kunz von Rosenberg zu Reichelsburg der Ältere, Kunz von Rosenberg zu Bartenstein der Jüngere, Konz von Ochsenfurt, Rüdiger Sützel, Hans von Dottenheim, Dietrich Geyer, and Hartrach Truchseß for the payment, now due by 22 February 1425, 25 April 1424.",
+      "mention": [
+        {
+          "person": "Dietrich Geyer"
+        },
+        {
+          "person": "Hans von Dottenheim"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Ältere",
+            "zu Reichelsburg"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Jüngere",
+            "zu Bartenstein"
+          ]
+        }
+      ]
     }
   ]
 }

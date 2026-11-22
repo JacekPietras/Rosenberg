@@ -1,14 +1,23 @@
 {
   "date": "1423-10-03",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 103",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753703",
       "german": "Revers des Reinhard von Uissigheim, Ritter, über das Öffnungsrecht des DO an dem ihm durch DM Eberhard von Seinsheim verkauften Schloß Herrenzimmern auf Lebenszeit des DM, 1423 Okt. 3",
-      "english": "Reversal by Reinhard von Uissigheim, Ritter, concerning the Teutonic Order’s right of access to Herrenzimmern Castle, which the Teutonic Order’s Deutschmeister, Eberhard von Seinsheim, had sold to him for the duration of the Deutschmeister’s life, 3 October 1423."
+      "english": "Reversal by Reinhard von Uissigheim, Ritter, concerning the Teutonic Order’s right of access to Herrenzimmern Castle, which the Teutonic Order’s Deutschmeister, Eberhard von Seinsheim, had sold to him for the duration of the Deutschmeister’s life, 3 October 1423.",
+      "mention": [
+        {
+          "person": "Eberhard von Seinsheim"
+        },
+        {
+          "person": "Reinhard von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     }
   ]
 }
