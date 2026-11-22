@@ -213,6 +213,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .facts.facts-view { padding-left: 1rem; list-style: none; }
 .facts.facts-view li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: .25rem .75rem; align-items: baseline; padding: 0; }
 .fact-date { display: block; margin-bottom: .1rem; color: var(--muted); font-size: .78rem; }
+.fact-row-content { display: flex; align-items: baseline; justify-content: space-between; gap: .65rem; min-width: 0; }
+.fact-source-labels { position: relative; z-index: 2; display: inline-flex; flex: 0 0 auto; gap: .2rem; margin: .05rem 0 .15rem .65rem; }
+.fact-source-labels .fact-source-label { padding: .12rem .35rem; color: var(--muted); background: color-mix(in srgb, var(--ink) 7%, transparent); border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent); font-size: .62rem; letter-spacing: .04em; }
 .facts-view li[data-fact-source] .fact-text { position: relative; isolation: isolate; }
 .fact-source-link { position: absolute; inset: 0; z-index: 1; border-radius: 6px; cursor: pointer; }
 .fact-source-link:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }

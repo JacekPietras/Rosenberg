@@ -3,7 +3,7 @@ import { personMentionClass } from '../data/person-name-recognition.js?v=27';
 import { formatDate } from '../rendering/dates.js';
 import { escapeHtml } from '../rendering/html.js';
 
-export function renderFactsView(facts, { people = [], personNames = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '', mention = [], places = [] }) {
+export function renderFactsView(facts, { people = [], personNames = [], inlineMarkup, itemClass = () => '', defaultDate = '', listClass = '', sourceHref = () => '', mention = [], places = [], showSourceLabels = false }) {
   facts = facts.filter(isTypedFact);
   const mentionRows = renderMentionRows(mention, places);
   if (!facts.length && !mentionRows) return '';
@@ -18,7 +18,12 @@ export function renderFactsView(facts, { people = [], personNames = [], inlineMa
       : showDate ? '<span class="fact-date">Undated</span>' : '<span class="fact-date" aria-hidden="true"></span>';
     const href = sourceHref(fact, index);
     const sourceLink = href ? `<a class="fact-source-link" href="${escapeHtml(href)}" aria-label="Open fact source" title="Open fact source"></a>` : '';
-    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-text${fact.isGuess ? ' fact-guess' : ''}">${fact.isGuess ? '<span class="visually-hidden">Guess: </span>' : ''}${renderFactText(fact, { people, personNames: knownNames, inlineMarkup })}${sourceLink}</span></li>`;
+    const sourceLabels = showSourceLabels
+      ? (Array.isArray(fact.sourceLabel) ? fact.sourceLabel : [fact.sourceLabel])
+        .map((label) => String(label || '').trim()).filter(Boolean)
+      : [];
+    const sourceLabelMarkup = sourceLabels.map((label) => `<span class="record-label fact-source-label">${escapeHtml(label)}</span>`).join(' ');
+    return `<li${href ? ' data-fact-source' : ''}${itemClass(fact, index)}>${dateMarkup}<span class="fact-row-content"><span class="fact-text${fact.isGuess ? ' fact-guess' : ''}">${fact.isGuess ? '<span class="visually-hidden">Guess: </span>' : ''}${renderFactText(fact, { people, personNames: knownNames, inlineMarkup })}${sourceLink}</span>${sourceLabelMarkup ? `<span class="fact-source-labels">${sourceLabelMarkup}</span>` : ''}</span></li>`;
   }).join('')}${mentionRows}</ul>`;
 }
 

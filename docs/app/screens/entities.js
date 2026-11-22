@@ -1,6 +1,6 @@
 import { imageCardMarkup } from '../rendering/images.js?v=13';
 import { factText, factPersonMatch, sourceFactDate, isTypedFact } from '../rendering/facts.js?v=9';
-import { renderFactsView } from '../components/facts_view.js?v=10';
+import { renderFactsView } from '../components/facts_view.js?v=11';
 import { findPlaceByName } from '../data/entities.js?v=90';
 import { resolvePerson, resolveEvidencePointer } from '../data/relationships.js?v=14';
 import { relationshipControls, relationshipPanel } from '../rendering/relationships.js?v=13';
@@ -51,6 +51,7 @@ export function createEntityScreens({
       .map((fact, factIndex) => ({
         isGuess: kind === 'guesses',
         ...fact,
+        sourceLabel: doc.label,
         date: sourceFactDate(fact, doc, entry, path),
         mentionIndex, factIndex, sourceHref: documentNavigationUrl(path, index),
         personMatch: personQuery ? factPersonMatch(fact, personQuery, people) : 'direct',
@@ -66,6 +67,7 @@ export function createEntityScreens({
       personNames: factPersonNames(),
       inlineMarkup,
       sourceHref: (fact) => fact.sourceHref,
+      showSourceLabels: true,
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
     }); } finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
     return `<section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${items}</section>`;
@@ -130,12 +132,12 @@ export function createEntityScreens({
         const doc = getDocuments().get(source.path);
         const fact = resolveEvidencePointer(doc, source.pointer);
         const index = Number(source.pointer.match(/\/entries\/(\d+)/)?.[1] || 0);
-        return { ...fact, date, isGuess: source.pointer.includes('/guesses/'), sourceHref: documentNavigationUrl(source.path, index) };
+        return { ...fact, date, isGuess: source.pointer.includes('/guesses/'), sourceLabel: doc?.label, sourceHref: documentNavigationUrl(source.path, index) };
       });
       const previousDeferredLinks = state.deferDocumentMarkupLinks;
       state.deferDocumentMarkupLinks = true;
       let factsMarkup;
-      try { factsMarkup = renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref }); }
+      try { factsMarkup = renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref, showSourceLabels: true }); }
       finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${factsMarkup}</section>`;
     }
