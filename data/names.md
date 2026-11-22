@@ -140,7 +140,7 @@ Wolfgang
 Wolfram, Wolframus
 Wulfing
 Yttel
-Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph
+Zaisolph, Seisolph, Zaisolf, Zaisolff, Zeisolf, Zeisolff, Zeisolph, Hansolf
 Zeisel
 
 # Women
