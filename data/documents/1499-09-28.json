@@ -1,6 +1,10 @@
 {
   "date": "1499-09-28",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "The archival abstract records Elector Philipp’s ten-year grant of the Oggersheim Schultheiß office and inn to Michael Rosenberger. The surety in 1499-10-04.json repeats the ten-year term and annual rent of 18 gulden and identifies the grantee as Hans Dentz’s son-in-law. The marriage settlement in 1497-03-21.json names his father as Michael von Rosenberg. The proposed Franken attribution follows from the father’s likely identification with the Michael documented in the same elector’s Bauland castle fief in 1490-10-28.json. The documented father-son relationship gives the attribution stronger support than the younger man’s Rosenberger surname, which the Augsburg Rosenegg family also used.",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 818, 646",
@@ -9,7 +13,41 @@
       "english": "Elector Philipp of the Palatinate declares that he has granted Michael Rosenberger the office of Schultheiß (chief magistrate) and the inn located in the town of Oggersheim (Agerß-) for 10 years. Michael is to operate an inn there, using the dwelling, yard, barns, stables, and other appurtenances, and to collect appropriate fees \"so that guests will readily come to him.\" The buildings are to be kept in good condition; damage to roofs, eaves, windows, etc., shall be repaired at the owner's own expense. From the inn he shall pay the Count Palatine an annual rent of 18 gulden on St. Michael's Day [29.09.] and remit it to the palatinate toll collector. In the Schultheiß office he shall treat poor and rich, stranger and local alike, without partiality, help each to his right, be an honest judge and mediator, and deceive no one. He shall accept no gifts or anything beyond his official emoluments. Michael has sworn to uphold these articles upon installation. The grant shall endure for 10 years, after which the Count Palatine reserves the right of revocation. If Michael is accused of \"dishonest matters\" during his tenure and cannot justify himself, he forfeits the grant. Michael has named guarantors for his annual rent in a separate document.\n\nTerm: 1499 September 28 (on St. Michael's Eve)\n\nSealer: Elector Philipp of the Palatinate (impressed secret seal)",
       "mention": [
         {
-          "person": "Michael Rosenberg"
+          "place": "oggersheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "was appointed for ten years by Philipp, Kurfürst von der Pfalz."
+        },
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "received the inn at Oggersheim from Philipp, Kurfürst von der Pfalz, for ten years in return for an annual rent."
+        },
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "swore to administer justice impartially at Oggersheim."
+        },
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "named sureties in a separate deed for the annual rent of the Oggersheim inn."
         }
       ],
       "img": [

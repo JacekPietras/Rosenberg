@@ -1,6 +1,10 @@
 {
   "date": "1507-06-24",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "The archival abstract identifies the purchasers of the Duttweiler farm as the Oggersheim Schultheiß Michael Rosenberger and his wife Margaretha. Their names agree with the marriage settlement in 1497-03-21.json, and 1499-10-04.json joins the Oggersheim office to Hans Dentz by marriage. The settlement explicitly names the groom’s father as Michael von Rosenberg. The father’s likely link to the Bauland castle fief in 1490-10-28.json supports Franken over the Augsburg Rosenegg family. Dochnahl’s Neustadt chronicle also uses the form Michael von Rosenberg for the Oggersheim Schultheiß under 1512 (https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf).",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 821, 125",
@@ -9,7 +13,28 @@
       "english": "Elector Philipp of the Palatinate sells the farm at Duttweiler (Dudwyler) with a briefly and summarily listed appurtenance, which once belonged to Konrad Feistinger and then to Master Jost Kepler (+), land scribe at Neustadt an der Weinstraße, to his Schultheiß of Oggersheim, Michael Rosenberger, his wife Margaretha, and their heirs for 1,150 Rhenish guilders, which are hereby acknowledged as received. The farm had been seized by the elector's land scribe Kaspar Reinhart, since after Jost Kepler's death and according to the official account prepared by his widow and her heirs, a considerable sum of debts remained. The Elector assures that this is free and unencumbered property; otherwise he will compensate for damages and costs. He promises warranty for the purchase and has the farm delivered with mouth, hand, and stalk (full legal transfer).\n\nCoverage period: 1507 June 24 (on Thursday of St. John the Baptist's day in summer)\n\nSealer: Elector Philipp of the Palatinate",
       "mention": [
         {
-          "person": "Michael Rosenberg"
+          "place": "duttweiler"
+        },
+        {
+          "place": "oggersheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "spouse",
+          "of": "Margaretha Dentz"
+        },
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "bought the freehold farm at Duttweiler with his wife Margaretha Dentz from Philipp, Kurfürst von der Pfalz, for themselves and their heirs."
         }
       ],
       "img": [

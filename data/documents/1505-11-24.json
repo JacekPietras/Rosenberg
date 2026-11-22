@@ -1,6 +1,10 @@
 {
   "date": "1505-11-24",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "The archival abstract identifies Michael Rosenberger as the Palatine Schultheiß of Oggersheim and says he brought the indebted Hans Regensburger’s Mommenheim farm into Palatine hands. His office and patron match 1505-11-08.json and the grant in 1499-09-28.json. The surety in 1499-10-04.json and marriage settlement in 1497-03-21.json connect him through Hans Dentz to his named father Michael von Rosenberg. The father’s likely connection to the Bauland castle fief in 1490-10-28.json supports Franken over the Augsburg Rosenegg family, for which the shared surname supplies no comparable link.",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 825, 97",
@@ -9,7 +13,20 @@
       "english": "Note regarding an agreement between Elector Philipp of the Palatinate and Hans von Ingelheim concerning a farmstead at Mommenheim (Monenheim), which once belonged to the Count Palatine's ordnance master Hans Regensburger (deceased). Due to his debts, the Count Palatine's bailiff at Oggersheim, Michael Rosenberger, had brought this farmstead, valued at 400 guilders, to the Palatinate. The Count Palatine had then given it to Hans von Ingelheim, as he owed Ingelheim 250 guilders. Should the heirs of Hans Regensburger claim the farmstead within one year, as is customary at Mommenheim, and pay the 400 guilders, Hans von Ingelheim shall yield it to them. The overpayment of 150 guilders owed to the Count Palatine shall be settled with 20 loads of wine that the Count Palatine has borrowed from Hans von Ingelheim, on which both parties shall separately reach further agreement.\n\nDuration: November 24, 1505 (Monday before Saint Catherine's Eve)",
       "mention": [
         {
-          "person": "Michael Rosenberg"
+          "place": "mommenheim"
+        },
+        {
+          "place": "oggersheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "secured the late Hans Regensburger’s farm at Mommenheim for the Palatinate because of Regensburger’s debts."
         }
       ],
       "img": [

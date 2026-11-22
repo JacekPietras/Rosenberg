@@ -1,6 +1,10 @@
 {
   "date": "1497-03-21",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "The archival abstract explicitly names the elector’s retainer Michael Rosenberger, bridegroom of Margarethe Dentz, as the son of Michael von Rosenberg, himself a trusted man of Elector Philipp. Franken is the strongest attribution. In 1482-01-13.json Elector Philipp takes a Michael von Rosenberg and his holdings at Boxberg, Schweigern and elsewhere in the Bauland under his protection. 1490-10-28.json places a contemporary Michael von Rosenberg in a feudal transaction with the same elector on behalf of his cousin’s son Lorenz for a quarter of the Bauland castle of Rosenberg, and 1477-08-13_2.json and 1480-08-09.json tie a Michael in the elector’s circle to Boxberg, Unterschüpf and Schweigern. The marriage abstract supplies no estate or byname for the father, so his identification with the Boxberg house remains inferential. The Mönch von Rosenberg also had ties around Heidelberg (https://www.leo-bw.de/en/web/guest/detail-gis/-/Detail/details/DOKUMENT/ubh_digitalisate/barth64), but the settlement provides no corresponding byname or family connection. 1499-10-04.json identifies the Oggersheim Schultheiß as Hans Dentz’s son-in-law. Joseph Morsel (Lettres de Monsieur L., note 123, https://lamop.hypotheses.org/files/2020/06/Morsel-Lettres-de-Monsieur-L.pdf#page=75) identifies Michael von Rosenberg and Anna Rüdt von Bödigheim as the parents of Jörg of Schüpf and Boxberg. The 1497 settlement leaves the younger Michael’s mother and legitimacy undetermined. Morsel’s suggestion about the Rosenberger surname in note 180 concerns a different person, Jorg Rosenberger.",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 818, 564",
@@ -9,13 +13,67 @@
       "english": "Elector Philipp of the Palatinate declares that his loyal servant Philipp Forstmeister of Gelnhausen has arranged in his service a marriage between his loyal follower and single-horse retainer Michael Rosenberger and Margarethe, daughter of his tax collector Hans Dentz of Heidelberg. Hans is to give his son-in-law 5 gulden annually from the market stall (krame) beneath Hans' house, currently held by Jost Koch (Kochs Jost) for a rent of 5 gulden, until redeemed for 100 gulden. He is also to provide them with a bed and furnishings. The couple may pledge the annual rent, with the knowledge of father and brother-in-law, for 100 gulden. In return, the palatinate's loyal servant Michael von Rosenberg shall issue his son Michael a conveyance for 5 gulden annually until redemption for 100 gulden. Furthermore, Michael von Rosenberg wishes to provide the couple with an additional 100 gulden non-bindingly, provided Michael conducts himself according to the will of his father, his father-in-law, and his wife (wishing to hold himself righteously in accordance with his father-in-law and wife's wishes, yet remaining unbound and free therefrom). If the couple dies without issue, the contributed properties shall revert to their original lines.\n\nDate range: March 21, 1497 (on Tuesday after Palm Sunday)\n\nSeal: Elector Philipp of the Palatinate (impressed secret seal)",
       "mention": [
         {
+          "place": "gelnhausen"
+        },
+        {
           "place": "heidelberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "parent",
+          "of": "schultheiss_zu_oggersheim",
+          "ofTitle": [
+            "einspänniger Knecht"
+          ]
         },
         {
-          "person": "Michael Rosenberg"
+          "person": "Hans Dentz",
+          "personTitle": [
+            "Ungelter zu Heidelberg"
+          ],
+          "type": "parent",
+          "of": "Margaretha Dentz"
         },
         {
-          "person": "Michael von Rosenberg"
+          "person": "Philipp Forstmeister von Gelnhausen",
+          "type": "generic",
+          "content": "arranged the marriage of Michael Rosenberger and Margaretha Dentz at the direction of Philipp, Kurfürst von der Pfalz."
+        },
+        {
+          "person": "Hans Dentz",
+          "personTitle": [
+            "Ungelter zu Heidelberg"
+          ],
+          "type": "generic",
+          "content": "was to provide Michael Rosenberger with annual income from a stall beneath his house, subject to redemption."
+        },
+        {
+          "person": "Hans Dentz",
+          "personTitle": [
+            "Ungelter zu Heidelberg"
+          ],
+          "type": "generic",
+          "content": "was to provide Michael Rosenberger and Margaretha Dentz with a bed and its furnishings."
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "was to issue his son Michael Rosenberger a written promise of annual payments, subject to redemption."
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "offered Michael Rosenberger and Margaretha Dentz a further conditional payment without binding himself to it."
+        },
+        {
+          "person": "Philipp",
+          "personTitle": [
+            "Kurfürst von der Pfalz"
+          ],
+          "type": "generic",
+          "content": "sealed the marriage settlement for Michael Rosenberger and Margaretha Dentz."
         }
       ],
       "img": [

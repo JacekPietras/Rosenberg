@@ -1,6 +1,10 @@
 {
   "date": "1505-11-08",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "The archival abstract records Elector Philipp’s exchange of two Oggersheim houses with his Schultheiß Michel Rosenberger, who receives the house formerly used as an inn. The office, town, elector and inn agree with the grant in 1499-09-28.json. The surety in 1499-10-04.json identifies him as Hans Dentz’s son-in-law, and 1497-03-21.json names his father as Michael von Rosenberg. The father’s likely identification with the elector’s Bauland associate in 1490-10-28.json supports Franken over a Rosenegg attribution based on the spelling alone.",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 821, 84",
@@ -9,7 +13,17 @@
       "english": "Elector Philipp of the Palatinate makes a mutual exchange with his Schultheiß at Oggersheim, Michael Rosenberger, two dwellings there. Michael receives the house in which 'business had previously been conducted,' while the Elector receives Michel's new dwelling. They shall henceforth each hold it as their own property and pledge mutual protection.\n\nDuration: November 8, 1505 (Saturday after Saint Leonard's Day)\n\nSeal: Elector Philipp of the Palatinate (secret seal)",
       "mention": [
         {
-          "person": "Michael Rosenberg"
+          "place": "oggersheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "schultheiss_zu_oggersheim",
+          "personTitle": [
+            "Schultheiß zu Oggersheim"
+          ],
+          "type": "generic",
+          "content": "exchanged his new house at Oggersheim for the former inn there with Philipp, Kurfürst von der Pfalz, with both houses passing as freehold property."
         }
       ],
       "img": [
