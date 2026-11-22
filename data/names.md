@@ -32,7 +32,7 @@ Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
 Eduard
 Egilolf, Egli, Eglolf, Eglolff
 Engel
-Engelhard, Engelhardus, Engelhart
+Engelhard, Engelhardus, Engelhart, Engelhert
 Erasmus
 Erhard
 Erkinger
