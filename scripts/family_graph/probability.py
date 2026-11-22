@@ -290,6 +290,43 @@ def title_category(title, names=None):
     return 'other', value
 
 
+CHURCH_HEADS = {'domherr', 'presbyter', 'bischof', 'furstbischof', 'erzbischof', 'abt', 'abtissin', 'domdekan', 'propst', 'papst'}
+CHURCH_EXCLUDES = {'knight': 'knight', 'schultheiss': 'Schultheiß', 'king': 'king', 'spouse': 'spouse', 'children': 'children'}
+
+
+@lru_cache(maxsize=32768)
+def title_traits(title, names=None):
+    """Church, knight, Schultheiß and king titles by head word; knights of a religious order do not count."""
+    translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
+    traits = set()
+    for segment in re.split(r'\s+und\s+', normalize(title)):
+        if names and segment in names.epithets:
+            continue
+        words = segment.split()
+        head = translate(' '.join(words[:2])) if len(words) > 1 else ''
+        if head not in CHURCH_HEADS:
+            head = translate(words[0]) if words else ''
+        if head in CHURCH_HEADS:
+            traits.add('church')
+        elif head.endswith('ritter') and not re.search(r'orden|johanniter|templer', segment):
+            traits.add('knight')
+        elif head.endswith('schultheiss'):
+            traits.add('schultheiss')
+        elif head == 'konig':
+            traits.add('king')
+    return frozenset(traits)
+
+
+def church_conflict(left, right):
+    """Reason a church-titled person cannot be one person with the other, from trait sets."""
+    for church, other in ((left, right), (right, left)):
+        if 'church' in church:
+            for trait, label in CHURCH_EXCLUDES.items():
+                if trait in other:
+                    return f'church title with {label}'
+    return None
+
+
 @dataclass
 class Observation:
     source: object
@@ -310,6 +347,7 @@ class Profile:
     places: dict = field(default_factory=dict)
     associates: dict = field(default_factory=dict)
     relatives: dict = field(default_factory=dict)
+    household: set = field(default_factory=set)
     anchored: bool = False
     confidence: float = 1.0
     key: str = ''
@@ -386,6 +424,14 @@ class ProbabilityModel:
         """(first, last) living ordinals over all reliability levels, as `living_span` uses."""
         level = cumulative(self.profile_chronology(profile), 0)
         return (level['first'][0], level['alive'][0]) if 'first' in level and 'alive' in level else None
+
+    def profile_traits(self, profile):
+        stamp = len(profile.mentions), len(profile.household)
+        cached = profile.__dict__.get('_traits')
+        if cached is None or cached[0] != stamp:
+            traits = set(profile.household).union(*(title_traits(title, self.names) for m in profile.mentions for title in m.titles))
+            cached = profile.__dict__['_traits'] = stamp, traits
+        return cached[1]
 
     def profile_chronology(self, profile, facts_only=False):
         stamp = (len(profile.mentions), len(profile.derived))
@@ -564,6 +610,9 @@ class ProbabilityModel:
         if left.distinctions.get(right.key) or right.distinctions.get(left.key):
             blocks.append('explicitly distinct relationship participants')
             hard.append('explicitly distinct relationship participants')
+        reason = church_conflict(self.profile_traits(left), self.profile_traits(right))
+        if reason:
+            blocks.append(reason)
         hard.extend(block for block in blocks if block not in hard and not block.startswith(('mention after', 'incompatible death', 'impossible age')))
         prior = math.log(p['priorProbability'] / (1 - p['priorProbability']))
         log_odds = prior + sum(feature['contribution'] for feature in features)

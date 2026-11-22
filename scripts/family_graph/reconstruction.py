@@ -17,7 +17,7 @@ from .kinship import generation, tree_paths
 from .dates import death_interval
 from .probability import (ProbabilityModel, Profile, YEAR, chronology, chronology_blocked, cumulative, decay,
                           gap_years, living_span, mention_rank, names_relative, reliability, single_day,
-                          title_category)
+                          church_conflict, title_category, title_traits)
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -337,6 +337,25 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
         return different_titles(list(parts.values()))
 
     relation_assertions = [a for a in assertions if a.original['type'] in RELATIONS and not a.basis]
+    household = defaultdict(set)
+    for a in relation_assertions:
+        kind = a.original['type']
+        if kind == 'parent':
+            household[a.mentions[0].handle].add('children')
+        elif kind == 'spouse':
+            for m in a.mentions:
+                household[m.handle].add('spouse')
+
+    def new_church_conflict(component):
+        parts = defaultdict(set)
+        for h in component:
+            parts[find(h)].update(household[h], *(title_traits(title, names) for title in mentions[h].titles))
+        for a, b in combinations(parts.values(), 2):
+            reason = church_conflict(a, b)
+            if reason:
+                return reason
+        return None
+
     static_memo = {}
 
     def static_consistent(component):
@@ -376,6 +395,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if not static_consistent(component):
                 return False
             if (chronology_conflict(component) or new_different_parent(component) or new_different_titles(component)
+                    or new_church_conflict(component)
                     or new_passage_conflict(component) or new_too_old(component)):
                 return False
         current_generation()
@@ -889,6 +909,11 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             left, right = find(a.handle), find(b.handle)
             kind = assertion.original['type']
             if not assertion.basis:
+                if kind == 'parent':
+                    profiles[left].household.add('children')
+                elif kind == 'spouse':
+                    profiles[left].household.add('spouse')
+                    profiles[right].household.add('spouse')
                 profiles[left].distinctions.setdefault(right, []).append(assertion.source)
                 profiles[right].distinctions.setdefault(left, []).append(assertion.source)
             directed = kind == 'parent'

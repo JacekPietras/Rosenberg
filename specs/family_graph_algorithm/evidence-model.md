@@ -108,7 +108,11 @@ alone is neutral.
 - a child born after the parent's death, on document facts;
 - Ritter and Edelknecht on the same day in two documents;
 - explicitly distinct relationship participants;
-- distinct registry IDs; different father or mother.
+- distinct registry IDs; different father or mother;
+- a church title against a knight, Schultheiß, king, spouse or children
+  (`church title with knight`, `… with Schultheiß`, `… with king`,
+  `… with spouse`, `… with children`), by title head word and recorded
+  (non-inferred) relationships.
 
 **Pass-4 hard blocks** are stricter, for every source type:
 
@@ -117,7 +121,7 @@ alone is neutral.
   excluded);
 - living mentions spanning more than `bestCandidate.maxLivingSpanYears` (64);
 - any child born after the parent's death beyond the age limit;
-- the other pass-3 blocks, known relatives, and kinship-term exclusions.
+- the other pass-3 blocks (including the church-title block), known relatives, and kinship-term exclusions.
 
 ### Known relatives
 

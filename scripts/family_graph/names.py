@@ -19,13 +19,19 @@ class Names:
         # Equivalent title words and epithets, e.g. Vogt/advocatus, der Rote/Rufus.
         self.titles = {}
         self.title_display = {}
+        self.epithets = set()
+        section = ''
         for line in titles_text.splitlines():
             if line.lstrip().startswith('#'):
                 continue
+            if line.startswith('//'):
+                section = line.strip('/ ').casefold()
             forms = [item.strip() for item in line.split('//', 1)[0].split(',') if item.strip()]
             for form in forms:
                 self.titles[normalize(form)] = normalize(forms[0])
                 self.title_display[normalize(form)] = forms[0]
+                if section == 'epithets':
+                    self.epithets.add(normalize(form))
         self.given, self.genders = {}, {}
         for forms, gender in name_groups(names_text):
             forms = [normalize(form) for form in forms]

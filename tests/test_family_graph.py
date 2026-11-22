@@ -378,6 +378,36 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual({('Ritter',): 2, ('Edelknecht',): 1},
                          {tuple(n['titles']): len(n['mentions']) for n in nodes if n['name'] == name})
 
+    def church_person_nodes(self, church, titles, extra=None):
+        self.write('data/titles-office.md', 'Vogt\nDomherr, canonicus\nBischof\nFürstbischof, Prince-Bishop\nRitter, miles\n'
+                                            'Schultheiß\nKönig\nPropst, Probst, Provost\nDomdekan, Domdechant\nPapst, Pope\n// epithets\nKönig Armleder\n// titles\nGraf\nHerzog\nKurfürst\nKomtur\nAmtmann\n')
+        name = 'Konrad von North'
+        office = 'Vogt zu Dürn'
+        facts = [relation(name, 'a', 'sibling', personTitle=[office, church])]
+        self.inputs(facts=facts)
+        other = [relation(name, 'a', 'sibling', personTitle=[office, *titles])]
+        if extra == 'spouse':
+            other.append(relation(name, 'Elisabeth von North', 'spouse', personTitle=[office]))
+        if extra == 'child':
+            other.append(relation(name, 'Eberhard von North', personTitle=[office]))
+        self.write('data/documents/second.json', {'date': '1394', 'facts': other})
+        inputs = load_inputs(self.root, validate=False)
+        graph = serialize(inputs, [build(inputs)])['evidence']['facts']
+        return len([n for n in graph['nodes'] if n['name'] == name])
+
+    def test_church_title_never_merges_with_knight_schultheiss_king_spouse_or_children(self):
+        for church in ('Domherr', 'canonicus', 'Bischof zu Bamberg und Würzburg', 'Prince-Bishop', 'Probst', 'Provost', 'Domdechant', 'Pope'):
+            for titles, extra in ((['Ritter'], None), (['miles'], None), (['Reichsritter'], None), (['Reichsschultheiß'], None), (['Schultheiß zu Lauda'], None),
+                                  (['König der Römer'], None), ([], 'spouse'), ([], 'child')):
+                with self.subTest(church=church, titles=titles, extra=extra):
+                    self.assertEqual(2, self.church_person_nodes(church, titles, extra))
+
+    def test_church_title_still_merges_with_noble_titles_and_non_head_words(self):
+        for titles in (['Graf'], ['Herzog'], ['Kurfürst'], ['Komtur'], ['Amtmann zu Bischofsheim'], ['Ritter des Deutschen Ordens'],
+                       ['Deutschordensritter'], ['Johanniterritter'], ['König Armleder'], ['Ritter des Johanniterordens'], ['Hofmeister des Fürstbischofs'], ['zu Königheim']):
+            with self.subTest(titles=titles):
+                self.assertEqual(1, self.church_person_nodes('Domherr', titles))
+
     def test_same_name_with_different_titles_in_one_document_never_merge(self):
         name = 'Eberhard von North'
         def brother(*titles):

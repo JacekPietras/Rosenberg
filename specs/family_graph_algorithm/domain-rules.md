@@ -68,6 +68,12 @@ files describe how they are met. When a rule changes, change it here first.
   sibling group, or the spouses of one person may still be one person.
 - A kinship term excludes it: a `Vetter` is never the relative's own brother.
   Term meanings are listed in `data/kinship.md`.
+- One has a church title (`Domherr`, `Presbyter`, `Bischof`, `Fürstbischof`,
+  `Erzbischof`, `Abt`, `Äbtissin`, `Domdekan`, `Propst`, `Papst`) and the other
+  is a knight (`Ritter`, `Reichsritter`; not of a religious order), a `Schultheiß`, a `König`,
+  has a spouse or has children. Church-titled people may be `Herzog`, `Graf`,
+  `Kurfürst`, `Komtur` or `Baron`. Titles count by head word, not by substring; epithets such as `König Armleder`
+  (`// epithets` in `data/titles-office.md`) never count as titles.
 - The merged person would be his own relative, his own ancestor, or both
   parent and sibling of someone.
 

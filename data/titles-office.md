@@ -21,6 +21,7 @@ Knecht
 
 // epithets
 der Rote, Rufus
+König Armleder, Armleder, King Armleder, Rex Armleder
 
 // territorial titles
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
@@ -31,6 +32,9 @@ Burggraf, Burgrafen, Burgrave, Burgraven, Burgraf, Schlossburggraf
 Landgraf, Landgrafen, Landgrave, Landgraven, Lantgraf
 Marggraf, Marggrafen, Marggrave, Marggraven
 Abt, Abbot
+Propst, Probst, Praepositus, Provost
+Domdekan, Domdechant, Domdecan, decanus
+Papst, Pope
 Äbtissin, Aebtissin, Äbtissen, abbatissa, Abbess
 Herzog, Duke, Herczog
 Kurfürst, Kurfürsten, Churfürst, Churfürsten, Kurfuerst, Churfuerst, Elector
