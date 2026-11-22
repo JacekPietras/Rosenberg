@@ -641,16 +641,16 @@
     },
     {
       "german": "Mit diesen Quellenbelegen läßt sich ein einigermaßen haltbarer genealogischer Zusammenhang herstellen. Das ändert nichts an der weisen Einsicht, die H. *Bauer* einst seinem Entwurf voranstellte, daß unser jetziger Stammbaum... jedenfalls relativ der genügendere ist³⁰. Eberhardus Rufus hatte zwei Söhne. Da ist zum einen *Eberhardus* II. *miles*, der 1305 und 1314 als *maior* näher bezeichnet wird³¹, folglich gab es damals noch einen jüngeren Eberhard³². Der Ältere dürfte mit dem im Bronnbacher Nekrolog als 1314 verstorben genannten Träger dieses Namens identisch sein³³. Der zweite Sohn des Eberhardus Rufus war Konrad II., der von 1305 bis 1321 vorkommt. Als seine Gattin ist Adelheid von Neudeck bekannt; 1327 schon Witwe, hinterließ sie einen minderjährigen Sohn³⁴. Dieser Edelknecht Hans begegnet 1340 bis 1359. Da er 1355 den Zusatz von Neudeck führt³⁵, kann er von dem gleichnamigen Ritter Hans III. (I.) sicher unterschieden werden. Nachkommen sind nicht zuzuweisen, so daß mit ihm die Erste oder Eberhardische Hauptlinie erlosch.\n\n³⁰ H. Bauer (wie Anm. 1) S. 178.\n\n³¹ W. Möller (wie Anm. 10) setzt Eberhard I. und II. gleich: im Folgenden wird seine Zählung in Klammern beigegeben.\n\n³² StA Wertheim Lit. A 436 fol. 94.\n\n³³ J. Kühles (wie Anm. 13) S. 128.\n\n³⁴ StA Wertheim Lit. A 436 fol. 94\n\n³⁵ StA Ludwigsburg Bü 302 Nr. 95; nicht bei Walther Ludwig: Das Geschlecht der Herren von Neideck bis um 1500, In: WFr 68 (1984) S. 63-96.",
-      "english": "With these source references, a reasonably stable genealogical connection can be established. This does not change the wise insight that H. Bauer once prefaced his draft with, that our present family tree... is in any case relatively the more sufficient one³⁰. Eberhard Rufus had two sons. First, there is Eberhard II miles, who is further described as maior in 1305 and 1314³¹, which means there was a Eberhard der Jüngere at the time³². Der Ältere is likely identical to the bearer of this name mentioned in the Bronnbach necrology as having died in 1314³³. The second son of Eberhard Rufus was Konrad II, who appears from 1305 to 1321. His wife is known to be Adelheid von Neudeck; already a widow in 1327, she left a minor son³⁴. This squire (Edelknecht) Hans appears from 1340 to 1359. Since he carries the addition \"von Neudeck\" in 1355³⁵, he can be clearly distinguished from the knight of the same name, Hans III. No descendants can be assigned to him, so the First or Eberhardian main line became extinct with him.\n\n³⁰ H. Bauer (as in note 1) p. 178.\n\n³¹ W. Möller (as in note 10) equates Eberhard I and II: in the following, his numbering is given in parentheses.\n\n³² StA Wertheim Lit. A 436 fol. 94.\n\n³³ J. Kühles (as in note 13) p. 128.\n\n³⁴ StA Wertheim Lit. A 436 fol. 94.\n\n³⁵ StA Ludwigsburg Bü 302 No. 95; not in Walther Ludwig: The Lineage of the Lords of Neideck until around 1500, In: WFr 68 (1984) pp. 63-96.",
+      "english": "With these source references, a reasonably stable genealogical connection can be established. This does not change the wise insight that H. Bauer once prefaced his draft with, that our present family tree... is in any case relatively the more sufficient one³⁰. Eberhard Rufus had two sons. First, there is Eberhard II miles, who is further described as maior in 1305 and 1314³¹, which means there was a Eberhard der Jüngere at the time³². Der Ältere is likely identical to the bearer of this name mentioned in the Bronnbach necrology as having died in 1314³³. The second son of Eberhard Rufus was Konrad II, who appears from 1305 to 1321. His wife is known to be Adelheid von Niedeck; already a widow in 1327, she left a minor son³⁴. This squire (Edelknecht) Hans appears from 1340 to 1359. Since he carries the addition \"von Neudeck\" in 1355³⁵, he can be clearly distinguished from the knight of the same name, Hans III. No descendants can be assigned to him, so the First or Eberhardian main line became extinct with him.\n\n³⁰ H. Bauer (as in note 1) p. 178.\n\n³¹ W. Möller (as in note 10) equates Eberhard I and II: in the following, his numbering is given in parentheses.\n\n³² StA Wertheim Lit. A 436 fol. 94.\n\n³³ J. Kühles (as in note 13) p. 128.\n\n³⁴ StA Wertheim Lit. A 436 fol. 94.\n\n³⁵ StA Ludwigsburg Bü 302 No. 95; not in Walther Ludwig: The Lineage of the Lords of Neideck until around 1500, In: WFr 68 (1984) pp. 63-96.",
       "facts": [
         {
-          "person": "Konrad von Rosenberg",
+          "person": "konrad_husband_of_alheit_von_neudeck",
           "type": "spouse",
-          "of": "Adelheid von Neudeck",
+          "of": "Adelheid von Niedeck",
           "date": "1327"
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "konrad_husband_of_alheit_von_neudeck",
           "type": "death",
           "diedBefore": "1328",
           "date": "1327"
@@ -668,21 +668,21 @@
           "date": "1314"
         },
         {
-          "person": "Hans von Neudeck",
+          "person": "Hans von Niedeck",
           "type": "generic",
           "content": "may be the person attested between 1340 and 1359 and called von Neudeck in 1355, whom the source presents as Adelheid von Neudeck’s minor son in 1327; his branch may have ended with him.",
           "date": "1327"
         },
         {
-          "person": "Adelheid von Neudeck",
+          "person": "Adelheid von Niedeck",
           "type": "parent",
-          "of": "Hans von Neudeck",
+          "of": "Hans von Niedeck",
           "date": "1327"
         },
         {
           "person": "Konrad von Rosenberg",
           "type": "parent",
-          "of": "Hans von Neudeck",
+          "of": "Hans von Niedeck",
           "date": "1327"
         },
         {
@@ -964,7 +964,7 @@
     },
     {
       "german": "Zu diesen Uissigheim-Rosenbergern kehren wir jetzt zurück. Mittelpunkt ihrer Herrschaft waren Burg und Dorf, 1378 Stadt genannt⁴⁵. Westlich und nördlich davon gruppierten sich die Lehen des Hochstifts Würzburg in Götzingen, Bofsheim, Sindolsheim und Osterburken. Dazu gehörten auch die Kirchenpatronate (mit Ausnahme derer zu Sindolsheim und Götzingen). Als Bischof Gottfried III. (1314-1322) die Belehnung des Arnold II. mit Hirschlanden vornahm⁴⁶, bahnte sich eine Besitzausweitung in östlicher Richtung an. Sie gipfelte im Erwerb von Rechtstiteln in Brehmen und Buch am Ahorn⁴⁷. Durch eine Familienverbindung scheinen sie an unsere Niederadelsfamilie gekommen zu sein; Adelheid von Neudeck, Witwe Konrads II., verkaufte im Jahre 1327 dem Kloster Bronnbach 4½ Heller Gült ihres Anteils an der Mühle von Rosenberg; als Zeugen werden *min öheim* Konrad von Brehmen, ihr *buhle* Eberhard der Ältere, *advocatus* des Erzstifts Mainz in Walldürn, und ein weiterer Eberhard genannt⁴⁸. Oheim ist auch Bezeichnung für Schwiegervater, buhle für einen älteren männlichen Verwandten⁴⁹. Letzterer ist der advocatus Eberhard III. (II.), der zur Unterscheidung von seinem Sohn Eberhard V. (III.) hier als der Ältere bezeichnet wird. Zugleich ist das ein Hinweis, daß es damals keinen anderen Träger dieses Namens mehr gegeben hat.\n\n⁴⁵ StA Würzburg. Mainzer Buch verschiedenen Inhalts 10 fol. 84\".\n\n⁴⁶ H. Hoffmann (wie Anm. 36) Nr. 1967, S. 206.\n\n⁴⁷ Ebd., Nr. 2416, S. 255.\n\n⁴⁸ StA Wertheim Lit. A 436 fol. 94'.\n\n⁴⁹ J. Grimm: Deutsches Wörterbuch 13 (1889) Sp. 1198ff. und 2 (1860) Sp. 498.",
-      "english": "We now return to these Uissigheim-Rosenbergs. The center of their domain was the castle and village, called a town in 1378⁴⁵. To the west and north of it were grouped the fiefs of the Prince-Bishopric of Würzburg in Götzingen, Bofsheim, Sindolsheim, and Osterburken. This also included the church patronages (with the exception of those in Sindolsheim and Götzingen). When Bishop Gotfried III (1314-1322) enfeoffed Arnold II with Hirschlanden⁴⁶, an expansion of possessions to the east began. It culminated in the acquisition of legal titles in Brehmen and Buch am Ahorn⁴⁷. They seem to have come to our lower noble family through a family connection; Adelheid von Neudeck, widow of Konrad II, sold her share of the revenue from the Rosenberg mill (4½ Heller) to Bronnbach Abbey in 1327; the witnesses are named as min öheim (my uncle/maternal relative) Konrad von Brehmen, her buhle Eberhard der Ältere, advocatus of the Archbishopric of Mainz in Walldürn, and another Eberhard⁴⁸. Oheim is also a term for father-in-law, buhle for an older male relative⁴⁹ The latter is the advocate Eberhard III, who is called der Ältere here to distinguish him from his son Eberhard V. At the same time, this is an indication that there was no other bearer of this name at that time.\n\n⁴⁵ StA Würzburg. Mainz Book of Various Contents 10 fol. 84\".\n\n⁴⁶ H. Hoffmann (as in note 36) No. 1967, p. 206.\n\n⁴⁷ Ibid., No. 2416, p. 255.\n\n⁴⁸ StA Wertheim Lit. A 436 fol. 94'.\n\n⁴⁹ J. Grimm: German Dictionary 13 (1889) col. 1198ff. and 2 (1860) col. 498.",
+      "english": "We now return to these Uissigheim-Rosenbergs. The center of their domain was the castle and village, called a town in 1378⁴⁵. To the west and north of it were grouped the fiefs of the Prince-Bishopric of Würzburg in Götzingen, Bofsheim, Sindolsheim, and Osterburken. This also included the church patronages (with the exception of those in Sindolsheim and Götzingen). When Bishop Gotfried III (1314-1322) enfeoffed Arnold II with Hirschlanden⁴⁶, an expansion of possessions to the east began. It culminated in the acquisition of legal titles in Brehmen and Buch am Ahorn⁴⁷. They seem to have come to our lower noble family through a family connection; Adelheid von Niedeck, widow of Konrad II, sold her share of the revenue from the Rosenberg mill (4½ Heller) to Bronnbach Abbey in 1327; the witnesses are named as min öheim (my uncle/maternal relative) Konrad von Brehmen, her buhle Eberhard der Ältere, advocatus of the Archbishopric of Mainz in Walldürn, and another Eberhard⁴⁸. Oheim is also a term for father-in-law, buhle for an older male relative⁴⁹ The latter is the advocate Eberhard III, who is called der Ältere here to distinguish him from his son Eberhard V. At the same time, this is an indication that there was no other bearer of this name at that time.\n\n⁴⁵ StA Würzburg. Mainz Book of Various Contents 10 fol. 84\".\n\n⁴⁶ H. Hoffmann (as in note 36) No. 1967, p. 206.\n\n⁴⁷ Ibid., No. 2416, p. 255.\n\n⁴⁸ StA Wertheim Lit. A 436 fol. 94'.\n\n⁴⁹ J. Grimm: German Dictionary 13 (1889) col. 1198ff. and 2 (1860) col. 498.",
       "mention": [
         {
           "place": "bronnbach"
@@ -981,14 +981,14 @@
           "date": "1378"
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "konrad_husband_of_alheit_von_neudeck",
           "personDeceased": true,
           "type": "spouse",
-          "of": "Adelheid von Neudeck",
+          "of": "Adelheid von Niedeck",
           "date": "1327"
         },
         {
-          "person": "Adelheid von Neudeck",
+          "person": "Adelheid von Niedeck",
           "type": "generic",
           "content": "sold income from her share in the mill at Rosenberg to Bronnbach.",
           "date": "1327"
@@ -996,7 +996,7 @@
         {
           "person": "Konrad von Brehmen",
           "type": "kin",
-          "of": "Adelheid von Neudeck",
+          "of": "Adelheid von Niedeck",
           "term": "öheim",
           "date": "1327"
         },
@@ -1007,7 +1007,7 @@
             "Vogt zu Dürn"
           ],
           "type": "kin",
-          "of": "Adelheid von Neudeck",
+          "of": "Adelheid von Niedeck",
           "term": "buhle",
           "date": "1327"
         },

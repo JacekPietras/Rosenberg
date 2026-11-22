@@ -6,18 +6,18 @@
       "source": "Liber mortuorum monasterii Brunnbacensis, Archiv des Historischen Vereins von Unterfranken und Aschaffenburg, vol. 21 (1871)",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10999451",
       "german": "`Julius 22 1227, Adelheydis de Neydeck, uxor Conradi de Rosenberg.`",
-      "english": "Adelheid von Neydeck died on July 22, 1327. She was the wife of Konrad von Rosenberg.",
+      "english": "Adelheid von Niedeck died on July 22, 1327. She was the wife of Konrad von Rosenberg.",
       "facts": [
         {
-          "person": "Adelheid von Neydeck",
+          "person": "Adelheid von Niedeck",
           "type": "death",
           "diedOn": "1327-07-22"
         },
         {
-          "person": "Adelheid von Neydeck",
+          "person": "konrad_husband_of_alheit_von_neudeck",
+          "personDeceased": true,
           "type": "spouse",
-          "of": "Konrad von Rosenberg",
-          "ofDeceased": true
+          "of": "Adelheid von Niedeck"
         }
       ]
     }
