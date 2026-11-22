@@ -34,10 +34,18 @@
       ],
       "img": [
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/4368,/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/4368,/0/default.jpg",
+          "deleted": true
         },
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/4368,/0/default.jpg",
+          "deleted": true
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/max/0/default.jpg",
           "seals": [
             {
               "person": "vitztum_zu_Heidelberg",
@@ -49,12 +57,6 @@
               "type": "swans"
             }
           ]
-        },
-        {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/1/full/max/0/default.jpg"
-        },
-        {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/67d645a6-1e48-4cc6-ade6-18eaec99f559/2/full/max/0/default.jpg"
         }
       ]
     }

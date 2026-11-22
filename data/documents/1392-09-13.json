@@ -12,7 +12,10 @@
       "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margaretha von Hirschhorn 810 gulden dating from Ruprecht I. Konrad used that sum to redeem Minneburg from Kunz Mönch von Rosenberg, Vogt zu Steinsberg. The debt also includes 1,000 gulden that the Count Palatine had pledged to Rosenberg's daughter and 1,000 gulden for himself, making 2,810 gulden in total, for which Minneburg remains pledged to Konrad.",
       "mention": [
         {
-          "person": "Kunz Mönch"
+          "person": "Kunz Mönch von Rosenberg",
+          "personTitle": [
+            "Vogt zu Steinsberg"
+          ]
         },
         {
           "place": "minneburg"

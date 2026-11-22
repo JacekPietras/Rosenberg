@@ -149,7 +149,7 @@ Agatha
 Agnes, Agnese
 Amalie, Amalia
 Anastasia
-Anna, Anne
+Anna, Anne, Ennel, Ennelin
 Barbara
 Brigitta
 Christiana, Christina, Christine
@@ -161,7 +161,6 @@ Elche
 Elchine, Elchina
 Elichin
 Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
-Ennel, Ennelin
 Eva
 Felicitas
 Gertrud, Gerdrud, Gertraud
