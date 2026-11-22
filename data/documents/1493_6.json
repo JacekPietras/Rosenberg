@@ -9,6 +9,9 @@
       "english": "Disputes between the community of Pfahlenheim and the commandery with those von Rosenberg, Brandenburg etc. regarding driving and pasturing on the Pfahlenheim lands.",
       "mention": [
         {
+          "place": "pfahlenheim"
+        },
+        {
           "place": "rosenberg-town"
         }
       ],
