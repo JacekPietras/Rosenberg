@@ -1334,6 +1334,18 @@
     "showOnMap": false
   },
   {
+    "id": "pfahlenheim",
+    "variations": [
+      "Pfahlenheim",
+      "Pholenheim",
+      "Pfalnhaim",
+      "Pfalenhaim"
+    ],
+    "lat": 49.55893,
+    "lon": 10.12482,
+    "description": "Recorded as Pholenheim in 1136/39; historical forms Pfalnhaim and Pfalenhaim appear in the Würzburg historical register. Sources: https://de.wikipedia.org/wiki/Pfahlenheim; https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?jahr_anfang=&jahr_ende=&max_eintraege=10&name=&sache=&site=1&stadt=3143; https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?jahr_anfang=&jahr_ende=&max_eintraege=10&name=&sache=&site=3&stadt=158"
+  },
+  {
     "id": "mainz",
     "variations": [
       "Mainz",

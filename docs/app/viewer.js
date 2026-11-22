@@ -1162,7 +1162,7 @@ function recordLabelsForPath(path) {
 }
 
 function recordNeedsTranscription(doc) {
-  return doc?.transcribed !== true && (doc?.entries || []).some((entry) => {
+  return doc?.transcribed !== true && doc?.deleted !== true && (doc?.entries || []).some((entry) => {
     const images = Array.isArray(entry.img) ? entry.img : [entry.img];
     return images.some((image) => {
       if (image && typeof image === 'object' && image.deleted === true) return false;
@@ -1189,10 +1189,15 @@ function visibleRecordPaths(paths) {
   if (state.recordLabels.length !== selectedBefore || state.hiddenRecordLabels.length !== hiddenBefore) savePreferences();
   const selected = new Set(state.recordLabels);
   const hidden = new Set(state.hiddenRecordLabels || []);
-  const transcriptionExcludedLabels = new Set(['hessen', 'to review', ...DISTINCT_FAMILIES]);
+  const isToTranscribe = (path) => {
+    const labels = recordLabelForPath(path);
+    return recordNeedsTranscription(state.documents.get(path))
+      && labels.includes('franken')
+      && !labels.includes('to review');
+  };
   return paths.filter((path) => {
     if (state.recordSource && !citationIndex.recordHasSource(path, state.recordSource)) return false;
-    if (state.toTranscribe && (!recordNeedsTranscription(state.documents.get(path)) || recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label)))) return false;
+    if (state.toTranscribe && !isToTranscribe(path)) return false;
     if (path === state.navigationRecord) return true;
     const labels = recordLabelForPath(path);
     const hasDistinctFamily = labels.some((label) => DISTINCT_FAMILIES.has(label));
@@ -1228,9 +1233,10 @@ function renderYearSidebar(paths, labelPaths = paths) {
   if (missingSourcePath) labels.set(MISSING_SOURCE_LABEL, { label: MISSING_SOURCE_LABEL, path: missingSourcePath, count: missingSourceCount });
   const missingUrlPath = labelPaths.find(recordHasMissingUrl);
   if (missingUrlPath) labels.set(MISSING_URL_LABEL, { label: MISSING_URL_LABEL, path: missingUrlPath, count: missingUrlCount });
-  const transcriptionExcludedLabels = new Set(['hessen', 'to review', ...DISTINCT_FAMILIES]);
-  const transcriptionCount = labelPaths.filter((path) => recordNeedsTranscription(state.documents.get(path))
-    && !recordLabelForPath(path).some((label) => transcriptionExcludedLabels.has(label))).length;
+  const transcriptionCount = labelPaths.filter((path) => {
+    const labels = recordLabelForPath(path);
+    return recordNeedsTranscription(state.documents.get(path)) && labels.includes('franken') && !labels.includes('to review');
+  }).length;
   const transcriptionLink = `<a href="#" class="${state.toTranscribe ? 'selected' : ''}" data-sidebar-type="transcribe">to transcribe (${transcriptionCount})</a>`;
   const labelLinks = [...labels.values()]
     .sort((left, right) => {

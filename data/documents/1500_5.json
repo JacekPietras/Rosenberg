@@ -1,6 +1,6 @@
 {
   "date": "1530",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
       "source": [
@@ -27,10 +27,12 @@
       ],
       "img": [
         {
-          "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00001.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00001.jpg",
+          "deleted": true
         },
         {
-          "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00002.jpg"
+          "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00002.jpg",
+          "deleted": true
         },
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00003.jpg"

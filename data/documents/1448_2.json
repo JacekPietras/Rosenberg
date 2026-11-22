@@ -6,8 +6,26 @@
       "source": "ISG FFM, H.06.02, 4421",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10596858",
       "german": "Korrespondenz Darmstadts mit Frankfurt, betr. Nichtbeteiligung des More im Dienst derer von Rosenburg bei einem Raub",
-      "english": "Correspondence between Darmstadt and Frankfurt, concerning the non-participation of More, in the service of the von Rosenburg, in a robbery\n\nRelated to On 11 October 1448, Michael von Bickenbach reportedly appeared outside Frankfurt with approximately 200 mounted men, seized livestock, and took prisoners.\n\nThe account names Jorg von Rosenberg among Bickenbach's allies, alongside Philipp von Frankenstein, Engelhard von Rodenstein, Philipp von Riedern and several others. It says Bickenbach sent his formal declaration of feud only after the initial attack. Fighting continued until the settlement of 10 February 1451.",
+      "english": "Correspondence between Darmstadt and Frankfurt, concerning the non-participation of More, in the service of the von Rosenburg, in a robbery\n\nRelated to On 11 October 1448, Michael von Bickenbach reportedly appeared outside Frankfurt with approximately 200 mounted men, seized livestock, and took prisoners.\n\nThe account names Georg von Rosenberg among Bickenbach's allies, alongside Philipp von Frankenstein, Engelhard von Rodenstein, Philipp von Riedern and several others. It says Bickenbach sent his formal declaration of feud only after the initial attack. Fighting continued until the settlement of 10 February 1451.",
       "mention": [
+        {
+          "place": "bickenbach"
+        },
+        {
+          "person": "Engelhard von Rodenstein"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Michael von Bickenbach"
+        },
+        {
+          "person": "Philipp von Frankenstein"
+        },
+        {
+          "person": "Philipp von Riedern"
+        },
         {
           "place": "rosenberg-town"
         }
