@@ -1,0 +1,20 @@
+{
+  "date": "1427-09-25",
+  "label": "to review",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Liber mortuorum monasterii Brunnbacensis, Archiv des Historischen Vereins von Unterfranken und Aschaffenburg, vol. 21 (1871)",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10999451",
+      "german": "`September 25 1427, Conradus de Rosenberg.`",
+      "english": "Konrad von Rosenberg died on September 25, 1427.",
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "death",
+          "diedOn": "1427-09-25"
+        }
+      ]
+    }
+  ]
+}

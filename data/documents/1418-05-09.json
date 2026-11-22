@@ -1,0 +1,24 @@
+{
+  "date": "1418-05-09",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Liber mortuorum monasterii Brunnbacensis, Archiv des Historischen Vereins von Unterfranken und Aschaffenburg, vol. 21 (1871)",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10999451",
+      "german": "`Majus 9 1418, Margaretha von Rosenberg`. Der Grabstein liegt in zweiter Neihe vor den Stufen im Mittelschiffe der Kirche mit der Inschrift: `Anno Dni MCCCCXVIII feria quarta post penthecoste o. Margretha de Rosenberg cuig aia requiescat i. pace. ame.`",
+      "english": "The tombstone lies in the second row before the steps in the central nave of the church, with the inscription: In the year of our Lord 1418, on the Wednesday after Pentecost, Margaretha von Rosenberg died. May her soul rest in peace. Amen.",
+      "mention": [
+        {
+          "person": "Margaretha von Rosenberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Margaretha de Rosenberg",
+          "type": "death",
+          "diedOn": "1418-05-09"
+        }
+      ]
+    }
+  ]
+}
