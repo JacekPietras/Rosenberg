@@ -627,7 +627,13 @@ function resolve(state, d) {
     }
   }
   const surname = state.birth ?? familyText(family);
-  const routeTitle = !surname ? titles.find((title) => title.kind === 'route' && !title.dropped)?.group.canonical : '';
+  const routeTitlePriority = ['König', 'Papst', 'Erzbischof', 'Fürstbischof', 'Bischof'];
+  const promotableRoute = !state.birth && (!family || (family.kind === 'byName' && !family.particle));
+  const promotedTitle = (promotableRoute ? routeTitlePriority : [])
+    .map((canonical) => titles.find((title) => !title.dropped && title.group.canonical === canonical))
+    .find(Boolean);
+  const routeTitle = promotedTitle?.group.canonical
+    ?? (!surname ? titles.find((title) => title.kind === 'route' && !title.dropped)?.group.canonical : '');
   const route = [routeTitle, state.given.join(' '), surname, state.rest]
     .filter(Boolean).join(' ');
   return { route, titles: [...new Set(out)], attached, rest: state.rest };

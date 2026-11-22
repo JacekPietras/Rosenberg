@@ -1,7 +1,10 @@
 {
   "date": "1315-04-18",
   "place": "München",
-  "label": "IDK",
+  "label": [
+    "Suspicious",
+    "Sulzbach"
+  ],
   "entries": [
     {
       "source": "[RI VII] H. 3 n. 3",

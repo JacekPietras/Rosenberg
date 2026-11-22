@@ -108,7 +108,7 @@ recognizer treats the place after them differently from other offices.
   Kurfürst, Pfalzgraf, Landgraf, Marggraf, Burggraf): the place belongs to the
   office, never to the family name. `Bishop Konrad of Würzburg`, `Konrad zu
   Würzburg, Bischof`, and `Konrad, Bischof zu Würzburg` all give the name
-  `Konrad` with the title `Bischof zu Würzburg`; `Johann II zu Würzburg,
+  `Bischof Konrad` with the title `Bischof zu Würzburg`; `Johann II zu Würzburg,
   Bischof` gives `Hans`. English `of <place>` becomes `zu`; a source `von`
   or `zu` is kept (`Johann, Abt von Fulda` → `Abt von Fulda`). Several titles
   are all returned (`Bischof zu Würzburg`, `Herzog zu Franken`). After a
@@ -134,6 +134,13 @@ recognizer treats the place after them differently from other offices.
   (not `zu`) and without a possessive; otherwise the title is bare (`of
   Bohemian`) or, after `von <unlisted place>`, dropped because the place is the
   person's family name (`Roman King Hans von Neitperg` → `Hans von Neitperg`).
+- `König`, `Papst`, `Erzbischof`, `Fürstbischof`, and `Bischof` are prefixed
+  to the route name only when the route otherwise consists of given names and,
+  optionally, a by-name without a particle-place surname. Only one is prefixed,
+  in that priority order; other titles remain in the title list. Thus
+  `Archbishop Konrad of Mainz` gives the route `Erzbischof Konrad` and title
+  `Erzbischof zu Mainz`, while `Archbishop Konrad von Thüngen` keeps the route
+  `Konrad von Thüngen`.
 - `data/title-seats.md` lists seats (`// sees`), territories (`//
   territories`), and realms (`// realms`), one place per line with equivalent
   forms after commas; the first form is canonical. The file is appended to the

@@ -462,7 +462,7 @@ test('normalizes Bishop Wolfram of Würzburg into a person route and locative ti
   const { singles } = findPersonNameMentions('from Bishop Wolfram of Würzburg', titleText,
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Wolfram');
+  assert.equal(singles[0].route, 'Bischof Wolfram');
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
@@ -474,11 +474,11 @@ test('recognizes a bishop named before a locative designation', () => {
   const { singles } = findPersonNameMentions(' Wolfram zu Würzburg, Bischof', titleText,
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Wolfram');
+  assert.equal(singles[0].route, 'Bischof Wolfram');
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
-test('normalizes Bishop Konrad of Würzburg to Konrad, Bischof zu Würzburg', () => {
+test('promotes Bishop Konrad of Würzburg to Bischof Konrad with locative title', () => {
   const titleText = `${titles}\n${projectTitles}`;
   const placeRecords = [{ name: 'Würzburg', variations: ['Würzburg', 'Wirtzeburg', 'Wurzburg'] }];
   const sourcePattern = buildSourcePersonPattern(projectNames, particles, placeRecords,
@@ -486,7 +486,7 @@ test('normalizes Bishop Konrad of Würzburg to Konrad, Bischof zu Würzburg', ()
   const { singles } = findPersonNameMentions('Bishop Konrad of Würzburg', titleText,
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Konrad');
+  assert.equal(singles[0].route, 'Bischof Konrad');
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
@@ -498,7 +498,7 @@ test('recognizes “Bishop Hans zu Würzburg” in surrounding prose', () => {
   const { singles } = findPersonNameMentions('for Bishop Hans zu Würzburg was', titleText,
     connectors, particles, projectNames, byNames, placeRecords, sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Hans');
+  assert.equal(singles[0].route, 'Bischof Hans');
   assert.deepEqual(singles[0].titles, ['Bischof zu Würzburg']);
 });
 
@@ -510,7 +510,7 @@ test('normalizes an office title of a place to zu when no surname is given', () 
     connectors, particles, projectNames, byNames,
     [{ name: 'Rosenberg', variations: ['Rosenberg'] }], sourcePattern);
   assert.equal(singles.length, 1);
-  assert.equal(singles[0].route, 'Eberhard');
+  assert.equal(singles[0].route, 'Bischof Eberhard');
   assert.deepEqual(singles[0].titles, ['Bischof zu Rosenberg']);
 });
 
@@ -689,15 +689,15 @@ const routeOf = (name) => personRouteName(name, ruleTitles, ruleConnectors, part
 
 test('territorial titles take the place after them, never the family name', () => {
   for (const [text, route, found] of [
-    ['Bishop Konrad of Würzburg', 'Konrad', ['Bischof zu Würzburg']],
-    ['Konrad zu Würzburg, Bischof', 'Konrad', ['Bischof zu Würzburg']],
-    ['Johann II zu Würzburg, Bischof', 'Hans', ['Bischof zu Würzburg']],
+    ['Bishop Konrad of Würzburg', 'Bischof Konrad', ['Bischof zu Würzburg']],
+    ['Konrad zu Würzburg, Bischof', 'Bischof Konrad', ['Bischof zu Würzburg']],
+    ['Johann II zu Würzburg, Bischof', 'Bischof Hans', ['Bischof zu Würzburg']],
     ['Heinrich zu Fulda, Abt', 'Heinrich', ['Abt zu Fulda']],
     ['Otto zu Ebrach, Abt', 'Otto', ['Abt zu Ebrach']],
-    ['Philipp zu Speyer, Bischof', 'Philipp', ['Bischof zu Speyer']],
+    ['Philipp zu Speyer, Bischof', 'Bischof Philipp', ['Bischof zu Speyer']],
     ['Johann, Abt von Fulda', 'Hans', ['Abt von Fulda']],
-    ['Friedrich, Bishop of Würzburg, Duke of Franconia', 'Friedrich', ['Bischof zu Würzburg', 'Herzog zu Franken']],
-    ['Julius, Bischof zu Würzburg, Herzog zu Franken', 'Julius', ['Bischof zu Würzburg', 'Herzog zu Franken']],
+    ['Friedrich, Bishop of Würzburg, Duke of Franconia', 'Bischof Friedrich', ['Bischof zu Würzburg', 'Herzog zu Franken']],
+    ['Julius, Bischof zu Würzburg, Herzog zu Franken', 'Bischof Julius', ['Bischof zu Würzburg', 'Herzog zu Franken']],
     ['Burgrave Friedrich zu Nuremberg', 'Friedrich', ['Burggraf zu Nürnberg']],
     ['Gerhard von Schwarzburg, Bischof', 'Gerhard von Schwarzburg', ['Bischof']],
   ]) {
@@ -798,7 +798,7 @@ test('a territorial title and a place after a coordinated list belong to the las
     ruleNames, ruleByNames, rulePlaces);
   assert.deepEqual(group.members, [
     { route: 'Ludwig', titles: ['Kurfürst'] },
-    { route: 'Philipp', titles: ['Bischof zu Speyer'] },
+    { route: 'Bischof Philipp', titles: ['Bischof zu Speyer'] },
   ]);
 });
 
@@ -842,9 +842,9 @@ test('a lowercase unlisted word is not a title place and non-Latin1 text does no
 
 test('a leading territorial title takes the place after the given name', () => {
   for (const [text, route, found] of [
-    ['Bischof Konrad von Würzburg', 'Konrad', ['Bischof von Würzburg']],
-    ['Bishop Rudolf von Würzburg', 'Rudolf', ['Bischof von Würzburg']],
-    ['Bishop Rudolf of Würzburg', 'Rudolf', ['Bischof zu Würzburg']],
+    ['Bischof Konrad von Würzburg', 'Bischof Konrad', ['Bischof von Würzburg']],
+    ['Bishop Rudolf von Würzburg', 'Bischof Rudolf', ['Bischof von Würzburg']],
+    ['Bishop Rudolf of Würzburg', 'Bischof Rudolf', ['Bischof zu Würzburg']],
     ['Gerhard von Schwarzburg, Bischof', 'Gerhard von Schwarzburg', ['Bischof']],
   ]) assert.deepEqual(mentionsIn(text).slice(0, 1), [{ route, titles: found }], text);
 });
