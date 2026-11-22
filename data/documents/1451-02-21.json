@@ -38,6 +38,22 @@
           "of": "Erasmus von Rosenberg"
         },
         {
+          "person": "Hans von Helmstatt",
+          "type": "spouse",
+          "of": "Anna Landschad"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
+          "of": "Margaretha von Seinsheim",
+          "ofTitle": [
+            "zu Schwarzenberg"
+          ]
+        },
+        {
           "person": "Konrad von Rosenberg",
           "personTitle": [
             "Ritter"
