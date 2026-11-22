@@ -20,6 +20,7 @@ from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[2]
 DOCUMENT_FIELDS = ("date", "place", "label", "research", "transcribed", "deleted", "entries")
+RESEARCH_LABELS = {"to review", "IDK", "Suspicious", "Unrelated"}
 ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "mention", "facts", "guesses", "img")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
@@ -164,7 +165,7 @@ def order_document(document):
     if isinstance(labels, str):
         labels = [labels]
     if "research" in reordered and not (
-        isinstance(labels, list) and "to review" in labels
+        isinstance(labels, list) and RESEARCH_LABELS.intersection(labels)
     ):
         reordered.pop("research")
         changed = True
@@ -332,8 +333,15 @@ def main(argv=None):
                         document.pop("label")
                 else:
                     labels = None
-                research_removed = "research" in document
-                document.pop("research", None)
+                labels_for_research = document.get("label", [])
+                if isinstance(labels_for_research, str):
+                    labels_for_research = [labels_for_research]
+                research_removed = (
+                    "research" in document
+                    and not RESEARCH_LABELS.intersection(labels_for_research)
+                )
+                if research_removed:
+                    document.pop("research", None)
                 if labels is not None or research_removed:
                     try:
                         original = path.read_text(encoding="utf-8")
