@@ -2297,5 +2297,113 @@
     "category": "castle",
     "parent": "welsberg",
     "description": "Medieval ancestral castle of the Welsperg family above Welsberg. https://www.gemeinde.welsberg-taisten.bz.it/de/Dorfleben/Orte/Freizeit_und_Tourismus/Kuratorium_Schloss_Welsperg"
+  },
+  {
+    "id": "neustadt-an-der-weinstrasse",
+    "variations": [
+      "Neustadt an der Weinstraße",
+      "Neustadt an der Haardt"
+    ],
+    "lat": 49.35374,
+    "lon": 8.13676,
+    "category": "city",
+    "description": "Received a royal town privilege in 1275. https://www.neustadt.eu/index.php?FID=2636.67578.1&ModID=7&object=tx%7C2636.67578.1"
+  },
+  {
+    "id": "haardt",
+    "variations": [
+      "Haardt",
+      "Haardt an der Weinstraße"
+    ],
+    "lat": 49.36611,
+    "lon": 8.13833,
+    "category": "village",
+    "description": "Medieval wine village below Burg Winzingen. https://www.neustadt.eu/index.php?FID=4057.2075.1&ModID=7&object=tx%7C4057.2075.1"
+  },
+  {
+    "id": "burg-winzingen",
+    "variations": [
+      "Burg Winzingen",
+      "Schloss Winzingen",
+      "Haardter Burg"
+    ],
+    "lat": 49.36172,
+    "lon": 8.13614,
+    "category": "castle",
+    "parent": "haardt",
+    "description": "Medieval Palatine castle above Haardt. The later Haardter Schloss occupies the same site. https://adw-goe.de/digitale-bibliothek/hoefe-und-residenzen-im-spaetmittelalterlichen-reich/id/rf15_I_121220-3355"
+  },
+  {
+    "id": "wolfsburg-neustadt",
+    "variations": [
+      "Wolfsburg",
+      "Burg Wolfsberg",
+      "Wolfsberger Schloss"
+    ],
+    "lat": 49.35988,
+    "lon": 8.10804,
+    "category": "castle",
+    "parent": "neustadt-an-der-weinstrasse",
+    "description": "Medieval castle west of Neustadt on the road toward Kaiserslautern. https://www.kuladig.de/Objektansicht/KLD-344843"
+  },
+  {
+    "id": "gimmeldingen",
+    "variations": [
+      "Gimmeldingen"
+    ],
+    "lat": 49.37606,
+    "lon": 8.15399,
+    "category": "village",
+    "description": "Wine village with a medieval castle site and a documentary tradition beginning in 1109. https://www.neustadt.eu/index.php?FID=4057.2054.1&ModID=7&object=tx%7C4057.2054.1"
+  },
+  {
+    "id": "koenigsbach-an-der-weinstrasse",
+    "variations": [
+      "Königsbach an der Weinstraße"
+    ],
+    "lat": 49.38799,
+    "lon": 8.15752,
+    "category": "village",
+    "description": "Medieval village north of Gimmeldingen with a surviving Gothic tower at its parish church. https://www.neustadt.eu/index.php?FID=4057.2116.1&ModID=7&object=tx%7C4057.2116.1"
+  },
+  {
+    "id": "deidesheim",
+    "variations": [
+      "Deidesheim"
+    ],
+    "lat": 49.40804,
+    "lon": 8.18751,
+    "category": "village",
+    "description": "The settlement belonged to the bishops of Speyer and received a town charter in 1395. https://www.kuladig.de/Objektansicht/KLD-290334"
+  },
+  {
+    "id": "speyerdorf",
+    "variations": [
+      "Speyerdorf"
+    ],
+    "lat": 49.33575,
+    "lon": 8.20624,
+    "category": "village",
+    "description": "Village recorded in 774 alongside neighboring Lachen. https://www.neustadt.eu/index.php?FID=4057.2132.1&ModID=7&object=tx%7C4057.2132.1"
+  },
+  {
+    "id": "wachenheim-an-der-weinstrasse",
+    "variations": [
+      "Wachenheim an der Weinstraße"
+    ],
+    "lat": 49.43804,
+    "lon": 8.18337,
+    "category": "city",
+    "description": "The village and castle became Palatine holdings in the Middle Ages. Wachenheim was granted town rights in 1341. https://www.kreis-bad-duerkheim.de/landkreis/standort/staedte-und-gemeinden/verbandsgemeinde-wachenheim/stadt-wachenheim/"
+  },
+  {
+    "id": "lambsheim",
+    "variations": [
+      "Lambsheim"
+    ],
+    "lat": 49.5097,
+    "lon": 8.28551,
+    "category": "city",
+    "description": "Received town rights in 1323 and began building a town wall thereafter. https://www.lambsheim.de/geschichte/sehenswertes/"
   }
 ]
