@@ -809,6 +809,18 @@ test('a birth name becomes the route while the married designation stays a title
     [{ route: 'Elisabeth Marschalk von Pappenheim', titles: ['von Rosenberg'] }]);
 });
 
+test('recognizes Anna Marschalk von Pappenheim and her son Kunz von Rosenberg', () => {
+  const names = `${ruleNames}\nAnna\nKunz`;
+  const places = [...rulePlaces, { name: 'Minneburg', variations: ['Minneburg'] }];
+  const sourcePattern = buildSourcePersonPattern(names, particles, places, ruleTitles, ruleConnectors, ruleByNames);
+  const text = 'I, Anna Marschalk von Pappenheim, I, Kunz von Rosenberg der Ältere zu Minneburg, her son';
+  const found = findPersonNameMentions(text, ruleTitles, ruleConnectors, particles, names, ruleByNames, places, sourcePattern);
+  assert.deepEqual(found.singles.map(({ route, titles: foundTitles }) => ({ route, titles: foundTitles })), [
+    { route: 'Anna Marschalk von Pappenheim', titles: [] },
+    { route: 'Kunz von Rosenberg', titles: ['der Ältere', 'zu Minneburg'] },
+  ]);
+});
+
 test('every trailing title is returned', () => {
   assert.deepEqual(mentionsIn('Konrad von Rosenberg, Ritter, Vogt zu Lauda, Amtmann zu Amberg'),
     [{ route: 'Konrad von Rosenberg', titles: ['Ritter', 'Vogt zu Lauda', 'Amtmann zu Amberg'] }]);
