@@ -62,7 +62,16 @@
       ],
       "img": [
         {
-          "src": "https://images.monasterium.net/img/IT-StiAI/STAI_XXIII_U548_r.jpg"
+          "src": "https://images.monasterium.net/img/IT-StiAI/STAI_XXIII_U548_r.jpg",
+          "regions": [
+            {
+              "x": 0.1137,
+              "y": 0.1113,
+              "width": 0.6323,
+              "height": 0.5032,
+              "name": "text"
+            }
+          ]
         },
         {
           "src": "https://images.monasterium.net/img/IT-StiAI/STAI_XXIII_U548_v.jpg",
