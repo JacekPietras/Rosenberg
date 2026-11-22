@@ -144,7 +144,7 @@ Zeisel
 
 # Women
 
-Adelheid, Alheit
+Adelheid, Alheit, Adelheydis
 Agatha
 Agnes, Agnese
 Amalie, Amalia
