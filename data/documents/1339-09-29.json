@@ -10,25 +10,25 @@
       "english": "Archbishop Heinrich of Mainz enters into a six-year alliance with Otto zu Würzburg, Bischof and Burgrave Johann of Nürnberg for mutual assistance. Knight Eberhard von Rosenberg, archiepiscopal vogt at Dürn, or the local bailiff is designated as arbitrator for the archbishop. The Landgraf zu Hesse is among the exempted allies.",
       "mention": [
         {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Hans",
           "personTitle": [
             "Burggraf zu Nürnberg"
           ]
         },
         {
-          "person": "Heinrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
           "place": "nuremberg"
-        },
-        {
-          "person": "Otto",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "wallduern"

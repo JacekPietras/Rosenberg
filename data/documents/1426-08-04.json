@@ -9,12 +9,18 @@
       "english": "Archbishop Konrad III of Mainz and Bishop Johann II zu Würzburg established a truce in the feud between the city of Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, and Karl and Siegmund von Thüngen.",
       "mention": [
         {
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "cronberg"
         },
         {
-          "person": "Hans",
+          "person": "Erzbischof Konrad",
           "personTitle": [
-            "Bischof zu Würzburg"
+            "Erzbischof zu Mainz"
           ]
         },
         {
@@ -25,12 +31,6 @@
         },
         {
           "person": "Karl von Thüngen"
-        },
-        {
-          "person": "Konrad",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
         },
         {
           "place": "mainz"

@@ -14,6 +14,12 @@
       "english": "1406 September 30, Heidelberg. King Ruprecht and his sons, Count Palatine Ludwig, Hans, Stephan, and Otto, acknowledge that they owe Duke Friedrich of Austria, their son-in-law or brother-in-law, 40,000 florins as a marriage portion for his wife, Countess Palatine Elisabeth. Half is to be paid on 23 April 1407 and the other half on 23 April 1408 at Wiltperg or Wyle. They provide as guarantors: Johann, Archbishop of Riga; Friedrich von Nürnberg, Burggraf; Raban zu Speyer, Bischof, Chancellor; Count Friedrich of Oettingen, Hofmeister; Count Wilhelm of Eberstein; Engelhard von Weinsberg, Hofrichter; Hans Schenk von Erbach; Eberhart Schenk von Erbach der Ältere; Konrad von Weinsberg; Hans vom Hirschhorn; Johan Remerer, called von Talburg; Dyether von Gemmingen; Herman von Rodenstein; Sifrid vom Stein; Eberhard vom Hirschhorn; Swartz Reinhard von Sickingen, Landvogt in Alsace; Wiprecht von Helmstatt der Jüngere, Vogt zu Bretten; Ulrich Landschad, Burggraf zu Alzey; Tham Knebel, Schultheiß zu Oppenheim; Hans von Helmstatt; Hans von Erligheim; Anthis von Monfurd; Eberhard and Rafan von Mentzingen; Hamnan von Sickingen; Guntz Münich von Rosenberg; Contz Landschad von Steinach; Raban von Helmstatt, resident at Bonfeld; Eberhard Gabel; Rüprecht Moniche; Reinhard von Remchingen; Henne Werberg, Vogt zu Germersheim; Gerliart von Talheim der Jüngere; Eberhard von Neipperg; Bertholt vom Nuwen huse; Sifrit von Venningen; Symon von Talheim, court master; Hans von Riechen, called Marschalk; Hanman, Schultheiß von Weinheim; and Heinrich von der Huben.",
       "mention": [
         {
+          "person": "Bischof Raban",
+          "personTitle": [
+            "Bischof zu Speyer"
+          ]
+        },
+        {
           "person": "Eberhard Schenk von Erbach",
           "personTitle": [
             "der Ältere"
@@ -69,12 +75,6 @@
         },
         {
           "place": "oppenheim"
-        },
-        {
-          "person": "Raban",
-          "personTitle": [
-            "Bischof zu Speyer"
-          ]
         },
         {
           "person": "Raban von Helmstatt"

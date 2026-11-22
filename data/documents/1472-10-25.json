@@ -9,7 +9,13 @@
       "english": "Hans von Heideck and his wife Veronika confirm that Rudolf zu Würzburg, Bischof has redeemed from them for 5,000 florids the perpetual annuity of 50 florins from the city of Röttingen, which Bishop Johann had sold to Ulrich von Rosenberg in 1456",
       "mention": [
         {
-          "person": "Hans",
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Bischof Rudolf",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
@@ -19,12 +25,6 @@
         },
         {
           "place": "roettingen"
-        },
-        {
-          "person": "Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         }
       ],
       "facts": [

@@ -9,13 +9,13 @@
       "english": "Nicolaus zu Speyer, Bischof confirms the content of the charter issued by Kunz Mönch von Rosenberg on August 3, 1375, concerning the castle and town of Steinach.",
       "mention": [
         {
-          "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Nicolaus",
+          "person": "Bischof Nicolaus",
           "personTitle": [
             "Bischof zu Speyer"
           ]
+        },
+        {
+          "person": "Kunz Mönch von Rosenberg"
         },
         {
           "place": "steinach"

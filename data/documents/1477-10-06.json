@@ -12,7 +12,13 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Diether",
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Diether",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
@@ -31,12 +37,6 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "wurzburg"

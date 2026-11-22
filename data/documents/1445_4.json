@@ -9,16 +9,16 @@
       "english": "Fief letter from Bishop Gottfried of Würzburg to Hans von Rosenberg the Younger regarding one-third of the tithe at Osterburken, share at Bofsheim, share at Rosenberg Castle and share at the village of Espelbach",
       "mention": [
         {
+          "person": "Bischof Gotfried",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "boffsheim"
         },
         {
           "place": "esselbach"
-        },
-        {
-          "person": "Gotfried",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "rosenberg-town"

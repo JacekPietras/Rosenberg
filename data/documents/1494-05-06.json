@@ -12,6 +12,12 @@
       "english": "The issuer commands the recipients to assist Johannes Koler (\"Colher\") in taking possession of the parish of Katzwang. The abbot and convent of Ebrach monastery have hitherto refused to transfer the benefice to him, although he had ordered them to do so based on his right of first petition.\nIssuer: King Maximilian I\nRecipients: Rudolf zu Würzburg, Bischof and Bishop Wilhelm of Eichstätt, Margrave Friedrich of Brandenburg, Michael, Sigmund the Elder and Younger, and Hans von Schwarzenberg, Erkinger von Seinsheim, Heinrich von Wenkheim, Georg von Rosenberg, and all subjects of the Empire in Franconia",
       "mention": [
         {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "ebrach"
         },
         {
@@ -22,12 +28,6 @@
         },
         {
           "person": "Heinrich von Wenkheim"
-        },
-        {
-          "person": "Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         }
       ],
       "facts": [

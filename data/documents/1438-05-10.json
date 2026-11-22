@@ -9,13 +9,13 @@
       "english": "Hans zu Würzburg, Bischof and Eitel Hiltmar, senior of the cathedral chapter, promised to release their fellow canons Johannsen von Grumbach, Mertein Truchseß, and Konrad von Rosenberg zu Bartenstein from hostage captivity in due course and without harm to them. The three canons stood surety to Ritter Johannsen von Hirschorn and the children of his late brother Philipp for a 2,000-florin debt owed by the bishopric, due on 1 June.",
       "mention": [
         {
-          "place": "grumbach"
-        },
-        {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
+        },
+        {
+          "place": "grumbach"
         },
         {
           "place": "wurzburg"

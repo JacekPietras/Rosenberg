@@ -9,16 +9,16 @@
       "english": "Elector Philipp of the Palatinate informs Moritz Zobel von Giebelstatt that he has caused the castle, town, office, and lordship of Lauda with appurtenances to pass to Lorenz zu Würzburg, Bischof and his diocese as an inheritance. This also includes Moritz's feudal holding, with which he had been bound to the Elector and, in the meantime, also to Knight Ludwig von Hutten. Moritz is to receive and hold the corresponding fief from Würzburg henceforth. The Elector refers him to the Bishop zu Würzburg, releases him from obligations, vows, and oaths toward him, and renounces everything he might have had regarding the vassal and the fief properties.\n\nCoverage period: 1506 August 11 (on Tuesday after St. Lawrence the martyr)\n\nSealer: Elector Philipp of the Palatinate (impressed secret seal)",
       "mention": [
         {
+          "person": "Bischof Lorenz",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "giebelstadt"
         },
         {
           "place": "lauda"
-        },
-        {
-          "person": "Lorenz",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "person": "Ludwig von Hutten",

@@ -14,6 +14,12 @@
       "english": "To the highly praised lord, Lord Wolfram, by the grace of God Bishop zu Würzburg, I, Eberhard von Rosenberg, Ritter, Vogt zu Dürn, offer my humble service with all diligence. Gracious lord, I make known to you and acknowledge by this present letter that I have received as a fief from my gracious lord, Lord Konrad, Abbot [?] of Comburg [?], all the rights that Otto Resche [?], a Ritter, formerly [?] had at the castle of Nagelsberg and in the woods and vineyards that he himself cultivated, except the part that belongs to Otto [?], his son; and all the part at the aforesaid castle that Arnold von Tierbach [?] had and bought from Konrad Flach [?]; and I have also given him the feudal right for it, as I rightly should. In truth and testimony of the things written above I have set my seal to this letter, which was given in the year after the birth of Christ thirteen hundred and thirty, on the next day after St. George's [?] day.",
       "mention": [
         {
+          "person": "Bischof Wolfram",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "comburg-stiftskirche"
         },
         {
@@ -24,12 +30,6 @@
         },
         {
           "place": "nagelsberg-castle"
-        },
-        {
-          "person": "Wolfram",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "wurzburg"

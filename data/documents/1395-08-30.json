@@ -9,16 +9,16 @@
       "english": "Ruprecht makes a settlement between Nicolaus zu Speyer, Bischof and the cathedral chapter. Palatinate arbitrators: Wiprecht von Helmstatt, Ritter; Diether von Handschuhsheim; and Kunz Mönch von Rosenberg.",
       "mention": [
         {
+          "person": "Bischof Nicolaus",
+          "personTitle": [
+            "Bischof zu Speyer"
+          ]
+        },
+        {
           "person": "Diether von Handschuhsheim"
         },
         {
           "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Nicolaus",
-          "personTitle": [
-            "Bischof zu Speyer"
-          ]
         },
         {
           "person": "Wiprecht von Helmstatt",

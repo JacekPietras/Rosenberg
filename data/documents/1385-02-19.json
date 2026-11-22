@@ -9,13 +9,13 @@
       "english": "Eberhard Schenk von Roßberg and his wife Agnes sold all their property to Gerhard zu Würzburg, Bischof for 300 lb. h. Except for the property in the fortress and the village of Rosenberg.",
       "mention": [
         {
-          "person": "Eberhard Schenk"
-        },
-        {
-          "person": "Gerhard",
+          "person": "Bischof Gerhard",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
+        },
+        {
+          "person": "Eberhard Schenk"
         },
         {
           "place": "rosenberg-town"

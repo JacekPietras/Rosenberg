@@ -9,13 +9,13 @@
       "english": "Hans von Rosenberg issues a deed of homage stating that, through his son Georg von Rosenberg (to whom he has granted “power to issue letters”), he received the court at Bucheym from Archbishop Bertholt zu Mainz as a fief held by knight service, and that his son swore the oath of fealty for it. The previous holders were Friedrich von Dürn, called Rieperg, and then the grantor’s parents. The fief charter from the same day is inserted.\n\nSeal: the grantor (missing).",
       "mention": [
         {
-          "person": "Berthold",
+          "place": "buchen"
+        },
+        {
+          "person": "Erzbischof Berthold",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
-        },
-        {
-          "place": "buchen"
         },
         {
           "person": "Friedrich von Dürn"

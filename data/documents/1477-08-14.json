@@ -12,10 +12,16 @@
           "person": "Arnold von Rosenberg"
         },
         {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "person": "Christiana von Rosenberg"
         },
         {
-          "person": "Diether",
+          "person": "Erzbischof Diether",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
@@ -31,12 +37,6 @@
         },
         {
           "person": "Michael von Rosenberg"
-        },
-        {
-          "person": "Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "wurzburg"

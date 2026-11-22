@@ -10,18 +10,24 @@
       "english": "Archbishop Heinrich of Mainz enters (for our need and benefit, that of our chapter and land) into a six-year alliance with Otto zu Würzburg, Bischof and Burgrave Johann of Nürnberg (Nurn-) for mutual assistance (in daily war with 50 men, under certain circumstances also with full force). Booty of every kind is divided \"proportionally\"; captured castles not held as fiefs by any of the allies are to be demolished, or disposition shall be made according to agreement. For \"pacts and other works\" they share costs \"jointly.\" The archbishop exempts: the See of Rome, the Roman Empire, all Electors, his suffragans, the Count Palatines Rudolf, Rupert the Elder, and Rupert the Younger; Friedrich zu Meißen, Markgraf; the Landgraf zu Hesse; Counts Gerlach of Nassau, Johan of Sponheim, Ulrich of Württemberg (Wirten-), their lords, men, etc., and all his allies. If a party leaves the land, the bailiff must fulfill everything. The arbitrators designated are: for the archbishop, knight Eberhard von Rosenberg (-sin-), archiepiscopal vogt at Dürn, or the local bailiff; for the bishop, knight Conrad Jemerer, episcopal bailiff at Hohenburg (or his successor); for Johann, Burghard of Seckendorf (-ckin-), his bailiff at Ansbach (Onolds-) or his successor. Rudolf von Wertheim, Graf shall serve as arbitrator. If necessary, they are to convene at Wertheim. Counts Bertold and Heinrich of Henneberg (-nen-), of Öttingen (Otin-), and Ludwig von Hohenlohe (-loch) may join this alliance before Martinmas.",
       "mention": [
         {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
           "person": "Friedrich zu Meißen"
         },
         {
           "person": "Hans",
           "personTitle": [
             "Burggraf zu Nürnberg"
-          ]
-        },
-        {
-          "person": "Heinrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
           ]
         },
         {
@@ -32,12 +38,6 @@
         },
         {
           "place": "nuremberg"
-        },
-        {
-          "person": "Otto",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "person": "Rudolf von Wertheim",

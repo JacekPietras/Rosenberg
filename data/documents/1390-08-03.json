@@ -9,16 +9,16 @@
       "english": "Kunz Mönch von Rosenberg and his wife Anne von Rydern certify the contract between them and Niklas zu Speyer, Bischof concerning the official transfer of Steynach Castle, the Hinterburg castle and the town of Steynach, the bishop's share, half of Duelnheim, a third part of St. Gilien, the estate at Schadehusen and a wine revenue at Stetefeld. Heidelberg on Saint Stephen's Day.",
       "mention": [
         {
+          "person": "Bischof Niklas",
+          "personTitle": [
+            "Bischof zu Speyer"
+          ]
+        },
+        {
           "place": "heidelberg"
         },
         {
           "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Niklas",
-          "personTitle": [
-            "Bischof zu Speyer"
-          ]
         },
         {
           "place": "steinach"

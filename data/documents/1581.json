@@ -9,7 +9,13 @@
       "english": "Julius zu Würzburg, Bischof, at the request of Konrad von Rosenberg der Ältere, zu Waldmannshofen, confirms a charter issued by Friedrich zu Würzburg, Bischof. Seal: the issuer.",
       "mention": [
         {
-          "person": "Friedrich",
+          "person": "Bischof Friedrich",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Bischof Julius",
           "personTitle": [
             "Bischof zu Würzburg"
           ]

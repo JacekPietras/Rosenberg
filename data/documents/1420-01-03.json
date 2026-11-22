@@ -12,13 +12,13 @@
       "english": "Hans zu Würzburg, Bischof grants Reinhard von Hartheim one third of the tithe at Schweinberg, which he had bought from Eberhard Pfale, who had bought it from Kunz von Rosenberg, resident at Röttingen. The reverse bears the note “hartheym”. Dated 3 January 1420.",
       "mention": [
         {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
+        },
+        {
+          "place": "burg-schweinberg"
         },
         {
           "person": "Reinhard von Hartheim"

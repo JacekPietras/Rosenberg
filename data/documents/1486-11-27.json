@@ -12,6 +12,12 @@
           "person": "Anselm von Rosenberg"
         },
         {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "person": "König Friedrich",
           "personTitle": [
             "König"
@@ -19,12 +25,6 @@
         },
         {
           "place": "rosenberg-town"
-        },
-        {
-          "person": "Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         }
       ],
       "facts": [

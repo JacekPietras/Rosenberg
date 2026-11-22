@@ -9,6 +9,19 @@
       "english": "Bishop Gottfried IV of Würzburg, Duke of Franconia, declares that he has amicably settled with Heinrich von Seckendorf as guardian of Engelhard von Thüngen and Hans vom Stein, on behalf of themselves and their wives, and as next heirs of Konrad (Contzen) von Rosenberg (deceased), regarding the office of Klingenberg (Clingen-), which said Konrad had sold to Bishop Johann III of Würzburg subject to redemption. The named parties shall deliver to Bishop Gottfried the office of Klingenberg with all appurtenances, hand over the purchase deeds, and release the vassals from their oaths. In return, the bishop assumes all outstanding debts of the heirs, namely 2,000 gulden to [Else?] von Gültlingen, daughter of Konrad von Rosenberg; 1,000 gulden to Georg von Seinsheim of Wässerndorf (Sauwßheim zu Westerndorff); 2,500 gulden to brothers Hans and Jörg Suppan; 500 gulden to Hans von Leimbach; and 200 gulden to the heirs of Dietz von Bischofsheim (deceased). Bishop Gottfried also intends to issue debt instruments to Engelhard von Thüngen for 1,400 gulden, to Heinrich von Seckendorf for 800 gulden, and to Hans vom Stein for 1,000 gulden. The issuer, his episcopal successors, and the Würzburg foundation shall have full authority to redeem and reclaim all rights associated with and pledged to the office of Klingenberg, without being disturbed therein.\n\nSealer: Bishop Gottfried IV of Würzburg",
       "mention": [
         {
+          "person": "Bischof Gotfried",
+          "personTitle": [
+            "Bischof zu Würzburg",
+            "Herzog zu Franken"
+          ]
+        },
+        {
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "bischofsheim"
         },
         {
@@ -16,19 +29,6 @@
         },
         {
           "person": "Georg von Seinsheim"
-        },
-        {
-          "person": "Gotfried",
-          "personTitle": [
-            "Bischof zu Würzburg",
-            "Herzog zu Franken"
-          ]
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "person": "Heinrich von Seckendorf"

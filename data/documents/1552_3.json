@@ -18,6 +18,12 @@
           "person": "Anna von Rosenberg"
         },
         {
+          "person": "Bischof Melchior",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "boxberg"
         },
         {
@@ -37,12 +43,6 @@
         },
         {
           "person": "Hans Wolf von Absberg"
-        },
-        {
-          "person": "Melchior",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "reifenberg"

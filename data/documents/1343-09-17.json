@@ -9,6 +9,12 @@
       "english": "Eberhard von Riedern, Dean, and the Chapter of the collegiate church at Würzburg vow to uphold the arbitration which the following-named arbitrators—Gotfried von Trimperg, Dean at Fulda; Helwik von Waltrachusen, Ritter; Andres von Bruneck, canon at Würzburg; Heinrich von Gritzheim, provost at Wehtersvinkel; Eberhard von Rosenberg; Lord Lupold von Bebenburg, canons, etc.—will make between Otto zu Würzburg, Bischof and Heinrich, Abt zu Fulda concerning several properties and rights before the Rhön. — Given on the Wednesday after the Day of the Holy Cross in autumn.",
       "mention": [
         {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "person": "Eberhard von Riedern",
           "personTitle": [
             "Domdekan"
@@ -21,12 +27,6 @@
           "person": "Heinrich",
           "personTitle": [
             "Abt zu Fulda"
-          ]
-        },
-        {
-          "person": "Otto",
-          "personTitle": [
-            "Bischof zu Würzburg"
           ]
         },
         {

@@ -985,7 +985,7 @@
       "english": "In 1363, Hans von Rosenberg and Eberhard von Rosenberg were sureties when Archbishop Gerlach of Mainz pledged Külsheim and Gamburg.",
       "mention": [
         {
-          "person": "Gerlach",
+          "person": "Erzbischof Gerlach",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
@@ -1076,7 +1076,7 @@
       "english": "In 1369, Hans von Rosenberg was enfeoffed by Würzburg with Urhausen Castle and its appurtenances. On November 29, 1369, Hans von Rosenberg witnessed the settlement between Erkinger Hofwart and his wife, on the one hand, and Archbishop Gerlach of Mainz, on the other, concerning their share in Nuwenfels.",
       "mention": [
         {
-          "person": "Gerlach",
+          "person": "Erzbischof Gerlach",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
@@ -1728,7 +1728,7 @@
       "english": "On the Thursday before St. Gall’s Day in 1405, Bishop Hans zu Würzburg granted Arnold von Rosenberg der Jüngere the tithes at Burkheim, Sindolsheim, and Rosenberg; twenty Malter of grain rent given to him by Hans von Rosenberg and his brother Götz; and all other fiefs inherited from his father Eberhard.",
       "mention": [
         {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
@@ -1810,13 +1810,13 @@
       "english": "On the Wednesday before the Nativity of Christ in 1406, Bishop Hans zu Würzburg granted Kunz von Rosenberg der Ältere the following reverted fiefs: one hide in the village of Bremen, the bailiwick and court there with certain personal dependents, excepting one quarter of the court; all the properties at Buch and half the court there, with certain personal dependents; and all the properties in the village of Orßfeld and their appurtenances, as these had belonged to the late Eberhard von Rosenberg.",
       "mention": [
         {
-          "place": "buch"
-        },
-        {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
+        },
+        {
+          "place": "buch"
         }
       ],
       "facts": [
@@ -1842,16 +1842,16 @@
       "english": "On the Tuesday after Palm Sunday in 1407, at Eberhard von Rosenberg der Ältere’s request, Bishop Hans zu Würzburg enfeoffed his son Ulrich with Eberhard’s share in Bretzingen, Bofsheim, Meckmühl, Rosenberg, and Burkheim. Ulrich received these fiefs again in 1418; his son Anselm received them in 1421.",
       "mention": [
         {
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
           "place": "boffsheim"
         },
         {
           "place": "bretzingen"
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
         },
         {
           "place": "rosenberg-town"
@@ -2408,7 +2408,7 @@
       "english": "In 1436, Bishop Hans zu Würzburg granted Kunz von Rosenberg of Bartenstein, in recognition of his good service, the customs duty there in addition to half the village of Rippach. If he died without sons, this fief was to be redeemed by his daughters for 200 florins. He seems to have had daughters only.",
       "mention": [
         {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
@@ -2522,7 +2522,7 @@
           ]
         },
         {
-          "person": "Hans",
+          "person": "Bischof Hans",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
@@ -3166,7 +3166,7 @@
       "english": "On the Thursday after Cantate in 1493, Archbishop Bechtold of Mainz declared at Amorbach “that disputes and disagreements had arisen between Kunz von Dottenheim and Arnold von Rosenberg, which they had brought before him for a decision.” The judgment stated: “Since the said Kunz von D. had, in his complaint, established a life interest in that share of Schüpf, and Arnold von Rosenberg had, according to the testimony presented, willingly pledged the relevant men to serve him in that matter, this was done unlawfully. He must put an end to this encroachment and repay the use he has taken, as well as the costs and damages, in an amount to be assessed by the court.”",
       "mention": [
         {
-          "person": "Berthold",
+          "person": "Erzbischof Berthold",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
@@ -4602,7 +4602,7 @@
           "person": "Arnold von Rosenberg"
         },
         {
-          "person": "Berthold",
+          "person": "Erzbischof Berthold",
           "personTitle": [
             "Erzbischof zu Mainz"
           ]
