@@ -9,7 +9,10 @@
       "english": "Philipp von Rosenberg, Provost of St. German in Speyer, grants investiture to the priest Anselm Wagenleitter, presented by Count Bernhard of Eberstein for the parish of Mörsch.\n\nDate range: August 13, 1501",
       "mention": [
         {
-          "person": "Philipp von Rosenberg"
+          "person": "Philipp von Rosenberg",
+          "personTitle": [
+            "Propst"
+          ]
         },
         {
           "place": "speyer"

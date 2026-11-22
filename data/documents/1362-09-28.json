@@ -10,7 +10,10 @@
       "english": "Charles IV asks Pope [Urban V] to appoint Peter von Rosenberg, provost of the All Saints Church at Prague Castle, as Bishop of Passau. He explains that the diocese is dependent on him and the Empire, and that its bishop, like the Archbishop of Salzburg, receives the regalia (ecclesiarum suarum temporalia) from him. He also says it is important to prevent the Duke [Rudolf IV] of Austria, who does not pursue the Church's welfare, as shown by his actions against the churches of Aquileia and Freising, from exerting influence there.",
       "mention": [
         {
-          "person": "Peter von Rosenberg"
+          "person": "Peter von Rosenberg",
+          "personTitle": [
+            "Propst"
+          ]
         }
       ]
     }

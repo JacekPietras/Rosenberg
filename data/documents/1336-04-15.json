@@ -9,7 +9,10 @@
       "english": "Cathedral Dean Johan of Mainz and the knights Eberhard von Rosenberg and Bertold von Worbis (-byz) recruit the noble man Heynrich, Lord of Salza, as helper to Baldwin, Archbishop of Trier, guardian of Mainz, against the city of Erfurt, with the opening of his castles, with 10 helmeted men for half a year from Walpurgis Day. On his fortresses he shall provision the troops; if they are placed elsewhere by Baldwin's chief captains, then the Archbishop and the Mainze Foundation shall provision them; likewise, if Mainz places other people in Salza's castles in addition to the 10. Heynrich von Salza shall \"keep garrisons and defend the roads leading to Erfurt securely without harm,\" and whatever he takes on the road shall belong half to him and half to the Archdiocese. Likewise, Erfurt citizens who are taken prisoner shall be divided; but if a Mainze chief captain is involved, then prisoners and booty shall belong to the Archdiocese. All other benefit, nobles, citizens, and mounted men, shall always fall to the Archbishop; peasants H. von Salza retains. He is subject to Baldwin's chief captain. The clerics who sit under him he shall urge to obedience toward B. Damage is reimbursed to him. For his services he receives in advance 50 marks of fine silver and additionally each quarter 4 marks from each helmeted man. He receives the 50 marks and the pay of the first quarter, whether a reconciliation with Erfurt comes about or not. If no reconciliation is made, then the quarterly pay, 50 marks, becomes due at St. Martin's Day thereafter; otherwise both in the first quarter. The pay of the second quarter becomes due when service is rendered 8 days after the beginning of this quarter without peace having been concluded. The issuers seal.",
       "mention": [
         {
-          "person": "Hans of Mainz"
+          "person": "Hans",
+          "personTitle": [
+            "Domdekan zu Mainz"
+          ]
         },
         {
           "place": "mainz"

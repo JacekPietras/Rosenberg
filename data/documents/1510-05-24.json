@@ -27,7 +27,10 @@
           "person": "Heinrich von Handschuhsheim"
         },
         {
-          "person": "Heinrich von Helmstatt"
+          "person": "Heinrich von Helmstatt",
+          "personTitle": [
+            "Domdekan"
+          ]
         },
         {
           "person": "Jakob von Fleckenstein",

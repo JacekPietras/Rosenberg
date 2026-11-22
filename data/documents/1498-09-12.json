@@ -12,7 +12,10 @@
           "place": "gemmingen"
         },
         {
-          "person": "Georg von Gemmingen"
+          "person": "Georg von Gemmingen",
+          "personTitle": [
+            "Propst"
+          ]
         },
         {
           "place": "kuernbach-michaelskirche"
