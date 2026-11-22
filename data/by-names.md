@@ -1,4 +1,4 @@
-Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench, Münching, Munich // derives from "Monk"
+Mönch, Münch, Munch, Mönich, Monich, Münchin, Mönchin, Muench, Münching, Munich, Mönching // derives from "Monk"
 Schenk, Schenck
 Lengenfelder, Lengenfelderin, Lengenfeld, Lengenvelder, Lengfeld
 Voit, Voith, Voyt, Voyth

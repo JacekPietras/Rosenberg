@@ -1324,10 +1324,13 @@
     },
     {
       "german": "1392, 13. Sept., verſetzt Ruprecht II. von der Pfalz dem Vizdum zu Heidelberg Konrad v. R. um 2810 kleine Gulden die Burg Minne—berg ſamt Zugehör. 1401 erlaubt er dem Hans v. R., für 200 fl. Holz aus den Wäldern der Burg zu verkaufen.",
-      "english": "On September 13, 1392, Ruprecht II of the Palatinate pledged Minneberg Castle and its appurtenances to Konrad von Rosenberg, the vicedom at Heidelberg, for 2,810 small florins. In 1401, he permitted Hans von Rosenberg to sell timber from the castle’s forests for 200 florins.",
+      "english": "On September 13, 1392, Ruprecht II of the Palatinate pledged Minneburg Castle and its appurtenances to Konrad von Rosenberg, the vicedom at Heidelberg, for 2,810 small florins. In 1401, he permitted Hans von Rosenberg to sell timber from the castle’s forests for 200 florins.",
       "mention": [
         {
           "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "minneburg"
         }
       ],
       "facts": [
@@ -1342,13 +1345,13 @@
         {
           "person": "vitztum_zu_Heidelberg",
           "type": "generic",
-          "content": "received Minneberg Castle and its appurtenances from Ruprecht II of the Palatinate as a pledge.",
+          "content": "received Minneburg Castle and its appurtenances from Ruprecht II of the Palatinate as a pledge.",
           "date": "1392-09-13"
         },
         {
           "person": "Ruprecht von der Pfalz",
           "type": "generic",
-          "content": "allowed Hans von Rosenberg to sell timber from Minneberg Castle’s forests.",
+          "content": "allowed Hans von Rosenberg to sell timber from Minneburg Castle’s forests.",
           "date": "1401"
         }
       ]

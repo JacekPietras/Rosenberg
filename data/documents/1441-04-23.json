@@ -1,9 +1,6 @@
 {
   "date": "1441-04-23",
-  "label": [
-    "Mönch",
-    "Gauangelloch"
-  ],
+  "label": "Mönch",
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 37 Nr. 1226",
@@ -12,7 +9,7 @@
       "english": "Count Hans von Eberstein's bond for an annuity of 1,000 florins in favor of Anna Mönching von Rosenberg and her son Wilhelm von Gauangelloch.\n\nTerm: 23 April 1441 (issued on St George's day, 1441)",
       "mention": [
         {
-          "place": "rosenberg-town"
+          "person": "Anna Mönch von Rosenberg"
         },
         {
           "person": "Wilhelm von Gauangelloch"
