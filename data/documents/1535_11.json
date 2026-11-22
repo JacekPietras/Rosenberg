@@ -1,0 +1,28 @@
+{
+  "date": "1535",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "Dochnahl, p. 100, names Georg von Rosenberg as the recipient of Schloss Winzingen in a transaction with the elector, with a figure of 10,250 florins. The charter abstract 1535-10-09.json identifies the same elector and castle, gives the same figure, and specifies that Georg gave Schloss Schweigern, half the village, the Seehof and Windischbuch in payment. That property links Georg to the Boxberg-Schweigern branch of the Bauland/Odenwald Rosenbergs (Franken) and distinguishes him from other families such as the Schenk von Rosenberg of Roßberg. The entry concerns the Palatine castle at Neustadt-Haardt.",
+  "entries": [
+    {
+      "source": "Dochnahl, Chronik von Neustadt an der Haardt, p. 100",
+      "url": "https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf",
+      "german": "Georg von Rosenberg verkauft dem Kurfürsten mehrere Güter, dagegen dieser ihm das Schloß Winzingen einräumt, um es als ein mit 10,250 fl. ablösbares Mannlehen zu besitzen. (1544.)",
+      "english": "Georg von Rosenberg sells several properties to the Elector, who in return grants him Schloss Winzingen as a male fief redeemable for 10,250 florins. (1544.)",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "conveyed several properties to Ludwig, Kurfürst von der Pfalz, in return for Burg Winzingen as a redeemable Mannlehen."
+        }
+      ],
+      "mention": [
+        {
+          "place": "burg-winzingen"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "date": "1550",
+  "label": [
+    "to review",
+    "Proposed: Franken"
+  ],
+  "research": "Dochnahl, p. 105, names Michael von Rosenberg at Burg Winzingen granting castle fields in hereditary tenure to residents of Neustadt, Haardt and Gimmeldingen. The estate and chronology fit the Michael in the Winzingen litigation abstract (1543_2.json) and the Vizedom receiving his father’s Haardt fief (1545_9.json). The 1545 Boxberg quitclaim (1545-12-11.json) identifies Michael as Jörg’s son, and the 1561 settlement (1561-07-24_2.json) identifies both as former holders of Wintzingen. That chain supports Franken, specifically the Boxberg-Schweigern branch, over same-name families such as the Schenk or Mönch. The 1550 chronicle entry identifies Michael through the estate and gives no office.",
+  "entries": [
+    {
+      "source": "Dochnahl, Chronik von Neustadt an der Haardt, p. 105",
+      "url": "https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf",
+      "german": "Michael von Rosenberg auf der Burg Winzingen gibt mehreren Einwohnern von Neustadt, Haardt und Gimmeldingen 13 M. Aecker von den sogenannten großen Schloßäckern, um sie in Weinberge umzuwandeln, für den jährlichen Zins 1 alten Huhns und 1 Ohm Treberwein von jedem Morgen, in Erbbestand.",
+      "english": "Michael von Rosenberg at Winzingen Castle grants several inhabitants of Neustadt, Haardt and Gimmeldingen 13 Morgen of the so-called great castle fields in hereditary tenure, to convert them into vineyards, for an annual rent of one old chicken and one Ohm of pomace wine per Morgen.",
+      "facts": [
+        {
+          "person": "Michael von Rosenberg",
+          "type": "generic",
+          "content": "granted fields belonging to Burg Winzingen in hereditary tenure to residents of Neustadt an der Weinstraße, Haardt and Gimmeldingen for conversion to vineyards in return for annual rent."
+        }
+      ],
+      "mention": [
+        {
+          "place": "burg-winzingen"
+        },
+        {
+          "place": "gimmeldingen"
+        },
+        {
+          "place": "haardt"
+        },
+        {
+          "place": "neustadt-an-der-weinstrasse"
+        }
+      ]
+    }
+  ]
+}
