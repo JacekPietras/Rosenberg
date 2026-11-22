@@ -24,11 +24,12 @@ Casimir
 Caspar, Caſpar, Kaspar
 Christoph, Chriftoph, Christof, Christoff, Christpoh
 Cornelius, Cornelis
+Derick, Darck
 Diether, Dieter, Dytheri
 Dietrich, Theoderici
 Dietzel
 Eberhard, Eberh, Eberhardi, Eberhards, Eberhardt, Eberhardts, Eberhardum, Eberhardus, Eberhart, Eberharten, Ebert, Ebhart, Ebhrhard, Ebirbard, Ebirh, Ebirhard, Ebirhardo, Ebirhardus, Ebirhardz, Ebirhart, Ebirharten, Ebyrhard, eebhrt, erberhart, Erhart, Everard, Everhard, Everhart, Ewerhard, rebhart
-Eckhard, Eckehardus, Eckhart, Ege, Ekhart, Ekkard, Ekkehard, Ekkehart
+Eckhard, Eckehardus, Eckhart, Ege, Eghart, Ekhart, Ekkard, Ekkehard, Ekkehart
 Eduard
 Egilolf, Egli, Eglolf, Eglolff
 Engel
@@ -43,7 +44,7 @@ Friedmann
 Friedrich, Frederick, Fridereich, Friderich, Friderici, Friderico, Fridericus, Fridrich, Fritz, Fritze, Friz, Frize
 Frizo
 Fürderer, Forderer, Furderer, Förderer
-Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jörg, Jörgen
+Georg, Georgs, Goerg, Gorg, Jorg, Jorge, Jorgen, Jurgun, Jörg, Jörgen
 Gerhard, Gerhardus
 Gerlach
 Gero
@@ -118,6 +119,7 @@ Stephan, Stefan
 Steyn, Stein
 Thame
 Thomas, Thoma, Thoman
+Tönies
 Ulrich, Ulricus, Vlreich, Vlricus
 Urban
 Valentin
@@ -130,7 +132,7 @@ Werenher
 Wernher, Werner
 Wernlein, Wirdlin
 Wilhelm, Vilém, Wilhem
-Wiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
+Wiprecht, Weiprecht, Welprecht, Wibrecht, Wipert, Wipprecht, Wynprecht, Wyprecht
 Wirich, Weirich, Weyreich, Weyrich
 Wok, Bocho, Vok, Witiko, Wocco, Wocho, Woko
 Wolf, Wolff
