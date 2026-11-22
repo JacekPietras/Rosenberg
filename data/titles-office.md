@@ -24,6 +24,7 @@ der Rote, Rufus
 
 // territorial titles
 Bischof, Bischove, Bischofe, Bischofs, Bischofes, Bischoff, Bischoffe, Bischoffs, Bischoffes, Biſchof, Biſchofs, Biſchoff, Biſchoffs, episcopus, episcopi, episcopo, episcopum, Bishop
+Fürstbischof, Fürstbischofs, Prince-Bishop, Prince Bishop
 Erzbischof, Erzbischove, Erzbischofe, Erzbischofs, Erzbischofes, Erzbischoff, Erzbischoffe, Erzbischoffs, Erzbischoffes, archiepiscopus, Archbishop
 Pfalzgraf, Pfalzgrafen, Pfalzgrave, Pfalzgraven, Count Palatine
 Burggraf, Burgrafen, Burgrave, Burgraven, Burgraf, Schlossburggraf
