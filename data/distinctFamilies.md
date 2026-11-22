@@ -10,7 +10,7 @@ czechia
 kamptal
 brandenburg
 rorschach
-triest, 
+triest,
 unrelated
 frankfurt
 mainz
