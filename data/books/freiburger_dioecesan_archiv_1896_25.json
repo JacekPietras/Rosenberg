@@ -3047,6 +3047,11 @@
     {
       "german": "1484 bitten Hans v. R., der alt, und Friedrich Hundt von Saul⸗heim Pfalz gegen Heinrich Holzapffel um Recht wegen einer Bürgſchaft. (v. Gemming. Archiv Treſchklingen.)",
       "english": "In 1484, Hans von Rosenberg der Ältere and Friedrich Hundt von Saulheim sought justice from the Palatinate against Heinrich Holzapffel concerning a surety. (Gemmingensches Archive, Treschklingen.)",
+      "mention": [
+        {
+          "person": "Friedrich Hund"
+        }
+      ],
       "facts": [
         {
           "person": "Hans von Rosenberg",

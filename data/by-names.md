@@ -13,6 +13,7 @@ Pirchan
 Grabner
 Wirt
 Pahl, Pfahl, Pfal
+Hund, Hundt
 Winther, Winter
 Marschalk, Marschalken, Marschalkin, Marſchalk, Marschalch
 Rüd, Rude, Rüdt
