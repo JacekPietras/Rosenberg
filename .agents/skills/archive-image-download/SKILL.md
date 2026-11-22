@@ -1,6 +1,6 @@
 ---
 name: archive-image-download
-description: Download a selected manuscript or armorial image from an archive viewer URL, including a requested folio, and extend the downloader when encountering a new viewer type.
+description: Download a selected image in manuscript or armorial from an archive viewer URL.
 ---
 
 # Archive image download
