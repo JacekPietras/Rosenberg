@@ -11,7 +11,7 @@ import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from 
 import { createSealScreen } from './screens/seals.js?v=4';
 import { createImageScreen } from './screens/images.js?v=38';
 import { createDataLoader } from './data/loader.js?v=38';
-import { createEntityScreens } from './screens/entities.js?v=117';
+import { createEntityScreens } from './screens/entities.js?v=118';
 import { createTabs } from './components/tabs.js?v=2';
 import { setupControls } from './components/controls.js?v=61';
 import { setupSealAnnotations as setupImageSealAnnotations, positionSealCrop as positionImageSealCrop } from './components/seal-annotations.js?v=6';
@@ -1419,6 +1419,7 @@ const entityScreens = createEntityScreens({
   documentNavigationUrl,
   displayedLanguagesFor: languageRenderer.displayedLanguagesFor,
   imageMarkup: imageRenderer,
+  distinctFamilies: DISTINCT_FAMILIES,
 });
 
 const mapScreen = createMapScreen({

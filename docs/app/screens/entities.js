@@ -21,6 +21,7 @@ export function createEntityScreens({
   documentNavigationUrl,
   displayedLanguagesFor,
   imageMarkup,
+  distinctFamilies = new Set(),
 }) {
   const factPersonNames = () => [...(state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : []),
     ...(!getPeople().some((person) => person.id === state.person) && state.person && !state.person.startsWith('@evidence/') ? [state.person] : [])];
@@ -68,6 +69,8 @@ export function createEntityScreens({
       inlineMarkup,
       sourceHref: (fact) => fact.sourceHref,
       showSourceLabels: true,
+      dimSourceLabels: distinctFamilies,
+      hideSourceLabels: new Set(['franken', 'important']),
       itemClass: (fact) => fact.personMatch === 'ambiguous' ? ' class="entity-fact-ambiguous"' : '',
     }); } finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
     return `<section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${items}</section>`;
@@ -137,7 +140,7 @@ export function createEntityScreens({
       const previousDeferredLinks = state.deferDocumentMarkupLinks;
       state.deferDocumentMarkupLinks = true;
       let factsMarkup;
-      try { factsMarkup = renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref, showSourceLabels: true }); }
+      try { factsMarkup = renderFactsView(attestations, { people, personNames: factPersonNames(), inlineMarkup, sourceHref: (fact) => fact.sourceHref, showSourceLabels: true, dimSourceLabels: distinctFamilies, hideSourceLabels: new Set(['franken', 'important']) }); }
       finally { state.deferDocumentMarkupLinks = previousDeferredLinks; }
       return `<article class="document person-document-heading"><h2>${escapeHtml(node.name)}</h2>${node.status === 'contextual' ? '<p>Inferred identity across source passages; dated titles, places, family context and weighted source evidence supply the links.</p>' : ''}</article><section class="entity-facts" data-deferred-entity-facts><h3>Facts</h3>${factsMarkup}</section>`;
     }

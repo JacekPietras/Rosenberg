@@ -222,7 +222,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .fact-source-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .facts-view li[data-fact-source] .fact-text a:not(.fact-source-link) { position: relative; z-index: 2; }
 .fact-text { display: block; min-width: 0; width: fit-content; max-width: 100%; box-sizing: border-box; border-radius: 6px; padding: .2rem .45rem; margin: -.2rem -.45rem; }
-.entity-fact-ambiguous { opacity: .62; }
+.entity-fact-ambiguous, .fact-source-dimmed { opacity: .62; }
 .entity-section-title { margin-top: 2rem; }
 .entry { padding: .9rem 0; }
 .entry:first-of-type { padding-top: 0; }
