@@ -308,7 +308,7 @@ def title_traits(title, names=None):
             continue
         words = segment.split()
         head = translate(' '.join(words[:2])) if len(words) > 1 else ''
-        if head not in CHURCH_HEADS:
+        if head not in CHURCH_HEADS | ORDER_HEADS:
             head = translate(words[0]) if words else ''
         if head in CHURCH_HEADS:
             traits.add('church')

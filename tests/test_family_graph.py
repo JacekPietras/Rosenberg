@@ -380,7 +380,7 @@ class FamilyGraphTests(unittest.TestCase):
 
     def church_person_nodes(self, church, titles, extra=None):
         self.write('data/titles-office.md', 'Vogt\nDomherr, canonicus\nBischof\nFürstbischof, Prince-Bishop\nRitter, miles\n'
-                                            'Schultheiß\nKönig\nPropst, Probst, Provost\nDomdekan, Domdechant\nPapst, Pope\n// epithets\nKönig Armleder\n// titles\nGraf\nHerzog\nKurfürst\nKomtur\nAmtmann\n')
+                                            'Schultheiß\nKönig\nPropst, Probst, Provost\nDomdekan, Domdechant\nPapst, Pope\n// epithets\nKönig Armleder\n// titles\nGraf\nHerzog\nKurfürst\nKomtur\nDeutschmeister, DM, D.M.\nAmtmann\n')
         name = 'Konrad von North'
         office = 'Vogt zu Dürn'
         facts = [relation(name, 'a', 'sibling', personTitle=[office, church])]
@@ -410,7 +410,7 @@ class FamilyGraphTests(unittest.TestCase):
 
     def test_order_member_never_merges_with_spouse_or_children_but_with_other_titles(self):
         for member in ('Deutschordensritter', 'Ritter des Deutschen Ordens', 'Ritter des Johanniterordens', 'Johanniterritter',
-                       'Johanniter-Prior', 'Deutschmeister', 'Hochmeister', 'Templer'):
+                       'Johanniter-Prior', 'Deutschmeister', 'DM', 'D.M.', 'Hochmeister', 'Templer'):
             for extra in ('spouse', 'child'):
                 with self.subTest(member=member, extra=extra):
                     self.assertEqual(2, self.church_person_nodes(member, [], extra))
