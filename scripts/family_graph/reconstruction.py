@@ -17,7 +17,7 @@ from .kinship import generation, tree_paths
 from .dates import death_interval
 from .probability import (ProbabilityModel, Profile, YEAR, chronology, chronology_blocked, cumulative, decay,
                           gap_years, living_span, mention_rank, names_relative, reliability, single_day,
-                          church_conflict, title_category, title_traits)
+                          vow_conflict, title_category, title_traits)
 
 RELATIONS = {'parent', 'spouse', 'sibling', 'kin'}
 
@@ -346,12 +346,12 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             for m in a.mentions:
                 household[m.handle].add('spouse')
 
-    def new_church_conflict(component):
+    def new_vow_conflict(component):
         parts = defaultdict(set)
         for h in component:
             parts[find(h)].update(household[h], *(title_traits(title, names) for title in mentions[h].titles))
         for a, b in combinations(parts.values(), 2):
-            reason = church_conflict(a, b)
+            reason = vow_conflict(a, b)
             if reason:
                 return reason
         return None
@@ -395,7 +395,7 @@ def reconstruct(assertions, decisions, registry, names, parameters=None, observa
             if not static_consistent(component):
                 return False
             if (chronology_conflict(component) or new_different_parent(component) or new_different_titles(component)
-                    or new_church_conflict(component)
+                    or new_vow_conflict(component)
                     or new_passage_conflict(component) or new_too_old(component)):
                 return False
         current_generation()

@@ -95,7 +95,8 @@ Every merge in every pass is checked on the complete identity it would create
   living, two separate facts with the same content), a new impossible age, or
   living mentions spanning more than `bestCandidate.maxLivingSpanYears`, on
   any source type;
-- a church title would join a knight, Schultheiß, king, spouse or children
+- a church title would join a knight, Schultheiß, king, spouse or children, or an
+  order member would join a spouse or children
   (a new conflict between the parts; see
   [domain-rules.md](domain-rules.md#what-makes-two-records-different-people));
 - the merged person would have two fathers or two mothers that cannot be one

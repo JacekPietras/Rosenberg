@@ -408,6 +408,19 @@ class FamilyGraphTests(unittest.TestCase):
             with self.subTest(titles=titles):
                 self.assertEqual(1, self.church_person_nodes('Domherr', titles))
 
+    def test_order_member_never_merges_with_spouse_or_children_but_with_other_titles(self):
+        for member in ('Deutschordensritter', 'Ritter des Deutschen Ordens', 'Ritter des Johanniterordens', 'Johanniterritter',
+                       'Johanniter-Prior', 'Deutschmeister', 'Hochmeister', 'Templer'):
+            for extra in ('spouse', 'child'):
+                with self.subTest(member=member, extra=extra):
+                    self.assertEqual(2, self.church_person_nodes(member, [], extra))
+            for titles in (['Ritter'], ['Bischof'], ['Komtur'], ['König'], ['Schultheiß']):
+                with self.subTest(member=member, titles=titles):
+                    self.assertEqual(1, self.church_person_nodes(member, titles))
+        for extra in ('spouse', 'child'):
+            with self.subTest(komtur=extra):
+                self.assertEqual(1, self.church_person_nodes('Komtur', [], extra))
+
     def test_same_name_with_different_titles_in_one_document_never_merge(self):
         name = 'Eberhard von North'
         def brother(*titles):

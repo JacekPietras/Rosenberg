@@ -72,7 +72,10 @@ files describe how they are met. When a rule changes, change it here first.
   `Erzbischof`, `Abt`, `Äbtissin`, `Domdekan`, `Propst`, `Papst`) and the other
   is a knight (`Ritter`, `Reichsritter`; not of a religious order), a `Schultheiß`, a `König`,
   has a spouse or has children. Church-titled people may be `Herzog`, `Graf`,
-  `Kurfürst`, `Komtur` or `Baron`. Titles count by head word, not by substring; epithets such as `König Armleder`
+  `Kurfürst`, `Komtur` or `Baron`.
+- One is a member of a religious knightly order (`Deutschordensritter`,
+  `Johanniterritter`, `Deutschmeister`, `Hochmeister`, `Templer`; not `Komtur`)
+  and the other has a spouse or children. Order members are not knights. Titles count by head word, not by substring; epithets such as `König Armleder`
   (`// epithets` in `data/titles-office.md`) never count as titles.
 - The merged person would be his own relative, his own ancestor, or both
   parent and sibling of someone.

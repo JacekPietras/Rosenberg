@@ -112,7 +112,9 @@ alone is neutral.
 - a church title against a knight, Schultheiß, king, spouse or children
   (`church title with knight`, `… with Schultheiß`, `… with king`,
   `… with spouse`, `… with children`), by title head word and recorded
-  (non-inferred) relationships.
+  (non-inferred) relationships;
+- an order member against a spouse or children (`order member with spouse`,
+  `order member with children`).
 
 **Pass-4 hard blocks** are stricter, for every source type:
 
@@ -121,7 +123,7 @@ alone is neutral.
   excluded);
 - living mentions spanning more than `bestCandidate.maxLivingSpanYears` (64);
 - any child born after the parent's death beyond the age limit;
-- the other pass-3 blocks (including the church-title block), known relatives, and kinship-term exclusions.
+- the other pass-3 blocks (including the church-title and order-member blocks), known relatives, and kinship-term exclusions.
 
 ### Known relatives
 

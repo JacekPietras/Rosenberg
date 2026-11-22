@@ -291,12 +291,16 @@ def title_category(title, names=None):
 
 
 CHURCH_HEADS = {'domherr', 'presbyter', 'bischof', 'furstbischof', 'erzbischof', 'abt', 'abtissin', 'domdekan', 'propst', 'papst'}
-CHURCH_EXCLUDES = {'knight': 'knight', 'schultheiss': 'Schultheiß', 'king': 'king', 'spouse': 'spouse', 'children': 'children'}
+ORDER_HEADS = {'deutschmeister', 'hochmeister'}
+ORDER_WORDS = re.compile(r'(?<![nv])orden|johanniter|templer')
+EXCLUDES = {'church': {'knight': 'knight', 'schultheiss': 'Schultheiß', 'king': 'king', 'spouse': 'spouse', 'children': 'children'},
+            'order': {'spouse': 'spouse', 'children': 'children'}}
+REASONS = {'church': 'church title', 'order': 'order member'}
 
 
 @lru_cache(maxsize=32768)
 def title_traits(title, names=None):
-    """Church, knight, Schultheiß and king titles by head word; knights of a religious order do not count."""
+    """Church, order, knight, Schultheiß and king titles by head word; order members are not knights."""
     translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
     traits = set()
     for segment in re.split(r'\s+und\s+', normalize(title)):
@@ -308,7 +312,9 @@ def title_traits(title, names=None):
             head = translate(words[0]) if words else ''
         if head in CHURCH_HEADS:
             traits.add('church')
-        elif head.endswith('ritter') and not re.search(r'orden|johanniter|templer', segment):
+        elif head in ORDER_HEADS or ORDER_WORDS.search(head) or head.endswith('ritter') and ORDER_WORDS.search(segment):
+            traits.add('order')
+        elif head.endswith('ritter'):
             traits.add('knight')
         elif head.endswith('schultheiss'):
             traits.add('schultheiss')
@@ -317,13 +323,14 @@ def title_traits(title, names=None):
     return frozenset(traits)
 
 
-def church_conflict(left, right):
-    """Reason a church-titled person cannot be one person with the other, from trait sets."""
-    for church, other in ((left, right), (right, left)):
-        if 'church' in church:
-            for trait, label in CHURCH_EXCLUDES.items():
-                if trait in other:
-                    return f'church title with {label}'
+def vow_conflict(left, right):
+    """Reason a church-titled person or order member cannot be one person with the other, from trait sets."""
+    for own, other in ((left, right), (right, left)):
+        for kind, excluded in EXCLUDES.items():
+            if kind in own:
+                for trait, label in excluded.items():
+                    if trait in other:
+                        return f'{REASONS[kind]} with {label}'
     return None
 
 
@@ -610,7 +617,7 @@ class ProbabilityModel:
         if left.distinctions.get(right.key) or right.distinctions.get(left.key):
             blocks.append('explicitly distinct relationship participants')
             hard.append('explicitly distinct relationship participants')
-        reason = church_conflict(self.profile_traits(left), self.profile_traits(right))
+        reason = vow_conflict(self.profile_traits(left), self.profile_traits(right))
         if reason:
             blocks.append(reason)
         hard.extend(block for block in blocks if block not in hard and not block.startswith(('mention after', 'incompatible death', 'impossible age')))
