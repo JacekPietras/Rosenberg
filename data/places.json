@@ -2169,5 +2169,133 @@
       "Zwingenstein"
     ],
     "showOnMap": false
+  },
+  {
+    "id": "duttweiler",
+    "variations": [
+      "Duttweiler",
+      "Dudwyler",
+      "Dudenwilre"
+    ],
+    "lat": 49.29944,
+    "lon": 8.21361,
+    "category": "village",
+    "description": "Duttweiler is recorded in a Wissembourg Abbey source by about 965 and appears as a village with local nobility by the fourteenth century. https://www.duttweiler.de/a-bis-z/c/chronik/allgemein.html"
+  },
+  {
+    "id": "fraunberg",
+    "variations": [
+      "Fraunberg"
+    ],
+    "lat": 48.3688,
+    "lon": 11.99257,
+    "category": "village",
+    "description": "Village in the Erdinger Land associated with the Lords of Fraunberg and their medieval seat. https://www2.erzbistum-muenchen.de/pfarrei/pv-reichenkirchen-maria-thalheim/cont/47468"
+  },
+  {
+    "id": "freising",
+    "variations": [
+      "Freising",
+      "Freysing",
+      "Frysingen"
+    ],
+    "lat": 48.40167,
+    "lon": 11.745,
+    "category": "city",
+    "description": "The city seal is attested in 1330 and the town council in 1334. https://www.freising.de/kultur-freizeit/ueber-das-stadtarchiv"
+  },
+  {
+    "id": "gelnhausen",
+    "variations": [
+      "Gelnhausen"
+    ],
+    "lat": 50.20164,
+    "lon": 9.18742,
+    "category": "city",
+    "description": "Founded as an imperial city in 1170 by Emperor Friedrich I. https://www.gelnhausen.de/tourismus/gelnhausen-erleben/stadtgeschichte/"
+  },
+  {
+    "id": "schloss-hubenstein",
+    "variations": [
+      "Schloss Hubenstein",
+      "Hubenstein",
+      "Huebenstein",
+      "Huebenstain"
+    ],
+    "lat": 48.35192,
+    "lon": 12.18311,
+    "category": "castle",
+    "description": "Medieval seat near Taufkirchen an der Vils held by Warmund von Fraunberg. The castle site is Bavarian monument D-1-7639-1062. https://www.taufkirchen.de/fileadmin/user_upload/Kompass_Taufkirchen__Vils__September_2025.pdf"
+  },
+  {
+    "id": "mommenheim",
+    "variations": [
+      "Mommenheim",
+      "Monenheim"
+    ],
+    "lat": 49.8836,
+    "lon": 8.26919,
+    "category": "village",
+    "description": "Rheinhessen village recorded in the Lorsch Codex in 766. The local history records the grant of a free court in 1276. https://www.mommenheim.de/gemeinde/"
+  },
+  {
+    "id": "oggersheim",
+    "variations": [
+      "Oggersheim",
+      "Agersheim"
+    ],
+    "lat": 49.49083,
+    "lon": 8.37472,
+    "category": "city",
+    "description": "The city court and city council are both attested in November 1316. https://verlag-regionalkultur.de/presse/bib/bib_35-903-1.pdf"
+  },
+  {
+    "id": "oppenweiler",
+    "variations": [
+      "Oppenweiler",
+      "Oppenwiler"
+    ],
+    "lat": 48.9827,
+    "lon": 9.4585,
+    "category": "village",
+    "description": "The seat of the Sturmfeder family since the Middle Ages. A charter of 1391 describes Oppenweiler as a village. https://www.gemeinde.oppenweiler.elk-wue.de/fileadmin/mediapool/gemeinden/KG_oppenweiler_INAKTIV/PDF/Jakobuskirche/Kirchenfuehrer_Seite_1-7.pdf"
+  },
+  {
+    "id": "toblach",
+    "variations": [
+      "Toblach",
+      "Dobbiaco",
+      "Duplagum"
+    ],
+    "lat": 46.72878,
+    "lon": 12.22225,
+    "category": "village",
+    "description": "Puster Valley village documented as Duplagum in 827 and as Toblach by 1150. https://www.archiv-bruneck.it/de/erinnerung/strassennamen/bruneck/toblacher-strasse"
+  },
+  {
+    "id": "welsberg",
+    "variations": [
+      "Welsberg",
+      "Monguelfo",
+      "Zell unter Welsberg"
+    ],
+    "lat": 46.75774,
+    "lon": 12.10556,
+    "category": "village",
+    "description": "Puster Valley village below the Welsperg seat. Settlement expanded after the reservoir was drained in 1359. The village was historically called Zell unter Welsberg. https://www.zobodat.at/pdf/VeroeffFerd_3_41_0187-0216.pdf https://pustertal-direkt.com/orte/kronplatz/87-welsberg.html"
+  },
+  {
+    "id": "schloss-welsperg",
+    "variations": [
+      "Schloss Welsperg",
+      "Welsberg Castle",
+      "Burg Welsberg",
+      "Schloss Welsberg"
+    ],
+    "lat": 46.75975,
+    "lon": 12.11383,
+    "category": "castle",
+    "parent": "welsberg",
+    "description": "Medieval ancestral castle of the Welsperg family above Welsberg. https://www.gemeinde.welsberg-taisten.bz.it/de/Dorfleben/Orte/Freizeit_und_Tourismus/Kuratorium_Schloss_Welsperg"
   }
 ]
