@@ -69,7 +69,7 @@ Hieronymus, Jeronimus, Jheronimus
 Hiltpold
 Horneck
 Hoyer
-Jakob, Jacob
+Jakob, Jacob, Jeckel, Jacobus, James
 Joachim
 Josef
 Jost
