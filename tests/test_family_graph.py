@@ -380,7 +380,7 @@ class FamilyGraphTests(unittest.TestCase):
 
     def church_person_nodes(self, church, titles, extra=None):
         self.write('data/titles-office.md', 'Vogt\nDomherr, canonicus\nBischof\nFürstbischof, Prince-Bishop\nRitter, miles\n'
-                                            'Schultheiß\nKönig\nPropst, Probst, Provost\nDomdekan, Domdechant\nPapst, Pope\n// epithets\nKönig Armleder\n// titles\nGraf\nHerzog\nKurfürst\nKomtur\nDeutschmeister, DM, D.M.\nAmtmann\n')
+                                            'Schultheiß\nKönig\nPropst, Probst, Provost\nDompropst\nDomdekan, Domdechant\nPapst, Pope\n// epithets\nKönig Armleder\n// titles\nGraf\nHerzog\nKurfürst\nKomtur\nDeutschmeister, DM, D.M.\nAmtmann\n')
         name = 'Konrad von North'
         office = 'Vogt zu Dürn'
         facts = [relation(name, 'a', 'sibling', personTitle=[office, church])]
@@ -396,7 +396,7 @@ class FamilyGraphTests(unittest.TestCase):
         return len([n for n in graph['nodes'] if n['name'] == name])
 
     def test_church_title_never_merges_with_knight_schultheiss_king_spouse_or_children(self):
-        for church in ('Domherr', 'canonicus', 'Bischof zu Bamberg und Würzburg', 'Prince-Bishop', 'Probst', 'Provost', 'Domdechant', 'Pope'):
+        for church in ('Domherr', 'canonicus', 'Bischof zu Bamberg und Würzburg', 'Prince-Bishop', 'Probst', 'Provost', 'Dompropst', 'Domdechant', 'Pope'):
             for titles, extra in ((['Ritter'], None), (['miles'], None), (['Reichsritter'], None), (['Reichsschultheiß'], None), (['Schultheiß zu Lauda'], None),
                                   (['König der Römer'], None), ([], 'spouse'), ([], 'child')):
                 with self.subTest(church=church, titles=titles, extra=extra):

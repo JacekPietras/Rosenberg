@@ -69,10 +69,11 @@ files describe how they are met. When a rule changes, change it here first.
 - A kinship term excludes it: a `Vetter` is never the relative's own brother.
   Term meanings are listed in `data/kinship.md`.
 - One has a church title (`Domherr`, `Presbyter`, `Bischof`, `Fürstbischof`,
-  `Erzbischof`, `Abt`, `Äbtissin`, `Domdekan`, `Propst`, `Papst`) and the other
-  is a knight (`Ritter`, `Reichsritter`; not of a religious order), a `Schultheiß`, a `König`,
-  has a spouse or has children. Church-titled people may be `Herzog`, `Graf`,
-  `Kurfürst`, `Komtur` or `Baron`.
+  `Erzbischof`, `Abt`, `Äbtissin`, `Domdekan`, `Dompropst`, `Propst`, `Papst`)
+  and the other is a knight (`Ritter`, `Reichsritter`; not of a religious
+  order), a `Schultheiß`, a `König`, has a spouse or has children.
+  Church-titled people may be `Herzog`, `Graf`, `Kurfürst`, `Komtur` or
+  `Baron`.
 - One is a member of a religious knightly order (`Deutschordensritter`,
   `Johanniterritter`, `Deutschmeister`, `Hochmeister`, `Templer`; not `Komtur`)
   and the other has a spouse or children. Order members are not knights. Titles count by head word, not by substring; epithets such as `König Armleder`

@@ -290,7 +290,7 @@ def title_category(title, names=None):
     return 'other', value
 
 
-CHURCH_HEADS = {'domherr', 'presbyter', 'bischof', 'furstbischof', 'erzbischof', 'abt', 'abtissin', 'domdekan', 'propst', 'papst'}
+CHURCH_HEADS = {'domherr', 'presbyter', 'bischof', 'furstbischof', 'erzbischof', 'abt', 'abtissin', 'domdekan', 'dompropst', 'propst', 'papst'}
 ORDER_HEADS = {'deutschmeister', 'hochmeister'}
 ORDER_WORDS = re.compile(r'(?<![nv])orden|johanniter|templer')
 EXCLUDES = {'church': {'knight': 'knight', 'schultheiss': 'Schultheiß', 'king': 'king', 'spouse': 'spouse', 'children': 'children'},
