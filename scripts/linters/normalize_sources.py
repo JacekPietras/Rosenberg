@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Remove the redundant ', Verweisung' marker from source citations."""
+"""Normalize source citations and remove redundant descriptions."""
 
 import json
 from pathlib import Path
@@ -33,14 +33,39 @@ def normalize(path):
 
     def clean(value):
         if isinstance(value, str):
-            return value.replace(", Verweisung", "")
-        if isinstance(value, list):
-            return [clean(child) for child in value]
+            value = value.replace(", Verweisung", "").replace("{", "").replace("}", "")
+            return re.sub(r" Verweisung$", "", value)
+        if isinstance(value, list) and all(isinstance(item, str) for item in value):
+            items = [clean(item) for item in value]
+            return [item for index, item in enumerate(items)
+                    if not any(item in other and (len(item) < len(other) or
+                               (item == other and earlier < index))
+                               for earlier, other in enumerate(items) if earlier != index)]
         return expected(value)
-    updated, count = SOURCE.subn(
-        lambda match: match.group(1) + match.group(2).replace(", Verweisung", ""),
-        original,
-    )
+
+    def replace_source(match):
+        raw = match.group(2)
+        value = json.loads(raw)
+        normalized = clean(value)
+        if value == normalized:
+            return match.group(0)
+        if isinstance(value, str):
+            replacement = json.dumps(normalized, ensure_ascii=False)
+        else:
+            tokens = list(re.finditer(STRING, raw))
+            values = [clean(json.loads(token.group())) for token in tokens]
+            kept = []
+            for token, item in zip(tokens, values):
+                if item in normalized and item not in [entry[0] for entry in kept]:
+                    encoded = token.group() if json.loads(token.group()) == item else json.dumps(item, ensure_ascii=False)
+                    kept.append((item, encoded))
+            prefix = raw[:tokens[0].start()]
+            suffix = raw[tokens[-1].end():]
+            separator = raw[tokens[0].end():tokens[1].start()] if len(tokens) > 1 else ", "
+            replacement = prefix + separator.join(encoded for _, encoded in kept) + suffix
+        return match.group(1) + replacement
+
+    updated = SOURCE.sub(replace_source, original)
     if json.loads(updated, object_pairs_hook=unique) != expected(data):
         raise ValueError(f"{path}: cannot safely normalize source fields")
     if updated != original:
