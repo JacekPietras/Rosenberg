@@ -17,7 +17,7 @@ sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
-from archive_record_storage import has_url
+from archive_record_storage import has_source, has_url
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin
 from urllib.request import HTTPCookieProcessor, Request, build_opener
@@ -150,7 +150,7 @@ def main():
     mode.add_argument('--download', action='store_true', help='download archival records (default)')
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
-    p.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
+    p.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
     p.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
@@ -188,6 +188,9 @@ def main():
             url = record_url(row)
             count += 1
             print(f'{count}. {row.get("columnKeySignatur", "")} | {row.get("columnKeyLaufzeit", "")} | {row.get("columnKeyBezeichnung", "")}\n   {url or "No archival record URL"}', flush=True)
+            if not args.list_only and args.skip_existing and has_source(ROOT / 'data/documents', row.get('columnKeySignatur') or ''):
+                print(f'Skipping existing citation: {row["columnKeySignatur"]}', flush=True)
+                continue
             if not args.list_only and url and args.skip_existing and has_url(ROOT / 'data/documents', url):
                 print(f'Skipping existing URL: {url}', flush=True)
                 continue

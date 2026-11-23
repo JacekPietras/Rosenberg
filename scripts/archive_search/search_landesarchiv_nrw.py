@@ -22,7 +22,7 @@ from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_nrw as nrw
-from archive_record_storage import has_url
+from archive_record_storage import has_source, has_url
 
 BASE = 'https://www.archive.nrw.de/'
 CACHE = ROOT / '.cache/archive_search/landesarchiv_nrw'
@@ -143,6 +143,8 @@ def main():
                 if len(title) > 240: title = title[:237] + '...'
                 print(f'{i}. {row.get("archivName") or ""} | {row.get("signatur") or ""} | {row.get("laufzeit") or ""} | {title}\n   {url}', flush=True)
                 if args.list_only: continue
+                if args.skip_existing and has_source(ROOT / 'data/documents', row.get('signatur') or ''):
+                    print(f'Skipping existing citation: {row["signatur"]}', flush=True); continue
                 if not re.fullmatch(r'VERZEICH(?:NUNG|UNG)SEINHEIT-[A-Za-z0-9_-]+', node, re.I):
                     print('Skipping: record type or ID is not supported by the NRW importer', flush=True); continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):

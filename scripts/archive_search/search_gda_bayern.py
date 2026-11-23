@@ -24,7 +24,7 @@ from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
-from archive_record_storage import has_url
+from archive_record_storage import has_source, has_url
 
 URL = 'https://www.gda.bayern.de/gvl/search.xhtml'
 CACHE = ROOT / '.cache/archive_search/gda_bayern'
@@ -282,6 +282,9 @@ def main():
             url = row['url']
             print(f'{count}. {row["title"]}\n   {url}', flush=True)
             if not args.list_only:
+                if args.skip_existing and has_source(ROOT / 'data/documents', row['title']):
+                    print(f'Skipping existing citation: {row["title"]}', flush=True)
+                    continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}', flush=True)
                     continue

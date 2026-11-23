@@ -199,10 +199,24 @@ def has_url(document_dir: Path, url: str) -> bool:
 
 
 def has_source(document_dir: Path, source: str) -> bool:
-    """Return whether an entry already has this exact archival citation."""
+    """Return whether an entry contains the archival citation."""
+    def citation(value):
+        value = re.sub(r'[{}]', ' ', value)
+        return ' '.join(value.split()).casefold()
+
+    def reference_suffix(value):
+        match = re.search(r'(,\s*|\s+)verweisung$', value)
+        return (',' if match.group(1).startswith(',') else ' ') if match else None
+
+    wanted = citation(source)
+    if not wanted:
+        return False
     for path in document_dir.glob('*.json'):
         document = json.loads(path.read_text(encoding='utf-8'))
         for entry in document.get('entries', []):
-            if isinstance(entry, dict) and source in values(entry.get('source')):
+            if isinstance(entry, dict) and any(
+                    wanted in citation(existing) and reference_suffix(wanted) == reference_suffix(citation(existing))
+                    for existing in values(entry.get('source'))
+                    if isinstance(existing, str)):
                 return True
     return False

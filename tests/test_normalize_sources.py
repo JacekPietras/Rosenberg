@@ -20,10 +20,10 @@ class NormalizeSourcesTest(unittest.TestCase):
             path.write_text(json.dumps(original, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             self.assertTrue(normalize(path))
             result = json.loads(path.read_text(encoding="utf-8"))
-            self.assertEqual(result["source"], ["Generallandesarchiv Karlsruhe D Nr. 456", "Other archive"])
+            self.assertEqual(result["source"], ["D Nr. 456, Verweisung", "Generallandesarchiv Karlsruhe D Nr. 456", "Other archive"])
             self.assertEqual(result["german"], original["german"])
-            self.assertEqual(result["nested"]["source"], "Archive B 1")
-            self.assertEqual(result["trailing"]["source"], ["Archive B 2", "Archive B 3 Verweisung 1"])
+            self.assertEqual(result["nested"]["source"], "Archive B 1, Verweisung")
+            self.assertEqual(result["trailing"]["source"], ["Archive B 2 Verweisung", "Archive B 3 Verweisung 1"])
             self.assertFalse(normalize(path))
 
 

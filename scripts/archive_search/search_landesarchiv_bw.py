@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import http.cookiejar
+import json
 import re
 import subprocess
 import sys
@@ -16,12 +17,33 @@ sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
-from archive_record_storage import has_source, has_url
+from archive_record_storage import has_source, has_url, values
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 BASE = 'https://www2.landesarchiv-bw.de/ofs21/'
+
+
+def has_result_url(document_dir, result_id):
+    """Match a search result against stored catalogue URLs without fetching it."""
+    for path in document_dir.glob('*.json'):
+        document = json.loads(path.read_text(encoding='utf-8'))
+        for entry in document.get('entries', []):
+            if not isinstance(entry, dict):
+                continue
+            for url in values(entry.get('url')):
+                if not isinstance(url, str):
+                    continue
+                parts = urlsplit(url)
+                query = parse_qs(parts.query)
+                if parts.hostname in ('www.landesarchiv-bw.de', 'landesarchiv-bw.de') and parts.path.rstrip('/') == '/plink':
+                    if any(re.fullmatch(r'\d+-' + re.escape(result_id), aid) for aid in query.get('f', [])):
+                        return True
+                if parts.hostname == 'www2.landesarchiv-bw.de' and parts.path == '/ofs21/olf/druckansicht.php':
+                    if result_id in query.get('id_titlaufn', []):
+                        return True
+    return False
 
 
 class SearchPage(HTMLParser):
@@ -175,7 +197,7 @@ def main():
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
-    parser.add_argument('--skip-existing', action='store_true', help='skip downloading URLs already stored locally')
+    parser.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
     parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int, help='maximum number of results')
     parser.add_argument('--skip-result-id', action='append', default=[],
@@ -228,6 +250,9 @@ def main():
                 continue
             if not args.list_only and args.skip_existing and has_source(ROOT / 'data/documents', row['signature']):
                 print(f'Skipping existing citation: {row["signature"]}', flush=True)
+                continue
+            if not args.list_only and args.skip_existing and has_result_url(ROOT / 'data/documents', row['id']):
+                print(f'Skipping existing URL for catalogue result {row["id"]}', flush=True)
                 continue
             try:
                 url = client.resolve(row)

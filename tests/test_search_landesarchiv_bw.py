@@ -21,6 +21,58 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_existing_citations_normalize_wrapping_but_distinguish_verweisung(self):
+        sources = [
+            'D Nr. 456, Verweisung',
+            'D Nr. 456 Verweisung',
+            'Generallandesarchiv Karlsruhe {D Nr. 456, Verweisung}',
+            'Generallandesarchiv Karlsruhe {D Nr. 456 Verweisung}',
+            'Generallandesarchiv Karlsruhe D Nr. 456 Verweisung',
+            'Generallandesarchiv Karlsruhe D Nr. 456',
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)
+            for source in sources:
+                with self.subTest(source=source):
+                    (path / 'test.json').write_text(json.dumps({'entries': [{'source': ['unrelated', source]}]}))
+                    suffix = ', Verweisung' if ', Verweisung' in source else ' Verweisung' if ' Verweisung' in source else ''
+                    for candidate in ('', ', Verweisung', ' Verweisung'):
+                        self.assertEqual(search.has_source(path, 'D Nr. 456' + candidate), candidate == suffix)
+                    self.assertFalse(search.has_source(path, 'D Nr. 457'))
+                    self.assertFalse(search.has_source(path, ''))
+
+    def test_skip_existing_checks_citation_and_urls_before_resolving(self):
+        rows = [
+            {'id': '11', 'signature': 'Known citation', 'bestand': '123'},
+            {'id': '22', 'signature': 'Different citation', 'bestand': '123'},
+            {'id': '33', 'signature': 'Another citation', 'bestand': '123'},
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            documents = root / 'data/documents'
+            documents.mkdir(parents=True)
+            (documents / 'test.json').write_text(json.dumps({'entries': [
+                {'source': ['Other', 'Known citation']},
+                {'url': ['https://example.org/', 'http://www.landesarchiv-bw.de/plink/?f=4-22']},
+                {'url': 'https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?bestand=123&id_titlaufn=33'},
+            ]}))
+            with patch.object(search, 'ROOT', root), patch.object(search.Client, 'search', return_value=iter((row, 3) for row in rows)), \
+                    patch.object(search.Client, 'resolve') as resolve, patch.object(search.subprocess, 'run') as run, \
+                    patch.object(sys, 'argv', ['search', 'Rosenberg', '--skip-existing', '--results-file', str(root / 'results.json')]):
+                self.assertEqual(search.main(), 0)
+                resolve.assert_not_called()
+                run.assert_not_called()
+
+    def test_result_url_requires_exact_catalogue_id(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)
+            (path / 'test.json').write_text(json.dumps({'entries': [
+                {'url': 'https://www.landesarchiv-bw.de/plink/?f=4-122'},
+                {'url': 'https://example.org/plink/?f=4-22'},
+                {'url': 'https://www.landesarchiv-bw.de/plink/?f=4-22-1'},
+            ]}))
+            self.assertFalse(search.has_result_url(path, '22'))
+
     def test_catalogue_line_breaks_are_preserved_without_splitting_inline_text(self):
         details = downloader.CatalogDetails()
         details.feed('<table><tr><td>Titel</td><td>Datum<br>Urfehde.<br/>Sr.: Jörg\n von '

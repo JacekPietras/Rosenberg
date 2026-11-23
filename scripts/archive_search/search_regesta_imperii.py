@@ -23,7 +23,7 @@ from search_results import ResultsStore
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_regesta_imperii as ri
-from archive_record_storage import has_url
+from archive_record_storage import has_source, has_url
 
 URL = 'https://www.regesta-imperii.de/regesten/suche.html'
 CACHE = ROOT / '.cache/archive_search/regesta_imperii'
@@ -186,6 +186,8 @@ def main():
             for i, row in enumerate(rows, 1):
                 url = row['url']; print(f'{i}. {row["title"]}\n   {url}', flush=True)
                 if args.list_only: continue
+                if args.skip_existing and has_source(ROOT / 'data/documents', row['title']):
+                    print(f'Skipping existing citation: {row["title"]}', flush=True); continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}'); continue
                 try:

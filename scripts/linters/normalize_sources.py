@@ -33,12 +33,11 @@ def normalize(path):
 
     def clean(value):
         if isinstance(value, str):
-            value = value.replace(", Verweisung", "").replace("{", "").replace("}", "")
-            return re.sub(r" Verweisung$", "", value)
+            return value.replace("{", "").replace("}", "")
         if isinstance(value, list) and all(isinstance(item, str) for item in value):
             items = [clean(item) for item in value]
             return [item for index, item in enumerate(items)
-                    if not any(item in other and (len(item) < len(other) or
+                    if not any(item in other and not re.fullmatch(re.escape(item) + r",? Verweisung(?: \d+)?", other) and (len(item) < len(other) or
                                (item == other and earlier < index))
                                for earlier, other in enumerate(items) if earlier != index)]
         return expected(value)
