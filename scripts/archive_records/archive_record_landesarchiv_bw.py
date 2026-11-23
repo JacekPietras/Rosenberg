@@ -14,40 +14,12 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener
 
+from archive_record_dates import parse_catalogue_date
+
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
-MONTHS = {
-    "januar": 1,
-    "jan": 1,
-    "februar": 2,
-    "feb": 2,
-    "febr": 2,
-    "märz": 3,
-    "mär": 3,
-    "maerz": 3,
-    "mrz": 3,
-    "april": 4,
-    "apr": 4,
-    "mai": 5,
-    "juni": 6,
-    "jun": 6,
-    "juli": 7,
-    "jul": 7,
-    "august": 8,
-    "aug": 8,
-    "september": 9,
-    "sept": 9,
-    "sep": 9,
-    "oktober": 10,
-    "okt": 10,
-    "november": 11,
-    "nov": 11,
-    "dezember": 12,
-    "dez": 12,
-}
-
 
 PLINK_RE = re.compile(r"/plink/\?(?:[^#]*&)?f=([^&#]+)", re.I)
 ID_RE = re.compile(r'title="Id:\s*(\d+).*?AID:\s*([^"\s]+)', re.I | re.S)
@@ -271,34 +243,7 @@ def resolve_redirected_catalogue_record(opener, url: str, aid: str) -> str:
 
 
 def iso_date(value: str) -> str:
-    """Convert common Landesarchiv German date labels to the JSON ISO format."""
-    value = value.strip()
-    iso_match = re.search(r"(?<!\d)(\d{4})-(\d{2})-(\d{2})(?!\d)", value)
-    if iso_match:
-        return "-".join(iso_match.groups())
-    german_day_first = re.search(
-        r"(?<!\d)(\d{1,2})\.?\s+([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{4})(?!\d)", value
-    )
-    if german_day_first:
-        day, month, year = german_day_first.groups()
-        month_number = MONTHS.get(month.casefold())
-        if month_number:
-            return f"{year}-{month_number:02d}-{int(day):02d}"
-    german_match = re.search(
-        r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{1,2})(?!\d)", value
-    )
-    if german_match:
-        year, month, day = german_match.groups()
-        month_number = MONTHS.get(month.casefold())
-        if month_number:
-            return f"{year}-{month_number:02d}-{int(day):02d}"
-    year_match = re.search(r"(?<!\d)(\d{4})(?!\d)", value)
-    if year_match:
-        return year_match.group(1)
-    partial = re.search(r"(?<![\dXx])(\d{2,3})(?:\.{2,}|[Xx?…]+)(?![\dXx])", value)
-    if partial:
-        return partial.group(1) + 'X' * (4 - len(partial.group(1)))
-    raise ValueError(f"Could not determine the document date from catalogue label: {value!r}")
+    return parse_catalogue_date(value)
 
 
 def leading_title_date(value: str) -> str | None:

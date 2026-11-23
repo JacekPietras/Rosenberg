@@ -8,11 +8,12 @@ import html
 import json
 import re
 import sys
-from datetime import date as calendar_date
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlsplit
 from urllib.request import Request, urlopen
+
+from archive_record_dates import parse_catalogue_date
 
 
 USER_AGENT = "Rosenberg research downloader/1.0"
@@ -20,12 +21,6 @@ REQUEST_TIMEOUT = 60
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"arcinsys.hessen.de"}
-MONTHS = {
-    "januar": 1, "februar": 2, "märz": 3, "maerz": 3, "april": 4,
-    "mai": 5, "juni": 6, "juli": 7, "august": 8, "september": 9,
-    "oktober": 10, "november": 11, "dezember": 12,
-}
-
 
 class NonDatedCatalogEntry(ValueError):
     """An index entry that cannot be represented as a dated document."""
@@ -163,24 +158,7 @@ def iso_date(value: str) -> str:
         half, century = map(int, half_century.groups())
         start = (century - 1) * 100 + (50 if half == 2 else 0)
         return f"{start}-{start + 50}"
-    dotted = re.search(r"(?<!\d)(\d{1,2})\.(\d{1,2})\.(\d{4})(?!\d)", value)
-    if dotted:
-        day, month, year = map(int, dotted.groups())
-        try:
-            return calendar_date(year, month, day).isoformat()
-        except ValueError as exc:
-            raise ValueError(f"Invalid day-month-year date in Datierung: {value!r}") from exc
-    match = re.search(r"(?<!\d)(\d{4})\s+([A-Za-zÄÖÜäöüß]+)(?:\s+(\d{1,2}))?", value)
-    if match:
-        year, month, day = match.groups()
-        number = MONTHS.get(month.casefold())
-        if number:
-            result = f"{year}-{number:02d}"
-            return result + (f"-{int(day):02d}" if day else "")
-    match = re.search(r"(?<!\d)(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?(?!\d)", value)
-    if match:
-        return "-".join(part for part in match.groups() if part)
-    raise ValueError(f"Could not determine the document date from Datierung: {value!r}")
+    return parse_catalogue_date(value)
 
 
 def dated_paths(date: str) -> list[Path]:

@@ -13,6 +13,7 @@ from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree
 
+from archive_record_dates import century_range, parse_catalogue_date
 
 USER_AGENT = "Rosenberg research downloader/1.0"
 REQUEST_TIMEOUT = 60
@@ -122,10 +123,8 @@ def seal_sections(value: str) -> list[str]:
 def iso_date(laufzeit: str) -> str:
     """Convert the catalog's common German date forms to ISO precision."""
     value = laufzeit.strip()
-    centuries = re.findall(r'(?<!\d)(\d{1,2})\.\s*(?:Jh\.?|Jahrhundert)', value, flags=re.I)
-    if centuries:
-        first, last = int(centuries[0]), int(centuries[-1])
-        return f'{(first - 1) * 100 + 1:04d}-{last * 100:04d}'
+    if century := century_range(value):
+        return century
     months = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split()
     for month, name in enumerate(months, 1):
         value = re.sub(rf'\b(\d{{4}})\s+{name}\s+(\d{{1,2}})\b',
@@ -141,7 +140,7 @@ def iso_date(laufzeit: str) -> str:
         return years[0]
     if len(years) >= 2:
         return f"{min(years)}-{max(years)}"
-    raise ValueError(f"Could not determine the document date from Laufzeit: {laufzeit!r}")
+    return parse_catalogue_date(laufzeit)
 
 
 def dated_document_paths(date: str) -> list[Path]:

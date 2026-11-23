@@ -15,6 +15,7 @@ from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 from xml.etree import ElementTree
 
+from archive_record_dates import parse_catalogue_date
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_utils"))
 from archive_anubis import ANUBIS_CHALLENGE_RE, solve_anubis
@@ -65,7 +66,7 @@ def normalize_date(raw: str) -> str:
     value = raw.strip().replace("[", "").replace("]", "").replace("(", "").replace(")", "")
     years = re.findall(r"(?<!\d)(\d{4})(?!\d)", value)
     if not years:
-        raise ValueError(f"Could not determine a document date from unitDate: {raw!r}")
+        return parse_catalogue_date(raw)
     return years[0] if len(set(years)) == 1 else f"{years[0]}-{years[-1]}"
 
 
