@@ -211,6 +211,8 @@ lists.
 ```
 
 - `date` (required): the document's historical date. `place`: place of issue.
+- For a partially legible year, trailing unknown digits may be `X`, such as
+  `158X` for 1580–1589 or `15XX` for 1500–1599.
 - `transcribed`: `true` when transcribed; absent or `false` otherwise.
 - `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
 - `label`: a string or array of strings, shown as badges. `important` gives a

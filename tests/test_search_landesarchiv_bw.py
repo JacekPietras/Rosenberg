@@ -21,6 +21,16 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_partial_year_is_saved_with_unknown_digit(self):
+        details = ('<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>'
+                   '<tr><td>Laufzeit</td><td>[158...]</td></tr><tr><td>Titel</td><td>Document</td></tr></table>')
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+            self.assertEqual(path.name, '158X.json')
+            self.assertEqual(json.loads(path.read_text())['date'], '158X')
+
     def test_permalink_redirect_to_requested_catalogue_record_is_verified(self):
         url = 'https://www.landesarchiv-bw.de/plink/?f=4-5466304'
         redirect = 'https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=10798&sprungId=13356277'
@@ -130,6 +140,9 @@ class LandesarchivSearchTests(unittest.TestCase):
         self.assertEqual(details.fields['titel'], 'Datum\nUrfehde.\nSr.: Jörg von Rosenberg\nAusf. Pap.')
 
     def test_day_first_german_catalogue_date_keeps_full_precision(self):
+        self.assertEqual(downloader.iso_date('[158...]'), '158X')
+        self.assertEqual(downloader.iso_date('[15..]'), '15XX')
+        self.assertEqual(downloader.iso_date('158?'), '158X')
         self.assertEqual(downloader.iso_date('25. Apr. 1385'), '1385-04-25')
         self.assertEqual(downloader.iso_date('25. April 1385'), '1385-04-25')
         self.assertEqual(downloader.leading_title_date('1316 Juni 29 (an der heiligen Tag)'), '1316-06-29')

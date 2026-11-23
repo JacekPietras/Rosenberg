@@ -76,6 +76,11 @@ def date_span(value):
     if not isinstance(value, str):
         return None
     value = value.strip()
+    uncertain_year = re.fullmatch(r'(\d{2,3})(X{1,2})', value)
+    if uncertain_year and len(value) == 4:
+        start = int(value.replace('X', '0'))
+        end = int(value.replace('X', '9'))
+        return date(start, 1, 1), date(end, 12, 31)
     if '--' in value or '/' in value:
         separator = '--' if '--' in value else '/'
         start, end = value.split(separator, 1)
@@ -153,7 +158,7 @@ def save_record(record, document_dir: Path):
     date_start = re.match(r'^(\d{4}-\d{2}-\d{2})(?:_|$)', date)
     if date_start:
         date = date_start.group(1)
-    stem = re.sub(r'[^0-9-]+', '_', date)
+    stem = re.sub(r'[^0-9X-]+', '_', date)
     pattern = re.compile(rf'{re.escape(stem)}(?:_(\d+))?\.json$')
     paths = sorted((p for p in document_dir.glob(f'{stem}*.json') if pattern.fullmatch(p.name)),
                    key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))

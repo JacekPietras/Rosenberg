@@ -61,6 +61,9 @@ def date_bounds(value):
 def inherited_date_bounds(value):
     """Also accept existing document intervals, without inventing a single day."""
     if isinstance(value, str):
+        if re.fullmatch(r'(?:\d{3}X|\d{2}XX)', value):
+            first, last = int(value.replace('X', '0')), int(value.replace('X', '9'))
+            return date(first, 1, 1), date(last, 12, 31)
         if '/' in value:
             endpoints = value.split('/')
         elif '--' in value:

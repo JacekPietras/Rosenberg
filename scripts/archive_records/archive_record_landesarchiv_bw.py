@@ -295,6 +295,9 @@ def iso_date(value: str) -> str:
     year_match = re.search(r"(?<!\d)(\d{4})(?!\d)", value)
     if year_match:
         return year_match.group(1)
+    partial = re.search(r"(?<![\dXx])(\d{2,3})(?:\.{2,}|[Xx?…]+)(?![\dXx])", value)
+    if partial:
+        return partial.group(1) + 'X' * (4 - len(partial.group(1)))
     raise ValueError(f"Could not determine the document date from catalogue label: {value!r}")
 
 
