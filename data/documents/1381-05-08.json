@@ -1,6 +1,7 @@
 {
   "date": "1381-05-08",
   "label": "Sulzbach",
+  "transcribed": true,
   "entries": [
     {
       "source": "STAAM, Kloster Kastl Urkunden 225",
@@ -23,6 +24,59 @@
           "person": "Friedrich Kemnatter",
           "type": "generic",
           "content": "presented a letter with four seals, declared valid by the Landgericht at Sultzbach, concerning Friedrich Voit von Rosenberg’s sale of two Huben at Ekkersuelt."
+        }
+      ]
+    },
+    {
+      "source": "Monumenta Boica 24, Monasterium Ensdorf, Castel, Nr. CLVI, Sententia judicialis",
+      "url": "https://books.google.pl/books?id=G9czAAAAMAAJ",
+      "german": "Ich Dyetraich Stauffer an der zeyt Vitztüm zü Sültzbach,\nBekenn offenleich mit dem brief, Daz für mich kom in gericht, auf\ndem Lantgericht zu Sultzbach ffriderich kemnatter, vnd weyst\neinen gantzen gerechten brief, mit vir anhangenden Insigel, der\nselb brief lawtt daz ffriderich Voyt von Rosenberg, Erharden\ndem Löhleyn, vnd allen seinen Erben. vnd Nachkomen. zwo\nhub zu Ekkersuelt recht vnd redleich verkauft hat, vnd die\nauch freyes aygen sind, vnd pat den zu verhören, Vnd sprach\nauch, ez wär Erhart Löhel seliger dez kaufes gesezzen in\nnutzleicher gewir als lang als aygens vnd Lantzrecht wer Do\nderselb brief in offem gericht verhört ward, Do ward ertaylt\nmit gemayner vrtayl daz der selb brief pilleich beleyben sold,\nmit allen seinen Artikeln, vnd sold auch haben macht vnd\nkraft. Dar nach pat zu fragen mit fürsprechen, der obgenant\nffriderich kemnater ob man im daz icht pilleich verschreyben\nsold. vnder dez Lantgerichtz zu Sulzbach angangenden Insigel,\ndaz ward im ertaylt, Also gib ich obgenanter Dyetreich Stauf-\nfer im dem brief versigelt mit dez Lantgericht zu Sultzbach\nInsigel besigelten, Daz ist geschehen nach kristj gepurtt Dreut-\nzehen Hundert Jar, dar nach in dem Aynn vnd Achtzigisten\nJar, an der nechsten Mitwochen nach sand Walpurgen tag.",
+      "english": "I, Dietrich Stauffer, at present Vitztum at Sulzbach, declare publicly with this letter that Friedrich Kemnatter came before me in court, at the Landgericht at Sulzbach, and produced a whole, valid letter with four hanging seals. The same letter states that Friedrich Vogt von Rosenberg rightfully and lawfully sold to Erhard Löhlein and all his heirs and descendants two Hufen at Ekkersuelt, which are also free property, and he asked that it be heard. And he also said that Erhard Löhel, deceased, had been in possession of the purchase in beneficial tenure as long as is required by property law and land law. When the same letter was heard in open court, it was adjudged by common judgment that the same letter should rightfully remain valid with all its articles and should have force and power. Thereafter the aforesaid Friedrich Kemnatter asked, through his spokesman, whether it should rightfully be written out for him under the seal of the Landgericht at Sulzbach. This was adjudged to him. So I, the aforesaid Dietrich Stauffer, give him this letter sealed with the seal of the Landgericht at Sulzbach. This happened after Christ's birth thirteen hundred years, thereafter in the eighty-first year, on the next Wednesday after St. Walburga's day.",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "person": "Dietrich Stauffer",
+          "personTitle": [
+            "Vizedom zu Sulzbach"
+          ],
+          "type": "generic",
+          "content": "issued the letter and sealed it with the seal of the Landgericht at Sulzbach."
+        },
+        {
+          "person": "Friedrich Kemnatter",
+          "type": "generic",
+          "content": "produced before the Landgericht at Sulzbach a letter with four seals and asked for a court letter confirming it."
+        },
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Vogt von Rosenberg"
+          ],
+          "type": "generic",
+          "content": "sold two free Hufen at Ekkersuelt to Erhard Löhlein and his heirs, according to the letter produced."
+        },
+        {
+          "person": "Erhard Löhlein",
+          "type": "generic",
+          "content": "bought two free Hufen at Ekkersuelt from Friedrich Vogt von Rosenberg, according to the letter produced."
+        },
+        {
+          "person": "Erhard Löhel",
+          "personDeceased": true,
+          "type": "generic",
+          "content": "was in possession of the purchase in beneficial tenure, according to Friedrich Kemnatter."
+        },
+        {
+          "person": "Erhard Löhel",
+          "type": "death",
+          "diedBefore": "1381-05-09"
         }
       ]
     }
