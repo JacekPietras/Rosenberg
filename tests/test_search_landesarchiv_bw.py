@@ -21,14 +21,43 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
-    def test_missing_date_is_reported_before_viewer_request(self):
+    def test_permalink_redirect_to_requested_catalogue_record_is_verified(self):
+        url = 'https://www.landesarchiv-bw.de/plink/?f=4-5466304'
+        redirect = 'https://www2.landesarchiv-bw.de/ofs21/olf/struktur.php?bestand=10798&sprungId=13356277'
+        with patch.object(downloader, 'fetch', return_value=(redirect, '<html></html>')):
+            self.assertEqual(downloader.verify_permalink(None, url, '4-5466304', '13356277'), url)
+            with self.assertRaises(ValueError):
+                downloader.verify_permalink(None, url, '4-5466304', '13356278')
+
+    def test_importer_tries_alternate_permalink_from_catalogue_page(self):
+        details = ('<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>'
+                   '<tr><td>Permalink</td><td>http://www.landesarchiv-bw.de/plink/?f=4-456</td></tr>'
+                   '<tr><td>Titel</td><td>Document</td></tr></table>')
+        def verify(opener, url, aid, *args):
+            if aid == '4-123':
+                raise ValueError('incorrect redirect')
+            return url
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=verify):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+            self.assertEqual(json.loads(path.read_text())['entries'][0]['url'], 'https://www.landesarchiv-bw.de/plink/?f=4-456')
+
+    def test_missing_date_uses_placeholder_and_keeps_viewer(self):
         details = '<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr><tr><td>Titel</td><td>Jörg von Rosenberg</td></tr></table>'
-        with patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url), \
-                patch.object(downloader, 'read_viewer') as viewer:
-            with self.assertRaisesRegex(ValueError, 'Missing date for archive ID 4-123'):
-                downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123', has_viewer=True)
-            viewer.assert_not_called()
+        with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url), \
+                patch.object(downloader, 'read_viewer', return_value=('https://example.org/', {}, ['page'], '123')) as viewer, \
+                patch.object(downloader, 'image_urls', return_value=['https://example.org/image.jpg']), \
+                patch.object(downloader.time, 'sleep'):
+            path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123', has_viewer=True)
+            record = json.loads(path.read_text())
+            self.assertEqual(record['date'], '9999')
+            self.assertEqual(record['entries'][0]['source'], 'Archive 11')
+            self.assertEqual(record['entries'][0]['german'], 'Jörg von Rosenberg')
+            self.assertEqual(record['entries'][0]['img'][0]['src'], 'https://example.org/image.jpg')
+            viewer.assert_called_once()
 
     def test_search_stops_after_two_consecutive_download_failures(self):
         rows = [{'id': str(i), 'signature': f'Archive {i}', 'bestand': '123', 'date': '', 'has_viewer': False}
@@ -113,7 +142,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Laufzeit</td><td>1316</td></tr><tr><td>Titel</td><td>1316 Juni 29 - Konrad von Rosenberg</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
             self.assertEqual(path.name, '1316-06-29.json')
             self.assertEqual(json.loads(path.read_text())['date'], '1316-06-29')
@@ -129,7 +158,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Titel</td><td>{title}</td></tr><tr><td>Enthält</td><td>{darin}</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-188', '188', '123')
             record = json.loads(path.read_text())
             entry = record['entries'][0]
@@ -145,7 +174,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Siegelbeschreibung</td><td>{description}</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-4037151')
             self.assertIn(f'Siegelbeschreibung: {description}', json.loads(path.read_text())['entries'][0]['german'])
 
@@ -157,7 +186,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Zeugen</td><td>{witnesses}</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
             self.assertIn(f'Zeugen: {witnesses}', json.loads(path.read_text())['entries'][0]['german'])
 
@@ -169,7 +198,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Vermerke</td><td>{notes}</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
             self.assertIn(f'Vermerke: {notes}', json.loads(path.read_text())['entries'][0]['german'])
 
@@ -208,7 +237,7 @@ class LandesarchivSearchTests(unittest.TestCase):
                    '<tr><td>Laufzeit</td><td>1400</td></tr><tr><td>Titel</td><td>Document text</td></tr></table>')
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url), \
                 patch.object(downloader.time, 'sleep'), patch.object(downloader, 'read_viewer', return_value=('viewer', {}, ['page'], '123')), \
                 patch.object(downloader, 'image_urls', return_value=['https://archive/image']):
             url = 'https://www.landesarchiv-bw.de/plink/?f=4-123'
@@ -225,7 +254,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         <tr><td>Laufzeit</td><td>1400</td></tr><tr><td>Titel</td><td>Document text</td></tr></table>'''
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), patch.object(downloader, 'fetch_page', return_value=details), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url):
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
             path, existing = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
             self.assertFalse(existing)
             self.assertIn('Document text', json.loads(path.read_text())['entries'][0]['german'])
@@ -238,7 +267,7 @@ class LandesarchivSearchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, patch.object(storage, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), \
                 patch.object(downloader, 'discover_viewer', return_value=discovered), \
-                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url), \
                 patch.object(downloader, 'fetch_page', return_value=details):
             path, existing = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123')
             record = json.loads(path.read_text())

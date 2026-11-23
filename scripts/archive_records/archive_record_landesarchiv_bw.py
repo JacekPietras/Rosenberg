@@ -221,7 +221,7 @@ def fetch_page(url: str) -> str:
         return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
 
 
-def verify_permalink(opener, url: str, aid: str) -> str:
+def verify_permalink(opener, url: str, aid: str, catalog_id: str | None = None) -> str:
     """Return a usable canonical permalink, refusing the archive's dead-link page."""
     final_url, page = fetch(opener, url)
     if not isinstance(page, str):
@@ -232,7 +232,10 @@ def verify_permalink(opener, url: str, aid: str) -> str:
     if "Zu dieser URL existiert" in page and "keine Ressource" in page:
         raise ValueError(f"Landesarchiv permalink {url} does not exist")
     found = {html.unescape(record_aid).strip() for _, record_aid in ID_RE.findall(page)}
-    if aid not in found:
+    selected_id = parse_qs(final.query).get('sprungId', [''])[0]
+    if aid not in found and not (catalog_id and selected_id == catalog_id
+                                 and final.hostname == 'www2.landesarchiv-bw.de'
+                                 and final.path == '/ofs21/olf/struktur.php'):
         raise ValueError(f"Landesarchiv page did not confirm archive ID {aid}")
     # Keep the stable public permalink, but only after the archive has confirmed it.
     return f"https://www.landesarchiv-bw.de/plink/?{urlencode({'f': aid})}"
@@ -262,7 +265,7 @@ def resolve_redirected_catalogue_record(opener, url: str, aid: str) -> str:
     )
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
-    if not all(details.fields.get(field) for field in ("bestellsignatur", "laufzeit", "titel")):
+    if not all(details.fields.get(field) for field in ("bestellsignatur", "titel")):
         raise ValueError(f"Redirected catalogue record {record_id} could not be verified (AID {aid})")
     return details_url
 
@@ -387,14 +390,14 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         details_url = "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?" + urlencode(
             {"id_titlaufn": catalog_id, "bestand": bestand})
         try:
-            url = verify_permalink(opener, url, aid)
+            url = verify_permalink(opener, url, aid, catalog_id)
         except (OSError, ValueError) as exc:
             # Some search results expose a stale or misdirected plink even
             # though their numeric catalogue record is still available.
             # Keep the record only through its directly addressable catalogue
             # page, which is fetched and checked below before anything is saved.
             url = details_url
-            print(f"Warning: {exc}; using the direct catalogue record URL {url}", file=sys.stderr)
+            print(f"Warning: {exc}; checking the direct catalogue record", file=sys.stderr)
     else:
         try:
             url = verify_permalink(opener, url, aid)
@@ -414,9 +417,21 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     source = details.fields.get("bestellsignatur")
     date_text = details.fields.get("laufzeit")
     german = details.fields.get("titel")
-    missing = [name for name, value in (("citation", source), ("date", date_text), ("title", german)) if not value]
+    missing = [name for name, value in (("citation", source), ("title", german)) if not value]
     if missing:
         raise ValueError(f"Missing {', '.join(missing)} for archive ID {aid}")
+    if catalog_id and url == details_url:
+        candidate = details.fields.get("permalink", "")
+        parts = urlsplit(candidate)
+        candidate_aid = parse_qs(parts.query).get("f", [""])[0]
+        if (parts.scheme in {"http", "https"} and parts.hostname in {"www.landesarchiv-bw.de", "landesarchiv-bw.de"}
+                and parts.path.rstrip("/") == "/plink" and re.fullmatch(r"\d+-\d+(?:-\d+)?", candidate_aid)
+                and candidate_aid != aid):
+            try:
+                url = verify_permalink(opener, f"https://www.landesarchiv-bw.de/plink/?{urlencode({'f': candidate_aid})}",
+                                       candidate_aid, catalog_id)
+            except (OSError, ValueError) as exc:
+                print(f"Warning: {exc}; using the direct catalogue record URL {details_url}", file=sys.stderr)
     if catalog_id and has_viewer:
         try:
             time.sleep(delay)
@@ -428,10 +443,9 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         except (OSError, ValueError) as exc:
             print(f"Warning: catalogue viewer unavailable for record {catalog_id}: {exc}", file=sys.stderr)
     source = " ".join(source.split())
-    date = iso_date(date_text)
     date = (leading_title_date(details.fields.get("enthält", ""))
             or leading_title_date(german)
-            or date)
+            or (iso_date(date_text) if date_text else "9999"))
     # The printable catalogue view carries much more than the title and dates.
     # In particular, "Enthält" is often a detailed archival abstract listing
     # individual items, and Umfang/Format describe the physical unit. Preserve
