@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LINTERS = Path(__file__).resolve().parent / "linters"
 TRUNCATION_MARKER = "(line truncated to 2000 chars)"
 CHECKS = (
+    "normalize_sources.py",
     "normalize_names.py",
     "validate_name_variants.py",
     "normalize_hidden_places.py",
