@@ -1,0 +1,65 @@
+{
+  "date": "1373-10-19",
+  "label": "to review",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Monumenta Boica 27, Num. CCLXXVIII, Venditio praedii, facta monasterio Reichenbach cum pacto obstagii (ex libro copiarum 1402)",
+      "url": "https://books.google.pl/books?id=l58EAAAAQAAJ",
+      "german": "Ich Niclas Raidenbach zu den czeiten zu Rosenberg gesessen\nmein eleiche Hawsfraw vnd all vnser Erwen. Vergehen vnd\ntun kunt offenleichen mit dem brief allen den die in ansehent\nhörnt oder lesent. Daz wir recht redleich vnd keufleich zu kau-\nfen haben gegeben. dem erwirdigen gaistlichen herren hern Con-\nraden dem Perchtoltzhofer zden czeiten Abt dez Chlosters vnd\nStiftes zu Reichenbach vnd dem Conuent daselbs vnd allen\niren nachkomen vnser aigen gut zu Boppental gelegen do zu\nden czeiten Conrad der Sneider aufgesessen ist. vmb ein Sum-\nme geltes. des wir gar vnd gentzlich von in bczalt vnd be-\nricht sein an allen vnsern gepresten vnd abgangk mit aller sei-\nner zugehörung Ez sein Wisen Ekker. waide Waser. Stock\nStein holtz zu dorf zu Velde wie Das genant ist. vnd alz es\nvon alter biz her an vns komen ist. besucht vnd vnbesucht. Wir\ngeloben in auch daz vorgenant Aygen gut zu vertreten. vnd zu\nversprechen bey güten trewen vor allermenicleich mit dem Rech-\nten als freies aigens gütz vnd auch lands Recht ist on allez\ngeuerde. Vnd darüber zu einer peseren sicherhait setzen wir\nin zu vns zu porgen vnseren lieben Swager Ortel den Len-\ngenuel der zden zeiten zu Rosenberg gesessen. ob das were\ndaz im pruch geschehe an ainem Artikel. oder an mer. So ha-\nben sy vollen gewalt vnseren vorgenanten pürgen manen zu\nlaisten. Wenn der denne genant wirt der schol zu hant nach\nseiner manung einvaren mit einem pferde zu Sultzpach in die\nStat in ein Erwergs offenns gasthaws hintz einen offenn wirtt.\nVnd schol auch da laisten nach des landes Rechten. Vnd schol\nauch aws der laistung nymmer kommen als lang vntz in alles\ndaz volfürt vnd awspraht wirt darumb sie gemant haben. Er\nmag auch ein Erwern knecht mit einem pferde an sein Stat in\ndie laistung legen on geuerde. Dez zu vrkunde gib ich in vor-\ngenanter Niclas Raidenbach für mich fur mein haussfrawen vnd\nfür alle vnsere Erwen disen offen brief versigelt vnder meinem\nInsigel vnd vnder meins vorgenanten Insigel. vnd vnder meins\nvorgenanten Purgen Insigel die bedew daran hangend Darvnder\nich mich verpinde mit sambt allen meinen Erben vnd auch mit\nsampt vnsern vorgenanten pürgen bey guten trewen alles daz\nstet zu halden vnd zu volfüren. das hievor geschriben stet on\nalles geuärde. Der brief ist gegeben als man czalt von Christus\ngepurdt Dreuczehen hundert Jar. vnd darnach in dem drew\nvnd Sibentzkigistem Jar. dez nehsten Mitwochs nach sand Gal-\nlen tag.",
+      "english": "I, Niclas Raidenbach, at that time seated at Rosenberg, my lawful wife and all our heirs, declare and make publicly known with this letter to all who see it, hear it or read it: that we have given for rightful, lawful purchase to the venerable spiritual lord, Lord Konrad the Perchtoltzhofer, at that time abbot of the monastery and foundation of Reichenbach, and to the convent there and all their successors, our own property at Boppental, on which Konrad der Sneider was then living, for a sum of money, with which we are fully and completely paid and satisfied, without any of our defects or loss, with all its appurtenances, whether meadows, fields, pasture, water, stock, stone, wood, in the village or in the field, however it is named, and as it has come to us from of old, searched and unsearched. We also promise to warrant the aforesaid free property to them and to defend it with good faith against everyone, according to the law of free property and also the law of the land, without any fraud. And for better security we give them as sureties, together with us, our dear brother-in-law Ortel der Lengenuel, at that time seated at Rosenberg. If any breach should occur to them in one article or more, they have full power to summon our aforesaid sureties to Leistung. When he is then named, he shall immediately upon his summons ride in with a horse to the town of Sulzbach, to an honest, open inn with an open host, and shall perform the Leistung there according to the law of the land, and shall not leave the Leistung until all that for which they summoned is fulfilled and settled. He may also put an honest servant with a horse in the Leistung in his place, without fraud. In witness whereof I, the aforesaid Niclas Raidenbach, give them, for myself, my wife and all our heirs, this open letter sealed under my seal and under the seal of my aforesaid surety, both hanging on it. Under these I bind myself, together with all my heirs, and also together with our aforesaid sureties, in good faith, to keep and fulfil all that is written above, without any fraud. The letter was given when one counted from Christ's birth thirteen hundred years and thereafter in the seventy-third year, on the next Wednesday after St. Gall's day.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Niklas Raidenbach",
+          "personTitle": [
+            "zu Rosenberg gesessen"
+          ],
+          "type": "generic",
+          "content": "was seated at Rosenberg."
+        },
+        {
+          "person": "Niklas Raidenbach",
+          "type": "generic",
+          "content": "sold his own property at Boppental to Abbot Konrad Perchtoltzhofer and the convent of Reichenbach."
+        },
+        {
+          "subject": "The property at Boppental",
+          "type": "generic",
+          "content": "was occupied by Konrad der Sneider at the time of the sale."
+        },
+        {
+          "person": "Konrad der Sneider",
+          "type": "generic",
+          "content": "lived on the property at Boppental sold to Reichenbach."
+        },
+        {
+          "person": "Konrad Perchtoltzhofer",
+          "personTitle": [
+            "Abt zu Reichenbach"
+          ],
+          "type": "generic",
+          "content": "bought a property at Boppental from Niclas Raidenbach for the monastery of Reichenbach."
+        },
+        {
+          "person": "Ortel Lengenuel",
+          "personTitle": [
+            "zu Rosenberg gesessen"
+          ],
+          "type": "generic",
+          "content": "stood surety for the sale of the property at Boppental, bound to Leistung at Sulzbach, and sealed the charter."
+        },
+        {
+          "person": "Ortel Lengenuel",
+          "type": "kin",
+          "of": "Niklas Raidenbach",
+          "term": "Schwager"
+        }
+      ]
+    }
+  ]
+}
