@@ -21,6 +21,27 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_missing_date_is_reported_before_viewer_request(self):
+        details = '<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr><tr><td>Titel</td><td>Jörg von Rosenberg</td></tr></table>'
+        with patch.object(downloader, 'fetch_page', return_value=details), \
+                patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid: url), \
+                patch.object(downloader, 'read_viewer') as viewer:
+            with self.assertRaisesRegex(ValueError, 'Missing date for archive ID 4-123'):
+                downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123', has_viewer=True)
+            viewer.assert_not_called()
+
+    def test_search_stops_after_two_consecutive_download_failures(self):
+        rows = [{'id': str(i), 'signature': f'Archive {i}', 'bestand': '123', 'date': '', 'has_viewer': False}
+                for i in range(3)]
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(search.Client, 'search', return_value=iter((row, 3) for row in rows)), \
+                patch.object(search.Client, 'resolve', return_value='https://www.landesarchiv-bw.de/plink/?f=4-123'), \
+                patch.object(search.Client, 'wait'), patch.object(search.subprocess, 'run') as run, \
+                patch.object(sys, 'argv', ['search', 'Rosenberg', '--results-file', str(Path(directory) / 'results.json')]):
+            run.return_value.returncode = 1
+            self.assertEqual(search.main(), 1)
+            self.assertEqual(run.call_count, 2)
+
     def test_existing_citations_normalize_wrapping_but_distinguish_verweisung(self):
         sources = [
             'D Nr. 456, Verweisung',

@@ -411,6 +411,12 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
             images = image_urls(viewer_url, fields, page_names, scope_id)
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
+    source = details.fields.get("bestellsignatur")
+    date_text = details.fields.get("laufzeit")
+    german = details.fields.get("titel")
+    missing = [name for name, value in (("citation", source), ("date", date_text), ("title", german)) if not value]
+    if missing:
+        raise ValueError(f"Missing {', '.join(missing)} for archive ID {aid}")
     if catalog_id and has_viewer:
         try:
             time.sleep(delay)
@@ -421,11 +427,6 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
             images = image_urls(viewer_url, viewer_fields, page_names, scope_id)
         except (OSError, ValueError) as exc:
             print(f"Warning: catalogue viewer unavailable for record {catalog_id}: {exc}", file=sys.stderr)
-    source = details.fields.get("bestellsignatur")
-    date_text = details.fields.get("laufzeit")
-    german = details.fields.get("titel")
-    if not source or not date_text or not german:
-        raise ValueError(f"Could not find citation, date, or title for archive ID {aid}")
     source = " ".join(source.split())
     date = iso_date(date_text)
     date = (leading_title_date(details.fields.get("enthält", ""))

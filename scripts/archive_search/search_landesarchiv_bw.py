@@ -226,6 +226,7 @@ def main():
     count = total = 0
     result_seen = False
     failures = []
+    consecutive_failures = 0
     resume_pending = bool(args.resume_after_result_id)
     resume_found = not resume_pending
     try:
@@ -247,23 +248,30 @@ def main():
             results.record(phrase, True)
             if row['id'] in args.skip_result_id:
                 print(f'Skipping catalogue result {row["id"]}', file=sys.stderr, flush=True)
+                consecutive_failures = 0
                 continue
             if not args.list_only and args.skip_existing and has_source(ROOT / 'data/documents', row['signature']):
                 print(f'Skipping existing citation: {row["signature"]}', flush=True)
+                consecutive_failures = 0
                 continue
             if not args.list_only and args.skip_existing and has_result_url(ROOT / 'data/documents', row['id']):
                 print(f'Skipping existing URL for catalogue result {row["id"]}', flush=True)
+                consecutive_failures = 0
                 continue
             try:
                 url = client.resolve(row)
-            except (OSError, ValueError, RuntimeError) as exc:
+            except (OSError, ValueError) as exc:
                 failures.append((row['id'], row['signature'], str(exc)))
                 print(f'Skipping result {row["id"]} ({row["signature"]}): {exc}', file=sys.stderr, flush=True)
+                consecutive_failures += 1
+                if consecutive_failures >= 2:
+                    raise RuntimeError(f'Stopping after consecutive failures; last result {row["id"]}') from exc
                 continue
             count += 1
             print(f'{count}. {row["signature"]} | {row["date"]}\n   {url}', flush=True)
             if not args.list_only and args.skip_existing and has_url(ROOT / 'data/documents', url):
                 print(f'Skipping existing URL: {url}', flush=True)
+                consecutive_failures = 0
                 continue
             if not args.list_only:
                 client.wait()
@@ -279,6 +287,11 @@ def main():
                     failures.append((row['id'], row['signature'],
                                      f'downloader failed for {url} (exit {proc.returncode})'))
                     print(f'Skipping result {row["id"]} after downloader failure', file=sys.stderr, flush=True)
+                    consecutive_failures += 1
+                    if consecutive_failures >= 2:
+                        raise RuntimeError(f'Stopping after consecutive failures; last result {row["id"]}')
+                    continue
+            consecutive_failures = 0
         if not resume_found:
             raise ValueError(f'Could not find resume result {args.resume_after_result_id}')
         if not result_seen:
@@ -289,7 +302,7 @@ def main():
         if failures:
             for result_id, signature, error in failures:
                 print(f'  {result_id} | {signature}: {error}', file=sys.stderr)
-        return 0
+        return 1 if failures else 0
     except (OSError, ValueError, RuntimeError) as exc:
         print(f'Error after {count} results: {exc}', file=sys.stderr)
         return 1
