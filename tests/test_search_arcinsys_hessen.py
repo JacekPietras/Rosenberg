@@ -10,9 +10,21 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archiv
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import search_arcinsys_hessen as search
 import archive_record_arcinsys_hessen as downloader
+import archive_record_storage as record_storage
 
 
 class SearchTests(unittest.TestCase):
+    def test_undated_records_do_not_merge_on_text_alone(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)
+            first = {'date': '9999', 'entries': [{'source': 'First', 'german': 'Ulrich von Rosenberg'}]}
+            second = {'date': '9999', 'entries': [{'source': 'Second', 'german': 'Ulrich von Rosenberg'}]}
+            first_path, _ = record_storage.save_record(first, path)
+            second_path, matched = record_storage.save_record(second, path)
+            self.assertFalse(matched)
+            self.assertNotEqual(first_path, second_path)
+            self.assertEqual(record_storage.save_record(first, path), (first_path, True))
+
     def test_detail_field_preserves_html_line_breaks(self):
         fields = downloader.Fields()
         fields.feed('<div class="row"><span class="d-none">(Voll-) Regest</span>'

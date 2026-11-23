@@ -172,7 +172,9 @@ def save_record(record, document_dir: Path):
                     continue
                 existing_urls = {normalized_url(url) for url in values(entry.get('url'))}
                 match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
-                if not by_source and not compatible_dates(document.get('date'), record.get('date')):
+                if not by_source and (str(record.get('date')) == '9999'
+                                      or str(document.get('date')) == '9999'
+                                      or not compatible_dates(document.get('date'), record.get('date'))):
                     match = False
                 if not match:
                     continue
