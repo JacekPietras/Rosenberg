@@ -4,8 +4,11 @@
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 1356",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1726550",
-      "german": "Balthasar Kettel verkauft an Arnold von Rosenberg seinen Teil des Dorfs zu Buch mit dem Burgstall und einem Viertel am Gericht daselbst um 340 Gulden.\n\nLaufzeit: 1491 November 14 (1491 Montag nach Martini)",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=4-1726550",
+        "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?id_titlaufn=3847043&bestand=10709"
+      ],
+      "german": "Balthasar Kettel verkauft an Arnold von Rosenberg seinen Teil des Dorfs zu Buch mit dem Burgstall und einem Viertel am Gericht daselbst um 340 Gulden.\n\nLaufzeit: 1491 November 14 (1491 Montag nach Martini)\n\nSiegelbeschreibung: 2 Siegel",
       "english": "Balthasar Kettel sells to Arnold von Rosenberg his share of the village of Buch with the motte (Burgstall) and a quarter of the court there for 340 gulden.\n\nPeriod: November 14, 1491 (1491 Monday after Martin's Day)",
       "mention": [
         {

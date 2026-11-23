@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 1662, 155",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397367",
+      "url": [
+        "https://www.landesarchiv-bw.de/plink/?f=4-5397367",
+        "https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?id_titlaufn=13282724&bestand=10798"
+      ],
       "german": "Ritter Wilhelm von Dottenheim verzichtet, nachdem das Schloss Schüpf, woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Dietrich von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und seinen Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (uff sontag vor sant Egidien tag)\n\nSiegler: Wilhelm von Dottenheim",
       "english": "Knight Wilhelm von Dottenheim renounces claims and demands after Schloss Schüpf, of which he held a share, had been captured and destroyed in the feud between Archbishop Adolf of Mainz, Elector Friedrich of the Palatinate, and Rudolf zu Würzburg, Bischof on one side, and Jörg, Arnold, and Michael von Rosenberg on the other. Archbishop Dietrich of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof had restored him to his share and usage rights.\n\nTime span: August 31, 1477 (on Sunday before Saint Giles' Day)\n\nSealer: Wilhelm von Dottenheim",
       "mention": [
@@ -53,6 +56,14 @@
           ],
           "type": "generic",
           "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005397367%2F04_0005397367_0001_4-5397367-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005397367%2F04_0005397367_0002_4-5397367-2.jpg"
         }
       ]
     }
