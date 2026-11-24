@@ -7,8 +7,11 @@
         "StA St. Gallen, X.1.A.1., 1299 II 20",
         "StA St. Gallen, X.1.A.1., X.1.A.1"
       ],
-      "url": "https://www.monasterium.net/mom/CH-StiASG/Urkunden/X.1.A.1/charter",
-      "german": "Eglolf der Alte von Rosenberg verspricht Abt Wilhelm von St. Gallen, gegen Bezahlung von 50 Mark und 6 Pfund den ihm verpfändeten Hof Gossau und die Sonderleute im Amt Gossau zurückzugeben.\n\nSiegel: Siegel abh., Abb. 106.",
+      "url": [
+        "https://www.monasterium.net/mom/CH-StiASG/Urkunden/X.1.A.1/charter",
+        "https://www.monasterium.net/mom/CSGIV/1299_II_20/charter"
+      ],
+      "german": "Eglolf der Alte von Rosenberg verspricht Abt Wilhelm von St. Gallen, gegen Bezahlung von 50 Mark und 6 Pfund den ihm verpfändeten Hof Gossau und die Sonderleute im Amt Gossau zurückzugeben.\n\nAllen den, die dizen brieue lesint oder ho errint lesin, kund ich her Egl. der alte von || Rosinberg 1, dc mir min lieber herre von gottis ginadin abte Wilh. von sante Gallin 2 || het virsecit ze aenim phant den houe ze Gozowe 3 mit lut vnde a) mit gůt mit allem dem, so || darzů ho ert, an den kilchinsazz vnde an du phendir, du dauor vs dem houe wurdin virsecit, vnde och an der herrin phruont ze sante Gallin des closters. Och het er mir virsecit alle die sunderlut, die b) in dc ampt ze Gozowe ho errint, vmbe vunfcig march silbers vnde sehs phunt phening. Vnde dabi so viriih ich offinlich an dizem brieue, dc ich im gelopt han vur mich vnde alle min erbin, dc ich im du selbin phendir widergeb an allin vurcug vnde an allin krieg, swen ich oder min erbin von im oder sinen nahkomin werdin gewert des vorgenamptin silbers. Dc aber diz war si, do gab ich dem vorgenamptin minem herrun c) dem abte Wilh. vnde dem gotzhuse ze sante Gallin dizen brieue bisigiltin mit minem ingisigil. Dirre brieue wart gigebin, do von gottis giburt warint zweihundert vnde nun vnde nuncig iar, ze sante Gallin, der cehindin kal. des mercin, ind. der XII a.\n\nSiegel: Siegel abh., Abb. 106.",
       "english": "Eglolf the Elder von Rosenberg promises Abbot Wilhelm of St. Gallen, upon payment of 50 marks and 6 pounds, to return the Gossau estate and the Sonderleute in the Amt Gossau that were pledged to him.\n\nSeal: Seal attached, Fig. 106.",
       "mention": [
         {
@@ -33,5 +36,6 @@
         }
       ]
     }
-  ]
+  ],
+  "transcribed": true
 }
