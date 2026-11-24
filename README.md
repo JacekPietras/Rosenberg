@@ -416,3 +416,10 @@ reported as warnings; documents marked `"deleted": true` and documents with
 the `Czechia`, `Schenk`, or `Mönch` labels are skipped by default. Use
 `./lint --all` to include them.
 
+Document filenames use `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, optionally followed
+by `_I` (a numeric suffix), and `.json`. The linter warns about invalid names.
+When any document for the same date has a suffix, it renumbers the group from
+`_1` without gaps, in existing numeric order, placing an unsuffixed file first.
+Renaming changes document paths; rebuild the saved family graph afterwards, and
+update any external links that use the old paths.
+

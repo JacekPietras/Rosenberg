@@ -24,6 +24,30 @@ def result_page(record_id, page):
 
 
 class LandesarchivSearchTests(unittest.TestCase):
+    def test_specialized_catalogue_forms_without_title_are_imported(self):
+        cases = [
+            ('1869', [('Person', 'Dietz, Johann'), ('Gegenstand', 'Missbrauch des geistlichen Amtes'),
+                      ('Mitbeklagte/r', 'Thöne, Pfarrverweser von Rosenberg')]),
+            ('1845', [('Kläger/-in', 'Hirschmüller, Xaver von Rosenberg'), ('Gegenstand', 'Forderung'),
+                      ('Beklagte-/r', 'Pahl, Karl')]),
+            ('', [('Name', 'von Rosenberg, Joachim Friedrich'), ('Geburtsdatum', '16. September 1899'),
+                  ('Bemerkungen', 'Ausgeschieden am: 10.07.1942')]),
+        ]
+        for date, fields in cases:
+            with self.subTest(fields=fields), tempfile.TemporaryDirectory() as directory:
+                rows = [('Bestellsignatur', 'Archive 11'), ('Laufzeit', date), *fields]
+                details = '<table>' + ''.join(f'<tr><td>{key}</td><td>{value}</td></tr>' for key, value in rows) + '</table>'
+                with patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), \
+                        patch.object(downloader, 'fetch_page', return_value=details), \
+                        patch.object(downloader, 'verify_permalink', side_effect=lambda opener, url, aid, *args: url):
+                    path, _ = downloader.create_record('https://www.landesarchiv-bw.de/plink/?f=4-123', '11', '123')
+                record = json.loads(path.read_text())
+                self.assertEqual(record['date'], date or '9999')
+                for label, value in fields:
+                    self.assertIn(f'{label}: {value}', record['entries'][0]['german'])
+                if date:
+                    self.assertIn(f'Laufzeit: {date}', record['entries'][0]['german'])
+
     def test_partial_year_is_saved_with_unknown_digit(self):
         details = ('<table><tr><td>Bestellsignatur</td><td>Archive 11</td></tr>'
                    '<tr><td>Laufzeit</td><td>[158...]</td></tr><tr><td>Titel</td><td>Document</td></tr></table>')

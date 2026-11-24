@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 LINTERS = Path(__file__).resolve().parent / "linters"
 TRUNCATION_MARKER = "(line truncated to 2000 chars)"
 CHECKS = (
+    "normalize_document_filenames.py",
     "normalize_sources.py",
     "normalize_names.py",
     "validate_name_variants.py",
@@ -100,6 +101,10 @@ def main(argv=None):
                 if match:
                     issues += int(match[1])
             elif line.startswith("Checked name variants:"):
+                match = re.search(r": (\d+) warning\(s\)\.", line)
+                if match:
+                    issues += int(match[1])
+            elif line.startswith("Checked document filenames:"):
                 match = re.search(r": (\d+) warning\(s\)\.", line)
                 if match:
                     issues += int(match[1])

@@ -159,6 +159,7 @@ class CatalogDetails(HTMLParser):
         self.cell: list[str] = []
         self.cells: list[str] = []
         self.fields: dict[str, str] = {}
+        self.labels: dict[str, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         if tag == "tr":
@@ -182,7 +183,19 @@ class CatalogDetails(HTMLParser):
             if len(self.cells) >= 2 and self.cells[0]:
                 label = self.cells[0].casefold().rstrip(":")
                 self.fields[label] = self.cells[1]
+                self.labels[label] = self.cells[0].rstrip(":")
             self.cells = []
+
+
+def catalogue_text(details: CatalogDetails) -> str:
+    """Use the title or, for specialized forms, their descriptive fields."""
+    if details.fields.get("titel"):
+        return details.fields["titel"]
+    excluded = {"aus bestand", "einordnung des bestands", "bestellsignatur",
+                "permalink", "archivalienart", "laufzeit"}
+    return "\n\n".join(f"{details.labels[key]}: {value}"
+                       for key, value in details.fields.items()
+                       if key not in excluded and value)
 
 
 def fetch_page(url: str) -> str:
@@ -237,7 +250,7 @@ def resolve_redirected_catalogue_record(opener, url: str, aid: str) -> str:
     )
     details = CatalogDetails()
     details.feed(fetch_page(details_url))
-    if not all(details.fields.get(field) for field in ("bestellsignatur", "titel")):
+    if not details.fields.get("bestellsignatur") or not catalogue_text(details):
         raise ValueError(f"Redirected catalogue record {record_id} could not be verified (AID {aid})")
     return details_url
 
@@ -364,8 +377,8 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
     details.feed(fetch_page(details_url))
     source = details.fields.get("bestellsignatur")
     date_text = details.fields.get("laufzeit")
-    german = details.fields.get("titel")
-    missing = [name for name, value in (("citation", source), ("title", german)) if not value]
+    german = catalogue_text(details)
+    missing = [name for name, value in (("citation", source), ("descriptive metadata", german)) if not value]
     if missing:
         raise ValueError(f"Missing {', '.join(missing)} for archive ID {aid}")
     if catalog_id and url == details_url:
@@ -408,11 +421,11 @@ def create_record(url: str, catalog_id: str | None = None, bestand: str | None =
         ("Vermerke", "vermerke"),
     ):
         value = details.fields.get(field)
-        if value:
+        if value and (details.fields.get("titel") or field == "laufzeit"):
             german += f"\n\n{label}: {value}"
 
     siegler = details.fields.get("siegler")
-    if siegler:
+    if siegler and details.fields.get("titel"):
         german += f"\n\nSiegler: {siegler}"
 
     generated_entry: dict[str, object] = {"source": source, "url": url, "german": german}
