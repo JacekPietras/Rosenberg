@@ -146,6 +146,7 @@ class Client:
         page_number = 0
         seen = set()
         total = None
+        previous_end = 0
         while True:
             page = SearchPage(); page.feed(html)
             hidden = dict(page.pagination)
@@ -159,7 +160,16 @@ class Client:
             if total is not None and count != total:
                 raise ValueError('Result count changed during pagination')
             total = count
-            if not page.rows and len(seen) < total:
+            if not total:
+                return
+            try:
+                end = int(hidden['bisTreffer'])
+            except (KeyError, ValueError) as exc:
+                raise ValueError('Could not read the catalogue page range') from exc
+            if not previous_end < end <= total:
+                raise ValueError('Invalid catalogue page range')
+            previous_end = end
+            if not page.rows:
                 raise ValueError('Catalogue returned an empty page before the end')
             for row in page.rows:
                 if row['id'] in seen:
@@ -168,7 +178,7 @@ class Client:
                 yield row, total
                 if limit is not None and len(seen) >= limit:
                     return
-            if len(seen) >= total:
+            if end == total:
                 return
             if not page.pagination_action:
                 raise ValueError('Catalogue did not provide a pagination form')
@@ -248,14 +258,14 @@ def main():
             print('true' if found else 'false')
             return 0
         for row, total in client.search(phrase, args.limit):
+            result_seen = True
+            results.record(phrase, True)
             if resume_pending:
                 if row['id'] == args.resume_after_result_id:
                     resume_pending = False
                     resume_found = True
                     print(f'Resuming after catalogue result {row["id"]}', file=sys.stderr, flush=True)
                 continue
-            result_seen = True
-            results.record(phrase, True)
             if row['id'] in args.skip_result_id:
                 print(f'Skipping catalogue result {row["id"]}', file=sys.stderr, flush=True)
                 consecutive_failures = 0
@@ -307,7 +317,7 @@ def main():
         if not result_seen:
             results.record(phrase, False)
         suffix = f'; skipped {len(failures)} problematic result(s)' if failures else ''
-        print(f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else '') + suffix,
+        print(f'Listed {count} results; catalogue reports {total} hits' + (' (limit applied)' if args.limit is not None else '') + suffix,
               file=sys.stderr)
         if failures:
             for result_id, signature, error in failures:

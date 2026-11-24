@@ -17,7 +17,8 @@ def result_page(record_id, page):
     return f'''<div><article><table><tr><td title="Id: {record_id}, Onlinefreigabe: true"><b>Archive {record_id}</b></td></tr>
     <tr><td title="1400-01-01// Formulartyp 10028"><a href="../olf/struktur.php?bestand=123&amp;sprungId={record_id}">Findbuch</a></td></tr>
     </table></article></div><form name="uebergabe" action="ergebnis1a.php">
-    <input name="treffer" value="2"><input name="trefferseite" value="{page}"></form>'''
+    <input name="treffer" value="2"><input name="bisTreffer" value="{page + 1}">
+    <input name="trefferseite" value="{page}"></form>'''
 
 
 class LandesarchivSearchTests(unittest.TestCase):
@@ -233,6 +234,32 @@ class LandesarchivSearchTests(unittest.TestCase):
         self.assertEqual(rows[0][0]['bestand'], '123')
         self.assertIn(b'trefferseite=1', req.call_args.args[1])
         self.assertIn(b'%22Konrad+von+Rosenberg%22', req.call_args_list[1].args[1])
+
+    def test_pagination_ends_at_advertised_range_with_fewer_visible_rows(self):
+        client = search.Client(1)
+        first = result_page('11', 0).replace('value="2"', 'value="60"').replace('name="bisTreffer" value="1"', 'name="bisTreffer" value="30"')
+        last = result_page('12', 1).replace('value="2"', 'value="60"').replace('name="bisTreffer" value="2"', 'name="bisTreffer" value="60"')
+        with patch.object(client, 'request', side_effect=['home', first, last]) as req:
+            rows = list(client.search('Rosenberg'))
+        self.assertEqual([row['id'] for row, _ in rows], ['11', '12'])
+        self.assertEqual(req.call_count, 3)
+
+    def test_empty_intermediate_page_is_an_error(self):
+        client = search.Client(1)
+        empty = result_page('11', 0).split('<form', 1)[1]
+        with patch.object(client, 'request', side_effect=['home', '<form' + empty]):
+            with self.assertRaisesRegex(ValueError, 'empty page'):
+                list(client.search('Rosenberg'))
+
+    def test_resume_at_last_result_does_not_save_a_false_negative(self):
+        row = {'id': '11', 'signature': 'Archive 11'}
+        with tempfile.TemporaryDirectory() as directory:
+            results = Path(directory) / 'results.json'
+            with patch.object(search.Client, 'search', return_value=iter([(row, 1)])), \
+                    patch.object(sys, 'argv', ['search', 'Rosenberg', '--resume-after-result-id', '11',
+                                              '--results-file', str(results)]):
+                self.assertEqual(search.main(), 0)
+            self.assertTrue(json.loads(results.read_text())['queries']['Rosenberg'])
 
     def test_canonical_resolution(self):
         client = search.Client(1)
