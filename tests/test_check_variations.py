@@ -13,6 +13,21 @@ spec.loader.exec_module(module)
 
 
 class VariationChecks(unittest.TestCase):
+    def test_regesta_search_quotes_particle_and_place(self):
+        checked = []
+        def exists(_self, query):
+            checked.append(query)
+            return query in ('"von Rosenberg"', 'Eberhard')
+        with patch.object(module, 'surname_variants', return_value=['Rosenberg']), \
+             patch.object(module, 'name_variants', return_value=['Eberhard']), \
+             patch.object(module.Checker, 'exists', exists), \
+             patch.object(module.Checker, 'run') as search, \
+             patch('sys.argv', ['check_variations.py', 'regesta_imperii', 'Eberhard von Rosenberg']):
+            self.assertEqual(module.main(), 0)
+        self.assertIn('"von Rosenberg"', checked)
+        self.assertNotIn('von Rosenberg', checked)
+        search.assert_called_once_with('Eberhard "von Rosenberg"')
+
     def test_actual_variant_sources_preserve_distinct_spellings(self):
         self.assertIn('Eberhardi', module.name_variants('Eberhard', module.ROOT / 'data/names.md'))
         surnames = module.surname_variants('Rosenberg', module.ROOT / 'data/places.json')

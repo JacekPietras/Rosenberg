@@ -156,9 +156,10 @@ def main():
         prefixes = (*PREFIXES, 'zu', 'des') if only_titles else PREFIXES
         checker = Checker(args.archive, args.cache_dir, args.skip_result_id,
                           args.resume_after_result_id)
-        prefixed_surnames = [f'{prefix} {family}'
-                             for family in surnames for prefix in prefixes
-                             if checker.exists(f'{prefix} {family}')]
+        pairs = [f'{prefix} {family}' for family in surnames for prefix in prefixes]
+        if args.archive == 'regesta_imperii':
+            pairs = [f'"{pair}"' for pair in pairs]
+        prefixed_surnames = [pair for pair in pairs if checker.exists(pair)]
         if not prefixed_surnames:
             return 0
         surviving_names = []

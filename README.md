@@ -281,6 +281,8 @@ python3 scripts/archive_search/search_monasterium.py Rosinberg --exists
 
 Use `--exists-only` with `check_variations.py` to screen the surviving full
 queries for results without listing or importing records.
+For Regesta Imperii, particle and place are searched as a quoted phrase, so
+`von Rosenberg` does not match records where the words occur separately.
 
 The checker accepts `von` or `zu` and a place, optionally preceded by a name or title.
 It finds given-name variants in `data/names.md`, title variants in
