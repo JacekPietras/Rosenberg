@@ -296,6 +296,9 @@ including after an interrupted run. Subsequent runs reuse them without another
 request. Normal searches also skip queries saved as empty; queries saved as
 positive still search for records. These files can be committed and published
 with the rest of the data.
+Each archive file has a `delaySeconds` setting (minimum 1) for request spacing,
+timeout retries, and variation checks. It defaults to 15 seconds when absent.
+A search script’s `--delay` overrides the setting for that invocation.
 Results do not expire automatically; remove an entry to check it again. Archive scripts may also
 have their own search caches.
 For Landesarchiv BW, repeat `--skip-result-id ID` to omit specific catalogue
