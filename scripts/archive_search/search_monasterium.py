@@ -21,7 +21,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
-from search_results import ResultsStore
+from search_results import ResultsStore, search_delay
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_storage import has_source, has_url
@@ -193,9 +193,11 @@ def main():
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing results')
     parser.add_argument('--skip-existing', action='store_true')
     parser.add_argument('--limit', type=int)
-    parser.add_argument('--delay', type=float, default=15, help='seconds between searches and imports (minimum 15)')
+    parser.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     parser.add_argument('--cache-dir', type=Path, default=CACHE)
     args = parser.parse_args()
+    if args.delay is None:
+        args.delay = search_delay('monasterium')
     results = ResultsStore('monasterium')
     query = args.query.strip()
     if '.' in query:
@@ -206,8 +208,8 @@ def main():
         query = undotted
     if not query.strip():
         parser.error('query must not be empty')
-    if not math.isfinite(args.delay) or args.delay < 15:
-        parser.error('--delay must be at least 15 seconds')
+    if not math.isfinite(args.delay) or args.delay < 1:
+        parser.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
     args.cache_dir.mkdir(parents=True, exist_ok=True)

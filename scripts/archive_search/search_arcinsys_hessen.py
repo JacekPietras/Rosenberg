@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
-from search_results import ResultsStore
+from search_results import ResultsStore, search_delay
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
 from archive_record_storage import has_source, has_url
@@ -152,8 +152,10 @@ def main():
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
-    p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
+    p.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     args = p.parse_args()
+    if args.delay is None:
+        args.delay = search_delay('arcinsys_hessen')
     results = ResultsStore('arcinsys_hessen')
     if args.delay < 1 or not args.delay < float('inf'):
         p.error('--delay must be at least 1 second')

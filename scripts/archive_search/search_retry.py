@@ -13,7 +13,7 @@ def retry_get(operation, delay=15, before_retry=None):
     except (TimeoutError, URLError) as exc:
         if isinstance(exc, URLError) and not isinstance(exc.reason, TimeoutError):
             raise
-        pause = max(15, delay)
+        pause = delay
         print(f'Request timed out; waiting {pause:g} seconds before one retry', file=sys.stderr)
         time.sleep(pause)
         if before_retry is not None:

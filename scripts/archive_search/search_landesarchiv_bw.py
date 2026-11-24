@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
-from search_results import ResultsStore
+from search_results import ResultsStore, search_delay
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
 from archive_record_storage import has_source, has_url, values
@@ -223,8 +223,10 @@ def main():
                         help='skip this catalogue result during listing or import (repeatable)')
     parser.add_argument('--resume-after-result-id',
                         help='resume importing after this catalogue result (inclusive)')
-    parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
+    parser.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     args = parser.parse_args()
+    if args.delay is None:
+        args.delay = search_delay('landesarchiv_bw')
     results = ResultsStore('landesarchiv_bw')
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):

@@ -18,7 +18,7 @@ from urllib.request import Request
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
-from search_results import ResultsStore
+from search_results import ResultsStore, search_delay
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_nrw as nrw
@@ -105,9 +105,11 @@ def main():
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true')
     p.add_argument('--limit', type=int)
-    p.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
+    p.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     p.add_argument('--cache-dir', type=Path, default=CACHE)
     args = p.parse_args()
+    if args.delay is None:
+        args.delay = search_delay('landesarchiv_nrw')
     results = ResultsStore('landesarchiv_nrw')
     if not args.query.strip(): p.error('query must not be empty')
     query = args.query.strip()
@@ -117,7 +119,7 @@ def main():
             print(f'Skipping dotted query; use {undotted!r}', file=sys.stderr)
             return 0
         query = undotted
-    if not math.isfinite(args.delay) or args.delay < 15: p.error('--delay must be at least 15 seconds')
+    if not math.isfinite(args.delay) or args.delay < 1: p.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1: p.error('--limit must be positive')
     args.cache_dir.mkdir(parents=True, exist_ok=True)
     with (args.cache_dir / 'session.lock').open('a') as lock:

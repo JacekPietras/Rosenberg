@@ -4,11 +4,24 @@ from __future__ import annotations
 import fcntl
 import hashlib
 import json
+import math
 import os
 import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def search_delay(archive, path=None):
+    """Read the archive's request interval in seconds."""
+    path = Path(path) if path is not None else ROOT / 'data/archive_search' / f'{archive}.json'
+    if not path.exists():
+        return 15
+    data = json.loads(path.read_text(encoding='utf-8'))
+    value = data.get('delaySeconds', 15)
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 1:
+        raise ValueError(f'{path}: delaySeconds must be a finite number of at least 1')
+    return value
 
 
 class ResultsStore:

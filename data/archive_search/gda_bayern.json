@@ -1,5 +1,6 @@
 {
   "archive": "gda_bayern",
+  "delaySeconds": 15,
   "queries": {
     "Rosemberch": true,
     "Rosemberg": true,

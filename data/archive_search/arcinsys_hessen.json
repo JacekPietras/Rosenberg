@@ -1,5 +1,6 @@
 {
   "archive": "arcinsys_hessen",
+  "delaySeconds": 15,
   "queries": {
     "Rosemberch": false,
     "Rosemberg": true,

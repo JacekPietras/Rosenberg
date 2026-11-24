@@ -14,7 +14,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 TITLE_FILES = (ROOT / 'data/titles-age.md', ROOT / 'data/titles-office.md')
 sys.path.insert(0, str(ROOT / 'scripts'))
+sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from place_names import resolve_place_names
+from search_results import search_delay
 
 SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
     'monasterium', 'arcinsys_hessen', 'gda_bayern', 'landesarchiv_bw',
@@ -65,6 +67,7 @@ def surname_variants(surname, places_file):
 class Checker:
     def __init__(self, archive, cache_dir=None, skip_result_ids=(), resume_after_result_id=None):
         self.archive = archive
+        self.delay = search_delay(archive)
         self.cache_dir = cache_dir
         self.skip_result_ids = skip_result_ids
         self.resume_after_result_id = resume_after_result_id
@@ -81,7 +84,7 @@ class Checker:
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.
         if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
-            time.sleep(max(0, 15 - (time.monotonic() - self.last_finished)))
+            time.sleep(max(0, self.delay - (time.monotonic() - self.last_finished)))
         command = [sys.executable, str(SCRIPTS[self.archive]), query]
         if exists:
             command.append('--exists')

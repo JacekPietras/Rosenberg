@@ -1,5 +1,6 @@
 {
   "archive": "landesarchiv_bw",
+  "delaySeconds": 15,
   "queries": {
     "Rosemberch": true,
     "Rosemberg": true,

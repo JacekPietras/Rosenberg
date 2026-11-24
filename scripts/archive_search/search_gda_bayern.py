@@ -20,7 +20,7 @@ from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
-from search_results import ResultsStore
+from search_results import ResultsStore, search_delay
 from search_retry import retry_get
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
@@ -238,9 +238,11 @@ def main():
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true')
     parser.add_argument('--limit', type=int)
-    parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum/default 15)')
+    parser.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     parser.add_argument('--cache-dir', type=Path, default=CACHE)
     args = parser.parse_args()
+    if args.delay is None:
+        args.delay = search_delay('gda_bayern')
     results = ResultsStore('gda_bayern')
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):
@@ -253,8 +255,8 @@ def main():
         phrase = undotted
     if len(phrase) < 2 or '"' in phrase:
         parser.error('supply a phrase of at least two characters without embedded double quotes')
-    if not math.isfinite(args.delay) or args.delay < 15:
-        parser.error('--delay must be at least 15 seconds')
+    if not math.isfinite(args.delay) or args.delay < 1:
+        parser.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
     client = Client(args.delay, args.cache_dir)
