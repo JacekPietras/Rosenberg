@@ -3,7 +3,8 @@ import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
-import { renderActiveScreen } from './screens/router-view.js?v=26';
+import { renderActiveScreen } from './screens/router-view.js?v=27';
+import { documentAtMarker } from './components/document-navigation.js';
 import { createDocumentRenderer } from './screens/documents.js?v=39';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=12';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
@@ -1213,11 +1214,14 @@ function visibleRecordPaths(paths) {
 }
 
 function renderYearSidebar(paths, labelPaths = paths) {
-  const years = [...new Set(paths.map((path) => documentYear(state.documents.get(path))).filter(Boolean))]
-    .sort((left, right) => Number(left) - Number(right));
+  const firstPathByYear = new Map();
+  paths.forEach((path) => {
+    const year = documentYear(state.documents.get(path));
+    if (year && !firstPathByYear.has(year)) firstPathByYear.set(year, path);
+  });
+  const years = [...firstPathByYear.keys()].sort((left, right) => Number(left) - Number(right));
   const yearLinks = years.map((year) => {
-    const index = paths.findIndex((path) => documentYear(state.documents.get(path)) === year);
-    return `<a href="#" data-sidebar-type="year" data-path="${escapeHtml(paths[index])}">${year}</a>`;
+    return `<a href="#" data-sidebar-type="year" data-path="${escapeHtml(firstPathByYear.get(year))}">${year}</a>`;
   }).join('');
   const labels = new Map();
   labelPaths.forEach((path) => {
@@ -1266,10 +1270,12 @@ function setupYearHighlight(paths) {
   state.yearHighlightCleanup = null;
   const links = [...document.querySelectorAll('.year-sidebar a, .label-sidebar a')];
   const targets = paths
-    .map((path, index) => ({ path, element: document.querySelector(`#year-${documentYear(state.documents.get(path))}-${index}`) }))
+    .map((path, index) => ({ path, element: document.getElementById(`year-${documentYear(state.documents.get(path))}-${index}`) }))
     .filter(({ element }) => element);
   if (!links.length) return;
   let selectedLink = null;
+  let currentPath = null;
+  const targetsByPath = new Map(targets.map((target) => [target.path, target]));
 
   links.forEach((link) => link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -1293,7 +1299,7 @@ function setupYearHighlight(paths) {
       renderActive();
       return;
     }
-    const target = targets.find((item) => item.path === link.dataset.path);
+    const target = targetsByPath.get(link.dataset.path);
     if (!target) return;
     state.record = target.path;
     savePreferences();
@@ -1302,11 +1308,9 @@ function setupYearHighlight(paths) {
 
   if (!targets.length) return;
   const update = () => {
-    const marker = window.scrollY + 160;
-    let current = targets[0];
-    targets.forEach((target) => {
-      if (target.element.getBoundingClientRect().top + window.scrollY <= marker) current = target;
-    });
+    const current = documentAtMarker(targets);
+    if (current.path === currentPath) return;
+    currentPath = current.path;
     state.record = current.path;
     state.lastRenderedDocumentsYear = documentYear(state.documents.get(current.path));
     savePreferences();
@@ -1345,7 +1349,7 @@ function setupYearHighlight(paths) {
 function restoreRecord(paths) {
   const index = paths.indexOf(state.record);
   if (index < 0) return;
-  const target = document.querySelector(`#year-${documentYear(state.documents.get(state.record))}-${index}`);
+  const target = document.getElementById(`year-${documentYear(state.documents.get(state.record))}-${index}`);
   if (target) window.scrollTo(0, target.getBoundingClientRect().top + window.scrollY - 104);
 }
 

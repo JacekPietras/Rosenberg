@@ -224,7 +224,9 @@ export async function renderActiveScreen({
   if (diagrams.length && mermaid) await mermaid.run({ nodes: diagrams });
   if (state.active === 'documents') {
     if (shouldRestoreRecord) restoreRecord(paths);
+    const yearSetupStart = performance.now();
     setupYearHighlight(paths);
+    documentRenderTimings.yearSetupMs = Math.round((performance.now() - yearSetupStart) * 10) / 10;
     state.lastRenderedDocumentsYear = documentYear(state.documents.get(state.record));
   }
   scrollToEntryHash();
