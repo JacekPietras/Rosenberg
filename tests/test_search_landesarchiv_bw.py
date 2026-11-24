@@ -1,4 +1,5 @@
 import json
+import io
 import sys
 import tempfile
 import unittest
@@ -231,12 +232,16 @@ class LandesarchivSearchTests(unittest.TestCase):
 
     def test_pagination_and_form(self):
         client = search.Client(1)
-        with patch.object(client, 'request', side_effect=['home', result_page('11', 0), result_page('12', 1)]) as req:
+        output = io.StringIO()
+        with patch.object(client, 'request', side_effect=['home', result_page('11', 0), result_page('12', 1)]) as req, \
+                patch.object(sys, 'stderr', output):
             rows = list(client.search('Konrad von Rosenberg'))
         self.assertEqual([row['id'] for row, total in rows], ['11', '12'])
         self.assertEqual(rows[0][0]['bestand'], '123')
         self.assertIn(b'trefferseite=1', req.call_args.args[1])
         self.assertIn(b'%22Konrad+von+Rosenberg%22', req.call_args_list[1].args[1])
+        self.assertIn('Catalogue page 1: results through 1 of 2', output.getvalue())
+        self.assertIn('Catalogue page 2: results through 2 of 2', output.getvalue())
 
     def test_pagination_ends_at_advertised_range_with_fewer_visible_rows(self):
         client = search.Client(1)

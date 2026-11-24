@@ -171,6 +171,8 @@ class Client:
             previous_end = end
             if not page.rows:
                 raise ValueError('Catalogue returned an empty page before the end')
+            print(f'Catalogue page {page_number + 1}: results through {end} of {total}',
+                  file=sys.stderr, flush=True)
             for row in page.rows:
                 if row['id'] in seen:
                     raise ValueError('Catalogue returned a duplicate result during pagination')
@@ -222,7 +224,7 @@ def main():
     parser.add_argument('--skip-result-id', action='append', default=[],
                         help='skip this catalogue result during listing or import (repeatable)')
     parser.add_argument('--resume-after-result-id',
-                        help='resume importing after this catalogue result (inclusive)')
+                        help='resume importing after this catalogue result (exclusive)')
     parser.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
     args = parser.parse_args()
     if args.delay is None:
@@ -258,6 +260,9 @@ def main():
             found = results.exists(phrase, lambda: next(client.search(phrase, exists=True))[1] > 0)
             print('true' if found else 'false')
             return 0
+        if resume_pending:
+            print(f'Searching catalogue pages for resume result {args.resume_after_result_id}',
+                  file=sys.stderr, flush=True)
         for row, total in client.search(phrase, args.limit):
             result_seen = True
             results.record(phrase, True)
