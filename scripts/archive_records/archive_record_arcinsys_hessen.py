@@ -234,6 +234,14 @@ def create_record(url: str) -> tuple[Path, bool]:
         german_parts.append("Zeugen: " + "\n".join(witnesses))
     if included:
         german_parts.append("Enthält: " + "\n".join(included))
+    # These descriptive fields often contain the person and context that made
+    # a search result relevant even when the title is only a volume number.
+    for label in ("Bezeichnung", "Laufzeit", "Justizaktenzeichen", "(Vor-) Provenienzen",
+                  "Personenname", "Geburtsdatum", "Geburtsort", "Sterbedatum",
+                  "Sterbeort", "Geschlecht", "Darin auch", "Zusatzinformationen"):
+        values = fields.fields.get(label, [])
+        if values:
+            german_parts.append(f"{label}: " + "\n".join(values))
     german = "\n\n".join(german_parts)
     images = Images()
     images.feed(page)

@@ -34,6 +34,12 @@ def normalized(text):
     return ' '.join(text.split())
 
 
+def citation_contains(existing, incoming):
+    """Recognize a complete citation optionally followed by a parenthetical reference."""
+    existing, incoming = normalized(existing).casefold(), normalized(incoming).casefold()
+    return bool(incoming and (existing == incoming or existing.startswith(incoming + ' (')))
+
+
 def text_parts(text):
     matches = list(SPECIAL_PART.finditer(text))
     main = text[:matches[0].start()].strip() if matches else text.strip()
@@ -126,6 +132,9 @@ def merge_entry(entry, incoming, transcribed=False):
         if key in ('source', 'url'):
             items = list(values(entry.get(key)))
             for value in values(new):
+                if key == 'source' and isinstance(value, str) and any(
+                        isinstance(item, str) and citation_contains(item, value) for item in items):
+                    continue
                 if value not in items:
                     items.append(value)
             if items:
@@ -176,7 +185,11 @@ def save_record(record, document_dir: Path):
                 if not isinstance(entry, dict):
                     continue
                 existing_urls = {normalized_url(url) for url in values(entry.get('url'))}
-                match = bool(incoming_sources.intersection(values(entry.get('source'))) or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
+                existing_sources = values(entry.get('source'))
+                match = bool(any(citation_contains(old, new) or citation_contains(new, old)
+                                 for old in existing_sources for new in incoming_sources
+                                 if isinstance(old, str) and isinstance(new, str))
+                             or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
                 if not by_source and (str(record.get('date')) == '9999'
                                       or str(document.get('date')) == '9999'
                                       or not compatible_dates(document.get('date'), record.get('date'))):

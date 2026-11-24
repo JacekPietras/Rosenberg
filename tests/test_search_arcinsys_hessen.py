@@ -36,6 +36,28 @@ class SearchTests(unittest.TestCase):
     def test_dotted_datierung_keeps_day_month_and_year(self):
         self.assertEqual(downloader.iso_date('31.08.1444'), '1444-08-31')
 
+    def test_person_and_context_fields_are_imported_with_volume_title(self):
+        def row(label, value):
+            return (f'<div class="row"><span class="d-none">{label}</span>'
+                    f'<div class="highlightingArea">{value}</div></div>')
+
+        page = '<h2>Vollständige Signatur</h2><p>HStAM, 274 Fulda, 278/2</p>' + ''.join([
+            row('Titel', 'Band 2, Ermittlungsakte'), row('Laufzeit', '1960-1961'),
+            row('Personenname', 'von Rosenberg, Karl-Jürgen'),
+            row('Geburtsdatum', '22.03.1902'), row('Darin auch', 'Foto von Karl-Jürgen von Rosenberg.'),
+        ])
+        url = 'https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=12706498'
+        with tempfile.TemporaryDirectory() as directory, \
+                patch.object(downloader, 'DOCUMENT_DIR', Path(directory)), \
+                patch.object(downloader, 'fetch', return_value=page):
+            path, _ = downloader.create_record(url)
+            german = json.loads(path.read_text())['entries'][0]['german']
+        self.assertIn('Band 2, Ermittlungsakte', german)
+        self.assertIn('Laufzeit: 1960-1961', german)
+        self.assertIn('Personenname: von Rosenberg, Karl-Jürgen', german)
+        self.assertIn('Geburtsdatum: 22.03.1902', german)
+        self.assertIn('Darin auch: Foto von Karl-Jürgen von Rosenberg.', german)
+
     def test_year_only_record_is_promoted_to_full_arcinsys_date(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / '1444.json'

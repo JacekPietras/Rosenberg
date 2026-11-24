@@ -18,6 +18,22 @@ class CatalogSectionMergeTests(unittest.TestCase):
 
 
 class DownloaderStorageTests(unittest.TestCase):
+    def test_shorter_citation_matches_without_adding_redundant_source(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            citation = 'StAN, Fürstentum Ansbach, Geheimes Archiv: Seckendorffische Dokumente, Urkunden 11'
+            original = {'date': '1350-02-11', 'entries': [{'source': citation + ' (BayHStA, Personenselekt Cart. 399 Nr. 11)',
+                        'german': 'Reviewed text'}]}
+            path, _ = save_record(original, folder)
+            incoming = {'date': '1350-02-11', 'entries': [{'source': citation, 'url': 'new-url', 'german': 'Different text'}]}
+            self.assertEqual(save_record(incoming, folder), (path, True))
+            entry = json.loads(path.read_text())['entries'][0]
+            self.assertEqual(entry['source'], original['entries'][0]['source'])
+            self.assertEqual(entry['url'], 'new-url')
+            self.assertEqual(entry['german'], 'Reviewed text')
+            distinct = {'date': '1350-02-11', 'entries': [{'source': citation + '0', 'german': 'Other text'}]}
+            self.assertFalse(save_record(distinct, folder)[1])
+
     def test_existing_url_matches_when_citation_and_text_differ(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)

@@ -79,7 +79,8 @@ class Checker:
             saved = json.loads(results_path.read_text(encoding='utf-8'))
             if saved.get('archive') == archive and isinstance(saved.get('queries'), dict):
                 self.answers.update({query: answer for query, answer in saved['queries'].items()
-                                     if isinstance(query, str) and isinstance(answer, bool)})
+                                     if isinstance(query, str) and isinstance(answer, bool)
+                                     and not (archive == 'landesarchiv_nrw' and len(query.split()) > 1)})
 
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.

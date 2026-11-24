@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,6 +54,20 @@ class ExistsModes(unittest.TestCase):
                 self.assertEqual(client.search('name', 1, exists=True), ([], 500))
                 self.assertIn('size=1', fetch.call_args.args[0])
                 self.assertEqual(fetch.call_count, 1)
+
+    def test_nrw_quotes_phrase_and_ignores_old_keyword_cache(self):
+        m = load('search_landesarchiv_nrw')
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory)
+            query = 'von Rosenberg'
+            old_cache = cache / (m.hashlib.sha256(query.encode()).hexdigest() + '.json')
+            old_cache.write_text(json.dumps({'query': query, 'total': 1, 'rows': [{'nodeid': 'old'}]}))
+            client = m.Client(15, cache)
+            response = {'hits': 0, 'searchResult': []}
+            with patch.object(m.nrw, 'fetch', return_value=('', json.dumps(response).encode())) as fetch:
+                self.assertEqual(client.search(query, 1, exists=True), ([], 0))
+                params = parse_qs(urlsplit(fetch.call_args.args[0]).query)
+                self.assertEqual(params['keyword'], ['"von Rosenberg"'])
 
     def test_regesta_stops_after_first_results_page(self):
         m = load('search_regesta_imperii')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Search Archive NRW by keyword and optionally import supported records."""
+"""Search Archive NRW for a consecutive phrase and optionally import records."""
 from __future__ import annotations
 
 import argparse
@@ -51,7 +51,9 @@ class Client:
             raise RuntimeError(f'HTTP {exc.code}; Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
 
     def search(self, query, limit, exists=False):
-        path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
+        # Old caches contain separate-word matches and cannot answer phrase searches.
+        cache_key = 'phrase-v1:' + query if len(query.split()) > 1 else query
+        path = self.cache / (hashlib.sha256(cache_key.encode()).hexdigest() + '.json')
         if path.exists():
             data = json.loads(path.read_text())
             if data.get('query') != query or len(data['rows']) != data['total']:
@@ -61,7 +63,7 @@ class Client:
         rows, seen, total, page = [], set(), None, 0
         complete = False
         while True:
-            url = BASE + 'sufservice/api/search?' + urlencode({'keyword': query, 'page': page, 'size': 1 if exists else 20})
+            url = BASE + 'sufservice/api/search?' + urlencode({'keyword': f'"{query}"', 'page': page, 'size': 1 if exists else 20})
             _, body = nrw.fetch(url)
             result = json.loads(body)
             batch, count = result['searchResult'], result['hits']
@@ -98,7 +100,7 @@ class Client:
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('query', help='keyword search (words may match separately)')
+    p.add_argument('query', help='consecutive phrase to find in catalogue records')
     mode = p.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='import supported records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without importing')
@@ -113,6 +115,10 @@ def main():
     results = ResultsStore('landesarchiv_nrw')
     if not args.query.strip(): p.error('query must not be empty')
     query = args.query.strip()
+    if query.startswith('"') and query.endswith('"'):
+        query = query[1:-1].strip()
+    if not query or '"' in query:
+        p.error('supply a nonempty phrase without embedded double quotes')
     if '.' in query:
         undotted = query.replace('.', '')
         if not args.exists:
@@ -128,11 +134,16 @@ def main():
             print('Another Archive NRW search is running; stopping', file=sys.stderr); return 1
         client = Client(args.delay, args.cache_dir)
         try:
-            if not args.exists and results.get(query) is False:
+            multiword = len(query.split()) > 1
+            if not args.exists and not multiword and results.get(query) is False:
                 print('Skipping search: saved result is empty', file=sys.stderr)
                 return 0
             if args.exists:
-                found = results.exists(query, lambda: client.search(query, 1, exists=True)[1] > 0)
+                if multiword:
+                    found = client.search(query, 1, exists=True)[1] > 0
+                    results.record(query, found)
+                else:
+                    found = results.exists(query, lambda: client.search(query, 1, exists=True)[1] > 0)
                 print('true' if found else 'false')
                 return 0
             rows, total = client.search(query, args.limit)
