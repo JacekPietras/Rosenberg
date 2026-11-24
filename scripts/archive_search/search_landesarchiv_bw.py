@@ -177,10 +177,20 @@ class Client:
             html = self.request(urljoin(BASE + 'suche/', page.pagination_action), urlencode(fields).encode())
 
     def resolve(self, row):
-        if not row['bestand'] or not row['bestand'].isdigit():
-            raise ValueError(f"No collection identifier for result {row['id']}")
-        query = urlencode({'id_titlaufn': row['id'], 'bestand': row['bestand']})
-        page = self.request(BASE + 'olf/druckansicht.php?' + query)
+        params = {'id_titlaufn': row['id']}
+        if row['bestand'] and row['bestand'].isdigit():
+            params['bestand'] = row['bestand']
+        page = self.request(BASE + 'olf/druckansicht.php?' + urlencode(params))
+        if 'bestand' not in params:
+            for link in re.findall(r'struktur\.php\?([^\"\'<>\s]+)', page):
+                query = parse_qs(link.replace('&amp;', '&'))
+                if query.get('sprungId', [''])[0] == row['id']:
+                    bestand = query.get('bestand', [''])[0]
+                    if bestand.isdigit():
+                        row['bestand'] = bestand
+                        break
+            if not row['bestand'] or not row['bestand'].isdigit():
+                raise ValueError(f"No collection identifier for result {row['id']}")
         parser = Canonical(); parser.feed(page)
         if not parser.url:
             raise ValueError(f"No permalink for result {row['id']}")

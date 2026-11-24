@@ -239,6 +239,15 @@ class LandesarchivSearchTests(unittest.TestCase):
         with patch.object(client, 'request', return_value='<link rel="canonical" href="http://www.landesarchiv-bw.de/plink/?f=4-123">'):
             self.assertEqual(client.resolve({'id': '11', 'bestand': '123'}), 'https://www.landesarchiv-bw.de/plink/?f=4-123')
 
+    def test_missing_collection_is_recovered_from_detail_page(self):
+        client = search.Client(1)
+        row = {'id': '8472160', 'bestand': None}
+        page = ('<link rel="canonical" href="https://www.landesarchiv-bw.de/plink/?f=7-43244">'
+                "<a href=\"javascript:oeffner('../olf/struktur.php?bestand=53073&amp;sprungId=8472160')\">Record</a>")
+        with patch.object(client, 'request', return_value=page):
+            self.assertEqual(client.resolve(row), 'https://www.landesarchiv-bw.de/plink/?f=7-43244')
+        self.assertEqual(row['bestand'], '53073')
+
     def test_result_viewer_is_detected(self):
         page = search.SearchPage()
         page.feed(result_page('11', 0).replace('</table></article>',
