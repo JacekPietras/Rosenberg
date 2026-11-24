@@ -1,6 +1,9 @@
 {
   "date": "1425-10-02",
-  "label": "Franken",
+  "label": [
+    "Franken",
+    "to review"
+  ],
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1322",
@@ -28,6 +31,16 @@
           "content": "was assigned a hearing by Count Palatine Ludwig, who confirmed that Konrad von Weinsberg had written no lies in his letters."
         }
       ]
+    },
+    {
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1321",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-114223",
+      "german": "Vertrag Ludwigs Pfalzgraf von Rhein zwischen Konrad von Weinsberg und Conz von Rosenberg über die Einlösung des Schlosses Reigelsberg;\nPergament, Siegel: Pfalzgraf.\n\nLaufzeit: 3. Oktober 1425, Heidelberg\n\nUmfang: 1 Urkunde"
+    },
+    {
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1329",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-114231",
+      "german": "Zettel von 8 Seiten, oktav. Überschrift: Nota wie sich die Sachen verlaufen haben, als wir Reigelsberg von Conz von Rosenberg geloset wollten haben; (Samstag vor Kiliani 1426 (?); wahrscheinlich Handschrift Konrads von Weinsberg.\n\nUmfang: 1 Schr., Papier"
     }
   ]
 }
