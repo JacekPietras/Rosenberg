@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore, search_delay
-from search_retry import retry_get
+from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
 from archive_record_storage import has_source, has_url, values
 from urllib.error import HTTPError
@@ -132,7 +132,7 @@ class Client:
             def read():
                 with self.opener.open(req, timeout=60) as response:
                     return response.read().decode(response.headers.get_content_charset() or 'utf-8', 'replace')
-            return retry_get(read, self.delay, self.wait) if data is None else read()
+            return retry_http_500(lambda: retry_get(read, self.delay, self.wait) if data is None else read(), self.wait)
         except HTTPError as exc:
             if exc.code in (403, 429, 503):
                 raise RuntimeError(f'Archive returned HTTP {exc.code}; stopping. Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc

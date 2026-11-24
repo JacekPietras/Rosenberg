@@ -22,7 +22,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore, search_delay
-from search_retry import retry_get
+from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_storage import has_source, has_url
 
@@ -130,7 +130,7 @@ class Client:
         }
         self.wait()
         request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
-        page = retry_get(lambda: read_search(request), self.delay, self.wait)
+        page = retry_http_500(lambda: retry_get(lambda: read_search(request), self.delay, self.wait), self.wait)
         result = Results(existence_only=True)
         result.feed(page)
         return result.total() > 0
@@ -160,7 +160,7 @@ class Client:
             }
             self.wait()
             request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'Rosenberg archive research/1.0'})
-            page = retry_get(lambda: read_search(request), self.delay, self.wait)
+            page = retry_http_500(lambda: retry_get(lambda: read_search(request), self.delay, self.wait), self.wait)
             result = Results()
             result.feed(page)
             count = result.total()

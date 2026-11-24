@@ -20,14 +20,13 @@ from urllib.request import Request
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore, search_delay
-from search_retry import retry_get
+from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_regesta_imperii as ri
 from archive_record_storage import has_source, has_url
 
 URL = 'https://www.regesta-imperii.de/regesten/suche.html'
 CACHE = ROOT / '.cache/archive_search/regesta_imperii'
-
 class Form(HTMLParser):
     def __init__(self):
         super().__init__(); self.active = False; self.fields = {}; self.action = None
@@ -77,7 +76,7 @@ class Client:
             def read():
                 with ri.OPENER.open(req, timeout=60) as response:
                     return response.geturl(), response.read()
-            return retry_get(read, self.delay, self.wait)
+            return retry_http_500(lambda: retry_get(read, self.delay, self.wait), self.wait)
         except HTTPError as exc:
             body = exc.read()
             if exc.code == 403 and ri.ANUBIS_CHALLENGE_RE.search(body.decode('utf-8', 'replace')):
@@ -88,7 +87,9 @@ class Client:
         body = b''.join((f'--{boundary}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n').encode() for k, v in fields.items()) + f'--{boundary}--\r\n'.encode()
         self.wait()
         req = Request(action, data=body, headers={'User-Agent': ri.USER_AGENT, 'Content-Type': 'multipart/form-data; boundary=' + boundary})
-        with ri.OPENER.open(req, timeout=60) as resp: return resp.read()
+        def read():
+            with ri.OPENER.open(req, timeout=60) as resp: return resp.read()
+        return retry_http_500(read, self.wait)
     def search(self, query, limit, exists=False):
         path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
         if path.exists():

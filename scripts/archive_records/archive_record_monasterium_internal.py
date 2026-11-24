@@ -59,9 +59,14 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
                                'august': 8, 'september': 9, 'oktober': 10, 'october': 10,
                                'november': 11, 'dezember': 12, 'december': 12}
                 match = re.match(r'^(\d{4})\.\s*(\d{1,2})\.\s*(' + '|'.join(full_months) + r')\.', abstract, re.I)
-                if not match:
-                    raise ValueError('Unknown Monasterium date without an explicit date in the abstract')
-                date = calendar_date(int(match[1]), full_months[match[3].casefold()], int(match[2])).isoformat()
+                if match:
+                    date = calendar_date(int(match[1]), full_months[match[3].casefold()], int(match[2])).isoformat()
+                else:
+                    # An OCR-damaged date heading can still give a reliable year.
+                    year = re.match(r'^(\d{4})\.\s', abstract)
+                    if not year or not 1 <= int(year[1]) <= 9998:
+                        raise ValueError('Unknown Monasterium date without an explicit date in the abstract')
+                    date = year[1]
         else:
             date = parse_date(raw_date)
     elif range_node is not None:

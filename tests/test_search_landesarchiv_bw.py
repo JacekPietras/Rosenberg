@@ -125,9 +125,20 @@ class LandesarchivSearchTests(unittest.TestCase):
                     (path / 'test.json').write_text(json.dumps({'entries': [{'source': ['unrelated', source]}]}))
                     suffix = ', Verweisung' if ', Verweisung' in source else ' Verweisung' if ' Verweisung' in source else ''
                     for candidate in ('', ', Verweisung', ' Verweisung'):
-                        self.assertEqual(search.has_source(path, 'D Nr. 456' + candidate), candidate == suffix)
+                        wanted = 'D Nr. 456' + candidate
+                        expected = candidate == suffix and (len(wanted) >= 12 or source == wanted)
+                        self.assertEqual(search.has_source(path, wanted), expected)
                     self.assertFalse(search.has_source(path, 'D Nr. 457'))
                     self.assertFalse(search.has_source(path, ''))
+
+    def test_citation_substring_requires_twelve_normalized_characters(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)
+            (path / 'test.json').write_text(json.dumps({'entries': [{'source': 'Archive {123456789012}'}]}))
+            self.assertFalse(search.has_source(path, '12345678901'))
+            self.assertTrue(search.has_source(path, '123456789012'))
+            (path / 'test.json').write_text(json.dumps({'entries': [{'source': '{12345678901}'}]}))
+            self.assertTrue(search.has_source(path, '12345678901'))
 
     def test_skip_existing_checks_citation_and_urls_before_resolving(self):
         rows = [

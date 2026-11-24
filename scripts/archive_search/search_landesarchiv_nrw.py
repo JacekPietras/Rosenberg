@@ -19,7 +19,7 @@ from urllib.request import Request
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore, search_delay
-from search_retry import retry_get
+from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 import archive_record_nrw as nrw
 from archive_record_storage import has_source, has_url
@@ -33,17 +33,20 @@ class Client:
         self.delay, self.cache = delay, cache
         nrw.request = self.request
 
-    def request(self, url):
+    def wait(self):
         stamp = self.cache / 'last-request'
         last = float(stamp.read_text()) if stamp.exists() else 0
         time.sleep(max(0, self.delay - (time.time() - last)))
         stamp.write_text(str(time.time()))
+
+    def request(self, url):
+        self.wait()
         req = Request(url, headers={'User-Agent': nrw.USER_AGENT, 'Accept': 'application/json,application/xml,text/html,*/*'})
         try:
             def read():
                 with nrw.OPENER.open(req, timeout=nrw.REQUEST_TIMEOUT) as response:
                     return response.geturl(), response.read()
-            return retry_get(read, self.delay, lambda: stamp.write_text(str(time.time())))
+            return retry_http_500(lambda: retry_get(read, self.delay, self.wait), self.wait)
         except HTTPError as exc:
             body = exc.read()
             if exc.code == 403 and nrw.ANUBIS_CHALLENGE_RE.search(body.decode('utf-8', 'replace')):

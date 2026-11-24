@@ -235,7 +235,8 @@ def has_source(document_dir: Path, source: str) -> bool:
         document = json.loads(path.read_text(encoding='utf-8'))
         for entry in document.get('entries', []):
             if isinstance(entry, dict) and any(
-                    wanted in citation(existing) and reference_suffix(wanted) == reference_suffix(citation(existing))
+                    (wanted == citation(existing) or (len(wanted) >= 12 and wanted in citation(existing)))
+                    and reference_suffix(wanted) == reference_suffix(citation(existing))
                     for existing in values(entry.get('source'))
                     if isinstance(existing, str)):
                 return True

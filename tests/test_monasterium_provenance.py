@@ -99,6 +99,17 @@ class ProvenanceTests(unittest.TestCase):
             path, _ = create_record(root, 'https://www.monasterium.net/charter')
             self.assertEqual(json.loads(path.read_text())['date'], '1366-10-28')
 
+    def test_unknown_date_with_damaged_month_keeps_year_and_text(self):
+        abstract = '1385. 21. Harz. 0. — Benesch verkauft dem Herrn Johann von Rosenberg Zinse.'
+        root = ET.fromstring('<cei><idno>CLXIV.</idno><issued><date value="99999999"/></issued>'
+                             f'<abstract>{abstract}</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = create_record(root, 'https://www.monasterium.net/charter')
+            document = json.loads(path.read_text())
+            self.assertEqual(document['date'], '1385')
+            self.assertEqual(document['entries'][0]['german'], abstract)
+            self.assertEqual(path.name, '1385.json')
+
     def test_unknown_date_does_not_use_later_date_from_prose(self):
         root = ET.fromstring('<cei><idno>CIII.</idno><issued><date value="99999999"/></issued>'
                              '<abstract>A document mentioning 1354. 4. Jänner. in its text.</abstract></cei>')
