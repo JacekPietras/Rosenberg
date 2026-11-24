@@ -17,16 +17,20 @@ class VariationChecks(unittest.TestCase):
         checked = []
         def exists(_self, query):
             checked.append(query)
-            return query in ('"von Rosenberg"', 'Eberhard')
+            return query in ('von Rosenberg', 'Eberhard')
         with patch.object(module, 'surname_variants', return_value=['Rosenberg']), \
              patch.object(module, 'name_variants', return_value=['Eberhard']), \
              patch.object(module.Checker, 'exists', exists), \
              patch.object(module.Checker, 'run') as search, \
              patch('sys.argv', ['check_variations.py', 'regesta_imperii', 'Eberhard von Rosenberg']):
             self.assertEqual(module.main(), 0)
-        self.assertIn('"von Rosenberg"', checked)
-        self.assertNotIn('von Rosenberg', checked)
-        search.assert_called_once_with('Eberhard "von Rosenberg"')
+        self.assertIn('von Rosenberg', checked)
+        search.assert_called_once_with('Eberhard von Rosenberg')
+        checker = module.Checker('regesta_imperii')
+        with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 0)) as run:
+            checker.run('Eberhard von Rosenberg')
+        self.assertIn('--phrase', run.call_args.args[0])
+        self.assertIn('von Rosenberg', run.call_args.args[0])
 
     def test_actual_variant_sources_preserve_distinct_spellings(self):
         self.assertIn('Eberhardi', module.name_variants('Eberhard', module.ROOT / 'data/names.md'))

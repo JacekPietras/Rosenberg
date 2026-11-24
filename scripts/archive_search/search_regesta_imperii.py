@@ -147,6 +147,7 @@ class Client:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('query', help='quick-search terms (the site combines terms with AND)')
+    parser.add_argument('--phrase', help='search this trailing part of the query as a phrase')
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--download', action='store_true', help='download matching records (default)')
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
@@ -158,15 +159,21 @@ def main():
     args = parser.parse_args()
     if args.delay is None:
         args.delay = search_delay('regesta_imperii')
-    results = ResultsStore('regesta_imperii')
     if not args.query.strip(): parser.error('query must not be empty')
     query = args.query.strip()
+    if args.phrase and (not query.endswith(args.phrase) or
+                        (len(query) > len(args.phrase) and not query[-len(args.phrase)-1].isspace())):
+        parser.error('--phrase must be the trailing part of the query')
     if '.' in query:
         undotted = query.replace('.', '')
         if not args.exists:
             print(f'Skipping dotted query; use {undotted!r}', file=sys.stderr)
             return 0
         query = undotted
+        if args.phrase:
+            args.phrase = args.phrase.replace('.', '')
+    results = ResultsStore('regesta_imperii', group='phraseQueries') if args.phrase else ResultsStore('regesta_imperii')
+    search_query = (query[:-len(args.phrase)] + '"' + args.phrase + '"') if args.phrase else query
     if not math.isfinite(args.delay) or args.delay < 1: parser.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1: parser.error('--limit must be positive')
     args.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -180,10 +187,10 @@ def main():
                 print('Skipping search: saved result is empty', file=sys.stderr)
                 return 0
             if args.exists:
-                found = results.exists(query, lambda: client.search(query, 1, exists=True)[1] > 0)
+                found = results.exists(query, lambda: client.search(search_query, 1, exists=True)[1] > 0)
                 print('true' if found else 'false')
                 return 0
-            rows, total = client.search(query, args.limit)
+            rows, total = client.search(search_query, args.limit)
             results.record(query, total > 0)
             for i, row in enumerate(rows, 1):
                 url = row['url']; print(f'{i}. {row["title"]}\n   {url}', flush=True)

@@ -283,6 +283,8 @@ Use `--exists-only` with `check_variations.py` to screen the surviving full
 queries for results without listing or importing records.
 For Regesta Imperii, particle and place are searched as a quoted phrase, so
 `von Rosenberg` does not match records where the words occur separately.
+Phrase-search results are saved under `phraseQueries` with readable query
+keys, separate from the older broad searches under `queries`.
 
 The checker accepts `von` or `zu` and a place, optionally preceded by a name or title.
 It finds given-name variants in `data/names.md`, title variants in

@@ -21,6 +21,32 @@ def load(name):
 
 
 class ResultsStorageTests(unittest.TestCase):
+    def test_phrase_results_are_separate_and_readable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'results.json'
+            broad = ResultsStore('regesta_imperii', path)
+            phrase = ResultsStore('regesta_imperii', path, group='phraseQueries')
+            broad.record('von Rosenberg', False)
+            phrase.record('von Rosenberg', True)
+            data = json.loads(path.read_text())
+            self.assertFalse(data['queries']['von Rosenberg'])
+            self.assertTrue(data['phraseQueries']['von Rosenberg'])
+            self.assertNotIn('\\"', path.read_text())
+            self.assertTrue(phrase.exists('von Rosenberg', lambda: self.fail('cached')))
+
+    def test_regesta_quotes_only_the_phrase_in_archive_request(self):
+        m = load('search_regesta_imperii')
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'results.json'
+            args = ['search', 'Eberhard von Rosenberg', '--phrase', 'von Rosenberg',
+                    '--exists', '--cache-dir', str(Path(directory) / 'cache')]
+            with patch.object(m, 'ResultsStore', side_effect=lambda archive, **kw: ResultsStore(archive, path, **kw)), \
+                 patch('sys.argv', args), patch.object(m.Client, 'search', return_value=([], 1)) as search, \
+                 contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(m.main(), 0)
+            search.assert_called_once_with('Eberhard "von Rosenberg"', 1, exists=True)
+            self.assertEqual(json.loads(path.read_text())['phraseQueries'], {'Eberhard von Rosenberg': True})
+
     def test_reuse_and_failure(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'results.json'

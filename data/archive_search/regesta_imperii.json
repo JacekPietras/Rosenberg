@@ -112,5 +112,10 @@
     "von. Rossenberg": true,
     "von. Roßberg": true,
     "von. Roßenberg": true
+  },
+  "phraseQueries": {
+    "de Rosenberg": true,
+    "v Rosenberg": true,
+    "von Rosenberg": true
   }
 }

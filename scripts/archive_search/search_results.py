@@ -25,9 +25,10 @@ def search_delay(archive, path=None):
 
 
 class ResultsStore:
-    def __init__(self, archive, path=None):
+    def __init__(self, archive, path=None, group='queries'):
         self.archive = archive
         self.path = Path(path) if path is not None else ROOT / 'data/archive_search' / f'{archive}.json'
+        self.group = group
 
     def _locked(self, query, check=None, value=None, lookup=False):
         lock_dir = ROOT / '.cache/archive_search/variation_locks'
@@ -44,17 +45,21 @@ class ResultsStore:
                     raise ValueError(f'Invalid results file: {self.path}')
             else:
                 data = {'archive': self.archive, 'queries': {}}
+            queries = data.setdefault(self.group, {})
+            if not isinstance(queries, dict) or any(not isinstance(k, str) or not isinstance(v, bool)
+                                                    for k, v in queries.items()):
+                raise ValueError(f'Invalid results file: {self.path}')
             if lookup:
-                return data['queries'].get(query)
-            if check is not None and query in data['queries']:
-                return data['queries'][query]
+                return queries.get(query)
+            if check is not None and query in queries:
+                return queries[query]
             found = check() if check is not None else value
             if not isinstance(found, bool):
                 raise ValueError('Existence result must be a boolean')
-            if data['queries'].get(query) is found:
+            if queries.get(query) is found:
                 return found
-            data['queries'][query] = found
-            data['queries'] = dict(sorted(data['queries'].items()))
+            queries[query] = found
+            data[self.group] = dict(sorted(queries.items()))
             self.path.parent.mkdir(parents=True, exist_ok=True)
             temp_path = None
             try:

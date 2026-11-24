@@ -26,6 +26,11 @@ CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_impe
 PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
 
 
+def regesta_phrase(query):
+    match = re.search(r'(?:^|\s)((?:von\.?|v\.?|de|zu|des)\s+.+)$', query, re.IGNORECASE)
+    return match.group(1) if match else None
+
+
 def unique(values):
     result, seen = [], set()
     for value in values:
@@ -80,13 +85,19 @@ class Checker:
             if saved.get('archive') == archive and isinstance(saved.get('queries'), dict):
                 self.answers.update({query: answer for query, answer in saved['queries'].items()
                                      if isinstance(query, str) and isinstance(answer, bool)
-                                     and not (archive == 'landesarchiv_nrw' and len(query.split()) > 1)})
+                                     and not (archive == 'landesarchiv_nrw' and len(query.split()) > 1)
+                                     and not (archive == 'regesta_imperii' and regesta_phrase(query))})
+                if archive == 'regesta_imperii' and isinstance(saved.get('phraseQueries'), dict):
+                    self.answers.update({query: answer for query, answer in saved['phraseQueries'].items()
+                                         if isinstance(query, str) and isinstance(answer, bool)})
 
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.
         if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
             time.sleep(max(0, self.delay - (time.monotonic() - self.last_finished)))
         command = [sys.executable, str(SCRIPTS[self.archive]), query]
+        if self.archive == 'regesta_imperii' and (phrase := regesta_phrase(query)):
+            command.extend(['--phrase', phrase])
         if exists:
             command.append('--exists')
         else:
@@ -157,8 +168,6 @@ def main():
         checker = Checker(args.archive, args.cache_dir, args.skip_result_id,
                           args.resume_after_result_id)
         pairs = [f'{prefix} {family}' for family in surnames for prefix in prefixes]
-        if args.archive == 'regesta_imperii':
-            pairs = [f'"{pair}"' for pair in pairs]
         prefixed_surnames = [pair for pair in pairs if checker.exists(pair)]
         if not prefixed_surnames:
             return 0
