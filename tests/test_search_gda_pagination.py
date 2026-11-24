@@ -6,7 +6,7 @@ from unittest.mock import patch
 from urllib.parse import parse_qs
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts/archive_search'))
-from search_gda_bayern import Client
+from search_gda_bayern import Client, Results
 
 
 def page(updates):
@@ -16,6 +16,15 @@ def page(updates):
 
 
 class PaginationTests(unittest.TestCase):
+    def test_extracts_citation_from_search_result(self):
+        parser = Results()
+        parser.feed('''<a id="searchEntry:0:docForm:searchDocumentLink" href="/gvl/archive.xhtml?id=1">491/a - Charter</a>
+            <table><tr><td class="doc-header">Bestellsignatur:</td>
+            <td data-label="Bestellsignatur:"><span>BayHStA, Hochstift Regensburg Urkunden <b>491/a</b></span></td></tr></table>
+            <a id="searchEntry:1:docForm:searchDocumentLink" href="/gvl/archive.xhtml?id=2">Other</a>''')
+        self.assertEqual(parser.rows[0]['citation'], 'BayHStA, Hochstift Regensburg Urkunden 491/a')
+        self.assertNotIn('citation', parser.rows[1])
+
     def test_next_page_uses_new_state_and_preserves_total(self):
         initial = '<form id="searchForm"><input name="jakarta.faces.ViewState" value="initial"/></form><script nonce="nonce"></script>'
         first = page({'docsMessagePanel': '2 Datensätze gefunden',

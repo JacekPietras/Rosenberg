@@ -114,12 +114,30 @@
     "von. Roßenberg": true
   },
   "phraseQueries": {
+    "de Rosemberg": true,
+    "de Rosenbeg": false,
     "de Rosenberg": true,
+    "de Rosenbergh": false,
+    "de Rosenbergs": true,
+    "de Rosenbürgk": false,
     "de Rosinberg": false,
+    "de Rossenberg": false,
+    "v Rosemberg": true,
+    "v Rosenbeg": false,
     "v Rosenberg": true,
+    "v Rosenbergh": false,
+    "v Rosenbergs": true,
+    "v Rosenbürgk": false,
     "v Rosinberg": true,
+    "v Rossenberg": true,
     "von Rosemberg": true,
+    "von Rosenbeg": false,
+    "von Rosenberch": false,
     "von Rosenberg": true,
-    "von Rosinberg": false
+    "von Rosenbergh": false,
+    "von Rosenbergs": true,
+    "von Rosenbürgk": false,
+    "von Rosinberg": false,
+    "von Rossenberg": true
   }
 }

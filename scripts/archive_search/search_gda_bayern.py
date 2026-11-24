@@ -24,7 +24,8 @@ from search_results import ResultsStore, search_delay
 from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
-from archive_record_storage import has_source, has_url
+from archive_record_storage import has_source, has_url, values
+from archive_record_gda_bayern import iso_date
 
 URL = 'https://www.gda.bayern.de/gvl/search.xhtml'
 CACHE = ROOT / '.cache/archive_search/gda_bayern'
@@ -36,21 +37,67 @@ class Results(HTMLParser):
         super().__init__()
         self.rows = []
         self.row = None
+        self.citation_row = None
+        self.field_text = None
+        self.field_name = None
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if tag == 'a' and re.fullmatch(r'searchEntry:\d+:docForm:searchDocumentLink', a.get('id', '')):
             self.row = {'url': urljoin(URL, a['href']).split('#')[0], 'title': ''}
+            self.citation_row = self.row
+        elif tag == 'td' and self.citation_row is not None:
+            fields = {'Bestellsignatur': 'citation', 'Provenienz': 'provenance',
+                      'Laufzeit': 'date', 'Betreff': 'description'}
+            self.field_name = fields.get(a.get('data-label', '').strip().rstrip(':'))
+            if self.field_name:
+                self.field_text = []
 
     def handle_data(self, data):
         if self.row is not None:
             self.row['title'] += data
+        if self.field_text is not None:
+            self.field_text.append(data)
 
     def handle_endtag(self, tag):
         if tag == 'a' and self.row is not None:
             self.row['title'] = ' '.join(self.row['title'].split())
             self.rows.append(self.row)
             self.row = None
+        elif tag == 'td' and self.field_text is not None:
+            self.citation_row[self.field_name] = ' '.join(''.join(self.field_text).split())
+            self.field_text = None
+
+
+def has_existing_description(document_dir, row):
+    """Match a dated, cited record with corroborating catalogue description."""
+    number = re.match(r'^([^\s]+)\s+-\s+', row['title'])
+    provenance, date, description = (row.get(key, '') for key in ('provenance', 'date', 'description'))
+    if not number or not provenance or not date or len(description) < 30:
+        return False
+    try:
+        date = iso_date(date)
+    except ValueError:
+        return False
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', date):
+        return False
+    normalize = lambda text: ' '.join(text.split()).casefold()
+    for path in document_dir.glob('*.json'):
+        document = json.loads(path.read_text(encoding='utf-8'))
+        if document.get('date') != date:
+            continue
+        for entry in document.get('entries', []):
+            if not isinstance(entry, dict):
+                continue
+            sources = values(entry.get('source'))
+            if not any(normalize(provenance) in normalize(source) and
+                       re.search(r'(?:^|\s)' + re.escape(number[1].casefold()) + r'$', normalize(source))
+                       for source in sources if isinstance(source, str)):
+                continue
+            if any(normalize(description) in normalize(entry.get(key, ''))
+                   for key in ('german', 'latin', 'summary') if isinstance(entry.get(key), str)):
+                return True
+    return False
 
 
 class Pagination(HTMLParser):
@@ -128,7 +175,7 @@ class Client:
 
     def search(self, phrase, limit=None, exists=False):
         path = self.cache_dir / (hashlib.sha256(phrase.encode()).hexdigest() + '.json')
-        if path.exists():
+        if path.exists() and (exists or json.loads(path.read_text()).get('citation_version') == 1):
             cached = json.loads(path.read_text())
             rows, total = cached['rows'], cached['total']
             if cached.get('query') != phrase or len(rows) != total:
@@ -220,7 +267,7 @@ class Client:
                 current_page += 1
                 view_state = updates.get('j_id1:jakarta.faces.ViewState:0')
             if len(rows) == total:
-                path.write_text(json.dumps({'query': phrase, 'total': total, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+                path.write_text(json.dumps({'query': phrase, 'total': total, 'rows': rows, 'citation_version': 1}, ensure_ascii=False, indent=2) + '\n')
                 path.with_suffix('.xml').unlink(missing_ok=True)
         if exists:
             yield None, total
@@ -283,8 +330,12 @@ def main():
             url = row['url']
             print(f'{count}. {row["title"]}\n   {url}', flush=True)
             if not args.list_only:
-                if args.skip_existing and has_source(ROOT / 'data/documents', row['title']):
-                    print(f'Skipping existing citation: {row["title"]}', flush=True)
+                citation = row.get('citation') or row['title']
+                if args.skip_existing and has_source(ROOT / 'data/documents', citation):
+                    print(f'Skipping existing citation: {citation}', flush=True)
+                    continue
+                if args.skip_existing and has_existing_description(ROOT / 'data/documents', row):
+                    print(f'Skipping existing record matched by provenance, date and description: {row["title"]}', flush=True)
                     continue
                 if args.skip_existing and has_url(ROOT / 'data/documents', url):
                     print(f'Skipping existing URL: {url}', flush=True)

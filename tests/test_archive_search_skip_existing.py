@@ -18,6 +18,38 @@ import search_regesta_imperii as regesta
 
 
 class SkipExistingTests(unittest.TestCase):
+    def test_bavarian_result_without_citation_requires_corroborating_fields(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'record.json').write_text(json.dumps({'date': '1363-03-27', 'entries': [{
+                'source': 'BayHStA, Hochstift Regensburg Urkunden 491/a',
+                'german': 'Beginning of charter. S: Cunrad von Rosenberg, Viztum von Amberg. End.'}]}))
+            row = {'title': '491/a - Charter', 'date': '1363 März 27',
+                   'provenance': 'Hochstift Regensburg',
+                   'description': 'S: Cunrad von Rosenberg, Viztum von Amberg.'}
+            self.assertTrue(bayern.has_existing_description(root, row))
+            for field, wrong in [('date', '1363 März 28'), ('provenance', 'Other archive'),
+                                 ('title', '492 - Charter'), ('description', 'A different description that is sufficiently long')]:
+                self.assertFalse(bayern.has_existing_description(root, {**row, field: wrong}))
+
+    def test_bavarian_full_citation_skips_different_result_title_and_url(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            documents = root / 'data/documents'
+            documents.mkdir(parents=True)
+            (documents / 'record.json').write_text(json.dumps({'entries': [{
+                'source': 'BayHStA, Hochstift Regensburg Urkunden 491/a',
+                'url': 'https://www.gda.bayern.de/gvl/document/stable'}]}))
+            row = {'title': '491/a - Vlrich [von Ettenstatt]',
+                   'citation': 'BayHStA, Hochstift Regensburg Urkunden 491/a',
+                   'url': 'https://www.gda.bayern.de/gvl/archive.xhtml?id=other'}
+            with patch.object(bayern, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, root / 'results.json')), \
+                    patch.object(bayern, 'ROOT', root), patch.object(bayern.Client, 'search', return_value=iter([(row, 1)])), \
+                    patch.object(sys, 'argv', ['search', 'von Rosenberg', '--skip-existing', '--cache-dir', str(root / 'cache')]), \
+                    patch('subprocess.run') as run:
+                self.assertEqual(bayern.main(), 0)
+                run.assert_not_called()
+
     def test_citations_skip_import_for_each_search(self):
         signature = 'D Nr. 456, Verweisung'
         cases = [

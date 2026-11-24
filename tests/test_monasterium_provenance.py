@@ -54,6 +54,28 @@ class ProvenanceTests(unittest.TestCase):
             self.assertEqual(document['date'], '1384-05-15')
             self.assertNotIn('img', document['entries'][0])
 
+    def test_empty_abstract_with_transcription_imports_idempotently(self):
+        root = ET.fromstring('<cei><idno>CLXI.</idno><archIdentifier>Book, p. 203</archIdentifier>'
+                             '<issued><date value="99999999"/></issued><abstract/>'
+                             '<tenor><pTenor>Latin transcription.</pTenor> <pTenor>Seal description.</pTenor></tenor></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            url = 'https://www.monasterium.net/mom/example/charter'
+            path, _ = create_record(root, url)
+            document = json.loads(path.read_text())
+            self.assertEqual(document['date'], '9999')
+            self.assertEqual(document['entries'][0]['german'], 'Latin transcription. Seal description.')
+            self.assertEqual(document['entries'][0]['source'], 'Book, p. 203, CLXI.')
+            self.assertTrue(document['transcribed'])
+            before = path.read_text()
+            self.assertEqual(create_record(root, url), (path, True))
+            self.assertEqual(path.read_text(), before)
+
+    def test_empty_abstract_and_transcription_are_rejected(self):
+        root = ET.fromstring('<cei><idno>Example</idno><issued><date value="99999999"/></issued>'
+                             '<abstract/><tenor/></cei>')
+        with self.assertRaisesRegex(ValueError, 'no abstract or transcription'):
+            create_record(root, 'https://www.monasterium.net/charter')
+
     def test_day_range_preserves_both_endpoints(self):
         root = ET.fromstring('<cei><idno>Example</idno><issued><dateRange from="13320908" to="13320915"/></issued><abstract>Text</abstract></cei>')
         with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
