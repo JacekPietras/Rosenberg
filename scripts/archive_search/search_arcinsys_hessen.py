@@ -151,11 +151,10 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
-    p.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=15, help='seconds between requests and downloads (minimum 1; default 15)')
     args = p.parse_args()
-    results = ResultsStore('arcinsys_hessen', args.results_file)
+    results = ResultsStore('arcinsys_hessen')
     if args.delay < 1 or not args.delay < float('inf'):
         p.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1:

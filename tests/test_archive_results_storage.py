@@ -43,10 +43,11 @@ class ResultsStorageTests(unittest.TestCase):
                     path = Path(directory) / 'results.json'
                     if saved is not None:
                         ResultsStore(archive, path).record('Example name', saved)
-                    args = ['search', 'Example name', '--list-only', '--results-file', str(path)]
+                    args = ['search', 'Example name', '--list-only']
                     if archive in ('monasterium', 'gda_bayern', 'regesta_imperii', 'landesarchiv_nrw'):
                         args += ['--cache-dir', str(Path(directory) / 'cache')]
-                    with patch('sys.argv', args), patch.object(m.Client, 'search', side_effect=RuntimeError('archive reached')) as search, \
+                    with patch.object(m, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, path)), \
+                         patch('sys.argv', args), patch.object(m.Client, 'search', side_effect=RuntimeError('archive reached')) as search, \
                          contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
                         self.assertEqual(m.main(), 0 if saved is False else 1)
                     self.assertEqual(search.call_count, 0 if saved is False else 1)
@@ -58,7 +59,7 @@ class ResultsStorageTests(unittest.TestCase):
                     m = load('search_' + archive)
                     results = Path(directory) / 'results.json'
                     query = 'Example name'
-                    args = ['search', query, '--list-only', '--results-file', str(results)]
+                    args = ['search', query, '--list-only']
                     if archive in ('monasterium', 'gda_bayern', 'regesta_imperii', 'landesarchiv_nrw'):
                         args += ['--cache-dir', str(Path(directory) / 'cache')]
                     if archive in ('monasterium', 'regesta_imperii', 'landesarchiv_nrw'):
@@ -67,7 +68,8 @@ class ResultsStorageTests(unittest.TestCase):
                     else:
                         row = {'url': 'https://example.test', 'title': 'Example', 'id': '1', 'signature': 'sig', 'date': ''}
                         response = iter([(row, 1)] if found else [])
-                    with patch('sys.argv', args), patch.object(m.Client, 'search', return_value=response), \
+                    with patch.object(m, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, results)), \
+                         patch('sys.argv', args), patch.object(m.Client, 'search', return_value=response), \
                          patch.object(m, 'record_url', return_value=None, create=True), \
                          patch.object(m.Client, 'resolve', return_value='https://example.test', create=True), \
                          contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
@@ -75,7 +77,8 @@ class ResultsStorageTests(unittest.TestCase):
                     self.assertEqual(json.loads(results.read_text())['queries'][query], found)
                     args[2] = '--exists'
                     output = io.StringIO()
-                    with patch('sys.argv', args), patch.object(m.Client, 'search', side_effect=AssertionError('search called')), \
+                    with patch.object(m, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, results)), \
+                         patch('sys.argv', args), patch.object(m.Client, 'search', side_effect=AssertionError('search called')), \
                          patch.object(m.Client, 'exists', side_effect=AssertionError('search called'), create=True), \
                          contextlib.redirect_stdout(output), contextlib.redirect_stderr(io.StringIO()):
                         self.assertEqual(m.main(), 0)

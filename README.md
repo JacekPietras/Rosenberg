@@ -296,8 +296,7 @@ including after an interrupted run. Subsequent runs reuse them without another
 request. Normal searches also skip queries saved as empty; queries saved as
 positive still search for records. These files can be committed and published
 with the rest of the data.
-Results do not expire automatically; remove an entry to check it again, or use
-`--results-file` to select a different results file. Archive scripts may also
+Results do not expire automatically; remove an entry to check it again. Archive scripts may also
 have their own search caches.
 For Landesarchiv BW, repeat `--skip-result-id ID` to omit specific catalogue
 results from variation-check imports. Its downloader uses the direct catalogue

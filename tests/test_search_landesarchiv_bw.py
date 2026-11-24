@@ -8,6 +8,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_records'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_search'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+from search_results import ResultsStore
 import search_landesarchiv_bw as search
 import archive_record_landesarchiv_bw as downloader
 import archive_record_arcinsys_hessen as storage
@@ -77,7 +78,8 @@ class LandesarchivSearchTests(unittest.TestCase):
                 patch.object(search.Client, 'search', return_value=iter((row, 3) for row in rows)), \
                 patch.object(search.Client, 'resolve', return_value='https://www.landesarchiv-bw.de/plink/?f=4-123'), \
                 patch.object(search.Client, 'wait'), patch.object(search.subprocess, 'run') as run, \
-                patch.object(sys, 'argv', ['search', 'Rosenberg', '--results-file', str(Path(directory) / 'results.json')]):
+                patch.object(search, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                patch.object(sys, 'argv', ['search', 'Rosenberg']):
             run.return_value.returncode = 1
             self.assertEqual(search.main(), 1)
             self.assertEqual(run.call_count, 2)
@@ -119,7 +121,8 @@ class LandesarchivSearchTests(unittest.TestCase):
             ]}))
             with patch.object(search, 'ROOT', root), patch.object(search.Client, 'search', return_value=iter((row, 3) for row in rows)), \
                     patch.object(search.Client, 'resolve') as resolve, patch.object(search.subprocess, 'run') as run, \
-                    patch.object(sys, 'argv', ['search', 'Rosenberg', '--skip-existing', '--results-file', str(root / 'results.json')]):
+                    patch.object(search, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                patch.object(sys, 'argv', ['search', 'Rosenberg', '--skip-existing']):
                 self.assertEqual(search.main(), 0)
                 resolve.assert_not_called()
                 run.assert_not_called()
@@ -256,8 +259,8 @@ class LandesarchivSearchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             results = Path(directory) / 'results.json'
             with patch.object(search.Client, 'search', return_value=iter([(row, 1)])), \
-                    patch.object(sys, 'argv', ['search', 'Rosenberg', '--resume-after-result-id', '11',
-                                              '--results-file', str(results)]):
+                    patch.object(search, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                patch.object(sys, 'argv', ['search', 'Rosenberg', '--resume-after-result-id', '11']):
                 self.assertEqual(search.main(), 0)
             self.assertTrue(json.loads(results.read_text())['queries']['Rosenberg'])
 

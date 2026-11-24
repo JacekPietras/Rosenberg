@@ -114,14 +114,13 @@ class VariationChecks(unittest.TestCase):
         search.assert_called_once_with('Eberhard Rosinberg')
 
     def test_normal_search_calls_script_without_exists_and_stops_on_failure(self):
-        checker = module.Checker('monasterium', results_file=Path('/tmp/test-results.json'))
+        checker = module.Checker('monasterium')
         with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 0)) as run:
             checker.run('Eberhard von Rosinberg')
         command = run.call_args.args[0]
         self.assertNotIn('--exists', command)
         self.assertIn('--skip-existing', command)
         self.assertIn('Eberhard von Rosinberg', command)
-        self.assertIn('--results-file', command)
         with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 1)):
             with self.assertRaises(RuntimeError):
                 checker.run('Eberhard Rosinberg')

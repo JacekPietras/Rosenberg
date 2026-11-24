@@ -12,6 +12,9 @@ from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts/archive_search/search_monasterium.py'
 spec = importlib.util.spec_from_file_location('search_monasterium', SCRIPT)
+sys.path.insert(0, str(SCRIPT.parent))
+from search_results import ResultsStore
+
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
@@ -65,9 +68,9 @@ class ExistenceTests(unittest.TestCase):
             cache.write_text('cached')
             rows = [{'url': 'https://www.monasterium.net/mom/a/b/charter', 'title': 'Missing'},
                     {'url': 'https://www.monasterium.net/mom/a/c/charter', 'title': 'Available'}]
-            args = ['search', 'von Rosenberg', '--cache-dir', directory,
-                    '--results-file', str(root / 'results.json')]
-            with patch.object(sys, 'argv', args), patch.object(module.Client, 'search', return_value=(rows, 2)), \
+            args = ['search', 'von Rosenberg', '--cache-dir', directory]
+            with patch.object(module, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                 patch.object(sys, 'argv', args), patch.object(module.Client, 'search', return_value=(rows, 2)), \
                  patch.object(module.Client, 'wait'), \
                  patch.object(module.subprocess, 'run', side_effect=[type('Result', (), {'returncode': 76})(),
                                                                       type('Result', (), {'returncode': 0})()]) as run, \
@@ -78,9 +81,9 @@ class ExistenceTests(unittest.TestCase):
 
     def test_dotted_normal_search_is_skipped(self):
         with tempfile.TemporaryDirectory() as directory:
-            args = ['search', 'Eberhard von. Rosenberg', '--cache-dir', directory,
-                    '--results-file', str(Path(directory) / 'results.json')]
-            with patch.object(sys, 'argv', args), patch.object(module.Client, 'search') as search, \
+            args = ['search', 'Eberhard von. Rosenberg', '--cache-dir', directory]
+            with patch.object(module, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                 patch.object(sys, 'argv', args), patch.object(module.Client, 'search') as search, \
                  contextlib.redirect_stderr(io.StringIO()):
                 self.assertEqual(module.main(), 0)
             search.assert_not_called()
@@ -90,10 +93,10 @@ class ExistenceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'results.json'
             path.write_text(json.dumps({'archive': 'monasterium', 'queries': {'v Rosinberg': True}}))
-            args = ['search', 'v. Rosinberg', '--exists', '--cache-dir', directory,
-                    '--results-file', str(path)]
+            args = ['search', 'v. Rosinberg', '--exists', '--cache-dir', directory]
             output = io.StringIO()
-            with patch.object(sys, 'argv', args), patch.object(module.Client, 'exists') as exists, \
+            with patch.object(module, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                 patch.object(sys, 'argv', args), patch.object(module.Client, 'exists') as exists, \
                  contextlib.redirect_stdout(output):
                 self.assertEqual(module.main(), 0)
             exists.assert_not_called()
@@ -104,12 +107,12 @@ class ExistenceTests(unittest.TestCase):
             with self.subTest(exists=exists_mode), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 results = root / 'results.json'
-                args = ['search', 'Eberhardi de Rosenperg', '--cache-dir', str(root / 'cache'),
-                        '--results-file', str(results)]
+                args = ['search', 'Eberhardi de Rosenperg', '--cache-dir', str(root / 'cache')]
                 if exists_mode:
                     args.append('--exists')
                 error = HTTPError('https://www.monasterium.net/mom/search', 500, 'Internal Server Error', {}, None)
-                with patch.object(sys, 'argv', args), patch.object(module.Client, 'wait'), \
+                with patch.object(module, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, Path(directory) / 'results.json')), \
+                 patch.object(sys, 'argv', args), patch.object(module.Client, 'wait'), \
                      patch.object(module, 'urlopen', side_effect=error), \
                      contextlib.redirect_stderr(io.StringIO()):
                     self.assertEqual(module.main(), 75)

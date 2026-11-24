@@ -63,16 +63,15 @@ def surname_variants(surname, places_file):
 
 
 class Checker:
-    def __init__(self, archive, cache_dir=None, results_file=None, skip_result_ids=(), resume_after_result_id=None):
+    def __init__(self, archive, cache_dir=None, skip_result_ids=(), resume_after_result_id=None):
         self.archive = archive
         self.cache_dir = cache_dir
-        self.results_file = results_file
         self.skip_result_ids = skip_result_ids
         self.resume_after_result_id = resume_after_result_id
         self.last_finished = None
         self.answers = {}
         self.failed = []
-        results_path = results_file or ROOT / 'data/archive_search' / f'{archive}.json'
+        results_path = ROOT / 'data/archive_search' / f'{archive}.json'
         if results_path.exists():
             saved = json.loads(results_path.read_text(encoding='utf-8'))
             if saved.get('archive') == archive and isinstance(saved.get('queries'), dict):
@@ -95,8 +94,6 @@ class Checker:
                 self.resume_after_result_id = None
         if self.cache_dir is not None:
             command.extend(['--cache-dir', str(self.cache_dir)])
-        if self.results_file is not None:
-            command.extend(['--results-file', str(self.results_file)])
         print(f'{"Checking" if exists else "Searching"}: {query}', file=sys.stderr, flush=True)
         result = subprocess.run(command, cwd=ROOT, text=True,
                                 stdout=subprocess.PIPE if exists else None)
@@ -126,8 +123,6 @@ def main():
     parser.add_argument('archive', choices=SCRIPTS)
     parser.add_argument('name', help='optional name or title followed by von or zu and a place')
     parser.add_argument('--cache-dir', type=Path, help='archive search cache directory (where supported)')
-    parser.add_argument('--results-file', type=Path,
-                        help='JSON file for verified existence results')
     parser.add_argument('--skip-result-id', action='append', default=[],
                         help='skip this catalogue result when importing (Landesarchiv BW only; repeatable)')
     parser.add_argument('--resume-after-result-id',
@@ -155,7 +150,7 @@ def main():
                  [title or name_variants(word, ROOT / 'data/names.md')
                   for word, title in zip(preceding.split(), title_groups)])
         prefixes = (*PREFIXES, 'zu', 'des') if only_titles else PREFIXES
-        checker = Checker(args.archive, args.cache_dir, args.results_file, args.skip_result_id,
+        checker = Checker(args.archive, args.cache_dir, args.skip_result_id,
                           args.resume_after_result_id)
         prefixed_surnames = [f'{prefix} {family}'
                              for family in surnames for prefix in prefixes

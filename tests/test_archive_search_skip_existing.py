@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 
+from search_results import ResultsStore
 import search_arcinsys_hessen as hessen
 import search_gda_bayern as bayern
 import search_landesarchiv_nrw as nrw
@@ -35,10 +36,11 @@ class SkipExistingTests(unittest.TestCase):
                 (documents / 'record.json').write_text(json.dumps({'entries': [
                     {'source': 'Generallandesarchiv Karlsruhe {D Nr. 456, Verweisung}'}]}))
                 result = iter([(row, 1)]) if iterator else ([row], 1)
-                argv = ['search', 'Rosenberg', '--skip-existing', '--results-file', str(root / 'results.json')]
+                argv = ['search', 'Rosenberg', '--skip-existing']
                 if module in (bayern, nrw, monasterium, regesta):
                     argv += ['--cache-dir', str(root / 'cache')]
-                with patch.object(module, 'ROOT', root), patch.object(module.Client, 'search', return_value=result), \
+                with patch.object(module, 'ResultsStore', side_effect=lambda archive: ResultsStore(archive, root / 'results.json')), \
+                        patch.object(module, 'ROOT', root), patch.object(module.Client, 'search', return_value=result), \
                         patch.object(sys, 'argv', argv), patch('subprocess.run') as run:
                     if module in (nrw, regesta):
                         importer = module.nrw if module is nrw else module.ri

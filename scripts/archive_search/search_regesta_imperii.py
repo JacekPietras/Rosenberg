@@ -151,12 +151,11 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true')
-    parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int)
     parser.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
     parser.add_argument('--cache-dir', type=Path, default=CACHE)
     args = parser.parse_args()
-    results = ResultsStore('regesta_imperii', args.results_file)
+    results = ResultsStore('regesta_imperii')
     if not args.query.strip(): parser.error('query must not be empty')
     query = args.query.strip()
     if '.' in query:

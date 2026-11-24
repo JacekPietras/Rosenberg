@@ -104,12 +104,11 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list without importing')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     p.add_argument('--skip-existing', action='store_true')
-    p.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     p.add_argument('--limit', type=int)
     p.add_argument('--delay', type=float, default=15, help='minimum seconds between requests (default 15)')
     p.add_argument('--cache-dir', type=Path, default=CACHE)
     args = p.parse_args()
-    results = ResultsStore('landesarchiv_nrw', args.results_file)
+    results = ResultsStore('landesarchiv_nrw')
     if not args.query.strip(): p.error('query must not be empty')
     query = args.query.strip()
     if '.' in query:

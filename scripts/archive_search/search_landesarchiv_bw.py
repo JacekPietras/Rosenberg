@@ -218,7 +218,6 @@ def main():
     mode.add_argument('--list-only', action='store_true', help='list results without downloading')
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
-    parser.add_argument('--results-file', type=Path, help='JSON file for verified existence results')
     parser.add_argument('--limit', type=int, help='maximum number of results')
     parser.add_argument('--skip-result-id', action='append', default=[],
                         help='skip this catalogue result during listing or import (repeatable)')
@@ -226,7 +225,7 @@ def main():
                         help='resume importing after this catalogue result (inclusive)')
     parser.add_argument('--delay', type=float, default=15, help='seconds between requests (minimum 1; default 15)')
     args = parser.parse_args()
-    results = ResultsStore('landesarchiv_bw', args.results_file)
+    results = ResultsStore('landesarchiv_bw')
     phrase = args.query.strip()
     if phrase.startswith('"') and phrase.endswith('"'):
         phrase = phrase[1:-1].strip()
