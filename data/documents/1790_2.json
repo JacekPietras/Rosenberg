@@ -1,34 +1,11 @@
 {
   "date": "1790",
-  "label": "Franken",
+  "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Ludwigsburg B 114 Bü 9081",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=2-20147",
-      "german": "Korrespondenz zwischen den Regierungskanzleien der Herrschaften Limpurg-Gaildorf-Solms-Assenheim und Limpurg-Sontheim-Schmiedelfeld wegen des 1415 an Konz von Rosenberg unter Vorbehalt des Wiederkaufs oder Einlassungsrechts verkauften halben Schlosses und Marktes Haltenbergstetten\n\nLaufzeit: 1790-1795\n\nUmfang: 7 Schr.",
-      "english": "Correspondence between the chanceries of the lordships of Limpurg-Gaildorf-Solms-Assenheim and Limpurg-Sontheim-Schmiedelfeld regarding the half castle and market of Haltenbergstetten, sold in 1415 to Kunz von Rosenberg under the reservation of the right of repurchase or readmission.\n\nDuration: 1790-1795\n\nExtent: 7 handwritten sheets.",
-      "mention": [
-        {
-          "person": "Konrad von Limpurg"
-        },
-        {
-          "place": "limpurg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ],
-          "type": "generic",
-          "content": "bought half the castle and market of Haltenbergstetten from Conrad von Limpurg in 1415, retaining repurchase or re-entry rights.",
-          "date": "1415"
-        }
-      ]
+      "source": "Staatsarchiv Ludwigsburg B 114 Bü 7572",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-16943",
+      "german": "Beraubung des Trägers Caspar bei Fichtenberg durch zwei fremde Männer\n\nLaufzeit: 1790\n\nUmfang: 5 Schr."
     }
   ]
 }

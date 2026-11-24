@@ -3,17 +3,11 @@
   "label": "Mönch",
   "entries": [
     {
-      "source": [
-        "Regesten der Pfalzgrafen am Rhein, Band II, Nr. 4454",
-        "Or. 1 s. Karlsr. G.L.A. 43/112"
-      ],
-      "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
-      "german": "1406 juli 9. Diether Mündie von Rosenberg unn seine gattin Else von Uwerbach bekennen, dass sie die in dem verkaufsbriefe kg. Ruprechts (inseriert) über das dorf Kirchhardt enthaltenen bestimmungen halten wollen und gestatten ihm im falle einer grossen landesschätzung, diese auch von ihren leuten zu Kirchhardt zu nehmen. Diether Münch siegelt.",
-      "english": "1406 July 9. Diether Mönch von Rosenberg and his wife Else von Urbach declare that they will observe the provisions contained in King Ruprecht’s (inserted) deed of sale concerning the village of Kirchardt. They permit him, in the event of a substantial territorial tax assessment, to collect it from their people at Kirchardt as well. Diether Mönch seals the document.",
+      "source": "Generallandesarchiv Karlsruhe 43 Nr. 3512",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1748494",
+      "german": "Dieter Münch von Rosenberg und seine Ehefrau Else von Urbach reversieren gegenüber König Ruprecht wegen der Wiederlösung des ihnen mit inserierter Urkunde von 1406 Juli 8 verpfändeten Dorfs Kirchardt.\n\nLaufzeit: 1406 Juli 9 (Freitag vor Margarethe 1406)\n\nSiegelbeschreibung: Mit 1 Siegel",
+      "english": "Dieter Münch von Rosenberg and his wife Else von Urbach issue a formal acknowledgment to King Rupert concerning the redemption of the village of Kirchardt, which had been pledged to them by a charter issued on 8 July 1406.\n\nTerm: 9 July 1406 (Friday before Margaret's feast, 1406)",
       "mention": [
-        {
-          "person": "Diether Mönch"
-        },
         {
           "person": "Diether Mönch von Rosenberg"
         },
@@ -22,6 +16,17 @@
           "personTitle": [
             "König"
           ]
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748494%2F04_0001748494_0001_4-1748494-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748494%2F04_0001748494_0002_4-1748494-2.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748494%2F04_0001748494_0003_4-1748494-3.jpg"
         }
       ]
     }

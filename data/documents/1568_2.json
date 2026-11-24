@@ -1,24 +1,11 @@
 {
   "date": "1568",
-  "label": "Franken",
+  "label": "to review",
   "entries": [
     {
-      "source": "HStAM, 17 c, 6422",
-      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=325966",
-      "german": "Erlaubnis für Philipp v. Boyneburg zu Laudenbach zur Anweisung eines Wittums für seine Frau, geb. v. Rosenberg",
-      "english": "Permission for Philipp v. Boyneburg zu Laudenbach to assign a dower for his wife, née v. Rosenberg",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the wife of Philipp von Boyneburg, born von Rosenberg",
-          "type": "generic",
-          "content": "was to receive a Wittum under an authorization granted to her husband."
-        }
-      ]
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 Bü 17",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-186860",
+      "german": "Zwei Briefe: 1. Friedrich von Rosenberg an die Grafen Kraft und Albrecht von Hohenlohe, 1568; 2. Moritz Landgraf von Hessen an Graf Wolfgang von Hohenlohe, 1601 .\n\nLaufzeit: 1568, 1601\n\nUmfang: 2 Schr."
     }
   ]
 }

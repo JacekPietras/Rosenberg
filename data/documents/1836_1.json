@@ -1,0 +1,31 @@
+{
+  "date": "1836-1842",
+  "label": "Franken",
+  "entries": [
+    {
+      "source": "Vereinigte Adelsarchive im Rheinland e.V., Schönstein Akten, Nr. 3049",
+      "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x25624698400497420210713141736865",
+      "german": "Herrschaft Waldmannshofen contra Erben des Johann Andreas Scherer zu Gülchsheim wegen Liquidierung des Besthauptes zu Holzhausen und Gülchsheim. Band 1. Hierin: Extrakt aus dem Lagerbuch Konrads von Rosenberg über Waldmannshofen 1565.",
+      "english": "Lordship of Waldmannshofen versus the heirs of Johann Andreas Scherer of Gülchsheim regarding the liquidation of the best-husband tax (Besthaupt) in Holzhausen and Gülchsheim. Volume 1. Herein: Extract from the land book of Konrad von Rosenberg concerning Waldmannshofen, 1565.",
+      "mention": [
+        {
+          "place": "holtzhusen"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ],
+      "facts": [
+        {
+          "subject": "the Waldmannshofen estate of Konrad von Rosenberg",
+          "type": "generic",
+          "content": "was described in an extract from his 1565 ledger included in later proceedings.",
+          "date": "1565"
+        }
+      ]
+    }
+  ]
+}
