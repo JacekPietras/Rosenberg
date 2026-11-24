@@ -180,7 +180,7 @@ export async function renderActiveScreen({
       });
     });
   }
-  observeReviewLabelTargets(content);
+  if (state.active !== 'documents') observeReviewLabelTargets(content);
   const personLinkTargets = content.querySelectorAll('[data-person-links-path]');
   const hydratePersonLinks = (article) => {
     if (!article.isConnected) return;

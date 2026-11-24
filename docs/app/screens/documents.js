@@ -154,13 +154,13 @@ export function createDocumentRenderer({
     return rows.length ? `<div class="review-name-mentions" tabindex="-1" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';
   }
 
-  function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, path = '', index = null, documentDate = '' } = {}) {
+  function renderEntry(entry, { title = true, subheading = true, date = true, source = true, image = true, deferredDetails = false, path = '', index = null, documentDate = '' } = {}) {
     const entryDate = date && entry.date ? `<p class="entry-date">${escapeHtml(formatDate(entry.date))}</p>` : '';
     const anchor = path && index !== null ? ` id="${entryAnchor(path, index)}"` : '';
     const defaultDate = /^data\/(?:books|notes)\//.test(path) ? '' : Object.hasOwn(entry, 'date') ? entry.date : documentDate;
-    const items = [...(entry.facts || []), ...(entry.guesses || []).map((fact) => ({ ...fact, isGuess: true }))]
-      .sort((a, b) => dateSortValue(factDate(a, defaultDate)) - dateSortValue(factDate(b, defaultDate)));
-    const facts = state.showFacts ? renderFactsView(items, {
+    const items = state.showFacts && !deferredDetails ? [...(entry.facts || []), ...(entry.guesses || []).map((fact) => ({ ...fact, isGuess: true }))]
+      .sort((a, b) => dateSortValue(factDate(a, defaultDate)) - dateSortValue(factDate(b, defaultDate))) : [];
+    const facts = state.showFacts && !deferredDetails ? renderFactsView(items, {
       people: getPeople(),
       personNames: state.familyGraph?.valid ? state.familyGraph.records.map((person) => person.name) : [],
       inlineMarkup,
@@ -169,7 +169,7 @@ export function createDocumentRenderer({
       places: state.places,
     }) : '';
     const listRenderer = treeMarkup;
-    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, undefined, listRenderer) : ''}${image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
+    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, undefined, listRenderer) : ''}${!deferredDetails && image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${!deferredDetails && entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
     if (!content) return '';
     return `<article class="entry"${anchor}>${content}</article>`;
   }
@@ -182,7 +182,8 @@ export function createDocumentRenderer({
     }, []);
   }
 
-  function renderDocument(doc, path, index) {
+  function renderDocument(doc, path, index, { hydrate = false } = {}) {
+    const deferredDetails = !hydrate && state.active === 'documents' && path.startsWith('data/documents/');
     const allEntries = doc.entries || [];
     const entries = state.active === 'documents' && state.recordSource
       ? allEntries.filter((entry) => entryHasSource(entry, state.recordSource))
@@ -220,10 +221,10 @@ export function createDocumentRenderer({
         return `<article class="document book-document"><div class="document-heading"><div><h2>${titleImage}${escapeHtml(sectionTitle)}${label}</h2>${sectionIndex === 0 ? url : ''}</div>${sectionIndex === 0 ? date : ''}</div>${sectionContent}</article>`;
       }).join('');
     }
-    const research = typeof doc.research === 'string' && doc.research.trim()
+    const research = !deferredDetails && typeof doc.research === 'string' && doc.research.trim()
       ? `<section class="document-research" aria-label="Research"><h3>Research</h3><div class="document-research-text">${inlineMarkup(doc.research)}</div></section>`
       : '';
-    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
+    const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), deferredDetails, documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
     const deferredPersonLinks = state.active === 'documents' && path.startsWith('data/documents/')
@@ -237,7 +238,7 @@ export function createDocumentRenderer({
     const previousDeferredMarkupLinks = state.deferDocumentMarkupLinks;
     state.deferPersonNameRecognition = false;
     state.deferDocumentMarkupLinks = false;
-    try { return renderDocument(doc, path, index); }
+    try { return renderDocument(doc, path, index, { hydrate: true }); }
     finally {
       state.deferPersonNameRecognition = previous;
       state.deferDocumentMarkupLinks = previousDeferredMarkupLinks;
