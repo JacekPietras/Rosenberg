@@ -8,7 +8,7 @@
         "https://www.gda.bayern.de/gvl/document/ee6958ea-bf9f-4245-aa27-9213067a9f73",
         "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/ee6958ea-bf9f-4245-aa27-9213067a9f73"
       ],
-      "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Herr Ulrich der Perkhauser, Siechenmeister zu Ensdorf Gerichtsbrief mit der Bestätigung, daß dem Kloster die Zinsen aus dem Rosenhof zu Theuern zustehen sollen.",
+      "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Herr Ulrich der Perkhauser, Siechenmeister zu Ensdorf Gerichtsbrief mit der Bestätigung, daß dem Kloster die Zinsen aus dem Rosenhof zu Theuern zustehen sollen.\n\nBesiegelung/Beglaubigung: Landgericht Amberg (l. beschädigt)",
       "english": "A: Konrad von Rosenberg, Vizedom zu Amberg E: Herr Ulrich der Perkhauser, Master of the Infirmary of Ensdorf Court letter confirming that the monastery is entitled to the interest from the Rosenhof in Theuern.",
       "facts": [
         {
@@ -27,6 +27,12 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/ee6958ea-bf9f-4245-aa27-9213067a9f73/2/full/4670,/0/default.jpg",
           "deleted": true
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/ee6958ea-bf9f-4245-aa27-9213067a9f73/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/ee6958ea-bf9f-4245-aa27-9213067a9f73/2/full/max/0/default.jpg"
         }
       ]
     }
