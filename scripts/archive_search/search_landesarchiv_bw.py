@@ -118,6 +118,7 @@ class Client:
         self.opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
         self.delay = delay
         self.last_request = None
+        self.current_page = 1
 
     def wait(self):
         if self.last_request is not None:
@@ -137,7 +138,7 @@ class Client:
                 raise RuntimeError(f'Archive returned HTTP {exc.code}; stopping. Retry-After: {exc.headers.get("Retry-After", "not provided")}') from exc
             raise
 
-    def search(self, phrase, limit=None, exists=False):
+    def search(self, phrase, limit=None, exists=False, skip_pages=0):
         self.request(BASE + 'home.php')
         params = {'sortierung': 'archivort asc, klassifi_bestand asc, bereich asc, klassifi asc',
                   'trefferausgabe': '30', 'sucheAusgangspunkt': '../index', 'suchMaschine': 'lucene',
@@ -166,11 +167,24 @@ class Client:
                 end = int(hidden['bisTreffer'])
             except (KeyError, ValueError) as exc:
                 raise ValueError('Could not read the catalogue page range') from exc
+            if skip_pages and page_number == skip_pages and end != min((skip_pages + 1) * 30, total):
+                raise ValueError(f'Catalogue did not return requested page {page_number + 1}')
             if not previous_end < end <= total:
                 raise ValueError('Invalid catalogue page range')
             previous_end = end
             if not page.rows:
                 raise ValueError('Catalogue returned an empty page before the end')
+            if page_number == 0 and skip_pages:
+                if skip_pages * 30 >= total:
+                    raise ValueError(f'Cannot skip {skip_pages} pages: catalogue reports {total} hits')
+                if not page.pagination_action:
+                    raise ValueError('Catalogue did not provide a pagination form')
+                page_number = skip_pages
+                self.current_page = page_number + 1
+                fields = [(k, str(page_number) if k == 'trefferseite' else v) for k, v in page.pagination]
+                print(f'Skipping to catalogue page {self.current_page}', file=sys.stderr, flush=True)
+                html = self.request(urljoin(BASE + 'suche/', page.pagination_action), urlencode(fields).encode())
+                continue
             print(f'Catalogue page {page_number + 1}: results through {end} of {total}',
                   file=sys.stderr, flush=True)
             for row in page.rows:
@@ -185,6 +199,7 @@ class Client:
             if not page.pagination_action:
                 raise ValueError('Catalogue did not provide a pagination form')
             page_number += 1
+            self.current_page = page_number + 1
             fields = [(k, str(page_number) if k == 'trefferseite' else v) for k, v in page.pagination]
             html = self.request(urljoin(BASE + 'suche/', page.pagination_action), urlencode(fields).encode())
 
@@ -221,6 +236,8 @@ def main():
     mode.add_argument('--exists', action='store_true', help='print true or false without listing or importing')
     parser.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
     parser.add_argument('--limit', type=int, help='maximum number of results')
+    parser.add_argument('--skip-pages', type=int, default=0,
+                        help='skip this many catalogue pages before processing results')
     parser.add_argument('--skip-result-id', action='append', default=[],
                         help='skip this catalogue result during listing or import (repeatable)')
     parser.add_argument('--resume-after-result-id',
@@ -245,6 +262,10 @@ def main():
         parser.error('--delay must be at least 1 second')
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
+    if args.skip_pages < 0:
+        parser.error('--skip-pages must be non-negative')
+    if args.exists and args.skip_pages:
+        parser.error('--skip-pages cannot be used with --exists')
     client = Client(args.delay)
     count = total = 0
     result_seen = False
@@ -263,7 +284,7 @@ def main():
         if resume_pending:
             print(f'Searching catalogue pages for resume result {args.resume_after_result_id}',
                   file=sys.stderr, flush=True)
-        for row, total in client.search(phrase, args.limit):
+        for row, total in client.search(phrase, args.limit, skip_pages=args.skip_pages):
             result_seen = True
             results.record(phrase, True)
             if resume_pending:
@@ -287,8 +308,8 @@ def main():
             try:
                 url = client.resolve(row)
             except (OSError, ValueError) as exc:
-                failures.append((row['id'], row['signature'], str(exc)))
-                print(f'Skipping result {row["id"]} ({row["signature"]}): {exc}', file=sys.stderr, flush=True)
+                failures.append((client.current_page, row['id'], row['signature'], str(exc)))
+                print(f'Skipping result {row["id"]} ({row["signature"]}) on page {client.current_page}: {exc}', file=sys.stderr, flush=True)
                 consecutive_failures += 1
                 if consecutive_failures >= 2:
                     raise RuntimeError(f'Stopping after consecutive failures; last result {row["id"]}') from exc
@@ -310,9 +331,9 @@ def main():
                 proc = subprocess.run(command, cwd=ROOT)
                 client.last_request = time.monotonic()
                 if proc.returncode:
-                    failures.append((row['id'], row['signature'],
+                    failures.append((client.current_page, row['id'], row['signature'],
                                      f'downloader failed for {url} (exit {proc.returncode})'))
-                    print(f'Skipping result {row["id"]} after downloader failure', file=sys.stderr, flush=True)
+                    print(f'Skipping result {row["id"]} on page {client.current_page} after downloader failure', file=sys.stderr, flush=True)
                     consecutive_failures += 1
                     if consecutive_failures >= 2:
                         raise RuntimeError(f'Stopping after consecutive failures; last result {row["id"]}')
@@ -326,11 +347,11 @@ def main():
         print(f'Listed {count} results; catalogue reports {total} hits' + (' (limit applied)' if args.limit is not None else '') + suffix,
               file=sys.stderr)
         if failures:
-            for result_id, signature, error in failures:
-                print(f'  {result_id} | {signature}: {error}', file=sys.stderr)
+            for page, result_id, signature, error in failures:
+                print(f'  page {page} | {result_id} | {signature}: {error}', file=sys.stderr)
         return 1 if failures else 0
     except (OSError, ValueError, RuntimeError) as exc:
-        print(f'Error after {count} results: {exc}', file=sys.stderr)
+        print(f'Error on catalogue page {client.current_page} after {count} results: {exc}', file=sys.stderr)
         return 1
 
 

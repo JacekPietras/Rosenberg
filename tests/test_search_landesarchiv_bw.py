@@ -252,6 +252,16 @@ class LandesarchivSearchTests(unittest.TestCase):
         self.assertEqual([row['id'] for row, _ in rows], ['11', '12'])
         self.assertEqual(req.call_count, 3)
 
+    def test_skip_pages_jumps_to_requested_page(self):
+        client = search.Client(1)
+        first = result_page('11', 0).replace('value="2"', 'value="90"').replace('name="bisTreffer" value="1"', 'name="bisTreffer" value="30"')
+        last = result_page('33', 2).replace('value="2"', 'value="90"').replace('name="bisTreffer" value="3"', 'name="bisTreffer" value="90"')
+        with patch.object(client, 'request', side_effect=['home', first, last]) as req:
+            rows = list(client.search('Rosenberg', skip_pages=2))
+        self.assertEqual([row['id'] for row, _ in rows], ['33'])
+        self.assertEqual(client.current_page, 3)
+        self.assertIn(b'trefferseite=2', req.call_args.args[1])
+
     def test_empty_intermediate_page_is_an_error(self):
         client = search.Client(1)
         empty = result_page('11', 0).split('<form', 1)[1]
