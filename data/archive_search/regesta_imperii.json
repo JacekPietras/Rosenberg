@@ -115,7 +115,10 @@
   },
   "phraseQueries": {
     "de Rosenberg": true,
+    "de Rosinberg": false,
     "v Rosenberg": true,
-    "von Rosenberg": true
+    "v Rosinberg": true,
+    "von Rosenberg": true,
+    "von Rosinberg": false
   }
 }

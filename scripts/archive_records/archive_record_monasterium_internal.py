@@ -64,9 +64,7 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
                 else:
                     # An OCR-damaged date heading can still give a reliable year.
                     year = re.match(r'^(\d{4})\.\s', abstract)
-                    if not year or not 1 <= int(year[1]) <= 9998:
-                        raise ValueError('Unknown Monasterium date without an explicit date in the abstract')
-                    date = year[1]
+                    date = year[1] if year and 1 <= int(year[1]) <= 9998 else '9999'
         else:
             date = parse_date(raw_date)
     elif range_node is not None:

@@ -113,8 +113,19 @@ class ProvenanceTests(unittest.TestCase):
     def test_unknown_date_does_not_use_later_date_from_prose(self):
         root = ET.fromstring('<cei><idno>CIII.</idno><issued><date value="99999999"/></issued>'
                              '<abstract>A document mentioning 1354. 4. Jänner. in its text.</abstract></cei>')
-        with self.assertRaisesRegex(ValueError, 'without an explicit date'):
-            create_record(root, 'https://www.monasterium.net/charter')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = create_record(root, 'https://www.monasterium.net/charter')
+            self.assertEqual(json.loads(path.read_text())['date'], '9999')
+
+    def test_undated_collection_record_imports_idempotently(self):
+        root = ET.fromstring('<cei><idno>I.</idno><issued><date value="99999999"/></issued>'
+                             '<abstract>0. J. und T. — W. von Rosenberg bittet den Abt.</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            url = 'https://www.monasterium.net/mom/example/charter'
+            path, updated = create_record(root, url)
+            self.assertFalse(updated)
+            self.assertEqual(json.loads(path.read_text())['date'], '9999')
+            self.assertEqual(create_record(root, url), (path, True))
 
     def test_sources_added_to_fallback_idempotently(self):
         root = ET.fromstring('<cei><idno>StA Wü, MIB 10 fol. 075v</idno>'
