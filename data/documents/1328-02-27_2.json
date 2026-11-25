@@ -1,0 +1,28 @@
+{
+  "date": "1328-02-27",
+  "place": "Schärding",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 6",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10799645",
+      "german": "Derselbe gehaizzet dem Landgrafen Ulrich von Leuchtenberg, ob er an der Losung der\nPflege Thust von Peter von Rosenberg gesäumt oder geirret würde, die Kost hinz dem Hirstein\nso lange zu geben, untz ihm dic 1000 Schock darum\ndiese Veste gekauft, gänzlich geval-\nlent. Geb. ze Schärding an dem Samstag vor dem Sontag Reminiscere.",
+      "english": "The same duke promises Ulrich von Leuchtenberg, Landgraf von Leuchtenberg, that, if he is delayed or hindered in redeeming the stewardship of Thust from Peter von Rosenberg, he will provide maintenance at Hirstein until the 1,000 shock for which the castle was bought have been paid in full. Issued at Schärding on the Saturday before Reminiscere Sunday.",
+      "mention": [
+        {
+          "person": "Ulrich von Leuchtenberg",
+          "personTitle": [
+            "Landgraf von Leuchtenberg"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "person": "Peter von Rosenberg",
+          "type": "generic",
+          "content": "was named as the person from whom Ulrich von Leuchtenberg, Landgraf von Leuchtenberg, was to redeem the stewardship of Thust; Duke Heinrich promised the landgrave maintenance at Hirstein if the redemption was delayed or hindered."
+        }
+      ]
+    }
+  ]
+}

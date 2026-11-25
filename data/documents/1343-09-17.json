@@ -4,9 +4,12 @@
   "entries": [
     {
       "source": "Regesta Boica 7",
-      "url": "https://books.google.pl/books?id=xNpCAAAAcAAJ&pg=PA379",
+      "url": [
+        "https://books.google.pl/books?id=xNpCAAAAcAAJ&pg=PA379",
+        "https://www.digitale-sammlungen.de/en/view/bsb11443026"
+      ],
       "german": "Eberhard von Riedern Dechant und das Capitel des Stifts ze Wirzburg geloben die Schidung welche nachbenannte Schiedleute: Gottfried von Trimperg Dechant zu Fulda, Helwik von Waltrachusen Ritter, Andres von Bruneck Domherr zu Wirzburg, Heinrich v. Gritzheim Probst zu Wehtersvinkel, Eberhard v. Rosenberg, H. Lupold v. Bebenburk Domherren etc., zwischen Bischof Otto zu Wirzburg, und Heinrich dem Abt zu Fulda um etlicher Gut und Recht wegen vor der Rön machen werden — stätt zu halten. G. an der Mittwochen nach des hl. Creutzes Tak am Herbst.",
-      "english": "Eberhard von Riedern, Dean, and the Chapter of the collegiate church at Würzburg vow to uphold the arbitration which the following-named arbitrators—Gotfried von Trimperg, Dean at Fulda; Helwik von Waltrachusen, Ritter; Andres von Bruneck, canon at Würzburg; Heinrich von Gritzheim, provost at Wehtersvinkel; Eberhard von Rosenberg; Lord Lupold von Bebenburg, canons, etc.—will make between Otto zu Würzburg, Bischof and Heinrich, Abt zu Fulda concerning several properties and rights before the Rhön. — Given on the Wednesday after the Day of the Holy Cross in autumn.",
+      "english": "Eberhard von Riedern, Dean, and the Chapter of the collegiate church at Würzburg vow to uphold the arbitration which the following-named arbitrators—Gotfried von Trimperg, Dean at Fulda; Helwik von Waltrachusen, Ritter; Andres von Bruneck, canon at Würzburg; Heinrich von Gritzheim, provost at Wehtersvinkel; Eberhard von Rosenberg, Domherr; and Lupold von Bebenburg, Domherr, among others—will make between Otto zu Würzburg, Bischof and Heinrich, Abt zu Fulda concerning several properties and rights before the Rhön. — Given on the Wednesday after the Day of the Holy Cross in autumn.",
       "mention": [
         {
           "person": "Bischof Otto",
@@ -36,6 +39,9 @@
       "facts": [
         {
           "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Domherr"
+          ],
           "type": "generic",
           "content": "was named as an arbitrator in the dispute between Bishop Otto of Würzburg and Abbot Heinrich of Fulda over goods and rights before the Rhön."
         }

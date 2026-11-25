@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Lehensachen 7168",
-      "url": "https://www.gda.bayern.de/gvl/document/86dc3c45-59aa-49d5-950e-0dfc7f3c0729",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/86dc3c45-59aa-49d5-950e-0dfc7f3c0729",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ED8B157C-31C2-4E48-92D0-56239371FF25&parent_id="
+      ],
       "german": "Auszüge aus Würzburger Lehenbüchern, betrifft Belehnungen der von Rosenberg, von Weiler, von Seckendorf, Schetzler von Sulzfeld, sie bilden Bestandteile Würzburger Lehengerichtsakten",
       "english": "Extracts from Würzburg fief books, concerning enfeoffments of the von Rosenberg, von Weiler, von Seckendorf, and Schetzler von Sulzfeld families; they form parts of the Würzburg feudal-court records.",
       "mention": [

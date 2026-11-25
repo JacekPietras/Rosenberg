@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten (Ludwigsburger Abgabe, ehem. B 202) 12",
-      "url": "https://www.gda.bayern.de/gvl/document/6bf6cfbd-dc25-45e1-8966-4ae39fc08516",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/6bf6cfbd-dc25-45e1-8966-4ae39fc08516",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7bc50016-f2c0-482f-aae0-7e1f73735367&parent_id="
+      ],
       "german": "Akten betreffend den Zehnten zu Wolkersfelden (Kreis Mergentheim)\n\nEnthält-/Darin-Vermerke: Enthält u.a. Ansprüche der Herren von Rosenberg, Stritigkeiten mit Hohenlohe und Würzburg",
       "english": "Records concerning the tithe at Wolkersfelden (Mergentheim district).\n\nContents/inserted notes: Includes, among other things, claims of the Lords von Rosenberg and disputes with Hohenlohe and Würzburg.",
       "mention": [

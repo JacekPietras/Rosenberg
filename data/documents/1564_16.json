@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, G-Akten 14059",
-      "url": "https://www.gda.bayern.de/gvl/document/a6fcc772-de28-41b0-ac5e-706a06fea84d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a6fcc772-de28-41b0-ac5e-706a06fea84d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B8A01FF9-96EE-47BC-81A1-5C28FABEE812&parent_id="
+      ],
       "german": "Akten der Würzburger Kanzlei, betrifft Gesuch des Ritters Albrecht von Rosenberg an Herzog Johann Friedrich den mittleren zu Sachsen um Interzession an den Bischof von Würzburg wegen persönlichen Schutzes",
       "english": "Records of the Würzburg chancery concerning Knight Albrecht von Rosenberg's petition to Duke Johann Friedrich the Middle of Saxony for intercession with the Bishop of Würzburg for personal protection.",
       "mention": [

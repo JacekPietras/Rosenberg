@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Rentamt Rothenburg ob der Tauber (vorbayerische Provenienzen) 129",
-      "url": "https://www.gda.bayern.de/gvl/document/17194b2d-43b6-43c6-84f1-eccddda28c61",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/17194b2d-43b6-43c6-84f1-eccddda28c61",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++64716408-48cc-4746-971a-c8bec1ef43ff&parent_id="
+      ],
       "german": "Conrad von Rosenberg zu Waldmannshofen überschickt Hans Jörg von Schönborn, Johanniterkomtur zu Rothenburg, einen Jagdhund, den er ihm früher geschenkt hatte und der ihm wieder zugelaufen war",
       "english": "Konrad von Rosenberg zu Waldmannshofen sends Hans Jörg von Schönborn, Commander of the Order of St John at Rothenburg, a hunting dog that he had previously given him and that had returned to him.",
       "mention": [

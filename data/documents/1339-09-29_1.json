@@ -150,6 +150,61 @@
           "content": "was chosen as common arbiter of the alliance, with seat at Wertheim."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 7",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11443026",
+      "german": "Heinrich Erzbischof des heiligen Stuhls zu Mainz geht um seiner und seines Stifts\nNoth und Beste mit dem Bischof Otto von Wirzburg und Johann dem Burggrafen von Nürn-\nberg auf sechs Jahre eine Verbindung zu wechselseitiger Hülfe ein, demnach sie einander be-\nholfen seyn und dem Mahner mit fünfzig wohlgerüsteten Mannen auf eignen Schaden und\nVerlust, jedoch auf dessen Kost zu Hülfe kommen sollen; von der Verbündniss seyen ausge-\nnommen der Stuhl zu Rom, das römische Reich, die Kurfürsten, die Fürsten H. Rudolph,\nRuprecht der ält. und Ruprecht der Jüngere, Pfalzgrafen, Herr Friedrich Markgraf von Meissen, der\nLandgraf von Hessen, Graf Gerlach von Nassau, Greve Johann von Spanheim, Graf Ulrich\nvon Würtemberg, endlich alle der Verbündeten Landesherren und Mannen; zur Beilegung der\nzwischen ihnen selbst entstehenden Irrungen ernennen sie- und zwar Bischof Otto, den Ritter\nCunrad Jemer seinen Amtmann zu Hohenburg, und Burggraf Johann den Burkart von Seken-\ndorf, seinen Amtmann zu Onolzbach; der Erzbischof den Ritter Eberhard von Rosenberg, seinen\nVogt zu Duren, und zum Obmann Graf Rudolph von Werthheim. Den edeln Mannen Grafen\nBerthold und Heinrich von Henneberg, den Grafen von Oettingen und Ludwig von Hohenlohe\nsey gestattet bis Martini in die Verbündung zu treten. G. zu Aschaffenburg an S. Michaels-\ntag. (c. S.)",
+      "english": "Heinrich, Erzbischof zu Mainz, enters a six-year alliance for mutual assistance with Otto, Bischof zu Würzburg, and Johann, Burggraf zu Nürnberg. On request, each is to help the other with fifty well-equipped men, at the helper’s risk of damage and loss but at the requesting party’s expense. The alliance excepts the See of Rome, the Roman Empire, the electors, the counts palatine Rudolf, Ruprecht der Ältere and Ruprecht der Jüngere, Friedrich, Markgraf von Meissen, the Landgraf of Hessen, Counts Gerlach von Nassau, Johann von Spanheim and Ulrich von Württemberg, and all the allies’ territorial lords and men. To settle disputes among them, Bishop Otto appoints Konrad Jemer, Ritter, his Amtmann zu Hohenburg; Burgrave Johann appoints Burkart von Sekendorf, his Amtmann zu Onolzbach; and the archbishop appoints Eberhard von Rosenberg, Ritter, Vogt zu Dürn. Count Rudolf von Wertheim is appointed umpire. Counts Berthold and Heinrich von Henneberg, the Counts of Oettingen, and Ludwig von Hohenlohe may join the alliance until Martinmas. Given at Aschaffenburg on St. Michael’s Day, with a seal.",
+      "mention": [
+        {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Heinrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Hans",
+          "personTitle": [
+            "Burggraf zu Nürnberg"
+          ]
+        },
+        {
+          "person": "Ludwig von Hohenlohe"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "vogt_zu_Durn",
+          "personTitle": [
+            "Ritter",
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "was appointed by the archbishop of Mainz to help settle disputes among the parties to his alliance with the bishop of Würzburg and the burgrave of Nürnberg."
+        }
+      ]
     }
   ]
 }

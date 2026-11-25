@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "BayHStA, Oberpfalz Literalien 199",
-      "url": "https://www.gda.bayern.de/gvl/document/36103b12-cc8c-4c47-9759-642692e55917",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/36103b12-cc8c-4c47-9759-642692e55917",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++bab2c08b-d00a-4d2e-b349-ad8327dc1caf&parent_id="
+      ],
       "german": "Heimfall des lehenbaren Guts Rosenberg und Übergabe an Pfalzgraf Ottheinrich von Pfalz-Sulzbach-Hilpoltstein",
       "english": "Reversion of the enfeoffed Rosenberg estate and transfer to Count Palatine Ottheinrich of Palatinate-Sulzbach-Hilpoltstein",
       "mention": [

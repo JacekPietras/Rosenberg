@@ -1,0 +1,28 @@
+{
+  "date": "1328-02-27",
+  "place": "Schärding",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 6",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10799645",
+      "german": "einrich Herzog in Bayern kauft die Veste Hirstein von Landgraf Ulrich von Leuchten-\nberg um 1000 Schok gross. Prager Pfg. und überweist zugleich die Hälfte des Kaufschillings\nzu den 800 Sch. wofür der Landgraf Thust die Pfleg von Peter von Rosenberg zu lösen ge-\nhaissen, welche ihm sohin eingeantwortet wird, und wovon er jährlich 200 Sch. Pfg. ze Burg-\nhut nehmen und 200 Sch. an obigem Geld abschlagen darf. Hirstein soll mit den Urkunden\nvon Brukkns Kinden an Hartwig von Degenberg ausgeantwortet werden, dieser aber damit dem\nLandgrafen bis zur völligen Ablösung der Pfleg Thust gewärtig seyn. Geb. ze Schärding an\ndem Samstag vor Reminiscere. (c. Sig.)",
+      "english": "Heinrich, Herzog in Bayern, buys Hirstein Castle from Ulrich von Leuchtenberg, Landgraf von Leuchtenberg, for 1,000 shock of Prague groschen. He assigns half the purchase price towards the 800 shock for which the landgrave was instructed to redeem the stewardship of Thust from Peter von Rosenberg; the stewardship is then handed over to him. The landgrave may take 200 shock of pennies annually for castle guard and deduct another 200 shock from that sum. Hirstein and its documents are to be delivered by Brukkn’s children to Hartwig von Degenberg, who is to hold it at the landgrave’s disposal until the stewardship of Thust has been fully redeemed. Issued at Schärding on the Saturday before Reminiscere. With a seal.",
+      "mention": [
+        {
+          "person": "Ulrich von Leuchtenberg",
+          "personTitle": [
+            "Landgraf von Leuchtenberg"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "person": "Peter von Rosenberg",
+          "type": "generic",
+          "content": "was named as the person from whom Ulrich von Leuchtenberg, Landgraf von Leuchtenberg, was instructed to redeem the stewardship of Thust."
+        }
+      ]
+    }
+  ]
+}

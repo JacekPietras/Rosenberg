@@ -32,6 +32,36 @@
           "content": "witnessed Count Rudolf von Wertheim’s grant to the Teutonic House in Nuremberg of feudal lordship over properties in Obereschenbach and Wotzendorf."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 5",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
+      "german": "Rudolph Graf von Wertheim schenkt dem deutschen Orden fünf Hofstätten im Dorfe zu\nObereschenbach und eine Hub in der Mark zu Wozendorf. Zeugen: Chunrad von Hohenloch,\nWernher von Hartheim, Chunrad von Rosenberg, Gotfrid Stayerwalt. (c. Sig.)",
+      "english": "Rudolf von Wertheim, Graf von Wertheim, donates five house sites in the village of Obereschenbach and a holding in the district of Wozendorf to the Teutonic Order. Witnesses: Konrad von Hohenlohe, Wernher von Hartheim, Konrad von Rosenberg, and Gotfrid Stayerwalt. With a seal.",
+      "mention": [
+        {
+          "person": "Konrad von Hohenlohe"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "witnessed Rudolf von Wertheim’s donation of property at Obereschenbach and Wozendorf to the Teutonic Order."
+        }
+      ]
     }
   ]
 }

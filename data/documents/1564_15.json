@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Miscellanea 1959",
-      "url": "https://www.gda.bayern.de/gvl/document/1e9e72b5-34aa-4e0a-879d-631b08a5dd29",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1e9e72b5-34aa-4e0a-879d-631b08a5dd29",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++37FEEC86-04D8-4D86-A01E-2AA7BFD5BF2E&parent_id="
+      ],
       "german": "Kopie eines Schreibens des Ritters Sebastian Schertl an Herzog Albrecht V. von Bayern, betrifft ein von Wilhelm von Grumbach an ihn gerichtetes Paket Briefe und den Austritt des Albrecht von Rosenberg aus sächsischen Diensten",
       "english": "Copy of a letter from Knight Sebastian Schertl to Duke Albrecht V of Bavaria, concerning a packet of letters sent to him by Wilhelm von Grumbach and Albrecht von Rosenberg's departure from Saxon service.",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Lehensachen 4823",
-      "url": "https://www.gda.bayern.de/gvl/document/3d3b7395-b173-4cc1-af32-de15cb38ef93",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3d3b7395-b173-4cc1-af32-de15cb38ef93",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3656C08A-0902-46DE-99DB-C75D7A74D90F&parent_id="
+      ],
       "german": "Akt der Würzburger geheimen Kanzlei, betrifft Irrungen zwischen Conrad von Rosenberg zu Waldmannshofen und dem Deutschmeister zu Mergentheim, dessen Überweiter etliche Hintersassen des ersteren zu Brehmen (Baden) mit Zins und Gült übernommen habe",
       "english": "Akt the Würzburger geheimen Kanzlei, betrifft Irrungen between Konrad von Rosenberg zu Waldmannshofen and dem Deutschmeister to Mergentheim, dessen Überweiter etliche subject tenants of the ersteren to Brehmen (Baden) with Zins and rent übernommen habe",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Lehensachen 2663",
-      "url": "https://www.gda.bayern.de/gvl/document/1b25b49c-7345-4334-90c9-b8820e4e5137",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1b25b49c-7345-4334-90c9-b8820e4e5137",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A565DF25-6773-4B52-B985-557D22CCB59F&parent_id="
+      ],
       "german": "Zeysolph von Rosenberg zu Haldenbergstetten bittet den Bischof von Würzburg, das Schloß zu Baldersheim, das ihm und seinem Vetter Conrad von Rosenberg zu Waldmanshofen vom Hochstift zu Lehen rührt, mit seinem Vetter teilen zu dürfen",
       "english": "Zeysolph von Rosenberg of Haldenbergstetten asks the Bishop of Würzburg for permission to divide Baldersheim Castle with his cousin Konrad von Rosenberg of Waldmannshofen; the castle is a fief of the bishopric held by both cousins.",
       "mention": [

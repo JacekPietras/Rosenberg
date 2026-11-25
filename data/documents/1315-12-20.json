@@ -1,0 +1,36 @@
+{
+  "date": "1315-12-20",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 5",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
+      "german": "Rudolf von Gotes gnoden Groffe von Wertheim schenkt in Anbetracht der Almosen welche\nseine Voreltern schon dem deutschen Orden gegeben haben, und zwar an der pfarre zu Oberen-\nEschenbach, dem deutschen Hause zu Nürnberg 5 Hofstätten samt der Lehenschaft zu Ober-\nEschenbach, zwey Huben in der Markung daselbst, und eine Hube in der Markung von Wo-\ntzendorff. Gezuch: Herr Chunrad von Hohenloch, Herr Wernher von Harthein, Herr Chunrat\nvon Rosenberch, Gottfried Steigerwald. (c. Sig.)",
+      "english": "Rudolf von Wertheim, Graf von Wertheim by the grace of God, in consideration of the alms his ancestors had already given to the Teutonic Order at the parish of Obereschenbach, donates to the Teutonic House in Nürnberg five house sites together with the feudal lordship at Obereschenbach, two holdings in its district, and one holding in the district of Wotzendorff. Witnesses: Lord Konrad von Hohenlohe, Lord Wernher von Hartheim, Lord Konrad von Rosenberg, and Gotfried Steigerwald. With a seal.",
+      "mention": [
+        {
+          "person": "Konrad von Hohenlohe"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Konrad von Rosenberg",
+          "type": "generic",
+          "content": "witnessed Rudolf von Wertheim’s donation to the Teutonic House in Nürnberg of property and feudal lordship at Obereschenbach and property in the district of Wotzendorff."
+        }
+      ]
+    }
+  ]
+}

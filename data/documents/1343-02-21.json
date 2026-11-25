@@ -127,6 +127,61 @@
           "content": "stood surety for Konrad Lengenfelder von Rosenberg, in the sale of his farm at Pfeffershoven to Abbot Herman of Kastel."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 7",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11443026",
+      "german": "Cunrad der Lengenvelder von Rosenberg verkauft dem Kloster zu Kastl seinen Hof zu\nPfeffershoven, um hundert fünf und vierzig Pfund Häller. Bürgen: des Lengenvelders Vetter:\nH. Rudger der Smid von Pfaffenhoven, H. Heinrich der Truchsess von Holnstein, Friedrich\nder Frank von Rosenberg, Cunrads Oheim, Wernher der Kegelheimer, Hartung der Swepfer-\nmann von Pfaffenhoven. G. an S. Peters- Abend vor Vasnacht. (c. 6 S.)",
+      "english": "Konrad der Lengenvelder von Rosenberg sells his farm at Pfeffershoven to Kastl Abbey for 145 pounds Heller. Sureties: the Lengenvelder’s Vetter, Lord Rudger der Smid von Pfaffenhoven; Lord Heinrich der Truchsess von Holnstein; Friedrich der Frank von Rosenberg, Konrad’s Oheim; Wernher der Kegelheimer; and Hartung der Swepfermann von Pfaffenhoven. Given on St. Peter’s Eve before Shrovetide. With six seals.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Konrad der Lengenvelder von Rosenberg",
+          "type": "generic",
+          "content": "sold his farm at Pfeffershoven to Kastl Abbey."
+        },
+        {
+          "person": "Rudger der Smid von Pfaffenhoven",
+          "type": "kin",
+          "of": "Konrad der Lengenvelder von Rosenberg",
+          "term": "Vetter"
+        },
+        {
+          "person": "Friedrich der Frank von Rosenberg",
+          "type": "kin",
+          "of": "Konrad der Lengenvelder von Rosenberg",
+          "term": "Oheim"
+        },
+        {
+          "person": "Rudger der Smid von Pfaffenhoven",
+          "type": "generic",
+          "content": "stood surety for Konrad der Lengenvelder von Rosenberg’s sale of his farm at Pfeffershoven to Kastl Abbey."
+        },
+        {
+          "person": "Heinrich der Truchsess von Holnstein",
+          "type": "generic",
+          "content": "stood surety for Konrad der Lengenvelder von Rosenberg’s sale of his farm at Pfeffershoven to Kastl Abbey."
+        },
+        {
+          "person": "Friedrich der Frank von Rosenberg",
+          "type": "generic",
+          "content": "stood surety for Konrad der Lengenvelder von Rosenberg’s sale of his farm at Pfeffershoven to Kastl Abbey."
+        },
+        {
+          "person": "Wernher der Kegelheimer",
+          "type": "generic",
+          "content": "stood surety for Konrad der Lengenvelder von Rosenberg’s sale of his farm at Pfeffershoven to Kastl Abbey."
+        },
+        {
+          "person": "Hartung der Swepfermann von Pfaffenhoven",
+          "type": "generic",
+          "content": "stood surety for Konrad der Lengenvelder von Rosenberg’s sale of his farm at Pfeffershoven to Kastl Abbey."
+        }
+      ]
     }
   ]
 }

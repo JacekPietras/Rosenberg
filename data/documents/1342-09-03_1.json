@@ -7,7 +7,8 @@
       "source": "Regesta Boica 7",
       "url": [
         "https://books.google.pl/books?id=xNpCAAAAcAAJ&pg=PA343",
-        "https://www.ingrossaturbuecher.de/id/source/25610"
+        "https://www.ingrossaturbuecher.de/id/source/25610",
+        "https://www.digitale-sammlungen.de/en/view/bsb11443026"
       ],
       "latin": "Ebirhardus de Rosenberg miles et advocatus in Durne testatur se una cum Heinrico Bavaro notario domini Moguntini et aliis amicis ejus in die placiti ex parte domini Moguntini cum Ruperto duce Bawariae in Bensheim 30 solidos hallenses expendisse per Jacobum cellerarium in Starkenberg solvendos. D. Benzheim feria tertia post diem decollationis Joh. Baptistae. *Ego EBIRHARDUS de Rofenberg miles, Advocatus in Durne, recognofco publice in hiis fcriptis, quod ego una cum HEINRICO Bawar. Notario Domini mei Moguntini & aliis amicis ejusdem mei Domini, feria tercia poft diem decollacionis beati Johannis baptifte, cum diem placiti ex parte dicti Domini Moguntini cum amicis illuftris Principis Domini RUPERTI Ducis Bawa-rie in Bensheim tenuimus, triginta folidos hall. expendimus, quam pecuniam JACOBUS Cellerarius in Starkenberg pro nobis folvere tenetur. Datum Bensheim feria tercia predicta. Anno Domini MCCCXLII.*",
       "english": "Eberhard von Rosenberg, Ritter, Vogt zu Dürn, testifies that he, together with Heinrich Bavar, notary of the lord of Mainz, and his other friends, on the day of the hearing on behalf of the lord of Mainz with Ruprecht, duke of Bavaria, in Bensheim, had spent 30 Hallenses shillings, to be paid by Jacob, the cellarer in Starkenberg. Given at Bensheim on the Tuesday after the day of the beheading of John the Baptist.",
@@ -33,7 +34,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was owed the meeting expenses by Jakob, the cellarer at Starkenburg."
+          "content": "had meeting expenses that Jakob, the cellarer at Starkenberg, was to pay on behalf of him and his companions."
         }
       ]
     },
@@ -64,7 +65,7 @@
             "Vogt zu Dürn"
           ],
           "type": "generic",
-          "content": "was to be paid 30 shillings Heller by Jakob, the cellarer at Starkenburg, for the meeting expenses."
+          "content": "had meeting expenses that Jakob, the cellarer at Starkenburg, was to pay on his behalf."
         }
       ]
     }

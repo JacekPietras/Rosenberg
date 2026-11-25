@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, E-Laden, Akten 253",
-      "url": "https://www.gda.bayern.de/gvl/document/b04dfa5a-91d7-4c36-a1cc-c7f56327a9d5",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/b04dfa5a-91d7-4c36-a1cc-c7f56327a9d5",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++23DB7CB1-CB31-412D-920E-0BE3FAB0A8D5&parent_id="
+      ],
       "german": "Zeisolf von Rosenberg begehrt Abschrift, in welcher Form sich Ritter Albrecht von Rosenberg mit dem Nürnberger Rat verglichen hat",
       "english": "Zaisolph von Rosenberg requests a copy stating the form in which Knight Albrecht von Rosenberg reached a settlement with the Nuremberg council.",
       "mention": [

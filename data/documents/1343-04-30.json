@@ -162,6 +162,47 @@
           "content": "witnessed the sale of the farm at Obernhag."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 7",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11443026",
+      "german": "Cunrad der Stainlinger und Heinrich der Stainlinger Richter zu Sulzbach, Brüder, ver-\nkaufen dem H. Heinrich von Rarenstatt um 61 Pfd. und 20 Pfge. je 3 Häller für einen Pfg.\nihren Hof zu Obernhag genannt ze Oberhof, und dazu zwei Lehen die in denselben Hof ge-\nhören. Bürgen: H. Friedrich Vogt von Rosenberg, Cunrad der Scharpfenberger von Ursen-\nsolen, Hermann der Amertaler. G. an S. Philippi und Jacobs Abend. (c. 4 S.)",
+      "english": "Konrad der Stainlinger and his brother Heinrich der Stainlinger, judge at Sulzbach, sell to Heinrich von Rarenstatt their farm at Obernhag, called Oberhof, together with two fiefs belonging to it, for 61 pounds and 20 pennies, at three Heller to a penny. Sureties: Lord Friedrich von Rosenberg, Vogt; Konrad der Scharpfenberger von Ursensolen; and Herman der Amertaler. Given on the eve of Saints Philip and James. With four seals.",
+      "facts": [
+        {
+          "person": "Konrad Stainlinger",
+          "type": "sibling",
+          "of": "Heinrich Stainlinger"
+        },
+        {
+          "person": "Konrad Stainlinger",
+          "type": "generic",
+          "content": "sold the farm at Obernhag called Oberhof and two associated fiefs to Heinrich von Rarenstatt."
+        },
+        {
+          "person": "Heinrich Stainlinger",
+          "type": "generic",
+          "content": "sold the farm at Obernhag called Oberhof and two associated fiefs to Heinrich von Rarenstatt."
+        },
+        {
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "Vogt"
+          ],
+          "type": "generic",
+          "content": "stood surety for the sale of the farm at Obernhag and its two fiefs to Heinrich von Rarenstatt."
+        },
+        {
+          "person": "Konrad der Scharpfenberger von Ursensolen",
+          "type": "generic",
+          "content": "stood surety for the sale of the farm at Obernhag and its two fiefs to Heinrich von Rarenstatt."
+        },
+        {
+          "person": "Herman der Amertaler",
+          "type": "generic",
+          "content": "stood surety for the sale of the farm at Obernhag and its two fiefs to Heinrich von Rarenstatt."
+        }
+      ]
     }
   ]
 }

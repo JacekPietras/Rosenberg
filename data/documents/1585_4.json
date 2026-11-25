@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Eichstätter Archivalien 4692",
-      "url": "https://www.gda.bayern.de/gvl/document/6c18a804-3e83-45f4-8ad0-50f303bcac47",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/6c18a804-3e83-45f4-8ad0-50f303bcac47",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++16A35A43-9C7A-4BB5-81F4-D0043ED7E1F5&parent_id="
+      ],
       "german": "Beschreibung des (als eichstättisches Lehen 1585 heimgefallenen) Rittergutes Jettenhofen\n\nEnthält-/Darin-Vermerke: Abschriften von Güterbeschreibungen und Zinsregistern Verzeichnis der Wechsel der Inhaber des Rittergutes 1375-1585 Abschrift eines im Jahr 1530 beim Verkauf des Rittergutes Jettenhofen an Johann Sebastian, Walter Rudolf und Hieronymus von Hürnheim durch Konz und Philipp von Rosenberg angefertigten Salbuches",
       "english": "Description of the Jettenhofen manor (which reverted as an Eichstätt fief in 1585)\n\nContains: Copies of property descriptions and rent registers; list of changes in the holders of the manor, 1375–1585; copy of a rent book prepared in 1530, when the Jettenhofen manor was sold to Johann Sebastian, Walter Rudolf, and Hieronymus von Hürnheim by Konz and Philipp von Rosenberg.",
       "mention": [

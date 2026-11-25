@@ -1,0 +1,29 @@
+{
+  "date": "1329-09-02",
+  "label": "Schenk",
+  "entries": [
+    {
+      "source": "Regesta Boica 6",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10799645",
+      "latin": "Wolframus episcopus herbipolensis capellae in oppido Ippehoven St. Martini quinque ju-\ngera vinearum in montibus dictis Stuken, Geyersperg, in den Buchen sita et curiam sitam in\noppido Ippehoven, a Wolframo pincerna de Rosenberg archidiacono ecclesiae herbipolensis ad\neam donata pro sustentatione sacerdotis confirmat. Dat. sabbato post diem St. Egidi.",
+      "english": "Wolfram, Bischof zu Würzburg, confirms for St. Martin’s Chapel in the town of Ippehoven five acres of vineyards on the hills called Stuken, Geyersperg and in den Buchen, and an estate in the town of Ippehoven. Wolfram Schenk von Rosenberg, archdeacon of the church of Würzburg, had donated them to the chapel for the support of a priest. Given on the Saturday after St. Giles’s Day.",
+      "mention": [
+        {
+          "person": "Bischof Wolfram",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Wolfram Schenk von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
+    }
+  ]
+}
