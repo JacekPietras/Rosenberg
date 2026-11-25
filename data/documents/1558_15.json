@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Konsistorialakten) - Systematisches Repertorium 2083/fol. 325",
-      "url": "https://www.gda.bayern.de/gvl/document/1adbe5e9-0e8f-4018-a859-552240ccbeda",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1adbe5e9-0e8f-4018-a859-552240ccbeda",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++cbe3af9e-bc42-4a4e-bf3d-2d85c164d6c5&parent_id="
+      ],
       "german": "Albrecht von Rosenberg an Rothenburg (Annahme des Rothenburger Prädikanten Conrad Hochmut zu einem Prediger in Boxberg)",
       "english": "Albrecht von Rosenberg to Rothenburg (acceptance of Rothenburg’s preacher Conrad Hochmut as a preacher in Boxberg).",
       "mention": [

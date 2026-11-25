@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Lehensachen 4344",
-      "url": "https://www.gda.bayern.de/gvl/document/ec64f2fe-e60e-4d1c-83e8-8d5f0b2b000d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/ec64f2fe-e60e-4d1c-83e8-8d5f0b2b000d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++11E97AB4-A2B5-41DE-9429-E0ECD544D225&parent_id="
+      ],
       "german": "Akt der Würzburger geheimen Kanzlei, betrifft die Bitte des Christoph von Massbach, seiner Frau Eva von Rosenberg, die Abnutzung auf Lebenszeit an seinem Zehntteil zu Gochsheim zu bewilligen",
       "english": "Record of the Würzburg secret chancery concerning Christoph von Massbach’s request that his wife Eva von Rosenberg be granted lifetime use of his share of the tithe at Gochsheim.",
       "mention": [
