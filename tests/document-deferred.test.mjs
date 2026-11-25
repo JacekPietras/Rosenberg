@@ -31,3 +31,19 @@ test('document details are rendered only when a card is hydrated', () => {
   renderer.renderDocumentWithPersonLinks(doc, path, 0);
   assert.equal(factQueries, 1);
 });
+
+
+test('Split appears for three distinct four-digit years in English entries', () => {
+  const state = { active: 'documents', canEditDocuments: true, places: [] };
+  const renderer = createDocumentRenderer({
+    state, formatDate: String, escapeHtml: String, markdownLinks: String, inlineMarkup: String,
+    urlMarkup: String, languageMarkup: () => '', treeMarkup: String, imageMarkup: String,
+    diagramMarkup: String, entryAnchor: () => 'entry', entryHasSource: () => true,
+    documentTitle: () => 'Title', documentYear: () => null, getPeople: () => [], distinctFamilies: new Set(),
+  });
+  const render = (entries) => renderer.renderDocument({ entries }, 'data/documents/example.json', 0);
+  assert.ok(render([{ english: '1400, 1401 and 1400' }, { english: '1402' }]).includes('data-split-document'));
+  assert.ok(!render([{ english: '1400, 1400 and 1401; 12345', german: '1402' }]).includes('data-split-document'));
+  state.canEditDocuments = false;
+  assert.ok(!render([{ english: '1400 1401 1402' }]).includes('data-split-document'));
+});

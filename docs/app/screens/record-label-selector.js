@@ -55,6 +55,29 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
       return;
     }
 
+    const splitButton = event.target.closest('[data-split-document]');
+    if (splitButton) {
+      const path = splitButton.dataset.splitDocument;
+      const doc = state.documents.get(path);
+      if (!doc || !state.canEditDocuments || !path.startsWith('data/documents/')) return;
+      const labels = labelsFor(doc);
+      if (labels.some((label) => label.toLocaleLowerCase() === 'split')) return;
+      const updated = { ...doc, label: [...labels, 'Split'] };
+      const status = splitButton.closest('.document-heading-aside')?.querySelector('.record-delete-status');
+      splitButton.disabled = true;
+      if (status) status.textContent = 'Saving…';
+      try {
+        const result = await repository.saveDocument(path, updated);
+        state.documents.set(path, updated);
+        markSaved(path, result.version);
+        await rerender();
+      } catch (error) {
+        if (status) status.textContent = `Could not save labels: ${error.message}`;
+        splitButton.disabled = false;
+      }
+      return;
+    }
+
     const deleteDocumentButton = event.target.closest('[data-delete-document]');
     if (deleteDocumentButton) {
       const path = deleteDocumentButton.dataset.deleteDocument;

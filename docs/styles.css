@@ -143,6 +143,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .review-name-labels .record-label.is-title-match { background: #668578; }
 .review-name-labels .record-label.is-outside-document-date { opacity: .5; }
 .record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.record-split { padding: .2rem .5rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.record-split:hover, .record-split:focus-visible { color: var(--accent); background: var(--surface-raised); }
+.record-split:disabled { opacity: .55; cursor: wait; }
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
 .record-label-edit.record-delete:hover, .record-label-edit.record-delete:focus-visible { color: #d14343; }
 .record-label-edit:disabled { opacity: .55; cursor: wait; }
