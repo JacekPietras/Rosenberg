@@ -149,9 +149,12 @@ class LandesarchivSearchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             documents = root / 'data/documents'
-            documents.mkdir(parents=True)
+            deleted = documents / 'deleted'
+            deleted.mkdir(parents=True)
             (documents / 'test.json').write_text(json.dumps({'entries': [
                 {'source': ['Other', 'Known citation']},
+            ]}))
+            (deleted / 'archived.json').write_text(json.dumps({'entries': [
                 {'url': ['https://example.org/', 'http://www.landesarchiv-bw.de/plink/?f=4-22']},
                 {'url': 'https://www2.landesarchiv-bw.de/ofs21/olf/druckansicht.php?bestand=123&id_titlaufn=33'},
             ]}))
