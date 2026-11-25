@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Historica 196",
-      "url": "https://www.gda.bayern.de/gvl/document/54d533dd-6a7e-4927-a54e-5c829d90ffc6",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/54d533dd-6a7e-4927-a54e-5c829d90ffc6",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++CCA035A8-D3BF-45C2-BFB1-CD207F03451B&parent_id="
+      ],
       "german": "Berlichingen und Rosenberg: Ein Streit zwischen Conrad von Berlichingen und Jörg von Rosenberg\n\nEnthält-/Darin-Vermerke: Hinweis: Siehe Felix Priebatsch: Politische Correspondenz des Kurfürsten Albrecht Achilles, Leipzig 1898, Nr. 987, S. 284f.",
       "english": "Berlichingen and Rosenberg: A dispute between Konrad von Berlichingen and Georg von Rosenberg",
       "mention": [

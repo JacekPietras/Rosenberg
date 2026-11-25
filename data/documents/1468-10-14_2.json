@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "BayHStA, Hochstift Passau Urkunden 2175",
-      "url": "https://www.gda.bayern.de/gvl/document/4a0330d1-ffa8-4ef6-89b0-1bed03d92a8b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/4a0330d1-ffa8-4ef6-89b0-1bed03d92a8b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++157BFCEA-19C0-4454-8D90-94C3F0071269&parent_id="
+      ],
       "german": "Propst Johannes zu St. Nikola in Passau transsumiert eine Urkunde des Grafen Heinrich von Ortenburg vom 11. April 1251, eine Urkunde des Grafen Etzel von Ortenburg vom 25. März 1418, eine Urkunde des Peter von Rosenberg vom 11. September 1341 u. eine Urkunde des Ulrich von Rosenberg vom 14. Dezember 1418. - S:  A: Signet u. Unterschrift des Notars Johannes Zinner von Neumarkt [in der Oberpfalz]",
       "english": "Provost Johannes of St Nicholas at Passau authenticates a charter of Count Heinrich von Ortenburg dated 11 April 1251, a charter of Count Etzel von Ortenburg dated 25 March 1418, a charter of Peter von Rosenberg dated 11 September 1341, and a charter of Ulrich von Rosenberg dated 14 December 1418. — Seal: A. Notarial sign and signature of Johannes Zinner of Neumarkt [in the Upper Palatinate].",
       "mention": [

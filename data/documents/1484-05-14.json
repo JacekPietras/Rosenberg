@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Urkunden (HV) Urkunden 622",
-      "url": "https://www.gda.bayern.de/gvl/document/d1dce3ab-d2c6-43f1-aff1-2183c94cd82d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/d1dce3ab-d2c6-43f1-aff1-2183c94cd82d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++209944ac-aec5-4e24-893c-f1240b2bfff2&parent_id="
+      ],
       "german": "Bernhard und Fritz von Wichsenstein, Brüder, verzichten für sich und für Hartung von Egloffstein zum Hertenstein auf alle Ansprüche gegen das Hochstift Würzburg, nachdem sie von Bischof Rudolf von Würzburg den durch Tod des Ludwig Mönch von Rosenberg erledigten Sitz zu Hainstadt als Lehen empfangen haben.",
       "english": "Bernhard and Fritz von Wichsenstein, brothers, renounce on their own behalf and on behalf of Hartung von Egloffstein zum Hertenstein all claims against the Bishopric of Würzburg, after receiving as a fief from Rudolf, Bischof von Würzburg, the fief property at Hainstadt that had fallen vacant upon the death of Ludwig Mönch von Rosenberg.",
       "mention": [

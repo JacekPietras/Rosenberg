@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StACo, LA B 2664",
-      "url": "https://www.gda.bayern.de/gvl/document/851aa74d-b5e8-48f9-9306-46f7de01d42b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/851aa74d-b5e8-48f9-9306-46f7de01d42b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f039eb6c-6efe-456c-b17f-9119152ce5c5&parent_id="
+      ],
       "german": "Die von Georg Arnold und Friedrich von Rosenberg wider Bischof Rudolph von Würzburg verübte Fehde betr.",
       "english": "Concerning the feud carried out by Georg Arnold von Rosenberg and Friedrich von Rosenberg against Rudolf zu Würzburg, Bischof.",
       "mention": [
