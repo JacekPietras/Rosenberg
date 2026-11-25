@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Rentamt Karlstadt (Bände) 204",
-      "url": "https://www.gda.bayern.de/gvl/document/e05b010b-47e5-4d35-aff5-55dc1bb8ce5b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/e05b010b-47e5-4d35-aff5-55dc1bb8ce5b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++21E39094-87A4-4010-A6F3-432FB39AAB7A&parent_id="
+      ],
       "german": "Zins- und Gültbuch über die den Herren von Thüngen zustehenden Gefälle zu Thüngen, Binsfeld, Stetten (mit einer Beschreibung der von Thüngen'schen Gerechtigkeit zu Stetten), Retzstadt. Siehe Limburg (Lehen); auch von Rosenberg und Hatzfeld"
     }
   ]
