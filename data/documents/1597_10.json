@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Würzburger Archivalien 2796",
-      "url": "https://www.gda.bayern.de/gvl/document/1f957257-9ba2-42fa-bc58-b2f203f41945",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1f957257-9ba2-42fa-bc58-b2f203f41945",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1076086A-D953-43E7-9926-F7FAEBEF16A4&parent_id="
+      ],
       "german": "Abschrift eines Teilungsregisters und Anschlages über Haltenbergstetten nebst zugehörigen Dörfern nach dem zwischen den Gebrüdern von Rosenberg getroffenen Vergleich von 1597",
       "english": "Copy of a division register and assessment of Haltenbergstetten and its associated villages, following the agreement reached between the brothers von Rosenberg in 1597.",
       "mention": [

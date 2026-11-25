@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Mainzer Regierungsarchiv Würzburg 294/568",
-      "url": "https://www.gda.bayern.de/gvl/document/86e76d71-484b-44c6-b285-40349ed4aa8c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/86e76d71-484b-44c6-b285-40349ed4aa8c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D57B2E61-1253-4A70-B0F8-EA93C3628EFA&parent_id="
+      ],
       "german": "Verabfolgung beschlagnamter Gelder an den entwichenen Konventualen Friedrich Miltenberger des Klosters Triefenstein seitens des Amtmanns zu Bischofsheim, dann auch die dem Kloster Bronnbach vorenthaltenen Gefälle zu Kupprichhausen durch die Kurmainzer Lehensleute von Rosenberg",
       "english": "Delivery of confiscated funds to Friedrich Miltenberger, a fugitive conventual of Triefenstein Abbey, by the official at Bischofsheim; also, revenues withheld from Bronnbach Abbey at Kupprichhausen by Kurmainz's vassals von Rosenberg.",
       "mention": [

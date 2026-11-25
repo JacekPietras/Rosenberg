@@ -42,6 +42,24 @@
           "person": "Rudolf von Wart"
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 8, p. 323",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11697672",
+      "latin": "Idem civibus Ratisponensibus facultatem ut Vngeltum perpetuo duraturum de universis\nmercimoniis, vino, pane, medone, blado, et aliis victualibus cuiuscunque generis imponere va-\nleant, indulget. Testes: Arnestus archiepiscopus Pragensis, Johannes Olomucensis, Johannes\nmperialis aulae cancellarius, Luthomuschlen. Episcopi, Meinhardus electus Tridentinus, ac Illus-\nres Johannes Oppauie et Ratibor, et Bolko Falkenbergen. duces, nec non spectabiles Burghardus\nMagister curiae, ac Johannes Magdeburgen. et Albertus de Anhalt comites, et nobiles Busco de\nWilhartig, Magister Camerae, Johannes de Rosenberg, Sdenco de Sternberg. Rudolfus de Warta,\nHeinricus de Novadomo, Heinricus de Hakcemberg, et Heinricus Bauarus de Bopardia. D. ib.\net eod. d.",
+      "english": "The same grants the citizens of Regensburg perpetual authority to levy an Ungelt on all merchandise, wine, bread, mead, grain and other provisions of every kind. Witnesses: Arnestus, Erzbischof zu Prag; Johannes, Bischof zu Olmütz; Johannes, imperial court chancellor and Bischof zu Leitomischl; Meinhard, bishop-elect of Trent; Johann, Herzog von Troppau und Ratibor; Bolko, Herzog von Falkenberg; Burghard, court steward; Johann von Magdeburg and Albrecht von Anhalt, counts; and the noblemen Busco von Wilhartig, chamberlain; Hans von Rosenberg; Sdenco von Sternberg; Rudolf von Warta; Heinrich von Novadomo; Heinrich von Hakcemberg; and Heinrich Bauarus von Bopardia. Given at the same place and on the same day.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "witnessed the grant to the citizens of Regensburg of a perpetual right to levy an Ungelt on merchandise and provisions."
+        }
+      ]
     }
   ]
 }

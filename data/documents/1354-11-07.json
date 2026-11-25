@@ -104,6 +104,49 @@
           "content": "received the castle and office of Wildenberg until the archbishop repaid the 700 guilders he had paid to redeem the pledged assets."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 8",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11697672",
+      "german": "Gerlach Erzbischof zu Mainz befiehlt dem Conrad Rude Burggraf zu Starkenberg das Haus\nund Amt zu Wildenberg so lange bis derselbe die 700 Gulden empfangen haben wird, um wel-\nche er die vom Stift Mainz an Eberhart von Rosenberg verpfändeten Leute und Güter auf dem\nOdenwalde gelöst hat. G. am Freitag vor Martins Tag.",
+      "english": "Gerlach, Erzbischof zu Mainz, entrusts the house and office of Wildenberg to Konrad Rude, Burggraf zu Starkenberg, until he has received the 700 gulden for which he redeemed the people and property in the Odenwald that the Mainz foundation had pledged to Eberhard von Rosenberg. Given on the Friday before St. Martin’s Day.",
+      "mention": [
+        {
+          "person": "Erzbischof Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "wildenberg-castle"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "held people and property in the Odenwald as a pledge from the Mainz foundation."
+        },
+        {
+          "person": "Konrad Rüd",
+          "personTitle": [
+            "Burggraf zu Starkenberg"
+          ],
+          "type": "generic",
+          "content": "redeemed people and property in the Odenwald that the Mainz foundation had pledged to Eberhard von Rosenberg."
+        },
+        {
+          "person": "Konrad Rüd",
+          "personTitle": [
+            "Burggraf zu Starkenberg"
+          ],
+          "type": "generic",
+          "content": "was entrusted with the house and office of Wildenberg by Archbishop Gerlach of Mainz until he received payment for redeeming the people and property pledged to Eberhard von Rosenberg."
+        }
+      ]
     }
   ]
 }

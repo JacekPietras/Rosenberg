@@ -15,6 +15,15 @@
       "english": "Konrad Lengenfelder von Rosenberg, with the consent of his wife Jeute, sold his farm in Pfeffershoven(1) to Abbot Herman of Chastel for 145 pounds h as free property. Guarantors with obligation to perform in Sultzbach or Chastel: H. Rüdger the Smid of Pfaffenhoven, cousin of the issuer; H. Heinrich the Truchsezz of Holnstain; Fridrich the Franch von Rosenberg, uncle of the issuer; Wernher the Kegelhaimer; Hartung the Swepferman of Pfaffenhoven. Ms.: the guarantors.",
       "mention": [
         {
+          "person": "Herman",
+          "personTitle": [
+            "Abt zu Kastl"
+          ]
+        },
+        {
+          "place": "kastl-oberpfalz"
+        },
+        {
           "place": "rosenberg-town"
         }
       ],
@@ -134,6 +143,9 @@
       "german": "Cunrad der Lengenvelder von Rosenberg verkauft dem Kloster zu Kastl seinen Hof zu\nPfeffershoven, um hundert fünf und vierzig Pfund Häller. Bürgen: des Lengenvelders Vetter:\nH. Rudger der Smid von Pfaffenhoven, H. Heinrich der Truchsess von Holnstein, Friedrich\nder Frank von Rosenberg, Cunrads Oheim, Wernher der Kegelheimer, Hartung der Swepfer-\nmann von Pfaffenhoven. G. an S. Peters- Abend vor Vasnacht. (c. 6 S.)",
       "english": "Konrad der Lengenvelder von Rosenberg sells his farm at Pfeffershoven to Kastl Abbey for 145 pounds Heller. Sureties: the Lengenvelder’s Vetter, Lord Rudger der Smid von Pfaffenhoven; Lord Heinrich der Truchsess von Holnstein; Friedrich der Frank von Rosenberg, Konrad’s Oheim; Wernher der Kegelheimer; and Hartung der Swepfermann von Pfaffenhoven. Given on St. Peter’s Eve before Shrovetide. With six seals.",
       "mention": [
+        {
+          "place": "kastl-oberpfalz"
+        },
         {
           "place": "rosenberg-town"
         }

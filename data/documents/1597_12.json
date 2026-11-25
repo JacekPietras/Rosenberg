@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Kammer- und Landschaftskollegium Ansbach",
-      "url": "https://www.gda.bayern.de/gvl/document/e5ac501b-a654-4a30-b0f6-50338255f051",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/e5ac501b-a654-4a30-b0f6-50338255f051",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5DCF4802-92F6-4BFD-B867-4C84558047E6&parent_id="
+      ],
       "german": "Verkauf des Anteils am Groß- und Kleinzehnten zu Unter- und Oberschüpf und von Zinsen zu Sachsenflur an Georg Sigmund von Rosenberg zu Haltermannstetten (= Haltenbergstetten)",
       "english": "Sale to Georg Siegmund von Rosenberg zu Haltermannstetten (= Haltenbergstetten) of a share in the major and minor tithes at Unter- and Oberschüpf and of rents at Sachsenflur.",
       "mention": [

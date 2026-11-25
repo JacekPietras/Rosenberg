@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Administrativakten 18562",
-      "url": "https://www.gda.bayern.de/gvl/document/1853b499-3db3-4cf3-9317-8c4be4486960",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1853b499-3db3-4cf3-9317-8c4be4486960",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++15E18D4B-F810-473C-8075-AC6D3549F5F5&parent_id="
+      ],
       "german": "Klage des Hochstiftes Würzburg und des Klosters Bronnbach (Brunbach) gegen das Erzstift Mainz, dessen Beamte zu Bischofsheim und Krautheim und Conrad von Rosenberg zu Unterschüpf wegen Verhaftung von Untertanen des genannten Klosters zu Kupprichhausen an dem Ort Bischofsheim und zwar aus Grund der verweigerten Frohndienstleistung",
       "english": "Lawsuit by the High Foundation of Würzburg and Bronnbach Abbey against the Archbishopric of Mainz, its officials at Bischofsheim and Krautheim, and Konrad von Rosenberg zu Unterschüpf, concerning the arrest of subjects of the said abbey at Kupprichhausen in Bischofsheim, on the grounds that they had refused to perform compulsory labor.",
       "mention": [

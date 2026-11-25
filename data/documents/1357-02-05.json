@@ -94,6 +94,59 @@
           "content": "stood surety for Friedrich Voit von Rosenberg, in the sale of two hides at Eckersfeld to Erhart Löhlein of Sulzbach."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 8",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11697672",
+      "german": "Friedrich Voit von Rosenberg verkauft mit Einstimmung seiner Hausfrau Lanet, seiner\nMutter Frau Elspeth der Voitinn zu Rosenberg, und Jungfrau Elspeth ihrer Enkelinn, zwey\nfreyeigne Huben zu Ekkersvelt um zwey und vierzig Pfund Haller und um ein und zwanzig\nGulden an Erhart den Löhlein zu Sulzbach, unter Bürgschaft Chunrad des Lengenfelders zu\nRosenberg, Herwig des Oerlheimers zu Oerelheim und Jörg des jungen Voit zu Rosenberg. G.\nam nehsten Suntag vor sand Dorotheen tag der heiligen Junkfrawen. (c. 3 S.)",
+      "english": "Friedrich Voit von Rosenberg, with the consent of his wife Lanet, his mother Elisabeth Voit von Rosenberg, and Jungfrau Elisabeth, her granddaughter, sells two freehold holdings at Ekkersvelt to Erhart Löhlein of Sulzbach for 42 pounds Heller and 21 gulden. Sureties: Konrad Lengenfelder von Rosenberg, Herwig der Oerlheimer zu Oerelheim, and Georg Voit von Rosenberg der Junge. Given on the Sunday before St. Dorothea’s Day. With three seals.",
+      "facts": [
+        {
+          "person": "Friedrich Voit von Rosenberg",
+          "type": "spouse",
+          "of": "Lanet"
+        },
+        {
+          "person": "Elisabeth Voit von Rosenberg",
+          "type": "parent",
+          "of": "Friedrich Voit von Rosenberg"
+        },
+        {
+          "person": "Elisabeth",
+          "personTitle": [
+            "Jungfrau"
+          ],
+          "type": "kin",
+          "of": "Elisabeth Voit von Rosenberg",
+          "term": "Enkelinn"
+        },
+        {
+          "person": "Friedrich Voit von Rosenberg",
+          "type": "generic",
+          "content": "sold two freehold holdings at Ekkersvelt to Erhart Löhlein of Sulzbach, with the consent of his wife Lanet, his mother Elisabeth Voit von Rosenberg, and her granddaughter Elisabeth."
+        },
+        {
+          "person": "Konrad Lengenfelder von Rosenberg",
+          "type": "generic",
+          "content": "stood surety for Friedrich Voit von Rosenberg’s sale of two holdings at Ekkersvelt to Erhart Löhlein of Sulzbach."
+        },
+        {
+          "person": "Herwig der Oerlheimer",
+          "personTitle": [
+            "zu Oerelheim"
+          ],
+          "type": "generic",
+          "content": "stood surety for Friedrich Voit von Rosenberg’s sale of two holdings at Ekkersvelt to Erhart Löhlein of Sulzbach."
+        },
+        {
+          "person": "Georg Voit von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ],
+          "type": "generic",
+          "content": "stood surety for Friedrich Voit von Rosenberg’s sale of two holdings at Ekkersvelt to Erhart Löhlein of Sulzbach."
+        }
+      ]
     }
   ]
 }

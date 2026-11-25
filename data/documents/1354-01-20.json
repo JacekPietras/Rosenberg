@@ -1,12 +1,16 @@
 {
   "date": "1354-01-20",
+  "place": "Mildenberg",
   "label": "Franken",
   "entries": [
     {
       "source": "Regesta Boica 8",
-      "url": "https://books.google.pl/books?id=ocH2k6G6Xi4C&pg=PA288",
+      "url": [
+        "https://books.google.pl/books?id=ocH2k6G6Xi4C&pg=PA288",
+        "https://www.digitale-sammlungen.de/en/view/bsb11697672"
+      ],
       "german": "Adolf und Johan Grafen zu Nassaw, Gebrüder, Vlrich Herr zu Hanowe, Conrad Rude Ritter, Burggraf zu Starkenberg, bekennen, dass Herr Gerlach Ertzbischof zu Mentz und der strenge Ritter Herr Eberhard von Rosenberg die edeln Leute Grafen Rud. von Wertheim, Herrn Conrad von Pykenbach den eltern, und Schenk Conrad von Erpach gekoren haben, die Schuldbriefe zu untersuchen, die der vorgenannte Eberhard von dem Kapitel zu Mentz zu haben vermisset. G. zu Mildenberg uf Fabianus und Sebastianus tag. (c. 4 S.)",
-      "english": "Adolf and Hans, Counts of Nassau, brothers; Ulrich, Lord of Hanau; Konrad Rude, Ritter, Burggraf zu Starkenberg, acknowledge that Lord Gerlach, Archbishop of Mainz, and the stern Eberhard von Rosenberg, Ritter have chosen the noble men Count Rudolf von Wertheim, Lord Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt certificates which the aforementioned Eberhard claims are due to him from the Chapter of Mainz. Given at Mildenberg on the day of Fabian and Sebastian. (Citation: c. 4 S.)",
+      "english": "Adolf and Hans, Counts of Nassau, brothers; Ulrich, Lord of Hanau; Konrad Rude, Ritter, Burggraf zu Starkenberg, acknowledge that Lord Gerlach, Archbishop of Mainz, and the stern Eberhard von Rosenberg, Ritter have chosen the noble men Count Rudolf von Wertheim, Lord Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt certificates which the aforementioned Eberhard claims to possess from the Chapter of Mainz. Given at Mildenberg on the day of Fabian and Sebastian. (Citation: c. 4 S.)",
       "mention": [
         {
           "person": "Erzbischof Gerlach",
@@ -47,7 +51,7 @@
             "Ritter"
           ],
           "type": "generic",
-          "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to investigate the debt letters he claimed were owed to him by the Mainz Chapter."
+          "content": "together with Archbishop Gerlach, chose Rudolf von Wertheim, Konrad von Bickenbach der Ältere, and Schenk Konrad von Erbach to examine debt letters he claimed to possess from the Mainz Chapter."
         }
       ]
     },

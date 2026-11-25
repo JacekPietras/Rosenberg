@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, G-Akten 16571",
-      "url": "https://www.gda.bayern.de/gvl/document/1c036841-dd3f-4643-b7b1-4c9e662b02b7",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1c036841-dd3f-4643-b7b1-4c9e662b02b7",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9503CBFD-A460-427A-90EB-CE7E71756B87&parent_id="
+      ],
       "german": "Akten der Würzburger Kanzlei, betrifft Beschwerde des Abtes von Bronnbach über Vertreibung von Klosteruntertanen zu Küpprichshausen durch Albrecht Christoph und Georg, Sigmund von Rosenberg",
       "english": "Würzburg chancery papers concerning the complaint by the Abbot of Bronnbach over the expulsion of monastery subjects at Küpprichshausen by Albrecht Christoph and Georg Siegmund von Rosenberg.",
       "mention": [

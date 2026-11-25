@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Lehenurkunden 4633",
-      "url": "https://www.gda.bayern.de/gvl/document/8fbe64b4-62c7-4439-b028-1cfe7bc96b4f",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/8fbe64b4-62c7-4439-b028-1cfe7bc96b4f",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++c9c50edc-1445-4a30-a2a9-c8ee9fd91e70&parent_id="
+      ],
       "german": "Reversbrief des Albrecht von Rosenberg als Lehenträger der beiden minderjährigen Brüder Georg Albrecht und Philipp Ludwig von Seckendorff (\"Seckendorf\") Aberdar über das Halsgericht und das Dorf Sugenheim, einen Zehnt zu Rüdern, zwei Höfe und ein Söldenhaus zu Hürfeld (\"Hürnfeld\").",
       "english": "Acknowledgment by Albrecht von Rosenberg, acting as feudal representative for the two underage brothers Georg Albrecht and Philipp Ludwig von Seckendorf (‘Seckendorf’) Aberdar, concerning the high court and village of Sugenheim, a tithe at Rüdern, two farms, and a smallholding house at Hürfeld (‘Hürnfeld’).",
       "mention": [

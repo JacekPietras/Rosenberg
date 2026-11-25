@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Würzburger Archivalien 4022",
-      "url": "https://www.gda.bayern.de/gvl/document/e8bd05d0-afed-43f9-a05e-f6dc35449807",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/e8bd05d0-afed-43f9-a05e-f6dc35449807",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5C171AFC-CC84-4491-B4F3-3661D07A257C&parent_id="
+      ],
       "german": "Streitigkeiten zwischen Georg Sigmund von Rosenberg und Graf Georg Friedrich von Hohenlohe bezüglich des Zehnts zu Vorbachzimmern",
       "english": "Disputes between Georg Siegmund von Rosenberg and Count Georg Friedrich von Hohenlohe concerning the tithe at Vorbachzimmern.",
       "mention": [

@@ -2406,5 +2406,62 @@
     "lon": 8.28551,
     "category": "city",
     "description": "Received town rights in 1323 and began building a town wall thereafter. https://www.lambsheim.de/geschichte/sehenswertes/"
+  },
+  {
+    "id": "burg-neufels",
+    "variations": [
+      "Neufels",
+      "Nuwenfels",
+      "Burg Neufels"
+    ],
+    "lat": 49.25,
+    "lon": 9.6208,
+    "category": "castle",
+    "description": "The 1369 agreement concerned the castle of Neufels. https://de.wikisource.org/wiki/Beschreibung_des_Oberamts_Oehringen/Kapitel_B_26 Coordinates: https://arcanetravelar.de/burgen/seite/15/"
+  },
+  {
+    "id": "kastl-oberpfalz",
+    "variations": [
+      "Kastl",
+      "Kastell",
+      "Chastel"
+    ],
+    "lat": 49.3667,
+    "lon": 11.6833,
+    "category": "village",
+    "description": "Kastl received market rights in 1323. https://www.kastl.de/page_1_6.php Coordinates: https://hdbg.eu/gemeinden/index.php/detail?rschl=09371132"
+  },
+  {
+    "id": "unterbuchfeld",
+    "variations": [
+      "Unterbuchfeld",
+      "Niederbuchfeld",
+      "Niederpuchfeld",
+      "Niedernpuchfeld"
+    ],
+    "showOnMap": false,
+    "description": "The municipality identifies Niederbuchfeld with Unterbuchfeld. https://deining.de/gemeinde/orts-und-gemeindeteile/unterbuchfeld/ Coordinates: https://de.wikipedia.org/wiki/Unterbuchfeld"
+  },
+  {
+    "id": "vlctejn-castle",
+    "variations": [
+      "Vlčtejn",
+      "Burg Vlčtejn",
+      "Hrad Vlčtejn"
+    ],
+    "lat": 49.613269,
+    "lon": 13.497181,
+    "category": "castle",
+    "description": "The Wildenstein held by the Bohemian Rosenbergs, distinct from the Bavarian Burg Wildenstein. https://www.rbmonline.cz/portal/book/1450?lpage=150 Coordinates: https://www.burgenwelt.org/tschechien/vletejn/object.php"
+  },
+  {
+    "id": "hals-passau",
+    "variations": [
+      "Hals"
+    ],
+    "lat": 48.588889,
+    "lon": 13.463889,
+    "category": "city",
+    "description": "Hals received town rights in 1376. https://de.wikipedia.org/wiki/Hals_%28Passau%29"
   }
 ]

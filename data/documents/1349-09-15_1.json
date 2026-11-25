@@ -1,10 +1,14 @@
 {
   "date": "1349-09-15",
+  "place": "Amorbach",
   "label": "Franken",
   "entries": [
     {
       "source": "Regesta Boica 8",
-      "url": "https://books.google.pl/books?id=ocH2k6G6Xi4C&pg=PA172",
+      "url": [
+        "https://books.google.pl/books?id=ocH2k6G6Xi4C&pg=PA172",
+        "https://www.digitale-sammlungen.de/en/view/bsb11697672"
+      ],
       "german": "Eberhard von Rosenberg gestattet dem Erzstift Mainz die Wiederablösung der Burg Nagelsberg um vierhundert Pfund Häller. G. zu Amorbach Dinstags nach Exaltationis sanctae Crucis. (c. S.)",
       "english": "Eberhard von Rosenberg permits the Archbishopric of Mainz the redemption of Nagelsberg Castle for four hundred pounds of Heller. Given at Amorbach on the Tuesday after the Exaltation of the Holy Cross. (Citation: c. S.)",
       "mention": [
@@ -17,7 +21,7 @@
       ],
       "facts": [
         {
-          "person": "vogt_zu_Durn",
+          "person": "Eberhard von Rosenberg",
           "type": "generic",
           "content": "permitted the Archbishopric of Mainz to redeem Nagelsberg Castle."
         }

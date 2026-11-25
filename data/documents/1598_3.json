@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Administrativakten 18051",
-      "url": "https://www.gda.bayern.de/gvl/document/590959fb-5bd4-47c5-8948-235bab99d08c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/590959fb-5bd4-47c5-8948-235bab99d08c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++088CA06A-1919-48B7-A498-B47FE2EF3DDE&parent_id="
+      ],
       "german": "Klage des Klosters Brunbach (Bronnbach) gegen das Erzstift Mainz und die Gebrüder von Rosenberg wegen der strittig gemachten Gerechtsamen (Vogtei, Zehnt, Frohnde-, Lehen, Bestellung des Capellans etc. zu Kupprichhausen",
       "english": "Suit by Bronnbach Abbey against the Archbishopric of Mainz and the brothers von Rosenberg concerning disputed rights at Kupprichhausen, including the bailiwick, tithe, labor services, fiefs, and appointment of the chaplain.",
       "mention": [

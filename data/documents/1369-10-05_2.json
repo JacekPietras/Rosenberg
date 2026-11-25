@@ -77,6 +77,54 @@
           "content": "was named among the protectors charged with certifying the debt judgment against Gerlach von Hohenloch’s properties."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 9, p. 224",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
+      "german": "Heinrich Spiezz, Rihter zu Rotenburg, setzt Bertholt Holtschuher und Dietrich Goltsmit, Burger zu Rotenburg in Nuczgewere auf alle die Gute die da hat Herr Gerlach von Hohenloch, mit Namen auf die Vesten Entse, Landspurg, Frankenburg, Vffenheim, auf die drei Tagsteten, Birkenfels, Tottenhein, beide Nezzelbach, beide Westhein, Sawenshein, Bullenhein, Yppenshein, Kitzingen, Awe, Geilingshein, Jagsperg, auf obern und nidern Luden, und auf alle Leute, Gute und Gilte die darzu gehören, um hundert Mark lotiges Silbers und um den Schaden, wann sie die Anleit darauf ersezzen und erzeugt haben. Zu Schirmern gibt er die erwirdigen Fürsten und Herren Gerlach Ertzbischof zu Meintze, Albreht Bischoff zu Wirtzburg, Hertzog Ruppreht den Eltern und Hertzog Ruppreht den Jungern Pfallenczgrafen bey Reyne, die edeln Herren Fridrich Burggrafen zu Nurnberg, Vlrichen und Johans Lantgrafen zum Lutenberg, Kraft, Kraft und Gotfrid von Hohenloch, Gotzen Lampreht und alle Lampreht, Conr. und Fridrich von Sawenshein und alle von Sawenshein, Luppolt und Fridrich von Seldnek und alle von Seldnek, Luppolt und Hein. die Kuchinmeister, Johan von Rosenberg, Wilhelm, Rudolf und Conrad von Bebenburg, Gotzen Schoder, Hansen von Rotenburg und alle von Rotenburg, Dietrich Leschen und alle Leschen, die Richter und Bürger der Stete Nürnberg, Wirczpurg, Rotenburg, Dinkelspuhel, Mergenthem, Wickershem und Windeshem. D. feria sexta proxima post Michahelis.",
+      "english": "Heinrich Spiezz, judge at Rothenburg, places Bertholt Holtschuher and Dietrich Goltsmit, citizens of Rothenburg, in beneficial possession of all the property held by Herr Gerlach von Hohenloch: the fortresses Entse, Landspurg, Frankenburg and Uffenheim; the three Tagsteten; Birkenfels, Tottenhein, both Nezzelbach, both Westhein, Sawenshein, Bullenhein, Yppenshein, Kitzingen, Awe, Geilingshein, Jagsperg, Obern and Nidern Luden; and all the people, property and revenues belonging to them, for 100 marks of refined silver and damages, since they have established and proved the attachment. He appoints as protectors Gerlach, Erzbischof zu Mainz; Albrecht, Bischof zu Würzburg; Ruprecht der Ältere and Ruprecht der Jüngere, Herzöge and Pfalzgrafen bei Rhein; Friedrich, Burggraf zu Nürnberg; Ulrich and Hans, Landgrafen zum Lutenberg; Kraft, Kraft and Gotfrid von Hohenloch; Götz Lamprecht and all the Lamprecht; Konrad and Friedrich von Sawenshein and all von Sawenshein; Luppolt and Friedrich von Seldnek and all von Seldnek; Luppolt and Heinrich, the Küchenmeister; Hans von Rosenberg; Wilhelm, Rudolf and Konrad von Bebenburg; Götz Schoder; Hans von Rothenburg and all von Rothenburg; Dietrich Lesch and all the Lesch; and the judges and citizens of Nürnberg, Würzburg, Rothenburg, Dinkelsbühl, Mergentheim, Wickershem and Windsheim. Given on the Friday after Michaelmas.",
+      "mention": [
+        {
+          "person": "Bischof Albrecht",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Gerlach",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Burggraf zu Nürnberg"
+          ]
+        },
+        {
+          "person": "Hans von Rothenburg"
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "type": "generic",
+          "content": "was appointed a protector of Bertholt Holtschuher and Dietrich Goltsmit in their possession of Gerlach von Hohenloch’s property for their claim."
+        }
+      ]
     }
   ]
 }
