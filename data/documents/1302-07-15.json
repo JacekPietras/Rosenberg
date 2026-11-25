@@ -15,6 +15,20 @@
           "place": "rosenberg-town"
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 5",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
+      "latin": "udovicus miles dictus Münch de Rosenberg et conthoralis sua Agnes monasterio in Seli-\n15. Juli. genthal curiam in Segka donant. Sigillatores: Ludovicus Münch dictus de Rosenberg, Wiper-\ntus de Rudenowe, et Cunradus de Nidenowe, milites. (c. 3. Sig.)",
+      "english": "Ludwig, a Ritter called Münch von Rosenberg, and his wife Agnes donate an estate at Seckach to Seligental Monastery. Sealers: Ludwig Münch, called von Rosenberg; Wipert von Rudenowe; and Konrad von Nidenowe, all Ritter. With three seals.",
+      "mention": [
+        {
+          "person": "Ludwig Mönch"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

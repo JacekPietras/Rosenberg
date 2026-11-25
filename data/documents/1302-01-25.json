@@ -1,0 +1,24 @@
+{
+  "date": "1302-01-25",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 5",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
+      "german": "Chynrat von Haldenberch und sein Sohn Hermann verkaufen an Herrn Eberharten von Greiffenberch, was sie zu Vnigen haben, den Kirchensatz und die Vogtey, was sie ze Pvch haben, eine Hube ze Vnigen, ein Holzmarch, genannt Virstlitte, und ein anderes Holz, Schorre geheissen. Zeugen: Chvnrat von Wildenrode, Berthold von Strazze, Arnold der Mehsenhauser, Heinrich der Smieher, Heidenrich von Moringen, Herman von Rosenberg, Ulrich des Milingers Sohn von Ehingen. (c. 2 Sig.)",
+      "english": "Chynrat von Haldenberch and his son Hermann sell to Eberhard von Greiffenberch what they hold at Vnigen, the church patronage and the bailiwick, what they hold at Pvch, a holding at Vnigen, a woodland tract called Virstlitte, and another wood called Schorre. Witnesses: Chvnrat von Wildenrode, Berthold von Strazze, Arnold der Mehsenhauser, Heinrich der Smieher, Heidenrich von Moringen, Herman von Rosenberg, and Ulrich, son of the Milinger von Ehingen. Two seals.",
+      "facts": [
+        {
+          "person": "Chynrat von Haldenberch",
+          "type": "parent",
+          "of": "Herman"
+        },
+        {
+          "person": "Herman von Rosenberg",
+          "type": "generic",
+          "content": "witnessed the sale by Chynrat von Haldenberch and his son Hermann to Eberhard von Greiffenberch."
+        }
+      ]
+    }
+  ]
+}

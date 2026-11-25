@@ -1,0 +1,39 @@
+{
+  "date": "1307-12-08",
+  "place": "Nürnberg",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 5",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
+      "latin": "lbertus Rex ducibus Bavariae Rudolpho et Ludovico Castrum Rosenberg, quod quondam\nComes Gebhardus de Hirsberg titulo feudali ab imperio possidebat, nec non Castra Sulzbach,\nWerdenstain, Pfaffenhofen, Amertal et opidum Hirzawe, quae jure proprietatis a dicto Comite de\nHirsberg possessa ad illos devoluta sunt, confert. Dat. Nuremberg",
+      "english": "King Albrecht grants to Rudolf and Ludwig, dukes of Bavaria, Rosenberg Castle, which Count Gebhard von Hirsberg formerly held as a fief from the empire, as well as the castles of Sulzbach, Werdenstain, Pfaffenhofen and Amertal and the town of Hirzawe, which the said count had possessed as property and which had passed to them. Issued at Nürnberg.",
+      "mention": [
+        {
+          "person": "König Albrecht",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
+      "facts": [
+        {
+          "subject": "Rosenberg Castle",
+          "type": "generic",
+          "content": "was formerly held as a fief from the empire by Gebhard von Hirsberg, Graf."
+        },
+        {
+          "subject": "Rosenberg Castle",
+          "type": "generic",
+          "content": "was granted by King Albrecht to Rudolf and Ludwig, dukes of Bavaria."
+        }
+      ]
+    }
+  ]
+}
