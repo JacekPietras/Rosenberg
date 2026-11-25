@@ -3,12 +3,16 @@
   "label": "Franken",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim, R-US 1324 Juni 28a",
+      "source": [
+        "Staatsarchiv Wertheim, R-US 1324 Juni 28a",
+        "Staatsarchiv Wertheim R-US 1324 Juni 28a"
+      ],
       "url": [
         "https://www.landesarchiv-bw.de/plink/?f=7-234317-1",
-        "https://www.deutsche-digitale-bibliothek.de/item/S4LROVFB4N7SRSZOPZDPMNNLZ57P5WKC"
+        "https://www.deutsche-digitale-bibliothek.de/item/S4LROVFB4N7SRSZOPZDPMNNLZ57P5WKC",
+        "https://www.landesarchiv-bw.de/plink/?f=7-234317"
       ],
-      "german": "Fritz von Uissigheim (Fritzo gen. von Ussenkein) und Petrisa, seine Hausfrau, schenken mit Wissen und Willen des Kraft von Uissigheim (Krafto gen. von Ussenkein) dem Kloster Bronnbach zu ihrem und der Mutter Irmingard Seelenheil 1 Malter Korn jährlich von ihrem Hof zu Üssigheim.",
+      "german": "Fritz von Uissigheim (Fritzo gen. von Ussenkein) und Petrisa, seine Hausfrau, schenken mit Wissen und Willen des Kraft von Uissigheim (Krafto gen. von Ussenkein) dem Kloster Bronnbach zu ihrem und der Mutter Irmingard Seelenheil 1 Malter Korn jährlich von ihrem Hof zu Üssigheim.\n\nLaufzeit: 1324 Juni 28 (\"Datum anno domini millesimo trecentesimo vicesimo quarto in vigilia beatorum apostolorum Petri et Pauli\")\n\nSiegelbeschreibung: 2 Siegel an Pergamentstreifen\n\nVermerke: Auf der Rückseite: \"de maldero siligis super curia Fritzonis armigeri dicti de Ussenkein. Von späterer Hand: \"Ussigheim. Frizzo von Üssigheim schenkt dem closter ein mltr, korn von seiner hofstatt jährliche guld, anno 1324\"\n\nSiegler: Fritz von Uissigheim, Aussteller; Kraft von Uissigheim",
       "english": "Friedrich von Uissigheim and Petrisa, his wife, with the knowledge and consent of Kraft von Uissigheim, give Bronnbach Abbey one malter of grain annually from their farm at Uissigheim for the salvation of their souls and that of their mother Irmingard.",
       "mention": [
         {
@@ -33,6 +37,14 @@
           "person": "Kraft von Uissigheim",
           "type": "generic",
           "content": "consented to Fritz von Uissigheim and Petrisa’s donation to Bronnbach Abbey."
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234317%2F07_0000234317_0001_7-234317-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234317%2F07_0000234317_0002_7-234317-2.jpg"
         }
       ]
     }
