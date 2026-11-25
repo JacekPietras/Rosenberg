@@ -134,6 +134,10 @@ python3 scripts/archive_records/archive_record_download.py --list
 GDA Bayern, Landesarchiv Baden-Württemberg, Landesarchiv NRW, Regesta Imperii, Arcinsys Hessen, and Monasterium are supported.
 Their downloaders create a date-named document JSON entry labeled `to review`,
 with the catalog citation, German catalog text, and image links when available.
+GDA Bayern imports retain both the search-result URL and the verified public
+permalink when available. Existing entries with only the permalink can be
+recognized during import even if the saved date or citation differs; the search
+URL is then added to the entry for subsequent searches.
 Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
 REST source links. Review the generated entry before using it as a completed
 document record.

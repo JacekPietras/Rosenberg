@@ -14,6 +14,29 @@ from archive_record_gda_bayern import RecordFields, create_record, field_values,
 
 
 class ResolverTests(unittest.TestCase):
+    def test_search_url_is_added_to_existing_permalink_with_different_date_and_citation(self):
+        search_url = 'https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++search-id&parent_id='
+        permalink = 'https://www.gda.bayern.de/gvl/document/762e2c8d-0916-4308-a2bd-cdebfb3bd436'
+        page = ('<td data-label="Bestellsignatur">StAN, new shelfmark</td>'
+                '<td data-label="Laufzeit">1454 Dezember 20</td>'
+                '<td data-label="Betreff">Catalogue description.</td>')
+        with tempfile.TemporaryDirectory() as tmp:
+            documents = Path(tmp)
+            old = documents / '1454.json'
+            old.write_text(json.dumps({'date': '1454', 'entries': [{
+                'source': 'StAN, old shelfmark', 'url': permalink,
+                'english': 'Preserved translation.'}]}))
+            with patch('archive_record_gda_bayern.DOCUMENT_DIR', documents), \
+                 patch('archive_record_gda_bayern.fetch', side_effect=[page + permalink, page]), \
+                 patch('archive_record_gda_bayern.image_urls', return_value=[]):
+                self.assertEqual(create_record(search_url), (old, True))
+            entry = json.loads(old.read_text())['entries'][0]
+            self.assertEqual(entry['url'], [permalink, search_url])
+            self.assertEqual(entry['english'], 'Preserved translation.')
+            self.assertEqual(len(list(documents.glob('*.json'))), 1)
+            from archive_record_storage import has_url
+            self.assertTrue(has_url(documents, search_url))
+
     def test_import_saves_records_with_undated_or_missing_laufzeit(self):
         url = 'https://www.gda.bayern.de/gvl/archive.xhtml?id=example'
         permalink = 'https://www.gda.bayern.de/gvl/document/762e2c8d-0916-4308-a2bd-cdebfb3bd436'

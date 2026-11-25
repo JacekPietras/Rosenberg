@@ -193,11 +193,12 @@ def save_record(record, document_dir: Path):
     incoming_sources = set(values(incoming.get('source')))
     incoming_urls = {normalized_url(url) for url in values(incoming.get('url'))}
     incoming_texts = texts(incoming)
-    # Check citations first, then main text without catalog metadata sections.
-    for by_source in (True, False):
-        if by_source and not (incoming_sources or incoming_urls) or not by_source and not incoming_texts:
+    # A verified URL identifies a record even when its saved date has a
+    # different precision (or the archive has corrected its date).
+    for mode in ('url', 'source', 'text'):
+        if mode == 'url' and not incoming_urls or mode == 'source' and not incoming_sources or mode == 'text' and not incoming_texts:
             continue
-        candidates = paths if by_source else sorted(stored_document_paths(document_dir))
+        candidates = paths if mode == 'source' else sorted(stored_document_paths(document_dir))
         for path in candidates:
             try:
                 document = read_document(path)
@@ -208,11 +209,15 @@ def save_record(record, document_dir: Path):
                     continue
                 existing_urls = {normalized_url(url) for url in values(entry.get('url'))}
                 existing_sources = values(entry.get('source'))
-                match = bool(any(citation_contains(old, new) or citation_contains(new, old)
-                                 for old in existing_sources for new in incoming_sources
-                                 if isinstance(old, str) and isinstance(new, str))
-                             or incoming_urls.intersection(existing_urls)) if by_source else bool(incoming_texts.intersection(texts(entry)))
-                if not by_source and (str(record.get('date')) == '9999'
+                if mode == 'url':
+                    match = bool(incoming_urls.intersection(existing_urls))
+                elif mode == 'source':
+                    match = any(citation_contains(old, new) or citation_contains(new, old)
+                                for old in existing_sources for new in incoming_sources
+                                if isinstance(old, str) and isinstance(new, str))
+                else:
+                    match = bool(incoming_texts.intersection(texts(entry)))
+                if mode == 'text' and (str(record.get('date')) == '9999'
                                       or str(document.get('date')) == '9999'
                                       or not compatible_dates(document.get('date'), record.get('date'))):
                     match = False

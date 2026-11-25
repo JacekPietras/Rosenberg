@@ -452,7 +452,10 @@ def main(argv=None):
                             "`http://www.landesarchiv-bw.de/plink/...`"
                         )
                         warnings += 1
-                    if url.strip().startswith("https://www.gda.bayern.de/gvl/archive.xhtml?id="):
+                    if (url.strip().startswith("https://www.gda.bayern.de/gvl/archive.xhtml?id=")
+                            and not any(isinstance(other, str) and re.match(
+                                r"https://(?:www\.)?gda\.bayern\.de/gvl/document/", other.strip())
+                                for other in urls)):
                         print(
                             f"{display_path(path)}#/entries/{index}/url/{url_index}: warning: "
                             "use the GDA Bayern permalink form "
