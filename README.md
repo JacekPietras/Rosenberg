@@ -11,6 +11,7 @@ data/
 ├── books/        # Structured source books
 ├── notes/        # Research notes
 ├── documents/    # Historical source documents
+│   └── deleted/  # Soft-deleted documents retained for archive lookup
 ├── images/       # Armorial and effigy image collections
 ├── calendar.md   # Liturgical calendar and dated annotations
 ├── people.json   # Confirmed separate people: ID and full name only
@@ -121,9 +122,9 @@ Archive catalogs and related research portals are collected in [`data/notes/arch
 
 Archive record importers and their shared storage code live in
 `scripts/archive_records/`. `archive_record_download.py` routes an archive catalog record to a source-specific
-parser. These commands create or update document JSON entries with catalog
-metadata and image links when available; they do not download image files into
-the local cache:
+parser. Archive imports and searches look for existing records in both
+`data/documents/` and `data/documents/deleted/`. Imports save catalog metadata
+and image links when available. Image files are downloaded separately.
 
 ```text
 python3 scripts/archive_records/archive_record_download.py 'RECORD_URL'
@@ -137,27 +138,11 @@ Regesta Imperii URLs can be HTML record links, persistent `/id/` links, or CEI
 REST source links. Review the generated entry before using it as a completed
 document record.
 
-### Batch document label triage
+### Soft-deleting documents
 
-`scripts/triage_documents.py` conservatively proposes branch labels from
-explicit personal-name forms in document text. It recognizes Schenk, Mönch,
-Rorschach, and Wok/Vok von Rosenberg attestations, named Rosenberg residences
-at Boxberg, Haltenbergstetten, Schüpf, or Bartenstein, and the modern Orsini-
-Rosenberg house. The last case proposes `deleted: true` and removes only the
-managed family labels. It leaves mixed branch signals and indirect/place-only
-mentions alone. URLs are excluded from matching. The default scans only active
-`to review` documents and prints each candidate; it does not write files.
-
-```text
-python3 scripts/triage_documents.py
-python3 scripts/triage_documents.py --limit 20
-python3 scripts/triage_documents.py --all-labels
-python3 scripts/triage_documents.py --apply
-```
-
-`--apply` writes only the document's `label` and, for the Orsini-Rosenberg
-house, `deleted` field. Review the dry-run candidates first. Remaining records
-are summarized by archive hostname and decade to support further triage.
+The local viewer's delete action moves a record to `data/documents/deleted/`.
+To restore a record, move its JSON file back to its original location under
+`data/documents/`.
 
 ### Exploratory Kev label benchmark
 
@@ -416,14 +401,16 @@ checks live in `scripts/linters/`.
 ### Document validation
 
 Run `./lint` to check document JSON files. Entries without English text are
-reported as warnings; documents marked `"deleted": true` and documents with
+reported as warnings; documents in `data/documents/deleted/`, legacy documents
+marked `"deleted": true`, and documents with
 the `Czechia`, `Schenk`, or `Mönch` labels are skipped by default. Use
 `./lint --all` to include them.
 
 Document filenames use `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, optionally followed
 by `_I` (a numeric suffix), and `.json`. The linter warns about invalid names.
-When any document for the same date has a suffix, it renumbers the group from
-`_1` without gaps, in existing numeric order, placing an unsuffixed file first.
+When any active document for the same date has a suffix, it renumbers the group
+from `_1` in existing numeric order, placing an unsuffixed file first and
+skipping filenames reserved by soft-deleted documents.
 Renaming changes document paths; rebuild the saved family graph afterwards, and
 update any external links that use the old paths.
 

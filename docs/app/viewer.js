@@ -6,7 +6,7 @@ import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
 import { renderActiveScreen } from './screens/router-view.js?v=27';
 import { documentAtMarker } from './components/document-navigation.js';
 import { createDocumentRenderer } from './screens/documents.js?v=39';
-import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=12';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=13';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
 import { createSealScreen } from './screens/seals.js?v=4';

@@ -215,7 +215,9 @@ lists.
 - For a partially legible year, trailing unknown digits may be `X`, such as
   `158X` for 1580–1589 or `15XX` for 1500–1599.
 - `transcribed`: `true` when transcribed; absent or `false` otherwise.
-- `deleted`: `true` hides the whole document from the Documents screen while retaining its JSON.
+- Soft-deleted documents live under `data/documents/deleted/`, with the same
+  filename and document schema. Archive lookups include this directory when
+  checking for existing records. A top-level `deleted: true` is a legacy marker.
 - `label`: a string or array of strings, shown as badges. `important` gives a
   reddish background.
 - `research`: optional string for analysis of the document and attempts to
@@ -285,7 +287,7 @@ comparison, goes to the gitignored `.cache/tree-debug.json` for
 | Key | Content |
 | --- | --- |
 | `configuration` | `searchLimit`, the bound for registry diagnostics, and `directedKin: true` for builds preserving kin term direction |
-| `inputs` | Path → fingerprint for every source JSON in books/documents/notes/images, `data/names.md`, `data/by-names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
+| `inputs` | Path → fingerprint for source JSON in books/documents/notes/images outside `data/documents/deleted/`, `data/names.md`, `data/by-names.md`, `nobiliary_particles.md`, `name-connectors.md`, `titles-age.md`, `titles-office.md`, `kinship.md`, `places.json`, `matching.json`, `distinctFamilies.md`, and the registry (IDs and names only). Scripts and the tree itself are not inputs. |
 | `fingerprint` | Fingerprint of `inputs` |
 | `evidence` | Graph per view (`with-guesses`) |
 | `matchingBackground` | Per view, factual full-name counts and their weighted total |

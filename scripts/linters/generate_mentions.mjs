@@ -92,6 +92,7 @@ export function recognizeMentions(text, { placesOnly = false, stated = new Map()
 }
 
 async function jsonFiles(directory) {
+  if (directory === resolve(root, 'data/documents/deleted')) return [];
   const results = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const path = resolve(directory, entry.name);

@@ -58,20 +58,27 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
     const deleteDocumentButton = event.target.closest('[data-delete-document]');
     if (deleteDocumentButton) {
       const path = deleteDocumentButton.dataset.deleteDocument;
-      const original = state.documents.get(path);
-      if (!original || !state.canEditDocuments || !path.startsWith('data/documents/')) return;
-      const updated = { ...original, deleted: true };
+      if (!state.documents.has(path) || !state.canEditDocuments || !path.startsWith('data/documents/')) return;
       const controls = deleteDocumentButton.closest('.document-heading-aside');
       const status = controls?.querySelector('.record-delete-status');
       deleteDocumentButton.disabled = true;
-      if (status) status.textContent = 'Saving…';
+      if (status) status.textContent = 'Moving to deleted…';
       try {
-        const result = await repository.saveDocument(path, updated);
-        state.documents.set(path, updated);
-        markSaved(path, result.version);
+        await repository.deleteDocument(path);
+        state.documents.delete(path);
+        state.manifest.documents = state.manifest.documents.filter((recordPath) => recordPath !== path);
+        if (state.active === path) state.active = 'documents';
+        if (state.record === path) {
+          state.record = null;
+          state.recordSource = null;
+        }
+        if (state.navigationRecord === path) {
+          state.navigationRecord = null;
+          state.navigationRecordSource = null;
+        }
         await rerender();
       } catch (error) {
-        if (status) status.textContent = `Could not save: ${error.message}`;
+        if (status) status.textContent = `Could not delete: ${error.message}`;
         deleteDocumentButton.disabled = false;
       }
       return;

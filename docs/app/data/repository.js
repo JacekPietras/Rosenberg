@@ -33,13 +33,19 @@ export function createRepository({ location = window.location, fetchFunction = w
       if (location.hostname.endsWith('github.io')) {
         return new Map(await Promise.all(paths.map(async (path) => [path, await this.getJson(path)])));
       }
-      const response = await fetchFunction('/api/source-data-batch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ paths }),
-      });
-      if (!response.ok) return new Map(await Promise.all(paths.map(async (path) => [path, await this.getJson(path)])));
-      return new Map(Object.entries(await response.json()));
+      const documents = new Map();
+      for (let start = 0; start < paths.length; start += 5000) {
+        const batch = paths.slice(start, start + 5000);
+        const response = await fetchFunction('/api/source-data-batch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ paths: batch }),
+        });
+        const entries = response.ok ? Object.entries(await response.json())
+          : await Promise.all(batch.map(async (path) => [path, await this.getJson(path)]));
+        for (const [path, document] of entries) documents.set(path, document);
+      }
+      return documents;
     },
     async getFamilyTree() {
       const response = await fetchFunction(`${dataUrl('data/tree.json', location)}?v=${Date.now()}`, { cache: 'no-store' });
@@ -92,9 +98,21 @@ export function createRepository({ location = window.location, fetchFunction = w
       if (!response.ok) throw new Error(`Repository file listing: ${response.status}`);
       const tree = await response.json();
       return tree.tree
-        .filter((item) => item.type === 'blob' && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|tree\.json|places\.json|matching\.json|names\.md|titles\.md|kinship\.md))$/.test(item.path))
+        .filter((item) => item.type === 'blob' && !item.path.startsWith('data/documents/deleted/')
+          && /^(?:data\/(?:books|documents|notes|images)\/.*\.json|data\/(?:people\.json|tree\.json|places\.json|matching\.json|names\.md|titles\.md|kinship\.md))$/.test(item.path))
         .map((item) => ({ path: item.path, version: item.sha }))
         .sort((left, right) => left.path.localeCompare(right.path));
+    },
+    async deleteDocument(path) {
+      const response = await fetchFunction('/api/delete-document', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ path }),
+      });
+      if (response.status === 404) throw new Error('Restart the local viewer to enable document deletion.');
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || `Could not delete document (${response.status})`);
+      this.revision += 1;
     },
     async saveDocument(path, document) {
       const requestBody = JSON.stringify({ path, document });

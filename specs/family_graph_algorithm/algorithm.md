@@ -24,7 +24,8 @@ links. `tree.json` is output only; it is never read back as evidence. It keeps
 only merged and ambiguous comparisons; the rest go to the gitignored
 `.cache/tree-debug.json`.
 
-Before validation or collection, the loader skips every document JSON marked
+Source discovery and input fingerprints exclude `data/documents/deleted/`.
+Before validation or collection, the loader skips any legacy document marked
 `"deleted": true` and every document whose top-level `label` does not include
 `Franken` (case-insensitive). Other labels may also be present. Books, notes,
 and images are all collected regardless of labels. Skipped documents add no

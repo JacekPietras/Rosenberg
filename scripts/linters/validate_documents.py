@@ -15,6 +15,7 @@ from urllib.parse import parse_qs, urlsplit, urlunsplit
 
 SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_ROOT))
+from document_paths import json_paths
 from given_names import name_groups
 from place_names import resolve_place_names
 
@@ -88,12 +89,14 @@ def remove_bracketed_variants(text, variants):
     return "".join(pieces)
 
 
-def collect_files(paths):
+def collect_files(paths, include_deleted=False):
     files = set()
     missing = []
     for path in paths:
         if path.is_dir():
-            files.update(item.resolve() for item in path.rglob("*.json") if item.is_file())
+            path = path.resolve()
+            items = path.rglob("*.json") if include_deleted else json_paths(path, ROOT / "data/documents/deleted")
+            files.update(item for item in items if item.is_file())
         elif path.is_file():
             files.add(path.resolve())
         else:
@@ -136,7 +139,7 @@ def reorder_fields(value, field_order):
     return {key: value[key] for key in ordered_keys}
 
 
-def order_document(document):
+def order_document(document, archived=False):
     variants = canonical_variants()
     changed = False
     if "delete" in document:
@@ -146,7 +149,7 @@ def order_document(document):
         changed = True
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
     labels = reordered.get("label")
-    if reordered.get("deleted") is True:
+    if archived or reordered.get("deleted") is True:
         if labels == "to review":
             reordered.pop("label")
             changed = True
@@ -289,7 +292,7 @@ def main(argv=None):
     parser.add_argument("paths", nargs="*", type=Path, help="document JSON files or directories (default: data/documents)")
     args = parser.parse_args(argv)
 
-    files, missing = collect_files(args.paths or [ROOT / "data/documents"])
+    files, missing = collect_files(args.paths or [ROOT / "data/documents"], args.all)
     errors = 0
     warnings = 0
 
@@ -298,6 +301,7 @@ def main(argv=None):
         errors += 1
 
     for path in files:
+        archived = path.is_relative_to(ROOT / "data/documents/deleted")
         try:
             document = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeError, ValueError) as exc:
@@ -306,7 +310,7 @@ def main(argv=None):
             continue
 
         if isinstance(document, dict):
-            if document.get("deleted") is not True:
+            if not archived and document.get("deleted") is not True:
                 labels = document.get("label")
                 if labels is None or labels == "" or labels == []:
                     document["label"] = "to review"
@@ -321,7 +325,7 @@ def main(argv=None):
                     except (OSError, UnicodeError) as exc:
                         print(f"{display_path(path)}: error: cannot add review label: {exc}")
                         errors += 1
-            if not args.all and document.get("deleted") is True:
+            if not args.all and (archived or document.get("deleted") is True):
                 labels = document.get("label")
                 if labels == "to review":
                     document.pop("label")
@@ -380,7 +384,7 @@ def main(argv=None):
                 continue
 
         if isinstance(document, dict):
-            document, reordered = order_document(document)
+            document, reordered = order_document(document, archived)
             if reordered:
                 try:
                     original = path.read_text(encoding="utf-8")

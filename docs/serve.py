@@ -19,6 +19,9 @@ from urllib.request import Request, urlopen
 import webbrowser
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from document_paths import json_paths
+
 HEARTBEAT_TIMEOUT = 20
 last_heartbeat = [0.0]
 heartbeat_count = [0]
@@ -30,6 +33,7 @@ activity_lock = threading.Lock()
 page_seen = threading.Event()
 stop_watcher = threading.Event()
 family_rebuild_lock = threading.Lock()
+document_write_lock = threading.Lock()
 family_rebuild_status = {'active': False, 'stage': ''}
 family_rebuild_status_lock = threading.Lock()
 shutdown_reason = ['server stopped']
@@ -240,14 +244,13 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             self.send_json(200, {"changed": bool(result.stdout.strip())})
             return
         if self.path.split("?", 1)[0] == "/api/files":
-            paths = [
-                {
-                    "path": str(path.relative_to(ROOT)).replace("\\", "/"),
-                    "version": path.stat().st_mtime_ns,
-                }
-                for folder in (ROOT / "data" / "books", ROOT / "data" / "documents", ROOT / "data" / "notes", ROOT / "data" / "images")
-                for path in folder.rglob("*.json")
-            ]
+            paths = []
+            for folder in ("books", "documents", "notes", "images"):
+                for path in json_paths(ROOT / "data" / folder, ROOT / "data/documents/deleted"):
+                    try:
+                        paths.append({"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns})
+                    except FileNotFoundError:
+                        continue
             paths.extend(
                 {"path": path.relative_to(ROOT).as_posix(), "version": path.stat().st_mtime_ns}
                 for path in [ROOT / "data/people.json", ROOT / "data/tree.json", ROOT / "data/places.json", ROOT / "data/names.md", ROOT / "data/titles-age.md", ROOT / "data/titles-office.md", ROOT / "data/kinship.md", ROOT / "data/matching.json"]
@@ -528,6 +531,35 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 f"({self.headers.get('Content-Length', 'unknown')} bytes)",
                 flush=True,
             )
+        if self.path.split("?", 1)[0] == "/api/delete-document":
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                if not 0 < length <= 4096:
+                    raise ValueError("Invalid document request size")
+                relative_path = json.loads(self.rfile.read(length))["path"]
+                if not isinstance(relative_path, str) or not relative_path.startswith("data/documents/"):
+                    raise ValueError("Invalid active document path")
+                documents = ROOT / "data/documents"
+                deleted = documents / "deleted"
+                target = ROOT / relative_path
+                if (target.is_relative_to(deleted) or target.suffix != ".json"
+                        or target != target.resolve()):
+                    raise ValueError("Invalid active document path")
+                archived = deleted / target.relative_to(documents)
+                if archived != archived.resolve():
+                    raise ValueError("Invalid deleted document path")
+                with document_write_lock:
+                    if target.is_file():
+                        if archived.exists():
+                            raise FileExistsError(f"A deleted document already uses {archived.name}")
+                        archived.parent.mkdir(parents=True, exist_ok=True)
+                        target.rename(archived)
+                    elif not archived.is_file():
+                        raise FileNotFoundError(f"Document not found: {relative_path}")
+                self.send_json(200, {"ok": True})
+            except (KeyError, TypeError, ValueError, OSError) as error:
+                self.send_json(400, {"error": str(error)})
+            return
         if self.path.split("?", 1)[0] == "/api/heartbeat":
             try:
                 length = int(self.headers.get('Content-Length', '0'))
@@ -619,13 +651,21 @@ class ViewerHandler(SimpleHTTPRequestHandler):
             is_entries_document = isinstance(document, dict) and isinstance(document.get("entries"), list)
             if not isinstance(document, list) and not is_entries_document:
                 raise ValueError("Invalid document")
-            target.parent.mkdir(parents=True, exist_ok=True)
-            with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=target.parent, delete=False) as handle:
-                json.dump(document, handle, ensure_ascii=False, indent=2)
-                handle.write("\n")
-                temporary = handle.name
-            os.replace(temporary, target)
-            self.send_json(200, {"ok": True, "version": target.stat().st_mtime_ns})
+            with document_write_lock:
+                documents = ROOT / "data/documents"
+                deleted = documents / "deleted"
+                if target.is_relative_to(documents) and not target.is_relative_to(deleted):
+                    archived = deleted / target.relative_to(documents)
+                    if not target.exists() and archived.is_file():
+                        raise ValueError("The document has been deleted")
+                target.parent.mkdir(parents=True, exist_ok=True)
+                with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=target.parent, delete=False) as handle:
+                    json.dump(document, handle, ensure_ascii=False, indent=2)
+                    handle.write("\n")
+                    temporary = handle.name
+                os.replace(temporary, target)
+                version = target.stat().st_mtime_ns
+            self.send_json(200, {"ok": True, "version": version})
         except (KeyError, TypeError, ValueError, json.JSONDecodeError, OSError) as error:
             print(f"Document save failed for {locals().get('relative_path', '<unknown>')}: {error}", flush=True)
             self.send_json(400, {"error": str(error)})

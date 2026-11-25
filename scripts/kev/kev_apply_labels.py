@@ -273,6 +273,8 @@ def main():
                 reason = "result prompt hash differs from frozen config"
             elif row.get("prediction") not in enabled_families:
                 reason = "predicted family is not enabled by validation"
+            elif doc_path.is_relative_to(docs_root / "deleted"):
+                reason = "document has been deleted"
             elif not doc_path.exists():
                 reason = "source document path does not exist"
             if reason:

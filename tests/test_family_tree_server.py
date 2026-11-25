@@ -30,14 +30,15 @@ class FamilyTreeServerTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name)
+        self.root = Path(self.temp.name).resolve()
         (self.root / 'scripts').symlink_to(ROOT / 'scripts', target_is_directory=True)
         self.write('data/names.md', 'Alex\nBea\n')
+        self.write('data/nobiliary_particles.md', 'von\n')
         self.write('data/places.json', [])
         self.write('data/matching.json', DEFAULTS)
         self.write('data/people.json', [{'id': 'a', 'name': 'Alex'}, {'id': 'b', 'name': 'Bea'}])
         self.write('data/tree.json', {'views': ['facts', 'with-guesses'], 'configuration': {'searchLimit': 37}})
-        self.write('data/documents/test.json', {'date': '1393', 'facts': [
+        self.write('data/documents/test.json', {'date': '1393', 'label': 'Franken', 'facts': [
             {'type': 'parent', 'person': 'a', 'of': 'b'},
         ]})
         self.root_patch = patch.object(viewer, 'ROOT', self.root)
@@ -59,10 +60,12 @@ class FamilyTreeServerTests(unittest.TestCase):
         path.write_text(value if isinstance(value, str) else json.dumps(value), encoding='utf-8')
 
     def post(self, value=None):
+        return self.request('POST', '/api/rebuild-family-tree', value)
+
+    def request(self, method, path, value=None):
         connection = HTTPConnection('127.0.0.1', self.server.server_port, timeout=10)
         try:
-            connection.request('POST', '/api/rebuild-family-tree',
-                               body=json.dumps(value) if value is not None else None)
+            connection.request(method, path, body=json.dumps(value) if value is not None else None)
             response = connection.getresponse()
             return response.status, json.loads(response.read())
         finally:
@@ -84,6 +87,30 @@ class FamilyTreeServerTests(unittest.TestCase):
         self.assertEqual(200, self.post()[0])
         self.assertEqual(before, (self.root / 'data/tree.json').read_bytes())
         self.assertEqual(registry, (self.root / 'data/people.json').read_bytes())
+
+    def test_soft_delete_excludes_documents_from_discovery_build_and_export(self):
+        path = 'data/documents/test.json'
+        archived = self.root / 'data/documents/deleted/test.json'
+        source = (self.root / path).read_bytes()
+        status, result = self.post()
+        self.assertEqual(200, status, result)
+        self.assertEqual((200, {'ok': True}), self.request('POST', '/api/delete-document', {'path': path}))
+        self.assertEqual(200, self.request('POST', '/api/delete-document', {'path': path})[0])
+        self.assertEqual(source, archived.read_bytes())
+        self.assertFalse((self.root / path).exists())
+        self.assertEqual((400, {'error': 'The document has been deleted'}),
+                         self.request('POST', '/api/save-document', {'path': path, 'document': {'entries': []}}))
+        status, files = self.request('GET', '/api/files')
+        self.assertEqual(200, status)
+        self.assertFalse(any(item['path'].startswith('data/documents/') for item in files))
+        # A corrupt archived record would fail the rebuild if the loader opened it.
+        archived.write_text('{bad')
+        status, result = self.post()
+        self.assertEqual(200, status, result)
+        metadata = json.loads((self.root / 'data/tree.json').read_text())
+        self.assertNotIn(path, metadata['inputs'])
+        self.assertNotIn('data/documents/deleted/test.json', metadata['inputs'])
+        self.assertEqual([], metadata['evidence']['with-guesses']['relationships'])
 
     def test_facts_only_request_is_rejected(self):
         self.assertEqual(400, self.post({'includeGuesses': False})[0])

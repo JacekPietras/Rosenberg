@@ -24,7 +24,7 @@ from search_results import ResultsStore, search_delay
 from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
-from archive_record_storage import has_source, has_url, values
+from archive_record_storage import has_source, has_url, read_document, stored_document_paths, values
 from archive_record_gda_bayern import MISSING_RECORD_DETAILS, iso_date
 
 URL = 'https://www.gda.bayern.de/gvl/search.xhtml'
@@ -82,8 +82,11 @@ def has_existing_description(document_dir, row):
     if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', date):
         return False
     normalize = lambda text: ' '.join(text.split()).casefold()
-    for path in document_dir.glob('*.json'):
-        document = json.loads(path.read_text(encoding='utf-8'))
+    for path in stored_document_paths(document_dir):
+        try:
+            document = read_document(path)
+        except FileNotFoundError:
+            continue
         if document.get('date') != date:
             continue
         for entry in document.get('entries', []):

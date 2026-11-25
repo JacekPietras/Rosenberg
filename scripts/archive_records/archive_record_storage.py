@@ -14,6 +14,11 @@ def values(value):
     return value if isinstance(value, list) else [value] if value else []
 
 
+def stored_document_paths(document_dir: Path, pattern='*.json'):
+    yield from document_dir.glob(pattern)
+    yield from (document_dir / 'deleted').rglob(pattern)
+
+
 def read_document(path: Path):
     """Read document JSON, allowing a concurrent in-place write to finish."""
     try:
@@ -182,18 +187,22 @@ def save_record(record, document_dir: Path):
         date = date_start.group(1)
     stem = re.sub(r'[^0-9X-]+', '_', date)
     pattern = re.compile(rf'{re.escape(stem)}(?:_(\d+))?\.json$')
-    paths = sorted((p for p in document_dir.glob(f'{stem}*.json') if pattern.fullmatch(p.name)),
-                   key=lambda p: (int(pattern.fullmatch(p.name).group(1) or 1), p.name))
+    paths = sorted((p for p in stored_document_paths(document_dir, f'{stem}*.json') if pattern.fullmatch(p.name)),
+                   key=lambda p: (p.parent != document_dir, int(pattern.fullmatch(p.name).group(1) or 1), p.name))
     incoming = record['entries'][0]
     incoming_sources = set(values(incoming.get('source')))
     incoming_urls = {normalized_url(url) for url in values(incoming.get('url'))}
     incoming_texts = texts(incoming)
     # Check citations first, then main text without catalog metadata sections.
-    for by_source, candidates in ((True, paths), (False, sorted(document_dir.glob('*.json')))):
+    for by_source in (True, False):
         if by_source and not (incoming_sources or incoming_urls) or not by_source and not incoming_texts:
             continue
+        candidates = paths if by_source else sorted(stored_document_paths(document_dir))
         for path in candidates:
-            document = read_document(path)
+            try:
+                document = read_document(path)
+            except FileNotFoundError:
+                continue  # A document may have moved into deleted since enumeration.
             for entry in document.get('entries', []):
                 if not isinstance(entry, dict):
                     continue
@@ -212,7 +221,15 @@ def save_record(record, document_dir: Path):
                 before = json.dumps(document, ensure_ascii=False, sort_keys=True)
                 merge_entry(entry, incoming, document.get('transcribed') is True)
                 if json.dumps(document, ensure_ascii=False, sort_keys=True) != before:
-                    path.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+                    try:
+                        handle = path.open('r+', encoding='utf-8')
+                    except FileNotFoundError:
+                        # The viewer may have moved the record since it was read.
+                        path = document_dir / 'deleted' / path.relative_to(document_dir)
+                        handle = path.open('r+', encoding='utf-8')
+                    with handle:
+                        handle.write(json.dumps(document, ensure_ascii=False, indent=2) + '\n')
+                        handle.truncate()
                 return path, True
     suffixes = [int(m.group(1)) for p in paths if (m := pattern.fullmatch(p.name)) and m.group(1)]
     output = document_dir / (f'{stem}_{max(suffixes, default=1) + 1}.json' if paths else f'{stem}.json')
@@ -222,8 +239,11 @@ def save_record(record, document_dir: Path):
 
 def has_url(document_dir: Path, url: str) -> bool:
     wanted = normalized_url(url)
-    for path in document_dir.glob('*.json'):
-        document = read_document(path)
+    for path in stored_document_paths(document_dir):
+        try:
+            document = read_document(path)
+        except FileNotFoundError:
+            continue
         for entry in document.get('entries', []):
             if isinstance(entry, dict) and wanted in {
                     normalized_url(existing) for existing in values(entry.get('url'))}:
@@ -244,8 +264,11 @@ def has_source(document_dir: Path, source: str) -> bool:
     wanted = citation(source)
     if not wanted:
         return False
-    for path in document_dir.glob('*.json'):
-        document = read_document(path)
+    for path in stored_document_paths(document_dir):
+        try:
+            document = read_document(path)
+        except FileNotFoundError:
+            continue
         for entry in document.get('entries', []):
             if isinstance(entry, dict) and any(
                     (wanted == citation(existing) or (len(wanted) >= 12 and wanted in citation(existing)))

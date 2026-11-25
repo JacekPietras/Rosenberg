@@ -2,6 +2,7 @@
 
 import json
 from pathlib import Path
+from document_paths import json_paths
 from linters.validate_facts import TYPES, Validator
 from .dates import date_bounds, inherited_date_bounds
 from .model import Assertion, Inputs, Mention, SourceRef, fingerprint
@@ -26,7 +27,9 @@ def identities(people):
 
 
 def source_paths(root):
-    return sorted(path for folder in SOURCE_DIRS for path in (root / 'data' / folder).rglob('*.json') if path.is_file())
+    deleted = root / 'data/documents/deleted'
+    return sorted(path for folder in SOURCE_DIRS for path in json_paths(root / 'data' / folder, deleted)
+                  if path.is_file())
 
 
 def input_manifest(root, people=None):

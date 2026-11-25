@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts' / 'archive_records'))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from archive_record_storage import save_record, has_url, merge_text
+from archive_record_storage import save_record, has_source, has_url, merge_text
 
 
 class CatalogSectionMergeTests(unittest.TestCase):
@@ -18,6 +18,24 @@ class CatalogSectionMergeTests(unittest.TestCase):
 
 
 class DownloaderStorageTests(unittest.TestCase):
+    def test_deleted_records_still_match_and_reserve_their_filenames(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            original = {'date': '1341', 'entries': [{'source': 'Catalog citation',
+                'url': 'https://example.org/record', 'german': 'Archived text'}]}
+            path, _ = save_record(original, folder)
+            archived = folder / 'deleted' / path.name
+            archived.parent.mkdir()
+            path.rename(archived)
+            self.assertTrue(has_source(folder, 'Catalog citation'))
+            self.assertTrue(has_url(folder, 'https://example.org/record'))
+            self.assertEqual((archived, True), save_record(original, folder))
+            related = {'date': '1341-01', 'entries': [{'source': 'Alternate citation', 'german': 'Archived text'}]}
+            self.assertEqual((archived, True), save_record(related, folder))
+            self.assertFalse(path.exists())
+            distinct = {'date': '1341', 'entries': [{'source': 'Another document'}]}
+            self.assertEqual((folder / '1341_2.json', False), save_record(distinct, folder))
+
     def test_shorter_citation_matches_without_adding_redundant_source(self):
         with tempfile.TemporaryDirectory() as tmp:
             folder = Path(tmp)

@@ -4,6 +4,7 @@
 import re
 import sys
 from collections import defaultdict
+from itertools import count
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -13,6 +14,7 @@ FILENAME = re.compile(r"([0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?)(?:_([0-9]+))?\.js
 
 def normalize(directory):
     groups = defaultdict(list)
+    reserved = {path.name for path in (directory / "deleted").glob("*.json")}
     warnings = 0
     for path in sorted(directory.glob("*.json")):
         if not path.is_file():
@@ -29,8 +31,8 @@ def normalize(directory):
         if not any(suffix is not None for _, suffix in members):
             continue
         members.sort(key=lambda item: (-1 if item[1] is None else int(item[1]), item[0].name))
-        moves = [(path, directory / f"{date}_{index}.json")
-                 for index, (path, _) in enumerate(members, 1)]
+        available = (name for index in count(1) if (name := f"{date}_{index}.json") not in reserved)
+        moves = [(path, directory / next(available)) for path, _ in members]
         moves = [(source, target) for source, target in moves if source != target]
         sources = {source for source, _ in moves}
         if any(target.exists() and target not in sources for _, target in moves):

@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT / 'scripts/archive_search'))
 from search_results import ResultsStore, search_delay
 from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / "scripts" / "archive_records"))
-from archive_record_storage import has_source, has_url, read_document, values
+from archive_record_storage import has_source, has_url, read_document, stored_document_paths, values
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
@@ -30,8 +30,11 @@ BASE = 'https://www2.landesarchiv-bw.de/ofs21/'
 
 def has_result_url(document_dir, result_id):
     """Match a search result against stored catalogue URLs without fetching it."""
-    for path in document_dir.glob('*.json'):
-        document = read_document(path)
+    for path in stored_document_paths(document_dir):
+        try:
+            document = read_document(path)
+        except FileNotFoundError:
+            continue
         for entry in document.get('entries', []):
             if not isinstance(entry, dict):
                 continue

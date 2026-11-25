@@ -21,6 +21,7 @@ import re
 import sys
 SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(SCRIPTS_ROOT))
+from document_paths import json_paths
 from given_names import name_groups
 from place_names import resolve_place_names
 
@@ -464,7 +465,7 @@ def collect_paths(paths, validator):
     files = set()
     for path in paths:
         if path.is_dir():
-            files.update(item.resolve() for item in path.rglob('*.json') if item.is_file())
+            files.update(item for item in json_paths(path.resolve(), validator.root / 'data/documents/deleted') if item.is_file())
         elif path.is_file():
             files.add(path.resolve())
         else:

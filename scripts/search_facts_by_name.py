@@ -15,6 +15,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from document_paths import json_paths
 from given_names import name_groups as variant_lines
 from place_names import resolve_place_names
 
@@ -125,7 +126,7 @@ def fact_records(data_dir, people_by_id=None):
     if people_by_id is None:
         people = json.loads((ROOT / "data/people.json").read_text(encoding="utf-8"))
         people_by_id = {person['id']: person for person in people if person.get('id')}
-    for path in sorted(data_dir.rglob("*.json")):
+    for path in sorted(json_paths(data_dir, data_dir / "documents/deleted")):
         try:
             document = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):

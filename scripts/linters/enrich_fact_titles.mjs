@@ -41,6 +41,7 @@ function visit(value, pointer, report) {
 }
 
 async function jsonFiles(directory) {
+  if (directory === resolve(root, 'data/documents/deleted')) return [];
   const results = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const path = resolve(directory, entry.name);

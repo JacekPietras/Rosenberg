@@ -1,5 +1,4 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { webcrypto } from 'node:crypto';
 import test from 'node:test';
@@ -148,18 +147,26 @@ test('typed mention dates inherit document intervals and exclude publication yea
   assert.doesNotMatch(html, /1900/);
 });
 
-test('local and published discovery return recursive sources plus watched build inputs', async () => {
-  const tree = ['data/documents/deep/example.json', 'data/people.json', 'data/names.md', 'scripts/family_graph/graph.py', 'README.md'];
+test('published discovery includes recursive active sources and watched build inputs', async () => {
+  const tree = ['data/documents/deep/example.json', 'data/documents/deleted/deep/omitted.json', 'data/people.json', 'data/names.md', 'scripts/family_graph/graph.py', 'README.md'];
   const published = createRepository({ location: { hostname: 'example.github.io', pathname: '/Rosenberg/docs/' },
     fetchFunction: async () => ({ ok: true, json: async () => ({ tree: tree.map((path) => ({ path, type: 'blob', sha: 'abc' })) }) }) });
-  const files = await published.getRepositoryFiles();
-  assert.equal(files.length, 3);
-  assert.ok(files.every(({ path }) => !path.endsWith('.py')));
+  assert.deepEqual((await published.getRepositoryFiles()).map(({ path }) => path),
+    ['data/documents/deep/example.json', 'data/names.md', 'data/people.json']);
+});
+
+test('large local source loads stay within the server batch limit', async () => {
+  const paths = Array.from({ length: 5001 }, (_, index) => `data/documents/${index}.json`);
+  const sizes = [];
   const local = createRepository({ location: { hostname: 'localhost', pathname: '/docs/' },
-    fetchFunction: async () => ({ ok: true, json: async () => files }) });
-  assert.deepEqual(await local.getRepositoryFiles(), files);
-  const server = await readFile(new URL('../docs/serve.py', import.meta.url), 'utf8');
-  assert.ok(server.includes('folder.rglob("*.json")'));
+    fetchFunction: async (url, request) => {
+      assert.equal(url, '/api/source-data-batch');
+      const batch = JSON.parse(request.body).paths;
+      sizes.push(batch.length);
+      return { ok: true, json: async () => Object.fromEntries(batch.map((path) => [path, {}])) };
+    } });
+  assert.deepEqual([...(await local.getJsonBatch(paths)).keys()], paths);
+  assert.deepEqual(sizes, [5000, 1]);
 });
 
 test('active loader filters watched non-source files and verifies evidence views', async () => {

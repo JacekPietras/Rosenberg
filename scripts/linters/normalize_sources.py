@@ -4,8 +4,12 @@
 import json
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from document_paths import json_paths
+
 STRING = r'"(?:[^"\\]|\\.)*"'
 SOURCE = re.compile(r'("source"\s*:\s*)(' + STRING + r'|\[\s*(?:' + STRING + r'\s*(?:,\s*' + STRING + r'\s*)*)?\])')
 
@@ -76,7 +80,7 @@ def normalize(path):
 def main():
     changed = 0
     failed = False
-    for path in sorted((ROOT / "data").rglob("*.json")):
+    for path in sorted(json_paths(ROOT / "data", ROOT / "data/documents/deleted")):
         try:
             changed += normalize(path)
         except (OSError, ValueError) as error:

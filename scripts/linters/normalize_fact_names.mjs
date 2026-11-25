@@ -17,6 +17,7 @@ const knownIds = new Set(JSON.parse(registry).map((person) => person.id));
 const args = [titleText, connectors, particles, names, byNames, JSON.parse(places)];
 
 async function jsonFiles(directory) {
+  if (directory === resolve(root, 'data/documents/deleted')) return [];
   const files = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const path = resolve(directory, entry.name);

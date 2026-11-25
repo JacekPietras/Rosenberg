@@ -45,6 +45,18 @@ class DocumentFilenameTests(unittest.TestCase):
             self.assertEqual({"1500_1.json", "1500_2.json"},
                              {p.name for p in directory.iterdir()})
 
+    def test_renumbering_preserves_filenames_reserved_by_deleted_documents(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            deleted = directory / "deleted"
+            deleted.mkdir()
+            (deleted / "1500_1.json").write_text("deleted")
+            (directory / "1500_4.json").write_text("active")
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual((0, True), module.normalize(directory))
+            self.assertEqual("active", (directory / "1500_2.json").read_text())
+            self.assertEqual("deleted", (deleted / "1500_1.json").read_text())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -16,6 +16,7 @@ const titleText = [
 ].join('\n');
 
 async function jsonFiles(directory) {
+  if (directory === resolve(root, 'data/documents/deleted')) return [];
   const { readdir } = await import('node:fs/promises');
   const results = [];
   for (const entry of await readdir(directory, { withFileTypes: true })) {

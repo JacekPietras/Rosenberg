@@ -7,6 +7,7 @@ import subprocess
 import sys
 import json
 import argparse
+from document_paths import json_paths
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,7 +37,9 @@ def main(argv=None):
     failed = False
     issues = 0
     normalized_names = 0
-    for path in sorted((ROOT / "data").rglob("*.json")):
+    data = ROOT / "data"
+    files = data.rglob("*.json") if args.all else json_paths(data, data / "documents/deleted")
+    for path in sorted(files):
         duplicates = []
         truncated_fields = []
 
