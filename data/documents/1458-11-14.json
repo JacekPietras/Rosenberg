@@ -6,6 +6,24 @@
       "source": "Staatsarchiv Wertheim G-Rep. 100 U 1458 Nov. 14",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199844",
       "german": "Georg von Hartheim und Philipp von Rosenberg vidimieren eine inserierte Urkunde des Konz von Hartheim und des Reinhard und Werner von Hartheim von 1423 März 14.\n\nLaufzeit: 1458 November 14 (Di. n. Martin)\n\nSiegelbeschreibung: 2 Siegel, das 1. ab\n\nVermerke: Rückvermerk",
+      "english": "Georg von Hartheim and Philipp von Rosenberg authenticate an inserted deed of Kunz von Hartheim and Reinhard and Wernher von Hartheim, dated 14 March 1423.\n\nTerm: 14 November 1458 (Tuesday after Martinmas)\n\nDescription of seals: 2 seals, the first detached.\n\nNotes: Endorsement on the reverse",
+      "mention": [
+        {
+          "person": "Georg von Hartheim"
+        },
+        {
+          "person": "Kunz von Hartheim"
+        },
+        {
+          "person": "Philipp von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199844%2F07_0000199844_0001_7-199844-1.jpg"
@@ -13,8 +31,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199844%2F07_0000199844_0002_7-199844-2.jpg"
         }
-      ],
-      "english": "Georg von Hartheim and Philipp von Rosenberg authenticate an inserted deed of Konz von Hartheim and Reinhard and Werner von Hartheim, dated 14 March 1423.\n\nTerm: 14 November 1458 (Tuesday after Martinmas)\n\nDescription of seals: 2 seals, the first detached.\n\nNotes: Endorsement on the reverse"
+      ]
     }
   ]
 }

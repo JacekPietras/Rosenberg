@@ -6,7 +6,12 @@
       "source": "Hauptstaatsarchiv Stuttgart A 136 Bü 8, 19",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2580250",
       "german": "Lutze Münch von Rosenberg, Edelknecht, und Venie, seine eheliche Hausfrau, verkaufen an Peter von Muwer, Propst des Stifts in Wimpfen, Lutzens Oheim, genannte Güter in Großgartach.\n\nLaufzeit: 1367 Mai 17 (Montag nach dem Sonntag, so man singet cantate vier Wochen vor Ostern)",
-      "english": "Lutze Münch von Rosenberg, esquire, and Venie, his lawful wife, sell to Peter von Muwer, provost of the collegiate church in Wimpfen and Lutz’s maternal uncle, certain named properties in Großgartach.\n\nDate: 17 May 1367 (Monday after the Sunday on which “Cantate” is sung, four weeks before Easter)."
+      "english": "Lutze Münch von Rosenberg, esquire, and Venie, his lawful wife, sell to Peter von Muwer, provost of the collegiate church in Wimpfen and Lutz’s maternal uncle, certain named properties in Großgartach.\n\nDate: 17 May 1367 (Monday after the Sunday on which “Cantate” is sung, four weeks before Easter).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

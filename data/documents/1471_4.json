@@ -6,12 +6,17 @@
       "source": "Generallandesarchiv Karlsruhe 67 Nr. 1057, 176",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3976726",
       "german": "Ruprecht Münch von Rosenberg",
+      "english": "Ruprecht Münch von Rosenberg",
+      "mention": [
+        {
+          "person": "Ruprecht Mönch von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003976726%2F04_0003976726_0001_4-3976726-1.jpg"
         }
-      ],
-      "english": "Ruprecht Münch von Rosenberg"
+      ]
     }
   ]
 }

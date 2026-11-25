@@ -6,6 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2781",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-194346",
       "german": "Jörg von Rosenberg: Dienstleistung, Pferde gegenüber HEE von Berlichingen; Siegel: Jörg von Rosenberg und Wilhelm von Dottenheim.\n\nLaufzeit: 1468\n\nUmfang: 1 Urkunde, Papier",
+      "english": "Georg von Rosenberg: service and horses in relation to HEE von Berlichingen; seals: Georg von Rosenberg and Wilhelm von Dottenheim.\n\nTerm: 1468\n\nExtent: 1 paper charter.",
+      "mention": [
+        {
+          "place": "berlichingen"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194346%2F03_0000194346_0001_3-194346-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194346%2F03_0000194346_0002_3-194346-2.jpg"
         }
-      ],
-      "english": "Jörg von Rosenberg: service and horses in relation to HEE von Berlichingen; seals: Jörg von Rosenberg and Wilhelm von Dottenheim.\n\nTerm: 1468\n\nExtent: 1 paper charter."
+      ]
     }
   ]
 }

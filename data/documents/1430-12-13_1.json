@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim R-US 1430 Dezember 13",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234781",
       "german": "Die Gemeinde Kupprichhausen (Kupprighusen) besteht von dem Kloster Bronnbach (Brunbach) unter genannten Bedingungen das Munchholtze zu Kupprichhausen (Kupprighusen).\n\nLaufzeit: 1430 Dezember 13 (\".. der geben ist noch Crist geburt tusent vierhundert und dor noch in dem treyssigsten jar an dem tag sanct Lucie der heiligen junchfrauwen\")\n\nSiegelbeschreibung: Siegel an Pergamentstreif, stark verwischt\n\nVermerke: Auf der Rückseite: \"de silva locata rusticis in Kuprichhusen\"\n\nSiegler: Junker Thomas von Rosenberg",
+      "english": "The community of Kupprichhausen holds the Munchholtze at Kupprichhausen from Bronnbach Abbey under the stated conditions.\n\nTerm: 13 December 1430 (“given after the birth of Christ in the year one thousand four hundred and thirtieth, on the day of Saint Lucy, the holy virgin”).\n\nSeal description: seal on a parchment tag, badly blurred.\n\nNotes: on the back: “concerning the woodland leased to the peasants in Kuprichhusen”.\n\nSealer: Junker Thomas von Rosenberg.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "person": "Thomas von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234781%2F07_0000234781_0001_7-234781-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234781%2F07_0000234781_0002_7-234781-2.jpg"
         }
-      ],
-      "english": "The community of Kupprichhausen holds the Munchholtze at Kupprichhausen from Bronnbach Abbey under the stated conditions.\n\nTerm: 13 December 1430 (“given after the birth of Christ in the year one thousand four hundred and thirtieth, on the day of Saint Lucy, the holy virgin”).\n\nSeal description: seal on a parchment tag, badly blurred.\n\nNotes: on the back: “concerning the woodland leased to the peasants in Kuprichhusen”.\n\nSealer: Junker Thomas von Rosenberg."
+      ]
     }
   ]
 }

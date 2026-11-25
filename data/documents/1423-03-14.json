@@ -6,7 +6,30 @@
       "source": "Staatsarchiv Wertheim G-Rep. 100 U 1423 März 14 in 1459 Nov. 14",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199566",
       "german": "Konz von Hartheim, Ritter, und Reinhard und Werner von Hartheim verkaufen die Hälfte des Zehnten zu Üffingen mit allem Zubehör, 4 Morgen Wiesen in Schüpfer Markung und die Hälfte des Dorfes Reichartshausen und die Weingarten im Appental unter dem Steinselberg, die von Graf Johann von Wertheim zu Lehen gehen um 500 fl.\n\nLaufzeit: 1423 März 14 (Lätare)",
-      "english": "Konz von Hartheim, Ritter, and Reinhard and Werner von Hartheim sell, for 500 florins, half the tithe at Üffingen with all appurtenances, four Morgen of meadows in the Schüpf district, half the village of Reichartshausen, and the vineyards in the Appental below the Steinselberg; these are held in fief from Count Johann von Wertheim.\n\nDate: 14 March 1423 (Laetare Sunday)"
+      "english": "Kunz von Hartheim, Ritter, and Reinhard and Wernher von Hartheim sell, for 500 florins, half the tithe at Üffingen with all appurtenances, four Morgen of meadows in the Schüpf district, half the village of Reichartshausen, and the vineyards in the Appental below the Steinselberg; these are held in fief from Count Johann von Wertheim.\n\nDate: 14 March 1423 (Laetare Sunday)",
+      "mention": [
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "person": "Kunz von Hartheim",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ]
     }
   ]
 }

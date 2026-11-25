@@ -1,14 +1,23 @@
 {
   "date": "1398/1400",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "RIplus Regg. Pfalzgrafen 1 n. 6083",
       "url": "https://www.regesta-imperii.de/id/dbedcc3d-afe1-4c23-ac02-5bf0bfdfb1ef",
       "german": "Hans von Rosenberg, ritter: burg und dorf Mure und ein haus zu Heidelberg, gelegen an Albrechts von Erlekeim haus. 16.",
-      "english": "Hans von Rosenberg, Ritter: the castle and village of Mure and a house in Heidelberg, situated next to Albrecht von Erlekeim’s house. Fol. 16."
+      "english": "Hans von Rosenberg, Ritter: the castle and village of Mure and a house in Heidelberg, situated next to Albrecht von Erlekeim’s house. Fol. 16.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "heidelberg"
+        }
+      ]
     }
   ]
 }

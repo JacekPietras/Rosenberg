@@ -6,6 +6,33 @@
       "source": "Staatsarchiv Wertheim G-Rep. 100 U 1423 Sept. 25",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199574",
       "german": "Anna von Rosenberg, Witwe Hermann Semans, urkundet wegen des Scheidbriefs, den + Heinrich von Sickingen, Erkinger von Saunsheim und Hanman Echter zwischen Konrad, Reinhard und Werner von Hardheim und Dieter Rüdt einerseits und + Hermann Seman andererseits ausgestellt haben. Da dieser wegen Eubigheim ausgestellte Scheidbrief verloren ist, wird er hiermit für kraftlos erklärt.\n\nLaufzeit: 1423 September 25 (Sa. v. Michael)\n\nSiegelbeschreibung: 3 Siegel, 1.+3. besch., 2. Rest",
+      "english": "Anna von Rosenberg, widow of Hermann Seman, records a matter concerning the arbitration charter issued by the late Heinrich von Sickingen, Erkinger von Seinsheim, and Hanman Echter between Konrad, Reinhard, and Wernher von Hartheim and Dieter Rüdt on one side, and the late Hermann Seman on the other. Since the arbitration charter concerning Eubigheim has been lost, it is hereby declared void.\n\nDate: 25 September 1423 (Saturday before Michaelmas)\n\nSeal description: 3 seals; the first and third damaged, the second a fragment",
+      "mention": [
+        {
+          "person": "Anna von Rosenberg"
+        },
+        {
+          "person": "Diether Rüd"
+        },
+        {
+          "person": "Erkinger von Seinsheim"
+        },
+        {
+          "place": "eubigheim"
+        },
+        {
+          "person": "Heinrich von Sickingen"
+        },
+        {
+          "person": "Konrad von Hartheim"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        },
+        {
+          "person": "Wernher von Hartheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199574%2F07_0000199574_0001_7-199574-1.jpg"
@@ -13,8 +40,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199574%2F07_0000199574_0002_7-199574-2.jpg"
         }
-      ],
-      "english": "Anna von Rosenberg, widow of Hermann Seman, records a matter concerning the arbitration charter issued by the late Heinrich von Sickingen, Erkinger von Saunsheim, and Hanman Echter between Konrad, Reinhard, and Werner von Hardheim and Dieter Rüdt on one side, and the late Hermann Seman on the other. Since the arbitration charter concerning Eubigheim has been lost, it is hereby declared void.\n\nDate: 25 September 1423 (Saturday before Michaelmas)\n\nSeal description: 3 seals; the first and third damaged, the second a fragment"
+      ]
     }
   ]
 }

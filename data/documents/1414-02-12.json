@@ -1,14 +1,23 @@
 {
   "date": "1414-02-12",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "78",
       "url": "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/78/charter",
       "german": "Ritter Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden auf Zeugnis des Rudolf Sachs und Lamprecht Gros, daß Walther Veyrlein und seine Frau Mechtlind zu Schafftnach ihren Acker an der Preymich dem Neuen Spital zu Nürnberg (Pfleger: Sebolt Gross) verkauft haben.",
       "english": "Hans von Rosenberg, Ritter, the mayor, and the aldermen of the city of Nürnberg certify, on the testimony of Rudolf Sachs and Lamprecht Gros, that Walther Veyrlein and his wife Mechtlind zu Schafftnach sold their field at the Preymich to the New Hospital in Nürnberg (administrator: Sebolt Gross).",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0078-1414-februar-12__81442e62-68a1-4fd9-aec8-ab070c215fb2_r.JPG"

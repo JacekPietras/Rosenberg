@@ -7,7 +7,18 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 4390",
       "url": "https://www.regesta-imperii.de/id/d400a742-41b6-4caa-bec0-8aa9959f0d26",
       "german": "Eberhard und Arnold von Rosenberg öffnen Ruprecht d. ältern, jüngern und jüngsten die hälfte von Boxberg. Or. Karlsr. G. L. A. — Zeitsch. f. d. O. 24,83 extr.",
-      "english": "Eberhard and Arnold von Rosenberg open one half of Boxberg to Ruprecht the Elder, the Younger, and the Youngest. Original, Karlsruhe General State Archive; Journal for the History of the Upper Rhine 24, p. 83, excerpt."
+      "english": "Eberhard and Arnold von Rosenberg open one half of Boxberg to Ruprecht the Elder, the Younger, and the Youngest. Original, Karlsruhe General State Archive; Journal for the History of the Upper Rhine 24, p. 83, excerpt.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg"
+        }
+      ]
     }
   ]
 }

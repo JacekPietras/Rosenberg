@@ -6,6 +6,30 @@
       "source": "HStAD, A 2, 114/190",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5361390",
       "german": "Mainz (Generalia): Otto v. Erlenbach, Amtmann zu Fürstenau und Brising von Rosenbach bekunden, dass sie die Urkunde des verstorbenen Erzbischofs Adolf von Mainz von 1469-02-23 (inseriert) betreffend einer Lehnsexpektanz an Konrad Echter beglaubigt haben. Diese Urkunde vom 23.02.1469 lautet: Erzbischof Adolf von Mainz bekundet, dass dem Konrad Echter wegen geleisteter Dienste für das Erzstift Gülten und Schaden ausstehen, auch 26 'verleyste' Hengste und Pferde, wofür ihm 100 fl. nachgelassen worden seien. Dafür habe er ihm nun die Gnade getan, für den Fall, dass die Vettern Eberhard und Philipp Swende versterben, dass deren Lehen als Mannlehen an den Konrad oder dessen Leibeserben fallen sollen.\n\nFormalbeschreibung: Urkunde von 1484-05-28: Pergament, zwei anhängende Siegel der Aussteller abgefallen; Urkunde von 1469-02-23: Siegler: Adolf von Mainz, Dekan Richard v. Obernstein und das Domkapitel Mainz\n\n(Vor-) Provenienzen: Echter v. Mespelbrunn\n\nZusatzinformationen: Acc. 39/82 (GNM 6510)",
+      "english": "Mainz (General Matters): Otto von Erlenbach, Amtmann zu Fürstenau, and Brising von Rosenbach certify that they have authenticated the inserted charter of the late Archbishop Adolf of Mainz, dated 23 February 1469, concerning an expectation of a fief granted to Konrad Echter. The charter of 23 February 1469 states that, for services rendered to the archbishopric, debts and damages remained owing to Konrad Echter, as well as 26 ‘loaned’ stallions and horses, for which 100 florins had been remitted to him. In return, the archbishop had now granted him the favor that, should the cousins Eberhard and Philipp Swende die, their fiefs would pass as man-fiefs to Konrad or his bodily heirs.\n\nDescription of the original: Charter of 28 May 1484: parchment, the two seals attached by the issuing parties have fallen off. Charter of 23 February 1469: seals of Adolf of Mainz, Dean Richard von Obernstein, and the Mainz cathedral chapter.\n\nProvenance: Echter von Mespelbrunn.\n\nAdditional information: Acc. 39/82 (GNM 6510).",
+      "mention": [
+        {
+          "person": "Adolf of Mainz"
+        },
+        {
+          "person": "Erzbischof Adolf",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "person": "Otto von Erlenbach",
+          "personTitle": [
+            "Amtmann zu Fürstenau"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/114--190/hstad_a_2_nr_114--190_0001.jpg"
@@ -16,8 +40,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/114--190/hstad_a_2_nr_114--190_0003.jpg"
         }
-      ],
-      "english": "Mainz (General Matters): Otto von Erlenbach, Amtmann zu Fürstenau, and Brising von Rosenbach certify that they have authenticated the inserted charter of the late Archbishop Adolf of Mainz, dated 23 February 1469, concerning an expectation of a fief granted to Konrad Echter. The charter of 23 February 1469 states that, for services rendered to the archbishopric, debts and damages remained owing to Konrad Echter, as well as 26 ‘loaned’ stallions and horses, for which 100 florins had been remitted to him. In return, the archbishop had now granted him the favor that, should the cousins Eberhard and Philipp Swende die, their fiefs would pass as man-fiefs to Konrad or his bodily heirs.\n\nDescription of the original: Charter of 28 May 1484: parchment, the two seals attached by the issuing parties have fallen off. Charter of 23 February 1469: seals of Adolf of Mainz, Dean Richard von Obernstein, and the Mainz cathedral chapter.\n\nProvenance: Echter von Mespelbrunn.\n\nAdditional information: Acc. 39/82 (GNM 6510)."
+      ]
     }
   ]
 }

@@ -1,8 +1,7 @@
 {
   "date": "1437-09-02",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Stiftsarchiv Wilhering (www.stiftwilhering.at), 1437 IX 02",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

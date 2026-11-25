@@ -1,15 +1,29 @@
 {
   "date": "1412-05-17",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "70",
       "url": "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/70/charter",
       "german": "Jacob vom Wolffstein zu Allersperg und Anna, seine eheliche Hausfrau, verkaufen an Frau Elspet, Witwe des Hans Rieder des Jüngern, Bürgerin zu Nürnberg, um eine gewisse Summe eine Anzahl von Gütern und zwar: ein Gut zu Fretenshoven (=Frettenshofen) (Vorbesitzer Heintz Prawn, Inhaber Merckel Cunrad, früherer Inh. Haincz Prawn) und die dazu gehörigen 2 Sölden (Inhaber Fridel Lancz und Cuncz Haylner) mit den (angegebenen) Gilten, ein weiteres Gut daselbst (Vorbesitzer Heinrich Zagel, Inhaber Hans Saher, früherer Inh. Heinrich Zagel) mit den (angeg.) Gilten, ein weiteres Gut daselbst (Vorbesitzer Cunrad Hufnagel, früherer Inhaber der Wölfel) mit den dazu gehörigen 2 Sölden (Inhaber Üllein Hüler und Heincz Hufnagel) mit den (angeg.) Gilten, ferner einen Hof zu Merstorff (=Mörsdorf) (Inhaber Fricz Nadler, Vorbesitzer der Schewckner mit den dazu gehörigen 3 Sölden (Inhaber Fricz Beschorn, Heincz Roder und der Stör) mit den (angeg.) Gilten, einen weiteren Hof daselbst (Inhaber Fricz Sleiffengrel, Vorbesitzer der Seemann) mit der dazu gehörigen, öden Söld, mit den (angeg.) Gilten, ein weiteres Gut daselbst (Inhaber Cuncz Reynolt) mit den (angeg.) Gilten, ferner einen Hof “zum Kawrhof” genant (=Kauerhof) (Inhaber Cuncz Rot, früherer Inh. Der Kawrhofer) mit den (angeg.) Gilten und setzen die Käuferin in die Gewere und alle Rechte. Der Bruder des Verkäufers, Lorenz von Wolffstein, erkent den Verkauf als zu Recht bestehenden und verzichtet auf alte Rechte von den Gütern; ebenso verbürgen sich Jacob und Lorenz von W. für den dritten Bruder, Fricz von Wolffstein, “der bey lande nicht ist.” – Siegler (neben den genanten 2 Brüdern) und Bürgen: Friedrich Herr zu Heydecke, Hans von Rosemberg, Ritter, Fridrich Schenck zu Geyrn, Heincz Frickenhofer zum Newenmarkt.",
       "english": "Jacob vom Wolffstein zu Allersperg and Anna, his lawful wife, sell to Frau Elspet, widow of Hans Rieder der Jüngere, citizen of Nürnberg, for a certain sum a number of properties: an estate at Frettenshofen (formerly held by Heintz Prawn, now by Merckel Cunrad, and previously by Haincz Prawn), together with its two associated Sölden (held by Fridel Lancz and Cuncz Haylner) and the specified rents; another estate there (formerly held by Heinrich Zagel, now by Hans Saher, and previously by Heinrich Zagel), with the specified rents; another estate there (formerly held by Cunrad Hufnagel and previously by der Wölfel), together with its two associated Sölden (held by Üllein Hüler and Heincz Hufnagel) and the specified rents; also a farm at Mörsdorf (held by Fricz Nadler, formerly by der Schewckner), together with its three associated Sölden (held by Fricz Beschorn, Heincz Roder, and der Stör) and the specified rents; another farm there (held by Fricz Sleiffengrel, formerly by der Seemann), together with its associated, vacant Söld and the specified rents; another estate there (held by Cuncz Reynolt), with the specified rents; and a farm called “zum Kauerhof” (held by Cuncz Rot, formerly by der Kawrhofer), with the specified rents. They put the buyer in possession and convey all rights to her. The seller’s brother Lorenz von Wolffstein acknowledges that the sale is legally valid and renounces old rights in the properties; Jacob and Lorenz von Wolffstein likewise stand surety for their third brother, Fricz von Wolffstein, “who is not in the country.” Sealing (in addition to the two brothers named above) and acting as sureties: Friedrich Herr zu Heydecke, Hans von Rosenberg, Ritter, Fridrich Schenck zu Geyrn, and Heincz Frickenhofer zum Newenmarkt.",
-      "english": "Jacob vom Wolffstein zu Allersperg and Anna, his lawful wife, sell to Frau Elspet, widow of Hans Rieder der Jüngere, citizen of Nürnberg, for a certain sum a number of properties: an estate at Frettenshofen (formerly held by Heintz Prawn, now by Merckel Cunrad, and previously by Haincz Prawn), together with its two associated Sölden (held by Fridel Lancz and Cuncz Haylner) and the specified rents; another estate there (formerly held by Heinrich Zagel, now by Hans Saher, and previously by Heinrich Zagel), with the specified rents; another estate there (formerly held by Cunrad Hufnagel and previously by der Wölfel), together with its two associated Sölden (held by Üllein Hüler and Heincz Hufnagel) and the specified rents; also a farm at Mörsdorf (held by Fricz Nadler, formerly by der Schewckner), together with its three associated Sölden (held by Fricz Beschorn, Heincz Roder, and der Stör) and the specified rents; another farm there (held by Fricz Sleiffengrel, formerly by der Seemann), together with its associated, vacant Söld and the specified rents; another estate there (held by Cuncz Reynolt), with the specified rents; and a farm called “zum Kauerhof” (held by Cuncz Rot, formerly by der Kawrhofer), with the specified rents. They put the buyer in possession and convey all rights to her. The seller’s brother Lorenz von Wolffstein acknowledges that the sale is legally valid and renounces old rights in the properties; Jacob and Lorenz von Wolffstein likewise stand surety for their third brother, Fricz von Wolffstein, “who is not in the country.” Sealing (in addition to the two brothers named above) and acting as sureties: Friedrich Herr zu Heydecke, Hans von Rosenberg, Ritter, Fridrich Schenck zu Geyrn, and Heincz Frickenhofer zum Newenmarkt.",
+      "mention": [
+        {
+          "person": "Friedrich Schenk",
+          "personTitle": [
+            "zu Geyrn"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0070-1412-mai-17__8a7d50eb-64e5-49d6-893c-6c957d4875a1_r.JPG"

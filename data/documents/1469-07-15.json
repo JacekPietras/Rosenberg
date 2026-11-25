@@ -6,6 +6,15 @@
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 204",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129276",
       "german": "Revers des Klosters Bronnbach für die Carthause Grünau über 1 1/2 Morgen Wiesen an der Maßenbach, welche es von Johann Sartor von Uissigheim unter der Bedingung gekauft, der Carthause einen jährlichen Zins zu reichen und andres mehr.\n\nLaufzeit: 1469 Juli 15",
+      "english": "Acknowledgment by Bronnbach Monastery in favor of Grünau Charterhouse concerning one and a half acres of meadowland at Maßenbach, which the monastery purchased from Johann Sartor von Uissigheim on condition that it pay the Charterhouse an annual rent, among other terms.\n\nTerm: 15 July 1469.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129276%2F07_0000129276_0001_7-129276-1.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129276%2F07_0000129276_0002_7-129276-2.jpg"
         }
-      ],
-      "english": "Acknowledgment by Bronnbach Monastery in favor of Grünau Charterhouse concerning one and a half acres of meadowland at Maßenbach, which the monastery purchased from Johann Sartor von Uissigheim on condition that it pay the Charterhouse an annual rent, among other terms.\n\nTerm: 15 July 1469."
+      ]
     }
   ]
 }

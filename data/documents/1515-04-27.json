@@ -6,7 +6,18 @@
       "source": "HStAD, B 8, 9/98",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5535473",
       "german": "Erzbischof Albrecht von Mainz: Verleihung eines Burglehens von 6 Gulden jährlicher Gülte aus der Kellerei Steinheim an Konrad v. Rosenbach, Sohn des verstorbenen Wiprecht\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. sehr besch.\n\nSiegler: Aussteller",
-      "english": "Archbishop Albrecht of Mainz grants Konrad von Rosenbach, son of the late Wiprecht, a castle fief consisting of an annual rent of 6 gulden from the Steinheim treasury.\n\nFormal description: Original, parchment, attached seal badly damaged.\n\nSealer: The issuer."
+      "english": "Archbishop Albrecht of Mainz grants Konrad von Rosenberg, son of the late Wiprecht, a castle fief consisting of an annual rent of 6 gulden from the Steinheim treasury.\n\nFormal description: Original, parchment, attached seal badly damaged.\n\nSealer: The issuer.",
+      "mention": [
+        {
+          "person": "Erzbischof Albrecht",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ]
     }
   ]
 }

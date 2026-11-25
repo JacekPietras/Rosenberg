@@ -7,7 +7,18 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 3712",
       "url": "https://www.regesta-imperii.de/id/c2926103-1479-4b9c-b864-3393059b185d",
       "german": "gibt alle güter, welche vitztum Conrad von Rosenberg und Heinrich, landschreiber zu Amberg, ihm auf der feste Smydemulen, an des pfalzgrafen \"landschranen\" zu Lyngenfelt mit recht und urtheil erklagt, an Ulrich Wolfelin von Nappurg seinen küchenmeister. Karlsr. Copb. 464,104v.",
-      "english": "He grants to his chamberlain Ulrich Wolfelin von Nappurg all the properties that Viztum Conrad von Rosenberg and Heinrich, land clerk at Amberg, had successfully claimed for him by law and judgment at the Palatine regional court at Lyngenfelt, concerning the fortress of Smydemulen. Karlsruhe copybook 464, fol. 104v."
+      "english": "He grants to his chamberlain Ulrich Wolfelin von Nappurg all the properties that Viztum Konrad von Rosenberg and Heinrich, land clerk at Amberg, had successfully claimed for him by law and judgment at the Palatine regional court at Lyngenfelt, concerning the fortress of Smydemulen. Karlsruhe copybook 464, fol. 104v.",
+      "mention": [
+        {
+          "place": "heidelberg"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Vizedom"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1912",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-192005",
       "german": "Bernhart und Hans von Berlichingen verkaufen an Albrecht von Hohenlohe Gülten und Zehnten zu Nagelsberg; Siegel: Bernhart, Hans und Moritz von Berlichingen, Lorenz von Rosenberg.\n\nLaufzeit: 1514\n\nUmfang: 1 Urkunde",
+      "english": "Bernhart and Hans von Berlichingen sell rents and tithes at Nagelsberg to Albrecht von Hohenlohe. Seals: Bernhart, Hans, and Moritz von Berlichingen; Lorenz von Rosenberg.\n\nPeriod: 1514\n\nExtent: 1 charter",
+      "mention": [
+        {
+          "person": "Albrecht von Hohenlohe"
+        },
+        {
+          "place": "berlichingen"
+        },
+        {
+          "person": "Hans von Berlichingen"
+        },
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "nagelsberg-castle"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192005%2F03_0000192005_0001_3-192005-1.jpg"
@@ -13,8 +31,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192005%2F03_0000192005_0002_3-192005-2.jpg"
         }
-      ],
-      "english": "Bernhart and Hans von Berlichingen sell rents and tithes at Nagelsberg to Albrecht von Hohenlohe. Seals: Bernhart, Hans, and Moritz von Berlichingen; Lorenz von Rosenberg.\n\nPeriod: 1514\n\nExtent: 1 charter"
+      ]
     }
   ]
 }

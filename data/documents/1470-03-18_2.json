@@ -6,7 +6,18 @@
       "source": "HStAD, B 8, 9/42",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=16057",
       "german": "Diether v. Isenburg, Graf zu Büdingen (ehemals Erzbischof zu Mainz): Verleihung eines Burglehens von 6 Gulden jährlicher Gülte aus der Kellerei zu Steinheim an Wiprecht v. Rosenbach\n\nFormalbeschreibung: Ausf., Perg., von anh. Sg. nur Perg.str.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Diether von Isenburg, Count zu Büdingen and formerly Archbishop zu Mainz: grant of a castle fief consisting of an annual rent of 6 gulden from the cellarer's office at Steinheim to Wiprecht von Rosenbach.\n\nFormal description: original, parchment; only the parchment strip of the attached seal remains.\n\nSealer: the issuer.\n\n(Former) provenance: von Rosenbach."
+      "english": "Diether von Isenburg, Count zu Büdingen and formerly Archbishop zu Mainz: grant of a castle fief consisting of an annual rent of 6 gulden from the cellarer's office at Steinheim to Wiprecht von Rosenberg.\n\nFormal description: original, parchment; only the parchment strip of the attached seal remains.\n\nSealer: the issuer.\n\n(Former) provenance: von Rosenbach.",
+      "mention": [
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wiprecht von Rosenberg"
+        }
+      ]
     }
   ]
 }

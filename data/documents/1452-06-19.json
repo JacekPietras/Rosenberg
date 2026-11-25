@@ -6,6 +6,15 @@
       "source": "Deutschordenszentralarchiv, Wien Stuttgart 1907, 3689",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3689/charter",
       "german": "Wilhelm v. Dottenheim bürgt dem Deutschmeister Jost v. Venningen für Anselm v. Rosenberg, der dem Deutschmeister 1.000 fl rheinisch schuldet.\n\nSiegel: Siegel an Perg.-Streifen.",
+      "english": "Wilhelm von Dottenheim stands surety for Anselm von Rosenberg, who owes the Teutonic Grand Master Jost von Venningen 1,000 Rhenish florins, to the Grand Master.\n\nSeal: Seal attached to parchment strips.",
+      "mention": [
+        {
+          "person": "Anselm von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Dottenheim"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14520619_b_r.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14520619_b_v.jpg"
         }
-      ],
-      "english": "Wilhelm von Dottenheim stands surety for Anselm von Rosenberg, who owes the Teutonic Grand Master Jost von Venningen 1,000 Rhenish florins, to the Grand Master.\n\nSeal: Seal attached to parchment strips."
+      ]
     }
   ]
 }

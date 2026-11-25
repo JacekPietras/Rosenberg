@@ -5,26 +5,70 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 4 Qu. 118",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753923",
+      "german": "Verkauf einer Gült von einem Gut zu Oesfeld an Endres von Grumbach, Kt Mgh, 1477 Nov. 6 [Regest];",
       "english": "Sale to Endres von Grumbach, Commander of the Teutonic Order at Mergentheim, of a rent from an estate at Oesfeld, 6 November 1477 [abstract].",
-      "german": "Verkauf einer Gült von einem Gut zu Oesfeld an Endres von Grumbach, Kt Mgh, 1477 Nov. 6 [Regest];"
+      "mention": [
+        {
+          "place": "grumbach"
+        }
+      ]
     },
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 4 Qu. 118",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753923",
+      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an Endres von Grumbach, Kt Mgh, durch Michael [I.] von Rosenberg, 1478 Feb. 22 [Regest].\n\nLaufzeit: 1454-1479",
       "english": "Sale by Michael [I] von Rosenberg of half the greater and lesser tithes at Bobstadt to Endres von Grumbach, Commander of the Teutonic Order at Mergentheim, 22 February 1478 [abstract].",
-      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an Endres von Grumbach, Kt Mgh, durch Michael [I.] von Rosenberg, 1478 Feb. 22 [Regest].\n\nLaufzeit: 1454-1479"
+      "mention": [
+        {
+          "place": "bobstadt"
+        },
+        {
+          "place": "grumbach"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        }
+      ]
     },
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 19 Qu. 55",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755358",
+      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an [Endres von Grumbach,] Kt Mgh, durch Michael [I.] von Rosenberg, Ritter, 1478 [Feb. 22; Regest].",
       "english": "Sale by Michael [I] von Rosenberg, knight, of half the greater and lesser tithes at Bobstadt to [Endres von Grumbach,] Commander of the Teutonic Order at Mergentheim, 1478 [22 February; abstract].",
-      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an [Endres von Grumbach,] Kt Mgh, durch Michael [I.] von Rosenberg, Ritter, 1478 [Feb. 22; Regest]."
+      "mention": [
+        {
+          "place": "bobstadt"
+        },
+        {
+          "place": "grumbach"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     },
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 19 Qu. 80",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755383",
+      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an Endres von Grumbach, Kt Mgh, durch Michel [I.] von Rosenberg, Ritter, 1478 [Feb. 22; Regest];",
       "english": "Sale by Michel [I] von Rosenberg, knight, of half the greater and lesser tithes at Bobstadt to Endres von Grumbach, Commander of the Teutonic Order at Mergentheim, 1478 [22 February; abstract].",
-      "german": "Verkauf der Hälfte des großen und kleinen Zehnten zu Bobstadt an Endres von Grumbach, Kt Mgh, durch Michel [I.] von Rosenberg, Ritter, 1478 [Feb. 22; Regest];"
+      "mention": [
+        {
+          "place": "bobstadt"
+        },
+        {
+          "place": "grumbach"
+        },
+        {
+          "person": "Michael von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     }
   ]
 }

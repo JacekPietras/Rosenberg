@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim R-US 1363 Juli 6",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234458",
       "german": "Wolf, Heinrich, des ersten Sohn, und Kunz Klewiz von Weikerstetten (Wigersteten) bekennen, dass sie sich mit Abt und Konvent von Bronnbach in dem Streit über die Güld von dem Hof zu Weikerstetten (Wigersteten), welchen sie von dem Kloster haben, geeinigt haben.\n\nLaufzeit: 1363 Juli 6 (\"diz gescha, do man zalt von cristes geburte drutzehenhundert iare und drin und sechzig iare an dem nehesten dunrestage vor sant kylianes dage\")\n\nVermerke: Auf der Rückseite: \"Weickerstetten. Vertrag zwischen dem closter und etlichen besitzern des hofs allda wegen der jährlichen güld, de anno 1363\"\n\nSiegler: Hermann Seman von Königheim, Bürge; Arnold von Uissigheim, Vogt zu Swainburg, Bürge; Ruprecht Stetenberg, Vogt zu Külsheim, Bürge",
+      "english": "Wolf, Heinrich, the former's son, and Kunz Klewiz von Weikerstetten acknowledge that they have reached a settlement with the abbot and convent of Bronnbach in the dispute concerning the annual rent from the farm at Weikerstetten, which they hold from the monastery.\n\nTerm: 6 July 1363 (“This was done in the year of Christ's birth 1363, on the Thursday before Saint Kilian's Day”).\n\nNotes: On the reverse: “Weikerstetten. Agreement between the monastery and certain holders of the farm there concerning the annual rent, in the year 1363.”\n\nSealers: Hermann Seman von Königheim, surety; Arnold von Uissigheim, Vogt zu Swainburg, surety; Ruprecht Stetenberg, Vogt zu Külsheim, surety.",
+      "mention": [
+        {
+          "person": "Arnold von Uissigheim",
+          "personTitle": [
+            "Vogt zu Swainburg"
+          ]
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "koenigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234458%2F07_0000234458_0001_7-234458-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234458%2F07_0000234458_0002_7-234458-2.jpg"
         }
-      ],
-      "english": "Wolf, Heinrich, the former's son, and Kunz Klewiz von Weikerstetten acknowledge that they have reached a settlement with the abbot and convent of Bronnbach in the dispute concerning the annual rent from the farm at Weikerstetten, which they hold from the monastery.\n\nTerm: 6 July 1363 (“This was done in the year of Christ's birth 1363, on the Thursday before Saint Kilian's Day”).\n\nNotes: On the reverse: “Weikerstetten. Agreement between the monastery and certain holders of the farm there concerning the annual rent, in the year 1363.”\n\nSealers: Hermann Seman von Königheim, surety; Arnold von Uissigheim, Vogt zu Swainburg, surety; Ruprecht Stetenberg, Vogt zu Külsheim, surety."
+      ]
     }
   ]
 }

@@ -6,6 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1528",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-190708",
       "german": "Graf Kraft von Hohenlohe an Jörg von Rosenberg.\n\nLaufzeit: 1493\n\nUmfang: 1 Schr.",
+      "english": "Count Kraft von Hohenlohe to Georg von Rosenberg.\n\nTerm: 1493\n\nExtent: One document",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190708%2F03_0000190708_0001_3-190708-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190708%2F03_0000190708_0002_3-190708-2.jpg"
         }
-      ],
-      "english": "Count Kraft von Hohenlohe to Jörg von Rosenberg.\n\nTerm: 1493\n\nExtent: One document"
+      ]
     }
   ]
 }

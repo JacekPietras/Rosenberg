@@ -7,7 +7,12 @@
       "source": "[RIplus] Regg. Wenzel [n. 591]",
       "url": "https://www.regesta-imperii.de/id/c538877a-c1a7-4827-a2f0-4e1a93798400",
       "german": "Wenzel für Heinrich von Rosenberg.",
-      "english": "Wenceslas, acting on behalf of Heinrich von Rosenberg."
+      "english": "Wenceslas, acting on behalf of Heinrich von Rosenberg.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

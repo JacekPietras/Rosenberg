@@ -6,7 +6,24 @@
       "source": "HStAD, B 8, 9/29",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3091719",
       "german": "Erzbischof Dietrich von Mainz: Verleihung der dem Stift nach Ableben Ewalds und dessen Sohn Johanns v. Schlitz gen. v. Heusenstamm angefallenen Mannlehen über 16 Gulden und 16 Schilling Gülte, von Orb fallend, an Siegfried Schelm v. Bergen als Vormünder und Lehnsträger der Gebr. Brising und Reinhard v. Rosenbach, Söhnen des verstorbenen Peter v. Rosenbach\n\nFormalbeschreibung: Ausf., Perg., anh. Sg.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Dietrich, Erzbischof von Mainz: grant to Siegfried Schelm von Bergen, as guardian and feudal holder for the brothers Brising and Reinhard von Rosenbach, sons of the late Peter von Rosenbach, of the male fiefs that had fallen to the chapter upon the deaths of Ewald and his son Johann von Schlitz genannt von Heusenstamm: rents of 16 gulden and 16 schillings, accruing from Orb.\n\nFormal description: Original document, parchment, with attached seal.\n\nSealer: The issuer.\n\n(Former) provenances: von Rosenbach."
+      "english": "Dietrich, Erzbischof von Mainz: grant to Siegfried Schelm von Bergen, as guardian and feudal holder for the brothers Brising and Reinhard von Rosenberg, sons of the late Peter von Rosenberg, of the male fiefs that had fallen to the chapter upon the deaths of Ewald and his son Johann von Schlitz genannt von Heusenstamm: rents of 16 gulden and 16 schillings, accruing from Orb.\n\nFormal description: Original document, parchment, with attached seal.\n\nSealer: The issuer.\n\n(Former) provenances: von Rosenbach.",
+      "mention": [
+        {
+          "person": "Erzbischof Dietrich",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ]
+        },
+        {
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "person": "Reinhard von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

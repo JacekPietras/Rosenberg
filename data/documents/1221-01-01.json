@@ -1,8 +1,7 @@
 {
   "date": "1221-01-01",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Ordinis Theutonici, Nr. 328, S. 310, 328",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

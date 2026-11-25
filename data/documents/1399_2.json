@@ -1,15 +1,18 @@
 {
   "date": "1399",
-  "label": [
-    "to review"
-  ],
+  "place": "Bettlern",
+  "label": "to review",
   "entries": [
     {
       "source": "[RIplus] Regg. Wenzel [n. 3681]",
       "url": "https://www.regesta-imperii.de/id/d5176e4b-d186-49cc-b436-16a17084110e",
       "german": "Geleitbrief Wenzels für Bischof Johann von Leitomischl, Heinrich von Rosenberg, Hinko von Hohenstein.",
-      "english": "Wenceslas's safe-conduct letter for Bishop Johann von Leitomischl, Heinrich von Rosenberg, and Hinko von Hohenstein."
+      "english": "Wenceslas's safe-conduct letter for Bishop Johann von Leitomischl, Heinrich von Rosenberg, and Hinko von Hohenstein.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        }
+      ]
     }
-  ],
-  "place": "Bettlern"
+  ]
 }

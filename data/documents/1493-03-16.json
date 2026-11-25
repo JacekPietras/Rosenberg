@@ -6,6 +6,24 @@
       "source": "Staatsarchiv Wertheim R-US 1493 März 16",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235246",
       "german": "Berthold von Durne, Margaretha von (Eycholtzhen), seine Ehefrau, Wilhelm von Durn und Florina von der Thanne, dessen Ehefrau, verkaufen an das Kloster Bronnbach (Brunbach) ihren Hof zu Pülfringen (Bulferckheim) mit allen Rechten und Zugehörungen um 63 Gulden.\n\nLaufzeit: 1493 März 16 (\"[...] der geben ist am sambstag nach Gregory des heiligen Babates tag als man zalte nach der geburt Cristi [...] tusent vierhundert neuntzigk und treue jore zelt\")\n\nSiegelbeschreibung: An Pergamentstreif die Siegel der Brüder Berthold und Wilhelm von Durn, sowie deren Bürgen Michael von Rosenberg und Heinrich Hund\n\nSiegler: Berthold von Durn; Wilhelm von Durn; Michael von Rosenberg; Heinrich Hund",
+      "english": "Berthold von Dürn and Margaretha von Eycholtzhen, his wife, and Wilhelm von Dürn and Florina von der Thanne, his wife, sell to Bronnbach Monastery their farm at Pülfringen, with all rights and appurtenances, for 63 gulden.\n\nTerm: 16 March 1493 (\"... given on the Saturday after the feast day of Gregory the holy pope, in the year counted from the birth of Christ ... one thousand four hundred ninety-three years\")\n\nSeal description: The seals of the brothers Berthold and Wilhelm von Dürn and of their guarantors Michael von Rosenberg and Heinrich Hund are attached to parchment strips.\n\nSealers: Berthold von Dürn; Wilhelm von Dürn; Michael von Rosenberg; Heinrich Hund",
+      "mention": [
+        {
+          "person": "Berthold von Dürn"
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Heinrich Hund"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Dürn"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235246%2F07_0000235246_0001_7-235246-1.jpg"
@@ -13,8 +31,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235246%2F07_0000235246_0002_7-235246-2.jpg"
         }
-      ],
-      "english": "Berthold von Dürn and Margaretha von Eycholtzhen, his wife, and Wilhelm von Dürn and Florina von der Thanne, his wife, sell to Bronnbach Monastery their farm at Pülfringen, with all rights and appurtenances, for 63 gulden.\n\nTerm: 16 March 1493 (\"... given on the Saturday after the feast day of Gregory the holy pope, in the year counted from the birth of Christ ... one thousand four hundred ninety-three years\")\n\nSeal description: The seals of the brothers Berthold and Wilhelm von Dürn and of their guarantors Michael von Rosenberg and Heinrich Hund are attached to parchment strips.\n\nSealers: Berthold von Dürn; Wilhelm von Dürn; Michael von Rosenberg; Heinrich Hund"
+      ]
     }
   ]
 }

@@ -6,7 +6,48 @@
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 3051",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-339563",
       "german": "Propstei Holzkirchen\n\nLaufzeit: (1327) 1366, 1445-1584, o.D., 1602, 1613, 1622, 1628, 1632, 1633, 1636, 1700\n\nEnthält: Enthält u.a.: Bopp von Eberstein verkauft das Dorf Uettingen mit allen Rechten an den Benediktinerkonvent Holzkirchen (1327, Abschrift); Schied wegen Irrungen zwischen Holzkirchen und Triefenstein (1366); Propst Peter von Erlenbach verkauft Graf Johann von Wertheim alle Güter des Klosters in der Markung Remlingen (1420, Abschrift); Schied mit Reinhard Graf zu Wilnau, Propst in Holzkirchen, wegen Helmstadt, Uettingen, Bösenzell, Holzkirchen, Tiefental (ca. 1445); verschiedene Irrungen um 1490; Zehnten (1497); Forderungen des Capellans Andreas Reck aus Holzkirchen an Eberhard und Heinz Hund (1518); Gülten der Truchsess aus der Propstei (1520); Korrespondenz von Andreas Reck mit Graf Georg (1524); Frühmesse Helmstadt und Pfarrei Holzkirchhausen (1530); strittiger Zehnt im Bussental (1531); Tod des Propstes Reinhard Ludwig von Dalwig (1613); Schied von Albert von Rosenberg, Philipp von Thüngen und Philipp Soldan Voit von Rieneck zu Urspringen zwischen Fulda und dem Stolberger (1564); späterer Extract aus einem Vertrag mit Holzkirchen von 1564 wegen Zehnten und dem Patronat in Helmstadt, Marktheidenfeld und Erlenbach; Atz (1602); Schreiben an den Klosterverwalter Johann Melchior Schuhmacher wegen des katholischen Pfarrers in Erlenbach (1633); Küchenmeisterei Fulda (1636); Wenkheimer Gülten für Holzkirchen (1700)",
-      "english": "Provostry of Holzkirchen.\n\nDates covered: (1327), 1366, 1445–1584, undated, 1602, 1613, 1622, 1628, 1632, 1633, 1636, 1700.\n\nContents include: Bopp von Eberstein sells the village of Uettingen, with all rights, to the Benedictine convent of Holzkirchen (1327, copy); arbitration of disputes between Holzkirchen and Triefenstein (1366); Provost Peter von Erlenbach sells Count Johann von Wertheim all the monastery’s property in the district of Remlingen (1420, copy); arbitration with Reinhard Graf zu Wilnau, provost in Holzkirchen, concerning Helmstadt, Uettingen, Bösenzell, Holzkirchen, and Tiefental (about 1445); various disputes around 1490; tithes (1497); claims by the chaplain Andreas Reck of Holzkirchen against Eberhard and Heinz Hund (1518); rents owed by the Truchsess family from the provostry (1520); correspondence between Andreas Reck and Count Georg (1524); the early Mass at Helmstadt and the parish of Holzkirchhausen (1530); a disputed tithe in Bussental (1531); the death of Provost Reinhard Ludwig von Dalwig (1613); arbitration by Albert von Rosenberg, Philipp von Thüngen, and Philipp Soldan Voit von Rieneck at Urspringen between Fulda and the Count of Stolberg (1564); a later extract from a 1564 agreement with Holzkirchen concerning tithes and the right of patronage in Helmstadt, Marktheidenfeld, and Erlenbach; dues (1602); a letter to the monastery administrator Johann Melchior Schuhmacher concerning the Catholic parish priest in Erlenbach (1633); the kitchen administration of Fulda (1636); and rents owed by Wenkheim to Holzkirchen (1700)."
+      "english": "Provostry of Holzkirchen.\n\nDates covered: (1327), 1366, 1445–1584, undated, 1602, 1613, 1622, 1628, 1632, 1633, 1636, 1700.\n\nContents include: Bopp von Eberstein sells the village of Uettingen, with all rights, to the Benedictine convent of Holzkirchen (1327, copy); arbitration of disputes between Holzkirchen and Triefenstein (1366); Provost Peter von Erlenbach sells Count Johann von Wertheim all the monastery’s property in the district of Remlingen (1420, copy); arbitration with Reinhard Graf zu Wilnau, provost in Holzkirchen, concerning Helmstadt, Uettingen, Bösenzell, Holzkirchen, and Tiefental (about 1445); various disputes around 1490; tithes (1497); claims by the chaplain Andreas Reck of Holzkirchen against Eberhard and Heinz Hund (1518); rents owed by the Truchsess family from the provostry (1520); correspondence between Andreas Reck and Count Georg (1524); the early Mass at Helmstadt and the parish of Holzkirchhausen (1530); a disputed tithe in Bussental (1531); the death of Provost Reinhard Ludwig von Dalwig (1613); arbitration by Albrecht von Rosenberg, Philipp von Thüngen, and Philipp Soldan Voit von Rieneck at Urspringen between Fulda and the Count of Stolberg (1564); a later extract from a 1564 agreement with Holzkirchen concerning tithes and the right of patronage in Helmstadt, Marktheidenfeld, and Erlenbach; dues (1602); a letter to the monastery administrator Johann Melchior Schuhmacher concerning the Catholic parish priest in Erlenbach (1633); the kitchen administration of Fulda (1636); and rents owed by Wenkheim to Holzkirchen (1700).",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "person": "Eberhard Hund"
+        },
+        {
+          "place": "erlenbach"
+        },
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "person": "Heinrich Hund"
+        },
+        {
+          "place": "helmstatt"
+        },
+        {
+          "person": "Peter von Erlenbach",
+          "personTitle": [
+            "Propst"
+          ]
+        },
+        {
+          "person": "Philipp von Thüngen"
+        },
+        {
+          "place": "rieneck"
+        },
+        {
+          "place": "wenkheim"
+        }
+      ]
     }
   ]
 }

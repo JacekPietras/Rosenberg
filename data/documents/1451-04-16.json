@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 100 U 1451 April 16",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199808",
       "german": "Georg von Hartheim und Walpurg von Rosenberg, seine Frau, verkaufen an Hans von Hartheim und Else Gebelein von Obrigheim, seine Frau, ihre Einkünfte von dem Schmiedsgut in Höpfingen um 50 fl. rh.\n\nLaufzeit: 1451 April 16 (Fr. v. Palmtag)\n\nSiegelbeschreibung: 3 Siegel, das 1.+2. besch.",
+      "english": "Georg von Hartheim and Walpurg von Rosenberg, his wife, sell to Hans von Hartheim and Else Gebelein von Obrigheim, his wife, their income from the smith's holding in Höpfingen for 50 Rhenish florins.\n\nDate range: 16 April 1451 (Friday before Palm Sunday).\n\nSeal description: Three seals, the first and second described.",
+      "mention": [
+        {
+          "person": "Georg von Hartheim"
+        },
+        {
+          "person": "Hans von Hartheim"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199808%2F07_0000199808_0001_7-199808-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199808%2F07_0000199808_0002_7-199808-2.jpg"
         }
-      ],
-      "english": "Georg von Hartheim and Walpurg von Rosenberg, his wife, sell to Hans von Hartheim and Else Gebelein von Obrigheim, his wife, their income from the smith's holding in Höpfingen for 50 Rhenish florins.\n\nDate range: 16 April 1451 (Friday before Palm Sunday).\n\nSeal description: Three seals, the first and second described."
+      ]
     }
   ]
 }

@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 14",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198252",
       "german": "Lehenrevers Hansens von Rosénberg zu Rosenberg an H. Graf Micheln zu Wertheim ausgestellet über das oben ad Num. 5 beschriebene Mann- und Burglehen.\n\nLaufzeit: 1498 April 20 (am Freytag in der Osterwoche)",
+      "english": "Hans von Rosenberg zu Rosenberg issued a feudal acknowledgment to Lord Graf Michel zu Wertheim concerning the manorial and castle fief described above under no. 5.\n\nTerm: 20 April 1498 (Friday in Easter week).",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "zu Rosenberg"
+          ]
+        },
+        {
+          "person": "Michael zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198252%2F07_0000198252_0001_7-198252-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198252%2F07_0000198252_0002_7-198252-2.jpg"
         }
-      ],
-      "english": "Hans von Rosenberg zu Rosenberg issued a feudal acknowledgment to Lord Graf Michel zu Wertheim concerning the manorial and castle fief described above under no. 5.\n\nTerm: 20 April 1498 (Friday in Easter week)."
+      ]
     }
   ]
 }

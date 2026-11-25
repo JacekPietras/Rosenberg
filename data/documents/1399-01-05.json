@@ -6,6 +6,21 @@
       "source": "HStAD, A 1, 85/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=12200",
       "german": "Güttersbach: Johann Schenk zu Erbach präsentiert den Richtern der Propstei Aschaffenburg auf die Pfarrei Güttersbach an Stelle des Peter von Rosenbach den Conrad .... ? v. Otzberg\n\nFormalbeschreibung: Original - Pergament, Siegel\n\n(Vor-) Provenienzen: Herren zu Erbach\n\nZusatzinformationen: Aus Ablieferung des Innenministeriums, Z. B. 1922/38 Nr. 119",
+      "english": "Güttersbach: Johann Schenk zu Erbach presents Conrad … ? von Otzberg to the judges of the provostry of Aschaffenburg for the parish of Güttersbach, in place of Peter von Rosenberg.\n\nFormal description: Original, parchment, seal.\n\n(Previous) provenance: Lords zu Erbach.\n\nAdditional information: From a transfer by the Ministry of the Interior, Z. B. 1922/38 no. 119.",
+      "mention": [
+        {
+          "place": "erbach"
+        },
+        {
+          "person": "Hans Schenk",
+          "personTitle": [
+            "zu Erbach"
+          ]
+        },
+        {
+          "person": "Peter von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/85--1/hstad_a_1_nr_85--1_0001.jpg"
@@ -16,8 +31,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/85--1/hstad_a_1_nr_85--1_0003.jpg"
         }
-      ],
-      "english": "Güttersbach: Johann Schenk zu Erbach presents Conrad … ? von Otzberg to the judges of the provostry of Aschaffenburg for the parish of Güttersbach, in place of Peter von Rosenbach.\n\nFormal description: Original, parchment, seal.\n\n(Previous) provenance: Lords zu Erbach.\n\nAdditional information: From a transfer by the Ministry of the Interior, Z. B. 1922/38 no. 119."
+      ]
     }
   ]
 }

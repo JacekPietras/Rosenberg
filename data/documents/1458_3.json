@@ -6,7 +6,15 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 149",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74938",
       "german": "Abschriften von Lehenbriefen der Bischöfe von Würzburg für die Herren von Rosenberg und die Grafen von Hatzfeldt.\n\nLaufzeit: 1458,1505-1537,1636-1643,1662-1700\n\nUmfang: 1 Fasz.",
-      "english": "Copies of fief charters issued by the bishops of Würzburg for the Herren von Rosenberg and the counts von Hatzfeldt.\n\nTerm: 1458, 1505–1537, 1636–1643, 1662–1700\n\nExtent: 1 folder"
+      "english": "Copies of fief charters issued by the bishops of Würzburg for the Herren von Rosenberg and the counts von Hatzfeldt.\n\nTerm: 1458, 1505–1537, 1636–1643, 1662–1700\n\nExtent: 1 folder",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,18 @@
       "source": "Deutschordenszentralarchiv, Wien, 3598",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3598/charter",
       "german": "Thoman v. Rosenberg, Ritter, schreibt an Stefan v. Hoppingen Komtur zu Mergentheim und berichtet über eine Schöffensitzung des Gerichts zu Bechthofen; das Ergebnis des Vorgangs im folgenden richtet sich gegen den Bischof von Würzburg.",
+      "english": "Thomas von Rosenberg, Ritter, writes to Stefan von Hoppingen, Komtur zu Mergentheim, and reports on a session of the lay judges of the court at Bechthofen; the outcome of the proceedings described below is directed against the Bischof von Würzburg.",
+      "mention": [
+        {
+          "person": "Thomas von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_r-1.jpg"
@@ -31,8 +43,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_v-4.jpg"
         }
-      ],
-      "english": "Thoman von Rosenberg, Ritter, writes to Stefan von Hoppingen, Komtur zu Mergentheim, and reports on a session of the lay judges of the court at Bechthofen; the outcome of the proceedings described below is directed against the Bischof von Würzburg."
+      ]
     }
   ]
 }

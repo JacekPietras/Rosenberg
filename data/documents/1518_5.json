@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74753",
       "german": "Schiedsspruch des Pfalzgrafen Friedrich und des Markgrafen Kasimir von Brandenburg in Streitigkeiten zwischen Hans Thomas von Rosenberg und seinen Brüdern einerseits und Georg von Rosenberg und seinen Brüdern andererseits wegen Boxberg.\n\nLaufzeit: 1518\n\nUmfang: 1 Schr.",
-      "english": "Arbitration award by Count Palatine Friedrich and Margrave Kasimir of Brandenburg in the disputes over Boxberg between Hans Thomas von Rosenberg and his brothers, on the one hand, and Georg von Rosenberg and his brothers, on the other.\n\nTerm: 1518\n\nExtent: 1 document."
+      "english": "Arbitration award by Count Palatine Friedrich and Margrave Kasimir of Brandenburg in the disputes over Boxberg between Hans Thomas von Rosenberg and his brothers, on the one hand, and Georg von Rosenberg and his brothers, on the other.\n\nTerm: 1518\n\nExtent: 1 document.",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        }
+      ]
     }
   ]
 }

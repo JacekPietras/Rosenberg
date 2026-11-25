@@ -6,6 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1676",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-191381",
       "german": "Kilian von Stetten verkauft an Graf Albrecht von Hohenlohe seinen Teil am Schlößlein Bartenau; Siegel: Kilian von Stetten, Sigmund von Ussigheim.\n\nLaufzeit: 1514\n\nUmfang: 1 Urkunde",
+      "english": "Kilian von Stetten sells to Count Albrecht of Hohenlohe his share in the small castle of Bartenau. Seals: Kilian von Stetten and Siegmund von Uissigheim.\n\nDate range: 1514\n\nExtent: 1 charter",
+      "mention": [
+        {
+          "person": "Albrecht von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "person": "Siegmund von Uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000191381%2F03_0000191381_0001_3-191381-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000191381%2F03_0000191381_0002_3-191381-2.jpg"
         }
-      ],
-      "english": "Kilian von Stetten sells to Count Albrecht of Hohenlohe his share in the small castle of Bartenau. Seals: Kilian von Stetten and Sigmund von Uissigheim.\n\nDate range: 1514\n\nExtent: 1 charter"
+      ]
     }
   ]
 }

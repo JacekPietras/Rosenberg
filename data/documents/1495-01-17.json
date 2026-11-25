@@ -6,6 +6,12 @@
       "source": "Deutschordenszentralarchiv, Wien, 4389",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/4389/charter",
       "german": "Jörg v. Rosenberg entläßt den Kilian Bach von Ottelfingen gegen eine Summe aus der Leibeigenschaft.",
+      "english": "Georg von Rosenberg releases Kilian Bach of Ottelfingen from serfdom in return for a sum of money.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14950117_r.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14950117_v.jpg"
         }
-      ],
-      "english": "Jörg von Rosenberg releases Kilian Bach of Ottelfingen from serfdom in return for a sum of money."
+      ]
     }
   ]
 }

@@ -6,6 +6,27 @@
       "source": "HStAD, A 3, 151/26",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1491698",
       "german": "Heldenbergen: Vergleich und Entscheid zwischen Philipp v. Stockheim dem Älteren eines- und Carl v. Stockheim als für sich und dann als Vormund Gottfried v. Stockheim und Eberhart v. Stockheim, seine Brüder und Werner v. Walderstein, Gotfried v. Stockheim s. Kinder Stiefvater und Wipert v. Rosenbach, Eberhart v. Stockheim s. Kinder Stiefvater und Johann Weise Wilhelm Weisen seliger Sohn, von derselben Brüder wegen andernteils über das Schloss Heldenbergen nebst dem Eichenwald und die Anstellung und Unterhaltung des Pförtners daselbst\n\n(Vor-) Provenienzen: v. Stockheim / v. Mauchenheim gen. Bechtolsheim",
+      "english": "Heldenbergen: Settlement and decision between Philipp von Stockheim the Ältere, on one side, and Karl von Stockheim, both on his own behalf and as guardian of Gotfried von Stockheim and Eberhard von Stockheim, his brothers, and Werner von Walderstein, stepfather of Gotfried von Stockheim's children, and Wiprecht von Rosenberg, stepfather of Eberhard von Stockheim's children, and Johann Weise, son of the late Wilhelm Weisen, on behalf of the brothers of Wilhelm Weisen, on the other side, concerning Heldenbergen Castle and the oak forest, as well as the appointment and maintenance of the gatekeeper there.\n\nPrevious provenance: von Stockheim / von Mauchenheim called Bechtolsheim",
+      "mention": [
+        {
+          "person": "Eberhard von Stockheim"
+        },
+        {
+          "person": "Gotfried von Stockheim"
+        },
+        {
+          "person": "Karl von Stockheim"
+        },
+        {
+          "person": "Philipp von Stockheim"
+        },
+        {
+          "place": "stockheim"
+        },
+        {
+          "person": "Wiprecht von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/151--26/hstad_a_3_nr_151--26_001.jpg"
@@ -13,8 +34,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/151--26/hstad_a_3_nr_151--26_002.jpg"
         }
-      ],
-      "english": "Heldenbergen: Settlement and decision between Philipp von Stockheim the Ältere, on one side, and Carl von Stockheim, both on his own behalf and as guardian of Gottfried von Stockheim and Eberhart von Stockheim, his brothers, and Werner von Walderstein, stepfather of Gottfried von Stockheim's children, and Wipert von Rosenbach, stepfather of Eberhart von Stockheim's children, and Johann Weise, son of the late Wilhelm Weisen, on behalf of the brothers of Wilhelm Weisen, on the other side, concerning Heldenbergen Castle and the oak forest, as well as the appointment and maintenance of the gatekeeper there.\n\nPrevious provenance: von Stockheim / von Mauchenheim called Bechtolsheim"
+      ]
     }
   ]
 }

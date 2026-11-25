@@ -6,6 +6,12 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 4039",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-196421",
       "german": "Michel Gramsbs, Verpflichtung; Siegel: Mertin von Ussigheim.\n\nLaufzeit: 1470\n\nUmfang: 1 Urkunde, Papier",
+      "english": "Michel Gramsbs, obligation.\n\nSeal: Mertin von Uissigheim.\n\nTerm: 1470.\n\nExtent: one paper charter.",
+      "mention": [
+        {
+          "place": "uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196421%2F03_0000196421_0001_3-196421-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196421%2F03_0000196421_0002_3-196421-2.jpg"
         }
-      ],
-      "english": "Michel Gramsbs, obligation.\n\nSeal: Mertin von Uissigheim.\n\nTerm: 1470.\n\nExtent: one paper charter."
+      ]
     }
   ]
 }

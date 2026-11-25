@@ -5,8 +5,28 @@
     {
       "source": "Staatsarchiv Wertheim G-Rep. 7a Lade XXIII D Nr. 68",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166540",
-      "english": "Johann, Bishop of Würzburg, proclaims the judgment of the court presided over by Count Georg of Henneberg: in the dispute between Count Johann of Wertheim and Heinz Schenk von Roßberg concerning Peter Busch, the count may claim Busch as his own man, since Busch serves him at Homburg Castle.\n\nTerm: 2 June 1456 (Wednesday after Corpus Christi, 2 June 1456).\n\nSeal description: Seal preserved.",
       "german": "Johann Bischof von Würzburg verkündet das Urteil des mit dem Grafen Georg von Henneberg präsidierten Hofgerichts, lautend, dass in dem Streite des Grafen Johann von Wertheim mit dem Heinz Schenk von Roßberg um den Peter Busch, der Graf den Busch in seinem Dienst auf Schloß Homburg stehend als seinen eigenen Mann für sich beanspruchen dürfe.\n\nLaufzeit: 1456 Juni 2 (Mittwoch nach Frohnleichnam, 2. Juni 1456)\n\nSiegelbeschreibung: Siegel erhalten",
+      "english": "Johann, Bishop of Würzburg, proclaims the judgment of the court presided over by Count Georg of Henneberg: in the dispute between Count Johann of Wertheim and Heinz Schenk von Roßberg concerning Peter Busch, the count may claim Busch as his own man, since Busch serves him at Homburg Castle.\n\nTerm: 2 June 1456 (Wednesday after Corpus Christi, 2 June 1456).\n\nSeal description: Seal preserved.",
+      "mention": [
+        {
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "person": "Heinrich Schenk"
+        },
+        {
+          "place": "homburg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=697&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000697%2Ftitlaufn_0000166540%2F07_0000166540_0001_7-166540-1.jpg"

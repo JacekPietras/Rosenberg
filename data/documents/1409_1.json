@@ -6,6 +6,12 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2777",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-194342",
       "german": "Conrad von Rosenberg: Leistung.\n\nLaufzeit: 1409\n\nUmfang: 1 Schr.",
+      "english": "Konrad von Rosenberg: performance/payment.\n\nDate: 1409.\n\nExtent: 1 document.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194342%2F03_0000194342_0001_3-194342-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194342%2F03_0000194342_0002_3-194342-2.jpg"
         }
-      ],
-      "english": "Conrad von Rosenberg: performance/payment.\n\nDate: 1409.\n\nExtent: 1 document."
+      ]
     }
   ]
 }

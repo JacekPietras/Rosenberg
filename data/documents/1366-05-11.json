@@ -6,6 +6,12 @@
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 46",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129161",
       "german": "Revers des Conrad von Uissigheim und seiner Frau Ottilie über einen mit der Karthause Grünau abgeschlossenen Vergleich, Wiesenwässerung zu Dietenhan betreffend.\n\nLaufzeit: 1366 Mai 11",
+      "english": "Acknowledgment by Konrad von Uissigheim and his wife Ottilie concerning an agreement concluded with the Carthusian monastery of Grünau regarding the irrigation of meadows at Dietenhan.\n\nDate: 11 May 1366.",
+      "mention": [
+        {
+          "person": "Konrad von Uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129161%2F07_0000129161_0001_7-129161-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129161%2F07_0000129161_0002_7-129161-2.jpg"
         }
-      ],
-      "english": "Acknowledgment by Conrad von Uissigheim and his wife Ottilie concerning an agreement concluded with the Carthusian monastery of Grünau regarding the irrigation of meadows at Dietenhan.\n\nDate: 11 May 1366."
+      ]
     }
   ]
 }

@@ -1,13 +1,17 @@
 {
   "date": "1452-02-14",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Stiftsarchiv St. Gallen, J3 F2",
       "url": "https://www.monasterium.net/mom/CH-StiASG/Urkunden/J3_F2.1/charter",
       "german": "Der Generalvikar Bischof Heinrichs IV. von Constanz, Administrators von Cur, bestätigt auf Bitte des Rudolffi de Rosemberg, rectoris parrochialis ecclesie in Welffisperg, den Spruch, den Abt Kaspar von St.Gallen in dem Streit zwischen dem Priester und Mic",
+      "english": "The vicar general of Bishop Heinrich IV of Constance, administrator of Chur, at the request of Rudolffus de Rosemberg, rector of the parish church at Welffisperg, confirms the ruling made by Abbot Kaspar of St. Gall in the dispute between the priest and Mic[the source text breaks off here].",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_14521213_J3-F2_1.jpg"
@@ -21,8 +25,7 @@
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_14521213_J3-F2_4.jpg"
         }
-      ],
-      "english": "The vicar general of Bishop Heinrich IV of Constance, administrator of Chur, at the request of Rudolffus de Rosemberg, rector of the parish church at Welffisperg, confirms the ruling made by Abbot Kaspar of St. Gall in the dispute between the priest and Mic[the source text breaks off here]."
+      ]
     }
   ]
 }

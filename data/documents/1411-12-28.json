@@ -6,6 +6,18 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 4486",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1774549",
       "german": "Konz von Rosenbach und seine Ehefrau Irmel von Wunnenstein verkaufen an Pfalzgraf Otto von Mosbach Haus, Hof und Hofreite samt allem Zubehör zu Obrigheim um 320 Gulden.\n\nLaufzeit: 1411 Dezember 28 (Montag nach Weihnachten 1411)\n\nSiegelbeschreibung: 4 Siegel",
+      "english": "Kunz von Rosenberg and his wife Irmel von Wunnenstein sell to Otto von Mosbach, Pfalzgraf a house, homestead and courtyard, with all appurtenances, at Obrigheim, for 320 gulden.\n\nDate: 28 December 1411 (Monday after Christmas 1411).\n\nSeal description: 4 seals.",
+      "mention": [
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Otto von Mosbach",
+          "personTitle": [
+            "Pfalzgraf"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774549%2F04_0001774549_0001_4-1774549-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774549%2F04_0001774549_0002_4-1774549-2.jpg"
         }
-      ],
-      "english": "Konz von Rosenbach and his wife Irmel von Wunnenstein sell to Otto von Mosbach, Pfalzgraf a house, homestead and courtyard, with all appurtenances, at Obrigheim, for 320 gulden.\n\nDate: 28 December 1411 (Monday after Christmas 1411).\n\nSeal description: 4 seals."
+      ]
     }
   ]
 }

@@ -1,8 +1,6 @@
 {
   "date": "1397-05-23",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "PANGERL, Anhang Stift Goldenkron (=FRA II/37, Wien 1872) S. 611, Nr. 21, 1397 V 23",
@@ -11,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1397_V_23/charter"
       ],
       "german": "Indulgentiae 40 dierum pro ecclesia Cajoviensi datae a Wolframo archiepiscopo Pragensi ad instantiam Hendrici de Rosenberg.",
-      "english": "Indulgences of 40 days granted for the church of Cajov by Wolfram, Archbishop of Prague, at the request of Hendricus de Rosenberg."
+      "english": "Indulgences of 40 days granted for the church of Cajov by Wolfram, Archbishop of Prague, at the request of Hendricus de Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

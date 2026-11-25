@@ -6,6 +6,33 @@
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 97",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-227376",
       "german": "Korrespondenz und Verwaltungssachen Graf Michaels I. von Wertheim\n\nLaufzeit: 1408-1440\n\nEnthält: Enthält u.a.: Schreiben von Graf Michael I. von Wertheim, Erzbischof Dietrich von Mainz, Bischof Anton von Bamberg, Graf Heinrich von Waldeck sowie Hofmeister Wilhelm von Rechberg; Vermerk Graf Michaels I. von Wertheim über die Ansprüche Eberhart von Rosenbergs; Amtlohn und Quittung des Hans Schelm von Bergen, Amtmann zu Breuberg; Einnahmen des Gerichts zu Königheim; Inhalt einer Werbung beim Bischof von Bamberg; Schreiben des Pfalzgrafen Ludwig wegen eines Tags in Umstadt (1431)",
+      "english": "Correspondence and administrative records of Count Michael I von Wertheim\n\nDate range: 1408–1440\n\nContents include letters from Count Michael I von Wertheim, Archbishop Dietrich of Mainz, Bishop Anton of Bamberg, Count Heinrich of Waldeck, and court master Wilhelm von Rechberg; a memorandum by Count Michael I von Wertheim concerning Eberhard von Rosenberg's claims; the official's salary and a receipt of Hans Schelm von Bergen, official at Breuberg; court revenues at Königheim; the contents of a message to the Bishop of Bamberg; and a letter from Count Palatine Ludwig concerning a meeting at Umstadt (1431).",
+      "mention": [
+        {
+          "person": "Eberhard von Rosenberg"
+        },
+        {
+          "person": "Erzbischof Dietrich",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Heinrich von Waldeck",
+          "personTitle": [
+            "Graf von Waldeck"
+          ]
+        },
+        {
+          "place": "koenigheim"
+        },
+        {
+          "person": "Michael von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=226721&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000226721%2Ftitlaufn_0000227376%2F07_0000227376_0001_7-227376-1.jpg"
@@ -217,8 +244,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=226721&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000226721%2Ftitlaufn_0000227376%2F07_0000227376_0070_7-227376-70.jpg"
         }
-      ],
-      "english": "Correspondence and administrative records of Count Michael I von Wertheim\n\nDate range: 1408–1440\n\nContents include letters from Count Michael I von Wertheim, Archbishop Dietrich of Mainz, Bishop Anton of Bamberg, Count Heinrich of Waldeck, and court master Wilhelm von Rechberg; a memorandum by Count Michael I von Wertheim concerning Eberhart von Rosenberg's claims; the official's salary and a receipt of Hans Schelm von Bergen, official at Breuberg; court revenues at Königheim; the contents of a message to the Bishop of Bamberg; and a letter from Count Palatine Ludwig concerning a meeting at Umstadt (1431)."
+      ]
     }
   ]
 }

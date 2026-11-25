@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 8",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198246",
       "german": "Lehenrevers Asmus von Rosenberg an H. Grafen Johann zu Wertheim, über das in No. 2 beschriebene Mannlehen ausgestellet.\n\nLaufzeit: 1456 August 20 (am Freytag nach Marie Himmelfahrt)",
+      "english": "Asmus von Rosenberg issues a fief acknowledgment to Johann zu Wertheim, Graf concerning the male fief described in No. 2.\n\nTerm: 20 August 1456 (on the Friday after the Assumption of Mary)",
+      "mention": [
+        {
+          "person": "Asmus von Rosenberg"
+        },
+        {
+          "person": "Hans zu Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198246%2F07_0000198246_0001_7-198246-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198246%2F07_0000198246_0002_7-198246-2.jpg"
         }
-      ],
-      "english": "Asmus von Rosenberg issues a fief acknowledgment to Johann zu Wertheim, Graf concerning the male fief described in No. 2.\n\nTerm: 20 August 1456 (on the Friday after the Assumption of Mary)"
+      ]
     }
   ]
 }

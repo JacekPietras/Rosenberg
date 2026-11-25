@@ -6,6 +6,12 @@
       "source": "HStAD, A 3, 16/34",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1274317",
       "german": "Arnsburg: Eckard und Henne v. Bleichenbach und Wiprecht v. Rosenbach Gebrüder quittieren dem Kloster Arnsburg über eine Rente\n\nFormalbeschreibung: Original - Papier mit aufgedrucktem Siegel\n\n(Vor-) Provenienzen: Arnsburg, Kloster",
+      "english": "Arnsburg: The brothers Eckard and Henne von Bleichenbach and Wiprecht von Rosenberg issue a receipt to Arnsburg Abbey for an annuity.\n\nFormal description: Original, paper, with impressed seal.\n\n(Provenance): Arnsburg Abbey.",
+      "mention": [
+        {
+          "person": "Wiprecht von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/16--34/hstad_a_3_nr_16--34_0001.jpg"
@@ -16,8 +22,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/16--34/hstad_a_3_nr_16--34_0003.jpg"
         }
-      ],
-      "english": "Arnsburg: The brothers Eckard and Henne von Bleichenbach and Wiprecht von Rosenbach issue a receipt to Arnsburg Abbey for an annuity.\n\nFormal description: Original, paper, with impressed seal.\n\n(Provenance): Arnsburg Abbey."
+      ]
     }
   ]
 }

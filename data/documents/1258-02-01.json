@@ -1,8 +1,7 @@
 {
   "date": "1258-02-01",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Stiftsarchiv St. Florian (www.stift-st-florian.at), 1258 II 01",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

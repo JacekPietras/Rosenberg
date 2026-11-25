@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 9",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198247",
       "german": "Lehenrevers des Asmus von Rosenberg an H. Graf Johann zu Wertheim über das in No. 2 beschriebene Mannlehen ausgestellet.\n\nLaufzeit: 1466 September 13 (am Sambstag nach nativitatis Mariae)",
+      "english": "Asmus von Rosenberg issued a counter-reversion to Johann zu Wertheim, Graf zu Wertheim, concerning the manorial fief described in No. 2.\n\nTerm: 13 September 1466 (Saturday after the Nativity of Mary).",
+      "mention": [
+        {
+          "person": "Asmus von Rosenberg"
+        },
+        {
+          "person": "Hans zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198247%2F07_0000198247_0001_7-198247-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198247%2F07_0000198247_0002_7-198247-2.jpg"
         }
-      ],
-      "english": "Asmus von Rosenberg issued a counter-reversion to Johann zu Wertheim, Graf zu Wertheim, concerning the manorial fief described in No. 2.\n\nTerm: 13 September 1466 (Saturday after the Nativity of Mary)."
+      ]
     }
   ]
 }

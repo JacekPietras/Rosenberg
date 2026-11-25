@@ -1,8 +1,7 @@
 {
   "date": "1055",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Acta Imperii Selecta - Urkunden Deutscher Könige und Kaiser mit einem Anhange von Reichssachen, Nr. 1004, S. 830, 1004",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

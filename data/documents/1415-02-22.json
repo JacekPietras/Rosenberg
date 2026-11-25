@@ -13,6 +13,9 @@
           "person": "Konrad Schenk von Limpurg"
         },
         {
+          "person": "Konrad von Limpurg"
+        },
+        {
           "person": "Konrad von Rosenberg"
         },
         {
@@ -40,7 +43,21 @@
         "https://www.landesarchiv-bw.de/plink/?f=2-2572743"
       ],
       "german": "Conz von Rosenberg zu Bocksberg stellt dem Schenken Conrad einen Revers aus unter Einrückung des Kaufbriefs, wonach ersterer von Schenk Conrad zu Limpurg den halben Teil des Schlosses Haltenbergstetten samt dem Markte und Zubehör um 1.500 Gulden rheinisch erkauft. (Abschrift Papier, ausgefertigt um 1794 von dem Archivar Wolf)\n\nLaufzeit: 22. Februar 1415\n\nUmfang: 1 Schr.",
-      "english": "Konrad von Rosenberg zu Bocksberg issues a reverse to Schenk Konrad, incorporating the purchase charter, according to which the former bought from Schenk Konrad zu Limpurg half of Schloss Haltenbergstetten, together with the market and appurtenances, for 1,500 Rhenish florins. (Paper copy, prepared around 1794 by the archivist Wolf.)\n\nTerm: 22 February 1415\n\nExtent: 1 document"
+      "english": "Konrad von Rosenberg zu Bocksberg issues a reverse to Schenk Konrad, incorporating the purchase charter, according to which the former bought from Schenk Konrad zu Limpurg half of Schloss Haltenbergstetten, together with the market and appurtenances, for 1,500 Rhenish florins. (Paper copy, prepared around 1794 by the archivist Wolf.)\n\nTerm: 22 February 1415\n\nExtent: 1 document",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ]
+        },
+        {
+          "person": "Konrad zu Limpurg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

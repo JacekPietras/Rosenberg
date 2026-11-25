@@ -6,6 +6,18 @@
       "source": "Deutschordenszentralarchiv, Wien Altbestand, 3252",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3252/charter",
       "german": "Wolf Meyser bekennt öffentlich vor dem Deutschordensmeister in deutschen und welchen Landen Eberhard v. Seinsheim (Saunsheim) und den zu Mergentheim anwesenden Gebietigern Arnold v. Hirschberg Komtur zu Ellingen und Pfleger der Ballei zu Franken, Eberhard v. Stetten Komtur zu Nürnberg, Johann v. Yppenburg Komtur zu Horneck und Wilhelm zu Werdenau Komtur zu Virnsberg und verpflichtet sich eidlich, nie mehr wider Friedrich Markgrafen zu Brandenburg und Burggrafen zu Nürnberg etwas Feindliches zu unternehmen.\n\nSiegel: Siegel der beiden Zeugen an Perg.-Streifen, in weißem Wachs, stark beschädigt.",
+      "english": "Wolf Meyser publicly acknowledges before the Master of the Teutonic Order in the German and other lands that Eberhard von Seinsheim and the commanders present at Mergentheim—Arnold von Hirschberg, Commander at Ellingen and administrator of the Franconian bailiwick; Eberhard von Stetten, Commander at Nuremberg; Johann von Yppenburg, Commander at Horneck; and Wilhelm zu Werdenau, Commander at Virnsberg—have done so, and he swears never again to undertake anything hostile against Friedrich, Margrave of Brandenburg and Burgrave of Nuremberg.\n\nSeal: the seals of the two witnesses on parchment tags, in white wax, badly damaged.",
+      "mention": [
+        {
+          "person": "Eberhard von Seinsheim"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "virnsberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14290329_r.jpg"
@@ -22,8 +34,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14290329_03.jpg"
         }
-      ],
-      "english": "Wolf Meyser publicly acknowledges before the Master of the Teutonic Order in the German and other lands that Eberhard von Seinsheim (Saunsheim) and the commanders present at Mergentheim—Arnold von Hirschberg, Commander at Ellingen and administrator of the Franconian bailiwick; Eberhard von Stetten, Commander at Nuremberg; Johann von Yppenburg, Commander at Horneck; and Wilhelm zu Werdenau, Commander at Virnsberg—have done so, and he swears never again to undertake anything hostile against Friedrich, Margrave of Brandenburg and Burgrave of Nuremberg.\n\nSeal: the seals of the two witnesses on parchment tags, in white wax, badly damaged."
+      ]
     }
   ]
 }

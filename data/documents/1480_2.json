@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Wa 20 Bü 7",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-37591",
       "german": "Zinszahlungen an Jörg Zobel von Gutenberg bzw. dessen Witwe Margaretha von Rosenberg und Wilhelm Zobel von Gutenberg bzw. dessen Witwe.\n\nLaufzeit: 1480-1503\n\nUmfang: 6 Schr.",
-      "english": "Interest payments to Jörg Zobel von Gutenberg or his widow Margaretha von Rosenberg, and to Wilhelm Zobel von Gutenberg or his widow.\n\nTerm: 1480–1503\n\nExtent: 6 documents."
+      "english": "Interest payments to Jörg Zobel von Gutenberg or his widow Margaretha von Rosenberg, and to Wilhelm Zobel von Gutenberg or his widow.\n\nTerm: 1480–1503\n\nExtent: 6 documents.",
+      "mention": [
+        {
+          "person": "Georg Zobel"
+        },
+        {
+          "person": "Margaretha von Rosenberg"
+        },
+        {
+          "person": "Wilhelm Zobel"
+        }
+      ]
     }
   ]
 }

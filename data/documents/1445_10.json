@@ -6,7 +6,18 @@
       "source": "Staatsarchiv Wertheim R-Rep. 47 Nr. 74",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-24574",
       "german": "Copia des Lehenrevers von Conrad und Weiprecht von Rosenbach über den Hof Rosenbach und andere Grundstücke in der Herrschaft Breuberg\n\nLaufzeit: 1445",
-      "english": "Copy of the fief-reverse of Conrad and Weiprecht von Rosenbach concerning the Rosenbach farm and other properties in the lordship of Breuberg.\n\nTerm: 1445"
+      "english": "Copy of the fief-reverse of Conrad and Wiprecht von Rosenberg concerning the Rosenbach farm and other properties in the lordship of Breuberg.\n\nTerm: 1445",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wiprecht von Rosenberg"
+        }
+      ]
     }
   ]
 }

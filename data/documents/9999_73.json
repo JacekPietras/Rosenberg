@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Codex diplomaticus et epistolaris Moraviae - Urkundensammlung zur Geschichte Mährens, Nr. CCXLII. , S. 250, CCXLII.",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

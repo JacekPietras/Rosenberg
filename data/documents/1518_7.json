@@ -6,6 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2139",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-192792",
       "german": "Vertrag zwischen Georg von Hohenlohe und Sigmund von Ussigheim, aufgestellt durch Karl von Heßberg und Sigmund von Zestwitz, nach dem Sigmund von Ussigheim sein Schloß zu Zimmern samt dem Flecken, sowie das Dorf Rüsselhausen käuflich abgibt; aufgedr. Siegel, teilweise abgefallen.\n\nLaufzeit: 1518\n\nUmfang: 1 Urkunde, Papier",
+      "english": "Agreement between Georg von Hohenlohe and Siegmund von Uissigheim, drawn up by Karl von Heßberg and Sigmund von Zestwitz, under which Siegmund von Uissigheim sells his castle at Zimmern, together with the market town, and the village of Rüsselhausen; seal attached, partly detached.\n\nDate range: 1518\n\nExtent: 1 parchment document.",
+      "mention": [
+        {
+          "person": "Georg von Hohenlohe"
+        },
+        {
+          "person": "Siegmund von Uissigheim"
+        },
+        {
+          "place": "zimmern"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192792%2F03_0000192792_0001_3-192792-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192792%2F03_0000192792_0002_3-192792-2.jpg"
         }
-      ],
-      "english": "Agreement between Georg von Hohenlohe and Sigmund von Ussigheim, drawn up by Karl von Heßberg and Sigmund von Zestwitz, under which Sigmund von Ussigheim sells his castle at Zimmern, together with the market town, and the village of Rüsselhausen; seal attached, partly detached.\n\nDate range: 1518\n\nExtent: 1 parchment document."
+      ]
     }
   ]
 }

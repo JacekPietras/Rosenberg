@@ -6,6 +6,33 @@
       "source": "Staatsarchiv Wertheim R-US 1375 Mai 18",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234512",
       "german": "Hannes Wolfskeel (Wolfeskel), Domherr zu Würzburg und Landrichter des Herzogtums Franken, spricht Eberhard dem Alten von Uissigheim (Ussenkein) und Gütenden von Uissigheim einen Hof zu Uissigheim (Ussenkein) nebst Zubehör und alles in Massenbach gelegene Erbe des Arnold von Talheim zu und bestellt als Schirmer und Schützer dieses Urteilsspruchs unter andern Graf Hansen von Wertheim.\n\nLaufzeit: 1375 Mai 18 (\"Der geben ist do man zalt von unsers hern Cristes geburt drüzehen hundert jare und darnach im funf und sibinzigsten jare am nehsten fritage vor sant Urbans tage\". Vermerk auf dem Einschlage: \"Feria sexta ante Urbani\")\n\nSiegelbeschreibung: Siegel abgefallen, auf der Rückseite Reste eines aufgedrückten Siegels\n\nVermerke: Ferner \"Ussigheim und Massenbach. Eberhard der alte von Üssigheim überkommt durch urtheil einen hof unter dem Kirchhof und alles zu Massenbach, was Arnold von Talheim hinterlassen, de anno 1375\"\n\nSiegler: Landgericht des Herzogtums Franken",
+      "english": "Hannes Wolfskeel, canon of Würzburg and provincial judge of the Duchy of Franconia, awards Eberhard der Ältere von Uissigheim and Gütenden von Uissigheim a farm at Uissigheim with its appurtenances, together with all the inheritance of Arnold von Talheim situated in Massenbach. Among those appointed to enforce and protect this judgment is Count Hans von Wertheim.\n\nDate: 18 May 1375.\n\nDate wording: ‘… on the Friday immediately before St Urban’s day.’ The note on the wrapper reads: ‘Feria sexta ante Urbani.’\n\nSeal description: The seal has fallen off; traces of a seal pressed onto the reverse remain.\n\nNote: ‘Ussigheim and Massenbach. Eberhard der Ältere von Üssigheim obtains by judgment a farm below the churchyard and everything in Massenbach that Arnold von Talheim left, from the year 1375.’\n\nSeal bearer: The provincial court of the Duchy of Franconia.",
+      "mention": [
+        {
+          "person": "Arnold von Talheim"
+        },
+        {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "place": "wolffskeel"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234512%2F07_0000234512_0001_7-234512-1.jpg"
@@ -13,8 +40,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234512%2F07_0000234512_0002_7-234512-2.jpg"
         }
-      ],
-      "english": "Hannes Wolfskeel, canon of Würzburg and provincial judge of the Duchy of Franconia, awards Eberhard der Ältere von Uissigheim and Gütenden von Uissigheim a farm at Uissigheim with its appurtenances, together with all the inheritance of Arnold von Talheim situated in Massenbach. Among those appointed to enforce and protect this judgment is Count Hans von Wertheim.\n\nDate: 18 May 1375.\n\nDate wording: ‘… on the Friday immediately before St Urban’s day.’ The note on the wrapper reads: ‘Feria sexta ante Urbani.’\n\nSeal description: The seal has fallen off; traces of a seal pressed onto the reverse remain.\n\nNote: ‘Ussigheim and Massenbach. Eberhard der Ältere von Üssigheim obtains by judgment a farm below the churchyard and everything in Massenbach that Arnold von Talheim left, from the year 1375.’\n\nSeal bearer: The provincial court of the Duchy of Franconia."
+      ]
     }
   ]
 }

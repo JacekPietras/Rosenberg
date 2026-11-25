@@ -1,11 +1,10 @@
 {
   "date": "1259-06-01",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
-      "source": "Cisterciácký klášter Vyšší Brod (http://www.klaster.vyssibrod.cz), 1259 VI 01",
+      "source": "Cisterciácký klášter Vyšší Brod, 1259 VI 01",
       "url": [
         "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1259_VI_01.2/charter",
         "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1259_VI_01.1/charter"
@@ -26,6 +25,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

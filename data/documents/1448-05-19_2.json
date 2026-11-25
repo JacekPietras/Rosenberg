@@ -6,6 +6,12 @@
       "source": "Deutschordenszentralarchiv, Wien, 3601",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3601/charter",
       "german": "Stefan v. Hoppingen Komtur zu Mergentheim antwortet auf den Brief des Thoman v. Rosenberg von 14480518, oben Nr. 3600.",
+      "english": "Stefan von Hoppingen, Komtur zu Mergentheim, replies to Thomas von Rosenberg’s letter of May 18, 1448 (above, no. 3600).",
+      "mention": [
+        {
+          "person": "Thomas von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_r-1.jpg"
@@ -31,8 +37,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_v-4.jpg"
         }
-      ],
-      "english": "Stefan von Hoppingen, Komtur zu Mergentheim, replies to Thoman von Rosenberg’s letter of May 18, 1448 (above, no. 3600)."
+      ]
     }
   ]
 }

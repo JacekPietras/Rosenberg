@@ -1,8 +1,7 @@
 {
   "date": "1312-01-25",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Stiftsarchiv Schlägl (www.stift-schlaegl.at), 1312 I 25",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

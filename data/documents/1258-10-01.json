@@ -1,8 +1,7 @@
 {
   "date": "1258-10-01",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Stiftsarchiv Kremsmünster (http://www.stift-kremsmuenster.at), 1258 X",
@@ -33,6 +32,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

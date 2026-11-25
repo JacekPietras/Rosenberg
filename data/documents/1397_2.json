@@ -1,14 +1,32 @@
 {
   "date": "1397",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "RIplus URH 14 n. 89",
       "url": "https://www.regesta-imperii.de/id/d6b4230a-5d2e-414a-b7df-e6c42de035ca",
       "german": "Arnold von Rosenberg, Reichsvogt zu Schweinfurt, an Bürgermeister und Rat der Stadtgemeinde Schweinfurt: Kg. Wenzel hat ihn beauftragt, ihnen zu schreiben, daß sie alle Kundschaften und Briefe, die sie vom Reich haben, sofort nach Nürnberg bringen sollten. Der Kg. hat den Bf. von Würzburg, die von Rothenburg und andere Städte des Reichs vor sich beschieden (für sich dar beschide). Er beabsichtigt, die Sache zwischen ihnen zu untersuchen und sie zu einen (und maint do zu verhorn die sach und euch zu vereinen).",
-      "english": "Arnold von Rosenberg, Reichsvogt at Schweinfurt, to the mayor and council of the municipality of Schweinfurt: King Wenzel has commissioned him to write to them that they should bring all testimonies and letters they have from the Empire to Nuremberg immediately. The King has summoned the Bishop of Würzburg, the people of Rothenburg, and other imperial cities to appear before him. He intends to investigate the matter between them and reconcile them."
+      "english": "Arnold von Rosenberg, Reichsvogt at Schweinfurt, to the mayor and council of the municipality of Schweinfurt: King Wenzel has commissioned him to write to them that they should bring all testimonies and letters they have from the Empire to Nuremberg immediately. The King has summoned the Bishop of Würzburg, the people of Rothenburg, and other imperial cities to appear before him. He intends to investigate the matter between them and reconcile them.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

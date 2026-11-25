@@ -6,6 +6,27 @@
       "source": "Staatsarchiv Wertheim R-US 1394 Mai 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234608",
       "german": "Cuntze von Uissigheim (Ussenkeym) der Ältere und Fritze Huttener verkaufen als Vormünder der Kinder des Gotzen von Uissigheim (Ussenkeym) an Konrad von Uissigheim den Jüngeren benannte Gülten und Zinsen von deren Steynhuse zu Üssigheim um 125 Gulden.\n\nLaufzeit: 1394 Mai 1 (\"Datum anno domini millesimo trecentesimo nonagesimo quarto in die sancte Walpurgis\")\n\nSiegelbeschreibung: 6 Siegel an Pergamentstreifen, das 3. und 6. abgefallen\n\nSiegler: Cuntze von Uissigheim d. Ä.; Fritz Huttener; Peter Stetenberg, Ritter, Bürge; Cuntze Stetenberg, Bürge; Ruprecht Stetenberg der Jüngere, Bürge; Otte von Wisenphelt, Bürge",
+      "english": "Kunz von Uissigheim der Ältere and Fritze Huttener, acting as guardians of the children of Götz von Uissigheim, sell to Konrad von Uissigheim der Jüngere specified rents and dues from their Steynhus at Uissigheim for 125 gulden.\n\nDate: 1 May 1394 (“Given in the year of the Lord 1394, on the feast of Saint Walpurgis”).\n\nSeal description: Six seals on parchment strips; the third and sixth have fallen off.\n\nSealers: Kunz von Uissigheim der Ältere; Fritz Huttener; Peter Stetenberg, Ritter, guarantor; Cuntze Stetenberg, guarantor; Ruprecht Stetenberg der Jüngere, guarantor; Otte von Wisenphelt, guarantor.",
+      "mention": [
+        {
+          "person": "Götz von Uissigheim"
+        },
+        {
+          "person": "Konrad von Uissigheim",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "person": "Kunz von Uissigheim",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "place": "uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234608%2F07_0000234608_0001_7-234608-1.jpg"
@@ -13,8 +34,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234608%2F07_0000234608_0002_7-234608-2.jpg"
         }
-      ],
-      "english": "Cuntze von Uissigheim der Ältere and Fritze Huttener, acting as guardians of the children of Gotzen von Uissigheim, sell to Konrad von Uissigheim der Jüngere specified rents and dues from their Steynhus at Uissigheim for 125 gulden.\n\nDate: 1 May 1394 (“Given in the year of the Lord 1394, on the feast of Saint Walpurgis”).\n\nSeal description: Six seals on parchment strips; the third and sixth have fallen off.\n\nSealers: Cuntze von Uissigheim der Ältere; Fritz Huttener; Peter Stetenberg, Ritter, guarantor; Cuntze Stetenberg, guarantor; Ruprecht Stetenberg der Jüngere, guarantor; Otte von Wisenphelt, guarantor."
+      ]
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "date": "1408-03-02",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Hauptstaatsarchiv Stuttgart H 51 U 1140",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=1-1270005",
+      "german": "König Ruprecht gestattet Arnold von Rosenberg d. J. die zu seinem Halbteil an der Veste Boxberg gehörigen Einkünfte zu Erlenbach und zu Merchingen an Abt und Konvent zu Schöntal zu vertauschen um den Weiler zum Buche mit Zugehörungen.\n\nLaufzeit: 1408 März 2\n\nSiegelbeschreibung: Siegel fehlt",
+      "english": "König Ruprecht permits Arnold von Rosenberg der Jüngere to exchange with the abbot and convent of Schöntal the revenues at Erlenbach and Merchingen belonging to his half of Boxberg fortress, for the hamlet of zum Buche with its appurtenances.\n\nTerm: 2 March 1408.\n\nSeal description: Seal missing.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "erlenbach"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "schoental-monastery"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2604&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000002604%2Ftitlaufn_0001270005%2F01_0001270005_0001_1-1270005-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2604&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000002604%2Ftitlaufn_0001270005%2F01_0001270005_0002_1-1270005-2.jpg"
+        }
+      ]
+    }
+  ]
+}

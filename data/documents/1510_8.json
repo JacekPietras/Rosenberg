@@ -6,7 +6,27 @@
       "source": "Staatsarchiv Wertheim G-Rep. 52 Nr. 142",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-5218",
       "german": "Korrespondenz von Graf Michael II. von Wertheim bzw. Gräfin Barbara von Wertheim mit den Herren von Rosenberg wegen des Dorfs Buchen\n\nLaufzeit: 1510, 1515, 1525, 1541",
-      "english": "Correspondence of Count Michael II von Wertheim and/or Countess Barbara von Wertheim with the lords von Rosenberg concerning the village of Buchen.\n\nPeriod: 1510, 1515, 1525, 1541"
+      "english": "Correspondence of Count Michael II von Wertheim and/or Countess Barbara von Wertheim with the lords von Rosenberg concerning the village of Buchen.\n\nPeriod: 1510, 1515, 1525, 1541",
+      "mention": [
+        {
+          "person": "Barbara von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Michael von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

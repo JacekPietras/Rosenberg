@@ -6,7 +6,21 @@
       "source": "HStAD, B 8, 9/30",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5181321",
       "german": "Erwählter Diether von Mainz: Verleihung eines Mannlehens von 16 Gulden und 16 Schilling Gülte, aus Orb fallend, an Brising und Reinhard v. Rosenbach\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. etwas abgeschabt\n\nSiegler: Aussteller (Sekret)\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Elected Archbishop Diether of Mainz: grant of a male fief yielding 16 gulden and 16 shillings annually, derived from Orb, to Brising and Reinhard von Rosenbach.\n\nFormal description: Original, parchment, attached seal somewhat abraded.\n\nSealer: Issuer (secret seal).\n\n(Former) provenance: von Rosenbach"
+      "english": "Elected Archbishop Diether of Mainz: grant of a male fief yielding 16 gulden and 16 shillings annually, derived from Orb, to Brising and Reinhard von Rosenberg.\n\nFormal description: Original, parchment, attached seal somewhat abraded.\n\nSealer: Issuer (secret seal).\n\n(Former) provenance: von Rosenbach",
+      "mention": [
+        {
+          "person": "Erzbischof Diether",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Reinhard von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,15 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg A 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198216",
       "german": "Arnoldts von Rosenberg Lehenrevers an H. Graf Michel ausgestellet über die sämtl. hiervor sub Num. 4 (1466 Dezember 3) describirte Lehenstücke und dann noch weiteres über folgende Lehensstücke: das Dorf Buch halbs mit seiner Zu- und Eingehörungen, item 1/4tel des Gerichts daselbst mit seinen Zu- und Eingehörungen, item ein Hof daselbst zu Buch gelegen mit seinen Zu- und Eingehörungen.\n\nLaufzeit: 1497 Oktober 21 (Sambstag nach Galli)",
+      "english": "Arnold von Rosenberg's fief acknowledgment issued to His Grace Count Michel, concerning all the fief properties described above under no. 4 (3 December 1466), and additionally the following fief properties: half the village of Buch with its appurtenances and dependencies; one quarter of the court there, with its appurtenances and dependencies; and a farm located in Buch, with its appurtenances and dependencies.\n\nDate: 21 October 1497 (Saturday after Saint Gall's Day).",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "buch"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198216%2F07_0000198216_0001_7-198216-1.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198216%2F07_0000198216_0002_7-198216-2.jpg"
         }
-      ],
-      "english": "Arnold von Rosenberg's fief acknowledgment issued to His Grace Count Michel, concerning all the fief properties described above under no. 4 (3 December 1466), and additionally the following fief properties: half the village of Buch with its appurtenances and dependencies; one quarter of the court there, with its appurtenances and dependencies; and a farm located in Buch, with its appurtenances and dependencies.\n\nDate: 21 October 1497 (Saturday after Saint Gall's Day)."
+      ]
     }
   ]
 }

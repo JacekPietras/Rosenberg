@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim F-US 10 Nr. 85",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-215084",
       "german": "Consensurkunde des Bischofs Albrecht von Würzburg zum Verkauf der Güter des Cuntz von Uissigheim in Rettersheim, welche von Würzburg zu Lehen gehen, als freieigen Gut an das Kloster Triefenstein\n\nLaufzeit: 1370 November 6\n\nSiegelbeschreibung: Großes ovales Siegel in hellbraunem Wachs, einen sitzenden Bischof vorstellend. Umschrift: S. Alberti dei gra. epi. herbipolensis",
+      "english": "Consent charter of Bishop Albrecht of Würzburg for the sale to Triefenstein Monastery, as freehold property, of the estates of Kunz von Uissigheim at Rettersheim, which were held as fiefs from Würzburg.\n\nDate: 6 November 1370.\n\nSeal description: Large oval seal in light brown wax, depicting a seated bishop. Inscription: S. Alberti dei gra. epi. herbipolensis.",
+      "mention": [
+        {
+          "person": "Bischof Albrecht",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Kunz von Uissigheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215084%2F07_0000215084_0001_7-215084-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215084%2F07_0000215084_0002_7-215084-2.jpg"
         }
-      ],
-      "english": "Consent charter of Bishop Albrecht of Würzburg for the sale to Triefenstein Monastery, as freehold property, of the estates of Cuntz von Uissigheim at Rettersheim, which were held as fiefs from Würzburg.\n\nDate: 6 November 1370.\n\nSeal description: Large oval seal in light brown wax, depicting a seated bishop. Inscription: S. Alberti dei gra. epi. herbipolensis."
+      ]
     }
   ]
 }

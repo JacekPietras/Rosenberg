@@ -6,6 +6,27 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Ochsenfurt, Ehenheim gen. von 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198075",
       "german": "Lehnrevers Bernhardts von Ehenheim genannt von Ochsenfurt an H. Graf Jörgen zu Wertheim ausgestellt, darinnen enthalten, daß ihm auf Bitte Jörgens von Rosenbergs der halbe Teil an dem Schloß Eubigheim (Übigheim) mit seinen Zu- und Eingehörungen, wie solches von gen. von Rosenberg bisher zu Lehen gehabt, zu einem wertheimischen Mannlehen geliehen worden sei.\n\nLaufzeit: 1448 Oktober 29 (am dienstag nach Simonis und Juda)",
+      "english": "Feudal acknowledgement by Bernhardt von Ehenheim genannt von Ochsenfurt, issued to Jörgen zu Wertheim, Graf zu Wertheim, stating that, at Georg von Rosenberg’s request, he had been granted the half-share of Eubigheim Castle, with its appurtenances and dependencies, as a Wertheim male fief, as previously held in fief by the aforesaid von Rosenberg.\n\nDate range: October 29, 1448 (the Tuesday after Simon and Jude).",
+      "mention": [
+        {
+          "place": "eubigheim"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Georg zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198075%2F07_0000198075_0001_7-198075-1.jpg"
@@ -13,8 +34,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198075%2F07_0000198075_0002_7-198075-2.jpg"
         }
-      ],
-      "english": "Feudal acknowledgement by Bernhardt von Ehenheim genannt von Ochsenfurt, issued to Jörgen zu Wertheim, Graf zu Wertheim, stating that, at Jörgen von Rosenberg’s request, he had been granted the half-share of Eubigheim Castle, with its appurtenances and dependencies, as a Wertheim male fief, as previously held in fief by the aforesaid von Rosenberg.\n\nDate range: October 29, 1448 (the Tuesday after Simon and Jude)."
+      ]
     }
   ]
 }

@@ -6,7 +6,30 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 4183",
       "url": "https://www.regesta-imperii.de/id/f07fa2b7-182f-4e54-b84e-0b3419d6ae9a",
       "german": "Margarethe von Erbach, Engelhards von Hirschhorn wittwe, übergibt dem pfalzgrafen alle Schuldbriefe über Nekarau, Reinhausen, Videnheim, die mühle und den zoll daselbst. Z.: Conrad von Erbach d. ä., Hans von Hirschhorn, Conrad von Rosenberg und Eberhard von Nyperg. Karlsr. Copb. 525a,41. — Archiv f. hess. Gesch. 10,124 extr. (woselbst irrthüml. Neuhausen statt Reinhausen.)",
-      "english": "Margarethe von Erbach, widow of Engelhard von Hirschhorn, transfers to the Count Palatine all debt charters concerning Neckarau, Reinhausen, Videnheim, the mill, and the toll there. Witnesses: Conrad von Erbach der Ältere, Hans von Hirschhorn, Conrad von Rosenberg, and Eberhard von Nyperg. Karlsruhe, Copb. 525a, 41. — Archiv für hessische Geschichte 10, 124, excerpt (which mistakenly has Neuhausen instead of Reinhausen)."
+      "english": "Margaretha von Erbach, widow of Engelhard von Hirschhorn, transfers to the Count Palatine all debt charters concerning Neckarau, Reinhausen, Videnheim, the mill, and the toll there. Witnesses: Konrad von Erbach der Ältere, Hans von Hirschhorn, Konrad von Rosenberg, and Eberhard von Neipperg. Karlsruhe, Copb. 525a, 41. — Archiv für hessische Geschichte 10, 124, excerpt (which mistakenly has Neuhausen instead of Reinhausen).",
+      "mention": [
+        {
+          "person": "Eberhard von Neipperg"
+        },
+        {
+          "person": "Engelhard von Hirschhorn"
+        },
+        {
+          "person": "Hans von Hirschhorn"
+        },
+        {
+          "person": "Konrad von Erbach",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Margaretha von Erbach"
+        }
+      ]
     }
   ]
 }

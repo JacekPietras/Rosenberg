@@ -1,8 +1,7 @@
 {
   "date": "1372-04-12",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Stiftsarchiv Heiligenkreuz (http://www.stift-heiligenkreuz.at), 1372 IV 12",
@@ -14,6 +13,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

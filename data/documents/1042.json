@@ -1,8 +1,7 @@
 {
   "date": "1042",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Acta Imperii Selecta - Urkunden Deutscher Könige und Kaiser mit einem Anhange von Reichssachen, Nr. 991, S. 815, 991",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

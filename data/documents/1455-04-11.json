@@ -5,8 +5,22 @@
     {
       "source": "Staatsarchiv Wertheim R-US 1455 April 11",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234935",
-      "english": "Johann, Count zu Wertheim, enfeoffs Ludewig Münche von Rosenberg, son of Hans Munch, with half the tithe at Hohenstadt.\n\nTerm: 11 April 1455 (Friday after St Ambrose’s Day).\n\nSealer: Johann, Count zu Wertheim.",
       "german": "Johann Graf zu Wertheim, belehnt den Ludewig Münche von Rosenberg, Hans Munchs Sohn, mit dem halben Zehnten zu Hohenstadt (Hoenstat).\n\nLaufzeit: 1455 April 11 (\".. der geben ist nach Cristi unsers herren geburte dusent virhundert und darnach in dem funf und funfczigisten jare am fritag nach sant Ambrosien tag\")\n\nSiegler: Johann Graf zu Wertheim",
+      "english": "Johann, Count zu Wertheim, enfeoffs Ludewig Münche von Rosenberg, son of Hans Munch, with half the tithe at Hohenstadt.\n\nTerm: 11 April 1455 (Friday after St Ambrose’s Day).\n\nSealer: Johann, Count zu Wertheim.",
+      "mention": [
+        {
+          "person": "Hans Mönch"
+        },
+        {
+          "person": "Hans zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234935%2F07_0000234935_0001_7-234935-1.jpg"

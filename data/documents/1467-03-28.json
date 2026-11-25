@@ -55,6 +55,21 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 2210",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1745783",
       "german": "Ludwig Münch von Rosenberg reversiert gegenüber Bischof Rudolf von Würzburg wegen des Zehnten zu Hainstadt.\n\nLaufzeit: 1470 August 14 (Dienstag nach Laurentius)\n\nSiegelbeschreibung: Siegel fehlt",
+      "english": "Ludwig Münch von Rosenberg issues a counter-reversion to Rudolf, Bischof zu Würzburg, concerning the tithe at Hainstadt.\n\nTerm: 14 August 1470 (Tuesday after St Lawrence's Day)\n\nSeal description: seal missing.",
+      "mention": [
+        {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "hainstadt"
+        },
+        {
+          "person": "Ludwig Mönch von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001745783%2F04_0001745783_0001_4-1745783-1.jpg"
@@ -62,13 +77,27 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001745783%2F04_0001745783_0002_4-1745783-2.jpg"
         }
-      ],
-      "english": "Ludwig Münch von Rosenberg issues a counter-reversion to Rudolf, Bischof zu Würzburg, concerning the tithe at Hainstadt.\n\nTerm: 14 August 1470 (Tuesday after St Lawrence's Day)\n\nSeal description: seal missing."
+      ]
     },
     {
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 2211",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1745784",
       "german": "Ludwig Münch von Rosenberg reversiert gegenüber Bischof Rudolf von Würzburg wegen des Zehnten zu Hainstadt.\n\nLaufzeit: 1471 April 6 (geben am Samstage dem Palabent)\n\nSiegelbeschreibung: 1 Siegel",
+      "english": "Ludwig Münch von Rosenberg issues a counter-reversion to Rudolf, Bischof zu Würzburg, concerning the tithe at Hainstadt.\n\nTerm: 6 April 1471 (given on the Saturday before Palm Sunday)\n\nSeal description: 1 seal.",
+      "mention": [
+        {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "hainstadt"
+        },
+        {
+          "person": "Ludwig Mönch von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001745784%2F04_0001745784_0001_4-1745784-1.jpg"
@@ -76,8 +105,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001745784%2F04_0001745784_0002_4-1745784-2.jpg"
         }
-      ],
-      "english": "Ludwig Münch von Rosenberg issues a counter-reversion to Rudolf, Bischof zu Würzburg, concerning the tithe at Hainstadt.\n\nTerm: 6 April 1471 (given on the Saturday before Palm Sunday)\n\nSeal description: 1 seal."
+      ]
     }
   ]
 }

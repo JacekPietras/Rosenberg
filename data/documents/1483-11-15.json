@@ -1,8 +1,6 @@
 {
   "date": "1483-11-15",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "PANGERL, Anhang Stift Goldenkron (=FRA II/37, Wien 1872) S. 622, Nr. 45, 1483 XI 15",
@@ -11,7 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1483_XI_15/charter"
       ],
       "german": "Joannes cardinalis de Arragonia legatus sedis apostolicae fuit Crumlovii; hic dedit indulgentias centum dierum pro altari 14 auxiliatorum in ecclesia Czerniczensi - ad instantiam Wokonis de Rosenberg et fratrum eius. 1",
-      "english": "Joannes, cardinal of Aragon and legate of the Apostolic See, was at Český Krumlov; there, at the request of Wok von Rosenberg and his brothers, he granted one hundred days of indulgence for the altar of the Fourteen Holy Helpers in the church at Černice."
+      "english": "Joannes, cardinal of Aragon and legate of the Apostolic See, was at Český Krumlov; there, at the request of Wok von Rosenberg and his brothers, he granted one hundred days of indulgence for the altar of the Fourteen Holy Helpers in the church at Černice.",
+      "mention": [
+        {
+          "person": "Wok von Rosenberg"
+        }
+      ]
     }
   ]
 }

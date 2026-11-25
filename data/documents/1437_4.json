@@ -6,7 +6,30 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 26",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74935",
       "german": "Aschaffenburg 1437 Dez. 25. (Mi. in den Weihnachtsfeiertagen). Erzbischof Dietrich von Main bestätigt den Verkauf eines dem Stift Main lehnbaren Hofs zu Buchen durch Fritz von Dürn (Durne) an Kunz von Rosenberg und belehnt Rosenberg mit dem Hof; Sr.: der A.\n\nLaufzeit: 1437\n\nUmfang: Ausf.; Perg., 1 S. (besch.)",
-      "english": "Aschaffenburg, 25 December 1437 (Wednesday during the Christmas holidays). Dietrich, Erzbischof von Mainz confirms the sale by Fritz von Dürn of a farm at Buchen, held as a fief from Mainz Cathedral, to Kunz von Rosenberg, and invests Rosenberg with the farm. Sealer: the issuer.\n\nDate range: 1437\n\nExtent: fair copy; parchment, one seal (damaged)."
+      "english": "Aschaffenburg, 25 December 1437 (Wednesday during the Christmas holidays). Dietrich, Erzbischof von Mainz confirms the sale by Friedrich von Dürn of a farm at Buchen, held as a fief from Mainz Cathedral, to Kunz von Rosenberg, and invests Rosenberg with the farm. Sealer: the issuer.\n\nDate range: 1437\n\nExtent: fair copy; parchment, one seal (damaged).",
+      "mention": [
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Erzbischof Dietrich",
+          "personTitle": [
+            "Erzbischof von Mainz"
+          ]
+        },
+        {
+          "person": "Friedrich von Dürn"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

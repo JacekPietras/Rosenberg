@@ -6,7 +6,12 @@
       "source": "Bürgerarchiv Steckborn, 2., 1376 VI 25",
       "url": "https://www.monasterium.net/mom/CSGIX/1376_VI_25.1/charter",
       "german": "Abt Eberhard der Reichenau 1 verpfändet den Gotteshausleuten von Steckborn und Berlingen 2 für 40 Pfund . . ., die selben pfenning gentzlich komen sint an die gúlt, die wir herr Růdolffen von Rosenberg 3 schuldig siien von der geuangnúst wegen Johansen des Smides v´nsers ammans von Stekboren 4 , . . . den Weinzehnten in Steckborn und Berlingen.",
-      "english": "Abbot Eberhard of Reichenau pledges to the abbey’s people of Steckborn and Berlingen the wine tithe in Steckborn and Berlingen for 40 pounds … . The money has all gone toward the debt owed by us to Lord Růdolf von Rosenberg because of the imprisonment of Johann the Smith, our bailiff of Steckborn."
+      "english": "Abbot Eberhard of Reichenau pledges to the abbey’s people of Steckborn and Berlingen the wine tithe in Steckborn and Berlingen for 40 pounds … . The money has all gone toward the debt owed by us to Lord Růdolf von Rosenberg because of the imprisonment of Johann the Smith, our bailiff of Steckborn.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

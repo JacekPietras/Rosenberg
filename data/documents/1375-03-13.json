@@ -6,6 +6,42 @@
       "source": "Staatsarchiv Wertheim R-US 1375 März 13",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234511",
       "german": "Hans Munch, Ludwig, genannt Jtalmunch, sein Bruder, von Hainstadt (Heinstat), und Anna, des ersteren Ehefrau, verkaufen dem Kloster Bronnbach benannte Gülten von des Klosters Gütern am Dürrhof (Durreberg), Luchenberg und Winden um 200 Gulden.\n\nLaufzeit: 1375 März 13 (\"der geben wart do man zalte von gots geburt druzehen hundert iar und funf und sybentzig iar an dem nehsten dinstage nach sant Gregorien tag\")\n\nSiegelbeschreibung: 8 Siegel an Pergamentstreifen, das 3. beschädigt, das 8. abgefallen\n\nVermerke: Auf der Rückseite: \"Litera Hans et Lutzen Munchs super XVIII ml. siliginis et 1 lib. hallensium de curia Durberg\"\n\nSiegler: Hans Munch von Hainstadt, Aussteller; Ludwig Munch von Heinstadt, Aussteller; Hans von Rosenberg; Konrad von Uissigheim der Alte; Albrecht Stetenberger; Konrad von Bucheim; Berthold von Durn; Reinhard von Hartheim",
+      "english": "Hans Munch, Ludwig, called Jtalmunch, his brother, of Hainstadt, and Anna, the former's wife, sell to Bronnbach Abbey the named rents from the abbey's properties at Dürrhof, Luchenberg, and Winden for 200 gulden.\n\nDate: 13 March 1375.\n\nSeal description: Eight seals on parchment strips; the third is damaged and the eighth has fallen off.\n\nNotes: On the reverse: ‘Litera Hans et Lutzen Munchs super XVIII ml. siliginis et 1 lib. hallensium de curia Durberg.’\n\nSeal bearers: Hans Munch of Hainstadt and Ludwig Munch of Heinstadt, the issuers; Hans von Rosenberg; Konrad von Uissigheim der Ältere; Albrecht Stetenberger; Konrad von Buchen; Berthold von Dürn; and Reinhard von Hartheim.",
+      "mention": [
+        {
+          "person": "Berthold von Dürn"
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "hainstadt"
+        },
+        {
+          "person": "Hans Mönch"
+        },
+        {
+          "person": "Hans Mönch of Hainstadt"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Konrad von Buchen"
+        },
+        {
+          "person": "Konrad von Uissigheim",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Ludwig Mönch of Hainstadt"
+        },
+        {
+          "person": "Reinhard von Hartheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234511%2F07_0000234511_0001_7-234511-1.jpg"
@@ -13,8 +49,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234511%2F07_0000234511_0002_7-234511-2.jpg"
         }
-      ],
-      "english": "Hans Munch, Ludwig, called Jtalmunch, his brother, of Hainstadt, and Anna, the former's wife, sell to Bronnbach Abbey the named rents from the abbey's properties at Dürrhof, Luchenberg, and Winden for 200 gulden.\n\nDate: 13 March 1375.\n\nSeal description: Eight seals on parchment strips; the third is damaged and the eighth has fallen off.\n\nNotes: On the reverse: ‘Litera Hans et Lutzen Munchs super XVIII ml. siliginis et 1 lib. hallensium de curia Durberg.’\n\nSeal bearers: Hans Munch of Hainstadt and Ludwig Munch of Heinstadt, the issuers; Hans von Rosenberg; Konrad von Uissigheim der Ältere; Albrecht Stetenberger; Konrad von Bucheim; Berthold von Durn; and Reinhard von Hartheim."
+      ]
     }
   ]
 }

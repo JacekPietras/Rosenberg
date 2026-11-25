@@ -1,8 +1,7 @@
 {
   "date": "1476-05-12",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Wiener Stadt- und Landesarchiv, 4596",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

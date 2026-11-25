@@ -6,6 +6,27 @@
       "source": "Staatsarchiv Ludwigsburg B 503 I U 442",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-624412",
       "german": "1437 Apr. 23 (an santt Georyen tag)\nKonz von Rosenberg zu Bartenstein (Barttenstein) bekundet: Er hat, als er den [vierten] Teil von Boxberg (-perg) innehatte, Kloster Schöntal schriftlich verboten, die Gült zu übernehmen und einzuziehen, die ihnen sein Verwandter (vetter) Arnold von Rosenberg und dessen Ehefrau Christina von Handschuhsheim (Hentschußhen) [am 30. Juli 1419; s. U 441] verkauft hatten. Auf Bitten Arnolds nimmt er dieses Verbot zurück und verzichtet hinsichtlich der Gült auf alle Ansprüche an das Kloster.\nSiegler: der A.\nAusf. Perg. - 1 Sg. anh. - Rv.: Littera certarum censuum super decima in Gummersdorff; ...\n\nLaufzeit: 1437\n\nUmfang: 1 U",
+      "english": "1437 April 23 (on Saint George’s Day)\nKunz von Rosenberg zu Bartenstein declares that, when he held the [fourth] part of Boxberg, he prohibited Schöntal Monastery in writing from taking over and collecting the rent which his kinsman Arnold von Rosenberg and Arnold’s wife Christiana von Handschuhsheim had sold to it [on 30 July 1419; see U 441]. At Arnold’s request, he revokes this prohibition and waives all claims against the monastery concerning the rent.\nSealer: the issuer.\nOriginal, parchment, one attached seal. Docket: “Letter concerning certain rents on the tithe in Gummersdorf”; …\n\nTerm: 1437\n\nExtent: one document.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Christiana von Handschuhsheim"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ]
+        },
+        {
+          "place": "schoental-monastery"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000624412%2F02_0000624412_0003_2-624412-3.jpg"
@@ -13,8 +34,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000624412%2F02_0000624412_0004_2-624412-4.jpg"
         }
-      ],
-      "english": "1437 April 23 (on Saint George’s Day)\nKonz von Rosenberg zu Bartenstein declares that, when he held the [fourth] part of Boxberg, he prohibited Schöntal Monastery in writing from taking over and collecting the rent which his kinsman Arnold von Rosenberg and Arnold’s wife Christina von Handschuhsheim had sold to it [on 30 July 1419; see U 441]. At Arnold’s request, he revokes this prohibition and waives all claims against the monastery concerning the rent.\nSealer: the issuer.\nOriginal, parchment, one attached seal. Docket: “Letter concerning certain rents on the tithe in Gummersdorf”; …\n\nTerm: 1437\n\nExtent: one document."
+      ]
     }
   ]
 }

@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Ludwigsburg B 375 S U 362",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1956263",
       "german": "Lehensrevers des Kunz (Concz) von Rosenberg zu Bartenstein für den Abt des Klosters Comburg, Gottfried von Stetten, über ein von Kunz (Concz) Lecher selig inne gehabtes verfallenes Lehen zu Enslingen\n\nLaufzeit: 1433 April 25 (am samstag nechst nach sant Gregorien tag)\n\nSiegelbeschreibung: 1 Sg.\n\nSiegler: Kunz von Rosenberg",
+      "english": "Kunz von Rosenberg zu Bartenstein’s fief acknowledgment to Abbot Gottfried von Stetten of Comburg Abbey, concerning a forfeited fief at Enslingen formerly held by the late Kunz Lecher.\n\nDate: 25 April 1433 (on the Saturday immediately after Saint Gregory’s Day).\n\nSeal description: One seal.\n\nSealer: Kunz von Rosenberg.",
+      "mention": [
+        {
+          "place": "comburg-stiftskirche"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "zu Bartenstein"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1419&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001419%2Ftitlaufn_0001956263%2F02_0001956263_0001_2-1956263-1.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1419&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001419%2Ftitlaufn_0001956263%2F02_0001956263_0002_2-1956263-2.jpg"
         }
-      ],
-      "english": "Kunz von Rosenberg zu Bartenstein’s fief acknowledgment to Abbot Gottfried von Stetten of Comburg Abbey, concerning a forfeited fief at Enslingen formerly held by the late Kunz Lecher.\n\nDate: 25 April 1433 (on the Saturday immediately after Saint Gregory’s Day).\n\nSeal description: One seal.\n\nSealer: Kunz von Rosenberg."
+      ]
     }
   ]
 }

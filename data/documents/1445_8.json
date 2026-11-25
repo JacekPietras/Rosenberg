@@ -6,6 +6,15 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1281",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-190229",
       "german": "Hesse, Graf zu Leiningen, bekennt, daß er Elisabeth von Hohenlohe und Lienhard von Rosenbach geeinigt habe (abgenommene Pferde in Sindringen); Siegel des Leiningen.\n\nLaufzeit: 1445\n\nUmfang: 1 Urkunde",
+      "english": "Hesse, Count zu Leiningen, acknowledges that he has reconciled Elisabeth von Hohenlohe and Lienhard von Rosenbach (concerning horses seized at Sindringen). Seal of Leiningen.\n\nTerm: 1445\n\nExtent: 1 document",
+      "mention": [
+        {
+          "person": "Elisabeth von Hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190229%2F03_0000190229_0001_3-190229-1.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190229%2F03_0000190229_0002_3-190229-2.jpg"
         }
-      ],
-      "english": "Hesse, Count zu Leiningen, acknowledges that he has reconciled Elisabeth von Hohenlohe and Lienhard von Rosenbach (concerning horses seized at Sindringen). Seal of Leiningen.\n\nTerm: 1445\n\nExtent: 1 document"
+      ]
     }
   ]
 }

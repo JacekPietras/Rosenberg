@@ -5,8 +5,19 @@
     {
       "source": "Staatsarchiv Ludwigsburg B 337 Bü 146",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1094418",
+      "german": "Edelfinger Akten\n\nLaufzeit: (1455, 1503) 1555-1662\n\nEnthält: Enthält u.a.: Centherrschaft, Handlohn und Hauptrecht, Differenzen zwischen Kurmainz und Rosenberg einerseits, dem Deutschen Orden andererseits (1592-1630); Pranger zu Edelfingen (1659); Erbschenke (1630); Schatzung und Kontribution ((1628) 1645-1649); Hatzfeldtische Juden (1653-1659); Korrespondenz mit Reichskammergerichtsagenten (1627-1631)\n\nUmfang: 1 Bd.",
       "english": "Edelfingen records.\n\nTerm: (1455, 1503) 1555–1662.\n\nIncludes, among other things: the cent lordship, handgeld and death duty; disputes between Electoral Mainz and Rosenberg on the one side and the Teutonic Order on the other (1592–1630); the pillory at Edelfingen (1659); the hereditary tavern (1630); assessment and contribution (1628, 1645–1649); Jews under Hatzfeld rule (1653–1659); correspondence with agents of the Imperial Chamber Court (1627–1631).\n\nExtent: One volume.",
-      "german": "Edelfinger Akten\n\nLaufzeit: (1455, 1503) 1555-1662\n\nEnthält: Enthält u.a.: Centherrschaft, Handlohn und Hauptrecht, Differenzen zwischen Kurmainz und Rosenberg einerseits, dem Deutschen Orden andererseits (1592-1630); Pranger zu Edelfingen (1659); Erbschenke (1630); Schatzung und Kontribution ((1628) 1645-1649); Hatzfeldtische Juden (1653-1659); Korrespondenz mit Reichskammergerichtsagenten (1627-1631)\n\nUmfang: 1 Bd."
+      "mention": [
+        {
+          "place": "edelfingen"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

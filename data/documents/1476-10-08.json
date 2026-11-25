@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 10",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198248",
       "german": "Lehenrevers Cuntzens von Rosenberg an H. Graf Johann zu Wertheim ausgestellt über das oben Num. 2 benannte Mannlehen.\n\nLaufzeit: 1476 Oktober 8 (am Dienstag nach Francisci)",
+      "english": "Feudal acknowledgment by Kunz von Rosenberg to Lord Count Johann zu Wertheim concerning the manorial fief identified above as No. 2.\n\nDate: 8 October 1476 (Tuesday after Francis of Assisi's feast day).",
+      "mention": [
+        {
+          "person": "Hans zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198248%2F07_0000198248_0001_7-198248-1.jpg"
@@ -19,8 +31,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198248%2F07_0000198248_0004_7-198248-4.jpg"
         }
-      ],
-      "english": "Feudal acknowledgment by Cuntz von Rosenberg to Lord Count Johann zu Wertheim concerning the manorial fief identified above as No. 2.\n\nDate: 8 October 1476 (Tuesday after Francis of Assisi's feast day)."
+      ]
     }
   ]
 }

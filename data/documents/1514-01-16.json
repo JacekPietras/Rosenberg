@@ -6,7 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 6016",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-394814",
       "german": "Philipp Bischerim, Amtsverweser in Neubrunn an Stelle des Amtmanns Johann Küchenmeister, schlichtet auf Bitten des Wertheimer Vogts oder Amtmanns Philipp von Uissigheim einen Streit zwischen Fritz Sigler und Linhard Müller auf der einen und Kilian Minig (?) aus Neubrunn auf der anderen Seite. Zeugen: Konrad Oswalt, Kilian Meynig, Michel Kraft. Geschrieben von Konrad Walter, Pfarrer in Neubrunn.\n\nLaufzeit: 1514 Januar 16 (uff dem tagk Marcelle)",
-      "english": "Philipp Bischerim, acting administrator at Neubrunn in place of Amtmann Johann Küchenmeister, at the request of Wertheim’s Vogt or Amtmann Philipp von Uissigheim, settles a dispute between Fritz Sigler and Linhard Müller on one side and Kilian Minig (?) of Neubrunn on the other. Witnesses: Konrad Oswalt, Kilian Meynig, and Michel Kraft. Written by Konrad Walter, parish priest at Neubrunn.\n\nPeriod: 1514 January 16 (on the day of Marcellus)"
+      "english": "Philipp Bischerim, acting administrator at Neubrunn in place of Amtmann Johann Küchenmeister, at the request of Wertheim’s Vogt or Amtmann Philipp von Uissigheim, settles a dispute between Fritz Sigler and Linhard Müller on one side and Kilian Minig (?) of Neubrunn on the other. Witnesses: Konrad Oswalt, Kilian Meynig, and Michel Kraft. Written by Konrad Walter, parish priest at Neubrunn.\n\nPeriod: 1514 January 16 (on the day of Marcellus)",
+      "mention": [
+        {
+          "person": "Philipp von Uissigheim",
+          "personTitle": [
+            "Amtmann"
+          ]
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
     }
   ]
 }

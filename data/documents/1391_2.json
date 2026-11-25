@@ -6,7 +6,12 @@
       "source": "[RIplus] Regg. Wenzel [n. 2150]",
       "url": "https://www.regesta-imperii.de/id/a772f2cc-79e5-4b8f-acfa-8e343028b5d9",
       "german": "Wenzel für Heinrich von Rosenberg.",
-      "english": "Wenceslas acts on behalf of Heinrich von Rosenberg."
+      "english": "Wenceslas acts on behalf of Heinrich von Rosenberg.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

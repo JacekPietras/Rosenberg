@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198243",
       "german": "Lehnrevers Hansens von Rosenberg an H. Graf Georgen zu Wertheim über folgendes rechtes Mann- und Burglehen ausgestellet: das Dorf Hirschlanden halb mit seinen Zu- und Eingehörungen und dazu 6 Pfund Geldes Burgguts als das sein Vater sel. inne gehabt in Wertheim zu verdienen.\n\nLaufzeit: 1452 März 21 (am Montag nach Laetare)",
+      "english": "Hans von Rosenberg's feudal acknowledgment to Lord Count Georg zu Wertheim concerning the following proper manorial and castle fief: half the village of Hirschlanden with its appurtenances, and in addition 6 pounds in castle revenues, which his late father had held, to be earned at Wertheim.\n\nDate range: 21 March 1452 (Monday after Laetare).",
+      "mention": [
+        {
+          "person": "Georg zu Wertheim",
+          "personTitle": [
+            "Graf zu Wertheim"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198243%2F07_0000198243_0001_7-198243-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198243%2F07_0000198243_0002_7-198243-2.jpg"
         }
-      ],
-      "english": "Hans von Rosenberg's feudal acknowledgment to Lord Count Georg zu Wertheim concerning the following proper manorial and castle fief: half the village of Hirschlanden with its appurtenances, and in addition 6 pounds in castle revenues, which his late father had held, to be earned at Wertheim.\n\nDate range: 21 March 1452 (Monday after Laetare)."
+      ]
     }
   ]
 }

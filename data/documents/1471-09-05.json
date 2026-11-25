@@ -1,15 +1,18 @@
 {
   "date": "1471-09-05",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "(der \"Annales\":) Stiftsarchiv Schlägl, Hs. 16 (www.stift-schlaegl.at), 1471 IX 05",
       "url": "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1471_IX_05/charter",
       "german": "Der Schlägler Chorherr Johannes aus Krumau, Pfarrer in Aigen, vollendet eine mittlerweile verschollene Handschrift.\n\nFreisleben zitiert in seinen Annales, fol. 73v, folgendes Explicit: \"Finitus est præsens liber feria quinta ante natiuitatem beatæ virginis Mariæ, anno Domini M. CCCC LXXI per me fratrem Joannem(1) filium Henrici(2) quondam generosissimorum dominorum de Rosenberg cellerarij ordinis Præmonstratensis, eo tempore plebanum in Aigen, natione de Crumaw. Alius de eodem in eundem librum(3) scripsit: Hunc librum scripsit frater Joannes, filius Henrici, quondam dominorum de Rosenberg cellerarij, ordinis Præmonstratensis, canonicus Plagensis, eo tempore plebanus in oppido: demum præpositus monasterij huius. Anno 1471(4).\"",
-      "english": "The Schlägl canon Johannes of Krumau, parish priest at Aigen, completes a manuscript that has since disappeared.\n\nFreisleben quotes the following explicit in his Annales, fol. 73v: “The present book was finished on Thursday before the Nativity of the Blessed Virgin Mary, in the year of our Lord 1471, by me, Brother Joannes, son of Heinrich, formerly cellarer of the most noble lords of Rosenberg, of the Premonstratensian Order, at that time parish priest at Aigen, born at Krumau. Another person from the same place wrote in the same book: ‘This book was written by Brother Joannes, son of Heinrich, formerly cellarer of the lords of Rosenberg, of the Premonstratensian Order, canon of Plass, at that time parish priest in the town, and later provost of this monastery. In the year 1471.’”"
+      "english": "The Schlägl canon Johannes of Krumau, parish priest at Aigen, completes a manuscript that has since disappeared.\n\nFreisleben quotes the following explicit in his Annales, fol. 73v: “The present book was finished on Thursday before the Nativity of the Blessed Virgin Mary, in the year of our Lord 1471, by me, Brother Joannes, son of Heinrich, formerly cellarer of the most noble lords of Rosenberg, of the Premonstratensian Order, at that time parish priest at Aigen, born at Krumau. Another person from the same place wrote in the same book: ‘This book was written by Brother Joannes, son of Heinrich, formerly cellarer of the lords of Rosenberg, of the Premonstratensian Order, canon of Plass, at that time parish priest in the town, and later provost of this monastery. In the year 1471.’”",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
-  ],
-  "transcribed": true
+  ]
 }

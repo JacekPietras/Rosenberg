@@ -6,7 +6,21 @@
       "source": "HStAD, B 8, 9/37",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2785080",
       "german": "Erwählter Diether von Mainz: Verleihung eines Burglehens von 6 Gulden jährlicher Gülte aus der Kellerei zu Steinheim an Wiprecht v. Rosenbach\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. etwas besch.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Elected Archbishop Diether of Mainz: grant to Wiprecht von Rosenbach of a castle fief yielding six gulden annually, paid from the revenue office at Steinheim.\n\nFormal description: Original, parchment, attached seal somewhat damaged.\n\nSealer: Issuer.\n\n(Former) provenance: von Rosenbach"
+      "english": "Elected Archbishop Diether of Mainz: grant to Wiprecht von Rosenberg of a castle fief yielding six gulden annually, paid from the revenue office at Steinheim.\n\nFormal description: Original, parchment, attached seal somewhat damaged.\n\nSealer: Issuer.\n\n(Former) provenance: von Rosenbach",
+      "mention": [
+        {
+          "person": "Erzbischof Diether",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wiprecht von Rosenberg"
+        }
+      ]
     }
   ]
 }

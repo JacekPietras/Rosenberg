@@ -6,6 +6,24 @@
       "source": "Staatsarchiv Wertheim R-US 1425 Januar 21",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234757",
       "german": "Benannte Landschieder der Dörfer Iggersheim (Eiersheim?), Uissigheim (Ussikein), und Hochhausen (Hochusen) entscheiden den zwischen den Karthäusern zu Grünau und dem Junker Eberhard von Uissigheim (Usikein) über das Wässerungsrecht auf der ersteren Zinsgut Böttigheim (Bodein) und des letzeren Mühle zu Maisenbach (Massenbach) schwebenden Streit.\n\nLaufzeit: 1425 Januar 21 (\".. der geben ist nach Cristi geburt vierzehnhundert jar und dar nach in dem funf und zwenczigsten jare uff sant Agaten tag der heiligen jungfrauwen\")\n\nSiegelbeschreibung: 2 Siegel an Pergamentstreifen\n\nVermerke: Auf der Rückseite: \"Concordia in Massenbach\"\n\nSiegler: Heinrich Brun, Dechant; Junker Zeisolf von Alatzheim, Amtmann zu Külsheim",
+      "english": "The named land adjudicators of the villages of Iggersheim, Uissigheim, and Hochhausen decide the pending dispute between the Carthusians of Grünau and Junker Eberhard von Uissigheim over the watering rights of the former's rent-paying estate at Böttigheim and the latter's mill at Maisenbach.\n\nDate: 21 January 1425 (“given after the birth of Christ in the year 1425, on St Agatha's Day, the holy virgin”)\n\nSeal description: 2 seals on parchment strips\n\nEndorsement on the back: “Agreement at Massenbach”\n\nSeal holders: Heinrich Brun, dean; Junker Zeisolf von Alatzheim, Amtmann zu Külsheim",
+      "mention": [
+        {
+          "person": "Eberhard von Uissigheim",
+          "personTitle": [
+            "Junker"
+          ]
+        },
+        {
+          "person": "Heinrich Brunn",
+          "personTitle": [
+            "Domdekan"
+          ]
+        },
+        {
+          "place": "uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234757%2F07_0000234757_0001_7-234757-1.jpg"
@@ -13,8 +31,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234757%2F07_0000234757_0002_7-234757-2.jpg"
         }
-      ],
-      "english": "The named land adjudicators of the villages of Iggersheim, Uissigheim, and Hochhausen decide the pending dispute between the Carthusians of Grünau and Junker Eberhard von Uissigheim over the watering rights of the former's rent-paying estate at Böttigheim and the latter's mill at Maisenbach.\n\nDate: 21 January 1425 (“given after the birth of Christ in the year 1425, on St Agatha's Day, the holy virgin”)\n\nSeal description: 2 seals on parchment strips\n\nEndorsement on the back: “Agreement at Massenbach”\n\nSeal holders: Heinrich Brun, dean; Junker Zeisolf von Alatzheim, Amtmann zu Külsheim"
+      ]
     }
   ]
 }

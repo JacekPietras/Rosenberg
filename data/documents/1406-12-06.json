@@ -6,6 +6,12 @@
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 135",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129218",
       "german": "Kaufbrief des Contz von Uissigheim, seiner Frau Catharina von Gabelstein und seines Sohnes Eberhard, über ihren halben Hof zu Holzkirchhausen, dem Heintz Knoll von Hausen und seiner Frau Metze um 69 fl verkauft.\n\nLaufzeit: 1406 Dezember 6",
+      "english": "Deed of sale by Kunz von Uissigheim, his wife Catharina von Gabelstein, and their son Eberhard, by which they sell their half of a farm at Holzkirchhausen to Heintz Knoll von Hausen and his wife Metze for 69 florins.\n\nTerm: 6 December 1406.",
+      "mention": [
+        {
+          "person": "Kunz von Uissigheim"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129218%2F07_0000129218_0001_7-129218-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129218%2F07_0000129218_0002_7-129218-2.jpg"
         }
-      ],
-      "english": "Deed of sale by Contz von Uissigheim, his wife Catharina von Gabelstein, and their son Eberhard, by which they sell their half of a farm at Holzkirchhausen to Heintz Knoll von Hausen and his wife Metze for 69 florins.\n\nTerm: 6 December 1406."
+      ]
     }
   ]
 }

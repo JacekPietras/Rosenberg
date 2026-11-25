@@ -6,13 +6,35 @@
       "source": "Staatsarchiv Ludwigsburg B 397 II Bü 915",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-23902",
       "german": "Beratungen der Mitglieder des aufgelösten Schwäbischen Bundes über die Auseinandersetzungen wegen der Vertreibung der Familie von Rosenberg aus Schloß Boxberg durch den Bund sowie Verkauf des rosenbergischen Erbguts an den Pfalzgrafen Ludwig bei Rhein sowie wegen der Fehde des Hans Thomas von Rosenberg gegen den Pfalzgrafen\n\nLaufzeit: (1510-1511) 1536-1555\n\nEnthält: Darin: Bundestagsabschied (1532, 2 Drucke)\n\nUmfang: 1 Bü.",
-      "english": "Consultations by members of the dissolved Swabian League concerning disputes over the League’s expulsion of the von Rosenberg family from Boxberg Castle and the sale of the Rosenberg family’s inherited property to Elector Palatine Ludwig by the Rhine, as well as the feud of Hans Thomas von Rosenberg against the Elector Palatine.\n\nDate range: (1510–1511) 1536–1555\n\nIncluded: League Diet resolution (1532, 2 printed copies)\n\nExtent: 1 bundle"
+      "english": "Consultations by members of the dissolved Swabian League concerning disputes over the League’s expulsion of the von Rosenberg family from Boxberg Castle and the sale of the Rosenberg family’s inherited property to Elector Palatine Ludwig by the Rhine, as well as the feud of Hans Thomas von Rosenberg against the Elector Palatine.\n\nDate range: (1510–1511) 1536–1555\n\nIncluded: League Diet resolution (1532, 2 printed copies)\n\nExtent: 1 bundle",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     },
     {
       "source": "Staatsarchiv Ludwigsburg B 397 II Bü 914",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-23901",
       "german": "Beratungen der Mitglieder des aufgelösten Schwäbischen Bundes über die Auseinandersetzungen wegen der Vertreibung der Familie von Rosenberg aus Schloß Boxberg durch den Bund sowie Verkauf des rosenbergischen Erbguts an den Pfalzgrafen Ludwig bei Rhein sowie wegen der Fehde des Hans Thomas von Rosenberg gegen den Pfalzgrafen\n\nLaufzeit: 1536-1545\n\nUmfang: 1 Bü.",
-      "english": "Consultations by members of the dissolved Swabian League concerning disputes over the League’s expulsion of the von Rosenberg family from Boxberg Castle and the sale of the Rosenberg family’s inherited property to Elector Palatine Ludwig by the Rhine, as well as the feud of Hans Thomas von Rosenberg against the Elector Palatine.\n\nDate range: 1536–1545\n\nExtent: 1 bundle"
+      "english": "Consultations by members of the dissolved Swabian League concerning disputes over the League’s expulsion of the von Rosenberg family from Boxberg Castle and the sale of the Rosenberg family’s inherited property to Elector Palatine Ludwig by the Rhine, as well as the feud of Hans Thomas von Rosenberg against the Elector Palatine.\n\nDate range: 1536–1545\n\nExtent: 1 bundle",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 U 1649",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-209191",
       "german": "Mittwoch nach Sonntag Invocavit; Conrad von Rosenberg, zu Bartenstein gesessen, gegenüber Graf Kraft von Hohenlohe - Schloss und Veste Bartenstein und eine Behausung und Hofrait in Röttingen;\nSiegel: Conrad von Rosenberg.\n\nLaufzeit: 1432\n\nUmfang: 1 Urkunde",
-      "english": "Wednesday after Invocavit Sunday; Conrad von Rosenberg, residing at Bartenstein, opposite Count Kraft von Hohenlohe — castle and fortress of Bartenstein and a residence with a courtyard in Röttingen.\nSeal: Conrad von Rosenberg.\n\nDate: 1432.\n\nExtent: One charter."
+      "english": "Wednesday after Invocavit Sunday; Konrad von Rosenberg, residing at Bartenstein, opposite Count Kraft von Hohenlohe — castle and fortress of Bartenstein and a residence with a courtyard in Röttingen.\nSeal: Konrad von Rosenberg.\n\nDate: 1432.\n\nExtent: One charter.",
+      "mention": [
+        {
+          "place": "bartenstein"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "place": "roettingen"
+        }
+      ]
     }
   ]
 }

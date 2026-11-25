@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 208",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129159",
       "german": "Urkunde des Gottfried von Rieneck, worin er mit Bewilligung seines Bruders, des Grafen Gerhart von Rieneck, dem Edelknecht Cuntz von Uissigheim die sämtlichen Güter verleiht, auf denen die Verbindlichkeit ruht, das ewige Licht der Pfarrkirche zu Unterwittighausen zu unterhalten.\n\nLaufzeit: 1362 Dezember 20",
+      "english": "Document of Gotfried von Rieneck, in which, with the consent of his brother Count Gerhart von Rieneck, he grants to the Edelknecht Kunz von Uissigheim all the properties burdened with the obligation to maintain the perpetual light in the parish church at Unterwittighausen.\n\nTerm: 20 December 1362.",
+      "mention": [
+        {
+          "person": "Gotfried von Rieneck"
+        },
+        {
+          "person": "Kunz von Uissigheim",
+          "personTitle": [
+            "Edelknecht"
+          ]
+        },
+        {
+          "place": "rieneck"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129159%2F07_0000129159_0001_7-129159-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129159%2F07_0000129159_0002_7-129159-2.jpg"
         }
-      ],
-      "english": "Document of Gottfried von Rieneck, in which, with the consent of his brother Count Gerhart von Rieneck, he grants to the Edelknecht Cuntz von Uissigheim all the properties burdened with the obligation to maintain the perpetual light in the parish church at Unterwittighausen.\n\nTerm: 20 December 1362."
+      ]
     }
   ]
 }

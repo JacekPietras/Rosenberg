@@ -1,8 +1,7 @@
 {
   "date": "1364-05-31",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "HHStA Wien, AUR (http://www.oesta.gv.at), 1364 V 31",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

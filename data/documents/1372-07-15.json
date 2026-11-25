@@ -6,6 +6,18 @@
       "source": "Deutschordenszentralarchiv, Wien Mergentheim, 2281",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/2281/charter",
       "german": "Heintz v. Rosenberg zu Bockenvelt und Hans v. Rotenburg bürgen dem Deutschmeister für den Deutschordenskandidaten Wilhelm v. Rotenburg.\n\nSiegel: 2 Siegel der Aussteller an Perg.-Streifen.",
+      "english": "Heinrich von Rosenberg zu Bockenvelt and Hans von Rothenburg stand surety for the Teutonic Master for Wilhelm von Rothenburg, a candidate for admission to the Teutonic Order.\n\nSeals: Two seals of the issuers on parchment strips.",
+      "mention": [
+        {
+          "person": "Hans von Rothenburg"
+        },
+        {
+          "person": "Heinrich von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Rothenburg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_13720715_r.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_13720715_v.jpg"
         }
-      ],
-      "english": "Heintz von Rosenberg zu Bockenvelt and Hans von Rotenburg stand surety for the Teutonic Master for Wilhelm von Rotenburg, a candidate for admission to the Teutonic Order.\n\nSeals: Two seals of the issuers on parchment strips."
+      ]
     }
   ]
 }

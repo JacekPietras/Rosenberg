@@ -6,6 +6,12 @@
       "source": "Staatsarchiv Wertheim F-US 9 Nr. 77",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129164",
       "german": "Notariatsurkunde über die Erklärung der Anna, geborene von Rosenberg, daß ihr auf den Zehnten zu Großrinderfeld nichts verschrieben worden.\n\nLaufzeit: 1368 März 17",
+      "english": "Notarial instrument recording the declaration of Anna, née von Rosenberg, that nothing had been assigned to her on the tithe at Großrinderfeld.\n\nDate: 17 March 1368.",
+      "mention": [
+        {
+          "person": "Anna von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129164%2F07_0000129164_0001_7-129164-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129164%2F07_0000129164_0002_7-129164-2.jpg"
         }
-      ],
-      "english": "Notarial instrument recording the declaration of Anna, née von Rosenberg, that nothing had been assigned to her on the tithe at Großrinderfeld.\n\nDate: 17 March 1368."
+      ]
     }
   ]
 }

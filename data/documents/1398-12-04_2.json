@@ -1,13 +1,18 @@
 {
   "date": "1398-12-04",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Státní oblastní archiv v Třeboni, 89",
       "url": "https://www.monasterium.net/mom/CZ-SOAT/CizyRody/89/charter",
       "german": "Papež Bonifác IX. povoluje prostrednictvím pražského arcibiskupa /Volframa ze Škvorce/ Jindrichovi z Rožmberka, aby uzavrel manželství se svou príbuznou 3. a 4. stupne Eliškou z Kravar.\n\nBonifatius episcopus servus servorum dei. Venerabili fratri Archiepiscopo Pragensi Salutem et apostolicam benedictionem. Oblate nobis pro parte dilecti filii Nobilis Viri Henrici Ulrici Baronis Baronie de Rosenberg, domicelli et dilecte in christo filie Nobilis mulieris Elizabeth dilecti filii Nobilis Viri Petri Baronis Baronie de Crawar alias de Plumnaw domicelli nate domicelle Pragensis et Olomucensis diocesis petitionis series continebat quod ipse ad conservandum amicitiam et amorem eorum consanguineos et amicos desiderant invicem matrimonialiter copulari sed quia Tertio et Quarto consanguinitatis gradibus invicem sunt coniuncti huiusmodi eorum desiderium adimplere nequeunt dispensatione super hoc apos-tolica non obtenta. Quare pro parte dictorum Henrici et Elizabeth nobis fuit humiliter supplicatum ut super hoc eis de oportune dispensationis gratia providere de benignitate apostolica dignaremur. Nos igitur ex premissis et certis aliis causis nobis expositis huiusmodi supplicationibus inclinati, fraternitati tue de qua in hiis et aliis specialem in domino fiduciam obtinemus per apostolica scripta committimus et mandamus quatinus si est ita dictaque Elizabeth propter hoc rapta non fuerit cum eisdem Henrico et Elizabeth ut impedimento quod ex premissis provenit non obstante matrimonium inter se contrahere et in eo postquam contractum fuerit remanere libere et licite valeant apostolica auctoritate dispenses prolem ex huiusmodi matrimonio suscipiendam legitimam nuntiando. Datum Rome apud Sanctum Petrum II Nonas Decembris Pontificatus nostri Anno Decimo. Pro N. de Bento. (Scriptor:) Je. de Ferentino\n\nSiegel: 1 privešená pecet na konopné šnure",
+      "english": "Pope Boniface IX permits Jindrich of Rožmberk, through the Archbishop of Prague [Wolfram of Škvorec], to marry his relative Eliška of Kravaře, related to him in the third and fourth degrees.\n\nBoniface, bishop, servant of the servants of God, to his venerable brother, the Archbishop of Prague: greetings and apostolic blessing. The petition submitted to us on behalf of our beloved son, the nobleman Henry Ulrich, Baron of the barony of Rosenberg, a domicellus, and our beloved daughter in Christ, the noblewoman Elizabeth, daughter of our beloved son, the nobleman Peter, Baron of the barony of Kravaře, also called Plumnaw, a domicellus of the dioceses of Prague and Olomouc, stated that, to preserve their friendship and affection, they desire to be joined to one another in marriage as kinsfolk and friends. But since they are related to one another in the third and fourth degrees of consanguinity, they cannot fulfil this desire without obtaining an apostolic dispensation. Therefore, on behalf of the said Henry and Elizabeth, humble petition was made to us that, in our apostolic kindness, we might graciously provide them with a suitable dispensation in this matter. We, therefore, moved by the foregoing and by certain other reasons presented to us, grant and command by apostolic letter to your fraternity, in whom we have special confidence in this and other matters, that, if this is so and the said Elizabeth has not been abducted on this account, you may, by apostolic authority, dispense Henry and Elizabeth notwithstanding the impediment arising from the foregoing, so that they may freely and lawfully contract marriage with one another and remain in it after it has been contracted, declaring legitimate any offspring born of this marriage. Given at Rome, at Saint Peter’s, on the second day before the Nones of December, in the tenth year of our pontificate. For N. de Bento. (Scribe:) Je. de Ferentino.\nSeal: one pendant seal on hemp cords.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CZ-SOAT/Cizy-Rody/SOAT-CiziRodyTrebon_13981204_0089_Rozmberka04-02_r-1.jpg"
@@ -18,9 +23,7 @@
         {
           "src": "https://images.monasterium.net/pics/CZ-SOAT/Cizy-Rody/SOAT-CiziRodyTrebon_13981204_0089_Rozmberka04-02_v.jpg"
         }
-      ],
-      "english": "Pope Boniface IX permits Jindrich of Rožmberk, through the Archbishop of Prague [Wolfram of Škvorec], to marry his relative Eliška of Kravaře, related to him in the third and fourth degrees.\n\nBoniface, bishop, servant of the servants of God, to his venerable brother, the Archbishop of Prague: greetings and apostolic blessing. The petition submitted to us on behalf of our beloved son, the nobleman Henry Ulrich, Baron of the barony of Rosenberg, a domicellus, and our beloved daughter in Christ, the noblewoman Elizabeth, daughter of our beloved son, the nobleman Peter, Baron of the barony of Kravaře, also called Plumnaw, a domicellus of the dioceses of Prague and Olomouc, stated that, to preserve their friendship and affection, they desire to be joined to one another in marriage as kinsfolk and friends. But since they are related to one another in the third and fourth degrees of consanguinity, they cannot fulfil this desire without obtaining an apostolic dispensation. Therefore, on behalf of the said Henry and Elizabeth, humble petition was made to us that, in our apostolic kindness, we might graciously provide them with a suitable dispensation in this matter. We, therefore, moved by the foregoing and by certain other reasons presented to us, grant and command by apostolic letter to your fraternity, in whom we have special confidence in this and other matters, that, if this is so and the said Elizabeth has not been abducted on this account, you may, by apostolic authority, dispense Henry and Elizabeth notwithstanding the impediment arising from the foregoing, so that they may freely and lawfully contract marriage with one another and remain in it after it has been contracted, declaring legitimate any offspring born of this marriage. Given at Rome, at Saint Peter’s, on the second day before the Nones of December, in the tenth year of our pontificate. For N. de Bento. (Scribe:) Je. de Ferentino.\nSeal: one pendant seal on hemp cords."
+      ]
     }
-  ],
-  "transcribed": true
+  ]
 }

@@ -6,6 +6,18 @@
       "source": "Staatsarchiv Wertheim R-J 3 Nr. 104",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-60737",
       "german": "Auseinandersetzung mit Hans von Rosenberg wegen Rechten an Kupprichhausen\n\nLaufzeit: 1494-1542\n\nEnthält: Enthält u.a.: Zeugenverhör durch Anselmann von Eltershofen, Amtmann zu Lauda\n\nUmfang: 1 Bü.",
+      "english": "Dispute with Hans von Rosenberg over rights in Kupprichhausen.\n\nDate range: 1494–1542.\n\nContains, among other things: examination of witnesses by Anselmann von Eltershofen, Amtmann zu Lauda.\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "place": "lauda"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2553&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002553%2Ftitlaufn_0000060737%2F07_0000060737_0001_7-60737-1.jpg"
@@ -217,8 +229,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2553&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002553%2Ftitlaufn_0000060737%2F07_0000060737_0070_7-60737-70.jpg"
         }
-      ],
-      "english": "Dispute with Hans von Rosenberg over rights in Kupprichhausen.\n\nDate range: 1494–1542.\n\nContains, among other things: examination of witnesses by Anselmann von Eltershofen, Amtmann zu Lauda.\n\nExtent: 1 file."
+      ]
     }
   ]
 }

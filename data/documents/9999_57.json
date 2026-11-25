@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Kritisch- diplomatische Beyträge zur Geschichte Tirol im Mittelalter, Nro. CLII. , S. 563, Nro. CLII.",
@@ -47,6 +46,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

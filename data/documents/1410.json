@@ -6,6 +6,12 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2778",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-194343",
       "german": "Conz von Rosenberg: Abrechnung; angehängtes Siegel: Conz von Rosenberg.\n\nLaufzeit: 1410\n\nUmfang: 1 Urkunde, Pergament",
+      "english": "Kunz von Rosenberg: account; attached seal: Kunz von Rosenberg.\n\nDate: 1410.\n\nExtent: 1 deed, parchment.",
+      "mention": [
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194343%2F03_0000194343_0001_3-194343-1.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000194343%2F03_0000194343_0002_3-194343-2.jpg"
         }
-      ],
-      "english": "Conz von Rosenberg: account; attached seal: Conz von Rosenberg.\n\nDate: 1410.\n\nExtent: 1 deed, parchment."
+      ]
     }
   ]
 }

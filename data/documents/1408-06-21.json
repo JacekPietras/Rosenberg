@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Rosenberg C 2",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198239",
       "german": "Lehenrevers Hansens von Rosenberg des Ältern an H. Graf Johann zu Wertheim über seinen Teil an Hirschlanden mit allen Zugehörungen im Feld und im Dorfe ausgestellet.\n\nLaufzeit: 1408 Juni 21 (am donnerstag vor Johanns Baptiste)",
+      "english": "Hans von Rosenberg der Ältere issued a fief acknowledgment to Johann zu Wertheim, Graf for his share in Hirschlanden, with all appurtenances in the fields and village.\n\nDate: 21 June 1408 (on the Thursday before the feast of the Nativity of John the Baptist).",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Hans zu Wertheim",
+          "personTitle": [
+            "Graf"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198239%2F07_0000198239_0001_7-198239-1.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198239%2F07_0000198239_0002_7-198239-2.jpg"
         }
-      ],
-      "english": "Hans von Rosenberg der Ältere issued a fief acknowledgment to Johann zu Wertheim, Graf for his share in Hirschlanden, with all appurtenances in the fields and village.\n\nDate: 21 June 1408 (on the Thursday before the feast of the Nativity of John the Baptist)."
+      ]
     }
   ]
 }

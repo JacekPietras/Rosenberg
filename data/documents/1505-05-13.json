@@ -6,6 +6,24 @@
       "source": "Deutschordenszentralarchiv, Wien, 4560",
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/4560/charter",
       "german": "Bernhard v. Berlichingen und Hans v. Rosenberg, Vormünder des Jörg v. Asthusen, vergleichen sich mit Jakob Erwähltem von Mainz über die Schuld des Mündels. Martin v. Sickingen, der Stiefvater, und die Mutter, Margaretha v. Berlichingen, stimmen zu.\n\nSiegel: 4 Siegel der Genannten an Perg.-Streifen, 3 verletzt (liegt unter 1505, Pfingsttag). 4561.",
+      "english": "Bernhard von Berlichingen and Hans von Rosenberg, guardians of Jörg von Asthusen, reach a settlement with Jakob, Erwählter von Mainz, concerning their ward’s debt. Martin von Sickingen, the stepfather, and the mother, Margaretha von Berlichingen, consent.\n\nSeals: Four seals of the named persons on parchment strips, three damaged (filed under 1505, Whitsunday). 4561.",
+      "mention": [
+        {
+          "person": "Bernhard von Berlichingen"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "person": "Margaretha von Berlichingen"
+        },
+        {
+          "person": "Martin von Sickingen"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_15050513_r.jpg"
@@ -13,8 +31,7 @@
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_15050513_v.jpg"
         }
-      ],
-      "english": "Bernhard von Berlichingen and Hans von Rosenberg, guardians of Jörg von Asthusen, reach a settlement with Jakob, Erwählter von Mainz, concerning their ward’s debt. Martin von Sickingen, the stepfather, and the mother, Margaretha von Berlichingen, consent.\n\nSeals: Four seals of the named persons on parchment strips, three damaged (filed under 1505, Whitsunday). 4561."
+      ]
     }
   ]
 }

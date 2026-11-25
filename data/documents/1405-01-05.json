@@ -1,13 +1,23 @@
 {
   "date": "1405-01-05",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Národní archiv Praha, 1369",
       "url": "https://www.monasterium.net/mom/CZ-NA/ACK/1369/charter",
       "german": "Václav, král římský a český, ustanovuje Jindřicha z Rožmberka popravcem Bechyňského kraje a sděluje mu totéž jako v listině AČK 1366.Venceslaus, Romanorum et Bohemiae rex, Henricum de Rosenberg iustitiarium sive popravczonem districtus Bechynensis nominat et de iisdem, sicut in litteris AČK 1366, certiorem facit.\n\nSiegel: sigillum Venceslai regis d 101 mm (cuius in dorso secretum rubri coloris d 28 mm est) in scidula membranacea appendet.",
+      "english": "Wenceslaus, King of the Romans and Bohemia, appoints Heinrich von Rosenberg as judge of the Bechyně district and informs him of the same matters as in charter AČK 1366.\n\nSeal: The seal of König Wenceslaus, diameter 101 mm (with a red secret seal on the reverse, diameter 28 mm), hangs from a parchment tag.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        },
+        {
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_14050105_01369_v.jpg"
@@ -15,8 +25,7 @@
         {
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_14050105_01369_r.jpg"
         }
-      ],
-      "english": "Wenceslaus, King of the Romans and Bohemia, appoints Heinrich von Rosenberg as judge of the Bechyně district and informs him of the same matters as in charter AČK 1366.\n\nSeal: The seal of König Wenceslaus, diameter 101 mm (with a red secret seal on the reverse, diameter 28 mm), hangs from a parchment tag."
+      ]
     }
   ]
 }
