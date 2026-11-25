@@ -10,12 +10,6 @@
       "english": "He permits Kunz von Rosenberg, son of Konrad von Rosenberg, Vizedom zu Amberg, and Konrad von Rosenberg, son of the late Konrad, to hold permanently in their village of Schweigern and its jurisdiction a Schultheiß and lay judges, a high court, stocks, and gallows, and to administer justice there. (See 10 November 1400.)",
       "mention": [
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ]
-        },
-        {
           "person": "Kunz von Rosenberg"
         },
         {
@@ -23,6 +17,12 @@
         },
         {
           "place": "schweigern"
+        },
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ]
         }
       ]
     }

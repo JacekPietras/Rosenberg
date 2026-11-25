@@ -13,12 +13,6 @@
           "place": "heidelberg"
         },
         {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vizedom zu Heidelberg"
-          ]
-        },
-        {
           "person": "Kunz Mönch",
           "personTitle": [
             "Vogt zu Steinsberg"
@@ -32,6 +26,12 @@
         },
         {
           "place": "rosenberg-town"
+        },
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Heidelberg"
+          ]
         }
       ]
     }
