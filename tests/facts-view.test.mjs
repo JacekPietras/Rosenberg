@@ -330,6 +330,30 @@ test('review label propositions omit periods over 50 years away and retain the e
   assert.doesNotMatch(html, /Far/);
 });
 
+test('review label propositions highlight only overlapping matching place-title ranges', async () => {
+  const path = 'data/documents/target.json';
+  const fact = (personTitle) => ({ person: 'Alice', personTitle });
+  const documents = new Map([
+    [path, { date: '1300', entries: [{ facts: [fact(['Herr zu Boxberg'])] }] }],
+    ['data/documents/a.json', { date: '1295', label: 'Match', entries: [{ facts: [fact(['zu Boxberg'])] }] }],
+    ['data/documents/b.json', { date: '1305', label: 'Match', entries: [{ facts: [fact(['Ritter zu Boxberg'])] }] }],
+    ['data/documents/c.json', { date: '1300', label: 'Wrong place', entries: [{ facts: [fact(['zu Lauda'])] }] }],
+    ['data/documents/d.json', { date: '1300', label: 'No title', entries: [{ facts: [fact([])] }] }],
+    ['data/documents/e.json', { date: '1299', label: 'Near', entries: [{ facts: [fact(['zu Boxberg'])] }] }],
+  ]);
+  window.setTimeout = setTimeout;
+  const renderer = createDocumentRenderer({ state: { documents, people: [] }, escapeHtml });
+  const html = await renderer.reviewNameLabels(documents.get(path), path);
+  assert.match(html, /record-label is-title-match">Match \[1295-1305\]/);
+  assert.match(html, /record-label">Wrong place \[1300\]/);
+  assert.match(html, /record-label">No title \[1300\]/);
+  assert.match(html, /record-label">Near \[1299\]/);
+
+  documents.get(path).entries[0].facts[0].personTitle = [];
+  const withoutTitles = createDocumentRenderer({ state: { documents, people: [] }, escapeHtml });
+  assert.doesNotMatch(await withoutTitles.reviewNameLabels(documents.get(path), path), /is-title-match/);
+});
+
 test('classified non-review documents also show mention label propositions', () => {
   const path = 'data/documents/target.json';
   let personScanCount = 0;

@@ -21,25 +21,40 @@ export function createDocumentRenderer({
   getPeople,
   distinctFamilies,
 }) {
+  let indexedPlaces;
+  let placeKeys = new Map();
   function personMentions(doc) {
     const found = new Map();
     const peopleById = new Map((state.people || []).filter((person) => person.id).map((person) => [person.id, person.name]));
-    const add = (routeName) => {
+    if (indexedPlaces !== state.places) {
+      indexedPlaces = state.places;
+      placeKeys = new Map();
+      for (const place of state.places || []) {
+        const forms = [place.name, ...(place.variations || [])].filter(Boolean);
+        for (const form of forms) placeKeys.set(String(form).trim().toLocaleLowerCase(), String(place.id || place.name).toLocaleLowerCase());
+      }
+    }
+    const add = (routeName, titles = []) => {
       const key = routeName.toLocaleLowerCase();
-      if (key && !found.has(key)) found.set(key, routeName);
+      if (!key) return;
+      if (!found.has(key)) found.set(key, { name: routeName, places: new Set() });
+      for (const title of Array.isArray(titles) ? titles : []) {
+        const place = String(title).match(/(?:^|\s)zu\s+(.+)$/iu)?.[1]?.trim().replace(/\s+/gu, ' ').toLocaleLowerCase();
+        if (place) found.get(key).places.add(placeKeys.get(place) || place);
+      }
     };
-    const addReference = (reference) => {
+    const addReference = (reference, titles) => {
       if (typeof reference !== 'string') return;
       const name = peopleById.get(reference) || reference;
-      add(personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places));
+      add(personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places), titles);
     };
     for (const entry of doc.entries || []) {
       for (const item of [...(entry.facts || []), ...(entry.guesses || [])]) {
-        addReference(item?.person);
-        addReference(item?.of);
+        addReference(item?.person, item?.personTitle);
+        addReference(item?.of, item?.ofTitle);
       }
       for (const item of entry.mention || []) {
-        if (typeof item?.person === 'string') add(item.person);
+        if (typeof item?.person === 'string') add(item.person, item.personTitle);
       }
     }
     return found;
@@ -65,9 +80,9 @@ export function createDocumentRenderer({
           const [path, doc] = paths[cursor++];
           const mentions = personMentions(doc);
           mentionsByPath.set(path, mentions);
-          for (const [key, name] of mentions) {
+          for (const [key, mention] of mentions) {
             if (!documentsByMention.has(key)) documentsByMention.set(key, []);
-            documentsByMention.get(key).push({ path, doc, name });
+            documentsByMention.get(key).push({ path, doc, mention });
           }
           processed++;
         }
@@ -108,27 +123,36 @@ export function createDocumentRenderer({
     if (!people.size) return '';
     const labelsByName = new Map([...people.keys()].map((key) => [key, new Map()]));
     for (const key of people.keys()) {
-      for (const { path: otherPath, doc: otherDoc } of documentsByMention.get(key) || []) {
+      for (const { path: otherPath, doc: otherDoc, mention } of documentsByMention.get(key) || []) {
         if (otherPath === path) continue;
         const years = documentYearBounds(otherDoc.date);
         for (const label of labelsForMentionedDocument(otherDoc)) {
-          const range = labelsByName.get(key).get(label) || { intervals: [], hasUnknownDate: false };
-          if (years) range.intervals.push(years);
+          const range = labelsByName.get(key).get(label) || { intervals: [], titleIntervals: new Map(), hasUnknownDate: false };
+          if (years) {
+            range.intervals.push(years);
+            for (const place of people.get(key).places) {
+              if (!mention.places.has(place)) continue;
+              if (!range.titleIntervals.has(place)) range.titleIntervals.set(place, []);
+              range.titleIntervals.get(place).push(years);
+            }
+          }
           else range.hasUnknownDate = true;
           labelsByName.get(key).set(label, range);
         }
       }
     }
-    const rows = [...people].map(([key, name]) => {
+    const mergeIntervals = (values) => values.sort((left, right) => left[0] - right[0] || left[1] - right[1])
+      .reduce((merged, interval) => {
+        const previous = merged.at(-1);
+        if (previous && interval[0] - previous[1] <= 10) previous[1] = Math.max(previous[1], interval[1]);
+        else merged.push([...interval]);
+        return merged;
+      }, []);
+    const rows = [...people].map(([key, { name }]) => {
       const labels = [...labelsByName.get(key)]
         .flatMap(([label, range]) => {
-          const intervals = range.intervals.sort((left, right) => left[0] - right[0] || left[1] - right[1])
-            .reduce((merged, interval) => {
-              const previous = merged.at(-1);
-              if (previous && interval[0] - previous[1] <= 10) previous[1] = Math.max(previous[1], interval[1]);
-              else merged.push([...interval]);
-              return merged;
-            }, []);
+          const intervals = mergeIntervals(range.intervals);
+          const titleIntervals = [...range.titleIntervals.values()].flatMap(mergeIntervals);
           const visibleIntervals = intervals.filter(([start, end]) => {
             if (!documentYears) return true;
             const distance = end < documentYears[0]
@@ -140,15 +164,17 @@ export function createDocumentRenderer({
             const distance = !documentYears ? 0 : end < documentYears[0]
               ? documentYears[0] - end
               : start > documentYears[1] ? start - documentYears[1] : 0;
-            return { label, years: start === end ? `${start}` : `${start}-${end}`, outsideDate: distance > 10 };
+            const titleMatch = !!documentYears && distance === 0 && titleIntervals.some(([titleStart, titleEnd]) =>
+              titleStart <= end && titleEnd >= start && titleStart <= documentYears[1] && titleEnd >= documentYears[0]);
+            return { label, years: start === end ? `${start}` : `${start}-${end}`, outsideDate: distance > 10, titleMatch };
           });
           if (range.hasUnknownDate) chips.push({ label, years: '', outsideDate: false });
           return chips;
         })
         .sort((left, right) => left.label.localeCompare(right.label, undefined, { sensitivity: 'base' })
           || left.years.localeCompare(right.years, undefined, { numeric: true }));
-      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(({ label, years, outsideDate }) => {
-        return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
+      return labels.length ? `<div class="review-name-label-row"><span class="review-name">${escapeHtml(name)}</span><span class="review-name-labels">${labels.map(({ label, years, outsideDate, titleMatch }) => {
+        return `<span class="record-label${outsideDate ? ' is-outside-document-date' : ''}${titleMatch ? ' is-title-match' : ''}">${escapeHtml(label)}${years ? ` [${years}]` : ''}</span>`;
       }).join('')}</span></div>` : '';
     }).filter(Boolean);
     return rows.length ? `<div class="review-name-mentions" tabindex="-1" aria-label="Labels in other documents where names are mentioned">${rows.join('')}</div>` : '';

@@ -140,6 +140,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .review-name-label-row { display: flex; flex-direction: column; align-items: flex-end; gap: .3rem; text-align: right; }
 .review-name-labels { display: inline-flex; justify-content: flex-end; flex-wrap: wrap; gap: .2rem; }
 .review-name-labels .record-label { background: #68727d; }
+.review-name-labels .record-label.is-title-match { background: #668578; }
 .review-name-labels .record-label.is-outside-document-date { opacity: .5; }
 .record-label-edit { display: inline-grid; width: 1.65rem; height: 1.65rem; place-items: center; padding: .25rem; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
 .record-label-edit:hover, .record-label-edit:focus-visible { color: var(--accent); background: var(--surface-raised); }
