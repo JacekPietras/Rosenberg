@@ -5,7 +5,16 @@
     {
       "source": "HStAD, A 13, 515",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1431636",
-      "german": "von Rosenbach: Lehen Bleichenbach, Stockheim, Heßelmühle (früher derer von Bleichenbach)"
+      "german": "von Rosenbach: Lehen Bleichenbach, Stockheim, Heßelmühle (früher derer von Bleichenbach)",
+      "english": "Von Rosenbach: fiefs of Bleichenbach, Stockheim and Heßelmühle (formerly belonging to the von Bleichenbach family).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "stockheim"
+        }
+      ]
     }
   ]
 }

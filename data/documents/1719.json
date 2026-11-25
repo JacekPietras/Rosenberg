@@ -5,7 +5,13 @@
     {
       "source": "HStAM, 95, 2412/3",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5232330",
-      "german": "Bd. 3\n\nBezeichnung: Die v. Rosenbach'schen Lehen zu Berstadt, das steinerne Haus, 2 Höfe, 3 Hufen Landes und Teil der Gü\n\nLaufzeit: 1719-1804"
+      "german": "Bd. 3\n\nBezeichnung: Die v. Rosenbach'schen Lehen zu Berstadt, das steinerne Haus, 2 Höfe, 3 Hufen Landes und Teil der Gü\n\nLaufzeit: 1719-1804",
+      "english": "Volume 3.\n\nDescription: The von Rosenbach fiefs at Berstadt: the stone house, two farms, three hides of land, and part of the [word incomplete in source].\n\nDate range: 1719–1804.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

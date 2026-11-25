@@ -5,7 +5,22 @@
     {
       "source": "StAN, Fürstentum Ansbach, Lehenhof, Akten Bü. Br. 27",
       "url": "https://www.gda.bayern.de/gvl/document/e82682c7-0453-4d53-859f-9d74eb64085b",
-      "german": "Ritterlehen: Der Truchsessen von Baldersheim, nachgehends der von Rosenberg erhaltene Belehnungen über 1.) das Schloss und Dorf Waldmannshofen, 2.) den großen und kleinen Zehnten der Stadt und ganzen Markung Aub (Bd. II) (Grafen von Hatzfeld)"
+      "german": "Ritterlehen: Der Truchsessen von Baldersheim, nachgehends der von Rosenberg erhaltene Belehnungen über 1.) das Schloss und Dorf Waldmannshofen, 2.) den großen und kleinen Zehnten der Stadt und ganzen Markung Aub (Bd. II) (Grafen von Hatzfeld)",
+      "english": "Knightly fiefs: grants received by the Truchsess family of Baldersheim, later by the von Rosenberg family, concerning (1) Waldmannshofen Castle and village and (2) the great and small tithes of the town and entire district of Aub (vol. II) (Counts von Hatzfeld).",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "place": "baldersheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

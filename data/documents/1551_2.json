@@ -5,7 +5,22 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 10",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74775",
-      "german": "Vertrag zwischen Zaisolf von Rosenberg und den Erben seines Vormunds Ludwig von Hutten über nachträgliche Zahlungen der Hutten'schen Erben an Rosenberg.\n\nLaufzeit: 1551\n\nUmfang: 1 Schr., Abschr."
+      "german": "Vertrag zwischen Zaisolf von Rosenberg und den Erben seines Vormunds Ludwig von Hutten über nachträgliche Zahlungen der Hutten'schen Erben an Rosenberg.\n\nLaufzeit: 1551\n\nUmfang: 1 Schr., Abschr.",
+      "english": "Agreement between Zaisolph von Rosenberg and the heirs of his guardian Ludwig von Hutten concerning subsequent payments by the Hutten heirs to Rosenberg.\n\nDate range: 1551\n\nExtent: 1 document, copy",
+      "mention": [
+        {
+          "place": "hutten"
+        },
+        {
+          "person": "Ludwig von Hutten"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

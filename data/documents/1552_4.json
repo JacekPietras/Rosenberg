@@ -5,7 +5,16 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 163",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74987",
-      "german": "Belehnung der Herren von Rosenberg mit dem brandenburg-ansbachischen Lehen Waldmannshofen.\n\nLaufzeit: 1552-1553\n\nUmfang: 5 Schr."
+      "german": "Belehnung der Herren von Rosenberg mit dem brandenburg-ansbachischen Lehen Waldmannshofen.\n\nLaufzeit: 1552-1553\n\nUmfang: 5 Schr.",
+      "english": "Enfeoffment of the lords von Rosenberg with the Brandenburg-Ansbach fief of Waldmannshofen.\n\nDate range: 1552–1553\n\nExtent: 5 documents",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

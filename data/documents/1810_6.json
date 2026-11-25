@@ -5,7 +5,13 @@
     {
       "source": "StAAm, Landgericht ä.O. Sulzbach Justizakten 27",
       "url": "https://www.gda.bayern.de/gvl/document/e2d6ac5a-665e-4024-87b1-e306b16d56c5",
-      "german": "Freiherr von Junker zu Sulzbach gegen Zagl Johann und Strobl Johann von Rosenberg sowie Lindner Johann von Unterschwaig wegen Beschädigung einer dem Kläger gehörigen Wiese"
+      "german": "Freiherr von Junker zu Sulzbach gegen Zagl Johann und Strobl Johann von Rosenberg sowie Lindner Johann von Unterschwaig wegen Beschädigung einer dem Kläger gehörigen Wiese",
+      "english": "Baron von Junker zu Sulzbach against Zagl Johann and Strobl Hans von Rosenberg, as well as Lindner Johann von Unterschwaig, over damage to a meadow belonging to the plaintiff",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ]
     }
   ]
 }

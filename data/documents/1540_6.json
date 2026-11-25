@@ -8,7 +8,16 @@
         "https://www.gda.bayern.de/gvl/document/38dcea6c-4ef9-4fa6-ba33-0aaafe518506",
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4EF16C1E-C7D3-489B-BFF0-75A02B3F8438&parent_id="
       ],
-      "german": "Wolf von Rosenberg, Komtur zu Virnsberg, zeigt an, dass durch etliche Rüden ein Hirsch beschädigt worden sei, mit Bitte, ihn zu verständigen, wie er es damit halten solle."
+      "german": "Wolf von Rosenberg, Komtur zu Virnsberg, zeigt an, dass durch etliche Rüden ein Hirsch beschädigt worden sei, mit Bitte, ihn zu verständigen, wie er es damit halten solle.",
+      "english": "Wolf von Rosenberg, commander at Virnsberg, reports that a stag has been injured by several hounds and asks to be informed how he should deal with it.",
+      "mention": [
+        {
+          "place": "virnsberg"
+        },
+        {
+          "person": "Wolf von Rosenberg"
+        }
+      ]
     }
   ]
 }

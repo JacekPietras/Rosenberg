@@ -8,7 +8,13 @@
         "https://www.gda.bayern.de/gvl/document/8fc14690-bd6f-4ffe-8101-09bf08ed7c91",
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DF7D299B-C254-4CD0-8FD2-9298CE380942&parent_id="
       ],
-      "german": "Ladung Kaiser Karls V. zu einem Austrag zwischen Albrecht von Rosenberg und dem ehemaligen Schwäbischen Bund."
+      "german": "Ladung Kaiser Karls V. zu einem Austrag zwischen Albrecht von Rosenberg und dem ehemaligen Schwäbischen Bund.",
+      "english": "Summons by Emperor Charles V to a settlement between Albrecht von Rosenberg and the former Swabian League",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        }
+      ]
     }
   ]
 }

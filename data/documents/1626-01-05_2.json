@@ -5,7 +5,16 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 361",
       "url": "https://www.gda.bayern.de/gvl/document/fb596298-58c2-4e83-8ada-676cc5d9133b",
-      "german": "Lehenrevers: Albrecht Christoph von Rosenbergs Lehenrevers um Schloss und Dorf Waldmannshofen. - Siegler: Albrecht Christoph von Rosenberg.\n\nBesiegelung/Beglaubigung: 1 Sg. in Holzkapsel o. Deckel"
+      "german": "Lehenrevers: Albrecht Christoph von Rosenbergs Lehenrevers um Schloss und Dorf Waldmannshofen. - Siegler: Albrecht Christoph von Rosenberg.\n\nBesiegelung/Beglaubigung: 1 Sg. in Holzkapsel o. Deckel",
+      "english": "Counter-reversal for the fief: Albrecht Christoph von Rosenberg’s counter-reversal for Waldmannshofen Castle and village. – Sealer: Albrecht Christoph von Rosenberg.\n\nSealing/authentication: 1 seal in a wooden case without a lid.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

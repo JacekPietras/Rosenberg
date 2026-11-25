@@ -6,21 +6,24 @@
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 3331",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3331/charter",
       "german": "Adam Hektor, Johann Konrad und Johann (Hans) Dietrich von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Lankzendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Maximilian [III. Erzherzog von Vorderösterreich], kaiserlicher Kommissar des Klosters Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann (Hans) Dietrich von Rosenbach\n\nSiegel: anhängendes Siegel in Holzkapsel Johann (Hans) Dietrich von Rosenbach",
+      "english": "Adam Hektor, Johann Konrad, and Hans Dietrich von Rosenberg confirm their enfeoffment by Maximilian [III, Archduke of Further Austria], imperial commissioner of Fulda Abbey, with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the revenue at Langsdorf (?) (Lankzendorff) [part of the municipality of Lich, Gießen district]. The fief charter is transcribed within. Seal announcement.\n\nSealer: Hans Dietrich von Rosenberg\n\nSeal: Pendant seal in wooden case, Hans Dietrich von Rosenberg",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Hans Dietrich von Rosenberg"
+        },
+        {
+          "person": "Hans Konrad von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203331%20Vorderseite%20%281601%20Juli%2005%29.jpg"
         },
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203331%20Rueckseite%20%281601%20Juli%2005%29.jpg"
-        }
-      ],
-      "english": "Adam Hektor, Johann Konrad, and Johann (Hans) Dietrich von Rosenbach confirm their enfeoffment by Maximilian [III, Archduke of Further Austria], imperial commissioner of Fulda Abbey, with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the revenue at Langsdorf (?) (Lankzendorff) [part of the municipality of Lich, Gießen district]. The fief charter is transcribed within. Seal announcement.\n\nSealer: Johann (Hans) Dietrich von Rosenbach\n\nSeal: Pendant seal in wooden case, Johann (Hans) Dietrich von Rosenbach",
-      "mention": [
-        {
-          "person": "Dietrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
         }
       ]
     }

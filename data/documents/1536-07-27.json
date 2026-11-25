@@ -7,6 +7,18 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-704001",
       "german": "Conrad, Bischof von Würzburg, Herzog zu Franken, Hans von Rosenbach\n\nLaufzeit: 1536 Juli 27 (\"Montag nach Catharine und Christi [...] geburt fünffzehenhundert und im sechs und dreyssigsten Jahre\")",
       "english": "Conrad, Bishop of Würzburg, Duke zu Franken; Hans von Rosenberg.\n\nTerm: 27 July 1536 (Monday after Catherine’s day and the birth of Christ, 1536).",
+      "mention": [
+        {
+          "person": "Bischof Konrad",
+          "personTitle": [
+            "Bischof zu Würzburg",
+            "Herzog zu Franken"
+          ]
+        },
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000704001%2F07_0000704001_0001_7-704001-1.jpg"

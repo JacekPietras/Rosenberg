@@ -5,7 +5,13 @@
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 1454",
       "url": "https://www.gda.bayern.de/gvl/document/5de9fb28-b9e4-4ca9-bffe-6ac0a82f8f21",
-      "german": "Beschuldigung gegen den Zeugmacher und Mesner Georg Zettel, das Grabkreuz eines Malers aus dem Sulzbacher Friedhof an den Pranger gestellt zu haben\nEnthält auch: Schändung einer am Weg von Rosenberg nach Hammerphilippsburg stehenden Martersäule, Schmähschrift an der Tür des Kanzlers Heinrici zu Sulzbach"
+      "german": "Beschuldigung gegen den Zeugmacher und Mesner Georg Zettel, das Grabkreuz eines Malers aus dem Sulzbacher Friedhof an den Pranger gestellt zu haben\nEnthält auch: Schändung einer am Weg von Rosenberg nach Hammerphilippsburg stehenden Martersäule, Schmähschrift an der Tür des Kanzlers Heinrici zu Sulzbach",
+      "english": "Accusation that the cloth maker and sexton Georg Zettel put on public display the grave cross of a painter from the Sulzbach cemetery.\n\nAlso contains: desecration of a wayside shrine on the road from Rosenberg to Hammer-Philippsburg, and a libel posted on Chancellor Heinrici's door in Sulzbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

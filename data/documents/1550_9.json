@@ -8,7 +8,19 @@
         "https://www.gda.bayern.de/gvl/document/a84cb712-86ae-4651-af0a-b2939a990800",
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++55435EF0-613D-424D-B2B7-1F1B387F53D2&parent_id="
       ],
-      "german": "Schreiben des Herrn Doktor Peter Bopfinger aus Speyer, Albrecht und Michel von Rosenberg betreffend"
+      "german": "Schreiben des Herrn Doktor Peter Bopfinger aus Speyer, Albrecht und Michel von Rosenberg betreffend",
+      "english": "Letter from Dr. Peter Bopfinger of Speyer concerning Albrecht and Michael von Rosenberg",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "person": "Michael von Rosenberg"
+        },
+        {
+          "place": "speyer"
+        }
+      ]
     }
   ]
 }

@@ -8,7 +8,22 @@
         "https://www.gda.bayern.de/gvl/document/d45e923b-37d7-46ea-8a5a-16c04cbae841",
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++42E12F92-B3CB-4A55-8030-AD1640CDD8C2&parent_id="
       ],
-      "german": "Schreiben des Christoph Sigmund von Wirsberg zu Lanzendorf und Neudrossenfeld (Trosenfeldt) über ein Darlehen von 1000 fl. für Konrad von Rosenberg zu Haltenbergstetten (Halberstetten westl. Rothenburg)"
+      "german": "Schreiben des Christoph Sigmund von Wirsberg zu Lanzendorf und Neudrossenfeld (Trosenfeldt) über ein Darlehen von 1000 fl. für Konrad von Rosenberg zu Haltenbergstetten (Halberstetten westl. Rothenburg)",
+      "english": "Letter from Christoph Siegmund von Wirsberg of Lanzendorf and Neudrossenfeld (Trosenfeldt) concerning a loan of 1,000 guilders for Konrad von Rosenberg of Haltenbergstetten (Halberstetten west of Rothenburg)",
+      "mention": [
+        {
+          "person": "Christoph Siegmund von Wirsberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

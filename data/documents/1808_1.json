@@ -5,7 +5,16 @@
     {
       "source": "Staatsarchiv Wertheim R-Rep. 69k Nr. 995",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-30174",
-      "german": "Gesuch des Joseph Brümmer von Rosenberg um die Annahme zum Beisassen nach Wertheim\n\nLaufzeit: 1808-1813"
+      "german": "Gesuch des Joseph Brümmer von Rosenberg um die Annahme zum Beisassen nach Wertheim\n\nLaufzeit: 1808-1813",
+      "english": "Petition by Joseph Brümmer von Rosenberg for admission as a resident of Wertheim\n\nPeriod covered: 1808–1813",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
     }
   ]
 }

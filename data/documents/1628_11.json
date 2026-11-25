@@ -5,7 +5,22 @@
     {
       "source": "StAWü, Hochstift Würzburg Weltliche Regierung Gebrechenamt VII S 146",
       "url": "https://www.gda.bayern.de/gvl/document/483c4717-33db-40d7-b886-0cc6401242a6",
-      "german": "Schüpf\nBeschwerde der Ganerbengemeinde Edelfingen (Kr. Mergentheim) wegen verschiedener Mißbräuche bei Einquartierungen, Schatzungseinnahme, Wahl der Gerichtsleute etc.\n\nEnthält-/Darin-Vermerke: Enthält v.a.: Verhandlungen mit dem Deutschen Orden über die Einrichtung ein Untersuchungskommission; Centfall: Rauferei zwischen Hiskias Frank und Johann Michel sowie Johann Georg Mezler\nDarin: Auszug aus dem Vertrag des Deutschen Ordens, den von Rosenberg und Adelsheim über die Verteilung von Edelfingen von 1628"
+      "german": "Schüpf\nBeschwerde der Ganerbengemeinde Edelfingen (Kr. Mergentheim) wegen verschiedener Mißbräuche bei Einquartierungen, Schatzungseinnahme, Wahl der Gerichtsleute etc.\n\nEnthält-/Darin-Vermerke: Enthält v.a.: Verhandlungen mit dem Deutschen Orden über die Einrichtung ein Untersuchungskommission; Centfall: Rauferei zwischen Hiskias Frank und Johann Michel sowie Johann Georg Mezler\nDarin: Auszug aus dem Vertrag des Deutschen Ordens, den von Rosenberg und Adelsheim über die Verteilung von Edelfingen von 1628",
+      "english": "Schüpf\nComplaint by the Ganerbschaft community of Edelfingen (Mergentheim district) concerning various abuses in billeting, collection of taxes, election of court officials, etc.\n\nContents/insertions: Mainly contains negotiations with the Teutonic Order concerning the establishment of an investigative commission; cent court matter: brawl involving Hiskias Frank, Johann Michel, and Johann Georg Mezler.\nIncluded: Excerpt from the agreement of the Teutonic Order, the von Rosenberg family, and Adelsheim concerning the division of Edelfingen in 1628.",
+      "mention": [
+        {
+          "place": "adelsheim"
+        },
+        {
+          "place": "edelfingen"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

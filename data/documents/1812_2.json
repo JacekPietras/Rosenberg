@@ -5,7 +5,13 @@
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 2016",
       "url": "https://www.gda.bayern.de/gvl/document/ef3671ca-14b1-428a-9d8c-17dee8e30503",
-      "german": "Verbotene Hut des Pachtschäfers Johann Friedrich Muschler von Rosenberg in der Herrschaftswaldung Bronnholz."
+      "german": "Verbotene Hut des Pachtschäfers Johann Friedrich Muschler von Rosenberg in der Herrschaftswaldung Bronnholz.",
+      "english": "Prohibited grazing by the tenant shepherd Johann Friedrich Muschler von Rosenberg in the estate forest of Bronnholz.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,13 @@
     {
       "source": "ISG FFM, H.02.14, 1641-II (in)",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10905152",
-      "german": "von Rosenbach, Johann Dietrich\nBitte um freie Abfolgung des schadhaften Korns.\n\nLaufzeit: 1641"
+      "german": "von Rosenbach, Johann Dietrich\nBitte um freie Abfolgung des schadhaften Korns.\n\nLaufzeit: 1641",
+      "english": "Von Rosenbach, Johann Dietrich.\nPetition for the undisturbed delivery of the damaged grain.\n\nDate span: 1641.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,16 @@
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 491",
       "url": "https://www.gda.bayern.de/gvl/document/e334587c-a94c-44d1-8887-e396459b0569",
-      "german": "Verkauf von Grundstücken in der Steuergemeinde Rügland an Johann Hochreuther von Rosenberg."
+      "german": "Verkauf von Grundstücken in der Steuergemeinde Rügland an Johann Hochreuther von Rosenberg.",
+      "english": "Sale of parcels of land in the Rügland tax municipality to Johann Hochreuther von Rosenberg.",
+      "mention": [
+        {
+          "place": "burgruine-rosenberg-rugland"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

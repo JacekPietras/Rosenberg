@@ -5,7 +5,13 @@
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Geheime Registratur 1656",
       "url": "https://www.gda.bayern.de/gvl/document/bc1af186-cbb7-4a78-b84e-1e6dc1cbe81c",
-      "german": "Angebliche Schwängerung der Anna Fries zu Breitenbrunn durch den Schneider Hans Dürner von Rosenberg"
+      "german": "Angebliche Schwängerung der Anna Fries zu Breitenbrunn durch den Schneider Hans Dürner von Rosenberg",
+      "english": "Alleged impregnation of Anna Fries of Breitenbrunn by the tailor Hans Dürner von Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }
