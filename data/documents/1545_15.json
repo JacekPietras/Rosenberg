@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D907463B-1078-4BFB-B7CD-93066DFA5124&parent_id="
       ],
       "german": "Kriegsakten: Nördlingen und der Schwäbische Bund, Forderungen des Hans Thomas von Rosenberg wegen Bocksberg",
-      "english": "War records: Nördlingen and the Swabian League; claims by Hans Thomas von Rosenberg concerning Boxberg."
+      "english": "War records: Nördlingen and the Swabian League; claims by Hans Thomas von Rosenberg concerning Boxberg.",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Hans Thomas von Rosenberg"
+        }
+      ]
     }
   ]
 }

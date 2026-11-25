@@ -6,7 +6,12 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74759",
       "german": "Notifikationen der Herren von Rosenberg.( Konzept).\n\nLaufzeit: 1591-1631\n\nUmfang: 1 Fasz.",
-      "english": "Notifications by the lords von Rosenberg (draft).\n\nTerm: 1591–1631.\n\nExtent: 1 file."
+      "english": "Notifications by the lords von Rosenberg (draft).\n\nTerm: 1591–1631.\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

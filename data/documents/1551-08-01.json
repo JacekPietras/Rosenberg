@@ -9,7 +9,10 @@
       "english": "The councillors of Melchior, Bischof zu Würzburg decide a dispute between Bronnbach Monastery and Albrecht von Rosenberg zu Schüpf concerning authority over the village of Kupprichhausen.\n\nDate range: 1 August 1551 (“Given and done on Saturday, Vincula Petri, the first of August, in the year after Christ’s birth 1551”)\n\nSeal description: on a parchment strip, the seal of Melchior, Bischof von Würzburg.\n\nSealer: Melchior, Bischof von Würzburg",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Schüpf"
+          ]
         },
         {
           "person": "Bischof Melchior",
@@ -22,9 +25,6 @@
         },
         {
           "place": "kupprichhausen"
-        },
-        {
-          "place": "oberschuepf"
         }
       ],
       "img": [

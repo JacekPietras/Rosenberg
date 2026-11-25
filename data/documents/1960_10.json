@@ -6,7 +6,12 @@
       "source": "StALa, Amtsgericht Freyung, Nachlassakten 41/1960",
       "url": "https://www.gda.bayern.de/gvl/document/f653e57c-2ab9-4cf9-a493-24b065c6bf2f",
       "german": "Nachlassakt von Rosenberg, Reinhold, Rentner, Ringelai 22",
-      "english": "Estate file for Reinhold von Rosenberg, pensioner, Ringelai 22"
+      "english": "Estate file for Reinhold von Rosenberg, pensioner, Ringelai 22",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

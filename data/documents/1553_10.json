@@ -9,13 +9,13 @@
       "english": "Letter from Konrad von Rosenberg zu Waldmannshofen to Stephan von Adelsheim zu Wachbach.\n\nDate range: 1553\n\nExtent: 1 document",
       "mention": [
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ]
         },
         {
           "person": "Stephan von Adelsheim"
-        },
-        {
-          "place": "waldmannshofen"
         }
       ]
     }

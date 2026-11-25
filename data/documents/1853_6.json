@@ -6,7 +6,12 @@
       "source": "StALa, Amtsgerichte Zivilakten 29705",
       "url": "https://www.gda.bayern.de/gvl/document/c57799f8-bf7d-42ec-a618-f472bc0e5f46",
       "german": "Raimund Drexler von Sonnen gegen Georg Veit von Rosenberg wegen Grenzirrung",
-      "english": "Raimund Drexler from Sonnen against Georg Veit from Rosenberg concerning a boundary dispute"
+      "english": "Raimund Drexler from Sonnen against Georg Veit from Rosenberg concerning a boundary dispute",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

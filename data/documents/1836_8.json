@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Sulzbach 207",
       "url": "https://www.gda.bayern.de/gvl/document/18e330a3-b45a-44b2-8ed6-553ff2d38c09",
       "german": "Umschulung der Ortschaft Dietersberg von Rosenberg nach Illschwang",
-      "english": "Reassignment of the locality of Dietersberg from the Rosenberg municipality to Illschwang"
+      "english": "Reassignment of the locality of Dietersberg from the Rosenberg municipality to Illschwang",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

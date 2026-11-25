@@ -6,7 +6,15 @@
       "source": "Staatsarchiv Wertheim R-NL 15 Nr. 837",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-62919",
       "german": "Schreiben des löwenstein-wertheim-rochefortschen Rentamtmannes von Rosenberg Johann Philipp Lautenbach an Hieronymus Heinrich von Hinckeldey\n\nLaufzeit: 1783-1784\n\nUmfang: 5 Schr.",
-      "english": "Correspondence from Johann Philipp Lautenbach, the rent-office administrator of Löwenstein-Wertheim-Rochefort, von Rosenberg, to Hieronymus Heinrich von Hinckeldey. Term: 1783–1784. Extent: five documents."
+      "english": "Correspondence from Johann Philipp Lautenbach, the rent-office administrator of Löwenstein-Wertheim-Rochefort, von Rosenberg, to Hieronymus Heinrich von Hinckeldey. Term: 1783–1784. Extent: five documents.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
     }
   ]
 }

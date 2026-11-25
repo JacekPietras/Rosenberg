@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Sulzbach Justizakten 603",
       "url": "https://www.gda.bayern.de/gvl/document/a09c07f1-f026-4a05-b6f1-c09e2ff72571",
       "german": "Wollner Margarethe von Hannersreuth gegen Krieger Johann von Rosenberg,  ehemals Dienstknecht in Königstein, wegen Vaterschaft und Unterhalt",
-      "english": "Margarethe Wollner from Hannersreuth against Johann Krieger from Rosenberg, formerly a farmhand in Königstein, concerning paternity and maintenance"
+      "english": "Margarethe Wollner from Hannersreuth against Johann Krieger from Rosenberg, formerly a farmhand in Königstein, concerning paternity and maintenance",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,22 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 U 151",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-203191",
       "german": "Mittwoch vor Michaelis; Schreiben des Albrecht von Biberehren zu Reinsbronn an Albrecht von Hohenlohe, dass er den Weinzehnten zu Obernschüpf, den er von seinem Vater Philipp geerbt habe, an Albrecht von Rosenberg, Ritter zu Bocksberg, verkauft habe, und damit auf das Hohenlohesche Lehen verzichtet;\naufgedr. Siegel.\n\nLaufzeit: 1555\n\nUmfang: 1 Urkunde, Papier",
-      "english": "Wednesday before Michaelmas; letter from Albrecht von Biberehren zu Reinsbronn to Albrecht von Hohenlohe stating that he sold the wine tithe at Obernschüpf, inherited from his father Philipp, to Albrecht von Rosenberg, Ritter zu Boxberg, and thereby renounced the Hohenlohe fief; applied seal. Date range: 1555. Extent: 1 charter, paper."
+      "english": "Wednesday before Michaelmas; letter from Albrecht von Biberehren zu Reinsbronn to Albrecht von Hohenlohe stating that he sold the wine tithe at Obernschüpf, inherited from his father Philipp, to Albrecht von Rosenberg, Ritter zu Boxberg, and thereby renounced the Hohenlohe fief; applied seal. Date range: 1555. Extent: 1 charter, paper.",
+      "mention": [
+        {
+          "person": "Albrecht von Hohenlohe"
+        },
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Boxberg"
+          ]
+        },
+        {
+          "place": "hohenlohe"
+        }
+      ]
     }
   ]
 }

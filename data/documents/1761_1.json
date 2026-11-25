@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 33f Nr. 27",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-144716",
       "german": "Nachsuchen der Margarethe Gebert von Rosenberg um Erlass einiger Teile des Sterb-Handlohns\n\nLaufzeit: 1761",
-      "english": "Margarethe Gebert von Rosenberg’s petition for remission of some portions of the death dues.\n\nTerm: 1761"
+      "english": "Margarethe Gebert von Rosenberg’s petition for remission of some portions of the death dues.\n\nTerm: 1761",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

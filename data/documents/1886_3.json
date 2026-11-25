@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 5315",
       "url": "https://www.gda.bayern.de/gvl/document/9e767437-69d0-436a-916e-8f18bee44bc3",
       "german": "Dengler, Tobias Heinrich August, von Rosenberg, Schreiner; Verheiratung mit Schleier, Elisabetha Barbara, von Rosenberg",
-      "english": "Tobias Heinrich August Dengler, from Rosenberg, carpenter; marriage to Elisabetha Barbara Schleier, from Rosenberg."
+      "english": "Tobias Heinrich August Dengler, from Rosenberg, carpenter; marriage to Elisabetha Barbara Schleier, from Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

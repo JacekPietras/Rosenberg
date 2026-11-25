@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Ludwigsburg B 436 Bü 199",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1925886",
       "german": "Schuldforderung Philipp Traubs von Rosenberg an Gottfried Kaifel zu Deiningen resp. Ignaz Kaifel, Krämer zu Ellwangen\n\nLaufzeit: 1793\n\nUmfang: 1 Bü",
-      "english": "Debt claim by Philipp Traub of Rosenberg against Gottfried Kaifel of Deiningen or, alternatively, Ignaz Kaifel, shopkeeper at Ellwangen.\n\nTerm: 1793.\n\nExtent: 1 file."
+      "english": "Debt claim by Philipp Traub of Rosenberg against Gottfried Kaifel of Deiningen or, alternatively, Ignaz Kaifel, shopkeeper at Ellwangen.\n\nTerm: 1793.\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

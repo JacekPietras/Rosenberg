@@ -9,7 +9,10 @@
       "english": "The Amorbach monastery’s claim for payment against the mayor of Pülfringen, Bastian Schaffer, and his reliance on the seizures carried out by Lorenz von Rosenberg, Amtmann zu Möckmühl.\n\nDate range: 1524\n\nExtent: 3 documents.",
       "mention": [
         {
-          "person": "Lorenz von Rosenberg"
+          "person": "Lorenz von Rosenberg",
+          "personTitle": [
+            "Amtmann zu Möckmühl"
+          ]
         }
       ]
     }

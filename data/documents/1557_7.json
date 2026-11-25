@@ -6,7 +6,12 @@
       "source": "StACo, LA A 149",
       "url": "https://www.gda.bayern.de/gvl/document/6a671025-ae98-49ef-bab1-ae8b645d7c05",
       "german": "Die Vermählung der Prinzessin Katharina von Braunschweig mit Oberburggrafen  Wilhelm von Rosenberg",
-      "english": "The marriage of Princess Katharina von Braunschweig to Oberburggraf Wilhelm von Rosenberg."
+      "english": "The marriage of Princess Katharina von Braunschweig to Oberburggraf Wilhelm von Rosenberg.",
+      "mention": [
+        {
+          "person": "Wilhelm von Rosenberg"
+        }
+      ]
     }
   ]
 }

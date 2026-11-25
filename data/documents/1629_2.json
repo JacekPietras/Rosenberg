@@ -6,7 +6,21 @@
       "source": "Staatsarchiv Wertheim R-Rep. 47 Nr. 316",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-24744",
       "german": "Absterben derer von Rosenberg, mithin eröffnete wertheimische Lehen, in specie Huldigung der Untertanen, Lehnbare Wiesen zu Königheim, Mühlen zu Wölchingen, Lehen zu Hirschlanden, Erbauung eines Hauses für die Herrschaft zu Gerichtstetten, Verhandlung mit den rosenbergschen Erben, Zehnt zu Üffingen, Reformation zu Gerichtstetten\n\nLaufzeit: 1629-1634",
-      "english": "Death of the von Rosenbergs and the resulting escheat of the fiefs held from Wertheim; in particular, the subjects’ homage, fief-holding meadows at Königheim, mills at Wölchingen, fiefs at Hirschlanden, construction of a house for the lordship at Gerichtstetten, negotiations with the Rosenberg heirs, the tithe at Üffingen, and the Reformation at Gerichtstetten\n\nDates: 1629–1634"
+      "english": "Death of the von Rosenbergs and the resulting escheat of the fiefs held from Wertheim; in particular, the subjects’ homage, fief-holding meadows at Königheim, mills at Wölchingen, fiefs at Hirschlanden, construction of a house for the lordship at Gerichtstetten, negotiations with the Rosenberg heirs, the tithe at Üffingen, and the Reformation at Gerichtstetten\n\nDates: 1629–1634",
+      "mention": [
+        {
+          "place": "koenigheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wolchingen"
+        }
+      ]
     }
   ]
 }

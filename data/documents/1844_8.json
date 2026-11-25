@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Auerbach 1180",
       "url": "https://www.gda.bayern.de/gvl/document/d588f160-cc10-4f40-934c-95e22b4ef613",
       "german": "Ansässigmachung u. Verehelichung des Thurner Georg, Gütler von Rosenberg, dessen Übersiedlung nach Steinamwasser",
-      "english": "Establishment of residence and marriage of Thurner Georg, smallholder from Rosenberg, and his move to Steinamwasser"
+      "english": "Establishment of residence and marriage of Thurner Georg, smallholder from Rosenberg, and his move to Steinamwasser",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

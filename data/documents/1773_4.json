@@ -6,7 +6,12 @@
       "source": "StAN, Fürstentum Ansbach, Klosterverwalteramt Heilsbronn, Akten 20/45 = 330",
       "url": "https://www.gda.bayern.de/gvl/document/17a4fb32-0a20-4a01-b2ef-d0f2968e03cc",
       "german": "Der wegen Bettelns zum Chausseebau und zur Wegreparatur abgelieferte Vagabund Johann Schinagel von Rosenberg",
-      "english": "The vagabond Johann Schinagel von Rosenberg, handed over for begging to work on road construction and road repairs."
+      "english": "The vagabond Johann Schinagel von Rosenberg, handed over for begging to work on road construction and road repairs.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

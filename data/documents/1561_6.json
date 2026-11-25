@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 432",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-152018",
       "german": "Vertrag zwischen Hohenlohe und Rosenberg in der Streitsache wegen des Schultheißen in Ebertsbronn, Asmus Dilling, welcher von Rosenberg nach Haltenbergstetten ins Gefängnis gelegt wurde.\n\nLaufzeit: 1561\n\nUmfang: 1 Urkunde",
-      "english": "Agreement between Hohenlohe and Rosenberg concerning the schultheiß Asmus Dilling, whom Rosenberg imprisoned at Haltenbergstetten."
+      "english": "Agreement between Hohenlohe and Rosenberg concerning the schultheiß Asmus Dilling, whom Rosenberg imprisoned at Haltenbergstetten.",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

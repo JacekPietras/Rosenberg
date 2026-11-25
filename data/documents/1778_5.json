@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 100f Nr. 276",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-40646",
       "german": "Rezeption des Matthes Rast von Rosenberg zum hiesigen Bürger und Schneidermeister und die dieserhalben von der Schneiderzunft wider die Annahme gemachte Vorstellung\n\nLaufzeit: 1778",
-      "english": "Reception of Matthes Rast von Rosenberg as a local citizen and master tailor, and the representation made by the tailors’ guild against his admission on that account.\n\nTerm: 1778"
+      "english": "Reception of Matthes Rast von Rosenberg as a local citizen and master tailor, and the representation made by the tailors’ guild against his admission on that account.\n\nTerm: 1778",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 1690",
       "url": "https://www.gda.bayern.de/gvl/document/04ad0aff-2b9d-43c4-b9db-138347592c3b",
       "german": "Pfeifer, Johann Leonhard, von Ruppersdorf, Dienstknecht; Verheiratung mit Schuh, Anna Barbara, von Rosenberg",
-      "english": "Johann Leonhard Pfeifer, from Ruppersdorf, farmhand; marriage to Anna Barbara Schuh, from Rosenberg."
+      "english": "Johann Leonhard Pfeifer, from Ruppersdorf, farmhand; marriage to Anna Barbara Schuh, from Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

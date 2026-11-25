@@ -12,13 +12,13 @@
       "english": "Dispute between the Bishopric of Würzburg and Zaisolph von Rosenberg zu Haltenbergstetten or the guardians of his children concerning hunting rights in the districts of Oberndorf (Struth forest) and Dunzendorf (Kühholz forest)",
       "mention": [
         {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
           "place": "wurzburg"
         },
         {
-          "person": "Zaisolph von Rosenberg"
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
         }
       ]
     }

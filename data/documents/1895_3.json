@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Sigmaringen Wü 65/41 T 1-2 Nr. 369",
       "url": "https://www.landesarchiv-bw.de/plink/?f=6-1146456",
       "german": "Strassenbau\n\nLaufzeit: 1895-1896\n\nEnthält: Enthält: Korrektion der Vicinalstrasse von Rossberg nach Binzen, Gemeinde Wolfegg; Verbesserung der Binzener Steige mit Karten und Bauplänen",
-      "english": "Road construction\n\nDate range: 1895–1896\n\nContains: Contains: correction of the local road from Rossberg to Binzen, municipality of Wolfegg; improvement of the Binzener Steige, with maps and construction plans"
+      "english": "Road construction\n\nDate range: 1895–1896\n\nContains: Contains: correction of the local road from Rossberg to Binzen, municipality of Wolfegg; improvement of the Binzener Steige, with maps and construction plans",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

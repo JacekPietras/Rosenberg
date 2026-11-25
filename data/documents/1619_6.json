@@ -6,7 +6,18 @@
       "source": "StAWü, Mainzer Regierungsarchiv Militär 217/26",
       "url": "https://www.gda.bayern.de/gvl/document/7edd62fb-b25c-4ad0-8102-dabbcddf4c70",
       "german": "Beschwerde des A. Chr. von Rosenberg wegen Forderung seiner Vogteiuntertanen zu Bofsheim zur Musterung nach Buchen.",
-      "english": "Complaint by A. Chr. von Rosenberg concerning his bailiff’s subjects at Bofsheim being required to attend a military muster at Buchen."
+      "english": "Complaint by A. Chr. von Rosenberg concerning his bailiff’s subjects at Bofsheim being required to attend a military muster at Buchen.",
+      "mention": [
+        {
+          "place": "boffsheim"
+        },
+        {
+          "place": "buchen"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

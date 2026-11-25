@@ -6,7 +6,18 @@
       "source": "HStAM, Urk. 146, 92",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2530310",
       "german": "Lehnbrief des Abt Bernhard von Fulda für die von Rosenbach\n\nAbt Bernhard von Fulda belehnt Johann Hartmann (den Älteren), Philipp Ludwig, Johann Hartmann (den Jüngeren), Franz Albert und Konrad Anton Philibert von Rosenbach zu drei Fünfteln mit Höfen, Gütern, Mühlstätten und Frohnwiesenanteilen zu Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach und Eckweisbach.\n\nFormalbeschreibung: Pgt., Siegel ab",
-      "english": "Feudal letter from Abbot Bernhard of Fulda to the von Rosenbach family.\n\nAbbot Bernhard of Fulda enfeoffs Johann Hartmann (the elder), Philipp Ludwig, Johann Hartmann (the younger), Franz Albert, and Konrad Anton Philibert von Rosenbach with three fifths of farms, properties, mill sites, and shares of meadowland subject to compulsory labor at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, and Eckweisbach.\n\nFormal description: Parchment; seal detached."
+      "english": "Feudal letter from Abbot Bernhard of Fulda to the von Rosenbach family.\n\nAbbot Bernhard of Fulda enfeoffs Johann Hartmann (the elder), Philipp Ludwig, Johann Hartmann (the younger), Franz Albert, and Konrad Anton Philibert von Rosenbach with three fifths of farms, properties, mill sites, and shares of meadowland subject to compulsory labor at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, and Eckweisbach.\n\nFormal description: Parchment; seal detached.",
+      "mention": [
+        {
+          "person": "Bernhard",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

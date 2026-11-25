@@ -6,7 +6,15 @@
       "source": "HStAM, 95, 1464",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1994445",
       "german": "Rezeß zwischen dem Stift Fulda und den v. Rosenbach (Abschrift)\n\nLaufzeit: 1659, 1708",
-      "english": "Settlement between the Abbey of Fulda and the von Rosenbach family (copy).\n\nCoverage period: 1659, 1708"
+      "english": "Settlement between the Abbey of Fulda and the von Rosenbach family (copy).\n\nCoverage period: 1659, 1708",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

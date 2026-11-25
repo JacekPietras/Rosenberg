@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 12d Nr. 256",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-14227",
       "german": "Rechnungswesen des Amtsverwesers Mayer zu Gerichtstetten, in specie Ausstand der Merchinger Zehntbeständer Conrad Uhrig und Georg Gramlich von Rosenberg\n\nLaufzeit: 1782-1794",
-      "english": "Accounts of the acting district administrator Mayer zu Gerichtstetten, specifically arrears owed by the tithe tenants Conrad Uhrig and Georg Gramlich von Rosenberg of Merchingen. Term: 1782–1794."
+      "english": "Accounts of the acting district administrator Mayer zu Gerichtstetten, specifically arrears owed by the tithe tenants Conrad Uhrig and Georg Gramlich von Rosenberg of Merchingen. Term: 1782–1794.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

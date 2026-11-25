@@ -12,10 +12,10 @@
       "english": "Wolf von Rosenberg, Komtur zu Virnsberg, asks for a stag found dead, which was indeed given to him.",
       "mention": [
         {
-          "place": "virnsberg"
-        },
-        {
-          "person": "Wolf von Rosenberg"
+          "person": "Wolf von Rosenberg",
+          "personTitle": [
+            "Komtur zu Virnsberg"
+          ]
         }
       ]
     }

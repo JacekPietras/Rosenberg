@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Ludwigsburg B 375 S Bü 42",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1933269",
       "german": "Schreiben in Namen des Herrn von Rosenbach an Wolff Jakob von Bernhausen wegen des Ablebens des Wolff Wilhelm von Bernhausen (Konzept, Papier)\n\nLaufzeit: 9. November 1648",
-      "english": "Letter on behalf of the lord von Rosenbach to Wolff Jakob von Bernhausen concerning the death of Wolff Wilhelm von Bernhausen (draft, paper)\n\nDate range: 9 November 1648"
+      "english": "Letter on behalf of the lord von Rosenbach to Wolff Jakob von Bernhausen concerning the death of Wolff Wilhelm von Bernhausen (draft, paper)\n\nDate range: 9 November 1648",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

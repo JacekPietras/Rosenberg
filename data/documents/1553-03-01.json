@@ -9,16 +9,16 @@
       "english": "Melchior, Bischof zu Würzburg enfeoffs Albrecht von Rosenberg zu Boxberg with the village of Hohenstatt and all its rights as a male fief.\n\nDate range: 1 March 1553 (“Given on Wednesday after the Sunday Reminiscere, after Christ’s birth in the year 1553”)\n\nSeal description: on a parchment strip, the issuer’s damaged seal.\n\nNotes: signature: “Cristoff Zobell, Doctor, vicecantzler subscripsit”\n\nSealer: Melchior, Bischof zu Würzburg",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ]
         },
         {
           "person": "Bischof Melchior",
           "personTitle": [
             "Bischof zu Würzburg"
           ]
-        },
-        {
-          "place": "boxberg"
         }
       ],
       "img": [

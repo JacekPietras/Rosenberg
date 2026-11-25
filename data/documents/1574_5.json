@@ -6,7 +6,15 @@
       "source": "HStAM, 86, 30137",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1831253",
       "german": "Geltendmachung der wechselseitigen Gerichts-, Prozeß- und Anwaltskosten in der Klagsache des Diez von Rosenbach zu Stammheim gegen Bastian Schweyer, Michel Brenner und Hans Aicher zu Würzburg\n\nLaufzeit: 1574-1576",
-      "english": "Assertion of reciprocal court, litigation, and attorney costs in the case brought by Dietz von Rosenbach of Stammheim against Bastian Schweyer, Michel Brenner, and Hans Aicher of Würzburg. Term: 1574–1576."
+      "english": "Assertion of reciprocal court, litigation, and attorney costs in the case brought by Dietz von Rosenbach of Stammheim against Bastian Schweyer, Michel Brenner, and Hans Aicher of Würzburg. Term: 1574–1576.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

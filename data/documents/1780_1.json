@@ -6,7 +6,15 @@
       "source": "Staatsarchiv Wertheim R-Rep. 69h Nr. 100",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-28840",
       "german": "Rezeption des Lorenz Häfners von Sindolsheim, item Dispensation desselben und der Katharina Häfner von Rosenberg wegen naher Anverwandschaft\n\nLaufzeit: 1780",
-      "english": "Reception of Lorenz Häfner von Sindolsheim; also, dispensation for him and Katharina Häfner von Rosenberg on account of their close kinship.\n\nTerm: 1780"
+      "english": "Reception of Lorenz Häfner von Sindolsheim; also, dispensation for him and Katharina Häfner von Rosenberg on account of their close kinship.\n\nTerm: 1780",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "sindolsheim-church"
+        }
+      ]
     }
   ]
 }

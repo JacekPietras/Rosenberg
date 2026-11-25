@@ -6,7 +6,12 @@
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 4482",
       "url": "https://www.gda.bayern.de/gvl/document/5ba67160-6988-470c-9ad9-fc26eec70f97",
       "german": "Ernennung des Bartholomäus Pappenheimer von Rosenberg zum evangelischen Schuladjunkt zu Poppenricht",
-      "english": "Appointment of Bartholomäus Pappenheimer von Rosenberg as Protestant school adjunct at Poppenricht."
+      "english": "Appointment of Bartholomäus Pappenheimer von Rosenberg as Protestant school adjunct at Poppenricht.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

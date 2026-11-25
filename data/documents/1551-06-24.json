@@ -9,7 +9,10 @@
       "english": "Jakob, Abt and the convent of Alpirsbach Monastery confirm that Jakob Mönch von Rosenberg zu Haslach paid and assumed a principal sum of 1,000 guilders with an annual rent of 50 guilders, which the monastery had previously borrowed from Volmar von Brandeck zu Sterneck.\n\nDate range: 24 June 1551 (on St John the Baptist’s day)\n\nSeal description: seals missing\n\nSealers: Alpirsbach Abbey; Alpirsbach convent",
       "mention": [
         {
-          "person": "Jakob Mönch von Rosenberg"
+          "person": "Jakob Mönch von Rosenberg",
+          "personTitle": [
+            "zu Haslach"
+          ]
         }
       ]
     }

@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Vilseck 472",
       "url": "https://www.gda.bayern.de/gvl/document/d91f35cf-9820-4fd2-bd02-3f3d8d51f555",
       "german": "Realkonstatierung der Webergerechtsame des Johann Pesold von Rosenberg",
-      "english": "Formal verification of Johann Pesold’s weaving rights in Rosenberg"
+      "english": "Formal verification of Johann Pesold’s weaving rights in Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

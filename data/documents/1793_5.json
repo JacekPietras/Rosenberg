@@ -6,7 +6,15 @@
       "source": "HStAM, 98 d, 356",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7014893",
       "german": "Branntweinbrennen im Gebiet der von Rosenbach sowie Anmeldung aus dem Amt Bieberstein\n\nLaufzeit: 1793-1794\n\n(Vor-) Provenienzen: Regierung Fulda",
-      "english": "Distilling brandy in the territory of the von Rosenbach family and registration from the district of Bieberstein. Term: 1793–1794. Previous administrative provenance: Fulda Government."
+      "english": "Distilling brandy in the territory of the von Rosenbach family and registration from the district of Bieberstein. Term: 1793–1794. Previous administrative provenance: Fulda Government.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

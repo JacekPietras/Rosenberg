@@ -6,7 +6,12 @@
       "source": "StALa, Schlossarchiv Ering A 105",
       "url": "https://www.gda.bayern.de/gvl/document/32947143-0fe9-47c9-8c4d-92a6f756b3af",
       "german": "Graf und Gräfin von Rosenberg-Lipinsky gegen Karl von Paumgarten wegen Kapitalforderung und Zinsrückstände",
-      "english": "Graf und Gräfin von Rosenberg-Lipinsky against Karl von Paumgarten concerning a claim for principal and arrears of interest"
+      "english": "Graf und Gräfin von Rosenberg-Lipinsky against Karl von Paumgarten concerning a claim for principal and arrears of interest",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

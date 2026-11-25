@@ -6,7 +6,15 @@
       "source": "HStAM, 95, 1456",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4887677",
       "german": "Vergleichsverhandlungen zwischen Fulda und v. Rosenbach betr. die Cent zu Schackau, die Centschuldigkeiten der Rosenbachischen Untertanen\n\nLaufzeit: 1799-1802",
-      "english": "Negotiations for a settlement between Fulda and von Rosenbach concerning the centena jurisdiction at Schackau and the centena obligations of von Rosenbach’s subjects. Term: 1799–1802."
+      "english": "Negotiations for a settlement between Fulda and von Rosenbach concerning the centena jurisdiction at Schackau and the centena obligations of von Rosenbach’s subjects. Term: 1799–1802.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

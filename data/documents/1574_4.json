@@ -6,7 +6,21 @@
       "source": "Staatsarchiv Wertheim G-Rep. 52 Nr. 55",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-6527",
       "german": "Korrespondenz der Befehlshaber der Grafschaft Wertheim mit Hans von Rosenberg und Jost Leußer und seinen Geschwistern wegen des Handlohns, den die Rosenberg von den Leußers abgefordert hatten, nachdem diese ein Erbgütlein in der Bucher Markung bei Buch am Ahorn verkauft hatten\n\nLaufzeit: 1574-1575\n\nUmfang: 7 Blätter",
-      "english": "Correspondence of the commanders of the county of Wertheim with Hans von Rosenberg and Jost Leußer and his siblings concerning the entry fee demanded by the Rosenbergs after the Leußers sold an inherited smallholding in the Buch district near Buch am Ahorn. Term: 1574–1576."
+      "english": "Correspondence of the commanders of the county of Wertheim with Hans von Rosenberg and Jost Leußer and his siblings concerning the entry fee demanded by the Rosenbergs after the Leußers sold an inherited smallholding in the Buch district near Buch am Ahorn. Term: 1574–1576.",
+      "mention": [
+        {
+          "place": "buch"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 Bü 376",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-204663",
       "german": "Hohenlohe im Streitfall Albrechts von Rosenberg gegen die Kurpfalz; Streitigkeiten wegen der Pfarrei und Frühmeß zu Schwaigern, die sie Albrecht von Dienheim verkauft haben.\n\nLaufzeit: 1578\n\nUmfang: 2 St.",
-      "english": "Hohenlohe in the dispute between Albrecht von Rosenberg and the Electoral Palatinate; disputes concerning the parish and early mass at Schwaigern, which they sold to Albrecht von Dienheim.\n\nTerm: 1578\n\nExtent: 2 items"
+      "english": "Hohenlohe in the dispute between Albrecht von Rosenberg and the Electoral Palatinate; disputes concerning the parish and early mass at Schwaigern, which they sold to Albrecht von Dienheim.\n\nTerm: 1578\n\nExtent: 2 items",
+      "mention": [
+        {
+          "person": "Albrecht von Dienheim"
+        },
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "schwaigern"
+        }
+      ]
     }
   ]
 }

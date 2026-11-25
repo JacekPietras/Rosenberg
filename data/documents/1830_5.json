@@ -6,7 +6,12 @@
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 61",
       "url": "https://www.gda.bayern.de/gvl/document/13d32810-4503-4fae-abde-1b507add4f54",
       "german": "Förster, Peter, von Rosenberg; Beruf: Webermeister; Ansässigmachung in Rosenberg; Verheiratung mit Schuh, Eva Margaretha; Konzession: Weberhandwerk",
-      "english": "Peter Förster von Rosenberg; occupation: master weaver; establishment of residence in Rosenberg; marriage to Eva Margaretha Schuh; license: weaving trade"
+      "english": "Peter Förster von Rosenberg; occupation: master weaver; establishment of residence in Rosenberg; marriage to Eva Margaretha Schuh; license: weaving trade",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

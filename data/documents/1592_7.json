@@ -6,7 +6,15 @@
       "source": "StAAm, Landgrafschaft Leuchtenberg, Kanzlei Amtsbücher und Akten 1403",
       "url": "https://www.gda.bayern.de/gvl/document/2d0bbf27-e450-4cad-a95b-1d200fbab467",
       "german": "Tod und Beisetzung des Wilhelm von Rosenberg zu Krumau (Tschechien)\n\nEnthält-/Darin-Vermerke: Enthält auch: Anspruch der Jakobe Herzogin von Jülich auf das Heiratsgut ihrer Schwester Anna Maria von Rosenberg",
-      "english": "Death and burial of Wilhelm von Rosenberg zu Krumau (Czechia).\n\nIncludes a claim by Jakobe, Duchess of Jülich, to the dowry of her sister Anna Maria von Rosenberg."
+      "english": "Death and burial of Wilhelm von Rosenberg zu Krumau (Czechia).\n\nIncludes a claim by Jakobe, Duchess of Jülich, to the dowry of her sister Anna Maria von Rosenberg.",
+      "mention": [
+        {
+          "person": "Anna Maria von Rosenberg"
+        },
+        {
+          "person": "Wilhelm von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 3106",
       "url": "https://www.gda.bayern.de/gvl/document/9218303c-3b6a-4e7a-84b8-db03bac9aa2d",
       "german": "Kiefer, Johann Leonhard, von Lehrberg, Zimmermann; Verheiratung mit Baßler, Maria Apollonia, von Rosenberg",
-      "english": "Johann Leonhard Kiefer, from Lehrberg, carpenter; marriage to Maria Apollonia Baßler, from Rosenberg."
+      "english": "Johann Leonhard Kiefer, from Lehrberg, carpenter; marriage to Maria Apollonia Baßler, from Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

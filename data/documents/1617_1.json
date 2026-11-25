@@ -6,7 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg B 474 L Bü 128",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-5712336",
       "german": "Streitsache zwischen Kurmainz, dem Deutschmeister, den Herren von Rosenberg und von Adelsheim wegen der Centgerechtsame zu Edelfingen\n\nLaufzeit: 1617-1630",
-      "english": "Dispute between Electoral Mainz, the Teutonic Order’s grand master, the lords von Rosenberg, and the lords von Adelsheim concerning the cent jurisdiction at Edelfingen.\n\nDate range: 1617–1630"
+      "english": "Dispute between Electoral Mainz, the Teutonic Order’s grand master, the lords von Rosenberg, and the lords von Adelsheim concerning the cent jurisdiction at Edelfingen.\n\nDate range: 1617–1630",
+      "mention": [
+        {
+          "place": "adelsheim"
+        },
+        {
+          "place": "edelfingen"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

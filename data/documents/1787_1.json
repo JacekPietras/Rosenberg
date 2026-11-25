@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Ludwigsburg B 438 Bü 92",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1505629",
       "german": "Nächtlich unruhiges Betragen auf der Gasse des Josef Rathgeb von Rosenberg\n\nLaufzeit: 1787\n\nUmfang: 1 Fasz.",
-      "english": "Josef Rathgeb von Rosenberg's disorderly conduct in the street at night.\n\nTerm: 1787.\n\nExtent: 1 file."
+      "english": "Josef Rathgeb von Rosenberg's disorderly conduct in the street at night.\n\nTerm: 1787.\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

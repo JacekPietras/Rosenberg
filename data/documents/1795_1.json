@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 69h Nr. 199",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-28941",
       "german": "Des Karl Geiers von Rosenberg vom Schreinerhandwerk Gesuch um die Rezeption zum Bürger und Untertan daselbst\n\nLaufzeit: 1795",
-      "english": "Application by Karl Geier von Rosenberg, a carpenter, for admission as a burgher and subject there.\n\nTerm: 1795."
+      "english": "Application by Karl Geier von Rosenberg, a carpenter, for admission as a burgher and subject there.\n\nTerm: 1795.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

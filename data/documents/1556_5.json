@@ -6,7 +6,15 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 1 Bü 9412",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-291507",
       "german": "Korrespondenz der Grafen von Hohenlohe-Weikersheim mit den Herren von Rosenberg, von Rotkirch und von Redtwitz.\n\nLaufzeit: 1556-1562\n\nUmfang: 6 Schr.",
-      "english": "Correspondence of the Counts of Hohenlohe-Weikersheim with the lords von Rosenberg, von Rotkirch, and von Redtwitz. Date range: 1556–1562. Extent: 6 documents."
+      "english": "Correspondence of the Counts of Hohenlohe-Weikersheim with the lords von Rosenberg, von Rotkirch, and von Redtwitz. Date range: 1556–1562. Extent: 6 documents.",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

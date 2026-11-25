@@ -6,7 +6,12 @@
       "source": "HStAD, F 23 A, 424/2",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3105984",
       "german": "Angelegenheiten der Herren v. Rosenbach; insbesondere: deren Güter zu Ober-Mörlen in der Wetterau\n\nLaufzeit: 1651-1660",
-      "english": "Affairs of the lords von Rosenbach, especially their estates at Ober-Mörlen in the Wetterau.\n\nDate range: 1651–1660."
+      "english": "Affairs of the lords von Rosenbach, especially their estates at Ober-Mörlen in the Wetterau.\n\nDate range: 1651–1660.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

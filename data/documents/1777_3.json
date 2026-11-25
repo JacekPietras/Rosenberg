@@ -6,7 +6,12 @@
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 1217",
       "url": "https://www.gda.bayern.de/gvl/document/c23b9cf8-619b-4dfd-84c4-142b7dab5b8b",
       "german": "Fornikation der Elisabeth Braun von Rosenbach mit Johann Stefan Bühler von Rosenberg sowie Auslieferung des letzteren an das Rittergut Unternzenn; durch dieses vorgenommene Pfändung von Guthaben beim Wirt Johann Jakob Wünnerlein zu Rosenberg.",
-      "english": "Fornication by Elisabeth Braun von Rosenbach with Johann Stefan Bühler von Rosenberg, and the latter’s extradition to the manor of Unternzenn; that manor’s seizure of funds held by the innkeeper Johann Jakob Wünnerlein von Rosenberg."
+      "english": "Fornication by Elisabeth Braun von Rosenbach with Johann Stefan Bühler von Rosenberg, and the latter’s extradition to the manor of Unternzenn; that manor’s seizure of funds held by the innkeeper Johann Jakob Wünnerlein von Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

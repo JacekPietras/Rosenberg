@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-S 24 Nr. 28",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-211679",
       "german": "Quellenangabe zu der Geschichte der Ritter von Rosenberg\n\nLaufzeit: um 1880 (1443-1632)\n\nUmfang: 4 Bl.",
-      "english": "Source reference concerning the history of the knights von Rosenberg.\n\nDate range: around 1880 (1443–1632)\n\nExtent: 4 leaves."
+      "english": "Source reference concerning the history of the knights von Rosenberg.\n\nDate range: around 1880 (1443–1632)\n\nExtent: 4 leaves.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

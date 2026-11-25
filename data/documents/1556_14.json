@@ -6,7 +6,18 @@
       "source": "StAWü, G-Akten 16852",
       "url": "https://www.gda.bayern.de/gvl/document/47028927-af08-4caf-a76f-298d5924c38e",
       "german": "Akten der Würzburger Geheimen Kanzlei, betrifft Klage des Juden Seligmann zu Haigerlach als Inhaber der Zinsgerechtigkeit des Balthasar von Wernau auf dem großen Zehnten zu Schillingstadt, den Albrecht von Rosenberg zu Boxberg erblich besitzt, auf diesen Zehnten am kaiserlichen Hofgericht zu Rottweil",
-      "english": "Files of the Würzburg Secret Chancellery concerning the complaint of the Jew Seligmann zu Haigerlach, holder of Balthasar von Wernau's tithe claim on the greater tithe at Schillingstadt, which Albrecht von Rosenberg zu Boxberg holds hereditarily, concerning this tithe before the Imperial Court at Rottweil."
+      "english": "Files of the Würzburg Secret Chancellery concerning the complaint of the Jew Seligmann zu Haigerlach, holder of Balthasar von Wernau's tithe claim on the greater tithe at Schillingstadt, which Albrecht von Rosenberg zu Boxberg holds hereditarily, concerning this tithe before the Imperial Court at Rottweil.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

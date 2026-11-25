@@ -6,7 +6,15 @@
       "source": "StALa, Amtsgericht Freyung, Nachlassakten 134/1968",
       "url": "https://www.gda.bayern.de/gvl/document/b61903ec-23fc-46ab-8f9f-18f56c808b19",
       "german": "Nachlassakt von Rosenberg, Adelheid, geb. Rosenberg, Ringelai Nr 22",
-      "english": "Estate file of Adelheid von Rosenberg, née Rosenberg, Ringelai no. 22"
+      "english": "Estate file of Adelheid von Rosenberg, née Rosenberg, Ringelai no. 22",
+      "mention": [
+        {
+          "person": "Adelheid von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,21 @@
       "source": "HStAD, B 8, 8/67",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=14527",
       "german": "Graf Wolfgang Julius v. Hohenlohe-Langenburg: Revers über den ihm verliehenen Zehnten zu Wilhermsdorf durch Erwählten Johann Hartmann zu Würzburg\n\nFormalbeschreibung: Abschr.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Count Wolfgang Julius von Hohenlohe-Langenburg: acknowledgment concerning the tithe at Wilhermsdorf granted to him by the elected Johann Hartmann of Würzburg.\n\nFormal description: Copy.\n\nSealer: Issuer.\n\n(Previous) provenance: von Rosenbach."
+      "english": "Count Wolfgang Julius von Hohenlohe-Langenburg: acknowledgment concerning the tithe at Wilhermsdorf granted to him by the elected Johann Hartmann of Würzburg.\n\nFormal description: Copy.\n\nSealer: Issuer.\n\n(Previous) provenance: von Rosenbach.",
+      "mention": [
+        {
+          "person": "Hans Hartmann of Würzburg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wolfgang Julius von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ]
     }
   ]
 }

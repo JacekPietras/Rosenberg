@@ -6,7 +6,12 @@
       "source": "StAWü, Mainzer Kriminalakten 2334",
       "url": "https://www.gda.bayern.de/gvl/document/1b05a5bb-64b0-4f11-989c-c69ab3393862",
       "german": "Schwängerung der N. Schantzenbach von Neudenau durch Nikolaus Gerig von Rosenberg.",
-      "english": "The impregnation of N. Schantzenbach von Neudenau by Nikolaus Gerig von Rosenberg."
+      "english": "The impregnation of N. Schantzenbach von Neudenau by Nikolaus Gerig von Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

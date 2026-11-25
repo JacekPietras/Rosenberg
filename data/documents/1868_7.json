@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 1181",
       "url": "https://www.gda.bayern.de/gvl/document/6141c576-816a-4c56-9144-87a5e357ef6e",
       "german": "Nagler, Georg Michael, von Rosenberg, Maurergeselle; Verheiratung mit Teißler, Anna Katharina; Ansässigmachung in Rosenberg",
-      "english": "Georg Michael Nagler von Rosenberg, journeyman mason; marriage to Anna Katharina Teißler; establishment of residence in Rosenberg"
+      "english": "Georg Michael Nagler von Rosenberg, journeyman mason; marriage to Anna Katharina Teißler; establishment of residence in Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

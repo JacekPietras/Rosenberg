@@ -9,10 +9,10 @@
       "english": "Rosenberg\n\nDate range: 1550–c. 1610\n\nContents include: Hans Charius von Rosenberg acknowledges receipt of his burgh levy (1567); documents concerning a dispute between Joachim von Niedeck zu Eubigheim and Lorenz von Rosenberg (disputed venue: the territorial court of the Duchy of Franconia, Würzburg (1550)).\n\nExtent: 7 documents",
       "mention": [
         {
-          "place": "eubigheim"
-        },
-        {
-          "person": "Joachim von Niedeck"
+          "person": "Joachim von Niedeck",
+          "personTitle": [
+            "zu Eubigheim"
+          ]
         },
         {
           "person": "Lorenz von Rosenberg"

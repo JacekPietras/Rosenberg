@@ -15,7 +15,10 @@
           "person": "Ludwig von Hutten"
         },
         {
-          "person": "Martin von Uissigheim"
+          "person": "Martin von Uissigheim",
+          "personTitle": [
+            "Domherr zu Würzburg"
+          ]
         },
         {
           "place": "wurzburg"

@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 87l Nr. 1540",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-36001",
       "german": "Testament des Heinrich Drucksaals auf dem Haidhof, gebürtig von Rosenberg\n\nLaufzeit: 1788\n\nUmfang: 1 Bü.",
-      "english": "Will of Heinrich Drucksaal of Haidhof, originally from Rosenberg.\n\nTerm: 1788.\n\nExtent: 1 bundle."
+      "english": "Will of Heinrich Drucksaal of Haidhof, originally from Rosenberg.\n\nTerm: 1788.\n\nExtent: 1 bundle.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

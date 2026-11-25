@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 3876",
       "url": "https://www.gda.bayern.de/gvl/document/72cb92ad-32a8-435f-8975-0b48a4127a1d",
       "german": "Dietrich, Johann Michael, von Rosenberg/Fürth, Dienstknecht; Verheiratung mit Oester, Margaretha, von Weinzierlein",
-      "english": "Johann Michael Dietrich, from Rosenberg/Fürth, farmhand; marriage to Margaretha Oester, from Weinzierlein."
+      "english": "Johann Michael Dietrich, from Rosenberg/Fürth, farmhand; marriage to Margaretha Oester, from Weinzierlein.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

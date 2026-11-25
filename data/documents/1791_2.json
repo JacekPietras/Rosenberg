@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 12h Nr. 303",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-15532",
       "german": "Fristgesuch des Andreas Baumann von Rosenberg in Appellationssachen seiner gegen den Juden Löw zu Rosenberg wegen Schulden\n\nLaufzeit: 1791",
-      "english": "Request for an extension of time by Andreas Baumann von Rosenberg in his appellate proceedings against the Jew Löw zu Rosenberg concerning debts\n\nTerm: 1791"
+      "english": "Request for an extension of time by Andreas Baumann von Rosenberg in his appellate proceedings against the Jew Löw zu Rosenberg concerning debts\n\nTerm: 1791",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 349",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-151537",
       "german": "Assekurationsverschreibung Graf Wolfgangs von Hohenlohe gegen seine Brüder Philipp und Friedrich für den Fall einer (vom Wißamer und Wolkersfeldener Zehnten und Gülten zu Streichental herrührenden) Bezahlung von Geldern durch die Herren von Rosenberg vermög eines kammergerichtlichen Spruchs.\n\nLaufzeit: 13. Februar 1587\n\nUmfang: 1 Urkunde",
-      "english": "Count Wolfgang of Hohenlohe’s security bond against his brothers Philipp and Friedrich, in the event of the payment by the lords von Rosenberg, pursuant to a judgment of the Imperial Chamber Court, of money arising from the Wißamer and Wolkersfelden tithes and rents at Streichental.\n\nTerm: 13 February 1587\n\nExtent: 1 document"
+      "english": "Count Wolfgang of Hohenlohe’s security bond against his brothers Philipp and Friedrich, in the event of the payment by the lords von Rosenberg, pursuant to a judgment of the Imperial Chamber Court, of money arising from the Wißamer and Wolkersfelden tithes and rents at Streichental.\n\nTerm: 13 February 1587\n\nExtent: 1 document",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wolfgang von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ]
     }
   ]
 }

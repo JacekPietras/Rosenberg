@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 5h Nr. 139",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-11768",
       "german": "Transport kirschen- und elfenbaumener Bretter von Rosenberg nach Heubach\n\nLaufzeit: 1793",
-      "english": "Transport of cherry-wood and ivory-wood boards from Rosenberg to Heubach. Term: 1793."
+      "english": "Transport of cherry-wood and ivory-wood boards from Rosenberg to Heubach. Term: 1793.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

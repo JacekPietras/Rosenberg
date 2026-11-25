@@ -6,7 +6,12 @@
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 88",
       "url": "https://www.gda.bayern.de/gvl/document/55e0b036-e7ec-4d84-8229-5ffd5545a6b5",
       "german": "Preiß, Lorenz, von Rosenberg; Beruf: Bauer; Ansässigmachung in Rosenberg; Verheiratung mit Pfeifer, Anna Barbara",
-      "english": "Lorenz Preiß von Rosenberg; occupation: farmer; establishment of residence in Rosenberg; marriage to Anna Barbara Pfeifer"
+      "english": "Lorenz Preiß von Rosenberg; occupation: farmer; establishment of residence in Rosenberg; marriage to Anna Barbara Pfeifer",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

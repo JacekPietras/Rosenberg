@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 2465",
       "url": "https://www.gda.bayern.de/gvl/document/2958ed18-6fb4-410f-908e-73b0bde15559",
       "german": "Gundel, Johann Simon, von Rosenberg, Taglöhner; Verheiratung mit Schmidt, Margaretha, von Unternbibert",
-      "english": "Johann Simon Gundel, from Rosenberg, day laborer; marriage to Margaretha Schmidt, from Unternbibert."
+      "english": "Johann Simon Gundel, from Rosenberg, day laborer; marriage to Margaretha Schmidt, from Unternbibert.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

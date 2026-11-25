@@ -15,13 +15,13 @@
           "place": "mainz"
         },
         {
-          "place": "nagelsberg-castle"
-        },
-        {
           "place": "schoental-monastery"
         },
         {
-          "person": "Siegmund von Uissigheim"
+          "person": "Siegmund von Uissigheim",
+          "personTitle": [
+            "Amtmann zu Nagelsberg"
+          ]
         }
       ],
       "img": [

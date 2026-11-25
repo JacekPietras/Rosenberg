@@ -6,7 +6,15 @@
       "source": "StAWü, Hochstift Würzburg Weltliche Regierung Gebrechenamt VII W 0374",
       "url": "https://www.gda.bayern.de/gvl/document/5aa51835-71ec-4662-b60f-919b306a9d6e",
       "german": "Würzburg\nBeschwerde des Carl Joseph von Rosenbach aus Thundorf (LK Bad Kissingen) über die unterschiedliche Handhabung der Einverleibung von Handwerksmeistern, die seine Untertanen sind, in die Landzünfte des Hochstifts Würzburg.",
-      "english": "Würzburg\n\nComplaint by Carl Joseph von Rosenbach of Thundorf (Bad Kissingen district) about the differing treatment of the incorporation of master craftsmen who are his subjects into the trade guilds of the Prince-Bishopric of Würzburg."
+      "english": "Würzburg\n\nComplaint by Carl Joseph von Rosenbach of Thundorf (Bad Kissingen district) about the differing treatment of the incorporation of master craftsmen who are his subjects into the trade guilds of the Prince-Bishopric of Würzburg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 69h Nr. 188",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-28930",
       "german": "Der Anna Maria Katharina Schellhaas von Rosenberg Rezeption zur Untertanin nach Bronnacker\n\nLaufzeit: 1793",
-      "english": "Reception of Anna Maria Katharina Schellhaas von Rosenberg as a subject at Bronnacker. Term: 1793."
+      "english": "Reception of Anna Maria Katharina Schellhaas von Rosenberg as a subject at Bronnacker. Term: 1793.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

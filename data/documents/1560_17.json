@@ -6,7 +6,12 @@
       "source": "HStAM, 86, 25997",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4401052",
       "german": "Aufnahme der Schwestern Anna und Jude von Rosenbach in das Kloster Marienhausen\n\nLaufzeit: 1560",
-      "english": "Admission of the sisters Anna and Jude von Rosenbach to Marienhausen Convent."
+      "english": "Admission of the sisters Anna and Jude von Rosenbach to Marienhausen Convent.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

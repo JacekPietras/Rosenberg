@@ -7,6 +7,17 @@
       "url": "https://www.gda.bayern.de/gvl/document/8a5b99d3-dc7a-49bb-b750-e6ea230f2673",
       "german": "Fritz, Heinrich Karl, von Kirchheimbolanden, ehemaliger französischer Infanterist, Keller, Jakob, von Rosenberg, Schmitt, Johann, von Homburg, Seider, Jakob, von Frankweiler, Dotationsansprüche an den Monte Napoleone in Mailand",
       "english": "Heinrich Karl Fritz von Kirchheimbolanden, former French infantryman; Jakob Keller von Rosenberg; Johann Schmitt von Homburg; Jakob Seider von Frankweiler; claims to endowment payments from Monte Napoleone in Milan",
+      "mention": [
+        {
+          "place": "homburg"
+        },
+        {
+          "person": "Jakob von Rosenberg",
+          "personTitle": [
+            "Keller"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8a5b99d3-dc7a-49bb-b750-e6ea230f2673/1/full/max/0/default.jpg"

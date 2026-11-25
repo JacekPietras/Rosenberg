@@ -6,7 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 Bü 1582",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-212046",
       "german": "Zustimmung (Consens\") des Grafen Albrecht von Hohenlohe-Langenburg für Hans Werner von Wollmershausen, Schloss Amlishagen und das zugehörige Lehen dessen Ehefrau Anna Susanna von Wollmershausen, geborene von Rosenberg, als Widerlage für das eingebrachte Heiratsgut und Widdum zu verwenden.\n\nLaufzeit: 1573\n\nUmfang: 3 St.",
-      "english": "Consent of Count Albrecht of Hohenlohe-Langenburg for Hans Werner von Wollmershausen to use Amlishagen Castle and its associated fief, held by his wife Anna Susanna von Wollmershausen, née von Rosenberg, as security for her marriage portion and widow’s jointure."
+      "english": "Consent of Count Albrecht of Hohenlohe-Langenburg for Hans Werner von Wollmershausen to use Amlishagen Castle and its associated fief, held by his wife Anna Susanna von Wollmershausen, née von Rosenberg, as security for her marriage portion and widow’s jointure.",
+      "mention": [
+        {
+          "person": "Albrecht von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "place": "amlishagen"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

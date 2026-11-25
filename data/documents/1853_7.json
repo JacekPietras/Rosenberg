@@ -6,7 +6,12 @@
       "source": "StAN, Landgericht ä.O. Ansbach, AVK-Akten 1262",
       "url": "https://www.gda.bayern.de/gvl/document/f263cde2-2393-4289-b275-dfae51d960d1",
       "german": "Neuhäuser, Johann, von Rosenberg, Webergeselle; Ansässigmachung in Lindach; Verheiratung mit Herzog, Maria; Konzessionsgesuch: Webergewerbe",
-      "english": "Neuhäuser, Johann, from Rosenberg, journeyman weaver; establishment of residence in Lindach; marriage to Herzog, Maria; application for a license to practice weaving"
+      "english": "Neuhäuser, Johann, from Rosenberg, journeyman weaver; establishment of residence in Lindach; marriage to Herzog, Maria; application for a license to practice weaving",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

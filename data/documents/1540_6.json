@@ -12,10 +12,10 @@
       "english": "Wolf von Rosenberg, Komtur zu Virnsberg, reports that a stag has been injured by several hounds and asks to be informed how he should deal with it.",
       "mention": [
         {
-          "place": "virnsberg"
-        },
-        {
-          "person": "Wolf von Rosenberg"
+          "person": "Wolf von Rosenberg",
+          "personTitle": [
+            "Komtur zu Virnsberg"
+          ]
         }
       ]
     }

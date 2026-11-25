@@ -12,7 +12,10 @@
           "place": "cronberg"
         },
         {
-          "person": "Wolfgang von Rosenberg"
+          "person": "Wolfgang von Rosenberg",
+          "personTitle": [
+            "Komtur zu Horneck"
+          ]
         }
       ]
     }

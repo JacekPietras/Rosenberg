@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5457D66D-DC8F-4618-97C3-9281D196F9AC&parent_id="
       ],
       "german": "Deren von Augsburg Bekenntnis wegen der von der Stadt Windsheim erlegten Angebühren an der mit Albrecht von Rosenberg gemachten und geschlossener Vertragssumme (Kopie)",
-      "english": "Declaration by the people of Augsburg concerning the fees paid by the city of Windsheim under the settlement sum agreed and concluded with Albrecht von Rosenberg (copy)."
+      "english": "Declaration by the people of Augsburg concerning the fees paid by the city of Windsheim under the settlement sum agreed and concluded with Albrecht von Rosenberg (copy).",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        }
+      ]
     }
   ]
 }

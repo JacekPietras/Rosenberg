@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 3679",
       "url": "https://www.gda.bayern.de/gvl/document/195bd74e-c6ec-4529-9de4-ff14b7aed7a0",
       "german": "Memmler, Johann Leonhard, von Rosenberg/Leutershausen, Taglöhner; Verheiratung mit Löschel, Anna Barbara Katharina, von Auerbach/Leutershausen",
-      "english": "Johann Leonhard Memmler, from Rosenberg/Leutershausen, day laborer; marriage to Anna Barbara Katharina Löschel, from Auerbach/Leutershausen."
+      "english": "Johann Leonhard Memmler, from Rosenberg/Leutershausen, day laborer; marriage to Anna Barbara Katharina Löschel, from Auerbach/Leutershausen.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,18 @@
       "source": "HStAM, 81, D 1/304",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=455179",
       "german": "Klage des Dietz von Rosenbach gegen die Stadt Gelnhausen wegen seiner Forderungen an den von der Stadt gepfändeten Rittmeister Jörg Mönch\n\nLaufzeit: 1561-1563",
-      "english": "Complaint by Dietz von Rosenbach against Gelnhausen concerning his claims against the cavalry captain Jörg Mönch, whose property the city had seized."
+      "english": "Complaint by Dietz von Rosenbach against Gelnhausen concerning his claims against the cavalry captain Jörg Mönch, whose property the city had seized.",
+      "mention": [
+        {
+          "place": "gelnhausen"
+        },
+        {
+          "person": "Georg Mönch"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

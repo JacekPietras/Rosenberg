@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 1453",
       "url": "https://www.gda.bayern.de/gvl/document/9c34d7d5-15f5-4256-8c87-8513446e485c",
       "german": "Stark, Konrad Leonhard, von Ruppersdorf/Egloffswinden, Dienstknecht; Verheiratung mit Lödel, Margaretha Magdalena, von Rosenberg",
-      "english": "Konrad Leonhard Stark of Ruppersdorf/Egloffswinden, farmhand; marriage to Margaretha Magdalena Lödel of Rosenberg"
+      "english": "Konrad Leonhard Stark of Ruppersdorf/Egloffswinden, farmhand; marriage to Margaretha Magdalena Lödel of Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

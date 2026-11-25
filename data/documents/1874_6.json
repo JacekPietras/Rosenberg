@@ -6,7 +6,15 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 2409",
       "url": "https://www.gda.bayern.de/gvl/document/adda96a1-ce8a-461f-b605-0b26fcf11f14",
       "german": "Hitz, Georg Konrad, von Dietenhofen, Schmied; Verheiratung mit Gundel, Eva Barbara, von Rosenberg",
-      "english": "Georg Konrad Hitz, from Dietenhofen, blacksmith; marriage to Eva Barbara Gundel, from Rosenberg."
+      "english": "Georg Konrad Hitz, from Dietenhofen, blacksmith; marriage to Eva Barbara Gundel, from Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wasserburg-dietenhofen"
+        }
+      ]
     }
   ]
 }

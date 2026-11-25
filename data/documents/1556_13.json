@@ -6,7 +6,12 @@
       "source": "StAAm, Landgrafschaft Leuchtenberg, Kanzlei Amtsbücher und Akten 1223",
       "url": "https://www.gda.bayern.de/gvl/document/464406bb-0420-48e7-8cfb-b58432cd8ee8",
       "german": "Quittungen der Ursula von Rosenberg, geboren von Auerbach, der Barbara von Reitzenstein, geborene Closen, und des Sigmund Schmograw, Pfleger zu Wernberg, über bezahlte Darlehenszinsen bzw. Schulden",
-      "english": "Receipts from Ursula von Rosenberg, née von Auerbach, Barbara von Reitzenstein, née Closen, and Sigmund Schmograw, bailiff at Wernberg, for paid loan interest and debts."
+      "english": "Receipts from Ursula von Rosenberg, née von Auerbach, Barbara von Reitzenstein, née Closen, and Sigmund Schmograw, bailiff at Wernberg, for paid loan interest and debts.",
+      "mention": [
+        {
+          "person": "Ursula von Rosenberg"
+        }
+      ]
     }
   ]
 }

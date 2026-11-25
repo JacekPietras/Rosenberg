@@ -9,10 +9,16 @@
       "english": "The brothers Peter, Jodok, Ulrich, and Hans von Rosenberg acknowledge that they have received Nové Hrady Castle and village, with all their appurtenances, as a fief from Charles, Roman Emperor and King of Bohemia, and from the Crown of Bohemia.\n\nSeals: four seals hanging from parchment strips: Peter von Rosenberg (30 mm), Jodok von Rosenberg (25 mm), Ulrich von Rosenberg (31 mm), and Hans von Rosenberg (24 mm).",
       "mention": [
         {
-          "person": "Hans of Rosenberg"
+          "person": "Hans von Rosenberg"
         },
         {
-          "person": "Ulrich of Rosenberg"
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "img": [

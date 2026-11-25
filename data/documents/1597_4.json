@@ -6,7 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 12",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74777",
       "german": "Forderung des Hieronymus von Abenberg (als Erbe des Konrad Geyer von Giebelstadt) an Albrecht Christoph von Rosenberg und weitere Bürden auf Zahlung der von Konrad dem Georg Truchseß zu Baldersheim geliehenen 1700 fl.\n\nLaufzeit: (1597) 1604-1605\n\nUmfang: 1-37",
-      "english": "Claim by Hieronymus von Abenberg, as heir of Konrad Geyer von Giebelstadt, against Albrecht Christoph von Rosenberg and others for payment of the 1,700 florins that Konrad had lent to Georg Truchseß zu Baldersheim.\n\nTerm: (1597) 1604–1605\n\nExtent: items 1–37."
+      "english": "Claim by Hieronymus von Abenberg, as heir of Konrad Geyer von Giebelstadt, against Albrecht Christoph von Rosenberg and others for payment of the 1,700 florins that Konrad had lent to Georg Truchseß zu Baldersheim.\n\nTerm: (1597) 1604–1605\n\nExtent: items 1–37.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Georg Truchsess",
+          "personTitle": [
+            "zu Baldersheim"
+          ]
+        },
+        {
+          "person": "Konrad Geyer von Giebelstadt"
+        }
+      ]
     }
   ]
 }

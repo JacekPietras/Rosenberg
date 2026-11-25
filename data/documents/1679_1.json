@@ -6,7 +6,12 @@
       "source": "HStAD, F 23 A, 700/9",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1563660",
       "german": "Erwerbung, Verwaltung etc. der v. Rosenbach'ischen, später v. Görtzischen Güter in Lindheim\n\nLaufzeit: 1679-1699",
-      "english": "Acquisition, administration, etc. of the von Rosenbach estates, later the von Görtz estates, in Lindheim\n\nDate range: 1679–1699"
+      "english": "Acquisition, administration, etc. of the von Rosenbach estates, later the von Görtz estates, in Lindheim\n\nDate range: 1679–1699",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

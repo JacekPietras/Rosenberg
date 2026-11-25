@@ -15,7 +15,10 @@
           "person": "Georg von Rosenberg"
         },
         {
-          "person": "Hans Christoph von Berlichingen"
+          "person": "Hans Christoph von Berlichingen",
+          "personTitle": [
+            "Vogt"
+          ]
         },
         {
           "place": "wurzburg"

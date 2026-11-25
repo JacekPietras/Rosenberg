@@ -6,7 +6,15 @@
       "source": "Hauptstaatsarchiv Stuttgart A 107 Bü 12 A Nr. 19",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2861549",
       "german": "Befehl an Jost Münch von Rosenberg, Obervogt am Schwarzwald zu Hornberg, und an Sigmund Herter von Herteneck, Obervogt zu Tübingen, sich zur Forstbereitung gefasst zu halten\n\nLaufzeit: 1543 August 17",
-      "english": "Order to Jost Münch von Rosenberg, Obervogt am Schwarzwald zu Hornberg, and Sigmund Herter von Herteneck, Obervogt zu Tübingen, to stand ready for a forest inspection.\n\nPeriod: 17 August 1543"
+      "english": "Order to Jost Münch von Rosenberg, Obervogt am Schwarzwald zu Hornberg, and Sigmund Herter von Herteneck, Obervogt zu Tübingen, to stand ready for a forest inspection.\n\nPeriod: 17 August 1543",
+      "mention": [
+        {
+          "place": "hornberg"
+        },
+        {
+          "person": "Jost Mönch von Rosenberg"
+        }
+      ]
     }
   ]
 }

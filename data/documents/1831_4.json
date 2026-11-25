@@ -6,7 +6,18 @@
       "source": "HStAD, G 15 Erbach, Y 693 Erb",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3554092",
       "german": "Abfluß des vom Wolferhof auf die Vicinalstraße von Rosenbach nach Hainstadt führenden Baches\n\nEnthält: Handriß einer kleinen Brücke, 1831\n\nLaufzeit: 1831\n\nZusatzinformationen: Signaturzusatz \"Erb\": Akte liegt im Original beim Kreisarchiv in Erbach und ist in Darmstadt nur über Mikrofiche einsehbar",
-      "english": "Drainage of the stream flowing from the Wolferhof onto the local road from Rosenbach to Hainstadt\n\nIncludes: sketch of a small bridge, 1831\n\nTerm: 1831\n\nAdditional information: With the archival reference suffix “Erb”: the original file is held at the Erbach District Archive and can be viewed in Darmstadt only on microfiche."
+      "english": "Drainage of the stream flowing from the Wolferhof onto the local road from Rosenbach to Hainstadt\n\nIncludes: sketch of a small bridge, 1831\n\nTerm: 1831\n\nAdditional information: With the archival reference suffix “Erb”: the original file is held at the Erbach District Archive and can be viewed in Darmstadt only on microfiche.",
+      "mention": [
+        {
+          "place": "erbach"
+        },
+        {
+          "place": "hainstadt"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

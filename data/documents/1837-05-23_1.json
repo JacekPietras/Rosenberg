@@ -6,7 +6,18 @@
       "source": "Staatsarchiv Wertheim R-Lit. C Nr. 252",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-44251",
       "german": "Das Amtsrevisorat Tauberbischofsheim beurkundet, daß am 9, April 1837 Leonhard Berberich von Uissigheim an das fürstlich Löwenstein'sche Rentamt Bronnbach mehrere Wiesen in der Amorsbach um 71 Gulden verkauft hat.\n\nLaufzeit: 1837 Mai 23 (23. Mai 1837)",
-      "english": "The Tauberbischofsheim Office of Auditors certifies that on 9 April 1837 Leonhard Berberich von Uissigheim sold several meadows along the Amorsbach to the princely Löwenstein rent office at Bronnbach for 71 gulden.\n\nTerm: 23 May 1837 (23 May 1837)"
+      "english": "The Tauberbischofsheim Office of Auditors certifies that on 9 April 1837 Leonhard Berberich von Uissigheim sold several meadows along the Amorsbach to the princely Löwenstein rent office at Bronnbach for 71 gulden.\n\nTerm: 23 May 1837 (23 May 1837)",
+      "mention": [
+        {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "uissigheim"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 6597",
       "url": "https://www.gda.bayern.de/gvl/document/9d67e521-29c3-4cb6-968d-b41c8a5ea2b1",
       "german": "Meixner, Georg Michael, von Hohenau/Mitteldachstetten, Knecht; Verheiratung mit Basler, Anna Barbara, von Rosenberg",
-      "english": "Meixner, Georg Michael, from Hohenau/Mitteldachstetten, farmhand; marriage to Basler, Anna Barbara, from Rosenberg"
+      "english": "Meixner, Georg Michael, from Hohenau/Mitteldachstetten, farmhand; marriage to Basler, Anna Barbara, from Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

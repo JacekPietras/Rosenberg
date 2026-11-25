@@ -6,7 +6,12 @@
       "source": "BayHStA, Pfalz-Neuburg Sulzbacher Akten 564",
       "url": "https://www.gda.bayern.de/gvl/document/0af008a4-9843-49e4-8d8b-0ff2e13a0fdc",
       "german": "Die von Herzog August von Pfalz-Sulzbach gesuchte Eintauschung des Hammerguts Rosenberg",
-      "english": "The proposed exchange of the Hammergut estate at Rosenberg sought by Duke August of Palatinate-Sulzbach."
+      "english": "The proposed exchange of the Hammergut estate at Rosenberg sought by Duke August of Palatinate-Sulzbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

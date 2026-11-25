@@ -6,7 +6,21 @@
       "source": "StAWü, Gericht Aub 582",
       "url": "https://www.gda.bayern.de/gvl/document/5fd735cb-efb4-4d18-9f2d-5a459fcbf6b6",
       "german": "Akt des kaiserlichen Landgerichtes zu Würzburg, dann des Kanzleigerichtes daselbst, betrifft Markungs- und Hutstreitigkeiten zwischen der Gemeinde Aub und Konrad von Rosenberg zu Waldmannshofen in Württemberg",
-      "english": "Act of the imperial provincial court at Würzburg and subsequently of the chancery court there, concerning boundary and grazing disputes between the community of Aub and Konrad von Rosenberg of Waldmannshofen in Württemberg."
+      "english": "Act of the imperial provincial court at Würzburg and subsequently of the chancery court there, concerning boundary and grazing disputes between the community of Aub and Konrad von Rosenberg of Waldmannshofen in Württemberg.",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

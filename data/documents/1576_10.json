@@ -6,7 +6,18 @@
       "source": "HStAM, 86, 30337",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=434129",
       "german": "An Landgraf Ludwig von Hessen-Marburg gerichtete Klage des Diez von Rosenbach über ihm und den Herren von der Karthause zu Mainz durch den Keller zu Homburg v.d.H. entzogene Lehnsgüter zu Gonzenheim\n\nLaufzeit: 1576",
-      "english": "Complaint addressed to Landgrave Ludwig von Hessen-Marburg by Diez von Rosenbach concerning the fiefs at Gonzenheim taken from him and the Lords of the Carthusian monastery in Mainz by the steward at Homburg vor der Höhe.\n\nTerm: 1576"
+      "english": "Complaint addressed to Landgrave Ludwig von Hessen-Marburg by Diez von Rosenbach concerning the fiefs at Gonzenheim taken from him and the Lords of the Carthusian monastery in Mainz by the steward at Homburg vor der Höhe.\n\nTerm: 1576",
+      "mention": [
+        {
+          "place": "homburg"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

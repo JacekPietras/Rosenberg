@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 1 Bü 9411",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-291506",
       "german": "Korrespondenz des Grafen Ludwig Kasimir von Hohenlohe-Neuenstein mit den Herren von Rosenberg.\n\nLaufzeit: 1556-1562\n\nUmfang: 1 Bü.",
-      "english": "Correspondence of Count Ludwig Kasimir von Hohenlohe-Neuenstein with the Lords von Rosenberg.\n\nTerm: 1556–1562\n\nExtent: 1 file."
+      "english": "Correspondence of Count Ludwig Kasimir von Hohenlohe-Neuenstein with the Lords von Rosenberg.\n\nTerm: 1556–1562\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "person": "Ludwig Kasimir von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,12 @@
       "source": "StABa, Hochstift Bamberg, Archiv",
       "url": "https://www.gda.bayern.de/gvl/document/0f44ea1c-8b1d-498c-8639-8a291277d2a3",
       "german": "Wiedereinlösung des an die von Rosenberg verpfändeten Schlosses und Amts Fürth am Berg (Lk Coburg).\n\nEnthält-/Darin-Vermerke: Enthält u.a.: Verzeichnis über die Zugehörungen zum Schloß und Amt Fürth am Berg.",
-      "english": "Redemption of Fürth am Berg Castle and office (Coburg district), which had been pledged to the Rosenbergs. Includes, among other things, a list of the appurtenances of the castle and office."
+      "english": "Redemption of Fürth am Berg Castle and office (Coburg district), which had been pledged to the Rosenbergs. Includes, among other things, a list of the appurtenances of the castle and office.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

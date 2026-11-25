@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 2135",
       "url": "https://www.gda.bayern.de/gvl/document/9cfe0760-9018-45a0-b5f8-b35cb90889cd",
       "german": "Schletterer, Georg Lorenz, von Rosenberg, Bauer; Verheiratung mit Förster, Maria Magdalena, von Rosenberg",
-      "english": "Georg Lorenz Schletterer, from Rosenberg, farmer; marriage to Maria Magdalena Förster, from Rosenberg."
+      "english": "Georg Lorenz Schletterer, from Rosenberg, farmer; marriage to Maria Magdalena Förster, from Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

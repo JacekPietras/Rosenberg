@@ -6,7 +6,15 @@
       "source": "HStAM, 98 d, 2672",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7152654",
       "german": "Streit der Schmiedezunft im Oberamt Bieberstein mit den Schmieden im Gebiet der Freiherren von Rosenbach über den Verkauf von Waren\n\nLaufzeit: 1790\n\n(Vor-) Provenienzen: Regierung Fulda",
-      "english": "Dispute between the smiths’ guild in the Bieberstein district and the smiths in the territory of the Barons von Rosenbach concerning the sale of goods.\n\nTerm: 1790.\n\n(Former) provenance: Government of Fulda."
+      "english": "Dispute between the smiths’ guild in the Bieberstein district and the smiths in the territory of the Barons von Rosenbach concerning the sale of goods.\n\nTerm: 1790.\n\n(Former) provenance: Government of Fulda.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

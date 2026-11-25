@@ -7,6 +7,20 @@
       "url": "https://www.gda.bayern.de/gvl/document/200c4a32-fb1a-45bf-bc78-73a2949d3cb2",
       "german": "Bürgermeister und Rat der Stadt Nürnberg bevollmächtigen Dr. Cristoff Gugl, Jobst Tetzel und Joachim Haller sie auf dem von Kaiser und dem Könige nach Augsburg ausgeschriebenen Tag zur Beilegung der zwischen den ehemaligen Schwäbischen Bundesverwandten und dem Ritter Albrecht von Rosenberg wegen Einnehmung des Hauses Bokhsberg entstandenen Irrungen zu vertreten und sich mit diesem gemeinsam mit allen oder einem Teil der Stände oder ohne diese Namens der Stadt zu vertragen.",
       "english": "The mayor and council of the city of Nuremberg authorize Dr. Cristoff Gugl, Jobst Tetzel, and Joachim Haller to represent them at the assembly summoned by the Emperor and the King at Augsburg to settle the disputes that arose between the former members of the Swabian League and Albrecht von Rosenberg, Ritter, over the seizure of the house of Boxberg, and to reach an agreement on behalf of the city, with all or some of the estates or without them.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/200c4a32-fb1a-45bf-bc78-73a2949d3cb2/1/full/max/0/default.jpg"

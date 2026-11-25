@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim K-G 15 in StAWt-K G 15 A 26 Karte 9",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-240111",
       "german": "Bauvorhaben des Johann Ohlenschlägel von Uissigheim: Bau eines Wohnhauses\n\nLaufzeit: 1873\n\nEnthält: Enthält: Lageplan, Grundriss, Durchschnitt, Giebelansicht nach Süden und Vorderansicht",
-      "english": "Building project of Johann Ohlenschlägel von Uissigheim: construction of a residential house.\n\nDate range: 1873\n\nContains: Site plan, floor plan, section, south gable elevation, and front elevation."
+      "english": "Building project of Johann Ohlenschlägel von Uissigheim: construction of a residential house.\n\nDate range: 1873\n\nContains: Site plan, floor plan, section, south gable elevation, and front elevation.",
+      "mention": [
+        {
+          "place": "uissigheim"
+        }
+      ]
     }
   ]
 }

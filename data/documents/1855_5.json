@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Sulzbach 817",
       "url": "https://www.gda.bayern.de/gvl/document/ebd4ad17-99b6-4880-926c-ce8e13080b15",
       "german": "Herstellung des Weges von Rosenberg nach Siebeneichen im Bereich der Staatswaldparzelle Dürr",
-      "english": "Construction of the road from Rosenberg to Siebeneichen in the area of the Dürr state forest parcel"
+      "english": "Construction of the road from Rosenberg to Siebeneichen in the area of the Dürr state forest parcel",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

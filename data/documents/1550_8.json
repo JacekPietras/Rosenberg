@@ -15,13 +15,13 @@
           "person": "Christoph Siegmund von Wirsberg"
         },
         {
-          "person": "Konrad von Rosenberg"
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
         },
         {
           "place": "rothenburg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
         }
       ]
     }

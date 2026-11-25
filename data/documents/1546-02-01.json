@@ -6,7 +6,12 @@
       "source": "Hauptstaatsarchiv Stuttgart U 19 = H 101/57 Bd. 9 Bl. 686, Bd. 10 Bl. 687, Bd. 26 Bl. 739",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1409873",
       "german": "Joß München von Rosenberg, Obervogt am Schwarzwald, verkauft obige Gült aus dem Zehnten zu Schwenningen an Herzog Ulrich von Württemberg für 250 Gulden.\n\nLaufzeit: 1546 Februar 1",
-      "english": "Joß München von Rosenberg, Obervogt am Schwarzwald, sells the aforementioned rent from the tithe at Schwenningen to Ulrich von Württemberg, Herzog for 250 gulden.\n\nPeriod: 1 February 1546"
+      "english": "Joß München von Rosenberg, Obervogt am Schwarzwald, sells the aforementioned rent from the tithe at Schwenningen to Ulrich von Württemberg, Herzog for 250 gulden.\n\nPeriod: 1 February 1546",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

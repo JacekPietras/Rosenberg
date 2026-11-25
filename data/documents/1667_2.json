@@ -6,7 +6,12 @@
       "source": "HHStAW, 1063, 216",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4799698",
       "german": "Besitz der von Rosenbach in Lindheim\n\nLaufzeit: 1667",
-      "english": "Possessions of the von Rosenbach family in Lindheim.\n\nCoverage period: 1667"
+      "english": "Possessions of the von Rosenbach family in Lindheim.\n\nCoverage period: 1667",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

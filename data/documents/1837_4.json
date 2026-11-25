@@ -6,7 +6,15 @@
       "source": "Staatsarchiv Wertheim R-Lit. B Nr. 7607",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-260370",
       "german": "Bau und Unterhaltung des von Uissigheim links der Tauber nach Bronnbach führenden Weges innerhalb der Gemarkung Bronnbach.\n\nLaufzeit: 1837-1838\n\nUmfang: 8 Schr.",
-      "english": "Construction and maintenance of the road leading from Uissigheim along the left bank of the Tauber to Bronnbach, within the Bronnbach district\n\nTerm: 1837–1838\n\nExtent: 8 documents."
+      "english": "Construction and maintenance of the road leading from Uissigheim along the left bank of the Tauber to Bronnbach, within the Bronnbach district\n\nTerm: 1837–1838\n\nExtent: 8 documents.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "uissigheim"
+        }
+      ]
     }
   ]
 }

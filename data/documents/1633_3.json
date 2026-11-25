@@ -6,7 +6,15 @@
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Geheime Registratur 1698",
       "url": "https://www.gda.bayern.de/gvl/document/88dd722c-7d0f-42b3-b71a-90ae5e858a47",
       "german": "Landsassen- und Hammergut Rosenberg\nEnthält: Verwaltung des Guts, Ansprüche der Doles'schen Erben, Belehnung des Neuburger Kammerdirektors Dr.Franz Gise, Verpachtung an Hans Heinrich von Keysersberg\n\nEnthält-/Darin-Vermerke: Darin: Gutsanschläge, Stammbäume, Verzeichnis der Einkünfte des Landschreiberamts Sulzbach aus dem Gut Rosenberg, Aktenverzeichnis, Verwaltungsrechnung",
-      "english": "Rosenberg estate of the landed nobility and hammer mill estate\nContains: Administration of the estate, claims by the Doles heirs, enfeoffment of Dr. Franz Gise, director of the Neuburg chamber, and lease to Hans Heinrich von Keysersberg\n\nContains/inserted notes: Inserted: estate valuations, family trees, list of revenues of the Sulzbach land clerk’s office from the estate of Rosenberg, file inventory, administrative account"
+      "english": "Rosenberg estate of the landed nobility and hammer mill estate\nContains: Administration of the estate, claims by the Doles heirs, enfeoffment of Dr. Franz Gise, director of the Neuburg chamber, and lease to Hans Heinrich von Keysersberg\n\nContains/inserted notes: Inserted: estate valuations, family trees, list of revenues of the Sulzbach land clerk’s office from the estate of Rosenberg, file inventory, administrative account",
+      "mention": [
+        {
+          "place": "neuburg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

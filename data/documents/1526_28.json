@@ -9,10 +9,10 @@
       "english": "Grand Master Walter von Cronberg to Georg [III.] von Rosenberg [zu Schweigern]: approval of the count-and-knights’ assembly of the six Franconian knightly cantons announced for Mergentheim on 10 August 1529, with assurance of safe conduct, 21 July 1529; [count-and-]knights’ assembly at Mergentheim, 1 January 1529 [regest]; therein, a request by the Franconian knighthood to members who did not appear at Mergentheim to join the decision adopted there concerning the mounted service demanded by the emperor and to contribute proportionately to the costs, 11 August 1529 [print]; power of attorney from the Odenwald canton for Zaisolph von Rosenberg, Ritter, and Bernhard von Hartheim, Amtmann zu Tauberbischofsheim, as the canton’s representatives to negotiate at Schweinfurt concerning the mounted service against France demanded by the emperor, 31 December 1529 [contemporary copy].\n\nDate range: 1526–1543",
       "mention": [
         {
-          "person": "Bernhard von Hartheim"
-        },
-        {
-          "place": "bischofsheim"
+          "person": "Bernhard von Hartheim",
+          "personTitle": [
+            "Amtmann zu Bischofsheim"
+          ]
         },
         {
           "person": "Georg von Rosenberg",

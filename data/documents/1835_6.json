@@ -6,7 +6,12 @@
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 68/+70",
       "url": "https://www.gda.bayern.de/gvl/document/379a6d79-30ad-4f4b-ab77-bd032a6b1ed8",
       "german": "Hahn, Johann Georg, von Rosenberg; Beruf: Schuhmachermeister; Ansässigmachung in Rosenber; Verheiratung mit Förster, Anna Maria; Konzession: Schuhmachermeister",
-      "english": "Johann Georg Hahn von Rosenberg; occupation: master shoemaker; establishment of residence in Rosenberg; marriage to Anna Maria Förster; license: master shoemaker"
+      "english": "Johann Georg Hahn von Rosenberg; occupation: master shoemaker; establishment of residence in Rosenberg; marriage to Anna Maria Förster; license: master shoemaker",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++62951288-915C-45A2-B960-857B8D457C81&parent_id="
       ],
       "german": "Bitte des Ritters Albrecht von Rosenberg zu Bocksberg an den Erzbischof von Mainz um Gestattung der Nutznießung des von Kupprichshausen nach Unterschüpf fließenden Bächleins auf die Länge seines daran liegenden Gartens",
-      "english": "Petition by Albrecht von Rosenberg zu Boxberg, Ritter to the Archbishop of Mainz for permission to use, along the length of his adjoining garden, the stream flowing from Kupprichshausen to Unterschüpf."
+      "english": "Petition by Albrecht von Rosenberg zu Boxberg, Ritter to the Archbishop of Mainz for permission to use, along the length of his adjoining garden, the stream flowing from Kupprichshausen to Unterschüpf.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "zu Boxberg"
+          ]
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "unterschuepf"
+        }
+      ]
     }
   ]
 }

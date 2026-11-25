@@ -6,7 +6,12 @@
       "source": "Grundbuchzentralarchiv Kornwestheim SGM 28 A 008.864.177",
       "url": "https://www.landesarchiv-bw.de/plink/?f=8-173917",
       "german": "Gebäuderegister zum Grundbuch von Rosenberg",
-      "english": "Building register for the Rosenberg land register"
+      "english": "Building register for the Rosenberg land register",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

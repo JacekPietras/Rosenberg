@@ -6,7 +6,12 @@
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 5326",
       "url": "https://www.gda.bayern.de/gvl/document/a4039b74-a2a5-4d6d-8cec-6a828e245de0",
       "german": "Johann Samuel Wünnerlein von Rosenberg gegen Georg Röthlingshöfer zu Tiefenthal auf Werterstattung für seine von letzterem gefundene und verkaufte Tabakspfeife.",
-      "english": "Johann Samuel Wünnerlein von Rosenberg sues Georg Röthlingshöfer of Tiefenthal for reimbursement for the tobacco pipe that the latter found and sold."
+      "english": "Johann Samuel Wünnerlein von Rosenberg sues Georg Röthlingshöfer of Tiefenthal for reimbursement for the tobacco pipe that the latter found and sold.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

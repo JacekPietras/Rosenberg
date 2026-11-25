@@ -6,7 +6,15 @@
       "source": "StAN, Bezirksamt Neustadt a.d.Aisch, AVK-Akten 548",
       "url": "https://www.gda.bayern.de/gvl/document/73d651e7-d4f2-4c0e-85c7-fd3acbcb680f",
       "german": "Wust, Martin Georg, von Mosbach/Weisendorf, Brauer; Verheiratung mit Ruffertshöfer, Eva Rosina, von Rosenberg",
-      "english": "Martin Georg Wust von Mosbach/Weisendorf, brewer; marriage to Eva Rosina Ruffertshöfer von Rosenberg"
+      "english": "Martin Georg Wust von Mosbach/Weisendorf, brewer; marriage to Eva Rosina Ruffertshöfer von Rosenberg",
+      "mention": [
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

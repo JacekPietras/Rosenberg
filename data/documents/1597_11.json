@@ -6,7 +6,12 @@
       "source": "StAAm, Fürstentum Obere Pfalz, Regierung Amtsbücher und Akten 1277",
       "url": "https://www.gda.bayern.de/gvl/document/ea4d1b75-9c6c-485e-8f2c-325073abf975",
       "german": "Gesuch des Balthasar Doles von Rosenberg, Hammermeister zu Bruck (a. d. Vils), an Stelle seines abgegangenen Hammers zu Bruck (a. d. Vils) eine Mahl- und Sägemühle erbauen zu dürfen",
-      "english": "Petition by Balthasar Doles von Rosenberg, hammer master at Bruck an der Vils, for permission to build a flour mill and sawmill in place of his disused hammer mill there."
+      "english": "Petition by Balthasar Doles von Rosenberg, hammer master at Bruck an der Vils, for permission to build a flour mill and sawmill in place of his disused hammer mill there.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

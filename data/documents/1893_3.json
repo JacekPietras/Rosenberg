@@ -6,7 +6,12 @@
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 6398",
       "url": "https://www.gda.bayern.de/gvl/document/66f1d0be-4c73-4c3c-86e4-fbe452aac348",
       "german": "Besenbeck, Johann Leonhard, von Tiefenthal, Gütler/Schäfer; Verheiratung mit Stellwag, Eva Margaretha, von Rosenberg",
-      "english": "Besenbeck, Johann Leonhard, from Tiefenthal, smallholder/shepherd; marriage to Stellwag, Eva Margaretha, from Rosenberg"
+      "english": "Besenbeck, Johann Leonhard, from Tiefenthal, smallholder/shepherd; marriage to Stellwag, Eva Margaretha, from Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

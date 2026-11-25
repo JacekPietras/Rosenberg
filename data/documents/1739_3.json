@@ -6,7 +6,15 @@
       "source": "HStAM, 95, 748",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2245476",
       "german": "v. Rosenbach contra Fulda wegen flüchtig gewordener junger Mannschaft, Fasc. X\n\nLaufzeit: 1739-1799",
-      "english": "Von Rosenbach versus Fulda concerning young men who had fled, file X. Dates: 1739–1799."
+      "english": "Von Rosenbach versus Fulda concerning young men who had fled, file X. Dates: 1739–1799.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

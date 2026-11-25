@@ -6,7 +6,12 @@
       "source": "StAAm, Landgericht ä.O. Amberg 3689",
       "url": "https://www.gda.bayern.de/gvl/document/647f3857-6ae2-4376-b7f8-53d666d3c3f2",
       "german": "Heimatakt: Kirner Joseph, Maurergeselle von Rosenberg, nun Karmensölden",
-      "english": "Residence file: Joseph Kirner von Rosenberg, bricklayer’s apprentice, now in Karmensölden"
+      "english": "Residence file: Joseph Kirner von Rosenberg, bricklayer’s apprentice, now in Karmensölden",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

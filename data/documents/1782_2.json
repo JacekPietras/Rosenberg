@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Wertheim R-Rep. 69k Nr. 430",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-29561",
       "german": "Rezeption des Johann Adam Kasts von Rosenberg vom Schmiedehandwerk in hiesige Bürgerschaft und Schmiedezunft\n\nLaufzeit: 1782",
-      "english": "Admission of Johann Adam Kast of Rosenberg, a blacksmith, to the local burghership and blacksmiths' guild.\n\nTerm: 1782."
+      "english": "Admission of Johann Adam Kast of Rosenberg, a blacksmith, to the local burghership and blacksmiths' guild.\n\nTerm: 1782.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }
