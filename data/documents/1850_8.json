@@ -6,6 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg E 258 VI Bü 1049",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-83461",
       "german": "Manuskriptfragmente, genealogische Skizzen, Notizen und Kurzregesten [des Dekans Hermann Bauer aus Weinsberg] zur Geschichte des Adels im Bezirk und seiner Verwandtschaft im badischen und bayerischen Franken\n\nLaufzeit: [ca.1850er - 1860er Jahre, vor 1872]\n\nEnthält: Enthält v.a.: Freiherren von Crailsheim, Schenken von Schüpf, Küchenmeister von Nordenberg (dabei: Wappenskizze Lupold von Weiltingen 1298), Schultheiß von Rothenburg (dabei: Skizze vom Siegel des Hermann Schultheiß von R.), Herren von Erkenbrechtshausen, von Rosenberg; Stuttgarter Neues Tagblatt, 7. April 1864: Nekrolog auf Ottmar Schönhuth. Rückseitig z.T. Korrespondenz, Schülerübungen.\n\nUmfang: 1 Bü",
+      "english": "Manuscript fragments, genealogical sketches, notes, and brief regesta [by Dean Hermann Bauer of Weinsberg] on the history of the nobility in the district and its relations in Baden and Bavarian Franconia\n\nDate range: [c. 1850s–1860s, before 1872]\n\nContents: Mainly the Barons von Crailsheim, the Schenks von Schüpf, the stewards von Nordenberg (including a sketch of the arms of Lupold von Weiltingen, 1298), the mayor of Rothenburg (including a sketch of the seal of Hermann Schultheiß of R.), the lords of Erkenbrechtshausen, and the von Rosenberg family; Stuttgarter Neues Tagblatt, 7 April 1864: obituary for Ottmar Schönhuth. Some reverse sides contain correspondence and student exercises.\n\nExtent: 1 file.",
+      "mention": [
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "weinsberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=6544&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000006544%2Ftitlaufn_0000083461%2F02_0000083461_0001_2-83461-1.jpg"
@@ -220,8 +235,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=6544&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000006544%2Ftitlaufn_0000083461%2F02_0000083461_0071_2-83461-71.jpg"
         }
-      ],
-      "english": "Manuscript fragments, genealogical sketches, notes, and brief regesta [by Dean Hermann Bauer of Weinsberg] on the history of the nobility in the district and its relations in Baden and Bavarian Franconia\n\nDate range: [c. 1850s–1860s, before 1872]\n\nContents: Mainly the Barons von Crailsheim, the Schenks von Schüpf, the stewards von Nordenberg (including a sketch of the arms of Lupold von Weiltingen, 1298), the mayor of Rothenburg (including a sketch of the seal of Hermann Schultheiß of R.), the lords of Erkenbrechtshausen, and the von Rosenberg family; Stuttgarter Neues Tagblatt, 7 April 1864: obituary for Ottmar Schönhuth. Some reverse sides contain correspondence and student exercises.\n\nExtent: 1 file."
+      ]
     }
   ]
 }

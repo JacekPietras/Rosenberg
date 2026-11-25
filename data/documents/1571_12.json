@@ -5,8 +5,16 @@
     {
       "source": "StAWü, G-Akten 17902",
       "url": "https://www.gda.bayern.de/gvl/document/6c8a60b0-f1d2-44e7-9b3f-4ff701ec9bfc",
-      "english": "Disputes over tithes in the Martinsheim district between the margravial subjects there and the subjects of Zeisolf von Rosenberg in Gnötzheim.",
-      "german": "Zehntstreitigkeiten auf der Markung von Martinsheim zwischen den dortigen markgräflichen Untertanen und denjenigen des Zeisolf von Rosenberg in Gnötzheim"
+      "german": "Zehntstreitigkeiten auf der Markung von Martinsheim zwischen den dortigen markgräflichen Untertanen und denjenigen des Zeisolf von Rosenberg in Gnötzheim",
+      "english": "Disputes over tithes in the Martinsheim district between the margravial subjects there and the subjects of Zaisolph von Rosenberg in Gnötzheim.",
+      "mention": [
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

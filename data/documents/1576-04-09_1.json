@@ -6,6 +6,15 @@
       "source": "HStAM, Urk. 80, 533",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1167763",
       "german": "Verkauf eines Zinses an Dietz von Rosenbach durch Johann von Schweinsberg\n\nJohann von Löwenstein gen. Schweinsberg und seine Frau Margarethe geb. Diede verkaufen ihren Teil an Fruchtzinsen zu Lietheim (?) dem Dietrich von Rosenbach und seiner Frau Walpurga, geb. von Karsbach. Beinhaltet Auflistungen der Einkünfte, nähere Bestimmungen und Quittung über die Kaufsumme.\n\nFormalbeschreibung: Ausfertigung, Pergament, Siegel ab und verloren\n\nSiegler: Aussteller",
+      "english": "Johann von Schweinsberg sells a rent to Dietz von Rosenbach. Johann von Löwenstein, called Schweinsberg, and his wife Margarethe, née Diede, sell their share of grain rents at Lietheim (?) to Dietrich von Rosenberg and his wife Walpurga, née von Karsbach. The document includes the seal of Johann von Löwenstein.",
+      "mention": [
+        {
+          "person": "Dietrich von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/533/hstam_urk._80_nr_533_0001.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/533/hstam_urk._80_nr_533_0002.jpg"
         }
-      ],
-      "english": "Johann von Schweinsberg sells a rent to Dietz von Rosenbach. Johann von Löwenstein, called Schweinsberg, and his wife Margarethe, née Diede, sell their share of grain rents at Lietheim (?) to Dietrich von Rosenbach and his wife Walpurga, née von Karsbach. The document includes the seal of Johann von Löwenstein."
+      ]
     }
   ]
 }

@@ -6,6 +6,15 @@
       "source": "HStAM, 90, b 2231",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4285052",
       "german": "Bericht über den Zustand der Grenze im Amt Bieberstein bei Hilders zu Würzburg und dem Gebiet der Freiherren von Rosenbach\n\nLaufzeit: 1766",
+      "english": "Report on the condition of the border in the Amt of Bieberstein near Hilders, belonging to Würzburg, and in the territory of the Barons von Rosenbach.\n\nTerm: 1766",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_2231/hstam_90_nr_b_2231_0001.jpg"
@@ -31,8 +40,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_2231/hstam_90_nr_b_2231_0008.jpg"
         }
-      ],
-      "english": "Report on the condition of the border in the Amt of Bieberstein near Hilders, belonging to Würzburg, and in the territory of the Barons von Rosenbach.\n\nTerm: 1766"
+      ]
     }
   ]
 }

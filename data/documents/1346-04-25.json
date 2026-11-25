@@ -12,7 +12,10 @@
           "place": "bischofsheim"
         },
         {
-          "person": "Eberhard Rüd"
+          "person": "Eberhard Rüd",
+          "personTitle": [
+            "Vogt zu Bischofsheim"
+          ]
         },
         {
           "person": "Konrad von Uissigheim"

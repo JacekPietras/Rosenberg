@@ -6,6 +6,15 @@
       "source": "HStAM, 90, b 1653",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1733010",
       "german": "Interzession Fürstabt Joachims bei dem Domdechanten Joh. Hartmann v. Rosenbach zugunsten des verurteilten Schutzjuden Abraham Goldschmitt\n\nLaufzeit: 1659",
+      "english": "Prince-Abbot Joachim’s intercession with the cathedral dean Hans Hartmann von Rosenberg on behalf of the convicted protected Jew Abraham Goldschmitt.\n\nCoverage period: 1659",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1653/hstam_90_nr_b_1653_0001.jpg"
@@ -19,8 +28,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1653/hstam_90_nr_b_1653_0004.jpg"
         }
-      ],
-      "english": "Prince-Abbot Joachim’s intercession with the cathedral dean Johann Hartmann von Rosenbach on behalf of the convicted protected Jew Abraham Goldschmitt.\n\nCoverage period: 1659"
+      ]
     }
   ]
 }

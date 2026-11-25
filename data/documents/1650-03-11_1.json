@@ -6,6 +6,15 @@
       "source": "HStAM, Urk. 77, 101",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4476552",
       "german": "Philipp Christoph von Rosenbach, Kapitular zu Fulda und Propst von Blankenau, verleiht den vierten Teil eins Guts in Angersbach\n\nPhilipp Christoph von Rosenbach, Kapitular zu Fulda und Propst von Blankenau [Gem. Hosenfeld, Lkr. Fulda] leiht Heinrich Handwerck den vierten Teil eines Guts in Angersbach [Ortsteil der Gem. Wartenberg, Vogelsbergkrs.].\n\nFormalbeschreibung: Original, Pergament, Dt., Siegel ab.\n\nZusatzinformationen: Vgl. zum Kloster Blankenau Germania Benedictina Bd. VII, S. 57-65.",
+      "english": "Philipp Christoph von Rosenberg, canon of Fulda and provost of Blankenau, grants one quarter of an estate at Angersbach\n\nPhilipp Christoph von Rosenberg, canon of Fulda and provost of Blankenau [municipality of Hosenfeld, Fulda district], leases one quarter of an estate at Angersbach [part of the municipality of Wartenberg, Vogelsberg district] to Heinrich Handwerck.\n\nFormal description: original, parchment, German, seal missing.\n\nAdditional information: On Blankenau Abbey, see Germania Benedictina, vol. VII, pp. 57–65.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Philipp Christoph von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/101/00001.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/101/00002.jpg"
         }
-      ],
-      "english": "Philipp Christoph von Rosenbach, canon of Fulda and provost of Blankenau, grants one quarter of an estate at Angersbach\n\nPhilipp Christoph von Rosenbach, canon of Fulda and provost of Blankenau [municipality of Hosenfeld, Fulda district], leases one quarter of an estate at Angersbach [part of the municipality of Wartenberg, Vogelsberg district] to Heinrich Handwerck.\n\nFormal description: original, parchment, German, seal missing.\n\nAdditional information: On Blankenau Abbey, see Germania Benedictina, vol. VII, pp. 57–65."
+      ]
     }
   ]
 }

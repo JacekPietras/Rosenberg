@@ -6,7 +6,18 @@
       "source": "StAWü, Würzburger Archivalien 2476",
       "url": "https://www.gda.bayern.de/gvl/document/49c66b69-750a-4adf-84b7-f4cf1d402c59",
       "german": "Klage des Schultheißendes Grafen Ludwig Casimir von Hohenlohe-Langenburg zu Ebertsbronn gegen Zaisolf von Rosenberg zu Haltenbergstetten wegen der willkürlichen Verhaftung eines Dreizehnjährigen",
-      "english": "Complaint by the schultheiß of Count Ludwig Casimir von Hohenlohe-Langenburg against Zaisolf von Rosenberg concerning the arbitrary arrest of a thirteen-year-old."
+      "english": "Complaint by the schultheiß of Count Ludwig Casimir von Hohenlohe-Langenburg against Zaisolph von Rosenberg concerning the arbitrary arrest of a thirteen-year-old.",
+      "mention": [
+        {
+          "person": "Ludwig Casimir von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

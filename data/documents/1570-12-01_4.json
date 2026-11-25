@@ -5,8 +5,16 @@
     {
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 696",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/696/charter",
-      "english": "Dietrich (Diecz) von Rosenbach confirms, for his wife Walburga, née von Karsbach, the enfeoffment by Balthasar [von Dernbach], Abbot of Fulda, with a stone house, two farms, and three hides of land at Berstadt [a district of Wölfersheim municipality, Wetterau district], and her share of the rent at Langsdorf (Lanczendorff) [a district of Lich municipality, Giessen district]. The fief charter is inserted. Seal announcement. Seal: attached seal of the issuer.",
       "german": "Dietrich (Diecz) von Rosenbach bestätigt für seine Ehefrau Walburga geborene von Karsbach die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (Lanczendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Balthasar [von Dernbach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Aussteller\n\nSiegel: anhängendes Siegel Aussteller",
+      "english": "Dietrich (Diecz) von Rosenbach confirms, for his wife Walburga, née von Karsbach, the enfeoffment by Balthasar [von Dernbach], Abbot of Fulda, with a stone house, two farms, and three hides of land at Berstadt [a district of Wölfersheim municipality, Wetterau district], and her share of the rent at Langsdorf (Lanczendorff) [a district of Lich municipality, Giessen district]. The fief charter is inserted. Seal announcement. Seal: attached seal of the issuer.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%20696%20Vorderseite%20%281570%20Dezember%2001%29.jpg"

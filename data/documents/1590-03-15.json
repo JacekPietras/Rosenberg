@@ -6,6 +6,15 @@
       "source": "HStAD, B 20, 244",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=35412",
       "german": "Verzeichnis aller Güter so in das mainzische Lehen gehören zu Roighen und Dhürn nach Absterben derer von Dhürn 1564, Lehnbrief über den Stubenkatzenhof für Philipp Wolf v. Rosenbach\n\nFormalbeschreibung: Pergament-libell, unbesiegelt\n\nZusatzinformationen: 16 Blatt (Oktav), mit Urk.abschriften",
+      "english": "List of all properties belonging to the Mainz fief at Roighen and Dhürn after the death of the von Dhürn family in 1564; letter of enfeoffment for the Stubenkatzenhof for Philipp Wolf von Rosenberg.\n\nDescription: Parchment booklet, without seal.\n\nAdditional information: 16 leaves (octavo), with copies of documents.",
+      "mention": [
+        {
+          "place": "mainz"
+        },
+        {
+          "person": "Philipp Wolf von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/b_20/244/b_20%23244~0001.jpg"
@@ -37,8 +46,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/b_20/244/b_20%23244~0010.jpg"
         }
-      ],
-      "english": "List of all properties belonging to the Mainz fief at Roighen and Dhürn after the death of the von Dhürn family in 1564; letter of enfeoffment for the Stubenkatzenhof for Philipp Wolf von Rosenbach.\n\nDescription: Parchment booklet, without seal.\n\nAdditional information: 16 leaves (octavo), with copies of documents."
+      ]
     }
   ]
 }

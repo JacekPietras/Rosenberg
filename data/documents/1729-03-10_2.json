@@ -6,6 +6,15 @@
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 3359",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3359/charter",
       "german": "Lothar Gottfried, Johann Philipp und Adalbert Friedrich von Rosenbach (Rosenbusch) sowie weitere namentlich genannte Personen bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sasston), Gerharts (Gerhard) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Adolf [von Dalberg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Wolfgang Daniel Freiherr von Boyneburg\n\nSiegel: anhängendes Siegel in Holzkapsel Wolfgang Daniel Freiherr von Boyneburg",
+      "english": "Lothar Gottfried, Johann Philipp, and Adalbert Friedrich von Rosenberg (Rosenbusch) and other named persons confirm their enfeoffment with Schackau and its woodland and field appurtenances, a property there, Kleinsassen (Sasston), Gerharts (Gerhard) [all places in Hofbieber municipality, Fulda district], and further listed fiefs by Adolf [von Dalberg], Abbot of Fulda. Fief charter inserted; seal announced. Sealer and attached seal: Wolfgang Daniel Freiherr von Boyneburg.",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "fulda-cathedral"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203359%20Vorderseite%20%281729%20Maerz%2010%29.jpg"
@@ -13,8 +22,7 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203359%20Rueckseite%20%281729%20Maerz%2010%29.jpg"
         }
-      ],
-      "english": "Lothar Gottfried, Johann Philipp, and Adalbert Friedrich von Rosenbach (Rosenbusch) and other named persons confirm their enfeoffment with Schackau and its woodland and field appurtenances, a property there, Kleinsassen (Sasston), Gerharts (Gerhard) [all places in Hofbieber municipality, Fulda district], and further listed fiefs by Adolf [von Dalberg], Abbot of Fulda. Fief charter inserted; seal announced. Sealer and attached seal: Wolfgang Daniel Freiherr von Boyneburg."
+      ]
     }
   ]
 }

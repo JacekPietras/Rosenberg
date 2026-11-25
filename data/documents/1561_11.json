@@ -6,7 +6,21 @@
       "source": "StAWü, Würzburger Archivalien 4015",
       "url": "https://www.gda.bayern.de/gvl/document/df5a8534-bdb5-4b35-9cf4-c614d38b32d9",
       "german": "Irrungen zwischen Graf Ludwig Casimir von Hohenlohe und Zaisolf von Rosenberg zu Haltenbergstetten wegen des kleinen Zehnts zu Münster und der mit Landfriedensbruch erfolgten Verhaftung und Marterung des Schultheißen und des Hirten zu Ebertsbronn durch letzteren",
-      "english": "Disputes between Count Ludwig Casimir von Hohenlohe and Zaisolf von Rosenberg zu Haltenbergstetten over the small tithe at Münster and the arrest and torture of the schultheiß and shepherd at Ebertsbronn."
+      "english": "Disputes between Count Ludwig Casimir von Hohenlohe and Zaisolph von Rosenberg zu Haltenbergstetten over the small tithe at Münster and the arrest and torture of the schultheiß and shepherd at Ebertsbronn.",
+      "mention": [
+        {
+          "person": "Ludwig Casimir von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
+        }
+      ]
     }
   ]
 }

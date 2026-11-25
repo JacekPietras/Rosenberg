@@ -12,7 +12,15 @@
         "https://www.landesarchiv-bw.de/plink/?f=3-69744"
       ],
       "german": "Belehnung durch den Bischof von Würzburg Johann Hartmann von Rosenbach.\n\nLaufzeit: 1673-1674\n\nUmfang: Qu. 1-32\n\nUmfang: 1 Fasz.",
-      "english": "Enfeoffment by the bishop of Würzburg, Johann Hartmann von Rosenbach.\n\nTerm: 1673–1674\n\nExtent: items 1–32\n\nExtent: 1 bundle"
+      "english": "Enfeoffment by the bishop of Würzburg, Hans Hartmann von Rosenberg.\n\nTerm: 1673–1674\n\nExtent: items 1–32\n\nExtent: 1 bundle",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,15 @@
       "source": "HStAM, 94, 1285",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7362628",
       "german": "Beschwerde des Philipp Christoph von Rosenbach, Propst zu Blankenau, gegen den fürstlichen Schultheißen zu Hosenfeld und einige Untertanen zu Schletzenhausen wegen Frondiensten\n\nLaufzeit: 1670",
+      "english": "Complaint by Philipp Christoph von Rosenberg, Provost of Blankenau, against the prince's magistrate at Hosenfeld and several subjects at Schletzenhausen concerning forced labor services.\n\nDate range: 1670",
+      "mention": [
+        {
+          "person": "Philipp Christoph von Rosenberg",
+          "personTitle": [
+            "Propst zu Blankenau"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1285/hstam_94_nr_1285_0001.jpg"
@@ -22,8 +31,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1285/hstam_94_nr_1285_0005.jpg"
         }
-      ],
-      "english": "Complaint by Philipp Christoph von Rosenbach, Provost of Blankenau, against the prince's magistrate at Hosenfeld and several subjects at Schletzenhausen concerning forced labor services.\n\nDate range: 1670"
+      ]
     }
   ]
 }

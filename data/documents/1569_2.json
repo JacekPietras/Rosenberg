@@ -5,8 +5,19 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ba 40 Bü 292",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-3424",
-      "english": "Extracts from the agreement between Hohenlohe-Waldenburg and Zaisolf von Rosenberg concerning hunting in the Bartenstein district. Dates: (1569). Extent: 3 documents.",
-      "german": "Auszüge aus dem Vertrag zwischen Hohenlohe-Waldenburg und Zaisolf von Rosenberg über die Jagd auf der Markung Bartenstein.\n\nLaufzeit: (1569)\n\nUmfang: 3 Schr."
+      "german": "Auszüge aus dem Vertrag zwischen Hohenlohe-Waldenburg und Zaisolf von Rosenberg über die Jagd auf der Markung Bartenstein.\n\nLaufzeit: (1569)\n\nUmfang: 3 Schr.",
+      "english": "Extracts from the agreement between Hohenlohe-Waldenburg and Zaisolph von Rosenberg concerning hunting in the Bartenstein district. Dates: (1569). Extent: 3 documents.",
+      "mention": [
+        {
+          "place": "bartenstein"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

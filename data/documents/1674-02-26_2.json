@@ -10,6 +10,18 @@
         "https://www.monasterium.net/mom/DE-StAW/Neumuenster/Urkunden_1674_Februar_26/charter"
       ],
       "german": "Der Aussteller verleiht auf Bitten der Empfänger ihrem Mitkanoniker Johann Friedrich Dümler als Lehenträger für das Stift Neumünster Hof und Hofstatt in Waigolshausen. Diese sind Zinslehen des Hochstifts Würzburg und kamen aufgrund einer testamentarischen Verfügung des Kanonikers Jakob Hack von Sul in den Besitz des Stifts. Davon sind jährlich 1 Malter Weizen, 1 Malter Roggen und 1 Pfund Geld an die Kellerei des Hochstifts in Werneck abzuführen.\nAussteller:  Johann Hartmann von Rosenbach, Bischof zu Würzburg\nEmpfänger:  Dekan und Kapitel des Stifts Neumünster\n\nVermerke: Rückvermerke:  praesenzambt lad. 19 Weitolshaußen N° 8 [Standbuch 207, S. 687]; capsel 18 N° 13; reg.\n\nBesiegelung/Beglaubigung: Aussteller, unbesch.",
+      "english": "At the recipients’ request, the issuer grants their fellow canon Johann Friedrich Dümler, as feudal holder for Neumünster Abbey, a manor and its courtyard in Waigolshausen. These are rent-paying fiefs of the Bishopric of Würzburg and came into the abbey’s possession through a testamentary disposition by the canon Jakob Hack von Sul. One malter each of wheat and rye, and one pound in money, are due annually to the bishopric’s treasury at Werneck.\nIssuer: Hans Hartmann von Rosenberg, Bishop of Würzburg.\nRecipient: Dean and chapter of Neumünster Abbey.\n\nNotes: Endorsements: “praesenzambt lad. 19 Weitolshaußen N° 8” [Standbuch 207, p. 687]; “capsel 18 N° 13”; reg.\n\nSealing/authentication: issuer, damaged.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/98028048-8f6f-4ebc-bd32-f4296ff7ddd1/1/full/max/0/default.jpg"
@@ -20,8 +32,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/98028048-8f6f-4ebc-bd32-f4296ff7ddd1/3/full/max/0/default.jpg"
         }
-      ],
-      "english": "At the recipients’ request, the issuer grants their fellow canon Johann Friedrich Dümler, as feudal holder for Neumünster Abbey, a manor and its courtyard in Waigolshausen. These are rent-paying fiefs of the Bishopric of Würzburg and came into the abbey’s possession through a testamentary disposition by the canon Jakob Hack von Sul. One malter each of wheat and rye, and one pound in money, are due annually to the bishopric’s treasury at Werneck.\nIssuer: Johann Hartmann von Rosenbach, Bishop of Würzburg.\nRecipient: Dean and chapter of Neumünster Abbey.\n\nNotes: Endorsements: “praesenzambt lad. 19 Weitolshaußen N° 8” [Standbuch 207, p. 687]; “capsel 18 N° 13”; reg.\n\nSealing/authentication: issuer, damaged."
+      ]
     }
   ]
 }

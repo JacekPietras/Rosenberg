@@ -6,7 +6,21 @@
       "source": "StAWü, Würzburger Archivalien 2795",
       "url": "https://www.gda.bayern.de/gvl/document/8b63dc84-6032-4c79-a5e5-7c7cb29e08c1",
       "german": "Differenzen zwischen dem Hochstift Würzburg und Zaisolf von Rosenberg zu Haltenbergstetten\n\nEnthält-/Darin-Vermerke: Enthält v. a.: Differenzen bezüglich der Jagdgerechtsamkeit bei Laudenbach, im Dunzendorfer Gemeindeholz und in einem Gehölz zwischen Neubronn und Rinderfeld",
-      "english": "Disputes between the bishopric of Würzburg and Zaisolf von Rosenberg of Haltenbergstetten, chiefly over hunting rights near Laudenbach, in the Dunzendorf communal woods, and in a woodland between Neubronn and Rinderfeld."
+      "english": "Disputes between the bishopric of Würzburg and Zaisolph von Rosenberg of Haltenbergstetten, chiefly over hunting rights near Laudenbach, in the Dunzendorf communal woods, and in a woodland between Neubronn and Rinderfeld.",
+      "mention": [
+        {
+          "place": "rinderfeld"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

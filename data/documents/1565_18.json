@@ -4,9 +4,20 @@
   "entries": [
     {
       "source": "StAWü, Mainzer Regierungsarchiv Kurpfalz 1415",
-      "english": "Report by the Amtmann of Tauberbischofsheim concerning disputes with the Electoral Palatinate over court jurisdiction, boundary markers, hunting, fishing, and escort rights at the Gräffinger farms, Dainbach, Uiffingen, and Größdingen (?), in the Königshofen district, at Sachsenflur, and in the Schüpfer Grund.\n\nContains: Appeal of the places belonging to the Königshofen court; complaints by the Schüpfer Grund vogts about boundary markers, escort rights, and court jurisdiction.\n\nAlso contains: Copy of Albrecht von Rosenberg's instruction concerning the hereditary homage of the villages in the Schüpfer Grund (1565); copy of Albrecht von Rosenberg's “Instrumentum Protestationis” concerning taxation of the Ahorn forest (1566).",
       "url": "https://www.gda.bayern.de/gvl/document/525a4c69-9f81-4492-abdc-109eacefec4a",
-      "german": "Bericht des Amtmanns zu Tauberbischofsheim über Streitigkeiten mit der Kurpfalz wegen Cent, Grenzsteinsetzung, Jagd-, Fisch- und Geleitsrechten auf den Gräffinger Höfen, zu Dainbach, Uiffingen und Größdingen (?), in der Königshöfer Gemarkung, zu Sachsenflur und im Schüpfergrund\n\nEnthält-/Darin-Vermerke: Enthält: Berufung der zur Cent Königshofen gehörigen Orte; Beschwerde der Vögte im Schüpfergund wegen Steinsetzung, Geleit und Cent.\nDarin: Kopie einer Anweisung Albrechts von Rosenberg über die Erbhuldigung der Dörfer im Schüpfergrund (1565); Kopie des \"Instrumentum Protestationis\" Albrechts von Rosenberg über die Besteuerung des Ahornwaldes (1566)"
+      "german": "Bericht des Amtmanns zu Tauberbischofsheim über Streitigkeiten mit der Kurpfalz wegen Cent, Grenzsteinsetzung, Jagd-, Fisch- und Geleitsrechten auf den Gräffinger Höfen, zu Dainbach, Uiffingen und Größdingen (?), in der Königshöfer Gemarkung, zu Sachsenflur und im Schüpfergrund\n\nEnthält-/Darin-Vermerke: Enthält: Berufung der zur Cent Königshofen gehörigen Orte; Beschwerde der Vögte im Schüpfergund wegen Steinsetzung, Geleit und Cent.\nDarin: Kopie einer Anweisung Albrechts von Rosenberg über die Erbhuldigung der Dörfer im Schüpfergrund (1565); Kopie des \"Instrumentum Protestationis\" Albrechts von Rosenberg über die Besteuerung des Ahornwaldes (1566)",
+      "english": "Report by the Amtmann of Tauberbischofsheim concerning disputes with the Electoral Palatinate over court jurisdiction, boundary markers, hunting, fishing, and escort rights at the Gräffinger farms, Dainbach, Uiffingen, and Größdingen (?), in the Königshofen district, at Sachsenflur, and in the Schüpfer Grund.\n\nContains: Appeal of the places belonging to the Königshofen court; complaints by the Schüpfer Grund vogts about boundary markers, escort rights, and court jurisdiction.\n\nAlso contains: Copy of Albrecht von Rosenberg's instruction concerning the hereditary homage of the villages in the Schüpfer Grund (1565); copy of Albrecht von Rosenberg's “Instrumentum Protestationis” concerning taxation of the Ahorn forest (1566).",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "bischofsheim"
+        },
+        {
+          "place": "uiffingen"
+        }
+      ]
     }
   ]
 }

@@ -4,9 +4,14 @@
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Wa 25 Bü 296",
-      "english": "Report by Amtmann Georg Schwend.\n\nContains, among other things: the arrest of Albrecht von Rosenberg in Augsburg; aid for the Turks.\n\nDuration: 1566\n\nExtent: 1 document",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-37960",
       "german": "Bericht des Amtmanns Georg Schwend.\n\nLaufzeit: 1566\n\nEnthält: Enthält u. a.: Verhaftung des Albrecht von Rosenberg in Augsburg; Türkenhilfe.\n\nUmfang: 1 Schr.",
+      "english": "Report by Amtmann Georg Schwend.\n\nContains, among other things: the arrest of Albrecht von Rosenberg in Augsburg; aid for the Turks.\n\nDuration: 1566\n\nExtent: 1 document",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=580&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000580%2Ftitlaufn_0000037960%2F03_0000037960_0001_3-37960-1.jpg"

@@ -9,10 +9,16 @@
       "english": "Deed of renunciation by Gottfried von Schlüsselberg in favor of the monastery of Triefenstein concerning the tithe at Beilstein in Kreuzwertheim.\n\nDate: 16 May 1308 (Thursday after Cantate).\n\nSeal description: inscription: S. Gotfridi de ... el. berge.\n\nWitnesses: Konrad von Uissigheim, Ritter; Hans von Riedern, Ritter; Wiprecht and Konrad Rüde, Ritter; Gottfried Kotebus called von Vlimbach, Ritter; Conrad Fornilin; Gottfried Vechinbach; Gottfried Rufus; Eb. Friege; Got. Kotebus; Got. Lurtz; Walter Kotebus; Ul. von Wizenvelt.\n\nSeal issuer: Gottfried von Schlüsselberg.",
       "mention": [
         {
-          "person": "Hans von Riedern"
+          "person": "Hans von Riedern",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
-          "person": "Konrad von Uissigheim"
+          "person": "Konrad von Uissigheim",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ],
       "img": [

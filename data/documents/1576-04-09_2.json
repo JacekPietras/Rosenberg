@@ -6,6 +6,12 @@
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 533",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk80/533/charter",
       "german": "Johann von Löwenstein gen. Schweinsberg und seine Frau Margarethe geb. Diede verkaufen ihren Teil an Fruchtzinsen zu Lietheim (?) dem Dietrich von Rosenbach und seiner Frau Walpurga, geb. von Karsbach. Beinhaltet Auflistungen der Einkünfte, nähere Bestimmungen und Quittung über die Kaufsumme.\n\nSiegler: Aussteller\n\nSiegel: Siegel ab und verloren Aussteller",
+      "english": "Johann von Löwenstein, called Schweinsberg, and his wife Margarethe, née Diede, sell their share of grain rents at Lietheim (?) to Dietrich von Rosenberg and his wife Walpurga, née von Karsbach. Includes lists of revenues, detailed provisions, and a receipt for payment.",
+      "mention": [
+        {
+          "person": "Dietrich von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20533%20Vorderseite%20%281576%20April%2009%29.jpg"
@@ -13,8 +19,7 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20533%20Rueckseite%20%281576%20April%2009%29.jpg"
         }
-      ],
-      "english": "Johann von Löwenstein, called Schweinsberg, and his wife Margarethe, née Diede, sell their share of grain rents at Lietheim (?) to Dietrich von Rosenbach and his wife Walpurga, née von Karsbach. Includes lists of revenues, detailed provisions, and a receipt for payment."
+      ]
     }
   ]
 }

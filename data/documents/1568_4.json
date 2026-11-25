@@ -5,8 +5,22 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein We 10 Bü 2160",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-259791",
-      "english": "Hohenlohe against Rosenberg: Zeisolf von Rosenberg's planned establishment of a weekly market at Haltenbergstetten, for which he intends to compel the subjects of Münster to attend. Dates: 1568. Extent: items 1–3.",
-      "german": "Hohenlohe gegen Rosenberg: Die von Zeisolf von Rosenberg vorgehabte Aufrichtung eines Wochenmarkts zu Haltenbergstetten, zu dessen Besuch er die Untertanen zu Münster zwingen will.\n\nLaufzeit: 1568\n\nUmfang: Qu. 1-3"
+      "german": "Hohenlohe gegen Rosenberg: Die von Zeisolf von Rosenberg vorgehabte Aufrichtung eines Wochenmarkts zu Haltenbergstetten, zu dessen Besuch er die Untertanen zu Münster zwingen will.\n\nLaufzeit: 1568\n\nUmfang: Qu. 1-3",
+      "english": "Hohenlohe against Rosenberg: Zaisolph von Rosenberg's planned establishment of a weekly market at Haltenbergstetten, for which he intends to compel the subjects of Münster to attend. Dates: 1568. Extent: items 1–3.",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

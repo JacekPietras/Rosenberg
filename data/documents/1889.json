@@ -6,6 +6,15 @@
       "source": "HStAD, G 21 B, 2400",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4144001",
       "german": "Enthält: Entlassung auf Grund des Gesetzes zur Wiederherstellung des Berufsbeamtentums, Aberkennung der deutschen Staatsangehörigkeit\n\nLaufzeit: 1889-1937, (1940)\n\n(Vor-) Provenienzen: Ministerium des Inneren und Justiz\n\nPersonenname: Rosenberg, Dr. Ernst\n\nGeburtsdatum: 1867-03-27\n\nGeburtsort: Gießen\n\nZusatzinformationen: Vater von Rosenberg, Dr. Kurt",
+      "english": "Contains: Dismissal under the Law for the Restoration of the Professional Civil Service; revocation of German citizenship\n\nDate range: 1889–1937, (1940)\n\n(Previous) provenance: Ministry of the Interior and Justice\n\nPerson named: Dr. Ernst Rosenberg\n\nDate of birth: 1867-03-27\n\nPlace of birth: Gießen\n\nAdditional information: Father of Dr. Kurt Rosenberg",
+      "mention": [
+        {
+          "person": "Ernst Rosenberg"
+        },
+        {
+          "person": "Kurt Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/g_21_b/2400/g_21_b%232400~0001.jpg"
@@ -37,8 +46,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/g_21_b/2400/g_21_b%232400~0010.jpg"
         }
-      ],
-      "english": "Contains: Dismissal under the Law for the Restoration of the Professional Civil Service; revocation of German citizenship\n\nDate range: 1889–1937, (1940)\n\n(Previous) provenance: Ministry of the Interior and Justice\n\nPerson named: Dr. Ernst Rosenberg\n\nDate of birth: 1867-03-27\n\nPlace of birth: Gießen\n\nAdditional information: Father of Dr. Kurt Rosenberg"
+      ]
     }
   ]
 }

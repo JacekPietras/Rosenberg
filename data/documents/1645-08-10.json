@@ -6,7 +6,18 @@
       "source": "HHStAW, 108, U 1411",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1351102",
       "german": "Erzbischof Anselm Casimir von Mainz konsentiert in die Besitzergreifung eines Hauses nebst Garten zu Winkel durch den Hofrat Philipp Wolff von Rosenbach, welcher dasselbe gerichtlich wegen einer Schuldforderung an einen gewissen Vogt zugesprochen erhalten hat.\n\nFormalbeschreibung: gleichzeitige Abschrift, Papier",
-      "english": "Archbishop Anselm Casimir of Mainz consents to court councillor Philipp Wolff von Rosenbach taking possession of a house and garden at Winkel, which had been awarded to him by a court in satisfaction of a debt owed by a certain Vogt.\n\nFormal description: contemporary copy, paper"
+      "english": "Archbishop Anselm Casimir of Mainz consents to court councillor Philipp Wolf von Rosenberg taking possession of a house and garden at Winkel, which had been awarded to him by a court in satisfaction of a debt owed by a certain Vogt.\n\nFormal description: contemporary copy, paper",
+      "mention": [
+        {
+          "person": "Erzbischof Anselm Casimir",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Philipp Wolf von Rosenberg"
+        }
+      ]
     }
   ]
 }

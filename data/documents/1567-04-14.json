@@ -4,9 +4,17 @@
   "entries": [
     {
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 1727",
-      "english": "Heinrich von Fleckenstein and Margareta von Rosenburg conclude a marriage contract.\n\nDuration: April 14, 1567",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2398410",
-      "german": "Heinrich von Fleckenstein und Margareta von Rosenburg schließen einen Ehevertrag.\n\nLaufzeit: 1567 April 14"
+      "german": "Heinrich von Fleckenstein und Margareta von Rosenburg schließen einen Ehevertrag.\n\nLaufzeit: 1567 April 14",
+      "english": "Heinrich von Fleckenstein and Margaretha von Rosenberg conclude a marriage contract.\n\nDuration: April 14, 1567",
+      "mention": [
+        {
+          "person": "Heinrich von Fleckenstein"
+        },
+        {
+          "person": "Margaretha von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,24 @@
       "source": "HStAM, Urk. 146, 104",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4949980",
       "german": "Fürstabt Adolf von Fulda belehnt die von Rosenbach\n\nFürstabt Adolf von Fulda belehnt Lothar Gottfried, Johann Philipp, Adalbert Friedrich und Karl Anton von Rosenbach mit Gütern, Mühlstätten und Frohnwiesenanteilen zu Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach und Eckweisbach. ... diesen Brief ...\n\nFormalbeschreibung: Pgt., Siegel ab",
-      "english": "Prince-Abbot Adolf of Fulda enfeoffs the von Rosenbach family. He grants Lothar Gottfried, Johann Philipp, Adalbert Friedrich, and Karl Anton von Rosenbach properties, mill sites, and shares in Frohn meadows at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, and Eckweisbach. ... this charter ... Parchment; seal missing."
+      "english": "Prince-Abbot Adolf of Fulda enfeoffs the von Rosenbach family. He grants Lothar Gottfried, Johann Philipp, Adalbert Friedrich, and Karl Anton von Rosenberg properties, mill sites, and shares in Frohn meadows at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, and Eckweisbach. ... this charter ... Parchment; seal missing.",
+      "mention": [
+        {
+          "person": "Adolf",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Karl Anton von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

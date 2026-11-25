@@ -10,6 +10,18 @@
         "https://www.monasterium.net/mom/DE-StAW/Neumuenster/Urkunden_1674_August_3/charter"
       ],
       "german": "Der Aussteller teilt den Empfängern auf deren Beschwerde hin mit, dass dem jeweiligen Dekan des Ritterstifts Comburg in allen Angelegenheiten der Vortritt vor den Dekanen ihrer beiden Stifte einzuräumen ist.\nAussteller:  Johann Hartmann von Rosenbach, Bischof zu Würzburg\nEmpfänger:  Dekane und Kapitel der Stifte Haug und Neumünster\n\nVermerke: Rückvermerke:  gemein stifft lad. 9 extra- et iudicialia ad numerum 7 6 [Standbuch 207, S. 88]; capsel 6 N° 14; reg.\n\nBesiegelung/Beglaubigung: Aussteller, besch.",
+      "english": "In response to the recipients’ complaint, the issuer informs them that in all matters precedence must be given to the respective dean of the Comburg collegiate chapter over the deans of their two collegiate chapters.\nIssuer: Hans Hartmann von Rosenberg, Bishop of Würzburg.\nRecipients: Deans and chapters of the Haug and Neumünster collegiate chapters.\n\nNotes: Endorsements: “gemein stifft lad. 9 extra- et iudicialia ad numerum 7 6” [Standbuch 207, p. 88]; “capsel 6 N° 14”; reg.\n\nSealing/authentication: issuer, damaged.",
+      "mention": [
+        {
+          "place": "comburg-stiftskirche"
+        },
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/fa1b2694-ef4c-4aec-b8c7-24089d18b9bf/1/full/max/0/default.jpg"
@@ -23,8 +35,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/fa1b2694-ef4c-4aec-b8c7-24089d18b9bf/4/full/max/0/default.jpg"
         }
-      ],
-      "english": "In response to the recipients’ complaint, the issuer informs them that in all matters precedence must be given to the respective dean of the Comburg collegiate chapter over the deans of their two collegiate chapters.\nIssuer: Johann Hartmann von Rosenbach, Bishop of Würzburg.\nRecipients: Deans and chapters of the Haug and Neumünster collegiate chapters.\n\nNotes: Endorsements: “gemein stifft lad. 9 extra- et iudicialia ad numerum 7 6” [Standbuch 207, p. 88]; “capsel 6 N° 14”; reg.\n\nSealing/authentication: issuer, damaged."
+      ]
     }
   ]
 }

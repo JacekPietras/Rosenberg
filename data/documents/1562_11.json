@@ -6,6 +6,21 @@
       "source": "StAWü, Würzburger Risse und Pläne I 283",
       "url": "https://www.gda.bayern.de/gvl/document/ad27bf2a-9f36-4d55-9e1d-d67f24c1e33b",
       "german": "Farbiger Plan, angelegt über einen Streit zwischen Zeisolf von Rosenberg zu Haltenbergstetten u. Veit von Lichtenstein zum Geyersberg wegen der Steinsetzung zwischen den Markungen Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: Enthält: Ansicht der Orte Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim, Vorder- und Hinterfrankenberg und der Burgruine Hohenlandsberg",
+      "english": "Colored plan concerning a dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over boundary stones between Gnötzheim and Ippesheim.",
+      "mention": [
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "person": "Veit von Lichtenstein"
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/ad27bf2a-9f36-4d55-9e1d-d67f24c1e33b/1/full/max/0/default.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/ad27bf2a-9f36-4d55-9e1d-d67f24c1e33b/2/full/max/0/default.jpg"
         }
-      ],
-      "english": "Colored plan concerning a dispute between Zeisolf von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over boundary stones between Gnötzheim and Ippesheim."
+      ]
     }
   ]
 }

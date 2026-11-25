@@ -6,7 +6,27 @@
       "source": "StAWü, Würzburger Archivalien 2800",
       "url": "https://www.gda.bayern.de/gvl/document/7924c47a-32ad-403b-9cc1-c232f020de30",
       "german": "Differenzen zwischen den Vettern Sigmund und Georg Truchseß von Baldersheim zu Aub und den Brüdern Albrecht Christoph und Georg Sigmund von Rosenberg wegen des Novalzehnten zu Deubach",
-      "english": "Disputes between the cousins Sigmund and Georg Truchseß von Baldersheim zu Aub and the brothers Albrecht Christoph and Georg Sigmund von Rosenberg over the noval tithe at Deubach."
+      "english": "Disputes between the cousins Sigmund and Georg Truchseß von Baldersheim zu Aub and the brothers Albrecht Christoph and Georg Siegmund von Rosenberg over the noval tithe at Deubach.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "person": "Georg Truchsess von Baldersheim",
+          "personTitle": [
+            "zu Aub"
+          ]
+        },
+        {
+          "person": "Siegmund Truchsess von Baldersheim",
+          "personTitle": [
+            "zu Aub"
+          ]
+        }
+      ]
     }
   ]
 }

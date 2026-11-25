@@ -9,6 +9,9 @@
       "english": "Eberhard von Uissigheim sells properties and revenues at Golnhofen to Ludwig von Hohenlohe. This copy was made by Laurentzius Ebdres and provided with his notarial sign and hand seal. Date: 1344.",
       "mention": [
         {
+          "person": "Eberhard von Uissigheim"
+        },
+        {
           "person": "Ludwig von Hohenlohe"
         }
       ]
@@ -20,7 +23,10 @@
       "english": "Eberhard von Uissigheim and Otilie, his lawful wife, sell their gracious lord Ludwig von Hohenlohe and his heirs certain specified rents and properties at Gollehofen for 45 pounds of Heller less 51 Heller. They appoint as sureties Konrad von Seinsheim, Ritter, called von Westerndorf, and Eckelin von Seinsheim, Ritter, who are required to enter surety at Uffenheim. The deed is issued under the seals of Eberhard and the two sureties in 1344, on the feast of the holy apostles Simon and Judas.",
       "mention": [
         {
-          "person": "Konrad von Seinsheim"
+          "person": "Konrad von Seinsheim",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
           "person": "Ludwig von Hohenlohe"

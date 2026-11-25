@@ -4,9 +4,20 @@
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein We 10 Bü 2317",
-      "english": "Hohenlohe against Rosenberg: Various reports concerning Zeisolf von Rosenberg and the cellarer at Weikersheim, Georg Repner, in 1561; various outstanding grain payments owed to Asmus Dilling and others, likewise the cellarer's wood debts to several people at Wermutshausen.\n\nDuration: 1567\n\nExtent: Qu. 1–3",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-260119",
-      "german": "Hohenlohe gegen Rosenberg: Etliche Nachrichten zwischen Zeisolf von Rosenberg und dem Keller zu Weikersheim Georg Repner im Jahr 1561: Etliche bei Asmus Dilling ebenso gegen Zenker und Konsorten zu Queckbronn ausständige Fruchtgeld, desgleichen die Holz-Schulden des Kellers bei etlichen zu Wermutshausen.\n\nLaufzeit: 1567\n\nUmfang: Qu. 1-3"
+      "german": "Hohenlohe gegen Rosenberg: Etliche Nachrichten zwischen Zeisolf von Rosenberg und dem Keller zu Weikersheim Georg Repner im Jahr 1561: Etliche bei Asmus Dilling ebenso gegen Zenker und Konsorten zu Queckbronn ausständige Fruchtgeld, desgleichen die Holz-Schulden des Kellers bei etlichen zu Wermutshausen.\n\nLaufzeit: 1567\n\nUmfang: Qu. 1-3",
+      "english": "Hohenlohe against Rosenberg: Various reports concerning Zaisolph von Rosenberg and the cellarer at Weikersheim, Georg Repner, in 1561; various outstanding grain payments owed to Asmus Dilling and others, likewise the cellarer's wood debts to several people at Wermutshausen.\n\nDuration: 1567\n\nExtent: Qu. 1–3",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

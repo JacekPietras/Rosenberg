@@ -6,7 +6,15 @@
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Konsistorialakten) - Systematisches Repertorium 2084/fol. 232",
       "url": "https://www.gda.bayern.de/gvl/document/e5bf4a3e-625b-4c32-a558-f9068cfb0a5c",
       "german": "Georg Sigmund von Rosenberg an Rothenburg (empfiehlt Georg Sigmund Glaitter für eine Pfarrstelle)",
-      "english": "Georg Sigmund von Rosenberg to Rothenburg (recommending Georg Sigmund Glaitter for a parish post)."
+      "english": "Georg Siegmund von Rosenberg to Rothenburg (recommending Georg Sigmund Glaitter for a parish post).",
+      "mention": [
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "rothenburg"
+        }
+      ]
     }
   ]
 }

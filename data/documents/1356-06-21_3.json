@@ -9,10 +9,16 @@
       "english": "The brothers Peter, Jodok, Ulrich, and Hans von Rosenberg promise to serve Charles, Roman Emperor and King of Bohemia, who has restored the brothers to favor by a charter issued on the same day.\n\nSeals: four red seals hanging from parchment strips: Peter von Rosenberg (27 mm, damaged), Jodok von Rosenberg (27 mm, damaged), Ulrich von Rosenberg (27 mm), and Hans von Rosenberg (23 mm).",
       "mention": [
         {
-          "person": "Hans of Rosenberg"
+          "person": "Hans von Rosenberg"
         },
         {
-          "person": "Ulrich of Rosenberg"
+          "person": "Peter von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
         }
       ],
       "img": [

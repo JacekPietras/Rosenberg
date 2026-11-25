@@ -6,6 +6,18 @@
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 236",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk77/236/charter",
       "german": "Der Konvent St. Bonifacii einigt sich mit Philipp Christoph von Rosenbach, Propst von Blankenau [Gem. Hosenfeld, Lkr. Fulda], wegen der Lehnsgewichtigkeit, die auf einer Behausung auf dem Unter-Angel haftet, welche Philipp Christoph von Rosenbach von Christoph Brösche und den beiden Vormündern, Dietrich Schultheiß und Johann Zwenger (Zwengen), gekauft hatte, mit Zustimmung Joachims [von Gravenegg], Abt von Fulda, und Matthias Benedikts von Rindtorff, Dechant von Fulda und Propst von Neuenberg [Gem. Fulda, Lkr. Fulda].\n\nSiegel: Dt., 2 petschierte Siegel.",
+      "english": "The convent of St Boniface reaches an agreement with Philipp Christoph von Rosenberg, provost of Blankenau [municipality of Hosenfeld, Fulda district], concerning the feudal obligation attached to a dwelling on the Unter-Angel, which Philipp Christoph von Rosenberg had purchased from Christoph Brösche and the two guardians, Dietrich Schultheiß and Johann Zwenger (Zwengen), with the consent of Joachim [von Gravenegg], Abbot of Fulda, and Matthias Benedikt von Rindtorff, Dean of Fulda and provost of Neuenberg [municipality of Fulda, Fulda district].\n\nSeals: German, two sealed seals.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Philipp Christoph von Rosenberg",
+          "personTitle": [
+            "Propst zu Blankenau"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20236%20Seite%201%20%281655%20Februar%2010%29.jpg"
@@ -16,8 +28,7 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20236%20Seite%204%20%281655%20Februar%2010%29.jpg"
         }
-      ],
-      "english": "The convent of St Boniface reaches an agreement with Philipp Christoph von Rosenbach, provost of Blankenau [municipality of Hosenfeld, Fulda district], concerning the feudal obligation attached to a dwelling on the Unter-Angel, which Philipp Christoph von Rosenbach had purchased from Christoph Brösche and the two guardians, Dietrich Schultheiß and Johann Zwenger (Zwengen), with the consent of Joachim [von Gravenegg], Abbot of Fulda, and Matthias Benedikt von Rindtorff, Dean of Fulda and provost of Neuenberg [municipality of Fulda, Fulda district].\n\nSeals: German, two sealed seals."
+      ]
     }
   ]
 }

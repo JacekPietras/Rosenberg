@@ -6,6 +6,15 @@
       "source": "HStAM, 90, b 1751",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2161101",
       "german": "Joh. Hartmann von Rosenbach unterrichtet Fürstabt Joachim über die in Nürnberg stattfindenden Verhandlungen\n\nLaufzeit: 1649",
+      "english": "Hans Hartmann von Rosenberg informs Prince-Abbot Joachim about the negotiations taking place in Nuremberg\n\nDate range: 1649",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1751/hstam_90_nr_b_1751_0001.jpg"
@@ -22,8 +31,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1751/hstam_90_nr_b_1751_0005.jpg"
         }
-      ],
-      "english": "Johann Hartmann von Rosenbach informs Prince-Abbot Joachim about the negotiations taking place in Nuremberg\n\nDate range: 1649"
+      ]
     }
   ]
 }

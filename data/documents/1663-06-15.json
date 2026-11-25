@@ -6,7 +6,18 @@
       "source": "HStAD, B 8, 7/13",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3543449",
       "german": "Mathias Genedikt v. Rindtorf, Dekan des Stifts Fulda: Schreiben an Johann Hartmann v. Rosenbach betreffend Verkauf des Stadener und Stammheimer Zehnten\n\nFormalbeschreibung: Abschr., Beglaubigungsvermerk\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Mathias Genedikt von Rindtorf, dean of Fulda collegiate church: letter to Johann Hartmann von Rosenbach concerning the sale of the Staden and Stammheim tithes\n\nFormal description: Copy, with authentication note\n\nPrevious provenance(s): von Rosenbach"
+      "english": "Mathias Genedikt von Rindtorf, dean of Fulda collegiate church: letter to Hans Hartmann von Rosenberg concerning the sale of the Staden and Stammheim tithes\n\nFormal description: Copy, with authentication note\n\nPrevious provenance(s): von Rosenbach",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,18 @@
       "source": "HStAD, E 12, 277/18",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2958595",
       "german": "Verzeichnis der Einkünfte des Domkapitulars zu Fulda und Propsts zu Blankenau, Philipp Christoph von Rosenbach, zu Echzell und Gettenau\n\nLaufzeit: 1660\n\n(Vor-) Provenienzen: [von Rosenbach]\n\nZusatzinformationen: Umfang: 6 Blatt",
-      "english": "Register of the revenues at Echzell and Gettenau of Philipp Christoph von Rosenbach, cathedral canon of Fulda and provost of Blankenau.\n\nCoverage period: 1660\n\n(Previous) provenance: [von Rosenbach]\n\nAdditional information: Extent: 6 leaves"
+      "english": "Register of the revenues at Echzell and Gettenau of Philipp Christoph von Rosenberg, cathedral canon of Fulda and provost of Blankenau.\n\nCoverage period: 1660\n\n(Previous) provenance: [von Rosenbach]\n\nAdditional information: Extent: 6 leaves",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Philipp Christoph von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

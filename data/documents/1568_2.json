@@ -5,8 +5,25 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 Bü 17",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-186860",
+      "german": "Zwei Briefe: 1. Friedrich von Rosenberg an die Grafen Kraft und Albrecht von Hohenlohe, 1568; 2. Moritz Landgraf von Hessen an Graf Wolfgang von Hohenlohe, 1601 .\n\nLaufzeit: 1568, 1601\n\nUmfang: 2 Schr.",
       "english": "Two letters: (1) Friedrich von Rosenberg to Counts Kraft and Albrecht von Hohenlohe, 1568; (2) Moritz, Landgrave of Hesse, to Count Wolfgang von Hohenlohe, 1601. Dates: 1568, 1601. Extent: 2 documents.",
-      "german": "Zwei Briefe: 1. Friedrich von Rosenberg an die Grafen Kraft und Albrecht von Hohenlohe, 1568; 2. Moritz Landgraf von Hessen an Graf Wolfgang von Hohenlohe, 1601 .\n\nLaufzeit: 1568, 1601\n\nUmfang: 2 Schr."
+      "mention": [
+        {
+          "person": "Albrecht von Hohenlohe"
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "person": "Wolfgang von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ]
     }
   ]
 }

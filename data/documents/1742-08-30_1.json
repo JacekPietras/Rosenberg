@@ -6,6 +6,18 @@
       "source": "HStAM, Urk. 80, 536",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3681999",
       "german": "Belehnung der Brüder von Rosenbach mit Schackau und Eckweisbach durch Abt Amand von Fulda\n\nFulda. - Amand [von Buseck], Abt zu Fulda, belehnt die Brüder Johann Philipp und Adalbert Friedrich von Rosenbach mit Schackau und Eckweisbach. Es folgen nähere Bestimmungen.\n\nFormalbeschreibung: Ausfertigung, Pergament, Siegel ab und verloren\n\nSiegler: Aussteller",
+      "english": "Enfeoffment of the brothers von Rosenbach with Schackau and Eckweisbach by Abbot Amand of Fulda\n\nFulda. Amand [von Buseck], Abbot zu Fulda, enfeoffs the brothers Johann Philipp and Adalbert Friedrich von Rosenberg with Schackau and Eckweisbach. Further provisions follow.\n\nFormal description: Original instrument, parchment; seal detached and lost.\n\nSealer: Issuer",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/536/hstam_urk._80_nr_536_0001.jpg"
@@ -13,8 +25,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/536/hstam_urk._80_nr_536_0002.jpg"
         }
-      ],
-      "english": "Enfeoffment of the brothers von Rosenbach with Schackau and Eckweisbach by Abbot Amand of Fulda\n\nFulda. Amand [von Buseck], Abbot zu Fulda, enfeoffs the brothers Johann Philipp and Adalbert Friedrich von Rosenbach with Schackau and Eckweisbach. Further provisions follow.\n\nFormal description: Original instrument, parchment; seal detached and lost.\n\nSealer: Issuer"
+      ]
     }
   ]
 }

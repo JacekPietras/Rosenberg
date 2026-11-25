@@ -4,9 +4,14 @@
   "entries": [
     {
       "source": "HStAM, 86, 25998",
-      "english": "Muster rolls and accounts from the French campaign of the cavalry captain Diez von Rosenbach.\n\nDuration: 1567–1568",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4923734",
-      "german": "Musterungslisten und Abrechnungen vom Frankreichfeldzug des Rittmeisters Diez von Rosenbach\n\nLaufzeit: 1567-1568"
+      "german": "Musterungslisten und Abrechnungen vom Frankreichfeldzug des Rittmeisters Diez von Rosenbach\n\nLaufzeit: 1567-1568",
+      "english": "Muster rolls and accounts from the French campaign of the cavalry captain Diez von Rosenbach.\n\nDuration: 1567–1568",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

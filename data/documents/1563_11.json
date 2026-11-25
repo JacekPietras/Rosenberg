@@ -6,6 +6,12 @@
       "source": "Hauptstaatsarchiv Stuttgart A 71 Bü 921",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1410560",
       "german": "Pfalzgraf Wolfgang übermittelt ein von Albrecht von Rosenberg an seine Statthalter und Räte erlassenes Drohschreiben.\n\nLaufzeit: September 1563\n\nUmfang: 9 Blatt",
+      "english": "Count Palatine Wolfgang forwards a threatening letter issued by Albrecht von Rosenberg to his governors and councillors.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001410560%2F01_0001410560_0001_1-1410560-1.jpg"
@@ -37,8 +43,7 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001410560%2F01_0001410560_0010_1-1410560-10.jpg"
         }
-      ],
-      "english": "Count Palatine Wolfgang forwards a threatening letter issued by Albrecht von Rosenberg to his governors and councillors."
+      ]
     }
   ]
 }

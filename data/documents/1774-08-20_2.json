@@ -6,6 +6,21 @@
       "source": "Hessisches Staatsarchiv Marburg (HStAM) Urkunde in der Datenbank des Archivs, 538",
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk80/538/charter",
       "german": "Fulda. - Heinrich [von Bibra], Abt zu Fulda, verleiht Schackau, Eckweisbach etc. an Karl Joseph von Rosenbach. Es folgen nähere Bestimmungen.\n\nSiegler: Aussteller\n\nSiegel: Siegel ab und verloren Aussteller",
+      "english": "Fulda. Heinrich [von Bibra], Abt zu Fulda, grants Schackau, Eckweisbach, etc., as a fief to Karl Joseph von Rosenbach. More detailed provisions follow.\n\nSealer: issuer.\n\nSeal: detached and lost; issuer.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "person": "Heinrich von Bibra",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20538%20Vorderseite%20%281774%20August%2020%29.jpg"
@@ -13,8 +28,7 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20538%20Rueckseite%20%281774%20August%2020%29.jpg"
         }
-      ],
-      "english": "Fulda. Heinrich [von Bibra], Abt zu Fulda, grants Schackau, Eckweisbach, etc., as a fief to Karl Joseph von Rosenbach. More detailed provisions follow.\n\nSealer: issuer.\n\nSeal: detached and lost; issuer."
+      ]
     }
   ]
 }

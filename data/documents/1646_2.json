@@ -6,6 +6,18 @@
       "source": "HStAM, 90, b 1257",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5520356",
       "german": "Landgraf Hermann von Hessen-Rotenburg übersendet Fürstabt Joachim musikalische Sachen und bittet um sichere Weiterleitung eines dem Domherrn von Rosenbach in Würzburg geschenkten Pferdes\n\nLaufzeit: 1646\n\n(Vor-) Provenienzen: Fürstabt Hermann Georg",
+      "english": "Landgrave Hermann of Hesse-Rotenburg sends musical items to Prince-Abbot Joachim and asks him to arrange the safe forwarding of a horse given to the Würzburg canon von Rosenbach\n\nDate range: 1646\n\n(Former) provenances: Prince-Abbot Hermann Georg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1257/hstam_90_nr_b_1257_0001.jpg"
@@ -37,8 +49,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1257/hstam_90_nr_b_1257_0010.jpg"
         }
-      ],
-      "english": "Landgrave Hermann of Hesse-Rotenburg sends musical items to Prince-Abbot Joachim and asks him to arrange the safe forwarding of a horse given to the Würzburg canon von Rosenbach\n\nDate range: 1646\n\n(Former) provenances: Prince-Abbot Hermann Georg"
+      ]
     }
   ]
 }

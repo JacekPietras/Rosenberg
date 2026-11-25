@@ -6,7 +6,24 @@
       "source": "HStAD, B 8, 9/579",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5535524",
       "german": "Erzbischof Anselm Franz von Mainz: Verleihung eines Burglehens von 16 fl. und 8 Turnos jährlicher Gülte aus der Kellerei Orb an Gebr. Franz Christoph und Johann Konrad v. Rosenbach und Verwandte (Namen wie in B 8 Nr. 9/570\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. in Holzkapsel gut erh.\n\nSiegler: Aussteller - Kanzleivermerk: Konstantin Bertram, Kanzler, und Dr. Albert Steinbach, Lehenspropst\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Archbishop Anselm Franz of Mainz: grants an annual rent of 16 florins and 8 turnos from the Orb treasury as a castle fief to the brothers Franz Christoph and Johann Konrad von Rosenbach and relatives (names as in B 8 no. 9/570).\n\nFormal description: Original, parchment, attached seal in a wooden capsule, in good condition\n\nSeal bearer: Issuer. Note by the chancery: Konstantin Bertram, Chancellor, and Dr. Albert Steinbach, provost of fiefs\n\n(Former) provenance: von Rosenbach"
+      "english": "Archbishop Anselm Franz of Mainz: grants an annual rent of 16 florins and 8 turnos from the Orb treasury as a castle fief to the brothers Franz Christoph and Hans Konrad von Rosenberg and relatives (names as in B 8 no. 9/570).\n\nFormal description: Original, parchment, attached seal in a wooden capsule, in good condition\n\nSeal bearer: Issuer. Note by the chancery: Konstantin Bertram, Chancellor, and Dr. Albert Steinbach, provost of fiefs\n\n(Former) provenance: von Rosenbach",
+      "mention": [
+        {
+          "person": "Erzbischof Anselm Franz",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Franz Christoph von Rosenberg"
+        },
+        {
+          "person": "Hans Konrad von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -4,9 +4,14 @@
   "entries": [
     {
       "source": "HStAM, 86, 26905",
-      "english": "Johann Löw zu Steinfurt and his wife Anna, née von Bellersheim, sell Diez von Rosenbach and his wife Walpurga, née von Karsbach, an annuity of 80 gulden per year for 800 gulden.",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4400947",
-      "german": "Johann Löw zu Steinfurt und seine Frau Anna, geb. von Bellersheim verkaufen Diez von Rosenbach und dessen Frau Walpurga, geb. von Karsbach für 800 Gulden eine Rente von jährlich 80 Gulden\n\nLaufzeit: 1563"
+      "german": "Johann Löw zu Steinfurt und seine Frau Anna, geb. von Bellersheim verkaufen Diez von Rosenbach und dessen Frau Walpurga, geb. von Karsbach für 800 Gulden eine Rente von jährlich 80 Gulden\n\nLaufzeit: 1563",
+      "english": "Johann Löw zu Steinfurt and his wife Anna, née von Bellersheim, sell Diez von Rosenbach and his wife Walpurga, née von Karsbach, an annuity of 80 gulden per year for 800 gulden.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

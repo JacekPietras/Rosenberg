@@ -6,7 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg B 375 S Bü 43",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1933324",
       "german": "Bischof Johann Philipp von Würzburg überträgt Herrn von Schellenbergs ein beim Stift Comburg im bischöflichen Monat heimgefallenes Kanonikat an Johann Konrad von Rosenbach (Orig. Papier)\n\nLaufzeit: 5. August 1644\n\nUmfang: 1 Schr.",
-      "english": "Bishop Johann Philipp of Würzburg grants Johann Konrad von Rosenbach a canonry at the Comburg chapter that had fallen vacant to the bishop during his month of collation, at the presentation of the lords of Schellenberg (original, paper).\n\nDate range: 5 August 1644\n\nExtent: 1 document"
+      "english": "Bishop Johann Philipp of Würzburg grants Hans Konrad von Rosenberg a canonry at the Comburg chapter that had fallen vacant to the bishop during his month of collation, at the presentation of the lords of Schellenberg (original, paper).\n\nDate range: 5 August 1644\n\nExtent: 1 document",
+      "mention": [
+        {
+          "person": "Bischof Hans Philipp",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "comburg-stiftskirche"
+        },
+        {
+          "person": "Hans Konrad von Rosenberg"
+        }
+      ]
     }
   ]
 }

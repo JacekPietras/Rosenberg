@@ -9,13 +9,13 @@
       "english": "Sale of a meadow at Rot to Peter von Brogenhofen called Vetzer, Teutonic Knight at Ulm, by Martin Schmidt zu Markelsheim and his wife Margareth, 6 September 1510 [abstract]; sale of this meadow at Rot to Hans Nothaft, Teutonic Knight at Mergentheim, by Peter von Brogenhofen called Vetzer, 8 March 1513 [abstract]; sale of part of the wine tithe at Oberbalbach and Deubach to Wolfgang von Eisenhofen, Teutonic Knight at Freiburg, and Burkhard von Seckendorf[-Aberdar], Teutonic Knight at Virnsberg, by Friedrich von Rosenberg zu Boxberg, 24 February 1511 [abstract].\n\nPeriod covered: 1207–1818.",
       "mention": [
         {
-          "place": "boxberg"
-        },
-        {
           "person": "Burkhard von Seckendorf"
         },
         {
-          "person": "Friedrich von Rosenberg"
+          "person": "Friedrich von Rosenberg",
+          "personTitle": [
+            "zu Boxberg"
+          ]
         },
         {
           "place": "virnsberg"

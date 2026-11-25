@@ -6,6 +6,15 @@
       "source": "HStAM, 90, b 1767",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=81904",
       "german": "Mitteilung des Würzburger Domherrn Joh. Hartmann v. Rosenbach über den Stand der Friedensverhandlungen an den Oberschultheißen Ziegler zu Hammelburg\n\nLaufzeit: 1646",
+      "english": "Message from Würzburg canon Hans Hartmann von Rosenberg to the chief magistrate Ziegler at Hammelburg concerning the progress of the peace negotiations\n\nDate range: 1646",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1767/hstam_90_nr_b_1767_0001.jpg"
@@ -19,8 +28,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1767/hstam_90_nr_b_1767_0004.jpg"
         }
-      ],
-      "english": "Message from Würzburg canon Johann Hartmann von Rosenbach to the chief magistrate Ziegler at Hammelburg concerning the progress of the peace negotiations\n\nDate range: 1646"
+      ]
     }
   ]
 }

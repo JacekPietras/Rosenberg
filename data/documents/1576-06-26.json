@@ -6,7 +6,27 @@
       "source": "StAN, Ritterorden, Urkunden 10160",
       "url": "https://www.gda.bayern.de/gvl/document/1e13a2de-e467-4b39-a6e9-70b7fcf32971",
       "german": "Sigmund Truchseß von Baldersheim zu Aub verschreibt der Witwe seines verstorbenen Bruders Hans Truchseß von Baldersheim Ursula, geb. Geyer, das ihr im Heiratsvertrag zugesicherte Witwengut. - S = A; SBZ1: Konrad von Rosenberg zu Waldmannshofen; SBZ2:Georg Sigmund von Adelsheim zu Wachbach\n\nBesiegelung/Beglaubigung: 3 Oblatensiegel",
-      "english": "Sigmund Truchseß von Baldersheim zu Aub grants Ursula, née Geyer, widow of his deceased brother Hans Truchseß von Baldersheim, the widow’s property promised in the marriage contract. – S = A; first subscribing witness: Konrad von Rosenberg zu Waldmannshofen; second subscribing witness: Georg Sigmund von Adelsheim zu Wachbach\n\nSealing/authentication: 3 wafer seals"
+      "english": "Sigmund Truchseß von Baldersheim zu Aub grants Ursula, née Geyer, widow of his deceased brother Hans Truchseß von Baldersheim, the widow’s property promised in the marriage contract. – S = A; first subscribing witness: Konrad von Rosenberg zu Waldmannshofen; second subscribing witness: Georg Siegmund von Adelsheim zu Wachbach\n\nSealing/authentication: 3 wafer seals",
+      "mention": [
+        {
+          "person": "Georg Siegmund von Adelsheim"
+        },
+        {
+          "person": "Hans Truchsess von Baldersheim"
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ]
+        },
+        {
+          "person": "Siegmund Truchsess von Baldersheim",
+          "personTitle": [
+            "zu Aub"
+          ]
+        }
+      ]
     }
   ]
 }

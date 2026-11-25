@@ -6,6 +6,18 @@
       "source": "Bistumsarchiv Münster, A 08 / 01, Nr. IV A 061",
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x05988055467605520230908104801225",
       "german": "Fürstbischof Johann Hartmann von Rosenbach zu Würzburg an Fürstbischof Christoph Bernhard von Galen wegen Intervenierung beim Heiligen Stuhl in Sachen Anmaßung des Kardinals von Baden-Durlach zur beschränkten Protektion aller Benediktinerklöster im Reich Würzburg, 1674 Mai 26 und Juni 23\n\nenthält:- Fürstbischof Peter Philipp von Dernbach zu Bamberg an Fürstbischof Christoph Bernhard von Galen wegen Intervenierung beim Heiligen Stuhl in Sachen Anmaßung des Kardinal von Baden-Durlach zur unbeschränkten Protektion aller Benediktinerklöster im Reich Bamberg, 1675 Januar 13",
+      "english": "Prince-Bishop Hans Hartmann von Rosenberg of Würzburg to Prince-Bishop Christoph Bernhard von Galen, concerning intervention with the Holy See in the matter of the Cardinal of Baden-Durlach’s claim to limited protection of all Benedictine monasteries in the Empire; Würzburg, 26 May and 23 June 1674.\n\nContains: Prince-Bishop Peter Philipp von Dernbach of Bamberg to Prince-Bishop Christoph Bernhard von Galen, concerning intervention with the Holy See in the matter of the Cardinal of Baden-Durlach’s claim to unlimited protection of all Benedictine monasteries in the Empire; Bamberg, 13 January 1675.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Fürstbischof"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "img": [
         {
           "src": "https://vs13436.internet1.de/Domarchiv/DA%20AA_IV%20A061/DA%20AA_IV%20A061%20000.jpg/full/max/0/default.jpg"
@@ -34,8 +46,7 @@
         {
           "src": "https://vs13436.internet1.de/Domarchiv/DA%20AA_IV%20A061/DA%20AA_IV%20A061%20008.jpg/full/max/0/default.jpg"
         }
-      ],
-      "english": "Prince-Bishop Johann Hartmann von Rosenbach of Würzburg to Prince-Bishop Christoph Bernhard von Galen, concerning intervention with the Holy See in the matter of the Cardinal of Baden-Durlach’s claim to limited protection of all Benedictine monasteries in the Empire; Würzburg, 26 May and 23 June 1674.\n\nContains: Prince-Bishop Peter Philipp von Dernbach of Bamberg to Prince-Bishop Christoph Bernhard von Galen, concerning intervention with the Holy See in the matter of the Cardinal of Baden-Durlach’s claim to unlimited protection of all Benedictine monasteries in the Empire; Bamberg, 13 January 1675."
+      ]
     }
   ]
 }

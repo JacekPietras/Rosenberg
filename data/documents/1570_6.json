@@ -5,8 +5,16 @@
     {
       "source": "Staatsarchiv Wertheim R-Lit. St Nr. 361",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-47540",
+      "german": "Kommission in Sachen Sachsen und Würzburg contra Albrecht von Rosenberg, peinliche Anklage betr.\n\nLaufzeit: 1570\n\nUmfang: 1 Bü.",
       "english": "Commission in the case of Saxony and Würzburg against Albrecht von Rosenberg, concerning a criminal accusation. Dates: 1570. Extent: 1 bundle.",
-      "german": "Kommission in Sachen Sachsen und Würzburg contra Albrecht von Rosenberg, peinliche Anklage betr.\n\nLaufzeit: 1570\n\nUmfang: 1 Bü."
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

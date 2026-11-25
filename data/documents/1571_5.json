@@ -5,8 +5,16 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 97 Bü 44",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-131152",
+      "german": "Die Requisition des Herren von Rosenberg zu Haltenbergstetten einige Schrozberger Amtsuntergebene, so denselben leibeigen, zu Entrichtung ihrer leibeigenschaftlichen Abgaben anzufallen.\n\nLaufzeit: 1571\n\nUmfang: 1 Fasz.",
       "english": "The requisition by the von Rosenberg lord at Haltenbergstetten of certain subjects of the Schrozberg district, who were his serfs, to demand payment of their serf dues. Dates: 1571. Extent: 1 file.",
-      "german": "Die Requisition des Herren von Rosenberg zu Haltenbergstetten einige Schrozberger Amtsuntergebene, so denselben leibeigen, zu Entrichtung ihrer leibeigenschaftlichen Abgaben anzufallen.\n\nLaufzeit: 1571\n\nUmfang: 1 Fasz."
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

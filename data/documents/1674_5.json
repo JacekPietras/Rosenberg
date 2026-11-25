@@ -6,7 +6,15 @@
       "source": "Staatsarchiv Ludwigsburg B 375 L Bü 380",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1874610",
       "german": "Verleihung eines Kanonikats zu Comburg an Ignaz Theobald Hartmann von Reinach durch Franz Christoph von Rosenbach, Domdekan zu Comburg (deutsch und lateinisch)\n\nLaufzeit: 1674-1687\n\nUmfang: 1 Bü",
-      "english": "Grant of a canonry at Comburg to Ignaz Theobald Hartmann von Reinach by Franz Christoph von Rosenbach, cathedral dean at Comburg (in German and Latin).\n\nDate range: 1674–1687.\n\nExtent: 1 booklet."
+      "english": "Grant of a canonry at Comburg to Ignaz Theobald Hartmann von Reinach by Franz Christoph von Rosenberg, cathedral dean at Comburg (in German and Latin).\n\nDate range: 1674–1687.\n\nExtent: 1 booklet.",
+      "mention": [
+        {
+          "place": "comburg-stiftskirche"
+        },
+        {
+          "person": "Franz Christoph von Rosenberg"
+        }
+      ]
     }
   ]
 }

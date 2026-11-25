@@ -9,10 +9,16 @@
       "english": "Hugo von Werdenberg, Graf; Heinrich von Werdenberg, Graf; and Albrecht von Werdenberg, Graf sell property at Boshasel to the Cistercian monastery of Salem. Among the witnesses: ... Rudolf von Rorschach, Ritter; ... Egilolf von Rosenberg, Ritter; ... ...",
       "mention": [
         {
-          "place": "rosenberg-town"
+          "person": "Egilolf von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         },
         {
-          "person": "Rudolf von Rorschach"
+          "person": "Rudolf von Rorschach",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

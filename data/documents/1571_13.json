@@ -5,8 +5,22 @@
     {
       "source": "StAWü, Würzburger Archivalien 2793",
       "url": "https://www.gda.bayern.de/gvl/document/122f4fcd-891f-45dd-8809-4c1721a530a7",
-      "english": "Disputes over tithes between the Würzburg cathedral territory (Röttingen district and the bailiff of Laudenbach) and Zaisolf von Rosenberg zu Haltenbergstetten in the Laudenbach district.",
-      "german": "Zehntstreitigkeiten zwischen dem Hochstift Würzburg (Amt Röttingen und Vogt zu Laudenbach) und Zaisolf von Rosenberg zu Haltenbergstetten auf der Markung Laudenbach"
+      "german": "Zehntstreitigkeiten zwischen dem Hochstift Würzburg (Amt Röttingen und Vogt zu Laudenbach) und Zaisolf von Rosenberg zu Haltenbergstetten auf der Markung Laudenbach",
+      "english": "Disputes over tithes between the Würzburg cathedral territory (Röttingen district and the bailiff of Laudenbach) and Zaisolph von Rosenberg zu Haltenbergstetten in the Laudenbach district.",
+      "mention": [
+        {
+          "place": "roettingen"
+        },
+        {
+          "place": "wurzburg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
+        }
+      ]
     }
   ]
 }

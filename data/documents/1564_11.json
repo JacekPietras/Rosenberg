@@ -4,9 +4,17 @@
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 97",
-      "english": "Correspondence of the lords von Rosenberg with their advocate Eobaldus Sylvius in Speyer.\n\nDuration: 1564–1575\n\nExtent: 1 volume",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97981",
-      "german": "Korrespondenz der Herren von Rosenberg mit ihrem Advokaten Eobaldus Sylvius zu Speyer.\n\nLaufzeit: 1564-1575\n\nUmfang: 1 Bd."
+      "german": "Korrespondenz der Herren von Rosenberg mit ihrem Advokaten Eobaldus Sylvius zu Speyer.\n\nLaufzeit: 1564-1575\n\nUmfang: 1 Bd.",
+      "english": "Correspondence of the lords von Rosenberg with their advocate Eobaldus Sylvius in Speyer.\n\nDuration: 1564–1575\n\nExtent: 1 volume",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "speyer"
+        }
+      ]
     }
   ]
 }

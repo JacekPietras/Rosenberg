@@ -9,10 +9,10 @@
       "english": "Abbot Eberhard and the convent of Reichenau sell rents and tithes to redeem a pledged life annuity, which the valiant knight Rudolf von Rosenberg, the late Lord Rudolf von Rosenberg’s legitimate son, has against us and our monastery … [text incomplete].",
       "mention": [
         {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Rudolf von Rosenberg"
+          "person": "Rudolf von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
         }
       ]
     }

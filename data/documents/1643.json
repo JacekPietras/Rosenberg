@@ -6,6 +6,12 @@
       "source": "HStAD, D 4, 57/4",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1095124",
       "german": "Tod des Landgrafen Philipp v. Hessen-Butzbach\n\nEnthält: Korrespondenz Landgraf Georgs II. v. Hessen-Darmstadt über die Regelung des Nachlasses des Landgrafen Philipp\nPrüfung eines vorgebrachten Anspruchs des Amtmanns zu Königstein Dietrich v. Rosenbach auf Butter aus dem Amt Berstadt\n\nLaufzeit: 1643",
+      "english": "Death of Landgrave Philipp of Hesse-Butzbach\n\nContains: correspondence of Landgrave Georg II of Hesse-Darmstadt concerning the settlement of Landgrave Philipp's estate; examination of a claim brought by Dietrich von Rosenberg, bailiff at Königstein, for butter from the district of Berstadt\n\nDate range: 1643",
+      "mention": [
+        {
+          "person": "Dietrich von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/d_4/57--4/hstad_d_4_nr_57--4_000.jpg"
@@ -37,8 +43,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/d_4/57--4/hstad_d_4_nr_57--4_009.jpg"
         }
-      ],
-      "english": "Death of Landgrave Philipp of Hesse-Butzbach\n\nContains: correspondence of Landgrave Georg II of Hesse-Darmstadt concerning the settlement of Landgrave Philipp's estate; examination of a claim brought by Dietrich von Rosenbach, bailiff at Königstein, for butter from the district of Berstadt\n\nDate range: 1643"
+      ]
     }
   ]
 }

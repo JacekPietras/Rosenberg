@@ -4,9 +4,23 @@
   "entries": [
     {
       "source": "Staatsarchiv Wertheim R-H 11 Nr. 66",
-      "english": "Letters of feud.\n\nDuration: 1564, 1588, 1592, 1603\n\nContains, among other things, letters of feud issued to the lords von Rosenberg by subjects from Uiffingen, Oberschüpf, and Bofsheim, chiefly for sexual offenses.\n\nExtent: 8 documents",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-58139",
-      "german": "Urfehdebriefe\n\nLaufzeit: 1564, 1588, 1592, 1603\n\nEnthält: Enthält u. a.: Urfehden für die Herren von Rosenberg von Untertanen aus Uiffingen, Oberschüpf, Bofsheim vor allem wegen Sittlichkeitsvergehen\n\nUmfang: 8 Schr."
+      "german": "Urfehdebriefe\n\nLaufzeit: 1564, 1588, 1592, 1603\n\nEnthält: Enthält u. a.: Urfehden für die Herren von Rosenberg von Untertanen aus Uiffingen, Oberschüpf, Bofsheim vor allem wegen Sittlichkeitsvergehen\n\nUmfang: 8 Schr.",
+      "english": "Letters of feud.\n\nDuration: 1564, 1588, 1592, 1603\n\nContains, among other things, letters of feud issued to the lords von Rosenberg by subjects from Uiffingen, Oberschüpf, and Bofsheim, chiefly for sexual offenses.\n\nExtent: 8 documents",
+      "mention": [
+        {
+          "place": "boffsheim"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "uiffingen"
+        }
+      ]
     }
   ]
 }

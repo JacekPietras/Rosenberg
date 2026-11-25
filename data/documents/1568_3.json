@@ -5,8 +5,16 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 99",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97983",
+      "german": "Korrespondenz der Herren von Rosenberg mit Advokaten.\n\nLaufzeit: 1568-1608\n\nEnthält: Enthält: 1. Dr. Johann Gödelmann zu Speyer, 1582-1608;\n2. Dr. Benedikt Dobner zu Kitzingen, 1568-1572;\n\nUmfang: 1 Bd.",
       "english": "Correspondence of the von Rosenberg lords with lawyers. Dates: 1568–1608. Includes: (1) Dr. Johann Gödelmann zu Speyer, 1582–1608; (2) Dr. Benedikt Dobner zu Kitzingen, 1568–1572. Extent: 1 volume.",
-      "german": "Korrespondenz der Herren von Rosenberg mit Advokaten.\n\nLaufzeit: 1568-1608\n\nEnthält: Enthält: 1. Dr. Johann Gödelmann zu Speyer, 1582-1608;\n2. Dr. Benedikt Dobner zu Kitzingen, 1568-1572;\n\nUmfang: 1 Bd."
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "speyer"
+        }
+      ]
     }
   ]
 }

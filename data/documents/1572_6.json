@@ -6,7 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 Bü 1147",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-209216",
       "german": "Gesuch des Conrad von Rosenberg bei Graf Wolfgang von Hohenlohe, die Lehen in Unterbalbach an Stephan Zobel verkaufen zu dürfen.\n\nLaufzeit: 1572-1600\n\nUmfang: 5 St.",
-      "english": "Conrad von Rosenberg asks Count Wolfgang of Hohenlohe for permission to sell the fiefs at Unterbalbach to Stephan Zobel. Term: 1572–1600. Extent: 5 items."
+      "english": "Konrad von Rosenberg asks Count Wolfgang of Hohenlohe for permission to sell the fiefs at Unterbalbach to Stephan Zobel. Term: 1572–1600. Extent: 5 items.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Stephan Zobel"
+        },
+        {
+          "place": "unterbalbach"
+        },
+        {
+          "person": "Wolfgang von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ]
     }
   ]
 }

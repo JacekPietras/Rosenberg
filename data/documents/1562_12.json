@@ -6,7 +6,18 @@
       "source": "StAWü, Gräflich Ortenburg´sches Schloßarchiv Birkenfeld Akten 3250",
       "url": "https://www.gda.bayern.de/gvl/document/edeebb75-aacb-406b-8339-b70f2fb785ce",
       "german": "Acta in Sachen Zaisolffen von Rosenberg contra Veit von Lichtenstein zu Ippesheim 1) wegen 4000 fl Rheinisch [...], 2) wegen strittiger Gränz und Marckung zwischen Ippesheim und Gnötzheim. [...] De Anno 1562 usque ad Annum 1581",
-      "english": "Proceedings in the case of Zaisolf von Rosenberg against Veit von Lichtenstein zu Ippesheim concerning 4,000 Rhenish florins and the disputed boundary between Ippesheim and Gnötzheim, 1562–1581."
+      "english": "Proceedings in the case of Zaisolph von Rosenberg against Veit von Lichtenstein zu Ippesheim concerning 4,000 Rhenish florins and the disputed boundary between Ippesheim and Gnötzheim, 1562–1581.",
+      "mention": [
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "person": "Veit von Lichtenstein"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,30 @@
       "source": "HStAM, Urk. 146, 76",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2984695",
       "german": "Lehnbrief des Abt Joachim von Fulda für die von Rosenbach\n\nAbt Joachim von Fulda belehnt Johann Hartmann, Johann Conrad, Franz Christoph und Franz Rudolph von Rosenbach mit (von Philipp von Karsbach ererbten) Häusern, Äckern und Wiesen zu Berstadt sowie mit einem Anteil an den Grundzinsen zu Langsdorf (Langendorff).\n\nFormalbeschreibung: Pgt., Siegel ab",
-      "english": "Feudal letter of Abbot Joachim of Fulda to the von Rosenbach family.\n\nAbbot Joachim of Fulda enfeoffs Johann Hartmann, Johann Conrad, Franz Christoph, and Franz Rudolph von Rosenbach with houses, fields, and meadows at Berstadt inherited from Philipp von Karsbach, as well as a share of the ground rents at Langsdorf (Langendorff).\n\nFormal description: Parchment, seal missing."
+      "english": "Feudal letter of Abbot Joachim of Fulda to the von Rosenbach family.\n\nAbbot Joachim of Fulda enfeoffs Johann Hartmann, Johann Conrad, Franz Christoph, and Franz Rudolf von Rosenberg with houses, fields, and meadows at Berstadt inherited from Philipp von Karsbach, as well as a share of the ground rents at Langsdorf (Langendorff).\n\nFormal description: Parchment, seal missing.",
+      "mention": [
+        {
+          "person": "Franz Christoph von Rosenberg"
+        },
+        {
+          "person": "Franz Rudolf von Rosenberg"
+        },
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "person": "Hans Konrad von Rosenberg"
+        },
+        {
+          "person": "Joachim",
+          "personTitle": [
+            "Abt zu Fulda"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

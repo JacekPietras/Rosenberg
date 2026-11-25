@@ -4,9 +4,29 @@
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg B 503 II Bü 402",
-      "english": "Correspondence between Abbot Sebastian von Schöntal and Albrecht von Rosenberg zu Schüpf concerning the exchange of a Schöntal meadow between Unterschüpf and Sachsenflur for a meadow between Königshofen and Sachsenflur.\n\nDuration: 1565\n\nExtent: 2 documents",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-26065",
-      "german": "Schriftwechsel zwischen Abt Sebastian von Schöntal und Albrecht von Rosenberg zu Schüpf über den Tausch einer schöntalischen Wiese zwischen Unterschüpf und Sachsenflur gegen eine Wiese zwischen Königshofen und Sachsenflur\n\nLaufzeit: 1565\n\nUmfang: 2 Schr."
+      "german": "Schriftwechsel zwischen Abt Sebastian von Schöntal und Albrecht von Rosenberg zu Schüpf über den Tausch einer schöntalischen Wiese zwischen Unterschüpf und Sachsenflur gegen eine Wiese zwischen Königshofen und Sachsenflur\n\nLaufzeit: 1565\n\nUmfang: 2 Schr.",
+      "english": "Correspondence between Abbot Sebastian von Schöntal and Albrecht von Rosenberg zu Schüpf concerning the exchange of a Schöntal meadow between Unterschüpf and Sachsenflur for a meadow between Königshofen and Sachsenflur.\n\nDuration: 1565\n\nExtent: 2 documents",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "zu Schüpf"
+          ]
+        },
+        {
+          "place": "schoental-monastery"
+        },
+        {
+          "person": "Sebastian von Schöntal",
+          "personTitle": [
+            "Abt"
+          ]
+        },
+        {
+          "place": "unterschuepf"
+        }
+      ]
     }
   ]
 }

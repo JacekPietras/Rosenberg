@@ -6,6 +6,15 @@
       "source": "HStAM, Urk. HLB Fulda, 184",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6159256",
       "german": "Übermittlung von Urkunden an die Propstei Thulba durch Placidus von Droste, Abt von Fulda\n\nPlacidus [von Droste], Abt von Fulda, schreibt an Benedikt von Rosenbach, Propst von Thulba, dass er Gregor von Rauschenberg mit der Überbringung der Briefe an die Propstei beauftragt hat. Damit sei der Hochachtung seitens des Abtes gegenüber der Propstei genüge getan.\n\nFormalbeschreibung: Ausfertigung, Papier, Latein, aufgedrücktes Briefsiegel\n\nZusatzinformationen: Die Urkunde liegt in der Hochschul- und Landesbibliothek Fulda.",
+      "english": "Transmission of documents to the provostry of Thulba by Placidus von Droste, Abt von Fulda\n\nPlacidus [von Droste], Abt von Fulda, writes to Benedikt von Rosenbach, Propst von Thulba, that he has commissioned Gregor von Rauschenberg to deliver the letters to the provostry. In this way, the abbot's respect for the provostry will have been adequately demonstrated.\n\nFormal description: Original, paper, Latin, impressed letter seal\n\nAdditional information: The charter is held at the Fulda University and State Library.",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._hlb_fulda/184/hstam_urk._hlb_fulda_nr_184_0001.jpg"
@@ -19,8 +28,7 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._hlb_fulda/184/hstam_urk._hlb_fulda_nr_184_0004.jpg"
         }
-      ],
-      "english": "Transmission of documents to the provostry of Thulba by Placidus von Droste, Abt von Fulda\n\nPlacidus [von Droste], Abt von Fulda, writes to Benedikt von Rosenbach, Propst von Thulba, that he has commissioned Gregor von Rauschenberg to deliver the letters to the provostry. In this way, the abbot's respect for the provostry will have been adequately demonstrated.\n\nFormal description: Original, paper, Latin, impressed letter seal\n\nAdditional information: The charter is held at the Fulda University and State Library."
+      ]
     }
   ]
 }
