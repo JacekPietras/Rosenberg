@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgrafschaft Leuchtenberg, Kanzlei Amtsbücher und Akten 1326",
-      "url": "https://www.gda.bayern.de/gvl/document/73590bc7-6cd0-4d1b-b7e0-1645051a3e0d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/73590bc7-6cd0-4d1b-b7e0-1645051a3e0d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++97a0629c-c0ad-461b-9b49-fb3991f47d29&parent_id="
+      ],
       "german": "Streit mit den Grafen Philipp dem Älteren und dem Jüngeren von Rieneck, dann mit Georg und Hans von Rosenberg wegen Belehnung mit einem Hof zu Impfingen (Stadt Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) und des Zehnts zu \"Marpach\"",
       "english": "Dispute with Counts Philipp the Elder and the Younger of Rieneck, then with Georg von Rosenberg and Hans von Rosenberg regarding enfeoffment of a farm at Impfingen (town of Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) and the tithe at \"Marpach\"",
       "mention": [

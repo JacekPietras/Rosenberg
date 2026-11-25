@@ -1,6 +1,9 @@
 {
   "date": "1207",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the other inventory regesta remain here.",
   "entries": [
     {

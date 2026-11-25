@@ -1,6 +1,9 @@
 {
   "date": "1207",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "research": "The 1478 Feb. 22 Bobstadt tithe-sale regest is consolidated as a separate entry in data/documents/1454_6.json; the other inventory regesta remain here.",
   "entries": [
     {
