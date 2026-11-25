@@ -93,6 +93,9 @@ class Checker:
                                          if isinstance(query, str) and isinstance(answer, bool)})
 
     def run(self, query, exists=False):
+        # The Landesarchiv BW client skips dotted imports. Avoid the delay and subprocess.
+        if not exists and self.archive == 'landesarchiv_bw' and '.' in query:
+            return
         # Some archive clients keep rate-limit timestamps only in their process.
         if self.last_finished is not None and self.archive not in PERSISTENT_DELAY_ARCHIVES:
             time.sleep(max(0, self.delay - (time.monotonic() - self.last_finished)))
@@ -129,6 +132,9 @@ class Checker:
         return found
 
     def exists(self, query):
+        if self.archive == 'landesarchiv_bw':
+            # Match the query key used by the archive client's --exists mode.
+            query = query.replace('.', '')
         if query not in self.answers:
             self.answers[query] = self.run(query, exists=True)
         return self.answers[query]

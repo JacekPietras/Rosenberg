@@ -173,6 +173,35 @@ class LandesarchivSearchTests(unittest.TestCase):
             ]}))
             self.assertFalse(search.has_result_url(path, '22'))
 
+    def test_skip_existing_retries_incomplete_document_and_reports_persistent_error(self):
+        row = {'id': '11', 'signature': 'Archive 11'}
+        for recovers in (True, False):
+            with self.subTest(recovers=recovers), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                documents = root / 'data/documents'
+                documents.mkdir(parents=True)
+                document = documents / '1400.json'
+                document.touch()
+                results = ResultsStore('landesarchiv_bw', root / 'results.json')
+                stderr = io.StringIO()
+
+                def finish_write(_delay):
+                    if recovers:
+                        document.write_text(json.dumps({'entries': [{'source': 'Archive 11'}]}))
+
+                with patch.object(search, 'ROOT', root), \
+                        patch.object(search, 'ResultsStore', return_value=results), \
+                        patch.object(search.Client, 'search', return_value=iter([(row, 1)])), \
+                        patch.object(search.Client, 'resolve') as resolve, \
+                        patch.object(search.time, 'sleep', side_effect=finish_write) as sleep, \
+                        patch.object(sys, 'argv', ['search', 'Example', '--skip-existing']), \
+                        patch.object(sys, 'stdout', io.StringIO()), patch.object(sys, 'stderr', stderr):
+                    self.assertEqual(search.main(), 0 if recovers else 1)
+                sleep.assert_called_once()
+                resolve.assert_not_called()
+                if not recovers:
+                    self.assertIn(f'Invalid document JSON in {document}', stderr.getvalue())
+
     def test_catalogue_line_breaks_are_preserved_without_splitting_inline_text(self):
         details = downloader.CatalogDetails()
         details.feed('<table><tr><td>Titel</td><td>Datum<br>Urfehde.<br/>Sr.: Jörg\n von '

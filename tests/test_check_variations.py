@@ -13,6 +13,25 @@ spec.loader.exec_module(module)
 
 
 class VariationChecks(unittest.TestCase):
+    def test_landesarchiv_bw_dotted_checks_reuse_saved_positive_and_negative(self):
+        checker = module.Checker('landesarchiv_bw')
+        checker.answers = {'von Example': True, 'v Example': False}
+        checker.last_finished = 0
+        with patch.object(module.time, 'sleep') as sleep, patch.object(module.subprocess, 'run') as run:
+            self.assertTrue(checker.exists('von. Example'))
+            self.assertFalse(checker.exists('v. Example'))
+            checker.run('von. Example')
+        sleep.assert_not_called()
+        run.assert_not_called()
+
+    def test_landesarchiv_bw_uncached_dotted_query_checks_undotted_query_once(self):
+        checker = module.Checker('landesarchiv_bw')
+        with patch.object(module.subprocess, 'run', return_value=subprocess.CompletedProcess([], 0, 'true')) as run:
+            self.assertTrue(checker.exists('v. Example'))
+            self.assertTrue(checker.exists('v Example'))
+        run.assert_called_once()
+        self.assertEqual(run.call_args.args[0][2:], ['v Example', '--exists'])
+
     def test_regesta_search_quotes_particle_and_place(self):
         checked = []
         def exists(_self, query):

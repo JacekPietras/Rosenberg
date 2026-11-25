@@ -4,6 +4,7 @@ from __future__ import annotations
 import calendar
 import json
 import re
+import time
 from datetime import date
 from pathlib import Path
 from urllib.parse import parse_qsl, urlsplit
@@ -11,6 +12,18 @@ from urllib.parse import parse_qsl, urlsplit
 
 def values(value):
     return value if isinstance(value, list) else [value] if value else []
+
+
+def read_document(path: Path):
+    """Read document JSON, allowing a concurrent in-place write to finish."""
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        time.sleep(0.05)
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+        raise ValueError(f'Invalid document JSON in {path}: {exc}') from exc
 
 
 def normalized_url(url):
@@ -180,7 +193,7 @@ def save_record(record, document_dir: Path):
         if by_source and not (incoming_sources or incoming_urls) or not by_source and not incoming_texts:
             continue
         for path in candidates:
-            document = json.loads(path.read_text(encoding='utf-8'))
+            document = read_document(path)
             for entry in document.get('entries', []):
                 if not isinstance(entry, dict):
                     continue
@@ -210,7 +223,7 @@ def save_record(record, document_dir: Path):
 def has_url(document_dir: Path, url: str) -> bool:
     wanted = normalized_url(url)
     for path in document_dir.glob('*.json'):
-        document = json.loads(path.read_text(encoding='utf-8'))
+        document = read_document(path)
         for entry in document.get('entries', []):
             if isinstance(entry, dict) and wanted in {
                     normalized_url(existing) for existing in values(entry.get('url'))}:
@@ -232,7 +245,7 @@ def has_source(document_dir: Path, source: str) -> bool:
     if not wanted:
         return False
     for path in document_dir.glob('*.json'):
-        document = json.loads(path.read_text(encoding='utf-8'))
+        document = read_document(path)
         for entry in document.get('entries', []):
             if isinstance(entry, dict) and any(
                     (wanted == citation(existing) or (len(wanted) >= 12 and wanted in citation(existing)))
