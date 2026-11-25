@@ -6,7 +6,12 @@
       "source": "Hauptstaatsarchiv Stuttgart A 157 Lehnbuch F fol. 93b",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2857381",
       "german": "Graf Ulrich V. von Württemberg-Stuttgart bewilligt Wolfgang Zülnhart, dass er seine Frau Mechthild von Rosenberg mit 2000 fl. Morgengabe u. a. auf sein Lehen in Geradstetten (Gerhardstetten) verweisen möge.\n\nLaufzeit: 1473 Dezember 14 (Zinstag nach Sant Lucien tag)",
-      "english": "Count Ulrich V of Württemberg-Stuttgart grants Wolfgang Zülnhart permission to assign his wife Mechthild von Rosenberg a morning gift of 2,000 florins and other property from his fief at Geradstetten (Gerhardstetten).\n\nDate: 14 December 1473 (Tuesday after Saint Lucy's Day)."
+      "english": "Count Ulrich V of Württemberg-Stuttgart grants Wolfgang Zülnhart permission to assign his wife Mechthild von Rosenberg a morning gift of 2,000 florins and other property from his fief at Geradstetten (Gerhardstetten).\n\nDate: 14 December 1473 (Tuesday after Saint Lucy's Day).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }
