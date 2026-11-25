@@ -6,7 +6,12 @@
       "source": "Staatsarchiv Ludwigsburg D 50 Bü 739",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-359975",
       "german": "Das Fallgut des Johann Georg Merker von Rosenberg\n\nLaufzeit: 1806-1809\n\nUmfang: 1 Fasz.",
-      "english": "The life-tenure estate of Johann Georg Merker of Rosenberg.\n\nTerm: 1806–1809.\n\nExtent: one file."
+      "english": "The life-tenure estate of Johann Georg Merker of Rosenberg.\n\nTerm: 1806–1809.\n\nExtent: one file.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

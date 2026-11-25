@@ -5,7 +5,16 @@
     {
       "source": "StAN, Adelsarchiv Crailsheim, Urkunden (Staatlicher Teil) 46",
       "url": "https://www.gda.bayern.de/gvl/document/56e82050-d325-4720-923c-3f65219d16b3",
-      "german": "Johann Philipp von Crailsheim zu Hornberg (Stadt Kirchberg an der Jagst, LK Schwäbisch Hall) leiht von der Witwe Ursula von Lentersheim, geb. von Rosenberg, 2500 fl rh (Schuldbrief).\n\nVermerke: Registraturvermerk: 4, Lit. P, No. 66, 34, 40."
+      "german": "Johann Philipp von Crailsheim zu Hornberg (Stadt Kirchberg an der Jagst, LK Schwäbisch Hall) leiht von der Witwe Ursula von Lentersheim, geb. von Rosenberg, 2500 fl rh (Schuldbrief).\n\nVermerke: Registraturvermerk: 4, Lit. P, No. 66, 34, 40.",
+      "english": "Johann Philipp von Crailsheim zu Hornberg (town of Kirchberg an der Jagst, Schwäbisch Hall district) borrows 2,500 Rhenish florins from the widow Ursula von Lentersheim, née von Rosenberg (bond).\n\nNotes: Registry note: 4, Lit. P, No. 66, 34, 40.",
+      "mention": [
+        {
+          "place": "hornberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

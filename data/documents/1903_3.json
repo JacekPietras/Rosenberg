@@ -5,7 +5,13 @@
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 10974",
       "url": "https://www.gda.bayern.de/gvl/document/eff5be38-f4e1-49b8-8689-280dcadf8a23",
-      "german": "Popp, Johann Christoph Friedrich, von Haasgang, Bauer; Verheiratung mit Renz, Maria Margaretha, von Rosenberg/Haasgang"
+      "german": "Popp, Johann Christoph Friedrich, von Haasgang, Bauer; Verheiratung mit Renz, Maria Margaretha, von Rosenberg/Haasgang",
+      "english": "Popp, Johann Christoph Friedrich, from Haasgang, farmer; marriage to Renz, Maria Margaretha, from Rosenberg/Haasgang",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

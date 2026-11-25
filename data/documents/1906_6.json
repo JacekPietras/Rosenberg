@@ -5,7 +5,19 @@
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 11721",
       "url": "https://www.gda.bayern.de/gvl/document/14762c89-2533-4da7-b74e-0c2522bd51ad",
-      "german": "Deffner, Johann Andreas, von Rosenberg, Landwirt; Verheiratung mit Prägert, Margaretha Barbara, von Rügland/Nürnberg"
+      "german": "Deffner, Johann Andreas, von Rosenberg, Landwirt; Verheiratung mit Prägert, Margaretha Barbara, von Rügland/Nürnberg",
+      "english": "Deffner, Johann Andreas, from Rosenberg, farmer; marriage to Prägert, Margaretha Barbara, from Rügland/Nuremberg",
+      "mention": [
+        {
+          "place": "burgruine-rosenberg-rugland"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

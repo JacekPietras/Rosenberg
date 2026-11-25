@@ -5,7 +5,13 @@
     {
       "source": "StAN, Bezirksamt Hersbruck, AVK-Akten 8047",
       "url": "https://www.gda.bayern.de/gvl/document/455e0c75-801f-477e-9cff-492c355455d4",
-      "german": "Schmidt, Georg, wohnhaft in Grünreuth, Bauer; Wiederverheiratung mit Hollederer, Margareta, von Rosenberg"
+      "german": "Schmidt, Georg, wohnhaft in Grünreuth, Bauer; Wiederverheiratung mit Hollederer, Margareta, von Rosenberg",
+      "english": "Schmidt, Georg, resident in Grünreuth, farmer; remarriage to Hollederer, Margareta, from Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

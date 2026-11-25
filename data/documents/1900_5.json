@@ -5,7 +5,13 @@
     {
       "source": "StAN, Bezirksamt Eichstätt, AVK-Akten 3277",
       "url": "https://www.gda.bayern.de/gvl/document/734a403d-55b0-4fb4-b1bd-bc971bae78b7",
-      "german": "Forster, Blasius, wohnhaft in Pfahldorf/München, Schutzmann; Verheiratung mit Gradl, Katharina, von Rosenberg"
+      "german": "Forster, Blasius, wohnhaft in Pfahldorf/München, Schutzmann; Verheiratung mit Gradl, Katharina, von Rosenberg",
+      "english": "Forster, Blasius, resident in Pfahldorf/Munich, police constable; marriage to Gradl, Katharina, from Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

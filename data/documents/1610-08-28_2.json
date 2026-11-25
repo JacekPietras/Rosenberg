@@ -7,6 +7,23 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-236152",
       "german": "Albrecht von Dienheim der Ältere verkauft an die Brüder Albrecht Christoph und Georg Sigmund von Rosenberg das Schloß und Mühle zu Unterschüpf, einen Morgen Wiese zu Sachsenflur und das Dorf Lengenrieden um 26000 Gulden.\n\nLaufzeit: 1610 August 28 (\"So geschehen zu Unterschüpf dienstags den acht und zwanzigsten Augusti stylo veteri im sechszehenhundert und zehenden jahre\")",
       "english": "Albrecht von Dienheim der Ältere sells to the brothers Albrecht Christoph and Georg Siegmund von Rosenberg the castle and mill at Unterschüpf, a morning’s measure of meadow at Sachsenflur, and the village of Lengenrieden for 26,000 gulden.\n\nDate span: 28 August 1610 (as recorded: “Done at Unterschüpf, Tuesday, the twenty-eighth of August, old style, in the year sixteen hundred and ten”).",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "person": "Albrecht von Dienheim",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "unterschuepf"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000236152%2F07_0000236152_0001_7-236152-1.jpg"

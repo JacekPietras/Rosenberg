@@ -5,7 +5,16 @@
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 12413",
       "url": "https://www.gda.bayern.de/gvl/document/724dad5c-743b-4548-af05-22370e85a131",
-      "german": "Ebert, Johann Michael, von Rügland, Zimmermann; Verheiratung mit Pfeiffer, Anna Barbara, von Rosenberg"
+      "german": "Ebert, Johann Michael, von Rügland, Zimmermann; Verheiratung mit Pfeiffer, Anna Barbara, von Rosenberg",
+      "english": "Ebert, Johann Michael, from Rügland, carpenter; marriage to Pfeiffer, Anna Barbara, from Rosenberg",
+      "mention": [
+        {
+          "place": "burgruine-rosenberg-rugland"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

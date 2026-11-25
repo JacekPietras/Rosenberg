@@ -5,7 +5,19 @@
     {
       "source": "Staatsarchiv Ludwigsburg B 375 L Bü 373",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1874603",
-      "german": "Schreiben des Bischofs Johann Philipp von Würzburg wegen der Residenz des Johann Christoph von Rosenbach\n\nLaufzeit: 1600-1600\n\nUmfang: 1 Bü"
+      "german": "Schreiben des Bischofs Johann Philipp von Würzburg wegen der Residenz des Johann Christoph von Rosenbach\n\nLaufzeit: 1600-1600\n\nUmfang: 1 Bü",
+      "english": "Letter from Bishop Johann Philipp of Würzburg concerning the residence of Johann Christoph von Rosenbach.\n\nDate range: 1600–1600\n\nExtent: 1 file",
+      "mention": [
+        {
+          "person": "Bischof Hans Philipp",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Hans Christoph von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,13 @@
     {
       "source": "BayHStA, Gesandtschaft Dresden 3305",
       "url": "https://www.gda.bayern.de/gvl/document/4bb921f2-f529-437e-84f7-21dd88d21e9d",
-      "german": "Schlosser, Berta, von Straubing, Entlassung als Erzieherin bei Freiherrn von Rosenberg in Bonnewitz bei Pirna"
+      "german": "Schlosser, Berta, von Straubing, Entlassung als Erzieherin bei Freiherrn von Rosenberg in Bonnewitz bei Pirna",
+      "english": "Schlosser, Berta, from Straubing, dismissal as governess in the service of Baron von Rosenberg at Bonnewitz near Pirna",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

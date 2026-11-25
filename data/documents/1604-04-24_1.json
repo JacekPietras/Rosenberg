@@ -5,7 +5,16 @@
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 359",
       "url": "https://www.gda.bayern.de/gvl/document/0a902225-2915-4ca8-bdcc-e408654927af",
-      "german": "Lehenrevers Albrecht Christophs von Rosenberg um Schloss und Dorf Waldmannshofen. - Siegler: Albrecht Christoph von Rosenberg zu Walckmeßhoven.\n\nBesiegelung/Beglaubigung: 1 Sg. in Holzkapsel"
+      "german": "Lehenrevers Albrecht Christophs von Rosenberg um Schloss und Dorf Waldmannshofen. - Siegler: Albrecht Christoph von Rosenberg zu Walckmeßhoven.\n\nBesiegelung/Beglaubigung: 1 Sg. in Holzkapsel",
+      "english": "Fief acknowledgment by Albrecht Christoph von Rosenberg concerning the castle and village of Waldmannshofen. Sealer: Albrecht Christoph von Rosenberg zu Walckmeßhoven.\n\nSealing/authentication: 1 seal in a wooden case",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,13 @@
     {
       "source": "StAN, Bezirksamt Nürnberg, AVK-Akten 10082",
       "url": "https://www.gda.bayern.de/gvl/document/d9cdd454-06f3-4cbe-82fd-d6a22c3bc764",
-      "german": "Haffner, Johann, von Fischbach, Metzger; Ansässigmachung in Fischbach; Verheiratung mit Flierl, Margareta, von Rosenberg"
+      "german": "Haffner, Johann, von Fischbach, Metzger; Ansässigmachung in Fischbach; Verheiratung mit Flierl, Margareta, von Rosenberg",
+      "english": "Haffner, Johann, from Fischbach, butcher; establishment of residence in Fischbach; marriage to Flierl, Margareta, from Rosenberg",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

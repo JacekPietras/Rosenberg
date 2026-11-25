@@ -6,7 +6,15 @@
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 360",
       "url": "https://www.gda.bayern.de/gvl/document/e854f6c4-638e-426b-96cf-003692577849",
       "german": "Konsensbrief Markgrafs Joachim Ernst für Albrecht Christoph von Rosenberg, seiner Hausfrau, ihr Widum auf Waldmannshofen anzunehmen\n\nBesiegelung/Beglaubigung: 1 Sg.",
-      "english": "Consent letter of Margrave Joachim Ernst for Albrecht Christoph von Rosenberg to accept his wife’s dower at Waldmannshofen.\n\nSealing/authentication: 1 seal."
+      "english": "Consent letter of Margrave Joachim Ernst for Albrecht Christoph von Rosenberg to accept his wife’s dower at Waldmannshofen.\n\nSealing/authentication: 1 seal.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

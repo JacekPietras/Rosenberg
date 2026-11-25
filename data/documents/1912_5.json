@@ -5,7 +5,13 @@
     {
       "source": "HStAD, F 21 B, 265/3",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2605250",
-      "german": "Wegebau von Rosenbach zum Arnheiter Hof in der Gemarkung Rai-Breitenbach\n\nLaufzeit: 1912-1914, 1919"
+      "german": "Wegebau von Rosenbach zum Arnheiter Hof in der Gemarkung Rai-Breitenbach\n\nLaufzeit: 1912-1914, 1919",
+      "english": "Road construction from Rosenbach to the Arnheiter farm in the Rai-Breitenbach district\n\nDate range: 1912–1914, 1919",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

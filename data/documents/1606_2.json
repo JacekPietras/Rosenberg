@@ -6,7 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 621",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-75522",
       "german": "Zehntbüchlein oder Verzeichnis aller Zehnten so nach Haltenbergstetten und meinem ... Junkern Georg Sigmund von Rosenberg gehören.\n\nLaufzeit: 1606-1637\n\nUmfang: 1 Heft",
-      "english": "Tithe booklet or register of all tithes belonging to the lord of Haltenbergstetten and to my ... Junker Georg Siegmund von Rosenberg.\n\nDate span: 1606–1637\n\nExtent: 1 booklet."
+      "english": "Tithe booklet or register of all tithes belonging to the lord of Haltenbergstetten and to my ... Junker Georg Siegmund von Rosenberg.\n\nDate span: 1606–1637\n\nExtent: 1 booklet.",
+      "mention": [
+        {
+          "person": "Georg Siegmund von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein La 5 Bü 1062",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-9245",
       "german": "Schuldforderung des Georg Sigmund von Rosenberg zu Haltenbergstetten über 5.000 fl. an die Neuensteiner Linie; Aufteilung der Forderung unter die Rosenberg'schen Eigentumserben und Tilgung der Schuld durch Hohenlohe-Langenburg.\n\nLaufzeit: (1613)1622-1624,1661-1664\n\nUmfang: 1 Fasz., Qu. 1-53",
-      "english": "Debt claim by Georg Siegmund von Rosenberg zu Haltenbergstetten for 5,000 florins against the Neuenstein line; division of the claim among the Rosenberg heirs to the estate and repayment of the debt by Hohenlohe-Langenburg.\n\nDates: (1613) 1622–1624, 1661–1664.\n\nExtent: 1 file, items 1–53."
+      "english": "Debt claim by Georg Siegmund von Rosenberg zu Haltenbergstetten for 5,000 florins against the Neuenstein line; division of the claim among the Rosenberg heirs to the estate and repayment of the debt by Hohenlohe-Langenburg.\n\nDates: (1613) 1622–1624, 1661–1664.\n\nExtent: 1 file, items 1–53.",
+      "mention": [
+        {
+          "person": "Georg Siegmund von Rosenberg",
+          "personTitle": [
+            "zu Haltenbergstetten"
+          ]
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

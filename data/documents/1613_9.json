@@ -6,7 +6,12 @@
       "source": "HStAD, F 23 A, 672/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2195803",
       "german": "Gerichtsprotokoll des Amtsöneburg\n\nLaufzeit: 1613-1617\n\n(Vor-) Provenienzen: Handakten von Rosenbach",
-      "english": "Court record of the Amöneburg office.\n\nDates: 1613–1617\n\n(Provenance:) working papers of von Rosenbach."
+      "english": "Court record of the Amöneburg office.\n\nDates: 1613–1617\n\n(Provenance:) working papers of von Rosenbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

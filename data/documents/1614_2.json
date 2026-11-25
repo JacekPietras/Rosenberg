@@ -6,7 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 606",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-75506",
       "german": "Interzession des Albrecht Christoph von Rosenberg bei Graf Georg Friedrich von Hohenlohe-Weikersheim wegen bei der Nachsteuer des von Weikersheim nach Aub gezogenen Christoph Werner.\n\nLaufzeit: 1614\n\nUmfang: 4 Schr.",
-      "english": "Intercession by Albrecht Christoph von Rosenberg with Count Georg Friedrich von Hohenlohe-Weikersheim concerning the departure tax imposed on Christoph Werner, who had moved from Weikersheim to Aub.\n\nDates: 1614\n\nExtent: 4 documents."
+      "english": "Intercession by Albrecht Christoph von Rosenberg with Count Georg Friedrich von Hohenlohe-Weikersheim concerning the departure tax imposed on Christoph Werner, who had moved from Weikersheim to Aub.\n\nDates: 1614\n\nExtent: 4 documents.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "aub"
+        },
+        {
+          "person": "Georg Friedrich von Hohenlohe",
+          "personTitle": [
+            "Graf von Hohenlohe"
+          ]
+        }
+      ]
     }
   ]
 }

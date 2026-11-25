@@ -5,7 +5,13 @@
     {
       "source": "StAN, Bayerische Behörden vor 1972 392",
       "url": "https://www.gda.bayern.de/gvl/document/d5718c08-a928-4d63-b781-43d7cc3c9d2e",
-      "german": "Gesuch des ledigen Sattlers Pius Haas von Rosenberg, Württemberg, um Aufnahme in den bayerischen Staatsverband"
+      "german": "Gesuch des ledigen Sattlers Pius Haas von Rosenberg, Württemberg, um Aufnahme in den bayerischen Staatsverband",
+      "english": "Petition by the unmarried saddler Pius Haas of Rosenberg, Württemberg, for admission to Bavarian citizenship",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }
