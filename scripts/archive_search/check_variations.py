@@ -22,7 +22,8 @@ SCRIPTS = {name: Path(__file__).with_name(f'search_{name}.py') for name in (
     'monasterium', 'arcinsys_hessen', 'gda_bayern', 'landesarchiv_bw',
     'landesarchiv_nrw', 'regesta_imperii',
 )}
-CACHE_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
+CACHE_ARCHIVES = set(SCRIPTS)
+PERSISTENT_DELAY_ARCHIVES = {'monasterium', 'gda_bayern', 'landesarchiv_nrw', 'regesta_imperii'}
 PREFIXES = ('von', 'v', 'v.', 'von.', 'de')
 
 
@@ -93,7 +94,7 @@ class Checker:
 
     def run(self, query, exists=False):
         # Some archive clients keep rate-limit timestamps only in their process.
-        if self.last_finished is not None and self.archive not in CACHE_ARCHIVES:
+        if self.last_finished is not None and self.archive not in PERSISTENT_DELAY_ARCHIVES:
             time.sleep(max(0, self.delay - (time.monotonic() - self.last_finished)))
         command = [sys.executable, str(SCRIPTS[self.archive]), query]
         if self.archive == 'regesta_imperii' and (phrase := regesta_phrase(query)):

@@ -9,6 +9,9 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, unquote, urlsplit, urlunsplit
 from urllib.request import Request, build_opener
@@ -74,7 +77,7 @@ def fetch_page(url: str) -> bytes:
         "Accept": "application/xml,text/xml,*/*",
         "Referer": "https://www.monasterium.net/",
     })
-    with build_opener().open(request, timeout=REQUEST_TIMEOUT) as response:
+    with retry_http_500(lambda: build_opener().open(request, timeout=REQUEST_TIMEOUT)) as response:
         return response.read()
 
 

@@ -11,6 +11,9 @@ import sys
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit, urlunsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
@@ -55,7 +58,7 @@ def request_url(url: str) -> tuple[str, bytes]:
         headers={"User-Agent": USER_AGENT, "Accept": "application/xml,text/xml,text/html,*/*"},
     )
     try:
-        with OPENER.open(request, timeout=REQUEST_TIMEOUT) as response:
+        with retry_http_500(lambda: OPENER.open(request, timeout=REQUEST_TIMEOUT)) as response:
             return response.geturl(), response.read()
     except HTTPError as exc:
         if exc.code != 403:
@@ -261,9 +264,12 @@ def canonical_url(url: str) -> str:
     match = UUID_RE.search(path)
     if match:
         return f"https://www.regesta-imperii.de/id/{match.group(0).lower()}"
-    legacy = re.search(r"/nr/(\d{4}-\d{2}-\d{2})-([A-Za-z0-9]+(?:-[A-Za-z0-9]+)+)\.html$", path)
-    if legacy:
-        identifier = f"{legacy.group(1)}_{legacy.group(2).replace('-', '_')}"
+    dated = re.search(
+        r"/(?:id/|nr/)(\d{4}-\d{2}-\d{2})[-_]([A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)+)(?:\.html)?/?$",
+        path,
+    )
+    if dated:
+        identifier = f"{dated.group(1)}_{dated.group(2).replace('-', '_')}"
         return f"https://www.regesta-imperii.de/id/{identifier}"
     raise ValueError("No record id found in the Regesta Imperii URL")
 

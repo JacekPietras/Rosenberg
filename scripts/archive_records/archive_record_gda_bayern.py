@@ -9,6 +9,9 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree
@@ -52,7 +55,7 @@ class RecordFields(HTMLParser):
 
 def fetch(url: str) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+    with retry_http_500(lambda: urlopen(request, timeout=REQUEST_TIMEOUT)) as response:
         if "html" not in response.headers.get_content_type():
             raise ValueError("The URL did not return an HTML archive record")
         return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
@@ -65,7 +68,7 @@ def image_urls(page: str, record_url: str) -> list[str]:
     for mets_id in mets_ids:
         mets_url = urljoin(record_url, f"/gvl/mets/{mets_id}")
         request = Request(mets_url, headers={"User-Agent": USER_AGENT})
-        with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+        with retry_http_500(lambda: urlopen(request, timeout=REQUEST_TIMEOUT)) as response:
             root = ElementTree.fromstring(response.read())
         ns = {"mets": "http://www.loc.gov/METS/", "xlink": "http://www.w3.org/1999/xlink"}
         for location in root.findall(".//mets:fileGrp/mets:file/mets:FLocat", ns):

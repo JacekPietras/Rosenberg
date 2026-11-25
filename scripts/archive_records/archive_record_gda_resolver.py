@@ -4,6 +4,9 @@ from html.parser import HTMLParser
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
@@ -138,7 +141,7 @@ def resolve(archive, fonds, identifier, date, root=None):
     monastery = match.group(1)
     opener = build_opener(HTTPCookieProcessor())
     headers = {"User-Agent": "Rosenberg research downloader/1.0"}
-    with opener.open(Request(SEARCH_URL, headers=headers), timeout=60) as response:
+    with retry_http_500(lambda: opener.open(Request(SEARCH_URL, headers=headers), timeout=60)) as response:
         form = SearchForm()
         form.feed(response.read().decode("utf-8", "replace"))
     if "jakarta.faces.ViewState" not in form.fields:
@@ -155,7 +158,7 @@ def resolve(archive, fonds, identifier, date, root=None):
         "jakarta.faces.partial.render": "pagingTopForm docResultPanel docsMessagePanel pagingTopFormBottom searchResultHeader toolsBarForm",
         "searchForm:searchButton": "searchForm:searchButton",
     })
-    with opener.open(Request(SEARCH_URL, data=urlencode(form.fields).encode(), headers={**headers, "Faces-Request": "partial/ajax"}), timeout=60) as response:
+    with retry_http_500(lambda: opener.open(Request(SEARCH_URL, data=urlencode(form.fields).encode(), headers={**headers, "Faces-Request": "partial/ajax"}), timeout=60)) as response:
         result = SearchResult()
         payload = response.read().decode("utf-8", "replace")
         for fragment in re.findall(r"<!\[CDATA\[(.*?)(?:\]\]>|\Z)", payload, re.S):

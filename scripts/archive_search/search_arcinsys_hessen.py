@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import http.cookiejar
+import hashlib
 import json
 import re
 import subprocess
@@ -22,6 +23,8 @@ from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
+
+CACHE = ROOT / '.cache/archive_search/arcinsys_hessen'
 
 BASE = 'https://arcinsys.hessen.de/arcinsys/'
 COLUMNS = ['columnKeyItemType', 'columnKeySignatur', 'columnKeyBezeichnung',
@@ -50,7 +53,8 @@ class FormParser(HTMLParser):
 
 
 class Client:
-    def __init__(self, delay):
+    def __init__(self, delay, cache_dir=CACHE):
+        self.cache_dir = Path(cache_dir)
         self.opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
         self.delay = delay
         self.last_request = None
@@ -75,6 +79,34 @@ class Client:
             raise
 
     def search(self, query, limit=None, exists=False):
+        path = self.cache_dir / (hashlib.sha256(query.encode()).hexdigest() + '.json')
+        if path.exists():
+            cached = json.loads(path.read_text(encoding='utf-8'))
+            if cached.get('query') != query or not isinstance(cached.get('rows'), list) or cached.get('total') != len(cached['rows']):
+                raise ValueError('Invalid cached search')
+            print(f'Using cached search: {path}', file=sys.stderr)
+            if exists:
+                if cached['total']:
+                    yield None, cached['total']
+            else:
+                for row in cached['rows'][:limit]:
+                    yield row, cached['total']
+            return
+        rows = []
+        for row, total in self._search(query, limit, exists):
+            if not exists:
+                rows.append(row)
+                if len(rows) == total:
+                    self._save_search(path, query, rows)
+            yield row, total
+        if not exists and not rows:
+            self._save_search(path, query, rows)
+
+    def _save_search(self, path, query, rows):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({'query': query, 'total': len(rows), 'rows': rows}, ensure_ascii=False) + '\n', encoding='utf-8')
+
+    def _search(self, query, limit=None, exists=False):
         _, page = self.request(urljoin(BASE, 'simpleSearch.action'))
         form = FormParser(); form.feed(page)
         if not form.execution:
@@ -156,6 +188,7 @@ def main():
     p.add_argument('--skip-existing', action='store_true', help='skip records with a stored citation or URL')
     p.add_argument('--limit', type=int, help='maximum number of search results to list')
     p.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
+    p.add_argument('--cache-dir', type=Path, default=CACHE, help='archive search cache directory')
     args = p.parse_args()
     if args.delay is None:
         args.delay = search_delay('arcinsys_hessen')
@@ -175,7 +208,7 @@ def main():
         phrase = undotted
     if len(phrase) < 2 or '"' in phrase:
         p.error('supply a phrase of at least two characters without embedded double quotes')
-    client = Client(args.delay)
+    client = Client(args.delay, args.cache_dir)
     count = 0
     total = 0
     try:
@@ -199,7 +232,8 @@ def main():
                 print(f'Skipping existing URL: {url}', flush=True)
                 continue
             if not args.list_only and url:
-                time.sleep(max(0, args.delay - (time.monotonic() - client.last_request)))
+                if client.last_request is not None:
+                    time.sleep(max(0, args.delay - (time.monotonic() - client.last_request)))
                 client.last_request = time.monotonic()
                 print(f'Downloading {url}', flush=True)
                 proc = subprocess.run([sys.executable, str(ROOT / 'scripts/archive_records/archive_record_download.py'), url], cwd=ROOT)

@@ -10,6 +10,9 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.parse import parse_qs, urljoin, urlsplit
 from urllib.request import Request, urlopen
 
@@ -145,7 +148,7 @@ class Images(HTMLParser):
 
 def fetch(url: str) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
-    with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+    with retry_http_500(lambda: urlopen(request, timeout=REQUEST_TIMEOUT)) as response:
         if "html" not in response.headers.get_content_type():
             raise ValueError("The URL did not return an HTML Arcinsys record")
         return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")

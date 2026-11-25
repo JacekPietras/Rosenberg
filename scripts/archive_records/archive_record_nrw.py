@@ -10,6 +10,9 @@ import sys
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
@@ -41,7 +44,7 @@ class TextOnly(HTMLParser):
 def request(url: str) -> tuple[str, bytes]:
     req = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json,application/xml,text/html,*/*"})
     try:
-        with OPENER.open(req, timeout=REQUEST_TIMEOUT) as response:
+        with retry_http_500(lambda: OPENER.open(req, timeout=REQUEST_TIMEOUT)) as response:
             return response.geturl(), response.read()
     except HTTPError as exc:
         if exc.code != 403:

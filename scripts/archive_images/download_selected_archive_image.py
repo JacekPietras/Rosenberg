@@ -14,6 +14,9 @@ from html import unescape
 from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.parse import parse_qs, quote, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener, urlopen
 
@@ -36,8 +39,8 @@ class Client:
     def open(self, url):
         if urlsplit(url).scheme not in {"http", "https"}:
             raise DownloadError("Only HTTP(S) URLs are supported")
-        return urlopen(Request(url, headers={"User-Agent": "RosenbergResearch/1.0"}),
-                       timeout=self.timeout)
+        return retry_http_500(lambda: urlopen(Request(url, headers={"User-Agent": "RosenbergResearch/1.0"}),
+                       timeout=self.timeout))
 
     def text(self, url):
         with self.open(url) as response:
@@ -282,7 +285,7 @@ class PageParser(HTMLParser):
 def fetch(opener, url: str) -> tuple[str, bytes, str]:
     headers = {"User-Agent": BAVARIKON_USER_AGENT, "Accept": "text/html,application/ld+json,application/json,*/*"}
     request = Request(url, headers=headers)
-    with opener.open(request, timeout=BAVARIKON_TIMEOUT) as response:
+    with retry_http_500(lambda: opener.open(request, timeout=BAVARIKON_TIMEOUT)) as response:
         return response.geturl(), response.read(), response.headers.get_content_type()
 
 
@@ -366,7 +369,7 @@ def scrape_bavarikon(page_url: str) -> tuple[dict[str, object], list[str], list[
         if not pass_url:
             raise ValueError("Bavarikon returned an Anubis check without a readable challenge")
         request = Request(pass_url, headers={"User-Agent": BAVARIKON_USER_AGENT})
-        with opener.open(request, timeout=BAVARIKON_TIMEOUT) as response:
+        with retry_http_500(lambda: opener.open(request, timeout=BAVARIKON_TIMEOUT)) as response:
             response.read()
         final_url, raw, content_type = fetch(opener, page_url)
         text = raw.decode("utf-8", "replace")

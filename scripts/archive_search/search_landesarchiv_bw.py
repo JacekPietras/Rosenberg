@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import http.cookiejar
+import hashlib
 import json
 import re
 import subprocess
@@ -21,6 +22,8 @@ from archive_record_storage import has_source, has_url, values
 from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import HTTPCookieProcessor, Request, build_opener
+
+CACHE = ROOT / '.cache/archive_search/landesarchiv_bw'
 
 BASE = 'https://www2.landesarchiv-bw.de/ofs21/'
 
@@ -114,7 +117,8 @@ class Canonical(HTMLParser):
 
 
 class Client:
-    def __init__(self, delay):
+    def __init__(self, delay, cache_dir=CACHE):
+        self.cache_dir = Path(cache_dir)
         self.opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
         self.delay = delay
         self.last_request = None
@@ -139,6 +143,38 @@ class Client:
             raise
 
     def search(self, phrase, limit=None, exists=False, skip_pages=0):
+        path = self.cache_dir / (hashlib.sha256(phrase.encode()).hexdigest() + '.json')
+        if path.exists():
+            cached = json.loads(path.read_text(encoding='utf-8'))
+            if cached.get('query') != phrase or not isinstance(cached.get('rows'), list) or cached.get('total') != len(cached['rows']):
+                raise ValueError('Invalid cached search')
+            print(f'Using cached search: {path}', file=sys.stderr)
+            total = cached['total']
+            if exists:
+                yield None, total
+                return
+            if skip_pages and skip_pages * 30 >= total:
+                raise ValueError(f'Cannot skip {skip_pages} pages: catalogue reports {total} hits')
+            rows = cached['rows'][skip_pages * 30:]
+            for index, row in enumerate(rows[:limit], start=skip_pages * 30):
+                self.current_page = index // 30 + 1
+                yield row, total
+            return
+        rows = []
+        for row, total in self._search(phrase, limit, exists, skip_pages):
+            if not exists and not skip_pages:
+                rows.append(row.copy())
+                if len(rows) == total:
+                    self._save_search(path, phrase, rows)
+            yield row, total
+        if not exists and not skip_pages and not rows:
+            self._save_search(path, phrase, rows)
+
+    def _save_search(self, path, phrase, rows):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({'query': phrase, 'total': len(rows), 'rows': rows}, ensure_ascii=False) + '\n', encoding='utf-8')
+
+    def _search(self, phrase, limit=None, exists=False, skip_pages=0):
         self.request(BASE + 'home.php')
         params = {'sortierung': 'archivort asc, klassifi_bestand asc, bereich asc, klassifi asc',
                   'trefferausgabe': '30', 'sucheAusgangspunkt': '../index', 'suchMaschine': 'lucene',
@@ -243,6 +279,7 @@ def main():
     parser.add_argument('--resume-after-result-id',
                         help='resume importing after this catalogue result (exclusive)')
     parser.add_argument('--delay', type=float, default=None, help='seconds between requests (overrides archive JSON)')
+    parser.add_argument('--cache-dir', type=Path, default=CACHE, help='archive search cache directory')
     args = parser.parse_args()
     if args.delay is None:
         args.delay = search_delay('landesarchiv_bw')
@@ -266,7 +303,7 @@ def main():
         parser.error('--skip-pages must be non-negative')
     if args.exists and args.skip_pages:
         parser.error('--skip-pages cannot be used with --exists')
-    client = Client(args.delay)
+    client = Client(args.delay, args.cache_dir)
     count = total = 0
     result_seen = False
     failures = []

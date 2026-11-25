@@ -11,6 +11,9 @@ import sys
 import time
 from html.parser import HTMLParser
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "archive_search"))
+from search_retry import retry_http_500
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener
 
@@ -41,7 +44,7 @@ SCOPE_RE = re.compile(r"scopeid_besta=(\d+)", re.I)
 
 def fetch(opener, url: str) -> tuple[str, str]:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with opener.open(request, timeout=REQUEST_TIMEOUT) as response:
+    with retry_http_500(lambda: opener.open(request, timeout=REQUEST_TIMEOUT)) as response:
         content_type = response.headers.get_content_type()
         body = response.read()
         if content_type.startswith("text/") or "html" in content_type:
@@ -200,7 +203,7 @@ def catalogue_text(details: CatalogDetails) -> str:
 
 def fetch_page(url: str) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT})
-    with build_opener().open(request, timeout=REQUEST_TIMEOUT) as response:
+    with retry_http_500(lambda: build_opener().open(request, timeout=REQUEST_TIMEOUT)) as response:
         if "html" not in response.headers.get_content_type():
             raise ValueError("The permalink did not return an HTML catalogue page")
         return response.read().decode(response.headers.get_content_charset() or "utf-8", "replace")
