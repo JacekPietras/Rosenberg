@@ -1,6 +1,9 @@
 {
   "date": "1207",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "research": "The original index entry is split into its remaining records and separate entries for the seven matching acts also described in data/documents/1207_17.json; both source citations are retained.",
   "entries": [
     {

@@ -223,7 +223,7 @@ export function createDocumentRenderer({
       : '';
     const years = new Set(allEntries.flatMap((entry) => typeof entry.english === 'string'
       ? [...entry.english.matchAll(/(?<!\d)\d{4}(?!\d)/g)].map((match) => match[0]) : []));
-    const splitButton = labelEditor && years.size >= 3
+    const splitButton = labelEditor && years.size >= 3 && !labelKeys.includes('split')
       ? `<button class="record-split" type="button" data-split-document="${escapeHtml(path)}">Split</button>`
       : '';
     const deleteButton = labelEditor

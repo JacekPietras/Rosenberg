@@ -44,6 +44,7 @@ test('Split appears for three distinct four-digit years in English entries', () 
   const render = (entries) => renderer.renderDocument({ entries }, 'data/documents/example.json', 0);
   assert.ok(render([{ english: '1400, 1401 and 1400' }, { english: '1402' }]).includes('data-split-document'));
   assert.ok(!render([{ english: '1400, 1400 and 1401; 12345', german: '1402' }]).includes('data-split-document'));
+  assert.ok(!renderer.renderDocument({ label: 'split', entries: [{ english: '1400 1401 1402' }] }, 'data/documents/example.json', 0).includes('data-split-document'));
   state.canEditDocuments = false;
   assert.ok(!render([{ english: '1400 1401 1402' }]).includes('data-split-document'));
 });

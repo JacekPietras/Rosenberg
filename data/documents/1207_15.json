@@ -1,6 +1,9 @@
 {
   "date": "1207",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "research": "Seven regesta also listed in data/documents/1207_19.json are consolidated there as separate entries with both archival citations; the other regesta remain here.",
   "entries": [
     {
