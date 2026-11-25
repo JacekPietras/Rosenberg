@@ -12,6 +12,28 @@ from archive_record_monasterium_internal import create_record
 
 
 class ProvenanceTests(unittest.TestCase):
+    def test_gda_permalink_handoff_preserves_both_links_and_transcription(self):
+        url = 'https://www.monasterium.net/mom/DE-StAW/Neumuenster/example/charter'
+        archive = 'https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++example'
+        permalink = 'https://www.gda.bayern.de/gvl/document/d37d2eee-642a-469b-abbf-94b160ff0f26'
+        metadata = (f'<cei><archIdentifier><ref target="{archive}"/></archIdentifier>'
+                    '<tenor>Full transcription.</tenor></cei>').encode()
+        page = ('<td data-label="Bestellsignatur">Example citation</td>'
+                '<td data-label="Laufzeit">1320 Mai 26</td>'
+                '<td data-label="Betreff">Abstract.</td>')
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch('archive_record_monasterium.fetch_cei', return_value=metadata), \
+             patch('archive_record_gda_bayern.DOCUMENT_DIR', Path(tmp)), \
+             patch('archive_record_gda_bayern.fetch', side_effect=[page + permalink, page] * 2), \
+             patch('archive_record_gda_bayern.image_urls', return_value=[]):
+            path, updated = download_record(url)
+            self.assertFalse(updated)
+            self.assertEqual(download_record(url), (path, True))
+            document = json.loads(path.read_text())
+            self.assertEqual(document['entries'][0]['url'], [permalink, archive, url])
+            self.assertEqual(document['entries'][0]['german'], 'Abstract.\n\nFull transcription.')
+            self.assertTrue(document['transcribed'])
+
     def test_image_filenames_match_url_encoded_viewer_links(self):
         parser = CharterImages(['K.._~Zwettl._~StAZ__12291219v.jpg', 'K.._~Zwettl._~StAZ__12291219.jpg'])
         parser.feed('<a class="imageLink" data-url="http://images.monasterium.net/pics/166/K.._%7EZwettl._%7EStAZ__12291219v.jpg"></a>'

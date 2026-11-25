@@ -201,6 +201,7 @@ def update_existing(path: Path, source: str, generated_entry: dict[str, object])
 def create_record(url: str) -> tuple[Path, bool]:
     from urllib.parse import urlsplit
 
+    supplied_url = url
     parsed_url = urlsplit(url)
     if parsed_url.scheme != "https" or parsed_url.hostname not in GDA_HOSTS or not parsed_url.path.startswith("/gvl/"):
         raise ValueError("Expected an https://www.gda.bayern.de/gvl/ archive record URL")
@@ -246,7 +247,9 @@ def create_record(url: str) -> tuple[Path, bool]:
                     for value in field_values(parser, "Besiegelung/Beglaubigung"))
     german = "\n\n".join(dict.fromkeys(section for section in sections if section))
     date = iso_date(laufzeit[0]) if laufzeit else "9999"
-    generated_entry: dict[str, object] = {"source": citations[0], "url": url}
+    generated_entry: dict[str, object] = {
+        "source": citations[0], "url": [url, supplied_url] if url != supplied_url else url
+    }
     if german:
         generated_entry["german"] = german
     images = image_urls(page, url)

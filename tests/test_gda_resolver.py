@@ -34,7 +34,7 @@ class ResolverTests(unittest.TestCase):
                 self.assertEqual(record['date'], '9999')
                 self.assertEqual(record['entries'], [{
                     'source': 'StAN, Akten 337/fol. 229 - 231',
-                    'url': permalink,
+                    'url': [permalink, url],
                     'german': 'Schadensliste des Zaisolph von Rosenberg.',
                 }])
 
