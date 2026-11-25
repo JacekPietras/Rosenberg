@@ -1,6 +1,16 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { recognizeMentions } from '../scripts/linters/generate_mentions.mjs';
+import { recognizeMentions, resolveMentionPerson } from '../scripts/linters/generate_mentions.mjs';
+
+test('resolves a shared title only when it identifies one registry person', () => {
+  const item = { person: 'Konrad von Rosenberg', personTitle: ['Vizedom zu Amberg'] };
+  const people = [{ id: 'konrad', name: item.person, title: ['Vizedom zu Amberg'] },
+    { id: 'other', name: item.person }];
+  assert.equal(resolveMentionPerson(item, people).person, 'konrad');
+  assert.deepEqual(resolveMentionPerson({ person: item.person }, people), { person: item.person });
+  assert.deepEqual(resolveMentionPerson(item, [...people, { ...people[0], id: 'another' }]), item);
+  assert.deepEqual(resolveMentionPerson({ ...item, personTitle: ['Ritter'] }, people), { ...item, personTitle: ['Ritter'] });
+});
 
 test('a locative office title subsumes its bare title in generated mentions', () => {
   assert.deepEqual(recognizeMentions('for Bishop Hans zu Würzburg was'), [

@@ -15,7 +15,8 @@ import { titleForms } from './title_forms.mjs';
 const root = resolve(import.meta.dirname, '../..');
 const check = process.argv.includes('--check');
 const read = (path) => readFile(resolve(root, path), 'utf8').catch(() => '');
-const registry = new Map(JSON.parse(await read('data/people.json')).map((person) => [person.id, person.name]));
+const registryPeople = JSON.parse(await read('data/people.json'));
+const registry = new Map(registryPeople.map((person) => [person.id, person.name]));
 const titleText = [await read('data/titles-age.md'), await read('data/titles-office.md')].filter(Boolean).join('\n');
 const args = [titleText, [await read('data/name-connectors.md'), await read('data/title-seats.md')].join('\n'), await read('data/nobiliary_particles.md'),
   await read('data/names.md'), await read('data/by-names.md'), JSON.parse(await read('data/places.json'))];
@@ -38,6 +39,16 @@ const placePatterns = [...placeForms].map(([form, keys]) => ({
 // Same-route items are one mention only when their titles are compatible.
 const mergePeople = (items) => titleForms.mergePeople(items);
 const consolidateTitles = (titles) => titleForms.consolidateTitles(titles);
+
+// Resolve only an exact name and a shared distinguishing title, and only when
+// that evidence identifies one registry entry.
+export function resolveMentionPerson(item, people = registryPeople) {
+  if (!item.person || !item.personTitle?.length) return item;
+  const titles = new Set(titleForms.canonicalTitles(item.personTitle));
+  const matches = people.filter((person) => person.name === item.person
+    && titleForms.canonicalTitles(person.title ?? []).some((title) => titles.has(title)));
+  return matches.length === 1 ? { ...item, person: matches[0].id } : item;
+}
 
 function recognizePeople(text) {
   const { coordinated, singles } = findPersonNameMentions(text, ...args, pattern);
@@ -145,6 +156,7 @@ function regenerate(value, file, counter, issuance = []) {
     const name = (item) => item.person ?? item.place;
     const mention = [...unique.values()]
       .filter((item) => item.person === undefined || !isStated(item, stated))
+      .map((item) => resolveMentionPerson(item))
       .sort((left, right) => name(left).localeCompare(name(right))
         || JSON.stringify(left).localeCompare(JSON.stringify(right)));
     if (mention.length) {

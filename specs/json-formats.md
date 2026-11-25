@@ -111,7 +111,8 @@ Each entry carries an optional generated `mention` array, which lists the people
 are unique and sorted alphabetically; order carries no meaning:
 
 - `{"person": …, "personTitle": […]}`: a recognized person. `person` is the
-  canonical route name; `personTitle` (sorted titles as written) is present
+  registry ID when the canonical name and a distinguishing title match exactly one
+  registry entry; otherwise it is the canonical route name. `personTitle` (sorted titles as written) is present
   only when the text carries titles.
 - `{"place": …}`: a recognized place, as its ID (or name when it has no ID).
   Text inside a recognized person name or title is not a place.

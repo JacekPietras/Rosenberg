@@ -27,7 +27,8 @@ export function enrichEntry(entry, { route, registry, titles }) {
   const report = [];
   if (!people.length) return report;
   const mentions = (entry.mention ?? []).filter((item) => typeof item.person === 'string')
-    .map((item) => ({ key: item.person, titles: titles.canonicalTitles(item.personTitle ?? []) }));
+    .map((item) => ({ key: registry.has(item.person) ? route(registry.get(item.person)) : item.person,
+      titles: titles.canonicalTitles(item.personTitle ?? []) }));
   for (const key of new Set(people.map((person) => person.key))) {
     const mine = people.filter((person) => person.key === key);
     if (mine.some((person) => person.registered)) continue;
