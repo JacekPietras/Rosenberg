@@ -24,6 +24,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 GDA_HOSTS = {"www.gda.bayern.de", "gda.bayern.de"}
 GDA_DOCUMENT_PATH = re.compile(r"/gvl/document/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})", re.I)
+MISSING_RECORD_DETAILS = "The GDA page has neither Bestellsignatur nor Laufzeit"
 
 
 class RecordFields(HTMLParser):
@@ -126,6 +127,10 @@ def seal_sections(value: str) -> list[str]:
 def iso_date(laufzeit: str) -> str:
     """Convert the catalog's common German date forms to ISO precision."""
     value = laufzeit.strip()
+    if re.fullmatch(
+        r"o\.?\s*d\.?|ohne\s+datum|\[\s*\]|\[hinweis:\s*feld bitte leer lassen\]", value, re.I
+    ):
+        return "9999"
     if century := century_range(value):
         return century
     months = 'Januar Februar März April Mai Juni Juli August September Oktober November Dezember'.split()
@@ -204,6 +209,10 @@ def create_record(url: str) -> tuple[Path, bool]:
     # expose a stable /document/<uuid> permalink; prefer it when it resolves
     # to the same catalog record, and retain the supplied URL otherwise.
     page = fetch(url)
+    parser = RecordFields()
+    parser.feed(page)
+    laufzeit = field_values(parser, "Laufzeit")
+    citations = field_values(parser, "Bestellsignatur")
     permalink = document_permalink(page)
     if permalink and permalink != url:
         try:
@@ -212,19 +221,21 @@ def create_record(url: str) -> tuple[Path, bool]:
             permalink_page = ""
         permalink_fields = RecordFields()
         permalink_fields.feed(permalink_page)
-        if field_values(permalink_fields, "Laufzeit") and field_values(permalink_fields, "Bestellsignatur"):
+        permalink_dates = field_values(permalink_fields, "Laufzeit")
+        permalink_citations = field_values(permalink_fields, "Bestellsignatur")
+        if (permalink_citations and (not citations or citations[0] == permalink_citations[0])
+                and (permalink_dates or not laufzeit)):
             page = permalink_page
             url = permalink
-    parser = RecordFields()
-    parser.feed(page)
-    laufzeit = field_values(parser, "Laufzeit")
-    citations = field_values(parser, "Bestellsignatur")
-    descriptions = list(dict.fromkeys(field_values(parser, "Betreff")))
-    if not laufzeit:
-        raise ValueError("The GDA page has no Laufzeit field")
+            parser = permalink_fields
+            laufzeit = permalink_dates
+            citations = permalink_citations
+    if not citations and not laufzeit:
+        raise ValueError(MISSING_RECORD_DETAILS)
     if not citations:
         raise ValueError("The GDA page has no Bestellsignatur field")
 
+    descriptions = list(dict.fromkeys(field_values(parser, "Betreff")))
     sections = [strip_rtf(value) for value in descriptions]
     sections.extend(f"{label}: {strip_rtf(value)}"
                     for label in ("Enthält-/Darin-Vermerke", "Vermerke")
@@ -234,7 +245,7 @@ def create_record(url: str) -> tuple[Path, bool]:
     sections.extend(f"Besiegelung/Beglaubigung: {strip_rtf(value)}"
                     for value in field_values(parser, "Besiegelung/Beglaubigung"))
     german = "\n\n".join(dict.fromkeys(section for section in sections if section))
-    date = iso_date(laufzeit[0])
+    date = iso_date(laufzeit[0]) if laufzeit else "9999"
     generated_entry: dict[str, object] = {"source": citations[0], "url": url}
     if german:
         generated_entry["german"] = german

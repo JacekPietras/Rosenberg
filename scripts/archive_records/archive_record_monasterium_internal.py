@@ -4,12 +4,17 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import date as calendar_date
 from pathlib import Path
 from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
+CZECH_MONTHS = (
+    "leden", "únor", "březen", "duben", "květen", "červen",
+    "červenec", "srpen", "září", "říjen", "listopad", "prosinec",
+)
 
 
 def local_name(tag: str) -> str:
@@ -50,7 +55,6 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
             abstract = node_text(first_node(root, 'abstract'))
             months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez']
             match = re.search(r'\b(\d{4})\.\s*(' + '|'.join(months) + r')\.?\s+(\d{1,2})\.\s*$', abstract)
-            from datetime import date as calendar_date
             if match:
                 date = calendar_date(int(match[1]), months.index(match[2]) + 1, int(match[3])).isoformat()
             else:
@@ -71,8 +75,15 @@ def create_record(root: ElementTree.Element, url: str, source_references=(), ima
         start = parse_date(range_node.get("from", ""))
         end = parse_date(range_node.get("to", ""))
         if start > end:
-            raise ValueError("Reversed Monasterium date range")
-        if start == end:
+            # Some Czech records carry a single issue date in the label even
+            # when the machine-readable range is inconsistent.
+            label = node_text(range_node)
+            match = re.fullmatch(r"(\d{4}) ([^\W\d_]+) (\d{1,2})", label)
+            if not match or match[2].casefold() not in CZECH_MONTHS:
+                raise ValueError(f"Reversed Monasterium date range: {start}/{end}, label {label!r}")
+            month = CZECH_MONTHS.index(match[2].casefold()) + 1
+            date = calendar_date(int(match[1]), month, int(match[3])).isoformat()
+        elif start == end:
             date = start
         elif start.endswith('-01-01') and end.endswith('-12-31'):
             date = f'{start[:4]}-{end[:4]}'

@@ -1,11 +1,15 @@
+import io
+import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 from urllib.parse import parse_qs
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts/archive_search'))
+import search_gda_bayern as bayern
 from search_gda_bayern import Client, Results
 
 
@@ -16,6 +20,23 @@ def page(updates):
 
 
 class PaginationTests(unittest.TestCase):
+    def test_search_continues_after_a_result_without_record_details(self):
+        start = 'https://www.gda.bayern.de/gvl/archive.xhtml?id='
+        rows = [{'url': start + 'class', 'title': 'Classification'},
+                {'url': start + 'record', 'title': 'Undated record - o.D.'}]
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch.object(sys, 'argv', ['search_gda_bayern.py', 'Example', '--delay', '1', '--cache-dir', tmp]), \
+             patch.object(bayern, 'ResultsStore'), patch.object(Client, 'wait'), \
+             patch.object(Client, 'search', return_value=iter((row, len(rows)) for row in rows)), \
+             patch.object(bayern.subprocess, 'run', side_effect=[
+                 subprocess.CompletedProcess([], 1, '', f'Error: {bayern.MISSING_RECORD_DETAILS}\n'),
+                 subprocess.CompletedProcess([], 0, 'data/documents/9999.json\n', ''),
+             ]) as run, redirect_stdout(io.StringIO()) as stdout, redirect_stderr(io.StringIO()) as stderr:
+            self.assertEqual(bayern.main(), 0)
+        self.assertEqual([call.args[0][-1] for call in run.call_args_list], [row['url'] for row in rows])
+        self.assertIn('data/documents/9999.json', stdout.getvalue())
+        self.assertIn('skipped 1 result(s) without a shelfmark or date', stderr.getvalue())
+
     def test_extracts_citation_from_search_result(self):
         parser = Results()
         parser.feed('''<a id="searchEntry:0:docForm:searchDocumentLink" href="/gvl/archive.xhtml?id=1">491/a - Charter</a>

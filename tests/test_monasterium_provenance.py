@@ -82,6 +82,26 @@ class ProvenanceTests(unittest.TestCase):
             path, _ = create_record(root, 'https://www.monasterium.net/charter')
             self.assertEqual(json.loads(path.read_text())['date'], '1332-09-08/1332-09-15')
 
+    def test_reversed_range_uses_czech_issue_date(self):
+        url = 'https://www.monasterium.net/mom/CZ-NA/ACK/75/charter'
+        metadata = (b'<cei><idno>75</idno><issued>'
+                    b'<dateRange from="13251125" to="13151125">1315 listopad\n 25</dateRange>'
+                    b'</issued><abstract>Catalog text.</abstract></cei>')
+        with tempfile.TemporaryDirectory() as tmp, \
+             patch('archive_record_monasterium.fetch_cei', return_value=metadata), \
+             patch('archive_record_monasterium_internal.REPOSITORY_ROOT', Path(tmp)):
+            path, _ = download_record(url)
+            self.assertEqual(path.name, '1315-11-25.json')
+            document = json.loads(path.read_text())
+            self.assertEqual(document['date'], '1315-11-25')
+            self.assertEqual(document['entries'][0]['url'], url)
+
+    def test_reversed_range_without_issue_date_is_rejected(self):
+        root = ET.fromstring('<cei><issued><dateRange from="13251125" to="13151125">'
+                             '1315 listopad 25 – 1325 listopad 25</dateRange></issued></cei>')
+        with self.assertRaisesRegex(ValueError, 'Reversed Monasterium date range'):
+            create_record(root, 'https://www.monasterium.net/charter')
+
     def test_empty_metadata_is_reported_as_unavailable(self):
         url = 'https://www.monasterium.net/mom/CZ-NA/AZK-Koruna/1332_IX_08-15/charter'
         with patch('archive_record_monasterium.fetch_cei', return_value=b'<atom:null xmlns:atom="http://www.w3.org/2005/Atom"/>'), \

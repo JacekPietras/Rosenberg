@@ -25,7 +25,7 @@ from search_retry import retry_get, retry_http_500
 sys.path.insert(0, str(ROOT / 'scripts/archive_records'))
 from archive_record_gda_resolver import SearchForm
 from archive_record_storage import has_source, has_url, values
-from archive_record_gda_bayern import iso_date
+from archive_record_gda_bayern import MISSING_RECORD_DETAILS, iso_date
 
 URL = 'https://www.gda.bayern.de/gvl/search.xhtml'
 CACHE = ROOT / '.cache/archive_search/gda_bayern'
@@ -307,7 +307,7 @@ def main():
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
     client = Client(args.delay, args.cache_dir)
-    count = total = skipped_without_laufzeit = 0
+    count = total = skipped_without_details = 0
     client.cache_dir.mkdir(parents=True, exist_ok=True)
     lock = (client.cache_dir / 'session.lock').open('a')
     try:
@@ -349,16 +349,16 @@ def main():
                 if proc.returncode:
                     if proc.stderr:
                         print(proc.stderr, end='', file=sys.stderr, flush=True)
-                    if 'The GDA page has no Laufzeit field' in proc.stderr:
-                        skipped_without_laufzeit += 1
-                        print(f'Skipping unavailable catalog record without Laufzeit: {url}', file=sys.stderr, flush=True)
+                    if MISSING_RECORD_DETAILS in proc.stderr:
+                        skipped_without_details += 1
+                        print(f'Skipping catalogue result without a shelfmark or date: {url}', file=sys.stderr, flush=True)
                         continue
                     raise RuntimeError(f'Downloader failed for {url}; stopping (exit {proc.returncode})')
         if count == 0:
             results.record(phrase, False)
         summary = f'Listed {count} of {total} catalogue results' + (' (limited)' if count < total else '')
-        if skipped_without_laufzeit:
-            summary += f'; skipped {skipped_without_laufzeit} record(s) without Laufzeit'
+        if skipped_without_details:
+            summary += f'; skipped {skipped_without_details} result(s) without a shelfmark or date'
         print(summary, file=sys.stderr)
         return 0
     except (OSError, ValueError, RuntimeError) as exc:

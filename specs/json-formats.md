@@ -211,6 +211,7 @@ lists.
 ```
 
 - `date` (required): the document's historical date. `place`: place of issue.
+- Catalogue imports use `9999` when the document is undated.
 - For a partially legible year, trailing unknown digits may be `X`, such as
   `158X` for 1580–1589 or `15XX` for 1500–1599.
 - `transcribed`: `true` when transcribed; absent or `false` otherwise.

@@ -1,4 +1,6 @@
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -12,6 +14,34 @@ from archive_record_gda_bayern import RecordFields, create_record, field_values,
 
 
 class ResolverTests(unittest.TestCase):
+    def test_import_saves_records_with_undated_or_missing_laufzeit(self):
+        url = 'https://www.gda.bayern.de/gvl/archive.xhtml?id=example'
+        permalink = 'https://www.gda.bayern.de/gvl/document/762e2c8d-0916-4308-a2bd-cdebfb3bd436'
+        values = ('o.D.', 'o. D.', 'ohne Datum', '[]', '[Hinweis: Feld bitte leer lassen]', '', None)
+        for value in values:
+            with self.subTest(laufzeit=value), tempfile.TemporaryDirectory() as tmp:
+                page = ('<td data-label="Bestellsignatur">StAN, Akten 337/fol. 229 - 231</td>'
+                        '<td data-label="Betreff">Schadensliste des Zaisolph von Rosenberg.</td>')
+                if value is not None:
+                    page += f'<td data-label="Laufzeit">{value}</td>'
+                with patch('archive_record_gda_bayern.DOCUMENT_DIR', Path(tmp)), \
+                     patch('archive_record_gda_bayern.fetch', side_effect=[page + permalink, page] * 2):
+                    path, updated = create_record(url)
+                    self.assertFalse(updated)
+                    self.assertEqual(create_record(url), (path, True))
+                self.assertEqual(path.name, '9999.json')
+                record = json.loads(path.read_text())
+                self.assertEqual(record['date'], '9999')
+                self.assertEqual(record['entries'], [{
+                    'source': 'StAN, Akten 337/fol. 229 - 231',
+                    'url': permalink,
+                    'german': 'Schadensliste des Zaisolph von Rosenberg.',
+                }])
+
+    def test_undated_handling_still_rejects_unrecognized_date_labels(self):
+        with self.assertRaisesRegex(ValueError, 'Could not determine the document date'):
+            iso_date('fehlerhafte Datumsangabe')
+
     def test_seal_section_excludes_other_description_fields(self):
         description = ('Beschreibstoff: Pergament\nSiegler bzw. Siegel: S 1: Bischof, besch.\n'
                        'S 2: Konrad von Rosenberg, fehlt\nMaße: 20 cm')

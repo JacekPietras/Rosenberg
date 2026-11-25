@@ -30,6 +30,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parent.parent.parent
 DOCUMENT_DIR = REPOSITORY_ROOT / "data" / "documents"
 HOSTS = {"www.regesta-imperii.de", "regesta-imperii.de"}
 UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
+PROVISIONAL_UUID_RE = re.compile(rf"ri[-_]prov[-_]({UUID_RE.pattern})", re.I)
 MONTH_PREFIXES = ["jan", "feb", "mär", "apr", "mai", "jun", "jul", "aug", "sep", "okt", "nov", "dez"]
 MONTH_ALIASES = {"jän": 1, "mar": 3, "mrz": 3}
 GERMAN_DATE_RE = re.compile(r"(\d{3,4})(?:\s+([A-Za-zäÄ]{3,9})\.?(?:\s+(\d{1,2})\b)?)?")
@@ -245,7 +246,11 @@ def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
         raise ValueError("The Regesta Imperii page has no citation, date or abstract")
     heading_text = strip_tags(heading.group(1))
     parts = urlsplit(entered_url)
-    url = urlunsplit(parts._replace(query="", fragment="")) if "/regesten/" in parts.path else entered_url
+    url = entered_url
+    if PROVISIONAL_UUID_RE.search(parts.path):
+        url = canonical_url(entered_url)
+    elif "/regesten/" in parts.path:
+        url = urlunsplit(parts._replace(query="", fragment=""))
     record: dict[str, object] = {
         "date": parse_german_date(heading_text),
         "label": ["to review"],
@@ -261,6 +266,10 @@ def parse_html(page: bytes, entered_url: str) -> dict[str, object]:
 
 def canonical_url(url: str) -> str:
     path = urlsplit(url).path
+    # Detail links use ri-prov-, while the catalogue's persistent URI uses ri_prov_.
+    provisional = PROVISIONAL_UUID_RE.search(path)
+    if provisional:
+        return f"https://www.regesta-imperii.de/id/ri_prov_{provisional.group(1).lower()}"
     match = UUID_RE.search(path)
     if match:
         return f"https://www.regesta-imperii.de/id/{match.group(0).lower()}"

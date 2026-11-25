@@ -27,6 +27,8 @@ from archive_record_storage import has_source, has_url
 
 URL = 'https://www.regesta-imperii.de/regesten/suche.html'
 CACHE = ROOT / '.cache/archive_search/regesta_imperii'
+CACHE_VERSION = 2
+
 class Form(HTMLParser):
     def __init__(self):
         super().__init__(); self.active = False; self.fields = {}; self.action = None
@@ -93,15 +95,17 @@ class Client:
     def search(self, query, limit, exists=False):
         path = self.cache / (hashlib.sha256(query.encode()).hexdigest() + '.json')
         if path.exists():
-            data = json.loads(path.read_text()); print(f'Using cached search: {path}', file=sys.stderr)
+            data = json.loads(path.read_text())
             available = data.get('available', data.get('total'))
             if (data.get('query') != query or not isinstance(data.get('rows'), list)
                     or not isinstance(data.get('total'), int)
                     or not isinstance(available, int) or available < 0
                     or available > data['total'] or len(data['rows']) != available):
                 raise ValueError('Invalid cached search')
-            rows = [{**row, 'url': ri.canonical_url(row['url'])} for row in data['rows']]
-            return rows[:limit], data['total']
+            if exists or data.get('version') == CACHE_VERSION:
+                print(f'Using cached search: {path}', file=sys.stderr)
+                return ([] if exists else data['rows'][:limit]), data['total']
+            print('Refreshing cached search to recover provisional record links', file=sys.stderr)
         _, page = ri.fetch(URL)
         form = Form(); form.feed(page.decode('utf-8', 'replace'))
         if not form.action or 'tx_hisodat_sources[__trustedProperties]' not in form.fields: raise ValueError('Search form missing')
@@ -141,7 +145,8 @@ class Client:
             _, page = ri.fetch(next_url); number += 1
         if len(rows) > available: raise ValueError('Too many results')
         if len(rows) == available:
-            path.write_text(json.dumps({'query': query, 'total': total, 'available': available, 'rows': rows}, ensure_ascii=False, indent=2) + '\n')
+            data = {'version': CACHE_VERSION, 'query': query, 'total': total, 'available': available, 'rows': rows}
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
         return rows[:limit], total
 
 def main():
