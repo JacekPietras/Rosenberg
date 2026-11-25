@@ -463,11 +463,15 @@ class Validator:
 
 def collect_paths(paths, validator):
     files = set()
+    deleted = validator.root.resolve() / 'data/documents/deleted'
     for path in paths:
+        resolved = path.resolve()
+        if resolved.is_relative_to(deleted):
+            continue
         if path.is_dir():
-            files.update(item for item in json_paths(path.resolve(), validator.root / 'data/documents/deleted') if item.is_file())
+            files.update(item for item in json_paths(resolved, deleted) if item.is_file())
         elif path.is_file():
-            files.add(path.resolve())
+            files.add(resolved)
         else:
             validator.report(path, 'input path does not exist or is not a regular file/directory')
     return sorted(files)

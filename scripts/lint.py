@@ -31,15 +31,14 @@ def main(argv=None):
     parser.add_argument(
         "--all",
         action="store_true",
-        help="include documents normally skipped by document validation",
+        help="include records in the active collection normally skipped by document validation",
     )
     args = parser.parse_args(argv)
     failed = False
     issues = 0
     normalized_names = 0
-    data = ROOT / "data"
-    files = data.rglob("*.json") if args.all else json_paths(data, data / "documents/deleted")
-    for path in sorted(files):
+    data_root = ROOT / "data"
+    for path in sorted(json_paths(data_root, data_root / "documents/deleted")):
         duplicates = []
         truncated_fields = []
 

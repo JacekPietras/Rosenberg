@@ -394,17 +394,16 @@ Pass a place name or spelling variation to show only matching entries. Churches 
 
 ### Fact validation
 
-Run `./lint` to run all data linters. Use `./lint --all` to include documents
-normally skipped by document validation, including deleted documents. Individual
-checks live in `scripts/linters/`.
+Run `./lint` to run all data linters. Individual checks live in
+`scripts/linters/`.
 
 ### Document validation
 
 Run `./lint` to check document JSON files. Entries without English text are
-reported as warnings; documents in `data/documents/deleted/`, legacy documents
-marked `"deleted": true`, and documents with
-the `Czechia`, `Schenk`, or `Mönch` labels are skipped by default. Use
-`./lint --all` to include them.
+reported as warnings. Both `./lint` and `./lint --all` skip JSON files under
+`data/documents/deleted/`. Within the active collection, `--all` also validates
+legacy documents marked `"deleted": true` and documents labeled `Czechia`,
+`Schenk`, or `Mönch`.
 
 Document filenames use `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, optionally followed
 by `_I` (a numeric suffix), and `.json`. The linter warns about invalid names.

@@ -86,11 +86,15 @@ def suggested_name(match, given_names, surnames):
 
 def collect_files(paths):
     files = set()
+    deleted = ROOT / 'data/documents/deleted'
     for path in paths:
+        resolved = path.resolve()
+        if resolved.is_relative_to(deleted):
+            continue
         if path.is_dir():
-            files.update(item for item in json_paths(path.resolve(), ROOT / 'data/documents/deleted') if item.is_file())
+            files.update(item for item in json_paths(resolved, deleted) if item.is_file())
         elif path.is_file():
-            files.add(path.resolve())
+            files.add(resolved)
         else:
             print(f'{path}: error: input path does not exist or is not a file/directory')
     return sorted(files)

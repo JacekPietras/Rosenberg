@@ -89,16 +89,18 @@ def remove_bracketed_variants(text, variants):
     return "".join(pieces)
 
 
-def collect_files(paths, include_deleted=False):
+def collect_files(paths):
     files = set()
     missing = []
+    deleted = ROOT / "data/documents/deleted"
     for path in paths:
+        resolved = path.resolve()
+        if resolved.is_relative_to(deleted):
+            continue
         if path.is_dir():
-            path = path.resolve()
-            items = path.rglob("*.json") if include_deleted else json_paths(path, ROOT / "data/documents/deleted")
-            files.update(item for item in items if item.is_file())
+            files.update(item for item in json_paths(resolved, deleted) if item.is_file())
         elif path.is_file():
-            files.add(path.resolve())
+            files.add(resolved)
         else:
             missing.append(path)
     return sorted(files), missing
@@ -139,7 +141,7 @@ def reorder_fields(value, field_order):
     return {key: value[key] for key in ordered_keys}
 
 
-def order_document(document, archived=False):
+def order_document(document):
     variants = canonical_variants()
     changed = False
     if "delete" in document:
@@ -149,7 +151,7 @@ def order_document(document, archived=False):
         changed = True
     reordered = reorder_fields(document, DOCUMENT_FIELDS)
     labels = reordered.get("label")
-    if archived or reordered.get("deleted") is True:
+    if reordered.get("deleted") is True:
         if labels == "to review":
             reordered.pop("label")
             changed = True
@@ -287,12 +289,12 @@ def main(argv=None):
     parser.add_argument(
         "--all",
         action="store_true",
-        help="validate documents normally skipped by document validation",
+        help="validate records in the active collection normally skipped by document validation",
     )
     parser.add_argument("paths", nargs="*", type=Path, help="document JSON files or directories (default: data/documents)")
     args = parser.parse_args(argv)
 
-    files, missing = collect_files(args.paths or [ROOT / "data/documents"], args.all)
+    files, missing = collect_files(args.paths or [ROOT / "data/documents"])
     errors = 0
     warnings = 0
 
@@ -301,7 +303,6 @@ def main(argv=None):
         errors += 1
 
     for path in files:
-        archived = path.is_relative_to(ROOT / "data/documents/deleted")
         try:
             document = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, UnicodeError, ValueError) as exc:
@@ -310,7 +311,7 @@ def main(argv=None):
             continue
 
         if isinstance(document, dict):
-            if not archived and document.get("deleted") is not True:
+            if document.get("deleted") is not True:
                 labels = document.get("label")
                 if labels is None or labels == "" or labels == []:
                     document["label"] = "to review"
@@ -325,7 +326,7 @@ def main(argv=None):
                     except (OSError, UnicodeError) as exc:
                         print(f"{display_path(path)}: error: cannot add review label: {exc}")
                         errors += 1
-            if not args.all and (archived or document.get("deleted") is True):
+            if not args.all and document.get("deleted") is True:
                 labels = document.get("label")
                 if labels == "to review":
                     document.pop("label")
@@ -384,7 +385,7 @@ def main(argv=None):
                 continue
 
         if isinstance(document, dict):
-            document, reordered = order_document(document, archived)
+            document, reordered = order_document(document)
             if reordered:
                 try:
                     original = path.read_text(encoding="utf-8")
