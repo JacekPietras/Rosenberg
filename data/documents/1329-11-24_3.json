@@ -1,0 +1,46 @@
+{
+  "date": "1329-11-24",
+  "place": "Nagelsberg",
+  "label": "Franken",
+  "entries": [
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "Kraft von Hohenloch und Eberhart von Rosenberg, Vogt zu Durne, errichten einen steten gemeinen Burgfrieden zu Nagelsberg, wobei Kraft verspricht, weder den genannten Vogt noch Arnolt von Tierbach noch Otten Leschen noch irgend sonst jemand, der von des Erzbischofs von Meinze wegen in der Burg sitze, daraus zu verdrängen, und, falls er mit dem Erzbischof oder dem Vogt in Fehde gerate, diesen aus der Burg Nagelsberg kein Leid zuzufügen und den langen Turm, die Burg und das Thor nach seinem Teil zu behüten; entsprechende Zusagen gibt Eberhard von Rosenberg, der ferner bekundet, daß Arnold von Tierbach und Otte Lessche ihm geschworen haben, diesen Burgfrieden zu halten, und daß er, falls sein Herr von Mainz den Burgfrieden aufgeben wolle, dies Kraft acht Tage vorher mitteilen werde; Einlaßrecht sollen nur die Diener des Erzbischofs und Krafts haben, die von den jeweiligen beiderseitigen Amtmännern die Befugnis bekommen. Kraft und Eberhard beschwören diesen Burgfrieden und besiegeln die Urkunde. Gegeben 1329, an sante Katerinen abende.",
+      "english": "Kraft von Hohenlohe and Eberhard von Rosenberg, Vogt zu Dürn, establish a perpetual common Burgfrieden (castle peace) at Nagelsberg. Kraft promises not to expel the Vogt, Arnold von Tierbach, Otto Lesch, or anyone else residing in the castle on behalf of the Archbishop of Mainz. If he enters into a feud with the archbishop or the Vogt, he will do them no harm from Nagelsberg Castle and will guard his share of the long tower, the castle, and the gate. Eberhard makes corresponding promises. He further attests that Arnold von Tierbach and Otto Lesch have sworn to keep this Burgfrieden, and promises to notify Kraft eight days in advance if his lord of Mainz wishes to end it. Only the servants of the archbishop and Kraft may be admitted, with permission from the respective officials of both parties. Kraft and Eberhard swear to this Burgfrieden and seal the document. Given in 1329, on the eve of St. Catherine’s Day.",
+      "facts": [
+        {
+          "person": "Kraft von Hohenlohe",
+          "type": "generic",
+          "content": "established and swore a perpetual common Burgfrieden at Nagelsberg with Eberhard von Rosenberg."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "established and swore a perpetual common Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
+        },
+        {
+          "person": "Arnold von Tierbach",
+          "type": "generic",
+          "content": "swore to keep the Burgfrieden at Nagelsberg."
+        },
+        {
+          "person": "Otto Lesch",
+          "type": "generic",
+          "content": "swore to keep the Burgfrieden at Nagelsberg."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "promised to notify Kraft von Hohenlohe eight days in advance if his lord of Mainz wished to end the Burgfrieden at Nagelsberg."
+        }
+      ]
+    }
+  ]
+}

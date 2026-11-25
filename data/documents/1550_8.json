@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Archiv 8715",
-      "url": "https://www.gda.bayern.de/gvl/document/d45e923b-37d7-46ea-8a5a-16c04cbae841",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/d45e923b-37d7-46ea-8a5a-16c04cbae841",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++42E12F92-B3CB-4A55-8030-AD1640CDD8C2&parent_id="
+      ],
       "german": "Schreiben des Christoph Sigmund von Wirsberg zu Lanzendorf und Neudrossenfeld (Trosenfeldt) über ein Darlehen von 1000 fl. für Konrad von Rosenberg zu Haltenbergstetten (Halberstetten westl. Rothenburg)"
     }
   ]

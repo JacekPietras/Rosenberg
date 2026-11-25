@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Ratskanzlei, Ratschlagbücher 9/fol. 136v",
-      "url": "https://www.gda.bayern.de/gvl/document/b52f8de9-e084-4c83-8742-d50eefb01b8c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/b52f8de9-e084-4c83-8742-d50eefb01b8c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b710708c-e41a-4699-af79-b95ead9b330a&parent_id="
+      ],
       "german": "74b) Ratschlag betr. Klage auf Purgation oder Acht beim Kammergericht wegen Landfriedensbruchs gegen Hans Thoma von Rosenberg wegen Aufhauens von Nbg. Wägen (gemeinsames Vorgehen mit den übrigen Bundesständen angeraten)"
     }
   ]

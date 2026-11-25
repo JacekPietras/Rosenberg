@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Creglingen, Urkunden 355",
-      "url": "https://www.gda.bayern.de/gvl/document/1aae9e6c-e8ff-47d4-843f-d37f831f7ebc",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1aae9e6c-e8ff-47d4-843f-d37f831f7ebc",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EFAC9299-9212-44D1-9187-A3A3BC08F2ED&parent_id="
+      ],
       "german": "Lehenrevers des Lorenz von Rosenberg gegen Markgrafen Georg Friedrich von Brandenburg um die Lehen zu Waldmannshofen. -  Siegler: Lorenz von Rosenberg.\n\nBesiegelung/Beglaubigung: 1 Sg. in Holzkapsel o. Deckel"
     }
   ]

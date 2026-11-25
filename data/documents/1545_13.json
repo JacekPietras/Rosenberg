@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Ratskanzlei, A-Laden, Akten 132/13",
-      "url": "https://www.gda.bayern.de/gvl/document/f971dbdb-258e-42ae-ba1c-300b7106e6af",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/f971dbdb-258e-42ae-ba1c-300b7106e6af",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0107D50B-2DF4-45DC-A73C-CD6F75F7E3F6&parent_id="
+      ],
       "german": "Verhandlung beim Kaiser, wegen des gefangenen Herrn Hieronymus Paumgartner, wider Albrecht von Rosenberg"
     }
   ]

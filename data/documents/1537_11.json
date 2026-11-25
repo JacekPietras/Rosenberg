@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Würzburger Archivalien 2792",
-      "url": "https://www.gda.bayern.de/gvl/document/4739d984-e0d6-4793-88d2-20aeaf32699f",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/4739d984-e0d6-4793-88d2-20aeaf32699f",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E92F16B8-3656-4A12-8990-0EA748AE8B59&parent_id="
+      ],
       "german": "Der für an das Hochstift Würzburg heimgefallen erklärte halbe Zehnt zu Wolkersfelden, der halbe Teil an der Wasserbehausung und 1/4 am Zehnt zu Vorbachzimmern, ausgenommen 1/12 des ganzen Zehnten, womit Oswald und Georg Wernitzer gen. Beheim aus Rothenburg ob der Tauber belehnt waren, wovon aber der Teil Georg Wernitzers ohne lehensherrlichen Konsens an Zaisolf von Rosenberg verkauft worden ist"
     }
   ]

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Ritterorden, Urkunden 5616",
-      "url": "https://www.gda.bayern.de/gvl/document/789880c4-6fb3-42a9-9f23-f37e682c7843",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/789880c4-6fb3-42a9-9f23-f37e682c7843",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1BC54560-55AB-449A-BDD5-FCF37D107563&parent_id="
+      ],
       "german": "Gegenbrief des Cristoffel Hack von Dinckelssbuhel, Priesters, für das Deutsche Haus zu Virnsperg über die ihm verliehene Pfarrei Obernzenn. - Komtur: Herr Wolfgang von Rosenberg. - Siegler: Junker Gotz Lochinger, Amtmann zu Hoeneck.",
       "img": [
         {

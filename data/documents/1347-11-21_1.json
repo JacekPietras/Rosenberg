@@ -2,6 +2,7 @@
   "date": "1347-11-21",
   "place": "nuremberg",
   "label": "Franken",
+  "transcribed": true,
   "entries": [
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 1 Bü 5043",
@@ -150,6 +151,32 @@
           ],
           "type": "generic",
           "content": "had his imperial serfs in the Ohrenwald and along the Kocher granted to Kraft von Hohenlohe and his heirs by Emperor Charles IV."
+        }
+      ]
+    },
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "Wir Karl von gots gnaden Romischer kunig ze allen zeiten merer dez richs und kunig ze Beheim bekennen und tun kunt offenlichen mit disem briefe allen den, die in sehent oder horent lesen, daz wir an gesehen haben núczen und getruwen dienst, den uns der edel unser lieber getruwer Kraft von Hohenloch geton hot und tun sol und mag, haben wir im und sinen erben in gegeben und geben in mit disem briefe alle die eygin gebåre, die uns und daz rich angehorent, die siczen und gesezzen sint uf dem Orenwalde und an dem Kochen, und mit namen alle die gebure, die Eberhart von Rosenberg vogt ze Durn vor von dez richs wegen inne hat gehabt, in welchen zenten die sint gesezzen, wie die geheizzen und genant sint. Die selben vor genanten gebure sol er und sin erben inne haben und niezzen und von unsern wegen schirmen und versprechen on geverde. Dez ze urkunde geben wir im und sinen erben disen brief versigelt mit unserm insigel, der eben ist zu Nurnberg an mittewuchen nach sant Elsebethen tag, do man zalte noch Cristus geburt dreuczehen hundert jor dor noch in dem sybenden und vierczigstem jar, in dem andern jare unserr riche.",
+      "english": "We, Karl, by God’s grace Roman king, at all times increaser of the Empire, and king of Bohemia, acknowledge and make known openly by this letter to all who see or hear it read that, in view of the useful and faithful service rendered and to be rendered to us by the noble and dear faithful Kraft von Hohenlohe, we have given and hereby give to him and his heirs all the serfs belonging to us and the Empire who dwell on the Ohrnwald and along the Kocher, especially all those whom Eberhard von Rosenberg, Vogt zu Dürn, formerly held on behalf of the Empire, whatever their tithing districts or names. He and his heirs are to hold and enjoy these peasants and, on our behalf, protect and warrant them without deceit. In witness of this, we give him and his heirs this letter, sealed with our seal. Given at Nuremberg on the Wednesday after St. Elizabeth’s Day, in the year of Our Lord 1347, the second year of our reign.",
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "had held imperial serfs on the Ohrnwald and along the Kocher on behalf of the Empire."
+        },
+        {
+          "person": "Kraft von Hohenlohe",
+          "type": "generic",
+          "content": "received from King Karl IV and the Empire, for himself and his heirs, the serfs on the Ohrnwald and along the Kocher, including those formerly held by Eberhard von Rosenberg on behalf of the Empire."
+        },
+        {
+          "person": "Kraft von Hohenlohe",
+          "type": "generic",
+          "content": "was to hold and enjoy the granted serfs and protect and warrant them on the king’s behalf."
         }
       ]
     }

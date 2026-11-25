@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Kaiserliches Landgericht Nürnberg, Akten und Bände 76",
-      "url": "https://www.gda.bayern.de/gvl/document/38205f77-a5a2-464c-90c6-bcd915142248",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/38205f77-a5a2-464c-90c6-bcd915142248",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++619dbdb4-cbd3-4e9b-ab1b-efe17198d0c7&parent_id="
+      ],
       "german": "Briefwechsel wegen des von Rosenberg'schen Hintersassen Michel Geilsheimer"
     }
   ]

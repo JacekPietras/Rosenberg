@@ -1,5 +1,5 @@
 {
-  "date": "1344",
+  "date": "1344-10-28",
   "label": "to review",
   "entries": [
     {
@@ -10,6 +10,24 @@
       "mention": [
         {
           "person": "Ludwig von Hohenlohe"
+        }
+      ]
+    },
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350, S. 559 Nr. 682",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "Eberhart von Ussenchein und Otilie, seine eheliche Wirtin, verkaufen ihrem gnädigen Herrn Ludwig von Hohenloch und dessen Erben genannte Gülten und Güter zu Gollehofen um 45 Pfund Heller weniger 51 Heller und setzen als Währbürgen die festen Ritter Herrn Konrad von Saunsheim, von Westerndorf genannt, und Herrn Eckelin von Saunsheim mit Leistungspflicht zu Uffenheim. Mit dem Siegel Eberhards und der beiden Bürgen gegeben 1344, am Tag der heiligen zwölf Apostel Simon und Judas.",
+      "english": "Eberhard von Uissigheim and Otilie, his lawful wife, sell their gracious lord Ludwig von Hohenlohe and his heirs certain specified rents and properties at Gollehofen for 45 pounds of Heller less 51 Heller. They appoint as sureties the steadfast knights Konrad von Saunsheim, called of Westerndorf, and Eckelin von Saunsheim, who are required to render surety at Uffenheim. The deed is issued under the seals of Eberhard and the two sureties in 1344, on the feast of the holy apostles Simon and Judas.",
+      "facts": [
+        {
+          "person": "Eberhard von Uissigheim",
+          "type": "generic",
+          "content": "sold rents and properties at Gollehofen to Ludwig von Hohenlohe and his heirs together with his wife Otilie."
+        },
+        {
+          "person": "Otilie",
+          "of": "Eberhard von Uissigheim",
+          "type": "spouse"
         }
       ]
     }

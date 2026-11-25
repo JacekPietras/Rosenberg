@@ -1,0 +1,111 @@
+{
+  "date": "1321-10-24",
+  "place": "Würzburg",
+  "label": "Franken",
+  "entries": [
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "Bischof Gottfried von Würzburg giebt seine Einwilligung dazu, daß das Kloster Seligenthal 11 Pfund Herrengülten bei der Burg Rosenberg im Dorfe Syndoltsheim gegen zwei Drittel des Zehnten zu Ruchsheim an den Ritter Arnold von Rosenberg und dessen Bruderssöhne Eberhard und Wipert austauscht, welche zwei Drittel diese von dem Grafen Ruprecht von Dürn zu Lehen tragen, der hinwiederum damit von dem Hochstift Würzburg belehnt ist. Datum Herbipoli anno domini MCCCXXI., IX. kalendas Novembris.",
+      "english": "Bishop Gottfried of Würzburg consents to Seligenthal Monastery exchanging 11 pounds of rents at Rosenberg Castle in the village of Syndoltsheim for two thirds of the tithe at Ruchsheim with the Ritter Arnold von Rosenberg and his brother’s sons Eberhard and Wipert. They hold these two thirds as a fief from Count Ruprecht von Dürn, who in turn holds them as a fief from the Bishopric of Würzburg. Given at Würzburg in the year of the Lord 1321, on the ninth day before the Kalends of November.",
+      "mention": [
+        {
+          "person": "Bischof Gotfried",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "exchanged rents at Rosenberg Castle in Syndoltsheim for two thirds of the tithe at Ruchsheim with Seligenthal Monastery."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "kin",
+          "of": "Arnold von Rosenberg",
+          "term": "Bruderssohn"
+        },
+        {
+          "person": "Wiprecht von Rosenberg",
+          "type": "kin",
+          "of": "Arnold von Rosenberg",
+          "term": "Bruderssohn"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "sibling",
+          "of": "Wiprecht von Rosenberg"
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "held two thirds of the tithe at Ruchsheim as a fief from Count Ruprecht von Dürn."
+        },
+        {
+          "person": "Wiprecht von Rosenberg",
+          "type": "generic",
+          "content": "held two thirds of the tithe at Ruchsheim as a fief from Count Ruprecht von Dürn."
+        },
+        {
+          "person": "Ruprecht von Dürn",
+          "personTitle": [
+            "Graf von Dürn"
+          ],
+          "type": "generic",
+          "content": "held two thirds of the tithe at Ruchsheim as a fief from the Bishopric of Würzburg."
+        }
+      ]
+    },
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "1321 September 20. Bischof Gottfried von Würzburg bestätigt einen Tausch von Einkünften bei der Veste Rosemberg im Dorfe Syndoltsheim durch das Kloster Selgental an den Ritter Arnold von Rosemberg und dessen Bruderssöhne Eberhard und Wipert von Rosemberg, die dafür zwei Drittel des Weinzehnten zu Ruchsheim geben, den sie von dem Grafen Ruprecht von Dürne, der damit vom Hochstift Würzburg belehnt ist, als Afterlehen innehaben; der Bischof eignet dem Kloster diesen Zehnten, wogegen die von Rosenburg jene Einkünfte dem Grafen Ruprecht und dieser dieselben weiter dem Hochstift zu Lehen auftragen. Mit dem bischöflichen Siegel gegeben zu Würzburg 1321, IXº. kalendas Novembris.",
+      "english": "The heading dates this to September 20, 1321. Bishop Gottfried of Würzburg confirms an exchange by Seligenthal Monastery of revenues at Rosenberg Castle in Syndoltsheim to the Ritter Arnold von Rosenberg and his brother’s sons Eberhard and Wiprecht von Rosenberg, who give in return two thirds of the wine tithe at Ruchsheim, which they hold as a subfief from Count Ruprecht von Dürn, who in turn holds it as a fief from the Bishopric of Würzburg. The bishop grants this tithe to the monastery, while the Rosenbergs grant those revenues as a fief to Count Ruprecht, who in turn grants them as a fief to the bishopric. Given with the bishop’s seal at Würzburg in 1321, on the ninth day before the Kalends of November.",
+      "facts": [
+        {
+          "subject": "Seligenthal Monastery",
+          "type": "generic",
+          "content": "received the two thirds of the wine tithe at Ruchsheim as its property from the Bishopric of Würzburg."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "granted the revenues at Rosenberg Castle in Syndoltsheim as a fief to Count Ruprecht von Dürn."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "granted the revenues at Rosenberg Castle in Syndoltsheim as a fief to Count Ruprecht von Dürn."
+        },
+        {
+          "person": "Wiprecht von Rosenberg",
+          "type": "generic",
+          "content": "granted the revenues at Rosenberg Castle in Syndoltsheim as a fief to Count Ruprecht von Dürn."
+        },
+        {
+          "person": "Ruprecht von Dürn",
+          "personTitle": [
+            "Graf von Dürn"
+          ],
+          "type": "generic",
+          "content": "received the revenues at Rosenberg Castle in Syndoltsheim as a fief from the Rosenbergs and granted them onward as a fief to the Bishopric of Würzburg."
+        }
+      ]
+    }
+  ]
+}

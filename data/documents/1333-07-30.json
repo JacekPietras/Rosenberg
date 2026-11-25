@@ -73,6 +73,67 @@
           "content": "took Lauda."
         }
       ]
+    },
+    {
+      "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
+      "german": "Johan von Ryedern und Eberhart von Rosenberg Vogt zu Důrn schreiben dem Erzbischof Baldewin zu Trier, daß sechs Herren im Kapitel zu Würzburg den von Wolveskel gewählt und 17 Kanoniker in dem Kapitel den cantzeler geheischen haben. Mer sollet ir wizzet, daz greve Bertholt von Hennenberg, der burgreve von Norenberg, her Lutze und her Gotze von Hohenloch, daz die wollen bliben an dem von Wolveskel, als sie uns selber han gesaget. Ir sollet mer wizzen, daz her Lutze und her Gotze von Hohenloch dye Rotenburg inne haben, di do auch wider den cantzeler sin; habet ir vaste, daz ir danne als uns dünket gute teydinge gewinnet umbe Rotenburg. Herre, wir roten uch auch die rede, die ir habet mit greve Heinrich von Ryenecke und der frawen von Ryenecke von Hohenloch siner geswien, die sollet ir gentzlich lozen ligen, und enbietet dem vitztum von Aschaffenburg daz selbe, wanne wir sin ietzunde mit in solichen teydingen, daz wir hoffen, wir reden mit in daz uch dor ane gnüclich si. Ich Eberhart von Rosenberg voget zů Důrn enbute uch, daz ich Luden han in genomen, als ir scribet, daz man Goltsteinen solte schirmen von uwern wegen, wanne mich und andere uwere frånt des důchte, daz ez uch nutzlich were von der herschefte wegen von Ryenecke, dye nuwens ist derstorben. Auch hete ich mich underwunden des dorfes zu Wertpach, do korn gulte und win gulte gnug ist, des sprach der von Hanawe und der von Hohenloch, sie heten eynen brief von uch, daz alle lehen solten stille ligen fårbaz und biz ir ez dri wuchen woltet vor geyn eyn ander sagen; wie ich der zů tůn solle, daz scribet mir wider bi disem boten. Datum Herbipoli feria sexta post Jacobi sub sigillo Eberhardi de Rosenberg.",
+      "english": "Johann von Riedern and Eberhard von Rosenberg, Vogt zu Dürn, write to Archbishop Baldewin of Trier that six lords in the Würzburg chapter elected the man of Wolfskehl, while 17 canons in the chapter demanded the chancellor. They further report that Count Berthold von Henneberg, the Burggraf of Nuremberg, and Lords Lutz and Götz von Hohenlohe told them they would support the man of Wolfskehl. Lutz and Götz von Hohenlohe hold Rothenburg, which is also opposed to the chancellor; the writers advise the archbishop to hold firm so that, as they think, he may obtain favorable terms concerning Rothenburg. They also advise him to leave entirely to them the negotiations he has with Count Heinrich von Rieneck and the Lady von Rieneck of Hohenlohe, his sister-in-law, and to send the same message to the Vitztum of Aschaffenburg. They are now negotiating with them and hope to speak with them to the archbishop’s advantage. I, Eberhard von Rosenberg, Vogt zu Dürn, inform you that I have taken Lauda, as you wrote that Goldstein should be protected on your behalf; I and your other friends thought this would benefit you because the lordship of Rieneck had recently fallen vacant. I also took possession of the village of Werbach, where there are ample grain and wine rents. The man of Hanau and the man of Hohenlohe said they had a letter from you ordering that all fiefs remain in abeyance until you wished to summon them to confer with one another within three weeks. Write back by this messenger what I should do. Given at Würzburg on the Friday after St. James’s Day, under Eberhard von Rosenberg’s seal.",
+      "facts": [
+        {
+          "person": "Johann von Riedern",
+          "type": "generic",
+          "content": "reported with Eberhard von Rosenberg to Archbishop Baldewin of Trier on the division in the Würzburg chapter’s election."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "reported with Johann von Riedern to Archbishop Baldewin of Trier on the division in the Würzburg chapter’s election."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "advised Archbishop Baldewin of Trier to hold firm in seeking favorable terms concerning Rothenburg."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "advised Archbishop Baldewin of Trier to leave negotiations with Count Heinrich von Rieneck and the Lady von Rieneck of Hohenlohe to him and Johann von Riedern, and to inform the Vitztum of Aschaffenburg."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "took Lauda on Archbishop Baldewin of Trier’s behalf to protect Goldstein, as the archbishop had requested."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "took possession of Werbach and asked Archbishop Baldewin of Trier for instructions after the men of Hanau and Hohenlohe said they had his letter ordering fiefs to remain in abeyance."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "personTitle": [
+            "Vogt zu Dürn"
+          ],
+          "type": "generic",
+          "content": "sealed the letter to Archbishop Baldewin of Trier."
+        }
+      ]
     }
   ]
 }

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Archiv 867",
-      "url": "https://www.gda.bayern.de/gvl/document/27405aea-46a7-4baa-b119-388481e91682",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/27405aea-46a7-4baa-b119-388481e91682",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DC09B325-FD1E-4B89-8798-0B9029C98E88&parent_id="
+      ],
       "german": "Abschiede von Bundesversammlungen, hier zu Donauwöhrt am 25.3.1537, am 24.6.1537 zu Lauingen, wieder zu Donauwörth am 31.3.1538 und am 14.5.1538 (Druck; \"die Stände des gewesten elfjärigen Bundes\"), zu Ingolstadt am 12.3.1539, dann zu Donauwöhrt anm 23.4.1539 (v.a. Fehde des Hans Thomas von Rosenberg)"
     }
   ]

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Ritterorden, Urkunden 5542",
-      "url": "https://www.gda.bayern.de/gvl/document/8b3f895b-a94c-4f2b-90d5-4fafadeeef51",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/8b3f895b-a94c-4f2b-90d5-4fafadeeef51",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B785BE24-9907-41CD-8EEE-46B3BB6B7CB6&parent_id="
+      ],
       "german": "Urfehde des Christoffel Merckle von Lor für Herrn Wolffgang von Rosenberg, DO-Komtur zu Viernsperg, wegen des Gefängnisses, das er wegen Ehebruchs mit der Köchin des Komturs, Magdalena, unerlaubter Entfernung und Mitnahme der ihm als Bäcker anvertrauten Schlüssel zu Pfisterei und Mühle erlitten hat. - Fürbitter: Herr Wilhelm Halber von Hergern, Komtur zu Mergentheim. - Siegler: derselbe.",
       "img": [
         {

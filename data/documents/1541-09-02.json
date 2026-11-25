@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Ritterorden, Urkunden 5541",
-      "url": "https://www.gda.bayern.de/gvl/document/7e4d0d37-91c5-4fa5-a8a7-94500fb21c8e",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/7e4d0d37-91c5-4fa5-a8a7-94500fb21c8e",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++CAAC78CC-9853-4040-BCE8-55874BA5EFEC&parent_id="
+      ],
       "german": "Urfehde des Hans Wolff von Nürmberg für Herrn Wolffgang von Rosenberg, DO-Komtur zu Viernsperg, wegen des Gefängnisses, das er wegen seines Eindringens in den Garten, Obstwegnahme und beleidigender Reden zu Virnsberg erlitten hat. - Siegler: Herr Hans Jorig von Beldersshaim, Hauskomtur zu Viernsperg.",
       "img": [
         {

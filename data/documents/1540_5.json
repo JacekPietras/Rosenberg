@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Verträge mit dem Deutschen Orden 27",
-      "url": "https://www.gda.bayern.de/gvl/document/377c5088-e172-423d-aed1-acebb2454042",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/377c5088-e172-423d-aed1-acebb2454042",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4902172F-3C60-4229-8572-4AE558A6C225&parent_id="
+      ],
       "german": "Wolf von Rosenberg, Komtur zu Virnsberg, bittet um einen tot gefundenen Hirschen, der ihm auch geschenkt worden."
     }
   ]

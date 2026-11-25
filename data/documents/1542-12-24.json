@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Konsistorialakten) - Systematisches Repertorium 2082/2 fol. 479 - 480",
-      "url": "https://www.gda.bayern.de/gvl/document/4178530a-03e0-4998-b2d9-da4305ce75da",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/4178530a-03e0-4998-b2d9-da4305ce75da",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8a978d5e-a4d6-4131-b3d3-ab4d5650a970&parent_id="
+      ],
       "german": "Deutschordens-Administrator an Rothenburg (Der Deutschordens-Komtur Wolfgang von Rosenberg zu Virnsberg, der im Sterben liegt, will in der Pfarrkirche zu Rothenburg begraben werden)"
     }
   ]
