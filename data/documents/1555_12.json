@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Reichsstadt Nürnberg, Ratskanzlei, A-Laden, Akten 132/22",
-      "url": "https://www.gda.bayern.de/gvl/document/27437a33-542d-48c2-ba14-9282dde14c8d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/27437a33-542d-48c2-ba14-9282dde14c8d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5457D66D-DC8F-4618-97C3-9281D196F9AC&parent_id="
+      ],
       "german": "Deren von Augsburg Bekenntnis wegen der von der Stadt Windsheim erlegten Angebühren an der mit Albrecht von Rosenberg gemachten und geschlossener Vertragssumme (Kopie)"
     }
   ]

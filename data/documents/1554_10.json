@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Mainzer Regierungsarchiv Löwenstein 412/95",
-      "url": "https://www.gda.bayern.de/gvl/document/a807232d-a1d4-4a4b-924c-bc4ce0ee4ae6",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a807232d-a1d4-4a4b-924c-bc4ce0ee4ae6",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++62951288-915C-45A2-B960-857B8D457C81&parent_id="
+      ],
       "german": "Bitte des Ritters Albrecht von Rosenberg zu Bocksberg an den Erzbischof von Mainz um Gestattung der Nutznießung des von Kupprichshausen nach Unterschüpf fließenden Bächleins auf die Länge seines daran liegenden Gartens"
     }
   ]

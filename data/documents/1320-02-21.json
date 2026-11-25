@@ -6,7 +6,21 @@
       "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "Elisabeth von Wertheim, Witwe Gottfrieds von Hohenlohe, beurkundet, daß genannte Güter in dem Dorfe Nassach dem Kloster Bronnbach zu eigen sind und verzichtet auf alle etwaigen Ansprüche. Zeugen: der von Gosheim, Offizial zu Würzburg; Bertoldus, der Schreiber an der Roten Tür; Herr Johannes, der Prior; Herr Eberhart von Ussenkein, der Kellner; Herr Wolvelin, der Hofmeister von Würzburg. Mit ihrem Siegel gegeben 1320, an St. Peters Abend, als er auf den Stuhl gesetzt wurde.",
-      "english": "Elisabeth von Wertheim, widow of Gottfried von Hohenlohe, certifies that the specified properties in the village of Nassach belong to Bronnbach Abbey and renounces any possible claims to them. Witnesses include the official of Würzburg called von Gosheim; Bertoldus, the scribe at the Red Gate; Lord Johannes, the prior; Lord Eberhard von Uissigheim, the cellarer; and Lord Wolvelin, the steward of Würzburg. Issued under her seal in 1320, on the eve of the feast of Saint Peter's Chair.",
+      "english": "Elisabeth von Wertheim, widow of Gotfried von Hohenlohe, certifies that the specified properties in the village of Nassach belong to Bronnbach Abbey and renounces any possible claims to them. Witnesses include the official of Würzburg called von Gosheim; Bertoldus, the scribe at the Red Gate; Lord Johannes, the prior; Lord Eberhard von Uissigheim, the cellarer; and Lord Wolvelin, the steward of Würzburg. Issued under her seal in 1320, on the eve of the feast of Saint Peter's Chair.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Elisabeth von Wertheim"
+        },
+        {
+          "person": "Gotfried von Hohenlohe"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "person": "Eberhard von Uissigheim",

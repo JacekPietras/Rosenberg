@@ -58,8 +58,33 @@
       "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "Graf Rudolf von Wertheim schließt eine Vereinbarung mit seinem Bruder Rudolf, Domherrn zu Würzburg, wonach dieser auf sein Erbe Verzicht leistet und dafür Entschädigung erhält. „Wir bekennen auch unserm vorgenanten bruder, ob frauwe Else von Hohenloch wittib hern Gotfrit selgen von Hohenloch unser lib mume im gebe zwei hundert phund heller, di wir ir schuldig sin, daz wir oder unser erben im di gelten sullen unverzogenlich und widergeben on geverde.“ „Sint gezüge di edel frauwe Else wittib hern Gotfrides seligen von Hohenloch unser mume, der veste ritter her Arnold von Rosenberch, Heinrich Flache, Kraft von Uzzinchein und Gernot schultheis zu Wertheim,“ welche alle die Urkunde besiegeln. Gegeben 1330, an unser frauwen abend purificationis.",
-      "english": "Count Rudolf von Wertheim makes an agreement with his brother Rudolf, a canon of Würzburg, under which his brother renounces his inheritance in return for compensation. The count acknowledges that he and his heirs owe his brother 200 pounds of Heller, to be paid without delay and without deceit, if Lady Else von Hohenlohe, widow of the late Sir Gotfrit von Hohenlohe and their dear aunt, gives that sum to the brother. Witnesses and sealers include Lady Else, the steadfast knight Sir Arnold von Rosenberg, Heinrich Flache, Kraft von Uissigheim, and Gernot, Schultheiß of Wertheim. Given in 1330, on the eve of the Purification of Our Lady.",
-      "facts": []
+      "english": "Count Rudolf von Wertheim makes an agreement with his brother Rudolf, a canon of Würzburg, under which his brother renounces his inheritance in return for compensation. The count acknowledges that he and his heirs owe his brother 200 pounds of Heller, to be paid without delay and without deceit, if Lady Elisabeth von Hohenlohe, widow of the late Sir Gotfrit von Hohenlohe and their dear aunt, gives that sum to the brother. Witnesses and sealers include Lady Else, the steadfast knight Sir Arnold von Rosenberg, Heinrich Flache, Kraft von Uissigheim, and Gernot, Schultheiß of Wertheim. Given in 1330, on the eve of the Purification of Our Lady.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Elisabeth von Hohenlohe"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "person": "Kraft von Uissigheim"
+        },
+        {
+          "person": "Rudolf von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

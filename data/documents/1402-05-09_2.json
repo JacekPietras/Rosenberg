@@ -6,7 +6,19 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 2215",
       "url": "https://www.regesta-imperii.de/id/1402-05-09_1_0_10_0_0_2216_2215",
-      "german": "Kg. Ruprecht befiehlt der stadt Schweinfurt die nächste fällige reichssteuer Arnolt von Rosenberg zu geben."
+      "german": "Kg. Ruprecht befiehlt der stadt Schweinfurt die nächste fällige reichssteuer Arnolt von Rosenberg zu geben.",
+      "english": "King Ruprecht orders the city of Schweinfurt to pay its next due imperial tax to Arnold von Rosenberg.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ]
     }
   ]
 }

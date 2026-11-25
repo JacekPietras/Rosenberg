@@ -73,6 +73,20 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "1321 September 20. Bischof Gottfried von Würzburg bestätigt einen Tausch von Einkünften bei der Veste Rosemberg im Dorfe Syndoltsheim durch das Kloster Selgental an den Ritter Arnold von Rosemberg und dessen Bruderssöhne Eberhard und Wipert von Rosemberg, die dafür zwei Drittel des Weinzehnten zu Ruchsheim geben, den sie von dem Grafen Ruprecht von Dürne, der damit vom Hochstift Würzburg belehnt ist, als Afterlehen innehaben; der Bischof eignet dem Kloster diesen Zehnten, wogegen die von Rosenburg jene Einkünfte dem Grafen Ruprecht und dieser dieselben weiter dem Hochstift zu Lehen auftragen. Mit dem bischöflichen Siegel gegeben zu Würzburg 1321, IXº. kalendas Novembris.",
       "english": "The heading dates this to September 20, 1321. Bishop Gottfried of Würzburg confirms an exchange by Seligenthal Monastery of revenues at Rosenberg Castle in Syndoltsheim to the Ritter Arnold von Rosenberg and his brother’s sons Eberhard and Wiprecht von Rosenberg, who give in return two thirds of the wine tithe at Ruchsheim, which they hold as a subfief from Count Ruprecht von Dürn, who in turn holds it as a fief from the Bishopric of Würzburg. The bishop grants this tithe to the monastery, while the Rosenbergs grant those revenues as a fief to Count Ruprecht, who in turn grants them as a fief to the bishopric. Given with the bishop’s seal at Würzburg in 1321, on the ninth day before the Kalends of November.",
+      "mention": [
+        {
+          "person": "Bischof Gotfried",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "subject": "Seligenthal Monastery",

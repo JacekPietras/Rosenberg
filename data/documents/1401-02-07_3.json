@@ -6,7 +6,22 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 479",
       "url": "https://www.regesta-imperii.de/id/1401-02-07_6_0_10_0_0_479_479",
-      "german": "Gleiches schreiben an Arnold von Rosenberg d. ältern, amtmann zu Luden (Lauda)."
+      "german": "Gleiches schreiben an Arnold von Rosenberg d. ältern, amtmann zu Luden (Lauda).",
+      "english": "The same is written to Arnold von Rosenberg the Elder, bailiff at Lauda.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Ältere"
+          ]
+        },
+        {
+          "place": "lauda"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

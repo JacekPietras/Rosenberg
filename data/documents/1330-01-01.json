@@ -8,6 +8,26 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "Bischof Wolfram von Würzburg teilt dem Ritter Eberhard von Rosenberg, seinem Getreuen, mit, daß die Lehenshoheit über die Burg Nagelsberg und das Dorf Künzelsau mit ihren Zugehörungen dem Kloster Komburg zustehe, und trägt ihm auf, wenn dieses von dem Edlen Kraft von Hohenlohe gewaltsam daraus geworfen sei, es in den Besių derselben einzuführen und darin zu schüßen. Datum Herbipoli sub maiori sigillo nostro a tergo posito anno domini M°CCC°XXX., V°. nonas Januarii.",
       "english": "Bishop Wolfram of Würzburg informs the Ritter Eberhard von Rosenberg, his liegeman, that feudal lordship over Nagelsberg Castle and the village of Künzelsau with their appurtenances belongs to Comburg Monastery. He orders Eberhard, if the monastery has been violently expelled from them by the noble Kraft von Hohenlohe, to restore it to possession of them and protect it there. Given at Würzburg under our greater seal, affixed on the back, in the year of the Lord 1330, on the fifth day before the Nones of January.",
+      "mention": [
+        {
+          "person": "Bischof Wolfram",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "comburg-stiftskirche"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "place": "nagelsberg-castle"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
       "facts": [
         {
           "subject": "Comburg Monastery",
