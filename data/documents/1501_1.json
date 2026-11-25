@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Archiv 1958",
-      "url": "https://www.gda.bayern.de/gvl/document/b09eebce-f3ed-474b-81cf-a17cc3484162",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/b09eebce-f3ed-474b-81cf-a17cc3484162",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7183138C-9BAF-4CB6-BE15-331DD329F907&parent_id="
+      ],
       "german": "Fehde des Jörg von Rosenberg gegen Asmus Graf von Wertheim (Wiedergabe der Korrespondenz im Druck, um 1502).",
       "english": "Feud of Georg von Rosenberg against Asmus von Wertheim, Graf (reproduction of the correspondence in print, circa 1502).",
       "mention": [

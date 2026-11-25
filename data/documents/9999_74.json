@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Geschichte der Grafen von Wertheim von den ältesten bis zu ihrem Erlöschen im Mannsstamme im Jahre 1556, Nr. CLXXVIII. , S. 307, CLXXVIII.",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }
