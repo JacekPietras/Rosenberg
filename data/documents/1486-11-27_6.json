@@ -6,7 +6,31 @@
     {
       "source": "[RI XIII] H. 10 n. 532",
       "url": "https://www.regesta-imperii.de/id/1486-11-27_2_0_13_10_0_13492_532",
-      "german": "K. F. verhängt die Reichsacht über Georg, Arnold und Friedrich von Rosenberg und gebietet Beistand zugunsten Bf. Rudolfs (II.) von Würzburg."
+      "german": "K. F. verhängt die Reichsacht über Georg, Arnold und Friedrich von Rosenberg und gebietet Beistand zugunsten Bf. Rudolfs (II.) von Würzburg.",
+      "english": "King Friedrich imposes the imperial ban on Georg, Arnold, and Friedrich von Rosenberg and orders assistance in favor of Bishop Rudolf II of Würzburg.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ]
     }
   ]
 }

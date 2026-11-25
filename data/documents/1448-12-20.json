@@ -6,7 +6,19 @@
     {
       "source": "[RI XIII] H. 26 n. 483",
       "url": "https://www.regesta-imperii.de/id/1448-12-20_1_0_13_26_0_483_483",
-      "german": "Kg.F. beglaubigt bei Ulrich von Rosenberg seinen Rat Prokop von Rabenstein, den er grozzer notlicher sachen willen abermals zu ihm entsendet, und bittet ihn, in seinem Sinne zu handeln."
+      "german": "Kg.F. beglaubigt bei Ulrich von Rosenberg seinen Rat Prokop von Rabenstein, den er grozzer notlicher sachen willen abermals zu ihm entsendet, und bittet ihn, in seinem Sinne zu handeln.",
+      "english": "King Frederick commends to Ulrich von Rosenberg his councillor Prokop von Rabenstein, whom he is sending to him again because of important and urgent matters, and asks Ulrich to act according to the king's wishes.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

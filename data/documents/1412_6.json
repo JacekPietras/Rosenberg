@@ -7,7 +7,12 @@
       "source": "[RIplus] Regg. Wenzel, Reichssachen n. 2191",
       "url": "https://www.regesta-imperii.de/id/c8981321-4171-474c-bb17-6cbd46865ac8",
       "german": "Johann von Kenkaus bittet Wenzel, die Waisen Heinrichs von Rosenberg zu schützen.",
-    "english": "Johann von Kenkaus asks Wenzel to protect Heinrich von Rosenberg’s orphans."
+      "english": "Johann von Kenkaus asks Wenzel to protect Heinrich von Rosenberg’s orphans.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

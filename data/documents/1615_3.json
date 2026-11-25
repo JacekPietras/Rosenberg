@@ -5,7 +5,19 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein We 5 Bü 3677",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-635158",
-      "german": "Rezess zwischen den Herren von Rosenberg und den Grafen von Hohenlohe, die Markungsstreitigkeiten im Gehölz am Wiedensee bei Rinderfeld betreffend\n\nLaufzeit: 1615\n\nUmfang: 1 Schreiben"
+      "german": "Rezess zwischen den Herren von Rosenberg und den Grafen von Hohenlohe, die Markungsstreitigkeiten im Gehölz am Wiedensee bei Rinderfeld betreffend\n\nLaufzeit: 1615\n\nUmfang: 1 Schreiben",
+      "english": "Settlement between the lords von Rosenberg and the counts of Hohenlohe concerning boundary disputes in the woodland by the Wiedensee near Rinderfeld.\n\nDates: 1615\n\nExtent: 1 letter.",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rinderfeld"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

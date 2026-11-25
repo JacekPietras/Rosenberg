@@ -5,7 +5,28 @@
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 88",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97972",
-      "german": "Vermischte Rechtsangelegenheiten der Herren von Rosenberg.\n\nLaufzeit: 1531-1606, 1631\n\nEnthält: Enthält: vorwiegend Einzelschriftstücke u.a. in Rechtsstreitigkeiten Rosenberg mit Erasmus Dilling zu Ebertsbronn, Kurpfalz (Kirchen- und Schulgefälle im Amt Boxberg, Lehensempfängnis), Rothenburg (Jagd in der Landwehr), Hohenlohe (abgepfändete Kühe), Würzburg (Lehen), Brandenburg (Schulden) und Deutscher Orden (Fraisch zu Edelfingen; vorwiegend Forderungen des Rats Dr. Philipp Engelhard zu Waldenburg wegen der Edelfingen`schen Kommission).\n\nUmfang: 1 Bd."
+      "german": "Vermischte Rechtsangelegenheiten der Herren von Rosenberg.\n\nLaufzeit: 1531-1606, 1631\n\nEnthält: Enthält: vorwiegend Einzelschriftstücke u.a. in Rechtsstreitigkeiten Rosenberg mit Erasmus Dilling zu Ebertsbronn, Kurpfalz (Kirchen- und Schulgefälle im Amt Boxberg, Lehensempfängnis), Rothenburg (Jagd in der Landwehr), Hohenlohe (abgepfändete Kühe), Würzburg (Lehen), Brandenburg (Schulden) und Deutscher Orden (Fraisch zu Edelfingen; vorwiegend Forderungen des Rats Dr. Philipp Engelhard zu Waldenburg wegen der Edelfingen`schen Kommission).\n\nUmfang: 1 Bd.",
+      "english": "Miscellaneous legal matters of the lords von Rosenberg.\n\nDate range: 1531–1606, 1631\n\nContains: Mainly individual documents, including legal disputes between Rosenberg and Erasmus Dilling zu Ebertsbronn; the Electoral Palatinate (church and school dues in the Boxberg office, receipt of fiefs); Rothenburg (hunting in the Landwehr); Hohenlohe (seized cattle); Würzburg (fiefs); Brandenburg (debts); and the Teutonic Order (high jurisdiction at Edelfingen, chiefly claims by Councillor Dr. Philipp Engelhard zu Waldenburg concerning the Edelfingen commission).\n\nExtent: 1 volume.",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "place": "edelfingen"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

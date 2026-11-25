@@ -6,7 +6,19 @@
     {
       "source": "[RI XIII] H. 26 n. 517",
       "url": "https://www.regesta-imperii.de/id/1451-06-09_3_0_13_26_0_517_517",
-      "german": "Kg.F. fordert Bürgermeister und Rat der Stadt Tabor auf, im Streit mit Gf. Michael von Maidburg einen von Ulrich von Rosenberg angesetzten Rechtstag zu besuchen."
+      "german": "Kg.F. fordert Bürgermeister und Rat der Stadt Tabor auf, im Streit mit Gf. Michael von Maidburg einen von Ulrich von Rosenberg angesetzten Rechtstag zu besuchen.",
+      "english": "King Frederick asks the mayor and council of Tabor to attend the court day set by Ulrich von Rosenberg in their dispute with Count Michael von Maidburg.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

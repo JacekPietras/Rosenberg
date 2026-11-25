@@ -6,7 +6,25 @@
     {
       "source": "[RI XIII] H. 10 n. 530",
       "url": "https://www.regesta-imperii.de/id/1486-06-24_1_0_13_10_0_13490_530",
-      "german": "K. F. befiehlt Bf. Rudolf (II.) von Würzburg, ihm die Hinterlassenschaft des durch Selbstmord verstorbenen Anselm von Rosenberg zu überantworten oder sich deswegen mit ihm gütlich zu einigen."
+      "german": "K. F. befiehlt Bf. Rudolf (II.) von Würzburg, ihm die Hinterlassenschaft des durch Selbstmord verstorbenen Anselm von Rosenberg zu überantworten oder sich deswegen mit ihm gütlich zu einigen.",
+      "english": "King Friedrich orders Bishop Rudolf II of Würzburg to hand over to him the estate of Anselm von Rosenberg, who died by suicide, or to reach an amicable settlement with him concerning it.",
+      "mention": [
+        {
+          "person": "Anselm von Rosenberg"
+        },
+        {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ]
     }
   ]
 }

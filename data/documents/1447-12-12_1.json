@@ -6,7 +6,19 @@
     {
       "source": "Chmel n. 2385",
       "url": "https://www.regesta-imperii.de/id/1447-12-12_1_0_13_0_0_2385_2385",
-      "german": "K. Friedrich ersucht den Ulrich von Rosenberg um Nachricht von der (Martini 1447) gehaltenen Versammlung der Podiebradschen Partei zu Kuttenberg und um Rath, wie diesen Umtrieben entgegnet werden könne."
+      "german": "K. Friedrich ersucht den Ulrich von Rosenberg um Nachricht von der (Martini 1447) gehaltenen Versammlung der Podiebradschen Partei zu Kuttenberg und um Rath, wie diesen Umtrieben entgegnet werden könne.",
+      "english": "King Frederick asks Ulrich von Rosenberg for news of the assembly of the Poděbrady party held at Kuttenberg at Martinmas 1447 and for advice on how these activities can be countered.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

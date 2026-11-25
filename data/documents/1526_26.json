@@ -5,7 +5,28 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 6 Qu. 18",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-754156",
-      "german": "Verkauf eines Hofs zu Wallmersbach an Engelhard von Enheim durch das DOH Mgh, 1528 [Regest]; Verkauf einer Hälfte des Hofs zu Lustbronn samt der Vogtei an Kt Wolfgang von Bibra und das DOH Mgh durch Daniel von Adelsheim, 1530 März 22 [Regest]; Verkauf von Gülten zu Stuppach und Gütern in der Markung Mgh an Kt Wolfgang von Bibra und das DOH Mgh durch Wolf von Adelsheim zu Wachbach, 1528 Aug. [3; Regest]; Verkauf von Gülten und Zinsen zu Mgh an das DOH Mgh durch Martin Sützel von Mgh, 1529 [Mai 15; Regest]; Verkauf des halben Weinzehnten in der Markung Wachbach an Kt Wolfgang von Bibra und das DOH Mgh durch Martin Sützel von Mgh, 1530 Mai 30 [Regest]; Anerkenntnis des Simon Tremmel zu Brüchlingen über die dem DO auf seinem Gut zustehende Vogtei, Gerichts-, Dienst- und Steuerbarkeit, 1530 [Regest]; Verkauf des Hofs und der Güter zu Dreischwingen an Zeisolf von Rosenberg, Ritter, durch Kt Heinrich Marschall von Pappenheim und das DOH Mgh, 1535 Aug. 26 [Regest]; Verkauf des Gigerlehens zu Ingolstadt samt zugehörigen Zinsgütern an die Gemeinde Ingolstadt durch Kt Wolfgang von Bibra und das DOH Mgh, [1528-1535; Regest]; Verkauf der vom Kloster zum Paradies in Heidingsfeld erkauften Güter, Gülten und Rechte in Mgh an Kt Heinrich Marschall von Pappenheim und das DOH Mgh durch Nikolaus Vehe, DO-Priester und Spitalmeister zu Mgh, 1535 Mai 20 [Regest].\n\nLaufzeit: 1526-1543"
+      "german": "Verkauf eines Hofs zu Wallmersbach an Engelhard von Enheim durch das DOH Mgh, 1528 [Regest]; Verkauf einer Hälfte des Hofs zu Lustbronn samt der Vogtei an Kt Wolfgang von Bibra und das DOH Mgh durch Daniel von Adelsheim, 1530 März 22 [Regest]; Verkauf von Gülten zu Stuppach und Gütern in der Markung Mgh an Kt Wolfgang von Bibra und das DOH Mgh durch Wolf von Adelsheim zu Wachbach, 1528 Aug. [3; Regest]; Verkauf von Gülten und Zinsen zu Mgh an das DOH Mgh durch Martin Sützel von Mgh, 1529 [Mai 15; Regest]; Verkauf des halben Weinzehnten in der Markung Wachbach an Kt Wolfgang von Bibra und das DOH Mgh durch Martin Sützel von Mgh, 1530 Mai 30 [Regest]; Anerkenntnis des Simon Tremmel zu Brüchlingen über die dem DO auf seinem Gut zustehende Vogtei, Gerichts-, Dienst- und Steuerbarkeit, 1530 [Regest]; Verkauf des Hofs und der Güter zu Dreischwingen an Zeisolf von Rosenberg, Ritter, durch Kt Heinrich Marschall von Pappenheim und das DOH Mgh, 1535 Aug. 26 [Regest]; Verkauf des Gigerlehens zu Ingolstadt samt zugehörigen Zinsgütern an die Gemeinde Ingolstadt durch Kt Wolfgang von Bibra und das DOH Mgh, [1528-1535; Regest]; Verkauf der vom Kloster zum Paradies in Heidingsfeld erkauften Güter, Gülten und Rechte in Mgh an Kt Heinrich Marschall von Pappenheim und das DOH Mgh durch Nikolaus Vehe, DO-Priester und Spitalmeister zu Mgh, 1535 Mai 20 [Regest].\n\nLaufzeit: 1526-1543",
+      "english": "Sale of a farm at Wallmersbach to Engelhard von Enheim by the Teutonic Order House at Mergentheim, 1528 [regest]; sale of half the farm at Lustbronn, together with its bailiwick, to Commander Wolfgang von Bibra and the Teutonic Order House at Mergentheim by Daniel von Adelsheim, 22 March 1530 [regest]; sale of rents at Stuppach and properties in the Mergentheim district to Commander Wolfgang von Bibra and the Teutonic Order House at Mergentheim by Wolf von Adelsheim zu Wachbach, August 1528 [regest]; sale of rents and interest at Mergentheim to the Teutonic Order House by Martin Sützel von Mergentheim, 15 May 1529 [regest]; sale of half the wine tithe in the Wachbach district to Commander Wolfgang von Bibra and the Teutonic Order House by Martin Sützel von Mergentheim, 30 May 1530 [regest]; acknowledgment by Simon Tremmel zu Brüchlingen of the Teutonic Order’s rights to the bailiwick, jurisdiction, service, and taxation on his estate, 1530 [regest]; sale of the farm and estates at Dreischwingen to Zaisolph von Rosenberg, knight, by Commander Heinrich Marschall von Pappenheim and the Teutonic Order House at Mergentheim, 26 August 1535 [regest]; sale of the Giger fief at Ingolstadt, together with the associated rent estates, to the community of Ingolstadt by Commander Wolfgang von Bibra and the Teutonic Order House, [1528–1535; regest]; sale to Commander Heinrich Marschall von Pappenheim and the Teutonic Order House of the estates, rents, and rights at Mergentheim purchased from Paradies monastery at Heidingsfeld, by Nikolaus Vehe, Teutonic priest and hospital master at Mergentheim, 20 May 1535 [regest].\n\nDate range: 1526–1543",
+      "mention": [
+        {
+          "place": "adelsheim"
+        },
+        {
+          "place": "pappenheim"
+        },
+        {
+          "person": "Wolf von Adelsheim"
+        },
+        {
+          "person": "Wolfgang von Bibra"
+        },
+        {
+          "person": "Zaisolph von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     }
   ]
 }

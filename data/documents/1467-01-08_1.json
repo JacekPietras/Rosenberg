@@ -5,7 +5,22 @@
     {
       "source": "[RI XIII] H. 38 n. 180",
       "url": "https://www.regesta-imperii.de/id/fcde5938-3a9f-44f6-a3e7-f525a584d657",
-      "german": "K.F. beurkundet das Urteil seines Kammergerichts, demzufolge ein zugunsten Elisabeths von Rosenberg, der Ehefrau des Hans von Helmstatt, ergangenes Urteil des Landgerichts des Herzogtums Franken bestätigt wird und Elisabeth mit Urteil und Recht 2000 fl. rh. sowie versessene Nutzung auf Schloss und Amt Klingenberg zuerkannt werden."
+      "german": "K.F. beurkundet das Urteil seines Kammergerichts, demzufolge ein zugunsten Elisabeths von Rosenberg, der Ehefrau des Hans von Helmstatt, ergangenes Urteil des Landgerichts des Herzogtums Franken bestätigt wird und Elisabeth mit Urteil und Recht 2000 fl. rh. sowie versessene Nutzung auf Schloss und Amt Klingenberg zuerkannt werden.",
+      "english": "King Frederick records the judgment of his chamber court, confirming a judgment of the territorial court of the Duchy of Franconia in favor of Elisabeth von Rosenberg, wife of Hans von Helmstatt, and awarding Elisabeth by judgment and law 2,000 Rhenish florins and arrears of revenue from Klingenberg Castle and office.",
+      "mention": [
+        {
+          "person": "Elisabeth von Rosenberg"
+        },
+        {
+          "person": "Hans von Helmstatt"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ]
     }
   ]
 }

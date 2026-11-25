@@ -5,9 +5,22 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 4454",
       "url": "https://www.regesta-imperii.de/id/1406-07-09_1_0_10_0_0_4458_4454",
-      "german": "Diether Münche von Rosenberg unn seine gattin Else von Uwerbach bekennen, dass sie die in dem verkaufsbriefe kg. Ruprechts (inseriert) über das dorf Kirchhardt enthaltenen bestimmungen halten wollen und gestatten ihm im falle einer grossen landesschätzung, diese auch von ihren leuten zu Kirchhardt zu nehmen. Diether Münch siegelt."
-      ,
-      "english": "Diether Münche von Rosenberg and his wife Else von Uwerbach acknowledge that they will observe the provisions contained in King Ruprecht’s sale instrument for the village of Kirchhardt and permit him, in the event of a major territorial assessment, to collect it from their people at Kirchhardt as well. Diether Münch seals."
+      "german": "Diether Münche von Rosenberg unn seine gattin Else von Uwerbach bekennen, dass sie die in dem verkaufsbriefe kg. Ruprechts (inseriert) über das dorf Kirchhardt enthaltenen bestimmungen halten wollen und gestatten ihm im falle einer grossen landesschätzung, diese auch von ihren leuten zu Kirchhardt zu nehmen. Diether Münch siegelt.",
+      "english": "Diether Münche von Rosenberg and his wife Else von Uwerbach acknowledge that they will observe the provisions contained in King Ruprecht’s sale instrument for the village of Kirchhardt and permit him, in the event of a major territorial assessment, to collect it from their people at Kirchhardt as well. Diether Münch seals.",
+      "mention": [
+        {
+          "person": "Diether Mönch"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

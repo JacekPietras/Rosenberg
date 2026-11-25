@@ -6,7 +6,18 @@
       "source": "RI XI Neubearb., 3 n. 72",
       "url": "https://www.regesta-imperii.de/id/b31da030-f05e-4ea9-aacb-617e8306e50c",
       "german": "Kg. S. fordert Ulrich von Rosenberg auf, die Streitigkeiten mit Leopold Kraiger von Kraig ruhen zu lassen, solange Graf [Johann II.] von Schaunberg und der Herr [Otto IV.] von Maissau den Streit nicht entschieden bzw. gütlich beigelegt haben.",
-      "english": "King S. asks Ulrich von Rosenberg to suspend his disputes with Leopold Kraiger von Kraig until Count [Johann II.] von Schaunberg and Lord [Otto IV.] von Maissau have decided the dispute or settled it amicably."
+      "english": "King S. asks Ulrich von Rosenberg to suspend his disputes with Leopold Kraiger von Kraig until Count [Johann II.] von Schaunberg and Lord [Otto IV.] von Maissau have decided the dispute or settled it amicably.",
+      "mention": [
+        {
+          "person": "Hans von Schaunberg",
+          "personTitle": [
+            "Graf von Schaunberg"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -6,7 +6,28 @@
     {
       "source": "[RI XIII] H. 26 n. 67",
       "url": "https://www.regesta-imperii.de/id/1444-05-02_2_0_13_26_0_67_67",
-      "german": "Kg.F. schreibt in gleicher Weise an Ulrich von Rosenberg, Meinhard von Neuhaus, Wenzel von Michelsberg, Jan von Neuhaus und Teltsch, Johann Schwihau (von Riesenburg) und Rabi, Zdenko Konopischt (von Sternberg) sowie an Johann Zajimac (von Kunstadt)."
+      "german": "Kg.F. schreibt in gleicher Weise an Ulrich von Rosenberg, Meinhard von Neuhaus, Wenzel von Michelsberg, Jan von Neuhaus und Teltsch, Johann Schwihau (von Riesenburg) und Rabi, Zdenko Konopischt (von Sternberg) sowie an Johann Zajimac (von Kunstadt).",
+      "english": "King Frederick writes in the same manner to Ulrich von Rosenberg, Meinhard von Neuhaus, Wenceslaus von Michelsberg, Hans von Neuhaus and Teltsch, Johann Schwihau (von Riesenburg) and Rabi, Zdenko Konopischt (von Sternberg), and Johann Zajimac (von Kunstadt).",
+      "mention": [
+        {
+          "person": "Hans von Neuhaus"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "neuhaus"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        },
+        {
+          "person": "Wenceslaus von Michelsberg"
+        }
+      ]
     }
   ]
 }

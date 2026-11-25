@@ -6,9 +6,28 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 3977",
       "url": "https://www.regesta-imperii.de/id/1405-05-04_2_0_10_0_0_3981_3977",
-      "german": "Kg. Ruprecht gestattet Cuntze Lantschaden von Steynach seiner tochter Ketterlin, gattin Cuntzens von Rosenberg d. j., 1000 fl. zugelts auf die zweiteil am grossen und kleinen zehenden zu Meckessen (Meckesheim) und den hof zu Gemunden (Neckargemünd), die er von der Pfalz zu lehen trägt, zu beweisen. Vermerk: Non transivit durchstrichen."
-      ,
-      "english": "King Ruprecht permits Cuntze Landschaden von Steinach to assign to his daughter Ketterlin, wife of Cuntz von Rosenberg the Younger, 1,000 florins as a marriage portion from the two shares of the great and small tithe at Meckesheim and the farm at Gemünden (Neckargemünd), which he holds from the Palatinate as a fief. Note: ‘Non transivit’ is crossed out."
+      "german": "Kg. Ruprecht gestattet Cuntze Lantschaden von Steynach seiner tochter Ketterlin, gattin Cuntzens von Rosenberg d. j., 1000 fl. zugelts auf die zweiteil am grossen und kleinen zehenden zu Meckessen (Meckesheim) und den hof zu Gemunden (Neckargemünd), die er von der Pfalz zu lehen trägt, zu beweisen. Vermerk: Non transivit durchstrichen.",
+      "english": "King Ruprecht permits Cuntze Landschaden von Steinach to assign to his daughter Ketterlin, wife of Kunz von Rosenberg the Younger, 1,000 florins as a marriage portion from the two shares of the great and small tithe at Meckesheim and the farm at Gemünden (Neckargemünd), which he holds from the Palatinate as a fief. Note: ‘Non transivit’ is crossed out.",
+      "mention": [
+        {
+          "place": "heidelberg"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Kunz Landschad von Steinach"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        }
+      ]
     }
   ]
 }

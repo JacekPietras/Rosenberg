@@ -5,7 +5,25 @@
     {
       "source": "Staatsarchiv Wertheim G-Rep. 48 Nr. 86",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-7557",
-      "german": "Rittertag in Mergentheim 1528\n\nLaufzeit: 1528, 1543\n\nEnthält: Enthält: Teilnehmerverzeichnis; Schreiben der Ritter des Kantons Odenwald an Graf Georg II.von Wertheim wegen des geforderten Reiterdienstes (Konzept); Instruktionen für die Gesandten des Ritterkantons Odenwald, von Rosenberg und von Hartheim, für den Grafentag in Schweinfurt (alles 1528)\nEnthält auch: Einladung der Ritter des Kantons Odenwald an die Vormundschaftsregierung der Grafschaft Wertheim zu einem Tag nach Mergentheim (Druck, 1543)"
+      "german": "Rittertag in Mergentheim 1528\n\nLaufzeit: 1528, 1543\n\nEnthält: Enthält: Teilnehmerverzeichnis; Schreiben der Ritter des Kantons Odenwald an Graf Georg II.von Wertheim wegen des geforderten Reiterdienstes (Konzept); Instruktionen für die Gesandten des Ritterkantons Odenwald, von Rosenberg und von Hartheim, für den Grafentag in Schweinfurt (alles 1528)\nEnthält auch: Einladung der Ritter des Kantons Odenwald an die Vormundschaftsregierung der Grafschaft Wertheim zu einem Tag nach Mergentheim (Druck, 1543)",
+      "english": "Knights’ assembly at Mergentheim, 1528.\n\nDate range: 1528, 1543\n\nContains: List of participants; letter from the knights of the Odenwald canton to Count Georg II von Wertheim concerning the demanded mounted service (draft); instructions for the envoys of the Odenwald knightly canton, von Rosenberg and von Hartheim, for the counts’ assembly at Schweinfurt (all 1528).\n\nAlso contains: invitation from the knights of the Odenwald canton to the regency governing the County of Wertheim to a meeting at Mergentheim (printed, 1543).",
+      "mention": [
+        {
+          "person": "Georg von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "hartheim"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
     }
   ]
 }

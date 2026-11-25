@@ -5,9 +5,14 @@
   "entries": [
     {
       "source": "RI XI Neubearb., 3 n. 139",
-      "english": "King S. grants Ulrich von Rosenberg authority to negotiate on his behalf with the knight Kunat Kapler von Sulewitz concerning the surrender of Klingenberg, the prisoners Kunat has captured there, and other castle matters. Whatever Ulrich agrees with Kunat concerning the surrender is S.’s will, as though he had negotiated personally.",
       "url": "https://www.regesta-imperii.de/id/eed7edb5-68d7-4607-aa25-34e9b9fc44d0",
-      "german": "Kg. S. erteilt dem edlen Ulrich von Rosenberg (urozenému Oldrzichowi z Rozemberka) die Vollmacht (plnú moc a svú vuoli […] dáváme), an seiner statt mit dem [Ritter] Kunat Kapler von Sulewitz (s slovutným Cunatem Kaplerzem z Suleyowicz) über die Abtretung der kgl.en Burg Klingenberg (o sstúpenie hradu našěho Zwiekowa), die von Kunat bisher gefangengenommenen dortigen Häftlinge (o vězně, kteréž jest až do sie chvíle zjímal), und andere die Burg betreffende Angelegenheiten zu verhandeln. Was auch immer Ulrich mit Kunat hinsichtlich der Abtretung der Burg vereinbart, ist S.s Wille (k tomu je ke všemu naše dobrá vuole), als ob er persönlich verhandeln würde."
+      "german": "Kg. S. erteilt dem edlen Ulrich von Rosenberg (urozenému Oldrzichowi z Rozemberka) die Vollmacht (plnú moc a svú vuoli […] dáváme), an seiner statt mit dem [Ritter] Kunat Kapler von Sulewitz (s slovutným Cunatem Kaplerzem z Suleyowicz) über die Abtretung der kgl.en Burg Klingenberg (o sstúpenie hradu našěho Zwiekowa), die von Kunat bisher gefangengenommenen dortigen Häftlinge (o vězně, kteréž jest až do sie chvíle zjímal), und andere die Burg betreffende Angelegenheiten zu verhandeln. Was auch immer Ulrich mit Kunat hinsichtlich der Abtretung der Burg vereinbart, ist S.s Wille (k tomu je ke všemu naše dobrá vuole), als ob er persönlich verhandeln würde.",
+      "english": "King S. grants Ulrich von Rosenberg authority to negotiate on his behalf with the knight Kunat Kapler von Sulewitz concerning the surrender of Klingenberg, the prisoners Kunat has captured there, and other castle matters. Whatever Ulrich agrees with Kunat concerning the surrender is S.’s will, as though he had negotiated personally.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

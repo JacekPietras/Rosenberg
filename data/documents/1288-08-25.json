@@ -1,0 +1,47 @@
+{
+  "date": "1288-08-25",
+  "place": "Würzburg",
+  "label": "Franken",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Hohenlohisches Urkundenbuch. 1, 1153–1310",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
+      "summary": "Bischof Manegold von Würzburg entscheidet durch Urteilsspruch die Streitigkeiten der Grafen Heinrich von Henneberg und Rudolf von Wertheim über des ersteren Anteil an Prozelten.",
+      "latin": "Comites itaque, barones et ministeriales nostri, tunc coram nobis constituti sub obtentu nostre gratie requisiti per nos, quod super hinc inde propositis iuris esset, sententiando concorditer confessione supradicti comitis Heinrici et his, que in antedicto instrumento sunt expressa, auditis et plenius intellectis promulgarunt, memoratum comitem Rudolfum ad restitutionem prelibate portionis non teneri, nisi prius comes Henricus promissum suum tum per iuramentum eius tum per publicum instrumentum ipsi Rudolfo comiti factum effectui mancipasset. Nos autem iuxta concordem sententiam talem precepimus Heinrico comiti supradicto, quod ipse promissum suum, de quo superius tangitur, infra XIIII dies numerandos a precepto huiusmodi adimpleret. Hi vero testes sunt, qui de premissis intererant, videlicet viri nobiles Gerhardus comes de Rienecke, Heinricus comes de Kastele, Krafto de Hohinloch, Hesso marggravius de Baden, Godfridus de Hohinloch, Heinricus et Gebehardus fratres de Brunecke, Conradus de Tecke, Gotfridus de Sluzzelberg, Heinricus prepositus maior et Wernherus de Tannenberg, archidiaconi Herbipolenses, Diethericus de Hohinberg marschalkus noster, Eberhardus de Ussinkeim, Conradus frater eiusdem, Heinricus Wolvolt camerarius noster, Hermannus dictus Lescho, Conradus dictus Schoubelin de Besinkiem, milites, et plures alii fide digni. Actum apud cenobium antedictum, datum vero Herbipoli, anno et die supradictis, pontificatus nostri primo.",
+      "english": "The counts, barons, and ministerials who were then present before us, having been asked by us under promise of our favor to judge what was right concerning the claims made on both sides, heard and fully considered the confession of Count Heinrich and the statements in the aforesaid instrument. They unanimously pronounced that Count Rudolf was not bound to restore the aforementioned portion unless Count Heinrich first fulfilled his promise, made both under oath and in a public instrument to Count Rudolf. In accordance with their unanimous judgment, we ordered Count Heinrich to fulfill that promise within 14 days, counted from this order. The noble witnesses present were Gerhard, Count of Rieneck; Heinrich, Count of Castell; Kraft von Hohenlohe; Hesso, Margrave of Baden; Gotfrid von Hohenlohe; the brothers Heinrich and Gebhard von Bruneck; Konrad von Teck; Gotfrid von Schlüsselberg; Heinrich, provost of the cathedral, and Wernher von Tannenberg, archdeacon of Würzburg; Dietherich von Hohenberg, our marshal; Eberhard von Uissigheim and his brother Konrad; Heinrich Wolvolt, our chamberlain; Hermann called Lescho; Konrad called Schoubelin von Besinkiem, knights; and many other trustworthy people. The proceedings took place at the aforesaid monastery, and the charter was issued at Würzburg on the aforesaid date and year, in the first year of our pontificate.",
+      "mention": [
+        {
+          "person": "Gerhard von Rieneck",
+          "personTitle": [
+            "Graf von Rieneck"
+          ]
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "person": "Kraft von Hohenlohe"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Eberhard von Uissigheim",
+          "type": "generic",
+          "content": "witnessed Bishop Manegold of Würzburg's judgment in the dispute between the counts of Henneberg and Wertheim."
+        },
+        {
+          "person": "Eberhard von Uissigheim",
+          "type": "sibling",
+          "of": "Konrad von Uissigheim"
+        }
+      ]
+    }
+  ]
+}

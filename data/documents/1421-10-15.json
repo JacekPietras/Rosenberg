@@ -6,7 +6,18 @@
       "source": "RI XI Neubearb., 3 n. 49",
       "url": "https://www.regesta-imperii.de/id/f76489bb-428a-475f-bd73-11c826c23389",
       "german": "Kg. S. gebietet Ulrich von Rosenberg, alle Güter des verstorbenen Johann von Neuhaus und des verstorbenen Ulrich, genannt Vavák von Neuhaus, an Herzog Albrecht V. von Österreich abzutreten, der sie zu treuen Händen S.s verwalten soll.",
-    "english": "King S. commands Ulrich von Rosenberg to surrender the properties of the deceased Johann von Neuhaus and Ulrich Vavák von Neuhaus to Duke Albrecht V of Austria, to hold in trust for S."
+      "english": "King S. commands Ulrich von Rosenberg to surrender the properties of the deceased Hans von Neuhaus and Ulrich Vavák von Neuhaus to Duke Albrecht V of Austria, to hold in trust for S.",
+      "mention": [
+        {
+          "person": "Hans von Neuhaus"
+        },
+        {
+          "place": "neuhaus"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

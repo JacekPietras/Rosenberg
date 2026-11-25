@@ -1,0 +1,55 @@
+{
+  "date": "1178",
+  "label": "Franken",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Hohenlohisches Urkundenbuch. 1, 1153–1310",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
+      "summary": "Bischof Reinhard von Würzburg beurkundet, daß das Kloster Bronnbach, welchem ein Sut in der Pfarrei Reicholzheim gehört, von dem jedoch ein Drittel des Zehnten eben dieser Pfarrei zustand, dem Grafen Boppo von Wertheim, der vom Hochstift Würzburg mit diesem Zehnten belehnt war, soviel von seinem Besitz abgetreten habe, daß dieser dagegen mit dem Bischof zu Gunsten des Klosters auf den Zehnten verzichtete und der Kirche zu Reicholzheim zwei genannte Güter übergab.",
+      "latin": "Ut firmior fides huic rei adhiberetur, quibusdam fidelibus nostris, ut huic concambio interessent, fideliter commisimus, Adelberto de Hohenloch, Thimone de Windesheim, Arnoldo, Conrado, duobus filiis Ruperti de Ussenkeim, ministerialibus Herbordo de Ussenkeim, Gumberto et Adalberto de Wertheim, et adhuc quam pluribus. Actum anno domini MCLXXVIII, regnante gloriosissimo Romanorum imperatore Friderico, Boppone urbano comite existente.",
+      "english": "Bishop Reinhard of Würzburg certifies that Bronnbach Abbey, which owned an estate in the parish of Reicholzheim but was entitled to only one third of that parish's tithe, transferred enough of its property to Count Boppo von Wertheim, who held the tithe in fief from Würzburg, so that in return he renounced the tithe with the bishop in favor of the monastery and transferred two specified estates to the church at Reicholzheim. To provide firmer assurance of this exchange, the bishop entrusted several of his faithful men to attend it: Adelbert von Hohenlohe, Thimo von Windesheim, Arnold, Konrad, two sons of Ruprecht von Uissigheim, the ministerials Herbord von Uissigheim, Gumbert and Adalbert von Wertheim, and many others. Done in the year of the Lord 1178, while the most glorious Roman Emperor Friedrich reigned and Boppo was urban count.",
+      "mention": [
+        {
+          "person": "Bischof Reinhard",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Boppe von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "person": "Ruprecht von Uissigheim"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Herbord von Uissigheim",
+          "type": "generic",
+          "content": "was entrusted by Bishop Reinhard of Würzburg to attend the exchange involving Bronnbach Abbey and Count Boppo von Wertheim."
+        },
+        {
+          "person": "Adelbert von Hohenlohe",
+          "type": "generic",
+          "content": "was entrusted by Bishop Reinhard of Würzburg to attend the exchange involving Bronnbach Abbey and Count Boppo von Wertheim."
+        }
+      ]
+    }
+  ]
+}

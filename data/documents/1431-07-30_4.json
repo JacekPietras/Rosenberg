@@ -4,9 +4,14 @@
   "entries": [
     {
       "source": "RI XI Neubearb., 3 n. 142",
-      "english": "King S. writes to Margrave Frederick of Brandenburg about the situation in Bohemia and the negotiations [with the Hussites?], forwarding Ulrich von Rosenberg’s related letter addressed to S.",
       "url": "https://www.regesta-imperii.de/id/af816293-74b1-4828-8a25-4bde7d33f76b",
-      "german": "Kg. S. schreibt an Margraf Friedrich von Brandenburg hinsichtlich der Lage in Böhmen und der Verhandlungen [mit den Hussiten?] und schickt ihm den diesbezüglichen an ihn, S. gerichteten Brief Ulrichs von Rosenberg weiter."
+      "german": "Kg. S. schreibt an Margraf Friedrich von Brandenburg hinsichtlich der Lage in Böhmen und der Verhandlungen [mit den Hussiten?] und schickt ihm den diesbezüglichen an ihn, S. gerichteten Brief Ulrichs von Rosenberg weiter.",
+      "english": "King S. writes to Margrave Frederick of Brandenburg about the situation in Bohemia and the negotiations [with the Hussites?], forwarding Ulrich von Rosenberg’s related letter addressed to S.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

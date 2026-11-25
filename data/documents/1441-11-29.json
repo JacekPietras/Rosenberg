@@ -7,7 +7,21 @@
       "source": "[RI XIII] H. 26 n. 16",
       "url": "https://www.regesta-imperii.de/id/1441-11-29_1_0_13_26_0_16_16",
       "german": "Kg.F. bittet Ulrich von Rosenberg, Alesch von Sternberg und Hinko Krussina von Schwamberg zur Beendigung ihrer Fehde gegen die Stadt Nürnberg anzuhalten.",
-      "english": "King Frederick asks Ulrich von Rosenberg to urge Alesch von Sternberg and Hinko Krussina von Schwamberg to end their feud against the city of Nuremberg."
+      "english": "King Frederick asks Ulrich von Rosenberg to urge Alesch von Sternberg and Hinko Krussina von Schwamberg to end their feud against the city of Nuremberg.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

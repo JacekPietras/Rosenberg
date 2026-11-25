@@ -6,9 +6,22 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 5840",
       "url": "https://www.regesta-imperii.de/id/1409-06-11_1_0_10_0_0_5847_5840",
-      "german": "Verleiht Hanmann von Sickingen, vitztum zur Neuenstadt, und dessen sohn Hans von Sickingen zu rechtem mannlehen die veste Mure (Pfälzer lehen), die sie von Hans von Rosenberg erbeclichen und eweclichen gekauft haben. Durchstrichen und vermerk: vacat, quod alterata est, in magno (sc. registro)."
-      ,
-      "english": "He grants as a proper male fief to Hanmann von Sickingen, Vitztum at Neustadt, and his son Hans von Sickingen the castle of Mure, a Palatinate fief that they bought hereditarily and perpetually from Hans von Rosenberg. Crossed out with the note: ‘vacat, quod alterata est, in magno [register].’"
+      "german": "Verleiht Hanmann von Sickingen, vitztum zur Neuenstadt, und dessen sohn Hans von Sickingen zu rechtem mannlehen die veste Mure (Pfälzer lehen), die sie von Hans von Rosenberg erbeclichen und eweclichen gekauft haben. Durchstrichen und vermerk: vacat, quod alterata est, in magno (sc. registro).",
+      "english": "He grants as a proper male fief to Hanmann von Sickingen, Vitztum at Neustadt, and his son Hans von Sickingen the castle of Mure, a Palatinate fief that they bought hereditarily and perpetually from Hans von Rosenberg. Crossed out with the note: ‘vacat, quod alterata est, in magno [register].’",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "Hans von Sickingen"
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "sickingen"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,16 @@
     {
       "source": "RIplus Regg. Baden 4 n. 10378",
       "url": "https://www.regesta-imperii.de/id/e419844b-c00d-49a3-8795-acaac5edded6",
-      "german": "Jakob Münch von Rosenberg reversiert m. Karl über die lehen seines vaters Jos Münch von R. sel. wie nr. 7933."
+      "german": "Jakob Münch von Rosenberg reversiert m. Karl über die lehen seines vaters Jos Münch von R. sel. wie nr. 7933.",
+      "english": "Jakob Münch von Rosenberg issues Margrave Karl a receipt concerning the fiefs of his late father, Jos Münch von Rosenberg, as in no. 7933.",
+      "mention": [
+        {
+          "person": "Jakob Mönch von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

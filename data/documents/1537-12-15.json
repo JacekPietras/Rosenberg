@@ -5,7 +5,13 @@
     {
       "source": "Hauptstaatsarchiv Stuttgart A 521 Bü 1, 31",
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2925416",
-      "german": "Schreiben des Abts Johann an Herzog Ulrich, worin er um Aufhebung eines vom Obervogt Münch von Rosenberg auf Gefälle des Amts Leidringen gelegten Arrests bittet.\n\nLaufzeit: 1537 Dezember 15"
+      "german": "Schreiben des Abts Johann an Herzog Ulrich, worin er um Aufhebung eines vom Obervogt Münch von Rosenberg auf Gefälle des Amts Leidringen gelegten Arrests bittet.\n\nLaufzeit: 1537 Dezember 15",
+      "english": "Letter from Abbot Johann to Duke Ulrich asking for the lifting of an attachment imposed by the chief bailiff Münch von Rosenberg on the revenues of the district of Leidringen.\n\nTerm: 15 December 1537",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

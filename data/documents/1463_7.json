@@ -6,7 +6,22 @@
     {
       "source": "[RI XIII] H. 32 n. 755",
       "url": "https://www.regesta-imperii.de/id/e7d2c3e8-8394-43b6-90f4-add607e9de1b",
-      "german": "K.F. fordert Kg. Georg von Böhmen auf, seine Räte zu ihm zu senden."
+      "german": "K.F. fordert Kg. Georg von Böhmen auf, seine Räte zu ihm zu senden.",
+      "english": "King Frederick asks King Georg of Bohemia to send his councillors to him.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "König Georg",
+          "personTitle": [
+            "König von Böhmen"
+          ]
+        }
+      ]
     }
   ]
 }

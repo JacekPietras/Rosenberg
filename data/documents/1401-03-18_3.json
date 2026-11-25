@@ -7,13 +7,13 @@
       "source": "[Regg. Pfalzgrafen 2] n. 669",
       "url": "https://www.regesta-imperii.de/id/1401-03-18_2_0_10_0_0_669_669",
       "german": "Verleiht als pfalzgraf Conrad von Rosenberg, sohn Conrads von Rosenberg, {vitztums} (zu Amberg) ein viertel an dem schlosse zu Boxberg.",
-      "english": "As Pfalzgraf, Conrad von Rosenberg, son of Conrad von Rosenberg, Vizedom zu Amberg, enfeoffs a quarter of Boxberg Castle.",
+      "english": "As Pfalzgraf, Konrad von Rosenberg, son of Konrad von Rosenberg, Vizedom zu Amberg, enfeoffs a quarter of Boxberg Castle.",
       "mention": [
         {
           "place": "boxberg"
         },
         {
-          "person": "Konrad von Rosenberg",
+          "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vizedom zu Amberg"
           ]

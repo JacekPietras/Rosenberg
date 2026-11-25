@@ -6,7 +6,28 @@
     {
       "source": "[RI XIII] H. 32 n. 1089",
       "url": "https://www.regesta-imperii.de/id/e01b28a3-18d1-4e6f-81d7-bc51f5f76769",
-      "german": "K.F. ächtet Georg, Arnold und Friedrich von Rosenberg und deren namentlich genannten Helfer wegen ihrer unrechtmäßigen Fehde gegen Bf. Rudolf (II.) und das Stift Würzburg."
+      "german": "K.F. ächtet Georg, Arnold und Friedrich von Rosenberg und deren namentlich genannten Helfer wegen ihrer unrechtmäßigen Fehde gegen Bf. Rudolf (II.) und das Stift Würzburg.",
+      "english": "King Friedrich places Georg, Arnold, and Friedrich von Rosenberg and their named helpers under the imperial ban for their unlawful feud against Bishop Rudolf II and the Würzburg see.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

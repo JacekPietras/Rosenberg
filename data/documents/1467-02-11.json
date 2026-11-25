@@ -6,7 +6,25 @@
     {
       "source": "Chmel n. 4900",
       "url": "https://www.regesta-imperii.de/id/1467-02-11_1_0_13_0_0_4899_4900",
-      "german": "K. Georg von Böhmen lässt dem K. Friedrich durch seinen Gesandten Johann von Rosenberg (nicht Sternberg nach Roo), Apel Vizdumb und Wenzel Weitmillner, nebst mehreren Puncten, auch wegen des von Stain, welchen er in seinen Schirm genommen habe, mahnen, denselben bey der Pfandschaft Steyer ruhig zu lassen."
+      "german": "K. Georg von Böhmen lässt dem K. Friedrich durch seinen Gesandten Johann von Rosenberg (nicht Sternberg nach Roo), Apel Vizdumb und Wenzel Weitmillner, nebst mehreren Puncten, auch wegen des von Stain, welchen er in seinen Schirm genommen habe, mahnen, denselben bey der Pfandschaft Steyer ruhig zu lassen.",
+      "english": "King Georg of Bohemia sends King Frederick, through his envoys Hans von Rosenberg (not Sternberg, according to Roo), Apel Vizdumb, and Wenzel Weitmillner, among other matters a request concerning von Stain, whom Georg has taken under his protection: Frederick is to leave him undisturbed in his pledge of Styria.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "König Georg",
+          "personTitle": [
+            "König von Böhmen"
+          ]
+        }
+      ]
     }
   ]
 }

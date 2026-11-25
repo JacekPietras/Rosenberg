@@ -6,7 +6,40 @@
     {
       "source": "[RI XIII] H. 32 n. 1088",
       "url": "https://www.regesta-imperii.de/id/c857df80-a361-4561-b4ec-4999d3f9bc38",
-      "german": "K.F. erinnert Bf. Rudolf (II.) von Würzburg an den zu Zeiten von Rudolfs Vorgänger Bf. Gottfried geschehenen Selbstmord des Anselm von Rosenberg auf dessen Schloss Prosselsheim und seine auf Bitten von Georg, Arnold und Friedrich von Rosenberg erfolgte, dann zurückgezogene Kommission an den Eb. Berthold von Mainz. Er befiehlt ihm aus ksl. Machtvollkommenheit und unter Androhung einer Strafe von 100 Mark Gold, innerhalb von 15 Tagen nach Erhalt dieses Briefes, ihm die Hinterlassenschaft des Anselm von Rosenberg zu überantworten oder sich deswegen gütlich mit ihm zu einigen."
+      "german": "K.F. erinnert Bf. Rudolf (II.) von Würzburg an den zu Zeiten von Rudolfs Vorgänger Bf. Gottfried geschehenen Selbstmord des Anselm von Rosenberg auf dessen Schloss Prosselsheim und seine auf Bitten von Georg, Arnold und Friedrich von Rosenberg erfolgte, dann zurückgezogene Kommission an den Eb. Berthold von Mainz. Er befiehlt ihm aus ksl. Machtvollkommenheit und unter Androhung einer Strafe von 100 Mark Gold, innerhalb von 15 Tagen nach Erhalt dieses Briefes, ihm die Hinterlassenschaft des Anselm von Rosenberg zu überantworten oder sich deswegen gütlich mit ihm zu einigen.",
+      "english": "King Friedrich reminds Bishop Rudolf II of Würzburg of Anselm von Rosenberg’s suicide at Prosselsheim Castle during the time of Rudolf’s predecessor, Bishop Gottfried, and of the commission to Archbishop Berthold of Mainz that he issued at the request of Georg, Arnold, and Friedrich von Rosenberg and later withdrew. By imperial authority and under threat of a penalty of 100 marks of gold, he commands Rudolf, within 15 days after receiving this letter, to hand over Anselm von Rosenberg’s estate to him or to reach an amicable settlement with him concerning it.",
+      "mention": [
+        {
+          "person": "Anselm von Rosenberg"
+        },
+        {
+          "person": "Arnold von Rosenberg"
+        },
+        {
+          "person": "Bischof Rudolf",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "person": "Erzbischof Berthold",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        }
+      ]
     }
   ]
 }

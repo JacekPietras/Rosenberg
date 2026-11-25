@@ -6,9 +6,37 @@
     {
       "source": "RIplus URH 16 n. 462",
       "url": "https://www.regesta-imperii.de/id/e3404e8f-fce2-405d-9408-10d72b11613e",
-      "german": "Kg. Ruprecht bekundet: Als Bernhard von Helmstatt d.J., der Sohn des Ritters Wiprecht von Helmstatt, verstarb, hinterließ er seine Frau Anne von Rosenberg und ein Kind gen. Ennel. Als Anna zum zweiten Mal, und zwar Jakob Wolfsteiner, heiratete, gab es Streit mit Wiprecht um Morgengabe, Zugeld und andere anerstorbene Güter aus erster Ehe.\n\nBeide Parteien haben auf den Kg. kompromittiert, der wie folgt entscheidet. [Anna erhält Bargeld, ihre Tochter und die Familie Helmstatt erhalten Schwarzach und Schadeck zurück. Beide Seiten geloben, den Spruch unverbrüchlich einzuhalten und auszuführen.]"
-      ,
-      "english": "King Ruprecht records that when Bernhard von Helmstatt the Younger, son of the knight Wiprecht von Helmstatt, died, he left his wife Anne von Rosenberg and a child named Ennel. When Anne married a second time, namely Jakob Wolfsteiner, a dispute arose with Wiprecht over her morning gift, marriage portion, and other inherited property from her first marriage. Both parties submitted the matter to the king, who decided as follows: Anne is to receive cash, while her daughter and the Helmstatt family are to receive Schwarzach and Schadeck back. Both sides promise inviolably to observe and execute the award."
+      "german": "Kg. Ruprecht bekundet: Als Bernhard von Helmstatt d.J., der Sohn des Ritters Wiprecht von Helmstatt, verstarb, hinterließ er seine Frau Anne von Rosenberg und ein Kind gen. Ennel. Als Anna zum zweiten Mal, und zwar Jakob Wolfsteiner, heiratete, gab es Streit mit Wiprecht um Morgengabe, Zugeld und andere anerstorbene Güter aus erster Ehe.\n\nBeide Parteien haben auf den Kg. kompromittiert, der wie folgt entscheidet. [Anna erhält Bargeld, ihre Tochter und die Familie Helmstatt erhalten Schwarzach und Schadeck zurück. Beide Seiten geloben, den Spruch unverbrüchlich einzuhalten und auszuführen.]",
+      "english": "King Ruprecht records that when Bernhard von Helmstatt the Younger, son of the knight Wiprecht von Helmstatt, died, he left his wife Anna von Rosenberg and a child named Ennel. When Anne married a second time, namely Jakob Wolfsteiner, a dispute arose with Wiprecht over her morning gift, marriage portion, and other inherited property from her first marriage. Both parties submitted the matter to the king, who decided as follows: Anne is to receive cash, while her daughter and the Helmstatt family are to receive Schwarzach and Schadeck back. Both sides promise inviolably to observe and execute the award.",
+      "mention": [
+        {
+          "person": "Anna von Rosenberg"
+        },
+        {
+          "person": "Bernhard von Helmstatt",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "place": "helmstatt"
+        },
+        {
+          "person": "König Ruprecht",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Wiprecht von Helmstatt",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     }
   ]
 }

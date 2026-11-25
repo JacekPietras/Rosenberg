@@ -1,0 +1,33 @@
+{
+  "date": "1180-01",
+  "place": "Würzburg",
+  "label": "Franken",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Hohenlohisches Urkundenbuch. 1, 1153–1310",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
+      "summary": "Kaiser Friedrich I. bestätigt auf Bitten der Äbtissin Bertha von Kitzingen („eiusdem nominis tercia“) einen Urteilsspruch des Bischofs Reginhard von Würzburg zu Gunsten des Klosters.",
+      "latin": "Inter testes: liberi homines Ludewicus comes de Outingen, Gerhardus et Bertoldus comites de Uraha, Adelbertus advocatus, Cunradus de Bockesberc, Rupbertus de Kastele, Adelbertus de Arnstein, Cunrat de Wighartesheim, Arnolt de Rotenburc. Acta sunt hec anno dominice incarnationis millesimo centesimo LXXXmo, indictione XIIIa, regnante domno Frederico Romanorum imperatore gloriosissimo, anno regni eius XXVIIIo, imperii vero XXVIo. Data Wirceburc in pago Hetingesfelt.",
+      "english": "At the request of Abbess Bertha of Kitzingen (“the third of that name”), Emperor Friedrich I confirms a judgment by Bishop Reginhard of Würzburg in favor of the monastery. Witnesses included the free men Ludwig, Count of Oettingen; Gerhard and Bertold, counts of Urach; Adelbert, advocate; Konrad von Boxberg; Rupbert von Castell; Adelbert von Arnstein; Konrad von Weikersheim; and Arnold von Rothenburg. This was done in the year of the Lord's incarnation 1180, indiction 13, during the reign of the most glorious Lord Friedrich, Roman Emperor, in the 28th year of his reign and the 26th of his empire. Given at Würzburg in the district of Heidingsfeld.",
+      "mention": [
+        {
+          "person": "Arnold von Rothenburg"
+        },
+        {
+          "place": "arnstein-maria-sondheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Konrad von Boxberg",
+          "type": "generic",
+          "content": "witnessed Emperor Friedrich I's confirmation of Bishop Reginhard's judgment in favor of the monastery."
+        }
+      ]
+    }
+  ]
+}

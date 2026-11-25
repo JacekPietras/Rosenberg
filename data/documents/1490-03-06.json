@@ -6,7 +6,16 @@
     {
       "source": "[RI XIII] H. 26 n. 784",
       "url": "https://www.regesta-imperii.de/id/1490-03-06_1_0_13_26_0_784_784",
-      "german": "K.F. unterrichtet Bürgermeister, Richter und Rat der Stadt Budweis von der Beschwerde seines Untertans Lehner aus Leopoldschlag, daß ihn einer ihrer Mitbürger wegen eines Rosses, das er auf offenem Markt zu Leopoldschlag von einem Hintersassen der Herren von Rosenberg gekauft hatte, bei ihnen verboten habe. Er befiehlt ihnen unter Hinweis auf sein Schreiben an Wok von Rosenberg, Lehner aus dem verbott ledig zu lassen und ihren Mitbürger anzuweisen, sich wegen des Rosses an den Hintersassen zu halten."
+      "german": "K.F. unterrichtet Bürgermeister, Richter und Rat der Stadt Budweis von der Beschwerde seines Untertans Lehner aus Leopoldschlag, daß ihn einer ihrer Mitbürger wegen eines Rosses, das er auf offenem Markt zu Leopoldschlag von einem Hintersassen der Herren von Rosenberg gekauft hatte, bei ihnen verboten habe. Er befiehlt ihnen unter Hinweis auf sein Schreiben an Wok von Rosenberg, Lehner aus dem verbott ledig zu lassen und ihren Mitbürger anzuweisen, sich wegen des Rosses an den Hintersassen zu halten.",
+      "english": "The King and Emperor informs the mayor, judges, and council of the city of Budweis of his subject Lehner’s complaint that one of their fellow citizens had placed him under a prohibition because of a horse he had bought in the open market at Leopoldschlag from a tenant of the Lords of Rosenberg. Referring to his letter to Wok von Rosenberg, he commands them to release Lehner from the prohibition and instruct their fellow citizen to pursue the matter of the horse against the tenant.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Wok von Rosenberg"
+        }
+      ]
     }
   ]
 }

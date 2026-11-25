@@ -7,7 +7,18 @@
       "source": "Chmel n. 1300",
       "url": "https://www.regesta-imperii.de/id/1442-12-24_1_0_13_0_0_1300_1300",
       "german": "Ulrich von Rosenberg quittirt den römischen K. Friedrich als Vormund K. Ladislaus P. über 3000 ungarische Gulden, Schuldforderungen.",
-      "english": "Ulrich von Rosenberg gives King Frederick, guardian of King Ladislaus, a receipt for 3,000 Hungarian gulden in claims of debt."
+      "english": "Ulrich von Rosenberg gives King Frederick, guardian of King Ladislaus, a receipt for 3,000 Hungarian gulden in claims of debt.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

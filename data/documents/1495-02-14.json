@@ -6,7 +6,28 @@
     {
       "source": "RI XIV,1 n. 1337",
       "url": "https://www.regesta-imperii.de/id/1495-02-14_3_0_14_1_0_1341_1337",
-      "german": "KM belehnt Asmus von Rosenberg mit dem Schloß Gnetzheym vorbehaltlich der Rechte KMs, des Reiches und Dritter, nachdem ihm Rosenberg den Lehensbrief wld Kr (Friedrichs III.) von 1442 August 4 Frankfurt vorgelegt hat: Kr Friedrich III. belehnt den Ritter Konrad von Rosenberg und dessen Frau Margarethe mit dem Schloß Gnetzheym auf deren Wunsch hin als erblichem Reichslehen ‒ bisher freies Eigen ‒ das Rosenberg dem Kr aufgesandt hat. Bei der Erbfolge in männlicher und weiblicher Linie zieht die männliche vor. Hertzogenbusch 14. Februarij 1495."
+      "german": "KM belehnt Asmus von Rosenberg mit dem Schloß Gnetzheym vorbehaltlich der Rechte KMs, des Reiches und Dritter, nachdem ihm Rosenberg den Lehensbrief wld Kr (Friedrichs III.) von 1442 August 4 Frankfurt vorgelegt hat: Kr Friedrich III. belehnt den Ritter Konrad von Rosenberg und dessen Frau Margarethe mit dem Schloß Gnetzheym auf deren Wunsch hin als erblichem Reichslehen ‒ bisher freies Eigen ‒ das Rosenberg dem Kr aufgesandt hat. Bei der Erbfolge in männlicher und weiblicher Linie zieht die männliche vor. Hertzogenbusch 14. Februarij 1495.",
+      "english": "King Maximilian enfeoffs Asmus von Rosenberg with Gnetzheym Castle, subject to the rights of the King, the Empire, and third parties, after Rosenberg presented the feoffment charter of King Friedrich III dated 4 August 1442 at Frankfurt: King Friedrich III enfeoffs the knight Konrad von Rosenberg and his wife Margarethe, at their request, with Gnetzheym Castle as an hereditary imperial fief, previously free property, which Rosenberg has surrendered to the King. In succession through the male and female lines, the male line takes precedence. ’s-Hertogenbosch, 14 February 1495.",
+      "mention": [
+        {
+          "person": "Asmus von Rosenberg"
+        },
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

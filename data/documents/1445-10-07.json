@@ -6,7 +6,19 @@
     {
       "source": "[RI XIII] H. 26 n. 159",
       "url": "https://www.regesta-imperii.de/id/1445-10-07_1_0_13_26_0_159_159",
-      "german": "Kg.F. übersendet Ulrich von Rosenberg seinen versorgbrief und bittet ihn, zusammen mit anderen, die sich dazu bereit erklärt hätten, sich der Bürgschaft anzunehmen."
+      "german": "Kg.F. übersendet Ulrich von Rosenberg seinen versorgbrief und bittet ihn, zusammen mit anderen, die sich dazu bereit erklärt hätten, sich der Bürgschaft anzunehmen.",
+      "english": "King Frederick sends Ulrich von Rosenberg his letter of provision and asks him, together with the others who have agreed to do so, to assume the guarantee.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

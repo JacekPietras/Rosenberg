@@ -5,9 +5,19 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 6126",
       "url": "https://www.regesta-imperii.de/id/1410-01-20_3_0_10_0_0_6133_6126",
-      "german": "Hans von Rosenberg und seine gattin Else Marschalkin von Bappenheim verkaufen um 145 fl. an herrn Wylhelm unssers hrn. des romischen konigs artzet, ihr hus, hoffreyde und gesehs mit dem garten daran gelegen .... daz gelegen ist zu Heydelberg für dem obern tore uff dem Necker an Flachhensels garten. (Vgl. april 23.)"
-      ,
-      "english": "Hans von Rosenberg and his wife Else Marschalkin von Pappenheim sell for 145 florins to Sir Wilhelm, physician to our lord the Roman king, their house, courtyard, outbuildings, and adjoining garden, located at Heidelberg before the upper gate on the Neckar beside Flachhensel’s garden. (See April 23.)"
+      "german": "Hans von Rosenberg und seine gattin Else Marschalkin von Bappenheim verkaufen um 145 fl. an herrn Wylhelm unssers hrn. des romischen konigs artzet, ihr hus, hoffreyde und gesehs mit dem garten daran gelegen .... daz gelegen ist zu Heydelberg für dem obern tore uff dem Necker an Flachhensels garten. (Vgl. april 23.)",
+      "english": "Hans von Rosenberg and his wife Else Marschalkin von Pappenheim sell for 145 florins to Sir Wilhelm, physician to our lord the Roman king, their house, courtyard, outbuildings, and adjoining garden, located at Heidelberg before the upper gate on the Neckar beside Flachhensel’s garden. (See April 23.)",
+      "mention": [
+        {
+          "person": "Elisabeth Marschalk von Pappenheim"
+        },
+        {
+          "person": "Hans von Rosenberg"
+        },
+        {
+          "place": "heidelberg"
+        }
+      ]
     }
   ]
 }

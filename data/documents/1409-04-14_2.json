@@ -6,9 +6,19 @@
     {
       "source": "[Regg. Pfalzgrafen 2] n. 5781",
       "url": "https://www.regesta-imperii.de/id/1409-04-14_2_0_10_0_0_5788_5781",
-      "german": "Befiehlt der stadt Schweinfurt, die jahressteuer an Arnolt von Rosenberg d. jungen zu zahlen."
-      ,
-      "english": "He orders the city of Schweinfurt to pay the annual tax to Arnold von Rosenberg the Younger."
+      "german": "Befiehlt der stadt Schweinfurt, die jahressteuer an Arnolt von Rosenberg d. jungen zu zahlen.",
+      "english": "He orders the city of Schweinfurt to pay the annual tax to Arnold von Rosenberg the Younger.",
+      "mention": [
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Jüngere"
+          ]
+        },
+        {
+          "place": "heidelberg"
+        }
+      ]
     }
   ]
 }

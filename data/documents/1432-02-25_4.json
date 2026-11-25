@@ -4,9 +4,14 @@
   "entries": [
     {
       "source": "RI XI Neubearb., 3 n. 151",
-      "english": "King S. asks Zdeslav Tluksa von Buřenice, burgrave of Karlstein, to accompany the Hussite delegation to Basel, as Lord Ulrich von Rosenberg is also to do.",
       "url": "https://www.regesta-imperii.de/id/b284593f-978a-44e2-b19c-d6d4d09cfd60",
-      "german": "Kg. S. fordert Zdeslav Tluksa von Buřenice, Burggraf von Karlstein, auf, die hussitische Gesandtschaft nach Basel zu begleiten, wie es auch Herr Ulrich von Rosenberg tun soll."
+      "german": "Kg. S. fordert Zdeslav Tluksa von Buřenice, Burggraf von Karlstein, auf, die hussitische Gesandtschaft nach Basel zu begleiten, wie es auch Herr Ulrich von Rosenberg tun soll.",
+      "english": "King S. asks Zdeslav Tluksa von Buřenice, burgrave of Karlstein, to accompany the Hussite delegation to Basel, as Lord Ulrich von Rosenberg is also to do.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

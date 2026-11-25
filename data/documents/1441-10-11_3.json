@@ -6,7 +6,18 @@
       "source": "[RI XIII] H. 26 n. 15",
       "url": "https://www.regesta-imperii.de/id/1441-10-11_1_0_13_26_0_15_15",
       "german": "Kg.F. bestätigt als Vormund Kg. Ladislaus’ die von seinen Anwälten in Österreich mit Ulrich von Rosenberg getroffene Vereinbarung wegen der Rückzahlung von 3.000 fl. ung. und Dukaten, die er jenem für dessen Dienste schuldet.",
-      "english": "King Frederick, as guardian of King Ladislaus, confirms the agreement reached by his representatives in Austria with Ulrich von Rosenberg for repayment of 3,000 Hungarian gulden and ducats owed to him for his services."
+      "english": "King Frederick, as guardian of King Ladislaus, confirms the agreement reached by his representatives in Austria with Ulrich von Rosenberg for repayment of 3,000 Hungarian gulden and ducats owed to him for his services.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

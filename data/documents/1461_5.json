@@ -6,7 +6,19 @@
     {
       "source": "[RI XIII] H. 32 n. 486",
       "url": "https://www.regesta-imperii.de/id/f2b784be-847d-43f8-a25b-bf95e5363ad4",
-      "german": "K.F. desgleichen an Ulrich von Rosenberg."
+      "german": "K.F. desgleichen an Ulrich von Rosenberg.",
+      "english": "King Frederick sends the same communication to Ulrich von Rosenberg.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

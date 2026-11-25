@@ -5,7 +5,13 @@
     {
       "source": "HStAD, F 23 A, 421/2",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2303492",
-      "german": "Angelegenheiten der Herren v. Rosenbach\n\nLaufzeit: 1611-1618"
+      "german": "Angelegenheiten der Herren v. Rosenbach\n\nLaufzeit: 1611-1618",
+      "english": "Affairs of the lords von Rosenbach.\n\nDates: 1611–1618.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }
