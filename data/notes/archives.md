@@ -27,8 +27,3 @@
 - [Archivportal-D](https://www.archivportal-d.de/suche)
 - [Bavarikon](https://www.bavarikon.de/de/suche)
 - [Deutsche Digitale Bibliothek](https://www.deutsche-digitale-bibliothek.de)
-
-
-# no idea
-
-https://www.dmgh.de
