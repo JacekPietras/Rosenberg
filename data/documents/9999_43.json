@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkundensammlung zur Geschichte des Ursprungs der Städte und der Einführung und Verbreitung deutscher Kolonisten und Rechte in Schlesien und der Ober- Lausitz, Nr. X. , S. 307, X.",
@@ -20,6 +19,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

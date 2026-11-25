@@ -1,13 +1,23 @@
 {
   "date": "1273-02-10",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim R-US 1273 Februar 10",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234163",
       "german": "Markward von Rosenbach verkauft mit Zustimmung seiner Kinder dem Propst und Kovent des Frauenklosters Höchst ein Drittel seiner Güter zu Roden (Rode) mit 80 Morgen Ackerland und 2 Morgen Reben, desgleichen 4 Morgen Reben zu Mosbach (Masbach) um 60 Pfund Heller; außerdem schenkt er demselben 2 Güter zu Wiebelsbach und eins zu Breitenbrunn (Breydenbornen).\n\nLaufzeit: 1273 Februar 10\n\nSiegelbeschreibung: Die Siegel der Edlen Eberhard, gen. Reiz von Breuberg und Konrad von Frankenstein abgegangen\n\nVermerke: Auf der Rückseite: \"Vbery guter Webelspach, vnd uber guter zu rode in d, pbsy.\"",
+      "english": "Markward von Rosenbach, with his children’s consent, sells to the provost and convent of the nunnery of Höchst one third of his property at Roden, comprising 80 acres of arable land and 2 acres of vineyards, as well as 4 acres of vineyards at Mosbach, for 60 pounds of Heller. He also gives them two estates at Wiebelsbach and one at Breitenbrunn. Term: 10 February 1273. The seals of the nobles Eberhard, called Reiz von Breuberg, and Konrad von Frankenstein are lost. A nearly illegible note on the reverse reads: “Above the estates at Wiebelsbach, and above the estates at Roden in the [abbey].”",
+      "mention": [
+        {
+          "person": "Konrad von Frankenstein"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234163%2F07_0000234163_0001_7-234163-1.jpg"

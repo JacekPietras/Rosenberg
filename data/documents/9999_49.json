@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkunden zur Geschichte des Bistums Breslau im Mittelalter, Nr. 22, S. 142, 22",
@@ -50,6 +49,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

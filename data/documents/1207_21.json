@@ -1,13 +1,29 @@
 {
   "date": "1207",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 168",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755579",
-      "german": "Heinricus Thelonearius [... et alii iurati] cives in Mergentheim [Zeuge des Verkaufs eines Hofs zu Bolzhausen an das DOH Mgh durch Konrad Lesch von Uissigheim, Ritter], 1301 [Dez. 13]; Verkauf von Gülten in Sachsenflur an den Bürger Heinrich Zollner von Mgh durch Konrad von Hohenlohe[-Weikersheim] und seine Ehefrau Elisabeth, 1313 Juli 8 [Regest]; Verkauf eines Hauses zu Mgh außen am Kirchhof an die Pfarrei Mgh zur Wiederverleihung gegen Hauszins durch Heinrich den Zollner, Bürger zu Mgh, und seine Ehefrau Jutta, 1313 [Juni 11; Regest; Zeugen: Eberhard von Hertenstein, Hkt Mgh, Konrad von Weinsberg, DO-Priester, Gerung der Truchseß DO, Ulrich der Trappier DO sowie Kraft und Hildebrand die Zollner, Brüder des A., Siegler: Mertin von Mergentheim, Johanniter, und Walther Rezze DO, beide Kt Mgh]; Verkauf eines Hofs zu Herbertshausen [Paul Anton Breitenbach: Herbsthausen] (Herbritzhausen) an Heinrich Zollner von Mergentheim durch Johann von Blaubach (Bloach) [Paul Anton Breitenbach: von Blaach], Ritter, 1311 Dez. 9 [Regest; Bürgen: Heinrich von Blaubach, Arnold von Sachsenflur, Mitsiegler: Ulrich I. von Hohenlohe-Brauneck-Haltenbergstetten].\n\nLaufzeit: 1207-1818"
+      "german": "Heinricus Thelonearius [... et alii iurati] cives in Mergentheim [Zeuge des Verkaufs eines Hofs zu Bolzhausen an das DOH Mgh durch Konrad Lesch von Uissigheim, Ritter], 1301 [Dez. 13]; Verkauf von Gülten in Sachsenflur an den Bürger Heinrich Zollner von Mgh durch Konrad von Hohenlohe[-Weikersheim] und seine Ehefrau Elisabeth, 1313 Juli 8 [Regest]; Verkauf eines Hauses zu Mgh außen am Kirchhof an die Pfarrei Mgh zur Wiederverleihung gegen Hauszins durch Heinrich den Zollner, Bürger zu Mgh, und seine Ehefrau Jutta, 1313 [Juni 11; Regest; Zeugen: Eberhard von Hertenstein, Hkt Mgh, Konrad von Weinsberg, DO-Priester, Gerung der Truchseß DO, Ulrich der Trappier DO sowie Kraft und Hildebrand die Zollner, Brüder des A., Siegler: Mertin von Mergentheim, Johanniter, und Walther Rezze DO, beide Kt Mgh]; Verkauf eines Hofs zu Herbertshausen [Paul Anton Breitenbach: Herbsthausen] (Herbritzhausen) an Heinrich Zollner von Mergentheim durch Johann von Blaubach (Bloach) [Paul Anton Breitenbach: von Blaach], Ritter, 1311 Dez. 9 [Regest; Bürgen: Heinrich von Blaubach, Arnold von Sachsenflur, Mitsiegler: Ulrich I. von Hohenlohe-Brauneck-Haltenbergstetten].\n\nLaufzeit: 1207-1818",
+      "english": "Heinricus Thelonearius [... and other sworn men], citizens of Mergentheim [witness the sale of an estate at Bolzhausen to the Mergentheim house by Konrad Lesch von Uissigheim, Ritter], 1301 [December 13]; sale of rents at Sachsenflur to Heinrich Zollner, citizen of Mergentheim, by Konrad von Hohenlohe[-Weikersheim] and his wife Elisabeth, 1313 July 8 [regest]; Heinrich der Zollner, citizen of Mergentheim, and his wife Jutta sell a house outside the churchyard at Mergentheim to the parish, for it to be regranted in return for house rent, 1313 [June 11; regest; witnesses: Eberhard von Hertenstein, commander at Mergentheim; Konrad von Weinsberg, Teutonic priest; Gerung der Truchseß, Teutonic Order; Ulrich der Trappier, Teutonic Order; and Kraft and Hildebrand die Zollner, the grantor’s brothers; seals: Mertin von Mergentheim, Johanniter, and Walther Rezze, Teutonic Order, both commanders at Mergentheim]; Johann von Blaubach (Bloach) [Paul Anton Breitenbach: von Blaach], Ritter, sells an estate at Herbertshausen [Paul Anton Breitenbach: Herbsthausen] (Herbritzhausen) to Heinrich Zollner von Mergentheim, 1311 December 9 [regest; guarantors: Heinrich von Blaubach and Arnold von Sachsenflur; co-sealer: Ulrich I von Hohenlohe-Brauneck-Haltenbergstetten]. Term: 1207–1818.",
+      "mention": [
+        {
+          "person": "Konrad von Hohenlohe"
+        },
+        {
+          "person": "Konrad von Weinsberg"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "person": "Ulrich von Hohenlohe"
+        }
+      ]
     }
   ]
 }

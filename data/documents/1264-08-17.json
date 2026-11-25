@@ -1,8 +1,7 @@
 {
   "date": "1264-08-17",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": [
@@ -14,6 +13,15 @@
         "https://www.monasterium.net/mom/CH-StiASG/Urkunden/YY.1.C.1/charter"
       ],
       "german": "Rudolf von Hagenwil gibt Abt Berchtold von St. Gallen den Hof Hagenwil mit Burg und allem Zubehör und das Meieramt Muolen unter gewissen Bedingungen auf.\n\nIn nomine domini amen. Ut a futuro dispendio in eventum quemlibet caveatur, expedit, que geruntur scriptis solidari. Noverint igitur presentes et posteri, || quod Ru odolfus miles de Hagenwiler 1 de salute anime sue ac corporis quiete provide cogitans accessit ad monasterium sancti Galli, cuius ministerialis ex||istit, et curtem suam de Hagenwiler, castrum, vineam et omnia bona sua ad ipsam villam de Hagenwiler pertinentia, villicatum quoque de Mu ola 2 cum || toto districtu suo resignavit in manibus reverendi domini Bertholdi abbatis sancti Galli 3 voluntarie et omnino sponte, conferendo ea beato Gallo pro retributione scilicet salutis eterne et ut ipsius domini abbatis gratiam et favorem sibi posset per hoc specialius applicare, retento tamen sibi pro tempore vite sue usufructu tantum eorundem bonorum, eo pacto, ut esse debeat in optione dicti domini abbatis, utrum ei dimittere velit usufructum ipsorum bonorum vel pro ipso usufructu assignare XX lb. quoad vixerit annuatim, quibuslibet heredibus ipsius militis omni spe successionis hereditarie in prefatis curte de Hagenwiler, Castro, vinea, villicatu aliisque bonis ipsius omnibus ad ipsam villam de Hagenwiler pertinentibus in perpetuum penitus denegata. Est autem et hoc expresse statutum et promissum, quod prefata bona omnia nec coniunctim nec divisim debeant aut possint ab ipso monasterio aliquo modo distrahi vel alienari, sed ibidem perpetualiter permanere. Igitur memoratus dominus abbas pium prenominati militis affectum gratanter amplectens, gratificando sibi promisit fideliter pro se ac successoribus suis, confratribus suis universis presentibus et in a) idem voluntarie et expresse consentientibus, quod ipsum manuteneant et contra molestatores quoslibet pro posse defendant, ad non alienandum ipsa bona et ad solutionem premissarum XX lb. se, ut expressum est superius, obligando, renuntiantes utrimque omnibus supplicationibus, impetrationibus et actionibus, quocumque censeantur nomine, per quas vel occasione quarum quod supradictum est statutum vel ordinatum aliquo posset ingenio cavillari seu aliquatenus retractari. In cuius facti evidentiam presens instrumentum est confectum et sigillis predictorum domini abbatis et conventus sancti Galli ac ipsius militis roboratum. Testes sunt: nobilis vir R. de Guting(en) 4, E. de Rosemberc 5 et R. de Rorschach 6 fratres, R. marscalcus de sancto Gallo 7, Heinr. de Hardegge 8 et Heinricus de Wartinse 9 milites, item R. de Tunretun 10, R. de Wiler 11, V ol. de Einwiler 12 et R. advocatus de Gu otinstein 13 aliique quamplures. Actum in curia domini abbatis publice, anno domini MCCLXIIII. in octava sancti Laurentii, die dominico, indict. VII. pontificatus domini Vrbani pape IIII. anno III. regiminis vero domini Ber. abbatis anno XX.\n\nSiegel: 3 Siegel, 1. fehlt; 2. besch., Abb. 25; 3. besch., Abb. 34.",
+      "english": "Rudolf, knight of Hagenwil, considering the salvation of his soul and the peace of his body, came to the monastery of St. Gall, of which he was a ministerial, and voluntarily surrendered to Abbot Berchtold his estate at Hagenwil, its castle, vineyard, all property belonging to the village, and the bailiwick of Muolen with its entire district, granting them to St. Gall for the reward of eternal salvation and to obtain the abbot’s favor. He reserved the usufruct for his lifetime, on condition that the abbot could either allow him to retain it or pay him 20 pounds annually for it. His heirs were permanently denied any right of inheritance in these properties. The properties were not to be alienated, jointly or separately, but to remain with the monastery forever. The abbot accepted this pious disposition and promised on behalf of himself and his successors, with the consent of the brethren, to fulfill the agreed terms. Both parties renounced any legal actions or appeals that might undermine the agreement. The instrument was sealed by the abbot, convent, and knight. Witnesses included the noblemen R. von Güt(t)ingen, E. von Rosenberg and his brother R. von Rorschach, the marshal of St. Gall, and the knights Heinrich von Hardegg and Heinrich von Wartensee, among others. Enacted publicly at the abbot’s court on 17 August 1264.",
+      "mention": [
+        {
+          "place": "rorschach"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG2jpgweb._%7EStiASG_12640817_YY1-C1_v.jpg"
@@ -29,6 +37,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

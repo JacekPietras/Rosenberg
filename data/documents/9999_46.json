@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Herzog Hans der Grausame von Sagan im Jahre 1488 und Hans Schweinichens Leben Herzog Heinrich XI. von Liegnitz, Nr. 45, S. 152, 45",
@@ -23,6 +22,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

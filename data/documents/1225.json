@@ -1,14 +1,25 @@
 {
   "date": "1225-1225",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Chartularium Sangallense III, Nr. 1111, S. 144., Nr. 1111, S. 144",
       "url": "https://www.monasterium.net/mom/CSGIII/Nr_1111_S_144/charter",
-      "german": "Rudolf von Rorschach schenkt dem Kloster St. Gallen eine Mühle zu Hasela und ein Gut in Sundern für Jahrzeiten für sich und Familienangehörige.\n\nAnno incarnationis domini MCCXXV. Ruodolfus miles de Rorshach 1 pro remedio animae fratris sui Egilolfi de Rosinberh 2 resignavit molendinum, quod fratris sui fuerat apud Hasela 3, persolvens IIII. tritici modios et XII. solidos, et dedit praedium apud Sundern 3, quod persolvit XXII. solidos, beato Gallo in praesentia domini venerandi abbatis Ruodolfi 4 et fratrum suorum, statuens, ut exinde anniversarius dies ipsius agatur in pane, vino, piscibus et caseo, et ad sanctum Laurentium 5, sanctum Magnum 6, sanctam Fidem 7, sanctam Mariam 8, sanctum Sepulchrum 9, sanctum Petrum 9, sanctum Othmarum 10 praeter prebendam statutam singulis eo die prebendas statuit, et praebendariis apud sanctum Leonardum 11 XVIII. denarios et totidem ad sanctum Magnum, tribus item prebendariis ad sanctum Iacobum 12 XII. denarios, similiter ad sanctum Iohannem 13 et ad sanctum Osuualdum 9 et vicario apud sanctum Laurentium VI. denarios, ut ipsi deberet missae officio interesse. Ipse vero Ruodolfus de advocatia porrigit praeter modium tritici de molendino et II. solidos de Sundern. Postea ipse Ruodolfus anniversarium suum instituit simili amministratione, sicut fratris sui, eundem anniversarium per omnia celebrandum de bono in Gerrhaltun 14. Instituit etiam matris suae Berthae et uxoris suae Gerdrudis anniversarium de praedicti boni reditibus celebranda, in utroque videlicet anniversario duos stoupos maiores et minores."
+      "german": "Rudolf von Rorschach schenkt dem Kloster St. Gallen eine Mühle zu Hasela und ein Gut in Sundern für Jahrzeiten für sich und Familienangehörige.\n\nAnno incarnationis domini MCCXXV. Ruodolfus miles de Rorshach 1 pro remedio animae fratris sui Egilolfi de Rosinberh 2 resignavit molendinum, quod fratris sui fuerat apud Hasela 3, persolvens IIII. tritici modios et XII. solidos, et dedit praedium apud Sundern 3, quod persolvit XXII. solidos, beato Gallo in praesentia domini venerandi abbatis Ruodolfi 4 et fratrum suorum, statuens, ut exinde anniversarius dies ipsius agatur in pane, vino, piscibus et caseo, et ad sanctum Laurentium 5, sanctum Magnum 6, sanctam Fidem 7, sanctam Mariam 8, sanctum Sepulchrum 9, sanctum Petrum 9, sanctum Othmarum 10 praeter prebendam statutam singulis eo die prebendas statuit, et praebendariis apud sanctum Leonardum 11 XVIII. denarios et totidem ad sanctum Magnum, tribus item prebendariis ad sanctum Iacobum 12 XII. denarios, similiter ad sanctum Iohannem 13 et ad sanctum Osuualdum 9 et vicario apud sanctum Laurentium VI. denarios, ut ipsi deberet missae officio interesse. Ipse vero Ruodolfus de advocatia porrigit praeter modium tritici de molendino et II. solidos de Sundern. Postea ipse Ruodolfus anniversarium suum instituit simili amministratione, sicut fratris sui, eundem anniversarium per omnia celebrandum de bono in Gerrhaltun 14. Instituit etiam matris suae Berthae et uxoris suae Gerdrudis anniversarium de praedicti boni reditibus celebranda, in utroque videlicet anniversario duos stoupos maiores et minores.",
+      "english": "In the year of the Lord’s Incarnation 1225, Rudolf, Ritter of Rorschach, for the salvation of the soul of his brother Egelolf of Rosenberg, transferred to St. Gall the mill that had belonged to his brother at Hasela, yielding four measures of wheat and twelve solidi, and gave the estate at Sundern, yielding twenty-two solidi, in the presence of the venerable Lord Abbot Rudolf and his brothers. He stipulated that his brother’s anniversary be kept from these revenues with bread, wine, fish, and cheese. On that day he also assigned prebends at St. Lawrence, St. Magnus, St. Faith, St. Mary, the Holy Sepulchre, St. Peter, and St. Othmar, in addition to the established prebend; eighteen denarii each to the prebendaries at St. Leonard and St. Magnus; twelve denarii to the three prebendaries at St. James, and likewise at St. John and St. Oswald; and six denarii to the vicar at St. Lawrence, so that they should attend the mass. Rudolf himself pays, from the bailiwick, one measure of wheat from the mill and two solidi from Sundern. Later Rudolf established his own anniversary, to be celebrated in every respect with the same provision as his brother’s, from the estate at Gerrhaltun. He also established anniversaries for his mother Bertha and his wife Gerdrudis, to be celebrated from the revenues of the aforesaid estate; for each anniversary, two large and small stoups.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Rudolf",
+          "personTitle": [
+            "Ritter",
+            "zu Rorschach"
+          ]
+        }
+      ]
     }
-  ],
-  "transcribed": true
+  ]
 }

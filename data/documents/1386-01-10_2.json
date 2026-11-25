@@ -1,8 +1,7 @@
 {
   "date": "1386-01-10",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "StA St. Gallen, H.4.Mm.18a., 1386 I 10",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

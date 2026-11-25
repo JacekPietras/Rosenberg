@@ -1,13 +1,26 @@
 {
   "date": "1207",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 26 Qu. 84",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-756256",
-      "german": "Verkauf von Gütern zu Eckersmühlen (Öckersmül) samt der Mühle, Wiesen, Hofstätten, der 1/2 Hirtschaft, dem Burgstall mit Graben und Weiher und Holzmarken an Ludwig Graf von Wertheim, Kt zu Nürnberg, und Friedrich Holzschuher, Spitalmeister daselbst, durch Marquard Loder und seine Ehefrau, 1376 Juni 29 [Regest]; Verkauf [seines Teils] des Burgstalls zu Eckersmühlen samt einem Seldengut an Paul von Üffigheim (Üffickeim), Spitalmeister zu Nürnberg, durch Christian Jarsdörfer und dessen Ehefrau Agnes, 1449 Sept. 29 [Regest]; Verkauf einer Hofstatt zu Eckersmühlen an Paul von Uissigheim, Spitalmeister zu Nürnberg, durch die Vormünder der Kinder des + Merkel Wild zu Eckersmühlen 1456 Sept. 3 [Regest]; Waldungen des DOH Nürnberg zu Eckersmühlen, [um 1800].\n\nLaufzeit: 1207-1818"
+      "german": "Verkauf von Gütern zu Eckersmühlen (Öckersmül) samt der Mühle, Wiesen, Hofstätten, der 1/2 Hirtschaft, dem Burgstall mit Graben und Weiher und Holzmarken an Ludwig Graf von Wertheim, Kt zu Nürnberg, und Friedrich Holzschuher, Spitalmeister daselbst, durch Marquard Loder und seine Ehefrau, 1376 Juni 29 [Regest]; Verkauf [seines Teils] des Burgstalls zu Eckersmühlen samt einem Seldengut an Paul von Üffigheim (Üffickeim), Spitalmeister zu Nürnberg, durch Christian Jarsdörfer und dessen Ehefrau Agnes, 1449 Sept. 29 [Regest]; Verkauf einer Hofstatt zu Eckersmühlen an Paul von Uissigheim, Spitalmeister zu Nürnberg, durch die Vormünder der Kinder des + Merkel Wild zu Eckersmühlen 1456 Sept. 3 [Regest]; Waldungen des DOH Nürnberg zu Eckersmühlen, [um 1800].\n\nLaufzeit: 1207-1818",
+      "english": "Sale of property at Eckersmühlen (Öckersmül), including the mill, meadows, homesteads, half the right to pasture, the castle site with moat and pond, and woodland rights, to Ludwig, Count of Wertheim, Teutonic Knight at Nuremberg, and Friedrich Holzschuher, hospital master there, by Marquard Loder and his wife, 29 June 1376 [abstract]; sale [of his share] of the castle site at Eckersmühlen, with a smallholding, to Paul von Üffigheim, hospital master at Nuremberg, by Christian Jarsdörfer and his wife Agnes, 29 September 1449 [abstract]; sale of a homestead at Eckersmühlen to Paul von Uissigheim by the guardians of the children of the late Merkel Wild of Eckersmühlen, 3 September 1456 [abstract]; forests of the Teutonic Order house at Nuremberg at Eckersmühlen, [around 1800].\n\nPeriod covered: 1207–1818.",
+      "mention": [
+        {
+          "person": "Ludwig von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Pauls von Uissigheim"
+        }
+      ]
     }
   ]
 }

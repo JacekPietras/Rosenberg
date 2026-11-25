@@ -1,8 +1,6 @@
 {
   "date": "1233",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim R-US 1233a",
@@ -14,6 +12,33 @@
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234101%2F07_0000234101_0002_7-234101-2.jpg"
+        }
+      ],
+      "english": "L(udwig), Count of Rieneck, certifies that his liegeman Heinrich of Eiersheim sold all his property at Uissigheim to Bronnbach Abbey for 44 marks of silver, with his brother Eberhard, Arnold, and Albert von Uissigheim acting as sureties and feoffees.\n\nPeriod covered: 1233.\n\nSeal description: seal detached.\n\nNotes: On the reverse: “On the properties at Uissigheim purchased from Heinrich of Eiersheim.”",
+      "mention": [
+        {
+          "person": "Albrecht von Uissigheim"
+        },
+        {
+          "person": "Arnold von Uissigheim"
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Eberhard von Uissigheim"
+        },
+        {
+          "person": "Heinrich of Eiersheim"
+        },
+        {
+          "person": "Ludwig von Rieneck",
+          "personTitle": [
+            "Graf von Rieneck"
+          ]
+        },
+        {
+          "place": "uissigheim"
         }
       ]
     }

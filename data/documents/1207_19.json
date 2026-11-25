@@ -1,13 +1,38 @@
 {
   "date": "1207",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 19 Qu. 57",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755360",
-      "german": "Schiedsspruch des Grafen Gottfried von Rieneck, des Grafen Johann [I.] von Wertheim, des Eberhard Schenk von Roßberg, Walther von Heinriet und des Johann von Wollmershausen, alle drei Ritter, zwischen Konrad von Hohenlohe-Brauneck und DM Konrad Rüdt wegen wegen des Centgrafen zu Igersheim, der nach Mgh gezogenen hohenlohischen Leibeigenen und der Freilassung der aufständischen Bürger zu Mgh, 1382 Juli 21 [Regest].\n\nLaufzeit: 1207-1818"
+      "german": "Schiedsspruch des Grafen Gottfried von Rieneck, des Grafen Johann [I.] von Wertheim, des Eberhard Schenk von Roßberg, Walther von Heinriet und des Johann von Wollmershausen, alle drei Ritter, zwischen Konrad von Hohenlohe-Brauneck und DM Konrad Rüdt wegen wegen des Centgrafen zu Igersheim, der nach Mgh gezogenen hohenlohischen Leibeigenen und der Freilassung der aufständischen Bürger zu Mgh, 1382 Juli 21 [Regest].\n\nLaufzeit: 1207-1818",
+      "english": "Arbitration by Count Gotfried von Rieneck, Count Johann [I.] von Wertheim, Eberhard Schenk von Roßberg, Walther von Heinriet, and Johann von Wollmershausen, the last three Ritter, between Konrad von Hohenlohe-Brauneck and Grand Master Konrad Rüdt concerning the centgrave at Igersheim, Hohenlohe serfs who had moved to Mergentheim, and the release of the rebellious citizens of Mergentheim, 1382 July 21 [regest]. Term: 1207–1818.",
+      "mention": [
+        {
+          "person": "Eberhard Schenk"
+        },
+        {
+          "person": "Gotfried von Rieneck",
+          "personTitle": [
+            "Graf von Rieneck"
+          ]
+        },
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "person": "Konrad Rüd"
+        },
+        {
+          "person": "Konrad von Hohenlohe"
+        }
+      ]
     }
   ]
 }

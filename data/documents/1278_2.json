@@ -1,13 +1,18 @@
 {
   "date": "1278",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkundenbuch des Cistercienserstiftes B. Mariae V. zu Hohenfurt in Böhmen, Nr. XXIV. , S. 43, XXIV.",
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/676a6864-32a6-4199-9e5d-087532a771e5/charter",
       "german": "1278. 24. Juni, Pribnitz. — Heinrich von Rosenberg bestätigt die Schenkung, welche sein Bruder Wittigo den Hohenfurter Cisterciensern mit den Dörfern Schönhub, Sonnbcrg, Rukendorf und Unter-Schlagl machte.\n\nXXIV. Heinricus de Rosenberch vniuersis Christi fidelibus presentibus et futuris hanc paginam cognituris notitiam geste rei. Cautum fuit a 30 uiris prudenübus et prouisum, ut quod ipsi uolebant manere sta- bilius, litterarum suarum indiciis perhennarent. Sciant igitur pre sentes ac posteri, quod frater meus Witigo pie memorie positus in extremis fideliter mente pertractans, quia quicquit misericorditer pau- peribus Christi maxime religiosam uitam docentibus inpenditur, aucto- remsuum adiuuare etoptatum ei premium in die retributionis apportare (sic), in remedium anime sue nee non progenitorum suorum pariter et successorum de bonis sibi a deo et a progenitoribus suis collatis de bona uoluntate mea domui sanete Marie in Hohenfvrt ordinis Cysterciensis quatuor villas, scilicet Pzizaho Svnnberch Rvkchen- dorf et minorem plagam Gerberti, liberaliter condonauit cum suis attinenciis siluis virgultis pratis pnscuis cullis et incultis viis et in- uiis et omnibus attinentiis suis, cum metis ipsarum villarum dudum distinctis pariter et expressis. Hanc donationem fratris mei et omnem donationem patris mei domini Wokkonis predicto cenobio factam et perpetuo possidendam cum omni iure sibi etiam tradito ego Hein- ricus de Rosenberch approbo et confirmo. Vt autem bec rata per- maneant et nulla queant in posterum calumpnia perturban presentem cartam conscribi feci et mei sigilli munimine roboran. Huius rei testes sunt: Dominus Hablo, Zwatimirus, Chreno, Wenadab milites, Vlricus frater Wenade, Otto Wassho, Nycolaus, Petrus, Psedwor, Shenko, Dominicus, Bozlaus Troiauus*), Shaztolaus fratres, et alii quam plures fide digni. Actum anno domini M« CO septuagesimo octauo indictione vi\" epacta xxva. Datum in Pribnitz in die sancti Johannis baptiste. 1. Etwas beschädigtes, an Pergamentstreifen hängendes Siegel ¡D weissem Wachs. Sonst wie XXII. 2. Millauer p. 73, n. 12.",
+      "english": "On 24 June 1278 at Pribnitz, Heinrich von Rosenberg makes known to all present and future Christians that his brother Witigo, of blessed memory, mindful in his final days that what is mercifully given to Christ’s poor, especially those leading religious lives, helps its giver and brings the hoped-for reward on Judgment Day, freely donated to the house of St. Mary at Hohenfurt, of the Cistercian Order, four villages from the property granted him by God and his ancestors, for the salvation of his soul and those of his ancestors and successors. These were Pzizaho, Sonnberg, Rukendorf, and the smaller estate of Gerbert, with all their appurtenances, including woods, groves, meadows, pastures, cultivated and uncultivated land, roads and paths, and all rights, within their established boundaries. Heinrich approves and confirms this donation by his brother and all the gifts made by their father, Lord Wok, to the monastery, to be held in perpetuity with all rights conveyed to it. He had this charter drawn up and confirmed with his seal. Many witnesses are named. Enacted in the year of the Lord 1278, on the feast of St. John the Baptist. Seal and later scholarly reference noted.",
+      "mention": [
+        {
+          "person": "Heinrich von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000043.png"
@@ -17,6 +22,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

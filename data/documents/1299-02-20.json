@@ -1,6 +1,7 @@
 {
   "date": "1299-02-20",
   "label": "Rorschach",
+  "transcribed": true,
   "entries": [
     {
       "source": [
@@ -36,6 +37,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

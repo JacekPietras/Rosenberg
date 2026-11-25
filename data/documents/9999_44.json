@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkundenbuch des Stiftes Klosterneuburg bis zum Ende des vierzehnten Jahrhunderts, Nr. CCCCLXVI. , S. 524, CCCCLXVI.",
@@ -14,6 +13,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

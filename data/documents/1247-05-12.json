@@ -1,8 +1,6 @@
 {
   "date": "1247-05-12",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim G-Rep. 15 Lade XXIV Nr. 2a",
@@ -14,6 +12,36 @@
         },
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=719&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000719%2Ftitlaufn_0000154145%2F07_0000154145_0003_7-154145-3.jpg"
+        }
+      ],
+      "english": "Otto von Hainstatt (Ritter and liegeman of Konrad von Dürn) sells, also on behalf of his wife Gutha and his children Otto, Cunradus, Rudolfus, and Egno, to Bronnbach Abbey, for 31 marks of silver, the tithe from Dürrhof, Laukenhof, and Winnenden (Durreberc, Luchenberc, and Winede), a hereditary fief of the provost and the church of Mainz, from which Bronnbach Abbey was contractually to pay him annually 18 Malter of grain and half a denarius; he also sells a rent of 20 denarii and one lamb, which he holds as a fief from the church at Bürgstadt, together with two cheeses. The abbey undertakes henceforth to pay the required 10 ounces of Heller annually to or for the church of Mainz. As security, the seller pledges to the abbey his estate at Waldstetten (Steden), cultivated by Rudolfus de Erfelt, and the 26 ounces of Heller paid annually there by 11 smallholders, as well as all his properties in the village and its fields. Rudolfus and the other smallholders now receive these properties from the abbey in return for an annual rent of 2 denarii at Martinmas. The pledge is made into the hands of the sureties: the Bishop of Würzburg; Cunradus de Durne; the noble brothers Eberhardus and Arnoldus de Ussincheim; dominus Cunradus, son of Riwini de Durne; and Dominicus Hermannus of Aschaffenburg.\n\nPeriod covered: 12 May 1247 (at Wildenberg Castle, in our lord’s fourth workroom, on the fourth Ides of May in the year of the Lord 1247).\n\nThree seals, well preserved.\n\nWitnesses: Gotefridus, abbot; Cunradus molicus; Alhalmus, scholasticus, and the convent of Amorbach; Ludewicus, abbot; Rudegerus, prior; Gotescalcus Danus, monk of Bronnbach; Eberhardus Danus, monk of Bronnbach; Heinricus Danus, monk of Bronnbach; our lord Cunradus de Durne with his most noble wife Mectilde; our young lord Rupertus; Otto Zehe, senior and junior; Cunradus de Wilinbach; Goteboldus de Amorbach; and the knights Volinandus de Botinkeim.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "bürgstadt"
+        },
+        {
+          "person": "Konrad de Dürn"
+        },
+        {
+          "person": "Konrad von Dürn"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "place": "wallduern"
+        },
+        {
+          "place": "wildenberg-castle"
+        },
+        {
+          "place": "wurzburg"
         }
       ]
     }

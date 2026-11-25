@@ -5,7 +5,52 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 86",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755788",
-      "german": "Edelfinger Dorfordnung, erlassen durch Marquart Freiherr von Eck und Hungersbach, geheimer Rat und Statthalter des HDM Maximilian von Österreich, die Brüder Albrecht Christoph und Georg Sigmund von Rosenberg zu Waldmannshofen, Haltenbergstetten, Gnötzheim und Schüpf sowie Georg Ludwig von Hutten zu Birkenfeld, Vogt zu Mosbach, und Johann Weiprecht [von und] zu Büdingen, Vogt zu Bretten, beide kurpfälzische Räte und Vormünder der Kinder des + Georg Sigmund von und zu Adelsheim und Wachbach, als Dorfherren, 1601 Feb. 4/14 [Abschrift von Incipit und Explicit]; Belehnung des DO mit dem Zoll zu Edelfingen durch das Reich seit Menschengedenken; Zerstörung des Dorfes Edelfingen in der [zweiten] Rosenberger Fehde, 1486; Vergleich zwischen der Grafschaft Hohenlohe-Langenburg und Generalfeldmarschall Graf Melchior von Hatzfeld wegen der Überlassung von 1/2 des Viertels am Dorf Edelfingen mit allen Rechten, Einkünften und Zugehörden und 1/2 des Fischwassers daselbst an Hatzfeld unter Vorbehalt von 1/2 des Patronatsrechts, von Kirche und Pfarrhaus, Pfarr- und Heiligengütern zugunsten der Grafschaft Hohenlohe-Langenburg, 1639 Aug. 24/Sept. 3 [Regest].\n\nLaufzeit: 1207-1818"
+      "german": "Edelfinger Dorfordnung, erlassen durch Marquart Freiherr von Eck und Hungersbach, geheimer Rat und Statthalter des HDM Maximilian von Österreich, die Brüder Albrecht Christoph und Georg Sigmund von Rosenberg zu Waldmannshofen, Haltenbergstetten, Gnötzheim und Schüpf sowie Georg Ludwig von Hutten zu Birkenfeld, Vogt zu Mosbach, und Johann Weiprecht [von und] zu Büdingen, Vogt zu Bretten, beide kurpfälzische Räte und Vormünder der Kinder des + Georg Sigmund von und zu Adelsheim und Wachbach, als Dorfherren, 1601 Feb. 4/14 [Abschrift von Incipit und Explicit]; Belehnung des DO mit dem Zoll zu Edelfingen durch das Reich seit Menschengedenken; Zerstörung des Dorfes Edelfingen in der [zweiten] Rosenberger Fehde, 1486; Vergleich zwischen der Grafschaft Hohenlohe-Langenburg und Generalfeldmarschall Graf Melchior von Hatzfeld wegen der Überlassung von 1/2 des Viertels am Dorf Edelfingen mit allen Rechten, Einkünften und Zugehörden und 1/2 des Fischwassers daselbst an Hatzfeld unter Vorbehalt von 1/2 des Patronatsrechts, von Kirche und Pfarrhaus, Pfarr- und Heiligengütern zugunsten der Grafschaft Hohenlohe-Langenburg, 1639 Aug. 24/Sept. 3 [Regest].\n\nLaufzeit: 1207-1818",
+      "english": "Village ordinance of Edelfingen issued by Marquart Freiherr von Eck und Hungersbach, privy councillor and governor of Grand Master Maximilian of Austria; the brothers Albrecht Christoph and Georg Siegmund von Rosenberg zu Waldmannshofen, Haltenbergstetten, Gnötzheim, and Schüpf; and Georg Ludwig von Hutten zu Birkenfeld, bailiff at Mosbach, and Johann Weiprecht [von und] zu Büdingen, bailiff at Bretten, both Electoral Palatine councillors and guardians of the children of the late Georg Sigmund von und zu Adelsheim und Wachbach, as village lords, 1601 February 4/14 [copy of incipit and explicit]; the Teutonic Order’s acquisition of the toll at Edelfingen from the Empire from time immemorial; destruction of Edelfingen during the [second] Rosenberg feud, 1486; agreement between the county of Hohenlohe-Langenburg and Field Marshal General Count Melchior von Hatzfeld concerning transfer to Hatzfeld of half the quarter of the village of Edelfingen with all rights, revenues, and appurtenances, and half the fishing rights there, reserving half the right of patronage, the church and rectory, and parish and church property to the county of Hohenlohe-Langenburg, 1639 August 24/September 3 [regest]. Term: 1207–1818.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ]
+        },
+        {
+          "place": "edelfingen"
+        },
+        {
+          "person": "Georg Ludwig von Hutten"
+        },
+        {
+          "person": "Georg Siegmund von Adelsheim",
+          "personTitle": [
+            "zu Adelsheim"
+          ]
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg",
+          "personTitle": [
+            "zu Waldmannshofen"
+          ]
+        },
+        {
+          "place": "gnoetzheim"
+        },
+        {
+          "place": "hohenlohe"
+        },
+        {
+          "place": "mosbach-st-juliana"
+        },
+        {
+          "place": "oberschuepf"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

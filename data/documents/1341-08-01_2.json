@@ -1,8 +1,7 @@
 {
   "date": "1341-08-01",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "StA St. Gallen, Zürcher Abt. 19., Zürcher Abt. 19",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

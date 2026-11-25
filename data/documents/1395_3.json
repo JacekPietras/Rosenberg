@@ -1,8 +1,7 @@
 {
   "date": "1395",
-  "label": [
-    "to review"
-  ],
+  "place": "Prag",
+  "label": "to review",
   "entries": [
     {
       "source": [
@@ -15,6 +14,5 @@
       ],
       "german": "Wenzel verspricht Markgraf Jost von Mähren, Heinrich von Rosenberg, Heinrich von Neuhaus, Brenek von Skala und ihrem Anhang sicheres Geleit."
     }
-  ],
-  "place": "Prag"
+  ]
 }

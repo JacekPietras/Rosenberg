@@ -1,8 +1,7 @@
 {
   "date": "1348-06-05",
-  "label": [
-    "Czechia"
-  ],
+  "label": "Czechia",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkundenbuch des Cistercienserstiftes B. Mariae V. zu Hohenfurt in Böhmen, Nr. XCI. , S. 106, XCI.",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

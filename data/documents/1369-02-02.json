@@ -1,8 +1,7 @@
 {
   "date": "1369-02-02",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Urkundenbuch des Cistercienserstiftes B. Mariae V. zu Hohenfurt in Böhmen, Nr. CXXIX. , S. 158, CXXIX.",
@@ -23,6 +22,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

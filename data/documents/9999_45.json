@@ -1,8 +1,7 @@
 {
   "date": "9999",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "Landeshoheit des Hauses Hohenlohe von deren Zeiten des sogenannten grossen Interregni, Nr. 130, S. 342, 130",
@@ -125,6 +124,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }

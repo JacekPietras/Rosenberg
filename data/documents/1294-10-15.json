@@ -1,8 +1,7 @@
 {
   "date": "1294-10-15",
-  "label": [
-    "to review"
-  ],
+  "label": "to review",
+  "transcribed": true,
   "entries": [
     {
       "source": "StA St. Gallen, Zürcher Abt. 9., 1294 X 15",
@@ -17,6 +16,5 @@
         }
       ]
     }
-  ],
-  "transcribed": true
+  ]
 }
