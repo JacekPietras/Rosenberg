@@ -1,30 +1,18 @@
 {
   "date": "9999",
   "label": "to review",
-  "transcribed": true,
   "entries": [
     {
-      "source": "Codex diplomaticus et epistolaris Moraviae - Urkundensammlung zur Geschichte Mährens, Nr. XXXIV. , S. 467, XXXIV.",
-      "url": "https://www.monasterium.net/mom/UrkundenMaehren/781dc8fe-330e-454b-a5d8-5ffc0c9976c7/charter",
-      "german": "Karl, des Königes Johann von Böhmen ältester Sohn, verpflichtet sich bezüglich der für Margaretha, Tochter des Herzoges Heinrich von Kärnthen bestimmten Heimsteuer von 40,000 Mark Silbers. Dt. zu Meran, die VIII. post festum S. Michaelis. 1333.\n\nXXXIV. l% ir Chalr des Chuniges von Behaim Elter Sun. veriehen etc. Daz wir von vnsers lieben Heren vnd vater des hochwirdigen fürsten. Hern Johans. Chunik ze Behaim vnd ze Polan. vnd Grauen ze Lutzemburch gesheftes wegen, mit vollem gewalt den er vns darüber gegeben hat. gegen dem Hochgeporn fürsten Hern. Heinr. Hertzogen ze Chernden. vnd Grauen ze Tyrol, vnserm lieben Heren vnd Vater vnd seinen Erben, vmb die vierzich Tausent Mark silbers Prager gewicht — — verpunden haben — — im auf die nesten Liehtmesse die schierst chumftich sint, an allev vordrung vnd irresal. antwrten vnd geben sullen. gen Regenspurch in die Stat — — drithalp Tausent Mark silbers — — vnd in der selben weis auf die nesten Phinchsten darnach — — Drithalb Tausent march 398 vnd von Sand Michels tak — darnach — — vber ain Jar — — fumf Tausent March (u. s. w.) Darüber haben wir im — — ze sampt vns die Purgen gesatzt — — Jaesken den Chantzeler Probst ze Wisserad, Peter von Rosenberch, Thiem von Golditz, Wilhalm von Lantstain, Heinr. von der Leipen, vnd Otten von Bergav — — (mit Laistung in die Stadt ze Prag) Geben ze Meran. Anno domini M.CCC.XXXIII. die Octauo post festum sancti Michahelis. (Beitrage zur Geschichte u. Statistik etc. von Tirol u. Vorarlberg. VII. Bd. 220.) „--»^•V",
-      "english": "Karl, the eldest son of King Johann of Bohemia, undertakes obligations concerning the dowry of 40,000 marks of silver designated for Margaretha, daughter of Duke Heinrich of Carinthia. Issued at Merano on the eighth day after the feast of St Michael, 1333.\n\nXXXIV. We, Karl, eldest son of the King of Bohemia, declare, etc., that, by authority granted to us by our beloved lord and father, the most illustrious prince Lord Johann, King of Bohemia and Poland and Count of Luxembourg, we have undertaken, with full authority, toward the high-born prince Lord Heinrich, Duke of Carinthia and Count of Tyrol, our beloved lord and father, and his heirs, concerning the forty thousand marks of silver of Prague weight, that we shall deliver and pay them at Regensburg in the city, in installments: fifteen thousand marks at the next Candlemas; in the same manner, fifteen thousand marks at the following Pentecost; and from St Michael’s Day thereafter, one year later, five thousand marks, and so on. For this purpose we have pledged castles together with ourselves: Jaesken, chancellor and provost of Vyšehrad; Peter von Rosenberg; Thiem von Golditz; Wilhalm von Lantstain; Heinr. von der Leipen; and Otten von Bergav (with service in the city of Prague). Given at Merano in the year of the Lord 1333, on the eighth day after the feast of St Michael. [The source transcription contains omissions and damaged text.]",
+      "source": "StAN, Fotosammlung - Kleinbild-Dia (G), Digitalisate 448",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/390a4618-0900-415d-92db-b6df7a9c244c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++368794EA-E02C-4D4D-B0B6-D32AED84DB30&parent_id="
+      ],
+      "german": "Rep. 126, Fürstentum Ansbach, Karten und Pläne Nr. 586\n\nEnthält-/Darin-Vermerke: \"Irrungen mit denen von Rosenberg\" (Unbekannt), (um 1600)",
+      "english": "Rep. 126, Principality of Ansbach, maps and plans no. 586.\n\nContains/includes: “Disputes with those of Rosenberg” (unknown), (c. 1600).",
       "mention": [
         {
-          "person": "König Hans",
-          "personTitle": [
-            "König von Böhmen"
-          ]
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
-      "img": [
-        {
-          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000467.png"
-        },
-        {
-          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000468.png"
+          "place": "rosenberg-town"
         }
       ]
     }

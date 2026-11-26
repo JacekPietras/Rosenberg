@@ -3,19 +3,13 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim R-H 7 Nr. 212",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-56246",
-      "german": "Rechtsstreit zwischen dem Rentamt Bronnbach und mehreren Zinspflichtigen von Uissigheim wegen Gült- und Grundzinsrückständen.\n\nLaufzeit: 1840\n\nEnthält: Enthält: Ausstellung von Zahlungsbefehlen an namentlich genannte Schuldner durch das Badische Bezirksamt Tauberbischofsheim.\n\nUmfang: 2 Fasz.",
-      "english": "Legal dispute between the Bronnbach revenue office and several persons liable for dues from Uissigheim over arrears of dues and land tax.\n\nDate range: 1840\n\nContents: Issuance of payment orders to named debtors by the Baden District Office of Tauberbischofsheim.\n\nExtent: 2 files.",
+      "source": "Staatsarchiv Wertheim R-G 65 Nr. 233",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-200528",
+      "german": "Kapitalaufnahme, Zinsen und Zurückzahlung durch Johann und Gottlieb von Rosenberg\n\nLaufzeit: 1840-1876\n\nUmfang: 1 Bü.",
+      "english": "Raising capital, interest, and repayment by Johann and Gottlieb von Rosenberg\n\nDate range: 1840–1876\n\nExtent: 1 file.",
       "mention": [
         {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "uissigheim"
+          "place": "rosenberg-town"
         }
       ]
     }

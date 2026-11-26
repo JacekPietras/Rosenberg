@@ -1,42 +1,21 @@
 {
   "date": "9999",
   "label": "to review",
+  "transcribed": true,
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim A-62 Nr. 11",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-203376",
-      "german": "1505 Mi nach Reminiscere\nPfalzgraf Philipp verkauft an den Ritter Ludwig von Hutten Burg und Stadt Lauda nebst den Dörfern Oberlauda, Heckfeld und Distelhausen mit dem Zoll, den Teilen an Großrinderfeld, Marbach, Königheim und Hardheim, Rechte an Kloster und Dorf Gerlachsheim, dazu seine Hof in der Stadt Lauda, gen. der Stettenberger Hof, ferner an Zehnten: in Lauda und Oberlauda die Hälfte am großen und kleinen, dann besondere, zu Mützenbrunn bei Ballenberg den ganzen (groß und klein), die Hälfte am großen und kleinen Ober- und Unterwittstadt, 1/3 groß und klein in Bretzingen, Höpfingen, Waldstetten, Schweinberg, Erfeld, Steinfurt und Dornberg (mit zugehörigen Stücken in Vollmersdorf und Rütschdorf) etliche bes. Zehnten in Distelhäuser Markung, schließlich die 3 Ritterlehen der Zobel, von Rosenberg und Adelsheim um 25000 fl.\nOriginal im GLAK Abt. 67 Nr. 821 f. 126-133",
-      "english": "Wednesday after Reminiscere 1505.\nCount Palatine Philipp sells to Ritter Ludwig von Hutten Lauda Castle and town, together with the villages of Oberlauda, Heckfeld, and Distelhausen and the customs duty; shares in Großrinderfeld, Marbach, Königheim, and Hardheim; rights in Gerlachsheim Abbey and village; and also his farm in the town of Lauda, called the Stettenberger Hof. As for tithes, he sells half of the greater and lesser tithes in Lauda and Oberlauda; the whole of both the greater and lesser tithes at Mützenbrunn near Ballenberg; half of the greater and lesser tithes in Oberwittstadt and Unterwittstadt; one third of the greater and lesser tithes in Bretzingen, Höpfingen, Waldstetten, Schweinberg, Erfeld, Steinfurt, and Dornberg, with the associated parcels in Vollmersdorf and Rütschdorf; certain special tithes in the Distelhausen district; and finally the three knightly fiefs of Zobel, von Rosenberg, and Adelsheim, for 25,000 florins.\nOriginal in the General State Archives Karlsruhe, section 67, no. 821, fols. 126–133.",
+      "source": "Urkundenbuch des Cistercienserstiftes B. Mariae V. zu Hohenfurt in Böhmen, Nr. I. , S. 15, I.",
+      "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/eae3c5c8-eecb-4b03-9add-1a95ee91fcb1/charter",
+      "german": "0. J. und T. und �?О. — W. von. Rosenberg bittet den Abt und Convent der Cistercienser zu Citeaux, seine neue Stiftung (zu Hohen furt} iftrem Orden einzuverleiben.\n\nI. Reuerendo in Christo patri et domino . . . abbati Cysterciensi totique conuentui ordinis eiusdem W. de Rosenberch marscalcus Boemie sinceram et paratam ad obsequia uoluntatem. Habentes in desiderio pro nostra nostrorumque progenitorum et successorum salute et remedio animarum abbatiam uestri ordinis conslruere et fundare, discretioni uestre significamus, quod inuocata sancti spi- ritus gratia presente venerabili abbute et quibusdam fratribus de Ylaria de consensu et expressa uoluntate coniugis nostre et aliorum amicorum nostrorum ad hoc locum distinximus satis aptum, uolentes eum predicto abhati de Ylaria et eins ecclesie tanquam matri filiam in perpetuum obedire. Dotauimus etiam locum supradictum reddi- tibus sexaginta talenta plene persoluentibus, addentes duas uineas cum piscationibus pascuis et nemoribus spatiosis, in proposito tenen- tes de die in diem nosfra possibilitate eosdem redditus augmentare. Quare douotionem uestram petimus studiose, quatenus antedictum locum uestro ordini incorporare dignemini propter deum. 1. Nach Stülz Geschichte von Wilhering, p. 530, Nr. 52. „Das zer bröckelte Siegel\", bemerkt derselbe, „stellt vor das Leibstück eines Gehar nischten mit einem Schwerte ¡n der Rechten\". Vergl. die Beschreibung des Siegels an der Urkunde Nr. VIII. 2. Slüli a. a. 0. — Millauer p. 5. — Proschko p. 1.",
+      "english": "The abbot and convent of the Cistercians at Cîteaux are asked by W. von Rosenberg to incorporate his new foundation at Hohenfurt into their order.\n\nI, W. de Rosenberch, marshal of Bohemia, offer sincere and ready service to the reverend father in Christ and lord, the abbot of Cîteaux, and to the whole convent of that order. Desiring, for the salvation and remedy of the souls of ourselves, our ancestors, and our successors, to build and found an abbey of your order, we inform your discretion that, invoking the grace of the Holy Spirit and in the presence of the venerable abbot and certain brothers of Wilhering, with the consent and express will of my wife and our other friends, we have selected a sufficiently suitable place for this purpose. We wish it forever to obey the aforesaid abbot of Wilhering and his church as a daughter does her mother. We have also endowed the aforesaid place with revenues yielding sixty talents in full, adding two vineyards with fisheries, pastures, and extensive woods, and we intend to increase those revenues from day to day according to our means. Therefore, we earnestly ask your devotion to deign, for God’s sake, to incorporate the aforesaid place into your order.\n\nAccording to Stülz, History of Wilhering, p. 530, no. 52: “The crumbled seal,” he remarks, “depicts the torso of an armed man with a sword in his right hand.” Compare the description of the seal on charter no. VIII. References: Stülz, same work; Millauer, p. 5; Proschko, p. 1.",
       "mention": [
         {
-          "place": "adelsheim"
-        },
-        {
-          "place": "ballenberg"
-        },
-        {
-          "place": "bretzingen"
-        },
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "place": "hartheim"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "place": "lauda"
-        },
-        {
-          "person": "Ludwig von Hutten",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
           "place": "rosenberg-town"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000015.png"
         }
       ]
     }

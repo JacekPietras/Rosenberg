@@ -3,18 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim K-LRA 91 Nr. 481",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-169026",
-      "german": "Ansichten von Uissigheim\n\nEnthält: Enthält: Templerhaus; Blick auf den Stahlberg\n\nUmfang: 2 Dias",
-      "english": "Views of Uissigheim\n\nContains: Templar House; view of the Stahlberg\n\nExtent: 2 slides",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 229 - 231",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/762e2c8d-0916-4308-a2bd-cdebfb3bd436",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8a4df1bb-a221-4fdd-9c9e-3ea867a30d98&parent_id="
+      ],
+      "german": "Schadensliste des Zaisolph von Rosenberg.",
+      "english": "List of damages of Zaisolph von Rosenberg.",
       "mention": [
         {
-          "place": "uissigheim"
-        }
-      ],
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4582&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000004582%2Ftitlaufn_0000169026%2F07_0000169026_0001_7-169026-1.jpg"
+          "person": "Zaisolph von Rosenberg"
         }
       ]
     }

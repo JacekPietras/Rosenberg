@@ -1,39 +1,21 @@
 {
   "date": "9999",
   "label": "to review",
-  "transcribed": true,
   "entries": [
     {
-      "source": "Geschichte der Grafen von Wertheim von den ältesten bis zu ihrem Erlöschen im Mannsstamme im Jahre 1556, Nr. CX. , S. 168, CX.",
-      "url": "https://www.monasterium.net/mom/Wertheim/5e0e2926-2ee6-463e-93ab-5539358fdf69/charter",
-      "german": "Graf Eberhard von Wertheim befreit den Wald an der Halden bei Dörlesberg von jeder Lebenbar ke it und Steuer. 1372. März 19.\n\nWir Eberhard grave zu Wertheim bekennen offentlich an disem brieff für vns vnd alle vnsere erben, daz wir durch bitte willen vnsers lieben getrewen mannea Conrad von Vssen- keim, den man nennet von Kannenberg vnd Kuntzen des jun gen Eberhardt son, auch von Ussenkeim genannt, den ehrw. geistl. herren, dem abt vnd convent des closters zue Brun- nebach, das holte oder den busch in dem grunde vnd an der halden bei Törlesberg, in Külsheimer marck gelegen, des bei XL morgen seindt, weniger oder mer ongeverde, vnd XII schilling heller zinss, auch weniger oder mer ongeverde, die von vns zue lehen giengen, geaignet vnd gefreyet ha 139 ben für vns vnd vnsere erben ewiglich on alle geverde. Auch sagen wir die obgen. güter, dem obgemelten abt vnd dem cluster zue Brunnebach frey vnd ledig der rechten, die wir oder vnserc erben zu denselben güter n oder zu den obgen. edlen knechten von derselben güter wegen möchten grhaben, on alle geverde. Wäre auch sach, daz die obgen. guter von jemand fürbass zu lehen ginsen, das wir doch nicht wissen, so sollen vnd wollen wir vnd vnsere erben dieselbe güter dem obgen. Abt vnd cluster z. Br. in trewen banden tragen vnd verthatigen, als solcher lehengült recht ist on alle geverde. Dessen vrkund vnd guter sicherheit haben wir dem obgen. abt vnd closter z. Br. diesen brieff geben für vns vnd alle vnsere erben, versiegelt mit vns. eigen anhangenden insiegel. Nach vns. h. Chr. geb. MCCCLXXU jar, an dem nechsten frytag vor dem palmtage.",
-      "english": "Count Eberhard von Wertheim exempts the wood at Halden near Dörlesberg from all labor services and taxes. 19 March 1372.\n\nWe, Eberhard, Count zu Wertheim, publicly declare in this letter, for ourselves and all our heirs, that at the request of our beloved, loyal man Konrad von Uissigheim, called von Kannenberg, and Kuntz, the younger Eberhardt’s son, also called von Ussenkeim, we have granted and freed in perpetuity, for the reverend spiritual lords, the abbot and convent of the monastery at Brunnebach, the wood or copse in the hollow and on the slope near Dörlesberg, lying within the Külsheim bounds, comprising about forty morgens, more or less, and yielding twelve shillings heller in rent, more or less, which were held of us as a fief, for ourselves and our heirs, without reservation. We also declare the aforesaid properties free and released for the aforesaid abbot and monastery of Brunnebach from any rights that we or our heirs might claim in those properties, or against the aforesaid noble servants on account of those properties, without reservation. If it should happen that the aforesaid properties are held as a fief from anyone else further up the chain, which we do not know, then we and our heirs shall faithfully hold those properties in trust for the aforesaid abbot and monastery of Brunnebach and defend them, as is right for such a fief, without reservation. As proof and for good security, we have given this letter to the aforesaid abbot and monastery of Brunnebach, for ourselves and all our heirs, sealed with our own attached seal. After the birth of Christ 1372, on the Friday immediately before Palm Sunday.",
+      "source": "StABa, Archiv der Freiherren von Guttenberg zu Guttenberg (G 67), Amts- und Geschäftsbücher B 520",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/68037083-1799-4898-aee1-6fa1ea6e4b4b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b1426cfe-c951-49e1-86f7-b862db16858c&parent_id="
+      ],
+      "german": "\"Dundorffer Amtsrepertorium\",  1756 begonnen und fortgeführt von Johannes Petrus Nitribitt, Wzb. Hof- und Regierungsrat, kaiserlicher Landgerichtsconsulent, Frhr. von Rosenbach'scher Obervogt",
+      "english": "“Dundorff administrative register,” begun in 1756 and continued by Johannes Petrus Nitribitt, Würzburg court and government councillor, imperial provincial court consultant, chief bailiff of the Freiherr von Rosenbach family.",
       "mention": [
         {
-          "person": "Eberhard von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
+          "place": "rosenberg-town"
         },
         {
-          "person": "Eberhard zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        },
-        {
-          "person": "Konrad von Uissigheim"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "img": [
-        {
-          "src": "https://images.monasterium.net/img/collections/Wertheim/00000168.png"
-        },
-        {
-          "src": "https://images.monasterium.net/img/collections/Wertheim/00000169.png"
+          "place": "wurzburg"
         }
       ]
     }
