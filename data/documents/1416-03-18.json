@@ -9,40 +9,40 @@
       "english": "Hans von Rosenberg, Ritter, and his wife Elisabeth certify that Haubt zu Pappenheim, Reichserbmarschall and Elisabeth’s brother, has redeemed from them the pledge of the fortress and town of Hilpoltstain for the same price of 6,000 guilders for which they had acquired it from the brothers Parzefal and Tristram Zenger. Given on the Wednesday after Reminiscere Sunday in Lent. (With two seals.)",
       "facts": [
         {
-          "type": "spouse",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "spouse",
           "of": "Elisabeth"
         },
         {
-          "type": "sibling",
           "person": "Haubt zu Pappenheim",
           "personTitle": [
             "Reichserbmarschall"
           ],
+          "type": "sibling",
           "of": "Elisabeth"
         },
         {
-          "type": "sibling",
           "person": "Parzefal Zenger",
+          "type": "sibling",
           "of": "Tristram Zenger"
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "had acquired the pledge of the fortress and town of Hilpoltstain from the brothers Parzefal and Tristram Zenger jointly with his wife Elisabeth."
         },
         {
-          "type": "generic",
           "person": "Haubt zu Pappenheim",
           "personTitle": [
             "Reichserbmarschall"
           ],
+          "type": "generic",
           "content": "had redeemed the pledge of the fortress and town of Hilpoltstain from his sister Elisabeth and her husband Hans von Rosenberg."
         }
       ]

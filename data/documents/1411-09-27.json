@@ -14,11 +14,11 @@
       ],
       "facts": [
         {
-          "type": "generic",
           "person": "Georg der Zenger",
           "personTitle": [
             "Pfleger zu Rosenberg"
           ],
+          "type": "generic",
           "content": "co-sealed Altman Kemnater’s sale of imperial fief properties at Dannbach to Ludwig, Herzog in Bayern."
         }
       ]

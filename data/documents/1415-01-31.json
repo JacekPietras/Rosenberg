@@ -7,39 +7,39 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Ernst, Herzog in Pairn, verleiht Jorg dem Zenger zu Rosenberch, alle Lehen zu Holnstain im Gericht zu Velburch und zunächst bei Velburch, die dessen Ahnherr und Vatersbruder, Vlreich Zenger, genannt der Kleyhut, von seinen Vorfahren und ihm gehabt hatten. G. dez pſintztags vor vnser lieben frawen tag zu liechtmez, (c. S.)",
       "english": "Ernst, Herzog in Bayern, grants Georg der Zenger, zu Rosenberg, all the fiefs at Holnstain in the court district of Velburch and near Velburch which Georg’s forebear and his paternal uncle Ulrich Zenger, genannt der Kleyhut, had held from Ernst and his predecessors. Given on the Thursday before Candlemas. (With seal.)",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
-          "type": "generic",
           "person": "Georg der Zenger",
           "personTitle": [
             "zu Rosenberg"
           ],
+          "type": "generic",
           "content": "received from Ernst, Herzog in Bayern, the fiefs at Holnstain in the court district of Velburch and near Velburch."
         },
         {
-          "type": "kin",
           "person": "Ulrich Zenger",
+          "personTitle": [
+            "genannt der Kleyhut"
+          ],
+          "type": "kin",
           "of": "Georg der Zenger",
           "ofTitle": [
             "zu Rosenberg"
           ],
-          "term": "Vatersbruder",
-          "personTitle": [
-            "genannt der Kleyhut"
-          ]
+          "term": "Vatersbruder"
         },
         {
-          "type": "generic",
           "person": "Ulrich Zenger",
-          "content": "had held the fiefs at Holnstain in the court district of Velburch and near Velburch from Ernst, Herzog in Bayern, and his predecessors, together with an unnamed forebear of Georg der Zenger.",
           "personTitle": [
             "genannt der Kleyhut"
-          ]
-        }
-      ],
-      "mention": [
-        {
-          "place": "rosenberg-town"
+          ],
+          "type": "generic",
+          "content": "had held the fiefs at Holnstain in the court district of Velburch and near Velburch from Ernst, Herzog in Bayern, and his predecessors, together with an unnamed forebear of Georg der Zenger."
         }
       ]
     }

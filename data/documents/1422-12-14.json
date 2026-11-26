@@ -8,75 +8,75 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Hanns von Rosenberg, Ritter, welcher sich mit Helena Langmentlin von Augspurg Seyfrid Heuptlins, Bürgers zu Rotemburg seligen Wittwe, verehelichet, verzichtet mit ihrer Zustimmung - nachdem er von den Bürgermeistern und dem Rathe der Stadt Rotemburg als Testaments-Ausrichtern aus dem Testament des gedachten Heuptlin das Burgstall, Burg Tieff genannt, mit allen Gülten, Rechten und Renten, den Weinzehenten zu Obern Tiefſfe, der nach dem Testamente den armen Sondersiechen zu sanct Linhart zwischen Rotemburg und Gebsadeln vermeint gewesen, die Behausung seiner Hausfrau in der Schmidgasse, 10fl. Geld und 1 Fastnachthun ewiger Gült aus dem Hause unten daran, und auch den Garten an der Schüte erhalten auf ein Leibgeding von 80fl., welche seine Hausfrau von gedachter Stadt erhoben, sowie auf den von ihm angesprochenen Zehent zu Lore, und übernimmt endlich dem Testamente gemäss die Abfindung der Spitäler zu Rotemburg, Nördlingen, Halle, Dinckelspuhel, Windsheim und Awe ohne der Stadt Rotemburg Schaden, Mitsiegler: Contz on Rosemberg, sein Bruder. G. vff den nehsten Montag vor Sant Thomas des heiligen zwelffboten tag. (c. 2 Sig.)",
       "english": "Hans von Rosenberg, Ritter, who has married Helena Langmentlin von Augspurg, widow of the late Seyfrid Heuptlin, a citizen of Rotemburg, renounces with her consent a life annuity of 80 guilders that she had received from the city, as well as his claim to the tithe at Lore. The renunciation follows his receipt from the mayor and council of Rotemburg, acting as executors of Heuptlin’s will, of the castle site called Burg Tieff with its rents and rights; the wine tithe at Obern Tieffe, which the will had intended for the poor lepers at St. Linhart between Rotemburg and Gebsadeln; his wife’s house in the Schmidgasse; a perpetual rent of 10 guilders and one Shrovetide hen from the neighboring house; and the garden at the Schüte. He also undertakes, in accordance with the will and without loss to the city, to settle with the hospitals at Rotemburg, Nördlingen, Halle, Dinckelspuhel, Windsheim and Awe. Co-sealer: Kunz on Rosenberg, his brother. Given on the Monday before St. Thomas the Apostle’s Day. (With two seals.)",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "facts": [
         {
-          "type": "spouse",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "spouse",
           "of": "Helena Langmentlin von Augspurg"
         },
         {
-          "type": "spouse",
           "person": "Helena Langmentlin von Augspurg",
+          "type": "spouse",
           "of": "Seyfrid Heuptlin",
           "ofDeceased": true
         },
         {
-          "type": "death",
           "person": "Seyfrid Heuptlin",
+          "type": "death",
           "diedBefore": "1422-12-15"
         },
         {
-          "type": "sibling",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "sibling",
           "of": "Kunz"
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "received the castle site called Burg Tieff, the wine tithe at Obern Tieffe, his wife’s house in the Schmidgasse, a perpetual rent from the adjacent house and a garden at the Schüte from the executors of Seyfrid Heuptlin’s will at Rotemburg."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "renounced with the consent of his wife Helena Langmentlin von Augspurg the life annuity she had received from the city of Rotemburg."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "renounced his claim to the tithe at Lore with the consent of his wife Helena Langmentlin von Augspurg."
         },
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter"
           ],
+          "type": "generic",
           "content": "undertook under Seyfrid Heuptlin’s will to settle with the hospitals at Rotemburg, Nördlingen, Halle, Dinckelspuhel, Windsheim and Awe without loss to the city of Rotemburg."
         },
         {
-          "type": "generic",
           "person": "Kunz",
+          "type": "generic",
           "content": "co-sealed his brother Hans von Rosenberg’s charter concerning Seyfrid Heuptlin’s will and the tithe at Lore, under the designation Contz on Rosemberg."
-        }
-      ],
-      "mention": [
-        {
-          "place": "rosenberg-town"
         }
       ]
     }

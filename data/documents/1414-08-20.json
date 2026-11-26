@@ -9,46 +9,46 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Ritter Hanns von Rosemberg, Schultheiss und die Schöpfen der Stadt Nuremberg beurkunden, dass Vlrich Haller und Peter Volkmeyr die Mühle bey den Fleischbänken zu Nuremberg, die Papyrmühle bei Nuremberg, die Mühle zu Werde und die Mühle zu Snyglingen von Johannes und Fridrich Gebrüdern, Burggrafen zu Nuremberg erkauft haben, und hieran nach geschehener Uebereinkunft Vlrichen Haller zwei Theile und Peter Volkmeyr ein Theil gehören solle, obgleich Peter Volkmeyr in dem Kaufbriefe Burggrafens Fridrich nicht als Käufer genannt und Vlrich Haller in dem Kaufbriefe Burggrafens Johann nur mit dem halben Theile begriffen ist. Zeugen: Erhart Schürstab, Andres Volkmeyr und Gerhart Zollner. G. am Pfintztag vor sant Egidientage",
       "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen certify that Ulrich Haller and Peter Volkmeyr bought the mill by the meat stalls in Nürnberg, the paper mill near Nürnberg, the mill at Werde and the mill at Snyglingen from the brothers Hans and Friedrich, Burggrafen zu Nürnberg. By agreement, two shares are to belong to Ulrich and one to Peter, although Peter was not named as a purchaser in Friedrich’s sale deed and Ulrich was included for only half in Hans’s deed. Witnesses: Eberhard Schürstab, Andres Volkmeyr and Gerhart Zollner. Given on the Thursday before St. Giles’s Day.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ],
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Rosenberg",
           "personTitle": [
             "Ritter",
             "Schultheiß zu Nürnberg"
           ],
+          "type": "generic",
           "content": "certified with the Schöpfen of Nürnberg that Ulrich Haller and Peter Volkmeyr had acquired mills at Nürnberg, Werde and Snyglingen from the burgraves Hans and Friedrich and had agreed on two shares for Ulrich and one for Peter."
         },
         {
-          "type": "sibling",
           "person": "Hans",
           "personTitle": [
             "Burggraf zu Nürnberg"
           ],
+          "type": "sibling",
           "of": "Friedrich",
           "ofTitle": [
             "Burggraf zu Nürnberg"
           ]
         },
         {
-          "type": "generic",
           "person": "Eberhard Schürstab",
+          "type": "generic",
           "content": "witnessed Hans von Rosenberg and the Schöpfen of Nürnberg’s certification of Ulrich Haller and Peter Volkmeyr’s shares in the mills."
         },
         {
-          "type": "generic",
           "person": "Andres Volkmeyr",
+          "type": "generic",
           "content": "witnessed Hans von Rosenberg and the Schöpfen of Nürnberg’s certification of Ulrich Haller and Peter Volkmeyr’s shares in the mills."
         },
         {
-          "type": "generic",
           "person": "Gerhart Zollner",
+          "type": "generic",
           "content": "witnessed Hans von Rosenberg and the Schöpfen of Nürnberg’s certification of Ulrich Haller and Peter Volkmeyr’s shares in the mills."
-        }
-      ],
-      "mention": [
-        {
-          "place": "nuremberg"
         }
       ]
     }

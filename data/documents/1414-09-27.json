@@ -13,16 +13,6 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Sigmund, römischer König belehnt Hans von Rosenberg, Ritter, mit dem Zehenten im Dorfe zu Lore zwischen Rothemburg an der Thauber und Insingen gelegen. G.zu Nüremberg des nehsten Donerstags vor sant Michelstag",
       "english": "König Siegmund, römischer König, enfeoffs Hans von Rosenberg, Ritter, with the tithe in the village of Lore, between Rothenburg an der Tauber and Insingen. Given at Nürnberg on the Thursday before St. Michael’s Day.",
-      "facts": [
-        {
-          "type": "generic",
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "content": "received the tithe in the village of Lore, between Rothenburg an der Tauber and Insingen, as a fief from König Siegmund."
-        }
-      ],
       "mention": [
         {
           "person": "König Siegmund",
@@ -35,6 +25,16 @@
         },
         {
           "place": "rothenburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "received the tithe in the village of Lore, between Rothenburg an der Tauber and Insingen, as a fief from König Siegmund."
         }
       ]
     }

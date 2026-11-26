@@ -7,9 +7,13 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Graf Johan von Luppfen, Lantgraf zu Stulingen und Herr zu Hohenack, Sigmunds, römischen Königs Hofrichter, bestätiget dem Cuncz von Rosenberg den wegen des Zehenten, grossen und kleinen, zu Lore am Montag vor unser Frauentag Assumptionis 1415 von dem Landgericht des Herzogthums Franken zu Wirezpurg ergangenen Ervollungs-Urtheilbrief. G. zu Bresslaw des nechsten Montags nach dem Suntag, als man in der heiligen Kirchen singet Invocavit.",
       "english": "Hans von Luppfen, Graf, Landgraf zu Stulingen, Herr zu Hohenack and Hofrichter des Königs Siegmund, confirms to Kunz von Rosenberg the execution judgment issued on the Monday before the Assumption in 1415 by the Landgericht of the Duchy of Franken at Wirezpurg concerning the great and small tithes at Lore. Given at Bresslaw on the Monday after Invocavit Sunday.",
+      "mention": [
+        {
+          "person": "Kunz von Rosenberg"
+        }
+      ],
       "facts": [
         {
-          "type": "generic",
           "person": "Hans von Luppfen",
           "personTitle": [
             "Graf von Luppfen",
@@ -17,18 +21,14 @@
             "Hofrichter des Königs Siegmund",
             "Landgraf zu Stulingen"
           ],
+          "type": "generic",
           "content": "confirmed to Kunz von Rosenberg the execution judgment issued on 12 August 1415 by the Landgericht of the Duchy of Franken at Wirezpurg concerning the great and small tithes at Lore."
         },
         {
-          "type": "generic",
           "subject": "the Landgericht of the Duchy of Franken at Wirezpurg",
-          "date": "1415-08-12",
-          "content": "issued an execution judgment concerning the great and small tithes at Lore."
-        }
-      ],
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg"
+          "type": "generic",
+          "content": "issued an execution judgment concerning the great and small tithes at Lore.",
+          "date": "1415-08-12"
         }
       ]
     }
