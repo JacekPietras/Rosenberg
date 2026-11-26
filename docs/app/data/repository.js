@@ -84,6 +84,20 @@ export function createRepository({ location = window.location, fetchFunction = w
       }
       return familyRebuild;
     },
+    async getDeletedDocumentCount() {
+      if (!location.hostname.endsWith('github.io')) {
+        const response = await fetchFunction('/api/deleted-document-count', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Could not load deleted document count');
+        return (await response.json()).count;
+      }
+      const owner = location.hostname.split('.')[0];
+      const repository = location.pathname.split('/').filter(Boolean)[0];
+      const response = await fetchFunction(`https://api.github.com/repos/${owner}/${repository}/git/trees/HEAD?recursive=1`);
+      if (!response.ok) throw new Error('Could not load deleted document count');
+      const tree = await response.json();
+      if (tree.truncated) throw new Error('Repository file listing is incomplete');
+      return tree.tree.filter((item) => item.type === 'blob' && /^data\/documents\/deleted\/.*\.json$/.test(item.path)).length;
+    },
     async getRepositoryFiles() {
       if (!location.hostname.endsWith('github.io')) {
         const response = await fetchFunction(`/api/files?v=${Date.now()}`, { cache: 'no-store' });

@@ -1213,6 +1213,40 @@ function visibleRecordPaths(paths) {
   });
 }
 
+function documentStatistics(unrelated) {
+  const counts = { total: unrelated, unrelated, review: 0, franconian: 0, transcribed: 0, withImage: 0, withoutImage: 0, other: 0 };
+  for (const path of state.manifest.documents) {
+    const doc = state.documents.get(path);
+    if (!doc) continue;
+    counts.total++;
+    const labels = recordLabelForPath(path);
+    if (doc.deleted) { counts.total--; continue; }
+    if (labels.includes('to review') || labels.includes('new')) counts.review++;
+    else if (labels.includes('franken') || !labels.length || labels.every((label) => label === 'important')) {
+      counts.franconian++;
+      if (doc.transcribed === true) counts.transcribed++;
+      else if (recordNeedsTranscription(doc)) counts.withImage++;
+      else counts.withoutImage++;
+    }
+    else counts.other++;
+  }
+  const number = (value) => value.toLocaleString();
+  const node = (x, y, label, value) => `<g class="people-tree-node" transform="translate(${x} ${y})"><rect width="200" height="70" rx="6"/><text class="people-tree-name" x="100" y="27" text-anchor="middle">${label}</text><text class="people-tree-detail" x="100" y="50" text-anchor="middle">${number(value)}</text></g>`;
+  return `<section class="statistics-page"><div class="people-tree"><svg viewBox="0 0 900 540" width="900" height="540" role="img" aria-label="Document classification tree"><path class="people-tree-parent" d="M425 90 V120 H200 V150 M425 120 H525 V150 M525 220 V250 H275 V290 M525 250 H525 V290 M525 250 H775 V290 M525 360 V390 H275 V430 M525 390 V430 M525 390 H775 V430"/>${node(325, 20, 'Total', counts.total)}${node(100, 150, 'Unrelated', counts.unrelated)}${node(425, 150, 'von Rosenberg', counts.total - counts.unrelated)}${node(175, 290, 'Non-Franconian', counts.other)}${node(425, 290, 'Franconian', counts.franconian)}${node(675, 290, 'New, to review', counts.review)}${node(175, 430, 'Transcribed', counts.transcribed)}${node(425, 430, 'to transcribe', counts.withImage)}${node(675, 430, 'no image', counts.withoutImage)}</svg></div></section>`;
+}
+
+document.addEventListener('click', async (event) => {
+  if (event.target.closest('[data-document-statistics]')) {
+    event.preventDefault();
+    state.yearHighlightCleanup?.();
+    const content = document.querySelector('#content');
+    content.textContent = 'Loading statistics…';
+    try { content.innerHTML = documentStatistics(await repository.getDeletedDocumentCount()); }
+    catch (error) { content.textContent = `Could not load statistics: ${error.message}`; }
+    window.scrollTo(0, 0);
+  }
+});
+
 function renderYearSidebar(paths, labelPaths = paths) {
   const firstPathByYear = new Map();
   paths.forEach((path) => {
@@ -1262,7 +1296,7 @@ function renderYearSidebar(paths, labelPaths = paths) {
       return `<a href="#" class="record-filter record-filter-${mode}" aria-label="${escapeHtml(label)}: ${modeLabel}" title="${escapeHtml(modeLabel)} — click to change" data-sidebar-type="label" data-label="${escapeHtml(key)}" data-path="${escapeHtml(path)}">${escapeHtml(text)}</a>`;
     })
     .join('');
-  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}<aside class="label-sidebar" aria-label="Document filters"><nav>${transcriptionLink}${labelLinks}</nav></aside>`;
+  return `${yearLinks ? `<aside class="year-sidebar" aria-label="Documents by year"><nav>${yearLinks}</nav></aside>` : ''}<aside class="label-sidebar" aria-label="Document filters"><nav><a href="#statistics" data-document-statistics>Statistics</a>${transcriptionLink}${labelLinks}</nav></aside>`;
 }
 
 function setupYearHighlight(paths) {

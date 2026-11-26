@@ -546,3 +546,6 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 #image-lightbox-crop-status:not(:empty) { padding: .3rem .5rem; color: var(--ink); background: var(--surface-raised); border-radius: 4px; }
 .image-lightbox-crop-box { position: absolute; box-sizing: border-box; border: 2px solid white; outline: 1px solid black; background: rgb(255 255 255 / .12); pointer-events: none; }
 .image-lightbox.is-cropping .image-lightbox-editor { visibility: hidden; }
+
+.statistics-page { padding: 1rem; }
+.statistics-page .people-tree { overflow: auto; }

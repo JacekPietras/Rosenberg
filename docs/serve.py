@@ -243,6 +243,9 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                 return
             self.send_json(200, {"changed": bool(result.stdout.strip())})
             return
+        if self.path.split("?", 1)[0] == "/api/deleted-document-count":
+            self.send_json(200, {"count": sum(1 for path in (ROOT / "data/documents/deleted").rglob("*.json") if path.is_file())})
+            return
         if self.path.split("?", 1)[0] == "/api/files":
             paths = []
             for folder in ("books", "documents", "notes", "images"):
