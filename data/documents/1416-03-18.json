@@ -1,0 +1,51 @@
+{
+  "date": "1416-03-18",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Hanns von Rosenberg, Ritter und Elspet seine Gemahlinn beurkunden, wie ihre von Parzefal und Tristram den Zengern, Gebrüdern, um sechstausend Gulden überkommene Pfandschaft Hilpoltstain, Veste und Stadt, der Reichserbmarschall Haupt zu Pappenheim, Bruder der obigen Elsbet, um gleichen Kaufschilling an sich gelöset hat. G. an dem nächsten Mitwochen nach dem Suntag in der Vasten als man singet Reminiscere. (c. 2 S.)",
+      "english": "Hans von Rosenberg, Ritter, and his wife Elisabeth certify that Haubt zu Pappenheim, Reichserbmarschall and Elisabeth’s brother, has redeemed from them the pledge of the fortress and town of Hilpoltstain for the same price of 6,000 guilders for which they had acquired it from the brothers Parzefal and Tristram Zenger. Given on the Wednesday after Reminiscere Sunday in Lent. (With two seals.)",
+      "facts": [
+        {
+          "type": "spouse",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Elisabeth"
+        },
+        {
+          "type": "sibling",
+          "person": "Haubt zu Pappenheim",
+          "personTitle": [
+            "Reichserbmarschall"
+          ],
+          "of": "Elisabeth"
+        },
+        {
+          "type": "sibling",
+          "person": "Parzefal Zenger",
+          "of": "Tristram Zenger"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "had acquired the pledge of the fortress and town of Hilpoltstain from the brothers Parzefal and Tristram Zenger jointly with his wife Elisabeth."
+        },
+        {
+          "type": "generic",
+          "person": "Haubt zu Pappenheim",
+          "personTitle": [
+            "Reichserbmarschall"
+          ],
+          "content": "had redeemed the pledge of the fortress and town of Hilpoltstain from his sister Elisabeth and her husband Hans von Rosenberg."
+        }
+      ]
+    }
+  ]
+}

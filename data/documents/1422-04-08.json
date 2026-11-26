@@ -1,0 +1,43 @@
+{
+  "date": "1422-04-08",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Graf Eberhart von Wertheim, Domherr zu Wirtzburg und Probst des Stiftes zum Newenmünster daselbst verleihet mit Bewilligung des Dechants und Capitels gedachten Stiftes an Hans von Rosenberg, Ritter, das Amt Tawberretterssheim mit seinen Gefällen, Zubehörden und Rechten, auch den Zehenten an der Hohaltzhart von Röttingen gen Auckprunnen und bis an die Tawber, welchen Hans von Boltzhowsen der Alte von dem Stifte zu Lehen gehabt, gegen jährliche Reichnisse und die bauliche Unterhaltung des Frohnhofes zu Tawberretterssheim, G. an der nehsten Mitwuchen nach dem Palmtag. (c. 2S)",
+      "english": "Eberhard von Wertheim, Graf, Domherr zu Wirtzburg and Propst of the foundation at Newenmünster there, grants Hans von Rosenberg, Ritter, with the consent of the foundation’s dean and chapter, the Amt of Tawberretterssheim with its revenues, appurtenances and rights, and the tithe at Hohaltzhart from Röttingen towards Auckprunnen and as far as the Tauber. Hans von Boltzhowsen der Alte had held the tithe as a fief from the foundation. The grant is subject to annual payments and maintenance of the Fronhof at Tawberretterssheim. Given on the Wednesday after Palm Sunday. (With two seals.)",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Eberhard von Wertheim",
+          "personTitle": [
+            "Domherr zu Wirtzburg",
+            "Graf von Wertheim",
+            "Propst des Stifts zum Newenmünster"
+          ],
+          "content": "granted Hans von Rosenberg, Ritter, the Amt of Tawberretterssheim and the tithe at Hohaltzhart from Röttingen towards Auckprunnen and the Tauber, with the dean and chapter’s consent, subject to annual payments and maintenance of the Fronhof at Tawberretterssheim."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Boltzhowsen",
+          "personTitle": [
+            "der Alte"
+          ],
+          "content": "had held the tithe at Hohaltzhart from Röttingen towards Auckprunnen and the Tauber as a fief from the foundation at Newenmünster."
+        }
+      ],
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "roettingen"
+        }
+      ]
+    }
+  ]
+}

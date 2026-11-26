@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 46",
-      "url": "https://www.gda.bayern.de/gvl/document/a6152e5e-e2cb-49be-b872-7f290dfea6b5",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a6152e5e-e2cb-49be-b872-7f290dfea6b5",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++de0975ee-e0ef-4a0e-aa60-8cdd3e3e4618&parent_id="
+      ],
       "german": "Dietrich, Georg Friedrich, von Rosenberg; Beruf: Taglöhner; Ansässigmachung in Rosenberg; Verheiratung mit Tischer, Elisabetha\n\nEnthält-/Darin-Vermerke: Darin: Dienstbuch",
       "english": "Dietrich, Georg Friedrich, from Rosenberg; occupation: day laborer; establishment of residence in Rosenberg; marriage to Tischer, Elisabetha\n\nContents/Enclosures: Enclosure: service book.",
       "mention": [

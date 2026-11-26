@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 82",
-      "url": "https://www.gda.bayern.de/gvl/document/01e2646c-24d1-41ee-8902-8096f1423b65",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/01e2646c-24d1-41ee-8902-8096f1423b65",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++91118dc8-a9df-44a9-b3f1-d38a3e244deb&parent_id="
+      ],
       "german": "Neuhäuser, Johann, von Rosenberg; Beruf: Büttnergeselle; Ansässigmachung in Rosenberg; Verheiratung mit Heidingsfelder, Anna Margaretha",
       "english": "Johann Neuhäuser von Rosenberg; occupation: cooper’s apprentice; establishment of residence in Rosenberg; marriage to Anna Margaretha Heidingsfelder",
       "mention": [

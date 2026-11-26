@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgericht ä.O. Sulzbach Justizakten 685",
-      "url": "https://www.gda.bayern.de/gvl/document/cc1545ca-d998-4904-8410-db05b6777748",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/cc1545ca-d998-4904-8410-db05b6777748",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F88CEB5C-62D2-4511-AC63-6D9DE7ACD1F9&parent_id="
+      ],
       "german": "Mayer Magdalena, Schullehrerstochter von Rosenberg, gegen Schall Johann, Wirt von Sulzbach, wegen Vaterschaft und Unterhalt",
       "english": "Magdalena Mayer, schoolmaster’s daughter from Rosenberg, against Johann Schall, innkeeper from Sulzbach, concerning paternity and maintenance",
       "mention": [

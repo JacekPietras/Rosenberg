@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgericht ä.O. Kastl 2188",
-      "url": "https://www.gda.bayern.de/gvl/document/962f9ea8-b6d5-4edd-932d-eebf2b87bb5f",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/962f9ea8-b6d5-4edd-932d-eebf2b87bb5f",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F9E31E1E-CDC8-4EDB-BDC8-83730146AE1A&parent_id="
+      ],
       "german": "Ansässigmachung und Verehelichung des Reindl Wolfgang, Taglöhnerssohn von Rosenberg, nun Lauterhofen",
       "english": "Establishment of residence and marriage of Wolfgang Reindl, son of a day laborer from Rosenberg, now in Lauterhofen",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 1375",
-      "url": "https://www.gda.bayern.de/gvl/document/dd968247-4032-49c6-846c-d4c22a24b212",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/dd968247-4032-49c6-846c-d4c22a24b212",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8c84ee96-c000-436a-8b36-b64f8518f171&parent_id="
+      ],
       "german": "Kuch, Georg, von Bruckberg, Taglöhner; Verheiratung mit Pfeifer, Anna Barbara, von Rosenberg",
       "english": "Georg Kuch of Bruckberg, day laborer; marriage to Anna Barbara Pfeifer of Rosenberg",
       "mention": [

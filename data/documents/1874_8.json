@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 2245",
-      "url": "https://www.gda.bayern.de/gvl/document/1ccc21f5-4788-4bff-a5c2-46ff2ab3647c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1ccc21f5-4788-4bff-a5c2-46ff2ab3647c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e0175911-606f-4200-b3f8-ffbd3110eb93&parent_id="
+      ],
       "german": "Horndasch, Georg Adam, von Brodswinden/Rosenberg, Weber; Verheiratung mit Lang, Katharina Barbara, von Rosenberg",
       "english": "Georg Adam Horndasch, from Brodswinden/Rosenberg, weaver; marriage to Katharina Barbara Lang, from Rosenberg.",
       "mention": [

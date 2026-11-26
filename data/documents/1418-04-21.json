@@ -1,0 +1,44 @@
+{
+  "date": "1418-04-21",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Johannes, Bischof zu Wirczpurg und Herzog in Franken erklärt die Dorfmeister und die ganze Gemeinde des Dorfes zu Lore zwischen Rotenburg und Insingen wegen der Klage des Hans von Rosenberg, Ritters und Cuncz von Rosenberg, dessen Bruders, in die Acht. G. vor dem Sloss vnser Frawenberg am nehsten Donerstag vor sand Jorgen tag. (c. S.)",
+      "english": "Hans, Bischof zu Wirczpurg and Herzog in Franken, places the village headmen and the entire community of Lore, between Rothenburg and Insingen, under outlawry following the complaint of Hans von Rosenberg, Ritter, and his brother Kunz von Rosenberg. Given before the castle of Unser Frawenberg on the Thursday before St. George’s Day. (With seal.)",
+      "facts": [
+        {
+          "type": "sibling",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "of": "Kunz von Rosenberg"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "brought a complaint together with his brother Kunz von Rosenberg against the village headmen and community of Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Bischof Hans",
+          "personTitle": [
+            "Bischof zu Wirczpurg",
+            "Herzog zu Franken"
+          ],
+          "content": "placed the village headmen and community of Lore under outlawry following a complaint by Hans von Rosenberg, Ritter, and his brother Kunz von Rosenberg."
+        }
+      ],
+      "mention": [
+        {
+          "place": "rothenburg"
+        }
+      ]
+    }
+  ]
+}

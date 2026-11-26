@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Landgericht ä.O. Ansbach, AVK-Akten 1487",
-      "url": "https://www.gda.bayern.de/gvl/document/b89151c4-2689-4c4c-8720-a2d847bb8ad6",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/b89151c4-2689-4c4c-8720-a2d847bb8ad6",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++002ab1e4-9599-4ee6-a3f2-74d45a19740e&parent_id="
+      ],
       "german": "Ruffershöfer, Johann Urban, von Rosenberg, Bauer; Ansässigmachung in Untereichenbach; Verheiratung mit Schuldenzucker, Anna Margaretha",
       "english": "Johann Urban Ruffershöfer von Rosenberg, farmer; establishment of residence in Untereichenbach; marriage to Anna Margaretha Schuldenzucker",
       "mention": [

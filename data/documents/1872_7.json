@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 1819",
-      "url": "https://www.gda.bayern.de/gvl/document/8235f3e2-f21a-4937-aa14-7ae0a2a8687b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/8235f3e2-f21a-4937-aa14-7ae0a2a8687b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++453cf46b-4881-47b0-bcc0-230d0e613279&parent_id="
+      ],
       "german": "Pfeifer, Johann, von Rosenberg/Stockach, Bauer; Verheiratung mit Pfeiffer, Anna Barbara, von Ruppersdorf",
       "english": "Johann Pfeifer, from Rosenberg/Stockach, farmer; marriage to Anna Barbara Pfeiffer, from Ruppersdorf.",
       "mention": [

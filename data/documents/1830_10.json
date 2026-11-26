@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StALa, Schlossarchiv Ering A 112",
-      "url": "https://www.gda.bayern.de/gvl/document/d8558187-af52-4bdc-9a27-caf3afdac54f",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/d8558187-af52-4bdc-9a27-caf3afdac54f",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++AC0F44EB-D310-4684-9FB9-1DC1DFEFBBEB&parent_id="
+      ],
       "german": "Karl von Paumgarten gegen die Freifrau Rosenberg-Lipinsky, München, wegen Kapitalsaufkündigung",
       "english": "Karl von Paumgarten against the Freifrau Rosenberg-Lipinsky, Munich, concerning the notice of repayment of principal",
       "mention": [

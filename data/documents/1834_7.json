@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgericht ä.O. Amberg 2204",
-      "url": "https://www.gda.bayern.de/gvl/document/af17c555-3ed3-47af-b4eb-afb1115c59c7",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/af17c555-3ed3-47af-b4eb-afb1115c59c7",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++AFE6C38C-9FCF-4972-91E1-BF0B6DD486DB&parent_id="
+      ],
       "german": "Lindner Johann von Rosenberg, nun Urspring",
       "english": "Johann Lindner of Rosenberg, now in Urspring",
       "mention": [

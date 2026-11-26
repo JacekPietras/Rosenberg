@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Landgericht ä.O. Ansbach, AVK-Akten 501",
-      "url": "https://www.gda.bayern.de/gvl/document/537af4cf-5f16-461c-9cc2-1d5bf8eb961d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/537af4cf-5f16-461c-9cc2-1d5bf8eb961d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++05fa29a8-209b-4b97-affc-8abec337e520&parent_id="
+      ],
       "german": "Förster, Peter, von Rosenberg, Webermeister; Wiederverheiratung mit Knöllinger, Maria Magdalena",
       "english": "Peter Förster von Rosenberg, master weaver; remarriage to Maria Magdalena Knöllinger",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgericht ä.O. Amberg 1135",
-      "url": "https://www.gda.bayern.de/gvl/document/70e3d421-cce0-488b-a737-95075d7a1bb7",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/70e3d421-cce0-488b-a737-95075d7a1bb7",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++44B241B8-C579-430F-AF7E-DB3DD15639F0&parent_id="
+      ],
       "german": "Bauer Joseph, Gütler von Rosenberg, nun Traßlberg",
       "english": "Bauer Joseph, smallholder from Rosenberg, now in Traßlberg",
       "mention": [

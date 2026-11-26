@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Hersbruck, AVK-Akten 2230",
-      "url": "https://www.gda.bayern.de/gvl/document/679a9395-e133-46b8-9459-27957637c92b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/679a9395-e133-46b8-9459-27957637c92b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9f062963-9b41-4a59-89ae-ec740ad11215&parent_id="
+      ],
       "german": "Begert, Leonhard, wohnhaft in Velden, Büttnermeister; Verheiratung mit Holleder, Barbara, von Rosenberg",
       "english": "Leonhard Begert, resident in Velden, master cooper; marriage to Barbara Holleder, from Rosenberg.",
       "mention": [
