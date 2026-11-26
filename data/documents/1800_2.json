@@ -1,18 +1,19 @@
 {
   "date": "1800",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
+  "research": "The date is approximate as indicated in the archive description.",
   "entries": [
     {
-      "source": "HStAM, R, 604 (in)",
-      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=9832390",
-      "german": "Repertorium über die Urkunden und Akten betreffend die Familien von Eberstein und von Rosenbach, von Mansbach und von Geyso, 1334-1788\n\nBezeichnung: Fulda, Adel\n\nLaufzeit: angelegt 1800\n\n(Vor-) Provenienzen: Archiv Fulda\n\nZusatzinformationen: Umfang: 1 Band, Archivrepertorium, angelegt von Weber",
-      "english": "Inventory of the documents and records concerning the families of Eberstein and Rosenbach, Mansbach, and Geyso, 1334–1788.\n\nDesignation: Fulda, nobility.\n\nTerm: begun in 1800.\n\n(Previous) provenance: Fulda Archive.\n\nAdditional information: one volume, archival inventory, compiled by Weber.",
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 26 Qu. 84",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-756256",
+      "german": "Waldungen des DOH Nürnberg zu Eckersmühlen, [um 1800].\n\nLaufzeit: 1207-1818",
+      "english": "forests of the Teutonic Order house at Nuremberg at Eckersmühlen, [around 1800].\n\nPeriod covered: 1207–1818.",
       "mention": [
         {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
+          "place": "nuremberg"
         }
       ]
     }

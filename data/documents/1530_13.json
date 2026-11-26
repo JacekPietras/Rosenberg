@@ -3,13 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 21 Qu. 45",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755648",
-      "german": "Verkauf von Zinsen und Gülten zu Bobstadt an das Spital zu Mgh durch Katharina, Witwe des Christoph Schenkel, Bürger zu Mgh, 1530 [o.M. o.T.; Regest].",
-      "english": "Sale of rents at Bobstadt to the hospital at Mergentheim by Katharina, widow of Christoph Schenkel, burgher of Mergentheim, 1530 [no month or day; abstract].",
+      "source": "StAN, Reichsstadt Nürnberg, Ratskanzlei, A-Laden, Akten 132/1",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/02cdd95d-a5f7-4037-b123-ad229f7fb893",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++546E967F-2A30-4F17-AF3F-9C04B61895B8&parent_id="
+      ],
+      "german": "Albrecht von Rosenbergs Supplikation, Akten und Handlungen",
+      "english": "Albrecht von Rosenberg’s petition, papers and proceedings.",
       "mention": [
         {
-          "place": "bobstadt"
+          "person": "Albrecht von Rosenberg"
         }
       ]
     }

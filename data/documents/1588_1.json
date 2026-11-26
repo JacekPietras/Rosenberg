@@ -1,29 +1,22 @@
 {
   "date": "1588",
-  "label": "Franken",
+  "label": [
+    "to review",
+    "Split"
+  ],
+  "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the remaining inventory regesta have been separated into dated entries.",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 72 Nr. 7300",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641791",
-      "german": "Anerkennung der Ansprüche der Rüdt'schen Allodialerben auf die durch Wolf Dietrich Rüdt in seinem lehnbaren Schloß Collenberg verbauten Gelder.\n\nLaufzeit: 1588-1603\n\nEnthält: Enthält: Entsprechende Gesuche des Wolf Dietrich Rüdt und seiner Witwe Felicitas geb. von Rosenberg sowie um Einräumung eines Witwensitzes.\n\nUmfang: Aktenheft, 0,5 cm",
-      "english": "Acknowledgment of the claims of the Rüdt family allodial heirs on the funds invested by Wolf Dietrich Rüdt in his feudal castle Collenberg.\n\nCoverage: 1588-1603\n\nContains: Contains: Corresponding petitions by Wolf Dietrich Rüdt and his widow Felicitas née von Rosenberg as well as for the granting of a widow's seat.\n\nExtent: File folder, 0.5 cm",
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 150",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755556",
+      "german": "Burg Unterbalbach als wertheimisches Lehen an die Sützel von Mergentheim bis zum Erlöschen des Geschlechts 1588.\n\nLaufzeit: 1207-1818",
+      "english": "Unterbalbach Castle as a Wertheim fief held by the Sützel von Mergentheim until the line became extinct in 1588.\n\nPeriod covered: 1207–1818.",
       "mention": [
         {
-          "place": "kollenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Wolf Dietrich Rüd",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Felicitas von Rosenberg"
+          "place": "unterbalbach"
         },
         {
-          "person": "Felicitas von Rosenberg",
-          "type": "generic",
-          "content": "sought recognition of the Rüdt allodial heirs’ claims to funds invested by Wolf Dietrich in Schloss Collenberg and sought a widow’s residence.",
-          "date": "1603"
+          "place": "wertheim-stiftskirche"
         }
       ]
     }

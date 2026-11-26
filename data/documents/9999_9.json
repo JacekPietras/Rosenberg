@@ -3,21 +3,22 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 498-1 Nr. 7183",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-1084374",
-      "german": "Rosenberg\nEpitaph Lorenz von Rosenberg gestorben 1552",
-      "english": "Rosenberg\nEpitaph of Lorenz von Rosenberg, who died in 1552",
+      "source": "Generallandesarchiv Karlsruhe 450 L-1 Nr. 7",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=4-4421770",
+      "german": "Adel\nMünch von Münchstein; Münch von Rosenberg; Münchwil; Muggental; Muntprat; Murer; Neidegg; Neiffen; Nessel von Löwenfels; Neuenburg; Neuenstein; Neuhausen; Neueneck; Neveu; Nippenburg; Nüfar; Ötlishausen; Offenburg; Opser; Ostein; Ostheim; Ow; Pappenheim,; Pappus von Trazberg; Paumgarten; Payer; Pfaffenzell; Pfefferhart; Pfirt, Grafen; Pfirt; Pflummern; Pforr; Pfuser; Praßberg; Precht von Hochwart; Radegg; Raitnau; Ramminger von Rammingen; Ramschwag; Ramstein; Ramung von Ehental; Randeck; Rappolstein; Raßler; Ratsamhausen; Ratzenried; Ravensburg; Rebstock; Rechberg",
+      "english": "Nobility\nMünch von Münchstein; Münch von Rosenberg; Münchwil; Muggental; Muntprat; Murer; Neidegg; Neiffen; Nessel von Löwenfels; Neuenburg; Neuenstein; Neuhausen; Neueneck; Neveu; Nippenburg; Nüfar; Ötlishausen; Offenburg; Opser; Ostein; Ostheim; Ow; Pappenheim; Pappus von Trazberg; Paumgarten; Payer; Pfaffenzell; Pfefferhart; Pfirt, counts; Pfirt; Pflummern; Pforr; Pfuser; Praßberg; Precht von Hochwart; Radegg; Raitnau; Ramminger von Rammingen; Ramschwag; Ramstein; Ramung von Ehental; Randeck; Rappolstein; Raßler; Ratsamhausen; Ratzenried; Ravensburg; Rebstock; Rechberg.",
       "mention": [
         {
-          "person": "Lorenz von Rosenberg"
+          "place": "neuburg"
+        },
+        {
+          "place": "pappenheim"
+        },
+        {
+          "place": "ramschwag"
         },
         {
           "place": "rosenberg-town"
-        }
-      ],
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001084374%2F04_0001084374_0001_4-1084374-1.png"
         }
       ]
     }

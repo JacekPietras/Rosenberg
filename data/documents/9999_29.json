@@ -3,37 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim A-62 Nr. 11",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-203376",
-      "german": "1505 Mi nach Reminiscere\nPfalzgraf Philipp verkauft an den Ritter Ludwig von Hutten Burg und Stadt Lauda nebst den Dörfern Oberlauda, Heckfeld und Distelhausen mit dem Zoll, den Teilen an Großrinderfeld, Marbach, Königheim und Hardheim, Rechte an Kloster und Dorf Gerlachsheim, dazu seine Hof in der Stadt Lauda, gen. der Stettenberger Hof, ferner an Zehnten: in Lauda und Oberlauda die Hälfte am großen und kleinen, dann besondere, zu Mützenbrunn bei Ballenberg den ganzen (groß und klein), die Hälfte am großen und kleinen Ober- und Unterwittstadt, 1/3 groß und klein in Bretzingen, Höpfingen, Waldstetten, Schweinberg, Erfeld, Steinfurt und Dornberg (mit zugehörigen Stücken in Vollmersdorf und Rütschdorf) etliche bes. Zehnten in Distelhäuser Markung, schließlich die 3 Ritterlehen der Zobel, von Rosenberg und Adelsheim um 25000 fl.\nOriginal im GLAK Abt. 67 Nr. 821 f. 126-133",
-      "english": "Wednesday after Reminiscere 1505.\nCount Palatine Philipp sells to Ritter Ludwig von Hutten Lauda Castle and town, together with the villages of Oberlauda, Heckfeld, and Distelhausen and the customs duty; shares in Großrinderfeld, Marbach, Königheim, and Hardheim; rights in Gerlachsheim Abbey and village; and also his farm in the town of Lauda, called the Stettenberger Hof. As for tithes, he sells half of the greater and lesser tithes in Lauda and Oberlauda; the whole of both the greater and lesser tithes at Mützenbrunn near Ballenberg; half of the greater and lesser tithes in Oberwittstadt and Unterwittstadt; one third of the greater and lesser tithes in Bretzingen, Höpfingen, Waldstetten, Schweinberg, Erfeld, Steinfurt, and Dornberg, with the associated parcels in Vollmersdorf and Rütschdorf; certain special tithes in the Distelhausen district; and finally the three knightly fiefs of Zobel, von Rosenberg, and Adelsheim, for 25,000 florins.\nOriginal in the General State Archives Karlsruhe, section 67, no. 821, fols. 126–133.",
+      "source": "Staatsarchiv Wertheim R-Rep. 47 Nr. 68",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-24556",
+      "german": "Alte resolvenda wegen 1) Amt Kronberg 2) berlichingische Kapitalzahlung 3) Kammmergerichtsunterhalt 4) Kommissionskosten wegen Königstein 5) Beleihung des Zobels von Giebelstadt 6) Nieder-Eisenburgische Sachen 7) berlichingische Wittums-Verwilligung 8) Erforderung des Pfarrsohns zu Gissigheim 9) Dr. Kochs Injuriensachen 10) Belehung von Rosenberg 11) Hundsche Sachen",
+      "english": "Old matters to be resolved concerning: 1) the Kronberg district; 2) the Berlichingen capital payment; 3) maintenance of the Imperial Chamber Court; 4) commission costs concerning Königstein; 5) enfeoffment of Zobel von Giebelstadt; 6) Nieder-Eisenburg matters; 7) the Berlichingen widow’s settlement; 8) the demand for the parish priest’s son at Gissigheim; 9) Dr. Koch’s insult cases; 10) enfeoffment of Rosenberg; 11) Hund matters.",
       "mention": [
         {
-          "place": "adelsheim"
+          "place": "berlichingen"
         },
         {
-          "place": "ballenberg"
-        },
-        {
-          "place": "bretzingen"
-        },
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "place": "hartheim"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "place": "lauda"
-        },
-        {
-          "person": "Ludwig von Hutten",
-          "personTitle": [
-            "Ritter"
-          ]
+          "place": "giebelstadt"
         },
         {
           "place": "rosenberg-town"

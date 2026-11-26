@@ -3,19 +3,19 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Miscellanea 5984",
-      "url": [
-        "https://www.gda.bayern.de/gvl/document/f96ce28e-eea4-4d46-bb09-d82fc268d1e7",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4D2A6950-5451-4193-A28C-1B03C363A4D5&parent_id="
-      ],
-      "german": "Schreiben des Kurfürsten Philipp von der Pfalz an den Landrichter Georg von Giech wegen Ladung seines durch Marten von Ussickeim zu Herrenzymmern? und Karl Mertin zu Nördlingen verklagten Vasallen Symon von Adoltzheimvor das Landgericht zu Wirzburg",
-      "english": "Letter from Elector Philipp of the Palatinate to the provincial judge Georg von Giech concerning the summons before the provincial court at Würzburg of his vassal Symon von Adoltzheim, sued by Marten von Ussickeim zu Herrenzymmern? and Karl Mertin of Nördlingen.",
+      "source": "Staatsarchiv Wertheim G-Rep. 24 Nr. 129",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-8287",
+      "german": "von Helmstadt\n\nLaufzeit: (1483)\n\nEnthält: Lehensrevers Veit von Helmstadts über den Hof in Raibach, Lehenhof genannt, mit dem zuvor Caspar von Rosenbach belehnt war (Kopie, 1483)\n\nUmfang: 2 Blätter",
+      "english": "von Helmstadt\n\nTerm: (1483)\n\nContents: Feudal acknowledgment by Veit von Helmstatt concerning the farm at Raibach called Lehenhof, previously held in fief by Caspar von Rosenberg (copy, 1483).\n\nExtent: 2 leaves.",
       "mention": [
         {
-          "place": "uissigheim"
+          "person": "Caspar von Rosenberg"
         },
         {
-          "place": "wurzburg"
+          "place": "helmstatt"
+        },
+        {
+          "person": "Veit von Helmstatt"
         }
       ]
     }

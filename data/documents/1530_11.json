@@ -3,19 +3,13 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Hohenlohe-Zentralarchiv Neuenstein La 30 Bü 1406",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-12099",
-      "german": "Anweisung des Grafen Albrecht von Hohenlohe an seine Untertanen zu Binselberg und Kupferhof zur Nichtentrichtung von kirchlichen Abgaben (Zehnten) an die Pfarrei Michelbach (an der Heide); Protest des Pfarrinhabers Martin von Ussigheim und der Verwalter Simon von Zedwitz und Christoph von Fronhofen; Intervention von Brandenburg-Ansbach als Schutzherr der Pfarrei.\n\nLaufzeit: 1530-1531,1536\n\nUmfang: Qu. 1-23",
-      "english": "Count Albrecht von Hohenlohe instructs his subjects at Binselberg and Kupferhof not to pay ecclesiastical dues (tithes) to the parish of Michelbach (an der Heide); protest by the parish holder Martin von Uissigheim and the administrators Simon von Zedwitz and Christoph von Fronhofen; intervention by Brandenburg-Ansbach as protector of the parish.\n\nDate range: 1530–1531, 1536\n\nExtent: Qu. 1–23",
+      "source": "HStAD, F 23 A, 424/1",
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=876081",
+      "german": "Angelegenheiten der Herren v. Rosenbach; insbesondere: deren Güter zu Ober-Mörlen in der Wetterau\n\nLaufzeit: 1530-1652",
+      "english": "Affairs of the lords von Rosenbach, especially their estates at Ober-Mörlen in the Wetterau.\n\nDate range: 1530–1652",
       "mention": [
         {
-          "person": "Albrecht von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Martin von Uissigheim"
+          "place": "rosenberg-town"
         }
       ]
     }

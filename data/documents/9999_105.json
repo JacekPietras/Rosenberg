@@ -3,19 +3,19 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StABa, Archiv der Freiherren von Guttenberg zu Guttenberg (G 67), Amts- und Geschäftsbücher B 524",
+      "source": "StABa, Archiv der Freiherren von Guttenberg zu Guttenberg (G 67), Amts- und Geschäftsbücher B 520",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/0426c16e-a551-47c2-9f8e-38e8ee345b65",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e1f74b32-1dcb-4332-987c-02951c313838&parent_id="
+        "https://www.gda.bayern.de/gvl/document/68037083-1799-4898-aee1-6fa1ea6e4b4b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b1426cfe-c951-49e1-86f7-b862db16858c&parent_id="
       ],
-      "german": "Repertorium über die vorhandenen Urkunden und Akten, verfertigt im Jahre 1840; Güter zu Maßbach, Thundorf, Schackau etc. betreffend, im Zusammenhang mit der Familie von Rosenbach                                                                       Pappeinband",
-      "english": "Inventory of the existing documents and files, compiled in 1840; concerning estates at Maßbach, Thundorf, Schackau, etc., in connection with the von Rosenbach family; cardboard binding.",
+      "german": "\"Dundorffer Amtsrepertorium\",  1756 begonnen und fortgeführt von Johannes Petrus Nitribitt, Wzb. Hof- und Regierungsrat, kaiserlicher Landgerichtsconsulent, Frhr. von Rosenbach'scher Obervogt",
+      "english": "“Dundorff administrative register,” begun in 1756 and continued by Johannes Petrus Nitribitt, Würzburg court and government councillor, imperial provincial court consultant, chief bailiff of the Freiherr von Rosenbach family.",
       "mention": [
         {
-          "place": "massbach-st-bartholomaeus"
+          "place": "rosenberg-town"
         },
         {
-          "place": "rosenberg-town"
+          "place": "wurzburg"
         }
       ]
     }

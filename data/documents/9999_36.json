@@ -1,12 +1,26 @@
 {
   "date": "9999",
   "label": "to review",
+  "transcribed": true,
   "entries": [
     {
-      "source": "Hauptstaatsarchiv Stuttgart E 30 Bü 955",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=1-867396",
-      "german": "Königliche Verordnung betr. die Ermächtigung der Staatseisenbahnverwaltung zur Erwerbung des für den Bau einer Eisenbahn von Roßberg nach Wurzach erforderlichen Grundeigentums im Wege der Zwangsenteignung\n\nEnthält: Ausf., Bebenhausen, 1902 Sept. 25\nReg. Bl. 1902 S. 505\nAlte Sign.: E 76 Bü 11",
-      "english": "Royal decree concerning authorization for the State Railway Administration to acquire, by compulsory expropriation, the land required to build a railway from Roßberg to Wurzach.\n\nContains: fair copy, Bebenhausen, 25 September 1902\nOfficial Gazette 1902, p. 505\nOld reference: E 76, file 11"
+      "source": "Urkundenbuch des Cistercienserstiftes B. Mariae V. zu Hohenfurt in Böhmen, Nr. LXX. , S. 85, LXX.",
+      "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/c3e4774e-415f-4265-a8bd-10393430fb5b/charter",
+      "german": "CC. 1326. — Abt Bartholomäus und die Gemeine des Gotteshauses zu Hohen- furt versetzen mit Willen des Herrn Peter von Rosenberg dem Wusk von Harach, Landrichter in der Riedmarch, die Dörfer Stiftung, Eibenstein, Frauenthal, Schwarzenbach und „zu den höfen\" für 200 Pfund Pfenmnge alter Wiener Münze.\n\n. ier prueder Bartholome apte ze dem Hohenfuort vnd di g,-- maine des selben gotes hauses wier veriehen vnd tuen chunt an 72 disem prief allen den, di in scheut oder hoerent lesen, das wier mit verdachtem muet vnd mit vnserm guetem willen vnd ouch mit vnsers herren hern Peters von Rosenberch guetlichen willen dem Buzken von Harach, der zden selben zeiten lantrichter was in der Ryed- marche, vnd seiner hovsvrowen vron Katreyn vnd allen seinen erben versetzzet haben vnser guet di Stifftunge vnd Eybenstaine vnd Vro- wedental vnd Swartzzenpach vnd „datz den hoeven\" mit allem dem, das dar zve gehoret ze holtz vnd ze velde versuechte vnd vnver- suechte, fuer zway hundert pfvnt pfenninge alter Wyenner munzze also beschaidenleich, daz man iem . . . Das Original ward, wahrscheinlich schon in alter IM, zum Behufe der Ausbesserung eines Blattes im handschriftlichen Missale Nr. 23 verstümmelt.",
+      "english": "1326. Abbot Bartholomew and the community of the monastery at Hohenfurt, with the consent of Lord Peter von Rosenberg, pledge to Wusk von Harach, provincial judge in the Riedmark, the villages of Stiftung, Eibenstein, Frauenthal, Schwarzenbach, and “zu den Höfen” for 200 pounds of old Viennese pennies.\n\nWe, Brother Bartholomew, abbot of Hohenfurt, and the community of the same monastery, acknowledge and make known to all who see or hear this letter read that, after due deliberation and of our own good will, and also with the gracious consent of our lord Lord Peter von Rosenberg, we have pledged our property—the villages of Stiftung, Eibenstein, Frauenthal, Schwarzenbach, and “zu den Höfen,” with everything belonging to them in woods and fields, cultivated and uncultivated—to Buzk von Harach, who at that time was provincial judge in the Riedmark, to his wife Lady Katreyn, and to all his heirs, for two hundred pounds of old Viennese pennies, on the following conditions: that one should …\n\nThe original was mutilated, probably long ago, to repair a leaf in manuscript Missal no. 23.",
+      "mention": [
+        {
+          "person": "Peter von Rosenberg"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000085.png"
+        },
+        {
+          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000086.png"
+        }
+      ]
     }
   ]
 }

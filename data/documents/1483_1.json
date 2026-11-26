@@ -1,39 +1,11 @@
 {
-  "date": "1483-1485",
-  "label": "Franken",
+  "date": "1483",
+  "label": "to review",
   "entries": [
     {
-      "source": [
-        "StAN, Fürstentum Ansbach, Geheimes Archiv: Herrschaftliche Bücher 33; archival old references: Herrschaftliche Bücher C 3; Herrschaftliche Bücher Nr. XLIX"
-      ],
-      "url": [
-        "https://www.gda.bayern.de/gvl/document/576fb6c6-f23c-42f7-8512-04f6748e43d5",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5A61D18E-E0D0-4442-992B-A512F822082A&parent_id="
-      ],
-      "german": "Die zwischen Konrad von Berlichingen, Ritter, und Jörg von Rosenberg zu Boxberg, Ritter, wegen verschiedener Nachreden und Beschuldigungen entstandene Mißhelligkeit und deren Beilegung durch Vermittlung des Markgrafen Albrecht Achilles von Brandenburg (Aktenband) -- (\" Herr Connradten vonn Berlichingen Ritter vnd Jorgenn vonn Rosemberg berürende \"). Enthält auch: Richtung zwischen Georg von Rosenberg zu Boxberg und der Reichsstadt Schwäbisch Hall; Fehde des Jörg von Rosenberg gegen die Grafen Gottfried, Friedrich und Krafft von Hohenlohe 1474-1477; Turnier, das zu Nürnberg 1483 gehalten werden sollte, durch Markgraf Friedrichs Abreise zu dem Heiligen Grab nach Jerusalem aber aufgeschoben wurde.",
-      "english": "This file concerns a dispute between Konrad von Berlichingen and Georg von Rosenberg zu Boxberg over remarks and accusations, settled through the mediation of Margrave Albrecht Achilles of Brandenburg. It also contains a settlement between Georg von Rosenberg zu Boxberg and the Imperial City of Schwäbisch Hall, material on Georg von Rosenberg’s feud with the counts of Hohenlohe (1474–1477), and a tournament planned for Nuremberg in 1483 that was postponed when Margrave Friedrich departed on pilgrimage to Jerusalem.",
-      "mention": [
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Konrad von Berlichingen"
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "had a dispute with Konrad von Berlichingen over allegations, settled through the mediation of Margrave Albrecht Achilles of Brandenburg."
-        }
-      ]
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 40 Qu. 5",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-757511",
+      "german": "Abschriften aus Valentin Ferdinand von Gudenus [teilweise leicht gekürzt]: Nr. 103: Vermerk über die Ausfolgung der untenstehenden Urkunde [von 1317 Mai 28] betr. Burg Prozelten an das kurmainzische Archiv anlässlich des Tauschs von Stadtprozelten und Neubrunn (cum castro Neubrunn) gegen die Burgen (duo castra) Neckarsulm (Solm) und Scheuerberg (Schurburg) 1483."
     }
   ]
 }

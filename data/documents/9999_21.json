@@ -3,21 +3,24 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1234",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190122",
-      "german": "Schreiben Friedrich von Rosenberg an die Gemeinde Münster.\n\nUmfang: 1 Schr.",
-      "english": "Letter from Friedrich von Rosenberg to the municipality of Münster.\n\nExtent: 1 document",
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1233",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190121",
+      "german": "Schreiben Friedrich von Rosenberg an Hohenlohe.\n\nUmfang: 1 Schr.",
+      "english": "Letter from Friedrich von Rosenberg to Hohenlohe.\n\nExtent: 1 document",
       "mention": [
         {
           "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "hohenlohe"
         }
       ],
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190122%2F03_0000190122_0001_3-190122-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190121%2F03_0000190121_0001_3-190121-1.jpg"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190122%2F03_0000190122_0002_3-190122-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190121%2F03_0000190121_0002_3-190121-2.jpg"
         }
       ]
     }

@@ -3,23 +3,33 @@
   "label": "Franken",
   "entries": [
     {
-      "source": "BayHStA, GU Hirschberg (Landgericht) 382",
+      "source": "BayHStA, GU Hirschberg (Landgericht) 381",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/2ebcca27-df46-4c42-91f5-663c194f7b1c",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b5ac344c-1c60-4e10-ba2c-b07af20372f5&parent_id="
+        "https://www.gda.bayern.de/gvl/document/23daf3aa-db5e-4a70-8612-ec371ed1e430",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1218c480-bbdc-4868-809d-4228e5aaa4ab&parent_id="
       ],
-      "german": "Lehengegenbrief des Rudolf von Hürnheym (zugleich namens seiner Brüder) über 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Schwarzach.\nLehenherr: Herzog Wilhelm IV.\nVorbesitzer: Cauntz und Philipps von Rosenberg",
-      "english": "Counter-document of enfeoffment by Rudolf von Hürnheym (simultaneously on behalf of his brothers) concerning four farms and two smallholdings at Oberried near Uttenhoven in the Seglau near the Schwarzach.\nLord enfeoffing: Duke Wilhelm IV.\nPrevious holders: Kunz von Rosenberg and Philipp von Rosenberg",
+      "german": "Die Brüder Cuntz und Philipp von Rosenberg an Herzog Wilhelm IV bitten, die ihnen erliegen und von ihnen weiterverkauften 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Segelau den Käufer, nämlich den Brüdern Dr. Johann Sebastian, Bern, Walther, Rudolff und Jeronimus von Hürnheym zu verleihen.",
+      "english": "The brothers Kunz von Rosenberg and Philipp von Rosenberg petition Duke Wilhelm IV to enfeoff the purchasers—the brothers Dr. Johann Sebastian, Bern, Walther, Rudolff, and Jeronimus von Hürnheym—with four farms and two smallholdings at Oberried near Uttenhoven in the Segelau region.",
+      "mention": [
+        {
+          "place": "hürnheim"
+        }
+      ],
       "facts": [
         {
           "person": "Kunz von Rosenberg",
+          "type": "sibling",
+          "of": "Philipp von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg",
           "type": "generic",
-          "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
+          "content": "petitioned with his brother Philipp Herzog Wilhelm IV to enfeoff the brothers von Hürnheim with farms and smallholdings at Oberried near Uttenhoven."
         },
         {
           "person": "Philipp von Rosenberg",
           "type": "generic",
-          "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
+          "content": "petitioned with his brother Kunz Herzog Wilhelm IV to enfeoff the brothers von Hürnheim with farms and smallholdings at Oberried near Uttenhoven."
         }
       ]
     }

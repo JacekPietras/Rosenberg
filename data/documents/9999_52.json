@@ -3,25 +3,21 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Hauptstaatsarchiv Stuttgart Q 3/90 a Bü 518",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=1-2853319",
-      "german": "Fotoalbum [Ohne Titel, vermutlich älteres Album im Familienbesitz mit Porträts von Verwandten und Vorfahren]\n\nEnthält: Enthält v.a.: Reproduktionen von Porträts der folgenden Personen:\n- Clementine Gräfin von Butler-Clonebough\n- Friedrich Schenk Freiherr von Stauffenberg\n- Franz Schenk Freiherr von Stauffenberg\n- Ludwig Graf von Geldern-Egmont\n- Wilhelmine Freiin von und zu Guttenberg\n- Ida Therese Caroline Gräfin von Geldern-Egmont\n- Johann Franz a Paula Schenk Freiherr von Stauffenberg\n- Maria Caroline Freiin Zobel von Giebelstadt\n- Adam Friedrich Schenk Freiherr von Stauffenberg\n- Franz Ludwig Freiherr von Harff zu Dreyborn\n- Maria Clara Freiin von Kerpen zu Illingen\n- Charlotte Freiin von Harff zu Dreyborn\n- Friedrich Adolf Graf von Geldern zu Arssen\n- Friederike Freiin von Steinen-Scherffen\n- Carl Theodor Graf von Geldern\n- Anna Ernesti Edle von Faulbach\n- Charlotte Freiin von Rosenbach\n- Franz Wilhelm Freiherr von und zu Guttenberg\n- Therese Gräfin von Spaur und Flavon",
-      "english": "Photo album [untitled, probably an older album in the family’s possession, with portraits of relatives and ancestors]\n\nContains: Mainly reproductions of portraits of the following people:\n- Clementine Gräfin von Butler-Clonebough\n- Friedrich Schenk Freiherr von Stauffenberg\n- Franz Schenk Freiherr von Stauffenberg\n- Ludwig Graf von Geldern-Egmont\n- Wilhelmine Freiin von und zu Guttenberg\n- Ida Therese Caroline Gräfin von Geldern-Egmont\n- Johann Franz a Paula Schenk Freiherr von Stauffenberg\n- Maria Caroline Freiin Zobel von Giebelstadt\n- Adam Friedrich Schenk Freiherr von Stauffenberg\n- Franz Ludwig Freiherr von Harff zu Dreyborn\n- Maria Clara Freiin von Kerpen zu Illingen\n- Charlotte Freiin von Harff zu Dreyborn\n- Friedrich Adolf Graf von Geldern zu Arssen\n- Friederike Freiin von Steinen-Scherffen\n- Carl Theodor Graf von Geldern\n- Anna Ernesti Edle von Faulbach\n- Charlotte Freiin von Rosenbach\n- Franz Wilhelm Freiherr von und zu Guttenberg\n- Therese Gräfin von Spaur und Flavon",
+      "source": "Generallandesarchiv Karlsruhe 67 Nr. 1057, 752",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=4-3981823",
+      "german": "Hans von Rosenbach",
+      "english": "Hans von Rosenberg",
       "mention": [
         {
-          "person": "Adam Friedrich Schenk"
+          "person": "Hans von Rosenberg"
+        }
+      ],
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003981823%2F04_0003981823_0001_4-3981823-1.jpg"
         },
         {
-          "person": "Franz Schenk"
-        },
-        {
-          "person": "Friedrich Schenk"
-        },
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "place": "rosenberg-town"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003981823%2F04_0003981823_0002_4-3981823-2.jpg"
         }
       ]
     }

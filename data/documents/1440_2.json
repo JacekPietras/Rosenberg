@@ -1,38 +1,22 @@
 {
   "date": "1440",
-  "label": "to review",
+  "label": "Franken",
   "entries": [
     {
-      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 2945",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-193924",
-      "german": "Michel Graf von Wertheim: Schuld des Markgrafen Friedrich von Brandenburg, Bürgen Kraft von Hohenlohe, Conrad von Weinsberg, Weyprecht von Helmstadt und Conz von Rosenberg; Siegel: Michel Graf von Wertheim.\n\nLaufzeit: 1440\n\nUmfang: 1 Urkunde, Pergament",
-      "english": "Michael Graf von Wertheim: debt of Markgraf Friedrich von Brandenburg, guaranteed by Kraft von Hohenlohe, Konrad von Weinsberg, Weyprecht von Helmstadt, and Kunz von Rosenberg. Seal: Michael Graf von Wertheim.\n\nDate: 1440.\n\nExtent: 1 charter, parchment.",
+      "source": "ISG FFM, H.06.02, 3783",
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10595161",
+      "german": "Fehde Frankfurts mit Jorg von Rosenberg wegen der Fehde des Ersteren mit Philipp von Frankenstein und mit Eberhard von Urbach (dabei auch der Frankfurter Leonhard Holtubel erwähnt)",
+      "english": "Frankfurt was at feud with Georg von Rosenberg because of its feud with Philipp von Frankenstein and Eberhard von Urbach. The Frankfurt citizen Leonhard Holtubel is also mentioned.",
       "mention": [
         {
-          "place": "helmstatt"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
+          "person": "Philipp von Frankenstein"
         }
       ],
-      "img": [
+      "facts": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000193924%2F03_0000193924_0001_3-193924-1.jpg"
-        },
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000193924%2F03_0000193924_0002_3-193924-2.jpg"
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "was involved in a feud with Frankfurt."
         }
       ]
     }

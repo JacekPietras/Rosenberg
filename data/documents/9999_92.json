@@ -3,16 +3,19 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Nachlass Ruthard Schwab 21",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 332/1 fol. 169 a",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/fa273f40-70b6-4463-a6dd-6dae83098325",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F6E9923F-1EB9-4D5E-9094-4F9684481A62&parent_id="
+        "https://www.gda.bayern.de/gvl/document/34e575bc-3758-466c-9547-4c38e1d21a50",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++aed879d3-db21-4cab-910e-34384bd4770b&parent_id="
       ],
-      "german": "Titel:  Das Gesicht des Dritten Reiches. Profile einer totalitären Herrschaft\nAutor/Herausgeber:  Joachim C. Fest:\nOrt/Jahr:  München 1963\n\nEnthält-/Darin-Vermerke: Enthält: Kurzbiographien von Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß",
-      "english": "Title: The Face of the Third Reich. Profiles of a Totalitarian Regime.\nAuthor/editor: Joachim C. Fest.\nPlace/year: Munich 1963.\n\nContains/includes: short biographies of Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß.",
+      "german": "Fragment: NN Wolf, Lic., an NN (\"E.F.G.\" = Markgraf Casimir?) wegen der Übergriffe der Rothenburger Bauern gegenüber Zeisolf (von Rosenberg).",
+      "english": "Fragment: NN Wolf, Licentiate, to NN (“E.F.G.” = Margrave Casimir?) concerning the excesses of the Rothenburg peasants against Zeisolf (von Rosenberg).",
       "mention": [
         {
           "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
         }
       ]
     }
