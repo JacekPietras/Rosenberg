@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Lauf, AVK-Akten 5485",
-      "url": "https://www.gda.bayern.de/gvl/document/926fb562-1f38-4931-9547-93ecb72bd769",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/926fb562-1f38-4931-9547-93ecb72bd769",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++26c9efdc-646d-479e-ab98-794352efc585&parent_id="
+      ],
       "german": "Wagner, Johann Friedrich, von Lauf/Schweinau, Installateur; Verheiratung mit Lippmann, Barbara, von Rosenberg/Schweinau",
       "english": "Wagner, Johann Friedrich, from Lauf/Schweinau, installer; marriage to Lippmann, Barbara, from Rosenberg/Schweinau",
       "mention": [

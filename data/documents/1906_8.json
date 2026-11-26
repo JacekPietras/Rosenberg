@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Hersbruck, AVK-Akten 9363",
-      "url": "https://www.gda.bayern.de/gvl/document/af752be6-a1e8-4f7e-8eda-44ab8dae9955",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/af752be6-a1e8-4f7e-8eda-44ab8dae9955",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++467f727a-ca6e-4ede-bb24-0aad80370ed2&parent_id="
+      ],
       "german": "Morner, Johann Leonhard, wohnhaft in Oberartelshofen, Vorarbeiter; Verheiratung mit Zagel, Anna Elisabetha, von Rosenberg/Sulzbach",
       "english": "Morner, Johann Leonhard, resident in Oberartelshofen, foreman; marriage to Zagel, Anna Elisabetha, from Rosenberg/Sulzbach",
       "mention": [

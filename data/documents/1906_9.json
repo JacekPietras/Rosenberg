@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Hersbruck, AVK-Akten 9208",
-      "url": "https://www.gda.bayern.de/gvl/document/73c152e1-f0ca-4c4c-8423-a57535ed9467",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/73c152e1-f0ca-4c4c-8423-a57535ed9467",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d3d3f64f-9f85-4ea5-a975-c02f8cfd82a2&parent_id="
+      ],
       "german": "Haas, Johann Konrad, wohnhaft in Breitenbrunn/Nürnberg, Arbeiter; Verheiratung mit Hiltl, Barbara, von Rosenberg/Ottensoos",
       "english": "Haas, Johann Konrad, resident in Breitenbrunn/Nuremberg, laborer; marriage to Hiltl, Barbara, from Rosenberg/Ottensoos",
       "mention": [

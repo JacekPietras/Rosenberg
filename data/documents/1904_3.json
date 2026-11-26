@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 11168",
-      "url": "https://www.gda.bayern.de/gvl/document/3fc9147f-afd7-4b6d-bd5d-ee6e69dadb5d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3fc9147f-afd7-4b6d-bd5d-ee6e69dadb5d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4d140b8e-4061-4ed1-b732-dc49809250a1&parent_id="
+      ],
       "german": "Selz, Johann Andreas, von Methlach/Rügland, Dienstknecht; Verheiratung mit Horndasch, Margaretha Barbara, von Rosenberg/Haasgang",
       "english": "Selz, Johann Andreas, from Methlach/Rügland, farmhand; marriage to Horndasch, Margaretha Barbara, from Rosenberg/Haasgang",
       "mention": [

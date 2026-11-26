@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Landratsamt Gerolzhofen, Ansässigmachungs- und Verehelichungsakten 8117",
-      "url": "https://www.gda.bayern.de/gvl/document/90893979-8116-436e-9c56-be2bbda21738",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/90893979-8116-436e-9c56-be2bbda21738",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C2C9E090-052D-4207-B35B-BFE4B2C178A1&parent_id="
+      ],
       "german": "Verehelichungszeugnis des Samson Niedermann von Frankenwinheim (Lkr. Schweinfurt), zur Heirat mit Cäcilia Frey von Rosenberg (Kr. Sipplingen/Bodensee).",
       "english": "Certificate of eligibility to marry for Samson Niedermann of Frankenwinheim (Schweinfurt district), for his marriage to Cäcilia Frey of Rosenberg (Sipplingen district/Lake Constance).",
       "mention": [

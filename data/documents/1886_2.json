@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 5393",
-      "url": "https://www.gda.bayern.de/gvl/document/3d736679-ab55-409e-af0c-8498404fa76d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3d736679-ab55-409e-af0c-8498404fa76d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++54cc0aac-e44c-4149-a3a4-8bdc7a23d16e&parent_id="
+      ],
       "german": "Gayer, Johann Georg, von Sachsen, Gütler; Verheiratung mit Lösel, Anna Barbara, von Rosenberg",
       "english": "Johann Georg Gayer, from Sachsen, smallholder; marriage to Anna Barbara Lösel, from Rosenberg.",
       "mention": [

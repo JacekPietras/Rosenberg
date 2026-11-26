@@ -3,8 +3,15 @@
   "label": "to review",
   "entries": [
     {
-      "source": "79",
-      "url": "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/79/charter",
+      "source": [
+        "79",
+        "StAN, Reichsstadt Nürnberg, Heilig-Geist-Spital, Urkunden 79"
+      ],
+      "url": [
+        "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/79/charter",
+        "https://www.gda.bayern.de/gvl/document/26750051-60d7-4cb9-84e1-ccc37884e908",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3D334411-0CBC-4D28-A3AF-95F6DA0C5601&parent_id="
+      ],
       "german": "Ritter Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden auf Zeugnis des Lorenz Schurstab, Hans Schurstab und Hans Tucher d. Jüng., daß Elspet die Wolffel, Färberin, Bürgerin zu Nürnberg, ihren Hof zu Flextorff (Erbbesitzer: Herman Veldner) und ihren Hof zu Weyterndorff (Erbbesitzer: der Kugler) dem Neuen Spital zu Nürnberg (Pfleger: Herdegen Valczner) und den Siechen im Siechgraben vermacht hat.",
       "english": "Hans von Rosenberg, Ritter, the mayor, and the aldermen of the city of Nürnberg certify, on the testimony of Lorenz Schurstab, Hans Schurstab, and Hans Tucher der Jüngere, that Elspet die Wolffel, dyer and citizen of Nürnberg, bequeathed her farm at Flextorff (hereditary holder: Herman Veldner) and her farm at Weyterndorff (hereditary holder: der Kugler) to the New Hospital in Nürnberg (administrator: Herdegen Valczner) and the sick in the Siechgraben.",
       "mention": [
@@ -24,6 +31,12 @@
         },
         {
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0079-1414-mai-10__26750051-60d7-4cb9-84e1-ccc37884e908_v.JPG"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/26750051-60d7-4cb9-84e1-ccc37884e908/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/26750051-60d7-4cb9-84e1-ccc37884e908/2/full/max/0/default.jpg"
         }
       ]
     }

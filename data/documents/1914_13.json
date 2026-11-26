@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 14196",
-      "url": "https://www.gda.bayern.de/gvl/document/e3a43116-117f-42b5-8d3b-cfccae71864b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/e3a43116-117f-42b5-8d3b-cfccae71864b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++cac36ec1-7a84-42b5-b49a-4786f3fb6dfd&parent_id="
+      ],
       "german": "Kurrmann, Johann Georg, von Gödersklingen, Gütler; Verheiratung mit Baier, Margaretha Barbara, von Rosenberg/Andorf",
       "english": "Kurrmann, Johann Georg, from Gödersklingen, smallholder; marriage to Baier, Margaretha Barbara, from Rosenberg/Andorf",
       "mention": [

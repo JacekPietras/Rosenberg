@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StALa, Amtsgericht Viechtach, Nachlassakten 10/1959",
-      "url": "https://www.gda.bayern.de/gvl/document/5bd92cc5-452a-4cc8-b1f3-cb02963d2151",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/5bd92cc5-452a-4cc8-b1f3-cb02963d2151",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DA433858-B7F7-4DDB-9B37-34947CFA6EBD&parent_id="
+      ],
       "german": "Nachlassakt von Rosenberg Genovefa, gest. am 02.05.1946 in Halbstadt-Neusorge",
       "english": "Estate file of Genovefa von Rosenberg, died on 2 May 1946 in Halbstadt-Neusorge",
       "mention": [

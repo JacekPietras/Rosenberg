@@ -77,7 +77,8 @@
       "source": "StAN, Reichsstadt Nürnberg, Kirchen, Urkunden (St. Sebald, St. Lorenz, Moritzkapelle, Ottmarskapelle, Marienkapelle) 12",
       "url": [
         "https://www.gda.bayern.de/gvl/document/faef3216-abd4-4b28-80ac-f5c432c1e14c",
-        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/faef3216-abd4-4b28-80ac-f5c432c1e14c"
+        "https://dfg-viewer.de/show/?tx_dlf%5Bid%5D=https%3A//www.gda.bayern.de/gvl/mets/faef3216-abd4-4b28-80ac-f5c432c1e14c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9C2DB9F6-19E2-49DF-B2E7-6CF6ECA01F7A&parent_id="
       ],
       "german": "Hans von Rosemberg, Schultheiß zu Nürnberg, bestätigt, dass Anna, Eberhart Quetrers Witwe, namens ihrer Kinder Peter, Steffan, Gred und Margarethe (Cunz Scheuhempflugs Frau) an Albrecht und Else Lilgenpaum ihr Haus am Weinmarkt neben Hartmann Franckens Haus gegen 7 fl. Jahrzins etc. abgetreten habe. - Zeugen: Conrad Pötzlinger und Stephan Schuler.",
       "english": "Hans von Rosenberg, Schultheiß of Nürnberg, confirmed that Anna, widow of Eberhard Quetrer, acting for her children, transferred her house at the Weinmarkt beside Hartmann Franck’s house to Albrecht and Elisabeth Lilgenpaum in return for an annual rent. Konrad Pötzlinger and Stephan Schuler were witnesses.",
@@ -98,6 +99,12 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/faef3216-abd4-4b28-80ac-f5c432c1e14c/2/full/3720,/0/default.jpg",
           "deleted": true
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/faef3216-abd4-4b28-80ac-f5c432c1e14c/1/full/max/0/default.jpg"
+        },
+        {
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/faef3216-abd4-4b28-80ac-f5c432c1e14c/2/full/max/0/default.jpg"
         }
       ]
     }

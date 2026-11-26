@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 12181",
-      "url": "https://www.gda.bayern.de/gvl/document/6f5dbaba-efab-4606-8270-0be65988f45d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/6f5dbaba-efab-4606-8270-0be65988f45d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++169d6794-d94a-42e2-90ff-8a359f72bc0b&parent_id="
+      ],
       "german": "Heidingsfelder, Johann Michael, von Rosenberg, Gütler/Maurer; Verheiratung mit Brunner, Anna Margaretha, von Kettenhöfstetten",
       "english": "Heidingsfelder, Johann Michael, from Rosenberg, smallholder/bricklayer; marriage to Brunner, Anna Margaretha, from Kettenhöfstetten",
       "mention": [

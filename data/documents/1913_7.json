@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 13856",
-      "url": "https://www.gda.bayern.de/gvl/document/b57b6481-3ecd-49af-a683-a6e834265a5b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/b57b6481-3ecd-49af-a683-a6e834265a5b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e0be45b0-4cdc-4114-a474-df56aafcff4b&parent_id="
+      ],
       "german": "Hitz, Georg Michael, von Rosenberg, Bauer; Verheiratung mit Riedel, Christina Barbara, von Neustetten",
       "english": "Hitz, Georg Michael, from Rosenberg, farmer; marriage to Riedel, Christina Barbara, from Neustetten",
       "mention": [

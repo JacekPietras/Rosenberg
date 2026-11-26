@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Landratsamt Ansbach, Abg. 1950 1193",
-      "url": "https://www.gda.bayern.de/gvl/document/c93dfe43-7a50-4076-9b38-cef00a261569",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/c93dfe43-7a50-4076-9b38-cef00a261569",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E9F5CBA7-6161-460E-9756-D84E927FA415&parent_id="
+      ],
       "german": "Aufsicht auf den ledigen Dienstknecht Konrad Dorner von Rosenberg.",
       "english": "Supervision of the unmarried farmhand Konrad Dorner from Rosenberg.",
       "mention": [

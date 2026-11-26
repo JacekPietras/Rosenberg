@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 12413",
-      "url": "https://www.gda.bayern.de/gvl/document/724dad5c-743b-4548-af05-22370e85a131",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/724dad5c-743b-4548-af05-22370e85a131",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++df84cd09-c5ad-4bde-97ba-ed4b8eb7a6c4&parent_id="
+      ],
       "german": "Ebert, Johann Michael, von Rügland, Zimmermann; Verheiratung mit Pfeiffer, Anna Barbara, von Rosenberg",
       "english": "Ebert, Johann Michael, from Rügland, carpenter; marriage to Pfeiffer, Anna Barbara, from Rosenberg",
       "mention": [

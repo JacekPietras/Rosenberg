@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 8840",
-      "url": "https://www.gda.bayern.de/gvl/document/bf3bac45-fb1f-4f04-875d-fd71b832fcd9",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/bf3bac45-fb1f-4f04-875d-fd71b832fcd9",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ff896874-4b91-4bcb-8a09-502136a18d52&parent_id="
+      ],
       "german": "Neuhäuser, Johann Georg, von Rosenberg/Hohenberg, Gütler; Verheiratung mit Nölp, Anna Barbara, von Petersdorf",
       "english": "Neuhäuser, Johann Georg, from Rosenberg/Hohenberg, smallholder; marriage to Nölp, Anna Barbara, from Petersdorf",
       "mention": [

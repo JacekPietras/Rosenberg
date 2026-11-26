@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAM, Spruchkammern Karton  4632 /Rosenberg Charlotte von",
-      "url": "https://www.gda.bayern.de/gvl/document/1d7040ec-c93f-479c-a818-104eabd8def8",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1d7040ec-c93f-479c-a818-104eabd8def8",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8F3E56B0-E54F-47E6-92C7-14A51AD9F4A6&parent_id="
+      ],
       "german": "Rosenberg Charlotte von",
       "english": "Charlotte von Rosenberg",
       "mention": [

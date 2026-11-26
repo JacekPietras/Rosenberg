@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Hersbruck, AVK-Akten 5891",
-      "url": "https://www.gda.bayern.de/gvl/document/629cbd31-09f8-43af-976e-29ad4fdc27a8",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/629cbd31-09f8-43af-976e-29ad4fdc27a8",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++00d17a31-fb94-46bc-82c8-46fb39ac0293&parent_id="
+      ],
       "german": "Hollederer, Georg Friedrich, wohnhaft in Velden, Schneidermeister; Verheiratung mit Aures, Anna Margaretha, von Rosenberg/Kauerhof",
       "english": "Hollederer, Georg Friedrich, resident in Velden, master tailor; marriage to Aures, Anna Margaretha, from Rosenberg/Kauerhof",
       "mention": [
