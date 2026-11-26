@@ -5,7 +5,16 @@
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 40 Qu. 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-757511",
-      "german": "Vermerk über den Verkauf aller Leibeigenen zu Röllbach an das DOH Mgh durch Graf Heinrich [III.] von Rieneck und dessen Ehefrau Adelheid von Ziegenhain, 1317 Apr. 5."
+      "german": "Vermerk über den Verkauf aller Leibeigenen zu Röllbach an das DOH Mgh durch Graf Heinrich [III.] von Rieneck und dessen Ehefrau Adelheid von Ziegenhain, 1317 Apr. 5.",
+      "english": "Note concerning the sale of all serfs at Röllbach to the Teutonic Order house at Mgh by Count Heinrich [III.] von Rieneck and his wife Adelheid von Ziegenhain, 5 April 1317.",
+      "mention": [
+        {
+          "person": "Heinrich von Rieneck",
+          "personTitle": [
+            "Graf von Rieneck"
+          ]
+        }
+      ]
     }
   ]
 }
