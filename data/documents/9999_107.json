@@ -1,0 +1,20 @@
+{
+  "date": "9999",
+  "label": [
+    "to review",
+    "Split"
+  ],
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 86",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755788",
+      "german": "Belehnung des DO mit dem Zoll zu Edelfingen durch das Reich seit Menschengedenken.\n\nLaufzeit: 1207-1818",
+      "english": "the Teutonic Order’s acquisition of the toll at Edelfingen from the Empire from time immemorial.\n\nPeriod covered: 1207–1818.",
+      "mention": [
+        {
+          "place": "edelfingen"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "9999",
+  "label": [
+    "to review",
+    "Split"
+  ],
+  "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the remaining inventory regesta have been separated into dated entries.",
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 147",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755553",
+      "german": "Klage des Kaspar und Wilhelm Sützel von Mergentheim, Brüder, und des Weiprecht Sützel von Mergentheim beim würzburgischen Lehenhof wegen dieser Schenkung, o.D.\n\nLaufzeit: 1207-1818",
+      "english": "suit brought by the brothers Kaspar and Wilhelm Sützel von Mergentheim and Weiprecht Sützel von Mergentheim before the Würzburg fief court concerning this gift, undated.\n\nPeriod covered: 1207–1818.",
+      "mention": [
+        {
+          "place": "wurzburg"
+        }
+      ]
+    }
+  ]
+}

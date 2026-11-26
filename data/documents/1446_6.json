@@ -1,0 +1,18 @@
+{
+  "date": "1446",
+  "label": "to review",
+  "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the other inventory regesta were subsequently split into dated entries.",
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 147",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755553",
+      "german": "Verkauf des Burgstalls und des Anteils am Kirchensatz zu Billingsbach sowie anderer Besitzungen an Kraft [V.] und Albrecht [II.] Grafen von Hohenlohe[-Weikersheim] durch Rüdiger Sützel von Mergentheim, 1446 [o.M. o.T.; Regest].",
+      "english": "Sale of the castle site and share in the right of patronage at Billingsbach, together with other holdings, to Kraft [V.] and Albrecht [II.], Counts of Hohenlohe[-Weikersheim], by Rüdiger Sützel von Mergentheim, 1446 [no month or day; abstract].",
+      "mention": [
+        {
+          "place": "hohenlohe"
+        }
+      ]
+    }
+  ]
+}

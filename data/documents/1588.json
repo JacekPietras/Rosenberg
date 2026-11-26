@@ -1,0 +1,24 @@
+{
+  "date": "1588",
+  "label": [
+    "to review",
+    "Split"
+  ],
+  "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the remaining inventory regesta have been separated into dated entries.",
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 150",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755556",
+      "german": "Burg Unterbalbach als wertheimisches Lehen an die Sützel von Mergentheim bis zum Erlöschen des Geschlechts 1588.\n\nLaufzeit: 1207-1818",
+      "english": "Unterbalbach Castle as a Wertheim fief held by the Sützel von Mergentheim until the line became extinct in 1588.\n\nPeriod covered: 1207–1818.",
+      "mention": [
+        {
+          "place": "unterbalbach"
+        },
+        {
+          "place": "wertheim-stiftskirche"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "1506",
+  "label": "to review",
+  "research": "The Jan. 8, 1501 arbitration regest is consolidated as a separate entry in data/documents/1501-01-08.json; the other inventory regesta were subsequently split into dated entries.",
+  "entries": [
+    {
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 150",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755556",
+      "german": "Fehde des Melchior Sützel von Mergentheim zu Unterbalbach gegen [N] Landgraf von Leuchtenberg, 150[6].",
+      "english": "Feud of Melchior Sützel von Mergentheim zu Unterbalbach against [N], Landgrave of Leuchtenberg, 150[6].",
+      "mention": [
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "unterbalbach"
+        }
+      ]
+    }
+  ]
+}
