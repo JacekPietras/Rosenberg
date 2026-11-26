@@ -6,7 +6,15 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 40 Qu. 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-757511",
       "german": "Verkauf einer Hälfte der Burg Prozelten mit allen Rechten und Zugehörden an Elisabeth, Witwe des Gottfried von Hohenlohe[-Röttingen], und an das DOH Mgh durch Graf Poppo von Eberstein und seine Ehefrau Guta von Weilnau, 1317 Mai 28.",
-      "english": "Sale of half of Prozelten Castle, with all rights and appurtenances, to Elisabeth, widow of Gottfried von Hohenlohe[-Röttingen], and to the Teutonic Order house at Mgh by Count Poppo von Eberstein and his wife Guta von Weilnau, 28 May 1317."
+      "english": "Sale of half of Prozelten Castle, with all rights and appurtenances, to Elisabeth, widow of Gottfried von Hohenlohe[-Röttingen], and to the Teutonic Order house at Mgh by Count Poppo von Eberstein and his wife Guta von Weilnau, 28 May 1317.",
+      "mention": [
+        {
+          "person": "Gotfried von Hohenlohe"
+        },
+        {
+          "place": "roettingen"
+        }
+      ]
     }
   ]
 }
