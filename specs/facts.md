@@ -137,8 +137,11 @@ it a `generic` guess, never a `parent` fact.
 
 Focus extraction on von Rosenberg, von Uissigheim, von Erligheim, and their
 kin. Capture all source-supported relationships involving these families and
-their kin; facts solely about unrelated people are less important and should
-be kept only when they meet the relevance rules below.
+their kin, including distant relatives and relatives with another family name.
+Here, unrelated people are people who are not members or kin of these families,
+even distantly. Facts solely about unrelated people are less important and
+should be kept only when they meet the relevance rules below. Establish kinship
+from evidence rather than assuming it.
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
 Erligheim; documents a direct interaction with them (relative, witness, surety,
