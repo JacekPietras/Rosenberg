@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4333A184-C882-44FF-A1C3-E70DDFAA9A68&parent_id="
       ],
       "german": "Akten in Sachen des Hochstifts Würzburg contra Albrecht Christoph v. Rosenberg betr. die Verwirkung seiner Würzburger Lehen wegen nicht erbetener Investitur und wegen Undankbarkeit gegen den Lehensherrn, dann die Pfarrgerechtigkeit zu Kupprichhausen (Rosenberg widersetzte sich der von Würzburg versuchten Gegenreformation)",
-      "english": "Proceedings of the Prince-Bishopric of Würzburg against Albrecht Christoph von Rosenberg concerning forfeiture of his Würzburg fiefs because he had not requested investiture and because of ingratitude toward his feudal lord, and concerning parochial rights at Kupprichhausen (Rosenberg resisted the Counter-Reformation attempted by Würzburg)."
+      "english": "Proceedings of the Prince-Bishopric of Würzburg against Albrecht Christoph von Rosenberg concerning forfeiture of his Würzburg fiefs because he had not requested investiture and because of ingratitude toward his feudal lord, and concerning parochial rights at Kupprichhausen (Rosenberg resisted the Counter-Reformation attempted by Würzburg).",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

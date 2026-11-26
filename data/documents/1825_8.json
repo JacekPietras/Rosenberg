@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6855C46F-D705-43DE-B1E2-2562CE27209F&parent_id="
       ],
       "german": "Plan de la fortresse [Grundriss der Festung] de Rosenberg (Stadt Kronach, Lkr. Kronach) mit den eingezeichneten Flüssen Haßlach und Kronach --\nPlan: Grundriss",
-      "english": "Plan of the fortress [fortress plan] of Rosenberg (town of Kronach, district of Kronach), with the rivers Haßlach and Kronach marked; plan: floor plan"
+      "english": "Plan of the fortress [fortress plan] of Rosenberg (town of Kronach, district of Kronach), with the rivers Haßlach and Kronach marked; plan: floor plan",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

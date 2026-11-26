@@ -7,7 +7,12 @@
       "source": "RI XI,1 n. 4687",
       "url": "https://www.regesta-imperii.de/id/1421-12-31_2_0_11_1_0_5255_4687",
       "german": "giebt sein Recht u. die königliche Berna am Städtchen Wesseli an Ulrich v. Rosenberg. KU?",
-      "english": "He grants Ulrich von Rosenberg his right and the royal tax (Berna) in the small town of Veselí. King’s letter?"
+      "english": "He grants Ulrich von Rosenberg his right and the royal tax (Berna) in the small town of Veselí. King’s letter?",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++057eaee0-a16d-4782-83d3-a7ccec2597c2&parent_id="
       ],
       "german": "Doßler, Johann Leonhard, von Haasgang, Bauer; Verheiratung mit Tyrach, Eva Margaretha, von Rosenbach",
-      "english": "Johann Leonhard Doßler, from Haasgang, farmer; marriage to Eva Margaretha Tyrach, from Rosenbach"
+      "english": "Johann Leonhard Doßler, from Haasgang, farmer; marriage to Eva Margaretha Tyrach, from Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

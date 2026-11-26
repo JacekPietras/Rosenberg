@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++61FA4BD4-3264-499D-B09C-69F005906DB9&parent_id="
       ],
       "german": "Aus der Würzburger Geheimen Kanzlei, die das Hochstift Würzburg treffenden schwedischen Satisfaktionsgelder, Schreiben des Pfalzgrafen Karl Gustav, Berichte des Franz Ludwig Faust von Stromberg, des Geheimen Rats und Kammermeisters Johann Pleyckhard Schultes, des Statthalters und Domdechants Johann Hartmann von Rosenbach an den Kurfürsten von Mainz als Bischof von Würzburg hierwegen, sowie Korrespondenzen an dieselben und von denselben, betreffend einen Blitzschlag in der Kirche zu Bütthard, Ankauf von Gaibach und Oettershausen, den Tod des Kurfürsten Max von Bayern, die Durchreise des Pfalzgrafen Christian August von Sulzbach nach Düsseldorf etc.",
-      "english": "From the Würzburg Secret Chancellery: Swedish satisfaction payments affecting the Prince-Bishopric of Würzburg; a letter from Count Palatine Karl Gustav; reports by Franz Ludwig Faust von Stromberg, the privy councillor and chamberlain Johann Pleyckhard Schultes, and the governor and cathedral dean Johann Hartmann von Rosenbach to the Elector of Mainz in his capacity as Bishop of Würzburg concerning these matters; and correspondence to and from them concerning a lightning strike at the church in Bütthard, the purchase of Gaibach and Oettershausen, the death of Elector Max of Bavaria, the passage of Count Palatine Christian August von Sulzbach through Düsseldorf, etc."
+      "english": "From the Würzburg Secret Chancellery: Swedish satisfaction payments affecting the Prince-Bishopric of Würzburg; a letter from Count Palatine Karl Gustav; reports by Franz Ludwig Faust von Stromberg, the privy councillor and chamberlain Johann Pleyckhard Schultes, and the governor and cathedral dean Hans Hartmann von Rosenberg to the Elector of Mainz in his capacity as Bishop of Würzburg concerning these matters; and correspondence to and from them concerning a lightning strike at the church in Bütthard, the purchase of Gaibach and Oettershausen, the death of Elector Max of Bavaria, the passage of Count Palatine Christian August von Sulzbach through Düsseldorf, etc.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan"
+          ]
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

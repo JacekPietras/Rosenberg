@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5235cbbe-fca6-4e75-b7ed-d8fc4e390a7b&parent_id="
       ],
       "german": "Bericht des Johanniterorden-Verwalters Mayer an den Komtur von Rosenbach (Rosenberg?) über den miserablen Zustand der Kommendenhauses und der Mobilien, mit Nachrichten über das kaiserliche und schwedische Kriegsvolk und den Zustand sowie die Bevölkerung in Rothenburg",
-      "english": "Report by Mayer, administrator of the Order of St John, to the commander von Rosenbach (Rosenberg?) concerning the dilapidated condition of the commandery house and its furnishings, with news of imperial and Swedish troops and of conditions and population in Rothenburg."
+      "english": "Report by Mayer, administrator of the Order of St John, to the commander von Rosenbach (Rosenberg?) concerning the dilapidated condition of the commandery house and its furnishings, with news of imperial and Swedish troops and of conditions and population in Rothenburg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        }
+      ]
     }
   ]
 }

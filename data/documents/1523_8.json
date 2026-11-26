@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C43A173E-4BF6-45AE-A51E-B95998128438&parent_id="
       ],
       "german": "Schreiben Friedrichs v. Rosenberg an den Würzburger Bischof betr. das ihm von Pfalz streitig gemachte Verleihungsrecht der Pfarrei Boxberg",
-      "english": "Letter from Friedrich von Rosenberg to the Bishop of Würzburg concerning the right of appointment to the parish of Boxberg, which the Palatinate disputes with him."
+      "english": "Letter from Friedrich von Rosenberg to the Bishop of Würzburg concerning the right of appointment to the parish of Boxberg, which the Palatinate disputes with him.",
+      "mention": [
+        {
+          "place": "boxberg"
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

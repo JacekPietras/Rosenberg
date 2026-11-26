@@ -7,7 +7,18 @@
       "source": "RIplus Regg. EB Mainz 2 [n. 1027]",
       "url": "https://www.regesta-imperii.de/id/afb00a45-63aa-4f59-a3b8-60fee5e73e48",
       "german": "genehmigt die schenkung eines mansus zu Uessigheim [Ussenkein], den seine nichte [Methildis] v. Gamburg dem Kloster Bronnbach gegeben hatte.",
-      "english": "Approves the donation to Bronnbach Abbey of a mansus at Uissigheim, which his niece [Methildis] von Gamburg had given to the monastery."
+      "english": "Approves the donation to Bronnbach Abbey of a mansus at Uissigheim, which his niece [Methildis] von Gamburg had given to the monastery.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "uissigheim"
+        }
+      ]
     }
   ]
 }

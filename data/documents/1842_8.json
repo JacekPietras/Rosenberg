@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++59b5bd60-ee23-4899-bb65-3240f1a1a334&parent_id="
       ],
       "german": "Georg Walz gegen Johann Derbfuß, beide von Rosenbach, Fahrgerechtigkeit",
-      "english": "Georg Walz against Johann Derbfuß, both of Rosenbach; right of way for vehicles"
+      "english": "Georg Walz against Johann Derbfuß, both of Rosenbach; right of way for vehicles",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

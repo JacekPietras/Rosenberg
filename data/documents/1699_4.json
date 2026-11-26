@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8BA9022E-3789-4FE8-BF3D-3FBAB24525FA&parent_id="
       ],
       "german": "Aschach\nKlage der würzburgischen, dann der von Erthal'schen, von Münster'schen und von Rosenbach'schen Schutzjuden gegen das Amt Aschach b. Bad Kissingen (LK Bad Kissingen) wegen Verbots des freien Handels",
-      "english": "Aschach: complaint by the protected Jews of Würzburg, then of the von Erthal, von Münster, and von Rosenbach families, against the Aschach office near Bad Kissingen (district of Bad Kissingen) over the prohibition of free trade."
+      "english": "Aschach: complaint by the protected Jews of Würzburg, then of the von Erthal, von Münster, and von Rosenbach families, against the Aschach office near Bad Kissingen (district of Bad Kissingen) over the prohibition of free trade.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

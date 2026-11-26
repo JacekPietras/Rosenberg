@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d03ba40d-8874-409f-9f07-2bb3422faa81&parent_id="
       ],
       "german": "Liste von Beteiligten am Bauernkrieg (Beschädiger des Zeisolf von Rosenberg).",
-      "english": "List of participants in the Peasants’ War (those who damaged Zeisolf von Rosenberg’s property)."
+      "english": "List of participants in the Peasants’ War (those who damaged Zaisolph von Rosenberg’s property).",
+      "mention": [
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

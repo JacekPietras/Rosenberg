@@ -9,7 +9,36 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C264358D-A518-4375-9175-1F05D96B76AC&parent_id="
       ],
       "german": "Patronatrechtsgesuch des Zisterzienserklosters Bronnbach bei der kurfürstl. Kommission zu Königshofen/Tauber im Hinblick auf die Kirche zu Kupprichshausen nach dem Heimfall der Hatzfeld'schen Lehen. (89 Bl.).\n\nEnthält-/Darin-Vermerke: Enthält: Stiftung des Ritters Heinrich v. Schweigern für die \"capella in Dietenhausen\" (1214); Vergleichsvertrag zwischen den Bauern zu Kupprichshausen und dem dortigen Kaplan, gestiftet von Thomas v. Rosenberg und Götz v. Dottenheim (1447); Schreiben bezüglich der seitens Würzburg und der Abtei Bronnbach vorgenommenen Reformation (1628,1651); Rezeß zwischen dem Grafen v. Hatzfeld und der Abtei Bronnbach wegen des Tausches der Pfarrei Kupprichshausen gegen diejenige zu Ussigheim (1665) und Revokation der Pfarrei Ussigheim (1669); ausführliche Deduktionsschrift der Abtei Bronnbach wegen der Pfarrei Kupprichshausen, mit zahlreichen Beilagen, sowie Protokollauszug des Mainzer Generalvikariats von 1796.",
-      "english": "Petition concerning the patronage rights of Cistercian Bronnbach Abbey before the electoral commission at Königshofen on the Tauber, regarding the church at Kupprichhausen after the Hatzfeld fiefs reverted to their lord (89 folios). Contents and enclosures: endowment by Ritter Heinrich von Schweigern for the “capella in Dietenhausen” (1214); settlement between the farmers of Kupprichhausen and their chaplain, endowed by Thomas von Rosenberg and Götz von Dottenheim (1447); correspondence concerning the reform undertaken by Würzburg and Bronnbach Abbey (1628, 1651); settlement between Count von Hatzfeld and Bronnbach Abbey exchanging the parish of Kupprichhausen for that of Uissigheim (1665) and revocation of the Uissigheim parish (1669); detailed memorandum by the abbey concerning the parish of Kupprichhausen, with numerous enclosures, and an excerpt from the minutes of the Mainz general vicariate of 1796."
+      "english": "Petition concerning the patronage rights of Cistercian Bronnbach Abbey before the electoral commission at Königshofen on the Tauber, regarding the church at Kupprichhausen after the Hatzfeld fiefs reverted to their lord (89 folios). Contents and enclosures: endowment by Ritter Heinrich von Schweigern for the “capella in Dietenhausen” (1214); settlement between the farmers of Kupprichhausen and their chaplain, endowed by Thomas von Rosenberg and Götz von Dottenheim (1447); correspondence concerning the reform undertaken by Würzburg and Bronnbach Abbey (1628, 1651); settlement between Count von Hatzfeld and Bronnbach Abbey exchanging the parish of Kupprichhausen for that of Uissigheim (1665) and revocation of the Uissigheim parish (1669); detailed memorandum by the abbey concerning the parish of Kupprichhausen, with numerous enclosures, and an excerpt from the minutes of the Mainz general vicariate of 1796.",
+      "mention": [
+        {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Götz von Dottenheim"
+        },
+        {
+          "person": "Heinrich von Schweigern",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "person": "Thomas von Rosenberg"
+        },
+        {
+          "place": "uissigheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

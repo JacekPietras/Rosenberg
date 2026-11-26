@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2F037995-013D-43D3-8EC8-AC0FD18DA2FA&parent_id="
       ],
       "german": "Klage des Pfarrverwesers Balthasar Rueprecht zu Aub beim Ritterstift gegen Konrad und Zeisolff v. Rosenberg wegen eines ihm (Pfarrer) strittig gemachten Handlohns zu Aub",
-      "english": "Complaint by the parish administrator Balthasar Rueprecht zu Aub to the collegiate chapter of canons against Konrad and Zeisolff von Rosenberg concerning a hand-money payment at Aub that had been disputed with him (the priest)."
+      "english": "Complaint by the parish administrator Balthasar Rueprecht zu Aub to the collegiate chapter of canons against Konrad and Zaisolph von Rosenberg concerning a hand-money payment at Aub that had been disputed with him (the priest).",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        },
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++82724C6E-3703-40ED-8A28-F1040E7BB12E&parent_id="
       ],
       "german": "Verkauf des dem protestantischen Pfarrer zu Maßbach als Addition zugewiesenen Gütleins, Hans-Heinrichs-Gut genannt, zu Thundorf",
-      "english": "Sale of the small estate called Hans-Heinrichs-Gut at Thundorf, assigned as an addition to the Protestant pastor of Maßbach."
+      "english": "Sale of the small estate called Hans-Heinrichs-Gut at Thundorf, assigned as an addition to the Protestant pastor of Maßbach.",
+      "mention": [
+        {
+          "place": "massbach-st-bartholomaeus"
+        }
+      ]
     }
   ]
 }

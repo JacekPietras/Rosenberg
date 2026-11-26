@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A81CF373-DE82-451C-B26B-A1F8C324B62C&parent_id="
       ],
       "german": "Akt der Kanzlei zu Würzburg, betrifft Klage der Gebrüder von Schaumberg, Burggrafen zu Thundorf gegen das Hochstift Würzburg und dessen Amtskeller zu Münnerstadt wegen strittig gemachten Jagdrechtes im Klingenhölzlein auf der Markung von Wermerichshausen; beiliegend noch ein Extrakt aus einem Kissinger Visitationsprotokoll über das Jagd-, Hut- und Triebrecht auf genannter Markung, die auf denselben gelegenen Wäldern und deren Bewirtschaftung, dann den Jagdrechtsstreit mit den Herrn von Rosenbach",
-      "english": "File of the Würzburg chancery concerning the complaint by the brothers von Schaumberg, Burggrafen zu Thundorf, against the Prince-Bishopric of Würzburg and its district steward at Münnerstadt over the disputed hunting right in the Klingenhölzlein in the territory of Wermerichshausen. Also enclosed is an extract from a Kissingen visitation record concerning hunting, grazing, and driving rights in that territory, the woods located there and their management, and then the hunting-right dispute with the lords von Rosenbach."
+      "english": "File of the Würzburg chancery concerning the complaint by the brothers von Schaumberg, Burggrafen zu Thundorf, against the Prince-Bishopric of Würzburg and its district steward at Münnerstadt over the disputed hunting right in the Klingenhölzlein in the territory of Wermerichshausen. Also enclosed is an extract from a Kissingen visitation record concerning hunting, grazing, and driving rights in that territory, the woods located there and their management, and then the hunting-right dispute with the lords von Rosenbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

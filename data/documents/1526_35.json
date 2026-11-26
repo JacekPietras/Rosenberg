@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8780cf65-57ed-4d38-bed0-e87187733183&parent_id="
       ],
       "german": "Rothenburg an den Stadtschreiber Thomas Zweifel, derzeit zu Ansbach: Übersendung der v. Rosenberg'schen Artikel.",
-      "english": "Rothenburg to town clerk Thomas Zweifel, currently at Ansbach: sending the von Rosenberg articles."
+      "english": "Rothenburg to town clerk Thomas Zweifel, currently at Ansbach: sending the von Rosenberg articles.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        }
+      ]
     }
   ]
 }

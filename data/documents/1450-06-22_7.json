@@ -9,7 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2AA4C6FC-0C4F-46D2-A966-CBC953DB73DD&parent_id="
       ],
       "german": "Bischof Gotfried von Würzburg, Bischof Sylvester von Chiemsee, Pfalzgraf Friedrich, Hanns von Neitperg, Meister Ulrich Riederer, Graf Joerg von Hennenberg, Joerg Fuchs zu Sweinhaupten, Deutschordensmeister Jobst von Venningen, Graf Hess zu Leiningen, Hofmeister Peter von Thalheim, Marschalk Ulrich von Rosemberg, Johanns Dustier Dompropst zu Breßlau, Ott Pientzenawr zu Kemnaten, Jakob Puettrich zu Richartshawsen bringen eine Richtigung zustande zwischen dem Markgrafen Albrecht von Brandenburg, Conrad von Heideck und der Stadt Nürnberg. - Siegler: Sämtliche Aussteller.",
-      "english": "Bischof Gotfried von Würzburg; Bischof Sylvester von Chiemsee; Friedrich, Pfalzgraf; Hanns von Neitperg; Master Ulrich Riederer; Jorg von Hennenberg, Graf; Jorg Fuchs zu Sweinhaupten; Jobst von Venningen, Deutschordensmeister; Hess zu Leiningen, Graf; Peter von Thalheim, Hofmeister; Ulrich von Rosemberg, Marschall; Johanns Dustier, Dompropst zu Breslau; Ott Pientzenawr zu Kemnaten; and Jakob Puettrich zu Richartshawsen conclude a settlement between Albrecht von Brandenburg, Markgraf, Conrad von Heideck, and the city of Nuremberg.\n\nSealers: all the issuers."
+      "english": "Bischof Gotfried von Würzburg; Bischof Sylvester von Chiemsee; Friedrich, Pfalzgraf; Hanns von Neitperg; Master Ulrich Riederer; Jorg von Hennenberg, Graf; Jorg Fuchs zu Sweinhaupten; Jobst von Venningen, Deutschordensmeister; Hess zu Leiningen, Graf; Peter von Talheim, Hofmeister; Ulrich von Rosenberg, Marschall; Johanns Dustier, Dompropst zu Breslau; Ott Pientzenawr zu Kemnaten; and Jakob Puettrich zu Richartshawsen conclude a settlement between Albrecht von Brandenburg, Markgraf, Konrad von Heideck, and the city of Nuremberg.\n\nSealers: all the issuers.",
+      "mention": [
+        {
+          "person": "Bischof Gotfried",
+          "personTitle": [
+            "Bischof von Würzburg"
+          ]
+        },
+        {
+          "person": "Konrad von Heideck"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Peter von Talheim"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

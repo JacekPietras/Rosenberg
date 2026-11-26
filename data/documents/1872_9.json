@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7e24e754-5ac3-496a-90b7-0367047d0b6c&parent_id="
       ],
       "german": "Mader, Georg Stephan, von Gräfenbuch, Gastwirt; Verheiratung mit Birner, Margarethe, von Rosenbach",
-      "english": "Georg Stephan Mader, from Gräfenbuch, innkeeper; marriage to Margarethe Birner, from Rosenbach"
+      "english": "Georg Stephan Mader, from Gräfenbuch, innkeeper; marriage to Margarethe Birner, from Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

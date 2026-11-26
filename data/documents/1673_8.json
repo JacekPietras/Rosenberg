@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++54e6efb2-58da-4c87-9f29-8f92532f6c53&parent_id="
       ],
       "german": "Bürgermeister und Rat der Stadt Nürnberg bitten den Würzburger Bischof Johann Hartmann von Rosenbach um Geleit für die zur Frankfurter Messe reisenden Nürnberger Kaufleute",
-      "english": "The mayor and council of the city of Nürnberg ask the Johann Hartmann von Rosenbach, Bischof zu Würzburg, for safe conduct for Nürnberg merchants travelling to the Frankfurt fair."
+      "english": "The mayor and council of the city of Nürnberg ask the Hans Hartmann von Rosenberg, Bischof zu Würzburg, for safe conduct for Nürnberg merchants travelling to the Frankfurt fair.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

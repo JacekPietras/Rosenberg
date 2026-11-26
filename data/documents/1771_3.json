@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C00CAEAF-755C-4639-9E79-C6F9A60E8527&parent_id="
       ],
       "german": "Tod der Maria Anna Johanna von Aufseß, Witwe des Geheimen Rats und Ritterhauptmanns Philipp Friedrich von Aufseß, geb. von Rosenbach, und anschließende gerichtliche Versiegelung des Nachlasses (Obsignatur)",
-      "english": "Death of Maria Anna Johanna von Aufseß, widow of Philipp Friedrich von Aufseß, Geheimrat and Ritterhauptmann, née von Rosenbach, followed by the judicial sealing of her estate (sealing of the estate)."
+      "english": "Death of Maria Anna Johanna von Aufseß, widow of Philipp Friedrich von Aufseß, Geheimrat and Ritterhauptmann, née von Rosenbach, followed by the judicial sealing of her estate (sealing of the estate).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

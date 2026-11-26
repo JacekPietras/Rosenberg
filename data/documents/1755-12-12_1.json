@@ -9,7 +9,33 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3786FF97-EA2C-4A71-85B5-1E8A8920CA0B&parent_id="
       ],
       "german": "Adam Friedrich [von Seinsheim], Bischof zu Würzburg, verleiht den Gebrüdern Johann Philipp, Domherr in Würzburg, und Adalbert Friedrich von Rosenbach, bischöflicher Rat und Amtmann zu Arnstein, Söhne des verstorbenen bischöflichen Rates und Amtmanns zu Grünsfeld Anton Philibert von Rosenbach, vier Morgen Weinberg am Stein in Würzburg zu Mannlehen.\nSiegler: Der Bischof mit seinem Sekretsiegel.\n\nVermerke: Inhaltsangabe (18. Jh.)",
-      "english": "Adam Friedrich [von Seinsheim], Bischof zu Würzburg, grants the brothers Johann Philipp, canon in Würzburg, and Adalbert Friedrich von Rosenbach, episcopal councillor and Amtmann at Arnstein, sons of the late episcopal councillor and Amtmann at Grünsfeld, Anton Philibert von Rosenbach, four Morgen of vineyard at Stein in Würzburg as a male fief.\nSealer: the Bischof, with his private seal.\n\nNotes: Abstract (18th century)."
+      "english": "Adam Friedrich [von Seinsheim], Bischof zu Würzburg, grants the brothers Johann Philipp, canon in Würzburg, and Adalbert Friedrich von Rosenberg, episcopal councillor and Amtmann at Arnstein, sons of the late episcopal councillor and Amtmann at Grünsfeld, Anton Philibert von Rosenbach, four Morgen of vineyard at Stein in Würzburg as a male fief.\nSealer: the Bischof, with his private seal.\n\nNotes: Abstract (18th century).",
+      "mention": [
+        {
+          "person": "Adam Friedrich von Seinsheim",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "arnstein-maria-sondheim"
+        },
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "grunsfeld"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Steyn in Würzburg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

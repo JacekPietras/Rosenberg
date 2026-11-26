@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++c807e8fb-878c-4bdc-8386-96b0327fdc99&parent_id="
       ],
       "german": "Nachlassakt von Rosenberger Josef, Neuweid",
-      "english": "Probate file of Josef von Rosenberger, Neuweid."
+      "english": "Probate file of Josef von Rosenberg, Neuweid.",
+      "mention": [
+        {
+          "person": "Josef von Rosenberg"
+        }
+      ]
     }
   ]
 }

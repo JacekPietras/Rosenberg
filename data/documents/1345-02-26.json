@@ -7,7 +7,27 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 5266",
       "url": "https://www.regesta-imperii.de/id/b772cd78-699d-4b49-9277-a110817245ee",
       "german": "Erzbischof Heinrich verpfändet mit Zustimmung d. Domkapitels d. Ritter Engelh(ard) v. Rosenberg Burg Steinach (Stey-) u. Dorf Epfenbach (Eppen-) für 400 kl. Guld. die er für den Erzbischof den Brüdern Bernger u. Boppe v. Adelsheim (Adoltz-), Rittern, bezahlt hat, u. für eine Schuld zu Scheuerberg (Schuyr-), die das Stift für („vor“) des Erzbischofs „inkomen“ gemacht hatte. Der Erzbischof soll dem Ritter, solange er die Burg innehat, „keinen burghut“ geben. Mitsiegler: Dekan Johann u. d. Domkapitel.",
-      "english": "Archbishop Heinrich pledges to Ritter Engelh(ard) von Rosenberg, with the consent of the cathedral chapter, Steinach Castle and the village of Epfenbach for 400 small gulden, which Engelh(ard) paid on the archbishop’s behalf to Ritters Bernger and Boppe von Adelsheim, and for a debt at Scheuerberg which the chapter had incurred “for” the archbishop’s “income.” For as long as the Ritter holds the castle, the archbishop is not to provide him with castle guard. Co-sealers: Dean Johann and the cathedral chapter."
+      "english": "Archbishop Heinrich pledges to Ritter Engelh(ard) von Rosenberg, with the consent of the cathedral chapter, Steinach Castle and the village of Epfenbach for 400 small gulden, which Engelh(ard) paid on the archbishop’s behalf to Ritters Bernger and Boppe von Adelsheim, and for a debt at Scheuerberg which the chapter had incurred “for” the archbishop’s “income.” For as long as the Ritter holds the castle, the archbishop is not to provide him with castle guard. Co-sealers: Dean Johann and the cathedral chapter.",
+      "mention": [
+        {
+          "person": "Bernger von Adelsheim",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "person": "Boppe von Adelsheim"
+        },
+        {
+          "person": "Engelhard von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "steinach"
+        }
+      ]
     }
   ]
 }

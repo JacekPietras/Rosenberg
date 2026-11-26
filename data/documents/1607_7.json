@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9C1F4DBB-D220-4547-AD2B-94C1149E9144&parent_id="
       ],
       "german": "Akten der Mainzer Regierung: Der vom Junker Albrecht Christoph v. Rosenberg als Patron zu Hemsbach (Stadt Osterburken/Neckar-Odenwald-Kreis/Baden-Württemberg) angestellte Pfarrverweser Körner, ein ausgesprungener Benediktiner mit einer Beischläferin und 4 Kindern, wird von Würzburg als Ordinarius nicht angenommen, und Kurmainz als Landesherr läßt denselben daselbst ausweisen und die Bauern bestrafen, welche ihm nächtlich Unterschleif gaben.",
-      "english": "Records of the Mainz government: Körner, a former Benedictine monk who had left his monastery, had a concubine and four children, and was appointed by Junker Albrecht Christoph von Rosenberg as acting pastor and patron at Hemsbach (town of Osterburken, Neckar-Odenwald district, Baden-Württemberg), is not accepted by Würzburg as the local ordinary. The Electorate of Mainz, as territorial lord, has him expelled from the place and punishes the peasants who had given him shelter at night."
+      "english": "Records of the Mainz government: Körner, a former Benedictine monk who had left his monastery, had a concubine and four children, and was appointed by Junker Albrecht Christoph von Rosenberg as acting pastor and patron at Hemsbach (town of Osterburken, Neckar-Odenwald district, Baden-Württemberg), is not accepted by Würzburg as the local ordinary. The Electorate of Mainz, as territorial lord, has him expelled from the place and punishes the peasants who had given him shelter at night.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg",
+          "personTitle": [
+            "Junker"
+          ]
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

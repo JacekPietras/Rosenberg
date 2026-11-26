@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++89c1bbbf-2078-4739-86b7-3414b8dc488c&parent_id="
       ],
       "german": "Auswanderung Schmidt Elisabetha von Rosenbach",
-      "english": "Emigration of Elisabetha Schmidt von Rosenbach"
+      "english": "Emigration of Elisabetha Schmidt von Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6a9b3994-011c-40e5-a6ec-35c61d6a873c&parent_id="
       ],
       "german": "Julius v. S-G an Ursula v. Lentersheim geb. v. Rosenberg wegen des von Paul Martin v. Lichtenstein schuldigen Zinses von 1000 fl Kapital",
-      "english": "Julius von Seckendorff an (S-G) to Ursula von Lentersheim née von Rosenberg concerning the interest on 1,000 florins of principal owed by Paul Martin von Lichtenstein."
+      "english": "Julius von Seckendorf an (S-G) to Ursula von Lentersheim née von Rosenberg concerning the interest on 1,000 florins of principal owed by Pauls Martin von Lichtenstein.",
+      "mention": [
+        {
+          "person": "Julius von Seckendorf"
+        },
+        {
+          "person": "Pauls Martin von Lichtenstein"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

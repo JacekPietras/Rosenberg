@@ -9,6 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A3027824-BA70-42F1-A875-A2493C2965ED&parent_id="
       ],
       "german": "Hans von Rosemberg, Schultheiß und die Schöffen der Stadt Nürnberg beurkunden, dass Chuntz Reinlein und Kungund, dessen Ehefrau, mit Genehmigung Heinrich Nebels, Vikars zu Nürnberg, als Eigenherrns, an Heintz Kopp von Anwanten ihr Erbrecht an einem Gut in Weyterstorff verkauft haben. - Zeugen: Steffan Coler und Jakob Ortlieb.",
+      "english": "Hans von Rosenberg, Schultheiß, and the lay judges of the city of Nürnberg certify that Chuntz Reinlein and Kungund, his wife, with the consent of Heinrich Nebel, vicar in Nürnberg and their owner, sold to Heintz Kopp von Anwanten their hereditary right to an estate at Weyterstorff. Witnesses: Steffan Coler and Jakob Ortlieb.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/88ce66d4-6740-48c7-a90d-103c170522d4/1/full/max/0/default.jpg"
@@ -19,8 +31,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/88ce66d4-6740-48c7-a90d-103c170522d4/3/full/max/0/default.jpg"
         }
-      ],
-      "english": "Hans von Rosemberg, Schultheiß, and the lay judges of the city of Nürnberg certify that Chuntz Reinlein and Kungund, his wife, with the consent of Heinrich Nebel, vicar in Nürnberg and their owner, sold to Heintz Kopp von Anwanten their hereditary right to an estate at Weyterstorff. Witnesses: Steffan Coler and Jakob Ortlieb."
+      ]
     }
   ]
 }

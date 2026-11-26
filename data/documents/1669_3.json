@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D6C2FCA8-7920-494D-9918-E225C91788E3&parent_id="
       ],
       "german": "Untersuchung gegen Mich. Eberwein von Uissigheim wegen verübter Diebstähle in den Pfarrhöfen zu Hundheim und Kleinwallstadt; Verurteilung desselben zum Strang, dann Begnadigung zur Schanzstrafe.",
-      "english": "Investigation of Mich. Eberwein von Uissigheim for thefts committed in the rectories at Hundheim and Kleinwallstadt; he was sentenced to hanging and then pardoned, with the sentence commuted to forced labor on the fortifications."
+      "english": "Investigation of Mich. Eberwein von Uissigheim for thefts committed in the rectories at Hundheim and Kleinwallstadt; he was sentenced to hanging and then pardoned, with the sentence commuted to forced labor on the fortifications.",
+      "mention": [
+        {
+          "place": "uissigheim"
+        }
+      ]
     }
   ]
 }

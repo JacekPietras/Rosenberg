@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++CF02A111-DB91-408E-95B7-BE3AE508EF48&parent_id="
       ],
       "german": "Beitrag der Freiherrn v. Rosenbach als Mitzehntherren zu Untereßfeld zum dortigen Kirchenbau",
-      "english": "Contribution by the Freiherrn von Rosenbach, as co-holders of the tithe at Untereßfeld, toward construction of the church there."
+      "english": "Contribution by the Freiherrn von Rosenbach, as co-holders of the tithe at Untereßfeld, toward construction of the church there.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

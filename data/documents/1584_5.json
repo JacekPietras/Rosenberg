@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A37E2106-B813-400B-B202-43E8BD423EF6&parent_id="
       ],
       "german": "Schreiben des Konrad v. Rosenberg zu Gnötzheim mit der Bitte um Bestimmung eines anderen Termins zur Beilegung einer Zehntstreitigkeit in Waldmannshofen",
-      "english": "Letter from Konrad von Rosenberg zu Gnötzheim requesting that another date be set to settle a tithe dispute at Waldmannshofen."
+      "english": "Letter from Konrad von Rosenberg zu Gnötzheim requesting that another date be set to settle a tithe dispute at Waldmannshofen.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg",
+          "personTitle": [
+            "zu Gnötzheim"
+          ]
+        },
+        {
+          "place": "waldmannshofen"
+        }
+      ]
     }
   ]
 }

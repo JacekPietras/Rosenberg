@@ -9,7 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++241CA866-0CB3-4E1F-AFD7-4D37B68D3EEA&parent_id="
       ],
       "german": "Johann Philipp, Erzbischof von Mainz und Bischof von Würzburg, sowie Johann v. Heppenheim gen. v. Saal, Mainzer Domdekan, und Hartmann v. Rosenbach, Würzburger Domdekan, bekräftigen die auf Grundlage der Rezesse von 1656 Mai 15 und 1656 November 3, durch welche die zwischen beiden Stiften bestandenen weltlichen und geistlichen Irrungen beigelegt worden waren, von beiden Domkapiteln errichtete ewige Bruderschaft St. Martin und St. Kilian",
-      "english": "Johann Philipp, Erzbischof zu Mainz und Bischof zu Würzburg, together with Johann von Heppenheim called von Saal, cathedral dean of Mainz, and Hartmann von Rosenbach, cathedral dean of Würzburg, confirm the perpetual brotherhood of St Martin and St Kilian established by both cathedral chapters on the basis of the agreements of 15 May 1656 and 3 November 1656, which had settled the secular and ecclesiastical disputes between the two foundations."
+      "english": "Johann Philipp, Erzbischof zu Mainz und Bischof zu Würzburg, together with Johann von Heppenheim called von Saal, cathedral dean of Mainz, and Hartmann von Rosenberg, cathedral dean of Würzburg, confirm the perpetual brotherhood of St Martin and St Kilian established by both cathedral chapters on the basis of the agreements of 15 May 1656 and 3 November 1656, which had settled the secular and ecclesiastical disputes between the two foundations.",
+      "mention": [
+        {
+          "person": "Erzbischof Hans Philipp",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Hartmann von Rosenberg"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

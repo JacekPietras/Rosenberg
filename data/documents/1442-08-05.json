@@ -7,7 +7,18 @@
       "source": "[RI XIII] H. 25 n. 25",
       "url": "https://www.regesta-imperii.de/id/1442-08-05_1_0_13_25_0_25_25",
       "german": "Kg. F. nimmt die Geistlichkeit der Stadt und des Bistums Mainz in seinen und des Reichs besonderen Schutz und bestätigt ihr aus kgl. Machtvollkommenheit alle ihre Privilegien und Rechte sowie ihre, namentlich mit der Stadt Mainz geschlossenen Verträge, befreit sie von weltlichen Gerichten und setzt ihr namentlich genannte Schirmer.",
-      "english": "König Friedrich takes the clergy of the city and diocese of Mainz under his and the Empire’s special protection, confirms by royal plenitude of power all their privileges and rights, as well as their agreements—especially those concluded with the city of Mainz—exempts them from secular courts, and appoints protectors for them by name."
+      "english": "König Friedrich takes the clergy of the city and diocese of Mainz under his and the Empire’s special protection, confirms by royal plenitude of power all their privileges and rights, as well as their agreements—especially those concluded with the city of Mainz—exempts them from secular courts, and appoints protectors for them by name.",
+      "mention": [
+        {
+          "person": "König Friedrich",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "mainz"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d7a92477-2d07-4a02-ba8c-b9f05c04f610&parent_id="
       ],
       "german": "Verkauf der Besitzungen am Rennweg in Würzburg wegen Schulden an Johann Hartmann v. Rosenbach",
-      "english": "Sale of properties on Rennweg in Würzburg on account of debts to Johann Hartmann von Rosenbach."
+      "english": "Sale of properties on Rennweg in Würzburg on account of debts to Hans Hartmann von Rosenberg.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

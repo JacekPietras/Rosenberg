@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6045C07A-E1F2-4C95-8EFB-5EC33B1BA7B4&parent_id="
       ],
       "german": "Extrakt jährlicher Getreidegült der Frühmesse zu Herbolzheim, die jetzt der Domdechant zu Würzburg, Johann Hartmann von Rosenbach, als Oberpfarrer an sich zieht",
-      "english": "Extract of the annual grain dues of the early Mass benefice at Herbolzheim, now collected for himself by Johann Hartmann von Rosenbach, cathedral dean of Würzburg and senior pastor."
+      "english": "Extract of the annual grain dues of the early Mass benefice at Herbolzheim, now collected for himself by Hans Hartmann von Rosenberg, cathedral dean of Würzburg and senior pastor.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

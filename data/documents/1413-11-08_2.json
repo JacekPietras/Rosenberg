@@ -9,6 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B98DA909-DF48-40CA-97A8-0804258F8FA0&parent_id="
       ],
       "german": "Vidimus des Schultheißen von Nürnberg, Ritters Hans von Rosemberg, dem Cunrad Haller ausgestellt, über das Testament der Katrein, Urlichs und Katrein Hallers Tochter, Witwe des Ritters Erckinger Zollner, Bürgerin zu Nürnberg, vom 27. September 1411.- Zeugen der Vidimierung: Weygell Graser, Cunrad Paumgartner. - Siegler: Gerichtssiegel von Nürnberg.",
+      "english": "Vidimus issued to Cunrad Haller by the Schultheiß of Nürnberg, Ritter Hans von Rosenberg, concerning the testament of Katrein, daughter of Urlich and Katrein Haller, widow of Ritter Erckinger Zollner and a citizen of Nürnberg, dated 1411 September 27. Witnesses to the authentication: Weygell Graser and Cunrad Paumgartner. Sealer: the court seal of Nürnberg.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/797b5df2-c25d-4eba-9e31-87891bb670b9/1/full/max/0/default.jpg"
@@ -16,8 +28,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/797b5df2-c25d-4eba-9e31-87891bb670b9/2/full/max/0/default.jpg"
         }
-      ],
-      "english": "Vidimus issued to Cunrad Haller by the Schultheiß of Nürnberg, Ritter Hans von Rosemberg, concerning the testament of Katrein, daughter of Urlich and Katrein Haller, widow of Ritter Erckinger Zollner and a citizen of Nürnberg, dated 1411 September 27. Witnesses to the authentication: Weygell Graser and Cunrad Paumgartner. Sealer: the court seal of Nürnberg."
+      ]
     }
   ]
 }

@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9D7F3D54-C845-43DA-8631-480151757B5E&parent_id="
       ],
       "german": "Verzeichnis der Kapitalsbriefe des Bauamts der Domdechant von Rosenbach'schen Stiftung zu Würzburg",
-      "english": "Register of capital instruments belonging to the building office of the cathedral dean von Rosenbach's foundation in Würzburg."
+      "english": "Register of capital instruments belonging to the building office of the cathedral dean von Rosenbach's foundation in Würzburg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

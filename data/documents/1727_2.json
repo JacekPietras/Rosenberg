@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E92CA1F4-938C-4D21-A2FD-6D5E643A0235&parent_id="
       ],
       "german": "Differenzen zwischen dem protestantischen Pfarrer Holland zu Thundorf und der protestantischen Gemeinde zu Poppenlauer, hier die deshalb von Würzburg vorgeschlagene Versetzung des Pfarrers",
-      "english": "Disputes between the Protestant pastor Holland at Thundorf and the Protestant community at Poppenlauer; specifically, Würzburg’s resulting proposal to transfer the pastor."
+      "english": "Disputes between the Protestant pastor Holland at Thundorf and the Protestant community at Poppenlauer; specifically, Würzburg’s resulting proposal to transfer the pastor.",
+      "mention": [
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

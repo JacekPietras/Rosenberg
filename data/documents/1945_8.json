@@ -9,6 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FF89653B-2490-4A5C-9B63-D08F76D3F281&parent_id="
       ],
       "german": "v. Rosenberg - Gruszcynski, Alfred Wilhelm, geb. 04.10.1884 in Koblenz, Oberstleutnant a.D. beim Allg. Wehrmachtsamt - Kriegsgefangenenwesen\n\nEnthält-/Darin-Vermerke: Enthält:\nVern./Koch v. 31.08.1946 [5 Bl.]",
+      "english": "von Rosenberg-Gruszcynski, Alfred Wilhelm, born 4 October 1884 in Koblenz, retired lieutenant colonel with the Wehrmacht General Office, prisoner-of-war affairs.\n\nContents/related records: Contains: interrogation/statement by Koch, dated 31 August 1946 [5 leaves].",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/b8fcd805-b34c-4311-bba4-344766a542e3/1/full/max/0/default.jpg"
@@ -37,8 +43,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/b8fcd805-b34c-4311-bba4-344766a542e3/9/full/max/0/default.jpg"
         }
-      ],
-      "english": "von Rosenberg-Gruszcynski, Alfred Wilhelm, born 4 October 1884 in Koblenz, retired lieutenant colonel with the Wehrmacht General Office, prisoner-of-war affairs.\n\nContents/related records: Contains: interrogation/statement by Koch, dated 31 August 1946 [5 leaves]."
+      ]
     }
   ]
 }

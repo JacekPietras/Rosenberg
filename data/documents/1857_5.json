@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++fed937d2-f594-4699-b501-816ad2811430&parent_id="
       ],
       "german": "Auswanderung Schmidt Joh. von Rosenbach",
-      "english": "Emigration of Joh. Schmidt von Rosenbach"
+      "english": "Emigration of Joh. Schmidt von Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

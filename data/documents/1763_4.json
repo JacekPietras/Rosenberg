@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B6BF538B-2492-4FB0-91AD-011CDFA05753&parent_id="
       ],
       "german": "Der Würzburger und Bamberger Domkapitular Konrad Wilhelm von Wernau und sein Bruder Maximilian Gottfried bestätigen, dass sie das Dorf Großeislingen vom Würzburger Bischof Johann Hartmann von Rosenbach zu einem Mannlehen erhalten haben",
-      "english": "Konrad Wilhelm von Wernau, canon of Würzburg and Bamberg, and his brother Maximilian Gottfried confirm that they received the village of Großeislingen from Johann Hartmann von Rosenbach, Bischof zu Würzburg, as a male fief."
+      "english": "Konrad Wilhelm von Wernau, canon of Würzburg and Bamberg, and his brother Maximilian Gottfried confirm that they received the village of Großeislingen from Hans Hartmann von Rosenberg, Bischof zu Würzburg, as a male fief.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

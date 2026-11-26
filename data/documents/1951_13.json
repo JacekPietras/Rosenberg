@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ed760982-7501-4894-9813-d1eaf42332d7&parent_id="
       ],
       "german": "Nachlassakt von Rosenberger Max",
-      "english": "Probate file of Max von Rosenberger."
+      "english": "Probate file of Max von Rosenberger.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

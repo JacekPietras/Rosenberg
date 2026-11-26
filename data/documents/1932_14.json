@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0E47B78F-C860-4025-8BBC-BD2E369A7235&parent_id="
       ],
       "german": "Katholisches Jugendwerk Rosenberg e.V., Sitz: Rosenberg",
-      "english": "Catholic Youth Work Rosenberg Association, registered association, based in Rosenberg."
+      "english": "Catholic Youth Work Rosenberg Association, registered association, based in Rosenberg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

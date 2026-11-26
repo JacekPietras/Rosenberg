@@ -9,6 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DDC7DCF3-8165-4F45-8056-983C3677B8B4&parent_id="
       ],
       "german": "Melger Newenstetter erbietet sich gegen \"Herrn Michel und Hanß Fuchss, ihrem Schiedsspruche in seinem Streite mit der Stadt Nürnberg nachzuleben. Siegler: Jorg von Rossenberg.\n\nBesiegelung/Beglaubigung: Sg.",
+      "english": "Melger Newenstetter declares to ‘Lord Michel and Hanß Fuchss’ that he will abide by their arbitration in his dispute with the city of Nuremberg. Sealer: Georg von Rosenberg.\n\nSealing/authentication: seal.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/90633fb8-7f94-4302-bb60-d8c659bcac44/1/full/max/0/default.jpg"
@@ -16,8 +25,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/90633fb8-7f94-4302-bb60-d8c659bcac44/2/full/max/0/default.jpg"
         }
-      ],
-      "english": "Melger Newenstetter declares to ‘Lord Michel and Hanß Fuchss’ that he will abide by their arbitration in his dispute with the city of Nuremberg. Sealer: Jorg von Rossenberg.\n\nSealing/authentication: seal."
+      ]
     }
   ]
 }

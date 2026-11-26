@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++87d3baf1-695d-4327-b7c0-e1901a56da7d&parent_id="
       ],
       "german": "Schwab, Johann Christoph, von Rügland, Wagner; Verheiratung mit Tyrach, Margaretha Barbara, von Rosenbach",
-      "english": "Johann Christoph Schwab, from Rügland, wagonmaker; marriage to Margaretha Barbara Tyrach, from Rosenbach"
+      "english": "Johann Christoph Schwab, from Rügland, wagonmaker; marriage to Margaretha Barbara Tyrach, from Rosenbach",
+      "mention": [
+        {
+          "place": "burgruine-rosenberg-rugland"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

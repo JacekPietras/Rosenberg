@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4C6DBC54-8817-436E-827C-87A717AC8EB0&parent_id="
       ],
       "german": "Schuldforderung des Ursulinenklosters Kitzingen gegen Maria Anna von Aufseß zu Freienfels, geb. von Rosenbach",
-      "english": "Debt claim by the Ursuline convent of Kitzingen against Maria Anna von Aufseß zu Freienfels, née von Rosenbach."
+      "english": "Debt claim by the Ursuline convent of Kitzingen against Maria Anna von Aufseß zu Freienfels, née von Rosenbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

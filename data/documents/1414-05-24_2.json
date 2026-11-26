@@ -9,6 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++868AFB51-D3B5-4023-9240-C26398BCEB37&parent_id="
       ],
       "german": "Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden, dass Hans Weliczer und Alheid, dessen Ehefrau, an Cuntz Hofman, als Pfleger des Gotteshauses St. Peter in Poppenrewt, anderthalb Morgen Ackers, \"auf der Selpewnt\" an der Gründlach gelegen, zu einem Seelgerät für den Mager und Els, dessen Ehefrau, verkauft haben. - Zeugen: Sigmund Pfintzing und Steffan Schuler. - Siegler: das Stadtgericht.",
+      "english": "Hans von Rosenberg, Schultheiß, and the lay judges of the city of Nürnberg certify that Hans Weliczer and Alheid, his wife, sold to Cuntz Hofman, as administrator of the church of St. Peter in Poppenrewt, one and a half acres of farmland, situated “on the Selpewnt” by the Gründlach, as a memorial endowment for the Mager and Els, his wife. Witnesses: Sigmund Pfintzing and Steffan Schuler. Sealer: the city court.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Schultheiß"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/14ad0d44-7d4d-4c7f-9bf4-4b421b60712b/1/full/max/0/default.jpg"
@@ -25,8 +37,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/14ad0d44-7d4d-4c7f-9bf4-4b421b60712b/5/full/max/0/default.jpg"
         }
-      ],
-      "english": "Hans von Rosemberg, Schultheiß, and the lay judges of the city of Nürnberg certify that Hans Weliczer and Alheid, his wife, sold to Cuntz Hofman, as administrator of the church of St. Peter in Poppenrewt, one and a half acres of farmland, situated “on the Selpewnt” by the Gründlach, as a memorial endowment for the Mager and Els, his wife. Witnesses: Sigmund Pfintzing and Steffan Schuler. Sealer: the city court."
+      ]
     }
   ]
 }

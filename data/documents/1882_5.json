@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++768dbc4b-cb7a-487f-9ca8-68efdf9af639&parent_id="
       ],
       "german": "Pyrach, Johann Michael, von Rosenbach, Bauer; Verheiratung mit Reuter, Evy Margaretha, von Neustetten",
-      "english": "Johann Michael Pyrach, from Rosenbach, farmer; marriage to Evy Margaretha Reuter, from Neustetten"
+      "english": "Johann Michael Pyrach, from Rosenbach, farmer; marriage to Evy Margaretha Reuter, from Neustetten",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

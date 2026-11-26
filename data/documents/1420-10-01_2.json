@@ -7,7 +7,12 @@
       "source": "RI XI,1 n. 4281",
       "url": "https://www.regesta-imperii.de/id/1420-10-01_2_0_11_1_0_4818_4281",
       "german": "verpfändet dem Ulrich v. Rosenberg sämtliche Güter des Kl. Goldenkron für 3000 Schock böhmischer Groschen: ─ Commissio propria domini regis. ─ o. R",
-      "english": "He pledges all the possessions of Goldenkron Monastery to Ulrich von Rosenberg for 3,000 shock of Bohemian groschen. By the king’s own commission. No register entry."
+      "english": "He pledges all the possessions of Goldenkron Monastery to Ulrich von Rosenberg for 3,000 shock of Bohemian groschen. By the king’s own commission. No register entry.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

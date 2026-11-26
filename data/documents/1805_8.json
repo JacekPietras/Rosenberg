@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7DD440D5-CA62-4981-871A-5E3F70FFA8DE&parent_id="
       ],
       "german": "v.Rosenbach'sche heimgefallene Lehen im Untermainkreise",
-      "english": "Reverted fiefs of the von Rosenbach family in the Lower Main District."
+      "english": "Reverted fiefs of the von Rosenbach family in the Lower Main District.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

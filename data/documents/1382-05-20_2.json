@@ -7,7 +7,24 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 4450",
       "url": "https://www.regesta-imperii.de/id/cd697f8a-99f6-4a83-8976-a1515a460460",
       "german": "Johann graf von Wertheim, vormund der grafen Albrecht, Gorg, Heinrich und Hans von Lewenstein verkauft dem pfalzgrafen die hälfte von der herrschaft Lewenstein um 5000 gulden auf wiederlosung. Mitsiegler: Heinrich graf v. Spanheim, Conrad v. Rosenberg und Eberhard v. Hartheim. Karlsr. Copb. 532b,77. 465,40 (woselbst inseriert). Stuttg. Pf. Copb. 40v. Acta Pal. 1,365.",
-      "english": "Johann, Count of Wertheim and guardian of the counts Albrecht, Gorg, Heinrich, and Hans von Lewenstein, sells the Count Palatine half of the Lordship of Lewenstein for 5,000 florins, redeemable. Co-sealers: Heinrich, Count of Spanheim; Conrad von Rosenberg; and Eberhard von Hartheim. Karlsr. Copb. 532b, 77; 465, 40 (where it is inserted). Stuttg. Pf. Copb. 40v. Acta Pal. 1, 365."
+      "english": "Johann, Count of Wertheim and guardian of the counts Albrecht, Gorg, Heinrich, and Hans von Lewenstein, sells the Count Palatine half of the Lordship of Lewenstein for 5,000 florins, redeemable. Co-sealers: Heinrich, Count of Spanheim; Konrad von Rosenberg; and Eberhard von Hartheim. Karlsr. Copb. 532b, 77; 465, 40 (where it is inserted). Stuttg. Pf. Copb. 40v. Acta Pal. 1, 365.",
+      "mention": [
+        {
+          "person": "Eberhard von Hartheim"
+        },
+        {
+          "person": "Hans von Wertheim",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "place": "heidelberg"
+        },
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ]
     }
   ]
 }

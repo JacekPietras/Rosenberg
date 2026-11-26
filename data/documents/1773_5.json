@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++268FB2F1-FFF1-4717-BC1C-DA8EE8EF0DFF&parent_id="
       ],
       "german": "Röttingen\nGesuch der verwitweten Freifrau Amalia von Rosenbach um Bestätigung des Kaufs eines Wohnhauses in Gaukönigshofen (LK Ochsenfurt)",
-      "english": "Röttingen\nPetition by the widowed Baroness Amalia von Rosenbach for confirmation of the purchase of a residence in Gaukönigshofen (Ochsenfurt district)"
+      "english": "Röttingen\nPetition by the widowed Baroness Amalie von Rosenberg for confirmation of the purchase of a residence in Gaukönigshofen (Ochsenfurt district)",
+      "mention": [
+        {
+          "person": "Amalie von Rosenberg"
+        },
+        {
+          "place": "roettingen"
+        }
+      ]
     }
   ]
 }

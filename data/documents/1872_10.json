@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++78cdf8cb-93c7-4565-b604-5d7151c8a3fe&parent_id="
       ],
       "german": "Henninger, Friedrich, von Rosenbach, Bauer; Verheiratung mit Moßmeier, Margaretha Barbara, von Flachslanden",
-      "english": "Henninger, Friedrich, von Rosenbach, farmer; marriage to Margaretha Barbara Moßmeier von Flachslanden"
+      "english": "Henninger, Friedrich, von Rosenbach, farmer; marriage to Margaretha Barbara Moßmeier von Flachslanden",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -7,7 +7,18 @@
       "source": "RIplus Regg. EB Mainz 1 [n. 773]",
       "url": "https://www.regesta-imperii.de/id/dbe6065e-69b9-4f12-bb63-d6e3e02f9748",
       "german": "Intervenient bei k. Otto III, welcher dem Erzstift Magdeburg Kalbe u. Rosenburg zurückgibt.",
-      "english": "Intervened on behalf of King Otto III, who returns Kalbe and Rosenburg to the archbishopric of Magdeburg."
+      "english": "Intervened on behalf of King Otto III, who returns Kalbe and Rosenburg to the archbishopric of Magdeburg.",
+      "mention": [
+        {
+          "person": "König Otto",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

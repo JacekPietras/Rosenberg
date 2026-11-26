@@ -6,7 +6,18 @@
       "source": "RI XI,2 n. 11477a",
       "url": "https://www.regesta-imperii.de/id/1436-00-00_1_0_11_2_0_5769_11477a",
       "german": "Okt. 16 Wittingau: Ulrich v. Rosenberg u. Přibik v. Klenau vermitteln zwischen Kg. Sigmund v. Böhmen u. der St. Tabor, betr. deren Rechte u. Guter. Reg.: Arch. česky 3, 450",
-      "english": "16 October, Wittingau: Ulrich von Rosenberg and Přibik von Klenau mediate between King Sigismund of Bohemia and the town of Tabor concerning its rights and properties. Register: Arch. česky 3, 450."
+      "english": "16 October, Wittingau: Ulrich von Rosenberg and Přibik von Klenau mediate between King Sigismund of Bohemia and the town of Tabor concerning its rights and properties. Register: Arch. česky 3, 450.",
+      "mention": [
+        {
+          "person": "König Siegmund",
+          "personTitle": [
+            "König von Böhmen"
+          ]
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

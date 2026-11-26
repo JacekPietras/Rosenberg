@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C0D3EA4E-F2A4-466A-943C-75519E5FCC8E&parent_id="
       ],
       "german": "Parteivernehmung in Sachen v. Rosenberg gegen Königshofen/Tauber (Baden) wegen des Fischrechts in Dambach.",
-      "english": "Examination of the parties in the case of von Rosenberg against Königshofen/Tauber (Baden) concerning fishing rights in Dambach."
+      "english": "Examination of the parties in the case of von Rosenberg against Königshofen/Tauber (Baden) concerning fishing rights in Dambach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

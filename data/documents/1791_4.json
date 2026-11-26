@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3D996F64-E70F-4D30-B163-66B90EF44322&parent_id="
       ],
       "german": "Beschwerde derer von Rosenbach sowie derer von Schaumberg gegen das Kastenamt Zeil a. Main (Lk Haßfurt) wegen des verweigerten Beitrags zum Wein- und Hartzehnt.",
-      "english": "Complaint by the von Rosenbach and von Schaumberg families against the Zeil am Main revenue office (Haßfurt district) over its refusal to contribute toward the wine tithe and the hard tithe"
+      "english": "Complaint by the von Rosenbach and von Schaumberg families against the Zeil am Main revenue office (Haßfurt district) over its refusal to contribute toward the wine tithe and the hard tithe",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

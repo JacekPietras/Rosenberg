@@ -7,7 +7,18 @@
       "source": "[RIplus] Regg. Karl IV. n. 8017",
       "url": "https://www.regesta-imperii.de/id/f8d0bf23-1583-431f-aeba-3716e44328a3",
       "german": "Karl IV. beurkundet, dass, nachdem Markgraf Otto von Brandenburg die Mark Brandenburg seinem Sohne dem König Wenzel von Böhmen verschafft und solche zu diesem behufe ihm als römischem Kaiser aufgelassen habe, er als König von Böhmen demselben dagegen Schloss, Stadt und Lande Floss, Hirschau, Sulzbach, Rosenberg u.s.w. sodann Huczek, Ruprechtsstein u.s.w. überwiesen habe mit dem Vorbehalt, dass, wenn Otto ohne männliche Erben sterbe, diese Besitzungen dem Bruder desselben Stephan und dessen Kindern um 100 000 Gulden Pfand von Seite der Könige von Böhmen sein sollen.",
-      "english": "Charles IV certifies that, after Margrave Otto of Brandenburg had secured the March of Brandenburg for his son, King Wenzel of Bohemia, and had surrendered it to him for this purpose as Roman Emperor, Charles, as King of Bohemia, assigned him in return the castle, town, and lands of Floss, Hirschau, Sulzbach, Rosenberg, etc., and then Huczek, Ruprechtsstein, etc., on the condition that, if Otto died without male heirs, these possessions should be held as a pledge from the Kings of Bohemia for 100,000 florins by Otto’s brother Stephan and his children."
+      "english": "Charles IV certifies that, after Margrave Otto of Brandenburg had secured the March of Brandenburg for his son, King Wenzel of Bohemia, and had surrendered it to him for this purpose as Roman Emperor, Charles, as King of Bohemia, assigned him in return the castle, town, and lands of Floss, Hirschau, Sulzbach, Rosenberg, etc., and then Huczek, Ruprechtsstein, etc., on the condition that, if Otto died without male heirs, these possessions should be held as a pledge from the Kings of Bohemia for 100,000 florins by Otto’s brother Stephan and his children.",
+      "mention": [
+        {
+          "person": "König Wenceslaus",
+          "personTitle": [
+            "König von Böhmen"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

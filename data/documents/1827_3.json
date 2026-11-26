@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E2EC9518-7D54-4DC3-89FC-3B54A027BA2E&parent_id="
       ],
       "german": "Kauf des Zehntstadels zu Oberbechingen durch den Freiherrn von Tänzel; Obligationen des Samuel Rosenberger zu Ichenhausen",
-      "english": "Purchase of the tithe barn at Oberbechingen by Freiherr von Tänzel; bonds of Samuel Rosenberger of Ichenhausen"
+      "english": "Purchase of the tithe barn at Oberbechingen by Freiherr von Tänzel; bonds of Samuel Rosenberger of Ichenhausen",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

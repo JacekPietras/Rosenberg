@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++35AEA4E1-6C72-4A33-A482-4DC9561310C6&parent_id="
       ],
       "german": "Streitigkeiten zwischen Hanns Karges und Lorenz v. Rosenberg wegen des Verleihungsrechtes der Pfarrei und Frühmesse zu Rosenberg und wegen des angeblich der Pfarrei lehenbaren Müllers daselbst",
-      "english": "Disputes between Hanns Karges and Lorenz von Rosenberg concerning the right to appoint to the parish and early Mass at Rosenberg, and concerning the miller there, allegedly a fiefholder of the parish."
+      "english": "Disputes between Hanns Karges and Lorenz von Rosenberg concerning the right to appoint to the parish and early Mass at Rosenberg, and concerning the miller there, allegedly a fiefholder of the parish.",
+      "mention": [
+        {
+          "person": "Lorenz von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

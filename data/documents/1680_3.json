@@ -14,7 +14,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6DD953D6-6158-4AA8-8FA5-4EF1CCC067A6&parent_id="
       ],
       "german": "Rechnung über die Erbobleigefälle des Domkapitulars Franz Christ. von Rosenbach zu Würzburg",
-      "english": "Account of the hereditary prebend revenues of the Domkapitular Franz Christ. von Rosenbach zu Würzburg."
+      "english": "Account of the hereditary prebend revenues of the Domkapitular Franz Christ. von Rosenbach zu Würzburg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

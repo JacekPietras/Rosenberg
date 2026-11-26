@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6CD75C73-D6CC-4673-99AA-804B14CA7AD2&parent_id="
       ],
       "german": "Reichskammergerichtsprozeß des Geschlechts von Schaumberg gegen Fürstbischof Julius von Würzburg wegen der Besetzung der bisher protestantischen Pfarrei Ottendorf, deren Patronatsrecht von denen v. Wenkheim an die Schaumberg kam, mit einem katholischen Priester, insbesondere die von Würzburg unternommene Wegführung der Pfarrfrüchte und Verhaftung des Pfarrherrn\n\nEnthält-/Darin-Vermerke: Enthält auch: Abschrift einer Urkunde über den Verkauf von Ottendorf durch Jobst v. Wenkheim an das Hochstift Würzburg (1517), 2 Abschriften von Reversen über Pfarreibesetzungen (1564, 1569)",
-      "english": "Imperial Chamber Court litigation by the Schaumberg family against Prince-Bishop Julius of Würzburg concerning the appointment of a Catholic priest to the formerly Protestant parish of Ottendorf, whose right of patronage passed from the von Wenkheim family to the Schaumberg, especially Würzburg's seizure of the parish fruits and arrest of the pastor. Also included: copy of a deed concerning the sale of Ottendorf by Jobst von Wenkheim to the Bishopric of Würzburg (1517), and two copies of reverses concerning appointments to the parish (1564, 1569)."
+      "english": "Imperial Chamber Court litigation by the Schaumberg family against Prince-Bishop Julius of Würzburg concerning the appointment of a Catholic priest to the formerly Protestant parish of Ottendorf, whose right of patronage passed from the von Wenkheim family to the Schaumberg, especially Würzburg's seizure of the parish fruits and arrest of the pastor. Also included: copy of a deed concerning the sale of Ottendorf by Jobst von Wenkheim to the Bishopric of Würzburg (1517), and two copies of reverses concerning appointments to the parish (1564, 1569).",
+      "mention": [
+        {
+          "person": "Fürstbischof Julius",
+          "personTitle": [
+            "Fürstbischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "wenkheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

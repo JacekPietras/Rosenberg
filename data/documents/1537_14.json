@@ -20,7 +20,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A0955F48-33BF-4743-93C7-BAB806261EA1&parent_id="
       ],
       "german": "Hans Thoma von Rosenbergs Handlung vor dem König zu Wien und Krems",
-      "english": "Hans Thoma von Rosenberg’s business before the king at Vienna and Krems."
+      "english": "Hans Thomas von Rosenberg’s business before the king at Vienna and Krems.",
+      "mention": [
+        {
+          "person": "Hans Thomas von Rosenberg"
+        }
+      ]
     }
   ]
 }

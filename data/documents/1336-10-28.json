@@ -7,7 +7,12 @@
       "source": "[RI VII] H. 1 n. 265",
       "url": "https://www.regesta-imperii.de/id/1336-10-28_1_0_7_1_0_265_265",
       "german": "Ks. Ludwig verbietet jede Ansprache oder Forderung an alle, die zu Mergentheim gesezzen sind und die man schuldigt an der missetat, sich an seinen Kammerknechten, den Juden, vergriffen zu haben, da er sich selbst dies zu richten vorbehalten habe.",
-      "english": "Emperor Ludwig prohibits claims or demands against those settled at Mergentheim who are accused of attacking his chamber servants, the Jews, since he has reserved judgment in this matter to himself."
+      "english": "Emperor Ludwig prohibits claims or demands against those settled at Mergentheim who are accused of attacking his chamber servants, the Jews, since he has reserved judgment in this matter to himself.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

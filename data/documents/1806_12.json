@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0520B576-636A-49B2-9521-3098CD4D96FB&parent_id="
       ],
       "german": "Militärische Maßnahmen wegen der großherzoglich-würzburgischen Territorialeingriffe in Thundorf (in Unterfranken) (heimgefallenes würzburgisches Mannlehen des von Rosenbach), Zeilitzheim, Untersteinbach und Gleusdorf",
-      "english": "Military measures concerning the Grand Duchy of Würzburg’s territorial interventions in Thundorf (in Lower Franconia), a Würzburg male fief reverted from the von Rosenbach family, as well as in Zeilitzheim, Untersteinbach, and Gleusdorf."
+      "english": "Military measures concerning the Grand Duchy of Würzburg’s territorial interventions in Thundorf (in Lower Franconia), a Würzburg male fief reverted from the von Rosenbach family, as well as in Zeilitzheim, Untersteinbach, and Gleusdorf.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

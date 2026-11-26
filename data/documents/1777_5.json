@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BCD2DB5C-AAE2-4A2E-95E8-7406658B9BAE&parent_id="
       ],
       "german": "Hilders\nVerschiedene von Seiten des von rosenbachischen Amts Schackau gegen die lehenbaren Untertanen von Wickers (beide Kr. Fulda) eingeführte Neuerungen",
-      "english": "Hilders\nVarious innovations introduced by the von Rosenbach administration of Schackau against the fief-holding subjects of Wickers (both in Fulda district)"
+      "english": "Hilders\nVarious innovations introduced by the von Rosenbach administration of Schackau against the fief-holding subjects of Wickers (both in Fulda district)",
+      "mention": [
+        {
+          "place": "fulda-cathedral"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

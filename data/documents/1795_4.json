@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++964B7CF1-785B-4E32-AFA3-B5DA49394576&parent_id="
       ],
       "german": "Streitigkeiten der evangelischen Gemeinde zu Rothhausen mit dem Freiherrn v. Rosenbach wegen des dortigen Schulhausbaus",
-      "english": "Disputes between the Protestant community of Rothhausen and Freiherr von Rosenbach concerning the construction of the local schoolhouse."
+      "english": "Disputes between the Protestant community of Rothhausen and Freiherr von Rosenbach concerning the construction of the local schoolhouse.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

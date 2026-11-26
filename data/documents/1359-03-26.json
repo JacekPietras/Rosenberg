@@ -7,7 +7,18 @@
       "source": "[RIplus] Regg. Karl IV. n. 4378",
       "url": "https://www.regesta-imperii.de/id/bf252a3e-641c-4aee-92e3-0c9e0d8af914",
       "german": "Karl IV. verleiht den Bürgern von Sulzbach Zollfreiheit in Nürnberg und entschädigt den Schultheissen von Nürnberg für die dadurch erleidende Schmälerung seiner Bezüge.\n\nZeugen: Wilhelm, Erzbischof von Köln; Rudolf, Herzog von Sachsen; Ernst, Erzbischof von Prag; Johann, Bischof von Leitomischl, Kanzler; Maurus, Bischof von Corbavien; Wilhelm, Herzog von Jülich; Bolko, Herzog von Falkenberg; Peter, Herzog von Bourbon; Wilhelm, Markgraf von Meißen; Dietrich, Graf von Looz (Loon); Johann, Graf von Nassau; Burkhard, Burggraf von Magdeburg; Heinrich, Graf von Schwarzburg; Simon von Lichtenberg; Johann von Rupe; Walther von Meisenburg",
-      "english": "Charles IV grants the citizens of Sulzbach exemption from tolls at Nuremberg and compensates the Schultheiss of Nuremberg for the resulting reduction in his income.\n\nWitnesses: Wilhelm, Archbishop of Cologne; Rudolf, Duke of Saxony; Ernst, Archbishop of Prague; John, Bishop of Litomyšl, chancellor; Maurus, Bishop of Corbavia; Wilhelm, Duke of Jülich; Bolko, Duke of Falkenberg; Peter, Duke of Bourbon; Wilhelm, Margrave of Meissen; Dietrich, Count of Looz (Loon); Johann, Count of Nassau; Burkhard, Burggraf of Magdeburg; Heinrich, Count of Schwarzburg; Simon of Lichtenberg; Johann of Rupe; and Walther of Meisenburg."
+      "english": "Charles IV grants the citizens of Sulzbach exemption from tolls at Nuremberg and compensates the Schultheiss of Nuremberg for the resulting reduction in his income.\n\nWitnesses: Wilhelm, Archbishop of Cologne; Rudolf, Duke of Saxony; Ernst, Archbishop of Prague; John, Bishop of Litomyšl, chancellor; Maurus, Bishop of Corbavia; Wilhelm, Duke of Jülich; Bolko, Duke of Falkenberg; Peter, Duke of Bourbon; Wilhelm, Margrave of Meissen; Dietrich, Count of Looz (Loon); Johann, Count of Nassau; Burkhard, Burggraf of Magdeburg; Heinrich, Count of Schwarzburg; Simon of Lichtenberg; Johann of Rupe; and Walther of Meisenburg.",
+      "mention": [
+        {
+          "person": "Heinrich von Schwarzburg",
+          "personTitle": [
+            "Graf von Schwarzburg"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++149fce98-1f66-4435-bae7-ba5161e61bb0&parent_id="
       ],
       "german": "Wolfsgruber, Johann Leonhard, von Rosenbach, Wirt und Bauer; Ansässigmachung in Rosenbach; Verheiratung mit Daubinger, Anna Margaretha; Konzessionsgesuch: Wirtschaft",
-      "english": "Wolfsgruber, Johann Leonhard, von Rosenbach, innkeeper and farmer; establishment of residence in Rosenbach; marriage to Anna Margaretha Daubinger; license application: inn"
+      "english": "Wolfsgruber, Johann Leonhard, von Rosenbach, innkeeper and farmer; establishment of residence in Rosenbach; marriage to Anna Margaretha Daubinger; license application: inn",
+      "mention": [
+        {
+          "person": "Hans Leonhard von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

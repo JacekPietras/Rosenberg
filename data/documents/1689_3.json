@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++44e4b077-8e17-4027-813d-abbf623f675f&parent_id="
       ],
       "german": "Bitte des Klosters St. Stephan in Würzburg, die Freiherren v. Rosenbach als nunmehrige Inhaber der Herrschaft Thundorf zur Einhaltung der Bestimmungen des Vergleichs von 1571 hinsichtlich der klösterlichen Untertanen in Maßbach anzuhalten (Fragment)",
-      "english": "Request by the monastery of St. Stephen in Würzburg that the barons von Rosenbach, as the present holders of the lordship of Thundorf, be required to observe the provisions of the 1571 settlement concerning the monastery's subjects in Maßbach (fragment)."
+      "english": "Request by the monastery of St. Stephen in Würzburg that the barons von Rosenbach, as the present holders of the lordship of Thundorf, be required to observe the provisions of the 1571 settlement concerning the monastery's subjects in Maßbach (fragment).",
+      "mention": [
+        {
+          "place": "massbach-st-bartholomaeus"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

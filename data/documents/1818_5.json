@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++938b8eda-15b6-45db-ab64-8ddf7523591e&parent_id="
       ],
       "german": "Gesuch der Gebrüder Johann und Michael Reusch von Rosenbach um Abteilung des gemeinschaftlich sitzenden Gutes Hausnummer 18 und 19 daselbst",
-      "english": "Petition by the brothers Johann and Michael Reusch von Rosenbach for division of the jointly held property at house numbers 18 and 19 there"
+      "english": "Petition by the brothers Johann and Michael Reusch von Rosenbach for division of the jointly held property at house numbers 18 and 19 there",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

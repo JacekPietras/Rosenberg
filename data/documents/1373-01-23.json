@@ -7,7 +7,12 @@
       "source": "RIplus Regg. EB Mainz 2,2 (Bogen 1-10) n. 2987",
       "url": "https://www.regesta-imperii.de/id/d74763ee-51f5-4ab4-afe9-b1c9e50c1595",
       "german": "Erzbischof Johann gewährt dem Kloster Bronnbach (Burne-) für dessen Wein Zollfreiheit auf dem Main [am Zoll zu Miltenberg und Aschaffenburg].",
-      "english": "Archbishop Johann grants Bronnbach Monastery exemption from tolls on the Main for its wine [at the toll stations in Miltenberg and Aschaffenburg]."
+      "english": "Archbishop Johann grants Bronnbach Monastery exemption from tolls on the Main for its wine [at the toll stations in Miltenberg and Aschaffenburg].",
+      "mention": [
+        {
+          "place": "bronnbach"
+        }
+      ]
     }
   ]
 }

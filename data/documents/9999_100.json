@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++22CF9E46-6905-44E1-93A8-AD2C52AA9BEC&parent_id="
       ],
       "german": "Grundrissübersichtsplan der Festung Rosenberg (Stadt Kronach, Lkr. Kronach): Project tracè et ponctuè au jaune pour un chemin couvert avec ses places d'armes à faire à la fortresse de Rosenberg près de Cronack [=Gelb eingezeichnetes und unterstrichenes Projekt für einen überdachten Weg mit seinen Waffenplätzen auf der Festung Rosenberg bei Kronach",
-      "english": "Overview plan of the Fortress of Rosenberg (town of Kronach, district of Kronach): Project sketched and dotted in yellow for a covered way with its places of arms to be constructed at the fortress of Rosenberg near Cronack [= project marked in yellow and underlined for a covered way with its places of arms at the Fortress of Rosenberg near Kronach]."
+      "english": "Overview plan of the Fortress of Rosenberg (town of Kronach, district of Kronach): Project sketched and dotted in yellow for a covered way with its places of arms to be constructed at the fortress of Rosenberg near Cronack [= project marked in yellow and underlined for a covered way with its places of arms at the Fortress of Rosenberg near Kronach].",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

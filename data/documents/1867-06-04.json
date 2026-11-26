@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4A646560-87D0-46D6-A80D-86B5E1405146&parent_id="
       ],
       "german": "Beschwerde des Johann Limberger von Rosenbach gegen Müllermeister Hofmann von der Rohrmühle wegen unberechtigten Wasseraufstauens.",
-      "english": "Complaint by Johann Limberger von Rosenbach against master miller Hofmann of the Rohrmühle for unlawfully impounding water."
+      "english": "Complaint by Johann Limberger von Rosenbach against master miller Hofmann of the Rohrmühle for unlawfully impounding water.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

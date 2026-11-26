@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D46244E5-CFB5-44DB-A4C2-0DF4F1C87185&parent_id="
       ],
       "german": "Beschreibung der vier Huben zu Willanzheim, ihrer Zugehörungen, Besitzer und der davon zu leistenden Abgaben.\nAussteller:  Kanzlei der Herrschaft Schwarzenberg\nEmpfänger:  Kloster Ebrach\n\nBesiegelung/Beglaubigung: Siegler  bzw. Siegel:  Aussteller, unbesch.",
-      "english": "Description of the four hides at Willanzheim, their appurtenances, holders, and the dues owed from them.\nIssuer: the chancery of the lordship of Schwarzenberg.\nRecipient: Ebrach Abbey.\n\nSealing/authentication: the issuer; no seal specified."
+      "english": "Description of the four hides at Willanzheim, their appurtenances, holders, and the dues owed from them.\nIssuer: the chancery of the lordship of Schwarzenberg.\nRecipient: Ebrach Abbey.\n\nSealing/authentication: the issuer; no seal specified.",
+      "mention": [
+        {
+          "place": "ebrach"
+        },
+        {
+          "place": "schwarzenberg"
+        }
+      ]
     }
   ]
 }

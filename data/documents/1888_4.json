@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6c82ccdd-dd05-4ff6-ac4a-fe660de7f340&parent_id="
       ],
       "german": "Wachmeier, Johann Georg, von Hürbel, Bauer; Verheiratung  mit Henninger, Anna Barbara, von Rosenbach",
-      "english": "Johann Georg Wachmeier, from Hürbel, farmer; marriage to Anna Barbara Henninger, from Rosenbach"
+      "english": "Johann Georg Wachmeier, from Hürbel, farmer; marriage to Anna Barbara Henninger, from Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

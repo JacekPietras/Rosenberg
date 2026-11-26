@@ -7,7 +7,12 @@
       "source": "[RIplus] Regg. Karl IV. n. 1493",
       "url": "https://www.regesta-imperii.de/id/da56f802-ff92-4ca5-bba5-f02628ab5ad8",
       "german": "Karl IV. erklärt nach entsprechender Bitte des Kantors Paul der Mansonarien-Kapelle St. Marien in Prag, daß sein getreuer Apezko, Richter in Rosperg, über seine dortigen Besitzungen frei zu verfügen befugt sei.",
-      "english": "Karl IV declares, following a request to that effect from cantor Paul of the Mansonarien Chapel of St. Mary in Prague, that his faithful Apezko, judge in Rosperg, is entitled freely to dispose of his possessions there."
+      "english": "Karl IV declares, following a request to that effect from cantor Paul of the Mansonarien Chapel of St. Mary in Prague, that his faithful Apezko, judge in Rosperg, is entitled freely to dispose of his possessions there.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C2C7C5C4-895C-4C9C-90EC-BEBC1B07D793&parent_id="
       ],
       "german": "Nachlassakt von Rosenberger Maria, Erlach",
-      "english": "Probate file of Maria von Rosenberger, Erlach."
+      "english": "Probate file of Maria von Rosenberg, Erlach.",
+      "mention": [
+        {
+          "person": "Maria von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D1E26A21-D544-4930-814B-FA61C720D3C4&parent_id="
       ],
       "german": "Nachlassakt von Rosenbach Franz, gest. am 26.07.1961 in Arnbruck",
-      "english": "Probate file of Franz von Rosenbach, died on 26 July 1961 in Arnbruck."
+      "english": "Probate file of Franz von Rosenberg, died on 26 July 1961 in Arnbruck.",
+      "mention": [
+        {
+          "person": "Franz von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++69444133-2894-4A7C-B079-7C9DBE9B2A34&parent_id="
       ],
       "german": "Verleihung der protestantischen Pfarrei Thundorf mit Poppenlauer, Theinfeld und Rothhausen (das Patronatsrecht der Pfarrei Thundorf - Theinfeld hatten die von Rosenbach)",
-      "english": "Appointment to the Protestant parish of Thundorf with Poppenlauer, Theinfeld, and Rothhausen (the von Rosenbach family held the right of patronage over the Thundorf–Theinfeld parish)."
+      "english": "Appointment to the Protestant parish of Thundorf with Poppenlauer, Theinfeld, and Rothhausen (the von Rosenbach family held the right of patronage over the Thundorf–Theinfeld parish).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

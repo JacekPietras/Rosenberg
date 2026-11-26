@@ -7,7 +7,18 @@
       "source": "RI XI,1 n. 1223",
       "url": "https://www.regesta-imperii.de/id/1414-09-27_3_0_11_1_0_1321_1223",
       "german": "belehnt den Ritter Hans v. Rosenberg mit dem Zehnten im Dorfe zu Lohr (Lore zwisch. Rothenburg a. T. u. Insingen). ─ W. v.",
-      "english": "He enfeoffs Ritter Hans von Rosenberg with the tithe in the village of Lohr. W. v."
+      "english": "He enfeoffs Ritter Hans von Rosenberg with the tithe in the village of Lohr. W. v.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     },
     {
       "source": "Regesta Boica 12",

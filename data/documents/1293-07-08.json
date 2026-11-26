@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B2F8ADCD-F208-41C3-B043-65A64385974E&parent_id="
       ],
       "german": "Heinrich Schenk von Rossberg (Rosseberc) bekennt, dass ihm der Hofmeister [des Klosters Ebrach] auf dem Dürrenhof (Curia Arida) Walkun einen ihm zustehenden Zins von einem Weinberg und drei Hofstätten vor der Burg Rossberg für 7 Jahre im voraus entrichtet hat.\nSiegler: Heinrich Schenk.\nActum et datum 1293 in festo sancti Kiliani.\nZeugen: Der Kaplan der Burg Rossberg Heinrich, Heinrich Schenk und seine Söhne Heinrich und Wolfram, der Keller auf dem Dürrenhof Bruder Konrad Spizuf, die Weingärtner auf dem Dürrenhof Bruder Heinrich und Bruder Gottfried sowie der Knecht des Heinrich Schenk Rigellin.\n\nVermerke: Inhaltsangaben (13./14. u. 17./18. Jh.)",
-      "english": "Heinrich Schenk von Rossberg (Rosseberc) acknowledges that Walkun, the steward [of Ebrach Abbey] at Dürrenhof (Curia Arida), has paid him in advance, for seven years, a rent due to him from a vineyard and three farmsteads outside Rossberg Castle.\nSeal: Heinrich Schenk.\nExecuted and dated in 1293 on the Feast of Saint Kilian.\nWitnesses: Heinrich, chaplain of Rossberg Castle; Heinrich Schenk and his sons Heinrich and Wolfram; Brother Konrad Spizuf, cellarer at Dürrenhof; the vintners there, Brothers Heinrich and Gottfried; and Rigellin, Heinrich Schenk’s servant.\nNotes: Abstracts (13th/14th and 17th/18th centuries)."
+      "english": "Heinrich Schenk von Rossberg (Rosseberc) acknowledges that Walkun, the steward [of Ebrach Abbey] at Dürrenhof (Curia Arida), has paid him in advance, for seven years, a rent due to him from a vineyard and three farmsteads outside Rossberg Castle.\nSeal: Heinrich Schenk.\nExecuted and dated in 1293 on the Feast of Saint Kilian.\nWitnesses: Heinrich, chaplain of Rossberg Castle; Heinrich Schenk and his sons Heinrich and Wolfram; Brother Konrad Spizuf, cellarer at Dürrenhof; the vintners there, Brothers Heinrich and Gottfried; and Rigellin, Heinrich Schenk’s servant.\nNotes: Abstracts (13th/14th and 17th/18th centuries).",
+      "mention": [
+        {
+          "place": "ebrach"
+        },
+        {
+          "person": "Heinrich Schenk"
+        },
+        {
+          "person": "Heinrich Schenk von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

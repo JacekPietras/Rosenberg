@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0153798f-cc8e-463a-8cbd-0c87c4baa7c8&parent_id="
       ],
       "german": "Wolfsgruber, Johann Leonhard, von Rosenbach, Schmiedegeselle; Ansässigmachung in Colmberg; Verheiratung mit Beckstein, Anna Margaretha; Konzessionsgesuch: Schmiedehandwerk",
-      "english": "Wolfsgruber, Johann Leonhard, von Rosenbach, journeyman blacksmith; taking up residence in Colmberg; marriage to Anna Margaretha Beckstein; application for a license to practise the blacksmith's trade"
+      "english": "Wolfsgruber, Johann Leonhard, von Rosenbach, journeyman blacksmith; taking up residence in Colmberg; marriage to Anna Margaretha Beckstein; application for a license to practise the blacksmith's trade",
+      "mention": [
+        {
+          "person": "Anna Margaretha Beckstein"
+        },
+        {
+          "person": "Hans Leonhard von Rosenberg"
+        }
+      ]
     }
   ]
 }

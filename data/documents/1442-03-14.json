@@ -9,6 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++671BA511-E8A0-4DC4-AAE1-6C5B3CE58E19&parent_id="
       ],
       "german": "Der Rat der Stadt Nürnberg schreibt an Ulrich von Rosemberg in Sachen der Vermittlung mit dem von Swanberg durch den Landgrafen von Leuchtenberg.",
+      "english": "The Council of the City of Nuremberg writes to Ulrich von Rosenberg concerning mediation with the man from Swanberg by the Landgraf of Leuchtenberg.",
+      "mention": [
+        {
+          "place": "leuchtenberg"
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8acfc7fb-f1fb-40e4-a3ae-8763989e492d/1/full/max/0/default.jpg"
@@ -19,8 +31,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8acfc7fb-f1fb-40e4-a3ae-8763989e492d/3/full/max/0/default.jpg"
         }
-      ],
-      "english": "The Council of the City of Nuremberg writes to Ulrich von Rosemberg concerning mediation with the man from Swanberg by the Landgraf of Leuchtenberg."
+      ]
     }
   ]
 }

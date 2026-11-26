@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++c6c66ac1-af33-4f02-8e77-fa25562c5060&parent_id="
       ],
       "german": "Pickel, Georg Paulus, von Rosenbach, Taglöhner; Verheiratung mit Rogner, Anna Margaretha, von Burghausen",
-      "english": "Pickel, Georg Paulus, von Rosenbach, day laborer; marriage to Anna Margaretha Rogner von Burghausen"
+      "english": "Pickel, Georg Paulus, von Rosenbach, day laborer; marriage to Anna Margaretha Rogner von Burghausen",
+      "mention": [
+        {
+          "person": "Georg Pauls von Rosenberg"
+        }
+      ]
     }
   ]
 }

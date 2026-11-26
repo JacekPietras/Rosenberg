@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D75E74AF-189B-44A6-BE05-5D83FE69D69B&parent_id="
       ],
       "german": "Klage Regina Fischers gegen Maria Anna von Aufseß zu Freienfels, geb. von Rosenbach, Witwe von Philipp Friedrich, wegen schuldigen Lidlohns",
-      "english": "Lawsuit by Regina Fischer against Maria Anna von Aufseß zu Freienfels, née von Rosenbach, widow of Philipp Friedrich, for unpaid wages."
+      "english": "Lawsuit by Regina Fischer against Maria Anna von Aufseß zu Freienfels, née von Rosenbach, widow of Philipp Friedrich, for unpaid wages.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

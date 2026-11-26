@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6CBD4740-E4B8-4C95-8174-32E1B3EA67D1&parent_id="
       ],
       "german": "Bericht Albrecht v. Rosenbergs an Erzbischof Daniel wegen der gefänglichen Einziehung nach Königshofen/Tauber eines Hirten aus Oberschüpf, der seine Ehefrau totgeschlagen hatte. (6 Bl.).",
-      "english": "Report by Albrecht von Rosenberg to the Archbishop of Daniel concerning the imprisonment and transfer to Königshofen on the Tauber of a shepherd from Oberschüpf who had beaten his wife to death. (6 leaves)."
+      "english": "Report by Albrecht von Rosenberg to the Archbishop of Daniel concerning the imprisonment and transfer to Königshofen on the Tauber of a shepherd from Oberschüpf who had beaten his wife to death. (6 leaves).",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg"
+        },
+        {
+          "place": "oberschuepf"
+        }
+      ]
     }
   ]
 }

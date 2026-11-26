@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++c7c006ec-f630-47f1-97b6-1062cdd15e3d&parent_id="
       ],
       "german": "Reuter, Johann Leonhard, von Untersulzbach, Bauer; Verheiratung mit Bodächtel, Anna Elisabetha, von Rosenbach",
-      "english": "Johann Leonhard Reuter from Untersulzbach, farmer; marriage to Anna Elisabetha Bodächtel from Rosenbach."
+      "english": "Johann Leonhard Reuter from Untersulzbach, farmer; marriage to Anna Elisabetha Bodächtel from Rosenbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e41e40d6-c124-4772-8def-bc66a7131b67&parent_id="
       ],
       "german": "Korrespondenz in der gleichen Sache zwischen Zaysolf v. Rosenberg zu Haldenbergstetten und Hans v. Sternberg zu Schenkenau",
-      "english": "Correspondence on the same matter between Zaysolf von Rosenberg zu Haldenbergstetten and Hans von Sternberg zu Schenkenau."
+      "english": "Correspondence on the same matter between Zaysolf von Rosenberg zu Haldenbergstetten and Hans von Sternberg zu Schenkenau.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schloss-haltenbergstetten"
+        }
+      ]
     }
   ]
 }

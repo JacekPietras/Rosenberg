@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++621569dd-ab82-43a4-beca-b78083f9e20a&parent_id="
       ],
       "german": "Gesuch um Abtrennung von Rosenbach aus dem Gemeindeverbande Flachslanden",
-      "english": "Petition to separate Rosenbach from the municipality of Flachslanden"
+      "english": "Petition to separate Rosenbach from the municipality of Flachslanden",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

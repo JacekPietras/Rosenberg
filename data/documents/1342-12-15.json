@@ -7,7 +7,18 @@
       "source": "[RI VII] H. 1 n. 355",
       "url": "https://www.regesta-imperii.de/id/1342-12-15_1_0_7_1_0_355_355",
       "german": "Ks. Ludwig bewilligt die Verpfändung der Burgen Rothenfels und Gemünden an Bischof Otto von Würzburg durch seine Söhne.",
-      "english": "Emperor Ludwig authorizes the pledging of the castles of Rothenfels and Gemünden to Bishop Otto of Würzburg by his sons."
+      "english": "Emperor Ludwig authorizes the pledging of the castles of Rothenfels and Gemünden to Bishop Otto of Würzburg by his sons.",
+      "mention": [
+        {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

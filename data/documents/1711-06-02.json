@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d817ec01-2e9c-4e5e-9d0c-39fb21a99e97&parent_id="
       ],
       "german": "Zu Rhein, Johann Benedict Antonious von: Bestätigung der Ritter- und Stiftsmäßigkeit der Familien von Zu Rhein, von Rotberg, von Roggenbach, von Pfor, von Steincallenfels, von Reinach, von Ruost, Blarer von Wartensee, von Lichtenfels, von Rosenbach und von Schönau.\nBestätigt von Dompropst, Senior und Domkapitel Würzburg",
-      "english": "Johann Benedict Antonious von Zu Rhein: confirmation of the knightly and cathedral-chapter eligibility of the families von Zu Rhein, von Rotberg, von Roggenbach, von Pfor, von Steincallenfels, von Reinach, von Ruost, Blarer von Wartensee, von Lichtenfels, von Rosenbach, and von Schönau. Confirmed by the provost, senior, and cathedral chapter of Würzburg."
+      "english": "Johann Benedict Antonious von Zu Rhein: confirmation of the knightly and cathedral-chapter eligibility of the families von Zu Rhein, von Rotberg, von Roggenbach, von Pfor, von Steincallenfels, von Reinach, von Ruost, Blarer von Wartensee, von Lichtenfels, von Rosenbach, and von Schönau. Confirmed by the provost, senior, and cathedral chapter of Würzburg.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "schonau"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -9,6 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2AEA3DCA-E22F-47C5-83C3-CB2F9D78A8F5&parent_id="
       ],
       "german": "Schuldbrief des Ritters Anßhelm v. Rosenberg und seiner Ehefrau Els v. Sawnßheim für die Ballei Franken des Deutschen Ordens über 1000 Guldgulden, rückzahlbar zu Mergentheim innerhalb eines Jahres, verzinslich mit fünf Prozent. Als Pfand setzen sie ihr Dorf Kyrcheim auf dem Grunde, Ort des Einlagers ist Mergentheim. - Bürgen: Ritter Thoman v. Rosenberg, Concz v. Rosenberg zu Beckßberg. Concz v. Rosenberg zu Klingenberg, Rudiger Sutzel, Haittrach Truchses und Jorg v. Rosenberg. - Siegler: Aussteller und Bürgen.",
+      "english": "Bond of Ritter Anßhelm von Rosenberg and his wife Els von Sawnßheim to the Bailiwick of Franconia of the Teutonic Order for 1,000 gold gulden, repayable at Mergentheim within one year and bearing five percent interest. They pledge their village of Kyrcheim auf dem Grunde; the place of lodging for the debt is Mergentheim. Sureties: Ritter Thomas von Rosenberg; Kunz von Rosenberg zu Beckßberg; Kunz von Rosenberg zu Klingenberg; Rudiger Sutzel; Haittrach Truchses; and Georg von Rosenberg. Sealers: the issuers and the sureties.",
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "person": "Thomas von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/929207fc-22b3-4cf6-803e-8a30305b1c67/1/full/max/0/default.jpg"
@@ -19,8 +37,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/929207fc-22b3-4cf6-803e-8a30305b1c67/3/full/max/0/default.jpg"
         }
-      ],
-      "english": "Bond of Ritter Anßhelm von Rosenberg and his wife Els von Sawnßheim to the Bailiwick of Franconia of the Teutonic Order for 1,000 gold gulden, repayable at Mergentheim within one year and bearing five percent interest. They pledge their village of Kyrcheim auf dem Grunde; the place of lodging for the debt is Mergentheim. Sureties: Ritter Thoman von Rosenberg; Concz von Rosenberg zu Beckßberg; Concz von Rosenberg zu Klingenberg; Rudiger Sutzel; Haittrach Truchses; and Georg von Rosenberg. Sealers: the issuers and the sureties."
+      ]
     }
   ]
 }

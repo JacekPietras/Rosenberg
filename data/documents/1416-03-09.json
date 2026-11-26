@@ -9,6 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EDE67FBB-C34B-4B64-9B3A-B5031CD1E00E&parent_id="
       ],
       "german": "Cunrad Herr zu Winsperg, Erbkammermeister, teilt der Stadt Nürnberg mit, dass er in der Geleitssache seinen Amtmann Reinharten von Üssigkein zu Herrn Wirichen von Trütlingen, Hofmeister des Burggrafen Friedrich, geschickt habe, der ihr Kunde davon geben wird.\n\nBesiegelung/Beglaubigung: mit (abgef.) Verschlußsiegel",
+      "english": "Conrad, Herr zu Winsberg and hereditary chamberlain, informs the city of Nuremberg that, in the matter of the safe-conduct, he has sent his official Reinhard von Üssigkein to Wirich von Trütlingen, Hofmeister of Burggraf Friedrich, who will inform the city about it.\n\nSealing/authentication: with a fragmentary sealing stamp.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6bcda033-d562-4abe-bfe5-7eafde87d266/1/full/max/0/default.jpg"
@@ -16,8 +22,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6bcda033-d562-4abe-bfe5-7eafde87d266/2/full/max/0/default.jpg"
         }
-      ],
-      "english": "Conrad, Herr zu Winsberg and hereditary chamberlain, informs the city of Nuremberg that, in the matter of the safe-conduct, he has sent his official Reinhard von Üssigkein to Wirich von Trütlingen, Hofmeister of Burggraf Friedrich, who will inform the city about it.\n\nSealing/authentication: with a fragmentary sealing stamp."
+      ]
     }
   ]
 }

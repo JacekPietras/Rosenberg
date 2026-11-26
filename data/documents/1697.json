@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A3552EC1-9231-42C5-AC92-B5D861939B9B&parent_id="
       ],
       "german": "Beschwerde des Carl Joseph von Rosenbach als Besitzer des Ritterguts Thundorf (Lk Bad Kissingen) über das Vogtamt Zeil wegen der von seinem Untertan Georg Zimmermann aus Schmachtenberg (beide Lk Haßfurt) geforderten Zinsen.",
-      "english": "Complaint by Carl Joseph von Rosenbach, holder of the Thundorf manor (district of Bad Kissingen), against the Vogtamt Zeil concerning the rents demanded from his subject Georg Zimmermann of Schmachtenberg (both in the district of Haßfurt)."
+      "english": "Complaint by Carl Joseph von Rosenbach, holder of the Thundorf manor (district of Bad Kissingen), against the Vogtamt Zeil concerning the rents demanded from his subject Georg Zimmermann of Schmachtenberg (both in the district of Haßfurt).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

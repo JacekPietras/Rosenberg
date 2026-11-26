@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C7E0B5AA-C90F-4170-8EA3-3E2873C42F8A&parent_id="
       ],
       "german": "Plan de la fortresse [Festungsplan] de Rosenberg (Stadt Kronach, Lkr. Kronach), mit Grundriss des Pulvermagazins",
-      "english": "Plan of the fortress [fortress plan] of Rosenberg (town of Kronach, district of Kronach), with a floor plan of the powder magazine"
+      "english": "Plan of the fortress [fortress plan] of Rosenberg (town of Kronach, district of Kronach), with a floor plan of the powder magazine",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

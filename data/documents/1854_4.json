@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0879a608-5e8c-46ba-bced-88c91e2edb3d&parent_id="
       ],
       "german": "Auswanderung Derbfuss Joh. Georg von Rosenbach",
-      "english": "Emigration of Joh. Georg Derbfuss von Rosenbach"
+      "english": "Emigration of Joh. Georg Derbfuss von Rosenbach",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

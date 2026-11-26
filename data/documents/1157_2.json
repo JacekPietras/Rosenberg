@@ -9,7 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9133A3B6-3C19-4B77-BAE8-7AFF3D9B3739&parent_id="
       ],
       "german": "Akten in Sachen Albrecht Christoph und Georg Sigmund v. Rosenberg gegen die Hochstifte Würzburg und Mainz und das Kloster Bronnbach, mandati der Pfandung, die vogteiliche Obrigkeit und Botmäßigkeit, auch Pfarrbestellung zu Kupprichshausen und andere Gerechtigkeit daselbst, Laufzeit 1157 ff",
-      "english": "Proceedings in the case of Albrecht Christoph and Georg Siegmund von Rosenberg against the bishoprics of Würzburg and Mainz and Bronnbach Abbey, concerning the mandate for distraint, the rights of lordship and jurisdiction attached to the bailiwick, and appointment of the parish priest at Kupprichhausen, along with other rights there. Term: 1157 and following."
+      "english": "Proceedings in the case of Albrecht Christoph and Georg Siegmund von Rosenberg against the bishoprics of Würzburg and Mainz and Bronnbach Abbey, concerning the mandate for distraint, the rights of lordship and jurisdiction attached to the bailiwick, and appointment of the parish priest at Kupprichhausen, along with other rights there. Term: 1157 and following.",
+      "mention": [
+        {
+          "person": "Albrecht Christoph von Rosenberg"
+        },
+        {
+          "place": "bronnbach"
+        },
+        {
+          "person": "Georg Siegmund von Rosenberg"
+        },
+        {
+          "place": "kupprichhausen"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

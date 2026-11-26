@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++58752dbb-c822-4b3d-9d17-823a1ed89fa5&parent_id="
       ],
       "german": "Nachlass von Rosenberger, Christian Paulus aus Lichtenberg, gest. zw. dem 22.2. und 1.4.1837",
-      "english": "Estate of Christian Paulus von Rosenberger of Lichtenberg, who died between 22 February and 1 April 1837"
+      "english": "Estate of Christian Pauls von Rosenberg of Lichtenberg, who died between 22 February and 1 April 1837",
+      "mention": [
+        {
+          "person": "Pauls von Rosenberg"
+        }
+      ]
     }
   ]
 }

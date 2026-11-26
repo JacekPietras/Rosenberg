@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b0588c64-9164-45c3-aad3-0e821e0b5163&parent_id="
       ],
       "german": "Erbansprüche der Gesamtfamilie v. Cr. an die Allodialverlassenschaft des würzburgischen Kammerherrn Friedrich Karl Adolph Josef Anton v. Rosenbach (mit Stammtafelentwürfen von der Beck und v. Rosenbach).",
-      "english": "Inheritance claims by the entire von Crailsheim family against the allodial estate of the Würzburg Kammerherr Friedrich Karl Adolph Josef Anton von Rosenbach (with draft genealogical tables by von der Beck and von Rosenbach)."
+      "english": "Inheritance claims by the entire von Crailsheim family against the allodial estate of the Würzburg Kammerherr Friedrich Karl Adolph Josef Anton von Rosenberg (with draft genealogical tables by von der Beck and von Rosenbach).",
+      "mention": [
+        {
+          "person": "Josef Anton von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3CA93AEF-8E90-458E-9DD7-9750D0FE9788&parent_id="
       ],
       "german": "Beschreibung der früher Thüngen'schen, jetzt dem Domdekan Johann Hartmann v. Rosenbach zuständigen Zins-, Gült- und Lehengefälle zu Wülfershausen, Mittelstreu, Mellrichstadt, Eußenhausen und Mühlfeld, angefertigt im Jahr 1652",
-      "english": "Description, compiled in 1652, of the rents, dues, and feudal revenues at Wülfershausen, Mittelstreu, Mellrichstadt, Eußenhausen, and Mühlfeld, formerly belonging to the von Thüngen family and now assigned to cathedral dean Johann Hartmann von Rosenbach."
+      "english": "Description, compiled in 1652, of the rents, dues, and feudal revenues at Wülfershausen, Mittelstreu, Mellrichstadt, Eußenhausen, and Mühlfeld, formerly belonging to the von Thüngen family and now assigned to cathedral dean Hans Hartmann von Rosenberg.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan"
+          ]
+        },
+        {
+          "place": "thuengen"
+        }
+      ]
     }
   ]
 }

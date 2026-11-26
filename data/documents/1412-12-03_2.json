@@ -9,6 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FE794988-713A-422C-9D0A-77CB5F67EB15&parent_id="
       ],
       "german": "Ritter Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden, daß das Stadtgericht der Els Krewsin zu Ludersheim ein Erbe zu Ludersheim, das ihr Schwager Ulrich Hubmeyr zu Leymburg (Leinburg) in Anspruch genommen vor dem Gerichte des Neuen Spitales (Richter: der Überreiter Hans) zugesprochen hat. - Zeugen: Hans Grolant, Sohn des Seitz Grolant, Wernher Lemblein und Erhart Vetter.",
+      "english": "Ritter Hans von Rosenberg, Schultheiß, and the lay judges of the city of Nürnberg certify that the city court awarded Els Krewsin of Ludersheim an inheritance at Ludersheim, which her brother-in-law Ulrich Hubmeyr zu Leymburg had claimed, before the court of the New Hospital (judge: the mounted messenger Hans). Witnesses: Hans Grolant, son of Seitz Grolant, Wernher Lemblein, and Erhart Vetter.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/d360e702-ac2d-4601-9364-83014d568e48/1/full/max/0/default.jpg"
@@ -16,8 +29,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/d360e702-ac2d-4601-9364-83014d568e48/2/full/max/0/default.jpg"
         }
-      ],
-      "english": "Ritter Hans von Rosemberg, Schultheiß, and the lay judges of the city of Nürnberg certify that the city court awarded Els Krewsin of Ludersheim an inheritance at Ludersheim, which her brother-in-law Ulrich Hubmeyr zu Leymburg had claimed, before the court of the New Hospital (judge: the mounted messenger Hans). Witnesses: Hans Grolant, son of Seitz Grolant, Wernher Lemblein, and Erhart Vetter."
+      ]
     }
   ]
 }

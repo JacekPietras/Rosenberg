@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ee90bf05-02ef-4b0d-95fc-467f24702edd&parent_id="
       ],
       "german": "Fragstücke eines Zeugenverhörs im Streit mit Zeisolf von Rosenberg. (Konzept).",
-      "english": "Question list for a witness examination in the dispute with Zeisolf von Rosenberg (draft)."
+      "english": "Question list for a witness examination in the dispute with Zaisolph von Rosenberg (draft).",
+      "mention": [
+        {
+          "person": "Zaisolph von Rosenberg"
+        }
+      ]
     }
   ]
 }

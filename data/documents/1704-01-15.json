@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FD72B74A-19A4-4816-8F4B-DEDE3452EA6F&parent_id="
       ],
       "german": "Der Abt des Klosters Bildhausen Augustinus [Stapf] verleiht dem Amtmann zu Thundorf Johann Lotz als Bevollmächtigtem der Gebrüder Philipp Ludwig, Johann Hartmann, Franz Albrecht und Anton Philibert von Rosenbach, alle Söhne des verstorbenen Amtmanns zu Rothenfels Franz Rudolf von Rosenbach, ein Drittel des Zehnten in Theinfeld zu Mannlehen. Vorbesitzer des Lehens waren die Herren von Schaumberg.\nSiegler: Der Abt mit dem Klostersiegel.\n\nVermerke: Inhaltsangabe (18. Jh.)",
-      "english": "Augustinus [Stapf], abbot of Bildhausen monastery, enfeoffs the Amtmann zu Thundorf Johann Lotz, acting as proxy for the brothers Philipp Ludwig, Johann Hartmann, Franz Albrecht, and Anton Philibert von Rosenbach—all sons of the late Rothenfels Amtmann Franz Rudolf von Rosenbach—with one third of the tithe at Theinfeld as a fief of the male line. The previous holders of the fief were the lords von Schaumberg. Sealed by the abbot with the monastery seal. Endorsements: abstract (18th century)."
+      "english": "Augustinus [Stapf], abbot of Bildhausen monastery, enfeoffs the Amtmann zu Thundorf Johann Lotz, acting as proxy for the brothers Philipp Ludwig, Johann Hartmann, Franz Albrecht, and Anton Philibert von Rosenbach—all sons of the late Rothenfels Amtmann Franz Rudolf von Rosenberg—with one third of the tithe at Theinfeld as a fief of the male line. The previous holders of the fief were the lords von Schaumberg. Sealed by the abbot with the monastery seal. Endorsements: abstract (18th century).",
+      "mention": [
+        {
+          "person": "Franz Rudolf von Rosenberg",
+          "personTitle": [
+            "Amtmann"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

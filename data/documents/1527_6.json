@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B96B3074-0079-4885-BC67-67E1A454434E&parent_id="
       ],
       "german": "Schreiben von Burgermeister u. Rath zu Nurmberg an Sebastian Stieber von Rosennberg, Burggrafen zum Rottenberg, in der Irrung zwischen denen zu Oltensas u. Lauff wegen etlicher Aecker u. Wiesen.\n\nBesiegelung/Beglaubigung: -----------Aktenteil---------------",
-      "english": "Letter from the mayor and council of Nuremberg to Sebastian Stieber von Rosenberg, Burggraf zum Rotenberg, concerning the dispute between the people of Oltensas and Lauff over certain fields and meadows.\n\nSealing/authentication: -----------file section---------------"
+      "english": "Letter from the mayor and council of Nuremberg to Sebastian Stieber von Rosenberg, Burggraf zum Rotenberg, concerning the dispute between the people of Oltensas and Lauff over certain fields and meadows.\n\nSealing/authentication: -----------file section---------------",
+      "mention": [
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Sebastian Stieber von Rosenberg",
+          "personTitle": [
+            "Burggraf zu Rotenberg"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++96026ef9-c624-4a63-b2d8-edca2cd91261&parent_id="
       ],
       "german": "Birner, Georg Michael, von Wüstendorf/Brünst, Bauer; Verheiratung mit Limberger, Anna Margaretha, von Rosenbach/Flachslanden",
-      "english": "Georg Michael Birner, from Wüstendorf/Brünst, farmer; marriage to Anna Margaretha Limberger, from Rosenbach/Flachslanden"
+      "english": "Georg Michael Birner, from Wüstendorf/Brünst, farmer; marriage to Anna Margaretha Limberger, from Rosenbach/Flachslanden",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

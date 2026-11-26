@@ -7,7 +7,15 @@
       "source": "RIplus Regg. Baden 4 n. 7740",
       "url": "https://www.regesta-imperii.de/id/b1d11287-4433-470f-b0d0-ef3dd9c13938",
       "german": "Markgraf Karl leiht an Hans Münch von Rosemberg die lehengüter, die davor Erhard von Utzlingen u. seine vorderen von den markgrafen zu lehen getragen u. die Hans Münch von dem gen. Erhard mit der erlaubnis des markgrafen gekauft hat, nämlich den hof zu Grunbach gen. des Utzlingers hof in dem dorf bei Wimpfen (Wympffheim).",
-      "english": "Karl, Markgraf, enfeoffs Hans Münch von Rosemberg with the fief properties formerly held from the margraves by Erhard von Utzlingen and his predecessors, which Hans Münch bought from the said Erhard with the Margrave’s permission. These are the farm at Grunbach, called the Utzlinger farm, in the village near Wimpfen."
+      "english": "Karl, Markgraf, enfeoffs Hans Münch von Rosemberg with the fief properties formerly held from the margraves by Erhard von Utzlingen and his predecessors, which Hans Münch bought from the said Erhard with the Margrave’s permission. These are the farm at Grunbach, called the Utzlinger farm, in the village near Wimpfen.",
+      "mention": [
+        {
+          "person": "Hans Mönch"
+        },
+        {
+          "person": "Hans Mönch von Rosenberg"
+        }
+      ]
     }
   ]
 }

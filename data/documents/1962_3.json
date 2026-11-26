@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++09a01dd5-267f-470a-9187-4d0902a0f3d1&parent_id="
       ],
       "german": "Nachlassakt von Rosenberger Franziska, Dorn 3 1/6",
-      "english": "Probate file of Franziska von Rosenberger, Dorn 3 1/6."
+      "english": "Probate file of Franziska von Rosenberger, Dorn 3 1/6.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wallduern"
+        }
+      ]
     }
   ]
 }

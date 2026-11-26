@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A91AD191-5B70-4B64-BE92-DC80AC02FF2B&parent_id="
       ],
       "german": "Kaiserliche Citation an Ritter Contz v. Rosenberg und seine Knechte Philipp Geyger, Gegker und Gilg wegen der Gefangennahme des Rupprecht Zurcken aus St. Veit in Kärnten, die zu (Bad) Windsheim, Aub (\"Auwe\") und Röttingen nach Vermerk des Kammerboten öffentlich angeschlagen wurde; der Gefangene war in das Contz v. Rosenberg zugehörige Schloß \"Gurka\" gebracht, eingetürmt, gestockt, gemartert und um 400 fl. geschatzt worden. (4 Bl.).",
-      "english": "Imperial summons to the knight Contz von Rosenberg and his retainers Philipp Geyger, Gegker, and Gilg concerning the capture of Rupprecht Zurcken of St. Veit in Carinthia. According to the court messenger's note, it was publicly posted at (Bad) Windsheim, Aub (‘Auwe’), and Röttingen. The prisoner had been taken to ‘Gurka’ Castle belonging to Contz von Rosenberg, imprisoned in the tower, put in the stocks, tortured, and extorted for 400 florins. (4 folios.)"
+      "english": "Imperial summons to the knight Kunz von Rosenberg and his retainers Philipp Geyger, Gegker, and Gilg concerning the capture of Rupprecht Zurcken of St. Veit in Carinthia. According to the court messenger's note, it was publicly posted at (Bad) Windsheim, Aub (‘Auwe’), and Röttingen. The prisoner had been taken to ‘Gurka’ Castle belonging to Kunz von Rosenberg, imprisoned in the tower, put in the stocks, tortured, and extorted for 400 florins. (4 folios.)",
+      "mention": [
+        {
+          "place": "aub"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "roettingen"
+        }
+      ]
     }
   ]
 }

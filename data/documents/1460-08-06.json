@@ -6,7 +6,18 @@
       "source": "RIplus Regg. Baden 4 n. 8479",
       "url": "https://www.regesta-imperii.de/id/ea416f2c-b608-47eb-bdd0-924fda0b0e0d",
       "german": "Hans Münch von Rosemberg verspricht den hof zu Grunbach, den er mit genehmigung markgraf Karls an ritter Rafan von Helmstatt verpfändet hat, in den nächsten vier jahren wieder einzulösen, und erklärt, wegen dieses hofes dem markgrafen nach wie vor zur mannschaft verbunden zu sein.",
-      "english": "Hans Münch von Rosemberg promises to redeem within the next four years the farm at Grunbach that he pledged, with Margrave Karl’s consent, to Ritter Rafan von Helmstatt, and declares that he remains bound to the margrave in fealty for this farm as before."
+      "english": "Hans Münch von Rosemberg promises to redeem within the next four years the farm at Grunbach that he pledged, with Margrave Karl’s consent, to Ritter Raban von Helmstatt, and declares that he remains bound to the margrave in fealty for this farm as before.",
+      "mention": [
+        {
+          "person": "Hans Mönch von Rosenberg"
+        },
+        {
+          "person": "Raban von Helmstatt",
+          "personTitle": [
+            "Ritter"
+          ]
+        }
+      ]
     }
   ]
 }

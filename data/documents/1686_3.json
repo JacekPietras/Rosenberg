@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++38CA739F-0D44-4996-9BA2-770A03745FAB&parent_id="
       ],
       "german": "Vollziehung des zwischen Würzburg und Sachsen-Eisenach geschlossenen Vergleichs wegen der Pfarrrechte und Cent zu Maßbach, Rothhausen sowie Poppenlauer und der damit verbundene Übergang der Oberlehensherrlichkeit über die rosenbachischen Besitzungen von Sachsen an Würzburg\n\nEnthält-/Darin-Vermerke: Enthält u.a.: Spezifikation der rosenbachischen Untertanen und Lehenleute zu Maßbach mit ihrem Häusern, Dorf- und Feldgütern",
-      "english": "Implementation of the settlement concluded between Würzburg and Saxe-Eisenach concerning parish rights and the district court jurisdiction at Maßbach, Rothhausen, and Poppenlauer, and the associated transfer from Saxony to Würzburg of the superior feudal lordship over the von Rosenbach properties.\n\nContains, among other things: a specification of the von Rosenbach subjects and feoffees at Maßbach, with their houses and village and field estates."
+      "english": "Implementation of the settlement concluded between Würzburg and Saxe-Eisenach concerning parish rights and the district court jurisdiction at Maßbach, Rothhausen, and Poppenlauer, and the associated transfer from Saxony to Würzburg of the superior feudal lordship over the von Rosenbach properties.\n\nContains, among other things: a specification of the von Rosenbach subjects and feoffees at Maßbach, with their houses and village and field estates.",
+      "mention": [
+        {
+          "place": "massbach-st-bartholomaeus"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

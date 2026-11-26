@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1526D43A-688F-4016-A2E8-9B24727DF5F3&parent_id="
       ],
       "german": "Die Erhebung des Franz Ferdinand Rosner, verstorbener Kastner zu Burglengenfeld, bzw. dessen Sohn Franz Wilhelm Rosner, in den erblichen Adelsstand mit dem Zusatz: von Rosenburg; hier: Bekanntmachung",
-      "english": "The elevation of Franz Ferdinand Rosner, deceased Kastner at Burglengenfeld, or his son Franz Wilhelm Rosner, to hereditary nobility with the addition “von Rosenburg”; here: announcement."
+      "english": "The elevation of Franz Ferdinand Rosner, deceased Kastner at Burglengenfeld, or his son Franz Wilhelm Rosner, to hereditary nobility with the addition “von Rosenburg”; here: announcement.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

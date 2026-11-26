@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++15803767-0c76-4eaf-adaa-5103d27803c0&parent_id="
       ],
       "german": "Büttner, Lucas Friedrich, von Rosenbach, Bauer; Ansässigmachung in Rosenbach; Verheiratung mit Wolfsgruber, Anna Margaretha",
-      "english": "Büttner, Lucas Friedrich, von Rosenbach, farmer; establishment of residence in Rosenbach; marriage to Anna Margaretha Wolfsgruber"
+      "english": "Büttner, Lucas Friedrich, von Rosenbach, farmer; establishment of residence in Rosenbach; marriage to Anna Margaretha Wolfsgruber",
+      "mention": [
+        {
+          "person": "Friedrich von Rosenberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

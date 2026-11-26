@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++05a4cbac-990b-4377-9e90-de05ac118636&parent_id="
       ],
       "german": "Nachlassakt von Rossberg Anna, Sägewerksbesitzerswitwe, Lam 72",
-      "english": "Probate file of Anna von Rossberg, widow of a sawmill owner, Lam 72."
+      "english": "Probate file of Anna von Rosenberg, widow of a sawmill owner, Lam 72.",
+      "mention": [
+        {
+          "person": "Anna von Rosenberg"
+        }
+      ]
     }
   ]
 }

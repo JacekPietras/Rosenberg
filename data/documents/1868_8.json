@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++a5742749-13fe-46d3-aff0-602aabfbcd86&parent_id="
       ],
       "german": "Malter, Johann von Rosenbach; Verehelichung",
-      "english": "Malter, Johann von Rosenbach; marriage"
+      "english": "Malter, Hans von Rosenberg; marriage",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg"
+        }
+      ]
     }
   ]
 }

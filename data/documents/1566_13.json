@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++07a61bf3-3adb-4ee0-ab07-e11fb26904ab&parent_id="
       ],
       "german": "Akt betreffend die schaumbergischen Besitzungen (Schloß und Gut) zu Rügheim, insbesondere den Erwerb des von Münster'schen adeligen Ansitzes zu Rügheim durch die von Schaumberg und den Wiederverkauf der schaumbergischen Güter an das Hochstift Würzburg\n\nEnthält-/Darin-Vermerke: Mit der Rügheimer Dorfordnung de 1566 und 2 Beiakten",
-      "english": "File concerning the Schaumberg properties (castle and estate) at Rügheim, especially the Schaumbergs' acquisition of the von Münster noble residence at Rügheim and their resale of the Schaumberg properties to the Bishopric of Würzburg. Contains the Rügheim village ordinance of 1566 and two accompanying files."
+      "english": "File concerning the Schaumberg properties (castle and estate) at Rügheim, especially the Schaumbergs' acquisition of the von Münster noble residence at Rügheim and their resale of the Schaumberg properties to the Bishopric of Würzburg. Contains the Rügheim village ordinance of 1566 and two accompanying files.",
+      "mention": [
+        {
+          "place": "ruegheim"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++99540C0A-6E79-4DBE-98B6-7DE03A5D6F9D&parent_id="
       ],
       "german": "Akten über den Heimfall der Lehen zu Zeil der Freiherren von Rosenbach",
-      "english": "Files concerning the reversion of the fiefs at Zeil belonging to the Barons von Rosenbach."
+      "english": "Files concerning the reversion of the fiefs at Zeil belonging to the Barons von Rosenbach.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

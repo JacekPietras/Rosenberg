@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b1426cfe-c951-49e1-86f7-b862db16858c&parent_id="
       ],
       "german": "\"Dundorffer Amtsrepertorium\",  1756 begonnen und fortgeführt von Johannes Petrus Nitribitt, Wzb. Hof- und Regierungsrat, kaiserlicher Landgerichtsconsulent, Frhr. von Rosenbach'scher Obervogt",
-      "english": "“Dundorff administrative register,” begun in 1756 and continued by Johannes Petrus Nitribitt, Würzburg court and government councillor, imperial provincial court consultant, chief bailiff of the Freiherr von Rosenbach family."
+      "english": "“Dundorff administrative register,” begun in 1756 and continued by Johannes Petrus Nitribitt, Würzburg court and government councillor, imperial provincial court consultant, chief bailiff of the Freiherr von Rosenbach family.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "wurzburg"
+        }
+      ]
     }
   ]
 }

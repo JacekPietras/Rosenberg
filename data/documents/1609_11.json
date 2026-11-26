@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6A9BCC09-B3CA-40AE-A45B-16AFC7A6C4CC&parent_id="
       ],
       "german": "Weisung an das Kloster Marienhausen zur Wiederaufnahme der seinerzeit mit einigen Mitschwestern in das Kloster Niederilbenstadt versetzten Konventualin J. v. Rosenbach.",
-      "english": "Instruction to Marienhausen Abbey to readmit the conventual J. von Rosenbach, who had formerly been transferred to Niederilbenstadt Abbey together with several fellow nuns."
+      "english": "Instruction to Marienhausen Abbey to readmit the conventual J. von Rosenbach, who had formerly been transferred to Niederilbenstadt Abbey together with several fellow nuns.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

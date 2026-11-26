@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F71BFB47-D161-4149-AD5A-F969B21C2DA1&parent_id="
       ],
       "german": "Verlassenschaft des verstorbenen Freiherrn Carl Joseph von Rosenbach zu Thundorf und Maßbach, Fasz. 4",
-      "english": "Estate of the deceased Freiherr Carl Joseph von Rosenbach zu Thundorf and Maßbach, file 4."
+      "english": "Estate of the deceased Freiherr Carl Joseph von Rosenbach zu Thundorf and Maßbach, file 4.",
+      "mention": [
+        {
+          "place": "massbach-st-bartholomaeus"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

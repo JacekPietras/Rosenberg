@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++dc28a586-d610-4f1f-82c3-7af275141860&parent_id="
       ],
       "german": "Martinus Garzes, Meister des Johanniterhauses in Malta erteilt dem Konrad von Rosenbach, Ordensritter, Erlaubnis, verschiedener Geschäfte halber eine Reise in sein Vaterland anzutreten.",
-      "english": "Martinus Garzes, Master of the Hospitaller house in Malta, grants Konrad von Rosenbach, a knight of the Order, permission to travel to his homeland on various matters."
+      "english": "Martinus Garzes, Master of the Hospitaller house in Malta, grants Konrad von Rosenberg, a knight of the Order, permission to travel to his homeland on various matters.",
+      "mention": [
+        {
+          "person": "Konrad von Rosenberg"
+        }
+      ]
     }
   ]
 }

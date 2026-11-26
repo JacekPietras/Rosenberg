@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7627AFF4-BD83-41F1-95B4-6D8975DB3F06&parent_id="
       ],
       "german": "Bericht des Amtes [Tauber-]Bischofsheim wegen der Beschwerde des Ritters Albrecht v. Rosenberg gegen die Setzung eines Zollstocks auf Sachsenflurer Gemarkung.",
-      "english": "Report from the [Tauber-]Bischofsheim district concerning the knight Albrecht von Rosenberg's complaint against the placement of a customs post in Sachsenflur territory."
+      "english": "Report from the [Tauber-]Bischofsheim district concerning the knight Albrecht von Rosenberg's complaint against the placement of a customs post in Sachsenflur territory.",
+      "mention": [
+        {
+          "person": "Albrecht von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "bischofsheim"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4EDAAE39-92C2-48EB-895A-04CD45F13E0B&parent_id="
       ],
       "german": "Beschwerde der evangelischen Gemeinde Rothhausen gegen ihre Herrschaft, den Kammerherrn Carl Joseph Freiherrn v. Rosenbach, wegen rezeß- und rechtswidrig geforderter Leistung eines Beitrags zum dortigen Kirchenbau",
-      "english": "Complaint by the Protestant community of Rothhausen against its lord, the Kammerherr Carl Joseph Freiherr von Rosenbach, concerning a contribution demanded for construction of the local church, allegedly contrary to the recess and the law."
+      "english": "Complaint by the Protestant community of Rothhausen against its lord, the Kammerherr Carl Joseph Freiherr von Rosenbach, concerning a contribution demanded for construction of the local church, allegedly contrary to the recess and the law.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b16d5c91-897d-407e-86a7-f5607b1b48dd&parent_id="
       ],
       "german": "Bodächtel, Johann Georg, von Rosenbach/Flachslanden, Bauer; Verheiratung mit Schäff, Elisabeth Margaretha, von Flachslanden",
-      "english": "Johann Georg Bodächtel, from Rosenbach/Flachslanden, farmer; marriage to Elisabeth Margaretha Schäff, from Flachslanden"
+      "english": "Johann Georg Bodächtel, from Rosenbach/Flachslanden, farmer; marriage to Elisabeth Margaretha Schäff, from Flachslanden",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

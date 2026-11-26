@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3645D6F8-A570-41CF-A925-76A30557E1A5&parent_id="
       ],
       "german": "Lehen- und Lagerbuch über die den Freiherrn von Rosenbach auf Schloß Thundorf gehörigen Gefälle und Gerechtsame zu Schonungen und Mainberg, renoviert 1758 durch den Lehenrenovator Sebastian Schäfer (beglaubigt 1770, mit Vorbemerkung)",
-      "english": "Fief and land register concerning the revenues and rights belonging to the Freiherren von Rosenbach at Thundorf Castle in Schonungen and Mainberg, revised in 1758 by the fief-register reviser Sebastian Schäfer (authenticated in 1770, with a preface)."
+      "english": "Fief and land register concerning the revenues and rights belonging to the Freiherren von Rosenbach at Thundorf Castle in Schonungen and Mainberg, revised in 1758 by the fief-register reviser Sebastian Schäfer (authenticated in 1770, with a preface).",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

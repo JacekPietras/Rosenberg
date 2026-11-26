@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8B51498B-483F-4675-B2F5-0BF8E5105440&parent_id="
       ],
       "german": "Die von den Herren von Rosenbach zu Maßbach widerrechtlich auf Nüdlinger Markung und im Distrikt \"Gressertshof\" ausgeübte niedere Jagd",
-      "english": "The unlawful exercise of lower hunting rights by the Herren von Rosenbach zu Maßbach on Nüdlingen land and in the “Gressertshof” district."
+      "english": "The unlawful exercise of lower hunting rights by the Herren von Rosenbach zu Maßbach on Nüdlingen land and in the “Gressertshof” district.",
+      "mention": [
+        {
+          "place": "massbach-st-bartholomaeus"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,16 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6CFCC557-C3B8-4C27-A65C-7BBC6C3915EE&parent_id="
       ],
       "german": "Rechnung über Einnahmen und Ausgaben für den Domdechant Johann Hartmann von Rosenbach zu Würzburg",
-      "english": "Account of revenues and expenditures for the Domdechant Johann Hartmann von Rosenbach zu Würzburg."
+      "english": "Account of revenues and expenditures for the Domdechant Hans Hartmann von Rosenberg zu Würzburg.",
+      "mention": [
+        {
+          "person": "Hans Hartmann von Rosenberg",
+          "personTitle": [
+            "Domdekan",
+            "zu Würzburg"
+          ]
+        }
+      ]
     }
   ]
 }

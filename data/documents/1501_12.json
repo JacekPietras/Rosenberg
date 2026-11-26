@@ -9,7 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++93D6569A-6F9E-449B-B8AC-B42C69F85960&parent_id="
       ],
       "german": "Hans Mönch v. Rosenberg zu Hainstadt verschreibt den Priestern der Pfarrei Buchen Gülten von seiner Mühle \"inn dem thal zu Buchenn\", 1380 Februar 28, Abschrift",
-      "english": "Hans Mönch von Rosenberg zu Hainstadt grants the priests of the parish of Buchen annuities from his mill ‘in the valley at Buchen’, 28 February 1380; copy."
+      "english": "Hans Mönch von Rosenberg zu Hainstadt grants the priests of the parish of Buchen annuities from his mill ‘in the valley at Buchen’, 28 February 1380; copy.",
+      "mention": [
+        {
+          "place": "buchen"
+        },
+        {
+          "person": "Hans Mönch von Rosenberg",
+          "personTitle": [
+            "zu Hainstadt"
+          ]
+        }
+      ]
     }
   ]
 }

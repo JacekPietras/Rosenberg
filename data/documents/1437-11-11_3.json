@@ -7,7 +7,12 @@
       "source": "RI XI,2 n. 12193",
       "url": "https://www.regesta-imperii.de/id/1437-11-11_6_0_11_2_0_6513_12193",
       "german": "ermahnt Ulrich v. Rosenberg, die königl. Steuereinnehmer an der Einhebung der Gallisteuer nicht zu hindern. Ad m. d. imperatoris.",
-      "english": "Urges Ulrich von Rosenberg not to hinder the royal tax collectors from collecting the Gallus tax. By the mandate of the emperor."
+      "english": "Urges Ulrich von Rosenberg not to hinder the royal tax collectors from collecting the Gallus tax. By the mandate of the emperor.",
+      "mention": [
+        {
+          "person": "Ulrich von Rosenberg"
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B336BC8B-1F33-4097-A157-4BBB9CF6D6F6&parent_id="
       ],
       "german": "Gerichtsbrief des Hansen von Rosemberg, Schultheiß, und der Schöffen der Stadt Nuremberg, laut welchem Sebolt Pfinczing, Pfleger des St. Klara-Klosters anerkennt, dass genanntes Kloster dem Heinzen Stencz den Hof zum Perg mit seiner Zugehörung - außer 4 Tagwerk Wismats \"die Egerten genannt\" an der Pyburt gelegen - als Erblehen verliehen haben. - Gerichtszeugen: Conrad Pfinczing, Wilhelm Ebner, Erhart Ruczen. - Siegler: das Gericht zu Nürnberg.",
-      "english": "Court charter of Hansen von Rosemberg, Schultheiß, and the lay judges of the city of Nuremberg, according to which Sebolt Pfinczing, administrator of the St. Clara monastery, acknowledges that the said monastery granted Heinzen Stencz the farmstead zum Perg and its appurtenances as an inheritable fief, except for four dayworks of meadow called “die Egerten,” situated at the Pyburt. Court witnesses: Conrad Pfinczing, Wilhelm Ebner, Erhart Ruczen. Sealer: the court of Nürnberg."
+      "english": "Court charter of Hansen von Rosemberg, Schultheiß, and the lay judges of the city of Nuremberg, according to which Sebolt Pfinczing, administrator of the St. Clara monastery, acknowledges that the said monastery granted Heinzen Stencz the farmstead zum Perg and its appurtenances as an inheritable fief, except for four dayworks of meadow called “die Egerten,” situated at the Pyburt. Court witnesses: Conrad Pfinczing, Wilhelm Ebner, Erhart Ruczen. Sealer: the court of Nürnberg.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

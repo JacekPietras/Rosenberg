@@ -7,7 +7,18 @@
       "source": "[RI VII] H. 1 n. 352",
       "url": "https://www.regesta-imperii.de/id/1342-11-12_1_0_7_1_0_352_352",
       "german": "Ks. Ludwig einigt sich mit Bischof Otto von Würzburg wegen der Burgen Rothenfels und Gemünden.",
-      "english": "Emperor Ludwig reaches an agreement with Bishop Otto of Würzburg concerning the castles of Rothenfels and Gemünden."
+      "english": "Emperor Ludwig reaches an agreement with Bishop Otto of Würzburg concerning the castles of Rothenfels and Gemünden.",
+      "mention": [
+        {
+          "person": "Bischof Otto",
+          "personTitle": [
+            "Bischof zu Würzburg"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

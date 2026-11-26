@@ -9,7 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++a51c301e-377c-4c13-af09-b81fa1634b20&parent_id="
       ],
       "german": "Lehenbrief Philipps, Grafen zu Hanau, und Johanns, Grafen zu Nassau, Katzenelnbogen, Vianden und Dietz, als Vormundern der Kinder des verstorbenen Grafen Philipp von Hanau und Rieneck, ihres Vetters bzw. Bruders, für Dietrich von Rosenbach und seine Brüder über Gefälle auf der Kellerei Orb als Mannlehen. Es siegeln die Aussteller mit dem Vormundschaftssiegel.",
-      "english": "Fief charter issued by Philipp, Count of Hanau, and Johann, Count of Nassau, Katzenelnbogen, Vianden, and Dietz, as guardians of the children of the late Count Philipp of Hanau and Rieneck, their cousin and brother respectively, to Dietrich von Rosenbach and his brothers, granting revenues from the Orb cellar as male fiefs. The grantors seal with the guardianship seal."
+      "english": "Fief charter issued by Philipp, Count of Hanau, and Johann, Count of Nassau, Katzenelnbogen, Vianden, and Dietz, as guardians of the children of the late Count Philipp of Hanau and Rieneck, their cousin and brother respectively, to Dietrich von Rosenberg and his brothers, granting revenues from the Orb cellar as male fiefs. The grantors seal with the guardianship seal.",
+      "mention": [
+        {
+          "person": "Dietrich von Rosenberg"
+        },
+        {
+          "person": "Hans Katzenelnbogen",
+          "personTitle": [
+            "Graf von Nassau"
+          ]
+        },
+        {
+          "place": "rieneck"
+        }
+      ]
     }
   ]
 }

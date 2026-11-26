@@ -6,7 +6,18 @@
       "source": "RIplus Regg. Baden 3 n. 6957",
       "url": "https://www.regesta-imperii.de/id/c88c0a44-0169-42b4-8a65-bfa1de2e7600",
       "german": "Nachstehende fürsten sagen als helfer des markgr. Albrecht v. Brandenburg Nürnberg und Konrad herrn zu Heideck ab: markgr. Friedrich der alt und jung und markgr. Johanns v. Brandenburg, die hz. Wilhelm v. Sachsen, Wartißlas v. Pommern (B-), Barnim v. Stettin, Jerigk v. Stettin, Heinrich d. ä. v. Meckelburg, M. Jakob v. Baden, die bi. v. Bamberg und Mainz, die hz. Heinrich, Wilhelm und Friedrich v. Braunschweig, landgr. Wilhelm v. Hessen, hz. Ott v. Bayern, die M. Karl und Bernhard v. Baden, der bi. v. Eistet, der jung (gr. Ulrich) v. Württemberg.",
-      "english": "The following princes, as allies of Albrecht von Brandenburg, Markgraf, declare war on Nuremberg and Konrad von Heideck, Herr: Friedrich der Ältere and Friedrich der Jüngere, Markgrafen, and Johann von Brandenburg, Markgraf; Wilhelm von Sachsen, Herzog; Wartißlas von Pommern, Herzog; Barnim and Jerigk von Stettin, Herzöge; Heinrich von Mecklenburg der Ältere, Herzog; Jakob von Baden, Markgraf; the Bischöfe von Bamberg and Mainz; Heinrich, Wilhelm and Friedrich von Braunschweig, Herzöge; Wilhelm von Hessen, Landgraf; Ott von Bayern, Herzog; Karl and Bernhard von Baden, Markgrafen; the Bischof von Eichstätt; and Ulrich von Württemberg der Jüngere, Graf."
+      "english": "The following princes, as allies of Albrecht von Brandenburg, Markgraf, declare war on Nuremberg and Konrad von Heideck, Herr: Friedrich der Ältere and Friedrich der Jüngere, Markgrafen, and Johann von Brandenburg, Markgraf; Wilhelm von Sachsen, Herzog; Wartißlas von Pommern, Herzog; Barnim and Jerigk von Stettin, Herzöge; Heinrich von Mecklenburg der Ältere, Herzog; Jakob von Baden, Markgraf; the Bischöfe von Bamberg and Mainz; Heinrich, Wilhelm and Friedrich von Braunschweig, Herzöge; Wilhelm von Hessen, Landgraf; Ott von Bayern, Herzog; Karl and Bernhard von Baden, Markgrafen; the Bischof von Eichstätt; and Ulrich von Württemberg der Jüngere, Graf.",
+      "mention": [
+        {
+          "person": "Konrad von Heideck"
+        },
+        {
+          "place": "mainz"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
   ]
 }

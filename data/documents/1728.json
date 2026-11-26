@@ -9,7 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2FEBD1E7-5F79-407C-A9A5-8AE72E95FC46&parent_id="
       ],
       "german": "Karl Ignaz von Rosenbach, Kanoniker, Testamentsakten",
-      "english": "Testamentary proceedings of Karl Ignaz von Rosenbach, canon."
+      "english": "Testamentary proceedings of Karl Ignaz von Rosenbach, canon.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
     }
   ]
 }

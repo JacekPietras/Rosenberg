@@ -9,6 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7CDF1DA0-63A4-4A97-8FF4-5CD21BDA521A&parent_id="
       ],
       "german": "Crafft Hopell schwört bei seiner Entlassung aus dem Gefängnisse der Stadt Nürnberg Urfehde. - Siegler: Ritter Hanns von Rosemberg, Hans Motschidler.\n\nBesiegelung/Beglaubigung: mit 2 anh. Siegeln",
+      "english": "Crafft Hopell swears an oath of allegiance upon his release from the prison of the city of Nürnberg. Sealers: Ritter Hans von Rosenberg and Hans Motschidler.\n\nSealing/authentication: with two attached seals.",
+      "mention": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        }
+      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a579de18-e546-4f94-8bff-81ac0d36a058/1/full/max/0/default.jpg"
@@ -19,8 +31,7 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a579de18-e546-4f94-8bff-81ac0d36a058/3/full/max/0/default.jpg"
         }
-      ],
-      "english": "Crafft Hopell swears an oath of allegiance upon his release from the prison of the city of Nürnberg. Sealers: Ritter Hanns von Rosemberg and Hans Motschidler.\n\nSealing/authentication: with two attached seals."
+      ]
     }
   ]
 }
