@@ -29,6 +29,12 @@ def parse_catalogue_date(value: str) -> str:
     """Extract one date or a century range without inventing missing digits."""
     original = value
     value = html.unescape(value).strip()
+    # Catalogues sometimes bracket supplied digits within an otherwise complete
+    # year, e.g. "[15]43". Preserve all four digits when parsing the date.
+    value = re.sub(r'(?<![\d\[])((?:\d|\[\d+\]){1,4})(?![\d\]])',
+                   lambda match: (match[0].replace('[', '').replace(']', '')
+                                  if len(match[0].replace('[', '').replace(']', '')) == 4
+                                  else match[0]), value)
     century = century_range(value)
     if century:
         return century

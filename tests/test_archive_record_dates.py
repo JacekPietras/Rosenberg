@@ -15,6 +15,8 @@ class CatalogueDateTests(unittest.TestCase):
     def test_common_dates(self):
         examples = {'[158...]': '158X', '[15..]': '15XX', '25. Apr. 1385': '1385-04-25',
                     '1316 Juni 29': '1316-06-29', '31.08.1444': '1444-08-31',
+                    '[15]43 Februar 15': '1543-02-15', '15[43] Februar': '1543-02',
+                    '[1543]': '1543',
                     'frühes 17. Jh.': '1601-1700', '(16. Jh.)': '1501-1600'}
         for value, expected in examples.items():
             with self.subTest(value=value):

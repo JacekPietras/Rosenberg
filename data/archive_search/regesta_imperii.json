@@ -136,6 +136,7 @@
     "de Rossberg": false,
     "de Rossenberg": false,
     "de Rusenberg": false,
+    "de Uissigheim": false,
     "v Rosemberch": false,
     "v Rosemberg": true,
     "v Rosenbach": true,
@@ -158,6 +159,8 @@
     "v Rossberg": true,
     "v Rossenberg": true,
     "v Rusenberg": false,
+    "v Uissigheim": true,
+    "v Ussigheim": true,
     "von Rosemberch": false,
     "von Rosemberg": true,
     "von Rosenbach": true,
@@ -179,6 +182,8 @@
     "von Rosperg": false,
     "von Rossberg": true,
     "von Rossenberg": true,
-    "von Rusenberg": false
+    "von Rusenberg": false,
+    "von Uissigheim": true,
+    "von Ussigheim": false
   }
 }
