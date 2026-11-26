@@ -9,6 +9,21 @@
       "english": "A: Konrad von Rosenberg, Vizedom zu Amberg\nE: Abbot Friedrich of Ensdorf Monastery\n\nCourt record in the lawsuit of Ensdorf Monastery against Friedrich and Hartnid die Theuerner zu Theuern concerning two timber plots near Theuern, called Sunnleiten and Mad.\n\nSealing/authentication: Amberg regional court (missing).",
       "mention": [
         {
+          "place": "amberg"
+        },
+        {
+          "place": "ensdorf-oberpfalz"
+        },
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Abt zu Ensdorf"
+          ]
+        },
+        {
+          "place": "theuern-oberpfalz"
+        },
+        {
           "person": "vitztum_zu_Heidelberg",
           "personTitle": [
             "Vizedom zu Amberg"

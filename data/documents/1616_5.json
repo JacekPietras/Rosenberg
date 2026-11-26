@@ -4,8 +4,11 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Geheime Registratur 1693",
-      "url": "https://www.gda.bayern.de/gvl/document/d369343e-400a-44ac-afdd-c64fcbcb58df",
-      "german": "Verwaltung des heimgefallenen Hammerguts Rosenberg\nEnthält u.a.: Darlehen Ottheinrichs von Pfalz-Sulzbach-Hilpoltstein von 500 Gulden bei der Kirche zu Rosenberg, Verpachtung an Hans Heinrich von Kaisersberg, Belehnung des Kammerdirektors Dr.Franz Gise, Reparaturen\n\nEnthält-/Darin-Vermerke: Darin: Gutsanschlag",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/d369343e-400a-44ac-afdd-c64fcbcb58df",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9CD7EF2B-6E6C-4A5B-B822-301AA7367401&parent_id="
+      ],
+      "german": "Verwaltung des heimgefallenen Hammerguts Rosenberg\n\nEnthält u.a.: Darlehen Ottheinrichs von Pfalz-Sulzbach-Hilpoltstein von 500 Gulden bei der Kirche zu Rosenberg, Verpachtung an Hans Heinrich von Kaisersberg, Belehnung des Kammerdirektors Dr.Franz Gise, Reparaturen\n\nEnthält-/Darin-Vermerke: Darin: Gutsanschlag",
       "english": "Administration of the reverted Hammergut estate at Rosenberg.\nIncludes, among other things: a loan of 500 gulden by Ottheinrich of Palatinate-Sulzbach-Hilpoltstein to the church at Rosenberg; lease of the estate to Hans Heinrich von Kaisersberg; enfeoffment of the chamber director Dr. Franz Gise; repairs.\n\nContents note: Includes an estate valuation.",
       "mention": [
         {

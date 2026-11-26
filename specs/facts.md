@@ -31,10 +31,11 @@ designation and report the uncertainty instead of asserting an identification.
 
 ## Extraction
 
-Read the complete entry first. Extract only what the source states explicitly
-or unambiguously; never infer, interpret, or extrapolate. Each fact is one
-concise, atomic assertion in English, keeping historically meaningful German or
-Latin names, titles, places, and epithets.
+Read the complete entry first. Extract what the source states explicitly or
+expresses unambiguously, including relationships directly conveyed by its
+wording; do not speculate, interpret, or extrapolate. Each fact is one concise,
+atomic assertion in English, keeping historically meaningful German or Latin
+names, titles, places, and epithets.
 
 | Source states | Fact |
 | --- | --- |
@@ -48,6 +49,15 @@ Latin names, titles, places, and epithets.
 | A family, place, institution, object, or unidentified figure | `generic` with `subject` |
 
 - Store a relationship once; never add its reverse or a symmetric copy.
+- Record every relationship the document explicitly or unambiguously conveys
+  among relevant family members and their kin, including each spouse and each
+  sibling pair. Do not stop after recording only parent-child relationships.
+  For example, if Konrad Rosenberg's brother had sons Hans and Eberhard, record
+  Konrad and his brother as siblings, the brother as parent of each son, Hans
+  and Eberhard as siblings, and Konrad's relationship to each nephew. If the
+  source does not supply a kinship term for a relationship, express it in a
+  `generic` fact rather than inventing a source term for `kin`. Preserve any
+  uncertainty in the wording.
 - Never use grouped forms such as "Sons: A and B".
 - Do not infer relationships from proximity, transactions, witness status, or
   shared names, parents from siblings, a second parent from a spouse, full
@@ -124,6 +134,11 @@ the date of the discussion: keep the recorded date and deceased status, and keep
 it a `generic` guess, never a `parent` fact.
 
 ## Relevance
+
+Focus extraction on von Rosenberg, von Uissigheim, von Erligheim, and their
+kin. Capture all source-supported relationships involving these families and
+their kin; facts solely about unrelated people are less important and should
+be kept only when they meet the relevance rules below.
 
 Keep a fact when it mentions a member of von Rosenberg, von Uissigheim, or von
 Erligheim; documents a direct interaction with them (relative, witness, surety,

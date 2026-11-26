@@ -13,6 +13,14 @@
       ],
       "german": "A: Konrad von Rosenberg, Viztum zu Amberg. E: Abt Friedrich von Kloster Ensdorf. Gerichtsbrief in der Klage des Klosters Ensdorf gegen Friedrich und Hartnid die Theuerner zu Theuern wegen 2 Holzstätten bei Theuern, genannt die Sunnleiten und die Mad.",
       "english": "Konrad von Rosenberg, Vizedom zu Amberg, issued a court record in Ensdorf Monastery's lawsuit against Friedrich and Hartnid die Theuerner of Theuern concerning two woodlots near Theuern, called the Sunnleiten and the Mad.",
+      "mention": [
+        {
+          "place": "ensdorf-oberpfalz"
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -37,6 +45,17 @@
       "url": "https://books.google.pl/books?id=G9czAAAAMAAJ",
       "german": "Ich Conrad von Rosenberger Vitztum ze Amberg bechenn of-\nfenbar mit dem brief. daz Abbt Fridreich von Enstorf vor mir\nvf der Lantschran ze Amberg. hat an behabt. fridreich vnd\nHertneyd den Tewnern von Tewrn mit volg. mit vrag mit\nvrtail. vnd mit dem rehten. als reht ist di zwo Holtzstet genant\ndi Sunleyteh vnd di Mad bey Tewrn gelegen. also daz di\nselben Tewrn di vorgenant Holtzstet Hayen sullen. vnd wenn\nman daz holtz verchawft, So sullen si dar vmb den dritten pfe-\nning nemen von dem gelt vnd di zwen Pfening antwurten dem\nAbbt. vnd dem Gotzhaws ze Enstorf. vnd sol auch der Abbt\nvnd sein Gotzhaws der vorgenant Holtzstet, bey nutz vnd ge-\nwer sitzen als vorgeschriben stet. vnd von nutz vnd gewir ant-\nwurten. wer dar vf iht ze sprechen hat. als reht ist. vnd dar\nzu sol ich in oder wer meins Herren obersten Ambtman ist\nschützen vnd schermen als der Lantschran reht ist. dez ward\nim von gerihtz wegen ain brief ertailt mit dez Lantgerichtz In-\nsigel daz dar an hangt. Der geben ist an Montag nach sand\nGallen tag do man zalt von Christes geburt. drewtzehn hun-\ndert Jar. vnd dar nach in dem Sibentzigsten Jar.",
       "english": "I, Konrad von Rosenberg[er?], Vitztum at Amberg, declare publicly with this letter that Abbot Friedrich of Ensdorf has proved before me at the Landschranne at Amberg, against Friedrich and Hertneyd the Tewner of Tewrn, with pursuit, with inquiry, with judgment and with the law, as is right, the two wood-sites called the Sunleyteh and the Mad, situated near Tewrn; so that the same Tewrn shall fence in the aforesaid wood-sites, and when the wood is sold, they shall take the third pfennig of the money for it and hand over the two pfennigs to the abbot and the monastery at Ensdorf. The abbot and his monastery shall hold the aforesaid wood-sites in use and possession as stated above, and shall answer for use and possession to whoever has any claim on them, as is right. And in addition I, or whoever is my lord's highest official, shall protect and defend them, as is right at the Landschranne. For this a letter was issued to him by the court, with the seal of the Landgericht, which hangs on it. Given on the Monday after St. Gall's day, when one counted from Christ's birth thirteen hundred years and after that in the seventieth year.",
+      "mention": [
+        {
+          "place": "amberg"
+        },
+        {
+          "place": "ensdorf-oberpfalz"
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -77,6 +96,33 @@
           ],
           "type": "generic",
           "content": "was the opponent of the Abbot of Ensdorf at the Landschranne at Amberg and has to fence the two wood-sites."
+        }
+      ]
+    },
+    {
+      "source": "Regesta Boica 9, 21 Oct. 1370; Monumenta Boica 24, p. 125",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
+      "german": "Conrad von Rosenberg Vitztum zu Amberg verspricht dem Abt Friedrich von Enstorf seinen Schutz, welcher dem Friedrich und Hertneyd Tewrner von Tewrn die zwey Holzstet bey Tewrn genannt die Sunnleiten und die Mad zu hayen gestattet hat, jedoch mit der Bedingung dass sie von dem zu verkaufenden Holz den dritten Pfenning nehmen, und zwey Pfenninge dem Kloster ausantworten. G. am Montag nach sand Gallen Tag. M. B. XXIV, 125",
+      "english": "Konrad von Rosenberg, Vizedom zu Amberg, promises his protection to Abbot Friedrich of Ensdorf. Friedrich had allowed Friedrich and Hertneyd Tewrner von Theuern to fence the two woodlots near Theuern called the Sunnleiten and the Mad, on condition that they take one third of the proceeds from the wood sold and hand two thirds to the monastery. Given on the Monday after St. Gall’s day. Monumenta Boica 24, p. 125.",
+      "mention": [
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Abt zu Ensdorf"
+          ]
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
+      "facts": [
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "promised to protect Abbot Friedrich of Ensdorf concerning the Sunnleiten and the Mad woodlots near Theuern."
         }
       ]
     }

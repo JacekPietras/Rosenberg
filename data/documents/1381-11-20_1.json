@@ -10,6 +10,14 @@
       ],
       "german": "A1: Ulrich Wolntzhofer, Bürger zu Amberg\nA2: Philipp Reich, Bürger zu Amberg   \nE: Hans der Kastner d. Ä., Bürger zu Amberg\nVerkauf des Fischwassers zu Theuern an der Vils als freies Eigen.\n\nBesiegelung/Beglaubigung: S1: A1, S2: A2, S3: Konrad von Rosenberg, Viztum zu Amberg",
       "english": "A1: Ulrich Wolntzhofer, citizen of Amberg\nA2: Philipp Reich, citizen of Amberg\nE: Hans the Kastner Sr., citizen of Amberg\nSale of the fishing rights at Theuern on the Vils as free property (freies Eigen).\n\nSealing/Certification: S1: A1, S2: A2, S3: Konrad von Rosenberg, Viztum of Amberg",
+      "mention": [
+        {
+          "place": "amberg"
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",

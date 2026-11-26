@@ -9,6 +9,9 @@
       "english": "Debt claim by the innkeeper Sigmund Pleyer of Amberg and the widow Katharina König of Gärbershof against Johann Heinrich von Kaisersberg of Rosenberg, for 200 florins each, which they had lent to Johann Ölmann, manager of the hammer mill at Rosenberg",
       "mention": [
         {
+          "place": "amberg"
+        },
+        {
           "place": "rosenberg-town"
         }
       ]

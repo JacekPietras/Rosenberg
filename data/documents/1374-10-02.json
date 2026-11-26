@@ -15,6 +15,9 @@
       "english": "Konrad von Rosenberg, Vizedom von Amberg, issued a receipt concerning a 2,500-florin loan to the Burgraves of Nuremberg.",
       "mention": [
         {
+          "place": "amberg"
+        },
+        {
           "place": "nuremberg"
         }
       ],
@@ -26,6 +29,27 @@
           ],
           "type": "generic",
           "content": "acknowledged a loan to the Burggrafen of Nürnberg."
+        }
+      ]
+    },
+    {
+      "source": "Regesta Boica 9, p. 319",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
+      "german": "Conrad von Rosenberg Vitztum zu Amberg bekennt dass ihm die Bürger zu Nürnberg für den Burggrafen daselbst 2500 Gulden bezahlt haben. G. am Montag vor Francissen Tag. (c. S.)",
+      "english": "Konrad von Rosenberg, Vizedom zu Amberg, acknowledges that the citizens of Nürnberg have paid him 2,500 guilders on behalf of the burgrave there. Given on the Monday before St. Francis’s day. (With seal.)",
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ],
+          "type": "generic",
+          "content": "acknowledged receiving payment from the citizens of Nürnberg on behalf of the Burggraf zu Nürnberg."
         }
       ]
     }

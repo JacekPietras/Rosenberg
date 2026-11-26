@@ -9,6 +9,9 @@
       "english": "Claim by the town of Amberg against Hans Heinrich von Kaisersberg concerning an ore debt of 219 florins that had originated with the Doles at Rosenberg.",
       "mention": [
         {
+          "place": "amberg"
+        },
+        {
           "place": "rosenberg-town"
         }
       ]

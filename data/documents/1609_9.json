@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "BayHStA, Pfalz-Neuburg Akten 820/2",
-      "url": "https://www.gda.bayern.de/gvl/document/149f5402-251c-41c3-8a16-110ba2a55546",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/149f5402-251c-41c3-8a16-110ba2a55546",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C8722222-620A-4EF4-AE2A-ECB21955FF37&parent_id="
+      ],
       "german": "Sicherung der Bibliothek des Peter Vok von Rosenberg",
       "english": "Safeguarding the library of Peter Wok von Rosenberg.",
       "mention": [

@@ -2463,5 +2463,45 @@
     "lon": 13.463889,
     "category": "city",
     "description": "Hals received town rights in 1376. https://de.wikipedia.org/wiki/Hals_%28Passau%29"
+  },
+  {
+    "id": "theuern-oberpfalz",
+    "variations": [
+      "Theuern",
+      "Tewrn",
+      "Tewern"
+    ],
+    "showOnMap": false,
+    "description": "The historical place-name index identifies 1370 Tewrn as Theuern near Amberg. https://geschichte-bayerns.de/ortsnamen/artikel/Oberpfalz/Landkreis%20Amberg-Sulzbach/Theuern/kxj0m Coordinates: https://de.wikipedia.org/wiki/Theuern_%28K%C3%BCmmersbruck%29"
+  },
+  {
+    "id": "ensdorf-oberpfalz",
+    "variations": [
+      "Ensdorf",
+      "Enstorf"
+    ],
+    "showOnMap": false,
+    "description": "The monastery is at Ensdorf in the Upper Palatinate. https://hdbg.eu/kloster/index.php/detail?id=KS0096 Coordinates: https://www.statistik.bayern.de/mam/produkte/statistik_kommunal/2022/09371120.pdf"
+  },
+  {
+    "id": "amberg",
+    "variations": [
+      "Amberg"
+    ],
+    "lat": 49.4414,
+    "lon": 11.8622,
+    "category": "city",
+    "description": "The earliest surviving codification of Amberg city law dates to 1294. https://amberg.de/kultourismus/heimat-geschichte/zeittafel-wappen Coordinates: https://hdbg.eu/gemeinden/index.php/detail?rschl=09361000"
+  },
+  {
+    "id": "burg-liebeneck-greding",
+    "variations": [
+      "Liebeneck",
+      "Burg Liebeneck"
+    ],
+    "lat": 49.023949,
+    "lon": 11.365978,
+    "category": "castle",
+    "description": "A castle of the Absberg family near Mettendorf, transferred as a fief to Ruprecht I in 1377. https://www.historisches-lexikon-bayerns.de/Lexikon/Absberg%2C_Adelsfamilie Coordinates: https://de.wikipedia.org/wiki/Burg_Liebeneck"
   }
 ]

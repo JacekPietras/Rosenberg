@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StABa, Hochstift Bamberg, Lehenhof 3972",
-      "url": "https://www.gda.bayern.de/gvl/document/58df00f2-d44a-48ea-86ef-f294b2126da8",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/58df00f2-d44a-48ea-86ef-f294b2126da8",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++245761FE-57FC-40D5-9449-B2B0944862A4&parent_id="
+      ],
       "german": "Gesuch des Georg Sigmund von Rosenberg um Belehnung seines Vetters Reinhard Gottfried von Wirsberg mit den walzenden und umgehenden Lehen des Geschlechts nach dem Tod des Wolf Joseph von Wirsberg; auch lehenherrliche Aufforderung an Hans Adam von Wirsberg",
       "english": "Petition by Georg Siegmund von Rosenberg for the enfeoffment of his cousin Reinhard Gotfried von Wirsberg with the family’s rotating and reversionary fiefs after the death of Wolf Joseph von Wirsberg; also, a request by the lord of the fief to Hans Adam von Wirsberg.",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 1151",
-      "url": "https://www.gda.bayern.de/gvl/document/dc018314-cef7-4d30-9ab0-b9b92f3b7e16",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/dc018314-cef7-4d30-9ab0-b9b92f3b7e16",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++AFDE4B57-0FC7-46D7-AFC3-DF734AFCB41D&parent_id="
+      ],
       "german": "Forderung des Hans Wilhelm Österreicher zu Nürnberg gegen die Doles'schen Erben, insbesondere Hans Heinrich von Kaisersberg, nach Auszahlung eines Teils der Ansprüche der Susanna Löneiß zu Grub, geborene Doles, auf die Doles'schen Güter",
       "english": "Claim by Hans Wilhelm Österreicher of Nuremberg against the Doles heirs, especially Hans Heinrich von Kaisersberg, for payment of part of Susanna Löneiß of Grub's claims against the Doles estates; she was born Doles.",
       "mention": [

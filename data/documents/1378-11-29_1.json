@@ -11,6 +11,14 @@
       ],
       "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Abt des Klosters Ensdorf Gerichtsbrief mit der Erlaubnis, auf dem Rosenhof zu Theuern wegen des dem Kloster zustehenden jährlichen Zinses zu pfänden.\n\nBesiegelung/Beglaubigung: Landgericht Amberg (fehlt)",
       "english": "A: Konrad von Rosenberg, Vizedom zu Amberg E: Abbot of Ensdorf Monastery Court letter granting permission to seize the Rosenhof in Theuern for the annual interest due to the monastery.",
+      "mention": [
+        {
+          "place": "ensdorf-oberpfalz"
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",

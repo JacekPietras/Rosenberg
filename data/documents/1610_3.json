@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Mainzer Regierungsarchiv Löwenstein 419/248",
-      "url": "https://www.gda.bayern.de/gvl/document/95d84378-aeb8-4339-a84f-47fcac6dc3fb",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/95d84378-aeb8-4339-a84f-47fcac6dc3fb",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D9E1AD70-F09E-42DA-BD44-8832832FF6A5&parent_id="
+      ],
       "german": "Bitte der Herrn von Rosenberg, von Stetten und von Eger um Verschonung ihrer Vogteiuntertanen im Schüpfergrund mit Wein- und Bieraufschlaggeld, Kaufgeld, Einquartierung",
       "english": "Petition by the Lords von Rosenberg, von Stetten, and von Eger requesting that their subjects in the Schüpfer Grund be exempted from the wine and beer excise, purchase tax, and billeting.",
       "mention": [

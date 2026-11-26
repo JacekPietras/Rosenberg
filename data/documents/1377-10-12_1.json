@@ -11,6 +11,14 @@
       ],
       "german": "A: Konrad von Rosenberg, Viztum zu Amberg E: Herr Ulrich der Perkhauser, Siechenmeister zu Ensdorf Gerichtsbrief mit der Bestätigung, daß dem Kloster die Zinsen aus dem Rosenhof zu Theuern zustehen sollen.\n\nBesiegelung/Beglaubigung: Landgericht Amberg (l. beschädigt)",
       "english": "A: Konrad von Rosenberg, Vizedom zu Amberg E: Herr Ulrich der Perkhauser, Master of the Infirmary of Ensdorf Court letter confirming that the monastery is entitled to the interest from the Rosenhof in Theuern.",
+      "mention": [
+        {
+          "place": "ensdorf-oberpfalz"
+        },
+        {
+          "place": "theuern-oberpfalz"
+        }
+      ],
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",

@@ -55,6 +55,39 @@
           "content": "sold her inherited share in the lordship of Hals to Ulrich and Johann, Landgrafen von Leuchtenberg."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 9, 28 Apr. 1376",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
+      "german": "Frau Elspeth von Rosenberg verkauft ihren von ihrem seel. Bruder Graf Leupolt von Hals ererbten Antheil an der Grafschaft Hals an Ulrich und Hanns die Landgrafen von Leuchtenberg. G. dez nachesten Maentags nach sand Jörgentag. (c. 3 S.)",
+      "english": "Frau Elisabeth von Rosenberg sells her share of the county of Hals, inherited from her late brother Leupolt von Hals, Graf, to Ulrich and Hans, Landgrafen von Leuchtenberg. Given on the next Monday after St. George’s day. (With three seals.)",
+      "mention": [
+        {
+          "place": "hals-passau"
+        },
+        {
+          "person": "Hans",
+          "personTitle": [
+            "Landgraf von Leuchtenberg"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "person": "Leupolt von Hals",
+          "personTitle": [
+            "Graf von Hals"
+          ],
+          "personDeceased": true,
+          "type": "sibling",
+          "of": "Elisabeth von Rosenberg"
+        },
+        {
+          "person": "Elisabeth von Rosenberg",
+          "type": "generic",
+          "content": "sold her share of the county of Hals, inherited from her deceased brother Leupolt von Hals, to Ulrich and Hans, Landgrafen von Leuchtenberg."
+        }
+      ]
     }
   ]
 }
