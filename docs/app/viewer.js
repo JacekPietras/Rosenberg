@@ -1231,7 +1231,7 @@ function documentStatistics(unrelated) {
     else counts.other++;
   }
   const number = (value) => value.toLocaleString();
-  const node = (x, y, label, value) => `<g class="people-tree-node" transform="translate(${x} ${y})"><rect width="200" height="70" rx="6"/><text class="people-tree-name" x="100" y="27" text-anchor="middle">${label}</text><text class="people-tree-detail" x="100" y="50" text-anchor="middle">${number(value)}</text></g>`;
+  const node = (x, y, label, value) => `<g class="people-tree-node" transform="translate(${x} ${y})"><rect width="200" height="70" rx="6"/><text class="people-tree-name" x="100" y="25" text-anchor="middle">${label}</text><text class="people-tree-detail" x="100" y="52" text-anchor="middle">${number(value)}</text></g>`;
   return `<section class="statistics-page"><div class="people-tree"><svg viewBox="0 0 900 540" width="900" height="540" role="img" aria-label="Document classification tree"><path class="people-tree-parent" d="M425 90 V120 H200 V150 M425 120 H525 V150 M525 220 V250 H275 V290 M525 250 H525 V290 M525 250 H775 V290 M525 360 V390 H275 V430 M525 390 V430 M525 390 H775 V430"/>${node(325, 20, 'Total', counts.total)}${node(100, 150, 'Unrelated', counts.unrelated)}${node(425, 150, 'von Rosenberg', counts.total - counts.unrelated)}${node(175, 290, 'Non-Franconian', counts.other)}${node(425, 290, 'Franconian', counts.franconian)}${node(675, 290, 'New, to review', counts.review)}${node(175, 430, 'Transcribed', counts.transcribed)}${node(425, 430, 'to transcribe', counts.withImage)}${node(675, 430, 'no image', counts.withoutImage)}</svg></div></section>`;
 }
 

@@ -549,3 +549,5 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 
 .statistics-page { padding: 1rem; }
 .statistics-page .people-tree { overflow: auto; }
+.statistics-page .people-tree-node .people-tree-name { font-size: 13px; }
+.statistics-page .people-tree-node .people-tree-detail { font-size: 18px; font-weight: 700; }
