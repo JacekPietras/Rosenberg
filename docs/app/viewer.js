@@ -2,7 +2,7 @@ import { buildRelationshipGraph, resolvePerson, remapSourcePerson } from './data
 import { escapeHtml, urlMarkup } from './rendering/html.js';
 import { imageLabels } from './image-labels.js';
 import { formatDate, dateSortValue } from './rendering/dates.js';
-import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=124';
+import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=125';
 import { renderActiveScreen } from './screens/router-view.js?v=27';
 import { documentAtMarker } from './components/document-navigation.js';
 import { createDocumentRenderer } from './screens/documents.js?v=42';
@@ -1230,9 +1230,18 @@ function documentStatistics(unrelated) {
     }
     else counts.other++;
   }
+  const images = (state.documents.get('data/images/images.json')?.entries || []).filter((entry) => !entry.deleted);
+  const armorial = images.filter((entry) => imageLabels(entry).includes('armorial')).length;
+  const effigy = images.filter((entry) => !imageLabels(entry).includes('armorial') && imageLabels(entry).includes('effigy')).length;
+  const books = state.manifest.books.length;
+  const seals = recordSealEntries().filter(({ sourcePath }) => {
+    const labels = recordLabelForPath(sourcePath);
+    return !state.documents.get(sourcePath)?.deleted && !labels.includes('to review') && !labels.includes('new')
+      && (labels.includes('franken') || !labels.length || labels.every((label) => label === 'important'));
+  }).length;
   const number = (value) => value.toLocaleString();
   const node = (x, y, label, value) => `<g class="people-tree-node" transform="translate(${x} ${y})"><rect width="200" height="70" rx="6"/><text class="people-tree-name" x="100" y="25" text-anchor="middle">${label}</text><text class="people-tree-detail" x="100" y="52" text-anchor="middle">${number(value)}</text></g>`;
-  return `<section class="statistics-page"><div class="people-tree"><svg viewBox="0 0 900 540" width="900" height="540" role="img" aria-label="Document classification tree"><path class="people-tree-parent" d="M425 90 V120 H200 V150 M425 120 H525 V150 M525 220 V250 H275 V290 M525 250 H525 V290 M525 250 H775 V290 M525 360 V390 H275 V430 M525 390 V430 M525 390 H775 V430"/>${node(325, 20, 'Total', counts.total)}${node(100, 150, 'Unrelated', counts.unrelated)}${node(425, 150, 'von Rosenberg', counts.total - counts.unrelated)}${node(175, 290, 'Non-Franconian', counts.other)}${node(425, 290, 'Franconian', counts.franconian)}${node(675, 290, 'New, to review', counts.review)}${node(175, 430, 'Transcribed', counts.transcribed)}${node(425, 430, 'to transcribe', counts.withImage)}${node(675, 430, 'no image', counts.withoutImage)}</svg></div></section>`;
+  return `<section class="statistics-page people-tree-wrap"><div class="people-tree"><svg viewBox="0 0 1700 680" width="1700" height="680" role="img" aria-label="Data statistics tree"><path class="people-tree-parent" d="M750 90 V120 H525 V150 M750 120 H1050 V150 M750 120 H1300 V150 M525 220 V250 H250 V290 M525 250 H650 V290 M650 360 V390 H350 V430 M650 390 H650 V430 M650 390 H950 V430 M650 500 V530 H200 V570 M650 530 H450 V570 M650 530 H700 V570 M650 530 H950 V570 M1300 220 V250 H1050 V290 M1300 250 H1300 V290 M1300 250 H1550 V290"/>${node(650, 20, 'Data', counts.total + books + images.length)}${node(425, 150, 'Documents', counts.total)}${node(950, 150, 'Books', books)}${node(1200, 150, 'Images', images.length)}${node(950, 290, 'Armorial', armorial)}${node(1200, 290, 'Effigy', effigy)}${node(1450, 290, 'Other', images.length - armorial - effigy)}${node(150, 290, 'Unrelated', counts.unrelated)}${node(550, 290, 'von Rosenberg', counts.total - counts.unrelated)}${node(250, 430, 'Non-Franconian', counts.other)}${node(550, 430, 'Franconian', counts.franconian)}${node(850, 430, 'New, to review', counts.review)}${node(100, 570, 'Transcribed', counts.transcribed)}${node(350, 570, 'to transcribe', counts.withImage)}${node(600, 570, 'no image', counts.withoutImage)}${node(850, 570, 'Seals', seals)}</svg></div></section>`;
 }
 
 document.addEventListener('click', async (event) => {
@@ -1241,7 +1250,7 @@ document.addEventListener('click', async (event) => {
     state.yearHighlightCleanup?.();
     const content = document.querySelector('#content');
     content.textContent = 'Loading statistics…';
-    try { content.innerHTML = documentStatistics(await repository.getDeletedDocumentCount()); }
+    try { content.innerHTML = documentStatistics(await repository.getDeletedDocumentCount()); setupPeopleTreeZoom(content); }
     catch (error) { content.textContent = `Could not load statistics: ${error.message}`; }
     window.scrollTo(0, 0);
   }

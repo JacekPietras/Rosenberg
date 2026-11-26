@@ -224,7 +224,7 @@ export function setupPeopleTreeZoom(root = document) {
   const hideFacts = () => {
     activeNode?.removeAttribute('aria-describedby');
     activeNode = null;
-    panel.hidden = true;
+    if (panel) panel.hidden = true;
     highlightPerson(null);
   };
   const showFacts = (node) => {
