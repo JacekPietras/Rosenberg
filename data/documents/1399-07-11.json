@@ -2,6 +2,7 @@
   "date": "1399-07-11",
   "place": "Kitzingen",
   "label": "Franken",
+  "transcribed": true,
   "entries": [
     {
       "source": [
@@ -33,8 +34,18 @@
       "source": "Monumenta Zollerana. 8",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11480661",
       "german": "Burggraf Friedrich genehmigt die Versicherung\nder Heimstener der Margarethe von Rosenberg auf die Vogtei zu Ostheim.\n11. Juli 1399.\nWir Fridrich von gotes gnaden burcgrafe zu Nuremberg bekennen\noffenlichen mit disem brife, daz wir von besunder gnaden vnd durch\nfleissiger bete willen vnsers liben getrewen Michels von Saunsheim bekant\nhaben vnd bekennen auch in crafte dicz brifes Margareten von Rosenberg,\nseiner elichen hausfrawen, fur ir heimstewer sechs hundert guldem reinisch,\ngut an golde vnd gerecht an gewichte, auf der vogtey zu Ostheim bey\nFolckach gelegen mit allen zugehorungen, eren, nuczen vnd rechten, nichtcz\nausgenummen, dy von vns vnd vnser herschaft zu lehen geet vnd rured,\nalso daz sy dieselben vogtey vnd guter mit iren zugehorungen nach des\negenanten Michels tode ir lebtage jnnenhaben, nuczen, niszen, beseczen vnd\nentseczen sol vnd mage nach irem pesten, an vnser vnd menicliches\nbeswerunge vnd hindernusze, an geuerde, doch vns vnd vnser herschaft an\nvnsern lehenscheften vnschedlichen vnd yder manne an seinem rechten\nvnengolten. Wenn auch dy vorgenant Margaret von todez wegen abgegangen\nvnd gestorben ist, so sol dy vorgenant vogtey mit iren zugehorungen, alz\nvorgeschriben stet, auf des vorgenanten Michels menliche leibes erben\ngefallen, alles an geuerde. Des zu vrkunde geben wir der egenanten frawen\ndisen brife mit vnserm anhangendem jnsigel versigelten, der geben ist zu\nKyczing am freytag vor sand Margareten tag nach Cristi vnsers herrn gepurt\ndreyzehenhundert jar vnd dornach in den neun vnd neunczigisten jar.",
-      "english": "Burggraf Friedrich approves the securing of Margaretha von Rosenberg’s marriage portion on the Vogtei of Ostheim. 11 July 1399.\n\nWe, Friedrich, by God’s grace Burggraf zu Nürnberg, publicly acknowledge that, as a special favor and at the earnest request of our dear faithful Michael von Seinsheim, we have assigned and by this letter assign to his lawful wife Margaretha von Rosenberg, for her marriage portion of 600 Rhenish gulden of good gold and full weight, the Vogtei at Ostheim near Volkach, with all its appurtenances, honors, benefits and rights, without exception, which is held as a fief from us and our lordship.\n\nAfter Michael’s death she may hold, use and enjoy the Vogtei and its properties and appoint and remove occupants for her lifetime as she sees fit, without obstruction from us or anyone else. Our and our lordship’s feudal rights and everyone else’s rights remain unaffected. Upon Margaretha’s death the Vogtei and its appurtenances shall pass to Michael’s male heirs of his body.\n\nIn witness we give her this letter sealed with our hanging seal. Given at Kitzingen on the Friday before St Margaret’s day in 1399."
+      "english": "Burggraf Friedrich approves the securing of Margaretha von Rosenberg’s marriage portion on the Vogtei of Ostheim. 11 July 1399.\n\nWe, Friedrich, by God’s grace Burggraf zu Nürnberg, publicly acknowledge that, as a special favor and at the earnest request of our dear faithful Michael von Seinsheim, we have assigned and by this letter assign to his lawful wife Margaretha von Rosenberg, for her marriage portion of 600 Rhenish gulden of good gold and full weight, the Vogtei at Ostheim near Volkach, with all its appurtenances, honors, benefits and rights, without exception, which is held as a fief from us and our lordship.\n\nAfter Michael’s death she may hold, use and enjoy the Vogtei and its properties and appoint and remove occupants for her lifetime as she sees fit, without obstruction from us or anyone else. Our and our lordship’s feudal rights and everyone else’s rights remain unaffected. Upon Margaretha’s death the Vogtei and its appurtenances shall pass to Michael’s male heirs of his body.\n\nIn witness we give her this letter sealed with our hanging seal. Given at Kitzingen on the Friday before St Margaret’s day in 1399.",
+      "mention": [
+        {
+          "person": "Margaretha von Rosenberg"
+        },
+        {
+          "person": "Michael von Seinsheim"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
     }
-  ],
-  "transcribed": true
+  ]
 }

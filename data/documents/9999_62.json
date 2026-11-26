@@ -3,25 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Würzburger Risse und Pläne I 285",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 193 - 197",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/ff95665c-0906-4a59-b91a-003efa340739",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9D891C20-BB94-4E84-9E52-D695AC78B1F6&parent_id="
+        "https://www.gda.bayern.de/gvl/document/3f017591-2ef0-4f43-a5b1-8170487ff280",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9cc80d39-a468-4dd1-aa5b-616ea0e54f6e&parent_id="
       ],
-      "german": "Farbiger Plan, angelegt über einen Streit zwischen Zeisolf von Rosenberg zu Haltenbergstetten u. Veit von Lichtenstein zum Geyersberg wegen der Steinsetzung zwischen den Markungen Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: Enthält: Ansicht der Orte Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim",
-      "english": "Colored plan drawn up concerning a dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over the placement of boundary stones between the districts of Gnötzheim and Ippesheim.\n\nContains/includes: views of the localities Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim.",
+      "german": "Fragstücke eines Zeugenverhörs im Streit mit Zeisolf von Rosenberg. (Reinschrift).",
+      "english": "Question list for a witness examination in the dispute with Zaisolph von Rosenberg (fair copy).",
       "mention": [
         {
-          "place": "gnoetzheim"
-        },
-        {
-          "person": "Veit von Lichtenstein"
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
+          "person": "Zaisolph von Rosenberg"
         }
       ]
     }

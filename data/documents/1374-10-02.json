@@ -1,6 +1,7 @@
 {
   "date": "1374-10-02",
   "label": "Franken",
+  "transcribed": true,
   "entries": [
     {
       "source": [
@@ -57,8 +58,18 @@
       "source": "Monumenta Zollerana. 4",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11697872",
       "german": "Conrad von Rosenberg bekennt, von der Stadt Nürnberg 2500 Gulden\nfür den Burggrafen erhalten zu haben.\n2. October 1374.\nIch Conrad von Rosenberg, Vitztum zu Amberg, Bekenne offenlichen\nmit disem brief allen den, die In sehend, horend odir lesen, daz mir die erbern\nweisen manne, die Burger dez Rats der Stat zu Nuremberg, frewntlichen vnd\nlieplichen bericht vnd bezalt haben fünf vnd zweintzig Hündert gůldein der Stat\nwerung zu Nüremberg, die sie mir schuldig worden sein für meinen genedigen\nherren den Burggrauen zü Nuremberg. Vnd ich sag auch die egenanten Burger\ndez Rats, Ir selbsoln vnd die gemain gemainclichen der Stat zü Nuremberg vnd\nir iglichen besünder, für den obgenanten meinen genedigen herren den Burg-\ngrauen vnd für mich vnd für alle mein erben vmb die obgeschriben fünf vnd-\nzweintzig hündert guldein quit, ledig vnd loz gentzlichen ongeuerde. Mit\nvrkünde ditz briefs, versigelt mit meinem anhangendem Insigel, der geben ist\nan dem Montag vor sant Francissen tag, nach Cristus geburt drewzehenhundert\niar vnd in dem vier vnd sibintzigistem Jare.",
-      "english": "Konrad von Rosenberg acknowledges receiving 2,500 gulden from the city of Nuremberg on behalf of the burgrave. 2 October 1374.\n\nI, Konrad von Rosenberg, Vizedom zu Amberg, publicly acknowledge to all who see, hear or read this letter that the honorable and wise citizens of the council of Nuremberg have amicably and kindly settled with me and paid me 2,500 gulden in the currency of the city of Nuremberg, which they owed me on behalf of my gracious lord, the Burggraf zu Nürnberg. On behalf of that lord, myself and all my heirs, I fully release and discharge the said council members, themselves and the community of Nuremberg collectively and each of them individually from the said 2,500 gulden, without deceit.\n\nIn witness, this letter is sealed with my hanging seal and given on the Monday before St Francis’s day in the year after Christ’s birth 1374."
+      "english": "Konrad von Rosenberg acknowledges receiving 2,500 gulden from the city of Nuremberg on behalf of the burgrave. 2 October 1374.\n\nI, Konrad von Rosenberg, Vizedom zu Amberg, publicly acknowledge to all who see, hear or read this letter that the honorable and wise citizens of the council of Nuremberg have amicably and kindly settled with me and paid me 2,500 gulden in the currency of the city of Nuremberg, which they owed me on behalf of my gracious lord, the Burggraf zu Nürnberg. On behalf of that lord, myself and all my heirs, I fully release and discharge the said council members, themselves and the community of Nuremberg collectively and each of them individually from the said 2,500 gulden, without deceit.\n\nIn witness, this letter is sealed with my hanging seal and given on the Monday before St Francis’s day in the year after Christ’s birth 1374.",
+      "mention": [
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "vitztum_zu_Heidelberg",
+          "personTitle": [
+            "Vizedom zu Amberg"
+          ]
+        }
+      ]
     }
-  ],
-  "transcribed": true
+  ]
 }

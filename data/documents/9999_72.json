@@ -1,18 +1,18 @@
 {
   "date": "9999",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "entries": [
     {
-      "source": "StAWü, Gesellschaft für fränkische Geschichte",
-      "url": [
-        "https://www.gda.bayern.de/gvl/document/8e53eb40-7051-443a-ba18-8054701f2fd1",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++fa77119c-386e-4f8e-9dba-733d4c97978c&parent_id="
-      ],
-      "german": "Ritteradlige Herrschaftsbildung im Schüpfergrund. Das Briefbuch des Albrecht von Rosenberg († 1572). Urkundenregesten 1385–1565 und Urkundenanhang 1561–1564. Bearbeitet von Helmut Neumaier, 2005.\nISBN 978-3-86652-310-4.",
-      "english": "Formation of a knightly noble lordship in the Schüpfergrund. The letter book of Albrecht von Rosenberg († 1572). Regesta of documents 1385–1565 and documentary appendix 1561–1564. Edited by Helmut Neumaier, 2005. ISBN 978-3-86652-310-4.",
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 86",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-755788",
+      "german": "Belehnung des DO mit dem Zoll zu Edelfingen durch das Reich seit Menschengedenken.\n\nLaufzeit: 1207-1818",
+      "english": "the Teutonic Order’s acquisition of the toll at Edelfingen from the Empire from time immemorial.\n\nPeriod covered: 1207–1818.",
       "mention": [
         {
-          "person": "Albrecht von Rosenberg"
+          "place": "edelfingen"
         }
       ]
     }
