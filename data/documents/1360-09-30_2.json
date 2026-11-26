@@ -1,14 +1,12 @@
 {
   "date": "1360-09-30",
-  "label": [
-    "to review"
-  ],
+  "place": "Mainz",
+  "label": "to review",
   "entries": [
     {
       "source": "[RIplus] Regg. Karl IV. n. 4927",
       "url": "https://www.regesta-imperii.de/id/c421a46f-2b95-44c3-a722-b8628e9ce320",
       "german": "Karl IV. genehmigt den eingerückten Brief der Äbtissin und des Konvents des Klosters Pergen in Eichstädter Diözese von Pergen 1359 Sept. 25, womit ihm dieses Kloster Besitzungen zu Hoenstein und Hersbruck für sein Königreich Böhmen verkaufte.\n\nZeugen: venerabiles Gerlacus Moguntinensis archiepiscopus, per Germaniam, et Guilhelmus Coloniensis archiepiscopus, per Italiam sacri imperri archicancellarii, et illustres Rupertus senior comes palatinus Reni et dux Bavarie, archidapifer, et Rudolfus dux Saxonie, archimarescallus sacri imperii, et venerabiles Johannes Olomuczensis, Johannes Luthomuschlensis, sacre imperialis aule cancellarius, Albertus Swerinensis, Gerhardus Spirensis et Theodricus Wormaciensis ecclesiarum episcopi, illustres Rupertus iunior dux Bavarie, Johannes Opavie et Przymyslaus Teschinensis duces, spectabiles Burchardus burgravius Magdeburgensis, magister curie nostre, Burchardus de Recz et Walramus de Spanheim comites ac nobiles Cuno de Falkenstein, Johannes de Rosemberg, Ulricus de Usk et Thymo de Koldicz, magister imperialis nostre camere, et alii quamplures nostri et imperii sacri principes, nobiles et fideles"
     }
-  ],
-  "place": "Mainz"
+  ]
 }

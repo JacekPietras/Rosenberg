@@ -1,14 +1,12 @@
 {
   "date": "1223-12-08",
-  "label": [
-    "to review"
-  ],
+  "place": "Frankfurt",
+  "label": "to review",
   "entries": [
     {
       "source": "RIplus Regg. EB Mainz 2 [n. 1086]",
       "url": "https://www.regesta-imperii.de/id/ee13aeb0-1979-497b-8767-908709216316",
       "german": "genehmigt, dass der edle Albert von Ingelstatt seine lehengüter zu Uessigheim der kirche zu Bronnbach als eigenthum gab, nachdem er dem Stift Mainz seine eigengüter zu Hochusen zu lehen aufgetragen hatte.\n\nZeugen: Dompropst Gerboto, Sifrit Propst zu Aschaffenburg, Luteger Propst zu Rastorf, Albert v. Kuglenberc domherr zu Mainz; von Aschaffenburg: Godebolt Dechant, Heinrich v. Ravenspurc und Simon Stiftsherren. Laien: Konrad v. Ente, Konrat v. Hohenloch, Friderich v. Boppenhusen, Gotfrid v. Elpersheim, Hermann Lesche, Konrat vicedom von Aschaffenburg, Wernher marschalc, Embricho Vogt, Bertholt von Maspach, Embrico v. Goltpach."
     }
-  ],
-  "place": "Frankfurt"
+  ]
 }

@@ -1,14 +1,12 @@
 {
   "date": "1360-03-01",
-  "label": [
-    "to review"
-  ],
+  "place": "Prag",
+  "label": "to review",
   "entries": [
     {
       "source": "[RIplus] Regg. Karl IV. n. 4727",
       "url": "https://www.regesta-imperii.de/id/d1c2ea86-eabe-4663-b01a-67742b29edd4",
       "german": "Karl IV. verfügt, daß das vom früheren Olmützer Bischof Johann dem Nonnenkloster Ad misericordiam dei in Prag Benediktinerordens geschenkte Haus in der grossern Stadt Prag nach dem Tode des Bischofs Theodorich von Minden und des Prager Bürgers Heinrich Faist von Regensburg, denen es auf Lebensdauer überlassen ist, den Verträgen gemäß an das Kloster und nicht etwa an den Fiskus fallen soll, da der Bischof von Minden, licet notorie administracioni et dispensacioni rerum et pecuniarum nostrarum presideat easdemque ad nutum nostre maiestatis tam generaliter dispenset quam legaliter administret, die großartigen, am Hause vorgenommenen Bauten nicht aus dem Ärar sondern aus den ihm vom Kaiser für seine unzähligen Dienste verliehenen Geldern und Einkünften bestritten hat.\n\nZeugen: venerabiles Arnestus Pragensis archiepiscopus, Johannes Olomucensis, Johannes Luthomuschlensis, imperialis aule cancellarius, et Maurus Corbaviensis ecclesiarum episcopi, illustres Rydakarus Brunswicensis, Bolko Swidnicensis, Bolko Opuliensis et Przimyslaus Teschinensis duces, spectabilis Ulricus comes de Helfenstein, Johannes burgravius Magdeburgensis, nobiles Jesco et Wanko de Wartemberg, Jodocus, Ulricus et Johannes fratres de Rosemberg, Swinko de Hasemburg, Hasko de Swereticz et Busko de Wilharticz, magistri camere imperialis, et alii quamplures nostri et imperii sacri principes, nobiles et fideles."
     }
-  ],
-  "place": "Prag"
+  ]
 }

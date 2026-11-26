@@ -1,14 +1,12 @@
 {
   "date": "1454-10-09",
-  "label": [
-    "to review"
-  ],
+  "place": "Baden",
+  "label": "to review",
   "entries": [
     {
       "source": "RIplus Regg. Baden 4 n. 7740",
       "url": "https://www.regesta-imperii.de/id/b1d11287-4433-470f-b0d0-ef3dd9c13938",
       "german": "Markgraf Karl leiht an Hans Münch von Rosemberg die lehengüter, die davor Erhard von Utzlingen u. seine vorderen von den markgrafen zu lehen getragen u. die Hans Münch von dem gen. Erhard mit der erlaubnis des markgrafen gekauft hat, nämlich den hof zu Grunbach gen. des Utzlingers hof in dem dorf bei Wimpfen (Wympffheim)."
     }
-  ],
-  "place": "Baden"
+  ]
 }
