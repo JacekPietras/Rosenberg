@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Bezirksamt Ansbach, AVK-Akten 2986",
-      "url": "https://www.gda.bayern.de/gvl/document/01ad9c24-ec4a-46db-a039-3c8c466f220b",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/01ad9c24-ec4a-46db-a039-3c8c466f220b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++61ea284b-26f7-483a-a51c-ffb782724e1c&parent_id="
+      ],
       "german": "Mittermeyer, Adam Abraham, von Haasgang, Weber; Verheiratung mit Enser, Anna Kunigunda, von Rosenberg",
       "english": "Adam Abraham Mittermeyer, from Haasgang, weaver; marriage to Anna Kunigunda Enser, from Rosenberg.",
       "mention": [
