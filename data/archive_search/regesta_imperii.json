@@ -137,6 +137,9 @@
     "de Rossenberg": false,
     "de Rusenberg": false,
     "de Uissigheim": false,
+    "de Ussigheim": false,
+    "de Uzzinchein": false,
+    "de Ußinkeim": false,
     "v Rosemberch": false,
     "v Rosemberg": true,
     "v Rosenbach": true,
@@ -160,7 +163,10 @@
     "v Rossenberg": true,
     "v Rusenberg": false,
     "v Uissigheim": true,
+    "v Ussekein": false,
     "v Ussigheim": true,
+    "v Uzzinchein": false,
+    "v Ußinkeim": true,
     "von Rosemberch": false,
     "von Rosemberg": true,
     "von Rosenbach": true,
@@ -184,6 +190,9 @@
     "von Rossenberg": true,
     "von Rusenberg": false,
     "von Uissigheim": true,
-    "von Ussigheim": false
+    "von Ussekein": false,
+    "von Ussigheim": false,
+    "von Uzzinchein": false,
+    "von Ußinkeim": true
   }
 }

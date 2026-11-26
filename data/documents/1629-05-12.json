@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Mainzer Regierungsarchiv Kurpfalz 1487",
-      "url": "https://www.gda.bayern.de/gvl/document/1578163a-2218-4439-b56c-d8282a6b4bd9",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1578163a-2218-4439-b56c-d8282a6b4bd9",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1F333BD7-4638-42E4-A6EF-8203B80D1039&parent_id="
+      ],
       "german": "Schreiben des A. und des Georg Sigmund von Rosenberg, des Eberhard von Stetten, des Hanns Reinhard von Dienheim und des Philipp Ludwig von Egan (?) an den Erzbischof von Mainz wegen des in der Gemarkung Uiffingen gelegenen Hofes zu Gräffingen",
       "english": "Letter from A. and Georg Siegmund von Rosenberg, Eberhard von Stetten, Hans Reinhard von Dienheim, and Philipp Ludwig von Egan (?) to the Archbishop of Mainz concerning the farm at Gräffingen, located within the Uiffingen district.",
       "mention": [
