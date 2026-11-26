@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Administration Rosenberg 4",
-      "url": "https://www.gda.bayern.de/gvl/document/a4b536db-3910-453d-9ed8-66126f46722e",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a4b536db-3910-453d-9ed8-66126f46722e",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E1FECED8-7ED1-40AA-982C-A2225EA58193&parent_id="
+      ],
       "german": "Schreiben Daniel Modlers und Hans Sigmund Freys von Holzhammer an Hans Heinrich von Kaysersberg betreffend den Tod Sibilla Elisabeth Modlers, Niederkunft Katharina Sophias von Kaysersberg u.a.",
       "english": "Letter from Daniel Modler and Hans Sigmund Frey of Holzhammer to Hans Heinrich von Kaysersberg concerning the death of Sibilla Elisabeth Modler, the childbirth of Katharina Sophia von Kaysersberg, and other matters"
     }

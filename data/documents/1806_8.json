@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 5025",
-      "url": "https://www.gda.bayern.de/gvl/document/9a4ece5d-b785-4a7b-bf3e-2b0623532baa",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/9a4ece5d-b785-4a7b-bf3e-2b0623532baa",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f9a81cd2-2812-440d-94c6-201b5d973419&parent_id="
+      ],
       "german": "Musterungsrolle von Rosenberg.",
       "english": "Muster roll of Rosenberg.",
       "mention": [

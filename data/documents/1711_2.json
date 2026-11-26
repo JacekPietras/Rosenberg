@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Ältere Hofkammer - Sulzbacher Akten 182",
-      "url": "https://www.gda.bayern.de/gvl/document/a0a0951a-0ad6-4f2b-8f9b-dce07a74bba6",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a0a0951a-0ad6-4f2b-8f9b-dce07a74bba6",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5B91405E-E693-4543-BAC0-D205B1C630CB&parent_id="
+      ],
       "german": "Verwalter zu Rosenberg und Hammerphilippsburg:\nJohann Mathias Seeger zu Hammerphilippsburg, Mathias Weingärtner, Sebastian Bayerschoder, Erdmann Juvin und Johann Mathias Philipp Fischer zu Rosenberg",
       "english": "Administrators at Rosenberg and Hammer-Philippsburg: Johann Mathias Seeger at Hammer-Philippsburg, Mathias Weingärtner, Sebastian Bayerschoder, Erdmann Juvin, and Johann Mathias Philipp Fischer at Rosenberg.",
       "mention": [

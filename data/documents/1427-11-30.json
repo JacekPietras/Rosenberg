@@ -1,0 +1,45 @@
+{
+  "date": "1427-11-30",
+  "place": "Frankfurt",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 13",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
+      "german": "Conrat, Erzbischof zu Mentze bekennt Hannsen Nothafft dem Aeltern, ein Darlehen von 2000 fl. Rein. schuldig zu sein und selbe auf den nächsten sant Jorgen tag mit einem Zins von 65 fl. zurück zu zahlen. Bürgen: Eberhart von Rosemberg, Wilhelm von Steten der Aeltere, Czeissolff von Adletzheim, Simon von Steten, Jorge von Felberg, Beringer von Berlichingen, Herolt von Steten, Wilhelm von Steten der Junge, Swiger von Helmstat, Hentze Czehe, Hernecke von Hornberg und Hans von Düren. Mitsiegler: die Bürgen. D. Franckfurdie in die beati Andree Apostoli. (c. 13 S.) (F.)",
+      "english": "Konrad, Archbishop of Mainz, acknowledges that he owes Hans Nothafft der Ältere a loan of 2,000 Rhenish florins, to be repaid on the next St. George’s Day with interest of 65 florins. Sureties: Eberhard von Rosenberg; Wilhelm von Steten der Ältere; Czeissolff von Adletzheim; Simon von Steten; Jorge von Felberg; Beringer von Berlichingen; Herolt von Steten; Wilhelm von Steten der Junge; Swiger von Helmstat; Hentze Czehe; Hernecke von Hornberg; and Hans von Dürn. The sureties also seal the document. Given at Frankfurt on the feast of St. Andrew the Apostle. (c. 13 seals.) (F.)",
+      "mention": [
+        {
+          "place": "berlichingen"
+        },
+        {
+          "person": "Erzbischof Konrad",
+          "personTitle": [
+            "Erzbischof zu Mainz"
+          ]
+        },
+        {
+          "person": "Hans von Dürn"
+        },
+        {
+          "place": "helmstatt"
+        },
+        {
+          "place": "hornberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "stood surety for Archbishop Konrad of Mainz’s loan from Hans Nothafft der Ältere."
+        },
+        {
+          "person": "Eberhard von Rosenberg",
+          "type": "generic",
+          "content": "co-sealed the document recording Archbishop Konrad of Mainz’s loan from Hans Nothafft der Ältere."
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 1109",
-      "url": "https://www.gda.bayern.de/gvl/document/1211c892-ce76-4ced-aa76-034630811219",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/1211c892-ce76-4ced-aa76-034630811219",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++781c9332-4235-4b17-aebb-5df85927c837&parent_id="
+      ],
       "german": "Schlägerei zwischen Georg Michael Hahn von Augsburg, Sohn des Christoph Hahn von Rosenberg, und dem Bader Vestner von Unternbibert im Wirtshaus von Rosenberg.",
       "english": "Brawl between Georg Michael Hahn von Augsburg, son of Christoph Hahn von Rosenberg, and the barber-surgeon Vestner von Unternbibert at the inn in Rosenberg.",
       "mention": [

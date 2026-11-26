@@ -1,0 +1,90 @@
+{
+  "date": "1412-08-17",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Hanns von Rosenberg, Ritter, zur Zeit Schultheiss in Nurnberg und Elisabeth seine ehliche Wirthin verschreiben aus der Stadtsteuer der ihnen samt Veste verpfändeten Stadt Stain vier und dreyssig Gulden jährl. Leibgedings an Hanns Camrer, Söldner zu Nurnberg um zwey hundert vier Gulden. Bürgen und Mitsiegler: Ritter Heinrich Schenk zu Utenhofen, Sigmund zu Pappenheim Marschalk des h. r. Reichs und Jacob von Wolfstain. G. am Mitwochen nach U. L. Frawentag Assumptionis.",
+      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and his lawful wife Elisabeth grant Hans Camrer, Söldner zu Nürnberg, a life annuity of 34 guilders a year from the town tax of Stain, whose town and fortress are pledged to them, for 204 guilders. Sureties and co-sealers: Heinrich Schenk, Ritter, zu Utenhofen; Siegmund zu Pappenheim, Marschalk of the Holy Roman Empire; and Jakob von Wolfstain. Given on the Wednesday after the Assumption of Our Lady.",
+      "facts": [
+        {
+          "type": "spouse",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "of": "Elisabeth"
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "content": "sold Hans Camrer, Söldner zu Nürnberg, a life annuity from the town tax of Stain jointly with his wife Elisabeth."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "content": "held the town and fortress of Stain in pledge jointly with his wife Elisabeth."
+        },
+        {
+          "type": "generic",
+          "person": "Heinrich Schenk",
+          "content": "stood surety for the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer.",
+          "personTitle": [
+            "Ritter",
+            "zu Utenhofen"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Heinrich Schenk",
+          "content": "co-sealed the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer.",
+          "personTitle": [
+            "Ritter",
+            "zu Utenhofen"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Siegmund zu Pappenheim",
+          "content": "stood surety for the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer.",
+          "personTitle": [
+            "Marschalk des heiligen Römischen Reichs"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Siegmund zu Pappenheim",
+          "content": "co-sealed the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer.",
+          "personTitle": [
+            "Marschalk des heiligen Römischen Reichs"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Jakob von Wolfstain",
+          "content": "stood surety for the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer."
+        },
+        {
+          "type": "generic",
+          "person": "Jakob von Wolfstain",
+          "content": "co-sealed the life annuity granted by Hans von Rosenberg and Elisabeth to Hans Camrer."
+        }
+      ],
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ]
+    }
+  ]
+}

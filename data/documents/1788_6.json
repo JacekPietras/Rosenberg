@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 4510",
-      "url": "https://www.gda.bayern.de/gvl/document/94e90828-8033-4b75-bc30-a0d439867b7c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/94e90828-8033-4b75-bc30-a0d439867b7c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++325C4D03-D541-482E-B82A-C7A1D950EFEF&parent_id="
+      ],
       "german": "Abhaltung einer Schule zu Fromberg im Winter durch den Webergesellen Johann Georg Winter von Rosenberg",
       "english": "Permission for the journeyman weaver Johann Georg Winter von Rosenberg to hold a school at Fromberg during the winter.",
       "mention": [

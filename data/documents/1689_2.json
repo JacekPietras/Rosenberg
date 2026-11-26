@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 4077",
-      "url": "https://www.gda.bayern.de/gvl/document/bc3f691a-4ac2-4660-994c-727bdb613159",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/bc3f691a-4ac2-4660-994c-727bdb613159",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++121d2dd3-c599-449f-92cb-ddc0bdd1da58&parent_id="
+      ],
       "german": "Erbzinsbefreiung für Hieronymus Krob von Rosenberg.",
       "english": "Exemption from hereditary rent for Hieronymus Krob von Rosenberg.",
       "mention": [

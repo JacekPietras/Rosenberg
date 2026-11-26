@@ -1,0 +1,24 @@
+{
+  "date": "1393-11-22",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 11",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11697675",
+      "german": "Derselbe bestätigt den Bürgern von Sulzbach das von alter und guter Gewohnheit herbrachte Purckhding, das sich daselb anheben soll von dem Hammer zu Rosenberg mit aller seiner Zugehör und allen Gütern, 4 Meile Wegs um die Stadt Sulzbach, und das mit derselben steuern soll. G. zu München am Samstag vor St. Katharina Tag.",
+      "english": "The same person confirms to the citizens of Sulzbach the Purckhding established by old and good custom. It is to begin at the hammer mill at Rosenberg, with all its appurtenances and all properties within four German miles of Sulzbach, and is to contribute to taxation with the town. Given at München on the Saturday before St. Catherine’s Day.",
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ],
+      "facts": [
+        {
+          "subject": "the hammer mill at Rosenberg",
+          "type": "generic",
+          "content": "was included in the customary Purckhding confirmed for the citizens of Sulzbach, which was to contribute to taxation with the town."
+        }
+      ]
+    }
+  ]
+}

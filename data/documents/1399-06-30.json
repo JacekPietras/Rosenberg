@@ -4,14 +4,12 @@
   "entries": [
     {
       "source": "Regesta Boica 11, 30 June 1399",
-      "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
-      "german": "Altman Kemnater Landrichter zu Lengfeld bestättigt der Abtissin Anna von Pülnhofen einen Gerichtsbrief des Chunrad von Rosenberg, Vizthum zu Amberg (dd. Montags vor S. Kathreintag 1379) gemäss welchem sie mit Volg, Frag und Urtail behabt habe, dass sie von ihren Amtleuten in der Landschrann zu Lengfeld Recht thun soll an kleinen Sachen seinem (des Rosenbergers) gnädigem Herrn an dessen grossen Rechten, und dass sie darum von einem Amtmann zu Lengfeld geschetzt werden soll. G. zu Kalmüntz am Montag nach Sunbenden. (c. 1 Sig.)",
-      "english": "Altman Kemnater, Landrichter at Lengfeld, confirms to Abbess Anna of Pülnhofen a court letter of Konrad von Rosenberg, Vizthum zu Amberg (dated the Monday before St. Catherine's day 1379), according to which she had established by pursuit, inquiry and judgment that she shall have justice done by her officials in the Landschrann at Lengfeld in minor matters, for his (the Rosenberger's) gracious lord, in respect of his great rights, and that she shall for this be protected by an official at Lengfeld. Given at Kallmünz on the Monday after the solstice (Sunbenden). (With 1 seal.)",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
+      "url": [
+        "https://www.digitale-sammlungen.de/en/view/bsb11746847",
+        "https://www.digitale-sammlungen.de/en/view/bsb11697675"
       ],
+      "german": "Altman Kemnater Landrichter zu Lengfeld bestättigt der Abtissin Anna von Pülnhofen einen Gerichtsbrief des Chunrad von Rosenberg, Vizthum zu Amberg (dd. Montags vor S. Kathreintag 1379) gemäss welchem sie mit Volg, Frag und Urtail behabt habe, dass sie von ihren Amtleuten in der Landschrann zu Lengfeld Recht thun soll an kleinen Sachen seinem (des Rosenbergers) gnädigem Herrn an dessen grossen Rechten, und dass sie darum von einem Amtmann zu Lengfeld geschetzt werden soll. G. zu Kalmüntz am Montag nach Sunbenden. (c. 1 Sig.)",
+      "english": "Altman Kemnater, Landrichter zu Lengfeld, confirms to Anna, abbess of Pülnhofen, a court letter of Konrad von Rosenberg, Vizedom zu Amberg, dated the Monday before St. Catherine’s Day in 1379. According to the letter, she had established through procedure and judgment that her officials should administer justice in minor matters at the Landschrann in Lengfeld. The passage also refers to the greater rights of Konrad’s gracious lord and says that an official at Lengfeld should “geschetzt” her in this matter; the precise meaning of these clauses is unclear. Given at Kallmünz on the Monday after the solstice. (With one seal.)",
       "facts": [
         {
           "person": "vitztum_zu_Heidelberg",
@@ -19,7 +17,8 @@
             "Vizedom zu Amberg"
           ],
           "type": "generic",
-          "content": "issued a court letter in 1379 for Abbess Anna of Pülnhofen, according to which she had established by pursuit, inquiry and judgment that she is to have justice done by her officials in the Landschrann at Lengfeld in minor matters and is to be protected by an official at Lengfeld."
+          "content": "issued a court letter concerning the abbess of Pülnhofen and the administration of justice at Lengfeld.",
+          "date": "1379-11-21"
         },
         {
           "person": "Altman Kemnater",
@@ -27,7 +26,7 @@
             "Landrichter zu Lengfeld"
           ],
           "type": "generic",
-          "content": "confirmed to Abbess Anna of Pülnhofen the court letter of Konrad von Rosenberg, Vizthum zu Amberg, dated the Monday before St. Catherine's day 1379."
+          "content": "confirmed to Anna, abbess of Pülnhofen, a court letter issued by Konrad von Rosenberg, Vizedom zu Amberg, concerning the administration of justice at Lengfeld."
         }
       ]
     }

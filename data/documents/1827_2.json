@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "BayHStA, MKr 9357",
-      "url": "https://www.gda.bayern.de/gvl/document/820329af-92a8-4f56-b9d1-97fc25216021",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/820329af-92a8-4f56-b9d1-97fc25216021",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++441A0CD1-8F92-47DF-B17C-D908057545C5&parent_id="
+      ],
       "german": "Jagd in der Umgebung von Rosenberg",
       "english": "Hunting in the area around Rosenberg",
       "mention": [

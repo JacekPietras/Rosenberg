@@ -1,0 +1,173 @@
+{
+  "date": "1415-08-12",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Engelhart von Eberstein, Tumhere zu Wirozpurg und Landrichter des Herzogthums zu Franken beurkundet, dass Johannes von Rosenberg, Ritter, seine Ktage wegen des Zehenten, kleinen und grossen zu Lore zwischen Rotenburg und Insingen gelegen gegen die Dorfmeister, Schultheissen, Schöpfen und Gemeinde des Dorfes Lore ervollet habe und in die Nutzgewähr desselben gesetzt worden sey. Schirmer und Helfer: Burggraf Johannes und Burggraf Fridrich von Nurmberg, Graf Wilhelm und Graf Fridrich von Henneberg, Graf Johannes von Wertheim, Graf Lynhart von Castell, Graf Thomas von Ryneck, Dittrich Herr zu Bickenbach, Fridrich Erenfrid von Seckendorff, Landfriedmeister und der ganze Landfried, Brant vnd Erckinger von Sawnsheim, Burckart von Seckendorff, Conrad Zolner, Wilhelm von Grumbach, Peter Truchsess, Wyrich von Trutlingen, Ditz von Tungen, Hans Adel von Tottenheim, Caspar von Bibra, Hans Hunt, Syfrid Wilde von Ehenheim, die Burgermeister, Räthe, Schultheissen, Schöpfen und Burger der Stete Wirczpurg etc. G. am Montag vor vnser frawentag Assumptionis",
+      "english": "Engelhard von Eberstein, Domherr zu Wirozpurg and Landrichter des Herzogtums zu Franken, certifies that Hans von Rosenberg, Ritter, has successfully pursued his claim to the small and great tithes at Lore, between Rothenburg and Insingen, against the village headmen, Schultheissen, Schöpfen and community of Lore, and has been placed in beneficial possession of them. Protectors and helpers: Hans and Friedrich, Burggrafen von Nürnberg; Wilhelm and Friedrich, Grafen von Henneberg; Hans von Wertheim, Graf; Lynhart von Castell, Graf; Thomas von Rieneck, Graf; Dietrich, Herr zu Bickenbach; Friedrich Erenfrid von Seckendorf, Landfriedmeister, and the entire Landfried; Brant and Erkinger von Sawnsheim; Burckart von Seckendorf; Konrad Zolner; Wilhelm von Grumbach; Peter Truchsess; Wyrich von Trutlingen; Ditz von Thüngen; Hans Adel von Dottenheim; Caspar von Bibra; Hans Hunt; Syfrid Wilde von Ehenheim; and the mayors, councils, Schultheissen, Schöpfen and citizens of Würzburg and other towns. Given on the Monday before the Assumption of Our Lady.",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "successfully pursued his claim against the village officers and community of Lore to the small and great tithes there and was placed in beneficial possession of them."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Eberstein",
+          "personTitle": [
+            "Domherr zu Wirozpurg",
+            "Landrichter des Herzogtums zu Franken"
+          ],
+          "content": "certified that Hans von Rosenberg had successfully pursued his claim to the small and great tithes at Lore against the village officers and community and had been placed in beneficial possession of them."
+        },
+        {
+          "type": "generic",
+          "person": "Hans",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Burggraf von Nürnberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Burggraf von Nürnberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Wilhelm von Henneberg",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Graf von Henneberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich von Henneberg",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Graf von Henneberg"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Wertheim",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Graf von Wertheim"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Lynhart von Castell",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Graf von Castell"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Thomas von Rieneck",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Graf von Rieneck"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Dietrich",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Herr zu Bickenbach"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Friedrich Erenfrid von Seckendorf",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore.",
+          "personTitle": [
+            "Landfriedmeister"
+          ]
+        },
+        {
+          "type": "generic",
+          "person": "Brant von Sawnsheim",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Erkinger von Sawnsheim",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Burckart von Seckendorf",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Konrad Zolner",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Wilhelm von Grumbach",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Peter Truchsess",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Wyrich von Trutlingen",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Ditz von Thüngen",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Hans Adel von Dottenheim",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Caspar von Bibra",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Hans Hunt",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "person": "Syfrid Wilde von Ehenheim",
+          "content": "was named as a protector and helper in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "subject": "the municipal officials and citizens of Würzburg",
+          "content": "were named among the protectors and helpers in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        },
+        {
+          "type": "generic",
+          "subject": "the entire Landfried",
+          "content": "was named among the protectors and helpers in the decision concerning Hans von Rosenberg’s tithe at Lore."
+        }
+      ]
+    }
+  ]
+}

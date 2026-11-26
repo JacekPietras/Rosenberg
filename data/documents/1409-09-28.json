@@ -1,0 +1,48 @@
+{
+  "date": "1409-09-28",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Hanns von Rosenberg, Ritter, und Elsbeth, gebohrne Marschalkinn zu Pappenheim, seine ehliche Hausfrau bekennen, dass Hilpoltstain die Veste und die Stadt, welche sie von Parzifal und Tristram den Zengern, Gebrüdern von Schwarznegk pfandweise inne haben, des Herzogs Stephan von Bayern und seiner Erben offnes Haus seyn sollen. G. zu Werd an samstag vor sant Michels tag.",
+      "english": "Hans von Rosenberg, Ritter, and his lawful wife Elisabeth Marschalkinn zu Pappenheim declare that the fortress and town of Hilpoltstain, which they hold as a pledge from the brothers Parzifal and Tristram Zenger von Schwarznegk, are to be an open house for Stephan, Herzog von Bayern, and his heirs. Given at Werd on the Saturday before St. Michael’s Day.",
+      "mention": [
+        {
+          "place": "pappenheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
+          "of": "Elisabeth Marschalkinn",
+          "ofTitle": [
+            "zu Pappenheim"
+          ]
+        },
+        {
+          "person": "Parzifal Zenger von Schwarznegk",
+          "type": "sibling",
+          "of": "Tristram Zenger von Schwarznegk"
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "held the fortress and town of Hilpoltstain in pledge from the brothers Parzifal and Tristram Zenger von Schwarznegk jointly with his wife Elisabeth Marschalkinn zu Pappenheim."
+        },
+        {
+          "subject": "the fortress and town of Hilpoltstain",
+          "type": "generic",
+          "content": "were to be an open house for Stephan, Herzog von Bayern, and his heirs under the pledge held by Hans von Rosenberg and Elisabeth Marschalkinn zu Pappenheim."
+        }
+      ]
+    }
+  ]
+}

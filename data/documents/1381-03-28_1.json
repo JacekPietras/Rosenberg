@@ -67,6 +67,33 @@
           "content": "was chosen as mediator in the disputes between Duke Albrecht of Austria and the von Rosenberg family."
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 10",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798273",
+      "german": "Compromiss Herzog Albrechts von Oestreich, auf Burggraf Friedrich v. Nürnberg und Landgraf Johann von Leutenberg, zu Verrichtung seiner Zweyung mit den edlen von Rosenberg von wegen der Stadt Eferdingen. G. zu Lynz am Pfinztag nach Laetare. (S. a.)",
+      "english": "Albrecht von Österreich, Herzog, submits his dispute with the noble von Rosenberg family over the town of Eferdingen to Friedrich, Burggraf von Nürnberg, and Hans, Landgraf von Leutenberg, for settlement. Given at Linz on the Thursday after Laetare. (Seal attached.)",
+      "mention": [
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Burggraf von Nürnberg"
+          ]
+        },
+        {
+          "place": "rosenberg-town"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Albrecht von Österreich",
+          "personTitle": [
+            "Herzog von Österreich"
+          ],
+          "type": "generic",
+          "content": "submitted his dispute with the noble von Rosenberg family over the town of Eferdingen to Friedrich, Burggraf von Nürnberg, and Hans, Landgraf von Leutenberg, for settlement."
+        }
+      ]
     }
   ]
 }

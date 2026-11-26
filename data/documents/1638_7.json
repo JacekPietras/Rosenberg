@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Geheime Registratur 1705",
-      "url": "https://www.gda.bayern.de/gvl/document/3b3546a6-e800-4ff2-8502-a63e202ee705",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3b3546a6-e800-4ff2-8502-a63e202ee705",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E0149C19-6943-4D2C-A421-87E7A0F02683&parent_id="
+      ],
       "german": "Rechnungen über das verpachtete Hammergut Rosenberg\n\nEnthält-/Darin-Vermerke: Darin: Pachtvertrag mit Hans Heinrich von Kaisersberg",
       "english": "Accounts for the leased hammer mill estate at Rosenberg.\n\nNotes on contents/insertions: Includes the lease agreement with Hans Heinrich von Kaisersberg.",
       "mention": [

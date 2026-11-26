@@ -1,0 +1,69 @@
+{
+  "date": "1394-01-30",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 11",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb11697675",
+      "german": "Anna Marschalkein des Chuntz von Rosenberch Wittwe verpflichtet sich, dem Karthäuser Kloster zu Tükelhusen zur Begehung des Jahrtages für ihren seligen Hauswirth jährlich 4 Malter Korns aus einem Hofe zu Ewrheusen zu entrichten. Mitsiegler: Cuntz von Rosenberch obiger Anna Sohn, Hans von Rosenberch Ritter, und Arnolt von Rosenberch der junge gesessen zu Boxsperch. G. am freitag vor Liechtmesse. (c. 3 Sig.)",
+      "english": "Anna Marschalkein, widow of Kunz von Rosenberg, undertakes to pay the Carthusian monastery at Tükelhusen four Malter of grain annually from a farm at Ewrheusen for the observance of the anniversary of her late husband. Co-sealers: Kunz von Rosenberg, Anna’s son; Hans von Rosenberg, Ritter; and Arnold von Rosenberg der Junge, resident at Boxberg. Given on the Friday before Candlemas. (With three seals.)",
+      "mention": [
+        {
+          "place": "boxberg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Kunz von Rosenberg",
+          "personDeceased": true,
+          "type": "spouse",
+          "of": "Anna Marschalkein"
+        },
+        {
+          "person": "Anna Marschalkein",
+          "type": "parent",
+          "of": "Kunz von Rosenberg"
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "death",
+          "diedBefore": "1394-01-31"
+        },
+        {
+          "person": "Anna Marschalkein",
+          "type": "generic",
+          "content": "undertook to pay an annual grain rent from a farm at Ewrheusen to the Carthusian monastery at Tükelhusen for the anniversary of her late husband Kunz von Rosenberg."
+        },
+        {
+          "person": "Kunz von Rosenberg",
+          "type": "generic",
+          "content": "co-sealed his mother Anna Marschalkein’s charter for the Carthusian monastery at Tükelhusen."
+        },
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "co-sealed Anna Marschalkein’s charter for the Carthusian monastery at Tükelhusen."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ],
+          "type": "generic",
+          "content": "co-sealed Anna Marschalkein’s charter for the Carthusian monastery at Tükelhusen."
+        },
+        {
+          "person": "Arnold von Rosenberg",
+          "personTitle": [
+            "der Junge"
+          ],
+          "type": "generic",
+          "content": "resided at Boxberg."
+        }
+      ]
+    }
+  ]
+}

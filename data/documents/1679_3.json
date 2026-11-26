@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 1257",
-      "url": "https://www.gda.bayern.de/gvl/document/2b3d528f-8a15-4cc2-adb8-2e01c71c2bab",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/2b3d528f-8a15-4cc2-adb8-2e01c71c2bab",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DB004B47-F606-46F4-8F83-8A5BCC155A81&parent_id="
+      ],
       "german": "Beschwerde des Hans Pickel zu Hainfeld über die Handlohnforderung des Hans Heinrich von Kaisersberg",
       "english": "Complaint by Hans Pickel of Hainfeld about Hans Heinrich von Kaisersberg’s demand for a hand-labor tax"
     }

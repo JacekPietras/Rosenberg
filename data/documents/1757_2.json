@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Lehenhof, Akten Bü. Br. 30",
-      "url": "https://www.gda.bayern.de/gvl/document/648174d7-915a-4c77-958b-2e4e0386c90a",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/648174d7-915a-4c77-958b-2e4e0386c90a",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1630e1f0-813c-452b-915a-304b17884775&parent_id="
+      ],
       "german": "Ritterlehen: Der Truchsessen von Baldersheim, nachgehends der von Rosenberg erhaltene Belehnungen über 1.) das Schloss und Dorf Waldmannshofen, 2.) den großen und kleinen Zehnten der Stadt und ganzen Markung Aub (Bd. V)",
       "english": "Knight's fief: the enfeoffments received by the Truchsess von Baldersheim and later by the von Rosenberg family concerning (1) Waldmannshofen Castle and village, and (2) the great and small tithes of the town and entire district of Aub (vol. V).",
       "mention": [

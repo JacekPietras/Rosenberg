@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Patrimonialgericht Rügland, AVK-Akten (aus BA Ansbach) 52",
-      "url": "https://www.gda.bayern.de/gvl/document/068913cc-9880-43d5-80e9-5e728eaf8bff",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/068913cc-9880-43d5-80e9-5e728eaf8bff",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++bfe1cffa-58c6-4131-b795-442696a5b3fb&parent_id="
+      ],
       "german": "Dörr, Johann Michael, von Rosenberg; Beruf: Zimmerergeselle; Ansässigmachung in Rosenberg; Verheiratung mit Siller, Anna Barbara",
       "english": "Dörr, Johann Michael, from Rosenberg; occupation: journeyman carpenter; establishment as a resident in Rosenberg; marriage to Siller, Anna Barbara",
       "mention": [

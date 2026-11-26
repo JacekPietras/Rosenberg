@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 5626",
-      "url": "https://www.gda.bayern.de/gvl/document/9063bb27-92fd-4c3a-b42c-2ee7d5efa2f2",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/9063bb27-92fd-4c3a-b42c-2ee7d5efa2f2",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ddddd9e1-d33b-497d-a642-79042334c988&parent_id="
+      ],
       "german": "Johann Georg Schramm von Rosenberg verkauft dem Schneider Börner einen Krautacker.",
       "english": "Johann Georg Schramm von Rosenberg sells a cabbage plot to the tailor Börner.",
       "mention": [

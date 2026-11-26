@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 1213",
-      "url": "https://www.gda.bayern.de/gvl/document/51e46317-7f0a-4a5c-9c56-ea5be41af6a6",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/51e46317-7f0a-4a5c-9c56-ea5be41af6a6",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E7F72E5F-0EAA-4BE9-9608-7D3ABEEB27C0&parent_id="
+      ],
       "german": "Forderung der Katharina König zu Gärbershof und ihrer Erben gegen Hans Heinrich von Kaisersberg zu Rosenberg nach Bezahlung schuldiger 80 fl.",
       "english": "Claim by Katharina König of Gärbershof and her heirs against Hans Heinrich von Kaisersberg zu Rosenberg for payment of the outstanding 80 florins.",
       "mention": [

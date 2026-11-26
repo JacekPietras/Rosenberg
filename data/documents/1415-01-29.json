@@ -1,0 +1,37 @@
+{
+  "date": "1415-01-29",
+  "label": "to review",
+  "research": "A 1415 court record in data/documents/1415_1.json concerns the same named parties and the Lohr tithe; its year-only date does not establish whether it is this document. The supplied regest spells the complainant’s name Ilanns; verify the source scan before normalizing it to Hans.",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Engelhart von Eberstein, Tumher zu Wirezpurg und Landrichter des Herzogthums zu Francken beurkundet, dass die von Ilanns von Rosenberg, Ritter, gegen Balthasar von Maspach, Tumherrn zu Wirezpurg und Probst des Stifts zu Onelspach erhobene Klage wegen des Dorfes und der Gebauren zu Lohr und zwar auf den Zehenten daselbst, dem Beklagten keinen Schaden bringen solle, weil ihm die Klage nicht zu Hause, zu Hofe oder unter Augen - wie des Landgerichts zu Francken Gewohnheit - verkündet worden wäre. G. am nehsten Dinstag nach Sant Pauls tag als er bekert wart.",
+      "english": "Engelhard von Eberstein, Domherr zu Wirezpurg and Landrichter des Herzogtums zu Franken, certifies that the complaint brought by Ilanns von Rosenberg, Ritter, against Balthasar von Maspach, Domherr zu Wirezpurg and Propst des Stifts zu Onelspach, concerning the village and peasants of Lohr and its tithe, shall not prejudice the defendant. The complaint had not been announced to him at home, at court or in person, as required by the custom of the Landgericht of Franken. Given on the Tuesday after St. Paul’s Conversion.",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Ilanns von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "brought a complaint against Balthasar von Maspach, Domherr zu Wirezpurg and Propst des Stifts zu Onelspach, concerning the village and peasants of Lohr and its tithe."
+        },
+        {
+          "type": "generic",
+          "person": "Engelhard von Eberstein",
+          "personTitle": [
+            "Domherr zu Wirezpurg",
+            "Landrichter des Herzogtums zu Franken"
+          ],
+          "content": "certified that the complaint of Ilanns von Rosenberg against Balthasar von Maspach concerning the village, peasants and tithe of Lohr should not prejudice the defendant because it had not been announced to him as required by the custom of the Landgericht of Franken."
+        }
+      ],
+      "mention": [
+        {
+          "place": "rosenberg-town"
+        }
+      ]
+    }
+  ]
+}

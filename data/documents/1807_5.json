@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Rentamt Sulzbach 649",
-      "url": "https://www.gda.bayern.de/gvl/document/da398279-93d7-4ca9-905e-261113868003",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/da398279-93d7-4ca9-905e-261113868003",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B47DA5CB-2E24-44B3-832E-87451F95C846&parent_id="
+      ],
       "german": "Verkauf der Schlossberggründe zu Rosenberg an Carl Freiherr von Malcomes",
       "english": "Sale of the Schlossberg lands at Rosenberg to Carl, Baron von Malcomes.",
       "mention": [

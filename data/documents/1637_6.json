@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 1150",
-      "url": "https://www.gda.bayern.de/gvl/document/ae9817d2-e48a-4033-962c-01edb0636810",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/ae9817d2-e48a-4033-962c-01edb0636810",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BC049DF7-842A-4162-A9C2-E26C7A9C5AC4&parent_id="
+      ],
       "german": "Forderung der Stadt Amberg gegen Hans Heinrich von Kaisersberg wegen einer noch von den Doles auf Rosenberg herrührenden Erzschuld von 219 fl.",
       "english": "Claim by the town of Amberg against Hans Heinrich von Kaisersberg concerning an ore debt of 219 florins that had originated with the Doles at Rosenberg.",
       "mention": [

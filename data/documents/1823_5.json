@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Landgericht ä.O. Sulzbach Justizakten 707",
-      "url": "https://www.gda.bayern.de/gvl/document/c3ff9efa-c26a-4adf-9a26-3ec96683e4fa",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/c3ff9efa-c26a-4adf-9a26-3ec96683e4fa",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DCCE4122-9D18-4579-9205-261825BACD03&parent_id="
+      ],
       "german": "Verschollenheitserklärung für Übelacker Konrad von Rosenberg, vermisst als Soldat im russischen Feldzug 1812",
       "english": "Declaration of presumed death for Übelacker Konrad von Rosenberg, missing as a soldier in the Russian campaign of 1812",
       "mention": [

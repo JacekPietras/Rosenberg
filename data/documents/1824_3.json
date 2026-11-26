@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "BayHStA, MA 87379",
-      "url": "https://www.gda.bayern.de/gvl/document/4155241b-f7e5-4de1-a816-a09eb1a5896d",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/4155241b-f7e5-4de1-a816-a09eb1a5896d",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++84E0161A-A690-4455-9718-E36C86BC7637&parent_id="
+      ],
       "german": "Österreich-Ungarn\nDie Zinsenerhebung von dem bei der Wiener Stadtbank anliegenden und dem vorm. Domkap. Bauamte und der Domdechant von Rosenberg'schen Armenstiftung zu Würzburg gehörigen Kapital von 700 fl.",
       "english": "Austria-Hungary\nCollection of interest on the 700-florin capital held at the Vienna City Bank and belonging to the former cathedral chapter’s building office and the cathedral dean von Rosenberg’s poor-relief foundation in Würzburg.",
       "mention": [

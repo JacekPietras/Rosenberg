@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StABa, Regierung von Oberfranken, Kammer des Innern (K 3 A I) 952",
-      "url": "https://www.gda.bayern.de/gvl/document/4adb1528-2ffb-4c34-a929-5d8b23631a3c",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/4adb1528-2ffb-4c34-a929-5d8b23631a3c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++89538AF2-F6E0-4007-9116-1B45F6E1D6F5&parent_id="
+      ],
       "german": "Die Huldigung des Oberst Freiherrn von Redwitz auf der Veste Rosenberg",
       "english": "The homage of Colonel Baron von Redwitz at Rosenberg Fortress.",
       "mention": [

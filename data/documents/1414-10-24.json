@@ -1,0 +1,45 @@
+{
+  "date": "1414-10-24",
+  "place": "Nürnberg",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Ritter Hans von Rosenberg, Schultheiss und die Schöpfen der Stadt zu Nuremberg entscheiden die Streitsache Meister Albrechts, Pfarrers zu sant Sebolt daselbst gegen Anna, Eberhart Quetrers seligen Wittib, wegen der neu erbauten Häuslein unter sant Sebolts Kirchhof am Weinmark zwischen der Schule und des Jacob Gutkauffs Hause dahin, dass diese neuen Häuslein alle nicht höher gebaut werden sollen, als die vorhin abgebrochenen gewesen sind. Zeugen: Weygel Graser und Paulus Vorchtell. G. am Mitwochen vor der heiligen Zwelfpoten tag Symonis vnd Jude.",
+      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen decide a dispute between Albrecht, Meister and pastor of St. Sebolt in Nürnberg, and Anna, widow of Eberhard Quetrer, over newly built houses below St. Sebolt’s churchyard at the Weinmarkt, between the school and Jakob Gutkauff’s house. They rule that the new houses must not be built higher than those previously demolished. Witnesses: Weygel Graser and Pauls Vorchtell. Given on the Wednesday before the feast of the apostles Saints Simon and Jude.",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "content": "decided with the Schöpfen of Nürnberg a dispute between Albrecht, Meister and pastor of St. Sebolt, and Anna, widow of Eberhard Quetrer, ruling that new houses at the Weinmarkt could not be higher than those previously demolished."
+        },
+        {
+          "type": "spouse",
+          "person": "Anna",
+          "of": "Eberhard Quetrer",
+          "ofDeceased": true
+        },
+        {
+          "type": "generic",
+          "person": "Weygel Graser",
+          "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
+        },
+        {
+          "type": "generic",
+          "person": "Pauls Vorchtell",
+          "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
+        }
+      ],
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ]
+    }
+  ]
+}

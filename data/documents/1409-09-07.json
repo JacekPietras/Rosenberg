@@ -52,6 +52,46 @@
           ]
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Parzival und Tristram Zenger, Gebrüder zu Schwarzenegk, verpfänden die Veste und die Stadt Hilpoltstain, wie sie selbst dieselbe bisher von Herzog Stephan in Bayern pſandweise besessen haben, an den Ritter Herrn Hanns von Rosenberg und Elsbeth einer geb. Marschalkinn von Papenheim, seine Hausfrau, für ein Darlehen von sechs tausend ungrischer Gulden gut von Gold. G. zu Neuburg an U. L. Frawen abent als sy geborn warde.",
+      "english": "The brothers Parzival and Tristram Zenger, zu Schwarzenegk, pledge the fortress and town of Hilpoltstain, which they have held as a pledge from Stephan, Herzog in Bayern, to Hans von Rosenberg, Ritter, and his wife Elisabeth Marschalkinn von Papenheim for a loan of 6,000 Hungarian gold guilders. Given at Neuburg on the eve of the Nativity of Our Lady.",
+      "mention": [
+        {
+          "place": "neuburg"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "type": "spouse",
+          "of": "Elisabeth Marschalkinn von Papenheim"
+        },
+        {
+          "person": "Parzival Zenger",
+          "personTitle": [
+            "zu Schwarzenegk"
+          ],
+          "type": "sibling",
+          "of": "Tristram Zenger",
+          "ofTitle": [
+            "zu Schwarzenegk"
+          ]
+        },
+        {
+          "person": "Parzival Zenger",
+          "personTitle": [
+            "zu Schwarzenegk"
+          ],
+          "type": "generic",
+          "content": "pledged the fortress and town of Hilpoltstain, previously held as a pledge from Stephan, Herzog in Bayern, jointly with his brother Tristram Zenger to Hans von Rosenberg, Ritter, and his wife Elisabeth Marschalkinn von Papenheim as security for a loan."
+        }
+      ]
     }
   ]
 }

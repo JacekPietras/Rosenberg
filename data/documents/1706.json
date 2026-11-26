@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Ältere Hofkammer - Sulzbacher Akten 980",
-      "url": "https://www.gda.bayern.de/gvl/document/ca81f6c4-11e0-4200-ad9f-3c272c53a85a",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/ca81f6c4-11e0-4200-ad9f-3c272c53a85a",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++48C52C7B-4D82-4298-9240-D6F6D2DE01EF&parent_id="
+      ],
       "german": "Verkauf eines Guts zu Poppenricht durch Leonhard Graf an seinen Vetter Michael Himmer von Rosenberg",
       "english": "Sale of an estate at Poppenricht by Leonhard Graf to his cousin Michael Himmer von Rosenberg.",
       "mention": [

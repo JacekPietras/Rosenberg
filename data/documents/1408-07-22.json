@@ -1,0 +1,62 @@
+{
+  "date": "1408-07-22",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Irrenfried v. Seckendorf Ritter, Hofmeister des Burggrafen Friedrich v. Nurnberg, und Horneck v. Hornberg taidingen zwischen den erbern festen Knechten, Bernold von Thalheim jun., Wilhelm Jude vom Steyn, Ulrich v. Rosenberg, Peter Münche v. Rosenberg und Hans v. Dürn, Conrad von Sickingen und Heinrich von Kothendorf, und den Burggrafen, von solcher Hilfe wegen die sie diesem gegen Rotenburg gethan, wonach der Burggraf jedem dieser Edelknechte 50 Gulden schuldig ist. G. auf den Sunntag vor S. Jacobs Tag. (e. 2 S.)",
+      "english": "Irrenfried von Seckendorf, Ritter and Hofmeister of Friedrich, Burggraf von Nürnberg, and Horneck von Hornberg negotiate between the burgrave and the honourable, steadfast Knechte Bernold von Thalheim der Jüngere, Wilhelm Jude vom Steyn, Ulrich von Rosenberg, Peter Münche von Rosenberg, Hans von Dürn, Konrad von Sickingen and Heinrich von Kothendorf concerning the assistance they gave the burgrave against Rotenburg. The burgrave owes each of these Edelknechte 50 guilders. Given on the Sunday before St. James’s Day. (With two seals.)",
+      "mention": [
+        {
+          "person": "Friedrich",
+          "personTitle": [
+            "Burggraf von Nürnberg"
+          ]
+        },
+        {
+          "person": "Hans von Dürn"
+        },
+        {
+          "person": "Konrad von Sickingen"
+        },
+        {
+          "place": "rosenberg-town"
+        },
+        {
+          "place": "rothenburg"
+        },
+        {
+          "place": "seckendorff"
+        },
+        {
+          "place": "talheim"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "personTitle": [
+            "Edelknecht"
+          ],
+          "type": "generic",
+          "content": "gave assistance to Friedrich, Burggraf von Nürnberg, against Rotenburg."
+        },
+        {
+          "person": "Irrenfried von Seckendorf",
+          "personTitle": [
+            "Hofmeister des Burggrafen Friedrich von Nürnberg",
+            "Ritter"
+          ],
+          "type": "generic",
+          "content": "negotiated with Horneck von Hornberg between Friedrich, Burggraf von Nürnberg, and Ulrich von Rosenberg and other Knechte concerning their assistance to the burgrave against Rotenburg."
+        },
+        {
+          "person": "Horneck von Hornberg",
+          "type": "generic",
+          "content": "negotiated with Irrenfried von Seckendorf between Friedrich, Burggraf von Nürnberg, and Ulrich von Rosenberg and other Knechte concerning their assistance to the burgrave against Rotenburg."
+        }
+      ]
+    }
+  ]
+}

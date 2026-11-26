@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Regierung - Sulzbacher Akten 749",
-      "url": "https://www.gda.bayern.de/gvl/document/3f1f6e6c-501e-4cda-b37c-b561b04f7b04",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3f1f6e6c-501e-4cda-b37c-b561b04f7b04",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D490256C-7B6F-4BFC-8E8D-E85B31757E79&parent_id="
+      ],
       "german": "Schlägerei zwischen Hans Schmid von Rosenberg, dem Knecht Hans Herbst von der Grafmühle und dem Hofgärtner Hans Leutner zu Sulzbach",
       "english": "Brawl between Hans Schmid von Rosenberg, the servant Hans Herbst of the Grafmühle, and the court gardener Hans Leutner zu Sulzbach",
       "mention": [

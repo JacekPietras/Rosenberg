@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Ältere Hofkammer - Sulzbacher Akten 1794",
-      "url": "https://www.gda.bayern.de/gvl/document/20868d6a-7516-4f72-afa9-543a87f0ed78",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/20868d6a-7516-4f72-afa9-543a87f0ed78",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7BB81F07-66AC-457C-8583-059DF61A8E04&parent_id="
+      ],
       "german": "Verzeichnis der von dem ehemaligen Verwalter Stephan Dimmelmeyer eingelieferten und dem neuen Verwalter Mathias Weingärtner übergebenen Rosenberger Akten, Amtsbücher und Rechnungen",
       "english": "Inventory of the Rosenberg records, official books, and accounts delivered by the former administrator Stephan Dimmelmeyer and handed over to the new administrator Mathias Weingärtner.",
       "mention": [

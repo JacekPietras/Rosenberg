@@ -1,0 +1,38 @@
+{
+  "date": "1413-11-18",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Ritter Hans von Rosenberg, Schultheiss und die Schöpfen der Stadt Nuremberg beurkunden dass Heintz Stentz von Sebolt Pfintzing, Pfleger der geistlichen Frauen zu sant Claren daselbst den Hof zum Altemberg vormals, laut der Erbbriefe, zu rechtem Erbe erhalten und sich verbindlich gemacht habe, von diesem Hof den Zehenden, und zwar das vierte Band vom Waizen, Korn, Gersten, Habern, Kraut und Rüben zu geben, diesen Klosterfrauen alle Jahre sechs Dienste mit einem Wagen nach Nuremberg hinein zu thun, und mit dem Fischwasser an der Rednitz nichts zu schicken zu haben. Zeugen: Vlrich Fütrer und Görg Ebner. G. am Samstag vor sant Elspeten tag.",
+      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen certify that, according to the hereditary documents, Heinrich Stentz had previously received the farm at Altemberg as a hereditary holding from Sebolt Pfintzing, steward of the nuns of St. Clare in Nürnberg. Stentz undertook to give as tithe every fourth bundle of wheat, grain, barley, oats, cabbage and turnips from the farm; to perform six wagon services each year for the nuns into Nürnberg; and to have no authority over the fishing water on the Rednitz. Witnesses: Ulrich Fütrer and Georg Ebner. Given on the Saturday before St. Elisabeth’s Day.",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter",
+            "Schultheiß zu Nürnberg"
+          ],
+          "content": "certified with the Schöpfen of Nürnberg that Heinrich Stentz had received the farm at Altemberg as a hereditary holding from Sebolt Pfintzing, steward of the nuns of St. Clare in Nürnberg, subject to tithe and services."
+        },
+        {
+          "type": "generic",
+          "person": "Ulrich Fütrer",
+          "content": "witnessed the certification by Hans von Rosenberg and the Schöpfen of Nürnberg concerning the farm at Altemberg."
+        },
+        {
+          "type": "generic",
+          "person": "Georg Ebner",
+          "content": "witnessed the certification by Hans von Rosenberg and the Schöpfen of Nürnberg concerning the farm at Altemberg."
+        }
+      ],
+      "mention": [
+        {
+          "place": "nuremberg"
+        }
+      ]
+    }
+  ]
+}

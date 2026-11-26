@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAWü, Hochstift Würzburg Kaiserliches Landgericht Testamentssachen 333",
-      "url": "https://www.gda.bayern.de/gvl/document/7ad672b5-a5fb-4aff-aa25-feba10e83552",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/7ad672b5-a5fb-4aff-aa25-feba10e83552",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++13887184-582e-4ece-b399-017205384e28&parent_id="
+      ],
       "german": "Verschiedene Berichte von und an Jörg Deuerlein, Vogt der Vogtei Laudenbach, zumeist zu Gütern und Weinbergen, die vormundschaftlich verwaltet werden und den Kindern des Zeysolff von Rosenberg zugute kommen sollen. Zudem Erhuldigungsprotokoll in der Vogtei Laudenbach 1674.",
       "english": "Various reports from and to Jörg Deuerlein, bailiff of the Laudenbach bailiwick, mostly concerning estates and vineyards administered under guardianship and intended to benefit the children of Zeysolff von Rosenberg. Also includes the homage oath register for the Laudenbach bailiwick, 1674.",
       "mention": [

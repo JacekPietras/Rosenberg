@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv",
-      "url": "https://www.gda.bayern.de/gvl/document/a2e3e7d1-79af-4e98-8f70-8d6b3924d554",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a2e3e7d1-79af-4e98-8f70-8d6b3924d554",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d095c270-eb8b-49e7-a6cf-c6c1d1dd5359&parent_id="
+      ],
       "german": "Verlassenschaft der Witwe Dorothea Hahn von Rosenberg.\n\nEnthält-/Darin-Vermerke: Hinweis: Zu bestellen unter AG Ansbach, Nr. 3226/7",
       "english": "Estate of the widow Dorothea Hahn von Rosenberg.\n\nNote: To be ordered under Ansbach District Court, no. 3226/7",
       "mention": [

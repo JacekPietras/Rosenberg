@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Adelsarchiv Crailsheim, Familienkonsulentie und Herrschaft Rügland, Neues Archiv 5493",
-      "url": "https://www.gda.bayern.de/gvl/document/9bda95be-c25d-480c-becb-1c33e5dd657e",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/9bda95be-c25d-480c-becb-1c33e5dd657e",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++a98383c8-c5bc-4107-a86b-a2831f8bbc52&parent_id="
+      ],
       "german": "Johann Jakob Wünnerlein von Rosenberg gegen Georg Rögner zu Trautskirchen wegen dessen Schulden für zwei gekaufte Schweine.",
       "english": "Johann Jakob Wünnerlein von Rosenberg against Georg Rögner of Trautskirchen concerning the latter’s debts for two pigs he had purchased.",
       "mention": [

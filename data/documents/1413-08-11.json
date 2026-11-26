@@ -1,0 +1,44 @@
+{
+  "date": "1413-08-11",
+  "place": "Freising",
+  "label": "to review",
+  "entries": [
+    {
+      "source": "Regesta Boica 12",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
+      "german": "Derselbe genehmiget den vom Ritter Hanns von Rosenberg geschehenen Verkauf einer jährlichen Gilt von hundert fünfzig ungrischen Gulden aus der demselben verpfändeten Stadt und Veste Hilpoltstain an die Stadt Nürnberg um dreytausend Gulden. G. zu Freysing am Freytag nach sand Lorentzen tag",
+      "english": "The same person approves the sale by Hans von Rosenberg, Ritter, to the city of Nürnberg of an annual rent of 150 Hungarian guilders from the town and fortress of Hilpoltstain, which were pledged to him, for 3,000 guilders. Given at Freising on the Friday after St. Lawrence’s Day.",
+      "facts": [
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "had sold the city of Nürnberg an annual rent from the town and fortress of Hilpoltstain."
+        },
+        {
+          "type": "generic",
+          "person": "Hans von Rosenberg",
+          "personTitle": [
+            "Ritter"
+          ],
+          "content": "held the town and fortress of Hilpoltstain in pledge."
+        },
+        {
+          "type": "generic",
+          "subject": "an unidentified issuer",
+          "content": "approved Hans von Rosenberg’s sale to the city of Nürnberg of an annual rent from the town and fortress of Hilpoltstain."
+        }
+      ],
+      "mention": [
+        {
+          "place": "freising"
+        },
+        {
+          "place": "nuremberg"
+        }
+      ]
+    }
+  ]
+}

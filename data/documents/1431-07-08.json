@@ -21,6 +21,36 @@
           "person": "Ulrich von Rosenberg"
         }
       ]
+    },
+    {
+      "source": "Regesta Boica 13",
+      "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
+      "german": "Sigmund römischer König bekennt, dass ihm die Stadt Nuremberg schon vormals 9000 Gulden geliehen, gegenwärtig auf seinen Befehl dem Ulrich von Rosemberg 2000 Gulden bezahlt, und um 4100 Gulden die von ihm an Balthasar und Sigmund von Tüngen verpfändeten Städte Haidingsfelt und Bernhaim gelöset habe, daher er derselben bis zur Wiederbezahlung der Schuldsumme von 15100 Gulden die, erwähnten zwey Städte pfandweise einantwortet. G. zu Nuremberg am Suntag nach S. Ulrichs Tag. (Vidim.) (F.)",
+      "english": "Sigmund, King of the Romans, acknowledges that the city of Nürnberg had previously lent him 9,000 florins, has now paid Ulrich von Rosenberg 2,000 florins at his command, and has redeemed for 4,100 florins the cities of Haidingsfelt and Bernhaim, which he had pledged to Balthasar von Thüngen and Siegmund von Thüngen. He therefore delivers those two cities to Nürnberg as pledges until the debt of 15,100 florins is repaid. Given at Nürnberg on the Sunday after St. Ulrich’s Day. (Vidimus.) (F.)",
+      "mention": [
+        {
+          "person": "Balthasar von Thüngen"
+        },
+        {
+          "person": "König Siegmund",
+          "personTitle": [
+            "König"
+          ]
+        },
+        {
+          "place": "nuremberg"
+        },
+        {
+          "person": "Siegmund von Thüngen"
+        }
+      ],
+      "facts": [
+        {
+          "person": "Ulrich von Rosenberg",
+          "type": "generic",
+          "content": "received payment from Nürnberg at the command of King Sigmund."
+        }
+      ]
     }
   ]
 }

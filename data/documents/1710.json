@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAAm, Fürstentum Pfalz-Sulzbach, Ältere Hofkammer - Sulzbacher Akten 2621",
-      "url": "https://www.gda.bayern.de/gvl/document/a4893b19-15bf-4871-86c8-18161dc6dc47",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/a4893b19-15bf-4871-86c8-18161dc6dc47",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8D033049-44B8-48AB-9A9A-6E1BB62F2C91&parent_id="
+      ],
       "german": "Matthias Weingärtner zum Verwalter von Rosenberg",
       "english": "Mathias Weingärtner appointed administrator of Rosenberg.",
       "mention": [

@@ -4,7 +4,10 @@
   "entries": [
     {
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamtsakten 406",
-      "url": "https://www.gda.bayern.de/gvl/document/3e746a49-f79a-4504-8f37-2294d0d02b59",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/3e746a49-f79a-4504-8f37-2294d0d02b59",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++23966E3D-9DB2-4AA8-8344-A1D5D0692E00&parent_id="
+      ],
       "german": "Der von Hans Joachim von Seckendorff zu Jochsberg wegen eines seinem Schwager Albrecht Christoph von und zu Rosenberg schuldigen Kapitals á 2500 fl. gesuchte lehenherrliche Konsens, und wie solcher auf 3 Jahre lang auf die Zehenden zu Kraft und Windersbach zwar erteit, nachgehends aber, und da sich vorgedachter von Rosenberg in den beim Kaiserlichen Landgericht anhängigen Seckendorffischen Konkurs nicht einlassen wollte, für erloschen gehalten worden",
       "english": "The feudal lord’s consent sought by Hans Joachim von Seckendorf of Jochsberg for a principal sum of 2,500 florins owed to his brother-in-law Albrecht Christoph von und zu Rosenberg; how this consent was granted for three years against the tithes at Kraft and Windersbach, but was subsequently deemed expired when the aforementioned von Rosenberg refused to join the Seckendorff bankruptcy proceedings pending before the Imperial Court",
       "mention": [
