@@ -161,7 +161,7 @@ Elchana
 Elche
 Elchine, Elchina
 Elichin
-Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
+Elisabeth, Eilse, Elisabet, Elizabet, Elizabeth, Els, Elsa, Elsbet, Elsbeth, Else, Elspet, Elspeth, Elyzabeth
 Eva
 Felicitas
 Gertrud, Gerdrud, Gertraud

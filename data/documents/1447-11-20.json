@@ -1,9 +1,6 @@
 {
   "date": "1447-11-20",
-  "label": [
-    "to review",
-    "Proposed: Franken"
-  ],
+  "label": "Franken",
   "entries": [
     {
       "source": "Staatsarchiv Wertheim G-Rep. 5 Lade IX H Nr. 20",
@@ -15,7 +12,8 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166189%2F07_0000166189_0001_7-166189-1.jpg"
         },
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166189%2F07_0000166189_0002_7-166189-2.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166189%2F07_0000166189_0002_7-166189-2.jpg",
+          "deleted": true
         }
       ]
     }
@@ -37,7 +35,7 @@
       ]
     },
     {
-      "place": "seinsheim"
+      "person": "Elisabeth von Seinsheim"
     },
     {
       "person": "Thomas von Rosenberg",
