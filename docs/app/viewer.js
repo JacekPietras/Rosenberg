@@ -5,7 +5,7 @@ import { formatDate, dateSortValue } from './rendering/dates.js';
 import { renderPeopleTree, setupPeopleTreeZoom } from './screens/tree.js?v=125';
 import { renderActiveScreen } from './screens/router-view.js?v=28';
 import { documentAtMarker } from './components/document-navigation.js';
-import { createDocumentRenderer } from './screens/documents.js?v=45';
+import { createDocumentRenderer } from './screens/documents.js?v=46';
 import { setupDocumentTextEditor } from './components/document-text-editor.js?v=2';
 import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=19';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
