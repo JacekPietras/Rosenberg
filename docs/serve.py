@@ -559,8 +559,23 @@ class ViewerHandler(SimpleHTTPRequestHandler):
                         target.rename(archived)
                     elif not archived.is_file():
                         raise FileNotFoundError(f"Document not found: {relative_path}")
+                    tracked = subprocess.run(
+                        ["git", "ls-files", "--error-unmatch", "--", f":(literal){relative_path}"],
+                        cwd=ROOT, capture_output=True, text=True, check=False,
+                    )
+                    if tracked.returncode not in (0, 1):
+                        raise RuntimeError(tracked.stderr.strip() or "Could not inspect document in Git")
+                    paths = [f":(literal){archived.relative_to(ROOT)}"]
+                    if tracked.returncode == 0:
+                        paths.append(f":(literal){relative_path}")
+                    staged = subprocess.run(
+                        ["git", "add", "-A", "--", *paths],
+                        cwd=ROOT, capture_output=True, text=True, check=False,
+                    )
+                    if staged.returncode:
+                        raise RuntimeError(staged.stderr.strip() or "Could not stage deleted document")
                 self.send_json(200, {"ok": True})
-            except (KeyError, TypeError, ValueError, OSError) as error:
+            except (KeyError, TypeError, ValueError, OSError, RuntimeError) as error:
                 self.send_json(400, {"error": str(error)})
             return
         if self.path.split("?", 1)[0] == "/api/heartbeat":

@@ -7,6 +7,7 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
+import subprocess
 import tempfile
 import threading
 import unittest
@@ -31,6 +32,7 @@ class FamilyTreeServerTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name).resolve()
+        subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
         (self.root / 'scripts').symlink_to(ROOT / 'scripts', target_is_directory=True)
         self.write('data/names.md', 'Alex\nBea\n')
         self.write('data/nobiliary_particles.md', 'von\n')
@@ -92,17 +94,25 @@ class FamilyTreeServerTests(unittest.TestCase):
         path = 'data/documents/test.json'
         archived = self.root / 'data/documents/deleted/test.json'
         source = (self.root / path).read_bytes()
+        subprocess.run(['git', 'add', '--', path], cwd=self.root, check=True)
+        subprocess.run(['git', '-c', 'user.name=Test', '-c', 'user.email=test@example.com',
+                        'commit', '-qm', 'initial'], cwd=self.root, check=True)
+        self.write('data/documents/unrelated.json', {'entries': []})
         status, result = self.post()
         self.assertEqual(200, status, result)
         self.assertEqual((200, {'ok': True}), self.request('POST', '/api/delete-document', {'path': path}))
         self.assertEqual(200, self.request('POST', '/api/delete-document', {'path': path})[0])
         self.assertEqual(source, archived.read_bytes())
         self.assertFalse((self.root / path).exists())
+        staged = subprocess.run(['git', 'diff', '--cached', '--no-renames', '--name-only'], cwd=self.root,
+                                capture_output=True, text=True, check=True).stdout.splitlines()
+        self.assertEqual(['data/documents/deleted/test.json', path], staged)
         self.assertEqual((400, {'error': 'The document has been deleted'}),
                          self.request('POST', '/api/save-document', {'path': path, 'document': {'entries': []}}))
         status, files = self.request('GET', '/api/files')
         self.assertEqual(200, status)
-        self.assertFalse(any(item['path'].startswith('data/documents/') for item in files))
+        self.assertFalse(any(item['path'] == path or item['path'].startswith('data/documents/deleted/')
+                             for item in files))
         # A corrupt archived record would fail the rebuild if the loader opened it.
         archived.write_text('{bad')
         status, result = self.post()

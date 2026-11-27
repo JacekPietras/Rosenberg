@@ -144,7 +144,8 @@ document record.
 
 ### Soft-deleting documents
 
-The local viewer's delete action moves a record to `data/documents/deleted/`.
+The local viewer's delete action moves a record to `data/documents/deleted/`
+and stages the move in Git.
 To restore a record, move its JSON file back to its original location under
 `data/documents/`.
 
@@ -413,7 +414,8 @@ Document filenames use `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, optionally followed
 by `_I` (a numeric suffix), and `.json`. The linter warns about invalid names.
 When any active document for the same date has a suffix, it renumbers the group
 from `_1` in existing numeric order, placing an unsuffixed file first and
-skipping filenames reserved by soft-deleted documents.
+skipping filenames reserved by soft-deleted documents. The linter stages renamed
+files in Git.
 Renaming changes document paths; rebuild the saved family graph afterwards, and
 update any external links that use the old paths.
 

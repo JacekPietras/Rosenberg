@@ -2,6 +2,7 @@
 """Warn about document filenames and normalize numeric suffixes."""
 
 import re
+import subprocess
 import sys
 from collections import defaultdict
 from itertools import count
@@ -60,6 +61,27 @@ def normalize(directory):
                     raise
             for source, target in moves:
                 print(f"Renamed {source} -> {target}")
+            # Include old names only when they are tracked; an untracked old
+            # name disappears during the move and cannot be passed to git add.
+            old_paths = [f":(literal){source.name}" for source, _ in moves]
+            tracked = subprocess.run(
+                ["git", "ls-files", "-z", "--", *old_paths], cwd=directory,
+                capture_output=True, check=False,
+            )
+            if tracked.returncode:
+                print(f"{directory}: error: cannot inspect renamed files in Git: "
+                      f"{tracked.stderr.decode(errors='replace').strip()}")
+                return warnings, False
+            tracked_names = tracked.stdout.decode().split("\0")
+            paths = {f":(literal){target.name}" for _, target in moves}
+            paths.update(f":(literal){name}" for name in tracked_names if name)
+            staged = subprocess.run(
+                ["git", "add", "-A", "--", *sorted(paths)], cwd=directory,
+                capture_output=True, text=True, check=False,
+            )
+            if staged.returncode:
+                print(f"{directory}: error: cannot stage renamed files: {staged.stderr.strip()}")
+                return warnings, False
     return warnings, True
 
 
