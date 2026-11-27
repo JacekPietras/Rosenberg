@@ -3,27 +3,21 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Hauptstaatsarchiv Stuttgart Q 3/90 a Bü 518",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=1-2853319",
-      "german": "Fotoalbum [Ohne Titel, vermutlich älteres Album im Familienbesitz mit Porträts von Verwandten und Vorfahren]\n\nEnthält: Enthält v.a.: Reproduktionen von Porträts der folgenden Personen:\n- Clementine Gräfin von Butler-Clonebough\n- Friedrich Schenk Freiherr von Stauffenberg\n- Franz Schenk Freiherr von Stauffenberg\n- Ludwig Graf von Geldern-Egmont\n- Wilhelmine Freiin von und zu Guttenberg\n- Ida Therese Caroline Gräfin von Geldern-Egmont\n- Johann Franz a Paula Schenk Freiherr von Stauffenberg\n- Maria Caroline Freiin Zobel von Giebelstadt\n- Adam Friedrich Schenk Freiherr von Stauffenberg\n- Franz Ludwig Freiherr von Harff zu Dreyborn\n- Maria Clara Freiin von Kerpen zu Illingen\n- Charlotte Freiin von Harff zu Dreyborn\n- Friedrich Adolf Graf von Geldern zu Arssen\n- Friederike Freiin von Steinen-Scherffen\n- Carl Theodor Graf von Geldern\n- Anna Ernesti Edle von Faulbach\n- Charlotte Freiin von Rosenbach\n- Franz Wilhelm Freiherr von und zu Guttenberg\n- Therese Gräfin von Spaur und Flavon",
-      "english": "Photo album [untitled, probably an older album in the family’s possession, with portraits of relatives and ancestors]\n\nContains: Mainly reproductions of portraits of the following people:\n- Clementine Gräfin von Butler-Clonebough\n- Friedrich Schenk Freiherr von Stauffenberg\n- Franz Schenk Freiherr von Stauffenberg\n- Ludwig Graf von Geldern-Egmont\n- Wilhelmine Freiin von und zu Guttenberg\n- Ida Therese Caroline Gräfin von Geldern-Egmont\n- Johann Franz a Paula Schenk Freiherr von Stauffenberg\n- Maria Caroline Freiin Zobel von Giebelstadt\n- Adam Friedrich Schenk Freiherr von Stauffenberg\n- Franz Ludwig Freiherr von Harff zu Dreyborn\n- Maria Clara Freiin von Kerpen zu Illingen\n- Charlotte Freiin von Harff zu Dreyborn\n- Friedrich Adolf Graf von Geldern zu Arssen\n- Friederike Freiin von Steinen-Scherffen\n- Carl Theodor Graf von Geldern\n- Anna Ernesti Edle von Faulbach\n- Charlotte Freiin von Rosenbach\n- Franz Wilhelm Freiherr von und zu Guttenberg\n- Therese Gräfin von Spaur und Flavon"
+      "source": "StAWü, G-Akten 20006",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/86e8fff0-c1f2-49ca-b8a9-a066de3121c9",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++85D8CD0E-B1CD-40D0-AC89-5452FE56FEA6&parent_id="
+      ],
+      "german": "Herren von Rosenberg gegen Hochstift Würzburg wegen der Pfarrbestellung zu Lipprichhausen (Kr. Uffenheim)",
+      "english": "Lords von Rosenberg against the Prince-Bishopric of Würzburg concerning the appointment of the parish priest at Lipprichhausen (Uffenheim district)."
     }
   ],
   "mention": [
     {
-      "person": "Adam Friedrich Schenk"
-    },
-    {
-      "person": "Franz Schenk"
-    },
-    {
-      "person": "Friedrich Schenk"
-    },
-    {
-      "place": "giebelstadt"
-    },
-    {
       "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

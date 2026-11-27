@@ -21,13 +21,13 @@
   ],
   "mention": [
     {
-      "person": "Gerhard von Katzenelnbogen"
+      "person": "Gerhard von Katzenelnbogen",
+      "personTitle": [
+        "Dompropst zu Speyer"
+      ]
     },
     {
       "person": "Hans vom Hirschhorn"
-    },
-    {
-      "place": "heidelberg"
     },
     {
       "place": "speyer"

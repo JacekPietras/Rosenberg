@@ -3,27 +3,18 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Würzburger Risse und Pläne I 285",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 202 - 204 a",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/ff95665c-0906-4a59-b91a-003efa340739",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9D891C20-BB94-4E84-9E52-D695AC78B1F6&parent_id="
+        "https://www.gda.bayern.de/gvl/document/692ab14d-bd7b-4711-a947-ec4b290e0b9c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d03ba40d-8874-409f-9f07-2bb3422faa81&parent_id="
       ],
-      "german": "Farbiger Plan, angelegt über einen Streit zwischen Zeisolf von Rosenberg zu Haltenbergstetten u. Veit von Lichtenstein zum Geyersberg wegen der Steinsetzung zwischen den Markungen Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: Enthält: Ansicht der Orte Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim",
-      "english": "Colored plan drawn up concerning a dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over the placement of boundary stones between the districts of Gnötzheim and Ippesheim.\n\nContains/includes: views of the localities Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim."
+      "german": "Liste von Beteiligten am Bauernkrieg (Beschädiger des Zeisolf von Rosenberg).",
+      "english": "List of participants in the Peasants’ War (those who damaged Zaisolph von Rosenberg’s property)."
     }
   ],
   "mention": [
     {
-      "place": "gnoetzheim"
-    },
-    {
-      "person": "Veit von Lichtenstein"
-    },
-    {
-      "person": "Zaisolph von Rosenberg",
-      "personTitle": [
-        "zu Haltenbergstetten"
-      ]
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

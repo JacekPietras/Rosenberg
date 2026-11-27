@@ -3,18 +3,21 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Nachlass Ruthard Schwab 21",
+      "source": "StABa, Archiv der Freiherren von Guttenberg zu Guttenberg (G 67), Amts- und Geschäftsbücher B 520",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/fa273f40-70b6-4463-a6dd-6dae83098325",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F6E9923F-1EB9-4D5E-9094-4F9684481A62&parent_id="
+        "https://www.gda.bayern.de/gvl/document/68037083-1799-4898-aee1-6fa1ea6e4b4b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b1426cfe-c951-49e1-86f7-b862db16858c&parent_id="
       ],
-      "german": "Titel:  Das Gesicht des Dritten Reiches. Profile einer totalitären Herrschaft\nAutor/Herausgeber:  Joachim C. Fest:\nOrt/Jahr:  München 1963\n\nEnthält-/Darin-Vermerke: Enthält: Kurzbiographien von Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß",
-      "english": "Title: The Face of the Third Reich. Profiles of a Totalitarian Regime.\nAuthor/editor: Joachim C. Fest.\nPlace/year: Munich 1963.\n\nContains/includes: short biographies of Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß."
+      "german": "\"Dundorffer Amtsrepertorium\",  1756 begonnen und fortgeführt von Johannes Petrus Nitribitt, Wzb. Hof- und Regierungsrat, kaiserlicher Landgerichtsconsulent, Frhr. von Rosenbach'scher Obervogt",
+      "english": "“Dundorff administrative register,” begun in 1756 and continued by Johannes Petrus Nitribitt, Würzburg court and government councillor, imperial provincial court consultant, chief bailiff of the Freiherr von Rosenbach family."
     }
   ],
   "mention": [
     {
       "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

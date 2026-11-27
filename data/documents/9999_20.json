@@ -3,21 +3,20 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim G-Rep. 2b Rosenberg 14",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-198894",
-      "german": "Acta in Sachen von Dienheim contra Albrecht Christoph und Georg Sigmund von Rosenberg, mandati exemtorialis de non turbando betr.",
-      "english": "Proceedings in the case of von Dienheim against Albrecht Christoph and Georg Siegmund von Rosenberg, concerning a writ of execution prohibiting interference."
+      "source": "Staatsarchiv Wertheim K-LRA 91 Nr. 481",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-169026",
+      "german": "Ansichten von Uissigheim\n\nEnthält: Enthält: Templerhaus; Blick auf den Stahlberg\n\nUmfang: 2 Dias",
+      "english": "Views of Uissigheim\n\nContains: Templar House; view of the Stahlberg\n\nExtent: 2 slides",
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4582&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000004582%2Ftitlaufn_0000169026%2F07_0000169026_0001_7-169026-1.jpg"
+        }
+      ]
     }
   ],
   "mention": [
     {
-      "person": "Albrecht Christoph von Rosenberg"
-    },
-    {
-      "place": "dienheim"
-    },
-    {
-      "person": "Georg Siegmund von Rosenberg"
+      "place": "uissigheim"
     }
   ]
 }

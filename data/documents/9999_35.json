@@ -3,20 +3,21 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim K-LRA 91 Nr. 481",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-169026",
-      "german": "Ansichten von Uissigheim\n\nEnthält: Enthält: Templerhaus; Blick auf den Stahlberg\n\nUmfang: 2 Dias",
-      "english": "Views of Uissigheim\n\nContains: Templar House; view of the Stahlberg\n\nExtent: 2 slides",
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4582&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000004582%2Ftitlaufn_0000169026%2F07_0000169026_0001_7-169026-1.jpg"
-        }
-      ]
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 180 - 183",
+      "url": [
+        "https://www.gda.bayern.de/gvl/document/23a469e6-cc9f-41bb-b966-9dd51bb6bdd4",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ae0865ee-386b-4713-98ab-5f0c86fb7cb8&parent_id="
+      ],
+      "german": "\"Rotenburg. Supplication und Weisungs-Articul ihres und des Spitals erlittenen Schadens, contra Zeisolph von Rosenberg.\"",
+      "english": "“Rothenburg. Petition and articles of instruction concerning the damage suffered by them and the hospital, against Zaisolph von Rosenberg.”"
     }
   ],
   "mention": [
     {
-      "place": "uissigheim"
+      "place": "rothenburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }
