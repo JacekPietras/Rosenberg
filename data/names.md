@@ -105,7 +105,7 @@ Raban, Rabanus, Raben, Rafan, Ras, Rasen, Raven, Rhaban, Rhabanus
 Reichard, Reichart, Richard
 Reinbot
 Reinhard, Reinhart
-Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf
+Rudolf, Rudolff, Rudolph, Ruedi, Ruodolf, Ruedolff
 Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian, Bastian
