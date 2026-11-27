@@ -45,6 +45,13 @@ test('Split appears for three distinct four-digit years in English entries', () 
   assert.ok(render([{ english: '1400, 1401 and 1400' }, { english: '1402' }]).includes('data-split-document'));
   assert.ok(!render([{ english: '1400, 1400 and 1401; 12345', german: '1402' }]).includes('data-split-document'));
   assert.ok(!renderer.renderDocument({ label: 'split', entries: [{ english: '1400 1401 1402' }] }, 'data/documents/example.json', 0).includes('data-split-document'));
+  const labeled = renderer.renderDocument({ label: ['Franken', 'Important'], entries: [{ english: '1400 1401 1402' }] }, 'data/documents/example.json', 0);
+  assert.equal((labeled.match(/data-edit-record-labels=/g) || []).length, 2);
+  assert.match(labeled, /class="record-label record-label-button"/);
+  assert.match(labeled, /data-split-document/);
+  assert.match(labeled, /data-delete-document/);
+  assert.match(render([]), /aria-label="Add record labels"/);
   state.canEditDocuments = false;
   assert.ok(!render([{ english: '1400 1401 1402' }]).includes('data-split-document'));
+  assert.doesNotMatch(renderer.renderDocument({ label: 'Franken', entries: [] }, 'data/documents/example.json', 0), /data-edit-record-labels/);
 });

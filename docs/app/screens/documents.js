@@ -220,18 +220,19 @@ export function createDocumentRenderer({
     const date = doc.date && formatDate(doc.date) !== title ? `<small>${escapeHtml(formatDate(doc.date))}</small>` : '';
     const labels = (Array.isArray(doc.label) ? doc.label : [doc.label]).map((label) => String(label || '').trim()).filter(Boolean);
     const labelKeys = labels.map((label) => label.toLocaleLowerCase());
-    const labelEditor = state.canEditDocuments && path.startsWith('data/documents/')
-      ? `<button class="record-label-edit" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels" title="Edit labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>`
+    const canEditLabels = state.canEditDocuments && path.startsWith('data/documents/');
+    const labelEditor = canEditLabels && !labels.length
+      ? `<button class="record-label-edit" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Add record labels" title="Add labels"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>`
       : '';
     const years = new Set(allEntries.flatMap((entry) => typeof entry.english === 'string'
       ? [...entry.english.matchAll(/(?<!\d)\d{4}(?!\d)/g)].map((match) => match[0]) : []));
-    const splitButton = labelEditor && years.size >= 3 && !labelKeys.includes('split')
+    const splitButton = canEditLabels && years.size >= 3 && !labelKeys.includes('split')
       ? `<button class="record-split" type="button" data-split-document="${escapeHtml(path)}">Split</button>`
       : '';
-    const deleteButton = labelEditor
+    const deleteButton = canEditLabels
       ? `<button class="record-label-edit record-delete" type="button" data-delete-document="${escapeHtml(path)}" aria-label="Delete document" title="Delete document"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button>`
       : '';
-    const reviewLabelButton = labelEditor
+    const reviewLabelButton = canEditLabels
       ? `<button class="record-label-edit" type="button" data-show-review-labels="${escapeHtml(path)}" aria-label="Show label propositions" title="Show label propositions"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.1 1.9c-1 .8-1.7 1.2-1.7 2.6M12 17h.01"/></svg></button>`
       : '';
     const reviewLabels = Array.isArray(doc?.label) ? doc.label : [doc?.label];
@@ -239,7 +240,7 @@ export function createDocumentRenderer({
     const needsMentionLabels = path.startsWith('data/documents/') && hasReviewLabels;
     const mentionLabels = needsMentionLabels ? `<div class="review-name-mentions" data-review-name-labels="${escapeHtml(path)}" aria-label="Labels in other documents where names are mentioned"></div>` : '';
     const mentionLabelTargets = needsMentionLabels ? ` data-review-label-path="${escapeHtml(path)}"` : '';
-    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${reviewLabelButton}${splitButton}${deleteButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
+    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => canEditLabels ? `<button class="record-label record-label-button" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels: ${escapeHtml(label)}">${escapeHtml(label)}</button>` : `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${reviewLabelButton}${splitButton}${deleteButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';
