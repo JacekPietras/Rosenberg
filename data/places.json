@@ -2046,6 +2046,30 @@
     "showOnMap": false
   },
   {
+    "id": "randeck",
+    "variations": [
+      "Randeck",
+      "Randek",
+      "Randecke",
+      "Randecken",
+      "Randeckin",
+      "Randeken"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "bellersheim",
+    "variations": [
+      "Bellersheim",
+      "Beldersheim",
+      "Belderszheym",
+      "Beldirsheym",
+      "Bellerszhaim",
+      "Beldirsheim"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "wertheim-stiftskirche",
     "variations": [
       "Wertheim",
