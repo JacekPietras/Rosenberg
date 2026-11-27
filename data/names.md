@@ -95,7 +95,7 @@ Mathern
 Melchior
 Michael, Michel, Micheln
 Nicolaus, Claes, Clais, Claus, Nicholas, Nicolaum, Niklaus, Nikolaus
-Niklas, Niclas, Nyclos
+Niklas, Niclas, Nyclaus, Nyclos
 Otto, Attel
 Pankraz
 Pauls, Paul, Paulus

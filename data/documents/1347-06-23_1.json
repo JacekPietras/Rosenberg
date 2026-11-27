@@ -22,6 +22,9 @@
   ],
   "mention": [
     {
+      "place": "bellersheim"
+    },
+    {
       "place": "brunn"
     },
     {
@@ -29,6 +32,9 @@
     },
     {
       "place": "mainz"
+    },
+    {
+      "place": "randeck"
     }
   ]
 }
