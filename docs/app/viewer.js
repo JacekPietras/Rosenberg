@@ -7,7 +7,7 @@ import { renderActiveScreen } from './screens/router-view.js?v=28';
 import { documentAtMarker } from './components/document-navigation.js';
 import { createDocumentRenderer } from './screens/documents.js?v=44';
 import { setupDocumentTextEditor } from './components/document-text-editor.js';
-import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=15';
+import { setupRecordLabelSelector } from './screens/record-label-selector.js?v=16';
 import { setupImageLabelSelector } from './screens/image-label-selector.js?v=3';
 import { parsePlaces, buildPlacePattern, parsePeople, buildPersonPattern } from './data/entities.js?v=90';
 import { createSealScreen } from './screens/seals.js?v=4';

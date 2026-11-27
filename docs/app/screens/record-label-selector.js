@@ -58,7 +58,10 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
         const result = await repository.saveDocument(path, updated);
         state.documents.set(path, updated);
         markSaved(path, result.version);
-        await rerender();
+        const figure = imageButton.closest('.entry-image');
+        const container = figure?.parentElement;
+        figure?.remove();
+        if (container && !container.querySelector('.entry-image')) container.remove();
       } catch (error) {
         if (status) status.textContent = `Could not remove image: ${error.message}`;
         imageButton.disabled = false;
