@@ -92,11 +92,13 @@ export function createMarkupRenderer({ state }) {
   }
 
   function markdownMarkup(value = '', linkEntities = true) {
-    const output = []; let listDepth = 0; let lastIndent = -1; let itemOpen = false;
+    const output = []; let listDepth = 0; let lastIndent = -1; let itemOpen = false; let paragraph = [];
+    const closeParagraph = () => { if (paragraph.length) { output.push(`<p>${paragraph.join('<br>')}</p>`); paragraph = []; } };
     const closeLists = () => { if (itemOpen) { output.push('</li>'); itemOpen = false; } while (listDepth > 0) { output.push('</ul>'); listDepth -= 1; } lastIndent = -1; };
     String(value).split('\n').forEach((line) => {
       const match = line.match(/^(\s*)[*+-]\s+(.+)$/);
-      if (!match) { closeLists(); if (line.trim()) output.push(`<p>${inlineMarkup(line.trim(), linkEntities)}</p>`); return; }
+      if (!match) { closeLists(); if (line.trim()) paragraph.push(inlineMarkup(line.trim(), linkEntities)); else closeParagraph(); return; }
+      closeParagraph();
       const indent = match[1].replace(/\t/g, '  ').length;
       if (!listDepth) { output.push('<ul class="source-list">'); listDepth = 1; }
       else if (indent > lastIndent) { output.push('<ul>'); listDepth += 1; }
@@ -104,7 +106,7 @@ export function createMarkupRenderer({ state }) {
       else { if (itemOpen) output.push('</li>'); while (listDepth > 1 && indent < lastIndent) { output.push('</ul></li>'); listDepth -= 1; lastIndent = Math.max(0, lastIndent - 2); } }
       output.push(`<li>${inlineMarkup(match[2], linkEntities)}`); itemOpen = true; lastIndent = indent;
     });
-    closeLists(); return output.join('');
+    closeLists(); closeParagraph(); return output.join('');
   }
 
   function treeMarkup(value = '', linkEntities = true) {
