@@ -16,7 +16,7 @@ function regexEscape(value) {
 }
 
 // Office variants from data/titles-office.md.
-const prominentOffice = /^(?:Vogt|Voigt|advocatus|Vizedom|Vicedom|Vitzthum|Vitztum|Viztum|vicedominus)(?![\p{L}\p{N}])/iu;
+const prominentOffice = /^(?:Reichs[\s-]?Vogt|Vogt|Voigt|advocatus|Vizedom|Vicedom|Vitzthum|Vitztum|Viztum|vicedominus)(?![\p{L}\p{N}])/iu;
 
 function personFacts(person, documentRecords, people) {
   const facts = [];

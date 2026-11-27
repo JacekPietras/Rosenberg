@@ -212,7 +212,7 @@ function composeSourceSource(d) {
   const leadingTitles = hasTitles ? `(?:${anyTitle}${clause(wideConnective, place)}?\\s+)*` : '';
   const leadingConnector = alt.connector ? `(?:(?:${alt.connector})\\s+)?` : '';
   const nameNote = '(?:\\s*\\(\\s*or\\s+[^)]*\\))?';
-  const ordinal = `\\s+(?:\\(\\s*${ROMAN}\\s*\\)|\\[\\s*${ROMAN}\\s*\\]|${ROMAN}${N}\\.?)`;
+  const ordinal = `\\s+(?:\\(\\s*${ROMAN}\\.?\\s*\\)|\\[\\s*${ROMAN}\\.?\\s*\\]|${ROMAN}${N}\\.?)`;
   const byNameGuard = alt.byName ? `(?!(?:${alt.byName})\\s+(?:${particle})\\s)` : '';
   const innerTitles = hasTitles ? `(?:[\\s,;]+${byNameGuard}${titleTail})*` : '';
   const trailingTitles = hasTitles ? `(?:[\\s,;]+${titleTail})*` : '';
@@ -274,7 +274,7 @@ function cleanSpan(raw, d) {
     .replace(/(\p{L})\((\p{L}+)\)/gu, '$1$2')
     .replace(/(\p{L})\[(\p{L}+)\]/gu, '$1$2')
     .replace(/\s*\(\s*or\s+[^)]*\)/giu, '')
-    .replace(/\(\s*([IVXLCDM]+)\s*\)|\[\s*([IVXLCDM]+)\s*\]/gu, (_, round, square) => round ?? square);
+    .replace(/\(\s*([IVXLCDM]+)\.?\s*\)|\[\s*([IVXLCDM]+)\.?\s*\]/gu, (_, round, square) => round ?? square);
   if (d.re.birthParen) text = text.replace(d.re.birthParen, '$1');
   return text
     .replace(/(\s*)\(-?[\p{L}\p{N}]+-?\)(\s*)/gu, (_, before, after) => (before || after ? ' ' : ''))
@@ -784,7 +784,9 @@ export function findPersonNameMentions(text, titleText = '', connectorText = '',
   const d = dictionaryFor(titleText, connectorText, particleText, namesText, byNamesText, places);
   const coordinated = coordinatedByNameMatches(value, titleText, connectorText, particleText, namesText, byNamesText, places);
   const singles = [];
-  const explicitIds = [...value.matchAll(/\[[^\]]+\]/gu)].map((match) => [match.index, match.index + match[0].length]);
+  const explicitIds = [...value.matchAll(/\[[^\]]+\]/gu)]
+    .filter((match) => !/^\[\s*[IVXLCDM]+\.?\s*\]$/u.test(match[0]))
+    .map((match) => [match.index, match.index + match[0].length]);
   const patterns = [
     ...(sourcePattern ? [{ kind: 'source', pattern: sourcePattern }] : []),
     ...(personPatterns || []).map(({ pattern, people }) => ({ kind: 'registry', pattern, people })),

@@ -58,6 +58,22 @@ test('recognizes the parties in a pledge debt description, including King Sigmun
     scenarioNames, byNames, places), []);
 });
 
+test('recognizes Konz with a bracketed ordinal and knightly title in a castle grant', () => {
+  const scenarioTitles = `${titles}\n${projectTitles}`;
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, places, scenarioTitles, connectors, byNames);
+  const sentence = 'grant of Boxberg Castle to Konz [V.] von Rosenberg, Ritter, by King Ruprecht';
+  assert.deepEqual([...sentence.matchAll(scenarioPattern)].map((match) => match[0]), [
+    'Konz [V.] von Rosenberg, Ritter',
+    'King Ruprecht'
+  ]);
+  const result = findPersonNameMentions(sentence, scenarioTitles, connectors, particles,
+    projectNames, byNames, places, scenarioPattern);
+  assert.deepEqual(result.singles.map(({ route, titles: personTitles }) => ({ route, titles: personTitles })), [
+    { route: 'Kunz von Rosenberg', titles: ['Ritter'] },
+    { route: 'König Ruprecht', titles: ['König'] }
+  ]);
+});
+
 test('requires surnames after office titles but permits route titles before given names', () => {
   const scenarioTitles = `${titles}\n${projectTitles}`;
   const scenarioNames = projectNames;

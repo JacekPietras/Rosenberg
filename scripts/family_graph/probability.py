@@ -260,7 +260,7 @@ def chronology_blocked(mentions, settings, names=None):
     return 'birth' in level and 'last' in level and (level['last'][0] - level['birth'][0]) / YEAR > settings['maxAgeYears']
 
 
-OFFICES = {'vogt', 'amtmann', 'hofmeister', 'burggraf', 'domherr', 'vizedom', 'komtur', 'keller', 'schultheiss'}
+OFFICES = {'vogt', 'reichsvogt', 'amtmann', 'hofmeister', 'burggraf', 'domherr', 'vizedom', 'komtur', 'keller', 'schultheiss'}
 DESIGNATED = r'(?:called|born|genannt|gennant|genant|gen|dictus|dicti|dicta|geboren|geborene|geb|nee|nata)'
 CONNECTOR = r'(?:von|vom|van|de|zu|ze|zum|zur|in|of|at)'
 
@@ -272,6 +272,9 @@ def title_category(title, names=None):
     translate = (lambda text: names.titles.get(text, text)) if names else (lambda text: text)
     place = (lambda text: names.places.get(text, text)) if names else (lambda text: text)
     value = translate(value)
+    # A Reichsvogt is a kind of Vogt. Keep its full title for display, but
+    # compare scoped offices under the shared Vogt category.
+    value = re.sub(r'\breichs\s+vogt\b|\breichsvogt\b', 'vogt', value)
     if value in AGE_TITLE_CLASSES:
         return 'age', AGE_TITLE_CLASSES[value]
     if value in {'ritter', 'miles', 'edelknecht', 'knecht', 'armiger'}:

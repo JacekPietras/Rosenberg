@@ -36,7 +36,9 @@ repeated extraction adds nothing. The probabilities are uncalibrated.
 Titles are compared by meaning: equivalents from `data/titles-age.md` and `data/titles-office.md`, place
 variants from `data/places.json`. Office words are `Vogt`, `Amtmann`,
 `Hofmeister`, `Burggraf`, `Domherr`, `Vizedom`, `Komtur`, `Keller`,
-`Schultheiß`. One strongest title per category counts. A title on a
+`Schultheiß`. `Reichsvogt` (including `Reichs Vogt` and `Reichs-Vogt`) is
+compared as `Vogt` for scoped office evidence, while its distinct title is
+retained for display. One strongest title per category counts. A title on a
 deceased-marked mention or a death record is dated to the
 `retrospectiveLookBackYears` (20) before the death bound.
 

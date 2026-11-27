@@ -72,6 +72,14 @@ class FamilyGraphTests(unittest.TestCase):
         self.assertEqual('/mention', inputs.observations[0].source.pointer)
         apply(inputs, tree)
 
+    def test_reichsvogt_title_survives_build_and_export(self):
+        self.write('data/titles-office.md', 'Vogt\nReichsvogt, Reichs Vogt, Reichs-Vogt\n')
+        inputs = self.inputs(facts=[relation('Konrad von North', 'a', 'sibling', personTitle=['Reichs Vogt zu North'])])
+        tree = serialize(inputs, [build(inputs)])
+        validate_generated(tree, inputs.people, self.root)
+        nodes = tree['evidence']['facts']['nodes']
+        self.assertTrue(any('Reichsvogt zu North' in n.get('titles', []) for n in nodes))
+
     def test_source_selection_requires_franken_only_for_documents(self):
         self.write('data/people.json', [person('a', 'Alex')])
         self.write('data/documents/included.json', {'label': ['Franken', 'Schenk'], 'date': '1393',

@@ -50,6 +50,7 @@ class Names:
         whole = self.title_display.get(normalize(title))
         if whole:
             return whole
+        title = re.sub(r'\bReichs(?:\s+|-)Vogt\b', 'Reichsvogt', title, flags=re.IGNORECASE)
         from .probability import OFFICES
         def office_word(match):
             canonical = self.title_display.get(normalize(match.group()))

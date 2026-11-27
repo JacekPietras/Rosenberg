@@ -101,6 +101,13 @@ class ProbabilityTests(unittest.TestCase):
         self.assertGreater(office['probability'], .99)
         self.assertLess(rank['probability'], .2)
 
+    def test_reichsvogt_is_a_scoped_vogt(self):
+        for form in ('Reichsvogt', 'Reichs Vogt', 'Reichs-Vogt'):
+            with self.subTest(form=form):
+                self.assertEqual(('office', 'vogt north'), title_category(f'{form} zu North', self.names))
+                self.assertEqual('Reichsvogt zu North', self.names.canonical_title(f'{form} zu North'))
+                self.assertEqual('Reichsvogt zu North', self.names.canonical_title(f'{form} in North'))
+
     def test_prefixed_offices_are_recognized(self):
         first = self.profile('erzb. Amtmann zu North')
         exact = self.model.compare(first, self.profile('erzb. Amtmann zu North'))

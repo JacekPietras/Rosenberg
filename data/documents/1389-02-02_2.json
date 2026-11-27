@@ -10,10 +10,12 @@
       "english": "2 February 1389, Vitignabo. Archbishop Johann of Prague grants the professed monks of Hohenfurt permission to receive all minor and major orders from any Catholic bishop confirmed by the Apostolic See, because distance and dangerous roads make travel to Prague difficult. He does so at the special request of Heinrich von Rosenberg.",
       "img": [
         {
-          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000220.png"
+          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000220.png",
+          "deleted": true
         },
         {
-          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000221.png"
+          "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000221.png",
+          "deleted": true
         }
       ]
     }
