@@ -3,21 +3,18 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 250",
+      "source": "StAWü, Nachlass Ruthard Schwab 21",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/5dbe100c-6444-4cc2-b176-d24978cc1a6a",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++08af2d84-dcbe-4437-aa11-0bd8174e28c5&parent_id="
+        "https://www.gda.bayern.de/gvl/document/fa273f40-70b6-4463-a6dd-6dae83098325",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F6E9923F-1EB9-4D5E-9094-4F9684481A62&parent_id="
       ],
-      "german": "Rothenburg im Streit mit Zaisolph von Rosenberg (Verfahrensfragen).",
-      "english": "Rothenburg in dispute with Zaisolph von Rosenberg (procedural matters)."
+      "german": "Titel:  Das Gesicht des Dritten Reiches. Profile einer totalitären Herrschaft\nAutor/Herausgeber:  Joachim C. Fest:\nOrt/Jahr:  München 1963\n\nEnthält-/Darin-Vermerke: Enthält: Kurzbiographien von Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß",
+      "english": "Title: The Face of the Third Reich. Profiles of a Totalitarian Regime.\nAuthor/editor: Joachim C. Fest.\nPlace/year: Munich 1963.\n\nContains/includes: short biographies of Adolf Hitler, Hermann Göring, Joseph Goebbels, Reinhard Heydrich, Heinrich Himmler, Martin Bormann, Ernst Röhm, Franz von Papen, Alfred Rosenberg, Joachim von Rippentrop, Rudolf Heß, Albert Speer, Hans Frank, Baldur von Schirach, General von Icks, Rudolf Höß."
     }
   ],
   "mention": [
     {
-      "place": "rothenburg"
-    },
-    {
-      "person": "Zaisolph von Rosenberg"
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -20,10 +20,10 @@
       "person": "Hans von Rosenberg"
     },
     {
-      "person": "Leonhard von Rosenberg"
-    },
-    {
-      "place": "nagelsberg-castle"
+      "person": "Leonhard von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Uffenheim"
+      ]
     },
     {
       "person": "Philipp von Uissigheim",
@@ -32,7 +32,10 @@
       ]
     },
     {
-      "person": "Siegmund von Uissigheim"
+      "person": "Siegmund von Uissigheim",
+      "personTitle": [
+        "Amtmann zu Nagelsberg"
+      ]
     },
     {
       "person": "Zaisolph von Rosenberg"

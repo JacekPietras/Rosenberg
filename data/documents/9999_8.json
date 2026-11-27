@@ -3,22 +3,18 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Generallandesarchiv Karlsruhe 450 L-1 Nr. 7",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=4-4421770",
-      "german": "Adel\nMünch von Münchstein; Münch von Rosenberg; Münchwil; Muggental; Muntprat; Murer; Neidegg; Neiffen; Nessel von Löwenfels; Neuenburg; Neuenstein; Neuhausen; Neueneck; Neveu; Nippenburg; Nüfar; Ötlishausen; Offenburg; Opser; Ostein; Ostheim; Ow; Pappenheim,; Pappus von Trazberg; Paumgarten; Payer; Pfaffenzell; Pfefferhart; Pfirt, Grafen; Pfirt; Pflummern; Pforr; Pfuser; Praßberg; Precht von Hochwart; Radegg; Raitnau; Ramminger von Rammingen; Ramschwag; Ramstein; Ramung von Ehental; Randeck; Rappolstein; Raßler; Ratsamhausen; Ratzenried; Ravensburg; Rebstock; Rechberg",
-      "english": "Nobility\nMünch von Münchstein; Münch von Rosenberg; Münchwil; Muggental; Muntprat; Murer; Neidegg; Neiffen; Nessel von Löwenfels; Neuenburg; Neuenstein; Neuhausen; Neueneck; Neveu; Nippenburg; Nüfar; Ötlishausen; Offenburg; Opser; Ostein; Ostheim; Ow; Pappenheim; Pappus von Trazberg; Paumgarten; Payer; Pfaffenzell; Pfefferhart; Pfirt, counts; Pfirt; Pflummern; Pforr; Pfuser; Praßberg; Precht von Hochwart; Radegg; Raitnau; Ramminger von Rammingen; Ramschwag; Ramstein; Ramung von Ehental; Randeck; Rappolstein; Raßler; Ratsamhausen; Ratzenried; Ravensburg; Rebstock; Rechberg."
+      "source": "Staatsarchiv Ludwigsburg EL 228 a I Nr 4279",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-1106612",
+      "german": "Evangelische Pfarrkirche; Grabstein Frau von Rosenberg 1412",
+      "english": "Evangelical parish church; tombstone of Lady von Rosenberg, 1412",
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=588505&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000588505%2Ftitlaufn_0001106612%2F02_0001106612_0001_2-1106612-1.jpg"
+        }
+      ]
     }
   ],
   "mention": [
-    {
-      "place": "neuburg"
-    },
-    {
-      "place": "pappenheim"
-    },
-    {
-      "place": "ramschwag"
-    },
     {
       "place": "rosenberg-town"
     }

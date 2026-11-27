@@ -3,21 +3,18 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, G-Akten 20006",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 186 - 192",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/86e8fff0-c1f2-49ca-b8a9-a066de3121c9",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++85D8CD0E-B1CD-40D0-AC89-5452FE56FEA6&parent_id="
+        "https://www.gda.bayern.de/gvl/document/3c7b4ba0-0978-4cec-a5f7-b2e102a715e8",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ee90bf05-02ef-4b0d-95fc-467f24702edd&parent_id="
       ],
-      "german": "Herren von Rosenberg gegen Hochstift Würzburg wegen der Pfarrbestellung zu Lipprichhausen (Kr. Uffenheim)",
-      "english": "Lords von Rosenberg against the Prince-Bishopric of Würzburg concerning the appointment of the parish priest at Lipprichhausen (Uffenheim district)."
+      "german": "Fragstücke eines Zeugenverhörs im Streit mit Zeisolf von Rosenberg. (Konzept).",
+      "english": "Question list for a witness examination in the dispute with Zaisolph von Rosenberg (draft)."
     }
   ],
   "mention": [
     {
-      "place": "rosenberg-town"
-    },
-    {
-      "place": "wurzburg"
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

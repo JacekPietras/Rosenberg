@@ -3,19 +3,16 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 180 - 183",
+      "source": "StAN, Reichsstadt Rothenburg, Akten und Bände (Bauernkriegsakten) - Systematisches Repertorium 337/fol. 202 - 204 a",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/23a469e6-cc9f-41bb-b966-9dd51bb6bdd4",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ae0865ee-386b-4713-98ab-5f0c86fb7cb8&parent_id="
+        "https://www.gda.bayern.de/gvl/document/692ab14d-bd7b-4711-a947-ec4b290e0b9c",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d03ba40d-8874-409f-9f07-2bb3422faa81&parent_id="
       ],
-      "german": "\"Rotenburg. Supplication und Weisungs-Articul ihres und des Spitals erlittenen Schadens, contra Zeisolph von Rosenberg.\"",
-      "english": "“Rothenburg. Petition and articles of instruction concerning the damage suffered by them and the hospital, against Zaisolph von Rosenberg.”"
+      "german": "Liste von Beteiligten am Bauernkrieg (Beschädiger des Zeisolf von Rosenberg).",
+      "english": "List of participants in the Peasants’ War (those who damaged Zaisolph von Rosenberg’s property)."
     }
   ],
   "mention": [
-    {
-      "place": "rothenburg"
-    },
     {
       "person": "Zaisolph von Rosenberg"
     }

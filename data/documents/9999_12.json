@@ -1,17 +1,26 @@
 {
   "date": "9999",
   "label": "to review",
+  "research": "The archive groups this letter under “Fehde mit Rosenberg (1466)”, but does not date the individual item.",
   "entries": [
     {
-      "source": "Grundbuchzentralarchiv Kornwestheim SGM 28 A 008.864.177",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=8-173917",
-      "german": "Gebäuderegister zum Grundbuch von Rosenberg",
-      "english": "Building register for the Rosenberg land register"
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1230",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190118",
+      "german": "Schreiben an Friedrich von Rosenberg (Konzept).\n\nUmfang: 1 Schr.",
+      "english": "Letter to Friedrich von Rosenberg (draft).\n\nExtent: 1 document",
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190118%2F03_0000190118_0001_3-190118-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190118%2F03_0000190118_0002_3-190118-2.jpg"
+        }
+      ]
     }
   ],
   "mention": [
     {
-      "place": "rosenberg-town"
+      "person": "Friedrich von Rosenberg"
     }
   ]
 }

@@ -1,26 +1,23 @@
 {
   "date": "9999",
   "label": "to review",
-  "research": "The archive groups this letter under “Fehde mit Rosenberg (1466)”, but does not date the individual item.",
   "entries": [
     {
-      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1234",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190122",
-      "german": "Schreiben Friedrich von Rosenberg an die Gemeinde Münster.\n\nUmfang: 1 Schr.",
-      "english": "Letter from Friedrich von Rosenberg to the municipality of Münster.\n\nExtent: 1 document",
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190122%2F03_0000190122_0001_3-190122-1.jpg"
-        },
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190122%2F03_0000190122_0002_3-190122-2.jpg"
-        }
-      ]
+      "source": "Staatsarchiv Wertheim R-Rep. 47 Nr. 68",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-24556",
+      "german": "Alte resolvenda wegen 1) Amt Kronberg 2) berlichingische Kapitalzahlung 3) Kammmergerichtsunterhalt 4) Kommissionskosten wegen Königstein 5) Beleihung des Zobels von Giebelstadt 6) Nieder-Eisenburgische Sachen 7) berlichingische Wittums-Verwilligung 8) Erforderung des Pfarrsohns zu Gissigheim 9) Dr. Kochs Injuriensachen 10) Belehung von Rosenberg 11) Hundsche Sachen",
+      "english": "Old matters to be resolved concerning: 1) the Kronberg district; 2) the Berlichingen capital payment; 3) maintenance of the Imperial Chamber Court; 4) commission costs concerning Königstein; 5) enfeoffment of Zobel von Giebelstadt; 6) Nieder-Eisenburg matters; 7) the Berlichingen widow’s settlement; 8) the demand for the parish priest’s son at Gissigheim; 9) Dr. Koch’s insult cases; 10) enfeoffment of Rosenberg; 11) Hund matters."
     }
   ],
   "mention": [
     {
-      "person": "Friedrich von Rosenberg"
+      "place": "berlichingen"
+    },
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

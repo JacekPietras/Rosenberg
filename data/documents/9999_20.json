@@ -1,29 +1,23 @@
 {
   "date": "9999",
   "label": "to review",
-  "research": "The archive groups this letter under “Fehde mit Rosenberg (1466)”, but does not date the individual item.",
   "entries": [
     {
-      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1233",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190121",
-      "german": "Schreiben Friedrich von Rosenberg an Hohenlohe.\n\nUmfang: 1 Schr.",
-      "english": "Letter from Friedrich von Rosenberg to Hohenlohe.\n\nExtent: 1 document",
-      "img": [
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190121%2F03_0000190121_0001_3-190121-1.jpg"
-        },
-        {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190121%2F03_0000190121_0002_3-190121-2.jpg"
-        }
-      ]
+      "source": "Staatsarchiv Wertheim G-Rep. 2b Rosenberg 14",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=7-198894",
+      "german": "Acta in Sachen von Dienheim contra Albrecht Christoph und Georg Sigmund von Rosenberg, mandati exemtorialis de non turbando betr.",
+      "english": "Proceedings in the case of von Dienheim against Albrecht Christoph and Georg Siegmund von Rosenberg, concerning a writ of execution prohibiting interference."
     }
   ],
   "mention": [
     {
-      "person": "Friedrich von Rosenberg"
+      "person": "Albrecht Christoph von Rosenberg"
     },
     {
-      "place": "hohenlohe"
+      "place": "dienheim"
+    },
+    {
+      "person": "Georg Siegmund von Rosenberg"
     }
   ]
 }
