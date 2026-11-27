@@ -9,10 +9,12 @@
       "english": "CXXXVII. Pope John XXII takes the Cistercian monastery of Oslavany under his protection and confirms all its possessions. Issued at Avignon on 5 July 1318. Original on parchment with a lead bull in the archive of the city of Brno, O. I. no. 19.",
       "img": [
         {
-          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000178.png"
+          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000178.png",
+          "deleted": true
         },
         {
-          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000179.png"
+          "src": "https://images.monasterium.net/img/collections/UrkundenMaehren/00000179.png",
+          "deleted": true
         }
       ]
     }
