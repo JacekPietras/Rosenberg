@@ -119,6 +119,7 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
       if (status) status.textContent = 'Moving to deleted…';
       try {
         await repository.deleteDocument(path);
+        state.documents = new Map(state.documents);
         state.documents.delete(path);
         state.manifest.documents = state.manifest.documents.filter((recordPath) => recordPath !== path);
         if (state.active === path) state.active = 'documents';
@@ -130,7 +131,7 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
           state.navigationRecord = null;
           state.navigationRecordSource = null;
         }
-        await rerender();
+        deleteDocumentButton.closest('.document')?.remove();
       } catch (error) {
         if (status) status.textContent = `Could not delete: ${error.message}`;
         deleteDocumentButton.disabled = false;
