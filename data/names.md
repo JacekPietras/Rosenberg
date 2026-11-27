@@ -67,7 +67,7 @@ Herbord
 Herman, Hermann, Hermannus
 Hieronymus, Jeronimus, Jheronimus
 Hiltpold
-Horneck
+Horneck, Hernecke
 Hoyer
 Jakob, Jacob, Jacobus, James, Jeckel
 Joachim
