@@ -12,22 +12,37 @@
   ],
   "mention": [
     {
-      "place": "hals-passau"
+      "person": "Hans von Rosenberg"
     },
     {
-      "person": "Hans",
+      "person": "Hans zu Hals",
       "personTitle": [
+        "Graf zu Hals",
         "Landgraf zu Leuchtenberg",
         "der Ältere"
       ]
     },
     {
-      "person": "Hans von Rosenberg"
+      "person": "Hans zu Hals",
+      "personTitle": [
+        "Graf zu Hals",
+        "Landgraf zu Leuchtenberg",
+        "der Jüngere"
+      ]
     },
     {
       "person": "Heinrich von Schaunberg",
       "personTitle": [
-        "Graf von Schaunberg"
+        "Graf"
+      ]
+    },
+    {
+      "place": "schaunberg"
+    },
+    {
+      "person": "Ulrich",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
       ]
     }
   ]

@@ -7,7 +7,7 @@
       "source": "OTTO, Regesten, Bd. 1,2, Nr. 5064, S. 456–457.",
       "url": "https://www.ingrossaturbuecher.de/id/source/12960",
       "german": "Dekan Johannes von Mainz bekundet, dass er sich zusammen mit den Rittern Schenk Konrad von Erbach-Erbach (wahrscheinlich Konrad IV., der Mainzer Lehen trug, vgl. hierzu unten, Nr. 184), Eberhard von Rosenberg, Gotfrid genannt Stahel, Marschall Johannes von Waldeck, Konrad Rüdt (Rude), Burggraf zu Starkenburg (Starkinburg), sowie anderen Freunden des Mainzer Erzbischofs (Heinrich III. von Virneburg) vom 1. Dezember abends bis zum 4. Dezember nach dem Frühstück in Bensheim für den Erzbischof mit den Freunden der Herzöge von Bayern (zugleich Pfalzgrafen bei Rhein) aufgehalten und dabei an Geld 20 Pfund 17 Heller ausgegeben und in pane 9 Malter Roggen, in vino franco 4 amas, in hunico 25 quartalia, in pabulo 21 Malter cum 3 sum. avene verbraucht habe. Der erzbischöfliche Kellner Jakob in Starkenburg (Starkinburg) hat von Amts wegen dies alles geliefert und erhält darüber diese Urkunde. *Nos JOHANNES Dei gracia Decanus Ecclesie Moguntine recognoscimus per presentes, quod nos una cum strenuis militibus CONRADO Pincerna de Erpach, EBIRHARDO de Rosenberg, GOTFRIDO dicto Stahel, JOHANNE de Waldeche Marchalco, CONRADO dicto Rude Burggravio in Starkinberg & aliis Domini nostri Moguntini amicis sub anno Domini MCCCXLIII. a feria secunda post diem beati Andree proxima de sero, usque in feriam quintam immediate sequentem facto prandio, in Opido Bensheim exparte dicti Domini nostri, cum amicis Dominorum Ducum Bawarie conflituri, expendimus in pecunia viginti libras & decem & septem hallenses, in pane de provisione dicti Domini nostri novem maldra siliginis, in vino franco quatuor amas, in hunico viginti quinque quartalia, in pabulo viginti & unum maldra cum tribus summerinis avene, similiter de provisione Domini: que omnia & singula JACOBUS ipsius Domini nostri Cellerarius in Starkinberg, racione dicti sui officii, de nostro ac dictorum Domini nostri amicorum scitu & jussu distribuit & notorie erogavit, dantes eidem Jacobo presentem recessum secreto nostro sigillatum in testimonium super eo. Datum Bensheim anno Domini ac feria quinta prenotatis.*",
-      "english": "Johannes, Dekan zu Mainz, certifies that he, together with Schenk Konrad von Erbach-Erbach, Ritter; Eberhard von Rosenberg, Ritter; Gotfrid called Stahel, Ritter; Johann von Waldeck, Marschall; Konrad Rüdt, Burggraf zu Starkenburg; and other friends of their lord Heinrich III von Virneburg, Erzbischof, stayed at Bensheim on the archbishop's behalf with the friends of the Herzöge von Bayern (also Counts Palatine of the Rhine), from the evening of Monday after St Andrew's Day, 1 December, until after the meal on Thursday, 4 December 1343. In that time they spent 20 pounds and 17 heller in money, used 9 Malter of rye for bread, 4 amas of Franconian wine, 25 quartalia of honey, and 21 Malter plus 3 summer-loads of oats for fodder. The archbishop's cellarer Jacob at Starkenburg supplied all of these goods and sums in the course of his office, with the knowledge and order of the dean and the archbishop's friends. They give Jacob this sealed instrument as a receipt. Given at Bensheim on the Thursday stated."
+      "english": "Johannes, Dekan zu Mainz, certifies that he, together with Schenk Konrad von Erbach-Erbach, Ritter; Eberhard von Rosenberg, Ritter; Gotfrid called Stahel, Ritter; Hans von Waldeck, Marschall; Konrad Rüdt, Burggraf zu Starkenburg; and other friends of their lord Heinrich III von Virneburg, Erzbischof, stayed at Bensheim on the archbishop's behalf with the friends of the Herzöge von Bayern (also Counts Palatine of the Rhine), from the evening of Monday after St Andrew's Day, 1 December, until after the meal on Thursday, 4 December 1343. In that time they spent 20 pounds and 17 heller in money, used 9 Malter of rye for bread, 4 amas of Franconian wine, 25 quartalia of honey, and 21 Malter plus 3 summer-loads of oats for fodder. The archbishop's cellarer Jacob at Starkenburg supplied all of these goods and sums in the course of his office, with the knowledge and order of the dean and the archbishop's friends. They give Jacob this sealed instrument as a receipt. Given at Bensheim on the Thursday stated."
     }
   ],
   "facts": [
@@ -25,6 +25,9 @@
       "place": "erbach"
     },
     {
+      "person": "Hans von Waldeck"
+    },
+    {
       "person": "Konrad Rüd",
       "personTitle": [
         "Burggraf zu Starkenburg"
@@ -35,9 +38,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "waldeck"
     }
   ]
 }

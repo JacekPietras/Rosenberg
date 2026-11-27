@@ -17,5 +17,16 @@
         }
       ]
     }
+  ],
+  "mention": [
+    {
+      "place": "rorschach"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Rudolf von Rorschach"
+    }
   ]
 }

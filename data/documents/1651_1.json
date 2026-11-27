@@ -11,7 +11,22 @@
   ],
   "mention": [
     {
+      "person": "Georg Friedrich von Waldeck",
+      "personTitle": [
+        "Graf von Waldeck"
+      ]
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
       "place": "rosenberg-town"
+    },
+    {
+      "place": "waldeck"
     }
   ]
 }

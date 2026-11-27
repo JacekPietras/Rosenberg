@@ -43,6 +43,15 @@
   ],
   "mention": [
     {
+      "person": "Albrecht",
+      "personTitle": [
+        "Kurfürst zu Mainz"
+      ]
+    },
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
       "person": "Christoph Landschad von Steinach"
     },
     {
@@ -50,6 +59,9 @@
     },
     {
       "place": "leyen"
+    },
+    {
+      "place": "mainz"
     },
     {
       "place": "speyer"

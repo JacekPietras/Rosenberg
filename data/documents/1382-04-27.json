@@ -25,10 +25,28 @@
   ],
   "mention": [
     {
-      "person": "Erzbischof Adolf",
+      "person": "Friedrich von Hutten",
       "personTitle": [
-        "Erzbischof zu Mainz"
+        "Ritter"
       ]
+    },
+    {
+      "place": "hutten"
+    },
+    {
+      "person": "Konrad von Bickenbach",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Konrad von Uissigheim"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "speyer"
     }
   ]
 }

@@ -23,5 +23,16 @@
         }
       ]
     }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg",
+      "personTitle": [
+        "Propst"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
+    }
   ]
 }

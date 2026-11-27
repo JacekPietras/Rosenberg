@@ -12,7 +12,25 @@
   ],
   "mention": [
     {
+      "person": "Eberhard von Sickingen"
+    },
+    {
       "place": "heidelberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "person": "Kunz Landschad"
+    },
+    {
+      "person": "Kunz Mönch von Rosenberg"
+    },
+    {
+      "place": "schonau"
     }
   ]
 }

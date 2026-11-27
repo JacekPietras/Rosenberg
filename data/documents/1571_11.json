@@ -14,10 +14,16 @@
   ],
   "mention": [
     {
+      "person": "Albrecht von Wildenstein"
+    },
+    {
       "place": "amberg"
     },
     {
       "person": "Georg Thomas von Wildenstein"
+    },
+    {
+      "person": "Georg von Heideck"
     },
     {
       "place": "hürnheim"
@@ -33,6 +39,9 @@
     },
     {
       "person": "Rudolf von Hürnheim"
+    },
+    {
+      "person": "Stephan Schenk"
     }
   ]
 }

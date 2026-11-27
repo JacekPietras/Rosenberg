@@ -12,15 +12,6 @@
   ],
   "mention": [
     {
-      "place": "amberg"
-    },
-    {
-      "person": "Konrad von Rosenberg",
-      "personTitle": [
-        "Vizedom"
-      ]
-    },
-    {
       "person": "Kunz von Rosenberg"
     },
     {
@@ -28,6 +19,12 @@
     },
     {
       "place": "rosenberg-town"
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
+      ]
     }
   ]
 }
