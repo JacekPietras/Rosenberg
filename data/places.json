@@ -2032,6 +2032,20 @@
     "showOnMap": false
   },
   {
+    "id": "falkenstein",
+    "variations": [
+      "Falkenstein",
+      "Falkinstein",
+      "Falkinsten",
+      "Falkensten",
+      "valkenstein",
+      "Valkinsteyn",
+      "Valkinstein",
+      "valkensten"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "wertheim-stiftskirche",
     "variations": [
       "Wertheim",
