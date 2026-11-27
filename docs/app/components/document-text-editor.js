@@ -1,6 +1,7 @@
 export function setupDocumentTextEditor({ state, repository, renderText, markSaved }) {
   let pendingSave = Promise.resolve();
-  document.addEventListener('dblclick', (event) => {
+  document.addEventListener('click', (event) => {
+    if (event.detail !== 3) return;
     const field = event.target.closest('[data-document-text-path]');
     if (!field || !state.canEditDocuments || field.querySelector('textarea')) return;
     const { documentTextPath: path, documentTextLanguage: language } = field.dataset;

@@ -38,6 +38,32 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
+    const confirmButton = event.target.closest('[data-confirm-proposed-label]');
+    if (confirmButton) {
+      const path = confirmButton.dataset.confirmProposedLabel;
+      const doc = state.documents.get(path);
+      const labels = labelsFor(doc);
+      const proposal = confirmButton.dataset.proposedLabel;
+      const name = proposal?.match(/^Proposed:\s*(\S.*)$/i)?.[1]?.trim();
+      if (!doc || !state.canEditDocuments || state.active !== 'documents' || !path.startsWith('data/documents/') || !name || !labels.includes(proposal)) return;
+      const updatedLabels = labels.filter((label) => label !== proposal && label.toLocaleLowerCase() !== 'to review');
+      if (!updatedLabels.some((label) => label.toLocaleLowerCase() === name.toLocaleLowerCase())) updatedLabels.push(name);
+      const updated = { ...doc, label: updatedLabels.length === 1 ? updatedLabels[0] : updatedLabels };
+      const status = confirmButton.closest('.document-heading-aside')?.querySelector('.record-delete-status');
+      confirmButton.disabled = true;
+      if (status) status.textContent = 'Saving…';
+      try {
+        const result = await repository.saveDocument(path, updated);
+        state.documents.set(path, updated);
+        markSaved(path, result.version);
+        await rerender();
+      } catch (error) {
+        if (status) status.textContent = `Could not save labels: ${error.message}`;
+        confirmButton.disabled = false;
+      }
+      return;
+    }
+
     const imageButton = event.target.closest('[data-delete-image-path]');
     if (imageButton) {
       const path = imageButton.dataset.deleteImagePath;

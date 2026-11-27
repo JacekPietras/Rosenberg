@@ -240,7 +240,11 @@ export function createDocumentRenderer({
     const needsMentionLabels = path.startsWith('data/documents/') && hasReviewLabels;
     const mentionLabels = needsMentionLabels ? `<div class="review-name-mentions" data-review-name-labels="${escapeHtml(path)}" aria-label="Labels in other documents where names are mentioned"></div>` : '';
     const mentionLabelTargets = needsMentionLabels ? ` data-review-label-path="${escapeHtml(path)}"` : '';
-    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => canEditLabels ? `<button class="record-label record-label-button" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels: ${escapeHtml(label)}">${escapeHtml(label)}</button>` : `<span class="record-label">${escapeHtml(label)}</span>`).join('')}${labelEditor}${reviewLabelButton}${splitButton}${deleteButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
+    const headingAside = labels.length || date || labelEditor || mentionLabels ? `<div class="document-heading-aside"><div class="record-labels">${labels.map((label) => {
+      const proposed = label.match(/^Proposed:\s*(\S.*)$/i)?.[1]?.trim();
+      const edit = canEditLabels ? `<button class="record-label record-label-button" type="button" data-edit-record-labels="${escapeHtml(path)}" aria-label="Edit record labels: ${escapeHtml(label)}">${escapeHtml(label)}</button>` : `<span class="record-label">${escapeHtml(label)}</span>`;
+      return canEditLabels && proposed ? `<span class="proposed-label">${edit}<button class="record-label-confirm" type="button" data-confirm-proposed-label="${escapeHtml(path)}" data-proposed-label="${escapeHtml(label)}" aria-label="Accept proposed label: ${escapeHtml(proposed)}" title="Accept proposed label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg></button></span>` : edit;
+    }).join('')}${labelEditor}${reviewLabelButton}${splitButton}${deleteButton}</div>${mentionLabels}<span class="record-delete-status" role="status" aria-live="polite"></span>${date}</div>` : '';
     const url = doc.url ? urlMarkup(doc.url) : '';
     const year = documentYear(doc);
     const anchor = year ? ` id="year-${year}-${index}"` : '';

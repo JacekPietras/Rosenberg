@@ -50,8 +50,12 @@ test('Split appears for three distinct four-digit years in English entries', () 
   assert.match(labeled, /class="record-label record-label-button"/);
   assert.match(labeled, /data-split-document/);
   assert.match(labeled, /data-delete-document/);
+  const proposed = renderer.renderDocument({ label: ['to review', 'Proposed: Franken'], entries: [] }, 'data/documents/example.json', 0);
+  assert.match(proposed, /data-confirm-proposed-label="data\/documents\/example.json" data-proposed-label="Proposed: Franken"/);
+  assert.doesNotMatch(renderer.renderDocument({ label: 'Proposed: ', entries: [] }, 'data/documents/example.json', 0), /data-confirm-proposed-label/);
   assert.match(render([]), /aria-label="Add record labels"/);
   state.canEditDocuments = false;
+  assert.doesNotMatch(renderer.renderDocument({ label: 'Proposed: Franken', entries: [] }, 'data/documents/example.json', 0), /data-confirm-proposed-label/);
   assert.ok(!render([{ english: '1400 1401 1402' }]).includes('data-split-document'));
   assert.doesNotMatch(renderer.renderDocument({ label: 'Franken', entries: [] }, 'data/documents/example.json', 0), /data-edit-record-labels/);
 });
