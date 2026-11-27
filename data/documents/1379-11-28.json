@@ -50,7 +50,10 @@
   ],
   "mention": [
     {
-      "person": "Diether von Gemmingen"
+      "person": "Diether von Gemmingen",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "person": "Eberhard von Neipperg"
@@ -65,24 +68,12 @@
       "place": "helmstatt"
     },
     {
-      "person": "Kunz Mönch von Rosenberg",
-      "personTitle": [
-        "Vogt zu Steinsberg"
-      ]
-    },
-    {
       "place": "michelfeld"
     },
     {
       "person": "Peter von Helmstatt",
       "personTitle": [
         "genannt von Rosenberg"
-      ]
-    },
-    {
-      "person": "Diether von Gemmingen",
-      "personTitle": [
-        "Ritter"
       ]
     }
   ]

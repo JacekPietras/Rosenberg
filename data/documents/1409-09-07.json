@@ -78,6 +78,9 @@
   ],
   "mention": [
     {
+      "place": "neuburg"
+    },
+    {
       "place": "nuremberg"
     },
     {
@@ -85,9 +88,6 @@
     },
     {
       "place": "rosenberg-town"
-    },
-    {
-      "place": "neuburg"
     }
   ]
 }

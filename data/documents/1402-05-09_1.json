@@ -34,16 +34,13 @@
   ],
   "mention": [
     {
+      "place": "amberg"
+    },
+    {
       "person": "König Ruprecht",
       "personTitle": [
         "König"
       ]
-    },
-    {
-      "place": "amberg"
-    },
-    {
-      "person": "Arnold von Rosenberg"
     }
   ]
 }

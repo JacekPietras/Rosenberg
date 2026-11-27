@@ -72,6 +72,9 @@
       "place": "dertingen"
     },
     {
+      "place": "nuremberg"
+    },
+    {
       "place": "waldbuettelbrunn"
     },
     {
@@ -79,21 +82,6 @@
     },
     {
       "place": "wurzburg"
-    },
-    {
-      "person": "Eberhard von Rosenberg"
-    },
-    {
-      "person": "Eberhard von Wertheim",
-      "personTitle": [
-        "Graf von Wertheim"
-      ]
-    },
-    {
-      "person": "Margaretha von Thüngen"
-    },
-    {
-      "place": "nuremberg"
     }
   ]
 }

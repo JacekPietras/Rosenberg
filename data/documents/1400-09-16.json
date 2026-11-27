@@ -87,25 +87,13 @@
   ],
   "mention": [
     {
-      "person": "Rudolf von Wertheim",
-      "personTitle": [
-        "Graf"
-      ]
-    },
-    {
-      "person": "Wilhelm von Thüngen",
-      "personTitle": [
-        "Ritter"
-      ]
-    },
-    {
-      "place": "wurzburg"
-    },
-    {
       "person": "Steyn von Rosenberg",
       "personTitle": [
         "der Ältere"
       ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

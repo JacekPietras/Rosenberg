@@ -1,27 +1,26 @@
 {
   "date": "1530",
-  "label": "Franken",
+  "label": "to review",
   "entries": [
     {
-      "source": "BayHStA, GU Hirschberg (Landgericht) 382",
-      "url": [
-        "https://www.gda.bayern.de/gvl/document/2ebcca27-df46-4c42-91f5-663c194f7b1c",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b5ac344c-1c60-4e10-ba2c-b07af20372f5&parent_id="
-      ],
-      "german": "Lehengegenbrief des Rudolf von Hürnheym (zugleich namens seiner Brüder) über 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Schwarzach.\nLehenherr: Herzog Wilhelm IV.\nVorbesitzer: Cauntz und Philipps von Rosenberg",
-      "english": "Counter-document of enfeoffment by Rudolf von Hürnheym (simultaneously on behalf of his brothers) concerning four farms and two smallholdings at Oberried near Uttenhoven in the Seglau near the Schwarzach.\nLord enfeoffing: Duke Wilhelm IV.\nPrevious holders: Kunz von Rosenberg and Philipp von Rosenberg"
+      "source": "Staatsarchiv Ludwigsburg B 375 L Bü 222",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-1864582",
+      "german": "Verschiedene Schreiben vom Adel\n\nLaufzeit: 1530-1570\n\nEnthält: Enthält: Schreiben des Wolf von Heßberg, Amtmann zu Collenberg, wegen des seinem Amt zugehörigen Gefängnis und des Wolf von Crailsheim wegen einer kaiserlichen Kommission; Beistand des Anselm von Eltershofen gegen die Herrschaft Limpurg; Bitte des Sebastian Fürderer um Früchte; Schreiben des Lorenz von Rumrod wegen seines Vogts, sowie Wilhelms und Ludwigs Adelmann wegen Entleibung ihres Sohns und Vaters durch einen zu Würzburg; Schreiben des Albrecht von Rosenberg wegen eines Tags zu Gebrabronn\n\nUmfang: 1 Bü",
+      "english": "Various letters from the nobility.\n\nDate range: 1530–1570\n\nContains: Letters from Wolf von Heßberg, Amtmann zu Collenberg, concerning the prison belonging to his office, and from Wolf von Crailsheim concerning an imperial commission; assistance for Anselm von Eltershofen against the lordship of Limpurg; Sebastian Fürderer’s request for produce; a letter from Lorenz von Rumrod concerning his bailiff; and Wilhelm and Ludwig Adelmann concerning the killing of their son and father by someone at Würzburg; a letter from Albrecht von Rosenberg concerning a meeting at Gebrabronn.\n\nExtent: 1 bundle."
     }
   ],
-  "facts": [
+  "mention": [
     {
-      "person": "Kunz von Rosenberg",
-      "type": "generic",
-      "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
+      "person": "Albrecht von Rosenberg"
     },
     {
-      "person": "Philipp von Rosenberg",
-      "type": "generic",
-      "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
+      "place": "kollenberg"
+    },
+    {
+      "place": "limpurg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

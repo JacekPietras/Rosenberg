@@ -54,6 +54,12 @@
   ],
   "mention": [
     {
+      "place": "cronberg"
+    },
+    {
+      "person": "Hans Thomas von Rosenberg"
+    },
+    {
       "person": "Hartmann von Stockheim",
       "personTitle": [
         "Deutschmeister"
@@ -64,12 +70,6 @@
     },
     {
       "person": "Walter von Cronberg"
-    },
-    {
-      "place": "cronberg"
-    },
-    {
-      "person": "Hans Thomas von Rosenberg"
     }
   ]
 }

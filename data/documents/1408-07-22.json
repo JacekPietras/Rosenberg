@@ -51,7 +51,13 @@
       "person": "Hans von Dürn"
     },
     {
+      "place": "hornberg"
+    },
+    {
       "person": "Konrad von Sickingen"
+    },
+    {
+      "person": "Peter Mönch von Rosenberg"
     },
     {
       "place": "rosenberg-town"
@@ -64,24 +70,6 @@
     },
     {
       "place": "talheim"
-    },
-    {
-      "person": "Friedrich",
-      "personTitle": [
-        "Burggraf zu Nürnberg"
-      ]
-    },
-    {
-      "place": "hornberg"
-    },
-    {
-      "person": "Horneck von Hornberg"
-    },
-    {
-      "person": "Peter Mönch von Rosenberg"
-    },
-    {
-      "person": "Ulrich von Rosenberg"
     }
   ]
 }

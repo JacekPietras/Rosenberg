@@ -58,6 +58,18 @@
   ],
   "mention": [
     {
+      "person": "Eberhard Rüd",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Engelhard von Hirschhorn",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
       "person": "Erzbischof Gerlach",
       "personTitle": [
         "Erzbischof zu Mainz"
@@ -67,6 +79,13 @@
       "person": "Konrad Rüd",
       "personTitle": [
         "Burggraf zu Starkenberg",
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Konrad Rüd",
+      "personTitle": [
+        "Burggraf zu Starkenburg",
         "Ritter"
       ]
     },
@@ -87,28 +106,6 @@
       "personTitle": [
         "Graf von Wertheim"
       ]
-    },
-    {
-      "person": "Eberhard Rüd",
-      "personTitle": [
-        "Ritter"
-      ]
-    },
-    {
-      "person": "Engelhard von Hirschhorn",
-      "personTitle": [
-        "Ritter"
-      ]
-    },
-    {
-      "person": "Konrad Rüd",
-      "personTitle": [
-        "Burggraf zu Starkenburg",
-        "Ritter"
-      ]
-    },
-    {
-      "person": "Rudolf von Wertheim"
     },
     {
       "place": "wertheim-stiftskirche"

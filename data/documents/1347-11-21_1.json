@@ -123,28 +123,16 @@
   ],
   "mention": [
     {
-      "person": "Kraft von Hohenlohe"
+      "person": "König Karl",
+      "personTitle": [
+        "König"
+      ]
     },
     {
       "place": "nuremberg"
     },
     {
-      "person": "Eberhard von Rosenberg"
-    },
-    {
       "place": "wallduern"
-    },
-    {
-      "person": "Kraft von Hohenlohe",
-      "personTitle": [
-        "Graf"
-      ]
-    },
-    {
-      "person": "König Karl",
-      "personTitle": [
-        "König"
-      ]
     }
   ]
 }

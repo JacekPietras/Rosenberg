@@ -34,15 +34,6 @@
   ],
   "mention": [
     {
-      "place": "madenburg"
-    },
-    {
-      "place": "rosenberg-town"
-    },
-    {
-      "place": "speyer"
-    },
-    {
       "person": "Adolf of Mainz"
     },
     {
@@ -59,6 +50,15 @@
       "personTitle": [
         "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "madenburg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "speyer"
     }
   ]
 }

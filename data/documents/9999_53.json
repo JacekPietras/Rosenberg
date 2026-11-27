@@ -3,27 +3,21 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Würzburger Risse und Pläne I 285",
+      "source": "StAWü, G-Akten 20006",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/ff95665c-0906-4a59-b91a-003efa340739",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9D891C20-BB94-4E84-9E52-D695AC78B1F6&parent_id="
+        "https://www.gda.bayern.de/gvl/document/86e8fff0-c1f2-49ca-b8a9-a066de3121c9",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++85D8CD0E-B1CD-40D0-AC89-5452FE56FEA6&parent_id="
       ],
-      "german": "Farbiger Plan, angelegt über einen Streit zwischen Zeisolf von Rosenberg zu Haltenbergstetten u. Veit von Lichtenstein zum Geyersberg wegen der Steinsetzung zwischen den Markungen Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: Enthält: Ansicht der Orte Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim",
-      "english": "Colored plan drawn up concerning a dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over the placement of boundary stones between the districts of Gnötzheim and Ippesheim.\n\nContains/includes: views of the localities Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim."
+      "german": "Herren von Rosenberg gegen Hochstift Würzburg wegen der Pfarrbestellung zu Lipprichhausen (Kr. Uffenheim)",
+      "english": "Lords von Rosenberg against the Prince-Bishopric of Würzburg concerning the appointment of the parish priest at Lipprichhausen (Uffenheim district)."
     }
   ],
   "mention": [
     {
-      "place": "gnoetzheim"
+      "place": "rosenberg-town"
     },
     {
-      "person": "Veit von Lichtenstein"
-    },
-    {
-      "person": "Zaisolph von Rosenberg",
-      "personTitle": [
-        "zu Haltenbergstetten"
-      ]
+      "place": "wurzburg"
     }
   ]
 }

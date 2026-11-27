@@ -18,25 +18,13 @@
   ],
   "mention": [
     {
-      "person": "Gerhard zu Speyer"
-    },
-    {
-      "person": "Hans von Rosenberg"
-    },
-    {
-      "person": "Hans zu Nürnberg"
-    },
-    {
-      "person": "Heinrich von Schwarzburg"
-    },
-    {
-      "place": "nuremberg"
-    },
-    {
       "person": "Bischof Gerhard",
       "personTitle": [
         "Bischof zu Speyer"
       ]
+    },
+    {
+      "person": "Gerhard zu Speyer"
     },
     {
       "person": "Hans",
@@ -45,10 +33,19 @@
       ]
     },
     {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Hans zu Nürnberg"
+    },
+    {
       "person": "Heinrich von Schwarzburg",
       "personTitle": [
         "Graf von Schwarzburg"
       ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

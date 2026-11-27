@@ -3,16 +3,13 @@
   "label": "to review",
   "entries": [
     {
-      "source": "Staatsarchiv Wertheim R-Lit. St Nr. 532",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=7-47724",
-      "german": "Abtei Bronnbach contra die von Rosenberg\n\nLaufzeit: 1530-1602\n\nUmfang: 1 Bü.",
-      "english": "Bronnbach Abbey against the von Rosenberg family.\n\nDate range: 1530–1602\n\nExtent: 1 bundle."
+      "source": "HStAD, F 23 A, 424/1",
+      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=876081",
+      "german": "Angelegenheiten der Herren v. Rosenbach; insbesondere: deren Güter zu Ober-Mörlen in der Wetterau\n\nLaufzeit: 1530-1652",
+      "english": "Affairs of the lords von Rosenbach, especially their estates at Ober-Mörlen in the Wetterau.\n\nDate range: 1530–1652"
     }
   ],
   "mention": [
-    {
-      "place": "bronnbach"
-    },
     {
       "place": "rosenberg-town"
     }

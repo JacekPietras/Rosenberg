@@ -53,6 +53,12 @@
       "person": "Engelhard von Hirschhorn"
     },
     {
+      "person": "Erzbischof Heinrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
       "place": "esselbach"
     },
     {
@@ -89,10 +95,19 @@
       "person": "Konrad von Bickenbach"
     },
     {
+      "person": "Kraft of Hohenlohe"
+    },
+    {
       "person": "Kraft von Hohenlohe"
     },
     {
       "place": "lauda"
+    },
+    {
+      "person": "Ludwig von Rieneck",
+      "personTitle": [
+        "Graf von Rieneck"
+      ]
     },
     {
       "place": "mainz"
@@ -105,21 +120,6 @@
     },
     {
       "person": "Walter von Cronberg"
-    },
-    {
-      "person": "Erzbischof Heinrich",
-      "personTitle": [
-        "Erzbischof zu Mainz"
-      ]
-    },
-    {
-      "person": "Kraft of Hohenlohe"
-    },
-    {
-      "person": "Ludwig von Rieneck",
-      "personTitle": [
-        "Graf von Rieneck"
-      ]
     }
   ]
 }

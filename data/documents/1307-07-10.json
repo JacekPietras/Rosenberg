@@ -39,7 +39,10 @@
       "place": "hohenlohe"
     },
     {
-      "person": "Konrad von Uissigheim"
+      "person": "Kunigunde von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
     },
     {
       "place": "roettingen-st-kilian"
@@ -49,12 +52,6 @@
     },
     {
       "place": "wurzburg"
-    },
-    {
-      "person": "Kunigunde von Wertheim",
-      "personTitle": [
-        "Graf von Wertheim"
-      ]
     }
   ]
 }

@@ -60,17 +60,14 @@
     },
     {
       "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
+      ],
       "type": "generic",
       "content": "held the Minneburg before its redemption."
     }
   ],
   "mention": [
-    {
-      "person": "Kunz Mönch von Rosenberg",
-      "personTitle": [
-        "Vogt zu Steinsberg"
-      ]
-    },
     {
       "place": "minneburg"
     },

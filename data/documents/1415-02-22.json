@@ -40,12 +40,6 @@
       "person": "Konrad von Limpurg"
     },
     {
-      "person": "Konrad von Rosenberg"
-    },
-    {
-      "place": "schloss-haltenbergstetten"
-    },
-    {
       "person": "Konrad von Rosenberg",
       "personTitle": [
         "zu Boxberg"
@@ -53,6 +47,9 @@
     },
     {
       "person": "Konrad zu Limpurg"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

@@ -1,20 +1,13 @@
 {
   "date": "1800",
   "label": "to review",
+  "research": "The date is approximate as indicated in the archive description.",
   "entries": [
     {
-      "source": "HStAM, R, 604 (in)",
-      "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=9832390",
-      "german": "Repertorium über die Urkunden und Akten betreffend die Familien von Eberstein und von Rosenbach, von Mansbach und von Geyso, 1334-1788\n\nBezeichnung: Fulda, Adel\n\nLaufzeit: angelegt 1800\n\n(Vor-) Provenienzen: Archiv Fulda\n\nZusatzinformationen: Umfang: 1 Band, Archivrepertorium, angelegt von Weber",
-      "english": "Inventory of the documents and records concerning the families of Eberstein and Rosenbach, Mansbach, and Geyso, 1334–1788.\n\nDesignation: Fulda, nobility.\n\nTerm: begun in 1800.\n\n(Previous) provenance: Fulda Archive.\n\nAdditional information: one volume, archival inventory, compiled by Weber."
-    }
-  ],
-  "mention": [
-    {
-      "place": "fulda-cathedral"
-    },
-    {
-      "place": "rosenberg-town"
+      "source": "Staatsarchiv Ludwigsburg JL 425 Bd 38 Qu. 21",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=2-757333",
+      "german": "Statistisch-topographische Beschreibung von Herrenzimmern, [um 1800].",
+      "english": "Statistical and topographical description of Herrenzimmern, [around 1800]."
     }
   ]
 }

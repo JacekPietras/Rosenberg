@@ -98,19 +98,13 @@
   ],
   "mention": [
     {
+      "place": "amberg"
+    },
+    {
       "place": "ensdorf-oberpfalz"
     },
     {
       "place": "theuern-oberpfalz"
-    },
-    {
-      "place": "amberg"
-    },
-    {
-      "person": "Friedrich",
-      "personTitle": [
-        "Abt zu Ensdorf"
-      ]
     }
   ]
 }

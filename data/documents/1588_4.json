@@ -1,32 +1,26 @@
 {
-  "date": "1588-1626",
+  "date": "1588",
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Forst- und Jagdsachen 478",
+      "source": "StAN, Adelsarchiv Seckendorff, Erkenbrechtshausen, Akten 75",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/8506403f-9e09-4f06-bcd1-6b1b01bb3385",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3A3FC394-291C-4738-BBB4-56AA9B0AC21D&parent_id="
+        "https://www.gda.bayern.de/gvl/document/1b8310c4-2414-47d8-83ab-2c2c57a9796b",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6a9b3994-011c-40e5-a6ec-35c61d6a873c&parent_id="
       ],
-      "german": "Differenzen zwischen dem Hochstift Würzburg und dem Kloster Bronnbach/Baden einerseits und C. von Rosenberg zu Unterschüpf betr. die Jagensgerechtigkeit, Gerichtsbarkeit etc. zu Kupprichhausen",
-      "english": "Disputes between the Bishopric of Würzburg and Bronnbach Abbey/Baden on the one hand and C. von Rosenberg zu Unterschüpf on the other concerning hunting rights, jurisdiction, etc. at Kupprichhausen."
+      "german": "Julius v. S-G an Ursula v. Lentersheim geb. v. Rosenberg wegen des von Paul Martin v. Lichtenstein schuldigen Zinses von 1000 fl Kapital",
+      "english": "Julius von Seckendorf an (S-G) to Ursula von Lentersheim née von Rosenberg concerning the interest on 1,000 florins of principal owed by Pauls Martin von Lichtenstein."
     }
   ],
   "mention": [
     {
-      "place": "bronnbach"
+      "person": "Julius von Seckendorf"
     },
     {
-      "place": "kupprichhausen"
+      "person": "Pauls Martin von Lichtenstein"
     },
     {
       "place": "rosenberg-town"
-    },
-    {
-      "place": "unterschuepf"
-    },
-    {
-      "place": "wurzburg"
     }
   ]
 }

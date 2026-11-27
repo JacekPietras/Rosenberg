@@ -72,15 +72,6 @@
   ],
   "mention": [
     {
-      "person": "Konrad von Rosenberg"
-    },
-    {
-      "person": "Konrad von Weinsberg"
-    },
-    {
-      "place": "zimmern"
-    },
-    {
       "person": "Bischof Hans",
       "personTitle": [
         "Bischof zu Würzburg"
@@ -88,6 +79,9 @@
     },
     {
       "place": "roettingen"
+    },
+    {
+      "place": "zimmern"
     }
   ]
 }

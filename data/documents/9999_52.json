@@ -3,13 +3,27 @@
   "label": "to review",
   "entries": [
     {
-      "source": "StAWü, Mainzer Regierungsarchiv Hatzfeld 473/11",
+      "source": "StAWü, Würzburger Risse und Pläne I 285",
       "url": [
-        "https://www.gda.bayern.de/gvl/document/da2a8003-9978-4ef9-9a87-809105977981",
-        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2A219360-4278-4386-AF6C-007ECA4F7A8D&parent_id="
+        "https://www.gda.bayern.de/gvl/document/ff95665c-0906-4a59-b91a-003efa340739",
+        "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9D891C20-BB94-4E84-9E52-D695AC78B1F6&parent_id="
       ],
-      "german": "Verweisblatt von \"Graf von Hatzfeld wegen der Ganerbschaft im Schüpfergrunde, so von den von Rosen(berg) herrühret\" auf die Ritterschafts-Lade",
-      "english": "Reference slip from “Count von Hatzfeld concerning the Ganerbschaft in the Schüpfergrund, which derives from the von Rosen(berg)” to the knights’ archive chest."
+      "german": "Farbiger Plan, angelegt über einen Streit zwischen Zeisolf von Rosenberg zu Haltenbergstetten u. Veit von Lichtenstein zum Geyersberg wegen der Steinsetzung zwischen den Markungen Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: Enthält: Ansicht der Orte Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim",
+      "english": "Colored plan drawn up concerning a dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geyersberg over the placement of boundary stones between the districts of Gnötzheim and Ippesheim.\n\nContains/includes: views of the localities Gnötzheim, Herrnbrechtheim, Bullenheim, Ippesheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "gnoetzheim"
+    },
+    {
+      "person": "Veit von Lichtenstein"
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
+      ]
     }
   ]
 }

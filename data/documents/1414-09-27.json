@@ -28,19 +28,13 @@
   ],
   "mention": [
     {
-      "person": "Hans von Rosenberg",
-      "personTitle": [
-        "Ritter"
-      ]
-    },
-    {
-      "place": "nuremberg"
-    },
-    {
       "person": "König Siegmund",
       "personTitle": [
         "König"
       ]
+    },
+    {
+      "place": "nuremberg"
     },
     {
       "place": "rothenburg"

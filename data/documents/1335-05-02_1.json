@@ -43,40 +43,7 @@
   ],
   "mention": [
     {
-      "person": "Engelhard von Weinsberg"
-    },
-    {
-      "place": "erlenbach"
-    },
-    {
-      "person": "Gerhard von Talheim"
-    },
-    {
-      "person": "Hans von Riedern"
-    },
-    {
-      "person": "Konrad Schenk von Erbach"
-    },
-    {
-      "person": "Konrad von Weinsberg"
-    },
-    {
-      "place": "mainz"
-    },
-    {
-      "person": "Reinhard von Sickingen"
-    },
-    {
-      "place": "weinsberg"
-    },
-    {
       "person": "Eberhard Rüd",
-      "personTitle": [
-        "Ritter"
-      ]
-    },
-    {
-      "person": "Eberhard von Rosenberg",
       "personTitle": [
         "Ritter"
       ]
@@ -86,6 +53,9 @@
       "personTitle": [
         "Junker"
       ]
+    },
+    {
+      "place": "erlenbach"
     },
     {
       "person": "Gerhard von Talheim",
@@ -112,22 +82,16 @@
       ]
     },
     {
+      "place": "mainz"
+    },
+    {
       "person": "Reinhard von Sickingen",
       "personTitle": [
         "Ritter"
       ]
     },
     {
-      "person": "Eberhard Rüd"
-    },
-    {
-      "person": "Eberhard von Rosenberg"
-    },
-    {
-      "person": "Konrad von Weinsberg",
-      "personTitle": [
-        "der Ältere"
-      ]
+      "place": "weinsberg"
     }
   ]
 }

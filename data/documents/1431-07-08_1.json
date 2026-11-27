@@ -27,19 +27,16 @@
       "person": "Balthasar von Thüngen"
     },
     {
-      "place": "nuremberg"
-    },
-    {
-      "person": "Siegmund von Thüngen"
-    },
-    {
-      "person": "Ulrich von Rosenberg"
-    },
-    {
       "person": "König Siegmund",
       "personTitle": [
         "König"
       ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
     }
   ]
 }

@@ -1,18 +1,25 @@
 {
   "date": "9999",
   "label": "to review",
-  "transcribed": true,
   "entries": [
     {
-      "source": "Cisterciácký klášter Vyšší Brod, 0000",
-      "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/0000/charter",
-      "german": "W. von Rosenberg bittet den Abt und Convent der Cistercienser zu Citeaux, seine neue Stiftung (zu Hohenfurt) ihrem Orden einzuverleiben.\n\nReuerendo in Christo patri et domino . . . abbati Cysterciensi totique conuentui ordinis eiusdem W. de Rosenberch marscalcus Boemie sinceram et paratam ad obsequia uoluntatem. Habentes in desiderio pro nostra nostrorumque progenitorum et successorum salute et remedio animarum abbatiam uestri ordinis construere et fundare, discretioni uestre significamus, quod inuocata sancti spiritus gratia presente venerabili abbate et quibusdam fratribus de Ylaria de consensu et expressa uoluntate coniugis nostre et aliorum amicorum nostrorum ad hoc locum distinximus satis aptum, uolontes eum predicto abbati de Ylaria et eius ecclesie tanquam matri filiam in perpetuum obedire. Dotauimus etiam locum supradictum redditibus sexaginta talenta plene persoluentibus, addentes duas uineas cum piscationibus pascuis et nemoribus spatiosis, in proposito tenentes de die in diem nostra possibilitate eosdem redditus augmentare. Quare douotionem uestram petimus studiose, quatenus antedictum locum uestro ordini incorporare dignemini propter deum.\n\nSiegel: \"Das zerbröckelte Siegel\", bemerkt derselbe, \"stellt vor das Leibstück eines Geharnischten mit einem Schwerte in der Rechten“. Vergl. die Beschreibung des Siegels an der Urkunde Nr. VIII.",
-      "english": "W. von Rosenberg asks the abbot and convent of the Cistercians at Cîteaux to incorporate his new foundation at Hohenfurt into their order.\n\nI, W. de Rosenberch, marshal of Bohemia, offer sincere and ready service to the reverend father in Christ and lord, the abbot of Cîteaux, and to the whole convent of that order. Desiring, for the salvation and remedy of the souls of ourselves, our ancestors, and our successors, to build and found an abbey of your order, we inform your discretion that, invoking the grace of the Holy Spirit and in the presence of the venerable abbot and certain brothers of Wilhering, with the consent and express will of my wife and our other friends, we have selected a sufficiently suitable place for this purpose. We wish it forever to obey the aforesaid abbot of Wilhering and his church as a daughter does her mother. We have also endowed the aforesaid place with revenues yielding sixty talents in full, adding two vineyards with fisheries, pastures, and extensive woods, and we intend to increase those revenues from day to day according to our means. Therefore, we earnestly ask your devotion to deign, for God’s sake, to incorporate the aforesaid place into your order.\n\nSeal: “The crumbled seal,” he remarks, “depicts the torso of an armed man with a sword in his right hand.” Compare the description of the seal on charter no. VIII."
+      "source": "Generallandesarchiv Karlsruhe 67 Nr. 1057, 752",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=4-3981823",
+      "german": "Hans von Rosenbach",
+      "english": "Hans von Rosenberg",
+      "img": [
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003981823%2F04_0003981823_0001_4-3981823-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003981823%2F04_0003981823_0002_4-3981823-2.jpg"
+        }
+      ]
     }
   ],
   "mention": [
     {
-      "place": "rosenberg-town"
+      "person": "Hans von Rosenberg"
     }
   ]
 }

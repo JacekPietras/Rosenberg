@@ -44,31 +44,10 @@
       ]
     },
     {
-      "person": "Heinrich von Neuhaus"
-    },
-    {
-      "person": "Kraft von Hohenlohe",
-      "personTitle": [
-        "Graf von Hohenlohe"
-      ]
-    },
-    {
-      "place": "rosenberg-town"
-    },
-    {
-      "person": "Ulrich von Neuhaus"
-    },
-    {
-      "person": "Wilhelm von Landstein"
-    },
-    {
       "person": "Heinrich of Neuhaus"
     },
     {
-      "person": "Kraft von Hohenlohe"
-    },
-    {
-      "person": "Ulrich of Neuhaus"
+      "person": "Heinrich von Neuhaus"
     },
     {
       "person": "König Karl",
@@ -77,10 +56,28 @@
       ]
     },
     {
+      "person": "Kraft von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
+      ]
+    },
+    {
       "place": "mainz"
     },
     {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich of Neuhaus"
+    },
+    {
+      "person": "Ulrich von Neuhaus"
+    },
+    {
       "person": "Wilhelm of Landstein"
+    },
+    {
+      "person": "Wilhelm von Landstein"
     }
   ]
 }

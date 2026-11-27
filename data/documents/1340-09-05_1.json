@@ -28,13 +28,25 @@
   ],
   "mention": [
     {
+      "person": "Erzbischof Heinrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
       "person": "Friedrich zu Meißen"
     },
     {
       "person": "Gerlach von Limpurg"
     },
     {
+      "person": "Hans von Waldeck"
+    },
+    {
       "person": "Heinrich of Mainz"
+    },
+    {
+      "person": "Heinrich zu Mainz"
     },
     {
       "person": "Konrad Schenk von Erbach"
@@ -47,18 +59,6 @@
     },
     {
       "place": "waldeck"
-    },
-    {
-      "person": "Erzbischof Heinrich",
-      "personTitle": [
-        "Erzbischof zu Mainz"
-      ]
-    },
-    {
-      "person": "Hans von Waldeck"
-    },
-    {
-      "person": "Heinrich zu Mainz"
     }
   ]
 }

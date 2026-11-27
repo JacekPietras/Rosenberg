@@ -51,6 +51,9 @@
   ],
   "mention": [
     {
+      "place": "berlichingen"
+    },
+    {
       "person": "Hans von Absberg"
     },
     {
@@ -61,9 +64,6 @@
     },
     {
       "person": "Kraft von Hohenlohe"
-    },
-    {
-      "place": "berlichingen"
     }
   ]
 }

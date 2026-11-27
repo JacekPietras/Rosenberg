@@ -1,25 +1,29 @@
 {
   "date": "9999",
   "label": "to review",
+  "research": "The archive groups this letter under “Fehde mit Rosenberg (1466)”, but does not date the individual item.",
   "entries": [
     {
-      "source": "Staatsarchiv Ludwigsburg EL 228 a III Nr 3761",
-      "url": "https://www.landesarchiv-bw.de/plink/?f=2-1174691",
-      "german": "evangelische Pfarrkirche; Grabmal von Rosenberg\n\nEnthält: Niederstetten TBB\n\nUmfang: 1 Glasplatte",
-      "english": "Evangelical parish church; Rosenberg tomb monument\n\nContains: Niederstetten, TBB\n\nExtent: 1 glass plate",
+      "source": "Hohenlohe-Zentralarchiv Neuenstein GA 5 U 1228",
+      "url": "https://www.landesarchiv-bw.de/plink/?f=3-190116",
+      "german": "Schreiben Friedrich von Rosenberg an Hohenlohe wegen seiner Leute in Münster.\n\nUmfang: 1 Schr.",
+      "english": "Letter from Friedrich von Rosenberg to Hohenlohe concerning his people in Münster.\n\nExtent: 1 document",
       "img": [
         {
-          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=588507&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000588507%2Ftitlaufn_0001174691%2F02_0001174691_0001_2-1174691-1.jpg"
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190116%2F03_0000190116_0001_3-190116-1.jpg"
+        },
+        {
+          "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190116%2F03_0000190116_0002_3-190116-2.jpg"
         }
       ]
     }
   ],
   "mention": [
     {
-      "place": "niederstetten"
+      "person": "Friedrich von Rosenberg"
     },
     {
-      "place": "rosenberg-town"
+      "place": "hohenlohe"
     }
   ]
 }

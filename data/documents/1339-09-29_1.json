@@ -116,37 +116,31 @@
       ]
     },
     {
-      "person": "Hans",
-      "personTitle": [
-        "Burggraf zu Nürnberg"
-      ]
-    },
-    {
-      "place": "nuremberg"
-    },
-    {
-      "place": "wallduern"
-    },
-    {
-      "place": "wurzburg"
-    },
-    {
       "person": "Ludwig von Hohenlohe"
     },
     {
       "place": "mainz"
     },
     {
-      "place": "seckendorff"
-    },
-    {
-      "place": "wertheim-stiftskirche"
+      "place": "nuremberg"
     },
     {
       "person": "Rudolf von Wertheim",
       "personTitle": [
         "Graf von Wertheim"
       ]
+    },
+    {
+      "place": "seckendorff"
+    },
+    {
+      "place": "wallduern"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

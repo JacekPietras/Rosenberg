@@ -34,6 +34,9 @@
       "place": "heidelberg"
     },
     {
+      "place": "helmstatt"
+    },
+    {
       "person": "König Ruprecht",
       "personTitle": [
         "König"
@@ -46,28 +49,19 @@
       ]
     },
     {
-      "person": "Wiprecht von Helmstatt",
-      "personTitle": [
-        "Ritter",
-        "der Ältere"
-      ]
-    },
-    {
-      "place": "helmstatt"
-    },
-    {
       "place": "rosenberg-town"
     },
     {
       "person": "Wiprecht von Helmstatt",
       "personTitle": [
-        "der Ältere"
+        "der Jüngere"
       ]
     },
     {
       "person": "Wiprecht von Helmstatt",
       "personTitle": [
-        "der Jüngere"
+        "Ritter",
+        "der Ältere"
       ]
     }
   ]

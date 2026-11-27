@@ -41,13 +41,6 @@
       "content": "ordered Eberhard von Rosenberg to leave the parish church of Kocherthürn."
     },
     {
-      "person": "Eberhard von Rosenberg",
-      "personTitle": [
-        "Kleriker der Würzburger Diözese"
-      ],
-      "type": "title"
-    },
-    {
       "person": "Urban V",
       "personTitle": [
         "Papst"
@@ -58,10 +51,10 @@
   ],
   "mention": [
     {
-      "place": "wurzburg"
+      "place": "mosbach-st-juliana"
     },
     {
-      "place": "mosbach-st-juliana"
+      "place": "wurzburg"
     }
   ]
 }

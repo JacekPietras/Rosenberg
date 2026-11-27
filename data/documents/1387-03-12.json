@@ -42,7 +42,25 @@
   ],
   "mention": [
     {
+      "place": "arnstein-maria-sondheim"
+    },
+    {
       "person": "Bischof Gerhard",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "eltmann"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Gerhard von Schwarzburg",
       "personTitle": [
         "Bischof zu Würzburg"
       ]
@@ -64,30 +82,6 @@
     },
     {
       "place": "wurzburg"
-    },
-    {
-      "person": "Gerhard von Schwarzburg",
-      "personTitle": [
-        "Bischof"
-      ]
-    },
-    {
-      "place": "arnstein-maria-sondheim"
-    },
-    {
-      "place": "bischofsheim"
-    },
-    {
-      "place": "eltmann"
-    },
-    {
-      "place": "fulda-cathedral"
-    },
-    {
-      "person": "Gerhard von Schwarzburg",
-      "personTitle": [
-        "Bischof zu Würzburg"
-      ]
     }
   ]
 }
