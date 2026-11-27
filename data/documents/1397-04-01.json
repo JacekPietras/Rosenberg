@@ -9,7 +9,7 @@
       "source": "Staatsarchiv Wertheim G-Rep. 2a Stettenberg 7",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198362",
       "german": "Lehenrevers Albrechts von Stettenberg an H. Graf Johann ausgestellet über folgende Lehen, das Zweiteil des Zehnten von 10 Morgen Weingartten gelegen im Ruwethal zu Niklashausen (Niclaushaußen) und in Zinsen item 4 Pfund Heller Zinsen auf einem Acker zu Niklashausen (Niclaushaußen) hinter der Kirchen gelegen, als man außen hin von Werbach geht und uf einer Wiesen zu Erinsbach [Frinsbach], daran Wyprecht Stettenberger hat stoßen, item 1 Acker, welcher gültet 30 Schilling Zinsen an Hacke Prülleß. Item den kleinen Zehnten das 6. Teil zu Gamburg, der H. Eberhardts von Roßenberg sel. war, item den 9. Teil an dem großen Weinzehnten, der Peters von Rydern war.\n\nLaufzeit: 1397 April 1 (dominica Laetare)",
-      "english": "Albrecht von Stettenberg’s fief acknowledgment issued to the Lord Count Johann concerning the following fiefs: one half of the tithe from 10 Morgen of vineyard in the Ruwethal at Niklashausen, and rents: namely, 4 pounds Heller in rents from a field at Niklashausen behind the church, on the way out toward Werbach, and from a meadow at Erinsbach [Frinsbach], adjoining land held by Wyprecht Stettenberger; also one field yielding 30 shillings in rent to Hacke Prülleß; also one sixth of the small tithe at Gamburg, which had belonged to the late Lord Eberhard von Rosenberg; and one ninth of the great wine tithe, which had belonged to Peter von Rydern.\nTerm: 1 April 1397 (Sunday Laetare).",
+      "english": "Albrecht von Stettenberg’s fief acknowledgment issued to the Lord Count Johann concerning the following fiefs: one half of the tithe from 10 Morgen of vineyard in the Ruwethal at Niklashausen, and rents: namely, 4 pounds Heller in rents from a field at Niklashausen behind the church, on the way out toward Werbach, and from a meadow at Erinsbach [Frinsbach], adjoining land held by Wyprecht Stettenberger; also one field yielding 30 shillings in rent to Hacke Prülleß; also one sixth of the small tithe at Gamburg, which had belonged to the late Lord Eberhard von Rosenberg; and one ninth of the great wine tithe, which had belonged to Peter von Riedern.\nTerm: 1 April 1397 (Sunday Laetare).",
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198362%2F07_0000198362_0001_7-198362-1.jpg"
@@ -23,6 +23,9 @@
   "mention": [
     {
       "person": "Eberhard von Rosenberg"
+    },
+    {
+      "person": "Peter von Riedern"
     }
   ]
 }
