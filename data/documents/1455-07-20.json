@@ -22,10 +22,10 @@
   ],
   "mention": [
     {
-      "place": "bischofsheim"
-    },
-    {
-      "person": "Georg von Rosenberg"
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Bischofsheim"
+      ]
     },
     {
       "place": "mainz"

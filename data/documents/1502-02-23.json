@@ -34,13 +34,14 @@
       ]
     },
     {
-      "person": "Hans von Rosenberg"
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Schultheiß zu Hagenau",
+        "zu Uissigheim"
+      ]
     },
     {
       "person": "Heinrich von Fleckenstein"
-    },
-    {
-      "place": "uissigheim"
     }
   ]
 }

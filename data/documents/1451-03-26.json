@@ -23,7 +23,10 @@
       "place": "gemmingen"
     },
     {
-      "person": "Hans von Gemmingen"
+      "person": "Hans von Gemmingen",
+      "personTitle": [
+        "Amtmann zu Möckmühl"
+      ]
     },
     {
       "place": "heidelberg"

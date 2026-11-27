@@ -25,7 +25,10 @@
       "person": "Georg von Rosenberg"
     },
     {
-      "person": "Hans von Absberg"
+      "person": "Hans von Absberg",
+      "personTitle": [
+        "Amtmann zu Uffenheim"
+      ]
     },
     {
       "person": "Margaretha Zobel"

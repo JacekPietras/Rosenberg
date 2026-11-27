@@ -14,7 +14,10 @@
   ],
   "mention": [
     {
-      "person": "Hans Dietrich von Rosenberg"
+      "person": "Hans Dietrich von Rosenberg",
+      "personTitle": [
+        "Vogt zu Königstein"
+      ]
     }
   ]
 }

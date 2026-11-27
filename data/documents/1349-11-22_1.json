@@ -7,7 +7,7 @@
       "source": "Cisterciácký klášter Vyšší Brod, 1349 XI 22",
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1349_XI_22/charter",
       "german": "Ulrich von Schauflern urkundet, dass sein Vater Johann den Herren zu Hohenfurt zu einem, rechten Seelgeräthe für sich und seinen Oheim Peschek von Hatzles zehn Pfund Passauer Pfenninge geschafft habe.\n\nIch Vlreich hern Johans sven von Schzawflern, dem got genadt, vergich vnd tven chvnt offenbar an dysem prief allen den, die yn sehent lesen oder hoerent lesen, dye nv lebent oder hernach chvemftig synt, daz meyn egenanter vater Johan von Schzawflern gelten scholt der erbern sammvng des clasters cze Hohenfurt fvemf phvnt Pazzawer phenning vmb eyn ebeges selgeraet seym oehem Pescheyn vom Hatslabs; dar czv hat er geschaft an seynem todpett fvemf phvnt Pazzawer phenning den vorgenanten hern cze Hohenfurt seyn selbes sel czv aynem rechten vnd ewygen selgeraet mit meym gveten wyllen mit gvnst vnd mit rat aller venser vrevnt. Vnd dye czehent phvnt hat er yn geschaft avf vensern czwayn mvelen, die da lygent da czem Saeherleyns; dye erst dyent ayn halbs schok groser phenning Prager mvencz, dye ander dreysich Pazzawer. Von dem phunt schzvellen die egenanten hern von Hohenfvrt alle jar begen ayn jartag mit ayner ewygen bedaechtnvezz meyns vaters sel vnd seynes oehems nach yrs ordens gewanheyt vnd mit aynem mal der gemayn in daz refent. Waer aver das, daz ich egenanter Vlreich den oftgenanten herren von Hohenfurt czehen phvnt phenning gaeb, wan daz geschae, so schzvellen dye vorgenanten mvel wyder an mych gevallen als ee. Vnd schzvellen dye hern vmb dye czehen phvnt ayn phvnt gelczs chawfen, da meynes vater sel vnd seynes oehems bey gedacht werd ewygleych. Daz dye red all staet vnd vnczeprochen veurbaz beleyb an allen chryeg, dar vmb gib ich yn dysen prief versygelten mit meym ingsygel mit Vlreichs von Drochaw vnd mit Benyschzs von Rosenberch ingsygeln, dye dyrr sach mit andern pidern levvten geczevgen synt. Der prief ist gegeben da von Christes gepvrd ergangen warden drewczen hvndert jar dar nach yn dem nevn vnd vyerczygistem jar an sand Ceczilgen tag.. ,\n\nSiegel: Drei kleine, an Pergamentstreifen hängende Siegel in weissem Wachs. a) Ein Helm, dessen Zierde der Oberleib eines schwertschwingenden Mannes. - + S . Vlrici . D . Saher. b) Ein Helm, dessen Zierde ein Hütlein mit einem Paar Hörner. - + S . Vlrici . D' Kwietonio. c) Ein Schild mit dem Zeichen der Harach. - + S . Benichsi . De . Harach.",
-      "english": "Ulrich von Schauflern records that his father Johann established ten pounds of Passau pfennigs with the lords of Hohenfurt as a proper memorial endowment for himself and his uncle Peschek von Hatzles.",
+      "english": "I, Ulrich, son of the late Lord Johann von Schauflern, make known to all, living now or in future, that my said father Johann owed the venerable convent of Hohenfurt five pounds of Passau pfennigs for a perpetual memorial endowment for his uncle Peschek von Hatzles. In addition, on his deathbed my father bequeathed five pounds of Passau pfennigs to the lords of Hohenfurt as a proper and perpetual endowment for the salvation of his own soul, with my consent and the agreement and counsel of all our friends. He assigned these ten pounds to our two mills at Saeherleins: the first yields half a schock of Prague groschen, the second thirty Passau pfennigs. From this income the lords of Hohenfurt are to hold an annual anniversary for my father's soul and his uncle's soul forever, according to their order's custom, with a meal for the community in the refectory. If I, Ulrich, pay the said lords ten pounds, the mills shall revert to me as before; in return, the lords are to purchase one pound of income from the ten pounds, so that my father's and uncle's souls may be remembered forever. To keep this agreement firm and unchallenged, I issue this charter sealed with my seal and those of Ulrich von Drochow and Benesch von Rosenberg, who witnessed the matter with other good men. Given on St Cecilia's Day in 1349. Three small seals hang from parchment strips; one is described as bearing the Harrach arms.",
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13491122_26%2CI_r.jpg"
@@ -16,6 +16,14 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13491122_26%2CI_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "harrach"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

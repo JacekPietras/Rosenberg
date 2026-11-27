@@ -55,13 +55,13 @@
   ],
   "mention": [
     {
-      "person": "Albrecht von Adelsheim"
+      "person": "Albrecht von Adelsheim",
+      "personTitle": [
+        "Amtmann zu Lauda"
+      ]
     },
     {
       "person": "Eberhard von Gemmingen"
-    },
-    {
-      "place": "lauda"
     },
     {
       "person": "Walter von Cronberg"

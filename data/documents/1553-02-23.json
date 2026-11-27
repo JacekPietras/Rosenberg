@@ -12,7 +12,7 @@
         "https://www.deutsche-digitale-bibliothek.de/item/RTSIZWTUETI4VL4KJYGFDHMM6MRZS3QQ"
       ],
       "german": "Erblehnrevers genannter Einwohner von Boxberg gegenüber Albrecht von Rosenberg wegen zweier ihnen daselbst verliehener Freihöfe.\n\nLaufzeit: 1553 Februar 23 (Donnerstag nach cathedra Petri 1553)\n\nSiegelbeschreibung: Mit dem Siegel des Eberhard von Stetten zu Kocherstetten",
-      "english": "Erblrevers called residents of Boxberg opposite Albrecht von Rosenberg because of two Freihöfe granted them their self.",
+      "english": "Named residents of Boxberg issue an hereditary fief acknowledgment to Albrecht von Rosenberg concerning two free farmsteads granted to them there. The document is dated 23 February 1553 (Thursday after the Feast of Saint Peter’s Chair). It bears the seal of Eberhard von Stetten zu Kocherstetten.",
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724077%2F04_0001724077_0001_4-1724077-1.jpg"
@@ -34,6 +34,9 @@
   "mention": [
     {
       "place": "boxberg"
+    },
+    {
+      "place": "kocherstetten-marienkirche"
     }
   ]
 }

@@ -11,7 +11,7 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ae12776d-edd5-44e5-aecc-d9a793e533dd&parent_id="
       ],
       "german": "Die Brüder Hainrich, Go(e)rg und Chu(e)nrad Marschalke zu Pappenheim verkaufen an ihren Vetter Sigmünd Marschalk von Pappenheim für 194 fl.rh. (200 mynder 6), die sie empfangen haben, folgende Objekte mit aller Zugehör, wie sie von +Vater und +Bruder auf sie gekommen sind, zu freiem Eigen: (1) ihren Weiler gen. Zwerstras (Zwerchstraß, Lkr. Donauwörth) mit Leuten, Gütern und aller Zugehör. - Pertinenzformel: ob erd vnd vnder erd, mit zinsen, gülten, hu(e)nerdiensten, wünn, waid, wasser, stok, stain, weg, steg, grund vnd bodem; (2) die nachbenannten Leute und Güter mit Zinsen, Gülten, Renten und Fastnachthühnern aus Lehen, Häusern, Hofraiten, Hofstätten, Gärten, Wiesen und Äckern mit aller Zugehör; benannt: Fricz Vogt, der Weber, V(e)lein Prew, der Go(e)lcu(o)ncz, der V(o)del, der Schmid, alle 6 von Olapßheim (Alesheim, Lkr. Weißenburg), Haincz Swob von Trümoczheim (Trommetsheim, Lkr. Weißenburg), die Hülerin von Trümoczheim, der Litschenfricz von Meinheim (Meinheim, Lkr. Gunzenhausen), Fricz A(e)plein von Perolczheim (Markt Berolzheim, Lkr. Gunzenhausen), Peter Schmid von Perolczheim, Jacob von Wolfzprün (Wolfsbronn, Lkr. Gunzenhausen), Hans Prok von Tittenheim (Dettenheim, Lkr. Weißenburg), der Pu(o)cz von Obernaltheim (Langenaltheim, Lkr. Weißenburg), V(o)lrich Sancmayr von Dornhawsen (Dornhausen, Lkr. Gunzenhausen); (3) ihr 1/3 aus Häusern, Hofstätten, Gärten und Äckern, Zinsen, Gülten, Renten und Fastnachthühnern von folgenden 6 Untertanen: Cu(o)ncz Plater von Wachenhofen (Wachenhofen, Lkr. Weißenburg), die Ru(e)hlein von Deilnhofen (Theilenhofen, Lkr. Gunzenhausen), der Wilman von Meinheim, der Mu(e)lich von Trümoczheim, V(e)lein Rogen von Trümoczheim, der Pewlsin Tochtermann von Trümoczheim. - Nutzung mit Besetzen und Entsetzen. - Bei Besitzstörung durch die A. sollen alle Auseinandersetzungen vom Käufer gewonnen und von den A. verloren sein. - Fertigung für freies Eigen nach Eigens - und Grafschaftsrecht. - S. 1: der A.1 - 2: Fridreich Herr zu Haydeck (des edelnn herren) - 3: ihr Schwager Herr Hans von Rosenberg, unter denen sich Hainrich, Go(e)rg und Chu(o)nrad Marschalke eidesstattlich binden.",
-      "english": "The brothers Heinrich, Georg, and Konrad Marschalk von Pappenheim sold their cousin Sigmund their inherited hamlet of Zwerchstraß, various subjects and properties, and a third share of holdings in several other places for 194 Rhenish florins. The sale was secured by guarantees, including the brothers’ brother-in-law Hans von Rosenberg. The catalog dates the record to 29 April 1411."
+      "english": "The brothers Heinrich, Georg and Konrad Marschalk von Pappenheim sell their cousin Sigmund Marschalk von Pappenheim, for 194 Rhenish florins received, the following property as freehold, with all appurtenances, as inherited from their deceased father and brother. First is their hamlet called Zwerchstraß, with its people, property and appurtenances above and below ground, rents, dues, chicken services, common use, pasture, water, wood, stones, roads, paths, land and soil. Second are the following people and properties, with rents, dues, income and Shrovetide chickens from tenures, houses, farm premises, house sites, gardens, meadows and fields: Fricz Vogt, the weaver, Vlein Prew, the Golcuncz, the Vodel and the smith, all six from Alesheim; Haincz Swob and the Hülerin from Trommetsheim; the Litschenfricz from Meinheim; Fricz Aplein and Peter Schmid from Markt Berolzheim; Jacob von Wolfzprün from Wolfsbronn; Hans Prok from Dettenheim; the Pucz from Langenaltheim; and Ulrich Sancmayr from Dornhausen. Third is their one-third share of houses, house sites, gardens and fields, rents, dues, income and Shrovetide chickens from six subjects: Cuncz Plater from Wachenhofen, the Ruhlein from Theilenhofen, the Wilman from Meinheim, the Mulich and Vlein Rogen from Trommetsheim, and the Pewlsin's son-in-law from Trommetsheim. The buyer may install and remove tenants. In disputes arising from disturbance of possession by the issuers, the buyer shall be deemed to have won and the issuers to have lost. The freehold transfer is made according to the law of freehold and the county. The first issuer seals, together with Friedrich Herr zu Heideck and their brother-in-law Hans von Rosenberg; the three brothers bind themselves by oath under these seals."
     }
   ],
   "mention": [
@@ -22,10 +22,16 @@
       "person": "Hans von Rosenberg"
     },
     {
+      "place": "heideck"
+    },
+    {
       "person": "Heinrich Marschalk von Pappenheim"
     },
     {
       "person": "Konrad Marschalk von Pappenheim"
+    },
+    {
+      "person": "Siegmund Marschalk von Pappenheim"
     }
   ]
 }
