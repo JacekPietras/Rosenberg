@@ -55,7 +55,7 @@
     "lat": 49.5525,
     "lon": 10.0656,
     "id": "aub",
-    "description": "In 1387 Aub was a market settlement, represented as village in the city/village schema. Town rights were granted on 6 January 1404. Source: https://www.stadt-aub.de/stadtportrait/ ."
+    "description": "In 1387 Aub was a market settlement, represented as village in the city/village schema. Town rights were granted on 6 January 1404."
   },
   {
     "id": "aub-mariae-himmelfahrt",
@@ -105,7 +105,7 @@
       "Baltenstein",
       "Baltenstain"
     ],
-    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden. Source: https://www.leo-bw.de/detail-gis/-/Detail/details/ORT/labw_ortslexikon/3259/Bartenstein .",
+    "description": "The von Rosenbergs held Bartenstein as a fief and family seat; their shares there are documented from 1419 into the 1440s. No separate city or village is established here for 1387: LEO-BW describes Bartenstein as the castle and associated buildings before 1688, with settlement development only in the early 18th century and first mention as a town in 1806. Its medieval settlement category is therefore unset and this settlement marker is hidden.",
     "showOnMap": false
   },
   {
@@ -205,7 +205,7 @@
     "category": "village",
     "lat": 49.471811,
     "lon": 9.411914,
-    "description": "The von Rosenbergs held substantial property and tithe rights in Bofsheim, as well as patronage rights over the village church. LEO-BW describes the village and the Rosenbergs' share of its lordship in the 14th century.."
+    "description": "The von Rosenbergs held substantial property and tithe rights in Bofsheim, as well as patronage rights over the village church. LEO-BW describes the village and the Rosenbergs' share of its lordship in the 14th century."
   },
   {
     "variations": [
@@ -216,6 +216,7 @@
       "Bockesberg",
       "Bosberg",
       "Bocchesberg",
+      "Boxperg",
       "Bokkeberc",
       "Bonberg",
       "Bocsberg",
@@ -452,7 +453,7 @@
     "category": "village",
     "lat": 49.51446,
     "lon": 9.75086,
-    "description": "Edelfingen is a village in Bad Mergentheim, southwest of Würzburg. Settlement coordinates: https://mapcarta.com/de/18212608 . Municipal location: https://www.bad-mergentheim.de/de/verwaltung/stadtteile/bad-mergentheimer-stadtteil-edelfingen-id_432/ ."
+    "description": "Edelfingen is a village in Bad Mergentheim, southwest of Würzburg."
   },
   {
     "id": "eiersheim",
@@ -675,7 +676,7 @@
     "lat": 49.653,
     "lon": 9.946,
     "id": "giebelstadt",
-    "description": "Giebelstadt was a village in 1387 under the Geyer and Zobel families. It received market rights in 1851. Source: https://giebelstadt.de/Eigene_Dateien/download/gie_kultur_deutsch_schrift.pdf , pp. 6-7."
+    "description": "Giebelstadt was a village in 1387 under the Geyer and Zobel families. It received market rights in 1851., pp. 6-7."
   },
   {
     "id": "gnoetzheim",
@@ -685,7 +686,7 @@
     "category": "village",
     "lat": 49.6169427,
     "lon": 10.1831528,
-    "description": "In 1387 Gnötzheim was a village with market rights, granted in 1352; market rights do not establish city status. Historical status: https://www.martinsheim.de/kultur-freizeit/geschichte/chronik-gnoetzheim.html . Settlement coordinates: https://www.freecountrymaps.com/map/towns/germany/284249395/ ."
+    "description": "In 1387 Gnötzheim was a village with market rights, granted in 1352; market rights do not establish city status."
   },
   {
     "id": "gnoetzheim-castle",
@@ -1256,7 +1257,7 @@
     "category": "city",
     "lat": 49.4,
     "lon": 9.91944,
-    "description": "Niederstetten was a city by 1387: in 1367 Charles IV renewed the privileges associated with Haltenbergstetten and extended them to the settlement below the castle. The settlement was also known as Haltenbergstetten. Historical status and name: https://www.niederstetten.de/stadtinfo-wirtschaft/geschichte . Settlement coordinates: https://www.geonames.org/2862831/niederstetten.html ."
+    "description": "Niederstetten was a city by 1387: in 1367 Charles IV renewed the privileges associated with Haltenbergstetten and extended them to the settlement below the castle. The settlement was also known as Haltenbergstetten."
   },
   {
     "id": "niederstetten-friedhofskapelle",
@@ -1300,7 +1301,7 @@
     "category": "village",
     "lat": 49.52295,
     "lon": 9.67761,
-    "description": "Oberschüpf, also called Schüpf, was a village in 1387. The municipal history describes its medieval village lordship, divided between Dottenheim and Rosenberg from 1388. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://mapcarta.com/de/18063860 ."
+    "description": "Oberschüpf, also called Schüpf, was a village in 1387. The municipal history describes its medieval village lordship, divided between Dottenheim and Rosenberg from 1388."
   },
   {
     "id": "oberschuepf-castle",
@@ -1343,7 +1344,7 @@
     ],
     "lat": 49.55893,
     "lon": 10.12482,
-    "description": "Recorded as Pholenheim in 1136/39; historical forms Pfalnhaim and Pfalenhaim appear in the Würzburg historical register. Sources: https://de.wikipedia.org/wiki/Pfahlenheim; https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?jahr_anfang=&jahr_ende=&max_eintraege=10&name=&sache=&site=1&stadt=3143; https://www.historisches-unterfranken.uni-wuerzburg.de/fries/fries-results.php?jahr_anfang=&jahr_ende=&max_eintraege=10&name=&sache=&site=3&stadt=158",
+    "description": "Recorded as Pholenheim in 1136/39; historical forms Pfalnhaim and Pfalenhaim appear in the Würzburg historical register.",
     "category": "village"
   },
   {
@@ -1502,7 +1503,7 @@
     "category": "city",
     "lat": 49.4571,
     "lon": 9.4738,
-    "description": "Rosenberg had town status in 1387: Thomas Steinmetz dates the elevation of the castle settlement to a town to before 1378. Its present village status must not be projected back to 1387. Historical status: https://www.ebidat.de/cgi-bin/ebidat.pl?id=5773 . Settlement coordinates: https://mapcarta.com/25456984 ."
+    "description": "Rosenberg had town status in 1387: Thomas Steinmetz dates the elevation of the castle settlement to a town to before 1378. Its present village status must not be projected back to 1387."
   },
   {
     "id": "rothenburg",
@@ -1824,7 +1825,7 @@
     "category": "village",
     "lat": 49.5145,
     "lon": 9.68873,
-    "description": "Unterschüpf is separately recorded as Nidernschippfe in 1324. It was a village in 1387; market rights were granted only in 1562. Historical status: https://www.boxberg.de/stadt-boxberg/die-stadtteile . Settlement coordinates: https://onlinestreet.de/orte/boxberg-baden-wuerttemberg/karte/Untersch%C3%BCpf ."
+    "description": "Unterschüpf is separately recorded as Nidernschippfe in 1324. It was a village in 1387; market rights were granted only in 1562."
   },
   {
     "variations": [
@@ -1908,7 +1909,7 @@
     "category": "village",
     "lat": 49.53266,
     "lon": 10.0671,
-    "description": "Waldmannshofen was a village by 1387: the local charter chronology describes houses and property in the village in records dated 1347, 1370, 1374, and 1379"
+    "description": "Waldmannshofen was a village by 1387: the local charter chronology describes houses and property in the village in records dated 1347, 1370, 1374, and 1379."
   },
   {
     "id": "waldmannshofen-castle",
@@ -2060,7 +2061,7 @@
     "category": "village",
     "lat": 50.108061,
     "lon": 11.607823,
-    "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century. Source: https://www.wirsberg.de/buergerservice-rathaus/chronik/ortsgeschichte ."
+    "description": "In 1387 Wirsberg was a market settlement, represented as village in the city/village schema. The municipal history documents it as a Markt by the end of the 13th century."
   },
   {
     "id": "virnsberg",
@@ -2181,7 +2182,7 @@
     "lat": 49.29944,
     "lon": 8.21361,
     "category": "village",
-    "description": "Duttweiler is recorded in a Wissembourg Abbey source by about 965 and appears as a village with local nobility by the fourteenth century. https://www.duttweiler.de/a-bis-z/c/chronik/allgemein.html"
+    "description": "Duttweiler is recorded in a Wissembourg Abbey source by about 965 and appears as a village with local nobility by the fourteenth century."
   },
   {
     "id": "fraunberg",
@@ -2191,7 +2192,7 @@
     "lat": 48.3688,
     "lon": 11.99257,
     "category": "village",
-    "description": "Village in the Erdinger Land associated with the Lords of Fraunberg and their medieval seat. https://www2.erzbistum-muenchen.de/pfarrei/pv-reichenkirchen-maria-thalheim/cont/47468"
+    "description": "Village in the Erdinger Land associated with the Lords of Fraunberg and their medieval seat."
   },
   {
     "id": "freising",
@@ -2203,7 +2204,7 @@
     "lat": 48.40167,
     "lon": 11.745,
     "category": "city",
-    "description": "The city seal is attested in 1330 and the town council in 1334. https://www.freising.de/kultur-freizeit/ueber-das-stadtarchiv"
+    "description": "The city seal is attested in 1330 and the town council in 1334."
   },
   {
     "id": "gelnhausen",
@@ -2213,7 +2214,7 @@
     "lat": 50.20164,
     "lon": 9.18742,
     "category": "city",
-    "description": "Founded as an imperial city in 1170 by Emperor Friedrich I. https://www.gelnhausen.de/tourismus/gelnhausen-erleben/stadtgeschichte/"
+    "description": "Founded as an imperial city in 1170 by Emperor Friedrich I."
   },
   {
     "id": "schloss-hubenstein",
@@ -2226,7 +2227,7 @@
     "lat": 48.35192,
     "lon": 12.18311,
     "category": "castle",
-    "description": "Medieval seat near Taufkirchen an der Vils held by Warmund von Fraunberg. The castle site is Bavarian monument D-1-7639-1062. https://www.taufkirchen.de/fileadmin/user_upload/Kompass_Taufkirchen__Vils__September_2025.pdf"
+    "description": "Medieval seat near Taufkirchen an der Vils held by Warmund von Fraunberg. The castle site is Bavarian monument D-1-7639-1062."
   },
   {
     "id": "mommenheim",
@@ -2237,7 +2238,7 @@
     "lat": 49.8836,
     "lon": 8.26919,
     "category": "village",
-    "description": "Rheinhessen village recorded in the Lorsch Codex in 766. The local history records the grant of a free court in 1276. https://www.mommenheim.de/gemeinde/"
+    "description": "Rheinhessen village recorded in the Lorsch Codex in 766. The local history records the grant of a free court in 1276."
   },
   {
     "id": "oggersheim",
@@ -2248,7 +2249,7 @@
     "lat": 49.49083,
     "lon": 8.37472,
     "category": "city",
-    "description": "The city court and city council are both attested in November 1316. https://verlag-regionalkultur.de/presse/bib/bib_35-903-1.pdf"
+    "description": "The city court and city council are both attested in November 1316."
   },
   {
     "id": "oppenweiler",
@@ -2259,7 +2260,7 @@
     "lat": 48.9827,
     "lon": 9.4585,
     "category": "village",
-    "description": "The seat of the Sturmfeder family since the Middle Ages. A charter of 1391 describes Oppenweiler as a village. https://www.gemeinde.oppenweiler.elk-wue.de/fileadmin/mediapool/gemeinden/KG_oppenweiler_INAKTIV/PDF/Jakobuskirche/Kirchenfuehrer_Seite_1-7.pdf"
+    "description": "The seat of the Sturmfeder family since the Middle Ages. A charter of 1391 describes Oppenweiler as a village."
   },
   {
     "id": "toblach",
@@ -2271,7 +2272,7 @@
     "lat": 46.72878,
     "lon": 12.22225,
     "category": "village",
-    "description": "Puster Valley village documented as Duplagum in 827 and as Toblach by 1150. https://www.archiv-bruneck.it/de/erinnerung/strassennamen/bruneck/toblacher-strasse"
+    "description": "Puster Valley village documented as Duplagum in 827 and as Toblach by 1150."
   },
   {
     "id": "welsberg",
@@ -2283,7 +2284,7 @@
     "lat": 46.75774,
     "lon": 12.10556,
     "category": "village",
-    "description": "Puster Valley village below the Welsperg seat. Settlement expanded after the reservoir was drained in 1359. The village was historically called Zell unter Welsberg. https://www.zobodat.at/pdf/VeroeffFerd_3_41_0187-0216.pdf https://pustertal-direkt.com/orte/kronplatz/87-welsberg.html"
+    "description": "Puster Valley village below the Welsperg seat. Settlement expanded after the reservoir was drained in 1359. The village was historically called Zell unter Welsberg."
   },
   {
     "id": "schloss-welsperg",
@@ -2297,7 +2298,7 @@
     "lon": 12.11383,
     "category": "castle",
     "parent": "welsberg",
-    "description": "Medieval ancestral castle of the Welsperg family above Welsberg. https://www.gemeinde.welsberg-taisten.bz.it/de/Dorfleben/Orte/Freizeit_und_Tourismus/Kuratorium_Schloss_Welsperg"
+    "description": "Medieval ancestral castle of the Welsperg family above Welsberg."
   },
   {
     "id": "neustadt-an-der-weinstrasse",
@@ -2308,7 +2309,7 @@
     "lat": 49.35374,
     "lon": 8.13676,
     "category": "city",
-    "description": "Received a royal town privilege in 1275. https://www.neustadt.eu/index.php?FID=2636.67578.1&ModID=7&object=tx%7C2636.67578.1"
+    "description": "Received a royal town privilege in 1275."
   },
   {
     "id": "haardt",
@@ -2319,7 +2320,7 @@
     "lat": 49.36611,
     "lon": 8.13833,
     "category": "village",
-    "description": "Medieval wine village below Burg Winzingen. https://www.neustadt.eu/index.php?FID=4057.2075.1&ModID=7&object=tx%7C4057.2075.1"
+    "description": "Medieval wine village below Burg Winzingen."
   },
   {
     "id": "burg-winzingen",
@@ -2332,7 +2333,7 @@
     "lon": 8.13614,
     "category": "castle",
     "parent": "haardt",
-    "description": "Medieval Palatine castle above Haardt. The later Haardter Schloss occupies the same site. https://adw-goe.de/digitale-bibliothek/hoefe-und-residenzen-im-spaetmittelalterlichen-reich/id/rf15_I_121220-3355"
+    "description": "Medieval Palatine castle above Haardt. The later Haardter Schloss occupies the same site."
   },
   {
     "id": "wolfsburg-neustadt",
@@ -2345,7 +2346,7 @@
     "lon": 8.10804,
     "category": "castle",
     "parent": "neustadt-an-der-weinstrasse",
-    "description": "Medieval castle west of Neustadt on the road toward Kaiserslautern. https://www.kuladig.de/Objektansicht/KLD-344843"
+    "description": "Medieval castle west of Neustadt on the road toward Kaiserslautern."
   },
   {
     "id": "gimmeldingen",
@@ -2355,7 +2356,7 @@
     "lat": 49.37606,
     "lon": 8.15399,
     "category": "village",
-    "description": "Wine village with a medieval castle site and a documentary tradition beginning in 1109. https://www.neustadt.eu/index.php?FID=4057.2054.1&ModID=7&object=tx%7C4057.2054.1"
+    "description": "Wine village with a medieval castle site and a documentary tradition beginning in 1109."
   },
   {
     "id": "koenigsbach-an-der-weinstrasse",
@@ -2365,7 +2366,7 @@
     "lat": 49.38799,
     "lon": 8.15752,
     "category": "village",
-    "description": "Medieval village north of Gimmeldingen with a surviving Gothic tower at its parish church. https://www.neustadt.eu/index.php?FID=4057.2116.1&ModID=7&object=tx%7C4057.2116.1"
+    "description": "Medieval village north of Gimmeldingen with a surviving Gothic tower at its parish church."
   },
   {
     "id": "deidesheim",
@@ -2375,7 +2376,7 @@
     "lat": 49.40804,
     "lon": 8.18751,
     "category": "village",
-    "description": "The settlement belonged to the bishops of Speyer and received a town charter in 1395. https://www.kuladig.de/Objektansicht/KLD-290334"
+    "description": "The settlement belonged to the bishops of Speyer and received a town charter in 1395."
   },
   {
     "id": "speyerdorf",
@@ -2385,7 +2386,7 @@
     "lat": 49.33575,
     "lon": 8.20624,
     "category": "village",
-    "description": "Village recorded in 774 alongside neighboring Lachen. https://www.neustadt.eu/index.php?FID=4057.2132.1&ModID=7&object=tx%7C4057.2132.1"
+    "description": "Village recorded in 774 alongside neighboring Lachen."
   },
   {
     "id": "wachenheim-an-der-weinstrasse",
@@ -2395,7 +2396,7 @@
     "lat": 49.43804,
     "lon": 8.18337,
     "category": "city",
-    "description": "The village and castle became Palatine holdings in the Middle Ages. Wachenheim was granted town rights in 1341. https://www.kreis-bad-duerkheim.de/landkreis/standort/staedte-und-gemeinden/verbandsgemeinde-wachenheim/stadt-wachenheim/"
+    "description": "The village and castle became Palatine holdings in the Middle Ages. Wachenheim was granted town rights in 1341."
   },
   {
     "id": "lambsheim",
@@ -2405,7 +2406,7 @@
     "lat": 49.5097,
     "lon": 8.28551,
     "category": "city",
-    "description": "Received town rights in 1323 and began building a town wall thereafter. https://www.lambsheim.de/geschichte/sehenswertes/"
+    "description": "Received town rights in 1323 and began building a town wall thereafter."
   },
   {
     "id": "burg-neufels",
@@ -2417,7 +2418,7 @@
     "lat": 49.25,
     "lon": 9.6208,
     "category": "castle",
-    "description": "The 1369 agreement concerned the castle of Neufels. https://de.wikisource.org/wiki/Beschreibung_des_Oberamts_Oehringen/Kapitel_B_26 Coordinates: https://arcanetravelar.de/burgen/seite/15/"
+    "description": "The 1369 agreement concerned the castle of Neufels."
   },
   {
     "id": "kastl-oberpfalz",
@@ -2429,7 +2430,7 @@
     "lat": 49.3667,
     "lon": 11.6833,
     "category": "village",
-    "description": "Kastl received market rights in 1323. https://www.kastl.de/page_1_6.php Coordinates: https://hdbg.eu/gemeinden/index.php/detail?rschl=09371132"
+    "description": "Kastl received market rights in 1323."
   },
   {
     "id": "unterbuchfeld",
@@ -2440,7 +2441,7 @@
       "Niedernpuchfeld"
     ],
     "showOnMap": false,
-    "description": "The municipality identifies Niederbuchfeld with Unterbuchfeld. https://deining.de/gemeinde/orts-und-gemeindeteile/unterbuchfeld/ Coordinates: https://de.wikipedia.org/wiki/Unterbuchfeld"
+    "description": "The municipality identifies Niederbuchfeld with Unterbuchfeld."
   },
   {
     "id": "vlctejn-castle",
@@ -2452,7 +2453,7 @@
     "lat": 49.613269,
     "lon": 13.497181,
     "category": "castle",
-    "description": "The Wildenstein held by the Bohemian Rosenbergs, distinct from the Bavarian Burg Wildenstein. https://www.rbmonline.cz/portal/book/1450?lpage=150 Coordinates: https://www.burgenwelt.org/tschechien/vletejn/object.php"
+    "description": "The Wildenstein held by the Bohemian Rosenbergs, distinct from the Bavarian Burg Wildenstein."
   },
   {
     "id": "hals-passau",
@@ -2462,7 +2463,7 @@
     "lat": 48.588889,
     "lon": 13.463889,
     "category": "city",
-    "description": "Hals received town rights in 1376. https://de.wikipedia.org/wiki/Hals_%28Passau%29"
+    "description": "Hals received town rights in 1376."
   },
   {
     "id": "theuern-oberpfalz",
@@ -2472,7 +2473,7 @@
       "Tewern"
     ],
     "showOnMap": false,
-    "description": "The historical place-name index identifies 1370 Tewrn as Theuern near Amberg. https://geschichte-bayerns.de/ortsnamen/artikel/Oberpfalz/Landkreis%20Amberg-Sulzbach/Theuern/kxj0m Coordinates: https://de.wikipedia.org/wiki/Theuern_%28K%C3%BCmmersbruck%29"
+    "description": "The historical place-name index identifies 1370 Tewrn as Theuern near Amberg."
   },
   {
     "id": "ensdorf-oberpfalz",
@@ -2481,7 +2482,7 @@
       "Enstorf"
     ],
     "showOnMap": false,
-    "description": "The monastery is at Ensdorf in the Upper Palatinate. https://hdbg.eu/kloster/index.php/detail?id=KS0096 Coordinates: https://www.statistik.bayern.de/mam/produkte/statistik_kommunal/2022/09371120.pdf"
+    "description": "The monastery is at Ensdorf in the Upper Palatinate."
   },
   {
     "id": "amberg",
@@ -2491,7 +2492,7 @@
     "lat": 49.4414,
     "lon": 11.8622,
     "category": "city",
-    "description": "The earliest surviving codification of Amberg city law dates to 1294. https://amberg.de/kultourismus/heimat-geschichte/zeittafel-wappen Coordinates: https://hdbg.eu/gemeinden/index.php/detail?rschl=09361000"
+    "description": "The earliest surviving codification of Amberg city law dates to 1294."
   },
   {
     "id": "burg-liebeneck-greding",
@@ -2502,6 +2503,6 @@
     "lat": 49.023949,
     "lon": 11.365978,
     "category": "castle",
-    "description": "A castle of the Absberg family near Mettendorf, transferred as a fief to Ruprecht I in 1377. https://www.historisches-lexikon-bayerns.de/Lexikon/Absberg%2C_Adelsfamilie Coordinates: https://de.wikipedia.org/wiki/Burg_Liebeneck"
+    "description": "A castle of the Absberg family near Mettendorf, transferred as a fief to Ruprecht I in 1377."
   }
 ]

@@ -36,7 +36,7 @@ test('recognizes a parenthesized von in a debt acknowledgment', () => {
   const match = sentence.match(scenarioPattern)?.[0];
   assert.equal(match, 'Reinhart (von) Uissigheim');
   assert.equal(personRouteName(match, `${titles}\n${projectTitles}`, connectors, particles,
-    projectNames, byNames, places), 'Reinhart von Uissigheim');
+    projectNames, byNames, places), 'Reinhard von Uissigheim');
 });
 
 test('recognizes the parties in a pledge debt description, including King Sigmund', () => {

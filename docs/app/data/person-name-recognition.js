@@ -271,6 +271,7 @@ export function buildSourcePersonPattern(namesText, particlesText, places, title
 function cleanSpan(raw, d) {
   let text = String(raw ?? '')
     .replace(/\s+/gu, ' ')
+    .replace(/\(\s*(von\.?|v\.|de|an|van|zu)\s*\)/giu, '$1')
     .replace(/(\p{L})\((\p{L}+)\)/gu, '$1$2')
     .replace(/(\p{L})\[(\p{L}+)\]/gu, '$1$2')
     .replace(/\s*\(\s*or\s+[^)]*\)/giu, '')
