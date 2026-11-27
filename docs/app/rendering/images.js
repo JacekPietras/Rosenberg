@@ -89,7 +89,9 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const edit = context.path && context.index !== null && context.index !== undefined ? ` data-document-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${context.imageIndex ?? imageIndex}"` : '';
       const link = `<a class="image-link" href="${escapeHtml(fullSource)}" aria-label="Open image" data-image-src="${escapeHtml(fullSource)}" data-image-fallback="${escapeHtml(fallback)}"${descriptionAttribute}${edit}>${image}</a>`;
       const content = context.crop ? `<span class="seal-crop is-loading" data-seal-x="${context.crop.x}" data-seal-y="${context.crop.y}" data-seal-size="${context.crop.size}" data-seal-width="${context.crop.width ?? 0}" data-seal-widening-rotation="${context.crop.wideningRotation || 0}" data-seal-rotation="${context.crop.rotation || 0}">${link}</span>` : annotations || regions ? `<span class="annotated-image">${link}${annotations}${regions}</span>` : link;
-      return context.direct ? `<span class="title-image">${content}</span>` : `<figure class="entry-image">${content}</figure>`;
+      const canDelete = state?.active === 'documents' && state.canEditDocuments && context.path?.startsWith('data/documents/') && context.index != null;
+      const deleteButton = canDelete ? `<button class="document-image-delete" type="button" data-delete-image-path="${escapeHtml(context.path)}" data-entry-index="${context.index}" data-image-index="${imageIndex}" aria-label="Remove image" title="Remove image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2m3 0-1 14H6L5 6m4 4v6m6-6v6"/></svg></button><span class="document-image-status" role="status" aria-live="polite"></span>` : '';
+      return context.direct ? `<span class="title-image">${content}</span>` : `<figure class="entry-image">${canDelete ? `<span class="entry-image-content">${content}${deleteButton}</span>` : content}</figure>`;
     }).filter(Boolean).join('');
     return images ? context.direct ? images : `<div class="entry-images">${images}</div>` : '';
   };

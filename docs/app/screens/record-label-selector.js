@@ -38,6 +38,34 @@ export function setupRecordLabelSelector({ state, repository, rerender, escapeHt
   };
 
   document.addEventListener('click', async (event) => {
+    const imageButton = event.target.closest('[data-delete-image-path]');
+    if (imageButton) {
+      const path = imageButton.dataset.deleteImagePath;
+      const entryIndex = Number(imageButton.dataset.entryIndex);
+      const imageIndex = Number(imageButton.dataset.imageIndex);
+      const doc = state.documents.get(path);
+      const entry = doc?.entries?.[entryIndex];
+      const images = Array.isArray(entry?.img) ? entry.img : [entry?.img];
+      const image = images[imageIndex];
+      if (!state.canEditDocuments || state.active !== 'documents' || !path.startsWith('data/documents/') || !image || image.deleted) return;
+      const updatedImages = images.map((item, index) => index === imageIndex
+        ? { ...(typeof item === 'string' ? { src: item } : item), deleted: true } : item);
+      const updated = { ...doc, entries: doc.entries.map((item, index) => index === entryIndex
+        ? { ...item, img: Array.isArray(entry.img) ? updatedImages : updatedImages[0] } : item) };
+      const status = imageButton.parentElement.querySelector('.document-image-status');
+      imageButton.disabled = true;
+      try {
+        const result = await repository.saveDocument(path, updated);
+        state.documents.set(path, updated);
+        markSaved(path, result.version);
+        await rerender();
+      } catch (error) {
+        if (status) status.textContent = `Could not remove image: ${error.message}`;
+        imageButton.disabled = false;
+      }
+      return;
+    }
+
     const reviewLabelsButton = event.target.closest('[data-show-review-labels]');
     if (reviewLabelsButton) {
       const path = reviewLabelsButton.dataset.showReviewLabels;

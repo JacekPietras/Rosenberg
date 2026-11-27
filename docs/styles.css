@@ -391,6 +391,13 @@ main:has(#map-container) { display: flex; height: calc(100dvh - 5.2rem); min-hei
 .entry-images { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1.25rem 0; }
 .entry-image { flex: 1 1 12rem; max-width: 100%; margin: 0; text-align: center; }
 .entry-image img { display: block; max-width: 100%; height: auto; max-height: 32rem; margin: 0 auto; }
+.entry-image-content { position: relative; display: inline-block; max-width: 100%; }
+.document-image-delete { position: absolute; z-index: 2; top: .4rem; right: .4rem; display: grid; place-items: center; width: 2rem; height: 2rem; padding: .35rem; color: #333; background: rgba(255, 255, 255, .9); border: 1px solid #aaa; border-radius: 4px; cursor: pointer; }
+.document-image-delete:hover, .document-image-delete:focus-visible { color: #c22; }
+.document-image-delete:disabled { opacity: .55; cursor: wait; }
+.document-image-delete svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.document-image-status { display: block; color: #c22; }
+
 .image-link { display: block; cursor: zoom-in; }
 .image-lightbox { inset: 0; width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; box-sizing: border-box; overflow: hidden; padding: 3rem 1rem 1rem; color: var(--ink); background: var(--surface); border: 0; border-radius: 0; }
 .image-lightbox.is-transcription-mode .image-lightbox-crop-controls,
