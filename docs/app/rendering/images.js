@@ -49,7 +49,7 @@ export function createImageRenderer({ location = window.location, state } = {}) 
                 || (location.hostname.endsWith('github.io') ? `https://drive.google.com/uc?export=download&id=${encodeURIComponent(driveFileId)}` : fileName);
           } else source = fileName;
           if (context.thumbnail && !fallback) fallback = fileName;
-        } else if (context.direct) {
+        } else if (context.direct && !context.path?.startsWith('data/books/')) {
           source = fileName;
         } else {
         fallback = fileName; const localName = localImageName(fileName, context.path?.startsWith('data/documents/'));
@@ -71,7 +71,7 @@ export function createImageRenderer({ location = window.location, state } = {}) 
       const annotations = context.sealScreen ? '' : sealAnnotationMarkup(seals, escapeHtml, state?.personRecords);
       const sourceRegions = node && typeof node === 'object' ? node.regions : context.regions;
       const regions = context.showRegions === false ? '' : regionMarkup(sourceRegions);
-      const fullSource = cachedSource || (context.thumbnail
+      const fullSource = cachedSource || (context.path?.startsWith('data/books/') ? source : context.thumbnail
         ? cachedDriveThumbnail(fileName, location, 'original', context.path?.startsWith('data/documents/') ? 'documents' : 'images') || fallback || source
         : fallback || source);
       if (cachedSource) {
