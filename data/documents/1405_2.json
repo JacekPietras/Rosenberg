@@ -1,18 +1,20 @@
 {
   "date": "1405",
-  "place": "Prag",
   "label": "to review",
   "entries": [
     {
-      "source": "[RIplus] Regg. Wenzel [n. 3991]",
-      "url": "https://www.regesta-imperii.de/id/c991f101-e50a-459a-afe2-0627eb16fdfd",
-      "german": "Wenzel belehnt Heinrich von Rosenberg mit dem zerstörten Schloß Kuklweyt und verspricht, sich in dem Streit zwischen ihm und Heinrich dem Urteil des Patriarchen Wenzel von Anthiochien zu unterwerfen.",
-      "english": "Wenzel enfeoffs Heinrich von Rosenberg with the ruined castle of Kuklweyt and promises to submit to the judgment of Patriarch Wenzel of Antioch in the dispute between Heinrich and himself."
+      "source": "[RIplus] Regg. Wenzel, Reichssachen n. 2024",
+      "url": "https://www.regesta-imperii.de/id/d28563f1-e707-47f0-bbb5-5372ce562dc9",
+      "german": "Kralik von Burenic fasst Schiedsspruch zwischen Wenzel und Heinrich von Rosenberg.",
+      "english": "Kralik von Burenic delivers an arbitral award between Wenzel and Heinrich von Rosenberg."
     }
   ],
   "mention": [
     {
       "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "Wenceslaus von Rosenberg"
     }
   ]
 }
