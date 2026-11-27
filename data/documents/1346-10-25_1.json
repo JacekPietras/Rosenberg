@@ -29,22 +29,22 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "person": "Hans von Bellersheim",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
-      "person": "Hans von Bellersheim"
-    },
-    {
-      "person": "Hans von Randeck"
+      "person": "Hans von Randeck",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "person": "Kuno von Falkenstein"
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     },
     {
       "place": "schonau"

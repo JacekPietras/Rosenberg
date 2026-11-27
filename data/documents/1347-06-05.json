@@ -22,7 +22,13 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "person": "Hans von Bellersheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Hans von Randeck"
     },
     {
       "person": "Herman von Bibra"
@@ -32,9 +38,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     }
   ]
 }

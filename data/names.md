@@ -53,7 +53,7 @@ Gotfried, Godefrid, Gottfried
 Gozwin, Goczwin, Godezwin
 Götz, Gocze, Goczen, Goetz, Gotze, Gotzen, Gotzze, Götzze
 Hank
-Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johann, Johannes, Johanns, Johans, Jon
+Hans, Hanemann, Hanns, Hanse, Iohannes, Jan, Joannes, Johan, Johann, Johannes, Johanns, Johans, Jon
 Hartlieb
 Hartmann
 Hartmut
@@ -110,6 +110,7 @@ Ruprecht, Rupert, Rupertus
 Rüdiger, Rüdger
 Sebastian, Bastian
 Seibott
+Seman, Siman, Simon, Syman, Symon
 Senant, Synant
 Siboto
 Siegfried, Seifried, Seivfridt, Seyfried, Sifrid, Sifridt, Sifrit, Syfrit

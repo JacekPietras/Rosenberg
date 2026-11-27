@@ -23,10 +23,19 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "person": "Eberhard von Hirschhorn"
     },
     {
-      "person": "Eberhard von Hirschhorn"
+      "person": "Hans von Bellersheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Hans von Randeck",
+      "personTitle": [
+        "Vizedom"
+      ]
     },
     {
       "person": "Herman von Bibra"
@@ -39,9 +48,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     }
   ]
 }

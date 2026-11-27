@@ -22,13 +22,16 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "person": "Hans von Bellersheim"
+    },
+    {
+      "person": "Hans von Randeck",
+      "personTitle": [
+        "Vizedom"
+      ]
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     }
   ]
 }

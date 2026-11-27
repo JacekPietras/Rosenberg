@@ -22,19 +22,19 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "place": "brunn"
     },
     {
-      "place": "brunn"
+      "person": "Hans von Bellersheim"
+    },
+    {
+      "person": "Hans von Randeck"
     },
     {
       "person": "Kuno von Falkenstein"
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     }
   ]
 }

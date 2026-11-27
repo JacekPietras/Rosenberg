@@ -30,16 +30,22 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "person": "Hans von Bellersheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Hans von Randeck",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "person": "Kuno von Falkenstein"
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     },
     {
       "person": "Steyn von Rosenberg",

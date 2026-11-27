@@ -22,10 +22,13 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
+      "place": "erlenbach"
     },
     {
-      "place": "erlenbach"
+      "person": "Hans von Bellersheim"
+    },
+    {
+      "person": "Hans von Randeck"
     },
     {
       "place": "hirschhorn"
@@ -35,9 +38,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     }
   ]
 }

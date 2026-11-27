@@ -22,13 +22,16 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
-    },
-    {
       "place": "bischofsheim"
     },
     {
       "place": "buchen"
+    },
+    {
+      "person": "Hans von Bellersheim"
+    },
+    {
+      "person": "Hans von Randeck"
     },
     {
       "person": "Herman von Lißberg"
@@ -41,9 +44,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     },
     {
       "place": "wallduern"

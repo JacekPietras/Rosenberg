@@ -21,13 +21,16 @@
   ],
   "mention": [
     {
-      "place": "bellersheim"
-    },
-    {
       "person": "Friedrich von Handschuhsheim"
     },
     {
       "place": "handschuhsheim"
+    },
+    {
+      "person": "Hans von Bellersheim"
+    },
+    {
+      "person": "Hans von Randeck"
     },
     {
       "person": "Heinrich von Handschuhsheim"
@@ -37,9 +40,6 @@
     },
     {
       "place": "mainz"
-    },
-    {
-      "place": "randeck"
     },
     {
       "person": "Wilhelm von Handschuhsheim"
