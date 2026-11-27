@@ -14,22 +14,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++dee17ec9-67f0-4bea-bff2-43b7e528f6a2&parent_id="
       ],
       "german": "\"Verfassung\" der Streitentscheidung zwischen Rothenburg und von Rosenberg.",
-      "english": "\"Instrument\" of the dispute decision between Rothenburg and von Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was involved in a dispute with Rothenburg for which a written decision was prepared."
-        }
-      ]
+      "english": "\"Instrument\" of the dispute decision between Rothenburg and von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was involved in a dispute with Rothenburg for which a written decision was prepared."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

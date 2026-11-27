@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 10 Qu. 8",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-754547",
       "german": "Kaiserliche Kommission an Heinrich von Metternich, bayerischer Rat und Statthalter zu Heidelberg, Dekan des Stifts Wimpfen im Tal und Domherr zu Worms, und Dr. iur. Kaspar Stolzenkampf, bayerischer Rat, als Subdelegierte Kurbayerns zur Abteilung der bisher zwischen dem DOH Mgh einerseits und denen von Rosenberg und von Adelsheim andererseits gemeinschaftlichen Untertanen zu Edelfingen, 1628 Sept. 22 [Regest und Auszug aus der Trapponeirechnung Mgh]; kaiserliche Kommission an dieselben kurbayerischen Subdelegierten zur Abteilung der bisher zwischen dem DO, Hans Ludwig von Frauenberg zu Talheim und Anna Rosina von Venningen geb. von Talheim, Witwe [des Johann Dietrich von Venningen], im Ganerbiat besessenen Untertanen zu Talheim, 1628 Sept. 28 [Regest].\n\nLaufzeit: 1627-1641",
-      "english": "Imperial commission to Heinrich von Metternich, Bavarian councillor and governor at Heidelberg, dean of the collegiate church at Wimpfen im Tal and canon of Worms, and Dr. iur. Kaspar Stolzenkampf, Bavarian councillor, as subdelegates of Electoral Bavaria, to divide the subjects at Edelfingen formerly held jointly by the Teutonic Order at Mergentheim on one side and the von Rosenberg and von Adelsheim families on the other, 22 September 1628 [regest and excerpt from the Mergentheim treasury account]; imperial commission to the same Bavarian subdelegates to divide the subjects at Talheim formerly held in the Ganerbschaft jointly by the Teutonic Order, Hans Ludwig von Frauenberg zu Talheim, and Anna Rosina von Venningen née von Talheim, widow [of Johann Dietrich von Venningen], 28 September 1628 [regest].\n\nDate range: 1627–1641.",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "place": "edelfingen"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "talheim"
-        }
-      ]
+      "english": "Imperial commission to Heinrich von Metternich, Bavarian councillor and governor at Heidelberg, dean of the collegiate church at Wimpfen im Tal and canon of Worms, and Dr. iur. Kaspar Stolzenkampf, Bavarian councillor, as subdelegates of Electoral Bavaria, to divide the subjects at Edelfingen formerly held jointly by the Teutonic Order at Mergentheim on one side and the von Rosenberg and von Adelsheim families on the other, 22 September 1628 [regest and excerpt from the Mergentheim treasury account]; imperial commission to the same Bavarian subdelegates to divide the subjects at Talheim formerly held in the Ganerbschaft jointly by the Teutonic Order, Hans Ludwig von Frauenberg zu Talheim, and Anna Rosina von Venningen née von Talheim, widow [of Johann Dietrich von Venningen], 28 September 1628 [regest].\n\nDate range: 1627–1641."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "place": "edelfingen"
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "talheim"
     }
   ]
 }

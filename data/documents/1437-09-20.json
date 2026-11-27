@@ -10,29 +10,6 @@
       ],
       "german": "Demetrius von Giech, Domherr zu Würzburg, beurkundet im Auftrag des Bischofs Johann von Würzburg das Urteil des Hofgerichtes, in welchem Heinrich Tewrlein, Friedrich von Wysentawe, Wilhelm Schumpff, Hilprant von Robiß, Linhart von Ehenheim, Conrad von Rosemberg zu Bartenstein, Sintram von Newenburg, Jorge von Sawnssheim zu Westerndorff, Cuntz von Bebmbürg saßen, wodurch auf die Klage der Abgesandten Nuernbergs Eytel Voigt von Rieneck zu Schadenersatz wegen der zu Heidingsfeld angerichteten Beschädigungen verurteilt wurde. - Siegler: der Bischof von Würzburg.\n\nBesiegelung/Beglaubigung: mit anh. Sg.",
       "english": "Demetrius von Giech, canon of Würzburg, acting on behalf of Bischof Hans von Würzburg, certifies the judgment of the court at which Heinrich Tewrlein, Friedrich von Wysentawe, Wilhelm Schumpff, Hilprant von Robiß, Linhart von Ehenheim, Konrad von Rosenberg zu Bartenstein, Sintram von Newenburg, Georg von Sawnssheim zu Westerndorff, and Cuntz von Bebmbürg sat. On the complaint of Nuremberg’s envoys, the judgment ordered Eytel Voigt von Rieneck to pay compensation for the damage caused at Heidingsfeld. Sealer: der Bischof von Würzburg. Sealing/authentication: with pendant seal.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof von Würzburg"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6407eaf3-3518-49f1-a0b6-2257a92e824c/1/full/max/0/default.jpg"
@@ -44,6 +21,29 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6407eaf3-3518-49f1-a0b6-2257a92e824c/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof von Würzburg"
+      ]
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

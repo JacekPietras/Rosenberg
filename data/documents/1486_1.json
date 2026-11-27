@@ -7,18 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7379063",
       "german": "Zwei Entscheidebriefe zwischen Seifrid von Rosenberg, sodann Caspar Küchenmeister über einen Hof vor dem Schloss zu Neuhof (nur Aktenumschlag, Inhalt fehlt, festgestellt 1944)",
       "english": "Two decision letters between Seifrid von Rosenberg and Caspar Küchenmeister regarding a farm before Schloss Neuhof (only file envelope, content missing, noted in 1944)",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Seifrid von Rosenberg",
-          "type": "generic",
-          "content": "was party with Caspar Küchenmeister to arbitration concerning a farm before Schloss Neuhof."
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1970/hstam_94_nr_1970_0001.jpg"
@@ -32,6 +20,18 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Seifrid von Rosenberg",
+      "type": "generic",
+      "content": "was party with Caspar Küchenmeister to arbitration concerning a farm before Schloss Neuhof."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

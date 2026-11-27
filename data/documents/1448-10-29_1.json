@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f3aea37b-3e73-4139-8002-91fd52bc7df8&parent_id="
       ],
       "german": "Kaufbrief des Jörg von Rosenberg und seiner Ehefrau Margaretha über ihre Teile an dem Schloss und Dorf Eubigheim (\"Eubikein\") mit Zugehörungen.",
-      "english": "Georg von Rosenberg and his wife Margaretha issued a deed of sale concerning their shares in Eubigheim Castle and village, together with their appurtenances.",
-      "mention": [
-        {
-          "place": "eubigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances."
-        }
-      ]
+      "english": "Georg von Rosenberg and his wife Margaretha issued a deed of sale concerning their shares in Eubigheim Castle and village, together with their appurtenances."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "sold his and his wife Margaretha’s shares in Eubigheim Castle and village with their appurtenances."
+    }
+  ],
+  "mention": [
+    {
+      "place": "eubigheim"
     }
   ]
 }

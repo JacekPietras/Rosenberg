@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3818156",
       "german": "Revers Karl Josephs von Rosenbach bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Adalbert [von Harstall], Bischof und Abt von Fulda\n\nKarl Joseph von Rosenbach bestätigt die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Adalbert [von Harstall], Bischof und Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Freiherr von Tann (Thann)\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Acknowledgment by Karl Joseph von Rosenbach of his enfeoffment with Schackau and the other fiefs listed individually by Adalbert [von Harstall], Bishop and Abbot of Fulda.\n\nKarl Joseph von Rosenbach confirms that Adalbert [von Harstall], Bishop and Abbot of Fulda, enfeoffed him with Schackau, including all its appurtenances in woodland and fields and an estate there, as well as Kleinsassen, Gerharts, and the other fiefs listed individually. The fief charter is inserted. A seal is announced.\n\nFormal description: Original instrument, parchment, pendant seal in a wooden case.\n\nSealer: Baron von Tann.\n\nAdditional information: The acknowledgment has no date of its own and refers instead to the date of the inserted instrument.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3366/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3366/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

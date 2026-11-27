@@ -7,35 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2505203",
       "german": "Entschädigungsforderungen zwischen dem Deutschen Orden und benachbarten Adeligen und Gemeinden, Teil I\n\nLaufzeit: 1525-1528; 1725/27\n\nEnthält: Enthält u.a.:\n\n18) Den Schaden des Landgraf Georg zu Leuchtenberg betreffend, 23. September 1525\n\n20) Ein von Dorothea von Stetten, geborene von Berlichingen, ausgestellter Freibrief für Contz Abel wegen angesuchter Brandschatzung, 25. September 1525\n\n30) Georg von Rosenberg vergleicht sich mit Mergentheim, Neuhaus und Gelchsheim aufgrund des Schadens an seinen Gütern zu Schwaigern und die Reichelsburg mit 400 fl., 19. November 1525\n\n33) Registration der Verträge zwischen den von Adel einerseits und des Ordens Untertanen anderseits, aufgerichtet im Jahr 1525, Niederschrift aus dem 1725/27 (?), gebunden\n\n34) Forderung der Barbara von Öschelhausen, geborene von Rosenberg, an die von Mergentheimer Amt Neuhaus und Gelchsheim wegen des angerichteten Schadens, 12. Juni 1528 - 1. Dezember 1528\n\n37) Den Schaden zu Talheim betreffend, s.d.\n\nUmfang: Nr. 1-37",
       "english": "Claims for compensation between the Teutonic Order and neighboring nobles and communities, Part I.\n\nDate range: 1525–1528; 1725/27\n\nContains, among other things:\n\n18) Concerning the damage suffered by Landgrave Georg zu Leuchtenberg, 23 September 1525.\n\n20) A safe-conduct issued by Dorothea von Stetten, née von Berlichingen, for Contz Abel in connection with a requested levy by fire and sword, 25 September 1525.\n\n30) Georg von Rosenberg settles with Mergentheim, Neuhaus, and Gelchsheim for the damage to his estates at Schwaigern and the Reichelsburg, with 400 florins, 19 November 1525.\n\n33) Registration of the agreements between the nobles on the one hand and the Order’s subjects on the other, concluded in 1525, a copy from 1725/27 (?), bound.\n\n34) Claim by Barbara von Öschelhausen, née von Rosenberg, against the Mergentheim offices of Neuhaus and Gelchsheim for the damage caused, 12 June 1528–1 December 1528.\n\n37) Concerning the damage at Talheim, undated.\n\nExtent: Nos. 1–37.",
-      "mention": [
-        {
-          "place": "berlichingen"
-        },
-        {
-          "person": "Georg",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "neuhaus"
-        },
-        {
-          "place": "reichelsburg-aub"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schwaigern"
-        },
-        {
-          "place": "talheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2619&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000002619%2Ftitlaufn_0002505203%2F01_0002505203_0001_1-2505203-1.jpg"
@@ -641,6 +612,35 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2619&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000002619%2Ftitlaufn_0002505203%2F01_0002505203_0201_1-2505203-201.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "berlichingen"
+    },
+    {
+      "person": "Georg",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "neuhaus"
+    },
+    {
+      "place": "reichelsburg-aub"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schwaigern"
+    },
+    {
+      "place": "talheim"
     }
   ]
 }

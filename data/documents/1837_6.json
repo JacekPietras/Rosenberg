@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2E82237C-1CE9-46DA-AE86-75335D8105A1&parent_id="
       ],
       "german": "Heimatakt: Kirner Joseph, Maurergeselle von Rosenberg, nun Karmensölden",
-      "english": "Residence file: Joseph Kirner von Rosenberg, bricklayer’s apprentice, now in Karmensölden",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Residence file: Joseph Kirner von Rosenberg, bricklayer’s apprentice, now in Karmensölden"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

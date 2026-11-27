@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-167390",
       "german": "Wilhelm Graf zu Wertheim, Magdalene von Rosenbach, Meisterin des Klosters zu Höchst (Hoest), Johann Pfarrer zu Sandbach (Sampach) und etliche andere Priester aus der Umgegend wie auch Laien schließen zu Neustadt (Nuwenstadt) unterhalb Schloß Breuberg, einer Filiale der Pfarrkirche vom St. Georg, die es sich zur Aufgabe macht, jährlich zweimal, am Dienstag nach Gallustag (16. Oktober) [und am dienstag in der Kreuzwoche] (am Rand nachgetragen; es sind die Tage vor Christi Himmelfahrt) zu Neustadt (Nuwenstat) gemeinsam die Vigilie der Toten zu begehen. Dabei soll jeder Priester eine Messe lesen. Versäumnis wird an Priestern mit 10 Ort eines fl., an Laien mit 1 Pfund Wachs gebüßt. Kommt ein Priester erst nach der ersten, zweiten oder dritten Nokturn, so hat er 1, 2 oder 3 ß Buße zu zahlen. Eintritt in die Brüderschaft kostet 1/2 fl., das Gedenken eines verstorbenen Verwandten bei der ersten Feier 1 Ort eines fl. Werden die Priester beim Tod eines Priesters in der Stadt zum Begängnis versammelt, so erhält jeder aus der Hinterlassenschaft einen Imbiß; reicht diese nicht zu, so zahlen die Schaffner der Bruderschaft aus dem gemeinsamen Beutel den Rest. Bei dem Tod eines Laien tritt zu dem Imbiß noch die übliche Präsenz. Für unentschuldigtes Fehlen bei solchen Begängnissen hat jeder durch die Schaffner geladene Priester 10 ß zu zahlen. Die eintretenden Mitglieder stiften ein Opfer für 2 Totenmessen. Die Priester der Bruderschaft dürfen bei den Begängnissen die Kirche der Stadt bei 2 ß h Buße nur in Chorrock oder geistlichem Kleid betreten.\n\nLaufzeit: 1455 April 10 (1455 an dem zehenden dag des monds des Apprills)\n\nSiegelbeschreibung: 3 Siegel",
       "english": "Wilhelm, Count zu Wertheim; Magdalene von Rosenbach, abbess of Höchst Monastery; Johann, parish priest of Sandbach; several other priests from the surrounding area; and laypeople establish a confraternity at Neustadt below Breuberg Castle, a subsidiary church of the parish church of St George. Its purpose is for members to celebrate the Office of the Dead together at Neustadt twice each year: on the Tuesday after St Gall’s Day (16 October) and [on the Tuesday in Cross Week] (added in the margin; the days before Ascension). Each priest is to celebrate a Mass. Absence is punishable by a fine of 10 Ort of a florin for priests and one pound of wax for laypeople. A priest arriving after the first, second, or third nocturn must pay a fine of 1, 2, or 3 shillings, respectively. Joining the confraternity costs half a florin; commemorating a deceased relative at the first service costs one Ort of a florin. When the priests gather for the funeral of a priest in the town, each receives a meal from the estate; if it is insufficient, the confraternity’s stewards pay the remainder from the common purse. At the death of a layperson, the usual attendance fee is added to the meal. Any priest summoned by the stewards who is absent from such funerals without excuse must pay 10 shillings. Members joining the confraternity make an offering for two Requiem Masses. At funerals, the confraternity’s priests may enter the town church only in a surplice or clerical dress, on pain of a fine of 2 shillings.\n\nTerm: 10 April 1455 (10 April 1455).\n\nSeal description: Three seals.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wilhelm zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167390%2F07_0000167390_0001_7-167390-1.jpg"
@@ -25,6 +14,17 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167390%2F07_0000167390_0002_7-167390-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wilhelm zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

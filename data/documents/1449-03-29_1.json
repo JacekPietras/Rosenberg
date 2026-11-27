@@ -6,28 +6,28 @@
       "source": "HStAM, Urk. 69, 519",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4291014",
       "german": "Conrad Ruwe und Herman v. Buchenau Senioren und Domherren, Hermann v. Rosenberg Scholaster von St. Maria ad gradus, Sander von Martis Husen Cantor von St. Peter zu Mainz beauftragen Erzpriester, Kämmerer und Clerus des Sitzes Rosdorf, das Steuerausschreiben des Erzbischofs Dietrich von Mainz vom 1 März den Geistliches ihres Sitzes mitzutheilen.",
-      "english": "Conrad Ruwe and Herman von Buchenau, Seniors and Canons, Herman von Rosenberg, Scholaster of St. Maria ad gradus, Sander von Martis Husen, Cantor of St. Peter at Mainz, instruct the Archpriest, Chamberlain and Clergy of the Rosdorf seat to communicate Archbishop Dietrich of Mainz's tax assessment dated March 1 to the clergy of their district.",
-      "mention": [
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        }
+      "english": "Conrad Ruwe and Herman von Buchenau, Seniors and Canons, Herman von Rosenberg, Scholaster of St. Maria ad gradus, Sander von Martis Husen, Cantor of St. Peter at Mainz, instruct the Archpriest, Chamberlain and Clergy of the Rosdorf seat to communicate Archbishop Dietrich of Mainz's tax assessment dated March 1 to the clergy of their district."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Herman von Rosenberg",
+      "personTitle": [
+        "Scholaster von St. Maria ad gradus"
       ],
-      "facts": [
-        {
-          "person": "Herman von Rosenberg",
-          "personTitle": [
-            "Scholaster von St. Maria ad gradus"
-          ],
-          "type": "generic",
-          "content": "instructed, with others, the archpriest, Kämmerer and clergy of Rosdorf to communicate Archbishop Dietrich of Mainz’s tax notice to the clergy of their district."
-        }
+      "type": "generic",
+      "content": "instructed, with others, the archpriest, Kämmerer and clergy of Rosdorf to communicate Archbishop Dietrich of Mainz’s tax notice to the clergy of their district."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

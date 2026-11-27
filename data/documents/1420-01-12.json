@@ -6,60 +6,60 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Hans von Rosenberg, Ritter, und Cuncz von Rosenberg sein Bruder, geben Sewfrid von Gossheim und Stepſſan von Lewzenprun Vollmacht, bei dem Hofgericht des Königs Sigmund die Bestätigung des von dem Landgericht zu Wirczburg und Herzogthum zu Franken ergangenen Ervollungs-Urtheil-Briefs wegen ihres Zehenten zu Lore, womit sie Rupprecht römischer König einst begabt und König Sigmund belehnt hat, nachzusuchen. Mitsiegler: Cunrad Herr zu Winsperg. G. am Freytag nach sand Erharez tag. (c. 2 S.)",
-      "english": "Hans von Rosenberg, Ritter, and his brother Kunz von Rosenberg authorize Sewfrid von Gossheim and Stepſſan von Lewzenprun to seek confirmation before the court of König Siegmund of the execution judgment issued by the Landgericht of Wirczburg and the Duchy of Franken concerning their tithe at Lore. König Rupprecht had formerly granted them the tithe, and König Siegmund had enfeoffed them with it. Co-sealer: Konrad, Herr zu Weinsberg. Given on the Friday after St. Erhard’s Day. (With two seals.)",
-      "mention": [
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "weinsberg"
-        }
+      "english": "Hans von Rosenberg, Ritter, and his brother Kunz von Rosenberg authorize Sewfrid von Gossheim and Stepſſan von Lewzenprun to seek confirmation before the court of König Siegmund of the execution judgment issued by the Landgericht of Wirczburg and the Duchy of Franken concerning their tithe at Lore. König Rupprecht had formerly granted them the tithe, and König Siegmund had enfeoffed them with it. Co-sealer: Konrad, Herr zu Weinsberg. Given on the Friday after St. Erhard’s Day. (With two seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "sibling",
-          "of": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "authorized Sewfrid von Gossheim and Stepſſan von Lewzenprun jointly with his brother Kunz von Rosenberg to seek royal court confirmation of an execution judgment concerning their tithe at Lore."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "had received the tithe at Lore from König Rupprecht jointly with his brother Kunz von Rosenberg."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "had been enfeoffed with the tithe at Lore by König Siegmund jointly with his brother Kunz von Rosenberg."
-        },
-        {
-          "person": "Konrad",
-          "personTitle": [
-            "Herr zu Weinsberg"
-          ],
-          "type": "generic",
-          "content": "co-sealed the authorization of Sewfrid von Gossheim and Stepſſan von Lewzenprun by Hans and Kunz von Rosenberg concerning their tithe at Lore."
-        }
+      "type": "sibling",
+      "of": "Kunz von Rosenberg"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "authorized Sewfrid von Gossheim and Stepſſan von Lewzenprun jointly with his brother Kunz von Rosenberg to seek royal court confirmation of an execution judgment concerning their tithe at Lore."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "had received the tithe at Lore from König Rupprecht jointly with his brother Kunz von Rosenberg."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "had been enfeoffed with the tithe at Lore by König Siegmund jointly with his brother Kunz von Rosenberg."
+    },
+    {
+      "person": "Konrad",
+      "personTitle": [
+        "Herr zu Weinsberg"
+      ],
+      "type": "generic",
+      "content": "co-sealed the authorization of Sewfrid von Gossheim and Stepſſan von Lewzenprun by Hans and Kunz von Rosenberg concerning their tithe at Lore."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "weinsberg"
     }
   ]
 }

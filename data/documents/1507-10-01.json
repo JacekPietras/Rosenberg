@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2800eccb-443b-4a37-83d9-e598c2be567c&parent_id="
       ],
       "german": "Reversbrief des Ritters Lienhard von Rosenberg über das Schloss, Dorf und Gericht Waldmannshofen.",
-      "english": "Acknowledgment letter of Knight Lienhard von Rosenberg regarding the castle, village, and court of Waldmannshofen.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ]
+      "english": "Acknowledgment letter of Knight Lienhard von Rosenberg regarding the castle, village, and court of Waldmannshofen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

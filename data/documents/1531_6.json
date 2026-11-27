@@ -9,26 +9,26 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++21605090-3360-47EF-AF7E-8E6656CF3587&parent_id="
       ],
       "german": "Schriftwechsel wegen der unter Beteiligung Mainzer Räte von einer kaiserlichen Kommission zu Augsburg geführten Verhandlung in der Streitsache des Ritters Albrecht von Rosenberg zu Boxberg gegen den Schwäbischen Bund bzw. gegen Kurfürst Friedrich von der Pfalz um Burg und Amt Boxberg\n\nEnthält-/Darin-Vermerke: Darin u. a.: Kopie eines von Erzbischof Albrecht von Mainz an den Kaiser gerichteten Schreibens wegen der Fehde des Hans Thoma von Rosenberg gegen den Schwäbischen Bund (1531)",
-      "english": "Correspondence regarding the negotiations conducted by an imperial commission at Augsburg with the participation of Mainz councillors in the dispute between Knight Albrecht von Rosenberg zu Boxberg and the Swabian League, or against Elector Friedrich of the Palatinate, over the castle and district of Boxberg",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "mainz"
-        }
+      "english": "Correspondence regarding the negotiations conducted by an imperial commission at Augsburg with the participation of Mainz councillors in the dispute between Knight Albrecht von Rosenberg zu Boxberg and the Swabian League, or against Elector Friedrich of the Palatinate, over the castle and district of Boxberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "zu Boxberg"
       ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "was involved in a dispute with the Swabian League and Kurfürst Friedrich of the Palatinate over Burg and Amt Boxberg."
-        }
-      ]
+      "type": "generic",
+      "content": "was involved in a dispute with the Swabian League and Kurfürst Friedrich of the Palatinate over Burg and Amt Boxberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

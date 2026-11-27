@@ -6,21 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 2 Qu. 217",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753558",
       "german": "Eberhard Schenk von Roßberg und Agnes, seine Frau, verkaufen an Bischof Gerhard zu Würzburg alle ihr Eigenleute um 300 lb. h. Ausgenommen sind die Eigenleute in der Feste und dem Dorf Rosenberg.",
-      "english": "Eberhard Schenk von Roßberg and his wife Agnes sold all their property to Gerhard zu Würzburg, Bischof for 300 lb. h. Except for the property in the fortress and the village of Rosenberg.",
-      "mention": [
-        {
-          "person": "Bischof Gerhard",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Eberhard Schenk"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Eberhard Schenk von Roßberg and his wife Agnes sold all their property to Gerhard zu Würzburg, Bischof for 300 lb. h. Except for the property in the fortress and the village of Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Gerhard",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Eberhard Schenk"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

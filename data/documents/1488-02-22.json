@@ -6,21 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 107",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755810",
       "german": "Verkauf des Weinzehnten zu Wachbach an DM Reinhard von Neipperg durch Konrad und Götz von Berlichingen, beide Ritter, Vormünder der Kinder des + Dietz von Berlichingen, 1488 Feb. 22 [Regest].",
-      "english": "Konrad and Götz von Berlichingen, both Ritter and guardians of the children of the late Dietz von Berlichingen, sell the wine tithe at Wachbach to Grand Master Reinhard von Neipperg, 1488 February 22 [regest].",
-      "mention": [
-        {
-          "place": "berlichingen"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        },
-        {
-          "person": "Konrad von Berlichingen"
-        },
-        {
-          "person": "Reinhard von Neipperg"
-        }
-      ]
+      "english": "Konrad and Götz von Berlichingen, both Ritter and guardians of the children of the late Dietz von Berlichingen, sell the wine tithe at Wachbach to Grand Master Reinhard von Neipperg, 1488 February 22 [regest]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "berlichingen"
+    },
+    {
+      "person": "Götz von Berlichingen"
+    },
+    {
+      "person": "Konrad von Berlichingen"
+    },
+    {
+      "person": "Reinhard von Neipperg"
     }
   ]
 }

@@ -7,32 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166392",
       "german": "Ludwig Münch (Moinche) von Rosenberg (-burg) bekundet, dass Graf Johann von Wertheim ihm als Träger für Diether Rüdt [von Bödigheim], minderjähriger (noch undter sinen jaren und tagen) Sohn seines verstorbenen Schwagers Hans Rüdt, den halben Teil der Burg zu Eubigheim (Ubigheim) mit Zugehör und das halbe Gericht daselbst zu rechtem Mannlehen verliehen hat (Lehensbrief ist inseriert).\n\nLaufzeit: 1460 November 17 (fritag nach sant Martins tag)\n\nSiegelbeschreibung: 1 Siegel, anhängend an Pergamentstreifen\n\nVermerke: Dorsualvermerk\n\nSiegler: Ludwig Münch von Rosenberg",
       "english": "Ludwig Münch (Moinche) von Rosenberg (-burg) certifies that Count Johann von Wertheim granted him, as feoffee for Diether Rüdt [von Bödigheim], the underage son (still below his years and days) of his deceased brother-in-law Hans Rüdt, one half of the castle at Eubigheim (Ubigheim) with its appurtenances and one half of the court there as a proper manorial fief (the fief charter is inserted).\n\nDate: 17 November 1460 (Friday after St Martin’s Day)\n\nSeal description: One seal, attached to a parchment strip\n\nNotes: Dorsal note\n\nSealer: Ludwig Münch von Rosenberg",
-      "mention": [
-        {
-          "person": "Diether Rüd von Bödigheim"
-        },
-        {
-          "place": "eubigheim"
-        },
-        {
-          "person": "Hans Rüd"
-        },
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Ludwig Mönch"
-        },
-        {
-          "person": "Ludwig Mönch von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166392%2F07_0000166392_0001_7-166392-1.jpg"
@@ -41,6 +15,32 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166392%2F07_0000166392_0002_7-166392-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Diether Rüd von Bödigheim"
+    },
+    {
+      "place": "eubigheim"
+    },
+    {
+      "person": "Hans Rüd"
+    },
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "person": "Ludwig Mönch"
+    },
+    {
+      "person": "Ludwig Mönch von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

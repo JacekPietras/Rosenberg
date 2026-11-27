@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129200",
       "german": "Notarielle Beurkundung des Johannes Hecker, Pfarrers zu Dertingen und Kaplan des Grafen von Wertheim, und des Edelknechts Cuntz, des verstorbenen Uhssen Sohns, Amtmanns zu Freudenberg, daß Uhsse in ihrer Gegenwart der Carthause Grünau 9 Malter Korngült zu Unterwittighausen mit der Verbindlichkeit zur Unterhaltung des ewigen Lichts vermacht und übergeben habe, vorbehaltlich der Einwilligung des Grafen von Rieneck, welche die Gräfin Uda von Wertheim nachsuchen möge.\nZeugen 1) Hans Münch von Rosenberg, Amtmann zu Wertheim, 2) Eberhart von Lynach, 3) Eberhart, Sohn des Hans Münch, 4) Rudolph, Sohn des Ritters Johann Drabot.\n\nLaufzeit: 1395 September 20",
       "english": "Notarial certification by Johannes Hecker, parish priest of Dertingen and chaplain to the Count of Wertheim, and the Edelknecht Cuntz, son of the late Uhssen and steward at Freudenberg, that in their presence Uhsse bequeathed and transferred to the Carthusian monastery of Grünau an annual grain rent of 9 Malter at Unterwittighausen, with the obligation to maintain the perpetual light, subject to the consent of the Count of Rieneck, which Countess Uda of Wertheim was to seek.\nWitnesses: (1) Hans Münch von Rosenberg, steward at Wertheim; (2) Eberhart von Lynach; (3) Eberhart, son of Hans Münch; (4) Rudolph, son of Ritter Johann Drabot.\nTerm: 20 September 1395.",
-      "mention": [
-        {
-          "place": "dertingen"
-        },
-        {
-          "person": "Hans Mönch"
-        },
-        {
-          "person": "Hans Mönch von Rosenberg"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129200%2F07_0000129200_0001_7-129200-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129200%2F07_0000129200_0002_7-129200-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "dertingen"
+    },
+    {
+      "person": "Hans Mönch"
+    },
+    {
+      "person": "Hans Mönch von Rosenberg"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

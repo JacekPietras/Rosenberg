@@ -7,32 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1149001",
       "german": "Wachbach (mit Dörtel und Hachtel)\n\nLaufzeit: 1512-1671\n\nEnthält: Enthält: Schreiben des Hochstifts Würzburg wegen einer von der Pfarrei Wachbach geforderten Gült aus einem Lehen zu Dörtel (1512); Kaufbrief des Franz Rüd von Bödigheim und seiner Frau Anna geb. von Uissigheim für Adam Rüdling zu Wachbach über einen Weingarten daselbst um 75 Gulden (1523 Febr. 6); Kaufbrief Heinrich Rüds von Bödigheim und seiner Frau Anna geb. von Uissigheim für Jörg von Schweyckern zu Hochstatt über die Hälfte des Hofs zu Hagenau (?) und den Wachbacher Pferch um 10 Gulden und ein Malter Dinkel jährlich (1525 Jan. 8); Teilungsbrief zwischen Fran Rüdt und Wolf von Adelsheim über den Fischbach zu Wachbach (1525 März 21); Kaufbrief Fr. Rüds von Bödigheim zu Wachbach für Wolf von Adelsheim über eine Wiese und einen Garten am Schlossgraben um 5 Gulden (1527 Juni 20); Kaufbrief Fr. Rüds für Stefan von Adelsheim über ein Viertel am Heuzehnten zu Wachbach um 25 Gulden (1530 Mai 28); Urteil Ludwigs Pfalzgraf bei Rhein in einem Streit des Stefan von Adelsheim mit seinen Hintersassen zu Wachbach über Frohndienste (1533 Juli 30); Erklärung des Fr. Rüd von Bödigheim gegenüber der Gemeinde Wachbach, dass er alle seine Güter und Rechte daselbst an Stefan von Adelsheim um 500 Gulden auf Wiederlosung verkauft hat (1539 April 15); Religionsneuerung des Deutschen Ordens in Wachbach (1607 Mai 26); Streitigkeiten der Herren von Adelsheim mit dem Deutschen Orden wegen des Kirchsatzes zu Wachbach, anderer Rechte daselbst u. der Umgebung (1551-1671)\n\nUmfang: 1 Bü.",
       "english": "Wachbach (with Dörtel and Hachtel).\n\nPeriod: 1512–1671\n\nContents: Among other items: letters from the Bishopric of Würzburg concerning a rent demanded by the parish of Wachbach from a fief at Dörtel (1512); deed of sale by Franz Rüd von Bödigheim and his wife Anna, née von Uissigheim, to Adam Rüdling zu Wachbach for a vineyard there for 75 florins (1523 February 6); deed of sale by Heinrich Rüd von Bödigheim and his wife Anna, née von Uissigheim, to Jörg von Schweyckern zu Hochstatt for half of the farm at Hagenau (?) and the Wachbach livestock enclosure, for 10 florins and one Malter of spelt annually (1525 January 8); partition deed between Fran Rüdt and Wolf von Adelsheim concerning the Fischbach at Wachbach (1525 March 21); deed of sale by Fr. Rüd von Bödigheim zu Wachbach to Wolf von Adelsheim for a meadow and a garden by the castle moat for 5 florins (1527 June 20); deed of sale by Fr. Rüd to Stephan von Adelsheim for one quarter of the hay tithe at Wachbach for 25 florins (1530 May 28); judgment by Ludwig, Count Palatine of the Rhine, in a dispute between Stephan von Adelsheim and his dependents at Wachbach over compulsory labor services (1533 July 30); declaration by Fr. Rüd von Bödigheim to the community of Wachbach that he had sold all his property and rights there to Stephan von Adelsheim for 500 florins, subject to a right of repurchase (1539 April 15); religious reform by the Teutonic Order in Wachbach (1607 May 26); disputes between the lords von Adelsheim and the Teutonic Order concerning the right of patronage at Wachbach, other rights there, and in the surrounding area (1551–1671).\n\nExtent: 1 box",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "person": "Anna von Uissigheim"
-        },
-        {
-          "place": "boedigheim-kreuzkirche"
-        },
-        {
-          "person": "Franz Rüd von Bödigheim"
-        },
-        {
-          "person": "Heinrich Rüd von Bödigheim"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Wolf von Adelsheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001149001%2F02_0001149001_0105_2-1149001-105.jpg"
@@ -347,6 +321,32 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001149001%2F02_0001149001_0208_2-1149001-208.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "person": "Anna von Uissigheim"
+    },
+    {
+      "place": "boedigheim-kreuzkirche"
+    },
+    {
+      "person": "Franz Rüd von Bödigheim"
+    },
+    {
+      "person": "Heinrich Rüd von Bödigheim"
+    },
+    {
+      "person": "Stephan von Adelsheim"
+    },
+    {
+      "person": "Wolf von Adelsheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

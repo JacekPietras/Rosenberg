@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1743358",
       "german": "Lorenz von Rosenberg und Hans von Riedern vermitteln einen Vertrag zwischen Heinrich von Pappenheim, Deutsch-Ordens-Komtur zu Mergentheim, und Christoph von Rosenberg wegen streitiger Güter zu Hirschlanden.\n\nLaufzeit: 1535 September 2 (Donnerstag nach Aegidius 1535)\n\nSiegelbeschreibung: Mit 4 Siegel",
       "english": "Lorenz von Rosenberg and Hans von Riedern mediate a contract between Heinrich von Pappenheim, Teutonic Order Commander of Mergentheim, and Christoph von Rosenberg regarding disputed properties in Hirschlanden.\n\nDuration: September 2, 1535 (Thursday after Aegidius 1535)",
-      "mention": [
-        {
-          "person": "Hans von Riedern"
-        },
-        {
-          "person": "Heinrich von Pappenheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Lorenz von Rosenberg",
-          "type": "generic",
-          "content": "mediated the agreement between Heinrich von Pappenheim and Christoph von Rosenberg concerning disputed properties at Hirschlanden."
-        },
-        {
-          "person": "Christoph von Rosenberg",
-          "type": "generic",
-          "content": "entered into an agreement with Heinrich von Pappenheim concerning disputed properties at Hirschlanden, mediated by Lorenz von Rosenberg and Hans von Riedern."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743358%2F04_0001743358_0001_4-1743358-1.jpg",
@@ -58,6 +38,26 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001743358%2F04_0001743358_0003_4-1743358-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Lorenz von Rosenberg",
+      "type": "generic",
+      "content": "mediated the agreement between Heinrich von Pappenheim and Christoph von Rosenberg concerning disputed properties at Hirschlanden."
+    },
+    {
+      "person": "Christoph von Rosenberg",
+      "type": "generic",
+      "content": "entered into an agreement with Heinrich von Pappenheim concerning disputed properties at Hirschlanden, mediated by Lorenz von Rosenberg and Hans von Riedern."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Riedern"
+    },
+    {
+      "person": "Heinrich von Pappenheim"
     }
   ]
 }

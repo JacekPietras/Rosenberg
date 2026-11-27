@@ -9,22 +9,22 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Pfalzgraf Ruprecht gibt die Pfandschaft über die Mühle zu Richen, die ihm Cuntz Mönch, Vogt zu Steinsberg, für 100 Gulden von Konrad v. Sachsenheim gelöst hat, an ersteren. GLA 67/466:74v; KOCH & WILLE 1894, Nr. 5413; WÜST 1976:139; GEHRIG 1979:30",
-      "english": "Pfalzgraf Ruprecht gives the pledge over the mill at Richen, which Kunz Mönch von Rosenberg, Vogt zu Steinsberg, redeemed for him from Konrad von Sachsenheim for 100 gulden, to the former.",
-      "mention": [
-        {
-          "place": "heidelberg"
-        }
+      "english": "Pfalzgraf Ruprecht gives the pledge over the mill at Richen, which Kunz Mönch von Rosenberg, Vogt zu Steinsberg, redeemed for him from Konrad von Sachsenheim for 100 gulden, to the former."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ],
-          "type": "generic",
-          "content": "redeemed the pledge over the mill at Richen from Konrad von Sachsenheim."
-        }
-      ]
+      "type": "generic",
+      "content": "redeemed the pledge over the mill at Richen from Konrad von Sachsenheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
     }
   ]
 }

@@ -7,17 +7,17 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 3847",
       "url": "https://www.regesta-imperii.de/id/af26cccb-f4a1-46b5-881d-349d15e8d376",
       "german": "schuldet Hannes und Eberhard den Closenern von Arnsdorf 920 regensburger pfennige und setzt in einer zweiten urkunde zu bürgen: Conrad von Rosenberg, vitztum zu Amberg, Friedric den Auwer von Brennenberg, Ulrich den Puschbeck von Calmunz und Ulrich den schenken von Richnecke. Karlsr. Copb. 464,135.",
-      "english": "He owes Hannes and Eberhard the Closener family of Arnsdorf 920 Regensburg pennies and, in a second charter, names as guarantors Konrad von Rosenberg, Viztum zu Amberg; Friedrich den Auwer von Brennenberg; Ulrich den Puschbeck von Calmunz; and Ulrich den Schenken von Richnecke. Karlsruhe copybook 464, fol. 135.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ]
-        }
+      "english": "He owes Hannes and Eberhard the Closener family of Arnsdorf 920 Regensburg pennies and, in a second charter, names as guarantors Konrad von Rosenberg, Viztum zu Amberg; Friedrich den Auwer von Brennenberg; Ulrich den Puschbeck von Calmunz; and Ulrich den Schenken von Richnecke. Karlsruhe copybook 464, fol. 135."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
       ]
     }
   ]

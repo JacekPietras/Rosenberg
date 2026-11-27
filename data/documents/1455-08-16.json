@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/0331/charter",
       "german": "Heinrich von Rosenberg, Hauptmann in Schlesien der Fürstentümer Breslau, Schweidnitz, Jauer und Landvogt der Sechsland und Stete Bautzen, Görlitz etc. bestätigt, dass ihm die Landstände, Bürgermeister und Ratsherren der Sechslande und Stete gemäß dem königlichem Befehl die Huldigung geleistet haben und verspricht diesen, ihre alten Rechte, Befugnisse, Freiheiten und Privilegien zu achten und sie niemals von der böhmischen Krone zu trennen.\n\nSiegel: Hängesiegel an Pergamentstreifen",
       "english": "Heinrich von Rosenberg, Hauptmann in Schlesien der Fürstentümer Breslau, Schweidnitz und Jauer und Landvogt der Sechslande und Stete Bautzen, Görlitz etc., confirms that the provincial estates, mayors, and councilors of the Six Districts and Cities have paid him homage in accordance with the royal command. He promises to respect their old rights, powers, freedoms, and privileges and never to separate them from the Crown of Bohemia.\n\nSeal: Pendant seal on a parchment strip.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/0331_1455-08-16_1-orig_c_1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/0331_1455-08-16_1-orig_c_2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0b0726c7-9b35-45a6-a842-c99fa3959147&parent_id="
       ],
       "german": "Tischer, Johann Konrad, von Rosenberg/Flachslanden, Maurer; Verheiratung mit Bayer, Maria Barbara, von Mitteldachstetten",
-      "english": "Johann Konrad Tischer, from Rosenberg/Flachslanden, mason; marriage to Maria Barbara Bayer, from Mitteldachstetten.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Konrad Tischer, from Rosenberg/Flachslanden, mason; marriage to Maria Barbara Bayer, from Mitteldachstetten."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

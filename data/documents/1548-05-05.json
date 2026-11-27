@@ -7,31 +7,31 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235690",
       "german": "Benannte Schiedsrichter vermitteln in einem Streit zwischen den Vettern Lorenz und Hans Carius von Rosenberg (Rosenbergk).\n\nLaufzeit: 1548 Mai 5 (\"Der geben ist uf sambstag nach dem sontag Cantate und nach Cristi..gepurt im fünfzehenhundert und acht und viertzigsten jare\")\n\nVermerke: Mit den Unterschriften des Bastian Ruedt von Kollerbergk, Amtmann zu Bischofsheim; Philipp von Gemingen zu Gutenbergk; Albrecht von Rosenbergk zu Boxbergk; Stefan Zobel von Gibelstatt zu Darstatt (sämtliche Schiedsrichter); Lorenz von Rosenbergk und Hans",
       "english": "The named arbitrators mediate a dispute between the cousins Lorenz and Hans Eucharius von Rosenberg.\n\nPeriod: 5 May 1548 (“Given on Saturday after Cantate Sunday and after Christ’s … birth in the fifteen hundred and forty-eighth year”).\n\nNotes: with the signatures of Bastian Ruedt von Kollerbergk, Amtmann zu Bischofsheim; Philipp von Gemingen zu Gutenbergk; Albrecht von Rosenberg zu Boxberg; Stefan Zobel von Gibelstatt zu Darstatt (all arbitrators); Lorenz von Rosenberg and Hans",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ]
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Hans Eucharius von Rosenberg"
-        },
-        {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
-          "person": "Stephan Zobel"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235690%2F07_0000235690_0001_7-235690-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
+      ]
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Hans Eucharius von Rosenberg"
+    },
+    {
+      "person": "Lorenz von Rosenberg"
+    },
+    {
+      "person": "Stephan Zobel"
     }
   ]
 }

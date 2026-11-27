@@ -7,26 +7,21 @@
       "source": "[RIplus] Regg. Karl IV. n. 1845",
       "url": "https://www.regesta-imperii.de/id/d54897a8-f15f-4aed-ae9b-d50ae85b8781",
       "german": "Karl IV. erklärt eine Schuld des sel. Herrn Heinrich von Rosenberg, Sohn des Peter, sowie der Prager Bürger Hermann de Miliczyn iunior, Jesko de Rozdalowycz, Wilhelmus de Phustperk, Valkunus de Porzyesyn und Pesco Neumburger iunior als dessen Bürgen bei den Juden der königlichen Kammer Lazarus und Judlein, Brüder des Manne, von 62 Schock Prager Groschen nebst Zinsen für beglichen.",
-      "english": "Karl IV. declares a debt of the late Lord Heinrich von Rosenberg, son of Peter, as well as the Prague citizens Hermann de Miliczyn iunior, Jesko de Rozdalowycz, Wilhelmus de Phustperk, Valkunus de Porzyesyn and Pesco Neumburger iunior as his guarantors with the Jews of the royal chamber Lazarus and Judlein, brothers of Manne, of 62 groats of Prague groschen plus interest, as settled.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ]
+      "english": "Karl IV. declares a debt of the late Lord Heinrich von Rosenberg, son of Peter, as well as the Prague citizens Hermann de Miliczyn iunior, Jesko de Rozdalowycz, Wilhelmus de Phustperk, Valkunus de Porzyesyn and Pesco Neumburger iunior as his guarantors with the Jews of the royal chamber Lazarus and Judlein, brothers of Manne, of 62 groats of Prague groschen plus interest, as settled."
     },
     {
       "source": "RI VIII n. 1387",
       "url": "https://www.regesta-imperii.de/id/1351-06-24_1_0_8_0_0_1579_1387",
       "german": "erklärt eine vom sel. herrn Heinrich von Rosenberg bei den Juden der königlichen kammer Lazarus und Jüdl contrahirte schuld von 62 schock prager groschen nebst zinsen für abgethan und beglichen. Aus UB. der herrn von Rosenberg sec. 17 im stiftsarchiv zu Hohenfurt durch M. Pangerl.",
-      "english": "Declares a debt contracted by the late lord Heinrich von Rosenberg with the Jews of the royal chamber, Lazarus and Judlein, amounting to 62 shofars of Prague groschen plus interest, as settled and paid off. From the Baron's Register of the Lords von Rosenberg sec. 17 in the Stiftsarchiv zu Hohenfurt through M. Pangerl.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Declares a debt contracted by the late lord Heinrich von Rosenberg with the Jews of the royal chamber, Lazarus and Judlein, amounting to 62 shofars of Prague groschen plus interest, as settled and paid off. From the Baron's Register of the Lords von Rosenberg sec. 17 in the Stiftsarchiv zu Hohenfurt through M. Pangerl."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

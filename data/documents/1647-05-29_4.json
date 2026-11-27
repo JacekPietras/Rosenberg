@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk77/100/charter",
       "german": "Philipp Christoph von Rosenbach, Kapitular zu Fulda und Propst von Blankenau [Gem. Hosenfeld, Lkr. Fulda], leiht Valentin Ebert aus Fulda drei Teile Gehölzes zwischen (Eussen) und Giesel (Döpfengiesel) [Ortsteil der Gem. Neuhof, Lkr. Fulda].\n\nSiegel: Dt., Oblatensiegel.",
       "english": "Philipp Christoph von Rosenberg, canon of Fulda and provost of Blankenau [municipality of Hosenfeld, Fulda district], leases three portions of woodland between (Eussen) and Giesel (Döpfengiesel) [part of the municipality of Neuhof, Fulda district] to Valentin Ebert of Fulda.\n\nSeal: German, wafer seal.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Philipp Christoph von Rosenberg"
-        },
-        {
-          "person": "Valentin Eberhard of Fulda"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20100%20Seite%201%20%281647%20Mai%2029%29.jpg"
@@ -29,6 +18,17 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20100%20Seite%204%20%281647%20Mai%2029%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Philipp Christoph von Rosenberg"
+    },
+    {
+      "person": "Valentin Eberhard of Fulda"
     }
   ]
 }

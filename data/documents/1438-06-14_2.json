@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-WStLA/HAUrk/2649/charter",
       "german": "König Albrecht II. an Bürgermeister, Richter und Rath zu Wien. Er sei am letzten eritag (10. Juni) von Iglau aufgebrochen, an demselben Tage gen dem Deutschen Brod und an dem mittichen darnach (11. Juni) gen Czaslaws gekommen, wo ihn der Sokol, phleger, der Richter, der Rath und die Gemeinde festlich empfangen haben, ebenso sei er an dem phincztag (Juni 12) auswendig der stat Gurin, in der stat dacz Behemischen Brod und bei dem Einzüge in Prag am Freitage (Juni 13) feierlich begrüsst worden. Die Herren . . der von Rosenberg, . . der von Neunhaus und meniger ander, die jecz hie zu Prag, hätten sich vereinigt, ander herren und stet und die lantschaft ze Behem, die jecz nicht hie sein, zu besenden, und ihn am nächsten sant Peters und sant Pauls tag, der heiligen zwelffboten, zu krönen. Indem er sie auffordert, sich darüber mit ihm zu freuen, erinnert er sie, dass er ihnen vormalen bei dem edeln, seinem lieben ohmen und getreun graf Johannsen von Schaunberg, seinem hofmaister und lantmarschalch, und Ulreichen Eiczinger, seinem hubmaister in Österreich, zugepoten habe, wie sich ettlich burger ze Wienn zu dem anlehen, das er jetzt begehrt habe, nicht wellen willigen, sunder dawider seczen. Da sie in dieser Sache bis jetzt nichts gethan haben, spricht er ihnen sein Missfallen aus und befiehlt ihnen, die Widerspenstigen zum Gehorsam zu bringen und zur Bezahlung des Anschlages zu verhalten.\n\nSiegel: Zum Verschlusse aufgedrücktes Secretsiegel von rothem Wachse unter Papierdecke.",
       "english": "Albrecht II., König von Böhmen, addresses the mayor, judge, and council of Vienna. He says that on the preceding Tuesday (10 June) he set out from Iglau, reached Deutsch-Brod that same day, and on the following Wednesday (11 June) arrived in Czaslau, where Sokol, the administrator, the judge, the council, and the community welcomed him with ceremony. Likewise, on Thursday (12 June), outside the city of Gurin, in the city at Böhmisch-Brod, and when he entered Prague on Friday (13 June), he was solemnly welcomed. The Lords von Rosenberg, von Neuhaus, and many others now here in Prague have agreed to summon the other lords and cities and the estates of Bohemia who are not now here, and to crown him on the next feast of Saints Peter and Paul, the holy apostles. As he asks the city to rejoice with him in this, he reminds them that he had previously instructed them, through the nobleman, his beloved uncle and loyal Graf Hans von Schaunberg, his Hofmeister and Landmarschall, and Ulrich Eizinger, his Hubmeister in Austria, that some citizens of Vienna would not consent to the loan he has now requested, but would oppose it. Since they have done nothing about this so far, he expresses his displeasure and orders them to bring the recalcitrant citizens to obedience and compel them to pay the assessed sum.\n\nSeal: Red wax secret seal impressed for closure beneath a paper cover.",
-      "mention": [
-        {
-          "person": "Hans von Schaunberg",
-          "personTitle": [
-            "Graf von Schaunberg"
-          ]
-        },
-        {
-          "place": "neuhaus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-WStLA/HA-U/WStLA-HA-Urkunden_02649_r.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/pics/AT-WStLA/HA-U/WStLA-HA-Urkunden_02649_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Schaunberg",
+      "personTitle": [
+        "Graf von Schaunberg"
+      ]
+    },
+    {
+      "place": "neuhaus"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

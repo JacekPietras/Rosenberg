@@ -7,27 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1748106",
       "german": "Michael von Rosenberg, Amtmann zu Grünsfeld, und Bruder Johann Hamart, Pfarrverweser zu Grünfeld, Wilhelm von Dürn, Heinz und Bartholomäus Hund, Thomas Glüpfel, Hofmeister, und Endres Felsheim, Keller, entscheiden im Streit zwischen den Gotteshausmeistern der Pfarrkirche zu Impfingen und genannten Einwohnern daselbst wegen deren Fronschuldigkeit gegenüber dieser Kirche.\n\nLaufzeit: 1490 Februar 6 (Dorothea 1490)\n\nSiegelbeschreibung: Mit dem Siegel des Michael von Rosenberg",
       "english": "Michael von Rosenberg, Amtmann zu Grünsfeld, and brother Johann Hamart, vicar of Grünfeld, Wilhelm von Dürn, Heinz and Bartholomäus Hund, Thomas Glüpfel, steward, and Endres Felsheim, cellarer, adjudicate a dispute between the church wardens of the parish church at Impfingen and the aforementioned inhabitants thereof regarding their labor obligations owed to this church.\n\nPeriod: February 6, 1490 (Dorothea 1490)",
-      "mention": [
-        {
-          "person": "Bartholomäus Hund"
-        },
-        {
-          "person": "Heinrich Hund"
-        },
-        {
-          "person": "Wilhelm von Dürn"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Grünsfeld"
-          ],
-          "type": "generic",
-          "content": "helped decide a dispute over labor obligations owed to the parish church at Impfingen."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748106%2F04_0001748106_0001_4-1748106-1.jpg"
@@ -39,6 +18,27 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748106%2F04_0001748106_0003_4-1748106-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Grünsfeld"
+      ],
+      "type": "generic",
+      "content": "helped decide a dispute over labor obligations owed to the parish church at Impfingen."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bartholomäus Hund"
+    },
+    {
+      "person": "Heinrich Hund"
+    },
+    {
+      "person": "Wilhelm von Dürn"
     }
   ]
 }

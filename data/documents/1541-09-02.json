@@ -10,17 +10,6 @@
       ],
       "german": "Urfehde des Hans Wolff von Nürmberg für Herrn Wolffgang von Rosenberg, DO-Komtur zu Viernsperg, wegen des Gefängnisses, das er wegen seines Eindringens in den Garten, Obstwegnahme und beleidigender Reden zu Virnsberg erlitten hat. - Siegler: Herr Hans Jorig von Beldersshaim, Hauskomtur zu Viernsperg.",
       "english": "Feud settlement oath of Hans Wolf von Nürnberg for Herr Wolffgang von Rosenberg, commander of the Teutonic Order at Virnsberg, concerning the imprisonment he suffered for entering a garden, taking fruit, and making insulting remarks at Virnsberg. — Sealer: Herr Hans Jorig von Beldersshaim, commander of the house at Virnsberg.",
-      "mention": [
-        {
-          "person": "Hans Wolf von Nürnberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "virnsberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/7e4d0d37-91c5-4fa5-a8a7-94500fb21c8e/1/full/max/0/default.jpg"
@@ -32,6 +21,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/7e4d0d37-91c5-4fa5-a8a7-94500fb21c8e/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Wolf von Nürnberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "virnsberg"
     }
   ]
 }

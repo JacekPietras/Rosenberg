@@ -6,15 +6,15 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 21 Qu. 45",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755648",
       "german": "Verkauf von Haus, Scheuer und Hofraite in der Mühlgasse zu Igersheim an Nikolaus Vehe, Amtsverweser zu Neuhaus und Spitalmeister zu Mgh, durch Konz Wirt zu Igersheim 1534 [o.M. o.T.; Regest].",
-      "english": "Sale of a house, barn, and courtyard in Mühlgasse at Igersheim to Nikolaus Vehe, administrator at Neuhaus and hospital master at Mergentheim, by Konz Wirt of Igersheim, 1534 [no month or day; abstract].",
-      "mention": [
-        {
-          "person": "Kunz Wirt"
-        },
-        {
-          "place": "neuhaus"
-        }
-      ]
+      "english": "Sale of a house, barn, and courtyard in Mühlgasse at Igersheim to Nikolaus Vehe, administrator at Neuhaus and hospital master at Mergentheim, by Konz Wirt of Igersheim, 1534 [no month or day; abstract]."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz Wirt"
+    },
+    {
+      "place": "neuhaus"
     }
   ]
 }

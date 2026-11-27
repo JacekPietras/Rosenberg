@@ -9,25 +9,25 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++da49c46c-df88-4b5e-9ead-79123e8593d5&parent_id="
       ],
       "german": "Revers des Kunz von Rosenberg für Bischof Konrad von Würzburg über die Amtmannstelle zu Reigelsberg.",
-      "english": "Counter-security by Kunz von Rosenberg for Konrad zu Würzburg, Bischof regarding the bailiff position at Reigelsberg.",
-      "mention": [
-        {
-          "person": "Bischof Konrad",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "reichelsburg-aub"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "issued a feudal acknowledgment to Bischof Konrad von Würzburg concerning the Amtmann office at Reigelsberg."
-        }
+      "english": "Counter-security by Kunz von Rosenberg for Konrad zu Würzburg, Bischof regarding the bailiff position at Reigelsberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "issued a feudal acknowledgment to Bischof Konrad von Würzburg concerning the Amtmann office at Reigelsberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Konrad",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "reichelsburg-aub"
     }
   ]
 }

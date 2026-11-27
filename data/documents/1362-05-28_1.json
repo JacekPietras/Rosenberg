@@ -9,45 +9,45 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++20D0C015-2B25-4E86-9D41-6BDB98A4E75F&parent_id="
       ],
       "german": "Die Äbtissin Margarete von Rieneck und der Konvent des Klosters Himmelspforten beurkunden mit Zustimmung von Abt Otto zu Ebrach, dass sie die Stiftung des verstorbenen Konrad Silberlin, Bürgers von Würzburg, und seiner Tochter Elisabeth, vormalige Äbtissin, annehmen und deren Bestimmungen dauerhaft einhalten. Die Verpflichtungen umfassen u.a.: (...) Zu den gestifteten Gütern zählen u.a. Höfe, Hufen, Weinberge und Gülten aus mehr als 30 Ortschaften, darunter: Von Gütern in Kirchheim, die von den von Rosenberg gekauft wurden, gibt man jährlich 16 Malter Roggen und Weizen und 3 Malter Hafer.. (...) Die Vereinbarung wurde von Abt Otto und den Klöstern Himmelspforten und Ebrach rechtskräftig besiegelt. Aussteller: Äbtissin, Amtsträgerinnen und Konvent des Klosters Himmelspforten Empfänger: Kloster Himmelspforten",
-      "english": "Abbess Margaretha von Rieneck and the convent of Himmelspforten Monastery, with the consent of Abbot Otto zu Ebrach, certify that they accept the endowment of the late Konrad Silberlin, citizen of Würzburg, and his daughter Elisabeth, former abbess, and will permanently adhere to its provisions. The obligations include, among others: (...) The endowed properties include farms, acres, vineyards, and rents from more than 30 villages, including: From properties in Kirchheim purchased from the von Rosenbergs, 16 malters of rye and wheat and 3 malters of oats are to be given annually. (...) The agreement was legally sealed by Abbot Otto and the monasteries of Himmelspforten and Ebrach. Issuer: Abbess, officials, and convent of Himmelspforten Monastery Recipient: Himmelspforten Monastery",
-      "mention": [
-        {
-          "place": "ebrach"
-        },
-        {
-          "place": "kirchheim"
-        },
-        {
-          "person": "Margaretha von Rieneck",
-          "personTitle": [
-            "Äbtissin"
-          ]
-        },
-        {
-          "person": "Otto",
-          "personTitle": [
-            "Abt zu Ebrach"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Himmelspforten Monastery",
-          "type": "generic",
-          "content": "had acquired properties in Kirchheim from members of the von Rosenberg family."
-        },
-        {
-          "person": "Himmelspforten Monastery",
-          "type": "generic",
-          "content": "received annual grain rents from endowed properties in Kirchheim purchased from the von Rosenberg family."
-        }
+      "english": "Abbess Margaretha von Rieneck and the convent of Himmelspforten Monastery, with the consent of Abbot Otto zu Ebrach, certify that they accept the endowment of the late Konrad Silberlin, citizen of Würzburg, and his daughter Elisabeth, former abbess, and will permanently adhere to its provisions. The obligations include, among others: (...) The endowed properties include farms, acres, vineyards, and rents from more than 30 villages, including: From properties in Kirchheim purchased from the von Rosenbergs, 16 malters of rye and wheat and 3 malters of oats are to be given annually. (...) The agreement was legally sealed by Abbot Otto and the monasteries of Himmelspforten and Ebrach. Issuer: Abbess, officials, and convent of Himmelspforten Monastery Recipient: Himmelspforten Monastery"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Himmelspforten Monastery",
+      "type": "generic",
+      "content": "had acquired properties in Kirchheim from members of the von Rosenberg family."
+    },
+    {
+      "person": "Himmelspforten Monastery",
+      "type": "generic",
+      "content": "received annual grain rents from endowed properties in Kirchheim purchased from the von Rosenberg family."
+    }
+  ],
+  "mention": [
+    {
+      "place": "ebrach"
+    },
+    {
+      "place": "kirchheim"
+    },
+    {
+      "person": "Margaretha von Rieneck",
+      "personTitle": [
+        "Äbtissin"
       ]
+    },
+    {
+      "person": "Otto",
+      "personTitle": [
+        "Abt zu Ebrach"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

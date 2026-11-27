@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1499_IV_22/charter",
       "german": "Chwal von Kollenetz und Wratzau tritt das Dorf Obst dem Herrn Peter von Rosenberg ab.\n\nSiegel: Fünf kleine, an Pergamentstreifen hängende, zum Theile beschädigte Siegel in schwarzem, nur b in rothem Wachs. a) Ein Schild, auf dem nur mehr die Hälse zweier mit einander schnäbelnder Vögel zu erblicken sind. - S . Chw . . . Z . Kolenecz. b) Das bekannte Siegel Ulrich's von Rosenberg mit der böhmischen Umschrift. c) Bekanntes Siegel des (S.) Petr. Z. Dobrohosstye. d) Schild mit einer, einem r ähnelnden Zeichnung. - . . lbrecht . . . e) Ein Schild mit dem Bruchstück eines negerähnlichen Mannes, darüber ein Helm mit einem Federbusch. - S. Wenceslai. De. Rowna. Sämmtliche Pergamentstreifen sind mit den Namen der Siegler bezeichnet.",
       "english": "Chwal von Kollenetz and Wratzau cede the village of Obst to Peter von Rosenberg, Herr.\n\nSeals: Five small seals hang from parchment strips; some are damaged. They are in black wax except for b), which is in red wax. a) A shield on which only the necks of two birds pecking at one another can still be seen. — `S. Chw . . . Z . Kolenecz.` b) Ulrich von Rosenberg’s familiar seal, with a Bohemian inscription. c) The familiar seal of (S.) Petr. Z. Dobrohosstye. d) A shield bearing a device resembling the letter r. — `. . lbrecht . . .` e) A shield with a fragmentary figure whose features are described as resembling a Black man, above it a helmet with a plume. — `S. Wenceslai. De. Rowna.` The names of the sealers are written on all the parchment strips.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_14990423vor%7E14990423_97%2CXXIV_v.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_14990423vor%7E14990423_97%2CXXIV_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

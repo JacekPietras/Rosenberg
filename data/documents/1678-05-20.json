@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-241_St/charter",
       "german": "Wolf Andre Graf von Rosenberg, Burggraf zu Klagenfurt, belehnt den Christoph Helfried Freiherrn von Kulmer zum Rosenbichl als Vormund der Kinder seines verstorbenen Bruders Ernst Wilhelm von Kulmer, mit dem halben Hof am Kulm, der lehenmäßig zur Herrschaft Sonnegg gehört. (Vgl. Urk. 234) Siegler: (Aussteller) Unterschrift: Aussteller\n\nSiegel: 1 Sig. pend. fehlt",
       "english": "Wolf Andre von Rosenberg, Graf von Rosenberg, Burggraf zu Klagenfurt, enfeoffs Christoph Helfried von Kulmer zum Rosenbichl, Freiherr, as guardian of the children of his deceased brother Ernst Wilhelm von Kulmer, with half of the farm at Kulm, which belongs as a fief to the lordship of Sonnegg. Compare document 234. Sealer: the issuer. Signature: the issuer.\n\nSeal: 1 pendant seal, missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_241_16780520_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_241_16780520_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

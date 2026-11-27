@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2366704",
       "german": "Lienhard Rosenberg, Schultheiß zu Frankenbach, und die Richter daselbst sprechen in einem Streit zwischen Eitel (Itel) Engelfried von Rottenburg, Bürger zu Heilbronn (Heilpronn), einerseits, und Hans Reit, dessen Hofmann und Bauern auf dem näher beschriebenen Wickartshof zu Frankenbach (Franckenbach), andererseits, letzteren von einer Servitut und einem weiteren Malter Frucht, was ersterer beansprucht hat, los, halten aber Hans Bart an, die zum Wickmarshof gehörigen Güter zu nennen.\n\nLaufzeit: 1466 Februar 17 (montag vor St. Mathias)\n\nSiegelbeschreibung: 3 Sg. anh., 1 am Rand besch.\n\nSiegler: Lienhart Rosenberg, Schultheiß zu Frankenbach; Junker Hans von Rosenbach, Vogt zu Frankenbach; Konrad Markart, des Rats und Gerichts zu Heilbronn",
       "english": "Lienhard Rosenberg, Schultheiß zu Frankenbach, and the judges there adjudicate a dispute between Eitel Engelfried of Rottenburg, citizen of Heilbronn, on one side, and Hans Reit, his tenant farmer, and the peasants at the more fully described Wickartshof at Frankenbach, on the other. They release the latter from an easement and an additional malter of grain claimed by the former, but require Hans Bart to identify the properties belonging to Wickmarshof.\n\nDate: 1466 February 17 (Monday before St. Matthias’s Day)\n\nDescription of seals: 3 attached seals, one damaged at the edge\n\nSealers: Lienhart Rosenberg, Schultheiß zu Frankenbach; Hans von Rosenberg, Junker, Vogt zu Frankenbach; Konrad Markart, of the council and court of Heilbronn",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Junker",
-            "Vogt zu Frankenbach"
-          ]
-        },
-        {
-          "person": "Leonhard Rosenberg",
-          "personTitle": [
-            "Schultheiß zu Frankenbach"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1207&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001207%2Ftitlaufn_0002366704%2F02_0002366704_0001_2-2366704-1.jpg"
@@ -33,6 +15,24 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1207&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001207%2Ftitlaufn_0002366704%2F02_0002366704_0002_2-2366704-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Junker",
+        "Vogt zu Frankenbach"
+      ]
+    },
+    {
+      "person": "Leonhard Rosenberg",
+      "personTitle": [
+        "Schultheiß zu Frankenbach"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

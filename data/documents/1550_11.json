@@ -9,17 +9,17 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A1B98B97-944E-4936-AB16-FF70505AA99A&parent_id="
       ],
       "german": "Streit zwischen dem Hochstift Würzburg und Zaisolf von Rosenberg zu Haltenbergstetten bzw. den Vormündern seiner Kinder wegen des Jagdrechtes auf den Markungen von Oberndorf (Waldung Struth) und Dunzendorf (Waldung Kühholz)",
-      "english": "Dispute between the Bishopric of Würzburg and Zaisolph von Rosenberg zu Haltenbergstetten or the guardians of his children concerning hunting rights in the districts of Oberndorf (Struth forest) and Dunzendorf (Kühholz forest)",
-      "mention": [
-        {
-          "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        }
+      "english": "Dispute between the Bishopric of Würzburg and Zaisolph von Rosenberg zu Haltenbergstetten or the guardians of his children concerning hunting rights in the districts of Oberndorf (Struth forest) and Dunzendorf (Kühholz forest)"
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
     }
   ]

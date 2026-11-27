@@ -14,26 +14,6 @@
       ],
       "german": "Ludwig von Fleckenstein, Hofmeister, Florenz von Venningen, Kanzler, und Wilhelm von Habern, Marschall der Kurpfalz, vermitteln einen Vertrag zwischen Hans von Rosenberg, Keller zu Neckarelz namens des Kurfürsten von der Pfalz, und Lorenz von Rosenberg wegen des Weinzehnten in Neckarelzer und Diedesheimer Gemarkung.\n\nLaufzeit: 1526 Oktober 3 (Mittwoch nach Remigius 1526)\n\nSiegelbeschreibung: Von 5 Siegeln sind 2 abgefallen",
       "english": "Ludwig von Fleckenstein, Hofmeister; Florenz von Venningen, Chancellor; and Wilhelm von Habern, Marshal of the Electoral Palatinate, mediate an agreement between Hans von Rosenberg, cellar master at Neckarelz on behalf of the Elector of the Palatinate, and Lorenz von Rosenberg regarding the wine tithe in the Neckarelz and Diedesheim districts.\n\nDuration: October 3, 1526 (Wednesday after Remigius 1526)",
-      "mention": [
-        {
-          "person": "Ludwig von Fleckenstein"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Keller zu Neckarelz"
-          ],
-          "type": "generic",
-          "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
-        },
-        {
-          "person": "Lorenz von Rosenberg",
-          "type": "generic",
-          "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774015%2F04_0001774015_0001_4-1774015-1.jpg",
@@ -102,6 +82,26 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Keller zu Neckarelz"
+      ],
+      "type": "generic",
+      "content": "entered into an agreement with Lorenz von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
+    },
+    {
+      "person": "Lorenz von Rosenberg",
+      "type": "generic",
+      "content": "entered into an agreement with Hans von Rosenberg concerning the wine tithe in the districts of Neckarelz and Diedesheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ludwig von Fleckenstein"
     }
   ]
 }

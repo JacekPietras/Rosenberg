@@ -6,30 +6,30 @@
       "source": "Generallandesarchiv Karlsruhe D Nr. 571, Verweisung",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1787125",
       "german": "König Sigmund gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.\n\nLaufzeit: 1415 Januar 22 (1415 Vicentius)\n\nSiegelbeschreibung: 1 Siegel",
-      "english": "King Sigmund permits the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a gallows court, stocks, and gallows in their village of Schweigern.\n\nDuration: January 22, 1415 (1415 Vicentius)",
-      "mention": [
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "received from King Sigmund the right to hold a high court with stocks and gallows in Schweigern."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "received from King Sigmund the right to hold a high court with stocks and gallows in Schweigern."
-        }
+      "english": "King Sigmund permits the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a gallows court, stocks, and gallows in their village of Schweigern.\n\nDuration: January 22, 1415 (1415 Vicentius)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "received from King Sigmund the right to hold a high court with stocks and gallows in Schweigern."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "received from King Sigmund the right to hold a high court with stocks and gallows in Schweigern."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "schweigern"
     }
   ]
 }

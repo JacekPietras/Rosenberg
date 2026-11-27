@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-ADG/PA/ADG_Urk_P0967/charter",
       "german": "Wolff Andree Graf von Rosenberg stiftet 5000 fl.(=jährl. 300 fl. Zinsen) der Stadtpfarre St. Egid für folgende Zwecke: 1. jährl. 500 hl. Messen in Klgft (wofür jeder Geistliche 1/2 fl. erhält), 2. davon sind solange der Aussteller lebt 250 für die Lebenden, nach seinem Tod 200 für seine lebenden Nachkommen zu lesen; sollte die Linie ganz aussterben, alle 500 für die Toten. 3. die Totenmessen sollen für folgende Personen gelesen werden: für die 1. Frau des Ausstellers, Eva Regina, für seine Eltern Johann Andree und Joanna, für Georg Sigmundt Paradeiser, Wolff Reymundt Paradeiser. 4. für die Verwaltung der Meßverpflichtungen erhält der jeweilige Stadtpfarrer jährl. 40 fl. für Beleuchtung und Mesner zusätzlich 10fl; Oberaufsicht soll Erzpriester in Tainach haben. 5. über die abgehaltenen Messen und Kosten hat der Stadtpfarrer jährlich eine Spezifikation und Rechnung vorzulegen (jeweils dem Ältesten der Linie), 6. im Fall des Aussterbens der Linie des Stifters soll die seines Bruders Georg Niclas Graf von Rosenberg die Aufsicht über die Stiftung übernehmen, 7. für den Fall des Nicht-Erfüllens der Bedingungen durch den Stadtpfarrer können die Erben des Ausstellers das Kapital zu einer neuen frommen Stiftung verwenden.\n\nSiegler: 1. Wolf Andree Graf von Rosenberg\n\nSiegel: 3 Sig. imp. 1. Wolf Andree Graf von Rosenberg 2. Carl Ludwig Klies, Propst und Erzpriester von Tainach 3. Michael Aswerus, Stadtpfarrer",
       "english": "Wolff Andree, Graf von Rosenberg, endows the city parish of St. Egid with 5,000 florins (yielding 300 florins in annual interest) for the following purposes: 1. 500 Holy Masses annually in Klagenfurt, for which each priest is to receive 1/2 florin; 2. of these, as long as the issuer lives, 250 are to be read for the living, and after his death 200 for his living descendants; if the line dies out completely, all 500 are to be for the dead; 3. the Masses for the dead are to be read for the following persons: the issuer's first wife, Eva Regina; his parents Johann Andree and Joanna; Georg Sigmundt Paradeiser; and Wolff Reymundt Paradeiser; 4. for administering the Mass obligations, the respective city pastor is to receive 40 florins annually, and an additional 10 florins for lighting and the sacristan; overall supervision is to be exercised by the archpriest in Tainach; 5. the city pastor is to submit an annual specification and account of the Masses held and their costs, in each case to the oldest member of the line; 6. if the founder's line dies out, the line of his brother Georg Niclas, Graf von Rosenberg, is to assume supervision of the foundation; 7. if the city pastor fails to fulfill the conditions, the issuer's heirs may use the capital for a new pious foundation.\n\nSealer: 1. Wolff Andree, Graf von Rosenberg\n\nSeals: 3 impressed seals: 1. Wolff Andree, Graf von Rosenberg; 2. Carl Ludwig Klies, Propst and Erzpriester von Tainach; 3. Michael Aswerus, city pastor.",
-      "mention": [
-        {
-          "person": "Georg Niklas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P0967-1.jpg"
@@ -35,6 +24,17 @@
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P0967-5.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Niklas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

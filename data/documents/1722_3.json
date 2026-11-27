@@ -6,27 +6,27 @@
       "source": "HStAD, E 5 B, 2683",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3261400",
       "german": "Mergentheimer Deutschordensakten, Johann Christoph von Buseck\n\nEnthält: Akten betreffend Wappen derer v. Metsch und Wambold v. Umstadt, 1769\nAkten betreffend den Deutschordenshofmann Beiker zu Kloppenheim, 1641\nSchreiben des Grafen Joh[ann] v. Daun-Falkenstein an den Deutschhausverwalter zu Mainz betreffend Güter zu Ober-Hilbersheim, 1548\neinige Schreiben hessischer Adliger (v. Bicken 1577, Hans Landschad 1539, v. Heppenheim gen. Saal 1665) in Deutschordenssachen\nKorrespondenz mit der Reichsstadt Worms 1533, 1567, 1691\nAkten betreffend Aufnahme, Aufschwörung etc. betreffend Angehörige der Familien v. Trohe 1554/1583, Ulner 1526 (hierbei Kopien der Urkunden Erzbischof Dieters über den Ankauf des gräflich Helfensteinschen Anteils an Bickenbach durch die Ulner 1454/1455), v. Waldenburg gen. Schenkern 1693. Wambold v. Umstadt 1600 und 1772, Schabe 1539, v. Obentraut 1555/1567. 1649, v. Rosenbach 1555, 1664/1668, v. Mauchenheim gen. v. Bechtolsheim 1559/1582, zum Jungen 1583, v. Buches zu Staden 1531, v. Karben 1563/1577, v. Dienheim 1569/1581, v. Muschenheim 1545, Flach v. Schwarzenburg 1560, Hund v. Saulheim 1649/1692, v. Buseck 1721 (Kopien von Vor-Urkunden und -Akten)\n\nLaufzeit: 1722-1756\n\nZusatzinformationen: AZB 18/1929. Eingetauscht vom Generallandesarchiv Koblenz",
-      "english": "Mergentheim Teutonic Order records, Johann Christoph von Buseck.\n\nContains:\n- Files concerning the coats of arms of the von Metsch and Wambold von Umstadt families, 1769.\n- Files concerning the Teutonic Order estate manager Beiker at Kloppenheim, 1641.\n- Letter from Count Johann von Daun-Falkenstein to the Teutonic House administrator at Mainz concerning properties at Ober-Hilbersheim, 1548.\n- Several letters from Hessian nobles (von Bicken, 1577; Hans Landschad, 1539; and von Heppenheim called Saal, 1665) concerning Teutonic Order matters.\n- Correspondence with the imperial city of Worms, 1533, 1567, and 1691.\n- Files concerning admission, proofs of nobility, etc., for members of the families von Trohe (1554/1583); Ulner (1526, including copies of Archbishop Dieter’s charters concerning the Ulner purchase of the Counts of Helfenstein’s share in Bickenbach, 1454/1455); von Waldenburg called Schenkern (1693); Wambold von Umstadt (1600 and 1772); Schabe (1539); von Obentraut (1555/1567 and 1649); von Rosenbach (1555 and 1664/1668); von Mauchenheim called von Bechtolsheim (1559/1582); zum Jungen (1583); von Buches zu Staden (1531); von Karben (1563/1577); von Dienheim (1569/1581); von Muschenheim (1545); Flach von Schwarzenburg (1560); Hund von Saulheim (1649/1692); and von Buseck (1721; copies of earlier charters and files).\n\nDate range: 1722–1756.\n\nAdditional information: AZB 18/1929. Exchanged from the General State Archive in Koblenz.",
-      "mention": [
-        {
-          "place": "bickenbach"
-        },
-        {
-          "place": "dienheim"
-        },
-        {
-          "person": "Hans Landschad"
-        },
-        {
-          "place": "jungen"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Mergentheim Teutonic Order records, Johann Christoph von Buseck.\n\nContains:\n- Files concerning the coats of arms of the von Metsch and Wambold von Umstadt families, 1769.\n- Files concerning the Teutonic Order estate manager Beiker at Kloppenheim, 1641.\n- Letter from Count Johann von Daun-Falkenstein to the Teutonic House administrator at Mainz concerning properties at Ober-Hilbersheim, 1548.\n- Several letters from Hessian nobles (von Bicken, 1577; Hans Landschad, 1539; and von Heppenheim called Saal, 1665) concerning Teutonic Order matters.\n- Correspondence with the imperial city of Worms, 1533, 1567, and 1691.\n- Files concerning admission, proofs of nobility, etc., for members of the families von Trohe (1554/1583); Ulner (1526, including copies of Archbishop Dieter’s charters concerning the Ulner purchase of the Counts of Helfenstein’s share in Bickenbach, 1454/1455); von Waldenburg called Schenkern (1693); Wambold von Umstadt (1600 and 1772); Schabe (1539); von Obentraut (1555/1567 and 1649); von Rosenbach (1555 and 1664/1668); von Mauchenheim called von Bechtolsheim (1559/1582); zum Jungen (1583); von Buches zu Staden (1531); von Karben (1563/1577); von Dienheim (1569/1581); von Muschenheim (1545); Flach von Schwarzenburg (1560); Hund von Saulheim (1649/1692); and von Buseck (1721; copies of earlier charters and files).\n\nDate range: 1722–1756.\n\nAdditional information: AZB 18/1929. Exchanged from the General State Archive in Koblenz."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bickenbach"
+    },
+    {
+      "place": "dienheim"
+    },
+    {
+      "person": "Hans Landschad"
+    },
+    {
+      "place": "jungen"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

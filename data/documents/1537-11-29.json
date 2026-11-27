@@ -10,14 +10,6 @@
       ],
       "german": "Die Aussteller verkaufen den Empfängern einen Weinberg in der Gemarkung Würzburg.\nAussteller:  Klaus Baunach, Tuchscherer und Bürger zu Würzburg, und seine Ehefrau Anna\nEmpfänger:  Dekan und Kapitel des Stifts Neumünster\n\nVermerke: Rückvermerke:  HHH; procuracey lad. 26 stiffts procuracey eigene weinberg N° 4 [Standbuch 207, S. 335]; capsel 7; reg.\n\nBesiegelung/Beglaubigung: Georg Schenk, besch.",
       "english": "The grantors sell the recipients a vineyard in the Würzburg district.\nGrantors: Klaus Baunach, cloth shearer and burgher of Würzburg, and his wife Anna\nRecipients: dean and chapter of the collegiate church of Neumünster\n\nNotes: endorsements: HHH; procuracy, shelf 26, collegiate church procuracy’s own vineyards No. 4 [Standbuch 207, p. 335]; box 7; register.\n\nSealing/authentication: Georg Schenk, damaged.",
-      "mention": [
-        {
-          "person": "Georg Schenk"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/17febc98-404e-49ca-97ea-fc1c9bd17230/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/17febc98-404e-49ca-97ea-fc1c9bd17230/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Schenk"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-28809",
       "german": "Wolfgang von Züllenhardt verschreibt seiner Frau Mechthild von Rosenberg auf Lebenszeit eine Gült von 30 fl., die er von der Herrschaft hat.\n\nLaufzeit: 1489 Januar 26",
       "english": "Wolfgang von Züllenhardt grants his wife Mechthild von Rosenberg, for her lifetime, an annual rent of 30 florins that he receives from the lordship.\n\nDate range: 26 January 1489.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000028809%2F01_0000028809_0001_1-28809-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000028809%2F01_0000028809_0002_1-28809-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++56E9F16E-8EC2-4A61-963F-509BB14178E7&parent_id="
       ],
       "german": "Akt von Dachenrod betrifft den an die von Rosenberg noch fälligen Kaufschilling von 22446 F. auf Melsendorf",
-      "english": "Dachenrod file concerning the 22,446 florins of the purchase price for Melsendorf still owed to the von Rosenbergs.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Dachenrod file concerning the 22,446 florins of the purchase price for Melsendorf still owed to the von Rosenbergs."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

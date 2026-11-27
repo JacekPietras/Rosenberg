@@ -6,21 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 23 Qu. 74",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755941",
       "german": "Verkauf 1/3 am großen Zehnten und seines Teils am kleinen Zehnten sowie eines Hofs zu Kirchhausen an DM Eberhard von Seinsheim durch Eberhard von Angelloch, Ritter, und seine Ehefrau Anna von Rosenberg, 1426 Juni 24 [Regest].",
-      "english": "Sale of one third of the great tithe, his share of the small tithe, and an estate at Kirchhausen to Grand Master Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg, 1426 June 24 [regest].",
-      "mention": [
-        {
-          "person": "Anna von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Gauangelloch",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Eberhard von Seinsheim"
-        }
+      "english": "Sale of one third of the great tithe, his share of the small tithe, and an estate at Kirchhausen to Grand Master Eberhard von Seinsheim by Eberhard von Gauangelloch, Ritter, and his wife Anna von Rosenberg, 1426 June 24 [regest]."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Gauangelloch",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Eberhard von Seinsheim"
     }
   ]
 }

@@ -10,14 +10,6 @@
       ],
       "german": "Der Aussteller beurkundet, dass in seiner Gegenwart Gebhard von Brauneck vor Zeugen auf alle seine Ansprüche gegenüber den Empfängern verzichtet, die aufgrund einer Pfändung gegen Heinrich Schlegel und andere Personen im Dorf Gaurettersheim (\"in villa dicta Rippe Rettersheim\") erhoben worden waren, da diese Pfändung widerrechtlich erfolgt ist.\nAussteller:  Bischof Wolfram von Würzburg\nEmpfänger:  Propst, Dekan und Kapitel des Stifts Neumünster\n\nVermerke: Rückvermerke:  procuracey lad. 32 Gewrettersheimb vogtey, recht undt gerechtigkeit N° 3 [Standbuch 207, S. 384; capsel 9; reg. in tom. 4 copiarum fol. 9.\n\nBesiegelung/Beglaubigung: Aussteller, besch.",
       "english": "The issuer certifies that before him and witnesses Gebhard von Brauneck renounced all claims against the recipients arising from an unlawful distraint against Heinrich Schlegel and others in the village called Gaurettersheim. Issuer: Bishop Wolfram of Würzburg. Recipients: provost, dean, and chapter of Neumünster Abbey. Notes: Endorsements identify the Gaurettersheim reeve’s rights and cite the cartulary. Issuer’s seal, intact.",
-      "mention": [
-        {
-          "person": "Bischof Wolfram",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c637e871-c63d-439c-8b9b-e7f9d1b19642/1/full/max/0/default.jpg"
@@ -25,6 +17,14 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c637e871-c63d-439c-8b9b-e7f9d1b19642/2/full/max/0/default.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Wolfram",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
     }
   ]

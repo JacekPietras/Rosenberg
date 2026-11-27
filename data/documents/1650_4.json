@@ -7,11 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7362652",
       "german": "Schreiben des Fürstabtes Joachim an Philipp Christoph von Rosenbach wegen Bezahlung der 40 Tlr., welche zur Ranzionierung des vorhergehenden Propstes zu Blankenau, Berhard von Rabenau, aus der Gefangenschaft aufgenommen worden sind\n\nLaufzeit: 1650-1660",
       "english": "Letter from Prince-Abbot Joachim to Philipp Christoph von Rosenberg concerning payment of the 40 thalers borrowed to ransom the previous provost of Blankenau, Berhard von Rabenau, from captivity.\n\nDate range: 1650–1660.",
-      "mention": [
-        {
-          "person": "Philipp Christoph von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1295/hstam_94_nr_1295_0001.jpg"
@@ -44,6 +39,11 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1295/hstam_94_nr_1295_0010.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Philipp Christoph von Rosenberg"
     }
   ]
 }

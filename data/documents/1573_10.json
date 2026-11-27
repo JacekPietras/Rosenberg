@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EFA1581A-3523-4557-A53E-9E47EF3706F6&parent_id="
       ],
       "german": "Akt der Kanzlei zu Würzburg, betrifft Klage des Konrad von Rosenberg zu Waldmannshofen in Württemberg gegen das Hochstift Würzburg und die Stadt Aub wegen strittig gemachten Schafhutrechtes auf der Markung von Aub",
-      "english": "Act of the Würzburg chancery concerning the complaint of Konrad von Rosenberg of Waldmannshofen in Württemberg against the bishopric of Würzburg and the town of Aub over the disputed right to pasture sheep in the district of Aub.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Act of the Würzburg chancery concerning the complaint of Konrad von Rosenberg of Waldmannshofen in Württemberg against the bishopric of Würzburg and the town of Aub over the disputed right to pasture sheep in the district of Aub."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++12E94455-0BAF-4E90-B1C0-270685CCA354&parent_id="
       ],
       "german": "Akt der Kanzlei zu Würzburg, betrifft Klage der Gebrüder von Rosenberg zu Waldmannshofen gegen den Bischof von Würzburg wegen Verletzung des Religionsfriedens durch versuchte gewaltsame Zurückführung der Rosenberg'schen (protest.) Untertanen in Aub zur katholischen Religion",
-      "english": "Act of the Würzburg chancery concerning the complaint by the von Rosenberg brothers of Waldmannshofen against the Bishop of Würzburg for violating the Peace of Augsburg through an attempted forcible return of the Rosenbergs’ Protestant subjects in Aub to the Catholic faith",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Act of the Würzburg chancery concerning the complaint by the von Rosenberg brothers of Waldmannshofen against the Bishop of Würzburg for violating the Peace of Augsburg through an attempted forcible return of the Rosenbergs’ Protestant subjects in Aub to the Catholic faith"
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

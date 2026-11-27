@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-029/AT-KLA_29-B-11_F_St/charter",
       "german": "Kaiser Ferdinand III. erhebt Johann Andreas von Rosenberg, Freiherrn von Lerchenau und Grafenstein, Präsident der Kärntner Landschaft und Burggraf zu Klagenfurt, und seine Erben aufgrund seiner und seiner Vorfahren und Verwandten (besonders Georg Niklas, Innerösterreichischer Rat, und Wolf Andreas, Oberstwachtmeister im Don-Felix-Regiment) Verdienste in den Grafenstand und verleiht ihm und seiner Familie den Grafentitel sowie ein gebessertes Wappen. Siegler und Unterschrift: Kaiser Ferdinand III. (größeres Siegel)\n\nSiegel: Sig. pend.",
       "english": "Emperor Ferdinand III raises Hans Andreas von Rosenberg, Freiherr von Lerchenau und Grafenstein, president of the Carinthian estates and Burggraf zu Klagenfurt, and his heirs to the rank of count on account of his merits and those of his ancestors and relatives (especially Georg Niklas, an Inner Austrian councillor, and Wolf Andreas, Oberstwachtmeister in the Don-Felix Regiment), and grants him and his family the title of count together with an augmented coat of arms. Sealer and signature: Emperor Ferdinand III (larger seal)\n\nSeal: pendant seal.",
-      "mention": [
-        {
-          "person": "Hans Andreas von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_11_16481008_01.jpg"
@@ -59,6 +54,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_11_16481008_15.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Andreas von Rosenberg"
     }
   ]
 }

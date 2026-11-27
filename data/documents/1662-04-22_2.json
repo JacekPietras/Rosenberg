@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-224_St/charter",
       "german": "Rosina Elisabeth Rambschüssl (Ramschüssel), geb. von Keutschach, verkauft dem Grafen Johann Andre von Rosenberg ihren Anteil an Schloss und Herrschaft Keutschach. Siegler: Rosina, ihr Sohn Vespasian; Carl Talman, landschaftlicher Schrannenadvokat\n\nSiegel: 3 Sig. pend.",
       "english": "Rosina Elisabeth Rambschüssl, née von Keutschach, sells her share in Keutschach Castle and lordship to Johann Andre von Rosenberg, Graf. Sealers: Rosina, her son Vespasian; Carl Talman, estates' provincial court advocate.\n\nSeals: 3 pendant seals.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_224_16620422_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_224_16620422_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

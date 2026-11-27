@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BE9828AA-5835-4274-B26D-6FF8AB145344&parent_id="
       ],
       "german": "Differenzen zwischen der Gemeinde Pfahlenheim und der Kommende mit denen von Rosenberg, Brandenburg etc. wegen des Treibs und Weidebesuchs auf der Pfahlenheimer Markung",
-      "english": "Disputes between the community of Pfahlenheim and the commandery with those von Rosenberg, Brandenburg etc. regarding driving and pasturing on the Pfahlenheim lands.",
-      "mention": [
-        {
-          "place": "pfahlenheim"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "The von Rosenberg family",
-          "type": "generic",
-          "content": "were involved in disputes with the community of Pfahlenheim and the commandery over driving and pasturing livestock on the Pfahlenheim lands."
-        }
-      ]
+      "english": "Disputes between the community of Pfahlenheim and the commandery with those von Rosenberg, Brandenburg etc. regarding driving and pasturing on the Pfahlenheim lands."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "The von Rosenberg family",
+      "type": "generic",
+      "content": "were involved in disputes with the community of Pfahlenheim and the commandery over driving and pasturing livestock on the Pfahlenheim lands."
+    }
+  ],
+  "mention": [
+    {
+      "place": "pfahlenheim"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

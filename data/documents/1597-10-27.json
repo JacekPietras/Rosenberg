@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1326482",
       "german": "Markgraf Georg Friedrich von Baden-Durlach leiht von Adam Hektor von Rosenbach 1.200 fl. zu 5% Zins; Versicherung auf die Gefälle der Landgrafschaft Sausenberg und Herrschaft Rötteln\n\nLaufzeit: 1597 Oktober 27\n\nSiegelbeschreibung: mit 1 Siegel",
       "english": "Margrave Georg Friedrich of Baden-Durlach borrows 1,200 florins from Adam Hektor von Rosenbach at 5% interest; secured against the revenues of the Landgraviate of Sausenberg and the lordship of Rötteln.\n\nTerm: 27 October 1597\n\nSeal description: with one seal.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3186&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003186%2Ftitlaufn_0001326482%2F04_0001326482_0001_4-1326482-1.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3186&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003186%2Ftitlaufn_0001326482%2F04_0001326482_0003_4-1326482-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

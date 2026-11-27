@@ -8,11 +8,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1389_II_02/charter",
       "german": "Erzbischof Johann von Prag gibt den Professen des Klosters in Hohenfurt die Erlaubniss, dass sie sich von jedem durch den apostolischen Stuhl bestätigten Bischof sowohl die niederen als auch die höheren Weihen ertheilen lassen können.\n\nJohannes dei gracia archiepiscopus Pragensis apostolice sedis legatus vobis religiosis . . fratribus professis monasterii in Altouado ordinis Cisterciensis Pragensis nostre diocesis salutem in domino. Quia propter loci distanciam et viarum pericula ciuitatem Pragensem, in qua clerus sacros ordines eiusdem Pragensis diocesis recipere consueuit, comode adire non potest, ad nobilis igitur viri domini Heinrici de Rosenbergh singulares precum instancias, vt a quocumque reuerendo in Christo patre domino . . episcopo catholico per sanctam sedem apostolicam electo et confirmato canonice eiusdemque sancte sedis gratiam et sui officii executionem habente legittimam omnes sacros tam maiores quam eciam minores videlicet accolitatus subdyaconatus dyaconatus et presbyteratus ordines, prout vnicuique fratrum dicti monasterii expedicius videbitur, statutis et interuallatis a jure temporibus valeatis atque possitis canonice percipere, vobis et vnicuique vestrum recipiendi et ipsis episcopis conferendi plenam tenore presencium concedimus facultatem. Ad nostre beneplacita voluntatis presencium sub nostro sigillo testimonio litterarum. Datum in Vitignabo. Anno domini millesimo trecentesimo octoagesimo nono die purificacionis sancte Marie die secunda mensis Februarii.\n\nSiegel: Das Siegel des Erzbischofs wie in CLXIII.",
       "english": "Archbishop Johann of Prague, papal legate, grants the professed monks of Hohenfurt permission to receive both minor and major orders—acolyte, subdeacon, deacon, and priest—from any Catholic bishop canonically elected and confirmed by the Apostolic See and exercising that office, since travel to Prague is difficult. He grants this faculty at the special request of Heinrich von Rosenberg. Given at Vitignabo on 2 February 1389.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13890202_4%2CI%20A_r.jpg"
@@ -21,6 +16,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13890202_4%2CI%20A_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

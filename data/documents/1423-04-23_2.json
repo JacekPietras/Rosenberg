@@ -6,26 +6,26 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 103",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753703",
       "german": "Bürgschaft von Rüdiger Sützel, Konz von Ochsenfurt, Konz [X.] von Rosenberg zu Reichelsburg, Konz [IX.] von Rosenberg zu Bartenstein, Hans von Dottenheim, Dietrich Geyer, Hartrach Truchseß und Heinrich Knebel für die Entrichtung der restlichen Kaufsumme von Schloß Herrenzimmern bis 22. Feb. 1424, 1423 Apr. 23",
-      "english": "Surety given by Rüdiger Sützel, Konz von Ochsenfurt, Kunz von Rosenberg zu Reichelsburg, Kunz von Rosenberg zu Bartenstein, Hans von Dottenheim, Dietrich Geyer, Hartrach Truchseß, and Heinrich Knebel for payment of the remaining purchase price of Herrenzimmern Castle by 22 February 1424, 23 April 1423.",
-      "mention": [
-        {
-          "person": "Dietrich Geyer"
-        },
-        {
-          "person": "Hans von Dottenheim"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Reichelsburg"
-          ]
-        }
+      "english": "Surety given by Rüdiger Sützel, Konz von Ochsenfurt, Kunz von Rosenberg zu Reichelsburg, Kunz von Rosenberg zu Bartenstein, Hans von Dottenheim, Dietrich Geyer, Hartrach Truchseß, and Heinrich Knebel for payment of the remaining purchase price of Herrenzimmern Castle by 22 February 1424, 23 April 1423."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich Geyer"
+    },
+    {
+      "person": "Hans von Dottenheim"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Reichelsburg"
       ]
     }
   ]

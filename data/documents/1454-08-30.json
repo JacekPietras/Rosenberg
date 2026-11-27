@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C0A6AC8F-2E6C-4575-A354-471D7E60D76F&parent_id="
       ],
       "german": "Schiedsspruch zwischen Erzbischof Dietrich von Mainz und den Ganerben auf Burg Schadeck (bei Neckar-Steinach), nämlich Konrad v. Rosenberg, Ulrich, Blicker und Diether Landschad",
-      "english": "Arbitration award between Archbishop Dietrich of Mainz and the co-heirs of Burg Schadeck (near Neckar-Steinach), namely Konrad von Rosenberg, Ulrich, Blicker and Diether Landschad.",
-      "mention": [
-        {
-          "person": "Diether Landschad"
-        },
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "steinach"
-        }
+      "english": "Arbitration award between Archbishop Dietrich of Mainz and the co-heirs of Burg Schadeck (near Neckar-Steinach), namely Konrad von Rosenberg, Ulrich, Blicker and Diether Landschad."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Diether Landschad"
+    },
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "steinach"
     }
   ]
 }

@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/AUR/AT-KLA_418-B-A_4608_GF_St/charter",
       "german": "Kaiser Karl VI. erhebt die Brüder Johann Josef, Johann Sigmund, Johann Andre und Johann Franz Benaglio von Rosenbach in den Freiherrenstand mit dem Prädikat von Rosenbach, Herren zu Höflein, Weißenfels und Leobl. Siegler: Aussteller\n\nSiegel: 1 Sig. pend.",
       "english": "Emperor Charles VI raises the brothers Johann Josef, Johann Sigmund, Johann Andre, and Johann Franz Benaglio von Rosenbach to the rank of baron, with the style von Rosenbach, lords of Höflein, Weißenfels, and Leobl. Seal-bearer: issuer.\n\nSeal: one pendant seal.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_B_A_4608_GF_17130104_01.JPG"
@@ -56,6 +51,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_B_A_4608_GF_17130104_14.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

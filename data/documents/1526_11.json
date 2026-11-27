@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++adc4420f-6571-4d31-bc55-4d5b25957a59&parent_id="
       ],
       "german": "Georg Vogler, oberster markgräflicher Sekretär, an Rothenburg: Ratschlag zum Prozeß gegen Zaisolph von Rosenberg.",
-      "english": "Georg Vogler, chief margravial secretary, to Rothenburg: Advice regarding the case against Zaisolph von Rosenberg.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him."
-        }
-      ]
+      "english": "Georg Vogler, chief margravial secretary, to Rothenburg: Advice regarding the case against Zaisolph von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of advice sent by Georg Vogler to Rothenburg concerning the process against him."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

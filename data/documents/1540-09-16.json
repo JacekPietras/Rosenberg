@@ -10,32 +10,6 @@
       ],
       "german": "Nach der Wahl des Ausstellers zum Bischof von Würzburg hat das Kapitel des Stifts Neumünster zur Wiederbesetzung der dadurch vakant gewordenen Propstei ihres Stifts eine Neuwahl vorgenommen, die auf den Domherren Martin von Uissigheim gefallen ist. Der Aussteller bestätigt nun die vorgenommene Wahl und den Gewählten, überträgt ihm die Propstei des Stifts Neumünster, nachdem er vor ihm den üblichen Eid abgelegt hat und befiehlt Dekan, Kanonikern und Vikaren des Stifts, ihn in sein Amt einzuführen und ihm seinen Platz im Chor der Stiftskirche anzuweisen. Die Bestätigung der Wahl erfolgte durch Bischof Konrad von Bibra, beurkundet wurde dies aber erst unter seinem Nachfolger Melchior Zobel.\nAussteller:  Konrad von Bibra, Elekt der Würzburger Kirche\nEmpfänger:  Kapitel des Stifts Neumünster\n\nVermerke: Rückvermerke:  probstey lad. 1 de electione, provisione et confirmatione praepositi N° 5 [Standbuch 207, S. 1131]; capsel 26 N° 7; reg. in probstey copeybuch fol. 966.\n\nBesiegelung/Beglaubigung: Bischof Melchior Zobel, Vikariatssiegel, unbesch",
       "english": "After the grantor’s election as bishop of Würzburg, the chapter of the collegiate church of Neumünster held a new election to fill the provostship of their church, which had thereby become vacant; the election fell upon Martin von Uissigheim, Domherr. The grantor now confirms the election and the person elected, transfers to him the provostship of the collegiate church of Neumünster after he has taken the customary oath before him, and orders the dean, canons and vicars of the church to install him in his office and assign him his place in the choir of the collegiate church. The election was confirmed by Bishop Konrad von Bibra, but this was documented only under his successor Melchior Zobel.\nGrantor: Konrad von Bibra, Elekt der Würzburger Kirche\nRecipient: Chapter of the collegiate church of Neumünster\n\nNotes: endorsements: provost’s office, shelf 1, on the election, provision and confirmation of the provost No. 5 [Standbuch 207, p. 1131]; box 26 No. 7; registered in the provost’s copybook fol. 966.\n\nSealing/authentication: Bishop Melchior Zobel, vicariate seal, intact.",
-      "mention": [
-        {
-          "person": "Bischof Melchior Zobel",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "person": "Konrad von Bibra",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "person": "Martin von Uissigheim",
-          "personTitle": [
-            "Domherr"
-          ]
-        },
-        {
-          "person": "Melchior Zobel"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3dc8e54f-5c59-4bc1-9bf8-470d09fcb07c/1/full/max/0/default.jpg"
@@ -47,6 +21,32 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3dc8e54f-5c59-4bc1-9bf8-470d09fcb07c/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Melchior Zobel",
+      "personTitle": [
+        "Bischof"
+      ]
+    },
+    {
+      "person": "Konrad von Bibra",
+      "personTitle": [
+        "Bischof"
+      ]
+    },
+    {
+      "person": "Martin von Uissigheim",
+      "personTitle": [
+        "Domherr"
+      ]
+    },
+    {
+      "person": "Melchior Zobel"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

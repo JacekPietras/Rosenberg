@@ -10,14 +10,6 @@
       ],
       "german": "Der Abt des Schottenklosters in Würzburg David beurkundet: Erhard Schönmann, der Syndikus des Abtes Georg [Salzkestner] und des Konvents des Klosters St. Stephan in Würzburg, hat ihm eine Urkunde des Dekans des Stifts St. Jakob in Bamberg Peter Hoffmann vom 11. August 1449 [vgl. eigenes Regest] vorgelegt, die hier im Wortlaut inseriert ist. Darin hat Peter Hoffmann erklärt, dass er von Papst Nikolaus V. laut dessen Urkunde vom 28. Februar 1448, die hier ebenfalls im Wortlaut inseriert ist, zusammen mit mehreren Kollegen zum Richter und Konservator des Klosters St. Stephan bestellt wurde. Da er diese Aufgabe nicht persönlich übernehmen kann, hat er ihn zusammen mit einigen Kollegen zu seinen bevollmächtigten Stellvertretern ernannt. Daher hat nun Abt David auf Antrag des Klostersyndikus als stellvertretender Richter und Konservator des Klosters St. Stephan die Exkommunikation über Heinrich Schenk von Rossberg verhängt. Dieser bestreitet dem Kloster das Weiderecht in der Gemarkung des Dorfes Oberdürrbach und hat die Knechte des Klosters massiv an dessen Ausübung gehindert. Er befiehlt den Empfängern, dies in ihren Amtssprengeln öffentlich bekanntzumachen und lässt darüber von dem öffentlichen Notar Peter Trach ein Notariatsinstrument ausfertigen.\nZeugen: Der Würzburger Domvikar Martin Schwab, der Kleriker Johannes Fabri und der Anwalt am geistlichen Gericht in Würzburg Konrad Schalbrecht.\nAussteller:  Abt des Schottenklosters in Würzburg\nEmpfänger:  Geistlichkeit sowie öffentliche Notare und Schreiber in Stadt und Diözese Würzburg\n\nVermerke: Rückvermerke:  Inhaltsangabe (18. Jh.)\n\nSiegel:  S 1: Schottenkloster Würzburg, Abt; an braunen Fäden anhängend, leicht besch.\nS 2: Peter Trach; Signet, unbesch.\n\nBesiegelung/Beglaubigung: siehe Feld: Äußere Beschreibung",
       "english": "David, abbot of the Scots Monastery in Würzburg, certifies the following: Erhard Schönmann, syndic of Abbot Georg [Salzkestner] and the convent of St. Stephen’s Monastery in Würzburg, presented him with a charter of Peter Hoffmann, dean of St. James’s chapter in Bamberg, dated 11 August 1449 [see separate abstract], transcribed here in full. In it, Peter Hoffmann declared that Pope Nicholas V, by his charter of 28 February 1448, also transcribed here in full, had appointed him and several colleagues judges and conservators of St. Stephen’s Monastery. Since Peter could not personally undertake this office, he appointed David and some colleagues as his authorized deputies. Accordingly, at the request of the monastery’s syndic, Abbot David, as deputy judge and conservator of St. Stephen’s, has excommunicated Heinrich Schenk von Rossberg. Heinrich denies the monastery’s right to pasture in the bounds of Oberdürrbach village and has seriously hindered the monastery’s servants in exercising it. David orders the recipients to announce this publicly in their jurisdictions and has a notarial instrument drawn up by the public notary Peter Trach.\nWitnesses: Martin Schwab, cathedral vicar of Würzburg; Johannes Fabri, cleric; and Konrad Schalbrecht, advocate at the ecclesiastical court in Würzburg.\nIssuer: Abbot of the Scots Monastery in Würzburg.\nRecipients: clergy, public notaries, and scribes in the city and diocese of Würzburg.\n\nNotes: Endorsement with summary (18th century).\n\nSeals: 1. Scots Monastery of Würzburg, abbot, attached on brown cords, slightly damaged. 2. Peter Trach, signet, undamaged.\n\nSealing/authentication: see external description.",
-      "mention": [
-        {
-          "person": "Heinrich Schenk von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3890dde2-4ead-4180-92ed-c5da2a4fae09/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3890dde2-4ead-4180-92ed-c5da2a4fae09/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich Schenk von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

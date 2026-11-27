@@ -11,28 +11,28 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b3af7a86-ac3f-412c-9da5-dc5dea04fa23&parent_id="
       ],
       "german": "Fritz Zobel von Giebelstadt und seine Ehefrau Christine verkaufen dem Cuntz von Rosenberg zu Bartenstein ihr Schloß und Behausung zu Giebelstadt, 1/2 Teil, den dem Wilhelm Geyer war, nebst allen Zugehörungen, die vom Markgrafen von Brandenburg zu Lehen und 1/2 Teil von Herchsheim um 3500 fl.",
-      "english": "Fritz Zobel von Giebelstadt and his wife Christine sold Kunz von Rosenberg zu Bartenstein their castle and residence at Giebelstadt, including the half previously held by Wilhelm Geyer and all appurtenances held as a fief from the Margrave of Brandenburg, as well as a half share of Herchsheim, for 3,500 florins.",
-      "mention": [
-        {
-          "person": "Friedrich Zobel von Giebelstadt"
-        },
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "person": "Wilhelm Geyer"
-        }
+      "english": "Fritz Zobel von Giebelstadt and his wife Christine sold Kunz von Rosenberg zu Bartenstein their castle and residence at Giebelstadt, including the half previously held by Wilhelm Geyer and all appurtenances held as a fief from the Margrave of Brandenburg, as well as a half share of Herchsheim, for 3,500 florins."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
       ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "bought half of Giebelstadt Castle and residence, related holdings, and half of Herchsheim from Fritz Zobel von Giebelstadt and his wife Christine for 3,500 florins."
-        }
-      ]
+      "type": "generic",
+      "content": "bought half of Giebelstadt Castle and residence, related holdings, and half of Herchsheim from Fritz Zobel von Giebelstadt and his wife Christine for 3,500 florins."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich Zobel von Giebelstadt"
+    },
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "person": "Wilhelm Geyer"
     }
   ]
 }

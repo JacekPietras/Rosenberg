@@ -6,19 +6,19 @@
       "source": "HStAD, B 15, NACHWEIS",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5181007",
       "german": "Äbtissin Apollonia v.Franckenstein und der Konvent zu Marienkron zu Wedas bei Alzey bekunden, dass sie von Balthasar v. Rosenberg 110 Gulden empfangen haben, wofür sie ihm einen Gültbrief über 200 Gulden und den Zehnten zu Bechtolsheim übergeben haben\n\nSiegler: Aussteller 1, Aussteller 2",
-      "english": "Abbess Apollonia von Franckenstein and the convent at Marienkron zu Wedas near Alzey certify that they have received 110 Gulden from Balthasar von Rosenberg, in return for which they have given him an annuity charter for 200 Gulden and the tithe at Bechtolsheim. Seals: the first and second issuers.",
-      "mention": [
-        {
-          "place": "alzey"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Balthasar von Rosenberg",
-          "type": "generic",
-          "content": "received from the convent at Marienkron zu Wedas an annuity charter for 200 Gulden and the tithe at Bechtolsheim in return for 110 Gulden."
-        }
-      ]
+      "english": "Abbess Apollonia von Franckenstein and the convent at Marienkron zu Wedas near Alzey certify that they have received 110 Gulden from Balthasar von Rosenberg, in return for which they have given him an annuity charter for 200 Gulden and the tithe at Bechtolsheim. Seals: the first and second issuers."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Balthasar von Rosenberg",
+      "type": "generic",
+      "content": "received from the convent at Marienkron zu Wedas an annuity charter for 200 Gulden and the tithe at Bechtolsheim in return for 110 Gulden."
+    }
+  ],
+  "mention": [
+    {
+      "place": "alzey"
     }
   ]
 }

@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723542",
       "german": "Wiprecht von Riedern, Bailli der Johanniter-Häuser in Franken, und die genannten Komture der fränkischen Johanniter-Häuser erklären, dass nach langem Weigern Konrad von Braunsberg, Johanniter-Ordensmeister in deutschen Landen, in den Verkauf von Boxberg eingewilligt und sein Siegel neben die ihrigen an den betreffenden Verkaufbrief gehängt hat.",
       "english": "Wiprecht von Riedern, Bailli of the Hospitaller Houses in Franconia, and the aforementioned Commanders of the Franconian Hospitaller Houses declare that after long refusal, Konrad von Brunsberg, Master of the Hospitaller Order in German lands, agreed to the sale of Boxberg and hung his seal next to theirs on the relevant sales document.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Wiprecht von Riedern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Brunsberg",
-          "personTitle": [
-            "Johanniter-Ordensmeister in deutschen Landen"
-          ],
-          "type": "generic",
-          "content": "consented to the sale of Boxberg after a long refusal."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723542%2F04_0001723542_0001_4-1723542-1.jpg"
@@ -38,6 +20,24 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Brunsberg",
+      "personTitle": [
+        "Johanniter-Ordensmeister in deutschen Landen"
+      ],
+      "type": "generic",
+      "content": "consented to the sale of Boxberg after a long refusal."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Wiprecht von Riedern"
     }
   ]
 }

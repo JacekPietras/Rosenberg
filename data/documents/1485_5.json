@@ -6,36 +6,36 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97879",
       "german": "Angelegenheiten der würzburgischen Lehen der Herren von Rosenberg.\n\nLaufzeit: 1485,1496-1507,1552-1574,1600-1631\n\nEnthält: Enthält: 1. Fol.1-246 Klage des Bischofs Julius von Würzburg vor dem Ritterlehengericht des Hochstifts Würzburg gegen Albrecht Christoph von Rosenberg auf Heimfall seiner würzburgischen Lehen wegen Unterlassung der Lehenmutung und wegen Vertreibung katholischer Priester aus der Pfarrei Kupprichshausen; Gegenklage Rosenbergs vor dem Reichskammergericht, 1600-1631;\n2. Fol.247-248 Anweisung des Bischofs Melchior von Würzburg an seiner Amtmann zu Röttingen über die Einziehung der würzburgischen Lehen des Zaisolf von Rosenberg wegen Dienstnahme bei Konrad von Hanstein, 1551;\n3. Fol.249-263 Abschriften von Lehenbriefen der Bischöfe von Würzburg für die Herren von Rosenberg, 1485, 1496-1507, 1553, 1558, 1574;\n\nUmfang: 1 Bd., Fol.1-263",
-      "english": "Matters concerning the Würzburg fiefs of the lords of Rosenberg.\n\nDate range: 1485; 1496–1507; 1552–1574; 1600–1631.\n\nContents: (1) Folios 1–246: Suit brought by Bishop Julius of Würzburg before the knightly fief court of the Bishopric of Würzburg against Albrecht Christoph von Rosenberg to reclaim his Würzburg fiefs on account of his failure to perform the feudal summons and his expulsion of Catholic priests from the parish of Kupprichshausen; Rosenberg’s counter-suit before the Imperial Chamber Court, 1600–1631. (2) Folios 247–248: Instruction from Bishop Melchior of Würzburg to his Amtmann zu Röttingen concerning seizure of the Würzburg fiefs of Zaisolph von Rosenberg because he entered the service of Konrad von Hanstein, 1551. (3) Folios 249–263: Copies of fief charters issued by the bishops of Würzburg to the lords of Rosenberg, 1485, 1496–1507, 1553, 1558, and 1574.\n\nExtent: one volume, folios 1–263.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Bischof Julius",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Bischof Melchior",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "roettingen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Matters concerning the Würzburg fiefs of the lords of Rosenberg.\n\nDate range: 1485; 1496–1507; 1552–1574; 1600–1631.\n\nContents: (1) Folios 1–246: Suit brought by Bishop Julius of Würzburg before the knightly fief court of the Bishopric of Würzburg against Albrecht Christoph von Rosenberg to reclaim his Würzburg fiefs on account of his failure to perform the feudal summons and his expulsion of Catholic priests from the parish of Kupprichshausen; Rosenberg’s counter-suit before the Imperial Chamber Court, 1600–1631. (2) Folios 247–248: Instruction from Bishop Melchior of Würzburg to his Amtmann zu Röttingen concerning seizure of the Würzburg fiefs of Zaisolph von Rosenberg because he entered the service of Konrad von Hanstein, 1551. (3) Folios 249–263: Copies of fief charters issued by the bishops of Würzburg to the lords of Rosenberg, 1485, 1496–1507, 1553, 1558, and 1574.\n\nExtent: one volume, folios 1–263."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Bischof Julius",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Bischof Melchior",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "roettingen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

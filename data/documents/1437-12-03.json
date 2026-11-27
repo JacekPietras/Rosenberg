@@ -9,31 +9,31 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++697A2236-1E5D-4874-8334-ADF83F13AAFE&parent_id="
       ],
       "german": "Gerichtsbrief des Bischofs Johann von Würzburg im Rechtsstreit zwischen Graf Wilhelm von Henneberg-Schleusingen und einigen von Bibra vor dem bischöflichen Hofgericht. Als Urteiler sind unter anderem Konrad von Rosenberg zu Bartenstein und Eberhard von Schaumberg, Ritter und Fürsprecher am Würzburger Hofgericht, aufgeführt.",
-      "english": "Court letter of Hans zu Würzburg, Bischof concerning litigation between Count Wilhelm of Henneberg-Schleusingen and members of the Bibra family before the episcopal court. Those listed among the judges include Konrad von Rosenberg zu Bartenstein and Eberhard von Schaumberg, Ritter and advocate at the Würzburg court.",
-      "mention": [
-        {
-          "place": "bibra"
-        },
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Court letter of Hans zu Würzburg, Bischof concerning litigation between Count Wilhelm of Henneberg-Schleusingen and members of the Bibra family before the episcopal court. Those listed among the judges include Konrad von Rosenberg zu Bartenstein and Eberhard von Schaumberg, Ritter and advocate at the Würzburg court."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
       ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "was listed among the judges in litigation before the Würzburg episcopal court."
-        }
+      "type": "generic",
+      "content": "was listed among the judges in litigation before the Würzburg episcopal court."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bibra"
+    },
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

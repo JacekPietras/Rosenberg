@@ -6,27 +6,27 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 431",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-590779",
       "german": "Vertrag zwischen Hohenlohe und Rosenberg:\n1. Ratifikation des vorhergehenden Vertrags von 1556; 2. Jagen und Hetzen; 3. Schirmwein zu Münster; 4. Zehntabteilung zu Münster(?); 5. Leuzenbronner Wiesen; 6. Waldbußen; 7. Markungsstreit zwischen Stetten und Sichertshausen; 8. Neugereut zu Queckbronn; 9. Trieb zu Queckbronn und Ebertsbronn; 10. 20 Malter Gült zu Streichental; Siegel: Graf Ludwig Casimir von Hohenlohe, Albrecht von Rosenberg, Hans Barthelmes von Vellberg, Götz Lochinger, Ludwig von Morstein, Michael von Rosenberg.\n\nLaufzeit: 21. Juli 1558\n\nUmfang: 1 Urkunde",
-      "english": "Agreement between Hohenlohe and Rosenberg: 1. ratification of the preceding agreement of 1556; 2. hunting and coursing; 3. protection wine at Münster; 4. division of the tithe at Münster (?); 5. Leuzenbronn meadows; 6. forest fines; 7. boundary dispute between Stetten and Sichertshausen; 8. newly cleared land at Queckbronn; 9. passage at Queckbronn and Ebertsbronn; 10. 20 Malter of rent at Streichental. Seals: Count Ludwig Casimir von Hohenlohe, Albrecht von Rosenberg, Hans Barthelmes von Vellberg, Götz Lochinger, Ludwig von Morstein, Michael von Rosenberg.\n\nTerm: 21 July 1558.\n\nExtent: 1 charter.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Ludwig Casimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Agreement between Hohenlohe and Rosenberg: 1. ratification of the preceding agreement of 1556; 2. hunting and coursing; 3. protection wine at Münster; 4. division of the tithe at Münster (?); 5. Leuzenbronn meadows; 6. forest fines; 7. boundary dispute between Stetten and Sichertshausen; 8. newly cleared land at Queckbronn; 9. passage at Queckbronn and Ebertsbronn; 10. 20 Malter of rent at Streichental. Seals: Count Ludwig Casimir von Hohenlohe, Albrecht von Rosenberg, Hans Barthelmes von Vellberg, Götz Lochinger, Ludwig von Morstein, Michael von Rosenberg.\n\nTerm: 21 July 1558.\n\nExtent: 1 charter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Ludwig Casimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "person": "Michael von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

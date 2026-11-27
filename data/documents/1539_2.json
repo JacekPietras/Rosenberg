@@ -7,13 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4541078",
       "german": "Fronbrief für die Schüpfer Grundgemeinden (1563).",
       "english": "Labor service charter for the Schüpfer Grund communities (1563).",
-      "facts": [
-        {
-          "subject": "the von Rosenberg family",
-          "type": "generic",
-          "content": "was the subject of a labor service charter for the Schüpfer Grund communities."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1502&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001502%2Ftitlaufn_0004541078%2F04_0004541078_0001_4-4541078-1.jpg"
@@ -118,6 +111,13 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1502&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001502%2Ftitlaufn_0004541078%2F04_0004541078_0034_4-4541078-34.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the von Rosenberg family",
+      "type": "generic",
+      "content": "was the subject of a labor service charter for the Schüpfer Grund communities."
     }
   ]
 }

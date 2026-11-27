@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EA15C99B-CF8E-46D1-99B1-EFCCFADB45EF&parent_id="
       ],
       "german": "Mitteilung Arnolts von Rosenberg an Bischof Georg wegen eines ihm durch Johann von Schwarzenberg gesetzten Rechtstags zu Würzburg",
-      "english": "Notification from Arnold von Rosenberg to Bishop Georg regarding a court session summoned to Würzburg by Hans von Schwarzenberg.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Hans von Schwarzenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Notification from Arnold von Rosenberg to Bishop Georg regarding a court session summoned to Würzburg by Hans von Schwarzenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Hans von Schwarzenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

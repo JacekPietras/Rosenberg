@@ -8,27 +8,27 @@
       "summary": "Bischof Rudolf von Scherenberg behält sich ein Recht über Boxberg gegen Georg von Rosenberg ( Rosenberg ) vor.",
       "german": "Doch hat B. Rudolf ime das recht gegen Georgen von Rosenberg vorbehalten, eodem libro fo. 89. Kommentar: Vgl. Fries, Chronik 4, S. 264-267 und Wendehorst, Bischöfe Würzburg 3, S. 34. Datum aus Kopialbuch",
       "english": "Rudolf, Bischof, nevertheless reserved a right against Georg von Rosenberg. The summary identifies Boxberg as the subject of that right. This is recorded in the same book, fol. 89. See Fries, Chronik, vol. 4, pp. 264–267, and Wendehorst, Bischöfe Würzburg, vol. 3, p. 34. Date taken from the copybook.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "had a right reserved against him by Bishop Rudolf."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_110.jpg",
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "had a right reserved against him by Bishop Rudolf."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

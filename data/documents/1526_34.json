@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0b893973-c90e-4f0e-93d1-6c2ed48c1943&parent_id="
       ],
       "german": "Markgraf Casimir an Rothenburg: überschickt die v. Rosenberg'schen \"Weisungsartikel\".",
-      "english": "Margrave Casimir to Rothenburg: sends the von Rosenberg ‘articles of instruction.’",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        }
-      ]
+      "english": "Margrave Casimir to Rothenburg: sends the von Rosenberg ‘articles of instruction.’"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

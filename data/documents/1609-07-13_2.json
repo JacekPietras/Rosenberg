@@ -10,23 +10,6 @@
       ],
       "german": "Rezess zwischen dem Deutschen Haus zu Virnsperg und den Inhabern der Rittergüter Ober- und Untern Zen wegen des Jagens in dem Stillgraben bei Praitenaw und dem Panholz gegen Ickelheim sowie wegen des Obst- und des Lämmerzehnts zu Unteraltenbern. Demnach soll die niedere Jagd an den besagten Orten innerhalb genannter Grenzen gemeinsam geübt, der Lämmerzehnt fortan nur von der Bestallungsschafen der Schafknechte an das Deutsche Haus entrichtet werden, ebenso der Obstzehnt von den im Dorf gelegenen Gütern und verschlagenen Baumgärten der Virnspergischen Untertanen, während an den Inhabers der seckendorfischen Güter der Obstzehnt auch von der außerhalb des Dorfes gelegenen Gütern an die Inhaber von Unternzenn zu geben ist. - Vertreter des Deutschen Ordens sind Eberhardt von und zu Karpfen auf Hohenkarpfen, Komtur zu Virnsperg, und Johann Jacob Heroldt, Advokat zu Ellingen, des minderjährigen Sohnes des verstorbenen Gottfridt v. Söckhendorff zu Ober- und Unternzen die Vormünder Georg Sigmund v. Rossenberg zu Haldenbergstetten und Marthin Conradt v. Eyb zu Dötzbach und deren Beiständer Georg Friederich v. Eyb zu Vestenberg, Hauptmann des Orts Altmühl der Reichsritterschaft in Franken, und Georg Friederich v. Söckhendorff zu Langenfeldt, seiner eigenen Person: Hans Wolf v. Seckhendorff zu Obernzen, der minderjährigen Söhne des verstorbenen Jorg Friederich v. Söckhendorff zu Obernzehen und Holtendorff: deren Vormund Marthin Saltzhueber, pappenheimischer Verwalter. - Siegel und Unterschrift: Die vorgenannten Vertreter.",
       "english": "Settlement between the Teutonic House at Virnsperg and the holders of the knightly estates of Ober- and Untern Zen concerning hunting in Stillgraben by Praitenaw and in Panholz toward Ickelheim, as well as the fruit and lamb tithes at Unteraltenbern. Accordingly, low hunting may be jointly pursued at the stated places within the specified boundaries. In future, the lamb tithe is to be paid to the Teutonic House only on the sheep kept by the shepherds under contract; likewise, the fruit tithe on properties within the village and enclosed orchards belonging to subjects of Virnsperg. The holders of the Seckendorff properties, however, are to pay the fruit tithe on properties outside the village to the holders of Unternzenn. The Teutonic Order's representatives are Eberhardt von und zu Karpfen auf Hohenkarpfen, commander at Virnsperg, and Johann Jacob Heroldt, advocate at Ellingen. The guardians of the minor son of the late Gottfridt von Söckhendorff zu Ober- und Unternzen are Georg Siegmund von Rosenberg zu Haldenbergstetten and Marthin Conradt von Eyb zu Dötzbach, together with their advisers Georg Friederich von Eyb zu Vestenberg, captain of the Altmühl district of the Franconian Imperial Knighthood, and Georg Friederich von Söckhendorff zu Langenfeldt. For himself: Hans Wolf von Seckhendorff zu Obernzen. The guardian of the minor sons of the late Jorg Friederich von Söckhendorff zu Obernzehen and Holtendorff is their guardian Marthin Saltzhueber, administrator of Pappenheim. Seals and signatures: the representatives named above.",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        },
-        {
-          "place": "pappenheim"
-        },
-        {
-          "place": "seckendorff"
-        },
-        {
-          "place": "vestenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6349ba80-8809-4599-bdfd-03edf659de6c/1/full/max/0/default.jpg"
@@ -47,6 +30,23 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6349ba80-8809-4599-bdfd-03edf659de6c/6/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
+      ]
+    },
+    {
+      "place": "pappenheim"
+    },
+    {
+      "place": "seckendorff"
+    },
+    {
+      "place": "vestenberg"
     }
   ]
 }

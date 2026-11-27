@@ -9,26 +9,26 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C045D247-9592-48CB-A91A-8ECDE2FE304E&parent_id="
       ],
       "german": "Streitsache zwischen Zeisolf von Rosenberg zu Haltenbergstetten und Veit von Lichtenstein zum Geiersberg (Namens seiner Ehefrau, einer geborenen von Hutten) wegen der Steinsetzung zwischen den Markungen von Gnötzheim und Ippesheim\n\nEnthält-/Darin-Vermerke: (Mit drei gemalten Plänen über die strittigen Markungen). Die Pläne nun in Würzburger Risse und Pläne I/283, 284, 285",
-      "english": "Dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geiersberg, on behalf of his wife, née von Hutten, concerning the boundary stones between Gnötzheim and Ippesheim. Includes three colored plans of the disputed districts, now in Würzburg maps and plans I/283–285.",
-      "mention": [
-        {
-          "place": "gnoetzheim"
-        },
-        {
-          "place": "hutten"
-        },
-        {
-          "person": "Veit von Lichtenstein"
-        },
-        {
-          "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        }
+      "english": "Dispute between Zaisolph von Rosenberg zu Haltenbergstetten and Veit von Lichtenstein zum Geiersberg, on behalf of his wife, née von Hutten, concerning the boundary stones between Gnötzheim and Ippesheim. Includes three colored plans of the disputed districts, now in Würzburg maps and plans I/283–285."
+    }
+  ],
+  "mention": [
+    {
+      "place": "gnoetzheim"
+    },
+    {
+      "place": "hutten"
+    },
+    {
+      "person": "Veit von Lichtenstein"
+    },
+    {
+      "place": "wurzburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
     }
   ]

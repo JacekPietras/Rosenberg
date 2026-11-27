@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3365/charter",
       "german": "Johann Philipp und Adalbert Friedrich von Rosenbach (Roszenbach) bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Heinrich [von Bibra], Bischof und Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann Philipp Freiherr von Münster\n\nSiegel: anhängendes Siegel in Holzkapsel Johann Philipp Freiherr von Münster",
       "english": "Johann Philipp and Adalbert Friedrich von Rosenberg (Roszenbach) confirm their enfeoffment with Schackau and all its appurtenances in woodland and fields, as well as an estate there, with Kleinsassen (Saszen), Gerharts [all places in the municipality of Hofbieber, Fulda district], and other individually listed fiefs, by Heinrich [von Bibra], Bishop and Abbot of Fulda. The enfeoffment charter is inserted. A seal is announced.\n\nSealer: Johann Philipp Freiherr von Münster.\n\nSeal: pendant seal in a wooden capsule of Johann Philipp Freiherr von Münster.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Heinrich von Bibra",
-          "personTitle": [
-            "Bischof"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203365%20Vorderseite%20%281760%20November%2025%29.jpg"
@@ -28,6 +14,20 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203365%20Rueckseite%20%281760%20November%2025%29.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Heinrich von Bibra",
+      "personTitle": [
+        "Bischof"
       ]
     }
   ]

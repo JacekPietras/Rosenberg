@@ -10,34 +10,24 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1349_VII_13/charter"
       ],
       "german": "König Karl IV. befiehlt dem Jodok von Rosenberg, den Schutz des Klosters Goldenkron sich mehr angelegen sein zu lassen.",
-      "english": "King Charles IV commands Jodok von Rosenberg to take the protection of Goldenkron Monastery more to heart.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "King Charles IV commands Jodok von Rosenberg to take the protection of Goldenkron Monastery more to heart."
     },
     {
       "source": "RI VIII n. 1067",
       "url": "https://www.regesta-imperii.de/id/1349-07-13_1_0_8_0_0_1240_1067",
       "german": "befiehlt dem edeln Jodok von Rosenberg, sich den schutz des klosters Heiligenkron den er ihm übertragen, mit grösserem eifer als bisher angelegen sein zu lassen. F. R. Austr. II. 37,119.",
-      "english": "orders the noble Jodok von Rosenberg to take the protection of the monastery of Heiligenkron, which he has entrusted to him, more seriously with greater zeal than before. F. R. Austr. II. 37,119.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "orders the noble Jodok von Rosenberg to take the protection of the monastery of Heiligenkron, which he has entrusted to him, more seriously with greater zeal than before. F. R. Austr. II. 37,119."
     },
     {
       "source": "[RIplus] Regg. Karl IV. n. 1278",
       "url": "https://www.regesta-imperii.de/id/c615a5fc-2d2d-4c5e-b1e1-8559f16ec5a9",
       "german": "Karl IV. befiehlt dem Edlen Jodok von Rosenberg, sich den Schutz des Klosters Goldenkron, namentlich für die von den Königen von Böhmen erteilten Privilegien, den er ihm übertragen, mit größerem Eifer als bisher angelegen sein zu lassen.",
-      "english": "Charles IV commands the noble Jodok von Rosenberg to take greater care than before of the protection of the Goldenkron monastery, particularly for the privileges granted by the Kings of Bohemia, which he has entrusted to him.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Charles IV commands the noble Jodok von Rosenberg to take greater care than before of the protection of the Goldenkron monastery, particularly for the privileges granted by the Kings of Bohemia, which he has entrusted to him."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

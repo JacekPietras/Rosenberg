@@ -12,87 +12,6 @@
       ],
       "german": "Albrecht von Rosenberg zu Poxsperg und dessen Vettern Philip, Jacob, Cunrad, Hanns, Euchorius und Zaysolff von Rosenberg verzichten nach Beilegung ihrer Streitigkeiten mit den Ständen des elfjährigen Schwäbischen Bundes wegen Verbrennung des Schlosses Poxberg und des Nürnbergischen Einfalls in Haldermansstetten durch Schiedsspruch König Ferdinands vom 14. Juni 1555 auf alle weiteren, nicht besonders vorbehaltenen Ansprüche gegen die Stände des genannten Bundes und insbesondere die Stadt Nürnberg.",
       "english": "After their disputes with the estates of the Swabian League were settled by King Ferdinand's arbitration of 14 June 1555, Albrecht von Rosenberg zu Poxsperg and his cousins Philipp, Jakob, Konrad, Hans, Eucharius, and Zaisolph von Rosenberg renounced further claims not specifically reserved against the League's estates, especially the city of Nuremberg. The dispute concerned the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Philipp von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Jakob von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Eucharius von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Philipp von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Jakob von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Konrad von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Hans von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Eucharius von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "kin",
-          "of": "Zaisolph von Rosenberg",
-          "term": "Vetter"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/390c8978-a260-4327-a832-63f9654616b9/1/full/max/0/default.jpg"
@@ -119,6 +38,87 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/390c8978-a260-4327-a832-63f9654616b9/8/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Philipp von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Jakob von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Eucharius von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "renounced further claims not specifically reserved against the estates of the Swabian League and especially the city of Nuremberg after settlement of the disputes over the burning of Poxberg Castle and Nuremberg's incursion into Haldermansstetten."
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Philipp von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Jakob von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Konrad von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Hans von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Eucharius von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "kin",
+      "of": "Zaisolph von Rosenberg",
+      "term": "Vetter"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

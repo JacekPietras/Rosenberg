@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++92E11161-5687-4DDC-B6D1-32BD4DF7D941&parent_id="
       ],
       "german": "Abt Georius d. Klosters St. Egidien in Nüremberg, St. BenedictenO Bamberger Bistums, vidimiert (Veranlasser nicht genannt) den wörtlich inserierten Nürnberger Stadtgerichtsbrief von 1413 Februar 18 (Schultheiß Rr Hans von Rosemberg).",
-      "english": "Abbot Georius of the monastery of St. Egidien in Nüremberg, of the Order of St. Benedict in the Bamberg diocese, authenticates a verbatim insertion of the Nürnberg city court charter of 1413 February 18 (Schultheiß Rr Hans von Rosenberg); the person who requested this is not named.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        }
-      ]
+      "english": "Abbot Georius of the monastery of St. Egidien in Nüremberg, of the Order of St. Benedict in the Bamberg diocese, authenticates a verbatim insertion of the Nürnberg city court charter of 1413 February 18 (Schultheiß Rr Hans von Rosenberg); the person who requested this is not named."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

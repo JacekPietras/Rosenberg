@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++97508A07-FDC4-4722-B740-A20E81819418&parent_id="
       ],
       "german": "Akt aus dem Archiv des Deutschordenshauses zu Münnerstadt: Beschwerden der Stadt Münnerstadt an den Bischof von Würzburg wegen Vernachlässigung der gottesdienstlichen und sonstigen Stiftungen an der Pfarrkirche zu Münnerstadt seitens der Kommende Münnerstadt nebst einer in Folge dessen an Comthur Wolfgang von Rosenberg gerichteten Mahnung des Bischofs",
-      "english": "Record from the Archive of the Teutonic Order House at Münnerstadt: Complaints of the city of Münnerstadt to the Bishop zu Würzburg regarding neglect of liturgical and other endowments at the parish church of Münnerstadt by the Münnerstadt Commandery, along with a subsequent admonition from the Bishop addressed to Commander Wolfgang von Rosenberg",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
+      "english": "Record from the Archive of the Teutonic Order House at Münnerstadt: Complaints of the city of Münnerstadt to the Bishop zu Würzburg regarding neglect of liturgical and other endowments at the parish church of Münnerstadt by the Münnerstadt Commandery, along with a subsequent admonition from the Bishop addressed to Commander Wolfgang von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wolfgang von Rosenberg",
+      "personTitle": [
+        "Komtur zu Münnerstadt"
       ],
-      "facts": [
-        {
-          "person": "Wolfgang von Rosenberg",
-          "personTitle": [
-            "Komtur zu Münnerstadt"
-          ],
-          "type": "generic",
-          "content": "received a reprimand from the Bishop zu Würzburg concerning the neglect of religious and other endowments at the parish church of Münnerstadt."
-        }
-      ]
+      "type": "generic",
+      "content": "received a reprimand from the Bishop zu Würzburg concerning the neglect of religious and other endowments at the parish church of Münnerstadt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

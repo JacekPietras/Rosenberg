@@ -11,14 +11,6 @@
       ],
       "german": "Im Auftrag des Stiftskapitels nehmen die Aussteller eine Neuverteilung frei gewordener Obleien und Obleianteile vor.\nAussteller:  Der Stiftsdekan Gottfried Übelacker sowie die Kanoniker Friedrich von Merkingen, Konrad von der Hohenlaube, Heinrich von Kunebach, Heinrich von Katzenstein, Hartmann und Eberhard von Uissigheim\nEmpfänger:  Stift Neumünster\n\nVermerke: Rückvermerke:  J, H iii; obleyambt lad. 25 obleydivision n° 8 duplicatum [Standbuch 207, S. 981]; capsel 24 N° 4 et N° 5; reg. tom. 6 copiarum fol. 208 et in lib. registrali fol. 125 n° 286.\n\nBesiegelung/Beglaubigung: I + II: Stift Neumünster, Kapitel, besch.",
       "english": "On behalf of the chapter, the issuers redistribute vacant prebends and parts of prebends. Issuers: the dean Gottfried Übelacker and the canons Friedrich von Merkingen, Konrad von der Hohenlaube, Heinrich von Kunebach, Heinrich von Katzenstein, Hartmann and Eberhard von Uissigheim. Recipient: Neumünster Abbey.",
-      "mention": [
-        {
-          "person": "Eberhard von Uissigheim"
-        },
-        {
-          "person": "Hartmann von Uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1d9f584c-66ea-4aff-bda4-ad5b5a7c3e2f/1/full/max/0/default.jpg"
@@ -33,6 +25,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1d9f584c-66ea-4aff-bda4-ad5b5a7c3e2f/4/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Uissigheim"
+    },
+    {
+      "person": "Hartmann von Uissigheim"
     }
   ]
 }

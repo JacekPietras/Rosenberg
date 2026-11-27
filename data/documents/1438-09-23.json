@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198213",
       "german": "Lehenrevers Bernhards von Ochsenfurt und Ulrichs von Rosenberg an H. Graf Johann ausgestellet, worin gedachter Bernhard von Ochsenfurt dem auch ged. Ulrichen von Rosenberg in die nachfolgenden Mannlehen in einer gemeiner Hand mit annimmt: den 3ten Teil zu Neunstetten (Neuenstätten) am Felde und im Dorf mit allen seinen Zu- und Ingehörungen, item in seinem Teil an dem Zehnten zu Schweigern, item in seinem Teil an dem Zehnten zu Assamstadt (Asmanstatt), in welche Mannlehen dann auch ged. Ulrich von Rosenberg mit ihm Bernharden von Ochsenfurt durch H. Graf Johann in ihre gemeine Hand gesetzet und also damit coinvestiret worden.\n\nLaufzeit: 1438 September 23 (am dienstaf nach St. Mathaus tag)",
       "english": "Feudal acknowledgment issued by Bernhard von Ochsenfurt and Ulrich von Rosenberg to Lord Count Johann, in which the said Bernhard von Ochsenfurt jointly invests the said Ulrich von Rosenberg with the following fiefs held by male heirs: one third of Neunstetten, in the fields and village, with all its appurtenances and dependencies; likewise his share of the tithe at Schweigern; and likewise his share of the tithe at Assamstadt. Lord Count Johann then placed the said Ulrich von Rosenberg together with Bernhard von Ochsenfurt in joint possession of these fiefs, thereby investing them jointly.\n\nDate: 23 September 1438 (on the Tuesday after St Matthew's Day).",
-      "mention": [
-        {
-          "place": "schweigern"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198213%2F07_0000198213_0001_7-198213-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198213%2F07_0000198213_0002_7-198213-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "schweigern"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

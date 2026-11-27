@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-BayHStA/HUPassau/2100/charter",
       "german": "Jan von Rosenberg Pfandauslösung für bezahlte Schulden.\n\nSiegler: S: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, Burggraf auf Krumpenau, und Peter von Mikowitz, Burggraf auf Mordstein\n\nSiegel: S2 fehlt. S: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, Burggraf auf Krumpenau, und Peter von Mikowitz, Burggraf auf Mordstein",
       "english": "Hans von Rosenberg announces the redemption of a pledge for debts that have been paid.\n\nSealers: S: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, Burggraf auf Krumpenau, and Peter von Mikowitz, Burggraf auf Mordstein.\n\nSeal: S2 is missing. S: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, Burggraf auf Krumpenau, and Peter von Mikowitz, Burggraf auf Mordstein.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-BayHStA/HUPassau/BayHStA-HUPassau_14630522_02100_r.jpg"
@@ -28,14 +23,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EDD6D631-AF11-4F79-AE32-7F4221BE4084&parent_id="
       ],
       "german": "Jan von Rosenberg gibt eine Pfandauslösung für bezahlte Schulden bekannt. - S:  A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, Burggraf auf Krumpenau, und Peter von Mikowitz, Burggraf auf Mordstein\n\nBesiegelung/Beglaubigung: S2 fehlt.",
-      "english": "Hans von Rosenberg announces the redemption of a pledge for paid debts. - Seal: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, burggraf at Krumpenau, and Peter von Mikowitz, burggraf at Mordstein",
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "announced the redemption of a pledge for debts paid."
-        }
-      ]
+      "english": "Hans von Rosenberg announces the redemption of a pledge for paid debts. - Seal: A, Johann Koniatha(?) von Oloschnitz, Peter von Wettern, burggraf at Krumpenau, and Peter von Mikowitz, burggraf at Mordstein"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "announced the redemption of a pledge for debts paid."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

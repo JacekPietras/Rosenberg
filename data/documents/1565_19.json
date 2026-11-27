@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E946D845-4E15-4382-B8B5-331AB972E3F3&parent_id="
       ],
       "german": "Abschrift des Vertrages zwischen dem Mainzer Erzbischof Daniel und Albrecht v. Rosenberg wegen der Zent, Huldigung, Folge, Reise und Steuer im Schüpfergrund und der dem Schloß Oberschüpf eingehörigen Ortschaften, die die Freiherren v. Dottenheim und Rosenberg von Kurmainz zu Lehen tragen. (4 Bl.).",
-      "english": "Copy of the agreement between Archbishop Daniel of Mainz and Albrecht von Rosenberg concerning centena jurisdiction, homage, military service, travel obligations, and taxation in the Schüpfergrund and the villages belonging to Oberschüpf Castle, held in fief from Electoral Mainz by the barons of Dottenheim and Rosenberg. (4 leaves).",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "dottenheim"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Copy of the agreement between Archbishop Daniel of Mainz and Albrecht von Rosenberg concerning centena jurisdiction, homage, military service, travel obligations, and taxation in the Schüpfergrund and the villages belonging to Oberschüpf Castle, held in fief from Electoral Mainz by the barons of Dottenheim and Rosenberg. (4 leaves)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "dottenheim"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

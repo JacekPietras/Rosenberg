@@ -10,41 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723959",
       "german": "Arnold von Rosenberg beweist seine Ehefrau Margarethe von Dottenheim wegen ihrer aus dem seinerzeit von Graf Philipp von Rieneck zustande gebrachten Ehevertrag herrührenden Ansprüche auf seine Güter und Lehen zu Boxberg.\n\nLaufzeit: 1512 November 16 (Dienstag nach Martini 1512)\n\nSiegelbeschreibung: 10 Siegel",
       "english": "Arnold von Rosenberg proves his wife Margaretha von Dottenheim because of their marriage contract, which was concluded by Count Philipp von Rieneck, which was made up of his estates and fiefs in Boxberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Philipp von Rieneck",
-          "personTitle": [
-            "Graf von Rieneck"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "spouse",
-          "of": "Margaretha von Dottenheim"
-        },
-        {
-          "person": "Philipp von Rieneck",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Margaretha von Dottenheim",
-          "type": "generic",
-          "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck."
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723959%2F04_0001723959_0001_4-1723959-1.jpg",
@@ -80,6 +45,41 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723959%2F04_0001723959_0002_4-1723959-2.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "spouse",
+      "of": "Margaretha von Dottenheim"
+    },
+    {
+      "person": "Philipp von Rieneck",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Margaretha von Dottenheim",
+      "type": "generic",
+      "content": "held claims arising from the marriage contract arranged by Count Philipp von Rieneck."
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "secured his wife Margarethe’s claims under their marriage contract against his property and fiefs at Boxberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Philipp von Rieneck",
+      "personTitle": [
+        "Graf von Rieneck"
       ]
     }
   ]

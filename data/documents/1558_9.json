@@ -6,26 +6,26 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein We 5 Bü 3685",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-635178",
       "german": "Differenzen zwischen den Grafen von Hohenlohe und den Herren von Rosenberg\n\nLaufzeit: 1558-1573\n\nEnthält: Enthält auch: Abschrift eines Vertrags zwischen Graf Ludwig Kasimir von Hohenlohe-Neuenstein und Herrn Zeisolf von Rosenberg zu Haltenbergstetten (1558)\n\nUmfang: 4 Schreiben",
-      "english": "Disputes between the Counts of Hohenlohe and the Lords von Rosenberg.\n\nTerm: 1558–1573.\n\nContains: copy of an agreement between Count Ludwig Kasimir von Hohenlohe-Neuenstein and Lord Zaisolph von Rosenberg zu Haltenbergstetten (1558).\n\nExtent: 4 letters.",
-      "mention": [
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        }
+      "english": "Disputes between the Counts of Hohenlohe and the Lords von Rosenberg.\n\nTerm: 1558–1573.\n\nContains: copy of an agreement between Count Ludwig Kasimir von Hohenlohe-Neuenstein and Lord Zaisolph von Rosenberg zu Haltenbergstetten (1558).\n\nExtent: 4 letters."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Ludwig Kasimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
     }
   ]

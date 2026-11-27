@@ -13,27 +13,6 @@
       ],
       "german": "Johann von Lamberg, Domdekan, Ruprecht Auer, Domherr, Michael von Rosenberg, Hofmeister zu Freising, und Warmund von Fraunberg zum Hubenstein, Pfleger, alle vier Regenten und Räte des Pfalzgrafen Philipp, Administrators von Freising, bestätigen der Geistlichkeit der Herrschaft Lack die Privilegien der Freisinger Bischöfe Johann und Sixtus; S 1: Johann von Lamberg; S 2: Ruprecht Auer; S 3: Michael von Rosenberg; S 4: Warmund von Fraunberg zum Hubenstein",
       "english": "Johann von Lamberg, Dean of the Cathedral Chapter, Ruprecht Auer, Canon, Michael von Rosenberg, Steward at Freising, and Warmund von Fraunberg zum Hubenstein, Pfleger (bailiff)—all four regents and councillors of Count Palatine Philipp, Administrator of Freising—confirm to the clergy of the lordship of Lack the privileges of the Bishops of Freising Johann and Sixtus; S 1: Johann von Lamberg; S 2: Ruprecht Auer; S 3: Michael von Rosenberg; S 4: Warmund von Fraunberg zum Hubenstein",
-      "mention": [
-        {
-          "place": "fraunberg"
-        },
-        {
-          "place": "freising"
-        },
-        {
-          "place": "schloss-hubenstein"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Hofmeister zu Freising"
-          ],
-          "type": "generic",
-          "content": "was one of the four regents and councilors who confirmed the privileges granted by Bishops Johann and Sixtus of Freising to the clergy of the lordship of Lack."
-        }
-      ],
       "img": [
         {
           "src": "http://images.monasterium.net/img/DE-BayHStA/HochstiftFreising/ba1e0921-196c-4c0f-8dfc-efda124b2272/ba1e0921-196c-4c0f-8dfc-efda124b2272_0001.jpg"
@@ -54,6 +33,27 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/ba1e0921-196c-4c0f-8dfc-efda124b2272/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Hofmeister zu Freising"
+      ],
+      "type": "generic",
+      "content": "was one of the four regents and councilors who confirmed the privileges granted by Bishops Johann and Sixtus of Freising to the clergy of the lordship of Lack."
+    }
+  ],
+  "mention": [
+    {
+      "place": "fraunberg"
+    },
+    {
+      "place": "freising"
+    },
+    {
+      "place": "schloss-hubenstein"
     }
   ]
 }

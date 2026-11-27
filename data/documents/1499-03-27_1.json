@@ -6,19 +6,19 @@
       "source": "Christian Roder, Regesten und Akten zur Geschichte des Schweizerkriegs 1499 (1900), p. 117, no. 159 (printed; between nos. 148 and 150); Staatsarchiv Luzern",
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/19753/file/BLB_Schriften_Bodensee_1900.pdf",
       "german": "Die zu Überlingen versammelten Marschall- und Ratsvertreter der römischen königlichen Majestät sowie die Hauptleute und Räte des Schwäbischen Bundes antworten dem Unterlandvogt im Elsass, Jakob von Fleckenstein, und Michel von Rosenberg auf deren Schreiben über einen vorgesehenen Verhandlungstag in Basel. Wegen der bereits getroffenen militärischen und politischen Maßnahmen König Maximilians I., des Reichsaufgebots und des bevorstehenden persönlichen Eingreifens des königlichen Hauptmanns könnten die Absender den angesetzten Tag weder annehmen noch absagen. Sie empfehlen den beiden Empfängern, die Angelegenheit unmittelbar dem König vorzutragen, und bekunden weiterhin ihre Dienstbereitschaft. Das Schreiben ist auf den Mittwoch der Karwoche 1499 datiert.",
-      "english": "The representatives of the marshal and council of His Roman Royal Majesty and the captains and councillors of the Swabian League, assembled at Überlingen, replied to Jakob von Fleckenstein, deputy governor in Alsace, and Michael von Rosenberg about their letter concerning a proposed meeting at Basel. In view of King Maximilian I's military and political measures, the imperial levy, and the impending personal intervention of the royal captain, they could neither accept nor cancel the appointed meeting. They advised the recipients to bring the matter directly before the king and affirmed their continued willingness to serve. The letter is dated Wednesday in Holy Week 1499.",
-      "mention": [
-        {
-          "person": "Jakob von Fleckenstein"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "wrote with Jakob von Fleckenstein about a proposed meeting at Basel and received a reply from representatives of the royal marshal and council and the Swabian League assembled at Überlingen."
-        }
-      ]
+      "english": "The representatives of the marshal and council of His Roman Royal Majesty and the captains and councillors of the Swabian League, assembled at Überlingen, replied to Jakob von Fleckenstein, deputy governor in Alsace, and Michael von Rosenberg about their letter concerning a proposed meeting at Basel. In view of King Maximilian I's military and political measures, the imperial levy, and the impending personal intervention of the royal captain, they could neither accept nor cancel the appointed meeting. They advised the recipients to bring the matter directly before the king and affirmed their continued willingness to serve. The letter is dated Wednesday in Holy Week 1499."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "wrote with Jakob von Fleckenstein about a proposed meeting at Basel and received a reply from representatives of the royal marshal and council and the Swabian League assembled at Überlingen."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Jakob von Fleckenstein"
     }
   ]
 }

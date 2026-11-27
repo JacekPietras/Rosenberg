@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1329158",
       "german": "Gültverschreibung des Grafen Hans von Eberstein gegen Anna Münching von Rosenberg und ihren Sohn Wilhelm von Angelach über 1.000 fl.\n\nLaufzeit: 1441 April 23 (geb. uf St. Georgentag 1441)\n\nSiegelbeschreibung: Siegel ist abgefallen",
       "english": "Count Hans von Eberstein's bond for an annuity of 1,000 florins in favor of Anna Mönching von Rosenberg and her son Wilhelm von Gauangelloch.\n\nTerm: 23 April 1441 (issued on St George's day, 1441)",
-      "mention": [
-        {
-          "person": "Anna Mönch von Rosenberg"
-        },
-        {
-          "person": "Wilhelm von Gauangelloch"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3188&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003188%2Ftitlaufn_0001329158%2F04_0001329158_0001_4-1329158-1.jpg"
@@ -26,6 +18,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3188&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003188%2Ftitlaufn_0001329158%2F04_0001329158_0003_4-1329158-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna Mönch von Rosenberg"
+    },
+    {
+      "person": "Wilhelm von Gauangelloch"
     }
   ]
 }

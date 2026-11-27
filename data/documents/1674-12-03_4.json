@@ -7,26 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5376560",
       "german": "Revers Johann Hartmanns von Rosenbach, Bischof von Würzburg, und weiterer namentlich genannter Personen bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda\n\nJohann Hartmann, Bischof von Würzburg, Franz Christoph und Johann Konrad, alle von Rosenbach, bestätigen für sich und ihre namentlich genannten Vettern die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sasszen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Johann von Schlitz genannt von Görtz\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Acknowledgment by Hans Hartmann von Rosenberg, Bishop of Würzburg, and other persons named individually concerning the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with Schackau and other fiefs listed individually.\n\nJohann Hartmann, Bishop of Würzburg, Franz Christoph, and Johann Konrad, all von Rosenbach, confirm, for themselves and their cousins named individually, the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with Schackau (Schackaw) together with all its woodland and field appurtenances and an estate there, with Kleinsassen (Sasszen), Gerharts (Gerhardts) [all places in Hofbieber municipality, Fulda district], and other fiefs listed individually. The feudal letter is inserted. Seal clause.\n\nFormal description: Original, parchment, attached seal in wooden capsule.\n\nSealer: Johann von Schlitz genannt von Görtz.\n\nAdditional information: The acknowledgment has no separate date but refers to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Bischof Hans Hartmann",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3349/00001.jpg"
@@ -35,6 +15,26 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3349/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans Hartmann",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

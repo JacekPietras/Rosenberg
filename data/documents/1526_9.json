@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++48ff8a2d-1b30-40f2-becc-4e8c1ebb7475&parent_id="
       ],
       "german": "Markgraf Casimir an Rothenburg: Übersendung der Schadensliste des Zaisolph von Rosenberg.",
-      "english": "Margrave Casimir to Rothenburg: Transmission of the damage list of Zaisolph von Rosenberg.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of a damages list that Markgraf Casimir sent to Rothenburg."
-        }
-      ]
+      "english": "Margrave Casimir to Rothenburg: Transmission of the damage list of Zaisolph von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of a damages list that Markgraf Casimir sent to Rothenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

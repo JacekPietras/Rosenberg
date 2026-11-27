@@ -10,33 +10,6 @@
       ],
       "german": "Alheit, die jüngere Ritterin, von Uissigheim (Ussenkeym) vermacht für den Fall ihres Todes der Frühmesse zu Uissigheim ihren Hof daselbst, dem Pfarrer zu Uissigheim 1/2 Morgen Wiese und 2 Morgen Acker zu einem Jahrtag, ferner vermacht sie benannte Wiesen und Acker zu einem ewigen Licht zu Uissigheim, endlich ihr Haus zu Bischofsheim (Bischoffesheym) und die Wiesen zu Hochhausen (Hochhusen) der Jungfrau Hyldegunde von Steinfeld, 1 1/2 Morgen Acker zum Kaufe von Oblaten.\n\nSiegler: Alheid von Ussenkeym, Ausstellerin; Eberhard, Pfarrer von Uissigheim; Erkinger, Ritter; Engelhard von Rosenberg, Ritter; Heinrich von Uissigheim, Knecht",
       "english": "Adelheid von Uissigheim, die jüngere Ritterin, bequeaths her farm there to the early mass in Uissigheim in the event of her death, 1/2 acre of meadow and 2 acres of fields to the pastor of Uissigheim for one anniversary. She further bequeaths the aforementioned meadows and fields to an eternal light in Uissigheim, and finally, her house in Bischofsheim and the meadows in Hochhausen to the virgin Hyldegunde of Steinfeld, 1 1/2 acres of fields for the purchase of wafers.\n\nSealers: Adelheid von Uissigheim, exhibitor; Eberhard, pastor of Uissigheim; Erkinger, Ritter; Engelhard von Rosenberg, Ritter; Heinrich von Uissigheim, Knecht",
-      "mention": [
-        {
-          "person": "Adelheid von Uissigheim"
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Heinrich von Uissigheim",
-          "personTitle": [
-            "Knecht"
-          ]
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "sealed Alheit von Uissigheim’s testament."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234395%2F07_0000234395_0001_7-234395-1.jpg"
@@ -46,6 +19,33 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "sealed Alheit von Uissigheim’s testament."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Adelheid von Uissigheim"
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Heinrich von Uissigheim",
+      "personTitle": [
+        "Knecht"
+      ]
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

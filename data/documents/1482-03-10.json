@@ -10,20 +10,6 @@
       ],
       "german": "Wilhelm von Dottenheim (Tottenheym) genannt Adel, Ritter, und Jörgttele, der Ältere (der Elter) beurkunden, daß die Auseinandersetzung (Jrung) zwischen Simon von Adelsheim (Aletzheym) auf der einen Seite, Martin von Ussigheim (Ussickein) und Ludwig von Wiesenbronn (Wiesenprun) genannt Gebart auf der anderen Seite durch ihren Schiedsspruch (betheydingt) geschlichtet wurde. Simon von Adelsheim hatte nach dem Verkauf des Viertels am Schloß zu Wachbach (Wachpach) mit allen Rechten und Einkünften durch Ludwig von Wiesenbronn an Martin von Ussigheim auf ein ihm zuvor eingeräumtes Vorkaufsrecht bestanden; wobei die A. zwar den bereits erfolgten Kauf bestätigten, aber dem bereits erwähnten Simon von Adelsheim und dessen Erben ein Vorkaufsrecht für die Zukunft einräumten und darüber hinaus festlegten, daß der bereits erwähnten Martin von Ussigheim Simon von Adelsheim oder dessen Erben einen etwaigen Verkauf in Mergentheim (Mergetheym) oder Weikersheim (Weickerßheim) anzeigen muß.\n\nLaufzeit: 1482 März 10 (am sontag Inn der heylgen vasten so man singt oculi mei)\n\nSiegelbeschreibung: 2 Sg., 1. Sg. Rest, 2. Sg. abg.\n\nVermerke: 4 Rv.\n\nSiegler: Wilhelm von Dottenheim genannt Adel, Ritter; Jörgttel der Ältere [von Dottenheim]",
       "english": "Wilhelm von Dottenheim, called Adel, knight, and Jörgttele der Ältere certify that the dispute between Simon von Adelsheim on one side and Martin von Uissigheim and Ludwig von Wiesenbronn, called Gebart, on the other, has been settled by their arbitration. After Ludwig von Wiesenbronn sold his quarter share in the castle at Wachbach, with all rights and revenues, to Martin von Uissigheim, Simon von Adelsheim had insisted on a right of first refusal previously granted to him. The arbitrators confirmed the sale already made, but granted Simon von Adelsheim and his heirs a right of first refusal for the future. They further stipulated that Martin von Uissigheim must notify Simon von Adelsheim or his heirs of any proposed sale in Mergentheim or Weikersheim.\n\nTerm: 10 March 1482 (Sunday in Lent, when “Oculi mei” is sung).\n\nSeal description: 2 seals; the first seal remains, the second is missing.\n\nEndorsements: 4 on the reverse.\n\nSealers: Wilhelm von Dottenheim, called Adel, knight; Jörgttel der Ältere [von Dottenheim].",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "place": "dottenheim"
-        },
-        {
-          "person": "Martin von Uissigheim"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001865845%2F02_0001865845_0004_2-1865845-4.jpg"
@@ -32,6 +18,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001865845%2F02_0001865845_0005_2-1865845-5.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "place": "dottenheim"
+    },
+    {
+      "person": "Martin von Uissigheim"
+    },
+    {
+      "person": "Wilhelm von Dottenheim"
     }
   ]
 }

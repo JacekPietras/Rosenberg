@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5165409",
       "german": "Korrespondenz Fürstabt Joachims mit dem Domdechanten Johann Hartmann v. Rosenbach über die Stift Neuenbergischen Güter in der Wetterau\n\nLaufzeit: 1662-1663",
       "english": "Correspondence between Prince-Abbot Joachim and cathedral dean Hans Hartmann von Rosenberg concerning the estates of Neuenberg Abbey in the Wetterau.\n\nCoverage period: 1662–1663",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Domdekan"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1730/hstam_90_nr_b_1730_0001.jpg"
@@ -46,6 +38,14 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1730/hstam_90_nr_b_1730_0010.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Domdekan"
       ]
     }
   ]

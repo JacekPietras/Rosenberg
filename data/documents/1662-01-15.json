@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-222_St/charter",
       "german": "Sofia Pader, geb. Stöffan, verkauft ihren von ihrem verstorbenen Vater Florian Stöffan, Bürger zu Völkermarkt, geerbten Hof, jenseits der Drau am Rain gelegen, samt vier Zehentuntertanen dem Grafen Johann Andre von Rosenberg, Burggrafen zu Klagenfurt. Siegler und Unterschrift: Adam Seidl, Ratsverwandter zu Klagenfurt\n\nSiegel: 1 Sig. pend. fehlt",
       "english": "Sofia Pader, née Stöffan, sells the farm she inherited from her late father Florian Stöffan, a citizen of Völkermarkt, located beyond the Drau at Rain, together with four tithe subjects, to Johann Andre von Rosenberg, Graf, Burggraf zu Klagenfurt. Sealer and signature: Adam Seidl, council member of Klagenfurt\n\nSeal: 1 pendant seal missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_222_16620115_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_222_16620115_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

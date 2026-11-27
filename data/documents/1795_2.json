@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ddddd9e1-d33b-497d-a642-79042334c988&parent_id="
       ],
       "german": "Johann Georg Schramm von Rosenberg verkauft dem Schneider Börner einen Krautacker.",
-      "english": "Johann Georg Schramm von Rosenberg sells a cabbage plot to the tailor Börner.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Georg Schramm von Rosenberg sells a cabbage plot to the tailor Börner."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

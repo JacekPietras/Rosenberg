@@ -9,15 +9,15 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1513_V_29/charter"
       ],
       "german": "König Wladislaw II. verleiht dem Peter von Rosenberg zu Krummau sowie auch dessen männlichen Erben Rosenberg'schen Namens und Stammes den erbrechtsweisen Besitz und Nutzniessung des Städtchens Netolitz nebst genannten Dörfern und deren Zugehörungen, jedoch gegen eine bestimmte jährliche Getraidelieferung an das Kloster Goldenhron.",
-      "english": "King Władysław II grants Peter von Rosenberg zu Krumau, and also his male heirs of the Rosenberg name and lineage, hereditary possession and use of the small town of Netolitz together with the named villages and their appurtenances, in return for a specified annual delivery of grain to Goldenkron Monastery.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "King Władysław II grants Peter von Rosenberg zu Krumau, and also his male heirs of the Rosenberg name and lineage, hereditary possession and use of the small town of Netolitz together with the named villages and their appurtenances, in return for a specified annual delivery of grain to Goldenkron Monastery."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

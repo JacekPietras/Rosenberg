@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk80/537/charter",
       "german": "Fulda. - Heinrich [von Bibra], Abt zu Fulda, verleiht Schackau, Eckweisbach etc. an die Brüder Johann Philipp und Adalbert Friedrich von Rosenbach. Es folgen nähere Bestimmungen.\n\nSiegler: Aussteller\n\nSiegel: Siegel ab und verloren Aussteller",
       "english": "Fulda. Heinrich [von Bibra], Abbot of Fulda, grants Schackau, Eckweisbach, etc., in fief to the brothers Johann Philipp and Adalbert Friedrich von Rosenberg. Further provisions follow.\n\nSealer: the grantor.\n\nSeal: the grantor's seal is detached and lost.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Heinrich von Bibra",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20537%20Vorderseite%20%281760%29.jpg"
@@ -28,6 +14,20 @@
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20537%20Rueckseite%20%281760%29.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Heinrich von Bibra",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
     }
   ]

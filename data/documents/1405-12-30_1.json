@@ -12,42 +12,42 @@
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "subheading": "Corrected date in nr. 4288.",
       "german": "1405 dez. 30 Heidelberg (korrigiert aus 1405 mai 4). Gestattet, dass Conrad von Rosenberg d. j. seiner gattin Ketterlin, toehter Cuiirad Lantschadens von Steynach, 2000 fl. zu wittum auf die hälfte seines antoils an Boeksperg verschreibt.",
-      "english": "1405 December 30, Heidelberg (corrected from 1405 May 4). King Ruprecht permits Konrad von Rosenberg der Jüngere to assign his wife Ketterlin, daughter of Cuntz Landschad von Steynach, a widow’s portion of 2,000 florins secured on half his share in Boxberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Kunz Landschad von Steinach"
-        }
+      "english": "1405 December 30, Heidelberg (corrected from 1405 May 4). King Ruprecht permits Konrad von Rosenberg der Jüngere to assign his wife Ketterlin, daughter of Cuntz Landschad von Steynach, a widow’s portion of 2,000 florins secured on half his share in Boxberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
       ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "spouse",
-          "of": "Ketterlin"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg."
-        }
+      "type": "spouse",
+      "of": "Ketterlin"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "was permitted to assign his wife Ketterlin a 2,000-florin wittum on half his share of Boxberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Kunz Landschad von Steinach"
     }
   ]
 }

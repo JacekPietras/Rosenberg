@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++BED458B9-7386-4B36-A056-EC12F0F8E7C9&parent_id="
       ],
       "german": "Die von dem Domkapitel zu Würzburg beschehene Notifikation, dass Herr Johann Philipp von Schönborn Erzbischof und Kurfürst zu Mainz, Bischof zu Würzburg und Worms mit Tod abgegangen, dann dessen Nachfolger beim Stift Würzburg Herrn Johann Hartmanns von Rosenbach ebenmäßiges Notifikationsschreiben von seiner Wahl zur bischöflichen Dignité und die diesseitig hierauf ergangene Kondolenz bzw. Gratulation",
-      "english": "The notification from the Würzburg cathedral chapter that Lord Johann Philipp von Schönborn, Archbishop and Elector of Mainz and Bishop of Würzburg and Worms, has died; then the corresponding notification of the election of his successor at the Würzburg see, Lord Hans Hartmann von Rosenberg, to the episcopal dignity; and the condolences or congratulations subsequently sent from this side.",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "The notification from the Würzburg cathedral chapter that Lord Johann Philipp von Schönborn, Archbishop and Elector of Mainz and Bishop of Würzburg and Worms, has died; then the corresponding notification of the election of his successor at the Würzburg see, Lord Hans Hartmann von Rosenberg, to the episcopal dignity; and the condolences or congratulations subsequently sent from this side."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

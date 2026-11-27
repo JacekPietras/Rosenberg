@@ -6,19 +6,19 @@
       "source": "Staatsarchiv Wertheim R-Lit. A Nr. 339",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-42530",
       "german": "Kauf- resp. Erbbestandsbrief über den sog. Käsers- oder Kellershof zu Rosenberg für Lorenz Keller daselbst, und seiner Erben ausgestellt von Ritter Albrecht von Rosenberg zu Boxberg am 7. Juni 1560 (amtlich beglaubigte Abschrift)\n\nLaufzeit: 1560\n\nUmfang: 1 Schr.",
-      "english": "Purchase or hereditary lease charter for the Käsers or Kellershof at Rosenberg, issued for Lorenz Keller and his heirs by Knight Albrecht von Rosenberg zu Boxberg on 7 June 1560 (certified copy).",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "zu Boxberg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Purchase or hereditary lease charter for the Käsers or Kellershof at Rosenberg, issued for Lorenz Keller and his heirs by Knight Albrecht von Rosenberg zu Boxberg on 7 June 1560 (certified copy)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "zu Boxberg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -6,65 +6,43 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1322",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-114224",
       "german": "Ludwig Pfalzgraf bei Rhein bekennt, dass er einen Tag bestimmt hat, um die Späne und Irrungen wegen der Wiederlosung des Schlosses Reigelsberg, die sich zwischen Konrad von Weinsberg und Konrad von Rosenberg ergeben haben; es wird bestätigt, dass Konrad von Weinsberg in seinen Briefen an Konrad von Rosenberg keine Lügen geschrieben habe;Papier, aufgedr. Siegel des Pfalzgrafen.\n\nLaufzeit: 2. Oktober 1425, Heidelberg\n\nUmfang: 1 Urkunde",
-      "english": "Louis, Count Palatine of the Rhine, acknowledges that he has appointed a hearing to resolve disputes and disagreements regarding the redemption of Reigelsberg Castle arising between Konrad von Weinsberg and Konrad von Rosenberg; it is confirmed that Konrad von Weinsberg wrote no lies in his letters to Konrad von Rosenberg;Paper, impressed seal of the Count Palatine.\n\nValidity: October 2, 1425, Heidelberg\n\nExtent: 1 document",
-      "mention": [
-        {
-          "place": "heidelberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "place": "reichelsburg-aub"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the dispute between Konrad von Weinsberg and Konrad von Rosenberg over the redemption of Reigelsberg Castle",
-          "type": "generic",
-          "content": "was assigned a hearing by Count Palatine Ludwig, who confirmed that Konrad von Weinsberg had written no lies in his letters."
-        }
-      ]
+      "english": "Louis, Count Palatine of the Rhine, acknowledges that he has appointed a hearing to resolve disputes and disagreements regarding the redemption of Reigelsberg Castle arising between Konrad von Weinsberg and Konrad von Rosenberg; it is confirmed that Konrad von Weinsberg wrote no lies in his letters to Konrad von Rosenberg;Paper, impressed seal of the Count Palatine.\n\nValidity: October 2, 1425, Heidelberg\n\nExtent: 1 document"
     },
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1321",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-114223",
       "german": "Vertrag Ludwigs Pfalzgraf von Rhein zwischen Konrad von Weinsberg und Conz von Rosenberg über die Einlösung des Schlosses Reigelsberg;\nPergament, Siegel: Pfalzgraf.\n\nLaufzeit: 3. Oktober 1425, Heidelberg\n\nUmfang: 1 Urkunde",
-      "english": "Agreement of Ludwig, Count Palatine of the Rhine, between Konrad von Weinsberg and Kunz von Rosenberg concerning the redemption of Reigelsberg Castle; parchment, seal of the Count Palatine.\n\nDate: 3 October 1425, Heidelberg.\n\nExtent: 1 charter.",
-      "mention": [
-        {
-          "place": "heidelberg"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "reichelsburg-aub"
-        }
-      ]
+      "english": "Agreement of Ludwig, Count Palatine of the Rhine, between Konrad von Weinsberg and Kunz von Rosenberg concerning the redemption of Reigelsberg Castle; parchment, seal of the Count Palatine.\n\nDate: 3 October 1425, Heidelberg.\n\nExtent: 1 charter."
     },
     {
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 1329",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-114231",
       "german": "Zettel von 8 Seiten, oktav. Überschrift: Nota wie sich die Sachen verlaufen haben, als wir Reigelsberg von Conz von Rosenberg geloset wollten haben; (Samstag vor Kiliani 1426 (?); wahrscheinlich Handschrift Konrads von Weinsberg.\n\nUmfang: 1 Schr., Papier",
-      "english": "Eight-page octavo note. Heading: “Note on how matters unfolded when we wished to redeem Reigelsberg from Kunz von Rosenberg”; (Saturday before Kiliani 1426 (?)); probably in Konrad von Weinsberg’s hand.\n\nExtent: 1 paper document.",
-      "mention": [
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "reichelsburg-aub"
-        }
-      ]
+      "english": "Eight-page octavo note. Heading: “Note on how matters unfolded when we wished to redeem Reigelsberg from Kunz von Rosenberg”; (Saturday before Kiliani 1426 (?)); probably in Konrad von Weinsberg’s hand.\n\nExtent: 1 paper document."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the dispute between Konrad von Weinsberg and Konrad von Rosenberg over the redemption of Reigelsberg Castle",
+      "type": "generic",
+      "content": "was assigned a hearing by Count Palatine Ludwig, who confirmed that Konrad von Weinsberg had written no lies in his letters."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Konrad von Weinsberg"
+    },
+    {
+      "place": "reichelsburg-aub"
+    },
+    {
+      "person": "Kunz von Rosenberg"
     }
   ]
 }

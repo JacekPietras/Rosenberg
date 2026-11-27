@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235226",
       "german": "Hans Gans von Otzberg (Ozperg) verschreibt seiner Ehefrau Margaretha von (Nyppenburg) 1000 Gulden auf seine Gütern im Kirchspiel Kirchbrombach (Kirch Bronbach) zu Heubach, Gersprenz, Kilsbach, Höllerbach (Hullerbach) und Stierbach als Wittum.\n\nLaufzeit: 1490 August 2 (\"..der geben ist am montag nach Vincula Petri des jars als man zalt von der geburt Cristi tusent virhundert und nutzig jar\")\n\nSiegelbeschreibung: Aufgedruckt sind die Siegel des Ausstellers, des Otto von Erlenbach und des Brissig von Rosenbach\n\nSiegler: Otto von Erlenbach; Brissig von Rosenbach",
       "english": "Hans Gans von Otzberg assigns to his wife Margaretha von Nyppenburg, as her widow's portion, 1,000 gulden charged on his properties in the parish of Kirchbrombach at Heubach, Gersprenz, Kilsbach, Höllerbach, and Stierbach.\n\nTerm: 2 August 1490 (\"... given on the Monday after the Feast of the Chains of St Peter, in the year counted from the birth of Christ as one thousand four hundred and ninety years\")\n\nSeal description: The seals of the issuer, Otto von Erlenbach, and Brissig von Rosenbach are affixed.\n\nSealers: Otto von Erlenbach; Brissig von Rosenbach",
-      "mention": [
-        {
-          "person": "Otto von Erlenbach"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235226%2F07_0000235226_0001_7-235226-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235226%2F07_0000235226_0002_7-235226-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Otto von Erlenbach"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

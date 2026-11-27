@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4871a1c7-23d6-403a-a3d3-5f54f0301ebc&parent_id="
       ],
       "german": "Arnold von Rosenberg weist die Städte Haßfurt, Volkach und das Dorf \"Keller\" an, die 19 Gulden Gült wieder an den Bischof von Würzburg zu zahlen",
-      "english": "Arnold von Rosenberg directs the cities of Haßfurt, Volkach, and the village of \"Keller\" to pay the 19 gulden rent again to the Bishop zu Würzburg",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the Bishop zu Würzburg."
-        }
-      ]
+      "english": "Arnold von Rosenberg directs the cities of Haßfurt, Volkach, and the village of \"Keller\" to pay the 19 gulden rent again to the Bishop zu Würzburg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "directed Haßfurt, Volkach and Keller to pay the rent again to the Bishop zu Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

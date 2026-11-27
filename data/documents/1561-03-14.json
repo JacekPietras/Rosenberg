@@ -10,30 +10,6 @@
       ],
       "german": "Albrecht von Rosenberg, Ritter, verleiht seinem Untertan Jakob Mührien zu Unterschüpf das dottenheimische Hofgütlein zu Unterschüpf, das er von dem Mainzer Hofmeister Eberhard Rüdt von Collenberg gekauft hat, gegen eine jährliche Gült. Datiert 14. März 1561.",
       "english": "Albrecht von Rosenberg, Ritter, grants his subject Jakob Mührien of Unterschüpf the small Dottenheim estate at Unterschüpf, which he had bought from Eberhard Rüdt von Collenberg, court steward of Mainz, in return for an annual rent. Dated 14 March 1561.",
-      "mention": [
-        {
-          "place": "dottenheim"
-        },
-        {
-          "person": "Eberhard Rüd von Kollenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "unterschuepf"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "granted Jakob Mührien the Dottenheim farmstead at Unterschüpf for an annual rent, having bought it from Eberhard Rüdt von Collenberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786783%2F04_0001786783_0001_4-1786783-1.jpg"
@@ -47,6 +23,30 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "granted Jakob Mührien the Dottenheim farmstead at Unterschüpf for an annual rent, having bought it from Eberhard Rüdt von Collenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "dottenheim"
+    },
+    {
+      "person": "Eberhard Rüd von Kollenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "unterschuepf"
     }
   ]
 }

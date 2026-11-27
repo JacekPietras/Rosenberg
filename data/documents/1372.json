@@ -6,27 +6,27 @@
       "source": "Wilhelm Engel, Würzburger Urkundenregesten vor dem Jahre 1400 (Würzburg, 1958), no. 163",
       "url": "https://perspectivia.net/servlets/MCRFileNodeServlet/ploneimport_derivate_00009783/morsel_noblesse.pdf",
       "german": "Eberhard von Rosenberg der Junge genannt von Thüngen. (von Rosenberg, dit von Thungen)",
-      "english": "Eberhard von Rosenberg der Junge, called von Thüngen.",
-      "facts": [
-        {
-          "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "der Junge",
-            "genannt von Thüngen"
-          ],
-          "type": "title"
-        }
+      "english": "Eberhard von Rosenberg der Junge, called von Thüngen."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Lauda",
+      "personTitle": [
+        "der Junge",
+        "genannt von Thüngen"
       ],
-      "guesses": [
-        {
-          "person": "margaretha_von_thungen",
-          "type": "parent",
-          "of": "vogt_zu_Lauda",
-          "ofTitle": [
-            "der Junge",
-            "genannt von Thüngen"
-          ]
-        }
+      "type": "title"
+    }
+  ],
+  "guesses": [
+    {
+      "person": "margaretha_von_thungen",
+      "type": "parent",
+      "of": "vogt_zu_Lauda",
+      "ofTitle": [
+        "der Junge",
+        "genannt von Thüngen"
       ]
     }
   ]

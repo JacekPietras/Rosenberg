@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4b00d660-02ad-454a-bf7b-4cd70ea6f037&parent_id="
       ],
       "german": "Reversbrief des Hieronimus (\"Jeronimus\") von Rosenberg über die Dörfer Burggriesbach und Schmellnricht (\"Schmellenried genannt Niederreut\") und die Wiesmahd im Schwall (\"Swall\").",
-      "english": "Letter of acknowledgment by Hieronimus (\"Jeronimus\") von Rosenberg concerning the villages of Burggriesbach and Schmellnricht (\"also called Schmellenried, Niederreut\") and the meadow in the Schwall (\"Swall\").",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hieronymus von Rosenberg",
-          "type": "generic",
-          "content": "issued a fief acknowledgment for the villages Burggriesbach and Schmellnricht and a meadow in the Schwall."
-        }
-      ]
+      "english": "Letter of acknowledgment by Hieronimus (\"Jeronimus\") von Rosenberg concerning the villages of Burggriesbach and Schmellnricht (\"also called Schmellenried, Niederreut\") and the meadow in the Schwall (\"Swall\")."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hieronymus von Rosenberg",
+      "type": "generic",
+      "content": "issued a fief acknowledgment for the villages Burggriesbach and Schmellnricht and a meadow in the Schwall."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

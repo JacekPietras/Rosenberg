@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-StaAMainz/Urkunden/U_%7C_1337_M%C3%A4rz_11/charter",
       "german": "1337, 5. Indiktion, im 3. Jahr des Pontifikats Benedikts XII., am 11. März, \"que fuit in vigilia beati Gregorii pape\", im Dorfe Issigheim (\"Üssenkein\") auf öffentlicher Straße vor dem Kirchhof, \"hora [...] ante horam prime\", vor Notar und Zeugen: Bekundet Hermann von \"Wanebach\", Priester der Mainzer Diözese, im Gericht vor Hertwin, Schultheiß des Dorfes, daß er - als Schenkung unter Lebenden - seinen Hof daselbst und fünf zugehörige Mansen Ackerland St. Klara zu ewigem Besitz geschenkt hat. Daraufhin überträgt das Gericht den geschenkten Besitz dem Kloster, das durch seinen Syndikus, Bruder Herbord von Nackenheim (\"Nakheim\"), vertreten ist. Zeugen: Die Priester Hartmann von \"Grunenberg\", Ewigvikar von St. Marienberg in Frankfurt (\"Frankenford\"), Konrad von Buchen, Pleban von Issigheim (\"Ussenkeim\"); die Dorfleute Werner, Sohn des Gerhard, Siegfried von Niederissigheim (\"de Ussenkein inferiori\"), Heinrich Glöckner (\"campanarius\") und Hermann, Sohn der Guda. Signet und Unterschrift des kaiserlichen Notars \"Henricus Henrici de Augusta\", Mainzer Klerikers.",
       "english": "On 11 March 1337, in the fifth indiction and third year of the pontificate of Benedict XII, on the eve of St Gregory, in the village of Issigheim on the public street before the churchyard, before the hour of prime, Hermann von Wanebach, a priest of the diocese of Mainz, declares before Hertwin, the village Schultheiß, sitting in court, and before the notary and witnesses, that he has given St. Clare's monastery his farm there and five associated manses of arable land as a gift between living persons, to be held forever. The court transfers the property to the monastery, represented by its syndic, Brother Herbord von Nackenheim. Witnesses are Hartmann von Grunenberg, perpetual vicar of St. Marienberg in Frankfurt; Konrad von Buchen, parish priest of Issigheim; and the villagers Werner, son of Gerhard, Siegfried von Niederissigheim, Heinrich the bell-ringer, and Hermann, son of Guda. The imperial notary Henricus Henrici de Augusta, a Mainz cleric, provides his sign and signature.",
-      "mention": [
-        {
-          "person": "Konrad von Buchen"
-        },
-        {
-          "place": "mainz"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-StaAMainz/U/StaAMainz_U_13370311_r.JPG"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-StaAMainz/U/StaAMainz_U_13370311_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Buchen"
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

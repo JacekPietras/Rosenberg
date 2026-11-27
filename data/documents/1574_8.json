@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A565DF25-6773-4B52-B985-557D22CCB59F&parent_id="
       ],
       "german": "Zeysolph von Rosenberg zu Haldenbergstetten bittet den Bischof von Würzburg, das Schloß zu Baldersheim, das ihm und seinem Vetter Conrad von Rosenberg zu Waldmanshofen vom Hochstift zu Lehen rührt, mit seinem Vetter teilen zu dürfen",
-      "english": "Zeysolph von Rosenberg of Haldenbergstetten asks the Bishop of Würzburg for permission to divide Baldersheim Castle with his cousin Konrad von Rosenberg of Waldmannshofen; the castle is a fief of the bishopric held by both cousins.",
-      "mention": [
-        {
-          "place": "baldersheim"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Zeysolph von Rosenberg of Haldenbergstetten asks the Bishop of Würzburg for permission to divide Baldersheim Castle with his cousin Konrad von Rosenberg of Waldmannshofen; the castle is a fief of the bishopric held by both cousins."
+    }
+  ],
+  "mention": [
+    {
+      "place": "baldersheim"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

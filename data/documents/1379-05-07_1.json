@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1379_V_07/charter",
       "german": "Der Cardinalpriester Pileus verleiht auf Bitten der Brüder Peter und Johann von Rosenberg dem Kloster zu Hohenfurt eine Indulgenz.\n\nSiegel: Sehr schönes, grosses, an grüner Seidenschnur hängendes Siegel in rothem Wachs. - Fünf Capellen, in deren unterster ein betender Bischof, zu dessen beiden Seiten Wappenschilde mit einem Querbalken oben und fünf Lilien (?) unter demselben. - S . Pilei . Tt . See . Praxedis . Presbri . Cardinalis.",
       "english": "Cardinal priest Pileus, at the request of the brothers Peter and Hans von Rosenberg, grants an indulgence to the monastery of Hohenfurt.\n\nSeal: A very fine, large seal in red wax, hanging from a green silk cord. It shows five chapels, with a praying bishop in the lowest one and, on either side of him, coats of arms bearing a horizontal bar above and five fleurs-de-lis (?) below it. — S. Pilei . Tt . See . Praxedis . Presbri . Cardinalis.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13790507_4%2CXIV%20B_r.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13790507_4%2CXIV%20B_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-36932",
       "german": "Jörg von Rosenberg, Ritter, verkauft an Kurfürst Pfalzgraf Philipp sein Teil an Widdern um ungenannten Preis.\n\nLaufzeit: 1496 Mai 6",
       "english": "Georg von Rosenberg, Ritter, sells his share in Widdern to Philipp, Kurfürst, Pfalzgraf for an unspecified price.\n\nDate: 6 May 1496.",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000036932%2F01_0000036932_0001_1-36932-1.jpg"
@@ -22,6 +14,14 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000036932%2F01_0000036932_0002_1-36932-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

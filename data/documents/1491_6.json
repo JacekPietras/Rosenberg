@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++53609030-7d23-4eca-bff3-10083432c049&parent_id="
       ],
       "german": "Lehengegenbrief des Ritters Jeronimus von Rosenberg zu Uttenhofen, Hofmeister zu Eystett, für Herzog Albrecht IV. über 4 Höfe und 2 Sölden zu Obern-Ried bei Uttenhoven in der Seglau bei der Schwarztach.\nVorbesitzer: Wilhelm Schenck von Geyrn.",
-      "english": "Counter-fief document (Lehengegenbrief) of Knight Hieronymus von Rosenberg of Uttenhofen, steward at Eichstätt, for Duke Albrecht IV concerning 4 farms and 2 Sölden (smallholdings) at Obern-Ried near Uttenhoven in the Seglau near the Schwarztach.\nPrevious owner: Wilhelm Schenck von Geyrn.",
-      "mention": [
-        {
-          "person": "Wilhelm Schenk"
-        }
+      "english": "Counter-fief document (Lehengegenbrief) of Knight Hieronymus von Rosenberg of Uttenhofen, steward at Eichstätt, for Duke Albrecht IV concerning 4 farms and 2 Sölden (smallholdings) at Obern-Ried near Uttenhoven in the Seglau near the Schwarztach.\nPrevious owner: Wilhelm Schenck von Geyrn."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hieronymus von Rosenberg",
+      "personTitle": [
+        "Hofmeister zu Eichstätt",
+        "Ritter",
+        "zu Uttenhofen"
       ],
-      "facts": [
-        {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Hofmeister zu Eichstätt",
-            "Ritter",
-            "zu Uttenhofen"
-          ],
-          "type": "generic",
-          "content": "acknowledged a fief of farms and Sölden at Obern-Ried from Duke Albrecht IV."
-        }
-      ]
+      "type": "generic",
+      "content": "acknowledged a fief of farms and Sölden at Obern-Ried from Duke Albrecht IV."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Wilhelm Schenk"
     }
   ]
 }

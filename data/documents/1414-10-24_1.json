@@ -7,39 +7,39 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Ritter Hans von Rosenberg, Schultheiss und die Schöpfen der Stadt zu Nuremberg entscheiden die Streitsache Meister Albrechts, Pfarrers zu sant Sebolt daselbst gegen Anna, Eberhart Quetrers seligen Wittib, wegen der neu erbauten Häuslein unter sant Sebolts Kirchhof am Weinmark zwischen der Schule und des Jacob Gutkauffs Hause dahin, dass diese neuen Häuslein alle nicht höher gebaut werden sollen, als die vorhin abgebrochenen gewesen sind. Zeugen: Weygel Graser und Paulus Vorchtell. G. am Mitwochen vor der heiligen Zwelfpoten tag Symonis vnd Jude.",
-      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen decide a dispute between Albrecht, Meister and pastor of St. Sebolt in Nürnberg, and Anna, widow of Eberhard Quetrer, over newly built houses below St. Sebolt’s churchyard at the Weinmarkt, between the school and Jakob Gutkauff’s house. They rule that the new houses must not be built higher than those previously demolished. Witnesses: Weygel Graser and Pauls Vorchtell. Given on the Wednesday before the feast of the apostles Saints Simon and Jude.",
-      "mention": [
-        {
-          "place": "nuremberg"
-        }
+      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen decide a dispute between Albrecht, Meister and pastor of St. Sebolt in Nürnberg, and Anna, widow of Eberhard Quetrer, over newly built houses below St. Sebolt’s churchyard at the Weinmarkt, between the school and Jakob Gutkauff’s house. They rule that the new houses must not be built higher than those previously demolished. Witnesses: Weygel Graser and Pauls Vorchtell. Given on the Wednesday before the feast of the apostles Saints Simon and Jude."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß zu Nürnberg"
       ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß zu Nürnberg"
-          ],
-          "type": "generic",
-          "content": "decided with the Schöpfen of Nürnberg a dispute between Albrecht, Meister and pastor of St. Sebolt, and Anna, widow of Eberhard Quetrer, ruling that new houses at the Weinmarkt could not be higher than those previously demolished."
-        },
-        {
-          "person": "Eberhard Quetrer",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Anna"
-        },
-        {
-          "person": "Weygel Graser",
-          "type": "generic",
-          "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
-        },
-        {
-          "person": "Pauls Vorchtell",
-          "type": "generic",
-          "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
-        }
-      ]
+      "type": "generic",
+      "content": "decided with the Schöpfen of Nürnberg a dispute between Albrecht, Meister and pastor of St. Sebolt, and Anna, widow of Eberhard Quetrer, ruling that new houses at the Weinmarkt could not be higher than those previously demolished."
+    },
+    {
+      "person": "Eberhard Quetrer",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Anna"
+    },
+    {
+      "person": "Weygel Graser",
+      "type": "generic",
+      "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
+    },
+    {
+      "person": "Pauls Vorchtell",
+      "type": "generic",
+      "content": "witnessed the decision by Hans von Rosenberg and the Schöpfen of Nürnberg concerning houses at the Weinmarkt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
     }
   ]
 }

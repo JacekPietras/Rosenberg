@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++23DC34A5-1226-4ED7-8D7C-1BF605DA5DF7&parent_id="
       ],
       "german": "Bericht des Amtmanns zu Tauberbischofsheim über Beschwerde des Albrecht v. Rosenberg gegen die Aufrichtung eines Mainzer Zollstocks zwischen Königshofen/Tauber und Sachsenflur.",
-      "english": "Report by the bailiff at Tauberbischofsheim concerning Albrecht von Rosenberg's complaint against the erection of a Mainz customs post between Königshofen on the Tauber and Sachsenflur.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "mainz"
-        }
-      ]
+      "english": "Report by the bailiff at Tauberbischofsheim concerning Albrecht von Rosenberg's complaint against the erection of a Mainz customs post between Königshofen on the Tauber and Sachsenflur."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

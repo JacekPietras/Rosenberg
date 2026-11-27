@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C0E34BCF-0635-4ED8-AA11-AE7D1201C4C3&parent_id="
       ],
       "german": "Beschwerde des Priors Mathias der Karth. Gr. bei Wertheim vor dem Bischof von Würzburg gegen Albrecht von Rosenberg wegen Einbruchs in den dem Kloster zustehenden 4. Teil des Zehnten zu Hochstat",
-      "english": "Complaint by Prior Mathias of the Carthusian monastery near Wertheim before the Bishop of Würzburg against Albrecht von Rosenberg concerning the monastery’s fourth share of the tithe at Hochstat.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Complaint by Prior Mathias of the Carthusian monastery near Wertheim before the Bishop of Würzburg against Albrecht von Rosenberg concerning the monastery’s fourth share of the tithe at Hochstat."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

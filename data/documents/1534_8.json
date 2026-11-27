@@ -6,22 +6,22 @@
       "source": "Staatsarchiv Ludwigsburg B 279 I Bü 103 a",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-869416",
       "german": "Schreiben des Komturs zu Rothenburg o. d. Tauber, Wolfgang von Rosenberg, an Deutschmeister Walther von Kronberg.",
-      "english": "Letter from Wolfgang von Rosenberg, commander at Rothenburg ob der Tauber, to Walther von Kronberg, Grand Master of the Teutonic Order.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
+      "english": "Letter from Wolfgang von Rosenberg, commander at Rothenburg ob der Tauber, to Walther von Kronberg, Grand Master of the Teutonic Order."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wolfgang von Rosenberg",
+      "personTitle": [
+        "Komtur zu Rothenburg"
       ],
-      "facts": [
-        {
-          "person": "Wolfgang von Rosenberg",
-          "personTitle": [
-            "Komtur zu Rothenburg"
-          ],
-          "type": "generic",
-          "content": "corresponded with Deutschmeister Walther von Kronberg about parish matters at Rothenburg."
-        }
-      ]
+      "type": "generic",
+      "content": "corresponded with Deutschmeister Walther von Kronberg about parish matters at Rothenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

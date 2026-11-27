@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1930379",
       "german": "Bürgermeister und Rat zu Wimpfen bekunden: Sie haben in der Klage des Eberlin Schenk von Hohenhaslach (Hohenhaßloch) gegen Bürgermeister und Rat von Hall auf Nachzahlung von 4 Gulden Sold die gerichtliche Verhandlung, der sie gern enthoben sein wollten, obwohl Bartholomäus Gotzmann, Stadtschreiber zu Hall und Anwalt der Stadt, darauf zunächst bestand, unterstützt von Hans von Rosenbach von Heilbronn, in die Güte abgebogen, dem Kläger 4 Gulden ausgehändigt und die Parteien verpflichtet, ihre Kosten zu tragen.\n\nLaufzeit: 1468 Juni 14 (Di vor Vitus)\n\nSiegelbeschreibung: 1 S.\n\nSiegler: Stadt Wimpfen, Sekret",
       "english": "The mayor and council of Wimpfen attest: In the suit brought by Eberlin Schenk von Hohenhaslach against the mayor and council of Hall for payment of a further 4 gulden in wages, they diverted the court proceedings—which they would gladly have been spared—from litigation to an amicable settlement, although Bartholomäus Gotzmann, town clerk at Hall and the town's advocate, initially insisted on proceeding, supported by Hans von Rosenberg of Heilbronn. They handed the plaintiff 4 gulden and obligated the parties to bear their own costs.\n\nTerm: 14 June 1468 (Tuesday before Vitus)\n\nSeal description: 1 seal\n\nSealer: town of Wimpfen, secret seal.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930379%2F02_0001930379_0001_2-1930379-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1192&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001192%2Ftitlaufn_0001930379%2F02_0001930379_0002_2-1930379-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

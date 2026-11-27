@@ -12,14 +12,14 @@
       ],
       "summary": "Herzog Friedrich von Österreich verleiht an Clara von Rosenberg die Mühle in Ossingen.",
       "german": "Item wir haben der erbern Claren von Rosemberg weylent Hartmans von Sehen seligen tochter vnd iren erben von sundern gnaden verlihen die mul ze Ossingen vnserr lehensch(aft), die weilent Hans von Sehen selig gelassen hat. Dat. Schaffh(usen) ut supra.",
-      "english": "Duke Friedrich IV of Österreich has by special grace granted the honorable Clara von Rosenberg zu Herisau, daughter of the late Hartmann von Seen, and her heirs the mill at Ossingen, an Austrian fief, which the late Hans von Seen left behind. Given at Schaffhausen as above.",
-      "facts": [
-        {
-          "person": "Clara von Rosenberg",
-          "type": "generic",
-          "content": "received the mill at Ossingen from Friedrich, Herzog von Österreich."
-        }
-      ]
+      "english": "Duke Friedrich IV of Österreich has by special grace granted the honorable Clara von Rosenberg zu Herisau, daughter of the late Hartmann von Seen, and her heirs the mill at Ossingen, an Austrian fief, which the late Hans von Seen left behind. Given at Schaffhausen as above."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Clara von Rosenberg",
+      "type": "generic",
+      "content": "received the mill at Ossingen from Friedrich, Herzog von Österreich."
     }
   ]
 }

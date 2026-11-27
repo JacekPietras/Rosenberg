@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1854937",
       "german": "Abt Albrecht von Ellwangen verweist auf Befragen genannter Bürger zu Schwäbisch Gmünd den Streit zwischen Dietrich Geyer (von Giebelstadt), Ritter, und Hennel Streuff wegen des Zehnten zu Östringen vor ein Schiedsgericht und bestellt als Gemeinen eventuell Konrad von Rosenberg.\n\nLaufzeit: 1383 Februar 25\n\nSiegelbeschreibung: Mit Siegel",
       "english": "Albrecht, abbot of Ellwangen, at the request of named citizens of Schwäbisch Gmünd, refers the dispute between Dietrich Geyer (von Giebelstadt), Ritter, and Hennel Streuff over the tithe at Östringen to an arbitration court and appoints Konrad von Rosenberg as a possible umpire.",
-      "mention": [
-        {
-          "person": "Dietrich Geyer"
-        },
-        {
-          "person": "Dietrich Geyer von Giebelstadt"
-        },
-        {
-          "place": "giebelstadt"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "was appointed as a possible umpire in the dispute between Dietrich Geyer von Giebelstadt and Hennel Streuff over the tithe at Östringen."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001854937%2F04_0001854937_0001_4-1854937-1.jpg"
@@ -38,6 +20,24 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "was appointed as a possible umpire in the dispute between Dietrich Geyer von Giebelstadt and Hennel Streuff over the tithe at Östringen."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich Geyer"
+    },
+    {
+      "person": "Dietrich Geyer von Giebelstadt"
+    },
+    {
+      "place": "giebelstadt"
     }
   ]
 }

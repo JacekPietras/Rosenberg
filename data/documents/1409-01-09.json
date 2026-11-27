@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234680",
       "german": "Johann, Graf von Wertheim, belehnt Cuntz von Rosenbach mit seinem Hof zu Rosenbach nebst allen Zugehörungen, mit 1 Hube zu Seckmauern, mit allen seinen Zinsen und Gülten in Werder Mark und mit 3 Pfund Geld Burglehen zu Breuberg (Brewberg).\n\nLaufzeit: 1409 Januar 9 (\"Datum anno domini millesimo quadringentesimo nono feria quarta post diem sancti Erhardi\")\n\nSiegelbeschreibung: Siegel abgefallen\n\nSiegler: Johann, Graf von Wertheim",
       "english": "Johann von Wertheim, Graf, enfeoffs Kunz von Rosenberg with his farm at Rosenbach and all its appurtenances, one hide at Seckmauern, all his interest and rents in Werder Mark, and three pounds of castle-fief income at Breuberg (Brewberg).\n\nDate: 9 January 1409 (‘Given in the year of the Lord 1409, on Wednesday after the day of St Erhard’).\n\nSeal description: seal detached.\n\nSealer: Johann von Wertheim, Graf.",
-      "mention": [
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234680%2F07_0000234680_0001_7-234680-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234680%2F07_0000234680_0002_7-234680-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

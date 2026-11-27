@@ -9,28 +9,28 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3cf80dc4-1074-4825-9bc2-2253c35db0ec&parent_id="
       ],
       "german": "Cunz von Rosenberg, Amtmann zu Rötingen und Reigelberg, an Rothenburg: Fürbitte für Lutz Kutterolf.",
-      "english": "Kunz von Rosenberg, Amtmann zu Röttingen and Reigelberg, to Rothenburg: Intercession for Lutz Kutterolf.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Röttingen"
-          ]
-        },
-        {
-          "place": "rothenburg"
-        }
+      "english": "Kunz von Rosenberg, Amtmann zu Röttingen and Reigelberg, to Rothenburg: Intercession for Lutz Kutterolf."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Röttingen und Reigelberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Röttingen und Reigelberg"
-          ],
-          "type": "generic",
-          "content": "wrote to Rothenburg interceding for Lutz Kutterolf."
-        }
+      "type": "generic",
+      "content": "wrote to Rothenburg interceding for Lutz Kutterolf."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Röttingen"
       ]
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

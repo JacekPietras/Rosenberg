@@ -6,28 +6,28 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Differenzen zwischen Kurmainz und Rosenberg wegen der Zugehörigkeit der rosenbergischen Untertanen auf dem Freihof zu Buch am Ahorn zur Cent Tauberbischofsheim",
-      "english": "Disputes between Electoral Mainz and Rosenberg concerning the affiliation of the Rosenberg subjects on the free farm at Buch am Ahorn to the lower court of Tauberbischofsheim",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "buch"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the von Rosenberg family and Kurmainz",
-          "type": "generic",
-          "content": "disputed whether the Rosenberg subjects at the Freihof in Buch am Ahorn belonged to the Tauberbischofsheim court district."
-        }
-      ]
+      "english": "Disputes between Electoral Mainz and Rosenberg concerning the affiliation of the Rosenberg subjects on the free farm at Buch am Ahorn to the lower court of Tauberbischofsheim"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the von Rosenberg family and Kurmainz",
+      "type": "generic",
+      "content": "disputed whether the Rosenberg subjects at the Freihof in Buch am Ahorn belonged to the Tauberbischofsheim court district."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "buch"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

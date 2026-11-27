@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-528729",
       "german": "1460 März 12 (sant Gregorien tag)\nKonz Rortal (Rortale), Fritz Guckenberg und Heinz Sönß pachten von Abt und Konvent des Klosters Schöntal um gen. Gülten, die in den Kasten des Klosters in Mergentheim (Mergethen) zu liefern sind, den Hof des Klosters zu Assamstadt. Stellt das Kloster Schafe auf den Hof und baut es ein Schafhaus, haben sie dies zu dulden.\nSiegler: 1) Junker Ulrich von Rosenberg und 2) Junker Konz [von] Stockheim (Stackheym), Amtmann zu [Ober- oder Unter-]Schüpf (Schippff)\nAusf. Perg. - 2 Sg., 1. in Perg.-Hülle, 2. abg., Presselrest anh. - Rv.: Uber den hoff zu Asamstat lehenbriff\n\nLaufzeit: 1460\n\nUmfang: 1 U",
       "english": "12 March 1460 (St Gregory’s Day)\nKonz Rortal (Rortale), Fritz Guckenberg, and Heinz Sönß lease the monastery’s farm at Assamstadt from the abbot and convent of Schöntal Monastery in return for the specified dues, which are to be delivered to the monastery’s storehouse in Mergentheim (Mergethen). If Schöntal Monastery places sheep on the farm and builds a sheepfold, they must tolerate this.\nSealers: 1) Junker Ulrich von Rosenberg and 2) Junker Konz [von] Stockheim (Stackheym), bailiff at [Ober- or Unter-]Schüpf (Schippff).\nOriginal, parchment; two seals, the first in a parchment cover, the second detached, remains of tag attached; dorse: “Lease charter for the farm at Assamstadt.”\n\nDate range: 1460\n\nExtent: One charter",
-      "mention": [
-        {
-          "person": "Kunz von Stockheim",
-          "personTitle": [
-            "Junker"
-          ]
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "schoental-monastery"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "personTitle": [
-            "Junker"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000528729%2F02_0000528729_0003_2-528729-3.jpg"
@@ -34,6 +14,26 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000528729%2F02_0000528729_0004_2-528729-4.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Stockheim",
+      "personTitle": [
+        "Junker"
+      ]
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "schoental-monastery"
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "personTitle": [
+        "Junker"
       ]
     }
   ]

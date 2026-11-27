@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198220",
       "german": "Lehnrevers Hansens von Rosenberg an H. Graf Micheln ausgestellet über folgendes rechtes Mannlehen, nämlich das Schloß Unterschüpf (untern Schüpf) mit seinem Begriff Zu- und Eingehörungen, wie er solch Schloß um Jörgen von Rosenberg seinem Bruder und Albrechten von Rosenberg seines Bruders sel. Sohn erkauft hat.\n\nLaufzeit: 1529 Februar 23 (Montag nach dem Sontag Reminiscere)",
       "english": "Feudal acknowledgment issued by Hans von Rosenberg to Lord Count Michael concerning the following proper fief for male heirs, namely Unterschüpf Castle with its territory and appurtenances, which he purchased from Georg von Rosenberg, his brother, and Albrecht von Rosenberg, the son of his late brother.\n\nDate range: 23 February 1529 (Monday after Reminiscere Sunday)",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "unterschuepf"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198220%2F07_0000198220_0001_7-198220-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198220%2F07_0000198220_0002_7-198220-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "unterschuepf"
     }
   ]
 }

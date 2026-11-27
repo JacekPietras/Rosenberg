@@ -6,15 +6,15 @@
       "source": "HStAD, B 8, 6/364",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5181354",
       "german": "Johannes Metzler, Bürger zu Lindheim: Urfehde gegenüber Johann Dietrich v. Rosenbach, Oberamtmann zu Königstein\n\nFormalbeschreibung: Ausf., Papier, Signet, Unterschrift\n\nSiegler: Johann Hartung, Amtsgrefe zu Altenstadt\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Johannes Metzler, burgher of Lindheim: settlement of his feud with Hans Dietrich von Rosenberg, chief bailiff at Königstein\n\nFormal description: fair copy, paper, signet, signature\n\nSealer: Johann Hartung, chief court clerk at Altenstadt\n\n(Former) provenances: von Rosenbach",
-      "mention": [
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johannes Metzler, burgher of Lindheim: settlement of his feud with Hans Dietrich von Rosenberg, chief bailiff at Königstein\n\nFormal description: fair copy, paper, signet, signature\n\nSealer: Johann Hartung, chief court clerk at Altenstadt\n\n(Former) provenances: von Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -7,11 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4641588",
       "german": "Sachen wegen der Grenze im Amt Bieberstein zum Gebiet der Freiherren von Rosenbach zu Schackau\n\nEnthält: Bericht über die Entfernung eines Grenzsteins und dessen Wiederaufstellung an anderer Stelle unweit des Langenbergs durch Jörg Joseph Ried zu Schwarzbach\n\nLaufzeit: 1754",
       "english": "Matters concerning the boundary in the Bieberstein district with the territory of the barons von Rosenbach of Schackau.\n\nIncludes: Report on the removal of a boundary stone and its re-erection elsewhere near the Langenberg by Jörg Joseph Ried of Schwarzbach.\n\nPeriod covered: 1754.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_2230/hstam_90_nr_b_2230_0001.jpg"
@@ -41,6 +36,11 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_2230/hstam_90_nr_b_2230_0009.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

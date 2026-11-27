@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3351/charter",
       "german": "Franz Christoph und Johann Konrad von Rosenbach bestätigen für sich und ihre namentlich genannten Vettern die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhards) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Georg Adolf von Hettersdorf (Hettersdorff)\n\nSiegel: anhängendes Siegel in Holzkapsel Georg Adolf von Hettersdorf (Hettersdorff)",
       "english": "Franz Christoph and Hans Konrad von Rosenberg confirm, for themselves and their cousins named individually, the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with Schackau (Schackaw) together with all its woodland and field appurtenances and an estate there, with Kleinsassen (Sassen), Gerharts (Gerhards) [all places in Hofbieber municipality, Fulda district], and other fiefs listed individually. The feudal letter is inserted. Seal clause.\n\nSealer: Georg Adolf von Hettersdorf (Hettersdorff).\n\nSeal: Attached seal in wooden capsule of Georg Adolf von Hettersdorf (Hettersdorff).",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203351%20Vorderseite%20%281676%20August%2021%29.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203351%20Rueckseite%20%281676%20August%2021%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FD1DF007-572A-4301-BF51-ADAEA1006D64&parent_id="
       ],
       "german": "Ein von Herzog Albrecht V. von Bayern aus München an den Bischof von Würzburg gerichtetes Schreiben, betrifft Wilhelm von Grumbach und dessen Schreiben an den Leutnant Ritter Sebastian Schertlin, dann den Austritt des Albrecht von Rosenberg aus sächsischen Diensten",
-      "english": "A letter sent by Duke Albrecht V of Bavaria from Munich to the Bishop of Würzburg, concerning Wilhelm von Grumbach and his letter to Lieutenant Knight Sebastian Schertlin, as well as Albrecht von Rosenberg's departure from Saxon service.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Wilhelm von Grumbach"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "A letter sent by Duke Albrecht V of Bavaria from Munich to the Bishop of Würzburg, concerning Wilhelm von Grumbach and his letter to Lieutenant Knight Sebastian Schertlin, as well as Albrecht von Rosenberg's departure from Saxon service."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "person": "Wilhelm von Grumbach"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

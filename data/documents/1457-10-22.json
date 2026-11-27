@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-DAL/Urkunden/Urkunden_PA%28Waldneukirchen%29/charter",
       "german": "Der Passauer Weihbischof Sigismund (Pirchan von Rosenberg) bestätigt die Weihe des Hochaltares und die Weihe von 3 Seitenaltären in der Kirche von Waldneukirchen.\n\nSiegel: abgefallen",
       "english": "The Passau auxiliary bishop Siegmund Pirchan von Rosenberg confirms the consecration of the high altar and the consecration of three side altars in the church of Waldneukirchen.\n\nSeal: fallen off",
-      "mention": [
-        {
-          "person": "Siegmund Pirchan von Rosenberg",
-          "personTitle": [
-            "Bischof"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-DAL/Urkunden/DAL_14571022_UrkPA__005_r.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/AT-DAL/Urkunden/DAL_14571022_UrkPA__005_v.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Siegmund Pirchan von Rosenberg",
+      "personTitle": [
+        "Bischof"
       ]
     }
   ]

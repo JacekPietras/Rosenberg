@@ -7,32 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6866712",
       "german": "Eheberedung zwischen Johann Friedrich Anton Freiherrn Zobel von Giebelstadt und Messelhausen und Maria Philippina Freifrau von Greiffenclau zu Vollrads.\n\nEheberedung zwischen [Johann] Friedrich [Anton] Freiherrn Zobel von Giebelstadt und Messelhausen, würzburgischer Hofrat, Sohn des Franz Zobel von Giebelstadt, Herr zu Messelhausen und Darstadt, und der Sophia Franziska geborene Freifrau von Frankenstein, und Maria Philippina, Tochter des Lothar Gottfried Heinrich Freiherrn von Greiffenclau zu Vollrads und der Maria Anna Franziska Esther geborene Schenk von Stauffenberg.\n\nFormalbeschreibung: Abschrift 18. Jahrhundert, Papierlibell (14 S.), rote Unterstreichungen 20. Jahrhundert\n\nSiegler: angekündigt: Maria Philippina Freifrau von Greiffenclau zu Vollrads, Lothar Freiherr von Greiffenclau zu Vollrads, Karl Philipp von Greiffenclau zu Vollrads, Marquard Freiherr Schenk von Stauffenberg, Johann Philipp von Rosenbach, Adalbert Friedrich Gottfried von Rosenbach, Franz Ferdinand Freiherr von Felden (Welden), Wilhelm Reinhard von Reinach, Johann Fritz Anton Valentin Zobel von Giebelstadt, Johann Franz Zobel von Giebelstadt, Karl Philipp Johann Josef Zobel von Giebelstadt, Ludwig Ignaz Johann Konrad Zobel von Giebelstadt, Hugo Philipp C. V. W. Freiherr von und zu Dalberg, Johann Wilhelm Zobel von Giebelstadt\n\n(Vor-) Provenienzen: Archiv Schloss Vollrads Abt. 1, Nr. 1104",
       "english": "Marriage contract between Johann Friedrich Anton Freiherr Zobel von Giebelstadt und Messelhausen and Maria Philippina Freifrau von Greiffenclau zu Vollrads. He was a Würzburg court councillor, son of Franz Zobel von Giebelstadt, lord of Messelhausen and Darstadt, and Sophia Franziska, née Freifrau von Frankenstein; she was daughter of Lothar Gottfried Heinrich Freiherr von Greiffenclau zu Vollrads and Maria Anna Franziska Esther, née Schenk von Stauffenberg. 18th-century copy, paper booklet (14 pages), with 20th-century red underlining. Sealers announced: Maria Philippina Freifrau von Greiffenclau zu Vollrads, Lothar Freiherr von Greiffenclau zu Vollrads, and Karl Philipp von Greiffenclau zu Vollrads; Marquard Freiherr Schenk von Stauffenberg; Hans Philipp von Rosenberg and Adalbert Friedrich Gotfried von Rosenberg; Franz Ferdinand Freiherr von Felden (Welden); Wilhelm Reinhard von Reinach; Johann Fritz Anton Valentin, Johann Franz, Karl Philipp Johann Josef, Ludwig Ignaz Johann Konrad, and Johann Wilhelm Zobel von Giebelstadt; Hugo Philipp C. V. W. Freiherr von und zu Dalberg. Provenance: Vollrads Castle Archive, section 1, no. 1104.",
-      "mention": [
-        {
-          "place": "frankenstein"
-        },
-        {
-          "person": "Franz Zobel von Giebelstadt"
-        },
-        {
-          "person": "Friedrich Gotfried von Rosenberg"
-        },
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "person": "Hans Konrad Zobel von Giebelstadt"
-        },
-        {
-          "person": "Hans Philipp von Rosenberg"
-        },
-        {
-          "person": "Hans Wilhelm Zobel von Giebelstadt"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/128--1/1104/hhstaw_128--1_nr_1104_0001.jpg"
@@ -62,6 +36,32 @@
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/128--1/1104/hhstaw_128--1_nr_1104_0009.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "frankenstein"
+    },
+    {
+      "person": "Franz Zobel von Giebelstadt"
+    },
+    {
+      "person": "Friedrich Gotfried von Rosenberg"
+    },
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "person": "Hans Konrad Zobel von Giebelstadt"
+    },
+    {
+      "person": "Hans Philipp von Rosenberg"
+    },
+    {
+      "person": "Hans Wilhelm Zobel von Giebelstadt"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

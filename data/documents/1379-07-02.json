@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129182",
       "german": "Revers des Edelknechts Hans Phal von Grünsfeld für die Carthause, daß ihr der Zehnte zu Großrinderfeld, welcher von der Grafschaft Wertheim zu Lehen rühre, von seiner Frau Mutter Anna von Rosenberg verkauft worden und er deshalb diesen Zehnten dem Lehnsherrn aufgesagt habe.\n\nLaufzeit: 1379 Juli 2 (Processi und Martiniani)",
       "english": "Acknowledgment by the Edelknecht Hans Phal von Grünsfeld to the Carthusian monastery that the tithe at Großrinderfeld, held as a fief from the County of Wertheim, was sold by his mother, Anna von Rosenberg; he has therefore renounced this tithe to his feudal lord.\n\nDate: 2 July 1379 (Processi and Martiniani).",
-      "mention": [
-        {
-          "person": "Anna von Rosenberg"
-        },
-        {
-          "place": "grunsfeld"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129182%2F07_0000129182_0001_7-129182-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129182%2F07_0000129182_0002_7-129182-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna von Rosenberg"
+    },
+    {
+      "place": "grunsfeld"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

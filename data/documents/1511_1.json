@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C896F168-F63A-4160-B63B-5782564F8D42&parent_id="
       ],
       "german": "Kaufbriefe über die zum Hammergut Rosenberg gehörigen Güter und Höfe zu Höfling und Rothsricht, die Öde \"Ernnsperg\" (oder Hirschricht) und einer Wiese \"im Praittenlohe\"\nEnthält auch: Vergleich des Hans Heinrich von Kaisersberg mit den Prüschenk'schen Erben wegen einer Prioritätschuld im Nachlaß des Wolf Doles",
-      "english": "The file contains purchase deeds for the estates and farms belonging to the Hammergut Rosenberg at Höfling and Rothsricht, the deserted settlement Ernnsperg (or Hirschricht), and a meadow called “im Praittenlohe.” It also contains an agreement between Hans Heinrich von Kaisersberg and the heirs of Prüschenk concerning a priority debt in Wolf Doles’s estate.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "The estates and farms belonging to the Hammergut Rosenberg at Höfling and Rothsricht, the deserted settlement Ernnsperg (or Hirschricht), and the meadow called “im Praittenlohe”",
-          "type": "generic",
-          "content": "are documented in deeds of sale."
-        }
-      ]
+      "english": "The file contains purchase deeds for the estates and farms belonging to the Hammergut Rosenberg at Höfling and Rothsricht, the deserted settlement Ernnsperg (or Hirschricht), and a meadow called “im Praittenlohe.” It also contains an agreement between Hans Heinrich von Kaisersberg and the heirs of Prüschenk concerning a priority debt in Wolf Doles’s estate."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "The estates and farms belonging to the Hammergut Rosenberg at Höfling and Rothsricht, the deserted settlement Ernnsperg (or Hirschricht), and the meadow called “im Praittenlohe”",
+      "type": "generic",
+      "content": "are documented in deeds of sale."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

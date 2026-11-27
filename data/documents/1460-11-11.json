@@ -6,40 +6,40 @@
       "source": "ISG FFM, S1-1004-05, 192",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10564834",
       "german": "Vlrich von Rosemberg, Sohn des verstorbenen Eberhart von Rosemberg, bekennt, daß er von dem Erwählten Diether von Mainz den achten Teil an dem Schloß Schipff, den vorher der Ritter Anßhelm von Rosemberg innegehabt hatte, zu Mannlehen empfangen und darüber geschworen hat. Der Lehenbrief vom selben Tag ist inseriert.\n\nSiegler: A. (fehlt).",
-      "english": "Vlrich von Rosemberg, son of the late Eberhard von Rosenberg, acknowledges that he has received from the Elect Diether of Mainz one-eighth share of Schloss Schipff, previously held by Knight Anßhelm von Rosemberg, as a fief and has sworn accordingly. The letter of enfeoffment of the same day is inserted.\n\nSealer: A. (missing).",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Diether of Mainz"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "received as a male fief from Diether, elected Archbishop of Mainz, an eighth share of Schipff Castle, previously held by Ritter Anselm von Rosenberg."
-        }
+      "english": "Vlrich von Rosemberg, son of the late Eberhard von Rosenberg, acknowledges that he has received from the Elect Diether of Mainz one-eighth share of Schloss Schipff, previously held by Knight Anßhelm von Rosemberg, as a fief and has sworn accordingly. The letter of enfeoffment of the same day is inserted.\n\nSealer: A. (missing)."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Ulrich von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "received as a male fief from Diether, elected Archbishop of Mainz, an eighth share of Schipff Castle, previously held by Ritter Anselm von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Diether of Mainz"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

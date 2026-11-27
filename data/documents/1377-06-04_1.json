@@ -6,38 +6,38 @@
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 525ª,41. — Archiv f. hess. Gesch. 10,124",
       "url": "https://archive.org/details/bub_gb_dnQ-AAAAYAAJ/page/n272/mode/1up",
       "german": "Margarethe von Erbach, Engelhards von Hirschhorn wittwe, übergibt dem pfalzgrafen alle schuldbriefe über Nekarau, Reinhausen, Videnheim, die mühle und den zoll daselbst.  Z.: Conrad von Erbach d. ä., Hans von Hirschhorn, Conrad von Rosenberg und Eberhard von Nyperg.",
-      "english": "Margaretha von Erbach, widow of Engelhard von Hirschhorn, hands over to the Count Palatine all debt certificates concerning Neckarau, Reinhausen, Videnheim, the mill and the toll there. Witnesses: Konrad von Erbach der Ältere, Hans von Hirschhorn, Konrad von Rosenberg, and Eberhard von Neipperg.",
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "witnessed Margarethe von Erbach’s transfer of debt letters concerning Neckarau, Reinhausen, Videnheim, the mill, and the toll to the Count Palatine."
-        },
-        {
-          "person": "Konrad von Erbach",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
-        },
-        {
-          "person": "Hans von Hirschhorn",
-          "type": "generic",
-          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
-        },
-        {
-          "person": "Eberhard von Neipperg",
-          "type": "generic",
-          "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
-        },
-        {
-          "person": "Engelhard von Hirschhorn",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Margaretha von Erbach"
-        }
-      ]
+      "english": "Margaretha von Erbach, widow of Engelhard von Hirschhorn, hands over to the Count Palatine all debt certificates concerning Neckarau, Reinhausen, Videnheim, the mill and the toll there. Witnesses: Konrad von Erbach der Ältere, Hans von Hirschhorn, Konrad von Rosenberg, and Eberhard von Neipperg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "witnessed Margarethe von Erbach’s transfer of debt letters concerning Neckarau, Reinhausen, Videnheim, the mill, and the toll to the Count Palatine."
+    },
+    {
+      "person": "Konrad von Erbach",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
+    },
+    {
+      "person": "Hans von Hirschhorn",
+      "type": "generic",
+      "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
+    },
+    {
+      "person": "Eberhard von Neipperg",
+      "type": "generic",
+      "content": "witnessed Margarethe von Erbach’s transfer of debt letters to the Count Palatine."
+    },
+    {
+      "person": "Engelhard von Hirschhorn",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Margaretha von Erbach"
     }
   ]
 }

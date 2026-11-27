@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++98A00A60-8E50-4F69-A473-CA45697D8089&parent_id="
       ],
       "german": "Ein Schreiben des Johann Hartmann von Rosenbach an den Fürstbischof, betrifft die Verhandlungen über den Verkauf des Seinsheimischen Gutes Erlach, eines markgräflichen Lehens, an die Grafen von Hatzfeld bzw. von Schwarzenberg",
-      "english": "A letter from Hans Hartmann von Rosenberg to the Prince-Bishop concerning negotiations over the sale of the Seinsheim estate at Erlach, a margravial fief, to the Counts von Hatzfeld or von Schwarzenberg.",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "place": "schwarzenberg"
-        },
-        {
-          "place": "seinsheim"
-        }
-      ]
+      "english": "A letter from Hans Hartmann von Rosenberg to the Prince-Bishop concerning negotiations over the sale of the Seinsheim estate at Erlach, a margravial fief, to the Counts von Hatzfeld or von Schwarzenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "place": "schwarzenberg"
+    },
+    {
+      "place": "seinsheim"
     }
   ]
 }

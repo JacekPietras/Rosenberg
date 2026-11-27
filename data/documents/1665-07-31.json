@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-228_St/charter",
       "german": "Johann Jakob Schneeweiß von Arnoldstein verkauft sein freieigenes Gut und seine Hube, zu Reifnitz unter Keutschach gelegen, dem Grafen Johann Andre von Rosenberg, Burggrafen zu Klagenfurt. Siegler und Unterschrift: Aussteller\n\nSiegel: 1 Sig. imp.",
       "english": "Johann Jakob Schneeweiß von Arnoldstein sells his allodial estate and his hide, located at Reifnitz under Keutschach, to Johann Andre von Rosenberg, Graf, Burggraf zu Klagenfurt. Sealer and signature: issuer\n\nSeal: 1 impressed seal.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_228_16650731_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_228_16650731_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

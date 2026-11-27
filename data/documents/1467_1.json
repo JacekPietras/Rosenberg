@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d9b056dc-db45-416e-bb72-27e2f95040df&parent_id="
       ],
       "german": "Die Feindschaft und Befehdung Jörgens von Rosenberg mit der Stadt Windsheim",
-      "english": "The hostility and armed feud of Georg von Rosenberg against the city of Windsheim",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was in feud with the city of Windsheim."
-        }
-      ]
+      "english": "The hostility and armed feud of Georg von Rosenberg against the city of Windsheim"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "was in feud with the city of Windsheim."
     }
   ]
 }

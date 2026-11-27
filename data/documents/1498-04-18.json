@@ -6,25 +6,25 @@
       "source": "Siegfrieds Wappensammlung, Stadtteil Unterschüpf",
       "url": "https://www.ortswappen.de/index.php/index.php?auswahl=7667&buchstabe=alle&land=Baden-Wuerttemberg&site=10",
       "german": "Am 18. April 1498 bestellt die Gemeinde Unterschüpf den Prokurator Hans Bezinger zur Vertretung ihrer Interessen in einem Streit um den Üttingshof. Der Schultheiß Heinrich Hawgh und die Schöffen des Dorfgerichts ersuchen die Junker Michel von Rosenberg und Balthasar Stieber, die hierfür ausgestellte Vollmachtsurkunde zu besiegeln.",
-      "english": "On 18 April 1498, the community of Unterschüpf appointed the procurator Hans Bezinger to represent its interests in a dispute over the Üttingshof. The village magistrate Heinrich Hawgh and the assessors of the village court asked the noblemen Michael von Rosenberg and Balthasar Stieber to seal the power of attorney issued for this purpose.",
-      "mention": [
-        {
-          "person": "Balthasar Stieber"
-        },
-        {
-          "place": "unterschuepf"
-        }
+      "english": "On 18 April 1498, the community of Unterschüpf appointed the procurator Hans Bezinger to represent its interests in a dispute over the Üttingshof. The village magistrate Heinrich Hawgh and the assessors of the village court asked the noblemen Michael von Rosenberg and Balthasar Stieber to seal the power of attorney issued for this purpose."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Junker"
       ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Junker"
-          ],
-          "type": "generic",
-          "content": "was asked by Heinrich Hawgh, Schultheiß, and the village court assessors of Unterschüpf to seal a power of attorney for Hans Bezinger in a dispute over the Üttingshof."
-        }
-      ]
+      "type": "generic",
+      "content": "was asked by Heinrich Hawgh, Schultheiß, and the village court assessors of Unterschüpf to seal a power of attorney for Hans Bezinger in a dispute over the Üttingshof."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar Stieber"
+    },
+    {
+      "place": "unterschuepf"
     }
   ]
 }

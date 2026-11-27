@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3DE40BEB-E1E2-4D18-88A8-0619CE0466C4&parent_id="
       ],
       "german": "Aktenstück des Domstifts Würzburg, betrifft ein Verzeichnis über die dem Zeysolf von Rosenberg (zu Haldenbergstetten?) zustehenden, jährlichen Zins und Gülten von Gütern zu Gnodstadt",
-      "english": "Document of the Würzburg Cathedral Foundation, concerning a list of the annual rents and levies belonging to Zeysolf von Rosenberg (of Haldenbergstetten?) from properties in Gnodstadt",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Document of the Würzburg Cathedral Foundation, concerning a list of the annual rents and levies belonging to Zeysolf von Rosenberg (of Haldenbergstetten?) from properties in Gnodstadt"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

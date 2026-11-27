@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4476551",
       "german": "Philipp Christoph von Rosenbach, Kapitular zu Fulda und Propst von Blankenau, verleiht einen Teil eines Gehölzes zwischen (Eussen) und Giesel\n\nPhilipp Christoph von Rosenbach, Kapitular zu Fulda und Propst von Blankenau [Gem. Hosenfeld, Lkr. Fulda], leiht dem Valentin (Velten) Ebert, Weißbäcker in Fulda, einen Teil eines Gehölzes zwischen (Eussen) und Giesel (Döpfengiesel) [Ortsteil der Gem. Neuhof, Lkr. Fulda].\n\nFormalbeschreibung: Original, Papier, Dt., Oblatensiegel.\n\nZusatzinformationen: Vgl. zum Kloster Blankenau Germania Benedictina Bd. VII, S. 57-65.",
       "english": "Philipp Christoph von Rosenberg, canon of Fulda and provost of Blankenau, grants a portion of a wood between (Eussen) and Giesel\n\nPhilipp Christoph von Rosenberg, canon of Fulda and provost of Blankenau [municipality of Hosenfeld, Fulda district], leases a portion of woodland between (Eussen) and Giesel (Döpfengiesel) [part of the municipality of Neuhof, Fulda district] to Valentin (Velten) Ebert, a white-bread baker in Fulda.\n\nFormal description: original, paper, German, wafer seal.\n\nAdditional information: On Blankenau Abbey, see Germania Benedictina, vol. VII, pp. 57–65.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Philipp Christoph von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/99/00001.jpg"
@@ -32,6 +24,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/99/00005.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Philipp Christoph von Rosenberg"
     }
   ]
 }

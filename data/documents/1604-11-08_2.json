@@ -7,23 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3112074",
       "german": "Leihe des Steinhauses zu Berstadt und eines Zinses an die von Rosenbach durch Abt Balthasar von Fulda\n\nFulda. - Balthasar [von Dernbach], Abt zu Fulda, gibt an Adam Hektor und Johann Konrad, Johanniter, und Johann Dietrich, Söhne des Dietrich von Rosenbach, das Steinhaus zu Berstadt und ihren Teil am Zins zu Lanzendorf. Es folgen nähere Bestimmungen.\n\nFormalbeschreibung: Ausfertigung, Pergament, Siegel ab und verloren\n\nSiegler: Aussteller",
       "english": "Grant by Abbot Balthasar of Fulda of the stone house at Berstadt and a rent to the von Rosenbach family.\n\nFulda. Balthasar [von Dernbach], Abbot of Fulda, grants Adam Hektor and Johann Konrad, Knights of St John, and Johann Dietrich, sons of Dietrich von Rosenberg, the stone house at Berstadt and their share of the rent at Lanzendorf. Further provisions follow.\n\nFormal description: Original, parchment, seal detached and lost\n\nSealer: Issuer",
-      "mention": [
-        {
-          "person": "Balthasar",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        },
-        {
-          "person": "Dietrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/534/hstam_urk._80_nr_534_0001.jpg"
@@ -32,6 +15,23 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/534/hstam_urk._80_nr_534_0002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar",
+      "personTitle": [
+        "Abt zu Fulda"
+      ]
+    },
+    {
+      "person": "Dietrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

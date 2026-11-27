@@ -11,57 +11,57 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++296DA5F3-A399-4A4D-95CD-338B76FBAB23&parent_id="
       ],
       "german": "Erzbischof Conrad (III.) von Mainz und Bischof Johann (II.) von Würzburg setzen in der Fehde zwischen der Stadt Nürnberg und Wilhelm von Rechberg, Cuntz und Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn dem Jüngeren, Karl und Sigmund von Thüngen einen Waffenstillstand fest.",
-      "english": "Archbishop Konrad III of Mainz and Bishop Johann II zu Würzburg established a truce in the feud between the city of Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, and Karl and Siegmund von Thüngen.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "cronberg"
-        },
-        {
-          "person": "Erzbischof Konrad",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Hans vom Hirschhorn",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Karl von Thüngen"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the Bishop zu Würzburg established a truce."
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the Bishop zu Würzburg established a truce."
-        }
+      "english": "Archbishop Konrad III of Mainz and Bishop Johann II zu Würzburg established a truce in the feud between the city of Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, and Karl and Siegmund von Thüngen."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the Bishop zu Würzburg established a truce."
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "was named in the feud between Nuremberg and the nobles for which the archbishop of Mainz and the Bishop zu Würzburg established a truce."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "cronberg"
+    },
+    {
+      "person": "Erzbischof Konrad",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Hans vom Hirschhorn",
+      "personTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Karl von Thüngen"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1d0aaf30-03d3-48bc-970a-e49774359761&parent_id="
       ],
       "german": "Verpachtung der herrschaftlichen Weiher und Fischrechte zu Rügland an Friedrich Helmreich von Rügland und an Friedrich Henninger von Rosenberg.",
-      "english": "Lease of the lordship's ponds and fishing rights at Rügland to Friedrich Helmreich from Rügland and Friedrich Henninger from Rosenberg.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Lease of the lordship's ponds and fishing rights at Rügland to Friedrich Helmreich from Rügland and Friedrich Henninger from Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

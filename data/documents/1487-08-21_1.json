@@ -7,27 +7,27 @@
       "source": "Chmel n. 8135",
       "url": "https://www.regesta-imperii.de/id/1487-08-21_1_0_13_0_0_8134_8135",
       "german": "absolvirt auf Bitten des Rudoph, Bischofs zu Würzburg, der sich mit Georg, Arnold und Friedrich von Rosenberg, Gebrüdern und Vettern vertragen, diese und ihre Anhänger von den wider sie ergangenen Achten, Aberachten, Pönen und Bussen.",
-      "english": "At the request of Rudolph, Bishop zu Würzburg, who had reached an agreement with Georg, Arnold, and Friedrich von Rosenberg, brothers and cousins, he absolves them and their followers from the bans, aggravated bans, penalties, and fines issued against them.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "At the request of Rudolph, Bishop zu Würzburg, who had reached an agreement with Georg, Arnold, and Friedrich von Rosenberg, brothers and cousins, he absolves them and their followers from the bans, aggravated bans, penalties, and fines issued against them."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

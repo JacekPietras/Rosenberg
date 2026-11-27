@@ -9,45 +9,45 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++67C98BAA-65B5-44E7-AA34-0DF25E04A69E&parent_id="
       ],
       "german": "Neidhart von Thüngen, Dompropst zu Würzburg und Propst zum Neuen Münster das., Weiprecht Philipp, Cunrad und Daniel alle von Thüngen, Vettern, sowie Bernhard von Steinau gen. Steinrück zu Enerbach auf seiten des Reuss von Thüngen, dann Wolf Dieterich vom Stein zu Maroldsweisach, Georg Ludwig von Seinsheim zu Hohen Kottenheim, fürstl. Würzburg. Rat, Joachim Fuchs zu Wunfurt, Bernhard von Hutten zu Vordern Frankenberg, Conrad von Rosenberg zu Kuezheim, Veit vom Lichtenstein zu Schaumbergs Gereuth wegen Sebastian und Hans vom Lichtenstein und der Frau Eva vom Lichtenstein, geb. von Hutten und deren Tochter Eva v. L. beteidingen eine Ehe zwischen Jungfrau Eva vom Lichtenstein und Reuss von Thüngen zum Feitlos",
-      "english": "Neidhart von Thüngen, Dompropst zu Würzburg and provost of the New Minster there, Weiprecht Philipp, Cunrad, and Daniel, all von Thüngen and cousins, and Bernhard von Steinau called Steinrück zu Enerbach, on behalf of Reuss von Thüngen; then Wolf Dieterich vom Stein zu Maroldsweisach, Georg Ludwig von Seinsheim zu Hohen Kottenheim, councillor to the Prince-Bishop of Würzburg, Joachim Fuchs zu Wunfurt, Bernhard von Hutten zu Vordern Frankenberg, Konrad von Rosenberg zu Kuezheim, and Veit vom Lichtenstein zu Schaumbergs Gereuth, on behalf of Sebastian and Hans vom Lichtenstein, Eva vom Lichtenstein née von Hutten, and her daughter Eva von Lichtenstein, negotiate a marriage between the maiden Eva vom Lichtenstein and Reuss von Thüngen zum Feitlos.",
-      "mention": [
-        {
-          "person": "Bernhard von Hutten"
-        },
-        {
-          "person": "Eva vom Lichtenstein"
-        },
-        {
-          "person": "Eva von Hutten",
-          "personTitle": [
-            "vom Lichtenstein"
-          ]
-        },
-        {
-          "person": "Eva von Lichtenstein"
-        },
-        {
-          "person": "Georg Ludwig von Seinsheim"
-        },
-        {
-          "person": "Hans vom Lichtenstein"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Sebastian vom Lichtenstein"
-        },
-        {
-          "place": "thuengen"
-        },
-        {
-          "person": "Veit vom Lichtenstein"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Neidhart von Thüngen, Dompropst zu Würzburg and provost of the New Minster there, Weiprecht Philipp, Cunrad, and Daniel, all von Thüngen and cousins, and Bernhard von Steinau called Steinrück zu Enerbach, on behalf of Reuss von Thüngen; then Wolf Dieterich vom Stein zu Maroldsweisach, Georg Ludwig von Seinsheim zu Hohen Kottenheim, councillor to the Prince-Bishop of Würzburg, Joachim Fuchs zu Wunfurt, Bernhard von Hutten zu Vordern Frankenberg, Konrad von Rosenberg zu Kuezheim, and Veit vom Lichtenstein zu Schaumbergs Gereuth, on behalf of Sebastian and Hans vom Lichtenstein, Eva vom Lichtenstein née von Hutten, and her daughter Eva von Lichtenstein, negotiate a marriage between the maiden Eva vom Lichtenstein and Reuss von Thüngen zum Feitlos."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bernhard von Hutten"
+    },
+    {
+      "person": "Eva vom Lichtenstein"
+    },
+    {
+      "person": "Eva von Hutten",
+      "personTitle": [
+        "vom Lichtenstein"
       ]
+    },
+    {
+      "person": "Eva von Lichtenstein"
+    },
+    {
+      "person": "Georg Ludwig von Seinsheim"
+    },
+    {
+      "person": "Hans vom Lichtenstein"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Sebastian vom Lichtenstein"
+    },
+    {
+      "place": "thuengen"
+    },
+    {
+      "person": "Veit vom Lichtenstein"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

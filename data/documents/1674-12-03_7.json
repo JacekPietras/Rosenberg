@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3349/charter",
       "german": "Johann Hartmann, Bischof von Würzburg, Franz Christoph und Johann Konrad, alle von Rosenbach, bestätigen für sich und ihre namentlich genannten Vettern die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sasszen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann von Schlitz genannt von Görtz\n\nSiegel: anhängendes Siegel in Holzkapsel Johann von Schlitz genannt von Görtz",
       "english": "Johann Hartmann, Bishop of Würzburg, Franz Christoph, and Johann Konrad, all von Rosenbach, confirm, for themselves and their cousins named individually, the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with Schackau (Schackaw) together with all its woodland and field appurtenances and an estate there, with Kleinsassen (Sasszen), Gerharts (Gerhardts) [all places in Hofbieber municipality, Fulda district], and other fiefs listed individually. The feudal letter is inserted. Seal clause.\n\nSealer: Johann von Schlitz genannt von Görtz.\n\nSeal: Attached seal in wooden capsule of Johann von Schlitz genannt von Görtz.",
-      "mention": [
-        {
-          "person": "Bischof Hans Hartmann",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203349%20Vorderseite%20%281674%20Dezember%2003%29.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203349%20Rueckseite%20%281674%20Dezember%2003%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans Hartmann",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

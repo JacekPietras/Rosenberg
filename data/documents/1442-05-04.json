@@ -11,17 +11,6 @@
       ],
       "german": "Ulrich von Rosenberg teilt der Stadt Nürnberg mit, dass ihr Handel mit dem von Swamberg auf den Landgrafen von Leuchtenberg gestellt sei.\n\nBesiegelung/Beglaubigung: mit Verschlußsiegel (defekt).",
       "english": "Ulrich von Rosenberg informed the city of Nuremberg that its dispute with von Swamberg had been referred to the Landgraf zu Leuchtenberg.",
-      "mention": [
-        {
-          "place": "leuchtenberg"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/2fdd23c6-3d38-428e-8a20-e5a0236cc689/1/full/max/0/default.jpg"
@@ -31,6 +20,17 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "leuchtenberg"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

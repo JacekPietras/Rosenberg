@@ -6,30 +6,30 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74758",
       "german": "Rechtsstreit zwischen Konrad, Albrecht Christoph und Georg Sigmund von Rosenberg einerseits und den Eigenerben des Konrad von Rosenberg d.Ä. wegen des Dorfes Bofsheim.",
-      "english": "Legal dispute between Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the one hand and the independent heirs of Konrad von Rosenberg the Elder regarding the village of Bofsheim.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "boffsheim"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "subject": "Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg",
-          "type": "generic",
-          "content": "were in litigation with the allodial heirs of Konrad von Rosenberg the Elder over Bofsheim."
-        }
+      "english": "Legal dispute between Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg on the one hand and the independent heirs of Konrad von Rosenberg the Elder regarding the village of Bofsheim."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg",
+      "type": "generic",
+      "content": "were in litigation with the allodial heirs of Konrad von Rosenberg the Elder over Bofsheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "boffsheim"
+    },
+    {
+      "person": "Georg Siegmund von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere"
       ]
     }
   ]

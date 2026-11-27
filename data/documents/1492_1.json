@@ -6,25 +6,25 @@
       "source": "HStAM, 86, 22062",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1651592",
       "german": "Mit Unterstützung ihres Bruders Zeisolf von Rosenberg erhobene Forderungen der Witwe des Mangold von Eberstein, Margarethe geborene von Rosenberg, hinsichtlich ihres Leibgedinges",
-      "english": "Claims pursued by the widow of Mangold von Eberstein, Margarethe née von Rosenberg, concerning her dower, with the support of her brother Zaisolph von Rosenberg",
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "sibling",
-          "of": "Margaretha von Rosenberg"
-        },
-        {
-          "person": "Mangold von Eberstein",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Margaretha von Rosenberg"
-        },
-        {
-          "person": "Margaretha von Rosenberg",
-          "type": "generic",
-          "content": "pursued claims concerning her dower with the support of her brother Zaisolph von Rosenberg."
-        }
-      ]
+      "english": "Claims pursued by the widow of Mangold von Eberstein, Margarethe née von Rosenberg, concerning her dower, with the support of her brother Zaisolph von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "sibling",
+      "of": "Margaretha von Rosenberg"
+    },
+    {
+      "person": "Mangold von Eberstein",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Margaretha von Rosenberg"
+    },
+    {
+      "person": "Margaretha von Rosenberg",
+      "type": "generic",
+      "content": "pursued claims concerning her dower with the support of her brother Zaisolph von Rosenberg."
     }
   ]
 }

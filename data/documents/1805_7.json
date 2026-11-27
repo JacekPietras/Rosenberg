@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++37DB41B3-F148-4F3D-8CF9-ED71159522E7&parent_id="
       ],
       "german": "Gesuch des Freiherrn von Rosenbach",
-      "english": "Petition by Freiherr von Rosenbach.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Petition by Freiherr von Rosenbach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

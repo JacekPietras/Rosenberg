@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5347963",
       "german": "Revers Christophs von Uissigheim bezüglich der Belehnung mit einer Kemenate und weiteren Gütern in Fulda durch Simon Beutler, Küster des Stifts Fulda,\n\nChristoph von Uissigheim bestätigt, dass Simon Beutler, Küster des Stifts Fulda, ihn mit der großen freien Kemenate unterm Dienstagsmarkt in Fulda sowie einem kleinen Häuslein und Garten daneben belehnt habe.\n\nFormalbeschreibung: Original, Pergament, Dt., Siegel.",
       "english": "Letter of reversal by Christoph von Uissigheim concerning his enfeoffment with a fortified house and further properties in Fulda by Simon Beutler, sacristan of Fulda Collegiate Church.\n\nChristoph von Uissigheim confirms that Simon Beutler, sacristan of Fulda Collegiate Church, enfeoffed him with the large free fortified house below the Tuesday market in Fulda, together with a small house and garden beside it.\n\nPhysical description: original, parchment, German, seal.",
-      "mention": [
-        {
-          "person": "Christoph von Uissigheim"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/445/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._77/445/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph von Uissigheim"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234596",
       "german": "Johann von Rosenbach, Propst zu Höchst (Hoste), bekennt, dass die Meisterin und der Konvent zu Höchst den von ihm dem Albrecht von Reichelsheim (Rychelsheim) um 40 Gulden versetzten Zehnten zu Wuesten Ammerbach wieder gelöst haben und erteilt hierzu unter vorbehalt des Rücklösungsrechtes durch ihn oder seine Nachfolger seine Zustimmung.\n\nLaufzeit: 1391 Juni 29 (\"Datum anno domini MøCCCøLXXXXø primo in die beatorum Petri et Pauli apostolorum\")\n\nSiegelbeschreibung: Siegel an Pergamentstreifen, abgefallen\n\nSiegler: Johann von Rosenbach, Propst zu Höchst",
       "english": "Hans von Rosenberg, provost of Höchst, acknowledges that the abbess and convent of Höchst have redeemed the tithe at Wuesten Ammerbach, which he had pledged to Albrecht von Reichelsheim for 40 gulden. He consents to this, subject to the right of redemption by him or his successors.\n\nDate: 29 June 1391 (“Given in the year of the Lord 1391, on the feast of the blessed apostles Peter and Paul”).\n\nSeal description: Seal attached by a parchment strip, now fallen off.\n\nSealer: Hans von Rosenberg, provost of Höchst.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Propst zu Höchst"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234596%2F07_0000234596_0001_7-234596-1.jpg"
@@ -22,6 +14,14 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234596%2F07_0000234596_0002_7-234596-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Propst zu Höchst"
       ]
     }
   ]

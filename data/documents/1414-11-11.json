@@ -6,54 +6,54 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Eberhart von Bachenstein vermacht seiner ehelichen Hausfrau Justina, gebornen von Seckendorff, 1800fl. rhn, Schwäbische Währung als Morgengabe auf alle Güter, die er von seinem Schwager, Arnolt von Seckendorff zu Mern erkauft hat, mit Namen Annfelden, Heczelsweyler, Erlachen, Mewsselsweyler, den Zehenten zu Waczendorf und Stainpachlein, endlich ein Gütlein und 5 Tagwerk Wiesen an der Art bey Windsheim an der Aysch, doch unbeschadet des Wiederlösungs-Rechts, welches genanntem von Seckendorff darauf verwilligt ist. Mitsiegler: Engelhart von Bachenstein, sein Bruder, Chorherr zu Eystet, Eberhart von Rosenberk zu Jagsperk und die Burger des Rats der Stat Herriden. G. an sand Merteinstag. (c. 4 S.)",
-      "english": "Eberhard von Bachenstein assigns his lawful wife Justina von Seckendorf a Morgengabe of 1,800 Rhine guilders in Swabian currency, secured on all the properties he bought from his Schwager Arnold von Seckendorf, zu Mern: Annfelden, Heczelsweyler, Erlachen and Mewsselsweyler; the tithes at Waczendorf and Stainpachlein; and a small property and five Tagwerk of meadows on the Art near Windsheim an der Aysch. Arnold’s agreed right of redemption is preserved. Co-sealers: Engelhard von Bachenstein, Eberhard’s brother and Chorherr zu Eystet; Eberhard von Rosenberk, zu Jagsperk; and the citizens of the council of Herriden. Given on St. Martin’s Day. (With four seals.)",
-      "mention": [
-        {
-          "place": "seckendorff"
-        }
+      "english": "Eberhard von Bachenstein assigns his lawful wife Justina von Seckendorf a Morgengabe of 1,800 Rhine guilders in Swabian currency, secured on all the properties he bought from his Schwager Arnold von Seckendorf, zu Mern: Annfelden, Heczelsweyler, Erlachen and Mewsselsweyler; the tithes at Waczendorf and Stainpachlein; and a small property and five Tagwerk of meadows on the Art near Windsheim an der Aysch. Arnold’s agreed right of redemption is preserved. Co-sealers: Engelhard von Bachenstein, Eberhard’s brother and Chorherr zu Eystet; Eberhard von Rosenberk, zu Jagsperk; and the citizens of the council of Herriden. Given on St. Martin’s Day. (With four seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberk",
+      "personTitle": [
+        "zu Jagsperk"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberk",
-          "personTitle": [
-            "zu Jagsperk"
-          ],
-          "type": "generic",
-          "content": "co-sealed Eberhard von Bachenstein’s assignment of a Morgengabe to his wife Justina von Seckendorf."
-        },
-        {
-          "person": "Eberhard von Bachenstein",
-          "type": "spouse",
-          "of": "Justina von Seckendorf"
-        },
-        {
-          "person": "Eberhard von Bachenstein",
-          "type": "sibling",
-          "of": "Engelhard von Bachenstein",
-          "ofTitle": [
-            "Chorherr zu Eystet"
-          ]
-        },
-        {
-          "person": "Arnold von Seckendorf",
-          "personTitle": [
-            "zu Mern"
-          ],
-          "type": "kin",
-          "of": "Eberhard von Bachenstein",
-          "term": "Schwager"
-        },
-        {
-          "person": "Eberhard von Bachenstein",
-          "type": "generic",
-          "content": "assigned his wife Justina von Seckendorf a Morgengabe secured on Annfelden, Heczelsweyler, Erlachen, Mewsselsweyler, tithes at Waczendorf and Stainpachlein, and property and meadows on the Art near Windsheim an der Aysch, subject to Arnold von Seckendorf’s redemption right."
-        },
-        {
-          "person": "Eberhard von Bachenstein",
-          "type": "generic",
-          "content": "had purchased Annfelden, Heczelsweyler, Erlachen, Mewsselsweyler, tithes at Waczendorf and Stainpachlein, and property and meadows on the Art near Windsheim an der Aysch from Arnold von Seckendorf, zu Mern."
-        }
+      "type": "generic",
+      "content": "co-sealed Eberhard von Bachenstein’s assignment of a Morgengabe to his wife Justina von Seckendorf."
+    },
+    {
+      "person": "Eberhard von Bachenstein",
+      "type": "spouse",
+      "of": "Justina von Seckendorf"
+    },
+    {
+      "person": "Eberhard von Bachenstein",
+      "type": "sibling",
+      "of": "Engelhard von Bachenstein",
+      "ofTitle": [
+        "Chorherr zu Eystet"
       ]
+    },
+    {
+      "person": "Arnold von Seckendorf",
+      "personTitle": [
+        "zu Mern"
+      ],
+      "type": "kin",
+      "of": "Eberhard von Bachenstein",
+      "term": "Schwager"
+    },
+    {
+      "person": "Eberhard von Bachenstein",
+      "type": "generic",
+      "content": "assigned his wife Justina von Seckendorf a Morgengabe secured on Annfelden, Heczelsweyler, Erlachen, Mewsselsweyler, tithes at Waczendorf and Stainpachlein, and property and meadows on the Art near Windsheim an der Aysch, subject to Arnold von Seckendorf’s redemption right."
+    },
+    {
+      "person": "Eberhard von Bachenstein",
+      "type": "generic",
+      "content": "had purchased Annfelden, Heczelsweyler, Erlachen, Mewsselsweyler, tithes at Waczendorf and Stainpachlein, and property and meadows on the Art near Windsheim an der Aysch from Arnold von Seckendorf, zu Mern."
+    }
+  ],
+  "mention": [
+    {
+      "place": "seckendorff"
     }
   ]
 }

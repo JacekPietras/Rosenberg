@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d3d3f64f-9f85-4ea5-a975-c02f8cfd82a2&parent_id="
       ],
       "german": "Haas, Johann Konrad, wohnhaft in Breitenbrunn/Nürnberg, Arbeiter; Verheiratung mit Hiltl, Barbara, von Rosenberg/Ottensoos",
-      "english": "Haas, Johann Konrad, resident in Breitenbrunn/Nuremberg, laborer; marriage to Hiltl, Barbara, from Rosenberg/Ottensoos",
-      "mention": [
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Haas, Johann Konrad, resident in Breitenbrunn/Nuremberg, laborer; marriage to Hiltl, Barbara, from Rosenberg/Ottensoos"
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

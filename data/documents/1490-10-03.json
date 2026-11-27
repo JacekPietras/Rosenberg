@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198249",
       "german": "Lehenrevers Hansens von Rosenberg an H. Graf Johann zu Wertheim über das in Num. 5 beschriebene Mann- und Burglehen ausgestellet. Dat.: ... am Sontag nach Michaelis 3. 8bris 1490.\n\nLaufzeit: 1490 Oktober 3",
       "english": "A fief acknowledgment issued by Hans von Rosenberg to Lord Count Johann zu Wertheim concerning the manorial and castle fief described in no. 5. Dated: ... Sunday after Michaelmas, 3 October 1490.\n\nTerm: 3 October 1490",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Hans zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198249%2F07_0000198249_0001_7-198249-1.jpg"
@@ -25,6 +14,17 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198249%2F07_0000198249_0002_7-198249-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Hans zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

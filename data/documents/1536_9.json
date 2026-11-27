@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C2363532-A901-4B79-A957-5A8F80419964&parent_id="
       ],
       "german": "Verhandlungen zwischen Albrecht von Rosenberg und den ehemaligen Schwäbischen Bundesständen wegen einiger Ansprüche aus der Rosenbergschen Fehde gegen den Schwäbischen Bund.",
-      "english": "Proceedings between Albrecht von Rosenberg and the former estates of the Swabian League concerning several claims arising from the Rosenberg feud against the Swabian League.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Proceedings between Albrecht von Rosenberg and the former estates of the Swabian League concerning several claims arising from the Rosenberg feud against the Swabian League."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

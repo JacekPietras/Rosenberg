@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DB4CCC48-F69E-4B28-87CF-E0B131D83374&parent_id="
       ],
       "german": "Aufforderung der Vormünder der von Georg Sigmund Zoller hinterlassenen Kinder an Joachim Fuchs zu Wunfurt?, Georg Ernst Fuchs von Bimbach zu Burgpreppach, Albrecht Christoph von Rosenberg zu Haldenbergstetten und Ludwig Lochinger zu Walckershofen (Mf.) als Bürgen des Conrad von Grumbach zur Bezahlung der Schulden desselben",
-      "english": "Demand by the guardians of the children left by Georg Sigmund Zoller, addressed to Joachim Fuchs of Wonfurt (?), Georg Ernst Fuchs von Bimbach zu Burgpreppach, Albrecht Christoph von Rosenberg zu Haldenbergstetten, and Ludwig Lochinger zu Walckershofen (Middle Franconia), as guarantors for Konrad von Grumbach, to pay his debts.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        },
-        {
-          "person": "Konrad von Grumbach"
-        }
+      "english": "Demand by the guardians of the children left by Georg Sigmund Zoller, addressed to Joachim Fuchs of Wonfurt (?), Georg Ernst Fuchs von Bimbach zu Burgpreppach, Albrecht Christoph von Rosenberg zu Haldenbergstetten, and Ludwig Lochinger zu Walckershofen (Middle Franconia), as guarantors for Konrad von Grumbach, to pay his debts."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
+    },
+    {
+      "person": "Konrad von Grumbach"
     }
   ]
 }

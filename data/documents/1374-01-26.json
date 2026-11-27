@@ -6,22 +6,22 @@
       "source": "Pfarrarchiv Tuggen, 2., 1374 I 26",
       "url": "https://www.monasterium.net/mom/CSGIX/1374_I_26/charter",
       "german": "Ulrich von Münchusen stellt dem Kloster Pfäfers einen Lehensrevers für Abgaben aus dem Kelnhof Tuggen, welche vorher den Herren von Rosenberg zustanden, aus.\n\nSiegel: Siegel fehlt.",
-      "english": "Ulrich von Münchusen issues Pfäfers Monastery a charter acknowledging its fief rights over the dues from the Kelnhof manor at Tuggen, which previously belonged to the Lords von Rosenberg.\n\nSeal: Seal missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Münchusen"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the lords von Rosenberg",
-          "type": "generic",
-          "content": "previously held dues from the Kelnhof at Tuggen, for which Ulrich von Münchusen issued a fief reverse to Pfäfers Monastery."
-        }
-      ]
+      "english": "Ulrich von Münchusen issues Pfäfers Monastery a charter acknowledging its fief rights over the dues from the Kelnhof manor at Tuggen, which previously belonged to the Lords von Rosenberg.\n\nSeal: Seal missing."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the lords von Rosenberg",
+      "type": "generic",
+      "content": "previously held dues from the Kelnhof at Tuggen, for which Ulrich von Münchusen issued a fief reverse to Pfäfers Monastery."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich von Münchusen"
     }
   ]
 }

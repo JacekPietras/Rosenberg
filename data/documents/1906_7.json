@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++35591815-c0a8-467c-ae0b-3f2406922bbb&parent_id="
       ],
       "german": "Deffner, Johann Christian, von Rosenberg, Bauer; Verheiratung mit Schuh, Barbara, von Rosenberg/Rügland",
-      "english": "Deffner, Johann Christian, from Rosenberg, farmer; marriage to Schuh, Barbara, from Rosenberg/Rügland",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Deffner, Johann Christian, from Rosenberg, farmer; marriage to Schuh, Barbara, from Rosenberg/Rügland"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -10,38 +10,6 @@
       ],
       "german": "Eberhard Geyer und seine Ehefrau Guda von Hutten verkaufen an Arnold von Rosenberg d. Ä. und Arnold von Rosenberg d. J. ihren Teil des kleinen Zehnten zu Schweigern.\n\nLaufzeit: 1404 März 24 (1404 Montag nach Palmarum)\n\nSiegelbeschreibung: 4 von 5 Siegeln",
       "english": "Eberhard Geyer and his wife Guda von Hutten sell their share of the small tithe in Schweigern to Arnold von Rosenberg der Ältere and Arnold von Rosenberg der Jüngere.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Eberhard Geyer"
-        },
-        {
-          "person": "Guda von Hutten"
-        },
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg]."
-        },
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001787123%2F04_0001787123_0001_4-1787123-1.jpg",
@@ -80,6 +48,38 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with [arnold_boxberg]."
+    },
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "jointly acquired Eberhard Geyer and Guda von Hutten’s share of the small tithe in Schweigern with Arnold von Rosenberg der Ältere."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Eberhard Geyer"
+    },
+    {
+      "person": "Guda von Hutten"
+    },
+    {
+      "place": "schweigern"
     }
   ]
 }

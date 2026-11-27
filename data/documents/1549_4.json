@@ -9,42 +9,42 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D829129E-123A-4530-90CB-4341575CF108&parent_id="
       ],
       "german": "Thonia Marschalk von wegen des Bischofs Moritz von Eichstätt, Pangratz von Thüngen, Ritter, zum soten und Renssenberg, Jeysel von Rosenberg zu Halmerstetten, an statt Lorentz von Rosenberg zu Rosenberg, seines Vetters, und für sich selbst, Symern von Thüngen, Amtmann zu Neustadt a.d. Saale, und Bastian von Hutten zu \"Alten Gran\", alle auf Seiten der Jungfrau Eva von Hutten, ferner Veit von Pappenheim, des heil. Röm. Reichs Erbmarschakk, Hans vom Rotenhan zu Rentweinsdorf, Wendel vom Lichtenstein zum Stein, Bastian vom Lichtenstein, Amtmann zu Bramberg, und Hans von Sternberg zu Schenkenau auf seiten Hans von Lichtenstein und seines Sohnes Veit zum Geiersberg beteidingen ein Ehe zwischen Veit vom Lichtenstein und Eva von Hutten, Schweser des Contz von Hutten",
-      "english": "Thonia Marschalk, acting on behalf of Bishop Moritz of Eichstätt; Pangratz von Thüngen, Ritter, zu soten und Renssenberg; Jeysel von Rosenberg zu Halmerstetten, acting for his Vetter Lorentz von Rosenberg zu Rosenberg and for himself; Symern von Thüngen, Amtmann zu Neustadt an der Saale; and Sebastian von Hutten zu “Alten Gran,” all on the side of the maiden Eva von Hutten; and, on the side of Hans von Lichtenstein and his son Veit zum Geiersberg, Veit von Pappenheim, hereditary marshal of the Holy Roman Empire; Hans vom Rotenhan zu Rentweinsdorf; Wendel vom Lichtenstein zum Stein; Bastian vom Lichtenstein, Amtmann zu Bramberg; and Hans von Sternberg zu Schenkenau, arrange a marriage between Veit vom Lichtenstein and Eva von Hutten, sister of Kunz von Hutten.",
-      "mention": [
-        {
-          "person": "Eva von Hutten"
-        },
-        {
-          "person": "Hans von Lichtenstein"
-        },
-        {
-          "person": "Kunz von Hutten"
-        },
-        {
-          "place": "lichtenstein"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Sebastian vom Lichtenstein",
-          "personTitle": [
-            "Amtmann zu Bramberg"
-          ]
-        },
-        {
-          "person": "Sebastian von Hutten"
-        },
-        {
-          "place": "thuengen"
-        },
-        {
-          "person": "Veit vom Lichtenstein"
-        },
-        {
-          "person": "Veit von Pappenheim"
-        }
+      "english": "Thonia Marschalk, acting on behalf of Bishop Moritz of Eichstätt; Pangratz von Thüngen, Ritter, zu soten und Renssenberg; Jeysel von Rosenberg zu Halmerstetten, acting for his Vetter Lorentz von Rosenberg zu Rosenberg and for himself; Symern von Thüngen, Amtmann zu Neustadt an der Saale; and Sebastian von Hutten zu “Alten Gran,” all on the side of the maiden Eva von Hutten; and, on the side of Hans von Lichtenstein and his son Veit zum Geiersberg, Veit von Pappenheim, hereditary marshal of the Holy Roman Empire; Hans vom Rotenhan zu Rentweinsdorf; Wendel vom Lichtenstein zum Stein; Bastian vom Lichtenstein, Amtmann zu Bramberg; and Hans von Sternberg zu Schenkenau, arrange a marriage between Veit vom Lichtenstein and Eva von Hutten, sister of Kunz von Hutten."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eva von Hutten"
+    },
+    {
+      "person": "Hans von Lichtenstein"
+    },
+    {
+      "person": "Kunz von Hutten"
+    },
+    {
+      "place": "lichtenstein"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Sebastian vom Lichtenstein",
+      "personTitle": [
+        "Amtmann zu Bramberg"
       ]
+    },
+    {
+      "person": "Sebastian von Hutten"
+    },
+    {
+      "place": "thuengen"
+    },
+    {
+      "person": "Veit vom Lichtenstein"
+    },
+    {
+      "person": "Veit von Pappenheim"
     }
   ]
 }

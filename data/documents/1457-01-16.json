@@ -10,24 +10,6 @@
       ],
       "german": "Jorg von Rosenberg, Amtmann zu Bischofsheim, sagt der Kaufmannschaft Nürnbergs zur Fastenmesse in Frankfurt auf Auftrag seines Herrn des Erzbischof von Mainz sicheres Geleit zu.\n\nBesiegelung/Beglaubigung: Verschlußsiegel fehlt.",
       "english": "Georg von Rosenberg, Amtmann zu Bischofsheim, on behalf of his lord the Archbishop of Mainz, grants safe conduct to the Nuremberg merchant community for the Lenten fair in Frankfurt.",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Bischofsheim"
-          ],
-          "type": "generic",
-          "content": "granted the Nuremberg merchants safe conduct to the Frankfurt Lent fair on the Archbishop of Mainz’s orders."
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f4ee6064-c07f-4670-ad07-cbd46ab35f16/1/full/max/0/default.jpg"
@@ -36,6 +18,24 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f4ee6064-c07f-4670-ad07-cbd46ab35f16/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Bischofsheim"
+      ],
+      "type": "generic",
+      "content": "granted the Nuremberg merchants safe conduct to the Frankfurt Lent fair on the Archbishop of Mainz’s orders."
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

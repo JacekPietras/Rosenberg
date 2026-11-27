@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-148837",
       "german": "Urteil des Landgerichts in Würzburg in einer Streitsache zwischen Kloster Schäftersheim und Hans von Rosenberg wegen eines Zehnten zu Tauberrettersheim;\nausgestellt o.O., 1422 (Montag nach Himmelfahrt);\nPergament, Siegel: Landgericht Würzburg.\n\nLaufzeit: 1422\n\nUmfang: 1 Urkunde",
       "english": "Judgment of the regional court in Würzburg in a dispute between Schäftersheim Monastery and Hans von Rosenberg concerning a tithe at Tauberrettersheim.\n\nIssued at an unspecified place, 1422 (Monday after Ascension Day).\n\nParchment; seal of the regional court of Würzburg.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=339&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000339%2Ftitlaufn_0000148837%2F03_0000148837_0001_3-148837-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=339&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000339%2Ftitlaufn_0000148837%2F03_0000148837_0002_3-148837-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-192862",
       "german": "Götz von Berlichingen und Zürch von Stetten bekennen einen Vertrag zwischen Albrecht von Hohenlohe und Arnolt von Rosenberg über die Lösung der Seen in Aldersheim und Beringsheim geschlossen zu haben; Siegel: Götz von Berlichingen, Zürch von Stetten.\n\nLaufzeit: 1414\n\nUmfang: 1 Urkunde",
       "english": "Götz von Berlichingen and Zürch von Stetten acknowledge that they concluded an agreement between Albrecht von Hohenlohe and Arnold von Rosenberg concerning the redemption of the “Seen” (literally, “lakes”) in Aldersheim and Beringsheim. Seals: Götz von Berlichingen and Zürch von Stetten.\n\nTerm: 1414\n\nExtent: 1 charter",
-      "mention": [
-        {
-          "person": "Albrecht von Hohenlohe"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192862%2F03_0000192862_0001_3-192862-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192862%2F03_0000192862_0002_3-192862-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Hohenlohe"
+    },
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Götz von Berlichingen"
     }
   ]
 }

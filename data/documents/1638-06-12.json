@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6282860C-9CCD-4BA7-9E8D-2D7F1227C1FF&parent_id="
       ],
       "german": "Antwortschreiben der Stadt Cregllingen auf eine Anfrage des Georg Pfannenschmidt nach dem Erwerb einer bei der Herrgottsmühle zu Creglingen gelegenen Wiese durch die v. Rosenberg",
-      "english": "Reply from the town of Creglingen to an inquiry by Georg Pfannenschmidt about the von Rosenbergs' acquisition of a meadow near the Herrgottsmühle at Creglingen.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Reply from the town of Creglingen to an inquiry by Georg Pfannenschmidt about the von Rosenbergs' acquisition of a meadow near the Herrgottsmühle at Creglingen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

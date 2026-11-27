@@ -7,18 +7,18 @@
       "source": "[RI XIII] H. 26 n. 156",
       "url": "https://www.regesta-imperii.de/id/1445-09-15_1_0_13_26_0_156_156",
       "german": "Kg.F. schreibt an Ulrich von Rosenberg in nicht genannter Angelegenheit.",
-      "english": "King Frederick writes to Ulrich von Rosenberg concerning an unspecified matter.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Frederick writes to Ulrich von Rosenberg concerning an unspecified matter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

@@ -13,11 +13,6 @@
       ],
       "german": "Eglolf von Rosenberg gibt dem Kloster St. Gallen einen Eigenmann auf, den er zu Lehen hatte.\n\nSiegel: Siegel fehlt.",
       "english": "Egilolf von Rosenberg surrenders to the Abbey of St. Gallen a man born in serfdom who had been held as a fief.\n\nSeal: Seal missing.",
-      "mention": [
-        {
-          "person": "Egilolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13590713_OOO3-Nr4_v.jpg"
@@ -32,6 +27,11 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG3jpgweb._%7EStiASG_13590713_OOO3-Nr4_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Egilolf von Rosenberg"
     }
   ]
 }

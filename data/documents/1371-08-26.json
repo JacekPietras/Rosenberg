@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1727406",
       "german": "Rudolf von Heinriet, seine Ehefrau Brigitte und beider Söhne Rudolf und Heinrich bekennen, dass sie Dallau, Gut und Leute, von Kunz Münch von Rosenberg, dem sie es auf Wiederlösung verkauft haben, bis nächste Georgi nicht zurückkaufen wollen.\n\nLaufzeit: 1371 August 26 (1371 Dienstag vor Aegidius)\n\nSiegelbeschreibung: Mit 5 Siegeln: 4 der Obengenannten und dem des Walter von Heinriet",
       "english": "Rudolf von Heinriet, his wife Brigitte, and their sons Rudolf and Heinrich declare that they will not repurchase Dallau, its estate and people, from Kunz Mönch von Rosenberg, to whom they sold it subject to redemption, before the next feast of St George.\n\nDate: 26 August 1371 (Tuesday before St Giles).",
-      "mention": [
-        {
-          "person": "Kunz Mönch von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001727406%2F04_0001727406_0001_4-1727406-1.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001727406%2F04_0001727406_0003_4-1727406-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz Mönch von Rosenberg"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-163127",
       "german": "Heinz Pfisters Erbbestandsbrief für den Junker Arnold von Rosenberg über die Wiesen zu Massenbach, wovon er und seine Erben jährlich dem gen. Junker zu entrichten haben auf Petri Cathedra 10 Gulden.\n\nLaufzeit: 1406 Dezember 14 (Dienstag nach S. Lucientag)",
       "english": "Heinz Pfister’s hereditary lease charter for Junker Arnold von Rosenberg concerning the meadows at Massenbach, for which he and his heirs are to pay the said Junker annually 10 florins on the feast of St Peter’s Chair.\n\nTerm: 14 December 1406 (Tuesday after St Lucy’s Day).",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Junker"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=641&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000641%2Ftitlaufn_0000163127%2F07_0000163127_0001_7-163127-1.jpg"
@@ -22,6 +14,14 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=641&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000641%2Ftitlaufn_0000163127%2F07_0000163127_0002_7-163127-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Junker"
       ]
     }
   ]

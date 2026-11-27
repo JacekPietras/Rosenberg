@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/0172/charter",
       "german": "Ulrich von Rosenberg, Wilhelm von Hasenburg, Alesch von Sternberg und Pnoch von Czostolowicz beurkunden eine Streitschlichtung zwischen der Stadt Bautzen und Jaroslaw Berka von Duba.\n\nSiegel: vier aufgeklebte Oblatensiegel",
       "english": "Ulrich von Rosenberg, Wilhelm von Hasenburg, Alesch von Sternberg, and Pnoch von Czostolowicz certify a settlement of a dispute between the city of Bautzen and Jaroslaw Berka von Duba.\n\nSeals: Four applied wafer seals.",
-      "mention": [
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/0172_1431-04-19_1-orig_c_1.jpg"
@@ -26,6 +21,11 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/0172_1431-04-19_1-orig_c_4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

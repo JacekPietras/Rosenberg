@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-168128",
       "german": "Vertrag und schiedsrichterlicher Spruchbrief über Differenzen zwischen der Cartause Grünau und der Gemeinde Schollbrunn, errichtet von Graf Jörg zu Wertheim und denen Patribus Martin und Benedict, der Cella Maria zu Nürnberg und des Sals Maria zu Buxheim (Buxen) Cartäuserordens Prioribus und Visitatoribus in niederteutschen Landen, sodann auch von Philipp von Uissigheim, Voiten zu Wertheim, worin man folgende Punkte erledigt worden\n1. Soll es by denen schon unter den Grafen Eberhardt, Johann und ohann Graf zu Wertheim samt anderen Obmännern und Zusetzen errichteten Verträgen in allen Stücken und Artikeln sein Verbleiben haben.\n2. Soll die Gemeinde zu Schollbrunn den Cartäuser Hof den Kirchelberg ewiglichen frei und mit keinerlei ihrem Vieh auf desselben Hofs Grenzmark oder Weide nicht treiben.\n3. Soll hingegen der Cartäuser Vieh auf dem Kirchelhof in der Schollbrunner Stuefelweid von dem Schnitt an bis auf Martini und denn auch in derselben Wiesen von Michaelis an bis Martini auch nicht weiden oder treiben.\n4. Soll sich ein jeglicher Einwohner des Wassers, der das von der Gemeinde haben mag, zu seiner Mäßigung am Mittwoch und Samstag jede Woche gebrauchen, und solcher Gebrauch der Cartause die übrigen Täg in der Woche zustehen, dazu soll niemand ein Wasser graben anders als von alters Herkommens machen.\n5. Soll sich die Cartause und die Gemeinde Schollbrunn jedes Jahr mit einander vereinigen wegen des Holzes zum Bauen und zum Verbrennen in der Mark Schollbrunn, doch soll deshalb der Cartause nicht verboten sein Tauben, Reifstangen, Pfähl und anderes zu ihrer Notdurft zu hauen.\n6. und letztlich ist der Frondienste wegen bedungen, daß die Gemeinde zu Schollbrunn den Cartäusern jährlich das Heu auf der Fronwiesen machen soll, wie von alters Herkommen, über dieses sollen sie auch der Cartause jährl. und jedes Jahres besonders noch 2 Tage, einen zwischen Ostern und Pfingsten, den anderen zwischen Martini und Weinachten zu fronen und zu dienen verpflichtet sein, und mit dem Essen und Trinken soll es dabei gehalten werden, wie es von alters Herkommen.\n\nLaufzeit: 1514 Juni 24 (datiert auf S. Johannis Baptista Tag. 24. Juni 1514)",
       "english": "Agreement and arbitral award concerning differences between the Grünau Charterhouse and the community of Schollbrunn, drawn up by Jörg zu Wertheim, Graf and Fathers Martin and Benedict, priors and visitors of the Carthusian Order in the Low German lands at Cella Maria in Nürnberg and Sals Maria in Buxheim (Buxen), and also by Philipp von Uissigheim, Vogt zu Wertheim. The following matters were settled:\n\n1. The agreements made under Eberhardt, Johann, and Johann, Grafen zu Wertheim, together with other chief arbitrators and appointed assessors, are to remain in force in all respects and articles.\n2. The community of Schollbrunn is to leave the Carthusian farm called Kirchelberg permanently free and is not to drive any of its livestock onto that farm’s boundary lands or pasture.\n3. Conversely, the Charterhouse’s livestock is not to graze or be driven on the Kirchel farm in Schollbrunn’s stubble pasture from the harvest until Martinmas, nor in those meadows from Michaelmas until Martinmas.\n4. Each resident may use water obtained from the community as needed every Wednesday and Saturday each week; the Charterhouse is entitled to such use on the other days of the week. No one is to dig a watercourse except in the manner customary from old times.\n5. Each year the Charterhouse and the community of Schollbrunn are to reach agreement concerning wood for building and burning within the Schollbrunn district. This is not to prevent the Charterhouse from cutting dovecote poles, ridge poles, stakes, and other wood needed for its purposes.\n6. Finally, concerning compulsory labor services, the community of Schollbrunn is to make hay for the Carthusians each year in the compulsory-labor meadow, as has long been customary. In addition, each year they are required to perform two further days of labor service for the Charterhouse, one between Easter and Pentecost and the other between Martinmas and Christmas. Food and drink are to be provided as has long been customary.\n\nPeriod: 1514 June 24 (dated on the feast of St. John the Baptist, June 24)",
-      "mention": [
-        {
-          "person": "Georg zu Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Hans zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        },
-        {
-          "person": "Maria in Nürnberg"
-        },
-        {
-          "person": "Philipp von Uissigheim",
-          "personTitle": [
-            "Vogt zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000168128%2F07_0000168128_0001_7-168128-1.jpg"
@@ -37,6 +14,29 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=723&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000723%2Ftitlaufn_0000168128%2F07_0000168128_0002_7-168128-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg zu Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Hans zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
+      ]
+    },
+    {
+      "person": "Maria in Nürnberg"
+    },
+    {
+      "person": "Philipp von Uissigheim",
+      "personTitle": [
+        "Vogt zu Wertheim"
       ]
     }
   ]

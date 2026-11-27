@@ -9,14 +9,14 @@
         "https://www.digitale-sammlungen.de/en/view/bsb11697675"
       ],
       "german": "Dieselben weisen Arnold von Rosenberg die ihm schuldigen 800 Gulden auf dem Umgeld in Bayern an, mit dem Geding dass er von Weihnachten an quatemberlich 100 fl. einnehmen soll bis er selber Summe gänzlich entrichtet ist. Ingolstadt, Erchtag vor Laurenti. (Arrod. III. 642.)",
-      "english": "The same assign to Arnold von Rosenberg the 800 gulden owed to him on the Umgeld in Bavaria, on the condition that from Christmas onward he shall receive 100 florins every quarter until the sum itself is paid in full. Ingolstadt, on the Tuesday before St. Lawrence. (Arrod. III. 642.)",
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "was assigned the debt owed to him on the Umgeld in Bavaria, to be received quarterly from Christmas until paid in full."
-        }
-      ]
+      "english": "The same assign to Arnold von Rosenberg the 800 gulden owed to him on the Umgeld in Bavaria, on the condition that from Christmas onward he shall receive 100 florins every quarter until the sum itself is paid in full. Ingolstadt, on the Tuesday before St. Lawrence. (Arrod. III. 642.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "was assigned the debt owed to him on the Umgeld in Bavaria, to be received quarterly from Christmas until paid in full."
     }
   ]
 }

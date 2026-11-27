@@ -7,41 +7,27 @@
       "source": "[RIplus] Regg. Karl IV. n. 3412",
       "url": "https://www.regesta-imperii.de/id/e6576e7e-3688-4dba-bb15-13c485dc919d",
       "german": "Karl IV. erlaubt den Brüdern Peter, Ulrich, Jodok und Johann von Rosenberg neben den vier Juden, die ihnen König Johann auf ihren Gütern zu halten erlaubt, noch zwei hospites cum familiis zu haben.",
-      "english": "Charles IV permits the brothers Peter, Ulrich, Jodok, and Hans von Rosenberg, in addition to the four Jews whom King Johann had allowed them to keep on their estates, to have two more hospites cum familiis (guests with their households).",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "König Hans",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ]
+      "english": "Charles IV permits the brothers Peter, Ulrich, Jodok, and Hans von Rosenberg, in addition to the four Jews whom King Johann had allowed them to keep on their estates, to have two more hospites cum familiis (guests with their households)."
     },
     {
       "source": "RI VIII n. 2367",
       "url": "https://www.regesta-imperii.de/id/1355-12-31_2_0_8_0_0_2670_2367",
       "german": "erlaubt den brüdern Peter, Ulrich, Jodok und Johann von Rosenberg neben den vier Juden, die ihnen k. Johann auf ihren gütern zu halten erlaubt, noch zwei hospites cum familiis zu haben. Aus dem archiv des böhmischen museums durch Höfler.",
-      "english": "Permits the brothers Peter, Ulrich, Jodok, and Hans von Rosenberg, in addition to the four Jews whom King Johann had allowed them to keep on their estates, to have two more hospites cum familiis (guests with their households). From the archive of the Bohemian Museum, through Höfler.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "König Hans",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "Permits the brothers Peter, Ulrich, Jodok, and Hans von Rosenberg, in addition to the four Jews whom King Johann had allowed them to keep on their estates, to have two more hospites cum familiis (guests with their households). From the archive of the Bohemian Museum, through Höfler."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "König Hans",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

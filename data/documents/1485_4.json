@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++99b77133-8781-4de8-a504-9e7081e20640&parent_id="
       ],
       "german": "Lehenauftragung: Asmus von Rosenberg trägt dem Bischof und Stift Würzburg verschiedene Zinsen, Gülten und Gerechtigkeiten in Berchtheim, Martinsheim, Gnodstadt und Gülchsheim zu Lehen auf.",
-      "english": "Fief submission: Asmus von Rosenberg submits to the bishop and foundation of Würzburg various rents, incomes, and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim as fiefs.",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Asmus von Rosenberg",
-          "type": "generic",
-          "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg."
-        }
-      ]
+      "english": "Fief submission: Asmus von Rosenberg submits to the bishop and foundation of Würzburg various rents, incomes, and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim as fiefs."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Asmus von Rosenberg",
+      "type": "generic",
+      "content": "made rents, income and rights at Berchtheim, Martinsheim, Gnodstadt and Gülchsheim fiefs of the bishop and foundation of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

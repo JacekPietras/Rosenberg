@@ -10,18 +10,6 @@
       ],
       "german": "Gerichtsbrief des Schultheißen Hans v. Rosenberg, Ritter, und der Schöffen der Stadt Nürnberg darüber, dass Herr Arnold v. Sawnsheim, Spitalmeister des Alten Spitals in Nürnberg, namens dieses Hauses durch Zeugen (Herr Jacob Grolant, Herr Sebolt Pfinczing) erwiesen hat, dass Fricz von München und dessen Ehefrau Anna gegenüber dem Spital gegen eine jährliche Zahlung von 4 fl, ebenso wie gleichzeitig Jacob Teuffel, auf ihre Ansprüche auf den Hof zu Poppenwind (Erbrechter: Hans Ransentaler) verzichtet haben. - Siegler: Stadtgericht (mit Siegel des Schultheißen als Rücksiegel).",
       "english": "Court charter of the Schultheiß Hans von Rosenberg, Ritter, and the lay judges of the city of Nürnberg, stating that Herr Arnold von Sawnsheim, master of the Old Hospital in Nürnberg, acting on behalf of that institution, proved through witnesses (Herr Jacob Grolant and Herr Sebolt Pfinczing) that Fricz von München and his wife Anna, as well as Jacob Teuffel at the same time, had relinquished their claims against the hospital to the farmstead at Poppenwind (hereditary tenant: Hans Ransentaler) in return for an annual payment of four florins. Sealer: the city court (with the Schultheiß’s seal as counterseal).",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c9c36bb8-34b0-48b4-a2c4-b9b4c1e302a7/1/full/max/0/default.jpg"
@@ -33,6 +21,18 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c9c36bb8-34b0-48b4-a2c4-b9b4c1e302a7/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß"
+      ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

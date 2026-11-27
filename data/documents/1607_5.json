@@ -12,18 +12,18 @@
         "https://www.landesarchiv-bw.de/plink/?f=3-193241"
       ],
       "german": "Schreiben des Conrad von Rosenberg d.J. an Conrad Diener, würzburgischer Rat.\n\nLaufzeit: 1607\n\nUmfang: 1 Schr.",
-      "english": "Letter from Konrad von Rosenberg der Jüngere to Conrad Diener, councilor of Würzburg.\n\nDate span: 1607\n\nExtent: 1 document.",
-      "mention": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Letter from Konrad von Rosenberg der Jüngere to Conrad Diener, councilor of Würzburg.\n\nDate span: 1607\n\nExtent: 1 document."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
       ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

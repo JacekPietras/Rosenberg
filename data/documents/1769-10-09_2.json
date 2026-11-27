@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++567B1BAE-3BAC-4565-8487-278CE63E7644&parent_id="
       ],
       "german": "Adam Friedrich [von Seinsheim], Bischof zu Bamberg und Würzburg, verleiht  Johann Friedrich Karl Philipp von Rosenbach nach dem Tod seines Vaters Adalbert Friedrich von Rosenbach, bischöflicher Rat und Amtmann zu Arnstein, seinen Anteil an vier Morgen Weinberg am Stein in Würzburg zu Mannlehen.\nSiegler: Der Bischof mit seinem Sekretsiegel.\n\nVermerke: Inhaltsangabe (18. Jh.)",
-      "english": "Adam Friedrich [von Seinsheim], Bischof zu Bamberg and Würzburg, grants Hans Friedrich Karl Philipp von Rosenberg, following the death of his father Adalbert Friedrich von Rosenberg, episcopal councillor and official at Arnstein, his share of four acres of vineyard at Stein in Würzburg as a male fief.\nSealed: the bishop, with his secret seal.\n\nNotes: abstract (18th century).",
-      "mention": [
-        {
-          "person": "Adam Friedrich von Seinsheim",
-          "personTitle": [
-            "Bischof zu Bamberg"
-          ]
-        },
-        {
-          "place": "arnstein-maria-sondheim"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Hans Friedrich Karl Philipp von Rosenberg"
-        },
-        {
-          "person": "Steyn in Würzburg"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Adam Friedrich [von Seinsheim], Bischof zu Bamberg and Würzburg, grants Hans Friedrich Karl Philipp von Rosenberg, following the death of his father Adalbert Friedrich von Rosenberg, episcopal councillor and official at Arnstein, his share of four acres of vineyard at Stein in Würzburg as a male fief.\nSealed: the bishop, with his secret seal.\n\nNotes: abstract (18th century)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Adam Friedrich von Seinsheim",
+      "personTitle": [
+        "Bischof zu Bamberg"
       ]
+    },
+    {
+      "place": "arnstein-maria-sondheim"
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Hans Friedrich Karl Philipp von Rosenberg"
+    },
+    {
+      "person": "Steyn in Würzburg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

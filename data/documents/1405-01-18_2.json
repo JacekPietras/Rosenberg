@@ -7,33 +7,33 @@
       "source": "[Regg. Pfalzgrafen 2] n. 3839",
       "url": "https://www.regesta-imperii.de/id/1405-01-18_3_0_10_0_0_3843_3839",
       "german": "Kg. Ruprecht, der vor zeiten von den herrn von Rosenberg die diesen vom reiche verpfändeten königsleute um Lauda und Adelsheim gelöst und an die Pfalz gebracht hat, befreit auf bitten Götzens von Adelsheim, seines bruders Zeißolf und seiner vettern Beringer d. j., Götz d. j. und Albrecht v. A. die zu Adelsheim gesessenen königsleute, bis sie vom reiche gelöst werden, von allen diensten und steuern, die sie ihm wegen der pfandschaft schulden, aber nur so lange, als sie zu Adelsheim sesshaftig sind. Dafür soll je der älteste von Adelsheim diese königsleute im namen des gesamten geschlechts von der Pfalz zu mannlehen empfangen.",
-      "english": "King Ruprecht, who formerly redeemed from the lords von Rosenberg and brought to the Palatinate the king’s subjects around Lauda and Adelsheim that they had pledged from the Empire, exempts, at the request of Götz von Adelsheim, his brother Zeißolf, and his cousins Beringer the Younger, Götz the Younger, and Albrecht von Adelsheim, the king’s subjects settled at Adelsheim from all services and taxes owed to him because of the pledge, until they are redeemed by the Empire, but only while they remain settled at Adelsheim. In return, the eldest von Adelsheim shall receive these king’s subjects from the Palatinate as a male fief in the name of the entire lineage.",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "person": "Albrecht von Adelsheim"
-        },
-        {
-          "person": "Götz von Adelsheim"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "lauda"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "King Ruprecht, who formerly redeemed from the lords von Rosenberg and brought to the Palatinate the king’s subjects around Lauda and Adelsheim that they had pledged from the Empire, exempts, at the request of Götz von Adelsheim, his brother Zeißolf, and his cousins Beringer the Younger, Götz the Younger, and Albrecht von Adelsheim, the king’s subjects settled at Adelsheim from all services and taxes owed to him because of the pledge, until they are redeemed by the Empire, but only while they remain settled at Adelsheim. In return, the eldest von Adelsheim shall receive these king’s subjects from the Palatinate as a male fief in the name of the entire lineage."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "person": "Albrecht von Adelsheim"
+    },
+    {
+      "person": "Götz von Adelsheim"
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "lauda"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

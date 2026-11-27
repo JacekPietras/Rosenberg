@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-61933",
       "german": "Einzugsregister der Gülten und Zinsen von Rosenberg (mit Namensregister)\n\nLaufzeit: 1828-1840\n\nUmfang: 1 Bd., folio, 224 S.",
       "english": "Collection register of rents and interest from Rosenberg (with name index)\n\nTerm: 1828–1840\n\nExtent: 1 volume, folio, 224 pages.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2749&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002749%2Ftitlaufn_0000061933%2F07_0000061933_0001_7-61933-1.jpg"
@@ -620,6 +615,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2749&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002749%2Ftitlaufn_0000061933%2F07_0000061933_0202_7-61933-202.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

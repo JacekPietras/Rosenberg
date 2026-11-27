@@ -11,43 +11,43 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x80687803030014020210713150716529"
       ],
       "german": "Franz, Heinrich und Sebastian Grafen von Hatzfeldt und zu Gleichen etc. nehmen auf Grund ihres vorläufigen Vergleichs von 1676 Dezember 21 nun unbeschadet ihrer Nachfolgerechte und der Familienverträge eine Teilung vor: Franz behält die Leitung der Lehnsangelegenheiten, ebenso die Thüringer Grafschaften und Herrschaften, ferner die Ämter Haltenbergstetten und Laudenbach sowie das Rothenburger Kapital. Er führt den Prozeß um die mit dem Rothenburger Kapital verbundene Schuldenangelegenheit. An Aussteuer und Unterhalt der gemeinsamen Schwestern beteiligt er sich. -Heinrich und Sebastian übernehmen die übrigen bisher gemeinsam geführten Prozesse. Hierfür und zum Ausgleich für ihr Ausscheiden in Thüringen überläßt Franz ihnen am kommenden St. Johannistag (Juni 24) seinen Anteil an der Herrschaft Trachenberg sowie an der Vogtei Mosbach. In Trachenberg kann auf die Dauer des Nesselroder Streits das Ansbacher Kapital für geeignete Wohnung verwendet werden. Die Prozeßkosten sind aus den Einkünften der gemeinschaftlichen Ämter Schüpf und Rosenberg zu bestreiten. In den Ämtern Schüpf und Rosenberg hat Franz Jagd und Atzung.- Urkunden und Unterlagen sind an den hierfür bestimmten Stellen aufzubewahren. - Mittler: Anselm Franz Freiherr von und zu Hoheneck, Anselm Franz von Breitbach, Friedrich Dietrich Kämmerer von Worms, Freiherr von Dalberg. -Unterschriften- und Sieglervermerk der Aussteller sowie der Mittler.\n\nInserat in Urk. von 1682 April 29.- Vgl. Reg. Nr. 2973. -Nr. 2827.\n\nReg. Nr. 2969",
-      "facts": [
-        {
-          "person": "Franz von Hatzfeldt",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "generic",
-          "content": "held hunting and maintenance rights in the Ämter of Schüpf and Rosenberg."
-        },
-        {
-          "person": "Franz von Hatzfeldt",
-          "personTitle": [
-            "Graf von Hatzfeldt und zu Gleichen"
-          ],
-          "type": "generic",
-          "content": "held hunting and Atzung rights in the Ämter Schüpf and Rosenberg."
-        },
-        {
-          "subject": "The Ämter Schüpf and Rosenberg",
-          "type": "generic",
-          "content": "were jointly held by Franz, Heinrich and Sebastian von Hatzfeldt."
-        },
-        {
-          "subject": "The Ämter Schüpf and Rosenberg",
-          "type": "generic",
-          "content": "were to provide income to cover the costs of litigation under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
-        }
-      ],
-      "mention": [
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "english": "On the basis of their preliminary agreement of 21 December 1676, Franz, Heinrich, and Sebastian, Grafen von Hatzfeldt und zu Gleichen, etc., now divide their property without prejudice to their succession rights and family agreements. Franz retains the management of feudal affairs, the Thuringian counties and lordships, the offices of Haltenbergstetten and Laudenbach, and the Rothenburg capital. He conducts the litigation concerning debts connected with the Rothenburg capital and contributes to the dowries and maintenance of their unmarried sisters. Heinrich and Sebastian take over the other lawsuits previously pursued jointly. In return, and as compensation for their withdrawal from Thuringia, Franz transfers to them on the coming St. John's Day (24 June) his share of the lordship of Trachenberg and the bailiwick of Mosbach. During the Nesselrode dispute, the Ansbach capital may be used to secure suitable accommodation in Trachenberg. Litigation costs are to be paid from the revenues of the jointly held offices of Schüpf and Rosenberg. In those offices Franz retains hunting and hospitality rights. Charters and records are to be kept in the designated places. Mediators: Anselm Franz Freiherr von und zu Hoheneck, Anselm Franz von Breitbach, and Friedrich Dietrich Kämmerer von Worms, Freiherr von Dalberg. The parties and mediators signed and sealed. Inserted in the charter of 29 April 1682; see regest no. 2973, no. 2827, regest no. 2969."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Franz von Hatzfeldt",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "generic",
+      "content": "held hunting and maintenance rights in the Ämter of Schüpf and Rosenberg."
+    },
+    {
+      "person": "Franz von Hatzfeldt",
+      "personTitle": [
+        "Graf von Hatzfeldt und zu Gleichen"
+      ],
+      "type": "generic",
+      "content": "held hunting and Atzung rights in the Ämter Schüpf and Rosenberg."
+    },
+    {
+      "subject": "The Ämter Schüpf and Rosenberg",
+      "type": "generic",
+      "content": "were jointly held by Franz, Heinrich and Sebastian von Hatzfeldt."
+    },
+    {
+      "subject": "The Ämter Schüpf and Rosenberg",
+      "type": "generic",
+      "content": "were to provide income to cover the costs of litigation under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

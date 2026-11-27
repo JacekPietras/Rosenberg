@@ -9,28 +9,28 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++63a1927e-8183-4026-813b-09dda65c97af&parent_id="
       ],
       "german": "Ritterlehen: Der Truchsessen von Baldersheim, nachgehends der von Rosenberg erhaltene Belehnungen über 1.) das Schloss und Dorf Waldmannshofen, 2.) den großen und kleinen Zehnten der Stadt und ganzen Markung Aub (Bd. I).",
-      "english": "This bound file documents the knightly fiefs granted to the Truchsess von Baldersheim family and later to the von Rosenberg family: the castle and village of Waldmannshofen, and the great and small tithes of the town and entire district of Aub.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "place": "baldersheim"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the knightly fiefs of Waldmannshofen and Aub",
-          "type": "generic",
-          "content": "were granted first to the Truchsess von Baldersheim family and later to the von Rosenberg family."
-        }
-      ]
+      "english": "This bound file documents the knightly fiefs granted to the Truchsess von Baldersheim family and later to the von Rosenberg family: the castle and village of Waldmannshofen, and the great and small tithes of the town and entire district of Aub."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the knightly fiefs of Waldmannshofen and Aub",
+      "type": "generic",
+      "content": "were granted first to the Truchsess von Baldersheim family and later to the von Rosenberg family."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "place": "baldersheim"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

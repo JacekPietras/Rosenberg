@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2A3227BA-A2E7-4D94-A64D-30C59C6D5ED7&parent_id="
       ],
       "german": "Klage der Grafen von Hohenlohe-Langenburg gegen das Hochstift Würzburg und deren Lehenleute, die Gebrüder von Rosenberg, wegen verweigerter Gestattung der Ablösung der von Ulrich und Albrecht von Hohenlohe und Konrad von Weinsberg seinerzeit an genanntes Hochstift auf Wiederlösung veräußerten sieben Dorfschaften, Gaukönigshofen, Tauberrettersheim, Neubronn, Rinderfeld, Oberndorf, Streichental und Warmutshausen (Werrnbrechtshausen)",
-      "english": "Complaint by the Counts of Hohenlohe-Langenburg against the Würzburg bishopric and its feudal vassals, the brothers von Rosenberg, for refusing to permit redemption of the seven villages formerly sold to that bishopric with a right of redemption by Ulrich and Albrecht von Hohenlohe and Konrad von Weinsberg: Gaukönigshofen, Tauberrettersheim, Neubronn, Rinderfeld, Oberndorf, Streichental, and Warmutshausen (Werrnbrechtshausen).",
-      "mention": [
-        {
-          "person": "Albrecht von Hohenlohe"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "place": "rinderfeld"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Hohenlohe"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Complaint by the Counts of Hohenlohe-Langenburg against the Würzburg bishopric and its feudal vassals, the brothers von Rosenberg, for refusing to permit redemption of the seven villages formerly sold to that bishopric with a right of redemption by Ulrich and Albrecht von Hohenlohe and Konrad von Weinsberg: Gaukönigshofen, Tauberrettersheim, Neubronn, Rinderfeld, Oberndorf, Streichental, and Warmutshausen (Werrnbrechtshausen)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Hohenlohe"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Konrad von Weinsberg"
+    },
+    {
+      "place": "rinderfeld"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich von Hohenlohe"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

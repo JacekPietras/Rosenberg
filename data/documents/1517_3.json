@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7A4BDA57-9A79-4556-9202-4C03E5F3C92C&parent_id="
       ],
       "german": "Akten der Würzburger Kanzlei, betrifft Korrespondenz mit dem Kurfürsten Ludwig von der Pfalz wegen des mit Hans Thomas von Rosenberg angesetzten Tages",
-      "english": "Files of the Würzburg chancery, concerning correspondence with Elector Ludwig of the Palatinate regarding the scheduled meeting with Hans Thomas von Rosenberg.",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans Thomas von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded."
-        }
-      ]
+      "english": "Files of the Würzburg chancery, concerning correspondence with Elector Ludwig of the Palatinate regarding the scheduled meeting with Hans Thomas von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Thomas von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of a day set by Kurfürst Ludwig von der Pfalz, about which the Würzburg chancery corresponded."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

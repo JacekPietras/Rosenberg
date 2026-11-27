@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153963",
       "german": "Heinrich Brunick, Henne Wygant und Heintz Ackermann, alle drei gesessen zu Sandbach (Santpach), bekennen eidlich, daß ihrem Wissen nach Atzung und Vogtei zu Sandbach der Herrschaft Wertheim zustehe und zwar auf allen Gütern, mögen sie zinsen wem sie wollen. Auch zur Zeit, als die Eppensteiner ihren Teil an Conrat Kriege, Sybolt Schelm, Heylman und Crafft von Belderssheim, die man die neuen Herrn nannte, versetzt hatten, erhielt nur Wertheim die Atzung. Brünicke bezeugt außerdem, daß Frau Luckart sel. von Eppenstein, die zu Breuberg saß, seines Vaters Hof zu Sandbach selbst bebauen wollte, daß sie aber davon abstand, als man ihr sagte, daß Wertheim die Atzung darauf habe.\n\nLaufzeit: 1432 Januar 15 (1432 feria tertia ante diem beati Anthonii confessoris)\n\nSiegelbeschreibung: Drei Siegel abgefallen\n\nSiegler: Junker Henn von Rosenbach; Junker Cuntz Kothebüss; Junker Cuntz Pfeil von Ulnbach",
       "english": "Heinrich Brunick, Henne Wygant, and Heintz Ackermann, all three residing in Sandbach, swear that, to their knowledge, the right of provision (Atzung) and the Vogtei at Sandbach belong to the lordship of Wertheim, and apply to all properties, regardless of whom they pay rent to. Even when the Eppsteiners had pledged their share to Conrat Kriege, Sybolt Schelm, Heylman, and Crafft von Belderssheim, known as the new lords, only Wertheim received the provision dues. Brünicke also testifies that Frau Luckart, late of Eppenstein, who resided at Breuberg, wanted to farm his father’s estate at Sandbach herself, but desisted when she was told that Wertheim held the provision right over it.\n\nDate: January 15, 1432 (Tuesday before the feast of Saint Anthony the Confessor)\n\nSeal description: Three seals detached\n\nSeal-holders: Junker Henn von Rosenbach; Junker Cuntz Kothebüss; Junker Cuntz Pfeil von Ulnbach",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153963%2F07_0000153963_0001_7-153963-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153963%2F07_0000153963_0002_7-153963-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -7,17 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1740330",
       "german": "Revers Lothar Gottfrieds von Rosenbach und weiterer namentlich genannter Personen bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Adolf [von Dalberg], Abt von Fulda\n\nLothar Gottfried, Johann Philipp und Adalbert Friedrich von Rosenbach sowie weitere namentlich genannte Personen bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Adolf [von Dalberg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Wolf Daniel Freiherr von Boyneburg\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Counter-reversal by Lothar Gotfried von Rosenberg and other named persons concerning their enfeoffment with Schackau and individually listed fiefs by Adolf [von Dalberg], Abbot of Fulda. Lothar Gottfried, Johann Philipp, and Adalbert Friedrich von Rosenberg and others confirm the enfeoffment with Schackau and its woodland and field appurtenances, a property there, Kleinsassen (Sassen), Gerharts [all places in Hofbieber municipality, Fulda district], and further listed fiefs. The fief charter is inserted and the seal announced. Parchment original with attached seal in wooden capsule. Sealer: Wolf Daniel Freiherr von Boyneburg. The counter-reversal has no separate date and refers to that of the insert.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Gotfried von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3358/00001.jpg"
@@ -26,6 +15,17 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3358/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Gotfried von Rosenberg"
     }
   ]
 }

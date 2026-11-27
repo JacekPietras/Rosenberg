@@ -10,48 +10,6 @@
       ],
       "german": "Schreiben des Horneck von Hornberg an Friedrich von Wolfskehl, Anselm von Rosenberg, Conrad von Herrieden, Eberhard Rüd von Kollenberg, Carl von Tüngen, Engelhard von Saunsheim, Heinz von Lichtenstein, Fritz von Grumbach, Barthelmä von Hutten, Hans von Wenkheim und Peter von Seckendorf. Laufzeit 1452.",
       "english": "Letter from Horneck von Hornberg to Friedrich von Wolffskeel, Anselm von Rosenberg, Konrad von Herrieden, Eberhard Rüd von Kollenberg, Karl von Thüngen, Engelhard von Seinsheim, Heinrich von Lichtenstein, Friedrich von Grumbach, Bartholomäus von Hutten, Hans von Wenkheim, and Peter von Seckendorf. Dated 1452.",
-      "mention": [
-        {
-          "person": "Bartholomäus von Hutten"
-        },
-        {
-          "person": "Eberhard Rüd von Kollenberg"
-        },
-        {
-          "person": "Engelhard von Seinsheim"
-        },
-        {
-          "person": "Friedrich von Grumbach"
-        },
-        {
-          "person": "Friedrich von Wolffskeel"
-        },
-        {
-          "person": "Hans von Wenkheim"
-        },
-        {
-          "person": "Heinrich von Lichtenstein"
-        },
-        {
-          "person": "Horneck von Hornberg"
-        },
-        {
-          "person": "Karl von Thüngen"
-        },
-        {
-          "person": "Konrad von Herrieden"
-        },
-        {
-          "person": "Peter von Seckendorf"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Anselm von Rosenberg",
-          "type": "generic",
-          "content": "was addressed, with the other named recipients, in a letter from Horneck von Hornberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189819%2F03_0000189819_0001_3-189819-1.jpg"
@@ -60,6 +18,48 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189819%2F03_0000189819_0002_3-189819-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Anselm von Rosenberg",
+      "type": "generic",
+      "content": "was addressed, with the other named recipients, in a letter from Horneck von Hornberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bartholomäus von Hutten"
+    },
+    {
+      "person": "Eberhard Rüd von Kollenberg"
+    },
+    {
+      "person": "Engelhard von Seinsheim"
+    },
+    {
+      "person": "Friedrich von Grumbach"
+    },
+    {
+      "person": "Friedrich von Wolffskeel"
+    },
+    {
+      "person": "Hans von Wenkheim"
+    },
+    {
+      "person": "Heinrich von Lichtenstein"
+    },
+    {
+      "person": "Horneck von Hornberg"
+    },
+    {
+      "person": "Karl von Thüngen"
+    },
+    {
+      "person": "Konrad von Herrieden"
+    },
+    {
+      "person": "Peter von Seckendorf"
     }
   ]
 }

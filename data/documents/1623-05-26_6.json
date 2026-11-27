@@ -7,21 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3334/charter",
       "german": "Johann Konrad, Adam Hektor und Johann Dietrich von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Johann Bernhard [Schenck zu Schweinsberg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann (Hannsz) Dietrich von Rosenbach\n\nSiegel: anhängendes Siegel in Holzkapsel Johann (Hannsz) Dietrich von Rosenbach",
       "english": "Johann Konrad, Adam Hektor, and Hans Dietrich von Rosenberg confirm their enfeoffment with a stone house, two farms, and three Hufen of land in Berstadt (Berstatt) [district of the municipality of Wölfersheim, Wetterau district], as well as their share of the ground rent in Langsdorf (?) (Langendorff) [district of the municipality of Lich, Gießen district], by Johann Bernhard [Schenck zu Schweinsberg], Abbot of Fulda. The letters of enfeoffment are inserted. Seals are announced.\n\nSealer: Johann (Hannsz) Dietrich von Rosenberg.\n\nSeal: Pendant seal in a wooden case, belonging to Johann (Hannsz) Dietrich von Rosenberg.",
-      "mention": [
-        {
-          "person": "Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Bernhard Schenk",
-          "personTitle": [
-            "Abt zu Fulda",
-            "zu Schweinsberg"
-          ]
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203334%20Vorderseite%20%281623%20Mai%2026%29.jpg"
@@ -30,6 +15,21 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203334%20Rueckseite%20%281623%20Mai%2026%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Bernhard Schenk",
+      "personTitle": [
+        "Abt zu Fulda",
+        "zu Schweinsberg"
+      ]
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
     }
   ]
 }

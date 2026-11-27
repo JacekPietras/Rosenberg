@@ -7,30 +7,30 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234438",
       "german": "Arnold von Uissigheim (Ussenkein), Vogt zu Schweinberg (Sweynburg), Hermann Seman, Heinrich von Uissigheim und Konrad von Hardheim, Edelknecht, entscheiden einen Streit zwischen dem Kloster Bronnbach und den armen Leuten zu Dörlesberg (Torlinspur) über Gericht, Herberge und Atzung daselbst.\n\nLaufzeit: 1356 September 30 (\"Der geben wart nach Crists geburt druzehen hundert jar dornoch in dem sechs und funfzigsten jar am nechsten tage noch sant Michels tag des heiligen erzengels\")",
       "english": "Arnold von Uissigheim, Vogt zu Schweinberg, Hermann Seman, Heinrich von Uissigheim, and Konrad von Hartheim, Edelknecht, arbitrate a dispute between Bronnbach Abbey and the poor people of Dörlesberg concerning the court, lodging, and provisions there.\n\nDate: 30 September 1356 (This was given after the birth of Christ, in the year thirteen hundred and fifty-six, on the day next after Saint Michael the holy archangel).",
-      "mention": [
-        {
-          "person": "Arnold von Uissigheim",
-          "personTitle": [
-            "Vogt zu Schweinberg"
-          ]
-        },
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Heinrich von Uissigheim"
-        },
-        {
-          "person": "Konrad von Hartheim",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234438%2F07_0000234438_0001_7-234438-1.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Uissigheim",
+      "personTitle": [
+        "Vogt zu Schweinberg"
+      ]
+    },
+    {
+      "place": "bronnbach"
+    },
+    {
+      "person": "Heinrich von Uissigheim"
+    },
+    {
+      "person": "Konrad von Hartheim",
+      "personTitle": [
+        "Edelknecht"
       ]
     }
   ]

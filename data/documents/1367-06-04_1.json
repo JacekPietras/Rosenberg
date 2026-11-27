@@ -6,22 +6,22 @@
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 464,104r.",
       "url": "https://digi.ub.uni-heidelberg.de/diglit/winkelmann1894/0238",
       "german": "Ruprecht gibt alle güter, welche vitztum Conrad von Rosenberg und Heinrich, landschreiber zu Amberg, ihm auf der feste Smydemulen, an des pfalzgrafen „landschranen“ zu Lyngenfelt mit recht und urtheil erklagt, an Ulrich Wolfelin von Nappurg seinen küchenmeister.",
-      "english": "Ruprecht gives all properties—which Konrad von Rosenberg, Viztame, and Heinrich, regional scribe at Amberg, had sued for from him at the Smydemulen fortress before the Count Palatine's \"regional judges\" at Lyngenfelt with law and judgment—to Ulrich Wolfelin von Nappurg, his master of the kitchen.",
-      "mention": [
-        {
-          "place": "amberg"
-        }
+      "english": "Ruprecht gives all properties—which Konrad von Rosenberg, Viztame, and Heinrich, regional scribe at Amberg, had sued for from him at the Smydemulen fortress before the Count Palatine's \"regional judges\" at Lyngenfelt with law and judgment—to Ulrich Wolfelin von Nappurg, his master of the kitchen."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "joined Heinrich, regional scribe at Amberg, in claiming property at the fortress of Smydemulen through judgment at the Count Palatine’s regional court at Lyngenfelt."
-        }
-      ]
+      "type": "generic",
+      "content": "joined Heinrich, regional scribe at Amberg, in claiming property at the fortress of Smydemulen through judgment at the Count Palatine’s regional court at Lyngenfelt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
     }
   ]
 }

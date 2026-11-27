@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 5145",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-375492",
       "german": "Rosenberg\n\nLaufzeit: 1550-ca. 1610\n\nEnthält: Enthält u.a.: Hans Charius von Rosenberg quittiert über sein Burggeld (1567); Unterlagen zu einem Prozess zwischen Joachim von Neideck zu Eubigheim und Lorenz von Rosenberg (strittiger Gerichtsstand: Landgericht Herzogtum Franken, Würzburg (1550))\n\nUmfang: 7 Schr.",
-      "english": "Rosenberg\n\nDate range: 1550–c. 1610\n\nContents include: Hans Charius von Rosenberg acknowledges receipt of his burgh levy (1567); documents concerning a dispute between Joachim von Niedeck zu Eubigheim and Lorenz von Rosenberg (disputed venue: the territorial court of the Duchy of Franconia, Würzburg (1550)).\n\nExtent: 7 documents",
-      "mention": [
-        {
-          "person": "Joachim von Niedeck",
-          "personTitle": [
-            "zu Eubigheim"
-          ]
-        },
-        {
-          "person": "Lorenz von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Rosenberg\n\nDate range: 1550–c. 1610\n\nContents include: Hans Charius von Rosenberg acknowledges receipt of his burgh levy (1567); documents concerning a dispute between Joachim von Niedeck zu Eubigheim and Lorenz von Rosenberg (disputed venue: the territorial court of the Duchy of Franconia, Würzburg (1550)).\n\nExtent: 7 documents"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Joachim von Niedeck",
+      "personTitle": [
+        "zu Eubigheim"
       ]
+    },
+    {
+      "person": "Lorenz von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

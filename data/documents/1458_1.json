@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++97a0629c-c0ad-461b-9b49-fb3991f47d29&parent_id="
       ],
       "german": "Streit mit den Grafen Philipp dem Älteren und dem Jüngeren von Rieneck, dann mit Georg und Hans von Rosenberg wegen Belehnung mit einem Hof zu Impfingen (Stadt Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) und des Zehnts zu \"Marpach\"",
-      "english": "Dispute with Counts Philipp the Elder and the Younger of Rieneck, then with Georg von Rosenberg and Hans von Rosenberg regarding enfeoffment of a farm at Impfingen (town of Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) and the tithe at \"Marpach\"",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "rieneck"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was involved in a dispute over enfeoffment with a farm at Impfingen and the tithe at Marpach."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "was involved in a dispute over enfeoffment with a farm at Impfingen and the tithe at Marpach."
-        }
-      ]
+      "english": "Dispute with Counts Philipp the Elder and the Younger of Rieneck, then with Georg von Rosenberg and Hans von Rosenberg regarding enfeoffment of a farm at Impfingen (town of Tauberbischofsheim, Main-Tauber-Kreis, Baden-Württemberg) and the tithe at \"Marpach\""
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "was involved in a dispute over enfeoffment with a farm at Impfingen and the tithe at Marpach."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "was involved in a dispute over enfeoffment with a farm at Impfingen and the tithe at Marpach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "rieneck"
     }
   ]
 }

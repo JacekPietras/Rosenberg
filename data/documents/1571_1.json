@@ -6,25 +6,25 @@
       "source": "Staatsarchiv Ludwigsburg B 290 Bü 346",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1093685",
       "german": "Schreiben an den Hochmeister Georg Hund von Wenckheim in der Auseinandersetzung zwischen Adolf Hermann Riedesel zu Eisenbach und seinem Schwager Albrecht von Rosenberg, 1571",
-      "english": "Letter to the Hochmeister Georg Hund von Wenckheim in the dispute between Adolf Hermann Riedesel of Eisenbach and his brother-in-law Albrecht von Rosenberg, 1571",
-      "mention": [
-        {
-          "person": "Georg Hund von Wenkheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Adolf Herman Riedesel",
-          "type": "kin",
-          "of": "Albrecht von Rosenberg",
-          "term": "Schwager"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "generic",
-          "content": "was in a dispute with his brother-in-law Adolf Hermann Riedesel."
-        }
-      ]
+      "english": "Letter to the Hochmeister Georg Hund von Wenckheim in the dispute between Adolf Hermann Riedesel of Eisenbach and his brother-in-law Albrecht von Rosenberg, 1571"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Adolf Herman Riedesel",
+      "type": "kin",
+      "of": "Albrecht von Rosenberg",
+      "term": "Schwager"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "generic",
+      "content": "was in a dispute with his brother-in-law Adolf Hermann Riedesel."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Hund von Wenkheim"
     }
   ]
 }

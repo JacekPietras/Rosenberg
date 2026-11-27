@@ -11,25 +11,25 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f057c6ed-b835-4315-b47d-f91007901120&parent_id="
       ],
       "german": "Lehenrevers Heinrichs von Rosenberg für Erzbischof Dietrich von Mainz über einen Hof zu Höchst zwischen Gelnhausen und Wirtheim, genannt Cloppelshof, und zwei Morgen Wiese, genannt die Klingelwiese, als Mannlehen.",
-      "english": "Heinrich von Rosenberg issued a feudal acknowledgment to Archbishop Dietrich of Mainz for a manorial fief consisting of a farm at Höchst, between Gelnhausen and Wirtheim, called Cloppelshof, and two morgen of meadow called the Klingelwiese.",
-      "mention": [
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "gelnhausen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Heinrich von Rosenberg",
-          "type": "generic",
-          "content": "issued a feudal acknowledgment to Archbishop Dietrich of Mainz for the Cloppelshof at Höchst and the Klingelwiese meadow as man fiefs."
-        }
+      "english": "Heinrich von Rosenberg issued a feudal acknowledgment to Archbishop Dietrich of Mainz for a manorial fief consisting of a farm at Höchst, between Gelnhausen and Wirtheim, called Cloppelshof, and two morgen of meadow called the Klingelwiese."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich von Rosenberg",
+      "type": "generic",
+      "content": "issued a feudal acknowledgment to Archbishop Dietrich of Mainz for the Cloppelshof at Höchst and the Klingelwiese meadow as man fiefs."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "gelnhausen"
     }
   ]
 }

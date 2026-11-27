@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-877920",
       "german": "1374 Juli 28 (an dem … fr[yt]age nach santt Jacobes dag)\nPeter von Helmstatt (-stat) gen. von Rosenberg und sein Bruder Raban verkaufen Kloster Schöntal um 60 fl alle Rechte, Gülten und Ansprüche auf den Hof zu Weigental (Wigental) und die zugehörigen Güter, nämlich 7 ß hl Gült und 1 Fastnachtshuhn mit seinen Rechten. Ihre Forderungen dem Kloster gegenüber wurden geschlichtet durch Herrn Dieter von Hettingen (Hettenkein), Dekan zu Mosbach (Mosebach), Hans von Itzlingen (Vtzlinger) und Fritz von Obrigheim (Oberkein).\nSiegler: 1) Peter von Helmstatt sowie 2) Groß Raban von Helmstatt und 3) Kunz Münch gen. von Rosenberg wegen Siegelkarenz des Raban von Helmstatt\nAusf. Perg., besch. mit Textverlust - 3 Sg., 3. besch., 1. und 2. abg., Pressel anh. - Rv.: De bonis in Wygental; Weygenthall\n\nLaufzeit: 1374\n\nUmfang: 1 U",
       "english": "28 July 1374 (on the … Friday after Saint James’s Day).\nPeter von Helmstatt, called von Rosenberg, and his brother Raban sell to Schöntal Monastery for 60 florins all rights, rents, and claims to the farm at Weigental and its associated properties, namely an annual rent of 7 shillings Heller and one Fastnacht chicken, together with its rights. Their claims against the monastery were settled by Lord Dieter von Hettingen, dean at Mosbach; Hans von Itzlingen; and Fritz von Obrigheim.\n\nSeal bearers: (1) Peter von Helmstatt; (2) Groß Raban von Helmstatt; and (3) Kunz Münch, called von Rosenberg, because Raban von Helmstatt lacked a seal.\n\nOriginal on parchment, damaged with loss of text; three seals, the third damaged and the first and second detached, with attached tag. Reverse: “Concerning the properties at Weigental”; “Weygenthall.”\n\nDate: 1374.\n\nExtent: One charter.",
-      "mention": [
-        {
-          "person": "Kunz Mönch"
-        },
-        {
-          "place": "mosbach-st-juliana"
-        },
-        {
-          "person": "Peter von Helmstatt",
-          "personTitle": [
-            "genannt von Rosenberg"
-          ]
-        },
-        {
-          "person": "Raban von Helmstatt"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schoental-monastery"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000877920%2F02_0000877920_0001_2-877920-1.jpg"
@@ -38,6 +15,29 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000877920%2F02_0000877920_0002_2-877920-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz Mönch"
+    },
+    {
+      "place": "mosbach-st-juliana"
+    },
+    {
+      "person": "Peter von Helmstatt",
+      "personTitle": [
+        "genannt von Rosenberg"
+      ]
+    },
+    {
+      "person": "Raban von Helmstatt"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schoental-monastery"
     }
   ]
 }

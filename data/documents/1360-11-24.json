@@ -7,30 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-172943",
       "german": "Bernger und Heintze, Gebrüder von Eubigheim (Ubenkein), Edelknechte, verkaufen dem Spital zu Bischofsheim und seinen Vormündern und Pflegern ihren Wald gen. Bischofswinden zwischen Herman Seman und Eberhart von Rosenberg um 213 Pfund guter Währung. Als Bürgen haben sie Herman Seman und Albreht Steinman von Heckfeld (Hetfelt), Edelknechte, eingesetzt. Aussteller: Bernger von Eubigheim (Ubenkein), Edelknecht; Heintze von Eubigheim (Ubenkein), Edelknecht Empfänger: Spital zu Bischofsheim und dessen Vormünder und Pfleger \n\nSiegler: Bernger von Eubigheim (Ubenkein), Edelknecht; Heintze von Eubigheim (Ubenkein), Edelknecht; Herman Seman, Edelknecht; Albreht Steinman von Heckfeld (Hetfelt), Edelknecht",
       "english": "Bernger and Heinrich, brothers von Eubigheim, Edelknecht, sell their forest called Bischofswinden between Herman Seman and Eberhard von Rosenberg to the hospital in Bischofsheim and its guardians and caretakers for 213 pounds in good currency. They appointed Herman Seman and Albreht Steinman von Heckfeld, Edelknecht, as guarantors. Issuer: Bernger von Eubigheim, Edelknecht; Heinrich von Eubigheim, Edelknecht Recipient: Hospital in Bischofsheim and its guardians and caretakers \n\nSealer: Bernger von Eubigheim, Edelknecht; Heinrich von Eubigheim, Edelknecht; Herman Seman, Edelknecht; Albreht Steinman von Heckfeld, Edelknecht",
-      "mention": [
-        {
-          "person": "Bernger von Eubigheim",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Heinrich von Eubigheim",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "held property adjacent to the Bischofswinden forest."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4575&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000004575%2Ftitlaufn_0000172943%2F07_0000172943_0001_7-172943-1.jpg"
@@ -39,6 +15,30 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4575&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000004575%2Ftitlaufn_0000172943%2F07_0000172943_0002_7-172943-2.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "held property adjacent to the Bischofswinden forest."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bernger von Eubigheim",
+      "personTitle": [
+        "Edelknecht"
+      ]
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Heinrich von Eubigheim",
+      "personTitle": [
+        "Edelknecht"
       ]
     }
   ]

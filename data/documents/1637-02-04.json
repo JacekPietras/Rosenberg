@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-177_St/charter",
       "german": "Christoph Sigmund von Schrottenbach, Verordneter der Kärntner Landschaft, verkauft zwei von Georg Andre von und zu Kronegg gekaufte Huben, landesfürstliche Lehen, zu St. Georgen ob Völkermarkt zu Winklern gelegen (Ambros Üuerlatter), an Johann Andre von Rosenberg, Landesverweser und Generaleinnehmner in Kärnten. Siegler und Unterschrift: (Aussteller)\n\nSiegel: 1 Sig. pend. fehlt",
       "english": "Christoph Sigmund von Schrottenbach, a representative of the Carinthian estates, sells to Johann Andre von Rosenberg, provincial administrator and general tax collector in Carinthia, two hides purchased from Georg Andre von und zu Kronegg, fiefs of the territorial prince, located at Winklern in St. Georgen ob Völkermarkt (Ambros Üuerlatter). Sealer and signature: (issuer)\n\nSeal: 1 pendant seal missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_177_16370204_r-1.JPG"
@@ -23,6 +18,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_177_16370204_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

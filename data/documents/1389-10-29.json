@@ -6,19 +6,19 @@
       "source": "Regesta Boica 11",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11697675",
       "german": "Chunz Ruswurm bekennt als Gefangener der Stadt Regensburg, dass er bis kommenden Lucein Tag einen Urfehdebrief von seinem Herrn Arnolt von Rosenberch dem Stadtrathe von Regenspurg überbringen oder sich wieder ins Gefängniss stellen solle, und gelobt, im Falle er während dieser Zeit von Jemand anderm gefangen genommen würde und sich am genannten Tage nicht stellen könnte, so lange mit Niemanden ein Wort zu reden oder nur Wasser und Brod zu geniessen, bis er sich wieder nach Regensburg stellen wird. Siegler: Jacob der Prunnhofer Schultheiss zu Regensburg. G. des freitags nach Simonis et Jude. (c. Sig.)",
-      "english": "Kunz Ruswurm, a prisoner of the city of Regensburg, acknowledges that by the coming St. Lucy’s Day he must deliver to the city council an Urfehde letter from his lord Arnold von Rosenberg or return to prison. He promises that, if someone else captures him in the meantime and he cannot present himself on that day, he will neither speak to anyone nor consume even bread and water until he returns to Regensburg. Sealer: Jakob der Prunnhofer, Schultheiss zu Regensburg. Given on the Friday after Saints Simon and Jude. (With seal.)",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz Ruswurm",
-          "type": "generic",
-          "content": "was required to deliver an Urfehde letter from his lord Arnold von Rosenberg to the council of Regensburg by the coming St. Lucy’s Day or return to prison."
-        }
-      ]
+      "english": "Kunz Ruswurm, a prisoner of the city of Regensburg, acknowledges that by the coming St. Lucy’s Day he must deliver to the city council an Urfehde letter from his lord Arnold von Rosenberg or return to prison. He promises that, if someone else captures him in the meantime and he cannot present himself on that day, he will neither speak to anyone nor consume even bread and water until he returns to Regensburg. Sealer: Jakob der Prunnhofer, Schultheiss zu Regensburg. Given on the Friday after Saints Simon and Jude. (With seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Ruswurm",
+      "type": "generic",
+      "content": "was required to deliver an Urfehde letter from his lord Arnold von Rosenberg to the council of Regensburg by the coming St. Lucy’s Day or return to prison."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
     }
   ]
 }

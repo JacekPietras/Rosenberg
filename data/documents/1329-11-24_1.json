@@ -6,33 +6,33 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 428",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-151987",
       "german": "Kraft von Hohenlohe und Eberhard von Rosenberg, Vogt zu Dürne, schließen einen Burgfrieden in Nagelsberg; ausgestellt 1329, Katharinenabend;\n\nSiegel: Graf Kraft von Hohenlohe und Eberhard von Rosenberg.",
-      "english": "Kraft von Hohenlohe and Eberhard von Rosenberg, Vogt zu Dürn, conclude a truce in Nagelsberg; issued in 1329, St. Catherine's Eve;\n\nSeal: Count Kraft von Hohenlohe and Eberhard von Rosenberg.",
-      "mention": [
-        {
-          "place": "nagelsberg-castle"
-        },
-        {
-          "place": "wallduern"
-        }
+      "english": "Kraft von Hohenlohe and Eberhard von Rosenberg, Vogt zu Dürn, conclude a truce in Nagelsberg; issued in 1329, St. Catherine's Eve;\n\nSeal: Count Kraft von Hohenlohe and Eberhard von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kraft von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ],
-      "facts": [
-        {
-          "person": "Kraft von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ],
-          "type": "generic",
-          "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
-          "type": "generic",
-          "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
-        }
-      ]
+      "type": "generic",
+      "content": "concluded a Burgfrieden at Nagelsberg with [vogt_zu_Durn]."
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Vogt zu Dürn"
+      ],
+      "type": "generic",
+      "content": "concluded a Burgfrieden at Nagelsberg with Kraft von Hohenlohe."
+    }
+  ],
+  "mention": [
+    {
+      "place": "nagelsberg-castle"
+    },
+    {
+      "place": "wallduern"
     }
   ]
 }

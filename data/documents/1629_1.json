@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1467209",
       "german": "3 Kammergerichtsmandate in Sachen der Herren von Rosenberg gegen Würzburg wegen in Folge des Restitutionsedikts erhobener Ansprüche.\n\nLaufzeit: 1629\n\nUmfang: 4 Aktenstücke",
       "english": "Three Imperial Chamber Court mandates in the case of the Lords von Rosenberg against Würzburg concerning claims asserted pursuant to the Edict of Restitution.\n\nDates: 1629\n\nExtent: 4 archival items",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3566&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003566%2Ftitlaufn_0001467209%2F01_0001467209_0001_1-1467209-1.jpg"
@@ -65,6 +57,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3566&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003566%2Ftitlaufn_0001467209%2F01_0001467209_0016_1-1467209-16.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

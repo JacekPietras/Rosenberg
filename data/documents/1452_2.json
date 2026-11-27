@@ -10,45 +10,6 @@
       ],
       "german": "Albrecht von Hohenlohe an Friedrich von Wolfskehl, Anselm von Rosenberg, Conrad von Hehenriet, Eberhard Rüd von Collenberg, Carl von Tüngen, Ditrich Fuchs, Engelhard von Saunsheim, Heinz von Lichtenstein, Fritz von Grumbach, Barthelmä von Hutten, Hans von Wenkheim und Peter von Seckendorf, die alle nach Kitzingen kommen. Laufzeit 1452.",
       "english": "Letter from Albrecht von Hohenlohe to Friedrich von Wolffskeel, Anselm von Rosenberg, Konrad von Hehenriet, Eberhard Rüd von Collenberg, Karl von Thüngen, Ditrich Fuchs, Engelhard von Seinsheim, Heinrich von Lichtenstein, Friedrich von Grumbach, Bartholomäus von Hutten, Hans von Wenkheim, and Peter von Seckendorf, all of whom are to come to Kitzingen. Dated 1452.",
-      "mention": [
-        {
-          "person": "Albrecht von Hohenlohe"
-        },
-        {
-          "person": "Bartholomäus von Hutten"
-        },
-        {
-          "person": "Eberhard Rüd von Kollenberg"
-        },
-        {
-          "person": "Engelhard von Seinsheim"
-        },
-        {
-          "person": "Friedrich von Grumbach"
-        },
-        {
-          "person": "Friedrich von Wolffskeel"
-        },
-        {
-          "person": "Hans von Wenkheim"
-        },
-        {
-          "person": "Heinrich von Lichtenstein"
-        },
-        {
-          "person": "Karl von Thüngen"
-        },
-        {
-          "person": "Peter von Seckendorf"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Anselm von Rosenberg",
-          "type": "generic",
-          "content": "was instructed in Albrecht von Hohenlohe’s letter to come to Kitzingen with the other named recipients."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189820%2F03_0000189820_0001_3-189820-1.jpg"
@@ -57,6 +18,45 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189820%2F03_0000189820_0002_3-189820-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Anselm von Rosenberg",
+      "type": "generic",
+      "content": "was instructed in Albrecht von Hohenlohe’s letter to come to Kitzingen with the other named recipients."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Hohenlohe"
+    },
+    {
+      "person": "Bartholomäus von Hutten"
+    },
+    {
+      "person": "Eberhard Rüd von Kollenberg"
+    },
+    {
+      "person": "Engelhard von Seinsheim"
+    },
+    {
+      "person": "Friedrich von Grumbach"
+    },
+    {
+      "person": "Friedrich von Wolffskeel"
+    },
+    {
+      "person": "Hans von Wenkheim"
+    },
+    {
+      "person": "Heinrich von Lichtenstein"
+    },
+    {
+      "person": "Karl von Thüngen"
+    },
+    {
+      "person": "Peter von Seckendorf"
     }
   ]
 }

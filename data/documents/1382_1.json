@@ -8,16 +8,16 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Contz Mönch v. Rosenberg ist Vogt auf dem Steinsberg. WILHELMI 1857:24; GILBERT 1910:25",
-      "english": "Kunz Mönch von Rosenberg is Vogt zu Steinsberg.",
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ],
-          "type": "title"
-        }
-      ]
+      "english": "Kunz Mönch von Rosenberg is Vogt zu Steinsberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
+      ],
+      "type": "title"
     }
   ]
 }

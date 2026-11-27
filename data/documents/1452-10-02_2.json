@@ -13,54 +13,6 @@
       ],
       "german": "Eberhard von Rosenberg verkauft seinem Vetter und nächsten Lehnserben Ulrich von Rosenberg sein Viertel an Boxberg und bittet den Pfalzgrafen Friedrich, denselben damit zu belehnen;Thomas und Jörg von Rosenberg konsentieren und bürgen.",
       "english": "Eberhard von Rosenberg sells his district to Boxberg to his cousin and next yeast seventh Ulrich von Rosenberg and asks Count Palatine Frederick to sorrow;Thomas von Rosenberg and Georg von Rosenberg approve and guarantee.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "kin",
-          "of": "Ulrich von Rosenberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "was named as Eberhard von Rosenberg’s next Lehnserbe."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "sold his quarter of Boxberg to his cousin and next Lehnserbe, Ulrich von Rosenberg."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg he had sold to him."
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723843%2F04_0001723843_0001_4-1723843-1.jpg",
@@ -101,6 +53,54 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "kin",
+      "of": "Ulrich von Rosenberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "was named as Eberhard von Rosenberg’s next Lehnserbe."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "sold his quarter of Boxberg to his cousin and next Lehnserbe, Ulrich von Rosenberg."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "asked Count Palatine Friedrich to enfeoff Ulrich von Rosenberg with the quarter of Boxberg he had sold to him."
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "consented to Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "served as a surety for Ulrich von Rosenberg’s enfeoffment with Eberhard von Rosenberg’s quarter of Boxberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

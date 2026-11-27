@@ -7,17 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2855480",
       "german": "Revers Adam Hektors von Rosenbach und seiner Brüder bezüglich der Belehnung mit einem Steinhaus in Berstadt und weiteren im Einzelnen aufgeführten Lehen durch Johann Friedrich [von Schwalbach], Abt von Fulda\n\nAdam Hektor, Johann Konrad und Johann (Hans) Dietrich von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Johann Friedrich [von Schwalbach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Johann (Hans) Dietrich von Rosenbach\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Adam Hektor, Johann Konrad, and Hans Dietrich von Rosenberg acknowledge their enfeoffment by Johann Friedrich von Schwalbach, Abbot of Fulda, with a stone house, two farms, and three hides of land at Berstadt (a locality in the municipality of Wölfersheim, Wetterau district), and their share of the rent at Langsdorf (?) (Langendorff), a locality in the municipality of Lich, district of Gießen. The enfeoffment charter is inserted; a seal is announced.\n\nFormal description: Parchment original with an attached seal in a wooden capsule.\nSealer: Hans Dietrich von Rosenberg.\nAdditional information: The acknowledgment has no separate date and refers to the date of the inserted charter.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3333/00001.jpg"
@@ -26,6 +15,17 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3333/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

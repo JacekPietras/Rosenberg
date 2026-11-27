@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234170",
       "german": "Apollonius (Aplo) von Roßberg (Rosseberg) und seine Ehefrau Adelheid geben der Abtei Bronnbach als Seelgerät 2 Morgen Reben im Schalksberg (Schalkberg) bei Würzburg unter gewissen Vorbehalten und Bedingungen.\n\nLaufzeit: 1278 Januar 28\n\nSiegelbeschreibung: An Pergamentstreifen die Wachssiegel des Abtes von Bronnbach und der Stadt Würzburg, letzteres ganz zerstückelt und restauriert\n\nVermerke: Auf der Rückseite fast erloschen: \"Donatio II iugerorum vineti in Herbipoli am Schalkberg\"\n\nSiegler: Abt von Bronnbach; Stadt Würzburg",
       "english": "Apollonius, called Aplo, von Roßberg and his wife Adelheid give the abbey of Bronnbach, for the care of their souls, two acres of vineyards on the Schalksberg near Würzburg, subject to certain reservations and conditions. Date: 28 January 1278. The wax seals of the abbot of Bronnbach and the city of Würzburg hang from parchment strips; the latter is badly fragmented and restored. A nearly faded note on the reverse reads: “Donation of two acres of vineyard at Würzburg on the Schalksberg.” Sealed by the abbot of Bronnbach and the city of Würzburg.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234170%2F07_0000234170_0001_7-234170-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234170%2F07_0000234170_0002_7-234170-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

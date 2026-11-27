@@ -6,22 +6,22 @@
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Bestallungsbriefe 163/e",
       "url": "https://www.gda.bayern.de/gvl/document/cb8370b9-9cce-4700-87a1-65394917237e",
       "german": "Bestallung des Zeysolf von Rosenberg als Amtmann zu Crailsheim",
-      "english": "Appointment of Zeysolf von Rosenberg as bailiff of Crailsheim",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Appointment of Zeysolf von Rosenberg as bailiff of Crailsheim"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Crailsheim"
       ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Crailsheim"
-          ],
-          "type": "generic",
-          "content": "was appointed Amtmann of Crailsheim."
-        }
-      ]
+      "type": "generic",
+      "content": "was appointed Amtmann of Crailsheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

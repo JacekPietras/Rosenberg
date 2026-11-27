@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EDE73E50-6557-4C1C-B1EB-29DBBDDF18DD&parent_id="
       ],
       "german": "Aktenverzeichnis der Dottenheim'schen Erblehen im Schüpfergrund vom Jahre 1483 an und die Namen der Lehenträger: v. Hoheneck, v. Rosenberg, v. Seyfried, v. Gemmingen, v. Sternfeld, v. Rüdt, v. Adler, sowie die Fürsten v. Hohenlohe. (8 Bl.).",
-      "english": "Inventory of the Dottenheim hereditary fiefs in the Schüpfergrund from 1483 onward, and the names of their holders: von Hoheneck, von Rosenberg, von Seyfried, von Gemmingen, von Sternfeld, von Rüdt, von Adler, and the princes von Hohenlohe. (8 leaves.)",
-      "mention": [
-        {
-          "place": "dottenheim"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Siegfried von Gemmingen"
-        }
-      ]
+      "english": "Inventory of the Dottenheim hereditary fiefs in the Schüpfergrund from 1483 onward, and the names of their holders: von Hoheneck, von Rosenberg, von Seyfried, von Gemmingen, von Sternfeld, von Rüdt, von Adler, and the princes von Hohenlohe. (8 leaves.)"
+    }
+  ],
+  "mention": [
+    {
+      "place": "dottenheim"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Siegfried von Gemmingen"
     }
   ]
 }

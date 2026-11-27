@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++19D957C6-E8BA-4E24-BAD0-B8245A18E7DF&parent_id="
       ],
       "german": "Heimfall der von Rosenbach'schen Lehnschaften zu Poppenlauer und Maßbach (Kr. Bad Kissingen)",
-      "english": "Reversion of the von Rosenbach fiefs at Poppenlauer and Maßbach (Bad Kissingen district).",
-      "mention": [
-        {
-          "place": "massbach-st-bartholomaeus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Reversion of the von Rosenbach fiefs at Poppenlauer and Maßbach (Bad Kissingen district)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "massbach-st-bartholomaeus"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

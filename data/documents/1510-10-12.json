@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2862782",
       "german": "1510, in der 13. Indiktion, am Freitag, 12. Oktober, im 2. Jahr des Pontifikats Papst Julius X., in Gegenwart des Notars und der nachbenannten Zeugen waren versammelt einerseits die edle Margarethe Münch von Rosenberg, Äbtissin und der Konvent des Klosters zu Oberstenfeld, Speyerer Diözese, im Chor des genannten Klosters und Heinrich Schuber, Pleban in Mundelsheim, andererseits, wegen der Kompetenz des Pfarrers in Mundelsheim, über die sich Streit erhoben hatte, der nun geschlichtet wird.\nÄbtissin und Konvent sollen dem Vikar jährlich geben 4 Maß (urnas), 9 albus, 40 Malter der drei Früchte, nämlich Weizen, Dinkel und Hafer, Mundelsheimer Maßes, alle Opfer der genannten Kirche, 40 Lasten Stroh, Bodenstroh genannt. An Martini [November 11] 20 lb h, Württemberger Währung, an Georgii 10 fl. Außerdem soll dem Pfarrer in Mundelsheim Haus, Scheuer, Stall (stipes) und die anderen Gebäude im Bau gehalten werden. Er soll jährlich 40 fl erhalten zu zwei Terminen, nämlich an Martini [November 11] und an Estomihi je 20 fl. Hiergegen verzichtet Schuber auf den Zehnten in der Markung Mundelsheim. Er erhält in der Fastenzeit von jedem Einwohner in Mundelsheim das Fasnachtsküchlein, ebenso an Ostern das geweihte Brot (gestgetz) sowie gewisse Mahlzeiten an bestimmten Festtagen nach alter Gewohnheit. Die Äbtissin Margarethe und zwei der Konventualinnen verpflichten sich, die vorgeschriebenen Bestimmungen einzuhalten, desgleichen verspricht dies der Pleban Heinrich Schuber in Gegenwart von Thomas Truchseß, decretorum doctor, Scholaster und Kanoniker der Speyerer Kirche, Generalvikar des Bischofs Philipp von Speyer, der den unterzeichneten Notar beauftragt hat, dies in ein Notariatsinstrument zu bringen.\n\nNotariatszeichen des Johannes Schly von Udenheim, Kleriker des Speyerer Bistums, öffentlicher Notar kraft kaiserlicher Vollmacht.\n\nLaufzeit: 1510 Oktober 12",
       "english": "In 1510, in the 13th indiction, on Friday, 12 October, in the second year of the pontificate of Pope Julius X, in the presence of the notary and the witnesses named below, gathered on one side the noble Margarethe Münch von Rosenberg, abbess, and the convent of the monastery at Oberstenfeld, in the diocese of Speyer, in the choir of the said monastery; and on the other side Heinrich Schuber, parish priest at Mundelsheim. They gathered concerning the parish priest’s stipend at Mundelsheim, over which a dispute had arisen and which is now settled.\nThe abbess and convent are to give the vicar annually 4 measures, 9 albus, 40 Malter of the three grains—namely wheat, spelt, and oats—measured by the Mundelsheim measure, all offerings of the said church, and 40 loads of straw, called Bodenstroh. At Martinmas [11 November], 20 pounds in Württemberg currency; at St. George’s Day, 10 florins. In addition, the house, barn, stable, and other buildings for the parish priest at Mundelsheim are to be kept in repair. He is to receive 40 florins annually in two installments of 20 florins each, at Martinmas [11 November] and Estomihi. In return, Schuber waives the tithe in the territory of Mundelsheim. During Lent, he is to receive from every inhabitant of Mundelsheim a Fasnachtsküchlein; likewise at Easter the blessed bread, as well as certain meals on specified feast days according to old custom. The abbess Margarethe and two of the nuns undertake to observe the prescribed provisions; the parish priest Heinrich Schuber likewise promises to do so, in the presence of Thomas Truchsess, doctor of canon law, scholaster and canon of the church of Speyer, vicar general of Philipp, Bischof zu Speyer, who instructed the undersigned notary to draw this up as a notarial instrument.\n\nNotarial sign of Johannes Schly von Udenheim, cleric of the diocese of Speyer, public notary by imperial authority.\n\nDate range: 12 October 1510",
-      "mention": [
-        {
-          "person": "Bischof Philipp",
-          "personTitle": [
-            "Bischof zu Speyer"
-          ]
-        },
-        {
-          "person": "Margaretha Mönch von Rosenberg",
-          "personTitle": [
-            "Äbtissin"
-          ]
-        },
-        {
-          "place": "speyer"
-        },
-        {
-          "person": "Thomas Truchsess"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1757&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001757%2Ftitlaufn_0002862782%2F02_0002862782_0001_2-2862782-1.jpg"
@@ -35,6 +15,26 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1757&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001757%2Ftitlaufn_0002862782%2F02_0002862782_0002_2-2862782-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Philipp",
+      "personTitle": [
+        "Bischof zu Speyer"
+      ]
+    },
+    {
+      "person": "Margaretha Mönch von Rosenberg",
+      "personTitle": [
+        "Äbtissin"
+      ]
+    },
+    {
+      "place": "speyer"
+    },
+    {
+      "person": "Thomas Truchsess"
     }
   ]
 }

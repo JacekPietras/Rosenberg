@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4FAF2154-81EE-40F5-A34E-28C2BC911AFE&parent_id="
       ],
       "german": "Streitigkeiten zwischen Hans Christoph und Hans Georg von Berlichingen und Eucharius von Rosenberg, der beschuldigt wird, von der Hirtweide auf Hüngheimer Markung widerrechtlich einige Stück Vieh weggenommen zu haben",
-      "english": "Disputes between Hans Christoph and Hans Georg von Berlichingen and Eucharius von Rosenberg, who was accused of having unlawfully taken several animals from the herdsmen’s pasture on the Hüngheim estate.",
-      "mention": [
-        {
-          "person": "Eucharius von Rosenberg"
-        },
-        {
-          "person": "Hans Christoph von Berlichingen"
-        },
-        {
-          "person": "Hans Georg von Berlichingen"
-        }
-      ]
+      "english": "Disputes between Hans Christoph and Hans Georg von Berlichingen and Eucharius von Rosenberg, who was accused of having unlawfully taken several animals from the herdsmen’s pasture on the Hüngheim estate."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eucharius von Rosenberg"
+    },
+    {
+      "person": "Hans Christoph von Berlichingen"
+    },
+    {
+      "person": "Hans Georg von Berlichingen"
     }
   ]
 }

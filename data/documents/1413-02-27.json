@@ -8,48 +8,48 @@
       "summary": "Bischof Johann von Brunn verpfändet Hans und FritzTruchsess von Baldersheim(den Truchsessen), Götz von Berlichingen (Berlichingen) und Konrad von Rosenberg (Conraden von Rosenberg) Stadt und Amt Röttingen erneut für 8000 Gulden.",
       "german": "Wie B. Johanns von Brun den Truchsessen, Berlichingen vnd Conraden von Rosenberg der 8000 f halben ein ander verschribung geben Recepta Contractarum Brun folio i anno 1413 Montag nach Sant Mathei tag",
       "english": "In 1413, on the Monday after St Matthew’s Day, Hans von Brunn, Bischof, issued a further bond concerning 8,000 florins to the Truchsessen, Götz von Berlichingen, and Konrad von Rosenberg. The archive summary identifies the Truchsessen as Hans and Friedrich von Baldersheim Aub and explains that the bond renewed the pledge of the town and Amt Röttingen. Recorded in the register of contracts of Brun, fol. 1.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "place": "berlichingen"
-        },
-        {
-          "place": "brunn"
-        },
-        {
-          "person": "Friedrich von Baldersheim"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        },
-        {
-          "person": "Hans von Baldersheim"
-        },
-        {
-          "person": "Hans von Brunn",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "place": "roettingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "received another bond from Bishop Johann von Brunn concerning the 8,000 florins, jointly with the Truchsessen and Berlichingen."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_461.jpg",
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "received another bond from Bishop Johann von Brunn concerning the 8,000 florins, jointly with the Truchsessen and Berlichingen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "place": "berlichingen"
+    },
+    {
+      "place": "brunn"
+    },
+    {
+      "person": "Friedrich von Baldersheim"
+    },
+    {
+      "person": "Götz von Berlichingen"
+    },
+    {
+      "person": "Hans von Baldersheim"
+    },
+    {
+      "person": "Hans von Brunn",
+      "personTitle": [
+        "Bischof"
+      ]
+    },
+    {
+      "place": "roettingen"
     }
   ]
 }

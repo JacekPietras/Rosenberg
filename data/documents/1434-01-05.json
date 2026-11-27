@@ -10,46 +10,6 @@
       ],
       "german": "Dieter von Angelloch d. J., Sohn des verstorbenen Eberhard, und Agnes von Rosenberg, Witwe des Peter von Angelloch, verkaufen an Dieter von Venningen d. Ä. und dessen Ehefrau Else alle ihre Zinse zu Reihen um 20 Pfund 10 Schilling Heller. Ausfertigung auf Pergament mit zwei Siegeln. Datiert 5. Januar 1434.",
       "english": "Diether von Gauangelloch der Jüngere, son of the late Eberhard von Gauangelloch, and Agnes von Rosenberg, widow of Peter von Gauangelloch, sell all their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth for 20 pounds and 10 shillings Heller. Original on parchment with two seals. Dated 5 January 1434.",
-      "facts": [
-        {
-          "person": "Peter von Gauangelloch",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Agnes von Rosenberg"
-        },
-        {
-          "person": "Peter von Gauangelloch",
-          "type": "death",
-          "diedBefore": "1434-01-06"
-        },
-        {
-          "person": "Eberhard von Gauangelloch",
-          "type": "death",
-          "diedBefore": "1434-01-06"
-        },
-        {
-          "person": "Eberhard von Gauangelloch",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Diether von Gauangelloch",
-          "ofTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Agnes von Rosenberg",
-          "type": "generic",
-          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere."
-        },
-        {
-          "person": "Diether von Gauangelloch",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001781127%2F04_0001781127_0001_4-1781127-1.jpg"
@@ -63,6 +23,46 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Peter von Gauangelloch",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Agnes von Rosenberg"
+    },
+    {
+      "person": "Peter von Gauangelloch",
+      "type": "death",
+      "diedBefore": "1434-01-06"
+    },
+    {
+      "person": "Eberhard von Gauangelloch",
+      "type": "death",
+      "diedBefore": "1434-01-06"
+    },
+    {
+      "person": "Eberhard von Gauangelloch",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Diether von Gauangelloch",
+      "ofTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Agnes von Rosenberg",
+      "type": "generic",
+      "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Diether von Gauangelloch der Jüngere."
+    },
+    {
+      "person": "Diether von Gauangelloch",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "sold their rents at Reihen to Diether von Venningen der Ältere and his wife Elisabeth jointly with Agnes von Rosenberg."
     }
   ]
 }

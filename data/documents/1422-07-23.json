@@ -9,18 +9,18 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1422_VIII_23/charter"
       ],
       "german": "König Sigismund widerruft die von ihm dem Ulrich von Rosenberg und anderen gethanen Verschreibungen und Vergabungen von Gütern des Klosters Goldenkron.",
-      "english": "King Sigismund revokes the grants and conveyances of property belonging to Goldenkron Monastery that he had made to Ulrich von Rosenberg and others.",
-      "mention": [
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Sigismund revokes the grants and conveyances of property belonging to Goldenkron Monastery that he had made to Ulrich von Rosenberg and others."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

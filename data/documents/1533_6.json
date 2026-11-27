@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Ludwigsburg B 375 S Bü 65",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2019629",
       "german": "Vertrag der drei würzburgischen Räte, nämlich des Freiherrn Friedrich d. Ä. von Schwarzenberg, Martin von Uissigheim, Domherr zu Würzburg, und des Doktors Georg Farner (Konzept oder Kopie)\n\nLaufzeit: 1533\n\nUmfang: 1 Schr.",
-      "english": "Agreement of the three Würzburg councillors, namely Friedrich von Schwarzenberg der Ältere, Freiherr, Martin von Uissigheim, Domherr zu Würzburg, and Doctor Georg Farner (draft or copy).\n\nTerm: 1533.\n\nExtent: 1 document.",
-      "mention": [
-        {
-          "person": "Friedrich von Schwarzenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Martin von Uissigheim",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Agreement of the three Würzburg councillors, namely Friedrich von Schwarzenberg der Ältere, Freiherr, Martin von Uissigheim, Domherr zu Würzburg, and Doctor Georg Farner (draft or copy).\n\nTerm: 1533.\n\nExtent: 1 document."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Schwarzenberg",
+      "personTitle": [
+        "der Ältere"
       ]
+    },
+    {
+      "person": "Martin von Uissigheim",
+      "personTitle": [
+        "Domherr zu Würzburg"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

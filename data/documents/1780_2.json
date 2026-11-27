@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++52792923-953b-4eb5-b7c3-53965f5f1619&parent_id="
       ],
       "german": "Schwängerung der Katharina Barbara Krämer von Uttenhofen, Magd beim Wirt Menth zu Rügland, durch Simon Böllot von Rosenberg oder durch den herrschaftlichen Schafknecht Lohr.",
-      "english": "The impregnation of Katharina Barbara Krämer of Uttenhofen, maidservant to the innkeeper Menth at Rügland, by Simon Böllot von Rosenberg or by the lordly shepherd’s servant Lohr.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "The impregnation of Katharina Barbara Krämer of Uttenhofen, maidservant to the innkeeper Menth at Rügland, by Simon Böllot von Rosenberg or by the lordly shepherd’s servant Lohr."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

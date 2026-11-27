@@ -6,21 +6,21 @@
       "source": "Staatsarchiv Ludwigsburg B 342 Bü 118",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2955815",
       "german": "Aufteilung der 2 Ganerbenflecken Talheim und Edelfingen zwischen dem Deutschorden einerseits und denen von Rosenberg, Frauenberg, Adelsheim und Venningen andererseits\n\nLaufzeit: 1625-1630\n\nUmfang: 1 Bü (Nr. 1-26; mit 2 ad 4, 2 ad 3, 3 ad 7, ante 8, 2 ad 21)",
-      "english": "Division of the two Ganerbe villages of Talheim and Edelfingen between the Teutonic Order on one side and the von Rosenberg, Frauenberg, Adelsheim, and Venningen families on the other.\n\nDate range: 1625–1630.\n\nExtent: 1 bundle (items 1–26; with 2 ad 4, 2 ad 3, 3 ad 7, ante 8, 2 ad 21).",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "place": "edelfingen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "talheim"
-        }
-      ]
+      "english": "Division of the two Ganerbe villages of Talheim and Edelfingen between the Teutonic Order on one side and the von Rosenberg, Frauenberg, Adelsheim, and Venningen families on the other.\n\nDate range: 1625–1630.\n\nExtent: 1 bundle (items 1–26; with 2 ad 4, 2 ad 3, 3 ad 7, ante 8, 2 ad 21)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "place": "edelfingen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "talheim"
     }
   ]
 }

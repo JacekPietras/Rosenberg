@@ -13,14 +13,6 @@
       ],
       "german": "Burkhard Sturmfeder zu Stettenfels, und seine Söhne Hans und Fritz verkaufen dem Edelknecht Konz Münch von Rosenberg ihren Teil von Neckarelz.\n\nLaufzeit: 1382 März 30 (1382 Palmarum)\n\nLaufzeit: 1383 Mai 19\n\nSiegelbeschreibung: 5 von 6 Siegeln",
       "english": "Burkhard Sturmfeder zu Stettenfels and his sons Hans and Fritz sell their share of Neckarelz to Konz Münch von Rosenberg, Edelknecht.\n\nTerm: 30 March 1382 (Palm Sunday 1382)\n\nTerm: 19 May 1383",
-      "mention": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774006%2F04_0001774006_0001_4-1774006-1.jpg"
@@ -47,14 +39,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1774007",
       "german": "Burkhard Sturmfeder zu Stettenfels, und seine Söhne Hans und Fritz verkaufen dem Edelknecht Konz Münch von Rosenberg ihren Teil von Neckarelz.\n\nLaufzeit: 1383 Mai 19\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Burkhard Sturmfeder zu Stettenfels and his sons Hans and Fritz sell their share of Neckarelz to Konz Münch von Rosenberg, Edelknecht.\n\nTerm: 19 May 1383\n\nSeal description: One seal.",
-      "mention": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774007%2F04_0001774007_0001_4-1774007-1.jpg"
@@ -65,6 +49,14 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774007%2F04_0001774007_0003_4-1774007-3.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
       ]
     }
   ]

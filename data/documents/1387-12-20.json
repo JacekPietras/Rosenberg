@@ -13,11 +13,6 @@
       ],
       "german": "Rudolf von Rosenberg zu Zuckenriet verzichtet auf Rechte an Eigenleuten, die sich an das Kloster St. Gallen gekauft haben.\n\nSiegel: Siegel besch., Abb. 615.",
       "english": "Rudolf von Rosenberg of Zuckenriet waives rights over free tenants who have purchased themselves from the Monastery of St. Gallen.\n\nSeal: Seal described, Fig. 615.",
-      "mention": [
-        {
-          "person": "Rudolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13870205_DD2-B16_r.jpg"
@@ -38,6 +33,11 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG1jpgweb._%7EStiASG_13870205_DD2-B16_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Rudolf von Rosenberg"
     }
   ]
 }

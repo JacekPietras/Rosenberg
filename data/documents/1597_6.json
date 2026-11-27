@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-37869",
       "german": "Teilnahme Albert Christophs von Rosenberg an der Hochzeit [der Johanna Henriette von Oettingen mit Friedrich Magnus von Erbach] in Schillingsfürst.\n\nLaufzeit: 1597\n\nUmfang: 1 Schr.",
       "english": "Albrecht Christoph von Rosenberg's attendance at the wedding [of Johanna Henriette von Oettingen and Friedrich Magnus von Erbach] in Schillingsfürst.\n\nTerm: 1597.\n\nExtent: 1 document.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "erbach"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=580&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000580%2Ftitlaufn_0000037869%2F03_0000037869_0001_3-37869-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=580&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000580%2Ftitlaufn_0000037869%2F03_0000037869_0002_3-37869-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "erbach"
     }
   ]
 }

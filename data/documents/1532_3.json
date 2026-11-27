@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E4393085-0E91-44E1-A9BE-C4FC55751DB0&parent_id="
       ],
       "german": "Akt der Würzburger Kanzlei: Werbungen und Rüstungen für den Türkenkrieg (Bestellung des Hauptmanns von Schaumberg und Cuntzen von Rosenberg. Tag zu Münnerstadt, mainzische Türkenhilfe etc.",
-      "english": "Record of the Würzburg Chancellery: Recruitment and armaments for the Turkish War (appointment of the captain von Schaumberg and Kunz von Rosenberg. Diet at Münnerstadt, Mainz's Turkish aid, etc.",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "was appointed a captain for the preparations for the war against the Turks."
-        }
-      ]
+      "english": "Record of the Würzburg Chancellery: Recruitment and armaments for the Turkish War (appointment of the captain von Schaumberg and Kunz von Rosenberg. Diet at Münnerstadt, Mainz's Turkish aid, etc."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "was appointed a captain for the preparations for the war against the Turks."
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

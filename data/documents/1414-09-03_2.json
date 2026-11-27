@@ -10,18 +10,6 @@
       ],
       "german": "Ritter Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden, dass Cuncz Imhof und seine Hausfrau Anne dem Cunrad Eysteter \"ir eygen an dem crame unter den cremen bey den protpencken an sant Sebolts kirchoff zunechste an Linhart Egens cram gelegen das junckfrawn Margreten der Pentlerin und irer erben erbe wer\" gegen jährlichen Zins verkaufen. - Zeugen: Jacob Ortlieb, Sebold Ellwanger. Siegler: das Gericht zu Nürnberg.\n\nBesiegelung/Beglaubigung: mit anh. Sg.",
       "english": "Ritter Hans von Rosenberg, Schultheiß, and the lay judges of the city of Nürnberg certify that Cuncz Imhof and his wife Anne sell to Cunrad Eysteter for an annual rent “their own property in the shop beneath the shops by the bread stalls at the cemetery of St. Sebald, immediately next to Linhart Egen’s shop, which was the inheritance of the maiden Margret Pentlerin and her heirs.” Witnesses: Jacob Ortlieb, Sebold Ellwanger. Sealer: the court of Nürnberg.\n\nSealing/authentication: with attached seal.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/fc417176-bdc8-4a78-8687-6b7ae0c8c3d5/1/full/max/0/default.jpg"
@@ -33,6 +21,18 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/fc417176-bdc8-4a78-8687-6b7ae0c8c3d5/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß"
+      ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

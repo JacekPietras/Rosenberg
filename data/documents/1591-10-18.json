@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++92E09913-D315-4E65-8078-40B49FEA4199&parent_id="
       ],
       "german": "Abschrift einer Urkunde Bernhards von Sternfels, betrifft die nach dem Tode der Ursula von Rosenberg, geb. von Sternfels, Witwe des Philipp Jakob von Rosenberg auf ihn übergegangenen Nutzgenuß des Dorfes Bofsheim",
-      "english": "Copy of a charter of Bernhard von Sternfels concerning the usufruct of the village of Bofsheim, which passed to him after the death of Ursula von Rosenberg, née von Sternfels, widow of Philipp Jakob von Rosenberg.",
-      "mention": [
-        {
-          "place": "boffsheim"
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
-          "person": "Ursula von Rosenberg"
-        }
-      ]
+      "english": "Copy of a charter of Bernhard von Sternfels concerning the usufruct of the village of Bofsheim, which passed to him after the death of Ursula von Rosenberg, née von Sternfels, widow of Philipp Jakob von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boffsheim"
+    },
+    {
+      "person": "Philipp Jakob von Rosenberg"
+    },
+    {
+      "person": "Ursula von Rosenberg"
     }
   ]
 }

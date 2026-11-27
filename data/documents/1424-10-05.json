@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199586",
       "german": "Agnes Kreyßin, Witwe Heinrichs v. Sickingen, Hans Truchseß von Baldersheim, Ritter, und Kunz von Rosenberg zu Bartenstein geben ihre Einwilligung zu dem von Heinz Johann von Bolzhausen getätigten Verkauf von 5 1/2 Morgen Äcker und Wiesen von dem Hof zu Bolzhausen, der zum Schloß Röttingen gehört.\n\nLaufzeit: 1424 Oktober 5 (Di v. Nikolaus)\n\nSiegelbeschreibung: 2 Siegel",
       "english": "Agnes Kreyßin, widow of Heinrich von Sickingen, Hans Truchseß von Baldersheim, Ritter, and Kunz von Rosenberg zu Bartenstein consent to the sale by Heinz Johann von Bolzhausen of 5½ Morgen of fields and meadows belonging to the farm at Bolzhausen, which is part of Röttingen Castle.\n\nDate: 5 October 1424 (Tuesday before St Nicholas's Day)\n\nSeal description: 2 seals",
-      "mention": [
-        {
-          "person": "Hans Truchsess von Baldersheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Heinrich von Sickingen"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "roettingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199586%2F07_0000199586_0001_7-199586-1.jpg"
@@ -35,6 +15,26 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199586%2F07_0000199586_0002_7-199586-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Truchsess von Baldersheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Heinrich von Sickingen"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "roettingen"
     }
   ]
 }

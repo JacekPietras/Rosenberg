@@ -12,19 +12,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++55afe9e8-f884-49f6-bbd3-600951d865b9&parent_id="
       ],
       "german": "Rothenburg an Konrad Eberhart und Jörg Bermetter sowie den Stadtschreiber Thomas Zweifel: Streit Rothenburgs mit Zaisolph von Rosenberg und den Lochingern.",
-      "english": "Rothenburg wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel concerning Rothenburg’s dispute with Zaisolph von Rosenberg and the Lochingers.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was named as an opponent in a dispute between Rothenburg and the Lochingers, about which the city wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel."
-        }
-      ]
+      "english": "Rothenburg wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel concerning Rothenburg’s dispute with Zaisolph von Rosenberg and the Lochingers."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was named as an opponent in a dispute between Rothenburg and the Lochingers, about which the city wrote to Konrad Eberhard, Jörg Bermetter, and town clerk Thomas Zweifel."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

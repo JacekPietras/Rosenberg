@@ -6,30 +6,30 @@
       "source": "Staatsarchiv Wertheim G-Rep. 53 Nr. 4",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-7859",
       "german": "Verschiedene Quittungen zu Gülten und Zinsen, die von Graf Georg von Wertheim bzw. Graf Michael von Wertheim ausgestellt wurden u.a. für Arnold von Miltenberg (1445), Philipp von Sickingen (1522), Rüd von Büdigheim (1522), Barbara Stecklin (1522), Hans von Rosenberg (1522), Adam Hund von Wenkheim (1522)\n\nLaufzeit: 1445-1523",
-      "english": "Various receipts for rents and interest issued by Count Georg von Wertheim or Count Michael von Wertheim, including for Arnold von Miltenberg (1445), Philipp von Sickingen (1522), Rüd von Büdigheim (1522), Barbara Stecklin (1522), Hans von Rosenberg (1522), and Adam Hund von Wenkheim (1522).\n\nTerm: 1445–1523",
-      "mention": [
-        {
-          "person": "Adam Hund von Wenkheim"
-        },
-        {
-          "person": "Georg von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Philipp von Sickingen"
-        }
+      "english": "Various receipts for rents and interest issued by Count Georg von Wertheim or Count Michael von Wertheim, including for Arnold von Miltenberg (1445), Philipp von Sickingen (1522), Rüd von Büdigheim (1522), Barbara Stecklin (1522), Hans von Rosenberg (1522), and Adam Hund von Wenkheim (1522).\n\nTerm: 1445–1523"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Adam Hund von Wenkheim"
+    },
+    {
+      "person": "Georg von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "person": "Philipp von Sickingen"
     }
   ]
 }

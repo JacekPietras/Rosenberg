@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-189_St/charter",
       "german": "Georg Andre von und zu Kronegg, Landesverweser in Kärnten, übergibt im Hoftaiding dem Johann Andre von Rosenberg als \"Cessionarius und Überhaber\" (Gläubiger bzw. Rechtsvertreter) der Siguna Elisabeth Khevenhüller einen Schuldbrief der Herrschaft Stein über 2000 Golddukaten ddo 1623-02-12 als Pfand von Christoph Glantschnig, dem Kurator des Verlasses von Melchior Putz von Kirchheimegg. Siegler: (Aussteller)\n\nSiegel: 1 Sig. pend. fehlt",
       "english": "Georg Andre von und zu Kronegg, Landesverweser in Carinthia, hands over in the Hoftaiding to Hans Andre von Rosenberg, as the \"Cessionarius und Überhaber\" (creditor or legal representative) of Siguna Elisabeth Khevenhüller, a debt instrument of the lordship of Stein for 2,000 gold ducats, dated February 12, 1623, held as a pledge from Christoph Glantschnig, curator of the estate of Melchior Putz von Kirchheimegg. Sealer: the issuer.\n\nSeal: one hanging seal missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_189_16430111_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_189_16430111_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

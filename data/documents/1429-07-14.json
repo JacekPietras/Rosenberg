@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198242",
       "german": "Lehensrevers des Anselm von Rosenberg für den Grafen Johann von Wertheim über Eubigheim 1/2 Teil, sein Teil am Wein- und Kleinzehnten zu Gamburg.\n\nLaufzeit: 1429 Juli 14",
       "english": "Anselm von Rosenberg's feudal acknowledgment to Count Johann of Wertheim for one half of Eubigheim and his share of the wine and small tithes at Gamburg.\n\nTerm: 14 July 1429.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "place": "eubigheim"
-        },
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198242%2F07_0000198242_0001_7-198242-1.jpg"
@@ -28,6 +14,20 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198242%2F07_0000198242_0002_7-198242-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg"
+    },
+    {
+      "place": "eubigheim"
+    },
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
     }
   ]

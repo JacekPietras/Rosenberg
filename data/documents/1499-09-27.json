@@ -9,49 +9,6 @@
       "summary": "Die vier Regenten des Bischofs von Freising Philipp Pfalzgraf bei Rhein, Johann von Lamberg (Domdekan zu Freising), Ruprecht Auer (Domherr), Michael von Rosenberg (Hofmeister) und Warmund von Fraunberg zum Huebenstein, verleihen dem Georg von Welsperg den halben Hof zu Zell unter Welsberg, das Halbe Gut zu Winkel hinter der Burg Welsperg und ein Gut zu Toblach als Zinslehen. S: Johann von Lamberg Or. Perg., 1 anh. Siegel",
       "german": "Wir mit namen hernachgeschryben Johanns von Lamberg Thumdechant zu Freysing Rueprecht\nAuer thumher Michel von Rosenberg hoffmaister Warmund von Fraunberg zum Hueb-\nenstain die zeyt all vier des hochwirdigen hochgepornen fursten und hern Herren\nPhilipsen administrator zu Freysing pfaltzgrauen pei Rhein Hertzogen in Bayren unsers gnedigen\nhern verordent volmachtig anwelt regenten und rate bekennen offenlich mit\ndem bryeff das wir den edln und vesten Jorgen von Welsperg an stat und von wegen\nseiner [?] und die hernachgeschryben stuck und gut mit namen den halben hove gelegen\nzu zell under Welsperg ob unser lieben frauen kirchen Item das halb gut zu Winckel\nhinder dem Sloß Welsperg und ain gut zu Toblach gelegen mit iren zu gehorungen\nverlihen haben leihen im auch die wissenlich in crafft ditz bryeffs was wir im von\nrechtens wegen daran leihen sullen oder mugen also das er die nun furpass zu lechens\nweiß zu haben nützen und nyessen sol und mag als lechens der herschafft Freysing\nrecht ist doch unserm gnadigen hern seinen nachkumen an der lechenschafft auch\nmanigklich an seinen rechten an schaden er sol auch den gewonlichen zinß davon in den\nkasten gen Freysing jarlich dienen zu urkunt geben wir im den bryeff mit meinem\nobgenanten Johanns von Lamberg anhangendem insigel versigelt dar unter von unß drey\nobgemelt hiemit wellen gepraucht haben der geben ist zu Freysing an freytag vor sand\nmichelstag tausent vierhundert im neundneuntzigisten jar",
       "english": "We, named below, Johann von Lamberg, Domdekan zu Freising, Ruprecht Auer, Domherr, Michael von Rosenberg, Hofmeister, and Warmund von Fraunberg zum Huebenstein, at this time all four appointed, fully empowered deputies, regents and councillors of the most worthy, high-born prince and lord, lord Philipp, administrator of Freising, Count Palatine of the Rhine, Duke in Bavaria, our gracious lord, publicly acknowledge with this letter that we have granted to the noble and steadfast Georg von Welsperg, on behalf of his [?], the following properties and holdings, namely the half farm situated at Zell below Welsperg above Our Lady's church, likewise the half holding at Winkel behind the castle Welsperg, and a holding at Toblach, with their appurtenances. We also grant him, knowingly and by virtue of this letter, whatever we rightfully ought or may grant therein, so that from now on he may have, use and enjoy them as a fief, as is lawful by fief-right of the lordship of Freising, yet without prejudice to our gracious lord, his successors in the lordship over the fief, and anyone else in their rights. He shall also pay the customary Zins from it annually into the Kasten at Freising. In witness whereof we give him this letter, sealed with the appended seal of me, the aforementioned Johann von Lamberg, under which we three named above intend hereby to be bound. Given at Freising on the Friday before St. Michael's day, in the year one thousand four hundred and ninety-nine.",
-      "mention": [
-        {
-          "place": "fraunberg"
-        },
-        {
-          "place": "freising"
-        },
-        {
-          "place": "schloss-hubenstein"
-        },
-        {
-          "place": "schloss-welsperg"
-        },
-        {
-          "place": "toblach"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Hofmeister"
-          ],
-          "type": "generic",
-          "content": "was one of the four appointed, fully empowered deputies, regents and councillors of Philipp, Administrator zu Freysing, Pfalzgraf bei Rhein and Herzog in Bayern."
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Hofmeister"
-          ],
-          "type": "generic",
-          "content": "granted Georg von Welsperg as a fief half a farm at Zell under Welsperg, half a holding at Winkel behind Schloss Welsperg, and a holding at Toblach, jointly with Hans von Lamberg, Domdekan zu Freising, Ruprecht Auer, Domherr, and Warmund von Fraunberg zum Huebenstein."
-        },
-        {
-          "person": "Hans von Lamberg",
-          "personTitle": [
-            "Domdekan zu Freising"
-          ],
-          "type": "generic",
-          "content": "sealed the grant of the fief to Georg von Welsperg with his appended seal, under which the other three regents also bound themselves."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/IT-StiAI/STAI_XXIII_U548_r.jpg",
@@ -70,6 +27,49 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Hofmeister"
+      ],
+      "type": "generic",
+      "content": "was one of the four appointed, fully empowered deputies, regents and councillors of Philipp, Administrator zu Freysing, Pfalzgraf bei Rhein and Herzog in Bayern."
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Hofmeister"
+      ],
+      "type": "generic",
+      "content": "granted Georg von Welsperg as a fief half a farm at Zell under Welsperg, half a holding at Winkel behind Schloss Welsperg, and a holding at Toblach, jointly with Hans von Lamberg, Domdekan zu Freising, Ruprecht Auer, Domherr, and Warmund von Fraunberg zum Huebenstein."
+    },
+    {
+      "person": "Hans von Lamberg",
+      "personTitle": [
+        "Domdekan zu Freising"
+      ],
+      "type": "generic",
+      "content": "sealed the grant of the fief to Georg von Welsperg with his appended seal, under which the other three regents also bound themselves."
+    }
+  ],
+  "mention": [
+    {
+      "place": "fraunberg"
+    },
+    {
+      "place": "freising"
+    },
+    {
+      "place": "schloss-hubenstein"
+    },
+    {
+      "place": "schloss-welsperg"
+    },
+    {
+      "place": "toblach"
     }
   ]
 }

@@ -6,21 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 15 Nr. 2451",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-114525",
       "german": "Schreiben des Eberhard von Rosenberg d.Ä. an Konrad von Weinsberg; Tagsetzung nach Adelsheim.\n\nLaufzeit: 22. Oktober 1441\n\nUmfang: 1 Schr.",
-      "english": "Letter from Eberhard von Rosenberg der Ältere to Konrad von Weinsberg; a meeting is set for Adelsheim.\n\nDate: 22 October 1441.\n\nExtent: 1 document.",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        }
+      "english": "Letter from Eberhard von Rosenberg der Ältere to Konrad von Weinsberg; a meeting is set for Adelsheim.\n\nDate: 22 October 1441.\n\nExtent: 1 document."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
       ]
+    },
+    {
+      "person": "Konrad von Weinsberg"
     }
   ]
 }

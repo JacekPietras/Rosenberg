@@ -7,35 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-527267",
       "german": "1472 Aug. 19 (mittwochen nach unser lieben frawen tag würtzwyhe)\nZur Beilegung der zu Bieringen (Biringen) und in der Markung daselbst erwachsenen Auseinandersetzungen zwischen Abt Bernhard und dem Konvent von Schöntal einerseits und Hans von Aschhausen (Aschhusen) wegen seines Stiefssohns Kuno von Dürn, dessen Sache sich der von Aschhausen und Herr Götz von Adelsheim (Adlatzhein), Ritter, angenommen haben, andererseits, haben die Tädingsleute Götz von Adelsheim, Ritter, Ludwig von Sickingen, Kunz von Berlichingen, Simon von Stetten, Hans von Rosenberg und Simon von Adelsheim einen gütlichen Entscheid auf 7 Klagen des Hans von Aschhausen und 10 Klagen des Abts von Schöntal getroffen. Wegen des Laufs des Erlenbachs (der Erlebach) in Bieringen hat Hans von Aschhausen die angebotene Kundschaft vorzubringen. - Die Parteien haben sich an den Entscheid zu halten, den die oben gen. Tädingsleute unter dem Obmann Wilhelm Sützel getroffen haben.\nSiegler: 1) Götz von Adelsheim, Ritter, 2) Ludwig von Sickingen und 3) Kunz von Berlichingen, Tädingsleute\nAusf. Perg., besch., auf Leinwand aufgezogen - 3 Sg., 1. abg., 3. lose beil. - Rv.: Ein entschieds brieff zwischen uns und Hannßen von Aschhußen von wegen Kun von Dürn seins stiffsuns\nBem.: Laut Nachtrag im Findbuch von 1825 S. 44b im Jahr 1872 vom Filialarchiv Ludwigsburg im [Haupt-]Staatsarchiv Stuttgart eingekommen.\nProv.: Aschhausen, von\n\nLaufzeit: 1472\n\nUmfang: 1 U",
       "english": "19 August 1472 (Wednesday after the Feast of the Assumption of Our Lady).\n\nTo settle disputes that had arisen at Bieringen and in its district between Abbot Bernhard and the convent of Schöntal on one side, and Hans von Aschhausen on behalf of his stepson Kuno von Dürn on the other—the latter’s case having been taken up by von Aschhausen and Lord Götz von Adelsheim, Ritter—the arbitrators Götz von Adelsheim, Ritter, Ludwig von Sickingen, Kunz von Berlichingen, Simon von Stetten, Hans von Rosenberg, and Simon von Adelsheim reached an amicable decision on seven complaints by Hans von Aschhausen and ten complaints by the abbot of Schöntal. Concerning the course of the Erlenbach at Bieringen, Hans von Aschhausen is to present the testimony he offered. The parties are to abide by the decision reached by the arbitrators named above under the umpire Wilhelm Sützel.\n\nSealers: (1) Götz von Adelsheim, Ritter; (2) Ludwig von Sickingen; and (3) Kunz von Berlichingen, arbitrators.\n\nOriginal, damaged parchment, mounted on canvas; three seals, the first missing, the third loose and enclosed. Docket: “A letter of settlement between us and Hans von Aschhausen concerning Kuno von Dürn, his stepson.”\n\nNote: According to an addition in the finding aid of 1825, fol. 44b, it came from the Ludwigsburg branch archive to the [Main] State Archive in Stuttgart in 1872.\n\nProvenance: von Aschhausen.",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "place": "erlenbach"
-        },
-        {
-          "person": "Götz von Adelsheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Kuno von Dürn"
-        },
-        {
-          "person": "Kunz von Berlichingen"
-        },
-        {
-          "person": "Ludwig von Sickingen"
-        },
-        {
-          "place": "schoental-monastery"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000527267%2F02_0000527267_0003_2-527267-3.jpg"
@@ -44,6 +15,35 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000527267%2F02_0000527267_0004_2-527267-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "place": "erlenbach"
+    },
+    {
+      "person": "Götz von Adelsheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Kuno von Dürn"
+    },
+    {
+      "person": "Kunz von Berlichingen"
+    },
+    {
+      "person": "Ludwig von Sickingen"
+    },
+    {
+      "place": "schoental-monastery"
     }
   ]
 }

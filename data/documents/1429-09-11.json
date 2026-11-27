@@ -10,38 +10,6 @@
       ],
       "german": "Eberhard von Hardheim verkauft an Pfalzgraf Otto von Mosbach alle Gülten und Zinse zu Königheim, Eiersheim, Schweinberg und Rinderfeld, die er von Anna von Rosenberg, Hans von Rosenbergs Ehefrau, gekauft hatte.\n\nLaufzeit: 1429 September 11 (Sonntag nach Mariae Geburt 1429)\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Eberhard von Hartheim sold to Count Palatine Otto von Mosbach all the rents and interest in Königheim, Eiersheim, Schweinberg and Rinderfeld, which he had bought from Anna von Rosenberg, Hans von Rosenberg's wife.",
-      "mention": [
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "place": "eiersheim"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "person": "Otto von Mosbach",
-          "personTitle": [
-            "Pfalzgraf"
-          ]
-        },
-        {
-          "place": "rinderfeld"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Hartheim",
-          "type": "generic",
-          "content": "sold to Count Palatine Otto von Mosbach all rents and interest at Königheim, Eiersheim, Schweinberg, and Rinderfeld that he had bought from Anna von Rosenberg."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "spouse",
-          "of": "Anna von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001790840%2F04_0001790840_0001_4-1790840-1.jpg"
@@ -55,6 +23,38 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Hartheim",
+      "type": "generic",
+      "content": "sold to Count Palatine Otto von Mosbach all rents and interest at Königheim, Eiersheim, Schweinberg, and Rinderfeld that he had bought from Anna von Rosenberg."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "spouse",
+      "of": "Anna von Rosenberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "place": "eiersheim"
+    },
+    {
+      "place": "koenigheim"
+    },
+    {
+      "person": "Otto von Mosbach",
+      "personTitle": [
+        "Pfalzgraf"
+      ]
+    },
+    {
+      "place": "rinderfeld"
     }
   ]
 }

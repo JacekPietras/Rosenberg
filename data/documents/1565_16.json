@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9B1FFC34-1B6F-4C0A-A0C5-5BA1173A983B&parent_id="
       ],
       "german": "Unterschiedliche Königsberger Amtssachen\n\nEnthält-/Darin-Vermerke: Enthält: Julius von Würzburg an Hans von Bibra wegen Jagd im Herbstadter Holz (1575); Albrecht von Rosenberg an Bischof Friedrich von Würzburg wegen Ritterschaftssache (1565); Bischof Franz von Bamberg an Keller Joh. Degen zu Königshofen wegen Einkommen im Stift (1638); Wolf Dietrich Truchseß von Wetzhausen zu Sternberg; Bericht über Jagd in Untereßfelder Gemarkung (1608); Zehntordnung (1657); Paulus Kling wegen Fruchtkaufs und Müllerordnung (1622); Lehensache zu Trappstadt; Diesntsache \"Goldpetschaft\" (1598); Truchseßische Jagd und Untertanen zu Sulzdorf (1609); Schultheiß und Dorfmeister zu Gabolshausen an Bischof Julius von Würzburg (1609); Bischof Julius an Keller Burchart Hieronimus Rußwurm, Amtmann zu Königshofen (1612); Zehnt des Juliusspitals zu Gabolshausen (1614); Gemeinde zu Bundorf (1614);",
-      "english": "Various Königsberg administrative matters.\n\nContains: Julius of Würzburg to Hans von Bibra concerning hunting in the Herbstadt Wood (1575); Albrecht von Rosenberg to the Bishop of Würzburg concerning a matter of the knighthood (1565); Bishop Franz of Bamberg to Keller Johann Degen zu Königshofen concerning income in the see (1638); Wolf Dietrich Truchseß von Wetzhausen zu Sternberg; a report on hunting in the Untereßfeld district (1608); tithe regulations (1657); Paulus Kling concerning grain purchases and mill regulations (1622); a feudal matter at Trappstadt; the “Goldpetschaft” administrative matter (1598); Truchseß hunting and subjects at Sulzdorf (1609); the mayor and village master of Gabolshausen to Bishop Julius of Würzburg (1609); Bishop Julius to Keller Burchart Hieronimus Rußwurm, Amtmann zu Königshofen (1612); the tithe of Julius Hospital at Gabolshausen (1614); and the community of Bundorf (1614).",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "person": "Bischof Julius",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Hans von Bibra"
-        },
-        {
-          "person": "Julius of Würzburg"
-        },
-        {
-          "person": "Wolf Dietrich Truchsess"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Various Königsberg administrative matters.\n\nContains: Julius of Würzburg to Hans von Bibra concerning hunting in the Herbstadt Wood (1575); Albrecht von Rosenberg to the Bishop of Würzburg concerning a matter of the knighthood (1565); Bishop Franz of Bamberg to Keller Johann Degen zu Königshofen concerning income in the see (1638); Wolf Dietrich Truchseß von Wetzhausen zu Sternberg; a report on hunting in the Untereßfeld district (1608); tithe regulations (1657); Paulus Kling concerning grain purchases and mill regulations (1622); a feudal matter at Trappstadt; the “Goldpetschaft” administrative matter (1598); Truchseß hunting and subjects at Sulzdorf (1609); the mayor and village master of Gabolshausen to Bishop Julius of Würzburg (1609); Bishop Julius to Keller Burchart Hieronimus Rußwurm, Amtmann zu Königshofen (1612); the tithe of Julius Hospital at Gabolshausen (1614); and the community of Bundorf (1614)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "person": "Bischof Julius",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Hans von Bibra"
+    },
+    {
+      "person": "Julius of Würzburg"
+    },
+    {
+      "person": "Wolf Dietrich Truchsess"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

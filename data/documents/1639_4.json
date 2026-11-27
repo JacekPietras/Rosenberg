@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++AE9A0EA9-FE95-44D8-AB2A-BBF15F02BBF1&parent_id="
       ],
       "german": "Übergabe der von den Herren von Rosenberg an die Grafen Ludwig Eberhard, Georg Friedrich, Philipp Heinrich, Joachim Albrecht, Heinrich Friedrich und die Gräfin Dorothee Sophie von Hohenlohe heimgefallenen Lehen zu Haltenbergstetten, Oberbalbach, Edelfingen und weiterer Güter an Graf Melchior von Hatzfeld",
-      "english": "Transfer to Count Melchior von Hatzfeld of the fiefs at Haltenbergstetten, Oberbalbach, Edelfingen and other properties that had reverted from the lords von Rosenberg to Counts Ludwig Eberhard, Georg Friedrich, Philipp Heinrich, Joachim Albrecht and Heinrich Friedrich, and Countess Dorothee Sophie von Hohenlohe.",
-      "mention": [
-        {
-          "place": "edelfingen"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ]
+      "english": "Transfer to Count Melchior von Hatzfeld of the fiefs at Haltenbergstetten, Oberbalbach, Edelfingen and other properties that had reverted from the lords von Rosenberg to Counts Ludwig Eberhard, Georg Friedrich, Philipp Heinrich, Joachim Albrecht and Heinrich Friedrich, and Countess Dorothee Sophie von Hohenlohe."
+    }
+  ],
+  "mention": [
+    {
+      "place": "edelfingen"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

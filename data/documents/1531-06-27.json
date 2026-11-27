@@ -6,14 +6,14 @@
       "source": "HStAM, Urk. 67, 208",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=24350",
       "german": "Balthasar von Hanau theilt dem Bischof Weygand von Bamberg mit, daß er Georg von Rosenberg mit dem Empfang der Lehen beauftragt habe.",
-      "english": "Balthasar von Hanau informs Bishop Weygand of Bamberg that he has commissioned Georg von Rosenberg to receive the fiefs.",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was commissioned by Balthasar von Hanau to receive the fiefs."
-        }
-      ]
+      "english": "Balthasar von Hanau informs Bishop Weygand of Bamberg that he has commissioned Georg von Rosenberg to receive the fiefs."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "was commissioned by Balthasar von Hanau to receive the fiefs."
     }
   ]
 }

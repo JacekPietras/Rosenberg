@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153965",
       "german": "Cuntz Vitztdum von Etzen-Gesäß und Heppdiel (Etzengesesse und Ebentille), gesessen zu Balsbach bekennen eidlich, daß Herburg Vitztdum Cunzens Vater sel. 40 Jahre wertheimischer Förster über das Eichholz zu Brombach war; er rügte für Wertheim, dessen Amtleute die Förster ein- und absetzten. Siegler: die Junker Hans Munch von Rosenberg und Hans von Lynach.\n\nLaufzeit: 1432 Mai 12 (1432 off den montag nach dem sontage Jubilate)\n\nSiegelbeschreibung: Zwei Siegel abgefallen\n\nSiegler: Junker Hans Munch von Rosenberg; Junker Hans von Leinach",
       "english": "Cuntz Vitztdum von Etzen-Gesäß and Heppdiel, residing at Balsbach, swear that Herburg Vitztdum, Cuntz’s late father, served as forester for the County of Wertheim over the Eichholz at Brombach for forty years. He upheld Wertheim’s rights there; its officials appointed and dismissed the foresters. Seals: the squires Hans Munch von Rosenberg and Hans von Lynach.\n\nDate: 12 May 1432 (Monday after Jubilate Sunday, 1432).\n\nSeal description: Two seals have fallen off.\n\nSealers: Squire Hans Munch von Rosenberg; Squire Hans von Leinach.",
-      "mention": [
-        {
-          "person": "Hans Mönch von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153965%2F07_0000153965_0001_7-153965-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153965%2F07_0000153965_0002_7-153965-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Mönch von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

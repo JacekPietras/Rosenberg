@@ -6,23 +6,23 @@
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt A 2396",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-397197",
       "german": "Heiratsabrede zwischen dem kurpfälzischen Geheimen Rat Pleikard von Helmstatt zu Hingsingen und Anna Margaretha von Liebenstein, Tochter des Albrecht von Liebenstein, württembergischen Obervogts zu Lauffen, und der Margaretha von Liebenstein geb. von Rosenberg (Fragment)\n\nLaufzeit: frühes 17. Jh.",
-      "english": "Marriage agreement between Pleikard von Helmstatt zu Hingsingen, Privy Councillor of the Palatinate, and Anna Margaretha von Liebenstein, daughter of Albrecht von Liebenstein, senior bailiff of Württemberg at Lauffen, and Margaretha von Liebenstein née von Rosenberg (fragment).\n\nDate range: early 17th century",
-      "mention": [
-        {
-          "person": "Albrecht von Liebenstein"
-        },
-        {
-          "person": "Anna Margaretha von Liebenstein"
-        },
-        {
-          "place": "helmstatt"
-        },
-        {
-          "person": "Margaretha von Rosenberg",
-          "personTitle": [
-            "von Liebenstein"
-          ]
-        }
+      "english": "Marriage agreement between Pleikard von Helmstatt zu Hingsingen, Privy Councillor of the Palatinate, and Anna Margaretha von Liebenstein, daughter of Albrecht von Liebenstein, senior bailiff of Württemberg at Lauffen, and Margaretha von Liebenstein née von Rosenberg (fragment).\n\nDate range: early 17th century"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Liebenstein"
+    },
+    {
+      "person": "Anna Margaretha von Liebenstein"
+    },
+    {
+      "place": "helmstatt"
+    },
+    {
+      "person": "Margaretha von Rosenberg",
+      "personTitle": [
+        "von Liebenstein"
       ]
     }
   ]

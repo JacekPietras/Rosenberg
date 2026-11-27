@@ -6,159 +6,149 @@
       "source": "Regesta Boica 10",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798273",
       "german": "Heinrich Graf zu Schaumburg, und sein Sohn Graf Ulrich einantworten Johann dem jungen Landgrafen zum Leuthemberg und dem Johann zu Abensperg in Getreushände die Veste Schaumburg, das Neuhaus auf der Tunau, Stauff, Markt und Maut Aschach, das Swansergericht, das Gericht in dem Aschacher Winkel, das Gericht in dem Tunautal, was Alles ledig und unversetzt ist, ferner das Gericht in dem Erleich, Veste und Stadt Pewrbach worauf Jobst zu Abensperg Eidam des Grafen Heinrich von Schaumburg 2000 Pfund Pfenning für sein Heirathgut zu fodern hat, Veste und Stadt Eferding worauf desselben Grafen Heinrichs Eidam Heinrich zu Rosenberg 1000 Pfund Pfenning Heirathgut zu fodern hat, und die Veste Mistelbach, welche an Ekhart den Tanner um 400 Pfund Pfenning verpfändet ist. Diese Güter sollen vom Landgrafen Johann zum Leuthemberg und Johann zu Abensperg besetzt und entsetzt, nach dess Grafen Heinrich von Schaumburg Tode aber desselben mündig gewordenem Sohne dem Grafen Ulrich nur nach Befriedigung der oben erwähnten Foderungen wieder eingeantwortet werden, den genannten von Leuthemberg und Abensperg aber zu gleichen Theilen erblich zufallen, wenn Graf Ulrich zu Schaumburg vor ihnen mit Tod abgehen würde. Mitsiegler: Jan Herr zu Rosenberg des Grafen Heinrich von Schaumburg Sweher, Heinrich der Swörzner Pfleger zum Maidstain, und Reinhart von Czeschlitz Ritter des Jan von Rosenberg Diener. G. zu Chrumpnaw am Suntag Reminiscere. (c. 5 Sig.)",
-      "english": "Count Heinrich of Schaumburg and his son Count Ulrich hand over in trust to Johann der Jüngere, Landgraf zu Leuchtenberg, and Johann of Abensperg the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, all of which is unencumbered and unpledged; further the court in the Erleich, the fortress and town of Peuerbach, on which Jobst of Abensperg, son-in-law of Count Heinrich of Schaumburg, may claim 2000 pounds of pennies for his marriage portion; the fortress and town of Eferding, on which the same Count Heinrich's son-in-law Heinrich zu Rosenberg may claim 1000 pounds of pennies as marriage portion; and the fortress of Mistelbach, which is pledged to Ekhart the Tanner for 400 pounds of pennies. These properties shall be occupied and vacated by Landgrave Johann of Leuchtenberg and Johann of Abensperg, and after the death of Count Heinrich of Schaumburg returned to his son Count Ulrich, once he has come of age, only after satisfaction of the claims mentioned above; they shall fall as hereditary property in equal shares to the said Leuchtenberg and Abensperg if Count Ulrich of Schaumburg should die before them. Co-sealers: Hans von Rosenberg, Herr zu Rosenberg, father-in-law of Count Heinrich of Schaumburg; Heinrich der Swörzner, administrator at Maidstein; and Reinhart von Czeschlitz, Ritter, servant of Hans von Rosenberg. Given at Krumau on Sunday Reminiscere. (With 5 seals.)",
-      "mention": [
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg",
-            "der Jüngere"
-          ]
-        },
-        {
-          "place": "leuchtenberg"
-        },
-        {
-          "place": "neuhaus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Heinrich zu Rosenberg",
-          "type": "kin",
-          "of": "Heinrich zu Schaumburg",
-          "ofTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "term": "Eidam"
-        },
-        {
-          "person": "Heinrich zu Rosenberg",
-          "type": "generic",
-          "content": "had a marriage portion claim on the fortress and town of Eferding."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Herr zu Rosenberg"
-          ],
-          "type": "kin",
-          "of": "Heinrich zu Schaumburg",
-          "ofTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "term": "Sweher"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Herr zu Rosenberg"
-          ],
-          "type": "generic",
-          "content": "co-sealed the charter by which Heinrich zu Schaumburg, Graf, and his son Ulrich handed over properties in trust to Hans der Junge, Landgraf zum Leuthemberg, and Hans zu Abensperg."
-        },
-        {
-          "person": "Reinhard von Czeschlitz",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "co-sealed the charter as servant (Diener) of Hans von Rosenberg."
-        },
-        {
-          "person": "Heinrich zu Schaumburg",
-          "personTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "type": "generic",
-          "content": "entrusted the fortress and town of Eferding and other properties to Hans der Junge, Landgraf zum Leuthemberg, and Hans zu Abensperg, jointly with his son Ulrich."
-        },
-        {
-          "person": "Heinrich zu Schaumburg",
-          "personTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "type": "parent",
-          "of": "Ulrich zu Schaumburg",
-          "ofTitle": [
-            "Graf zu Schaumburg"
-          ]
-        },
-        {
-          "person": "Jobst zu Abensperg",
-          "type": "kin",
-          "of": "Heinrich zu Schaumburg",
-          "ofTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "term": "Eidam"
-        }
-      ]
+      "english": "Count Heinrich of Schaumburg and his son Count Ulrich hand over in trust to Johann der Jüngere, Landgraf zu Leuchtenberg, and Johann of Abensperg the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, all of which is unencumbered and unpledged; further the court in the Erleich, the fortress and town of Peuerbach, on which Jobst of Abensperg, son-in-law of Count Heinrich of Schaumburg, may claim 2000 pounds of pennies for his marriage portion; the fortress and town of Eferding, on which the same Count Heinrich's son-in-law Heinrich zu Rosenberg may claim 1000 pounds of pennies as marriage portion; and the fortress of Mistelbach, which is pledged to Ekhart the Tanner for 400 pounds of pennies. These properties shall be occupied and vacated by Landgrave Johann of Leuchtenberg and Johann of Abensperg, and after the death of Count Heinrich of Schaumburg returned to his son Count Ulrich, once he has come of age, only after satisfaction of the claims mentioned above; they shall fall as hereditary property in equal shares to the said Leuchtenberg and Abensperg if Count Ulrich of Schaumburg should die before them. Co-sealers: Hans von Rosenberg, Herr zu Rosenberg, father-in-law of Count Heinrich of Schaumburg; Heinrich der Swörzner, administrator at Maidstein; and Reinhart von Czeschlitz, Ritter, servant of Hans von Rosenberg. Given at Krumau on Sunday Reminiscere. (With 5 seals.)"
     },
     {
       "source": "Regesta Boica 10",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798273",
       "german": "Johann der junge Landgraf zum Leuthenberg bekennt, dass ihm und seinem Schwager Johann Herrn zu Abensperg der Graf Heinrich zu Schaumburg und dessen Sohn Ulrich die Veste Schaumburg, das Neuhaus auf der Tunau, Stauff, Markt und Maut Aschach, das Swansergericht, das Gericht in dem Aschacher Winkel, das Gericht in dem Tunautal, das Gericht in dem Erleich, die Veste und Stadt Pewrbach, die Veste und Stadt Eferding und die Veste Mistelbach in Getreushände eingeantwortet haben, und gelobt, wenn genannter von Abensperg vor ihm mit Tod abgehen würde, desselben Erben zu ihren Rechten beholfen zu seyn. Mitsiegler: Jan und Heinrich Herren zu Rosenberg. D. ibid. et eod. d. (c. 2 Sig.)",
-      "english": "Hans der Junge, Landgraf zu Leuthenberg, acknowledges that Count Heinrich of Schaumburg and his son Ulrich handed over in trust to him and his brother-in-law Hans, Herr zu Abensperg, the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, the court in the Erleich, the fortress and town of Peuerbach, the fortress and town of Eferding and the fortress of Mistelbach; and he vows that, should the said Abensperg die before him, he will assist his heirs in their rights. Co-sealers: Jan and Heinrich, Herren zu Rosenberg. Given at the same place and on the same day. (With 2 seals.)",
-      "mention": [
-        {
-          "place": "neuhaus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Hans der Junge, Landgraf zu Leuthenberg, acknowledges that Count Heinrich of Schaumburg and his son Ulrich handed over in trust to him and his brother-in-law Hans, Herr zu Abensperg, the fortress Schaumburg, the Neuhaus on the Danube, Stauf, the market and toll of Aschach, the Swanser court, the court in the Aschacher Winkel, the court in the Danube valley, the court in the Erleich, the fortress and town of Peuerbach, the fortress and town of Eferding and the fortress of Mistelbach; and he vows that, should the said Abensperg die before him, he will assist his heirs in their rights. Co-sealers: Jan and Heinrich, Herren zu Rosenberg. Given at the same place and on the same day. (With 2 seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich zu Rosenberg",
+      "type": "kin",
+      "of": "Heinrich zu Schaumburg",
+      "ofTitle": [
+        "Graf zu Schaumburg"
       ],
-      "facts": [
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Herr zu Rosenberg"
-          ],
-          "type": "generic",
-          "content": "co-sealed the charter of Hans der Junge, Landgraf zu Leuthenberg, concerning the properties handed over in trust by Heinrich zu Schaumburg, Graf and his son Ulrich."
-        },
-        {
-          "person": "Heinrich",
-          "personTitle": [
-            "Herr zu Rosenberg"
-          ],
-          "type": "generic",
-          "content": "co-sealed the charter of Hans der Junge, Landgraf zu Leuthenberg, concerning the properties handed over in trust by Heinrich zu Schaumburg, Graf and his son Ulrich."
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Landgraf zu Leuthenberg",
-            "der Junge"
-          ],
-          "type": "kin",
-          "of": "Hans zu Abensperg",
-          "ofTitle": [
-            "Herr zu Abensperg"
-          ],
-          "term": "Schwager"
-        },
-        {
-          "person": "Heinrich zu Schaumburg",
-          "personTitle": [
-            "Graf zu Schaumburg"
-          ],
-          "type": "parent",
-          "of": "Ulrich"
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Landgraf zu Leuthenberg",
-            "der Junge"
-          ],
-          "type": "generic",
-          "content": "acknowledged receiving the fortress and town of Eferding and other properties in trust with Hans zu Abensperg, Herr zu Abensperg, from Heinrich zu Schaumburg, Graf, and his son Ulrich."
-        }
+      "term": "Eidam"
+    },
+    {
+      "person": "Heinrich zu Rosenberg",
+      "type": "generic",
+      "content": "had a marriage portion claim on the fortress and town of Eferding."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Herr zu Rosenberg"
+      ],
+      "type": "kin",
+      "of": "Heinrich zu Schaumburg",
+      "ofTitle": [
+        "Graf zu Schaumburg"
+      ],
+      "term": "Sweher"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Herr zu Rosenberg"
+      ],
+      "type": "generic",
+      "content": "co-sealed the charter by which Heinrich zu Schaumburg, Graf, and his son Ulrich handed over properties in trust to Hans der Junge, Landgraf zum Leuthemberg, and Hans zu Abensperg."
+    },
+    {
+      "person": "Reinhard von Czeschlitz",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "co-sealed the charter as servant (Diener) of Hans von Rosenberg."
+    },
+    {
+      "person": "Heinrich zu Schaumburg",
+      "personTitle": [
+        "Graf zu Schaumburg"
+      ],
+      "type": "generic",
+      "content": "entrusted the fortress and town of Eferding and other properties to Hans der Junge, Landgraf zum Leuthemberg, and Hans zu Abensperg, jointly with his son Ulrich."
+    },
+    {
+      "person": "Heinrich zu Schaumburg",
+      "personTitle": [
+        "Graf zu Schaumburg"
+      ],
+      "type": "parent",
+      "of": "Ulrich zu Schaumburg",
+      "ofTitle": [
+        "Graf zu Schaumburg"
       ]
+    },
+    {
+      "person": "Jobst zu Abensperg",
+      "type": "kin",
+      "of": "Heinrich zu Schaumburg",
+      "ofTitle": [
+        "Graf zu Schaumburg"
+      ],
+      "term": "Eidam"
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Herr zu Rosenberg"
+      ],
+      "type": "generic",
+      "content": "co-sealed the charter of Hans der Junge, Landgraf zu Leuthenberg, concerning the properties handed over in trust by Heinrich zu Schaumburg, Graf and his son Ulrich."
+    },
+    {
+      "person": "Heinrich",
+      "personTitle": [
+        "Herr zu Rosenberg"
+      ],
+      "type": "generic",
+      "content": "co-sealed the charter of Hans der Junge, Landgraf zu Leuthenberg, concerning the properties handed over in trust by Heinrich zu Schaumburg, Graf and his son Ulrich."
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Landgraf zu Leuthenberg",
+        "der Junge"
+      ],
+      "type": "kin",
+      "of": "Hans zu Abensperg",
+      "ofTitle": [
+        "Herr zu Abensperg"
+      ],
+      "term": "Schwager"
+    },
+    {
+      "person": "Heinrich zu Schaumburg",
+      "personTitle": [
+        "Graf zu Schaumburg"
+      ],
+      "type": "parent",
+      "of": "Ulrich"
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Landgraf zu Leuthenberg",
+        "der Junge"
+      ],
+      "type": "generic",
+      "content": "acknowledged receiving the fortress and town of Eferding and other properties in trust with Hans zu Abensperg, Herr zu Abensperg, from Heinrich zu Schaumburg, Graf, and his son Ulrich."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg",
+        "der Jüngere"
+      ]
+    },
+    {
+      "place": "leuchtenberg"
+    },
+    {
+      "place": "neuhaus"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -10,32 +10,6 @@
       ],
       "german": "Wilhelm von Hohenrechberg, Conrad von Rosemberg zum Bartenstein, Walther von Cronberg, Hanns vom Hirßhorn jun., Karll von Tungen zum Rewssemberg, Thoman vom Rosemberg und Sigmund von Tungen beantworten den ihnen von der Stadt Nürnberg zugesandten Fehdebrief und erbieten sich zu einem Gerichtstage vor dem König oder seinem Hofmeister, dem Erzbischof von Mainz, Herzog Ludwig, dem Pfalzgrafen oder Markgraf Friedrich von Brandenburg.",
       "english": "Wilhelm von Hohenrechberg, Konrad von Rosenberg zu Bartenstein, Walther von Cronberg, Hanns vom Hirßhorn der Jüngere, Karll von Tungen zu Rewssemberg, Thoman vom Rosemberg, and Siegmund von Thüngen reply to the letter of feud sent by Nuremberg and offer to appear on a court day before the king or his steward, the Archbishop of Mainz, Duke Ludwig, the Count Palatine, or Margrave Friedrich of Brandenburg.",
-      "mention": [
-        {
-          "place": "cronberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        },
-        {
-          "person": "Thomas vom Rosenberg"
-        },
-        {
-          "place": "thuengen"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/25ca131e-d04b-4062-a652-8f2165806148/1/full/max/0/default.jpg"
@@ -47,6 +21,32 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/25ca131e-d04b-4062-a652-8f2165806148/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "cronberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
+    },
+    {
+      "person": "Thomas vom Rosenberg"
+    },
+    {
+      "place": "thuengen"
     }
   ]
 }

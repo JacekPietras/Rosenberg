@@ -6,33 +6,33 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 5 Qu. 91",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-754105",
       "german": "Zerstörung der Schlösser Aschhausen [der Herren von Clepsheim zu Aschhausen], Boxberg des Hans Thomas von Rosenberg, Unterbalbach des Rüdiger Sützel von Mergentheim, Wachbach des Franz Rüdt [von Bödigheim] und Waldmannshofen des Konz [XV.] von Rosenberg durch den Schwäbischen Bund, 1523; Fehde des Hans Thomas von Rosenberg, Ritter, gegen DM Walter von Cronberg nach erfolgloser Schadenersatzforderung wegen der Beteiligung der DO-Untertanen zu Mgh an der Zerstörung des Schlosses Boxberg, 1536.\n\nLaufzeit: 1510-1526",
-      "english": "Destruction by the Swabian League of the castles of Aschhausen [belonging to the lords of Clepsheim zu Aschhausen], Boxberg belonging to Hans Thomas von Rosenberg, Unterbalbach belonging to Rüdiger Sützel von Mergentheim, Wachbach belonging to Franz Rüdt [von Bödigheim], and Waldmannshofen belonging to Konz XV von Rosenberg, 1523; feud of Hans Thomas von Rosenberg, Ritter, against Grand Master Walter von Cronberg after an unsuccessful claim for compensation because the Teutonic Order’s subjects at Mergentheim had taken part in the destruction of Boxberg Castle, 1536.\n\nDate range: 1510–1526",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Franz Rüd von Bödigheim"
-        },
-        {
-          "person": "Hans Thomas von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "unterbalbach"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "person": "Walter von Cronberg"
-        }
+      "english": "Destruction by the Swabian League of the castles of Aschhausen [belonging to the lords of Clepsheim zu Aschhausen], Boxberg belonging to Hans Thomas von Rosenberg, Unterbalbach belonging to Rüdiger Sützel von Mergentheim, Wachbach belonging to Franz Rüdt [von Bödigheim], and Waldmannshofen belonging to Konz XV von Rosenberg, 1523; feud of Hans Thomas von Rosenberg, Ritter, against Grand Master Walter von Cronberg after an unsuccessful claim for compensation because the Teutonic Order’s subjects at Mergentheim had taken part in the destruction of Boxberg Castle, 1536.\n\nDate range: 1510–1526"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Franz Rüd von Bödigheim"
+    },
+    {
+      "person": "Hans Thomas von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "place": "unterbalbach"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "person": "Walter von Cronberg"
     }
   ]
 }

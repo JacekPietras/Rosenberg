@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2781811",
       "german": "Franz Ludwig Faust von Stromberg, Domprobst, Johann Harttmann von Rosenbach, Domdekan, Senior, und das Kapitel des Domstifts zu Würzburg (Würtzburg) übertragen auf den Vorschlag des Johann Kaspar [von Ampringen], Administrator des Hochmeistertums in Preussen und Meister des Deutschen Ordens in deutschen und welschen Landen, hin das Patronatsrecht zu Neckarsulm [Neckersulm] mit dem Einverständnis des Johann Philipp [von Schoenborn], Erzbischof zu Mainz [Maintz], Erzkanzler des Heiligen Römischen Reichs in Germanien, Kurfürst, Bischof zu Würzburg und Worms (Wormbs) und Herzog zu Franken an den Deutschen Orden gegen das Patronatsrecht zu Krautheim wie im Vertrag von [1667] März 4 vorgesehen. Davon unberührt bleibt der zwischen dem genannten Stift Würzburg und dem Deutschen Orden im Jahre 1593 geschlossene Vertrag.\n\nLaufzeit: 1667 März 12 (den zwölfften Marty)\n\nSiegelbeschreibung: 2 Sg. in Holzkapsel o. Deckel\n\nVermerke: 2 Rve.\n\nSiegler: 1) [Johann Philipp von Schoenborn] (mit dero churfürstlichen Insigel); 2) Domkapitel zu Würzburg (neben unßerm Dumb Capitulischen Insigel)",
       "english": "Franz Ludwig Faust von Stromberg, provost of the cathedral; Johann Harttmann von Rosenbach, dean of the cathedral and senior; and the chapter of Würzburg Cathedral transfer the right of patronage at Neckarsulm to the Teutonic Order, at the proposal of Johann Kaspar [von Ampringen], administrator of the Grand Mastership in Prussia and master of the Teutonic Order in German and non-German lands, and with the consent of Johann Philipp [von Schoenborn], archbishop of Mainz, archchancellor of the Holy Roman Empire in Germany, elector, bishop of Würzburg and Worms, and duke of Franconia. In exchange, the Order transfers the right of patronage at Krautheim, as provided in the agreement of 4 March [1667]. The agreement concluded in 1593 between the said chapter of Würzburg and the Teutonic Order remains unaffected.\n\nTerm: 12 March 1667 (the twelfth of March)\n\nSeal description: 2 seals in wooden cases without lids\n\nNotes: 2 endorsements\n\nSealers: 1) [Johann Philipp von Schoenborn] (with his electoral seal); 2) Würzburg Cathedral Chapter (with our cathedral chapter seal)",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5658&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005658%2Ftitlaufn_0002781811%2F02_0002781811_0001_2-2781811-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5658&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005658%2Ftitlaufn_0002781811%2F02_0002781811_0002_2-2781811-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

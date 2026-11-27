@@ -7,30 +7,30 @@
       "source": "RIplus Regg. EB Mainz 2,1 n. 1027",
       "url": "https://www.regesta-imperii.de/id/f0706f83-4845-4edc-a53e-4dc46dcbf4b4",
       "german": "Erzbischof Gerlach bekundet: Der Ritter Konrad Rüdt (Rude), sein Burggraf zu Wildenberg, hat für ihn dem Hencze von Schatthausen (Schadehusen) 50 Gulden bezahlt für einen Hengst, den er im erzb. Dienste verdorben hat, 25 Gulden Eberhard von Uissigheim (Ossinkeim) dem Alten für einen Hengst, den er im erzb. Dienste verlor, 9 Gulden dem Dytzelin von Urhausen (-husen) für seine Dienste. Konrad selbst soll von ihm 76 Gulden erhalten für einen Hengst. Zur Erhebung dieser 160 Gulden weist er ihm für den kommenden Martinstag 60 Gulden auf die Steuer und Bede zu Walldürn (Durn) an, 40 Gulden auf die Steinauer (Steynauwer) Leute und 60 Gulden auf die Steuer zu Götzingen (Getzinkeim) und Hettingen (Hedinkeim).",
-      "english": "Archbishop Gerlach states that Ritter Konrad Rüdt (Rude), his Burggraf zu Wildenberg, paid Hencze von Schatthausen (Schadehusen) 50 gulden on his behalf for a stallion ruined in the Archbishop’s service; Eberhard von Uissigheim der Ältere 25 gulden for a stallion lost in the Archbishop’s service; and Dytzelin von Urhausen (-husen) 9 gulden for his services. Konrad himself is to receive 76 gulden from him for a stallion. To collect these 160 gulden, Gerlach assigns him, for the coming St Martin’s Day, 60 gulden from the tax and levy at Dürn, 40 gulden from the people of Steinau (Steynauwer), and 60 gulden from the tax at Götzingen (Getzinkeim) and Hettingen (Hedinkeim).",
-      "mention": [
-        {
-          "person": "Eberhard von Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Konrad Rüd",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "urhausen-castle"
-        },
-        {
-          "place": "wallduern"
-        },
-        {
-          "place": "wildenberg-castle"
-        }
+      "english": "Archbishop Gerlach states that Ritter Konrad Rüdt (Rude), his Burggraf zu Wildenberg, paid Hencze von Schatthausen (Schadehusen) 50 gulden on his behalf for a stallion ruined in the Archbishop’s service; Eberhard von Uissigheim der Ältere 25 gulden for a stallion lost in the Archbishop’s service; and Dytzelin von Urhausen (-husen) 9 gulden for his services. Konrad himself is to receive 76 gulden from him for a stallion. To collect these 160 gulden, Gerlach assigns him, for the coming St Martin’s Day, 60 gulden from the tax and levy at Dürn, 40 gulden from the people of Steinau (Steynauwer), and 60 gulden from the tax at Götzingen (Getzinkeim) and Hettingen (Hedinkeim)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Uissigheim",
+      "personTitle": [
+        "der Ältere"
       ]
+    },
+    {
+      "person": "Konrad Rüd",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "urhausen-castle"
+    },
+    {
+      "place": "wallduern"
+    },
+    {
+      "place": "wildenberg-castle"
     }
   ]
 }

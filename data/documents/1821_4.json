@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++72b9bac4-d0bc-421f-b3cd-59d3c417c520&parent_id="
       ],
       "german": "Aufstellung der Hirten und Nachtwächter zu Rügland (Johann Dienstbier aus Lonnerstadt, 1821; Nikolaus Sturm von Rosenberg, 1821; Konrad Sturm, 1834; Michael Bielmeier, 1870).",
-      "english": "List of shepherds and night watchmen in Rügland (Johann Dienstbier from Lonnerstadt, 1821; Nikolaus Sturm von Rosenberg, 1821; Konrad Sturm, 1834; Michael Bielmeier, 1870).",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "List of shepherds and night watchmen in Rügland (Johann Dienstbier from Lonnerstadt, 1821; Nikolaus Sturm von Rosenberg, 1821; Konrad Sturm, 1834; Michael Bielmeier, 1870)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

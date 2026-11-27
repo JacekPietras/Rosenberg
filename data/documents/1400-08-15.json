@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234635",
       "german": "Arnold von Rosenberg der Jüngere, Edelknecht, vergleicht in einem Streit zwischen dem Kloster Bronnbach und dessen Landsiedel Hans Fuhs zu Wölchingen (Wuelchingen) wegen der Zinsen von dem Hof daselbst dahin, dass Hans Fuhs außer benannten Zinsen keine anderen von diesem Hof erheben solle.\n\nLaufzeit: 1400 August 15 (\"Der geben wart, do man zalt von Cristz geburt virczehenhundert iar an unser lieben frauwen tag, den man nent wuerczwihe\")\n\nSiegelbeschreibung: Siegel an Pergamentstreifen\n\nVermerke: Auf der Rückseite: \"Wuelchingen\"\n\nSiegler: Arnod von Rosenberg d. J., Edelknecht",
       "english": "Arnold von Rosenberg der Jüngere, Edelknecht, settles a dispute between Bronnbach Monastery and its tenant Hans Fuhs zu Wölchingen over the rents from the farm there, ruling that Hans Fuhs is to collect no rents from this farm other than those specified.\n\nTerm: 15 August 1400 ('The deed was issued in the year 1400 after the birth of Christ, on the day of Our Lady that is called the Assumption').\n\nSeal description: Seal attached by a parchment strip.\n\nNotes: On the reverse: “Wölchingen”.\n\nSeal holder: Arnod von Rosenberg der Jüngere, Edelknecht.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Edelknecht",
-            "der Jüngere"
-          ]
-        },
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wolchingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234635%2F07_0000234635_0001_7-234635-1.jpg"
@@ -33,6 +15,24 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234635%2F07_0000234635_0002_7-234635-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Edelknecht",
+        "der Jüngere"
+      ]
+    },
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wolchingen"
     }
   ]
 }

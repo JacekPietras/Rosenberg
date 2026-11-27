@@ -11,61 +11,42 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++77DD953E-0576-4968-A96D-4B4E58A250DF&parent_id="
       ],
       "german": "Die Städte Heidingsfeld und Bernheim verpflichten sich, an Nürnberg jährlich 305 fl. Zins zu bezahlen zur Ablösung der den Vettern Sigmund und Balthasar von Thüngen, dem König Sigmund und Ulrich von Rosenberg geschuldeten Pfandsumme von insgesamt 6100 fl. Die Urkunde ist nicht vorhanden.",
-      "english": "The cities of Heidingsfeld and Bernheim undertook to pay Nuremberg annual interest of 305 florins toward redeeming a pledge debt of 6,100 florins owed to the cousins Siegmund von Thüngen and Balthasar von Thüngen, King Sigmund, and Ulrich von Rosenberg. The charter is not extant.",
-      "mention": [
-        {
-          "person": "Balthasar von Thüngen"
-        },
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg."
-        }
-      ]
+      "english": "The cities of Heidingsfeld and Bernheim undertook to pay Nuremberg annual interest of 305 florins toward redeeming a pledge debt of 6,100 florins owed to the cousins Siegmund von Thüngen and Balthasar von Thüngen, King Sigmund, and Ulrich von Rosenberg. The charter is not extant."
     },
     {
       "source": "Regesta Boica 13",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
       "german": "Die Städte Heydingsfelt und Bernheim bekennen, dass die Stadt Nuremberg sie hinsichtlich der 4100 Gulden, wofür sie vom Könige Sigmund dem Sigmund und Balthasar von Tüngen verschrieben waren, von Letzteren gelöset, und dass dieselbe auch in ihrem Namen Ulrichen von Rosenberg aut Befehl des römischen Königs Sigmund 2000 Gulden bezahlt habent, sie daher der Stadt Nuremberg ausser der frühern Schuld von 9000 Gulden aufs Neue 6100 Gulden schuldig geworden seyen, welche letztere Summe sie bis zur Rückzahlung mit jährlich 305 Gulden zu verzinsen sich verpflichten. G. am Montag vor sannt Laurenzen tage. (F.)",
-      "english": "The cities of Heydingsfelt and Bernheim acknowledge that Nürnberg redeemed them from Siegmund von Thüngen and Balthasar von Thüngen for the 4,100 florins for which King Sigmund had pledged them to the latter. Nürnberg also paid Ulrich von Rosenberg 2,000 florins on their behalf at the command of Sigmund, King of the Romans. The cities had consequently incurred a new debt of 6,100 florins to Nürnberg, in addition to their earlier debt of 9,000 florins, and undertake to pay annual interest of 305 florins on the new debt until it is repaid. Given on the Monday before St. Lawrence’s Day. (F.)",
-      "mention": [
-        {
-          "person": "Balthasar von Thüngen"
-        },
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "received payment from Nürnberg on behalf of Heydingsfelt and Bernheim at the command of King Sigmund."
-        }
+      "english": "The cities of Heydingsfelt and Bernheim acknowledge that Nürnberg redeemed them from Siegmund von Thüngen and Balthasar von Thüngen for the 4,100 florins for which King Sigmund had pledged them to the latter. Nürnberg also paid Ulrich von Rosenberg 2,000 florins on their behalf at the command of Sigmund, King of the Romans. The cities had consequently incurred a new debt of 6,100 florins to Nürnberg, in addition to their earlier debt of 9,000 florins, and undertake to pay annual interest of 305 florins on the new debt until it is repaid. Given on the Monday before St. Lawrence’s Day. (F.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "was owed a pledge debt for whose redemption Heidingsfeld and Bernheim undertook to pay interest to Nürnberg."
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "received payment from Nürnberg on behalf of Heydingsfelt and Bernheim at the command of King Sigmund."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar von Thüngen"
+    },
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
     }
   ]
 }

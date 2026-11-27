@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-157560",
       "german": "Notariatsinstrument des Daniel Hoffmann über die Protestation des Grafen Asmus von Wertheim gegen seine Vorladung auf die Klage des Georg von Rosenberg. Matthäus Greffler, Kellner zu Freudenberg und Bevollmächtigter des Grafen, hat den Protest dem fränkischen Landgericht vorgetragen.\n\nLaufzeit: 1502 Mai 19\n\nVermerke: Dorsualvermerk",
       "english": "Notarial instrument by Daniel Hoffmann concerning Graf Asmus von Wertheim’s protest against being summoned in response to Georg von Rosenberg’s complaint. Matthäus Greffler, steward at Freudenberg and the Count’s authorized representative, presented the protest to the Franconian regional court.\n\nDate: 19 May 1502.\n\nNotes: Dorsal note.",
-      "mention": [
-        {
-          "person": "Asmus von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=151073&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000151073%2Ftitlaufn_0000157560%2F07_0000157560_0001_7-157560-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=151073&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000151073%2Ftitlaufn_0000157560%2F07_0000157560_0002_7-157560-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Asmus von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
     }
   ]
 }

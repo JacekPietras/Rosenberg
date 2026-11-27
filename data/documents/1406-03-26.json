@@ -6,21 +6,21 @@
       "source": "Regesta Boica 11, 26 March 1406",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11746847",
       "german": "Hans von Rosenberg quittirt dem Burggrafen Friedrich von Nürnberg 150 Gulden. D. eod. d. (c. 1 S.)",
-      "english": "Hans von Rosenberg acknowledges receipt of 150 gulden from Burgrave Friedrich von Nürnberg. Dated the same day. (With 1 seal.)",
-      "mention": [
-        {
-          "person": "Friedrich",
-          "personTitle": [
-            "Burggraf von Nürnberg"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden."
-        }
+      "english": "Hans von Rosenberg acknowledges receipt of 150 gulden from Burgrave Friedrich von Nürnberg. Dated the same day. (With 1 seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "issued a quittance to Burgrave Friedrich von Nuremberg for 150 gulden."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich",
+      "personTitle": [
+        "Burggraf von Nürnberg"
       ]
     }
   ]

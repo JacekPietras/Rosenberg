@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-167242",
       "german": "Lupold von Bebenburg, Chorherr, und M. Heinrich gen. von Sante Stephan, Vikar des Stiftes zu Würzburg, bestimmen als Schiedsleute zwischen Johann von Rosenberg, Pfarrer zu Eichel (Echil) und den Rittern Cunrad Rüde und Eberhart, dessen Bruder, gen. von Collenberg, von denen jeder einen in der Mark zu Hasloch (Haslach) in der Pfarre Eichel (Echil) gelegenen Neugereutzehnten fordert, dass der Pfarrer auf den Zehnten Anspruch hat, wenn er beweisen kann, daß noch in denklicher Zeit die Neugereute entstanden sind, dagegen nicht, wenn die Ritter beweisen, dass sie und ihre Vorfahren bereits seit unvordenklicher Zeit die Gereute vom Bischof zu Eichstätt (Eynsteten) zu Lehen gehabt haben. Die Beweise sind an die Schiedsleute selbst oder ihre Beauftragten zu erbringen.\n\nLaufzeit: 1346 August 3 (1346 an dem tage als sante Stephan fünden wart)\n\nSiegelbeschreibung: 2 abh. Siegel, gut erhalten, davon das erste auf dem Kopf stehend",
       "english": "Lupold von Bebenburg, canon, and Master Heinrich called von Sante Stephan, vicar of the collegiate church at Würzburg, arbitrate between Hans von Rosenberg, priest at Eichel, and the knights Cunrad Rüde and Eberhart, his brother, called von Collenberg. Each of the knights claims a newly cultivated-land tithe in the district of Hasloch, in the parish of Eichel. They determine that the priest has a claim to the tithe if he can prove that the newly cultivated lands originated within living memory, but not if the knights prove that they and their ancestors have held the clearings as a fief from the bishop of Eichstätt since time immemorial. The evidence is to be presented to the arbitrators themselves or their representatives. Date: 3 August 1346. Two attached seals, well preserved, the first upside down.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "kollenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167242%2F07_0000167242_0001_7-167242-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167242%2F07_0000167242_0002_7-167242-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "kollenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

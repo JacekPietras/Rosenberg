@@ -10,14 +10,6 @@
       ],
       "german": "Urfehde des Christoffel Merckle von Lor für Herrn Wolffgang von Rosenberg, DO-Komtur zu Viernsperg, wegen des Gefängnisses, das er wegen Ehebruchs mit der Köchin des Komturs, Magdalena, unerlaubter Entfernung und Mitnahme der ihm als Bäcker anvertrauten Schlüssel zu Pfisterei und Mühle erlitten hat. - Fürbitter: Herr Wilhelm Halber von Hergern, Komtur zu Mergentheim. - Siegler: derselbe.",
       "english": "Feud settlement oath of Christoffel Merckle von Lor for Herr Wolffgang von Rosenberg, commander of the Teutonic Order at Virnsberg, concerning the imprisonment he suffered for adultery with the commander’s cook Magdalena, unauthorized departure, and taking the keys to the bakery and mill entrusted to him as baker. — Intercessor: Herr Wilhelm Halber von Hergern, commander at Mergentheim. — Sealer: the same.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "virnsberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8b3f895b-a94c-4f2b-90d5-4fafadeeef51/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8b3f895b-a94c-4f2b-90d5-4fafadeeef51/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "virnsberg"
     }
   ]
 }

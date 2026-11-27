@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/1234/charter",
       "german": "Bürgermeister und Rat der Stadt Görlitz bestätigen Peter von Rosenberg, Zdenko Lew von Rozmital auf Blatna und Ladislaus von Sternberg den Empfang deren Schreiben und teilen mit, dass sich die Stände des Markgraftums Oberlausitz nach Erhalt des öffentlichen Mandats durch Albrecht von Sternberg vertagt haben.\n\nSiegel: ohne Beglaubigung",
       "english": "The mayor and council of the town of Görlitz confirm to Peter von Rosenberg, Zdenko Lew von Rozmital zu Blatna, and Ladislaus von Sternberg that they have received their letter. They report that the estates of Upper Lusatia adjourned after receiving the public mandate from Albrecht von Sternberg.\n\nSeal: Unauthenticated.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1234_1517-01-08_1-orig_c_1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1234_1517-01-08_1-orig_c_2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

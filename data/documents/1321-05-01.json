@@ -7,72 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1724355",
       "german": "Graf Rudolf von Wertheim und Rudolf von Wertheim, Domherr zu Würzburg, Gebrüder, verzichten aus Liebe zu ihrem Oheim Graf Berthold von Henneberg, Johanniter-Prior und Komtur zu Boxberg, auf alle ihre Lehnsrechte an den vom Johanniter-Orden besessenen Gütern.\n\nSiegel des Grafen von Wertheim stark beschädigt, das des Domherrn Rudolf fehlt",
       "english": "Rudolf von Wertheim, Graf and Rudolf von Wertheim, Canon zu Würzburg, brothers, renounce all their feudal rights to the properties owned by the Order of St. John out of love for their uncle Count Berthold of Henneberg, Prior of the Order of St. John and Commander of Boxberg.\n\nSeal of Graf von Wertheim badly damaged, that of Canon Rudolf missing",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "sibling",
-          "of": "Rudolf von Wertheim",
-          "ofTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "kin",
-          "of": "Berthold von Henneberg",
-          "ofTitle": [
-            "Graf"
-          ],
-          "term": "Oheim"
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ],
-          "type": "kin",
-          "of": "Berthold von Henneberg",
-          "ofTitle": [
-            "Graf"
-          ],
-          "term": "Oheim"
-        },
-        {
-          "person": "Berthold von Henneberg",
-          "personTitle": [
-            "Graf",
-            "Johanniter-Prior",
-            "Komtur zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "led the Johanniter commandery at Boxberg."
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "generic",
-          "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724355%2F04_0001724355_0001_4-1724355-1.jpg"
@@ -86,6 +20,72 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "sibling",
+      "of": "Rudolf von Wertheim",
+      "ofTitle": [
+        "Domherr zu Würzburg"
+      ]
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "kin",
+      "of": "Berthold von Henneberg",
+      "ofTitle": [
+        "Graf"
+      ],
+      "term": "Oheim"
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Domherr zu Würzburg"
+      ],
+      "type": "kin",
+      "of": "Berthold von Henneberg",
+      "ofTitle": [
+        "Graf"
+      ],
+      "term": "Oheim"
+    },
+    {
+      "person": "Berthold von Henneberg",
+      "personTitle": [
+        "Graf",
+        "Johanniter-Prior",
+        "Komtur zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "led the Johanniter commandery at Boxberg."
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "generic",
+      "content": "renounced the Wertheim family’s feudal rights over the Johanniter goods at Boxberg in favor of Henneberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -7,20 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2855482",
       "german": "Revers Johann Philipps von Rosenbach und seiner Brüder bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Adolf [von Dalberg], Abt von Fulda\n\nJohann Philipp, Adalbert Friedrich und Karl Anton von Rosenbach (Roszenbach) bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Adolf [von Dalberg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Wolf Daniel Freiherr von Boyneburg zu Lengsfeld\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Counter-reversal by Hans Philipp von Rosenberg and brothers concerning enfeoffment with Schackau and other listed fiefs by Adolf [von Dalberg], Abbot of Fulda. Johann Philipp, Adalbert Friedrich, and Karl Anton von Rosenberg (Roszenbach) confirm the fief, its woodland and field appurtenances, a property at Schackau, Kleinsassen (Saszen), Gerharts [places in Hofbieber municipality, Fulda district], and other listed fiefs. Fief charter inserted; seal announced. Parchment original, seal in wooden capsule. Sealer: Wolf Daniel Freiherr von Boyneburg zu Lengsfeld. No separate date; refers to the insert.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Philipp von Rosenberg"
-        },
-        {
-          "person": "Karl Anton von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3361/00001.jpg"
@@ -29,6 +15,20 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3361/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Philipp von Rosenberg"
+    },
+    {
+      "person": "Karl Anton von Rosenberg"
     }
   ]
 }

@@ -13,23 +13,6 @@
       ],
       "german": "Vergleich zwischen Hanau und Johann Hutten zu Stolzenberg\n\nVergleich zwischen den Vormündern der Söhne Graf Philipp Ludwigs von Hanau-Münzenberg, Philipp Graf zu Hanau-Lichtenberg d.Ä., Johann Graf zu Nassau-Katzenelnbogen und Ludwig Grafen zu Sayn-Wittgenstein einer- und Johann von Hutten zu Stolzenberg andrerseits wegen des Sandbuschs, Birkellern und Seifriedshain zwischen der Ulmbach und Marborn, Gerechtigkeit, Jagd, Holz und Fischerei daselbst, vermittelt durch Johann von Gleichen, Komtur des deutschen Ordens zu Frankfurt und Dr. jur. Johann von Glauburg sowie Johann Riedesel zu Eisenbach, hess. Rat, und Philipp Wolf von Rosenbach, Dr. jur. und Mainzischer Kanzler.\n\nFormalbeschreibung: Abschrift, 18. Jahrhundert, drei Blatt Papier, unvollständig.\n\nFormalbeschreibung: Abschrift, 17. Jahrhundert, acht Blatt Papier.",
       "english": "Settlement between Hanau and Johann Hutten zu Stolzenberg\n\nSettlement between the guardians of the sons of Count Philipp Ludwig of Hanau-Münzenberg—Philipp, Count of Hanau-Lichtenberg der Ältere, Johann, Count of Nassau-Katzenelnbogen, and Ludwig, Count of Sayn-Wittgenstein—on one side, and Hans von Hutten zu Stolzenberg on the other, concerning the Sandbusch, Birkellern, and Seifriedshain between the Ulmbach and Marborn, and the rights, hunting, woodland, and fishing there, mediated by Johann von Gleichen, commander of the Teutonic Order at Frankfurt, and Dr. jur. Johann von Glauburg, together with Johann Riedesel zu Eisenbach, Hessian councillor, and Philipp Wolf von Rosenberg, Dr. jur. and Chancellor of Mainz.\n\nDescription: Copy, eighteenth century, three paper leaves, incomplete.\n\nDescription: Copy, seventeenth century, eight paper leaves.",
-      "mention": [
-        {
-          "person": "Hans Hutten"
-        },
-        {
-          "person": "Hans von Hutten"
-        },
-        {
-          "place": "katzenelnbogen"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Philipp Wolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._100/4853/hstam_urk._100_nr_4853_0000.jpg"
@@ -80,6 +63,23 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._100/4854/hstam_urk._100_nr_4854_0009.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hutten"
+    },
+    {
+      "person": "Hans von Hutten"
+    },
+    {
+      "place": "katzenelnbogen"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Philipp Wolf von Rosenberg"
     }
   ]
 }

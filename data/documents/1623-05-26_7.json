@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++88CB9934-AB3D-4DBF-984A-EC3D9F8FEF60&parent_id="
       ],
       "german": "Aussteller:  Abt Johann Bernhard von Fulda\nEmpfänger:  Johann Konrad, Adam Hektor und Johann Dietrich von Rosenbach, Otto Heinrich, Erhard Friedrich und Georg Hermann von Mansbach sowie Hans Reinhard von Fechenbach\nRechtsinhalt:  Der Aussteller verleiht den Empfängern ihre Teile, nämlich den Herren von Rosenbach zwei Fünftel, den Herren von Mansbach zwei Fünftel und Hans Reinhard von Fechenbach ein Fünftel, an Lehen zu Schackau, Kleinsassen  (\"das Saßen\"), Gerharts, Langenbieber, Weyhers, Langenberg, Weses  (\"Weßing\"), Elters (\"zum Alhardts\"), Döllbach, Landenhausen, Niederbieber, Bieberstein (\"Bibrastein\"), Harbach, Soden, Eckweisbach und Brückenau.\n\nSiegler bzw. Siegel:  Stadtgericht zu Königstein",
-      "english": "Issuer: Abbot Johann Bernhard von Fulda.\nRecipients: Johann Konrad, Adam Hektor, and Hans Dietrich von Rosenberg; Otto Heinrich, Erhard Friedrich, and Georg Hermann von Mansbach; and Hans Reinhard von Fechenbach.\nLegal content: The issuer enfeoffs the recipients with their respective shares—two fifths to the lords of Rosenbach, two fifths to the lords of Mansbach, and one fifth to Hans Reinhard von Fechenbach—in fiefs at Schackau, Kleinsassen, Gerharts, Langenbieber, Weyhers, Langenberg, Weses, Elters, Döllbach, Landenhausen, Niederbieber, Bieberstein, Harbach, Soden, Eckweisbach, and Brückenau.\n\nSeal: the town court of Königstein.",
-      "mention": [
-        {
-          "person": "Hans Bernhard",
-          "personTitle": [
-            "Abt von Fulda"
-          ]
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Issuer: Abbot Johann Bernhard von Fulda.\nRecipients: Johann Konrad, Adam Hektor, and Hans Dietrich von Rosenberg; Otto Heinrich, Erhard Friedrich, and Georg Hermann von Mansbach; and Hans Reinhard von Fechenbach.\nLegal content: The issuer enfeoffs the recipients with their respective shares—two fifths to the lords of Rosenbach, two fifths to the lords of Mansbach, and one fifth to Hans Reinhard von Fechenbach—in fiefs at Schackau, Kleinsassen, Gerharts, Langenbieber, Weyhers, Langenberg, Weses, Elters, Döllbach, Landenhausen, Niederbieber, Bieberstein, Harbach, Soden, Eckweisbach, and Brückenau.\n\nSeal: the town court of Königstein."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Bernhard",
+      "personTitle": [
+        "Abt von Fulda"
       ]
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

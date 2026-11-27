@@ -12,23 +12,18 @@
         "https://www.landesarchiv-bw.de/plink/?f=4-1641587"
       ],
       "german": "Belehnung der Familie von Roggenbach mit den vormals Münch von Rosenberg'schen Wein- und Getreidegefällen zu Wasenweiler.\n\nLaufzeit: (1418) 1706-1727\n\nEnthält: Enthält u. a.: Erneuertes Gült- und Zinsregister.Darin: Skizzenhafter Entwurf einer Roggenbach'schen Stammtafel.\n\nLaufzeit: 1709-1727\n\nEnthält: Enthält u. a.: Erneuertes Gült- und Zinsregister.\nDarin: Skizzenhafter Entwurf einer Roggenbach'schen Stammtafel.",
-      "english": "Enfeoffment of the von Roggenbach family with the wine and grain revenues at Wasenweiler formerly belonging to the Münch von Rosenberg family.\n\nTerm: (1418) 1706–1727\n\nContents include a renewed register of rents and dues. Included within it is a sketch of a von Roggenbach family tree.\n\nTerm: 1709–1727",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Enfeoffment of the von Roggenbach family with the wine and grain revenues at Wasenweiler formerly belonging to the Münch von Rosenberg family.\n\nTerm: (1418) 1706–1727\n\nContents include a renewed register of rents and dues. Included within it is a sketch of a von Roggenbach family tree.\n\nTerm: 1709–1727"
     },
     {
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 7115",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641587",
       "german": "Belehnung der Familie von Roggenbach mit den vormals Münch von Rosenberg'schen Wein- und Getreidegefällen zu Wasenweiler.\n\nLaufzeit: 1709-1727",
-      "english": "Enfeoffment of the von Roggenbach family with the wine and grain revenues at Wasenweiler formerly belonging to the Münch von Rosenberg family.\n\nTerm: 1709–1727",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Enfeoffment of the von Roggenbach family with the wine and grain revenues at Wasenweiler formerly belonging to the Münch von Rosenberg family.\n\nTerm: 1709–1727"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

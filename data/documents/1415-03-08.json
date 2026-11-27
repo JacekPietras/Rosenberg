@@ -10,11 +10,6 @@
       ],
       "german": "Hans von Rosemberg etc. bestätigt dem Martin Geuder (Zeugen: Sigmund Stromeyr und Berchtold Tucher), dass er und Ulrich Ortlieb als Testamentsvollstrecker Clara, Heintz Geuders Witwe, über das Seelgerät und den Jahrtag in St. Sebald in näher beschriebener Form gereinigt hätten.",
       "english": "Hans von Rosenberg and others confirm to Martin Geuder (witnesses: Sigmund Stromeyr and Berchtold Tucher) that he and Ulrich Ortlieb, as executors of the testament of Clara, widow of Heintz Geuder, had rendered an account to her concerning the memorial endowment and anniversary observance at St. Sebald in the form described in detail.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/17af36cd-98c3-416f-ae6e-a145fb219d44/1/full/max/0/default.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/17af36cd-98c3-416f-ae6e-a145fb219d44/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

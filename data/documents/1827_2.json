@@ -10,11 +10,6 @@
       ],
       "german": "Jagd in der Umgebung von Rosenberg",
       "english": "Hunting in the area around Rosenberg",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/820329af-92a8-4f56-b9d1-97fc25216021/1/full/max/0/default.jpg"
@@ -68,6 +63,11 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/820329af-92a8-4f56-b9d1-97fc25216021/17/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

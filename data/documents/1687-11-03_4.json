@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3342/charter",
       "german": "Philipp Ludwig und Johann Hartmann von Rosenbach bestätigen für sich und ihre Brüder Franz Albrecht und Konrad Anton Philibert die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Placidus [von Droste], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Ludwig von und zu Mansbach auf Uttrichshausen\n\nSiegel: anhängendes Siegel in Holzkapsel Ludwig von und zu Mansbach auf Uttrichshausen",
       "english": "Philipp Ludwig and Hans Hartmann von Rosenberg confirm, on their own behalf and on behalf of their brothers Franz Albrecht and Konrad Anton Philibert, the enfeoffment by Placidus [von Droste], Abt von Fulda, with a stone house, two farms, and three Hufen of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the dues in Langsdorf (?) (Langendorff) [part of the municipality of Lich, Giessen district]. The letter of enfeoffment is inserted. A seal is announced.\n\nSealer: Ludwig von und zu Mansbach auf Uttrichshausen\n\nSeal: pendant seal in a wooden case, Ludwig von und zu Mansbach auf Uttrichshausen",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "person": "Philipp Ludwig von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203342%20Vorderseite%20%281687%20November%2003%29.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203342%20Rueckseite%20%281687%20November%2003%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "person": "Philipp Ludwig von Rosenberg"
     }
   ]
 }

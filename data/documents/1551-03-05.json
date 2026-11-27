@@ -10,25 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723975",
       "german": "Abschied zwischen Kurfürst Friedrich II. von der Pfalz und Michael von Rosenberg betreffend Boxberg.\n\nLaufzeit: 1551 März 5 (Donnerstag nach Oculi 1551)\n\nSiegelbeschreibung: Mit 2 Siegeln",
       "english": "Farewell between Elector Frederick II from the Palatinate and Michael von Rosenberg regarding Boxberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Friedrich von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723975%2F04_0001723975_0001_4-1723975-1.jpg"
@@ -43,6 +24,25 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723975%2F04_0001723975_0004_4-1723975-4.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Friedrich von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "made an Abschied with Elector Friedrich II of the Palatinate concerning Boxberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

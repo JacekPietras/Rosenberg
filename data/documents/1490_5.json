@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-278739",
       "german": "Gülten, Zinsen und Zehntanteile der Kartause zu Großrinderfeld\n\nLaufzeit: 1490-1762\n\nEnthält: Darin: Prozeßschrift (lateinisch) in einer Klage der Kartause gegen einige Einwohner von Großrinderfeld, wegen Zehntbezügen, o.D. (um 1490) - (die Schrift enthält Abschriften dreier Urkunden von 1368 über den Kauf des Zehnten zu Großrinderfeld von Anna Pfal v. Grünsfeld geb. v. Rosenberg)",
       "english": "Rents, interest payments, and shares of tithes of the Carthusian monastery at Großrinderfeld.\n\nTerm: 1490–1762\n\nContains: A legal pleading (in Latin) in a suit by the Carthusian monastery against several residents of Großrinderfeld concerning tithe income, undated (around 1490). The pleading contains copies of three charters from 1368 concerning the purchase of the tithe at Großrinderfeld from Anna Pfal von Grünsfeld, née von Rosenberg.\n\nExtent: One file (18 documents)",
-      "mention": [
-        {
-          "person": "Anna Pahl von Grünsfeld"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3506&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003506%2Ftitlaufn_0000278739%2F07_0000278739_0001_7-278739-1.jpg"
@@ -1097,6 +1089,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3506&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003506%2Ftitlaufn_0000278739%2F07_0000278739_0360_7-278739-360.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna Pahl von Grünsfeld"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

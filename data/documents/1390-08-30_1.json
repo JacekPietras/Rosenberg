@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1390_VIII_30/charter",
       "german": "Ulrich genannt Drochowetz von Umlowitz gibt dem Hohenfurter Kloster einen halben Lahn in Dorfe Suchenthal zu Eigen.\n\nSiegel: Drei kleine, an Pergamentstreifen hängende Siegel, a und e in weissem, b in rothem Wachs. a) Ein Helm mit hörnerartiger Zierde. - + S . Vlrici. De . Omlenycz. b) Das schon beschriebene Siegel Herrn Heinrich's von Rosenberg. c) Schlecht abgedruckt, daher weder Zeichnung noch Umschrift kennbar.",
       "english": "Ulrich, called Drochowetz von Umlowitz, grants the monastery of Hohenfurt a half-lahn in the village of Suchenthal as freehold.\n\nSeals: Three small seals hanging from parchment strips, a and e in white wax and b in red wax. (a) A helmet with horn-like crest. “+ S. Vlrici. De. Omlenycz.” (b) The previously described seal of Lord Heinrich von Rosenberg. (c) Poorly impressed; neither design nor inscription can be made out.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13900830_8%2CXVII_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13900830_8%2CXVII_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198111",
       "german": "Hans Klinkhart v. Vockenrot und Kunz von Uissigheim entscheiden in einem Streit des Endres von Riedern, Amtmann zu Wertheim, mit Dietrich Hundelin über eine Zinsleistung vom Hof Otterbach zugunsten des ersteren.\n\nLaufzeit: 1406 März 25",
       "english": "Hans Klinkhart von Vockenrot and Kunz von Uissigheim arbitrate a dispute between Endres von Riedern, bailiff of Wertheim, and Dietrich Hundelin over a rent payment from the Otterbach estate, in favor of the former.\n\nTerm: 25 March 1406.",
-      "mention": [
-        {
-          "person": "Kunz von Uissigheim"
-        },
-        {
-          "place": "riedern"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198111%2F07_0000198111_0001_7-198111-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198111%2F07_0000198111_0002_7-198111-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Uissigheim"
+    },
+    {
+      "place": "riedern"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

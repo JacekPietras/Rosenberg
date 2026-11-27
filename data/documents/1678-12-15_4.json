@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1959348",
       "german": "Revers Georg Adolfs von Hettersdorf bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Placidus [von Droste], Abt von Fulda\n\nGeorg Adolf von Hettersdorf (Hettersdorff) bestätigt für die namentlich genannten Söhne des verstorbenen Franz Rudolf von Rosenbach die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardtsz) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Placidus [von Droste], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Aussteller\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Georg Adolf von Hettersdorf’s acknowledgment of the enfeoffment by Placidus [von Droste], Abbot of Fulda, with Schackau and other fiefs specified individually\n\nGeorg Adolf von Hettersdorf (Hettersdorff) confirms, for the sons of the late Franz Rudolf von Rosenberg named in the document, the enfeoffment by Placidus [von Droste], Abbot of Fulda, with Schackau (Schackaw), including all its woodland and field appurtenances, and an estate there, Kleinsassen (Sassen), Gerharts (Gerhardtsz) [all places in the municipality of Hofbieber, Fulda district], and other fiefs specified individually. The charter of enfeoffment is inserted. A seal is announced.\n\nFormal description: Original, parchment, attached seal in a wooden capsule\n\nSeal bearer: Issuer\n\nAdditional information: The acknowledgment has no separate date of its own and instead refers to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3352/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3352/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

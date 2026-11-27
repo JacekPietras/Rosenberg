@@ -6,27 +6,27 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 47",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97928",
       "german": "Verträge der Herren von Rosenberg und der Grafen von Hatzfeldt mit benachbarten Herrschaften, u.a. wegen des gemeinschaftlichen Orts Münster; Fol.1-258 mit Inhaltsverzeichnis;\n\nLaufzeit: 1503,1553-1640\n\nEnthält: Darin: 1. Fol.70-73 Vertrag zwischen Hans von Finsterlohe und Zaisolf von Rosenberg über Jagdrechte (Ausf.), 1564;\n2. Fol.145-147 Vertrag zwischen Graf Georg Friedrich von Hohenlohe, Zaisolf von Rosenberg und Hans Ludwig Lochinger zu Archshofen über Jagdrechte in Münster (Ausf.), 1614;\n3. Fol. 220-227 Vergleich zwischen Georg Sigmund von Rosenberg und der Stadt Rothenburg (Ausf.), 1603;\n\nUmfang: 1 Bd.,Fol.1-258",
-      "english": "Agreements between the Lords von Rosenberg and the Counts von Hatzfeldt with neighboring lordships, including concerning the jointly held village of Münster; folios 1–258, with an index.\n\nDate range: 1503, 1553–1640.\n\nContents: Included: (1) fols. 70–73, agreement between Hans von Finsterlohe and Zaisolph von Rosenberg concerning hunting rights (original), 1564; (2) fols. 145–147, agreement between Graf Georg Friedrich von Hohenlohe, Zaisolph von Rosenberg, and Hans Ludwig Lochinger zu Archshofen concerning hunting rights in Münster (original), 1614; (3) fols. 220–227, settlement between Georg Siegmund von Rosenberg and the city of Rothenburg (original), 1603.\n\nExtent: 1 volume, fols. 1–258.",
-      "mention": [
-        {
-          "person": "Georg Friedrich von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Agreements between the Lords von Rosenberg and the Counts von Hatzfeldt with neighboring lordships, including concerning the jointly held village of Münster; folios 1–258, with an index.\n\nDate range: 1503, 1553–1640.\n\nContents: Included: (1) fols. 70–73, agreement between Hans von Finsterlohe and Zaisolph von Rosenberg concerning hunting rights (original), 1564; (2) fols. 145–147, agreement between Graf Georg Friedrich von Hohenlohe, Zaisolph von Rosenberg, and Hans Ludwig Lochinger zu Archshofen concerning hunting rights in Münster (original), 1614; (3) fols. 220–227, settlement between Georg Siegmund von Rosenberg and the city of Rothenburg (original), 1603.\n\nExtent: 1 volume, fols. 1–258."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Friedrich von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "person": "Georg Siegmund von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

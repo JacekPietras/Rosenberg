@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++71235abd-e3c9-474e-af06-052f1bf7dade&parent_id="
       ],
       "german": "Heiratsbrief zwischen Philipp Geyer von und zu Giebelstadt und Ursula, Zeysolphs von Rosenberg zu Haldenbergstetten und Gnezheim Tochter.",
-      "english": "Marriage charter between Philipp Geyer von und zu Giebelstadt and Ursula, daughter of Zeysolph von Rosenberg of Haldenbergstetten and Gnezheim.",
-      "mention": [
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "person": "Philipp Geyer"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ]
+      "english": "Marriage charter between Philipp Geyer von und zu Giebelstadt and Ursula, daughter of Zeysolph von Rosenberg of Haldenbergstetten and Gnezheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "person": "Philipp Geyer"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

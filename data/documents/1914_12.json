@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++def028c9-39d4-493e-bf74-6ee1ce024100&parent_id="
       ],
       "german": "Staatsstraße Nr. 136 (bzw. Reichsstraße Nr. 302) Sulzbach (Sulzbach-Rosenberg, Lkr. Amberg-Sulzbach) - Schwarzenfeld (Lkr. Schwandorf) - Rötz (Lkr. Cham)\n\nEnthält-/Darin-Vermerke: Enthält: Straßenunterhalt in den Gemeindebezirken Sulzbach, Rosenberg (Sulzbach-Rosenberg, Lkr. Amberg-Sulzbach), Poppenricht (Lkr. Amberg-Sulzbach) und Amberg\nDarin: 1 Plan (Lageplan östlich von Rosenberg)",
-      "english": "State Road No. 136 (or Imperial Road No. 302), Sulzbach (Sulzbach-Rosenberg, Amberg-Sulzbach district) – Schwarzenfeld (Schwandorf district) – Rötz (Cham district)\n\nContents/inserts notes: Contains: road maintenance in the municipal districts of Sulzbach, Rosenberg (Sulzbach-Rosenberg, Amberg-Sulzbach district), Poppenricht (Amberg-Sulzbach district), and Amberg\nInserts: 1 plan (site plan east of Rosenberg)",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "State Road No. 136 (or Imperial Road No. 302), Sulzbach (Sulzbach-Rosenberg, Amberg-Sulzbach district) – Schwarzenfeld (Schwandorf district) – Rötz (Cham district)\n\nContents/inserts notes: Contains: road maintenance in the municipal districts of Sulzbach, Rosenberg (Sulzbach-Rosenberg, Amberg-Sulzbach district), Poppenricht (Amberg-Sulzbach district), and Amberg\nInserts: 1 plan (site plan east of Rosenberg)"
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

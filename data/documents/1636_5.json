@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9C70984F-FFF0-42A7-B714-2A129B8C0F4C&parent_id="
       ],
       "german": "Stadt Sulzbach\nEnthält nur: Wegnahme des Pferdes des Müllers Wilhelm Metzner von Rosenberg",
-      "english": "Town of Sulzbach.\nContains only: seizure of the horse belonging to the miller Wilhelm Metzner von Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Town of Sulzbach.\nContains only: seizure of the horse belonging to the miller Wilhelm Metzner von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -7,14 +7,14 @@
       "source": "Liber mortuorum monasterii Brunnbacensis, Archiv des Historischen Vereins von Unterfranken und Aschaffenburg, vol. 21 (1871)",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10999451",
       "german": "`October 12 1314, Eberhardus de Rosenberg`",
-      "english": "Eberhard von Rosenberg died on October 12, 1314.",
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "death",
-          "diedOn": "1314-10-12"
-        }
-      ]
+      "english": "Eberhard von Rosenberg died on October 12, 1314."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "death",
+      "diedOn": "1314-10-12"
     }
   ]
 }

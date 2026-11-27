@@ -7,35 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-215383",
       "german": "Anerkennungsurkunde des Herrmann von Sternberg (Sterenberch), Propst zu Neumünster, und des Heinrich von Wechmar, Domherrn zu Würzburg, als Provisoren des Klosters Triefenstein über einen gütlichen Austrag, den der Bischof Berthold von Würzburg in dem Rechtstreit mit Gottfried von Remlingen in Betreff der Güter in Erlenbach und Herstat sowie des Zehntens zu Wittbach dahin abschloß, daß der Letztere diese Güter, die er nachweislich von den früheren Provisoren des Klosters, Rudolf von Uissigheim und Friedrich von Homburg gekauft, gegen jährliche Entrichtung eines Pfunds Wachs behalten solle.\n\nLaufzeit: 1276 März 18 (crastino Gertrudis)\n\nSiegelbeschreibung: 1. des Bischofs Berthold, einen sitzenden Bischof mit der Umschrift: Bertholdus dei gra herbipolen. eps vorstellend, 2. des Würzburger Domkapitels, den heiligen Kilian mit der Umschrift: Sigillum capituli majoris ecclesie herbipolensis vorstellend, 3. Siegel des Herrman von Sternberch, einen großen 8zackigen Stern vorstellend, mit der Doppelumschrift: S. Hermanni de Sterenberch canonici et - archidiaconi herbipolensis, 4. des Heinrich von Wechmar, den heiligen Erzengel Michael vorstellend. Umschrift: S. He. d. wecmar. canon. herbipol., 5. des Kapitels von Triefenstein.\n\nZeugen: Sibodo et Gotfridus de Altertheim, dicti Rummel; Conradus dictus Zobel de Gutenberch; Gotfridus Zobel de Hohenburch, Milites; Cunradus quondam advocatus in Utingen; Otto Wilwerker civis herbipol.\n\nSiegler: Bischof Bertold; Domkapitel Würzburg; Hermann von Sternberg; Heinrich von Wechmar; Kapitel Triefenstein",
       "english": "Acknowledgment by Hermann von Sternberg, provost of Neumünster, and Heinrich von Wechmar, canon of Würzburg, as administrators of the monastery of Triefenstein, concerning an amicable settlement concluded by Bishop Berthold of Würzburg in his legal dispute with Gottfried von Remlingen over property in Erlenbach and Herstat and the tithe at Wittbach. Gottfried is to retain these properties, which he demonstrably bought from the monastery’s former administrators Rudolf von Uissigheim and Friedrich von Homburg, in return for an annual payment of one pound of wax. Date: 18 March 1276, the day after St. Gertrude’s feast. The seals of the bishop, Würzburg cathedral chapter, Hermann von Sternberg, Heinrich von Wechmar, and Triefenstein chapter are described. Witnesses included Sibodo and Gottfried von Altertheim, called Rummel; Konrad called Zobel von Gutenberg; Gottfried Zobel von Hohenburg, knights; Konrad, formerly bailiff at Utingen; and Otto Wilwerker, citizen of Würzburg.",
-      "mention": [
-        {
-          "person": "Bischof Berthold",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "erlenbach"
-        },
-        {
-          "person": "Friedrich von Homburg"
-        },
-        {
-          "person": "Gotfried Zobel"
-        },
-        {
-          "person": "Konrad",
-          "personTitle": [
-            "genannt Zobel"
-          ]
-        },
-        {
-          "person": "Rudolf von Uissigheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215383%2F07_0000215383_0001_7-215383-1.jpg"
@@ -44,6 +15,35 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215383%2F07_0000215383_0002_7-215383-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Berthold",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "erlenbach"
+    },
+    {
+      "person": "Friedrich von Homburg"
+    },
+    {
+      "person": "Gotfried Zobel"
+    },
+    {
+      "person": "Konrad",
+      "personTitle": [
+        "genannt Zobel"
+      ]
+    },
+    {
+      "person": "Rudolf von Uissigheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

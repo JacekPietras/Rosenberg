@@ -7,25 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1725751",
       "german": "Albrecht von Rosenberg zu Boxberg, Ritter, verkauft auf ewige Zeiten dem Wolf von Hardheim und dessen Erben alle Rechte und Gerechtigkeiten an seinem Viertel des Dorfs Bretzingen um 1.500 Gulden.\n\nLaufzeit: 1555 Juli 4 (Donnerstag nach Peter und Paul 1535)\n\nSiegelbeschreibung: 4 Siegel",
       "english": "Albrecht von Rosenberg zu Boxberg, Knight, sells in perpetuity to Wolf von Hartheim and his heirs all rights and privileges in his quarter of the village of Bretzingen for 1,500 guilders.\n\nDuration: July 4, 1555 (Thursday after Saints Peter and Paul, 1535)",
-      "mention": [
-        {
-          "place": "bretzingen"
-        },
-        {
-          "person": "Wolf von Hartheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001725751%2F04_0001725751_0001_4-1725751-1.jpg"
@@ -37,6 +18,25 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001725751%2F04_0001725751_0003_4-1725751-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sold his rights in a quarter of Bretzingen to Wolf von Hardheim and his heirs."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bretzingen"
+    },
+    {
+      "person": "Wolf von Hartheim"
     }
   ]
 }

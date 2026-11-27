@@ -6,36 +6,36 @@
       "source": "Regesta Boica 11",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11697675",
       "german": "Conrad Erzbischof zu Mainz, Engelhart Herr zu Lomsperg und Conrad Herr zu Bickenbach der ältere bekennen, hinsichtlich der 297 Gulden Leibgedings auf der Stadt Wickersheim welche mit ihrer Einwilligung von der Herrschaft von Hoenloch an des Ulrich Heller und Philipp Gross Erben, an Georg Kudorffer, Rudel Armbauwrer Bürger, und an die Irnerin Bürgerin zu Nürnberg verkauft worden sind, den letztgenannten Personen 2400 Gulden schuldig geworden zu seyn, und versprechen hievon 1200 Gulden bis nächsten Peters Tag Cathedra und den Rest ein Jahr darnach zu bezahlen. Bürgen und Mitsiegler: Conrad Herr zu Bickenbach der jüngere, Schenk Conrad Herr zu Erpach, Eberhart vom Hirtzhorn Ritter, Heinrich von Kochendorff Vogt zu Gutenberg, und Hans Münich von Rosenberg genannt von Ileinstat. G. des Dinstages nach dem achten dage zu Wyhenachten. (c. 8 S.)",
-      "english": "Konrad, Erzbischof zu Mainz; Engelhart, Herr zu Lomsperg; and Konrad der Ältere, Herr zu Bickenbach, acknowledge that they owe 2,400 guilders to the heirs of Ulrich Heller and Philipp Gross, Georg Kudorffer, Rudel Armbauwrer, a citizen, and the Irnerin, a citizen of Nürnberg. The debt concerns a life annuity of 297 guilders on the town of Wickersheim, sold to them by the lordship of Hoenloch with the three men’s consent. They promise to pay 1,200 guilders by the next feast of St. Peter’s Chair and the remainder one year later. Sureties and co-sealers: Konrad der Jüngere, Herr zu Bickenbach; Schenk Konrad, Herr zu Erpach; Eberhard vom Hirtzhorn, Ritter; Heinrich von Kochendorff, Vogt zu Gutenberg; and Hans Münich von Rosenberg genannt von Ileinstat. Given on the Tuesday after the eighth day of Christmas. (With eight seals.)",
-      "mention": [
-        {
-          "place": "bickenbach"
-        },
-        {
-          "person": "Erzbischof Konrad",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans Münich von Rosenberg genannt von Ileinstat",
-          "type": "generic",
-          "content": "stood surety for a debt concerning a life annuity on Wickersheim owed by Konrad, Erzbischof zu Mainz; Engelhart, Herr zu Lomsperg; and Konrad der Ältere, Herr zu Bickenbach."
-        },
-        {
-          "person": "Hans Münich von Rosenberg genannt von Ileinstat",
-          "type": "generic",
-          "content": "co-sealed the debt acknowledgment concerning a life annuity on the town of Wickersheim."
-        }
+      "english": "Konrad, Erzbischof zu Mainz; Engelhart, Herr zu Lomsperg; and Konrad der Ältere, Herr zu Bickenbach, acknowledge that they owe 2,400 guilders to the heirs of Ulrich Heller and Philipp Gross, Georg Kudorffer, Rudel Armbauwrer, a citizen, and the Irnerin, a citizen of Nürnberg. The debt concerns a life annuity of 297 guilders on the town of Wickersheim, sold to them by the lordship of Hoenloch with the three men’s consent. They promise to pay 1,200 guilders by the next feast of St. Peter’s Chair and the remainder one year later. Sureties and co-sealers: Konrad der Jüngere, Herr zu Bickenbach; Schenk Konrad, Herr zu Erpach; Eberhard vom Hirtzhorn, Ritter; Heinrich von Kochendorff, Vogt zu Gutenberg; and Hans Münich von Rosenberg genannt von Ileinstat. Given on the Tuesday after the eighth day of Christmas. (With eight seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Münich von Rosenberg genannt von Ileinstat",
+      "type": "generic",
+      "content": "stood surety for a debt concerning a life annuity on Wickersheim owed by Konrad, Erzbischof zu Mainz; Engelhart, Herr zu Lomsperg; and Konrad der Ältere, Herr zu Bickenbach."
+    },
+    {
+      "person": "Hans Münich von Rosenberg genannt von Ileinstat",
+      "type": "generic",
+      "content": "co-sealed the debt acknowledgment concerning a life annuity on the town of Wickersheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bickenbach"
+    },
+    {
+      "person": "Erzbischof Konrad",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

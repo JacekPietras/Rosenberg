@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2189030",
       "german": "Propst Albrecht von Ellwangen verkauft an Ursula von Rosenberg geb. von Hunburg, ein Haus zu Ellwangen, das ehemals den Woellwarth (Wellwart) gehörte, um 200 Gulden.\n\nLaufzeit: 1464 Februar 20\n\nSiegler: Propst Albrecht von Ellwangen; Hanns von Alfingen (Ahelfingen) von Hohenalfingen (Hohenahelfingen)",
       "english": "Albrecht, Propst zu Ellwangen sells to Ursula von Rosenberg, née von Hunburg, a house in Ellwangen formerly belonging to the Woellwarth family, for 200 gulden.\n\nDate: 1464 February 20\n\nSealers: Albrecht, Propst zu Ellwangen; Hanns von Alfingen of Hohenalfingen",
-      "mention": [
-        {
-          "person": "Ursula von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1450&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001450%2Ftitlaufn_0002189030%2F02_0002189030_0001_2-2189030-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1450&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001450%2Ftitlaufn_0002189030%2F02_0002189030_0002_2-2189030-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ursula von Rosenberg"
     }
   ]
 }

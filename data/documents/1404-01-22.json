@@ -12,12 +12,12 @@
         "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1404_I_22.1/charter"
       ],
       "german": "Pfarrer Prziecho von Kirchschlag verlangt von Albert, dem Vikar von Rosenberg, die Zurückgabe des \"Liber viaticus\".",
-      "english": "Prziecho, parish priest of Kirchschlag, demands from Albert, the vicar of Rosenberg, the return of the `Liber viaticus`.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Prziecho, parish priest of Kirchschlag, demands from Albert, the vicar of Rosenberg, the return of the `Liber viaticus`."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

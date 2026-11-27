@@ -7,21 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/AUR/AT-KLA_418-B-A_1564_St/charter",
       "german": "Die Kärntner Landschaft stellt dem Grafen Georg Niklas von Rosenberg, Kärntner Erblandhofmeister, einen Schuldschein über 20000 Gulden aus, die zu Handen des Generaleinnehmers Wolf Andre Freiherrn von Mandorf, Herrn auf Pfannhof und Wiesenau, erlegt wurden. Siegler und eigenhändige Unterschrift: Andreas Graf von Rosenberg Burggraf, Georg Erzpriester zu Völkermarkt, Hans Ludwig Freiherr von Grotta, Rudolf Hannibal Graf und Edler Herr auf Reitenau eigenhändige Unterschrift: Mandorf\n\nSiegel: 4 Sig. imp.",
       "english": "The Carinthian Estates issue to Georg Niklas von Rosenberg, Graf von Rosenberg, Kärntner Erblandhofmeister, a debt certificate for 20,000 gulden deposited into the hands of the general collector Wolf Andre von Mandorf, Freiherr, Herr auf Pfannhof und Wiesenau. Sealing parties and handwritten signatures: Andreas von Rosenberg, Graf von Rosenberg, Burggraf; Georg, Erzpriester zu Völkermarkt; Hans Ludwig von Grotta, Freiherr; Rudolf Hannibal, Graf und Edler Herr auf Reitenau. Handwritten signature: Mandorf.\n\nSeal: four impressed seals.",
-      "mention": [
-        {
-          "person": "Andreas von Rosenberg",
-          "personTitle": [
-            "Burggraf",
-            "Graf von Rosenberg"
-          ]
-        },
-        {
-          "person": "Georg Niklas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_A_1564_16650424_r.JPG"
@@ -29,6 +14,21 @@
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_A_1564_16650424_v.JPG"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Andreas von Rosenberg",
+      "personTitle": [
+        "Burggraf",
+        "Graf von Rosenberg"
+      ]
+    },
+    {
+      "person": "Georg Niklas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
       ]
     }
   ]

@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9120e001-21e2-478a-be75-9ee003d2b291&parent_id="
       ],
       "german": "Heiratsbrief zwischen Walburga Geyerin, des Sebastian Geyer von und zu Giebelstadt mit seiner Ehegenossin Regina geb. von Berlichingen erzeugten Tochter, und Hans Conrad von Rosenberg zu Waldmannshofen.\n\nBesiegelung/Beglaubigung: 14 Sg. aufgedrückt",
-      "english": "Marriage letter between Walburga Geyerin, the daughter born to Sebastian Geyer von und zu Giebelstadt and his wife Regina, née von Berlichingen, and Hans Konrad von Rosenberg zu Waldmannshofen. Authentication: 14 applied seals.",
-      "mention": [
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "person": "Regina von Berlichingen"
-        },
-        {
-          "person": "Sebastian Geyer"
-        }
+      "english": "Marriage letter between Walburga Geyerin, the daughter born to Sebastian Geyer von und zu Giebelstadt and his wife Regina, née von Berlichingen, and Hans Konrad von Rosenberg zu Waldmannshofen. Authentication: 14 applied seals."
+    }
+  ],
+  "mention": [
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
       ]
+    },
+    {
+      "person": "Regina von Berlichingen"
+    },
+    {
+      "person": "Sebastian Geyer"
     }
   ]
 }

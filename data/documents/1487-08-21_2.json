@@ -7,27 +7,27 @@
       "source": "[RI XIII] H. 38 n. 310",
       "url": "https://www.regesta-imperii.de/id/a1f0daeb-816d-4acd-99b3-f3af9ecc2560",
       "german": "K.F. absolviert auf Bitten Bf. Rudolfs (II.) von Würzburg die Brüder und Vettern Georg, Arnold und Friedrich von Rosenberg sowie deren Helfer und Anhänger von des Reichs Achten, Aberachten, Prozessen, Pönen und Bußen, nachdem sich der Bf. mit ihnen vertragen hat.",
-      "english": "At the request of Bishop Rudolf (II) of Würzburg, the King and Emperor absolves the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg and their helpers and adherents from the Empire’s ban and aggravated ban, proceedings, penalties, and fines, after the Bishop has reached an agreement with them.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "At the request of Bishop Rudolf (II) of Würzburg, the King and Emperor absolves the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg and their helpers and adherents from the Empire’s ban and aggravated ban, proceedings, penalties, and fines, after the Bishop has reached an agreement with them."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

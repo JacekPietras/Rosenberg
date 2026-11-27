@@ -7,11 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4779166",
       "german": "Aufstellung zu Gütern, Gefällen, Gerechtsamen und Renten des Dorfs Heddernheim\n\nLaufzeit: 1646, 1679, 1681\n\nDarin auch: Bericht des Gerichts zu Heddernheim an den Oberamtmann Johann Dietrich von Rosenbach zu Königstein zu diversen Angelegenheiten, 1646",
       "english": "List of the properties, revenues, rights, and rents of the village of Heddernheim\n\nDate range: 1646, 1679, 1681\n\nAlso included: report by the court of Heddernheim to the chief bailiff Hans Dietrich von Rosenberg zu Königstein on various matters, 1646",
-      "mention": [
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/128--2/1944/hhstaw_128--2_nr_1944_0001.jpg"
@@ -44,6 +39,11 @@
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/128--2/1944/hhstaw_128--2_nr_1944_0010.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Dietrich von Rosenberg"
     }
   ]
 }

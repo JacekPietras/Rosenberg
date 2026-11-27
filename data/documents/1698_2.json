@@ -6,21 +6,21 @@
       "source": "HStAD, F 23 A, 631/6",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3814537",
       "german": "Strafprozeß gegen einen inhaftierten und ausgebrochenen Marketender zu Lindheim wegen Diebstahls, sowie damit in Zusammenhang stehende Exzesse des Herrn NN. von Oeynhausen\n\nEnthält: Schriftwechsel zwischen Philipp Ludwig, Domherr der Stifte Bamberg und Würzburg, Johann Hartmann, Domherr zu Würzburg und Landrichter in Franken, und Anton Konrad Philipp, würzburgischer Hofrat, alle Gebr. von Rosenbach mit ihrem Verwalter in Lindheim, Baumann\n\nLaufzeit: 1698",
-      "english": "Criminal proceedings against an imprisoned market trader who escaped, for theft, and related excesses by Mr. NN. von Oeynhausen\n\nContents: Correspondence between Philipp Ludwig, canon of the cathedral chapters of Bamberg and Würzburg; Johann Hartmann, Domherr zu Würzburg and district judge in Franconia; and Anton Konrad Philipp, councillor to the Prince-Bishop of Würzburg—all brothers von Rosenbach—and their administrator at Lindheim, Baumann\n\nDate range: 1698",
-      "mention": [
-        {
-          "person": "Hans Hartmann",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Criminal proceedings against an imprisoned market trader who escaped, for theft, and related excesses by Mr. NN. von Oeynhausen\n\nContents: Correspondence between Philipp Ludwig, canon of the cathedral chapters of Bamberg and Würzburg; Johann Hartmann, Domherr zu Würzburg and district judge in Franconia; and Anton Konrad Philipp, councillor to the Prince-Bishop of Würzburg—all brothers von Rosenbach—and their administrator at Lindheim, Baumann\n\nDate range: 1698"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann",
+      "personTitle": [
+        "Domherr zu Würzburg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

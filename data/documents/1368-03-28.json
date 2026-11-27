@@ -10,50 +10,6 @@
       ],
       "german": "Graf Eberhard von Wertheim verleiht den Zehnten zu Großrinderfeld, der von der Grafschaft zu Lehen rührt und von der Edelfrau Anna, Tochter des Ritters Johannes von Rosenberg und Witwe des Ritters Johannes Phal von Grünsfeld, an die Kartause Grünau verkauft worden war. Datiert 28. März 1368.",
       "english": "Count Eberhard von Wertheim grants the tithe at Großrinderfeld, a fief of the county, which Edelfrau Anna von Rosenberg, daughter of Hans von Rosenberg, Ritter, and widow of Hans Phal von Grünsfeld, Ritter, had sold to Grünau Charterhouse. Dated 28 March 1368.",
-      "mention": [
-        {
-          "person": "Eberhard von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "grunsfeld"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "parent",
-          "of": "Anna von Rosenberg",
-          "ofTitle": [
-            "Edelfrau"
-          ]
-        },
-        {
-          "person": "Hans Phal von Grünsfeld",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Anna von Rosenberg",
-          "ofTitle": [
-            "Edelfrau"
-          ]
-        },
-        {
-          "person": "Anna von Rosenberg",
-          "personTitle": [
-            "Edelfrau"
-          ],
-          "type": "generic",
-          "content": "had sold the tithe at Großrinderfeld to Grünau Charterhouse."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129165%2F07_0000129165_0001_7-129165-1.jpg",
@@ -72,6 +28,50 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "parent",
+      "of": "Anna von Rosenberg",
+      "ofTitle": [
+        "Edelfrau"
+      ]
+    },
+    {
+      "person": "Hans Phal von Grünsfeld",
+      "personTitle": [
+        "Ritter"
+      ],
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Anna von Rosenberg",
+      "ofTitle": [
+        "Edelfrau"
+      ]
+    },
+    {
+      "person": "Anna von Rosenberg",
+      "personTitle": [
+        "Edelfrau"
+      ],
+      "type": "generic",
+      "content": "had sold the tithe at Großrinderfeld to Grünau Charterhouse."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "grunsfeld"
     }
   ]
 }

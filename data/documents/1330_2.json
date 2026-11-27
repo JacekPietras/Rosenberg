@@ -6,14 +6,14 @@
       "source": "Staatsarchiv Ludwigsburg, Bestand JL 425, Sammlung Breitenbach, Bd. II, Qu. 3; Bd. XIX, Qu. 40 (references in the Personenindex)",
       "url": "https://www.landesarchiv-bw.de/stal/findbuecher/JL425_Personenindex.pdf",
       "german": "Pfahl von Grünsfeld – Anna, Frau des Johann",
-      "english": "Hans Pahl von Grünsfeld and Anna von Rosenberg, his wife",
-      "facts": [
-        {
-          "person": "Hans Pahl von Grünsfeld",
-          "type": "spouse",
-          "of": "Anna von Rosenberg"
-        }
-      ]
+      "english": "Hans Pahl von Grünsfeld and Anna von Rosenberg, his wife"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Pahl von Grünsfeld",
+      "type": "spouse",
+      "of": "Anna von Rosenberg"
     }
   ]
 }

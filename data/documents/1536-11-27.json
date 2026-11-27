@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Wertheim R-US 1536 November 27",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235599",
       "german": "Konrad, Bischof von Würzburg (Wirtzburg), belehnt den Hans Gains von Rosenberg mit benannten Gütern und Einkünften zu Burkheim, Rosenberg, Bronnacker, Bofsheim und Esselbach.\n\nLaufzeit: 1536 November 27 (\"der geben ist montag nach Catharinae und Christi [...] geburt fünfzehenhundert und im sechs und dreyssigsten jahre\")",
-      "english": "Konrad, Bischof von Würzburg, enfeoffs Hans Gains von Rosenberg with the specified goods and revenues at Burkheim, Rosenberg, Bronnacker, Bofsheim, and Esselbach.\n\nTerm: 27 November 1536 (issued on Monday after Catherine’s day and the birth of Christ, 1536).",
-      "mention": [
-        {
-          "person": "Bischof Konrad",
-          "personTitle": [
-            "Bischof von Würzburg"
-          ]
-        },
-        {
-          "place": "boffsheim"
-        },
-        {
-          "place": "esselbach"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Konrad, Bischof von Würzburg, enfeoffs Hans Gains von Rosenberg with the specified goods and revenues at Burkheim, Rosenberg, Bronnacker, Bofsheim, and Esselbach.\n\nTerm: 27 November 1536 (issued on Monday after Catherine’s day and the birth of Christ, 1536)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Konrad",
+      "personTitle": [
+        "Bischof von Würzburg"
       ]
+    },
+    {
+      "place": "boffsheim"
+    },
+    {
+      "place": "esselbach"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

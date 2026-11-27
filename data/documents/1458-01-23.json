@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166541",
       "german": "Urteil des Grafen Wilhelm von Henneberg als Kaiserl. Commissar in der Appellationssache des Grafen Johann von Wertheim gegen Heinz Schenk von Roßberg auf ein Urteil des herzoglichen Hofgerichts in Würzburg, wodurch das letztere, welches Peter Busch für einen Leibeigenen des Grafen Johann erklärt, aufgehoben und und derselbe für einen gräflichen Dienstmann anerkannt wird.\n\nLaufzeit: 1458 Januar 23 (Sonntag nach S. Antoniustag, 23. Jan. 1458)",
       "english": "Judgment of Wilhelm von Henneberg, Graf, as imperial commissioner, in the appeal brought by Johann von Wertheim, Graf against Heinz Schenk von Roßberg from a judgment of the ducal court in Würzburg. The latter judgment, which had declared Peter Busch a serf of Count Johann, is overturned, and Peter Busch is recognized as a count’s retainer.\n\nTerm: 23 January 1458 (Sunday after St. Anthony’s Day, 23 January 1458)",
-      "mention": [
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Heinrich Schenk"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=697&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000697%2Ftitlaufn_0000166541%2F07_0000166541_0001_7-166541-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=697&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000697%2Ftitlaufn_0000166541%2F07_0000166541_0002_7-166541-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Heinrich Schenk"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

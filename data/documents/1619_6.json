@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B2C1D23C-1C22-401C-83C7-0B3E6EA71DBF&parent_id="
       ],
       "german": "Beschwerde des A. Chr. von Rosenberg wegen Forderung seiner Vogteiuntertanen zu Bofsheim zur Musterung nach Buchen.",
-      "english": "Complaint by A. Chr. von Rosenberg concerning his bailiff’s subjects at Bofsheim being required to attend a military muster at Buchen.",
-      "mention": [
-        {
-          "place": "boffsheim"
-        },
-        {
-          "place": "buchen"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Complaint by A. Chr. von Rosenberg concerning his bailiff’s subjects at Bofsheim being required to attend a military muster at Buchen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boffsheim"
+    },
+    {
+      "place": "buchen"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

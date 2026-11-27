@@ -9,31 +9,31 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++86048690-73bd-41e6-a2da-2964dd69b38b&parent_id="
       ],
       "german": "Sigmund von Schwarzenberg bestätigt, dass Bischof Johann von Würzburg ihm den halben Teil von Schloss, Stadt und Amt Röttingen, wie davor dem Ritter Anselm von Rosenberg, um 2000 rheinische Gulden auf Wiederkauf in 5 Jahren verpfändet hat, wie in der inserierten Urkunde des Bischofs Johann vom gleichen Datum ausgeführt",
-      "english": "Siegmund von Schwarzenberg confirms that Bishop Johann of Würzburg has pledged to him half of the castle, town, and office of Röttingen, previously held by knight Anselm von Rosenberg, for 2,000 Rhenish gulden subject to redemption within 5 years, as set forth in the bishop Johann's inserted document of the same date.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "roettingen"
-        },
-        {
-          "person": "Siegmund von Schwarzenberg"
-        }
+      "english": "Siegmund von Schwarzenberg confirms that Bishop Johann of Würzburg has pledged to him half of the castle, town, and office of Röttingen, previously held by knight Anselm von Rosenberg, for 2,000 Rhenish gulden subject to redemption within 5 years, as set forth in the bishop Johann's inserted document of the same date."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Anselm von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Anselm von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "had previously held the half share of Röttingen Castle, town, and district which Bishop Johann of Würzburg pledged to Sigmund von Schwarzenberg for 2,000 Rhenish guilders, redeemable within five years."
-        }
+      "type": "generic",
+      "content": "had previously held the half share of Röttingen Castle, town, and district which Bishop Johann of Würzburg pledged to Sigmund von Schwarzenberg for 2,000 Rhenish guilders, redeemable within five years."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "roettingen"
+    },
+    {
+      "person": "Siegmund von Schwarzenberg"
     }
   ]
 }

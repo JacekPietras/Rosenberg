@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3A3FC394-291C-4738-BBB4-56AA9B0AC21D&parent_id="
       ],
       "german": "Differenzen zwischen dem Hochstift Würzburg und dem Kloster Bronnbach/Baden einerseits und C. von Rosenberg zu Unterschüpf betr. die Jagensgerechtigkeit, Gerichtsbarkeit etc. zu Kupprichhausen",
-      "english": "Disputes between the Bishopric of Würzburg and Bronnbach Abbey/Baden on the one hand and C. von Rosenberg zu Unterschüpf on the other concerning hunting rights, jurisdiction, etc. at Kupprichhausen.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "kupprichhausen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "unterschuepf"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Disputes between the Bishopric of Würzburg and Bronnbach Abbey/Baden on the one hand and C. von Rosenberg zu Unterschüpf on the other concerning hunting rights, jurisdiction, etc. at Kupprichhausen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "kupprichhausen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "unterschuepf"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

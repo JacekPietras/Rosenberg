@@ -7,13 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-EAF/Lauda/PfALaudaUrkunde12/charter",
       "german": "Albrecht von Rosenberg verschreibt eine Wiese vor dem Dorf Sachsenflur an Hans Saul, Hans und Michel Zimmermann sowie Caspar Vroloch. Albrecht von Rosenberg",
       "english": "Albrecht von Rosenberg assigns a meadow outside the village of Sachsenflur to Hans Saul, Hans and Michel Zimmermann, and Caspar Vroloch. Albrecht von Rosenberg",
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "generic",
-          "content": "assigned a meadow outside Sachsenflur to Hans Saul, Hans and Michel Zimmermann, and Caspar Vroloch."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-EAF/Lauda/PfA%20Lauda%20Urkunde%2012_r.jpg"
@@ -22,6 +15,13 @@
           "src": "https://images.monasterium.net/img/DE-EAF/Lauda/PfA%20Lauda%20Urkunde%2012_v.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "generic",
+      "content": "assigned a meadow outside Sachsenflur to Hans Saul, Hans and Michel Zimmermann, and Caspar Vroloch."
     }
   ]
 }

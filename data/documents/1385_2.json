@@ -6,51 +6,51 @@
       "source": "Der Schüpfergrund und ſeine Beſitzer.",
       "url": "https://regionalia.blb-karlsruhe.de/files/22740/BLB_Freiburger_Dioecesan_Archiv_1896_25.pdf",
       "german": "verkaufen Hans v. Rosenberg und ſeine Gemahlin Anna von Kronenberg und ſein Bruder Götz ihre Veſte Urhauſen um 215 fl. Bürgen: Eberhard v. Rosenberg, Ritter, Vogt zu Lauda, und Conz v. Rosenberg, zu Boxberg geſeſſen.",
-      "english": "Hans von Rosenberg and his wife Anna von Kronenberg and his brother Götz sold their Urhausen fortress for 215 florins. Guarantors: Eberhard von Rosenberg, knight, vogt zu Lauda, and Kunz von Rosenberg, resident of Boxberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "urhausen-castle"
-        }
+      "english": "Hans von Rosenberg and his wife Anna von Kronenberg and his brother Götz sold their Urhausen fortress for 215 florins. Guarantors: Eberhard von Rosenberg, knight, vogt zu Lauda, and Kunz von Rosenberg, resident of Boxberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "hans_brother_of_gotz",
+      "type": "generic",
+      "content": "sold Veste Urhausen jointly with his wife Anna von Kronenberg and his brother Götz von Rosenberg."
+    },
+    {
+      "person": "hans_brother_of_gotz",
+      "type": "spouse",
+      "of": "Anna von Kronenberg"
+    },
+    {
+      "person": "gotz_von_rosenberg",
+      "type": "sibling",
+      "of": "hans_brother_of_gotz"
+    },
+    {
+      "person": "vogt_zu_Lauda",
+      "personTitle": [
+        "Ritter",
+        "Vogt zu Lauda"
       ],
-      "facts": [
-        {
-          "person": "hans_brother_of_gotz",
-          "type": "generic",
-          "content": "sold Veste Urhausen jointly with his wife Anna von Kronenberg and his brother Götz von Rosenberg."
-        },
-        {
-          "person": "hans_brother_of_gotz",
-          "type": "spouse",
-          "of": "Anna von Kronenberg"
-        },
-        {
-          "person": "gotz_von_rosenberg",
-          "type": "sibling",
-          "of": "hans_brother_of_gotz"
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Lauda"
-          ],
-          "type": "generic",
-          "content": "served as surety for the sale of Veste Urhausen."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "resided at Boxberg."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "served as surety for the sale of Veste Urhausen."
-        }
-      ]
+      "type": "generic",
+      "content": "served as surety for the sale of Veste Urhausen."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "resided at Boxberg."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "served as surety for the sale of Veste Urhausen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "urhausen-castle"
     }
   ]
 }

@@ -10,28 +10,6 @@
       ],
       "german": "Eberhard von Balzhofen und seine Frau Margret von Rosenberg verkaufen 10 lb. h. Gült Heidelberger Währung, die sie zu Walheim haben, an die Pfründe zu St. Johannes und St. Katharina zu Hohenhaslach um 100 fl.",
       "english": "Eberhard von Balzhofen and his wife Margaretha von Rosenberg sell an annuity of 10 pounds Heller in Heidelberg currency, which they hold at Walheim, to the prebend of St. John and St. Catherine in Hohenhaslach for 100 florins.",
-      "mention": [
-        {
-          "place": "heidelberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Balzhofen",
-          "type": "spouse",
-          "of": "Margaretha von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Balzhofen",
-          "type": "generic",
-          "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with his wife Margret von Rosenberg."
-        },
-        {
-          "person": "Margaretha von Rosenberg",
-          "type": "generic",
-          "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with her husband Eberhard von Balzhofen."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000040665%2F01_0000040665_0001_1-40665-1.jpg"
@@ -40,6 +18,28 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000040665%2F01_0000040665_0002_1-40665-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Balzhofen",
+      "type": "spouse",
+      "of": "Margaretha von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Balzhofen",
+      "type": "generic",
+      "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with his wife Margret von Rosenberg."
+    },
+    {
+      "person": "Margaretha von Rosenberg",
+      "type": "generic",
+      "content": "sold an annuity held at Walheim to the prebend of St. John and St. Catherine in Hohenhaslach together with her husband Eberhard von Balzhofen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
     }
   ]
 }

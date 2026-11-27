@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1787064",
       "german": "Hans Melchior und Hans Ulrich von Rosenberg verpfänden dem Kurfürsten Ludwig V. von der Pfalz und dem Pfalzgrafen Friedrich für ein Darlehen von 1.000 Gulden ihre Häfte des Dorfs Bobstadt und die Dörfer Schwabhausen und Epplingen.\n\nLaufzeit: 1521 April 8 (Montag nach Quasimodogeniti 1521)\n\nSiegelbeschreibung: 4 Siegel",
       "english": "Hans Melchior and Hans Ulrich von Rosenberg pledge to Elector Ludwig V of the Palatinate and Count Palatine Friedrich, for a loan of 1,000 guilders, their half-share of the village of Bobstadt and the villages of Schwabhausen and Epplingen.\n\nTerm: April 8, 1521 (Monday after Quasimodogeniti 1521)",
-      "mention": [
-        {
-          "place": "bobstadt"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans Melchior von Rosenberg",
-          "type": "generic",
-          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
-        },
-        {
-          "person": "Hans Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001787064%2F04_0001787064_0001_4-1787064-1.jpg"
@@ -41,14 +24,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4377393",
       "german": "Pfandbriefskopie über Bobstadt, Schwabhausen und Epplingen an die Pfalz von den von Rosenberg\n\nLaufzeit: 1521",
       "english": "Copy of pledge deed regarding Bobstadt, Schwabhausen, and Epplingen to the Palatinate from the von Rosenberg family\n\nTerm: 1521",
-      "mention": [
-        {
-          "place": "bobstadt"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1502&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001502%2Ftitlaufn_0004377393%2F04_0004377393_0001_4-4377393-1.jpg"
@@ -63,6 +38,26 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1502&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001502%2Ftitlaufn_0004377393%2F04_0004377393_0004_4-4377393-4.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Melchior von Rosenberg",
+      "type": "generic",
+      "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
+    },
+    {
+      "person": "Hans Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "pledged his half of Bobstadt and the villages of Schwabhausen and Epplingen to Kurfürst Ludwig V and Pfalzgraf Friedrich as security for a loan."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bobstadt"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -20,11 +20,6 @@
       ],
       "german": "Verzeichnis über die Vertragssumme von 39000 Gulden, welche Herrn Albrecht von Rosenberg auf die Stände des gewesenen Bundes zu Schwaben zugesprochen wurden.",
       "english": "Record of the contract sum of 39,000 guilders awarded to Mr. Albrecht von Rosenberg against the estates of the former Swabian League.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1555_06_14-10-4.jpg"
@@ -126,6 +121,11 @@
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1555_06_14-14-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
     }
   ]
 }

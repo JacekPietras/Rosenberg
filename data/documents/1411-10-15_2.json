@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CSGXIII/8053/charter",
       "german": "Rudolf von Rosenberg von Zuckenriet verkauft dem Kloster St.Johann eine Eigenfrau.\n\nSiegel: Siegel besch., Abb.787.",
       "english": "Rudolf von Rosenberg of Zuckenriet sells a serf woman to the Abbey of St. Johann.\n\nSeal: Seal described, Fig.787.",
-      "mention": [
-        {
-          "person": "Rudolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/CSG_XIII/StiASG_14111015_QQ1-C41_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/collections/CSG_XIII/StiASG_14111015_QQ1-C41_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Rudolf von Rosenberg"
     }
   ]
 }

@@ -7,37 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-195526",
       "german": "Sonntag nach Dorothea; Johannes Gauß und Agnes, seine Hausfrau, Bürger zu Öhringen, bekennen, dass Albrecht von Hohenlohe erlaubt hat, Eberhardt von Rosenberg zu dienen;\n\nSiegel: Leonhart Lesch.",
       "english": "Sunday after Dorothea; Hans Gauss and Agnes, his wife, citizens of Öhringen, confess that Albrecht von Hohenlohe has allowed them to serve Eberhard von Rosenberg;\n\nseal: Leonhart Lesch.",
-      "mention": [
-        {
-          "person": "Eberhard von Rosenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Hohenlohe",
-          "type": "generic",
-          "content": "allowed Hans Gauß and his wife Agnes, citizens of Öhringen, to serve Eberhard von Rosenberg."
-        },
-        {
-          "person": "Hans Gauß",
-          "personTitle": [
-            "Bürger zu Öhringen"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Agnes",
-          "personTitle": [
-            "Bürger zu Öhringen"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Leonhard Lesch",
-          "type": "generic",
-          "content": "sealed the charter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000195526%2F03_0000195526_0001_3-195526-1.jpg"
@@ -47,6 +16,37 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Hohenlohe",
+      "type": "generic",
+      "content": "allowed Hans Gauß and his wife Agnes, citizens of Öhringen, to serve Eberhard von Rosenberg."
+    },
+    {
+      "person": "Hans Gauß",
+      "personTitle": [
+        "Bürger zu Öhringen"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Agnes",
+      "personTitle": [
+        "Bürger zu Öhringen"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Leonhard Lesch",
+      "type": "generic",
+      "content": "sealed the charter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Rosenberg"
     }
   ]
 }

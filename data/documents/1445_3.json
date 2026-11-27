@@ -8,31 +8,31 @@
       "summary": "Anselm von Rosenberg lässt eine neue Scheune in Prosselsheim ( Brasoldshaim ) errichten, die jedoch auf einem Gut steht, das den Kartäusern zu Astheim ( Ostheim ) gehört. Nachdem sich die Kartäuser beschweren, schließt Bischof Gottfried Schenk von Limpurg zwischen beiden Parteien folgenden Vertrag. Die Scheune darf bis zum Tod von Anselm und seiner Ehefrau in deren Besitz bleiben, wechselt aber danach in den Besitz der Kartause zu Astheim.",
       "german": "Her Anshelm von Rosenberg obgenant, liese ain newe scheurenn zimern, vnd setzt die [gestrichen: gen] zu Brasoldshaim vff ain gute, dar war der Carthausern zu Ostheim, Vnd als sich die Cartheuser des beschwedten, mach B Gotfriden zwischen inen ain vertrag, das berurte Scheurn, da stehn [gestrichen: bey] bleiben, vnd [gestrichen: erst] nach seinem Anshelmen auch [gestrichen: fraw] seiner hausfrawen dot den Cartheuseren erst haimfallen sollte, divers. Formarum Epi Gotfridi fo 62 Kommentar: Datum aus Kopialbuch",
       "english": "The aforementioned Anselm von Rosenberg had a new barn built and placed it at Prosselsheim on a property belonging to the Carthusians of Astheim. When the Carthusians complained, Gotfried Schenk von Limpurg, Bischof, made an agreement between them: the barn could remain there until Anselm and his wife had died, after which it would pass to the Carthusians. The archive summary clarifies that it remained in the couple’s possession during their lifetimes. Register of Various Forms of Bishop Gotfried, fol. 62. Date taken from the copybook.",
-      "mention": [
-        {
-          "person": "Gotfried Schenk von Limpurg",
-          "personTitle": [
-            "Bischof"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Anselm von Rosenberg",
-          "type": "generic",
-          "content": "had a new barn built at Prosselsheim on property belonging to the Carthusians of Astheim."
-        },
-        {
-          "subject": "barn at Prosselsheim",
-          "type": "generic",
-          "content": "was to remain on the Carthusians’ property and pass to them after the deaths of Anselm von Rosenberg and his wife."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Anselm von Rosenberg",
+      "type": "generic",
+      "content": "had a new barn built at Prosselsheim on property belonging to the Carthusians of Astheim."
+    },
+    {
+      "subject": "barn at Prosselsheim",
+      "type": "generic",
+      "content": "was to remain on the Carthusians’ property and pass to them after the deaths of Anselm von Rosenberg and his wife."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gotfried Schenk von Limpurg",
+      "personTitle": [
+        "Bischof"
       ]
     }
   ]

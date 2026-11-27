@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++12FA95D2-959F-4DD2-94C6-045F634D4979&parent_id="
       ],
       "german": "König Sigismund verpfändet um 15100 fl. die Städte Heidingsfeld und Bernheim an die Stadt Nürnberg; von der Pfandsumme gingen 2000 fl. an Ulrich v. Rosemberg und 4100 fl. an Balthasar und Sigmund v. Thüngen.",
-      "english": "King Sigismund pledges the towns of Heidingsfeld and Bernheim to the City of Nuremberg for 15,100 gulden; of the pledged sum, 2,000 gulden went to Ulrich von Rosenberg and 4,100 gulden to Balthasar and Siegmund von Thüngen.",
-      "mention": [
-        {
-          "person": "Balthasar von Thüngen"
-        },
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Sigismund pledges the towns of Heidingsfeld and Bernheim to the City of Nuremberg for 15,100 gulden; of the pledged sum, 2,000 gulden went to Ulrich von Rosenberg and 4,100 gulden to Balthasar and Siegmund von Thüngen."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar von Thüngen"
+    },
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

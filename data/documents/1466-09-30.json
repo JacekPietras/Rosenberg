@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9fc2365d-abd0-4405-9c77-c9e647558a38&parent_id="
       ],
       "german": "Urfehde Ekarius von Petstatt, bei seiner Entlassung aus dem Gefängnis auf die gewöhnliche Art ausgestellt. Siegler: Ekarius von Petstatt, Pauls von Absberg, Jeronimus von Rosenberg.\n\nBesiegelung/Beglaubigung: 3 Sg. anhängend",
-      "english": "Urfede (oath of peace) of Ekarius von Petstatt, issued in the usual manner upon his release from prison. Sealer: Ekarius von Petstatt, Pauls von Absberg, Hieronymus von Rosenberg.",
-      "mention": [
-        {
-          "person": "Pauls von Absberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hieronymus von Rosenberg",
-          "type": "generic",
-          "content": "sealed Ekarius von Petstatt’s Urfehde upon his release from prison."
-        }
-      ]
+      "english": "Urfede (oath of peace) of Ekarius von Petstatt, issued in the usual manner upon his release from prison. Sealer: Ekarius von Petstatt, Pauls von Absberg, Hieronymus von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hieronymus von Rosenberg",
+      "type": "generic",
+      "content": "sealed Ekarius von Petstatt’s Urfehde upon his release from prison."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Pauls von Absberg"
     }
   ]
 }

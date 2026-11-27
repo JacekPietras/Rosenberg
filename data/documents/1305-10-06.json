@@ -13,11 +13,6 @@
       ],
       "german": "Eglolf von Rosenberg verspricht, dem Abt und Konvent von St. Gallen in der Verwaltung der Klosterlehen nicht zu stören.\n\nSiegel: Siegel abh., stark besch., Abb. 106.",
       "english": "Egilolf von Rosenberg promises not to disturb the abbot and convent of St. Gallen in the administration of the monastery fiefs.\n\nSeal: Seal attached, heavily damaged, Fig. 106.",
-      "mention": [
-        {
-          "person": "Egilolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13051006_FF4-F49_r.jpg"
@@ -32,6 +27,11 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG2jpgweb._%7EStiASG_13051006_FF4-F49_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Egilolf von Rosenberg"
     }
   ]
 }

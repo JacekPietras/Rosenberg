@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++620916da-cdb6-4c67-963d-5c24144dde13&parent_id="
       ],
       "german": "Veitengruber, Johann Andreas, von Rosenberg, Taglöhner; Verheiratung mit Wellhöfer, Anna Barbara; Ansässigmachung in Rügland",
-      "english": "Johann Andreas Veitengruber von Rosenberg, day laborer; marriage to Anna Barbara Wellhöfer; establishment of residence in Rügland",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Andreas Veitengruber von Rosenberg, day laborer; marriage to Anna Barbara Wellhöfer; establishment of residence in Rügland"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

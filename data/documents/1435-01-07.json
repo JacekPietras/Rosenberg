@@ -6,22 +6,22 @@
       "source": "Regesta Boica 13",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
       "german": "Ernst und Wilhalm, Herzoge in Bayrn, der Bitte des Rates von Sultzpach willfarend, schreiben ihrem Aidem und Vetter, dass das Dorf Falcz gegen die Meinung des Conrad von Rosenberg Vitztums, und des Landgerichtes zu Amberg nicht in dieses, sondern nach Sultzpach gehöre; von der Schiffart wegen, welche die von Sultzpach auf der Vilse haben, Trager schicken zu wollen und bitten zugleich über den Stand der Sache um Nachricht. Dat. Munchen an Freitag nach dem Obristen. (B.)",
-      "english": "Ernst and Wilhelm, dukes in Bavaria, responding to the request of the council of Sultzpach, write to their son-in-law and cousin that the village of Falcz belongs to Sultzpach rather than to the district court of Amberg, contrary to the opinion of Konrad von Rosenberg, Vizedom, and that court. They intend to send Trager concerning the navigation enjoyed by the people of Sultzpach on the Vilse, and ask for news of the state of the matter. Given at München on the Friday after Epiphany. (B.)",
-      "mention": [
-        {
-          "place": "amberg"
-        }
+      "english": "Ernst and Wilhelm, dukes in Bavaria, responding to the request of the council of Sultzpach, write to their son-in-law and cousin that the village of Falcz belongs to Sultzpach rather than to the district court of Amberg, contrary to the opinion of Konrad von Rosenberg, Vizedom, and that court. They intend to send Trager concerning the navigation enjoyed by the people of Sultzpach on the Vilse, and ask for news of the state of the matter. Given at München on the Friday after Epiphany. (B.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Vizedom"
       ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vizedom"
-          ],
-          "type": "generic",
-          "content": "held that the village of Falcz belonged to the jurisdiction of the district court of Amberg rather than Sultzpach."
-        }
-      ]
+      "type": "generic",
+      "content": "held that the village of Falcz belonged to the jurisdiction of the district court of Amberg rather than Sultzpach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
     }
   ]
 }

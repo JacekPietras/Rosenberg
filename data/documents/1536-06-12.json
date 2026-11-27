@@ -6,15 +6,15 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 107",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755810",
       "german": "Verkauf der Vogtei, von Gefällen und Gerechtigkeiten auf Hans Springers Güter zu Wachbach, von weiteren Gefällen zu Wachbach und von Zinsgütern zu Ailringen an HDM Walther von Cronberg durch [Johann Fabri, Vikar des Altars Maria Magdalena im] Stift Haug zu Würzburg, 1536 [Juni 12; Regest].",
-      "english": "[Johann Fabri, vicar of the altar of Mary Magdalene at Haug Abbey in Würzburg] sells the bailiwick, revenues, and rights over Hans Springer’s estates at Wachbach, further revenues at Wachbach, and rent-paying estates at Ailringen to Grand Master Walther von Cronberg, 1536 [June 12; regest].",
-      "mention": [
-        {
-          "place": "cronberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "[Johann Fabri, vicar of the altar of Mary Magdalene at Haug Abbey in Würzburg] sells the bailiwick, revenues, and rights over Hans Springer’s estates at Wachbach, further revenues at Wachbach, and rent-paying estates at Ailringen to Grand Master Walther von Cronberg, 1536 [June 12; regest]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "cronberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

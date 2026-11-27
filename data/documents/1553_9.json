@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1408172",
       "german": "Verhandlungen Herzog Christophs von Württemberg zwecks gütlicher Einigung zwischen Pfalzgraf Friedrich II. und Ritter Albrecht von Rosenberg im Streit um die Herrschaft Boxberg.\n\nLaufzeit: 1553\n\nUmfang: 78 Blatt",
       "english": "Negotiations by Duke Christoph of Württemberg aimed at an amicable settlement between Count Palatine Friedrich II and Albrecht von Rosenberg, Ritter in the dispute over the lordship of Boxberg. Date range: 1553. Extent: 78 leaves.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "boxberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001408172%2F01_0001408172_0001_1-1408172-1.jpg"
@@ -302,6 +291,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001408172%2F01_0001408172_0094_1-1408172-94.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "boxberg"
     }
   ]
 }

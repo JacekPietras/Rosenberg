@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/4407/charter",
       "german": "Friedrich v. Rosenberg gestattet dem Hans Rudolff zu Boxberg, sich in Mergentheim niederzulassen.",
       "english": "Friedrich von Rosenberg permits Hans Rudolff zu Boxberg to settle in Mergentheim.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Hans Rudolf zu Boxberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14960109_r.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14960109_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Hans Rudolf zu Boxberg"
     }
   ]
 }

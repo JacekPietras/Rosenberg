@@ -7,23 +7,18 @@
       "source": "[RIplus] Regg. Karl IV. n. 1846",
       "url": "https://www.regesta-imperii.de/id/db976995-5c0f-4113-8022-5af65cc30c03",
       "german": "Karl IV. gebietet den Baronen, Edlen usw. in Böhmen, inbesonderheit die Mutter und Brüder des genannten Heinrich von Rosenberg wegen der angegebenen Schuld gegenüber den Juden Lazarus und Judlin, Brüder des Manne, nicht weiter zu verfolgen.",
-      "english": "Karl IV. commands the barons, nobles, etc. in Bohemia, especially the mother and brothers of the aforementioned Heinrich von Rosenberg, not to further pursue the stated debt against the Jews Lazarus and Judlin, brothers of Manne.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ]
+      "english": "Karl IV. commands the barons, nobles, etc. in Bohemia, especially the mother and brothers of the aforementioned Heinrich von Rosenberg, not to further pursue the stated debt against the Jews Lazarus and Judlin, brothers of Manne."
     },
     {
       "source": "RI VIII n. 1388",
       "url": "https://www.regesta-imperii.de/id/1351-00-00_1_0_8_0_0_1580_1388",
       "german": "gebietet den baronen, edeln u. s. w. insonderheit die mutter und brüder des genannten Heinrich von Rosenberg wegen der angegebenen schuld nicht weiter zu verfolgen. Ebendaher.",
-      "english": "He orders the barons, nobles and others in particular not to further pursue the mother and brothers of the aforementioned Heinrich von Rosenberg regarding the specified debt. From the same place.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ]
+      "english": "He orders the barons, nobles and others in particular not to further pursue the mother and brothers of the aforementioned Heinrich von Rosenberg regarding the specified debt. From the same place."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

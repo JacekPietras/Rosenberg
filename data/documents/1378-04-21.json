@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1378_IV_21/charter",
       "german": "Die Brüder Peter und Johann von Rosenberg erlassen dem Abte Otto und dem Convente des Stiftes Hohenfurt von dessen Eigen in Liebenthal die Lehenspflicht.\n\nSiegel: Über die Siegel siehe CIV und CXIV.",
       "english": "The brothers Peter and Hans von Rosenberg release the abbot Otto and the convent of Hohenfurt Abbey from their feudal obligations with respect to the abbey’s own property in Liebenthal.\n\nSeals: See CIV and CXIV for the seals.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13780423_9%2CXV_v.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13780423_9%2CXV_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

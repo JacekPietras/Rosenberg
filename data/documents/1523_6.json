@@ -6,39 +6,39 @@
       "source": "Staatsarchiv Wertheim G-Rep. 42 Nr. 42",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-10076",
       "german": "Korrespondenz des Priors der Kartause Grünau mit kurmainzischen Domherren und Korrespondenz Gräfin Barbaras von Wertheim bzw. Graf Michaels III. von Wertheim mit dem Prior der Kartause Grünau und Erzbischof Sebastian von Mainz wegen von Kurmainz geforderter Schatzung und Türkensteuer\n\nLaufzeit: 1523, 1529-1533, 1547-1549, 1599\n\nEnthält: Enthält auch: Schreiben des Priors der Kartause Grünau an Graf Georg II. von Wertheim wegen kurmainzischer Reisigknechte, die Einlass in die Kartause gefordert haben (1523); Schreiben des Priors der Kartause Grünau an den Herren von Uissigheim wegen einer Handlung mit Kurmainz (1599)",
-      "english": "Correspondence of the prior of Grünau Charterhouse with cathedral canons of Electoral Mainz, and correspondence of Countess Barbara von Wertheim and Count Michael III von Wertheim with the prior of Grünau Charterhouse and Archbishop Sebastian of Mainz, concerning the assessment and Turkish tax demanded by Electoral Mainz.\n\nDate range: 1523, 1529–1533, 1547–1549, 1599\n\nAlso contains: letter from the prior of Grünau Charterhouse to Count Georg II von Wertheim concerning Electoral Mainz’s mounted servants who demanded entry to the charterhouse (1523); letter from the prior of Grünau Charterhouse to the lords von Uissigheim concerning a matter with Electoral Mainz (1599).",
-      "mention": [
-        {
-          "person": "Barbara von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Erzbischof Sebastian",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Georg von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "uissigheim"
-        }
+      "english": "Correspondence of the prior of Grünau Charterhouse with cathedral canons of Electoral Mainz, and correspondence of Countess Barbara von Wertheim and Count Michael III von Wertheim with the prior of Grünau Charterhouse and Archbishop Sebastian of Mainz, concerning the assessment and Turkish tax demanded by Electoral Mainz.\n\nDate range: 1523, 1529–1533, 1547–1549, 1599\n\nAlso contains: letter from the prior of Grünau Charterhouse to Count Georg II von Wertheim concerning Electoral Mainz’s mounted servants who demanded entry to the charterhouse (1523); letter from the prior of Grünau Charterhouse to the lords von Uissigheim concerning a matter with Electoral Mainz (1599)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Barbara von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "person": "Erzbischof Sebastian",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Georg von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

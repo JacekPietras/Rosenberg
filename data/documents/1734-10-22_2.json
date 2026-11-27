@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5B397186-D031-4F6C-8F3E-917BE08059F0&parent_id="
       ],
       "german": "Friedrich Karl [von Schönborn], Bischof zu Bamberg und Würzburg, verleiht den Gebrüdern Johann Philipp, Domherr in Bamberg und Würzburg, Adalbert Friedrich und Karl Christoph von Rosenbach, Söhne des verstorbenen bischöflichen Rates und Amtmanns zu Grünsfeld Anton Philibert von Rosenbach, vier Morgen Weinberg am Stein in Würzburg zu Mannlehen.\nSiegler: Der Bischof mit seinem Sekretsiegel.\n\nVermerke: Inhaltsangabe (18. Jh.)",
-      "english": "Friedrich Karl [von Schönborn], Bischof zu Bamberg und Würzburg, grants the brothers Johann Philipp, Domherr in Bamberg and Würzburg; Adalbert Friedrich; and Karl Christoph von Rosenberg, sons of the late bischöflicher Rat und Amtmann zu Grünsfeld Anton Philibert von Rosenbach, four acres of vineyard at Stein in Würzburg as a male fief.\nSealed by: the bishop, with his secret seal.\n\nAnnotations: abstract (18th century).",
-      "mention": [
-        {
-          "place": "grunsfeld"
-        },
-        {
-          "person": "Karl Christoph von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Steyn in Würzburg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Friedrich Karl [von Schönborn], Bischof zu Bamberg und Würzburg, grants the brothers Johann Philipp, Domherr in Bamberg and Würzburg; Adalbert Friedrich; and Karl Christoph von Rosenberg, sons of the late bischöflicher Rat und Amtmann zu Grünsfeld Anton Philibert von Rosenbach, four acres of vineyard at Stein in Würzburg as a male fief.\nSealed by: the bishop, with his secret seal.\n\nAnnotations: abstract (18th century)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "grunsfeld"
+    },
+    {
+      "person": "Karl Christoph von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Steyn in Würzburg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

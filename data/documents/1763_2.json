@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++510A5CB8-B92A-40AD-A11C-5BD14AEFDDAB&parent_id="
       ],
       "german": "Rosenberg\nBeeinträchtigung der Pfarrlehengefälle in Rosenberg (Kr. Buchen)\n\nEnthält-/Darin-Vermerke: Darin: Immissionsdekret des Fürsten Carl von Löwenstein - Wertheim zur Verteilung der Kirchen-, Pfarr- und Schuleinkünfte von 1763",
-      "english": "Rosenberg\n\nImpairment of the income from the parish benefices in Rosenberg (Buchen district).\n\nContains/Enclosures: Enclosed: decree of execution by Prince Carl von Löwenstein-Wertheim for the distribution of church, parish, and school revenues from 1763.",
-      "mention": [
-        {
-          "place": "buchen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ]
+      "english": "Rosenberg\n\nImpairment of the income from the parish benefices in Rosenberg (Buchen district).\n\nContains/Enclosures: Enclosed: decree of execution by Prince Carl von Löwenstein-Wertheim for the distribution of church, parish, and school revenues from 1763."
+    }
+  ],
+  "mention": [
+    {
+      "place": "buchen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

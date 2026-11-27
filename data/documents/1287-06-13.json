@@ -10,24 +10,6 @@
       ],
       "german": "Graf Rudolf (I.) von Wertheim bürgt gemeinsam mit den Rittern Konrad von Uissigheim und Arnold genannt Bleiche gegenüber Dekan und Kapitel von Aschaffenburg dafür, dass die Erben seines verstorbenen Bruders Boppo (IV.) für den dem Stift verkauften Hof zu Mönchberg Gewährschaft leisten.",
       "english": "Rudolf I von Wertheim, Graf, together with Konrad von Uissigheim, Ritter, and Arnold genannt Bleiche, Ritter, guarantees to the dean and chapter of Aschaffenburg that the heirs of his late brother Boppo IV will warrant the farm at Mönchberg that was sold to the abbey.",
-      "mention": [
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "served as guarantor to the dean and chapter of Aschaffenburg for the warranty by Boppo IV’s heirs of the farm at Mönchberg."
-        }
-      ],
       "img": [
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00001/full/max/0/default.jpg"
@@ -36,6 +18,24 @@
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bav80035260_00002/full/max/0/default.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Uissigheim",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "served as guarantor to the dean and chapter of Aschaffenburg for the warranty by Boppo IV’s heirs of the farm at Mönchberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf"
       ]
     }
   ]

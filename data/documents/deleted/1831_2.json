@@ -5,24 +5,24 @@
       "source": "Generallandesarchiv Karlsruhe 233 Nr. 19897",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3302158",
       "german": "Die Bitte des Müllers Mathes Graser von Rosenberg um die Befreiung von einem Mühlenzins von jährlich 8 fl.\n\nLaufzeit: 1831\n\nUmfang: 1 Faszikel",
-      "facts": [
-        {
-          "person": "Mathes Graser",
-          "type": "generic",
-          "content": "was a miller from Rosenberg."
-        },
-        {
-          "person": "Mathes Graser",
-          "type": "generic",
-          "content": "requested exemption from a mill rent."
-        }
-      ],
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "english": "The request by the miller Mathes Graser of Rosenberg for exemption from an annual mill rent of 8 florins.\n\nDate range: 1831\n\nExtent: 1 file"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Mathes Graser",
+      "type": "generic",
+      "content": "was a miller from Rosenberg."
+    },
+    {
+      "person": "Mathes Graser",
+      "type": "generic",
+      "content": "requested exemption from a mill rent."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

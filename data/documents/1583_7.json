@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++bab2c08b-d00a-4d2e-b349-ad8327dc1caf&parent_id="
       ],
       "german": "Heimfall des lehenbaren Guts Rosenberg und Übergabe an Pfalzgraf Ottheinrich von Pfalz-Sulzbach-Hilpoltstein",
-      "english": "Reversion of the enfeoffed Rosenberg estate and transfer to Count Palatine Ottheinrich of Palatinate-Sulzbach-Hilpoltstein",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Reversion of the enfeoffed Rosenberg estate and transfer to Count Palatine Ottheinrich of Palatinate-Sulzbach-Hilpoltstein"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

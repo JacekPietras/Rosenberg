@@ -6,39 +6,39 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 21 Qu. 45",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755648",
       "german": "Urteil des Hofgerichts Würzburg zwischen HDM Heinrich [von Bobenhausen] einerseits und Philipp Jakob von Rosenberg [zu Gnötzheim], Konrad d.Ä. von Rosenberg zu Waldmannshofen und Konrad d.J. von Rosenberg zu Haltenbergstetten andererseits wegen der 1530 durch Katharina, Witwe des Christoph Schenckel, Bürger zu Mgh, für das Spital erkauften Gült zu Bobstadt, 1583 Dez. 24 [Regest].",
-      "english": "Judgment of the Würzburg court between Grand Master Heinrich [von Bobenhausen] on one side and Philipp Jakob von Rosenberg [of Gnötzheim], Konrad der Ältere von Rosenberg of Waldmannshofen, and Konrad der Jüngere von Rosenberg of Haltenbergstetten on the other, concerning the rent at Bobstadt purchased for the hospital in 1530 by Katharina, widow of Christoph Schenckel, burgher of Mergentheim, 24 December 1583 [abstract].",
-      "mention": [
-        {
-          "place": "bobstadt"
-        },
-        {
-          "place": "gnoetzheim"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Judgment of the Würzburg court between Grand Master Heinrich [von Bobenhausen] on one side and Philipp Jakob von Rosenberg [of Gnötzheim], Konrad der Ältere von Rosenberg of Waldmannshofen, and Konrad der Jüngere von Rosenberg of Haltenbergstetten on the other, concerning the rent at Bobstadt purchased for the hospital in 1530 by Katharina, widow of Christoph Schenckel, burgher of Mergentheim, 24 December 1583 [abstract]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bobstadt"
+    },
+    {
+      "place": "gnoetzheim"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere"
       ]
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Philipp Jakob von Rosenberg"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ae0865ee-386b-4713-98ab-5f0c86fb7cb8&parent_id="
       ],
       "german": "\"Rotenburg. Supplication und Weisungs-Articul ihres und des Spitals erlittenen Schadens, contra Zeisolph von Rosenberg.\"",
-      "english": "“Rothenburg. Petition and articles of instruction concerning the damage suffered by them and the hospital, against Zaisolph von Rosenberg.”",
-      "mention": [
-        {
-          "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
-      ]
+      "english": "“Rothenburg. Petition and articles of instruction concerning the damage suffered by them and the hospital, against Zaisolph von Rosenberg.”"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

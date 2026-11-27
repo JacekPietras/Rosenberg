@@ -7,21 +7,21 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-223106",
       "german": "Johann Graf zu Wertheim vereinbart mit Frau Margarethe Zoblin, Witwe des Jörg von Rosenberg, wegen der Streitigkeiten über die 600 Gulden, die deren Sohn Jörg von Rosenberg ihm schuldig ist, einen Waffenstillstand bis Ostern.\n\nLaufzeit: 1465 Oktober 17 (Donnerstag nach Galli)",
       "english": "Johann zu Wertheim, Graf zu Wertheim, agrees with Frau Margarethe Zoblin, widow of Georg von Rosenberg, to a truce until Easter concerning the dispute over the 600 gulden owed to him by her son Georg von Rosenberg.\n\nDate: 1465 October 17 (Thursday after St. Gall’s Day)",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3623&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003623%2Ftitlaufn_0000223106%2F07_0000223106_0001_7-223106-1.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

@@ -7,17 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3544132",
       "german": "Michelstadt: Schenk Dietrich Herr v. Erbach, Domherr zu Mainz, verschreibt fl. 15.- Gült gegen ein Darlehen von 220 fl. dem Altar St. Barbara zu Michelstadt. Unterpfand: seines Vetters Schenk Eberhards Anteil an dem Dorfe Sentzelspach. Bürgen: sein Schwager Schenk Casimir Herr zu Erbach und Peter v. Rosenbach\n\n(Vor-) Provenienzen: Mainz, Erzstift",
       "english": "Michelstadt: Schenk Dietrich, Herr von Erbach, Domherr zu Mainz, grants an annual payment of 15 florins to the altar of St Barbara at Michelstadt in return for a loan of 220 florins. Security: his cousin Schenk Eberhard’s share in the village of Sentzelspach. Sureties: his brother-in-law Schenk Casimir, Herr von Erbach, and Peter von Rosenberg.\n\n(Previous) provenance: Mainz, Archbishopric.",
-      "mention": [
-        {
-          "place": "erbach"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/150--3/hstad_a_1_nr_150--3_0001.jpg"
@@ -29,6 +18,17 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/150--3/hstad_a_1_nr_150--3_0003.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "erbach"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234376",
       "german": "Heinrich von Uissigheim (Vssinkein) gen. von Rinnec und Alheit, seine eheliche Wirtin, bekennen, dass sie von Zinsmeister und Gotteshaus zu Uissigheim (Vssinken) 15 Pfund Heller, rückzahlbar an Petri Cathedra 1339, gegen einen auf Martinstag fälligen Zins von 30 Schillingen geliehen und dafür der Frühmesse zu Uissigheim 2 Morgen Wiese verpfändet haben.\n\nLaufzeit: 1337 Juli 26 (\"Der brif wart gebin do man zalte von Cristehz geborte druzehen hundert jar in)\n\nSiegelbeschreibung: 2 Siegel an Pergamentstreifen, stark verletzt\n\nVermerke: Auf der Rückseite: \"Üssigheim Obligation über 15 Pfund Heller, so Heinrich von Üssigheim von der frühmehs allda genommen mit einsatz 2 morgen wiesen, anno 1337\"\n\nSiegler: Heinrich von Uissigheim, Aussteller; Erkinger von Uissigheim, Bürge",
       "english": "Heinrich von Uissigheim, called von Rinnec, and Alheit, his lawful wife, acknowledge that they have borrowed 15 pounds of Heller from the rent collector and church of Uissigheim, repayable at the Feast of Saint Peter’s Chair in 1339, against an interest payment of 30 shillings due on Martinmas. As security they have pledged two acres of meadow to the early Mass at Uissigheim.\n\nTerm: 26 July 1337 (“The deed was given when 1337 years had passed since the birth of Christ …” [date formula incomplete].)\n\nSeal description: Two seals on parchment strips, badly damaged.\n\nNotes: On the reverse: “Uissigheim. Bond for 15 pounds of Heller which Heinrich of Uissigheim borrowed from the early Mass there, pledging two acres of meadow, in the year 1337.”\n\nSealers: Heinrich von Uissigheim, issuer; Erkinger von Uissigheim, guarantor.",
-      "mention": [
-        {
-          "person": "Erkinger von Uissigheim"
-        },
-        {
-          "person": "Heinrich of Uissigheim"
-        },
-        {
-          "person": "Heinrich von Uissigheim"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234376%2F07_0000234376_0001_7-234376-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234376%2F07_0000234376_0002_7-234376-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erkinger von Uissigheim"
+    },
+    {
+      "person": "Heinrich of Uissigheim"
+    },
+    {
+      "person": "Heinrich von Uissigheim"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

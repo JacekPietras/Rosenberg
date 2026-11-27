@@ -7,17 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5396878",
       "german": "Revers Johann Dietrichs von Rosenbach und weiterer namentlich genannter Personen bezüglich der Belehnung mit einem Steinhaus in Berstadt und weiteren im Einzelnen aufgeführten Lehen durch Joachim [von Gravenegg], Abt von Fulda\n\nJohann Dietrich, Johann Konrad, Franz Rudolf und Franz Christoph von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Joachim [von Gravenegg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Johann Dietrich von Rosenbach\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Reversal by Hans Dietrich von Rosenberg and other named persons concerning their enfeoffment with a stone house in Berstadt and other specified fiefs by Joachim [von Gravenegg], Abbot of Fulda\n\nJohann Dietrich, Johann Konrad, Franz Rudolf, and Franz Christoph von Rosenberg confirm their enfeoffment with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share in the rent at Langsdorf (?) (Langendorff) [part of the municipality of Lich, Giessen district], by Joachim [von Gravenegg], Abbot of Fulda. The fief charter is inserted. Seal announcement.\n\nFormal description: engrossed copy, parchment, pendant seal in a wooden capsule\n\nSealer: Hans Dietrich von Rosenberg\n\nAdditional information: The reversal has no date of its own, but refers to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3336/00001.jpg"
@@ -26,6 +15,17 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3336/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
     }
   ]
 }

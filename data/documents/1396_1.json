@@ -7,50 +7,33 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 3 Qu. 15",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-753612",
       "german": "Bitte König Ruprechts an Papst Bonifaz IX. um die Ernennung des Johann von Egloffstein zum Bischof von Würzburg, 1401 Jan. 30; [Regest]; Verleihung des Schlosses Boxberg an Konz [V.] von Rosenberg, Ritter, durch König Ruprecht, 1401 [Regest];\n\nLaufzeit: 1396-1416",
-      "english": "Request by King Ruprecht to Pope Boniface IX for the appointment of Johann von Egloffstein as Bishop of Würzburg, 30 January 1401 [regest]; grant of Boxberg Castle to Konz [V.] von Rosenberg, Ritter, by King Ruprecht, 1401 [regest].",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Request by King Ruprecht to Pope Boniface IX for the appointment of Johann von Egloffstein as Bishop of Würzburg, 30 January 1401 [regest]; grant of Boxberg Castle to Konz [V.] von Rosenberg, Ritter, by King Ruprecht, 1401 [regest]."
     },
     {
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 19 Qu. 60",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755363",
       "german": "Aufenthalt des Königs Ruprecht zu Mgh, 1401 Jan.; Verleihung des Schlosses Boxberg an Konz [V.] von Rosenberg, [Ritter,] durch König Ruprecht, 1401 [Jan.; Regest].\n\nLaufzeit: 1207-1818",
-      "english": "King Ruprecht’s stay at Mgh, January 1401; grant of Boxberg Castle to Konz [V.] von Rosenberg, [Ritter,] by King Ruprecht, January 1401 [regest].",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
+      "english": "King Ruprecht’s stay at Mgh, January 1401; grant of Boxberg Castle to Konz [V.] von Rosenberg, [Ritter,] by King Ruprecht, January 1401 [regest]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

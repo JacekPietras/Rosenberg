@@ -10,14 +10,6 @@
       ],
       "german": "Peter Süppel jun., Bürger zu Nürnberg, schwört bei seiner Entlassung aus dem Gefängnis Urfehde und stellt als Bürgen seinen Vetter Peter Süppel sen. und seinen Bruder Fritz Süppel. - Mitsiegler: Hans von Rosemberg, Schenck von Leutershausen.\n\nBesiegelung/Beglaubigung: mit 3 anh. Siegeln",
       "english": "Peter Süppel the younger, a citizen of Nürnberg, swears an oath of allegiance upon his release from prison and provides as sureties his cousin Peter Süppel the elder and his brother Fritz Süppel. Co-sealers: Hans von Rosenberg, Schenck von Leutershausen.\n\nSealing/authentication: with three attached seals.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3927cb80-09a7-4b1d-9944-6e3dcd4bfa00/1/full/max/0/default.jpg"
@@ -26,6 +18,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/3927cb80-09a7-4b1d-9944-6e3dcd4bfa00/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

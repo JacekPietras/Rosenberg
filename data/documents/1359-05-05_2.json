@@ -7,21 +7,21 @@
       "source": "[RIplus] Regg. Karl IV. n. 4426",
       "url": "https://www.regesta-imperii.de/id/de2d090c-fcb3-4ad9-ab9d-30fc8617750d",
       "german": "Karl IV. bestätigt dem Kloster Ellwangen die inserierte Urkunde Kaiser Heinrichs II. von 1024 II 5 betreffend die Übertragung des Wildbannes im Wald Virgunda.\n\nZeugen: Ernst, Erzbischof von Prag; Johann, Bischof von Olmütz; Johann, Bischof von Leitomischl, Kanzler; Dietrich, Bischof von Minden; Maurus, Bischof von Corbavien; Johann, Markgraf von Mähren; Rudolf, Herzog von Österreich, Steiermark und Kärnten; Friedrich, Herzog Österreich, Steiermark und Kärnten; Wenzel, Herzog von Sachsen; Bolko, Herzog von Falkenberg; Johann, Herzog von Troppau; Friedrich, Burggraf zu Nürnberg; Burkhard, Burggraf zu Magdeburg, Hofmeister; Burkhard (Burglinus), Burggraf zu Magdeburg, Johann, Burggraf zu Magdeburg; Ulrich, Graf von Helfenstein; Friedrich, Herzog von Teck; Wilhelm von Rechberg; Johann von Rosenberg; Jodok von Rosenberg; Andreas von Duba; Sbinco von Hasenburg; Busco von Wilhartitz",
-      "english": "Charles IV confirms to Ellwangen Abbey the inserted charter of Emperor Heinrich II dated 5 February 1024, concerning the grant of the forest ban in the Virgunda Forest.\n\nWitnesses: Ernst, Archbishop of Prague; Johann, Bishop of Olomouc; Johann, Bishop of Leitomischl, chancellor; Dietrich, Bishop of Minden; Maurus, Bishop of Corbavia; Johann, Margrave of Moravia; Rudolf, Duke of Austria, Styria, and Carinthia; Friedrich, Duke of Austria, Styria, and Carinthia; Wenzel, Duke of Saxony; Bolko, Duke of Falkenberg; Johann, Duke of Troppau; Friedrich, Burgrave of Nuremberg; Burkhard, Burgrave of Magdeburg and court steward; Burkhard (Burglinus), Burgrave of Magdeburg; Johann, Burgrave of Magdeburg; Ulrich, Count of Helfenstein; Friedrich, Duke of Teck; Wilhelm von Rechberg; Hans von Rosenberg; Jodok von Rosenberg; Andreas von Duba; Sbinco von Hasenburg; Busco von Wilhartitz.",
-      "mention": [
-        {
-          "person": "Friedrich",
-          "personTitle": [
-            "Burggraf zu Nürnberg"
-          ]
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Charles IV confirms to Ellwangen Abbey the inserted charter of Emperor Heinrich II dated 5 February 1024, concerning the grant of the forest ban in the Virgunda Forest.\n\nWitnesses: Ernst, Archbishop of Prague; Johann, Bishop of Olomouc; Johann, Bishop of Leitomischl, chancellor; Dietrich, Bishop of Minden; Maurus, Bishop of Corbavia; Johann, Margrave of Moravia; Rudolf, Duke of Austria, Styria, and Carinthia; Friedrich, Duke of Austria, Styria, and Carinthia; Wenzel, Duke of Saxony; Bolko, Duke of Falkenberg; Johann, Duke of Troppau; Friedrich, Burgrave of Nuremberg; Burkhard, Burgrave of Magdeburg and court steward; Burkhard (Burglinus), Burgrave of Magdeburg; Johann, Burgrave of Magdeburg; Ulrich, Count of Helfenstein; Friedrich, Duke of Teck; Wilhelm von Rechberg; Hans von Rosenberg; Jodok von Rosenberg; Andreas von Duba; Sbinco von Hasenburg; Busco von Wilhartitz."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich",
+      "personTitle": [
+        "Burggraf zu Nürnberg"
       ]
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

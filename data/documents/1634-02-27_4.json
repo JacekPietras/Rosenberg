@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3335/charter",
       "german": "Johann Dietrich, [Johann Konrad] und Weiprecht von Rosenbach und die Nachkommen des verstorbenen Dietrich (Dietz) Melchior von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Wilhelm [V.], Landgraf von Hessen [Hessen-Kassel]. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: M. Sebastian Brenner (Prennern)\n\nSiegel: anhängendes Siegel in Holzkapsel M. Sebastian Brenner (Prennern)",
       "english": "Johann Dietrich, [Johann Konrad] and Wiprecht von Rosenberg, and the descendants of the late Dietrich (Dietz) Melchior von Rosenberg, confirm their enfeoffment by Wilhelm [V], Landgrave of Hesse [Hesse-Kassel], with a stone house, two farms and three hides of land in Berstadt (Berstatt) [district of Wölfersheim, Wetterau district], as well as their share of the rent in Langsdorf (?) (Langendorff) [district of Lich, Gießen district]. The grant of fief is inserted. Seals are announced.\n\nSealer: M. Sebastian Brenner (Prennern).\n\nSeal: pendant seal in a wooden case, M. Sebastian Brenner (Prennern).",
-      "mention": [
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "person": "Melchior von Rosenberg"
-        },
-        {
-          "person": "Wiprecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203335%20Vorderseite%20%281634%20Februar%2027%29.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203335%20Rueckseite%20%281634%20Februar%2027%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "person": "Melchior von Rosenberg"
+    },
+    {
+      "person": "Wiprecht von Rosenberg"
     }
   ]
 }

@@ -8,14 +8,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-17_St/charter",
       "german": "Ernst von Gottes gnaden\nherzog zu Osterreich\nGetrewer lieber. Vnser lieber getrewer Heinrich [?] von\nFlednitz vnser hauptman in Steyer. hat vns gesagt\nwie jhme der Edel vnser lieber getrewer der von Cilli\nder elter habe geschriben. daz vnser Swager der Kunig\nden satz den derselbe von Cilli zwischen sein vnd vns\nvnd vnser baider landen gemacht etc. abgesagt habe\ndaz der an erichtag nach Reminiscere schierst kunfftig\nausgee. vnd welle mit vns selbst komben setz [?]\nhalten. daz wir doch vmb jhne nie haben verschuldt\ndaz wir vns aber mit gotes hilf wellen wider-\nhalten. vnd empfelhen dir. vnd begern ernstlich. daz du\ndich darnach richtest. so du best mugst. wenn wir oder vnser\nbenanter [?] hauptman dir enbieten. daz du zu vns\nziehest zu ross vnd zu fuss. so du sterkest mügest.\nvnd vns. vnser lannd vnd leut helffest zu erretten. als\ndu vns daz schuldig bist. daz wellen wir gegen dir er-\nkennen. Geben zu der Newnstat am Suntag\nInuocauit in der vasten anno domini duo decimo\nVnsern getrewn lieben\nChristoph der [?] Rosenberg\nAbschrifft desselben von herzog\nErnst auß osterreich an Chri-\nstoph Rosenberger de [?]\n[?] × 1412",
       "english": "Ernst, by the grace of God, Herzog of Austria. Dear loyal one, our dear loyal Heinrich [?] von Flednitz, our Hauptmann in Styria, has told us that the noble Cilli the Elder, our dear loyal one, wrote to him that our brother-in-law the King has renounced the Satz that the same Cilli made between him and us and both our lands, so that it expires on the Tuesday after Reminiscere next coming, and wants to come himself [?] and hold [?], although we have never given him cause for it, which we will resist with God's help. And we commend to you and earnestly request that you act accordingly: as best you can, when we or our aforementioned [?] Hauptmann summon you, that you come to us on horse and on foot, as strongly as you can, and help us save our land and people, as you are obliged to us. We will acknowledge this towards you. Given at Wiener Neustadt on the Sunday Invocavit in Lent, in the year [of the Lord] 1412. [Address:] To our dear loyal Christoph [?] Rosenberg. [Later hand, dorsum:] Copy of the same from Duke Ernst of Austria to Christoph Rosenberger [?].",
-      "mention": [
-        {
-          "person": "Christoph Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_17_14120221_01.JPG",
@@ -49,13 +41,6 @@
       "summary": "Herzog Ernst von Österreich fordert Christoph von Rosenberg auf den Bericht Friedrichs von Flädnitz, seines Hauptmanns in Steiermark, zur Heerfolge auf. Siegler: Aussteller\n\nSiegel: 1 Sig. imp. beschädigt",
       "german": "Ernst von gotes gnaden\nHerczog ze Osterreich etc.\n[…] in Steyer [?] […]\nvns gesagt wie Jm der edel vns lieber getrewer der von Cili derselb hab geschriben\ndas vns [?]mag der kunig den Satz den derselb von Cili zwischen sein vnd vns vnd\nvnser baider lannd gemacht hett abgesagt hab das der an Eritag nach Reminiscere\nder schierst kunftig ausgee vnd welle mit vns selb kumen dar halten [?] das wir\ndoch vmb Jn nye haben verschuldet des wir vns aber mit gotes hilff wellen\nwiderhalten vnd empfelhen dir vnd begern ernstleich das du dich darnach richtest\nSo du best mugest wenn wir oder vnser egent haubtman [?] dir enbieten das du zu vns\nziechest zu rosse vnd ze fusse So du sterkest ymmer [?] mugest vnd vns vnser lannd vnd\nleut helffest zeretten als du vns des schuldig bist Das wellen wir gen dir\nerkennen Geben ze der Newnstat am Suntag Inuocauit in der vasten\nAnno domini etc. duodecimo\nVnserm getrewen Kristoff dem Rosemberger",
       "english": "Ernst, by the grace of God Duke of Austria etc. […] told us how the noble Cilli, our dear loyal one, himself wrote to him [?] that the king has renounced the Satz that the same Cilli had made between him and us and both our lands, so that it expires on the Tuesday after Reminiscere next coming, and wants to come [against us?] himself, [?] although we have never given him cause for it, which we will resist with God's help. And we commend to you and earnestly request that you act accordingly: as best you can, when we or our aforementioned captain [?] summon you, that you come to us on horse and on foot, as strongly as you ever can [?], and help us save our land and people, as you are obliged to us. We will acknowledge this towards you. Given at Wiener Neustadt on the Sunday Invocavit in Lent, in the year of the Lord etc. 1412. [Address:] To our loyal Kristoff the Rosemberger.",
-      "facts": [
-        {
-          "person": "Christoph von Rosenberg",
-          "type": "generic",
-          "content": "was requested by Herzog Ernst von Österreich to come to him on horse and on foot and help save his land and people."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_17_14120221_r.JPG",
@@ -82,6 +67,21 @@
           ]
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Christoph von Rosenberg",
+      "type": "generic",
+      "content": "was requested by Herzog Ernst von Österreich to come to him on horse and on foot and help save his land and people."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -13,11 +13,6 @@
       ],
       "german": "Eglolf von Rosenberg quittiert Abt Georg von St. Gallen für 100 Pfund Leibding, die bis zum 6. Januar aufgelaufen sind.\n\nSiegel: Siegel Abb. 301.",
       "english": "Egilolf von Rosenberg acknowledges receipt from Abbot Georg of St. Gallen for 100 pounds of life-rent (Leibding) that had accrued by January 6.\n\nSeal: Seal Fig. 301.",
-      "mention": [
-        {
-          "person": "Egilolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13700110_FF5-F3_r.jpg"
@@ -32,6 +27,11 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG1jpgweb._%7EStiASG_13700110_FF5-F3_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Egilolf von Rosenberg"
     }
   ]
 }

@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DAEEED03-5E90-4178-98BF-D2C3FD4326F7&parent_id="
       ],
       "german": "Schreiben von Dechant und Kapitel des Stifts Neumünster an den Würzburger Bischof Friedrich von Wirsberg wegen eines Streits mit Zaysolph von Rosenberg über die Kollatur der Pfarrei zu Haltenbergstetten",
-      "english": "Letter from the dean and chapter of Neumünster to Bishop Friedrich von Wirsberg concerning a dispute with Zaysolph von Rosenberg over collation to the parish at Haltenbergstetten.",
-      "mention": [
-        {
-          "person": "Friedrich von Wirsberg",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
+      "english": "Letter from the dean and chapter of Neumünster to Bishop Friedrich von Wirsberg concerning a dispute with Zaysolph von Rosenberg over collation to the parish at Haltenbergstetten."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Wirsberg",
+      "personTitle": [
+        "Bischof"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

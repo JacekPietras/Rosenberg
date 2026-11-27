@@ -10,44 +10,6 @@
       ],
       "german": "Schreiben Graf Albrecht von Hohenlohe an Heinrich Zobel, Wilhelm von Tottenheim, Eberhard von Venningen, Wilhelm Stützel, Fritz Zobel, Jörg und Arnolt von Rosenberg, alle Ganerben zu Schüpf.",
       "english": "Letter from Albrecht von Hohenlohe, Graf to Heinrich Zobel, Wilhelm von Dottenheim, Eberhard von Venningen, Wilhelm Stützel, Fritz Zobel, Georg von Rosenberg and Arnold von Rosenberg, all co-heirs at Schüpf.",
-      "mention": [
-        {
-          "person": "Friedrich Zobel"
-        },
-        {
-          "person": "Heinrich Zobel"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ganerbe zu Schüpf"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ganerbe zu Schüpf"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Albrecht von Hohenlohe",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "generic",
-          "content": "wrote to Georg and Arnold von Rosenberg and the other co-heirs at Schüpf."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189963%2F03_0000189963_0001_3-189963-1.jpg"
@@ -56,6 +18,44 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189963%2F03_0000189963_0002_3-189963-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Ganerbe zu Schüpf"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Ganerbe zu Schüpf"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Albrecht von Hohenlohe",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "generic",
+      "content": "wrote to Georg and Arnold von Rosenberg and the other co-heirs at Schüpf."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich Zobel"
+    },
+    {
+      "person": "Heinrich Zobel"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "person": "Wilhelm von Dottenheim"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3357/charter",
       "german": "Lothar Gottfried, Johann Philipp und Adalbert Friedrich von Rosenbach sowie weitere namentlich genannte Personen bestätigen die Belehnung mit Schackau (Schacka) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Konstantin [von Buttlar], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Wolf Daniel Freiherr von Boyneburg (Boineburg)\n\nSiegel: anhängendes Siegel in Holzkapsel Wolf Daniel Freiherr von Boyneburg (Boineburg)",
       "english": "Lothar Gottfried, Johann Philipp, and Adalbert Friedrich von Rosenberg, along with other persons named individually, confirm their enfeoffment by Konstantin [von Buttlar], Abbot of Fulda, with Schackau (Schacka), including all its appurtenances in woodland and fields and an estate there, with Kleinsassen (Sassen), Gerharts [all places in the municipality of Hofbieber, Fulda district], and other individually listed fiefs. The enfeoffment charter is inserted. Seals are announced.\n\nSeal-bearer: Wolf Daniel Baron von Boyneburg (Boineburg).\n\nSeal: pendant seal in a wooden case, Wolf Daniel Baron von Boyneburg (Boineburg).",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203357%20Vorderseite%20%281720%20September%2002%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203357%20Rueckseite%20%281720%20September%2002%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

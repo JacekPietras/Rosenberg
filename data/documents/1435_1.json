@@ -10,48 +10,6 @@
       ],
       "german": "Bischof Johann von Würzburg bekennt, daß er mit Hans Voit von Salzberg, Eberhard von Schaumburg, Friedrich Wolfskehl, Michel von Schaumburg, Götz von Berlichingen, Sickinger von Saunsheim, Conz von Rosenberg zu Bartenstein, Hans Fuchs, Hans von Heßburg, Carl von Eberstein, Sigelhardt von Münster, Wilhelm Marschall und Jörg von Adelsheim einen Entscheid in Kitzingen in der Streitsache Hohenlohe-Wertheim gehabt hat. Siegel: Bischof Johann von Würzburg. Laufzeit 1435.",
       "english": "Hans zu Würzburg, Bischof states that he and Hans Voit von Salzberg, Eberhard von Schaumburg, Friedrich Wolfskehl, Michel von Schaumburg, Götz von Berlichingen, Sickinger von Saunsheim, Kunz von Rosenberg zu Bartenstein, Hans Fuchs, Hans von Heßburg, Carl von Eberstein, Sigelhardt von Münster, Wilhelm Marschall, and Georg von Adelsheim reached a decision at Kitzingen in the dispute between Hohenlohe and Wertheim. Sealed by Hans zu Würzburg, Bischof. Dated 1435.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich Wolffskeel"
-        },
-        {
-          "person": "Georg von Adelsheim"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        },
-        {
-          "person": "Hans Voit"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "seinsheim"
-        },
-        {
-          "place": "sickingen"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "joined Hans zu Würzburg, Bischof and the other named participants in reaching a decision at Kitzingen in the Hohenlohe–Wertheim dispute."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192964%2F03_0000192964_0001_3-192964-1.jpg"
@@ -69,51 +27,6 @@
       ],
       "german": "Markwart von Milen, Domherr zu Würzburg und Landrichter zu Franken, bestätigt den nachstehenden Entscheid. Bischof Johann von Würzburg bekennt, daß er mit Hans Voit von Salzberg, Eberhard von Schaumburg, Friedrich Wolfskehl, Michel von Schaumburg, Götz von Berlichingen, Sickinger von Saunsheim, Conz von Rosenberg zu Bartenstein, Hans Fuchs, Hans von Heßburg, Carl von Eberstein, Sigelhardt von Münster, Wilhelm Marschall und Jörg von Adelsheim einen Entscheid in Kitzingen in der Streitsache Hohenlohe-Wertheim gehabt hat. Siegel: Landrichter und Bischof. Laufzeit 1435.",
       "english": "Markwart von Milen, canon of Würzburg and regional judge in Franconia, confirms the following decision. Hans zu Würzburg, Bischof states that he and Hans Voit von Salzberg, Eberhard von Schaumburg, Friedrich Wolfskehl, Michel von Schaumburg, Götz von Berlichingen, Sickinger von Saunsheim, Kunz von Rosenberg zu Bartenstein, Hans Fuchs, Hans von Heßburg, Carl von Eberstein, Sigelhardt von Münster, Wilhelm Marschall, and Georg von Adelsheim reached a decision at Kitzingen in the dispute between Hohenlohe and Wertheim. Sealed by the regional judge and the bishop. Dated 1435.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich Wolffskeel"
-        },
-        {
-          "person": "Georg von Adelsheim"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        },
-        {
-          "person": "Hans Voit"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "seinsheim"
-        },
-        {
-          "place": "sickingen"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "joined Hans zu Würzburg, Bischof and the other named participants in reaching a decision at Kitzingen in the Hohenlohe–Wertheim dispute."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000192965%2F03_0000192965_0001_3-192965-1.jpg"
@@ -123,6 +36,51 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ],
+      "type": "generic",
+      "content": "joined Hans zu Würzburg, Bischof and the other named participants in reaching a decision at Kitzingen in the Hohenlohe–Wertheim dispute."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Friedrich Wolffskeel"
+    },
+    {
+      "person": "Georg von Adelsheim"
+    },
+    {
+      "person": "Götz von Berlichingen"
+    },
+    {
+      "person": "Hans Voit"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "place": "seinsheim"
+    },
+    {
+      "place": "sickingen"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

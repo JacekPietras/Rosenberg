@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++39747f3a-b83d-4994-9ecf-56cd0bed5d99&parent_id="
       ],
       "german": "Rothenburg an Zeisolf von Rosenberg: Aufforderung, die angeblichen Schädiger genau anzugeben.",
-      "english": "Rothenburg to Zaisolph von Rosenberg: request to specify the alleged perpetrators precisely.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was asked by Rothenburg to identify the alleged perpetrators of damage more precisely."
-        }
-      ]
+      "english": "Rothenburg to Zaisolph von Rosenberg: request to specify the alleged perpetrators precisely."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was asked by Rothenburg to identify the alleged perpetrators of damage more precisely."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

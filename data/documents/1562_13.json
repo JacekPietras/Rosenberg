@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C542B278-A711-415B-92A2-44B6F4E98B0B&parent_id="
       ],
       "german": "Klage des Schultheißendes Grafen Ludwig Casimir von Hohenlohe-Langenburg zu Ebertsbronn gegen Zaisolf von Rosenberg zu Haltenbergstetten wegen der willkürlichen Verhaftung eines Dreizehnjährigen",
-      "english": "Complaint by the schultheiß of Count Ludwig Casimir von Hohenlohe-Langenburg against Zaisolph von Rosenberg concerning the arbitrary arrest of a thirteen-year-old.",
-      "mention": [
-        {
-          "person": "Ludwig Casimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Complaint by the schultheiß of Count Ludwig Casimir von Hohenlohe-Langenburg against Zaisolph von Rosenberg concerning the arbitrary arrest of a thirteen-year-old."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ludwig Casimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

@@ -10,31 +10,6 @@
       ],
       "german": "Konrad von Rosenberg reversiert gegenüber Kurfürst Friedrich I. von der Pfalz über das Viertel an Burg und Vorhof zu Rosenberg, das Eberhard der Ältere von Rosenberg zuvor von Pfalz als Mannlehen getragen hat. Nach dem Tode Kurfürst Friedrichs sollen die Lehen von dessen Sohn Philipp und ihren kurfürstlichen Erben empfangen werden.\n\nLaufzeit: 1472 Februar 10 (uff mondag nach dem sondag esto michi)\n\nSiegelbeschreibung: anhängend, leicht beschädigt\n\nSiegler: Konrad von Rosenberg",
       "english": "Konrad von Rosenberg issues a Revers to Elector Friedrich I of the Palatinate concerning the quarter of the castle and outer bailey at Rosenberg that Eberhard von Rosenberg der Ältere had previously held from the Palatinate as a Mannlehen. After Elector Friedrich’s death, the fiefs are to be received from his son Philipp and their electoral heirs.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "issued a Revers to Elector Friedrich I concerning the quarter of Rosenberg Castle and its outer bailey."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "had previously held the quarter of Rosenberg Castle and its outer bailey as a Mannlehen from the Palatinate."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "was to receive the fiefs from Elector Friedrich’s son Philipp and the electoral heirs after Friedrich’s death."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001255%2Ftitlaufn_0005379528%2F04_0005379528_0001_4-5379528-1.jpg",
@@ -57,6 +32,31 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001255%2Ftitlaufn_0005379528%2F04_0005379528_0003_4-5379528-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "issued a Revers to Elector Friedrich I concerning the quarter of Rosenberg Castle and its outer bailey."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "had previously held the quarter of Rosenberg Castle and its outer bailey as a Mannlehen from the Palatinate."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "was to receive the fiefs from Elector Friedrich’s son Philipp and the electoral heirs after Friedrich’s death."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

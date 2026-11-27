@@ -10,29 +10,6 @@
       ],
       "german": "Der Würzburger Bischof Johann Hartmann [von Rosenbach] verleiht dem Sohn des Sebastian von Steinau genannt Steinrück Johann Rudolf von Steinau genannt Steinrück die folgenden Güter zu Mannlehen:\n- Ein Burggut in der Burg zu Kissingen.\n- Einen Hof vor der Burg.\n- Einen Weinberg bei Bodenlaube, der vorher Acker war und von Wendel von Steinau mit Erlaubnis des Bischofs Konrad von Thüngen gerodet wurde.\n- Den Getreidezehnten zu Hungers, den Konrad von Steinau durch einen Tausch mit Bernhard und Georg Ludwig von Hutten erworben hatte.\nDiesen Lehen waren nach dem Tod des Johann Dietrich von Steinau an seinen Vetter Sebastian von Steinau und nach dessen Tod an seinen Sohn gefallen.\nAussteller:  Bischof von Würzburg\nEmpfänger:  Johann Rudolf von Steinau genannt Steinrück\n\nVermerke: Rückvermerke:  Inhaltsangabe (18. Jh.)\n\nBesiegelung/Beglaubigung: Bischof; an Pergamentstreifen anhängendes Sekretsiegel, gut erhalten",
       "english": "The Hans Hartmann von Rosenberg, Bischof zu Würzburg, grants the following properties as male fiefs to Johann Rudolf von Steinau called Steinrück, son of Sebastian von Steinau called Steinrück:\n- A castle estate in Kissingen Castle.\n- A farm outside the castle.\n- A vineyard near Bodenlaube, formerly arable land, cleared by Wendel von Steinau with the permission of Konrad von Thüngen, Bischof.\n- The grain tithe at Hungers, acquired by Konrad von Steinau in an exchange with Bernhard and Georg Ludwig von Hutten.\n\nAfter Johann Dietrich von Steinau's death, these fiefs had passed to his cousin Sebastian von Steinau, and after Sebastian's death to his son.\n\nIssuer: Bishop of Würzburg\nRecipient: Johann Rudolf von Steinau called Steinrück\n\nEndorsements: Reverse endorsement: summary (18th century).\n\nSealing/authentication: Bishop's secret seal, attached by a parchment strip, well preserved.",
-      "mention": [
-        {
-          "person": "Bernhard von Hutten"
-        },
-        {
-          "person": "Georg Ludwig von Hutten"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Konrad von Thüngen",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1c8262e0-ef06-4f82-9dac-8edecdc82292/1/full/max/0/default.jpg"
@@ -44,6 +21,29 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1c8262e0-ef06-4f82-9dac-8edecdc82292/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bernhard von Hutten"
+    },
+    {
+      "person": "Georg Ludwig von Hutten"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Konrad von Thüngen",
+      "personTitle": [
+        "Bischof"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

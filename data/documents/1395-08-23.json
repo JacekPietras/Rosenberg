@@ -10,29 +10,6 @@
       ],
       "german": "Arnold und Eberhard von Rosenberg, Brüder, vertauschen an Raban und Konz Mertin, zu Messelhausen gesessen, 4 1/2 Morgen Wiesen zu Beckstein gegen eine Wiese zu Kupprichhausen.\n\nLaufzeit: 1395 August 23 (1395 Bartholomaeus Abend)\n\nSiegelbeschreibung: Von 2 Siegeln hängt noch das Fragment des einen an",
       "english": "Arnold von Rosenberg and Eberhard von Rosenberg, brothers, exchanged 4 1/2 acres of meadows in Beckstein for a meadow in Kupprichhausen to Raban and Kunz Mertin, residing in Messelhausen.",
-      "mention": [
-        {
-          "place": "beckstein"
-        },
-        {
-          "place": "jagstberg"
-        },
-        {
-          "place": "kupprichhausen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "arnold_boxberg",
-          "type": "sibling",
-          "of": "eberhard_jagstberg"
-        },
-        {
-          "person": "arnold_boxberg",
-          "type": "generic",
-          "content": "exchanged a meadow at Beckstein for a meadow at Kupprichhausen with Raban and Kunz Mertin, residents of Messelhausen, jointly with [eberhard_jagstberg]."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001721168%2F04_0001721168_0001_4-1721168-1.jpg",
@@ -56,6 +33,29 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "arnold_boxberg",
+      "type": "sibling",
+      "of": "eberhard_jagstberg"
+    },
+    {
+      "person": "arnold_boxberg",
+      "type": "generic",
+      "content": "exchanged a meadow at Beckstein for a meadow at Kupprichhausen with Raban and Kunz Mertin, residents of Messelhausen, jointly with [eberhard_jagstberg]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "beckstein"
+    },
+    {
+      "place": "jagstberg"
+    },
+    {
+      "place": "kupprichhausen"
     }
   ]
 }

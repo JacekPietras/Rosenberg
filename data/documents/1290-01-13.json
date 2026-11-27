@@ -9,25 +9,25 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "summary": "Konrad Lesch von Uissigheim verkauft dem Deutschen Hause in Mergentheim Einkünfte aus seinem Hof in Bolzhausen um 24 Pfund Heller.",
       "latin": "Testes huius sunt nobilis dominus noster Crafto de Hohenloch, Cunradus, Crafto, filii eiusdem domini nostri, frater Hermannus Lescho commendator in Mergentheim, frater Eberswinus, frater Ludewicus de Grunsfelt, Hermannus Lescho miles et alii quam plures fide digni. In huius rei testimonium et robur perpetuum munimine sigilli preclari domini nostri Craftonis de Hohenloch presentes duximus communiri. Datum et actum Mergentheim anno domini incarnacionis MCCLXXXX., in feria octava epiphanie domini.",
-      "english": "Konrad Lesch von Uissigheim sells the Teutonic House in Mergentheim revenues from his farm in Bolzhausen for 24 pounds of Heller. Witnesses are our noble lord Kraft von Hohenlohe; Konrad and Kraft, sons of this same lord; Brother Hermann Lescho, commander in Mergentheim; Brother Eberswin; Brother Ludwig von Grünsfeld; Hermann Lescho, knight; and many other trustworthy people. As testimony and lasting confirmation of this matter, we have caused this document to be secured with the seal of our distinguished lord Kraft von Hohenlohe. Given and done at Mergentheim in the year of the Lord's incarnation 1290, on the octave of Epiphany.",
-      "mention": [
-        {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Ludwig von Grünsfeld"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad Lesch von Uissigheim",
-          "type": "generic",
-          "content": "sold revenues from his farm in Bolzhausen to the Teutonic House in Mergentheim for 24 pounds of Heller."
-        }
-      ]
+      "english": "Konrad Lesch von Uissigheim sells the Teutonic House in Mergentheim revenues from his farm in Bolzhausen for 24 pounds of Heller. Witnesses are our noble lord Kraft von Hohenlohe; Konrad and Kraft, sons of this same lord; Brother Hermann Lescho, commander in Mergentheim; Brother Eberswin; Brother Ludwig von Grünsfeld; Hermann Lescho, knight; and many other trustworthy people. As testimony and lasting confirmation of this matter, we have caused this document to be secured with the seal of our distinguished lord Kraft von Hohenlohe. Given and done at Mergentheim in the year of the Lord's incarnation 1290, on the octave of Epiphany."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad Lesch von Uissigheim",
+      "type": "generic",
+      "content": "sold revenues from his farm in Bolzhausen to the Teutonic House in Mergentheim for 24 pounds of Heller."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kraft von Hohenlohe"
+    },
+    {
+      "person": "Ludwig von Grünsfeld"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

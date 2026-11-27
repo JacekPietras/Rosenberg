@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153950",
       "german": "Waldrechte in der Herrschaft Breuberg\nPeter Hurre, Hen Hengrunder, Henn Fogel und Haman Mencke bekennen eidlich, daß ihren Wissen auch der eppensteinische Teil am großen Walde angeht an dem nächsten Legbaum, der an der Bulae steht und geht dem Stain entlang bis an die Buche, die am Pfade steht, der dann in das Baurtal geht an der Rodenheide von Wald-Erlenbach (Walterlbach) außenher, und von der Buche bis an die Eiche, die umgefallen ist, im Sperbertale oben an dem Baurtalsgraben, von dieser Legeiche bis an die Eiche oben an dem Swelntale, sie ist abgehauen, von dieser Legeiche bis zu der Legeiche, die umgefallen ist auf dem Zawppenfule, von diesem bis auf die Platte am Miltenberger Riesach. Was links dieser Grenze gegen Laudenbach hin ist, ist eppensteinisch, was rechts ist gegen die hangende mole, gegen Kirchbrombach (Bronbache) zu und gegen Sulbun, ist wertheimisch. Die obgenannten 3 bekennen auch, daß die nachbenannten Wälder wertheimisch seien nämlich der Wald an der Bronbechere Halde auf dem steynere Hauwe, \"die Igelshart\", das Buche unter Sulbon das Wuberbuche, der Esschern, der Fatberg, das Kolhart, der Wirsingswald, die Inhelde über Knuttbuch. Hurre und Fogel bekennen, daß diese Wäldergrenze geht von dem Miltenberger Riesach an die Platte an die Wolffsskele, dann gegen Ernbach (Dorferbach) in das Dorf, an den Bach genannt Walbrunsbach bis auf den Markstein, der im Bache steht, diese Grenze scheidet Wertheim und die Ruden, dann den Bach aufwärts bis an das Wuberbuche die Walbrun heraus bis auf die Legeiche auf dem Hundesrücke, diese Grenze scheidet die Ruden, den gemeinen Wald und den Wertheimer Wald vom Legbaum weiter bis an den Legbaum, der an den Riegeln bei den (werth.) Heumaden steht zwischen dem gemeinen Walde und dem des Grafen von Wertheim, von Legbaum den Eckweg hin bis an den Memenharten Wald, von der die Inhelden entlang; was rechts gegen Kuntbuch liegt, ist wertheimisch. Peter Hurre war 30 Jahre Förster über diese Wälder.\n\nLaufzeit: 1432 ([1432])\n\nSiegelbeschreibung: 2 Siegel abgefallen\n\nSiegler: Junker Hans Monch von Rosenberg; Junker Hans von Linach",
       "english": "Forest rights in the lordship of Breuberg\n\nPeter Hurre, Hen Hengrunder, Henn Fogel, and Haman Mencke swear that, to their knowledge, the Eppstein portion of the great forest begins at the nearest boundary tree standing at the Bulae, and runs along the stone to the beech beside the path that leads into the Baurtal at the edge of the Rodenheide of Wald-Erlenbach. From the beech it runs to the fallen oak at the top of Sperbertal, by the Baurtal ditch; from this boundary oak to the oak at the top of Swelntal, which has been cut down; and from that boundary oak to the fallen boundary oak on Zawppenfule, and from there to the flat rock at Miltenberger Riesach. What lies to the left of this boundary, toward Laudenbach, belongs to Eppstein; what lies to the right, toward the hangende mole, Kirchbrombach, and Sulbun, belongs to Wertheim.\n\nThe three named above also testify that the following forests belong to Wertheim: the forest on the Bronbechere Halde at the steynere Hauwe; the Igelshart; the beech below Sulbon called Wuberbuche; Esschern; Fatberg; Kolhart; Wirsingswald; and Inhelde above Knuttbuch.\n\nHurre and Fogel testify that this forest boundary runs from Miltenberger Riesach to the flat rock at Wolffsskele, then toward Ernbach into the village, to the stream called Walbrunsbach, as far as the boundary stone standing in the stream. This boundary separates Wertheim from the Ruden. It then runs up the stream to Wuberbuche, along Walbrun to the boundary oak on Hundesrücke. This boundary separates the Ruden, the common forest, and the forest of Wertheim. From the boundary tree it continues to the boundary tree standing at the Riegeln by the Wertheim hay meadows, between the common forest and the Count of Wertheim’s forest; from that tree along the Eckweg to Memenharten forest and along the Inhelde. Whatever lies to the right toward Kuntbuch belongs to Wertheim. Peter Hurre served as forester over these forests for thirty years.\n\nDate: 1432.\n\nSeal description: Two seals have fallen off.\n\nSealers: Squire Hans Monch von Rosenberg; Squire Hans von Linach.",
-      "mention": [
-        {
-          "place": "erlenbach"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153950%2F07_0000153950_0001_7-153950-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153950%2F07_0000153950_0002_7-153950-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "erlenbach"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3b83f61f-dbba-41cf-8bca-ec25ab2d5f5e&parent_id="
       ],
       "german": "Michael von Rosenberg, Bruder des Arnold von Rosenberg, bestätigt, dass der Guldenzoll zu Edelfingen (?) (\"Ötelfingen\") auf seinen Bruder übergegangen ist",
-      "english": "Michael von Rosenberg, brother of Arnold von Rosenberg, confirms that the gulden toll at Edelfingen (?) (\"Ötelfingen\") has passed to his brother",
-      "mention": [
-        {
-          "place": "edelfingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "type": "sibling",
-          "of": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "confirmed that the Guldenzoll at Ötelfingen had passed to his brother Arnold von Rosenberg."
-        }
-      ]
+      "english": "Michael von Rosenberg, brother of Arnold von Rosenberg, confirms that the gulden toll at Edelfingen (?) (\"Ötelfingen\") has passed to his brother"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "type": "sibling",
+      "of": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "confirmed that the Guldenzoll at Ötelfingen had passed to his brother Arnold von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "edelfingen"
     }
   ]
 }

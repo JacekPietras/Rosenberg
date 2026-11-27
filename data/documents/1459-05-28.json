@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-34289",
       "german": "Metza von Züllenhard, geborene von Rosenberg, deren Wittum auf Schlierbach versichert ist, gibt ihre Zustimmung zum Verkauf und verzichtet auf ihre Rechte.\n\nLaufzeit: 1459 Mai 28",
       "english": "Metza von Züllenhard, née von Rosenberg, whose dower is secured on Schlierbach, gives her consent to the sale and waives her rights.\n\nDate: 28 May 1459",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000034289%2F01_0000034289_0001_1-34289-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000034289%2F01_0000034289_0002_1-34289-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

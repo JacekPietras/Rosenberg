@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-84592",
       "german": "Ortsbeschreibung von Sindeldorf mit dem vom Gemeinschaftlichen Amt (Pfarrer und Schultheiß) ausgefüllten gedruckten Fragebogen des STBs (1879) sowie Notizen von Hermann Bauer und Gustav Bossert\n\nLaufzeit: [vor 1872 - um 1883]\n\nEnthält: Enthält: Wappenskizzen: Herren von Eubigheim, von Rosenberg.\n\nUmfang: 1 Bü",
       "english": "Local description of Sindeldorf with the printed questionnaire of the STB (1879), completed by the joint office (pastor and mayor), as well as notes by Hermann Bauer and Gustav Bossert.\n\nDate range: [before 1872–around 1883]\n\nContains: Coat-of-arms sketches of the lords of Eubigheim and the lords von Rosenberg.\n\nExtent: 1 file.",
-      "mention": [
-        {
-          "place": "eubigheim"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=6544&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000006544%2Ftitlaufn_0000084592%2F02_0000084592_0001_2-84592-1.jpg"
@@ -68,6 +60,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=6544&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000006544%2Ftitlaufn_0000084592%2F02_0000084592_0017_2-84592-17.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "eubigheim"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

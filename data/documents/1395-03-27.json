@@ -8,17 +8,17 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "*Cuntz Munch* v. Rosenberg, Vogt zu *Steynßberg*, zeugt bei einem Vergleich zwischen Hans v. Sachsenheim und Anderen. ANDERMANN 1994, Nr. 30; KRAUS 1997, U 9",
-      "english": "Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses a settlement between Hans von Sachsenheim and others.",
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ],
-          "type": "generic",
-          "content": "witnessed a settlement between Hans von Sachsenheim and others."
-        }
-      ]
+      "english": "Kunz Mönch von Rosenberg, Vogt zu Steinsberg, witnesses a settlement between Hans von Sachsenheim and others."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
+      ],
+      "type": "generic",
+      "content": "witnessed a settlement between Hans von Sachsenheim and others."
     }
   ]
 }

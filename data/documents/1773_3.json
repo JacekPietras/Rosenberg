@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1733470",
       "german": "Abzug und Freizügigkeit zwischen dem Gebiet der Vogtei Schackau derer von Rosenbach und dem Oberamt Bieberstein bzw. allen fuldischen Ämtern\n\nLaufzeit: 1773-1790",
       "english": "Departure and freedom of movement between the territory of the Schackau bailiwick belonging to the von Rosenbach family and the Bieberstein district office or all Fulda offices.\n\nTerm: 1773–1790",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1859/hstam_90_nr_b_1859_0001.jpg"
@@ -47,6 +39,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1859/hstam_90_nr_b_1859_0010.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

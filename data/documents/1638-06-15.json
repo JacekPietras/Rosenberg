@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++46C86DED-8DE1-4AE4-87A5-9FE38FA5F661&parent_id="
       ],
       "german": "Die Stadt Haltenbergstetten (= Niederstetten) protokolliert auf Ersuchen des dortigen rosenbergischen Vogtes Dietrich Speth die Aussagen verschiedener Einwohner über die Güter der v. Rosenberg in Haltenbergstetten, Rinderfeld und Wermutshausen",
-      "english": "The town of Haltenbergstetten records, at the request of its Rosenberg bailiff Dietrich Speth, statements by various residents concerning the von Rosenbergs' properties in Haltenbergstetten, Rinderfeld, and Wermutshausen.",
-      "mention": [
-        {
-          "place": "rinderfeld"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ]
+      "english": "The town of Haltenbergstetten records, at the request of its Rosenberg bailiff Dietrich Speth, statements by various residents concerning the von Rosenbergs' properties in Haltenbergstetten, Rinderfeld, and Wermutshausen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rinderfeld"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

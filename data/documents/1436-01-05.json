@@ -10,39 +10,6 @@
       ],
       "german": "Bischof Johann II. von Würzburg beurkundet die gütliche Entscheidung eines Streits zwischen Abt Heinrich VI. und dem Konvent von Schöntal einerseits und Hans von Adelsheim zu Bieringen andererseits über Rechte und Güter in Bieringen. Konrad Herr von Weinsberg und Konrad von Rosenberg zu Bartenstein hatten die Parteien zur Entscheidung an den Bischof verwiesen. Der Bischof regelt unter anderem Weinschank, Bauvorhaben, Wiesen- und Fischereirechte, Zehnten, Äcker, Waldweide, verschiedene Forderungen sowie die Besetzung der Pfarrei. Die Parteien sind damit geschlichtet. Ausgestellt zu Röttingen am 5. Januar 1436.",
       "english": "Johann II zu Würzburg, Bischof records the amicable settlement of a dispute over rights and properties at Bieringen between Abbot Henry VI and Schöntal Abbey on one side and Hans von Adelsheim of Bieringen on the other. Konrad von Weinsberg, and Konrad von Rosenberg of Bartenstein had referred the parties to the bishop for a decision. The bishop settles, among other matters, wine sales, construction, meadow and fishing rights, tithes, fields, woodland pasture, various claims, and the appointment of the parish priest. The dispute is thereby resolved. Issued at Röttingen on 5 January 1436.",
-      "mention": [
-        {
-          "place": "bartenstein"
-        },
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Hans von Adelsheim"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "place": "roettingen"
-        },
-        {
-          "place": "schoental-monastery"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Hans zu Würzburg, Bischof for a decision together with Konrad von Weinsberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000545403%2F02_0000545403_0003_2-545403-3.jpg"
@@ -51,6 +18,39 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000545403%2F02_0000545403_0004_2-545403-4.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ],
+      "type": "generic",
+      "content": "referred the dispute between Schöntal Abbey and Hans von Adelsheim over rights and property at Bieringen to Hans zu Würzburg, Bischof for a decision together with Konrad von Weinsberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bartenstein"
+    },
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Hans von Adelsheim"
+    },
+    {
+      "person": "Konrad von Weinsberg"
+    },
+    {
+      "place": "roettingen"
+    },
+    {
+      "place": "schoental-monastery"
     }
   ]
 }

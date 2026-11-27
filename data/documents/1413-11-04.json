@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ddf59390-81be-424e-b42e-0c1edcafd49b&parent_id="
       ],
       "german": "Gerichtsbvrief: Hans von Rosemberg, Ritter und Schultheiß, dann die Schöffen der Stadt zu Nürnberg geben Gerichtsbrief über den von Burkhart Semler an Conrat Paumgartner d.J. verkauften Zehenden zu Wollerstorf, der von dem ehrbaren vesten dem Pfefferbalg zu Lehen geht.",
-      "english": "Court charter: Hans von Rosenberg, Ritter and Schultheiß, and then the lay judges of the city of Nürnberg issue a court charter concerning the tithe sold by Burkhart Semler to Conrat Paumgartner the younger at Wollerstorf, held as a fief from the honorable and steadfast Pfefferbalg.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "Court charter: Hans von Rosenberg, Ritter and Schultheiß, and then the lay judges of the city of Nürnberg issue a court charter concerning the tithe sold by Burkhart Semler to Conrat Paumgartner the younger at Wollerstorf, held as a fief from the honorable and steadfast Pfefferbalg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

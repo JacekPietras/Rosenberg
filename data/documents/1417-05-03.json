@@ -6,27 +6,27 @@
       "source": "Zeitschrift für die Geschichte des Oberrheins 46",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11610732",
       "german": "1417 Mai 3. Thomas u. Hans v. Rosenberg verkaufen für sich u. das Spital zu Schupf dem Cuntz v. Rosenberg etliche Wiesen. PO. 1 S. erhalten, 1 ab.",
-      "english": "Archival inventory description: On 3 May 1417, Thomas von Rosenberg and Hans von Rosenberg sold several meadows to Kunz von Rosenberg on behalf of themselves and the hospital at Schüpf. One sheet of the original is preserved and one is missing.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "oberschuepf"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "sold several meadows to Kunz von Rosenberg on their own behalf and on behalf of the hospital at Schüpf."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "sold several meadows to Kunz von Rosenberg on their own behalf and on behalf of the hospital at Schüpf."
-        }
-      ]
+      "english": "Archival inventory description: On 3 May 1417, Thomas von Rosenberg and Hans von Rosenberg sold several meadows to Kunz von Rosenberg on behalf of themselves and the hospital at Schüpf. One sheet of the original is preserved and one is missing."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "sold several meadows to Kunz von Rosenberg on their own behalf and on behalf of the hospital at Schüpf."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "sold several meadows to Kunz von Rosenberg on their own behalf and on behalf of the hospital at Schüpf."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "place": "oberschuepf"
     }
   ]
 }

@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++51a334d1-e5c6-407d-b8b4-17e51be3f734&parent_id="
       ],
       "german": "Markgraf Casimir: Zaisolph von Rosenberg bittet um Verschiebung des Rechtstags.",
-      "english": "Margrave Casimir: Zaisolph von Rosenberg requests a postponement of the court session.",
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "asked Markgraf Casimir to postpone the court day."
-        }
-      ]
+      "english": "Margrave Casimir: Zaisolph von Rosenberg requests a postponement of the court session."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "asked Markgraf Casimir to postpone the court day."
     }
   ]
 }

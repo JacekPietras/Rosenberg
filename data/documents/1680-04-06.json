@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-ADG/PA/ADG_Urk_P1370/charter",
       "german": "Vertrag zwischen Georg Niclas Graf von Rosenberg und Johann Franz von Plaz als Vormund der Fürsten von Porcia als Vogt- und Lehensherrschaft über die Pfarrkirche St. Peter in Holz: Graf zu Rosenberg als Inhaber der Herrschaft Greifenburg überlässt der Pfarrkirche St. Peter für ein bisher von der Herrschaft Greifenburg innegehabtes Zulehen ein anderes ob Stainfeld in Herrschaft Rottenstain (Christian Jordamber).\n\nSiegler: Georg Niclas Graf von Rosenberg, Johann Franz von Plaz (+ eh. Unterschriften)\n\nSiegel: 2 Sig. imp. Georg Niclas Graf von Rosenberg, Johann Franz von Plaz (+ eh. Unterschriften)",
       "english": "Agreement between Georg Niklas von Rosenberg, Graf von Rosenberg, and Hans Franz von Plaz, as guardian of the Princes of Porcia and as guardian and feudal lord over the parish church of St. Peter in Holz: the Graf zu Rosenberg, as holder of the lordship of Greifenburg, transfers to the parish church of St. Peter, in exchange for a subfief previously held by the lordship of Greifenburg, another one above Stainfeld in the lordship of Rottenstain (Christian Jordamber).\n\nSealers: Georg Niklas von Rosenberg, Graf von Rosenberg; Hans Franz von Plaz (with handwritten signatures).\n\nSeal: two impressed seals: Georg Niklas von Rosenberg, Graf von Rosenberg; Hans Franz von Plaz (with handwritten signatures).",
-      "mention": [
-        {
-          "person": "Georg Niklas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P1370-1.jpg"
@@ -32,6 +21,17 @@
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P1370-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Niklas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

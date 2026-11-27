@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198369",
       "german": "Lehnrevers von Peter Stettenberg an H. Graf Johann ausgestellet über die oben ad Num. 11 specificirten Mannlehen, da noch hinzugefüget ist, 4 Pfund Gelts auf einem Ackers hinter der Kirche zu Niklashausen (Nicloshaußen) gelegen gen Werbach und uf einer Wiesen unter Pfrinsbach gelegen, die etwan Cuntzens sel. von Altertheim gewesen sind, und was er um Arnoldts von Rosenberg gekauft, nämlich seinen Teil an dem Weinzehnten zu Gamburg und auch sonst, was er daselbst und drum Niklashausen (Nicloshaußen) hat nichts ausgenommen, und was er um Conrad von Hardheim Rittern gekauft, nämlich 5 Malter Korns, 1 Tornus und 1 Gans uf dem Zehnten zu Steinfurt und was er um Götzen Schätzlin gekauft, Gült und Zins zu Dainbach gelegen, item Cuntz Roßer gibt von einem Gütlein 2 Malter Korn, 2 Malter Habern und 1 Faßnachthuhn 2 Pfund Gelds je 30 Pfennig vor ein Pfund und 9 Pfennig von einer Wiesen, item Peter Metzler gibt von einem Gütlein zu Dainbach 2 Malter Korns, 2 Malter Habern und 1 Faßnachthuhn, 2 Pfund Gelts je 30 Pfennig vor einem Pfund, Mergentheimer Maaß, item Hanß Metzler gibt 9 Pfennig von einer Wießen Zins, item Ernnl Hertingen gibt ein Sommer Huhn von einem Acker, welches alles von der Grafschaft Wertheim zu Mannlehen geht und rührt.\n\nLaufzeit: 1442 März 16 (Freytag nach Laetare)",
       "english": "Feudal acknowledgment issued by Peter Stettenberg to Lord Count Johann concerning the male fiefs specified above under no. 11, to which are additionally included four pounds of income from a field behind the church at Niklashausen (Nicloshaußen), toward Werbach, and from a meadow below Pfrinsbach, which formerly belonged to the late Cuntzen von Altertheim; and what he bought from Arnold von Rosenberg, namely his share of the wine tithe at Gamburg and also whatever else he has there and around Niklashausen (Nicloshaußen), with nothing excepted; and what he bought from Ritter Konrad von Hartheim, namely five Malter of grain, one Tornus, and one goose from the tithe at Steinfurt, and what he bought from Götz Schätzlin, namely rents and interest at Dainbach. Furthermore, Cuntz Roßer gives, from a small estate, two Malter of grain, two Malter of oats, and one Shrovetide hen, together with two pounds of income at 30 pfennigs to the pound, and nine pfennigs from a meadow; Peter Metzler gives, from a small estate at Dainbach, two Malter of grain, two Malter of oats, and one Shrovetide hen, together with two pounds of income at 30 pfennigs to the pound, measured by the Mergentheim measure; Hanß Metzler gives nine pfennigs in rent from a meadow; Ernnl Hertingen gives a summer chicken from a field. All of this is held as a male fief from and belonging to the County of Wertheim.\n\nTerm: 16 March 1442 (Friday after Laetare)",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Konrad von Hartheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198369%2F07_0000198369_0001_7-198369-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198369%2F07_0000198369_0002_7-198369-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Konrad von Hartheim",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

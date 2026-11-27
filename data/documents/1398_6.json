@@ -7,18 +7,18 @@
       "source": "[RIplus] Regg. Wenzel [n. 3212]",
       "url": "https://www.regesta-imperii.de/id/e9f1f8a1-229e-4bce-b4dc-018ebcd73dd0",
       "german": "Wenzel gestattet Pfalzgraf Ruprecht III. die Königsleute zwischen Mosbach und Lauda von den Herren von Rosenberg zu lösen.",
-      "english": "Wenceslas permits Rupert III, Count Palatine, to redeem the king's subjects between Mosbach and Lauda from the Lords of Rosenberg.",
-      "mention": [
-        {
-          "place": "lauda"
-        },
-        {
-          "place": "mosbach-st-juliana"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Wenceslas permits Rupert III, Count Palatine, to redeem the king's subjects between Mosbach and Lauda from the Lords of Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "lauda"
+    },
+    {
+      "place": "mosbach-st-juliana"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

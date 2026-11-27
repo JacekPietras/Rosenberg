@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6AAF01B3-9C31-4BE7-A939-949CC63F3CEA&parent_id="
       ],
       "german": "Klage der Maria Anna Johanna Freifrau v. Aufseß, geb. v. Rosenbach, gegen ihre Brüder Johann Philipp und Adalbert Friedrich v. Rosenbach wegen Teilung der Verlassenschaft des verstorbenen Bruders Carl Anton v. Rosenbach",
-      "english": "Lawsuit by Maria Anna Johanna Freifrau von Aufseß, née von Rosenbach, against her brothers Johann Philipp and Adalbert Friedrich von Rosenberg concerning division of the estate of their late brother Karl Anton von Rosenberg.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Karl Anton von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Lawsuit by Maria Anna Johanna Freifrau von Aufseß, née von Rosenbach, against her brothers Johann Philipp and Adalbert Friedrich von Rosenberg concerning division of the estate of their late brother Karl Anton von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Karl Anton von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

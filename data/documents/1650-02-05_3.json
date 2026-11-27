@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/1114/charter",
       "german": "Johann Dietrich von Rosenbach, Eberhard Friedrich und Johann Friedrich von Mansbach (Manspach) sowie weitere namentlich genannte Personen bestätigen für sich und andere namentlich genannte Personen die Belehnung mit Schackau (Schackhen) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Joachim [von Gravenegg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann Dietrich von Rosenbach\n\nSiegel: anhängendes Siegel in Holzkapsel Johann Dietrich von Rosenbach",
       "english": "Hans Dietrich von Rosenberg, Eberhard Friedrich and Johann Friedrich von Mansbach (Manspach), and other named persons confirm, for themselves and others, their enfeoffment with Schackau (Schackhen), including all its appurtenances in woodland and fields and an estate there, with Kleinsassen (Sassen), Gerharts (Gerhardts) [all places in the municipality of Hofbieber, Fulda district], and other individually listed fiefs, by Joachim [von Gravenegg], Abbot of Fulda. The fief charter is inserted. Seal announcement.\n\nSealer: Hans Dietrich von Rosenberg\n\nSeal: pendant seal in a wooden capsule",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201114%20Vorderseite%20%281650%20Februar%2005%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201114%20Rueckseite%20%281650%20Februar%2005%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
     }
   ]
 }

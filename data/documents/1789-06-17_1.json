@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3417784",
       "german": "Belehnung des Karl Joseph von Rosenbach mit Schackau und Eckweisbach durch Abt Adalbert von Fulda\n\nFulda. - Adalbert [von Harstall], Abt zu Fulda, verleiht Schackau, Eckweisbach etc. an Karl Joseph von Rosenbach. Es folgen nähere Bestimmungen.\n\nFormalbeschreibung: Ausfertigung, Pergament, Siegel ab und verloren\n\nSiegler: Aussteller",
       "english": "Enfeoffment of Karl Joseph von Rosenbach with Schackau and Eckweisbach by Abbot Adalbert of Fulda.\n\nFulda. Adalbert von Harstall, Abbot of Fulda, grants Schackau, Eckweisbach and other properties to Karl Joseph von Rosenbach. Further provisions follow.\n\nFormal description: Original parchment; seal detached and lost.\n\nSeal: Issuer.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/539/hstam_urk._80_nr_539_0001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/539/hstam_urk._80_nr_539_0002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

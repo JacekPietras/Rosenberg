@@ -7,21 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723966",
       "german": "Botschafter, Hauptleute und Räte des Schwäbischen Bundes, derzeit in Mergentheim versammelt, treten dem Kurfürsten Ludwig von der Pfalz Stadt und Schloss Boxberg, die sie erobert und das Schloss ausgebrannt haben, gegen Bezahlung von 5.000 Gulden als rechtes Eigentum ab.",
       "english": "Ambassadors, captains and councils of the Swabian League, currently gathered in Mergentheim, step down from Elector Ludwig of the Palatinate City and Castle Boxberg, which have conquered them and burned out the castle, for 5,000 guilders as the right property.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "generic",
-          "content": "received Boxberg town and castle from the Swabian League as outright property in return for 5,000 florins."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723966%2F04_0001723966_0001_4-1723966-1.jpg",
@@ -35,6 +20,21 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ludwig von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "generic",
+      "content": "received Boxberg town and castle from the Swabian League as outright property in return for 5,000 florins."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

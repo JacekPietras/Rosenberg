@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-151680",
       "german": "Meisterin Magdalena von Rosenbach und der Konvent des Klosters Höchst (Hoste under Bruberg gelegen) bekunden, dass ihnen Graf Wilhelm von Wertheim zur besseren Ausstattung die Schäferei auf ihrem Hof bis auf weiteres gewährt hat. Die Begünstigten sagen zu, auf Anforderung durch Graf Wilhelm bzw. seine Erben oder aus eigenem Interesse zu einem Michaelistag (29. September) ihrer Wahl die Schäferei aufzugeben.\n\nLaufzeit: 1453 September 23 (sontag vor sant Michels tag)\n\nSiegelbeschreibung: 3 anhängende Siegel, das 1. abgegangen, das 3. stark beschädigt, Fragmente liegen bei\n\nVermerke: Dorsualvermerk: \"Numero 28\"\n\nSiegler: Meisterin Magdalena von Rosenbach; Konvent des Klosters Höchst; Dieter Gans von Otzberg",
       "english": "Mistress Magdalena von Rosenberg and the convent of Höchst Monastery (Höchst, situated below Breuberg) attest that Count Wilhelm of Wertheim has granted them, to improve their endowment, the right to keep sheep on their farm until further notice. The beneficiaries undertake, if requested by Count Wilhelm or his heirs, or for their own reasons, to relinquish the sheepfold on a Michaelmas day (29 September) of their choosing.\n\nDate range: 23 September 1453 (Sunday before Saint Michael's Day).\n\nSeal description: Three pendant seals; the first is missing, the third badly damaged; fragments are enclosed.\n\nNotes: Dorsal note: “Number 28.”\n\nSealers: Mistress Magdalena von Rosenberg; the convent of Höchst; Dieter Gans von Otzberg.",
-      "mention": [
-        {
-          "person": "Magdalena von Rosenberg"
-        },
-        {
-          "person": "Wilhelm von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=151073&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000151073%2Ftitlaufn_0000151680%2F07_0000151680_0001_7-151680-1.jpg"
@@ -25,6 +14,17 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=151073&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000151073%2Ftitlaufn_0000151680%2F07_0000151680_0002_7-151680-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Magdalena von Rosenberg"
+    },
+    {
+      "person": "Wilhelm von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
     }
   ]

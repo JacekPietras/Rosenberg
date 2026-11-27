@@ -7,48 +7,43 @@
       "source": "RI XI,1 n. 1223",
       "url": "https://www.regesta-imperii.de/id/1414-09-27_3_0_11_1_0_1321_1223",
       "german": "belehnt den Ritter Hans v. Rosenberg mit dem Zehnten im Dorfe zu Lohr (Lore zwisch. Rothenburg a. T. u. Insingen). ─ W. v.",
-      "english": "He enfeoffs Ritter Hans von Rosenberg with the tithe in the village of Lohr. W. v.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ]
+      "english": "He enfeoffs Ritter Hans von Rosenberg with the tithe in the village of Lohr. W. v."
     },
     {
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Sigmund, römischer König belehnt Hans von Rosenberg, Ritter, mit dem Zehenten im Dorfe zu Lore zwischen Rothemburg an der Thauber und Insingen gelegen. G.zu Nüremberg des nehsten Donerstags vor sant Michelstag",
-      "english": "Sigmund, Roman King, enfeoffs Hans von Rosenberg, Ritter, with the tithe in the village of Lore, situated between Rothemburg an der Thauber and Insingen. Given at Nürnberg on the Thursday before St. Michael’s Day.",
-      "mention": [
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rothenburg"
-        }
+      "english": "Sigmund, Roman King, enfeoffs Hans von Rosenberg, Ritter, with the tithe in the village of Lore, situated between Rothemburg an der Thauber and Insingen. Given at Nürnberg on the Thursday before St. Michael’s Day."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "received the tithe in the village of Lore, between Rothenburg an der Tauber and Insingen, as a fief from König Siegmund."
-        }
+      "type": "generic",
+      "content": "received the tithe in the village of Lore, between Rothenburg an der Tauber and Insingen, as a fief from König Siegmund."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

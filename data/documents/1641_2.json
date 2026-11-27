@@ -6,33 +6,33 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9890",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641655",
       "german": "Schuldforderungen (700 Gulden) der Kartause Engelgarten in Würzburg als Erbin ihres Konventualen Albrecht von Dienheim gegen Albrecht Christoph von Rosenberg als Erben seines Bruders Georg Sigmund.\n\nLaufzeit: 1641",
-      "english": "Debt claims (700 guilders) of the Engelgarten Charterhouse in Würzburg as heir of its conventual Albrecht von Dienheim against Albrecht Christoph von Rosenberg as heir of his brother Georg Sigmund.\n\nDuration: 1641",
-      "mention": [
-        {
-          "person": "Albrecht von Dienheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "type": "death",
-          "diedBefore": "1642"
-        },
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "type": "sibling",
-          "of": "Georg Siegmund von Rosenberg",
-          "ofDeceased": true
-        },
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "type": "generic",
-          "content": "was pursued by Engelgarten Charterhouse for a 700-Gulden debt as heir to his deceased brother Georg Siegmund."
-        }
-      ]
+      "english": "Debt claims (700 guilders) of the Engelgarten Charterhouse in Würzburg as heir of its conventual Albrecht von Dienheim against Albrecht Christoph von Rosenberg as heir of his brother Georg Sigmund.\n\nDuration: 1641"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "type": "death",
+      "diedBefore": "1642"
+    },
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "type": "sibling",
+      "of": "Georg Siegmund von Rosenberg",
+      "ofDeceased": true
+    },
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "type": "generic",
+      "content": "was pursued by Engelgarten Charterhouse for a 700-Gulden debt as heir to his deceased brother Georg Siegmund."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Dienheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

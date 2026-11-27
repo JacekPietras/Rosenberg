@@ -12,34 +12,34 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++83486ADC-750E-4075-AB4D-1B9277252B78&parent_id="
       ],
       "german": "Thomas von Rosenberg, Dietrich Geyer sowie Harthart und Fritz Truchseß von Baldersheim bezeugen einen Vertrag zwischen Elisabeth von Heideck einerseits sowie ihren und des verstorbenen Hans Truchseß beiden Kindern andererseits, demzufolge Elisabeth 2.500 fl. erhält, die ihr von ihrem verstorbenen Mann auf ein Viertel von Röttingen verschrieben wurden. Weitere 1.500 fl., die ihr ihr verstorbener Mann verschrieben hat, bezieht sie künftig aus dem kleinen und großen Zehnt ihrer Kinder zu Gollhofen, bis ihre Kinder diese Summe auslösen. Im Gegenzug verzichtet Elisabeth zugunsten ihrer Kinder auf ihre Besitzungen und Rechte in Schloss, Stadt und Amt Aub. Fahrende Habe wird zwischen der Mutter und ihren Kindern geteilt. Was über die Summe von 1.500 fl. vorhanden ist, gehört den Kindern allein, die dafür alle Schulden der Mutter übernehmen. - S 1: Elisabeth von Heideck, S 2: Peter von Ehenheim, S 3–6: die vier Aussteller.",
-      "english": "Thomas von Rosenberg, Dietrich Geyer, and Harthart and Fritz Truchseß von Baldersheim witness an agreement between Elisabeth von Heideck and her two children with her late husband Hans Truchseß. Elisabeth is to receive 2,500 florins, which her late husband had assigned to her, from the small and great tithes at Gollhofen and the associated tithe rights at Röttingen, until the children redeem the sum. In return, she relinquishes her possessions and rights in Aub to her children. The agreement also specifies how her property is to be divided and how the children are to assume her debts. Thomas von Rosenberg, Dietrich Geyer, and Harthart and Fritz Truchseß von Baldersheim are the witnesses and sealers.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "person": "Dietrich Geyer"
-        },
-        {
-          "person": "Elisabeth von Heideck"
-        },
-        {
-          "person": "Friedrich Truchsess von Baldersheim"
-        },
-        {
-          "person": "Hans Truchsess"
-        },
-        {
-          "place": "roettingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "witnessed an agreement by which Elisabeth von Heideck received sums secured on Röttingen and her children’s tithes at Gollhofen, in return relinquishing holdings and rights in Aub to her children."
-        }
-      ]
+      "english": "Thomas von Rosenberg, Dietrich Geyer, and Harthart and Fritz Truchseß von Baldersheim witness an agreement between Elisabeth von Heideck and her two children with her late husband Hans Truchseß. Elisabeth is to receive 2,500 florins, which her late husband had assigned to her, from the small and great tithes at Gollhofen and the associated tithe rights at Röttingen, until the children redeem the sum. In return, she relinquishes her possessions and rights in Aub to her children. The agreement also specifies how her property is to be divided and how the children are to assume her debts. Thomas von Rosenberg, Dietrich Geyer, and Harthart and Fritz Truchseß von Baldersheim are the witnesses and sealers."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "witnessed an agreement by which Elisabeth von Heideck received sums secured on Röttingen and her children’s tithes at Gollhofen, in return relinquishing holdings and rights in Aub to her children."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "person": "Dietrich Geyer"
+    },
+    {
+      "person": "Elisabeth von Heideck"
+    },
+    {
+      "person": "Friedrich Truchsess von Baldersheim"
+    },
+    {
+      "person": "Hans Truchsess"
+    },
+    {
+      "place": "roettingen"
     }
   ]
 }

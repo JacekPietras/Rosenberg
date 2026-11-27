@@ -7,19 +7,19 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-149154",
       "german": "Leupold von Seldeneck und Kun von Rosenberg, seine Hausfrau, verkaufen an das Gotteshaus St. Stefan zu Hollenbach den neunten Teil am Zehnten zu Ozendorf (abgeg. bei Hollenbach);\nausgestellt o.O., 25. Januar 1422 (St. Paul);\nSiegel: Leupold von Seldeneck.\n\nLaufzeit: 1422\n\nUmfang: 1 Urkunde",
       "english": "Leupold von Seldeneck and Kun von Rosenberg, his wife, sell to the church of St Stephen at Hollenbach one ninth of the tithe at Ozendorf (deserted, near Hollenbach).\n\nIssued at an unspecified place, 25 January 1422 (St Paul's Day).\n\nSeal: Leupold von Seldeneck.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "seldeneck"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=339&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000339%2Ftitlaufn_0000149154%2F03_0000149154_0001_3-149154-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "seldeneck"
     }
   ]
 }

@@ -8,14 +8,6 @@
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/2259b0be-8598-4142-8ffa-d34b4e499e72/charter",
       "german": "1271. 20. October, Prag. — Derselbe bestätigt die von Hedwig, der Witwe nach Wok von Rosenberg, gemachte Dotation der Kirche zu Rosenberg.\n\nXIX. In nomine domini amen. Nos Johannes dei gratia Pragensis episcopus omnibus in perpetuum. Cum a nobis petitur, quod iustum 25 est, tam uigor iuris quam ordo postulat rationis, ut id ad exauditionis gratiam fauorabiliter admitiere debeamus. Nouerint igitur uniuersi presentes litteras inspccturi, quod dotacionem ecclesie de Rosmberk quam fecit nobilis et honesta domina Heduigis relicta Wocconis bone memorie de Rosmberk de amborum filiorum suorum Henrici uidelicet et Uitconis expressa et libera conniuencia et assensu, prout in litteris eius super hoc editis quibus nos sigilli nostri robur apposuimus, ple- nius continetur, ex certa sciencia auctoritate qua fungimur, confir- mamus et presentis scripti patrocinio communimus in hiis seriptis, excommunicationis sententiam proferentes contra illos, qui id in posterum inmutare et calumpnia presumpserint attemptare aut illiquid diminuere de predictis, que in pretacta littera nominatim et sin- gularit (sic) ac generaliter sunt expressa. In cuius rei testimonium presens scriptum sigilli nostri caractare (sic) fecimus roboran. Actum et datum Prage anno domini M° C°C° Ix°x° Io xnj. Kal. No- uembris indictione qnarta decima pontificatus uero nostri anno quarto decimo. Beschädigtes, an gelb-grüner Seide bangendes Siegel wie in II.",
       "english": "Bishop John of Prague confirms the endowment of the church of Rosenberg made by the noble and honorable lady Hedwig, widow of the late Wok von Rosenberg, with the express and free consent of both her sons, Heinrich and Witigo, as more fully set out in her charter, to which the bishop affixed his seal. By his authority, he confirms and secures the endowment by this document, and pronounces a sentence of excommunication against anyone who in future attempts to alter, challenge, or diminish anything specified in that charter. The document was sealed. Given at Prague on 20 October 1271.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wok von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000038.png"
@@ -24,6 +16,14 @@
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000039.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wok von Rosenberg"
     }
   ]
 }

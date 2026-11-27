@@ -9,81 +9,81 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++d8f363ea-c9ca-4548-a45d-19b1f482c9c2&parent_id="
       ],
       "german": "Beweisbrief des Ritters Erhart von Rosenberg, Vogt zu Wildenberg, über 60 Mark Silber auf dem Bauhof (\"Buhoffe\") zu Rosenberg für Elisabeth, Tochter des Burkhard von Seckendorff und Ehefrau des Konrad von Rosenberg, des Sohnes des Ausstellers, zur Morgengabe. - Siegler: der Aussteller und seine drei Söhne Enhelhart von Rosenberg, Hans von Rosenberg (als Affix, s.u.) und Konrad von Rosenberg.\n\nMit Affix nach 1350 Februar 11 des Hans von Rosenberg, Domherr in Würzburg. - Sieger: der Aussteller Hans von Rosenberg.\n\nBesiegelung/Beglaubigung: 4 Siegel: von Siegel 1 und 2 sind nur Reste erhalten, Siegel 3 und 4 fehlen.",
-      "english": "Letter of proof by Eberhard von Rosenberg, Ritter, Vogt zu Wildenberg, concerning 60 marks of silver secured on the Bauhof (\"Buhoffe\") at Rosenberg for Elisabeth, daughter of Burkhard von Seckendorf and wife of Konrad von Rosenberg, the issuer's son, as her morning gift. \nSeals: the issuer and his three sons Enhelhart von Rosenberg, Hans von Rosenberg (as an attachment, see below), and Konrad von Rosenberg.\n\nWith an attachment added after 11 February 1350 from Hans von Rosenberg, canon in Würzburg. - Sealer: the issuer Hans von Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Letter of proof by Eberhard von Rosenberg, Ritter, Vogt zu Wildenberg, concerning 60 marks of silver secured on the Bauhof (\"Buhoffe\") at Rosenberg for Elisabeth, daughter of Burkhard von Seckendorf and wife of Konrad von Rosenberg, the issuer's son, as her morning gift. \nSeals: the issuer and his three sons Enhelhart von Rosenberg, Hans von Rosenberg (as an attachment, see below), and Konrad von Rosenberg.\n\nWith an attachment added after 11 February 1350 from Hans von Rosenberg, canon in Würzburg. - Sealer: the issuer Hans von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Vogt zu Wildenberg"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ],
-          "type": "parent",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "spouse",
-          "of": "Elisabeth von Seckendorf"
-        },
-        {
-          "person": "Burkhard von Seckendorf",
-          "type": "parent",
-          "of": "Elisabeth von Seckendorf"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ],
-          "type": "generic",
-          "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorf’s Morgengabe."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ],
-          "type": "parent",
-          "of": "Engelhard von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vogt zu Wildenberg"
-          ],
-          "type": "parent",
-          "of": "hans_domherr_zu_wurzburg",
-          "ofTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "type": "sibling",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "type": "sibling",
-          "of": "hans_domherr_zu_wurzburg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "sibling",
-          "of": "hans_domherr_zu_wurzburg"
-        }
+      "type": "parent",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "spouse",
+      "of": "Elisabeth von Seckendorf"
+    },
+    {
+      "person": "Burkhard von Seckendorf",
+      "type": "parent",
+      "of": "Elisabeth von Seckendorf"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Vogt zu Wildenberg"
+      ],
+      "type": "generic",
+      "content": "issued a proof letter concerning the Bauhof at Rosenberg securing Elisabeth von Seckendorf’s Morgengabe."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Vogt zu Wildenberg"
+      ],
+      "type": "parent",
+      "of": "Engelhard von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Vogt zu Wildenberg"
+      ],
+      "type": "parent",
+      "of": "hans_domherr_zu_wurzburg",
+      "ofTitle": [
+        "Domherr zu Würzburg"
       ]
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "type": "sibling",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "type": "sibling",
+      "of": "hans_domherr_zu_wurzburg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "sibling",
+      "of": "hans_domherr_zu_wurzburg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

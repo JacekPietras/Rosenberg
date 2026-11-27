@@ -7,24 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4246649",
       "german": "Revers Johann Konrads von Rosenbach und weiterer namentlich genannter Personen bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Johann Bernhard [Schenck zu Schweinsberg], Abt von Fulda\n\nDie Brüder Johann Konrad, Adam Hektor und Johann Dietrich von Rosenbach sowie weitere namentlich genannte Personen bestätigen die Belehnung mit Schackau (Schacken) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Johann Bernhard [Schenck zu Schweinsberg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, zwei anhängende Siegel in Holzkapseln\n\nSiegler: Johann Dietrich von Rosenbach und Adam Ludwig von Fechenbach\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Counter-reversal by Hans Konrad von Rosenberg and other named persons concerning their enfeoffment with Schackau and other fiefs listed individually by Johann Bernhard [Schenck zu Schweinsberg], Abbot of Fulda.\n\nThe brothers Johann Konrad, Adam Hektor, and Hans Dietrich von Rosenberg, together with other named persons, confirm their enfeoffment with Schackau (Schacken), including all its appurtenances in woodland and fields and an estate there, with Kleinsassen (Sassen), Gerharts (Gerhardts) [all places in the municipality of Hofbieber, Fulda district], and other fiefs listed individually, by Johann Bernhard [Schenck zu Schweinsberg], Abbot of Fulda. The letters of enfeoffment are inserted. Seals are announced.\n\nPhysical description: Original, parchment, two pendant seals in wooden cases.\n\nSealers: Hans Dietrich von Rosenberg and Adam Ludwig von Fechenbach.\n\nAdditional information: The counter-reversal has no date of its own but refers to the date of the inserted document.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Bernhard Schenk",
-          "personTitle": [
-            "Abt zu Fulda",
-            "zu Schweinsberg"
-          ]
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/1113/00001.jpg"
@@ -33,6 +15,24 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/1113/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Bernhard Schenk",
+      "personTitle": [
+        "Abt zu Fulda",
+        "zu Schweinsberg"
+      ]
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

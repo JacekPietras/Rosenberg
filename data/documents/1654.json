@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B747B71C-B5C2-4C22-A446-9592419D1780&parent_id="
       ],
       "german": "Original-Vollmachten für den auf den 22./12. Okt. 1654 ausgeschriebenen Kreistag in Bamberg\n\nEnthält-/Darin-Vermerke: Enthält: Dr. Johann Gelchsheimer, windsheimischer Konsulent, wegen Löwenstein-Wertheim; Dr. Johann Höefel, hennebergischer, ritterschaftlicher und schweinfurtischer Konsulent, wegen Castell; Hofrat Lorenz Eyselein wegen Brandenburg; Vitus Werner wegen Hohenlohe-Langenburg; David Samuel Lentilius und Johann Jacob Wagner wegen Hohenlohe-Waldenburg; Dr. Augustus Carpzov, sächsischer Kanzler zu Coburg, wegen Römhild; Sebastian Poth, Rat und Vizekanzler, wegen Deutschorden; Dr. Johann Höefel und Christoph Trautwein wegen Schweinfurt und Henneberg-Meiningen; Dr. Sigfried Happel wegen Hessen-Schmalkalden; Johann Hartmann von Rosenbach, würzburgischer Domdechant und Propst, und Lic. Sebastian Meel, Rat und Kanzler, wegen Rieneck; Lic. Willibald Bittelmeyer wegen Eichstätt",
-      "english": "Original powers of attorney for the district assembly summoned to Bamberg for 22/12 October 1654.\n\nContents/notes: Dr Johann Gelchsheimer, consultant for Windsheim, concerning Löwenstein-Wertheim; Dr Johann Höefel, consultant for Henneberg, the knighthood, and Schweinfurt, concerning Castell; court councillor Lorenz Eyselein concerning Brandenburg; Vitus Werner concerning Hohenlohe-Langenburg; David Samuel Lentilius and Johann Jacob Wagner concerning Hohenlohe-Waldenburg; Dr Augustus Carpzov, Saxon chancellor at Coburg, concerning Römhild; Sebastian Poth, councillor and vice-chancellor, concerning the Teutonic Order; Dr Johann Höefel and Christoph Trautwein concerning Schweinfurt and Henneberg-Meiningen; Dr Sigfried Happel concerning Hesse-Schmalkalden; Hans Hartmann von Rosenberg, Domdechant und Propst zu Würzburg, and Lic. Sebastian Meel, councillor and chancellor, concerning Rieneck; Lic. Willibald Bittelmeyer concerning Eichstätt.",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Domdekan"
-          ]
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Original powers of attorney for the district assembly summoned to Bamberg for 22/12 October 1654.\n\nContents/notes: Dr Johann Gelchsheimer, consultant for Windsheim, concerning Löwenstein-Wertheim; Dr Johann Höefel, consultant for Henneberg, the knighthood, and Schweinfurt, concerning Castell; court councillor Lorenz Eyselein concerning Brandenburg; Vitus Werner concerning Hohenlohe-Langenburg; David Samuel Lentilius and Johann Jacob Wagner concerning Hohenlohe-Waldenburg; Dr Augustus Carpzov, Saxon chancellor at Coburg, concerning Römhild; Sebastian Poth, councillor and vice-chancellor, concerning the Teutonic Order; Dr Johann Höefel and Christoph Trautwein concerning Schweinfurt and Henneberg-Meiningen; Dr Sigfried Happel concerning Hesse-Schmalkalden; Hans Hartmann von Rosenberg, Domdechant und Propst zu Würzburg, and Lic. Sebastian Meel, councillor and chancellor, concerning Rieneck; Lic. Willibald Bittelmeyer concerning Eichstätt."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Domdekan"
       ]
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

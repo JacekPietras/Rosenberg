@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++a7aacbc7-4032-4a9c-a525-8894b2cdcd7f&parent_id="
       ],
       "german": "Herzog, Johann Thomas, von Rosenberg, Bauer; Ansässigmachung in Rosenberg; Verheiratung mit Gundel, Anna Margaretha",
-      "english": "Johann Thomas Herzog von Rosenberg, farmer; establishment of residence in Rosenberg; marriage to Anna Margaretha Gundel",
-      "mention": [
-        {
-          "person": "Hans Thomas",
-          "personTitle": [
-            "Herzog von Rosenberg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Johann Thomas Herzog von Rosenberg, farmer; establishment of residence in Rosenberg; marriage to Anna Margaretha Gundel"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Thomas",
+      "personTitle": [
+        "Herzog von Rosenberg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

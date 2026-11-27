@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1774533",
       "german": "Bischof Erhard von Worms erlaubt Berthold Vetzer von Obrigheim und Konz von Rosenbach Güter zu Obrigheim und einen Teil an der von Worms lehnbaren Burg daselbst, genannt die Neuburg, zu verkaufen.\n\nLaufzeit: 1384 April 11 (1384 Montag nach Ostern)\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Bishop Erhard von Worms permits Berthold Vetzer von Obrigheim and Kunz von Rosenberg to sell property in Obrigheim and a share in the castle there, called Neuburg, which is held as a fief from Worms.\n\nTerm: 11 April 1384 (Monday after Easter 1384)\n\nSeal description: One seal.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "neuburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774533%2F04_0001774533_0001_4-1774533-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774533%2F04_0001774533_0002_4-1774533-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "place": "neuburg"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++781c9332-4235-4b17-aebb-5df85927c837&parent_id="
       ],
       "german": "Schlägerei zwischen Georg Michael Hahn von Augsburg, Sohn des Christoph Hahn von Rosenberg, und dem Bader Vestner von Unternbibert im Wirtshaus von Rosenberg.",
-      "english": "Brawl between Georg Michael Hahn von Augsburg, son of Christoph Hahn von Rosenberg, and the barber-surgeon Vestner von Unternbibert at the inn in Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Brawl between Georg Michael Hahn von Augsburg, son of Christoph Hahn von Rosenberg, and the barber-surgeon Vestner von Unternbibert at the inn in Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

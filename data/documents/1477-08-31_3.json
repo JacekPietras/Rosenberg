@@ -7,56 +7,56 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397369",
       "german": "Georg (Jorg) Zobel von Giebelstadt verzichtet, nachdem das Schloss Schüpf, woran er einen Anteil hat, in der Fehde zwischen Erzbischof Adolf von Mainz, Kurfürst Friedrich I. von der Pfalz und Bischof Rudolf von Würzburg einerseits und Jörg, Arnold und Michael von Rosenberg andererseits erobert und zerstört worden war, auf Forderungen und Ansprüche. Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg hatten ihn wieder zu seinem Teil und Nutzungsrechten kommen lassen.\n\nLaufzeit: 1477 August 31 (off sontag vor Egidien)\n\nSiegler: Georg (Jorg) Zobel von Giebelstadt",
       "english": "Georg Zobel von Giebelstadt renounces claims and demands after Schloss Schüpf, of which he held a share, had been captured and destroyed in the feud between Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Rudolf zu Würzburg, Bischof on one side, and Jörg, Arnold, and Michael von Rosenberg on the other. Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof had restored him to his share and usage rights.\n\nTime span: August 31, 1477 (on Sunday before Giles)\n\nSealer: Georg Zobel von Giebelstadt",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Erzbischof Adolf",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Erzbischof Diether",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "place": "oberschuepf-castle"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg Zobel von Giebelstadt",
-          "type": "generic",
-          "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005397369%2F04_0005397369_0001_4-5397369-1.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg Zobel von Giebelstadt",
+      "type": "generic",
+      "content": "renounced claims after his share of Schloss Schüpf, captured and destroyed in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Erzbischof Adolf",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Erzbischof Diether",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Michael von Rosenberg"
+    },
+    {
+      "place": "oberschuepf-castle"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

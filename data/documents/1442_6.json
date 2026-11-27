@@ -7,18 +7,18 @@
       "source": "Chmel n. 904",
       "url": "https://www.regesta-imperii.de/id/1442-00-00_72_0_13_0_0_904_904",
       "german": "verleiht dem Ritter Conrad von Rosenberg das Schloss Gutzheim, welches bisher freyes Eigen gewesen, das derselbe Conrad aber dem Reiche übergeben hatte, als Reichserblehen (und seiner Gemahlin Margareth gebornen von Sewnsheim) für Söhne und Töchter.",
-      "english": "He enfeoffs the knight Konrad von Rosenberg with Gutzheim Castle, formerly free property which Konrad had surrendered to the Empire, as an hereditary imperial fief for him and his wife Margarethe, née von Seinsheim, and for their sons and daughters.",
-      "mention": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Margaretha von Seinsheim"
-        }
+      "english": "He enfeoffs the knight Konrad von Rosenberg with Gutzheim Castle, formerly free property which Konrad had surrendered to the Empire, as an hereditary imperial fief for him and his wife Margarethe, née von Seinsheim, and for their sons and daughters."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Margaretha von Seinsheim"
     }
   ]
 }

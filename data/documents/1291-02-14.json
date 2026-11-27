@@ -6,50 +6,48 @@
       "source": "Staatsarchiv Wertheim G-Rep. 9 Lade XIII-XIV Nr. 71 Transsumpt",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-154254",
       "german": "Rudolf, Graf zu Wertheim, und Heinrich, Graf zu Henneberg, ernennen als Schiedsrichter in ihrem Streite die vier Ritter Cunrad von Uissigheim (Ussenkeim), Arnold Bleichin, Bopp von Amorbach und Cunrad von Kannenberg, als Obmann aber den Bruder Gotfried von Hohenlohe, genannt der Landkomtur des deutschen Hauses. Die Schiedsleute sollen entscheiden wegen des dritteils an Burg und Stadt Prozelten (Brotselden), daß Rudolf von Heinrich, und wegen des dritteils an Laudenbach oder Freudenberg, daß Heinrich von Rudolf beansprucht.\nDie beiden versprechen den Schiedsspruch zu halten; wer ihn nicht in 1 Monat vollzieht, soll mit 6 Rittern, \"Pfaffen\" oder Edelknechten mit 12 Pferden nach Gemünden (Gemonde an dem Mevn) oder nach Karlstadt in Einlager ziehen. Wer aber das nicht tut, gilt als treulos, ehrlos und meineidig. Der andere soll dann auf alle seine und seiner Erben Habe einen Anspruch von 500 M Silbers haben.\n\nLaufzeit: 1291 Februar 14 (an sente Valentins tage)\n\nSiegler: Rudolf, Graf zu Wertheim, und Heinrich, Graf zu Henneberg",
-      "english": "Rudolf, Count of Wertheim, and Heinrich, Count of Henneberg, appoint as arbitrators in their dispute the four knights Konrad von Uissigheim, Arnold Bleichin, Bopp von Amorbach, and Cunrad von Kannenberg, and as chief arbitrator Brother Gotfried von Hohenlohe, called the Land Commander of the Teutonic House. The arbitrators are to decide the claims concerning one third of Prozelten Castle and town, claimed by Rudolf from Heinrich, and one third of Laudenbach or Freudenberg, claimed by Heinrich from Rudolf.\n\nThe two counts promise to abide by the award. Whoever fails to carry it out within one month must go into enforced residence at Gemünden or Karlstadt with six knights, priests, or noble squires and twelve horses. Anyone who fails to do so is to be considered faithless, dishonored, and perjured. The other party may then claim 500 marks of silver against all the property of the defaulter and his heirs.\n\nDate: 14 February 1291 (Saint Valentine’s Day).\n\nSeal-bearers: Rudolf, Count of Wertheim, and Heinrich, Count of Henneberg.",
-      "mention": [
-        {
-          "person": "Gotfried von Hohenlohe"
-        },
-        {
-          "person": "Konrad von Uissigheim"
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        }
-      ]
+      "english": "Rudolf, Count of Wertheim, and Heinrich, Count of Henneberg, appoint as arbitrators in their dispute the four knights Konrad von Uissigheim, Arnold Bleichin, Bopp von Amorbach, and Cunrad von Kannenberg, and as chief arbitrator Brother Gotfried von Hohenlohe, called the Land Commander of the Teutonic House. The arbitrators are to decide the claims concerning one third of Prozelten Castle and town, claimed by Rudolf from Heinrich, and one third of Laudenbach or Freudenberg, claimed by Heinrich from Rudolf.\n\nThe two counts promise to abide by the award. Whoever fails to carry it out within one month must go into enforced residence at Gemünden or Karlstadt with six knights, priests, or noble squires and twelve horses. Anyone who fails to do so is to be considered faithless, dishonored, and perjured. The other party may then claim 500 marks of silver against all the property of the defaulter and his heirs.\n\nDate: 14 February 1291 (Saint Valentine’s Day).\n\nSeal-bearers: Rudolf, Count of Wertheim, and Heinrich, Count of Henneberg."
     },
     {
       "source": "Hohenlohisches Urkundenbuch. 1",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "german": "Die Grafen Rudolf von Wertheim und Heinrich von Henneberg wählen zu Schiedsrichtern über ihre Streitigkeiten umme Brotselden daz dritteil burg und stat und daz darzu horet, auf das Graf Rudolf gegen den Grafen Heinrich Ansprüche erhebt, und umme daz gegenwechsel an Lutenbach oder an Vreudenberg, das er ihm dagegen geben soll, die vier Ritter herrn Conraten von Ussenkein, hern Arnolden Bleichein, hern Boppen von Amerbach und hern Cunz von Kannenberg und zu eim uberman daruber bruder Gotfriden von Hohenloch genant den lantcommendur des Tutschen huses. Dirre brief der ist gegeben nach Christes geburte tusent jar zweihundert jar nunzig jar und einz, an sante Valentins tage.",
-      "english": "Counts Rudolf von Wertheim and Heinrich von Henneberg appoint as arbitrators in their dispute over one third of Prozelten Castle and town, and the counteroffer of Laudenbach or Freudenberg, the four knights Lord Konrad von Uissigheim, Lord Arnold Bleichein, Lord Boppe von Amorbach, and Lord Kunz von Kannenberg. They appoint Brother Gotfried von Hohenlohe, Land Commander of the Teutonic House, as chief arbitrator. The arbitrators are to decide the claims Count Rudolf raises against Count Heinrich and the counteroffer the latter is to make in return. Given in 1291 after the birth of Christ, on St Valentine’s Day.",
-      "mention": [
-        {
-          "person": "Rudolf von Wertheim"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
+      "english": "Counts Rudolf von Wertheim and Heinrich von Henneberg appoint as arbitrators in their dispute over one third of Prozelten Castle and town, and the counteroffer of Laudenbach or Freudenberg, the four knights Lord Konrad von Uissigheim, Lord Arnold Bleichein, Lord Boppe von Amorbach, and Lord Kunz von Kannenberg. They appoint Brother Gotfried von Hohenlohe, Land Commander of the Teutonic House, as chief arbitrator. The arbitrators are to decide the claims Count Rudolf raises against Count Heinrich and the counteroffer the latter is to make in return. Given in 1291 after the birth of Christ, on St Valentine’s Day."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Uissigheim",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "was appointed as one of the four arbitrators by the counts of Wertheim and Henneberg."
-        },
-        {
-          "person": "Gotfried von Hohenlohe",
-          "type": "generic",
-          "content": "was appointed chief arbitrator and was identified as Land Commander of the Teutonic House."
-        }
+      "type": "generic",
+      "content": "was appointed as one of the four arbitrators by the counts of Wertheim and Henneberg."
+    },
+    {
+      "person": "Gotfried von Hohenlohe",
+      "type": "generic",
+      "content": "was appointed chief arbitrator and was identified as Land Commander of the Teutonic House."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gotfried von Hohenlohe"
+    },
+    {
+      "person": "Konrad von Uissigheim"
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "person": "Rudolf von Wertheim"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

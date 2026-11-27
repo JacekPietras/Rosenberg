@@ -11,32 +11,6 @@
       ],
       "german": "Gotz vom Ryn, Ritter, und seine Ehefrau Margreth verkaufen mit Einverständnis von Katherin, Tochter des Gotz vom Ryn und dessen erster Ehefrau Katherin, an Eberhart Schenk von Rossberg (\"Rosperg\"), Ritter, zwei vom Kloster Michelsberg zu Lehen gehende Höfe zu Retzstadt, genannt \"der Snepfen hofe\" und \"der Struben hofe\", eine Wiese zu Thüngen, die Unschlittgült zu Stetten und zu Volkach und andere Güter zu Retzstadt für 400 Pfund Heller. Bürgen: Konrad von Gattenhofen zu Baldersheim, Lutz Truchseß von Baldersheim der Alte und Hans Truchseß von Baldersheim, alle drei Edelknechte. Originaldatierung: an unser frauen abent kerczweiung.",
       "english": "Gotz vom Ryn, Ritter, and his wife Margreth, with the consent of Katherin, Gotz’s daughter by his first wife, sell to Eberhard Schenk von Rosenberg, Ritter, two farms at Retzstadt held in fief from Michelsberg Abbey, a meadow at Thüngen, tallow rents at Stetten and Volkach, and other properties at Retzstadt, for 400 pounds Heller. Guarantors: Konrad von Gattenhofen of Baldersheim, Lutz Truchseß von Baldersheim der Alte, and Hans Truchseß von Baldersheim, all Edelknechte. Original date: the eve of Candlemas.",
-      "mention": [
-        {
-          "place": "baldersheim"
-        },
-        {
-          "person": "Eberhard Schenk von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Hans Truchsess von Baldersheim"
-        },
-        {
-          "person": "Ludwig Truchsess von Baldersheim",
-          "personTitle": [
-            "der Alte"
-          ]
-        },
-        {
-          "place": "michelsberg"
-        },
-        {
-          "place": "thuengen"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/71d2d482-50ab-4d1f-9d04-501aca6f51ab/1/full/4179,/0/default.jpg"
@@ -51,6 +25,32 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/71d2d482-50ab-4d1f-9d04-501aca6f51ab/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "baldersheim"
+    },
+    {
+      "person": "Eberhard Schenk von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Hans Truchsess von Baldersheim"
+    },
+    {
+      "person": "Ludwig Truchsess von Baldersheim",
+      "personTitle": [
+        "der Alte"
+      ]
+    },
+    {
+      "place": "michelsberg"
+    },
+    {
+      "place": "thuengen"
     }
   ]
 }

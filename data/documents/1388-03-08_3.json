@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3850461",
       "german": "Berthold Vetzer von Obrigheim, Edelknecht, verkauft an Konz von Rosenbach und dessen Ehefrau Irmgard einen Teil der Neuburg zu Obrigheim und Güter daselbst.\n\nLaufzeit: 1388 März 8 (1388 Sonntag vor Mittfasten)\n\nSiegelbeschreibung: 2 Siegel",
       "english": "Berthold Vetzer von Obrigheim, esquire, sells to Kunz von Rosenberg and his wife Irmgard a portion of Neuburg Castle at Obrigheim and property there.\n\nDate: 8 March 1388 (Sunday before Mid-Lent).\n\nSeal description: Two seals.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "place": "neuburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774535%2F04_0001774535_0001_4-1774535-1.jpg"
@@ -26,6 +18,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001774535%2F04_0001774535_0003_4-1774535-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "place": "neuburg"
     }
   ]
 }

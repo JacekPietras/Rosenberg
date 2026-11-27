@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 73",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755775",
       "german": "Belehnung des Albrecht von Rosenberg[-Boxberg] mit dem Kirchensatz und etlichen Zinsen, Gülten und Gütern zu Oberbalbach durch Graf Ludwig Kasimir von Hohenlohe[-Neuenstein], 1563 Sept. 24 [Regest].",
-      "english": "Enfeoffment of Albrecht von Rosenberg[-Boxberg] with the patronage right and various rents, revenues, and properties in Oberbalbach by Count Ludwig Kasimir von Hohenlohe[-Neuenstein], September 24, 1563 [regesta].",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "generic",
-          "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Graf Ludwig Kasimir von Hohenlohe."
-        }
+      "english": "Enfeoffment of Albrecht von Rosenberg[-Boxberg] with the patronage right and various rents, revenues, and properties in Oberbalbach by Count Ludwig Kasimir von Hohenlohe[-Neuenstein], September 24, 1563 [regesta]."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "generic",
+      "content": "received the church patronage and various rents, annuities and properties at Oberbalbach as a fief from Graf Ludwig Kasimir von Hohenlohe."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Ludwig Kasimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
     }
   ]

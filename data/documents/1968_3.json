@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++39cb25ea-184a-4f8c-9cad-d0e579502e3b&parent_id="
       ],
       "german": "Nachlassakt von Rosenberger Josef, Dorn 3 1/6",
-      "english": "Probate file of Josef von Rosenberg, Dorn 3 1/6.",
-      "mention": [
-        {
-          "person": "Josef von Rosenberg"
-        },
-        {
-          "place": "wallduern"
-        }
-      ]
+      "english": "Probate file of Josef von Rosenberg, Dorn 3 1/6."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Josef von Rosenberg"
+    },
+    {
+      "place": "wallduern"
     }
   ]
 }

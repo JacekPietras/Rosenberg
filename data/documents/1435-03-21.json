@@ -10,17 +10,6 @@
       ],
       "german": "Thoman von Rosennberg verspricht auf ein Ersuchen der Stadt Nürnberg an ihn und die Ganerben zu Schipff zwischen ihr und Eberhart von Tottenheimb zu vermitteln.\n\nBesiegelung/Beglaubigung: mit Verschlußsiegel (fehlt).",
       "english": "At the request of the city of Nuremberg, Thomas von Rosenberg promises to mediate between the city and Eberhart von Tottenheimb, together with the co-heirs at Schipff.\n\nSealing/authentication: with a pendant seal (missing).",
-      "mention": [
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/86f01a5e-0ccc-4a53-bae5-78e7aed4fcce/1/full/max/0/default.jpg"
@@ -29,6 +18,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/86f01a5e-0ccc-4a53-bae5-78e7aed4fcce/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "person": "Thomas von Rosenberg"
     }
   ]
 }

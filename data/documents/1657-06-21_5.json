@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/1115/charter",
       "german": "Johann Hartmann, Johann Konrad und Franz Christoph von Rosenbach sowie weitere namentlich genannte Personen bestätigen die Belehnung mit Schackau (Schackhen) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Joachim [von Gravenegg], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann Hartmann von Rosenbach\n\nSiegel: anhängendes Siegel in Holzkapsel Johann Hartmann von Rosenbach",
       "english": "Johann Hartmann, Johann Konrad, and Franz Christoph von Rosenberg, together with other persons named in full, confirm their enfeoffment by Joachim [von Gravenegg], Abbot of Fulda, with Schackau (Schackhen), including all its woodland and field appurtenances and an estate there, with Kleinsassen (Sassen), Gerharts (Gerhardts) [all localities in the municipality of Hofbieber, Fulda district], and other fiefs specified individually. The feudal letter is inserted. Seal announcement.\n\nSealer: Hans Hartmann von Rosenberg.\n\nSeal: Attached seal in a wooden capsule of Hans Hartmann von Rosenberg.",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201115%20Vorderseite%20%281657%20Juni%2021%29.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201115%20Rueckseite%20%281657%20Juni%2021%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

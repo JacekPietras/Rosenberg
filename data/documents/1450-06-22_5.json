@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-2615085",
       "german": "Vergleich zwischen Herzog Albrecht von Österreich und die Stadt Rottweil wegen der Hohenberger Fehde; diesen Vergleich bestätigen die Bischöfe Gottfried von Würzburg und Silvester von Chiemsee, Pfalzgraf Friedrich bei Rhein, Hans von Neitberg, Ulrich Riedrer, Graf Jörg von Hennenberg, Jörg Fuchs zu Schweinshaupten (Sweinshaubten), Jobst von Venningen, Graf Hess zu Lieningen, Peter von Talheim, Ulrich von Rosenberg, Johannes Dustier, Dompropst zu Breslau, Ott Pienzenauer und Jokob Putrich zu Reichartshausen.\n\nLaufzeit: 1450 Juni 22 (Montag vor Sankt Johannestag der Sonnwenden)\n\nSiegelbeschreibung: 16 anhängende Siegel",
       "english": "Settlement between Albrecht, Herzog von Österreich, and the town of Rottweil concerning the Hohenberg feud. The settlement is confirmed by Gottfried, Bischof von Würzburg; Silvester, Bischof von Chiemsee; Friedrich, Pfalzgraf bei Rhein; Hans von Neitberg; Ulrich Riedrer; Graf Jörg von Hennenberg; Jörg Fuchs zu Schweinshaupten; Jobst von Venningen; Graf Hess zu Lieningen; Peter von Talheim; Ulrich von Rosenberg; Johannes Dustier, Dompropst zu Breslau; Ott Pienzenauer; and Jokob Putrich zu Reichartshausen.\n\nDate range: June 22, 1450 (Monday before the feast of Saint John at the summer solstice).\n\nSeal description: 16 attached seals.",
-      "mention": [
-        {
-          "person": "Bischof Gotfried",
-          "personTitle": [
-            "Bischof von Würzburg"
-          ]
-        },
-        {
-          "person": "Peter von Talheim"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4913&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000004913%2Ftitlaufn_0002615085%2F01_0002615085_0001_1-2615085-1.jpg"
@@ -38,6 +24,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4913&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000004913%2Ftitlaufn_0002615085%2F01_0002615085_0005_1-2615085-5.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Gotfried",
+      "personTitle": [
+        "Bischof von Würzburg"
+      ]
+    },
+    {
+      "person": "Peter von Talheim"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

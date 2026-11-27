@@ -14,17 +14,17 @@
         "https://digi.ub.uni-heidelberg.de/diglit/uah_XII-2_299"
       ],
       "german": "Wilhelm von Wattenheim und seine Ehefrau Gertrud Gauwer von Heppenheim bestätigen eine Schuld von 32 Gulden gegenüber Hans von Sickingen und verpfänden acht Morgen Acker zwischen Kettenheim und Egersheim. Weil diese Äcker als Lehen von Werner Winther von Alzey vergeben worden waren, wird seine Einwilligung benötigt. Werner wird als Ritter und als Siegler genannt; sein Siegel ist nicht erhalten.\n\nRegestenauszug: „Da die 8 Morgen Acker dem Ehepaar von Werner Winther von Alzey als Lehen übertragen worden sind“\n\nHinweis zur Quellenlage: Katalog nennt Werner Winther von Alzey als Lehensherr und Werner Winter von Alzey, Ritter, als Siegler; Siegel 1 fehlt.\n\nVerifikation: Katalogmetadaten verifiziert; mittelalterliche Handschrift nicht vollständig transkribiert",
-      "english": "Wilhelm von Wattenheim and his wife Gertrud Gauwer von Heppenheim acknowledged a debt of 32 florins to Hans von Sickingen and pledged eight acres between Kettenheim and Egersheim. Because the fields had been granted as a fief by Werner Winther von Alzey, his consent was required. He is identified as a knight and named as a sealer; his seal is no longer extant.\n\nPublished regest excerpt: “Da die 8 Morgen Acker dem Ehepaar von Werner Winther von Alzey als Lehen übertragen worden sind”\n\nSource note: The catalog identifies Werner Winther von Alzey as the fief lord and Werner Winther von Alzey, knight, as the sealer; seal 1 is missing.\n\nVerification: Catalog metadata verified; the medieval manuscript was not fully transcribed.",
-      "mention": [
-        {
-          "person": "Hans von Sickingen"
-        },
-        {
-          "person": "Wernher Winther von Alzey",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
+      "english": "Wilhelm von Wattenheim and his wife Gertrud Gauwer von Heppenheim acknowledged a debt of 32 florins to Hans von Sickingen and pledged eight acres between Kettenheim and Egersheim. Because the fields had been granted as a fief by Werner Winther von Alzey, his consent was required. He is identified as a knight and named as a sealer; his seal is no longer extant.\n\nPublished regest excerpt: “Da die 8 Morgen Acker dem Ehepaar von Werner Winther von Alzey als Lehen übertragen worden sind”\n\nSource note: The catalog identifies Werner Winther von Alzey as the fief lord and Werner Winther von Alzey, knight, as the sealer; seal 1 is missing.\n\nVerification: Catalog metadata verified; the medieval manuscript was not fully transcribed."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Sickingen"
+    },
+    {
+      "person": "Wernher Winther von Alzey",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

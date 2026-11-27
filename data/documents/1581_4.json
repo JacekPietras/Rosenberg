@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C91D259E-9223-4D95-85A4-75AE70BE6892&parent_id="
       ],
       "german": "Zeugenaussagen in der Sache Würzburg gegen Zaisolf von Rosenberg respektive dessen Erben und deren Vormünder von Vellberg, von Steinau gen. Steinrück und Geyer von Giebelstadt bezüglich der Jagdgerechtigkeit im sog. Küheholz auf Dunzendorfer Markung",
-      "english": "Witness statements in the case of Würzburg against Zaisolph von Rosenberg, or his heirs and their guardians von Vellberg, von Steinau called Steinrück, and Geyer von Giebelstadt, concerning hunting rights in the so-called Küheholz in the Dunzendorf district.",
-      "mention": [
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "place": "wurzburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
-      ]
+      "english": "Witness statements in the case of Würzburg against Zaisolph von Rosenberg, or his heirs and their guardians von Vellberg, von Steinau called Steinrück, and Geyer von Giebelstadt, concerning hunting rights in the so-called Küheholz in the Dunzendorf district."
+    }
+  ],
+  "mention": [
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "place": "wurzburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

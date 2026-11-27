@@ -7,24 +7,24 @@
       "source": "RIplus Regg. Baden 3 n. 6780",
       "url": "https://www.regesta-imperii.de/id/c6d769c9-64a2-4247-895c-4ff573ddadb7",
       "german": "Gr. Hesse v. Leiningen, hofmeister pf. Ludwigs und die pfälzischen räte r. Konrad v. Rosenberg, r. Swicker v. Sickingen, meister Bartholomäus in geistlichen, Hans von Laudemberg in weltlichen rechten lehrer, meister Hans Ernst, licenciat in der hl. schrift, Heinrich v. Fleckenstein, Konrad v. Lengenfelt und Friedrich v. Massenbach sprechen nach prüfung der von Hans Rubsamen vorgebrachten kundschaften, dass er ein rechter nachkomme des briefs nr. h 412 sei, und dass M. Jakob ihm antworten solle nach laut des früheren urteils.",
-      "english": "Hesse von Leiningen, Graf, Hofmeister to Ludwig, Kurfürst, and the Palatine councillors Konrad von Rosenberg, Ritter, Swicker von Sickingen, Ritter, Master Bartholomäus, professor of canon law, Hans von Laudemberg, professor of civil law, Master Hans Ernst, licentiate in Holy Scripture, Heinrich von Fleckenstein, Konrad von Lengenfelt, and Friedrich von Massenbach, having examined the testimony presented by Hans Rubsamen, declare that he is a true successor to the letter no. h 412 and that Jakob, Markgraf should answer him according to the terms of the earlier judgment.",
-      "mention": [
-        {
-          "place": "heidelberg"
-        },
-        {
-          "person": "Heinrich von Fleckenstein"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "sickingen"
-        }
+      "english": "Hesse von Leiningen, Graf, Hofmeister to Ludwig, Kurfürst, and the Palatine councillors Konrad von Rosenberg, Ritter, Swicker von Sickingen, Ritter, Master Bartholomäus, professor of canon law, Hans von Laudemberg, professor of civil law, Master Hans Ernst, licentiate in Holy Scripture, Heinrich von Fleckenstein, Konrad von Lengenfelt, and Friedrich von Massenbach, having examined the testimony presented by Hans Rubsamen, declare that he is a true successor to the letter no. h 412 and that Jakob, Markgraf should answer him according to the terms of the earlier judgment."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
+    },
+    {
+      "person": "Heinrich von Fleckenstein"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "sickingen"
     }
   ]
 }

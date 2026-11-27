@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++dd7268c1-2fbf-4ae3-8265-31bdd49279bc&parent_id="
       ],
       "german": "Johann Samuel Wünerlein von Rosenberg vertauscht ¼ Tw Wiesen gegen ¾ Mg zum Gut Rügland gehörigen Acker.",
-      "english": "Johann Samuel Wünerlein of Rosenberg exchanges a quarter of a Tagwerk of meadow for three-quarters of a Morgen of arable land belonging to the Rügland estate.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Samuel Wünerlein of Rosenberg exchanges a quarter of a Tagwerk of meadow for three-quarters of a Morgen of arable land belonging to the Rügland estate."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

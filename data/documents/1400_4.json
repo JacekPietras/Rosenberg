@@ -6,24 +6,24 @@
       "source": "[Regg. Pfalzgrafen 2] n. 6269",
       "url": "https://www.regesta-imperii.de/id/1400-00-00_4_0_10_0_0_6276_6269",
       "german": "Datz sind die edel lute (der Oberpfalz) die burckhut von meinem hrn. (kg. Ruprecht) habent und davon dienen sullen: It. Ott Seft der elter hat ynn die gut, die der Schannbekch ynn het, er hat aber darauf XX ℔ ₰ It. Heinrich Frykenhofer hat ynn die gut, die der Rorensteter ynn het It. Erhard Kempnater hat ynn die gut zu Lentsydel usw. It. der Prenntel zu Hohenvels hat ynn VIII schaf gelts usw. It. der Liebenegker ein purkhut zu Pfaffenhofen usw. It. der Telwanger ein burkchut zu Lengenvelt usw. It. der Kuttenawer ein burkchut zu Lengenvelt usw. It. die zwen Sintzenhofer zwen burkchut zu Lengenvelt usw. It. Fridrich Ramersperger (sic!) ein burkchut zu Kalmuntz usw. It. Hans Gerberstorffer zu dem Schawenstein usw. It. der Pawrnfeint Kempnater ein burkchut zu Rosenberg It. die Wildensteiner ein burkchut zu Tann It. Raffahel Kolner ein burkchut zu Tann It. die Stainlinger ein burkchut zu Tann It. Albr. d.' jung Zantner ein burkchut zu Ruden It. Conrad dez Zantners seligen wytib ein burkchut zu Ruden. It. sern ein burkchut usw. no(ta). It. Potzlinger zu dem Roslaubs It. (Endr)eis Polnruter zu Traussaw ein burkchut It. Pfreimder ein burkchut no(ta). It. die zwen Hirssperger zu Ebenod It. Ammann zu Waldeck an dem perg hat man verliehen Peter des Schreibers sönen It. der Jünchinger zu Lengenvelt und Helffenberg ein burkchut It. Pauls Pürtzer ein purkchut zu Helffenberg nimpt mein hr. ein It. die zwey Puchfelder habent ain purkchut zu Helffenberg nimpt mein hr. ein. It. Hans Schütz ein burkchut auf dem hof zu Hohensee.",
-      "english": "These are the nobles of the Upper Palatinate who hold castle guards from my lord (King Ruprecht) and must render service for them: Ott Seft der Ältere holds the property held by Schannbekch, but owes 20 pounds of pennies on it; Heinrich Frykenhofer holds the property held by Rorensteter; Erhard Kempnater holds the property at Lentsydel; Prenntel zu Hohenvels holds eight sheep’s worth; Liebenegker holds a castle guard at Pfaffenhofen; Telwanger, Kuttenawer, and the two Sintzenhofer each hold a castle guard at Lengenvelt; Fridrich Ramersperger (sic) holds one at Kalmuntz; Hans Gerberstorffer holds one at Schawenstein; Pawrnfeint Kempnater holds one at Rosenberg; the Wildensteiner, Raffahel Kolner, and the Stainlinger each hold one at Tann; Albrecht der Junge Zantner holds one at Ruden, as does the widow of the late Conrad Zantner; Sern holds one (note); Potzlinger zu dem Roslaubs; (Endr)eis Polnruter zu Traussaw holds one; Pfreimder holds one (note); the two Hirssperger hold one at Ebenod; the steward at Waldeck on the mountain has been granted the one held by Peter des Schreibers’ sons; Jünchinger holds one at Lengenvelt and Helffenberg; Paul Pürtzer holds one at Helffenberg, and my lord takes one; the two Puchfelder hold one at Helffenberg, and my lord takes one; Hans Schütz holds one on the farm at Hohensee.",
-      "mention": [
-        {
-          "person": "Erhard Kemnater"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "waldeck"
-        }
+      "english": "These are the nobles of the Upper Palatinate who hold castle guards from my lord (King Ruprecht) and must render service for them: Ott Seft der Ältere holds the property held by Schannbekch, but owes 20 pounds of pennies on it; Heinrich Frykenhofer holds the property held by Rorensteter; Erhard Kempnater holds the property at Lentsydel; Prenntel zu Hohenvels holds eight sheep’s worth; Liebenegker holds a castle guard at Pfaffenhofen; Telwanger, Kuttenawer, and the two Sintzenhofer each hold a castle guard at Lengenvelt; Fridrich Ramersperger (sic) holds one at Kalmuntz; Hans Gerberstorffer holds one at Schawenstein; Pawrnfeint Kempnater holds one at Rosenberg; the Wildensteiner, Raffahel Kolner, and the Stainlinger each hold one at Tann; Albrecht der Junge Zantner holds one at Ruden, as does the widow of the late Conrad Zantner; Sern holds one (note); Potzlinger zu dem Roslaubs; (Endr)eis Polnruter zu Traussaw holds one; Pfreimder holds one (note); the two Hirssperger hold one at Ebenod; the steward at Waldeck on the mountain has been granted the one held by Peter des Schreibers’ sons; Jünchinger holds one at Lengenvelt and Helffenberg; Paul Pürtzer holds one at Helffenberg, and my lord takes one; the two Puchfelder hold one at Helffenberg, and my lord takes one; Hans Schütz holds one on the farm at Hohensee."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erhard Kemnater"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "waldeck"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B6BBB099-F6AA-4FA7-B480-19ADE89573C9&parent_id="
       ],
       "german": "Tod des Regierungs- und Hofkammerrats Bayer und Ernennung des Sekretärs Hortig zum Verwalter von Großalbershof und Riglashof sowie des Regierungsregistraturadjunkten Weingärtner zum Verwalter von Rosenberg, Hammerphilippsburg, Lohe und Lobenhof",
-      "english": "Death of the government and court chamber councillor Bayer, and appointment of the secretary Hortig as administrator of Großalbershof and Riglashof, as well as the government registry adjutant Weingärtner as administrator of Rosenberg, Hammerphilippsburg, Lohe, and Lobenhof.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Death of the government and court chamber councillor Bayer, and appointment of the secretary Hortig as administrator of Großalbershof and Riglashof, as well as the government registry adjutant Weingärtner as administrator of Rosenberg, Hammerphilippsburg, Lohe, and Lobenhof."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

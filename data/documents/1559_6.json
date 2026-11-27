@@ -6,19 +6,19 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Vertrag zwischen Hans von Finsterlohe zu Laudenbach und Christoph von Rosenberg über die Beilegung von Schaftriebs-und Weidestreitigkeiten bei Ebertsbronn und Rinderfeld",
-      "english": "Agreement between Hans von Finsterlohe at Laudenbach and Christoph von Rosenberg on settling sheep-driving and grazing disputes at Ebertsbronn and Rinderfeld",
-      "mention": [
-        {
-          "place": "rinderfeld"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Christoph von Rosenberg",
-          "type": "generic",
-          "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach."
-        }
-      ]
+      "english": "Agreement between Hans von Finsterlohe at Laudenbach and Christoph von Rosenberg on settling sheep-driving and grazing disputes at Ebertsbronn and Rinderfeld"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Christoph von Rosenberg",
+      "type": "generic",
+      "content": "settled sheep-grazing and pasture disputes near Ebertsbronn and Rinderfeld with Hans von Finsterlohe zu Laudenbach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rinderfeld"
     }
   ]
 }

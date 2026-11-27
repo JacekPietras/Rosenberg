@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++04AA6ED0-7E65-4E97-BF24-4D8C4CCD621E&parent_id="
       ],
       "german": "Beschwerde des Albrecht Christoph von Rosenberg gegen Kurmainz und den Rat zu Osterburken wegen des dem Rosenberg´schen Hirten zu Bofsheim/Baden bestrittenen Hutrechtes in dem Wald, der Kalben genannt",
-      "english": "Complaint by Albrecht Christoph von Rosenberg against Mainz and the council at Osterburken concerning the right to pasture in the forest called Kalben, contested for Rosenberg's shepherd at Bofsheim in Baden.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "boffsheim"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Complaint by Albrecht Christoph von Rosenberg against Mainz and the council at Osterburken concerning the right to pasture in the forest called Kalben, contested for Rosenberg's shepherd at Bofsheim in Baden."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "boffsheim"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

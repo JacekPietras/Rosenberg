@@ -10,20 +10,6 @@
       ],
       "german": "Martin von Uissigheim (Ussickheim), Domherr zu Würzburg (wirtzburg) und Propst des Stifts St. Johann zu Neumünster (Neuenmunster) zu Würzburg, beurkundet, daß er mit Einverständnis des Matthäus Mein, Dechant, und des Kapitels des Stifts die Güter, die Klilian Leib, Prior, und der Konvent des Klosters Rebdorf (Rebdorff) bei Eichstätt (Eistatt) vor Jahren von dem inzwischen verstorbenen Erasmus von Enheim (Ehenhein), Schwager des A. (schwager) gekauft hatten und die von dem Stift Neumünster zu Lehen rührten, gegen Zahlung von 100 rheinischen Gulden fränkischer Landeswährung, die er von Ludwig von Hutten zu Frankenberg (Fordernfranckenberg), Ritter, Schwager des A., erhalten hat, von der Lehenschaft lossagt. Der genannte Erasmus von Enheim hatte seinen Wein- und Getreidezehnten zu Markelsheim (Marckelsheim) an das erwähnte Kloster Rebdorf verkauft und versprochen, den Teil der verkauften Güter, der von der Probstei Neumünster zu Lehen rührte, von der Lehenschaft zu befreien. Nachdem er diesem Versprechen jedoch nicht nachgekommen war, hatte der erwähnte Kilian Leib und der Konvent des Klosters Rebdorf dessen Söhne Daniel, Philipp und Christoph von Enheim, Shwäger der A., vor dem Landgericht des Herzogentums zu Franken (Francken) angelegt. Auf Vermittlung des erwähnten Ludwig von Hutten, Onkel der Jungen von Enheim, kam es zur Einigung.\n\nLaufzeit: 1542 Juli 17 (montag nach Margarethe)\n\nSiegelbeschreibung: 2 Sg.\n\nVermerke: 5 Rv.\n\nSiegler: Martin von Uissigheim, Domherr zu Würzburg und Propst des Stifts St. Johann zu Neumünster zu Würzburg; Matthäus Mein (unnser cappitels innsigel)",
       "english": "Martin von Uissigheim, Domherr zu Würzburg and Propst of St John’s collegiate church at Neumünster in Würzburg, certifies that, with the consent of Matthäus Mein, Dechant, and the chapter, he releases from feudal tenure the property which Kilian Leib, Prior, and the convent of Rebdorf monastery near Eichstätt had years earlier purchased from the now-deceased Erasmus von Enheim, the issuer’s brother-in-law, and which was held from Neumünster, in return for 100 Rhenish guilders in Franconian currency received from Ludwig von Hutten zu Frankenberg, Ritter, the issuer’s brother-in-law The said Erasmus von Enheim had sold his wine and grain tithe at Markelsheim to the monastery of Rebdorf and promised to free from feudal tenure the portion of the property held from Neumünster. When he failed to fulfil this promise, Kilian Leib and the convent of Rebdorf brought his sons Daniel, Philipp, and Christoph von Enheim, the issuer’s brothers-in-law, before the regional court of the Duchy of Franconia. Through the mediation of the aforementioned Ludwig von Hutten, uncle of the young men of Enheim, an agreement was reached.\n\nDate: 17 July 1542 (Monday after Margaret)\n\nSeal description: 2 seals\n\nEndorsements: 5 endorsements\n\nSealers: Martin von Uissigheim, Domherr zu Würzburg and Propst of St John’s collegiate church at Neumünster in Würzburg; Matthäus Mein (our chapter’s seal)",
-      "mention": [
-        {
-          "person": "Ludwig von Hutten"
-        },
-        {
-          "person": "Martin von Uissigheim",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001412996%2F02_0001412996_0003_2-1412996-3.jpg"
@@ -32,6 +18,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001412996%2F02_0001412996_0004_2-1412996-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ludwig von Hutten"
+    },
+    {
+      "person": "Martin von Uissigheim",
+      "personTitle": [
+        "Domherr zu Würzburg"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

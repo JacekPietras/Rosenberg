@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++71dce350-15e8-4d30-a687-a87c6e0f5acd&parent_id="
       ],
       "german": "Vertrag des Ritters Hans von Seckendorff-Aberdar, Hofmeister, des Linhart von Rosenberg, Amtmann zu Uffenheim, und des Asmus von Ehenheim zu Willanzheim (\"Wielezheim\") über die von Kaspar Schenk von Schenkenstein wegen seiner an Heinz Göldlin begangenen Tötung (\"Entleibung\") nun an dessen Witwe Anna Göldlin und ihre Kinder zu bezahlen habenden 400 Gulden.",
-      "english": "Agreement by knight Hans von Seckendorf-Aberdar, court master, Leonhard von Rosenberg, Amtmann zu Uffenheim, and Asmus von Ehenheim of Willanzheim (\"Wielezheim\") concerning the 400 guilders that Kaspar Schenk von Schenkenstein, having killed Heinz Göldlin (\"Entleibung\"), now owes to Göldlin's widow Anna Göldlin and their children.",
-      "mention": [
-        {
-          "person": "Caspar Schenk"
-        },
-        {
-          "person": "Hans von Seckendorf",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
+      "english": "Agreement by knight Hans von Seckendorf-Aberdar, court master, Leonhard von Rosenberg, Amtmann zu Uffenheim, and Asmus von Ehenheim of Willanzheim (\"Wielezheim\") concerning the 400 guilders that Kaspar Schenk von Schenkenstein, having killed Heinz Göldlin (\"Entleibung\"), now owes to Göldlin's widow Anna Göldlin and their children."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Leonhard von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Uffenheim"
       ],
-      "facts": [
-        {
-          "person": "Leonhard von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Uffenheim"
-          ],
-          "type": "generic",
-          "content": "made an agreement with Hans von Seckendorff-Aberdar and Asmus von Ehenheim concerning payment by Kaspar Schenk von Schenkenstein to Anna Göldlin and her children after the killing of Heinz Göldlin."
-        }
+      "type": "generic",
+      "content": "made an agreement with Hans von Seckendorff-Aberdar and Asmus von Ehenheim concerning payment by Kaspar Schenk von Schenkenstein to Anna Göldlin and her children after the killing of Heinz Göldlin."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Caspar Schenk"
+    },
+    {
+      "person": "Hans von Seckendorf",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

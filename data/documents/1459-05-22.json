@@ -9,43 +9,43 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++673eb62a-6877-4717-b797-745be57ccdee&parent_id="
       ],
       "german": "Anlassbrief auf Markgraf Albrecht von Brandenburg in Streitsachen zwischen Ritter Heinrich Zobel, Hans von Absberg und Ulrich von Rosenberg als Vormünder der Kinder des verstorbenen Jörg von Rosenberg und Ulrich von Rosenberg für sich selbst auf einen Teil, und den Brüdern Hans und Arnold von Seckendorff, den Brüdern Heinrich von Helmstatt wegen seiner Ehefrau und Wilhelm von Fellberg auf den anderen Teil wegen des verlassenen Hab und Guts des verstorbenen Thomas von Rosenberg.",
-      "english": "Letter of commission to Margrave Albrecht of Brandenburg regarding a dispute between Knight Heinrich Zobel, Hans von Absberg, and Ulrich von Rosenberg as guardians of the children of the late Georg von Rosenberg, and Ulrich von Rosenberg for himself on one side, and the brothers Hans von Seckendorf and Arnold von Seckendorf, the brothers Heinrich von Helmstatt on behalf of his wife, and Wilhelm von Fellberg on the other side, concerning the abandoned property and goods of the late Thomas von Rosenberg.",
-      "mention": [
-        {
-          "person": "Arnold von Seckendorf"
-        },
-        {
-          "person": "Hans von Absberg"
-        },
-        {
-          "person": "Hans von Seckendorf"
-        },
-        {
-          "person": "Heinrich von Helmstatt"
-        },
-        {
-          "person": "Heinrich Zobel",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "served with Heinrich Zobel and Hans von Absberg as guardian of the children of the late Georg von Rosenberg in a dispute concerning the estate of the late Thomas von Rosenberg."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "death",
-          "diedBefore": "1459-05-23"
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "death",
-          "diedBefore": "1459-05-23"
-        }
+      "english": "Letter of commission to Margrave Albrecht of Brandenburg regarding a dispute between Knight Heinrich Zobel, Hans von Absberg, and Ulrich von Rosenberg as guardians of the children of the late Georg von Rosenberg, and Ulrich von Rosenberg for himself on one side, and the brothers Hans von Seckendorf and Arnold von Seckendorf, the brothers Heinrich von Helmstatt on behalf of his wife, and Wilhelm von Fellberg on the other side, concerning the abandoned property and goods of the late Thomas von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "served with Heinrich Zobel and Hans von Absberg as guardian of the children of the late Georg von Rosenberg in a dispute concerning the estate of the late Thomas von Rosenberg."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "death",
+      "diedBefore": "1459-05-23"
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "death",
+      "diedBefore": "1459-05-23"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Seckendorf"
+    },
+    {
+      "person": "Hans von Absberg"
+    },
+    {
+      "person": "Hans von Seckendorf"
+    },
+    {
+      "person": "Heinrich von Helmstatt"
+    },
+    {
+      "person": "Heinrich Zobel",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

@@ -6,21 +6,21 @@
       "source": "[RIplus] Regg. Wenzel, Reichssachen n. 1540",
       "url": "https://www.regesta-imperii.de/id/ef17cbdf-3796-4ec8-9688-0a5f665ae740",
       "german": "Arnold von Rosenberg fordert den Rat zu Schweinfurt auf, mit ihren Privilegien vor Wenzel nach Nürnberg zu kommen, da Wenzel ihm und die Stadt Rothenburg o.d.T. wider den Bischof von Würzburg untersuchen wolle.",
-      "english": "Arnold von Rosenberg calls on the council of Schweinfurt to come before Wenzel at Nuremberg with their privileges, since Wenzel intends to investigate the city and Rothenburg ob der Tauber’s case against the Bishop of Würzburg.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rothenburg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Arnold von Rosenberg calls on the council of Schweinfurt to come before Wenzel at Nuremberg with their privileges, since Wenzel intends to investigate the city and Rothenburg ob der Tauber’s case against the Bishop of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rothenburg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

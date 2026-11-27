@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++99c2d424-0c08-4e89-8be3-d46010dc822f&parent_id="
       ],
       "german": "Schultheiß, Johann Georg, von Thierbach, Gütler; Verheiratung mit Schuh, Margaretha Barbara, von Rosenberg/Rügland",
-      "english": "Johann Georg Schultheiß, from Thierbach, smallholder; marriage to Margaretha Barbara Schuh, from Rosenberg/Rügland.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Georg Schultheiß, from Thierbach, smallholder; marriage to Margaretha Barbara Schuh, from Rosenberg/Rügland."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

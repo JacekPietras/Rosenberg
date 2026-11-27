@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3981/charter",
       "german": "Endreis Plume und Hans v. Helmstat bürgen dem Deutschmeister für den Deutschordenskandidaten Jörg v. Rosenberg.\n\nSiegel: 2 Siegel der Aussteller an Perg.-Streifen, abgefallen.",
       "english": "Endres Plume and Hans von Helmstatt stand surety for the Teutonic Master for the Teutonic Order candidate Georg von Rosenberg.\n\nSeals: two seals of the issuers, attached to parchment strips, have fallen off.",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans von Helmstatt"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14690505_r.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14690505_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans von Helmstatt"
     }
   ]
 }

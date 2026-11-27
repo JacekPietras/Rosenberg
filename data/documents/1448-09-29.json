@@ -10,14 +10,6 @@
       ],
       "german": "Cristan Jarstorffer zu Jarstorff und seine Ehefrau Agnes verkaufen dem Alten Spital (Spitalmeister: Pauls v. Ussickein) zu Nürnberg den Burgstall (Inhaber: Smidhans) und ein Seldengut (Inhaber: Symon) zu der Ockerßmuel. - Bürgen: Hans Kammerer, Hans v. Lidwach. - Ort des Einlagers ist Nürnberg. - Siegler: Aussteller und Bürgen.",
       "english": "Cristan Jarstorffer zu Jarstorff and his wife Agnes sell to the Old Hospital at Nuremberg, whose hospital master was Pauls von Uissigheim the castle site (held by Smidhans) and a Selden smallholding (held by Symon) at der Ockerßmuel.\n\nSureties: Hans Kammerer and Hans von Lidwach. Place of confinement for debt: Nuremberg. Sealers: the grantors and sureties.",
-      "mention": [
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Pauls von Uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/671a3e18-26f1-4207-9cea-ea36e5e13030/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/671a3e18-26f1-4207-9cea-ea36e5e13030/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Pauls von Uissigheim"
     }
   ]
 }

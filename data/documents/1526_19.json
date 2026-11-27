@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++dc83ef76-c416-4ce2-b927-3a270cde5ded&parent_id="
       ],
       "german": "Rothenburg an Zaisolph von Rosenberg: Antwort auf dessen \"Exculpations-\"Schreiben.",
-      "english": "Rothenburg to Zaisolph von Rosenberg: response to his letter of self-justification.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "received Rothenburg’s response to his letter of exculpation."
-        }
-      ]
+      "english": "Rothenburg to Zaisolph von Rosenberg: response to his letter of self-justification."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "received Rothenburg’s response to his letter of exculpation."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

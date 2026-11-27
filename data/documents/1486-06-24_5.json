@@ -7,32 +7,32 @@
       "source": "[RI XIII] H. 32 n. 1086",
       "url": "https://www.regesta-imperii.de/id/d97c4685-5b5c-42af-a923-40bb0095d00c",
       "german": "K.F. erteilt auf Bitten der Brüder und Vettern Georg, Arnold und Friedrich von Rosenberg dem Eb. Berthold von Mainz eine Kommission in ihrem Streit mit Kunigunde, ihrer mumen, die sich desselben Anselms tochter nennet, über die nachgelassenen Güter des durch Selbstmord verstorbenen Anselm zu Rosenberg.",
-      "english": "At the request of the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg, King Friedrich grants Archbishop Berthold of Mainz a commission in their dispute with Kunigunde, their maternal aunt, who calls herself the daughter of that same Anselm, over the goods left by Anselm von Rosenberg, who died by suicide.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Erzbischof Berthold",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "At the request of the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg, King Friedrich grants Archbishop Berthold of Mainz a commission in their dispute with Kunigunde, their maternal aunt, who calls herself the daughter of that same Anselm, over the goods left by Anselm von Rosenberg, who died by suicide."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg"
+    },
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Erzbischof Berthold",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
     }
   ]

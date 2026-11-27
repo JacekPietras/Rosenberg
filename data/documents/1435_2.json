@@ -6,51 +6,51 @@
       "source": "Staatsarchiv Wertheim G-Rep. 102 Nr. 1060",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-266220",
       "german": "Fehde mit dem Würzburger Bischof Johann II. von Brunn, Hohenlohe, Weinsberg und Brandenburg\n\nLaufzeit: 1435-1439\n\nEnthält: Enthält u.a.: Fehdebrief an Bischof Johann (\"vyndsbrif\", 1437 März 3); Anspruch des Grafen Michael I. von Wertheim auf Einsetzung in die Herrschaft Hohenlohe (Abschriften von Schreiben Michaels an Kraft von Hohenlohe, Elisabeth von Hohenlohe geb. von Hanau, die Herren von Rosenberg sowie hohenlohische Städte aus den Jahren 1435 und 1436, in denen er unter Verweis auf ein Urteil des Landgerichts Herzogtum Franken (= G-Rep. 100 UN 1435 März 7) die Übergabe Hohenlohes an ihn fordert); Schreiben von Bischof Johann, Markgraf Friedrich von Brandenburg, Craft von Hohenlohe und Konrad zu Weinsberg über die Anerkennung eines Schiedsgerichts bei Pfalzgraf Ludwig, Herzog Friedrich von Sachsen oder dem Rat der Stadt Nürnberg (Tauberbischofsheim 1437 Oktober 15); Fehdebrief Jörg von Schweinfurt; diverse Fehdebriefe Würzburger Dienstleute; undatierter Vergleich zwischen Michael und Johann (Schweinberg, Schuldenfragen); \"Register unserer Helfer\"; Klage des Würzburger Bischofs vor dem Baseler Konzil gegen Friedrich Schoder und Heinrich von Schmalkalden\n\nUmfang: 1 Fasz. + Einzelschreiben",
-      "english": "Feud with Johann II von Brunn, Bischof, and with Hohenlohe, Weinsberg, and Brandenburg.\n\nDates: 1435–1439.\n\nContents include: Feud letter to Johann, Bischof (“vyndsbrif,” 3 March 1437); the claim by Michael I von Wertheim, Graf, to be installed in the lordship of Hohenlohe (copies of letters from Michael to Kraft of Hohenlohe, Elisabeth of Hohenlohe née von Hanau, the lords von Rosenberg, and Hohenlohe towns in 1435 and 1436, in which, citing a judgment of the regional court of the Duchy of Franconia [G-Rep. 100 UN 1435 March 7], he demands the transfer of Hohenlohe to him); letters from Johann, Bischof; Friedrich von Brandenburg, Markgraf; Craft von Hohenlohe; and Konrad zu Weinsberg concerning recognition of an arbitral tribunal before Ludwig, Pfalzgraf; before Friedrich von Sachsen, Herzog; or before the council of the city of Nuremberg (Tauberbischofsheim, 15 October 1437); Jörg von Schweinfurt’s feud letter; various feud letters from Würzburg retainers; an undated settlement between Michael and Johann concerning Schweinberg and debts; “Register of our helpers”; and the complaint by the Bishop of Würzburg before the Council of Basel against Friedrich Schoder and Heinrich von Schmalkalden.\n\nExtent: 1 file and individual letters.",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Elisabeth of Hohenlohe"
-        },
-        {
-          "person": "Hans von Brunn",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Konrad zu Weinsberg"
-        },
-        {
-          "person": "Kraft of Hohenlohe"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "weinsberg"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Feud with Johann II von Brunn, Bischof, and with Hohenlohe, Weinsberg, and Brandenburg.\n\nDates: 1435–1439.\n\nContents include: Feud letter to Johann, Bischof (“vyndsbrif,” 3 March 1437); the claim by Michael I von Wertheim, Graf, to be installed in the lordship of Hohenlohe (copies of letters from Michael to Kraft of Hohenlohe, Elisabeth of Hohenlohe née von Hanau, the lords von Rosenberg, and Hohenlohe towns in 1435 and 1436, in which, citing a judgment of the regional court of the Duchy of Franconia [G-Rep. 100 UN 1435 March 7], he demands the transfer of Hohenlohe to him); letters from Johann, Bischof; Friedrich von Brandenburg, Markgraf; Craft von Hohenlohe; and Konrad zu Weinsberg concerning recognition of an arbitral tribunal before Ludwig, Pfalzgraf; before Friedrich von Sachsen, Herzog; or before the council of the city of Nuremberg (Tauberbischofsheim, 15 October 1437); Jörg von Schweinfurt’s feud letter; various feud letters from Würzburg retainers; an undated settlement between Michael and Johann concerning Schweinberg and debts; “Register of our helpers”; and the complaint by the Bishop of Würzburg before the Council of Basel against Friedrich Schoder and Heinrich von Schmalkalden.\n\nExtent: 1 file and individual letters."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "person": "Elisabeth of Hohenlohe"
+    },
+    {
+      "person": "Hans von Brunn",
+      "personTitle": [
+        "Bischof"
       ]
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Konrad zu Weinsberg"
+    },
+    {
+      "person": "Kraft of Hohenlohe"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "weinsberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

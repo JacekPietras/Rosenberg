@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3332/charter",
       "german": "Adam Hektor, Johann Konrad und Johann (Hans) Dietrich von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Lanzendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Balthasar [von Dernbach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Lukas Forstmeister von Gelnhausen (Forstmeistern von Gelnhausenn)\n\nSiegel: anhängende Holzkapsel, Siegel ab und verloren Lukas Forstmeister von Gelnhausen (Forstmeistern von Gelnhausenn)",
       "english": "Adam Hektor, Johann Konrad, and Hans Dietrich von Rosenberg confirm their enfeoffment by Balthasar [von Dernbach], Abbot of Fulda, with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the revenue at Langsdorf (?) (Lanzendorff) [part of the municipality of Lich, Gießen district]. The fief charter is transcribed within. Seal announcement.\n\nSealer: Lukas Forstmeister von Gelnhausen (Forstmeistern von Gelnhausenn)\n\nSeal: Pendant wooden case, seal detached and lost, Lukas Forstmeister von Gelnhausen (Forstmeistern von Gelnhausenn)",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "gelnhausen"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203332%20Vorderseite%20%281604%20November%2008%29.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203332%20Rueckseite%20%281604%20November%2008%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "gelnhausen"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

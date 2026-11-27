@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1369_III_18/charter",
       "german": "Jodok und Johann Gebrüder von Rosenberg als Vormünder der Waisen nach Ludwig von Zwidlern schlichten den zwischen diesem einerseits und dem Abte Heinrich und dem Convente zu Hohenfurt andererseits wegen des Zehnten vom Hofe im Dorfe Michnitz obschwebenden Streit.\n\nSiegel: Die an Pergamentstreifen hängenden Siegel in rothem Wachs bei CXIV. beschrieben.",
       "english": "The brothers Jodok and Hans von Rosenberg, acting as guardians of the orphans of Ludwig von Zwidlern, settle the pending dispute between the latter, on one side, and Abbot Heinrich and the convent at Hohenfurt, on the other, concerning the tithe from a farm in the village of Michnitz.\n\nSeal: The seals hanging from parchment strips are described at CXIV.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_136902xx-03x%7E13690299_24%2CXII_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_136902xx-03xx%7E13690299_24%2CXII_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

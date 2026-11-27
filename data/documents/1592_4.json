@@ -9,34 +9,34 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6662bbae-64bd-45a5-8a88-a9195f70c632&parent_id="
       ],
       "german": "Prozeßakten in Sachen der Eigentumserben Konrads von Rosenberg d. Älteren zu Waldmannshofen (Rüd von Collenberg - Sickingen - Wolmershausen  - Erthal) ./. dessen Lehenserben Konrad, Albrecht Christoph und Jörg Sigmund von Rosenberg und gegen das Hochstift Würzburg pro intereße, betreffend das Dorf Bofsheim und die Wiesen in der Hembsbach (ob Lehen oder Allod?)",
-      "english": "Proceedings concerning the allodial heirs of Konrad von Rosenberg der Ältere zu Waldmannshofen (Rüd von Collenberg, Sickingen, Wolmershausen and Erthal) against his fief heirs, Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg, and against the Bishopric of Würzburg as an interested party. The dispute concerned the village of Bofsheim and meadows at Hembsbach, specifically whether these were held as fiefs or as allodial property.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "boffsheim"
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "place": "kollenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "place": "sickingen"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Proceedings concerning the allodial heirs of Konrad von Rosenberg der Ältere zu Waldmannshofen (Rüd von Collenberg, Sickingen, Wolmershausen and Erthal) against his fief heirs, Konrad, Albrecht Christoph and Georg Siegmund von Rosenberg, and against the Bishopric of Würzburg as an interested party. The dispute concerned the village of Bofsheim and meadows at Hembsbach, specifically whether these were held as fiefs or as allodial property."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "boffsheim"
+    },
+    {
+      "person": "Georg Siegmund von Rosenberg"
+    },
+    {
+      "place": "kollenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere",
+        "zu Waldmannshofen"
       ]
+    },
+    {
+      "place": "sickingen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

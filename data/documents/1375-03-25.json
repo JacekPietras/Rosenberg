@@ -7,54 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-154159",
       "german": "Hans Munich und Lutz Halmunich genant, Gebrüder von Hainstadt (nach den Siegeln Mönche von Rosenberg), verkaufen an Abt und Konvent des Zisterzienserklosters zu Bronnbach für 200 fl. eine Gült von 18 Malter Korn und 1 Pfund h auf ihren Anteil am Zehnten vom Dürrhof, Laukenhof und Winnenden (zu Durreberg, Luchenberg und Winden), welche das Kloster ihrer Familie jährlich zu zahlen hatte. Sie behalten sich vor, eine aus demselben Zehnten herrührende Jahresabgabe von 1 Malter Mönchskäse. Wird von irgendwelcher Seite eine lehensherrliches Anrecht auf Gült oder Zehnten nachgewiesen, so sind die Aussteller anstelle der Käufer die Lehensträger. Der Kauf läuft auf 1000 Jahre und 1 Tag. Zeugen: Hans von Rosenberg, Ritter; Cunrat von Ußinkeim d. Ä.; Eberhart von Rosenberg d. Ä.; Reinhart von Hartheim",
       "english": "Brothers Hans and Lutz Mönch von Rosenberg zu Hainstadt, sell to the abbot and convent of the Cistercian monastery in Bronnbach for 200 florins a rent of 18 malters of grain and 1 pound h on their share of the tithes from Dürrhof, Laukenhof, and Winnenden, which the monastery was required to pay to their family annually. They reserve the right to collect an annual tax of 1 malter of monk's cheese derived from the same tithes. If any party proves a feudal claim to rent or tithes, the issuers shall be the feudal holders instead of the purchasers. The purchase is valid for 1,000 years and 1 day. Witnesses: Hans von Rosenberg, Ritter; Konrad von Uissigheim der Ältere; Eberhard von Rosenberg der Ältere; Reinhard von Hartheim",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Hans Mönch von Rosenberg",
-          "personTitle": [
-            "zu Hainstadt"
-          ]
-        },
-        {
-          "person": "Ludwig Mönch von Rosenberg",
-          "personTitle": [
-            "zu Hainstadt"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "witnessed the property sale."
-        },
-        {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "witnessed the property sale."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "witnessed the property sale."
-        },
-        {
-          "person": "Reinhard von Hartheim",
-          "type": "generic",
-          "content": "witnessed the property sale."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=719&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000719%2Ftitlaufn_0000154159%2F07_0000154159_0001_7-154159-1.jpg"
@@ -62,6 +14,54 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=719&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000719%2Ftitlaufn_0000154159%2F07_0000154159_0002_7-154159-2.jpg"
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "witnessed the property sale."
+    },
+    {
+      "person": "Konrad von Uissigheim",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "witnessed the property sale."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "witnessed the property sale."
+    },
+    {
+      "person": "Reinhard von Hartheim",
+      "type": "generic",
+      "content": "witnessed the property sale."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "person": "Hans Mönch von Rosenberg",
+      "personTitle": [
+        "zu Hainstadt"
+      ]
+    },
+    {
+      "person": "Ludwig Mönch von Rosenberg",
+      "personTitle": [
+        "zu Hainstadt"
       ]
     }
   ]

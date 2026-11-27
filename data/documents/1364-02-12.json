@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1787116",
       "german": "Hans von Klepsau und seine Ehefrau Elsbeth verkaufen an Margarethe von Thüngen, Witwe Eberhard von Rosenbergs, ihren Teil des Zehnten zu Schweigern um 463 Pfund Heller.",
       "english": "Hans von Klepsau and his wife Elisabeth sell their part of the tithe to Schweigern by 463 pounds Heller to Margaretha von Thüngen, widow Eberhard von Rosenberg.",
-      "mention": [
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "margaretha_von_thungen"
-        },
-        {
-          "person": "margaretha_von_thungen",
-          "type": "generic",
-          "content": "purchased Hans and Elisabeth von Klepsau’s share of the tithe at Schweigern."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "death",
-          "diedBefore": "1364-02-13"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001787116%2F04_0001787116_0001_4-1787116-1.jpg"
@@ -39,6 +16,29 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "margaretha_von_thungen"
+    },
+    {
+      "person": "margaretha_von_thungen",
+      "type": "generic",
+      "content": "purchased Hans and Elisabeth von Klepsau’s share of the tithe at Schweigern."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "death",
+      "diedBefore": "1364-02-13"
+    }
+  ],
+  "mention": [
+    {
+      "place": "schweigern"
     }
   ]
 }

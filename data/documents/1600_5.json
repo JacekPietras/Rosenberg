@@ -6,15 +6,15 @@
       "source": "HStAD, S 1, NACHWEIS1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2882048",
       "german": "Laufzeit: [um 1600-1910]\n\nPersonenname: Mönch v. Rosenberg, (Familie)\n\nZusatzinformationen: Quelle: 'Zwischen Neckar und Main', in: 'Schriftenreihe des Vereins Bezirksmuseum Buchen e. V.', Heft 26, 1991, S. 16ff (Bibl. G 177/20-26-)",
-      "english": "Date range: [circa 1600–1910]\n\nPerson: Mönch von Rosenberg (family)\n\nAdditional information: Source: ‘Between Neckar and Main,’ in ‘Schriftenreihe des Vereins Bezirksmuseum Buchen e. V.,’ issue 26, 1991, pp. 16 ff. (Bibl. G 177/20-26-)",
-      "mention": [
-        {
-          "place": "buchen"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Date range: [circa 1600–1910]\n\nPerson: Mönch von Rosenberg (family)\n\nAdditional information: Source: ‘Between Neckar and Main,’ in ‘Schriftenreihe des Vereins Bezirksmuseum Buchen e. V.,’ issue 26, 1991, pp. 16 ff. (Bibl. G 177/20-26-)"
+    }
+  ],
+  "mention": [
+    {
+      "place": "buchen"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

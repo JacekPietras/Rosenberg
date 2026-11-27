@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198260",
       "german": "Lehenrevers Cuntzens von Rosenberg zu Waldmannshofen als bevollmächtigten Gewalthabers von Philipp Jacob von und zu Rosenberg an die Frauen Gräfinnen zu Eberstein, Manderscheid und Löwenstein als gemeinschaftliche Herrschaft Wertheim ausgestellet über die in Num. 2 enthaltenen Mannlehen.\n\nLaufzeit: 1576 Juni 14 (zu Wertheim 14. Juny 1576)",
       "english": "A feudal acknowledgment issued by Kunz von Rosenberg zu Waldmannshofen, as the authorized agent of Philipp Jakob von und zu Rosenberg, to the Countesses of Eberstein, Manderscheid, and Löwenstein as the joint rulers of Wertheim, concerning the male fiefs listed in No. 2.\n\nTerm: 14 June 1576 (at Wertheim, 14 June 1576).",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg",
-          "personTitle": [
-            "zu Rosenberg"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198260%2F07_0000198260_0001_7-198260-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198260%2F07_0000198260_0002_7-198260-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
+      ]
+    },
+    {
+      "person": "Philipp Jakob von Rosenberg",
+      "personTitle": [
+        "zu Rosenberg"
+      ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++DC14355F-C388-458D-AA45-2A051F94DC76&parent_id="
       ],
       "german": "Umpfarrung der protestantischen Einwohner von Gallmünz aus der protestantischen Pfarrei Rosenberg in die protestantische Pfarrei Sulzbach",
-      "english": "Transfer of the Protestant inhabitants of Gallmünz from the Protestant parish of Rosenberg to the Protestant parish of Sulzbach",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Transfer of the Protestant inhabitants of Gallmünz from the Protestant parish of Rosenberg to the Protestant parish of Sulzbach"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

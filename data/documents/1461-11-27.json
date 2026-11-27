@@ -8,35 +8,35 @@
       "summary": "Anselm von Rosenberg erhängt sich im Schloss Prosselsheim ( Brassoldshaim ). Daraufhin nimmt Bischof Johann von Grumbach dessen Habe, Güter und Pfänder ein und verpfändet das Amt Prosselsheim an Herrn Heinrich von Müffling, genann Thondorfer ( Hanirich Mufflinger Tandorfer genant ), und dessen Ehefrau Bénigne für 3000 Gulden.",
       "german": "Als aber genanter Anshelm sich bei regirung B Johannsen von Grumbach in dem Sloss Brassoldshaim selbst [gestrichen: gehangen] hing, [Einfügung: thet sich] itzbemelter B Johanns zu seinen haben, gutern vnd unterpfanden [gestrichen: gethan] vnd [Einfügung: verschribe] das ambt Brassoldshaim hern Hainrichen Mufflinger Candorfer genant ritter und Beningnen seiner hausfrawen [gestrichen: verschriben] fur 3000 fl, Freitag nach Catharine des 1461 Jars 1 Contractuum Rudolfi fo 34,35,36",
       "english": "The archive summary identifies the aforementioned Anselm as Anselm von Rosenberg. The transcription says that he hanged himself in Schloss Brassoldshaim during the rule of Bishop Hans von Grumbach; the bishop then took possession of his goods, property, and pledges, and pledged Amt Brassoldshaim to Heinrich Mufflinger, called Candorfer, Ritter, and his wife Bénigne for 3,000 florins on the Friday after St Catherine’s Day in 1461.",
-      "facts": [
-        {
-          "person": "Anselm von Rosenberg",
-          "type": "death",
-          "diedOn": "1461-11-27",
-          "circumstances": "hanged himself in Schloss Brassoldshaim."
-        },
-        {
-          "person": "Hans von Grumbach",
-          "personTitle": [
-            "Bischof"
-          ],
-          "type": "generic",
-          "content": "took possession of Anselm von Rosenberg’s goods, property, and pledges."
-        },
-        {
-          "person": "Hans von Grumbach",
-          "personTitle": [
-            "Bischof"
-          ],
-          "type": "generic",
-          "content": "pledged Amt Brassoldshaim to Heinrich Mufflinger genannt Candorfer and his wife Bénigne."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_116.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Anselm von Rosenberg",
+      "type": "death",
+      "diedOn": "1461-11-27",
+      "circumstances": "hanged himself in Schloss Brassoldshaim."
+    },
+    {
+      "person": "Hans von Grumbach",
+      "personTitle": [
+        "Bischof"
+      ],
+      "type": "generic",
+      "content": "took possession of Anselm von Rosenberg’s goods, property, and pledges."
+    },
+    {
+      "person": "Hans von Grumbach",
+      "personTitle": [
+        "Bischof"
+      ],
+      "type": "generic",
+      "content": "pledged Amt Brassoldshaim to Heinrich Mufflinger genannt Candorfer and his wife Bénigne."
     }
   ]
 }

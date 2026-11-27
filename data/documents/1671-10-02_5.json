@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3346/charter",
       "german": "Johann Hartmann und Franz Rudolf von Rosenbach (Roszenbach) bestätigen die Belehnung mit ihrem Teil an Gütern in Schackau (Schackawischen güthern), Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann Hartmann von Rosenbach\n\nSiegel: anhängendes Siegel in Holzkapsel Johann Hartmann von Rosenbach",
       "english": "Johann Hartmann and Franz Rudolf von Rosenberg (Roszenbach) acknowledge the grant by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, of their share of estates at Schackau (Schackawischen güthern), Kleinsassen (Sassen), Gerharts (Gerhardts) [all localities in the municipality of Hofbieber, Fulda district], and other fiefs listed individually. The fief charter is inserted. Seal clause.\n\nSealer: Hans Hartmann von Rosenberg\n\nSeal: Pendant seal in a case, belonging to Hans Hartmann von Rosenberg",
-      "mention": [
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203346%20Vorderseite%20%281671%20Oktober%2002%29.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203346%20Rueckseite%20%281671%20Oktober%2002%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
     }
   ]
 }

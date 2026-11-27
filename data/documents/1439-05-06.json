@@ -10,21 +10,6 @@
       ],
       "german": "Mertin Schorre zu Nassach, der von Jost von Venningen, Komtur zu Mergentheim, wegen Händeln und Streitigkeiten gefangengesetzt worden war, schwört zusammen mit seinem Bruder Hans und seinem Vater Kunz Urfehde. Sie verpflichten sich außerdem, einen Wortbrüchigen zu ächten und als Feind zu behandeln, und bürgen gemeinschaftlich. Siegler: Eberhard von Rosenberg der Ältere und Wernher von Hartheim. Datiert 6. Mai 1439.",
       "english": "Mertin Schorre of Nassach, who had been imprisoned by Jost von Venningen, commander zu Mergentheim, over disputes and quarrels, swears an oath of non-retaliation together with his brother Hans and his father Kunz. They also undertake to outlaw and treat as an enemy anyone who breaks the oath, and they stand surety together. Sealers: Eberhard von Rosenberg der Ältere and Wernher von Hartheim. Dated 6 May 1439.",
-      "mention": [
-        {
-          "person": "Wernher von Hartheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "sealed the deed recording Mertin Schorre’s Urfehde to Jost von Venningen, Komtur zu Mergentheim."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087421%2F02_0001087421_0001_2-1087421-1.jpg",
@@ -45,6 +30,21 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "sealed the deed recording Mertin Schorre’s Urfehde to Jost von Venningen, Komtur zu Mergentheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Wernher von Hartheim"
     }
   ]
 }

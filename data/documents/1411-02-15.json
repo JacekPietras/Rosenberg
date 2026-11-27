@@ -6,35 +6,35 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Eberhart von Tottenheim der jüngere und sein Knecht Cuntz Syber bekennen dass sie mit dem Bischof Friedrich zu Eysteten hinsichtlich ihrer Kriege und Spene gänzlich vereinigt seyen, so dass alle Gefangene losgegeben und alle Schatzungen gänzlich ab seyn sollen. Mitsiegler: Adel von Tottenheim, Eberhart von Tottenheim sein Bruder, Wilhelm von Tottenheim, Heintz Knebel, Ulrich von Rosenberg, Reinhart von Hartheim, und Hans Düring. G. am Suntag vor Peters Tag Kathedra. (c. 7 S.)",
-      "english": "Eberhard von Dottenheim der Jüngere and his Knecht Kunz Syber acknowledge that they have fully settled their wars and disputes with Friedrich, Bischof zu Eysteten: all prisoners are to be released and all exactions are to cease. Co-sealers: Adel von Dottenheim; his brother Eberhard von Dottenheim; Wilhelm von Dottenheim; Heinrich Knebel; Ulrich von Rosenberg; Reinhard von Hartheim; and Hans Düring. Given on the Sunday before St. Peter’s Chair. (With seven seals.)",
-      "mention": [
-        {
-          "person": "Reinhard von Hartheim"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
-        }
+      "english": "Eberhard von Dottenheim der Jüngere and his Knecht Kunz Syber acknowledge that they have fully settled their wars and disputes with Friedrich, Bischof zu Eysteten: all prisoners are to be released and all exactions are to cease. Co-sealers: Adel von Dottenheim; his brother Eberhard von Dottenheim; Wilhelm von Dottenheim; Heinrich Knebel; Ulrich von Rosenberg; Reinhard von Hartheim; and Hans Düring. Given on the Sunday before St. Peter’s Chair. (With seven seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "co-sealed the settlement of Eberhard von Dottenheim der Jüngere and Kunz Syber with Friedrich, Bischof zu Eysteten."
+    },
+    {
+      "person": "Adel von Dottenheim",
+      "type": "sibling",
+      "of": "Eberhard von Dottenheim"
+    },
+    {
+      "person": "Eberhard von Dottenheim",
+      "personTitle": [
+        "der Jüngere"
       ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "co-sealed the settlement of Eberhard von Dottenheim der Jüngere and Kunz Syber with Friedrich, Bischof zu Eysteten."
-        },
-        {
-          "person": "Adel von Dottenheim",
-          "type": "sibling",
-          "of": "Eberhard von Dottenheim"
-        },
-        {
-          "person": "Eberhard von Dottenheim",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "settled his wars and disputes with Friedrich, Bischof zu Eysteten, together with his Knecht Kunz Syber."
-        }
-      ]
+      "type": "generic",
+      "content": "settled his wars and disputes with Friedrich, Bischof zu Eysteten, together with his Knecht Kunz Syber."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Reinhard von Hartheim"
+    },
+    {
+      "person": "Wilhelm von Dottenheim"
     }
   ]
 }

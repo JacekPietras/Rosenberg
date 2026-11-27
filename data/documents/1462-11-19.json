@@ -13,11 +13,6 @@
       ],
       "german": "Weingarten zu Nussdorf (Kaufbrief). Paul, Abt des Klosters zu Hohenfurt, verkauft 3 Joch Weingarten, zu Nussdorf in dem \"Mitternperg zu Grewnt\" nächst dem Kloster zur Himmelpforten gehörigen Weingarten gelegen und dem Stift Klosterneuburg mit 6 Eimern Wein zu Bergrecht und 6 Wiener Pfennigen zu Vogtrecht dienstbar, an Stephan, Propst des Stiftes St. Dorothea, um eine bestimmte (nicht genannte) Summe Geldes. $$Zeugen: Wolfgang Winthager, Chorherr und oberster Kellerer des Stiftes Klosterneuburg, Jan von Rosenberg, Bohuneg von Omlenicz.\n\nSiegel: Vier anhangende Siegel. Siegler: Der Aussteller und die Zeugen.",
       "english": "Vineyard at Nussdorf (purchase charter). Paul, Abt of Hohenfurt monastery, sells three Joch of vineyard at Nussdorf, at “Mitternperg zu Grewnt,” next to the vineyard belonging to the monastery of Himmelpforten. The vineyard owes Klosterneuburg Abbey six Eimer of wine in Bergrecht and six Viennese pfennigs in Vogtrecht. He sells it to Stephan, Propst of the monastery of St Dorothea, for an unspecified sum.\n\nWitnesses: Wolfgang Winthager, canon and chief cellarer of Klosterneuburg Abbey; Hans von Rosenberg; Bohuneg von Omlenicz.\n\nSeals: Four pendant seals. Sealers: the issuer and the witnesses.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/136/K.._MOM-Bilddateien._%7ESt.Dorotheajpgweb._%7EStAK__D_14621119-3.jpg"
@@ -35,6 +30,11 @@
           "src": "https://images.monasterium.net/pics/136/K.._MOM-Bilddateien._%7ESt.Dorotheajpgweb._%7EStAK__D_14621119-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

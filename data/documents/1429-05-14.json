@@ -11,29 +11,29 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ecd822bd-2919-4804-b47f-f5b70a022d50&parent_id="
       ],
       "german": "Testament der Witwe Barbara von Rosenberg, eheliche Tochter des verstorbenen Engelhard von Rosenberg, vermöge dessen ihr Onkel, der Ritter Erkinger von Seinsheim (\"Sawesheim\"), nach ihrem Tod die in der Urkunde genannten Vermächtnisse ausrichten solle.",
-      "english": "The testament of Barbara von Rosenberg, widow and legitimate daughter of the late Engelhard von Rosenberg, appoints her uncle, Ritter Erkinger von Seinsheim (\"Sawesheim\"), to carry out the bequests specified in the document after her death.",
-      "facts": [
-        {
-          "person": "Engelhard von Rosenberg",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Barbara von Rosenberg"
-        },
-        {
-          "person": "Barbara von Rosenberg",
-          "type": "generic",
-          "content": "named her uncle Erkinger von Seinsheim to carry out her bequests after her death."
-        },
-        {
-          "person": "Erkinger von Seinsheim",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "kin",
-          "of": "Barbara von Rosenberg",
-          "term": "Onkel"
-        }
-      ]
+      "english": "The testament of Barbara von Rosenberg, widow and legitimate daughter of the late Engelhard von Rosenberg, appoints her uncle, Ritter Erkinger von Seinsheim (\"Sawesheim\"), to carry out the bequests specified in the document after her death."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Engelhard von Rosenberg",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Barbara von Rosenberg"
+    },
+    {
+      "person": "Barbara von Rosenberg",
+      "type": "generic",
+      "content": "named her uncle Erkinger von Seinsheim to carry out her bequests after her death."
+    },
+    {
+      "person": "Erkinger von Seinsheim",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "kin",
+      "of": "Barbara von Rosenberg",
+      "term": "Onkel"
     }
   ]
 }

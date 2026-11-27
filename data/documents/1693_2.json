@@ -14,15 +14,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++FC699CFD-8BF4-4AF2-8B65-D6B4C68AC6C1&parent_id="
       ],
       "german": "Rechnung über den Anfall aus der Verlassenschaft des Domdechant von Rosenbach für einen neuen hohen Altar in der Domkirche zu Würzburg",
-      "english": "Account of the proceeds from the estate of the Domdechant von Rosenbach for a new high altar in Würzburg Cathedral.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Account of the proceeds from the estate of the Domdechant von Rosenbach for a new high altar in Würzburg Cathedral."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

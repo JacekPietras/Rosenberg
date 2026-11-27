@@ -7,21 +7,21 @@
       "source": "[Regg. Pfalzgrafen 2] n. 32",
       "url": "https://www.regesta-imperii.de/id/1400-05-11_1_0_10_0_0_32_32",
       "german": "Rudolf von Zeysekeim und Diether von Hentschusheim, ritter und Arnolt von Rosenberg, edelknecht, erklären, dass sie sich in der streitsache pfgr. Ruprechts III. wegen Richenpach mit Hilprant von Dungen (Thüngen) und dessen schwägern den forstmeistern von Geylnhusen nicht einigen können, ob die letzteren drei das von Gernolt selig von Richenbach seiner hausfrau daselbst verschriebene wittum erben sollen oder nicht. Der pfalzgraf soll daher seine mannen der herrschaft Bolanden und, falls diese nicht genügen, die noch nötige anzahl der zunächst gesessenen mannen zu einem rechtstag nach Heidelberg oder Weinheim berufen.",
-      "english": "Rudolf von Zeysekeim and Diether von Hentschusheim, knights, and Arnold von Rosenberg, squire, declare that they cannot reach agreement in Count Palatine Rupert III's dispute concerning Richenpach with Hilprant von Thüngen and his brothers-in-law, the forest masters of Geylnhusen, as to whether the latter three are to inherit the dower that the late Gernolt von Richenbach assigned to his wife there. The Count Palatine is therefore to summon his vassals of the lordship of Bolanden and, if these are insufficient, the further number of nearby vassals required, to a court day at Heidelberg or Weinheim.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "thuengen"
-        }
+      "english": "Rudolf von Zeysekeim and Diether von Hentschusheim, knights, and Arnold von Rosenberg, squire, declare that they cannot reach agreement in Count Palatine Rupert III's dispute concerning Richenpach with Hilprant von Thüngen and his brothers-in-law, the forest masters of Geylnhusen, as to whether the latter three are to inherit the dower that the late Gernolt von Richenbach assigned to his wife there. The Count Palatine is therefore to summon his vassals of the lordship of Bolanden and, if these are insufficient, the further number of nearby vassals required, to a court day at Heidelberg or Weinheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
       ]
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "place": "thuengen"
     }
   ]
 }

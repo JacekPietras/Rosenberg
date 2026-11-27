@@ -11,29 +11,29 @@
         "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x81522375345230120210713150716530"
       ],
       "german": "Franz, Heinrich und Sebastian Grafen von Hatzfeldt und zu Gleichen etc. vereinbaren ergänzend zu der von ihnen 1681 Januar 21 durchgeführten Teilung: Die Ämter Schüpf und Rosenberg werden vom Amt Haltenbergstetten abgetrennt und zwecks Tilgung der Forderungen der Freiherrn von Nesselrode verpfändet. Franz leistet die Schatzung des Amtes Haltenbergsterten an die fränkische Ritterschaft zu Odenwald entsprechend. Ihm steuern Heinrich und Sebastian jährlich 100 Reichstlr. bis zum Prozeßabschluß wegen des Rothenburger Kapitals bei. Von Heinrich erhält er bei günstigem Prozeßabschluß wegen der 6 1/2 [Lücke im Text] in Thüringen auch dessen Drittel. - Die Rechnungen des bisher gemeinschaftlichen Sekretärs zu Würzburg sowie des Johann Peter Faber, ihres gemeinschaftlichen Sekretärs zu Frankfurt, sind abzuhören. Wegen der gemeinschaftlichen Rechnung zu Trachenberg vereinbaren Franz und Heinrich - genannte - Ausgleichszahlungen. - Franz behält von den Ämtern Schüpf und Rosenberg je 1,-3, sofern deren Verpfändung abgelöst wird. -Mittler: Anselm Franz Freiherr von Hoheneck, Christoph Rudolph von Stadion, Franz Freiherr von Sickingen, Herr zu Baumburg und Landstuhl, Friedrich Dietrich Kämmerer von Worms, Freiherr von Dalberg. -Unterschriften- und Sieglervermerk von Franz und Heinrich Grafen von Hatzfeldt und zu Gleichen sowie den Mittlern.- Vermerk des Thomas Stern von 1681 (!) Februar 25 zu Schüpf, wonach er das durch Sebastian unterschriebene und besiegelte Original mitnahm. - Vermerk, wonach Heinrich den Rezeß annulliert, sofern das Gut Mosbach sowie die Wandbehänge nicht vereinbarungsgemäß herausgegeben werden.\n\nAbschr. (18. Jh.), Pap. (besch.).- Nr. 2825.\n\nReg. Nr. 2971",
-      "facts": [
-        {
-          "subject": "The Amt of Rosenberg",
-          "type": "generic",
-          "content": "was separated from the Amt of Haltenbergstetten and pledged to satisfy the claims of the Freiherren von Nesselrode."
-        },
-        {
-          "subject": "The Ämter Schüpf and Rosenberg",
-          "type": "generic",
-          "content": "were to be separated from the Amt Haltenbergstetten under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
-        },
-        {
-          "subject": "The Ämter Schüpf and Rosenberg",
-          "type": "generic",
-          "content": "were to be pledged to satisfy the claims of the Freiherren von Nesselrode under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
-        }
-      ],
-      "mention": [
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ],
       "english": "Franz, Heinrich, and Sebastian, Grafen von Hatzfeldt und zu Gleichen, etc., make a supplement to their division of 21 January 1681. The offices of Schüpf and Rosenberg are separated from Haltenbergstetten and pledged to satisfy the claims of the Freiherrn von Nesselrode. Franz pays the assessment for Haltenbergstetten to the Franconian knighthood of the Odenwald accordingly. Heinrich and Sebastian contribute 100 Reichstaler annually to him until the litigation over the Rothenburg capital is concluded. If the litigation over the 6½ [text lacuna] in Thuringia is successful, Heinrich also gives him his third. The accounts of their former joint secretary in Würzburg and of Johann Peter Faber, their joint secretary in Frankfurt, are to be audited. Franz and Heinrich agree on specified balancing payments for their joint account at Trachenberg. Franz retains one third each of the offices of Schüpf and Rosenberg if their pledge is redeemed. Mediators: Anselm Franz Freiherr von Hoheneck; Christoph Rudolph von Stadion; Franz Freiherr von Sickingen, Herr zu Baumburg und Landstuhl; and Friedrich Dietrich Kämmerer von Worms, Freiherr von Dalberg. Signatures and sealing noted for Franz and Heinrich, Grafen von Hatzfeldt und zu Gleichen, and the mediators. Thomas Stern noted at Schüpf on 25 February 1681 that he had taken the original signed and sealed by Sebastian. Another note says Heinrich will annul the agreement unless the estate of Mosbach and the tapestries are delivered as agreed. Certified copy (18th century), damaged paper, no. 2825; regest no. 2971."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "The Amt of Rosenberg",
+      "type": "generic",
+      "content": "was separated from the Amt of Haltenbergstetten and pledged to satisfy the claims of the Freiherren von Nesselrode."
+    },
+    {
+      "subject": "The Ämter Schüpf and Rosenberg",
+      "type": "generic",
+      "content": "were to be separated from the Amt Haltenbergstetten under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
+    },
+    {
+      "subject": "The Ämter Schüpf and Rosenberg",
+      "type": "generic",
+      "content": "were to be pledged to satisfy the claims of the Freiherren von Nesselrode under an agreement by Franz, Heinrich and Sebastian von Hatzfeldt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

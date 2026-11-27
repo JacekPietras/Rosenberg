@@ -10,54 +10,6 @@
       ],
       "german": "Ritter Eberhard der Ältere von Rosenberg (Rosinberg) und seine Gattin Jrmtrudis vermachen der Abtei Bronnbach ihren Hof in Königheim (Kenninkeim) und in Dienstadt (Distad) mit benannten jährlichen Einkünften unter gewissen Bedingungen.\n\nSiegler: Abt von Bronnbach; Arnold von Uissigheim; Ritter Eberhard d. Ä. von Rosenberg. Drei Siegel an Pergamentstreifen; Eberhards Siegel ist abgegangen. Auf der Rückseite: „De bonis in Kennenkein et in Diehstat“.",
       "english": "Eberhard von Rosenberg der Ältere, Ritter, and his wife Irmtraut bequeath to Bronnbach Abbey their estate in Königheim and Dienstadt, together with specified annual revenues, subject to certain conditions.\n\nSealers: the abbot of Bronnbach; Arnold von Uissigheim; and Eberhard von Rosenberg der Ältere, Ritter. Three seals on parchment strips; Eberhard’s seal is detached. The reverse reads “De bonis in Kennenkein et in Diehstat”.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "dienstadt"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "place": "wallduern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "type": "spouse",
-          "of": "irmtraut_wife_of_vogt_zu_Durn"
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey."
-        },
-        {
-          "person": "Arnold von Uissigheim",
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "sealed the charter"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234278%2F07_0000234278_0001_7-234278-1.jpg",
@@ -87,6 +39,54 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "type": "spouse",
+      "of": "irmtraut_wife_of_vogt_zu_Durn"
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], bequeathed their estate in Königheim and Dienstadt to Bronnbach Abbey."
+    },
+    {
+      "person": "Arnold von Uissigheim",
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "sealed the charter"
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "dienstadt"
+    },
+    {
+      "place": "koenigheim"
+    },
+    {
+      "place": "wallduern"
     }
   ]
 }

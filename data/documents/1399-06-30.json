@@ -9,26 +9,26 @@
         "https://www.digitale-sammlungen.de/en/view/bsb11697675"
       ],
       "german": "Altman Kemnater Landrichter zu Lengfeld bestättigt der Abtissin Anna von Pülnhofen einen Gerichtsbrief des Chunrad von Rosenberg, Vizthum zu Amberg (dd. Montags vor S. Kathreintag 1379) gemäss welchem sie mit Volg, Frag und Urtail behabt habe, dass sie von ihren Amtleuten in der Landschrann zu Lengfeld Recht thun soll an kleinen Sachen seinem (des Rosenbergers) gnädigem Herrn an dessen grossen Rechten, und dass sie darum von einem Amtmann zu Lengfeld geschetzt werden soll. G. zu Kalmüntz am Montag nach Sunbenden. (c. 1 Sig.)",
-      "english": "Altman Kemnater, Landrichter zu Lengfeld, confirms to Anna, abbess of Pülnhofen, a court letter of Konrad von Rosenberg, Vizedom zu Amberg, dated the Monday before St. Catherine’s Day in 1379. According to the letter, she had established through procedure and judgment that her officials should administer justice in minor matters at the Landschrann in Lengfeld. The passage also refers to the greater rights of Konrad’s gracious lord and says that an official at Lengfeld should “geschetzt” her in this matter; the precise meaning of these clauses is unclear. Given at Kallmünz on the Monday after the solstice. (With one seal.)",
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "issued a court letter concerning the abbess of Pülnhofen and the administration of justice at Lengfeld.",
-          "date": "1379-11-21"
-        },
-        {
-          "person": "Altman Kemnater",
-          "personTitle": [
-            "Landrichter zu Lengfeld"
-          ],
-          "type": "generic",
-          "content": "confirmed to Anna, abbess of Pülnhofen, a court letter issued by Konrad von Rosenberg, Vizedom zu Amberg, concerning the administration of justice at Lengfeld."
-        }
-      ]
+      "english": "Altman Kemnater, Landrichter zu Lengfeld, confirms to Anna, abbess of Pülnhofen, a court letter of Konrad von Rosenberg, Vizedom zu Amberg, dated the Monday before St. Catherine’s Day in 1379. According to the letter, she had established through procedure and judgment that her officials should administer justice in minor matters at the Landschrann in Lengfeld. The passage also refers to the greater rights of Konrad’s gracious lord and says that an official at Lengfeld should “geschetzt” her in this matter; the precise meaning of these clauses is unclear. Given at Kallmünz on the Monday after the solstice. (With one seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
+      ],
+      "type": "generic",
+      "content": "issued a court letter concerning the abbess of Pülnhofen and the administration of justice at Lengfeld.",
+      "date": "1379-11-21"
+    },
+    {
+      "person": "Altman Kemnater",
+      "personTitle": [
+        "Landrichter zu Lengfeld"
+      ],
+      "type": "generic",
+      "content": "confirmed to Anna, abbess of Pülnhofen, a court letter issued by Konrad von Rosenberg, Vizedom zu Amberg, concerning the administration of justice at Lengfeld."
     }
   ]
 }

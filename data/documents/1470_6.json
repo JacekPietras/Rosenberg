@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++164A3A77-F8CB-4832-AFA4-0D5F42156547&parent_id="
       ],
       "german": "Fragmenta betreffend Georgs von Rosenberg Fehde mit Mainz und Würzburg\n\nEnthält-/Darin-Vermerke: Hinweis: Archivale nicht vorhanden",
-      "english": "Fragments concerning Georg von Rosenberg's feud with Mainz and Würzburg",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was in feud with Mainz and Würzburg."
-        }
-      ]
+      "english": "Fragments concerning Georg von Rosenberg's feud with Mainz and Würzburg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "was in feud with Mainz and Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

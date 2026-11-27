@@ -6,31 +6,31 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 7263",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641786",
       "german": "Streitigkeiten der Ganerben zu Bödigheim um Güter, Nutzungen, Gefälle, Obrigkeit und Polizeisachen.\n\nLaufzeit: (1548) 1683-1598\n\nEnthält: Enthält: Wolf Dietrich Rüdt, dessen Witwe Felicitas geb. von Rosenberg sowie die Vormünder von deren Kindern (teils auch namens einiger ihrer Untertanen zu Bödigheim) contra Stephan Rüdt und dessen Schwiegersohn Hans Georg von Berlichingen wegen unterschiedlicher Auslegung diesbezüglicher Familienverträge.",
-      "english": "Disputes among the joint heirs of Bödigheim regarding properties, usage rights, revenues, authority, and police matters.\n\nPeriod: (1548) 1683-1598\n\nContains: Contains: Wolf Dietrich Rüdt, his widow Felicitas née von Rosenberg, and the guardians of their children (partly also on behalf of some of their subjects in Bödigheim) versus Stephan Rüdt and his son-in-law Hans Georg von Berlichingen regarding differing interpretations of relevant family contracts.",
-      "mention": [
-        {
-          "place": "boedigheim-kreuzkirche"
-        },
-        {
-          "person": "Hans Georg von Berlichingen"
-        },
-        {
-          "person": "Stephan Rüd"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Wolf Dietrich Rüd",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Felicitas von Rosenberg"
-        },
-        {
-          "person": "Felicitas von Rosenberg",
-          "type": "generic",
-          "content": "was involved in a dispute at Bödigheim over goods, revenues, rights and police matters against Stephan Rüdt and Hans Georg von Berlichingen."
-        }
-      ]
+      "english": "Disputes among the joint heirs of Bödigheim regarding properties, usage rights, revenues, authority, and police matters.\n\nPeriod: (1548) 1683-1598\n\nContains: Contains: Wolf Dietrich Rüdt, his widow Felicitas née von Rosenberg, and the guardians of their children (partly also on behalf of some of their subjects in Bödigheim) versus Stephan Rüdt and his son-in-law Hans Georg von Berlichingen regarding differing interpretations of relevant family contracts."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wolf Dietrich Rüd",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Felicitas von Rosenberg"
+    },
+    {
+      "person": "Felicitas von Rosenberg",
+      "type": "generic",
+      "content": "was involved in a dispute at Bödigheim over goods, revenues, rights and police matters against Stephan Rüdt and Hans Georg von Berlichingen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boedigheim-kreuzkirche"
+    },
+    {
+      "person": "Hans Georg von Berlichingen"
+    },
+    {
+      "person": "Stephan Rüd"
     }
   ]
 }

@@ -7,20 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4659583",
       "german": "Mainz (Generalia): Erzbischof Adolf von Mainz verspricht dem Contz Echter eine von Erzbischof Diether herrührende Schuld von 1500 rheinische Gulden binnen zwei Jahren zu zahlen.\n\nFormalbeschreibung: Siegler der Aussteller und sein Domkpitel. Vidimus auf Pergament des Otto v. Gerlabach, Amtmann zu Fürstenau und des Brysingk v. Rosenbach vom 1489, beide Siegel abgefallen\n\n(Vor-) Provenienzen: Echter v. Mespelbrunn",
       "english": "Mainz (General Matters): Archbishop Adolf of Mainz promises Contz Echter to pay within two years a debt of 1,500 Rhenish florins incurred by Archbishop Diether.\n\nDescription of the original: The issuing party and his cathedral chapter were to seal it. Parchment vidimus by Otto von Gerlabach, Amtmann zu Fürstenau, and Brysingk von Rosenbach, dated 1489; both seals have fallen off.\n\nProvenance: Echter von Mespelbrunn.",
-      "mention": [
-        {
-          "person": "Erzbischof Adolf",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/114--195/hstad_a_2_nr_114--195_0001.jpg"
@@ -32,6 +18,20 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_2/114--195/hstad_a_2_nr_114--195_0003.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Adolf",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

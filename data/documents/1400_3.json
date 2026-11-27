@@ -7,14 +7,14 @@
       "source": "[RIplus] Regg. Wenzel [n. 3724]",
       "url": "https://www.regesta-imperii.de/id/b4d9e1fb-53b3-443f-af0e-a8b3a113bdd8",
       "german": "Wenzel beruft Burggraf Heinrich von Rosenberg nach Prag.",
-      "english": "Wenceslas summons Burgrave Heinrich von Rosenberg to Prague.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg",
-          "personTitle": [
-            "Burggraf"
-          ]
-        }
+      "english": "Wenceslas summons Burgrave Heinrich von Rosenberg to Prague."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg",
+      "personTitle": [
+        "Burggraf"
       ]
     }
   ]

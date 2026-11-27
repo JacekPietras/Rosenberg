@@ -7,32 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-200119",
       "german": "Schenk Karl von Limpurg, Neithart und Pankraz von Thüngen treten für die von + Graf Michael von Wertheim bei Bernhard von Hutten aufgenommenen 1600 fl. Kapital und 80 fl. Zins anstelle der + Schenk Gottfried von Limpurg, Peter von Gebsattel und Philipp von Uissigheim als Bürgen ein.\n\nLaufzeit: 1532 Dezember 10\n\nSiegelbeschreibung: 3 Siegel, ab",
       "english": "Karl Schenk von Limpurg, Neithart von Thüngen, and Pankraz von Thüngen assume, as guarantors, the place of the deceased Gotfried Schenk von Limpurg, Peter von Gebsattel, and Philipp von Uissigheim for the 1,600-florin principal and 80 florins’ interest that the deceased Michael von Wertheim, Graf had borrowed from Bernhard von Hutten.\n\nTerm: 10 December 1532.\n\nSeals: 3, detached.",
-      "mention": [
-        {
-          "person": "Bernhard von Hutten"
-        },
-        {
-          "person": "Gotfried Schenk von Limpurg"
-        },
-        {
-          "person": "Karl Schenk von Limpurg"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Pankraz von Thüngen"
-        },
-        {
-          "person": "Philipp von Uissigheim"
-        },
-        {
-          "place": "thuengen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000200119%2F07_0000200119_0001_7-200119-1.jpg"
@@ -41,6 +15,32 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000200119%2F07_0000200119_0002_7-200119-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bernhard von Hutten"
+    },
+    {
+      "person": "Gotfried Schenk von Limpurg"
+    },
+    {
+      "person": "Karl Schenk von Limpurg"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Pankraz von Thüngen"
+    },
+    {
+      "person": "Philipp von Uissigheim"
+    },
+    {
+      "place": "thuengen"
     }
   ]
 }

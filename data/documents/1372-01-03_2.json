@@ -10,35 +10,6 @@
       ],
       "german": "Der Ritter Eberhard Schenk von Rossberg und seine Ehefrau Agnes verkaufen Konrad von Uissigheim (Vssenkeym), dem Sohn des verstorbenen Eberhard von Uissigheim, ihre Burg und Behausung sowie ihren Hof mit allen Zugehörungen in Dorf und Gemarkung Veitshöchheim. Ausgenommen von dem Verkauf sind nur zwei Jahrzinsen. Der Käufer hat ihnen dafür 1900 Pfund Heller Würzburger Währung bezahlt. Die Verkäufer übertragen ihm daher die erwähnten Güter und übernehmen die Gewährleistung für den Verkauf. Dafür stellen sie dem Käufer die Gebrüder Gottfried und Dietrich Lamprecht, Dietrich Geyer und Weiprecht von Grumbach als Bürgen mit der Verpflichtung zum Einlager in Würzburg.\nDer wart gegeben 1372 an dem nehsten samztage noch dem heilgen Jarstage.\nAussteller:  Eberhard Schenk von Rossberg und seine Ehefrau Agnes\nEmpfänger:  Konrad von Uissigheim\n\nVermerke: Rückvermerke:  Inhaltsangaben (14./15. u. 17./18. Jh.)\n\nSiegel:  S 1: Eberhard Schenk; an Pergamentstreifen anhängend, leicht besch.\nS 2: Agnes Schenk; ursprünglich an Pergamentstreifen anhängend, verloren\nS 3: Gottfried Lamprecht; an Pergamentstreifen anhängend, leicht besch.\nS 4: Dietrrich Lamprecht; an Pergamentstreifen anhängend, leicht besch.\nS 5: Dietrich Geyer; an Pergamentstreifen anhängend, leicht besch.\nS 6: Weiprecht von Grumbach; ursprünglich an Pergamentstreifen anhängend, verloren\n\nBesiegelung/Beglaubigung: siehe Feld: Äußere Beschreibung",
       "english": "Eberhard Schenk von Rossberg, Ritter and his wife Agnes sell to Konrad von Uissigheim, son of the late Eberhard von Uissigheim, their castle and residence, as well as their farm with all appurtenances in the village and district of Veitshöchheim. Only two annual rents are excluded from the sale. The buyer paid them 1,900 pounds Heller in Würzburg currency. The sellers therefore transfer the properties mentioned to him and warrant the sale. As sureties for the buyer, they provide the brothers Gottfried and Dietrich Lamprecht, Dietrich Geyer, and Wiprecht von Grumbach, who are bound to lodge in Würzburg.\n“It was given in 1372 on the next Saturday after the holy feast of the New Year.”\nGrantors: Eberhard Schenk von Rossberg and his wife Agnes.\nRecipient: Konrad von Uissigheim.\n\nNotes on the reverse: summaries (14th/15th and 17th/18th centuries).\n\nSeals: S 1: Eberhard Schenk, attached by a parchment strip, slightly damaged. S 2: Agnes Schenk, originally attached by a parchment strip, lost. S 3: Gottfried Lamprecht, attached by a parchment strip, slightly damaged. S 4: Dietrrich Lamprecht, attached by a parchment strip, slightly damaged. S 5: Dietrich Geyer, attached by a parchment strip, slightly damaged. S 6: Wiprecht von Grumbach, originally attached by a parchment strip, lost.\n\nSealing/authentication: see physical description.",
-      "mention": [
-        {
-          "person": "Agnes Schenk"
-        },
-        {
-          "person": "Dietrich Geyer"
-        },
-        {
-          "person": "Eberhard Schenk"
-        },
-        {
-          "person": "Eberhard Schenk von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Eberhard von Uissigheim"
-        },
-        {
-          "person": "Konrad von Uissigheim"
-        },
-        {
-          "person": "Wiprecht von Grumbach"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c45e6120-166b-4061-b2c0-cc7c4b77c5c2/1/full/max/0/default.jpg"
@@ -47,6 +18,35 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/c45e6120-166b-4061-b2c0-cc7c4b77c5c2/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Agnes Schenk"
+    },
+    {
+      "person": "Dietrich Geyer"
+    },
+    {
+      "person": "Eberhard Schenk"
+    },
+    {
+      "person": "Eberhard Schenk von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Eberhard von Uissigheim"
+    },
+    {
+      "person": "Konrad von Uissigheim"
+    },
+    {
+      "person": "Wiprecht von Grumbach"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -13,47 +13,47 @@
         "https://digi.ub.uni-heidelberg.de/diglit/winkelmann1894"
       ],
       "german": "Ruprecht bewilligt Arnold und Eberhard von Rosenberg, Eberhards von Rosenberg söhnen, ein wittum für ihre mutter Eilse von Erlikeim auf einem viertel zu Boxberg.",
-      "english": "Ruprecht granted Arnold von Rosenberg and Eberhard von Rosenberg, sons of Eberhard von Rosenberg, a dowry for their mother Elisabeth von Erligheim on a quarter of Boxberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "jagstberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ruprecht",
-          "type": "generic",
-          "content": "authorized [arnold_boxberg] and [eberhard_jagstberg], sons of Eberhard von Rosenberg, to establish a Wittum for their mother Elisabeth von Erligheim on one quarter of Boxberg."
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "arnold_boxberg"
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "eberhard_jagstberg"
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "parent",
-          "of": "arnold_boxberg"
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "parent",
-          "of": "eberhard_jagstberg"
-        }
-      ]
+      "english": "Ruprecht granted Arnold von Rosenberg and Eberhard von Rosenberg, sons of Eberhard von Rosenberg, a dowry for their mother Elisabeth von Erligheim on a quarter of Boxberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ruprecht",
+      "type": "generic",
+      "content": "authorized [arnold_boxberg] and [eberhard_jagstberg], sons of Eberhard von Rosenberg, to establish a Wittum for their mother Elisabeth von Erligheim on one quarter of Boxberg."
+    },
+    {
+      "person": "vogt_zu_Lauda",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "arnold_boxberg"
+    },
+    {
+      "person": "vogt_zu_Lauda",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "eberhard_jagstberg"
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "parent",
+      "of": "arnold_boxberg"
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "parent",
+      "of": "eberhard_jagstberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "place": "jagstberg"
     }
   ]
 }

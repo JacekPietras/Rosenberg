@@ -9,17 +9,17 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0f392b33-59aa-4168-a26f-162d5b6cec0b&parent_id="
       ],
       "german": "Lehengegenbrief des Leonhart von Rosenberg zu Uttenhofen über 4 Höfe u. 2 Sölden zu Oberried bei Uttenhofen in der Seglau bei der Schwarzach im Landgericht Hirsperg.\nLehenherr: Herzog Wilhelm IV.",
-      "english": "Feudal counter-document by Leonhard von Rosenberg of Uttenhofen concerning 4 farms and 2 homesteads in Oberried near Uttenhofen in the Seglau near the Schwarzach in the district of Hirschberg.\nFeudal lord: Duke Wilhelm IV.",
-      "facts": [
-        {
-          "person": "Leonhard von Rosenberg",
-          "personTitle": [
-            "zu Uttenhofen"
-          ],
-          "type": "generic",
-          "content": "issued a fief counterletter to Herzog Wilhelm IV concerning four farms and two smallholdings at Oberried near Uttenhofen."
-        }
-      ]
+      "english": "Feudal counter-document by Leonhard von Rosenberg of Uttenhofen concerning 4 farms and 2 homesteads in Oberried near Uttenhofen in the Seglau near the Schwarzach in the district of Hirschberg.\nFeudal lord: Duke Wilhelm IV."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Leonhard von Rosenberg",
+      "personTitle": [
+        "zu Uttenhofen"
+      ],
+      "type": "generic",
+      "content": "issued a fief counterletter to Herzog Wilhelm IV concerning four farms and two smallholdings at Oberried near Uttenhofen."
     }
   ]
 }

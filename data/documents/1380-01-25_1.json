@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1380_I_25/charter",
       "german": "Peter und Johann, Brüder von Rosenberg, wiederholen an das Stift und Spital zu Hohenfurt die Schenkung der Dörfer Nesselbach, Einsiedl und Konradschlag, vermehren dieselbe mit dem Dorfe Lahrenbecher und bestimmen die Leistungen, zu denen das Stift dem Spitale gegenüber verpflichtet sei.\n\nSiegel: Über die Siegel der Urkundenaussteller siehe CIV und CXIV. Beide sowie das folgende hängen an Pergamentstreifen und sind in rothes Wachs gedruckt. Das Siegel Ulrich's zeigt eine gothische Nische und in derselben einen Schild mit der fünfblättrigen Rose. Eine solche dient auch dem den Schild deckenden Helme zur Zierde. - S . Vlrici . De . Roseberg.",
       "english": "Peter and Hans von Rosenberg, brothers, renew to Hohenfurt Abbey and its hospital the donation of the villages of Nesselbach, Einsiedl, and Konradschlag, augment it with the village of Lahrenbecher, and stipulate the obligations that the abbey is to perform toward the hospital.\n\nSeals: For the seals of the grantors, see CIV and CXIV. Both seals, as well as the following one, hang from parchment strips and are impressed in red wax. Ulrich’s seal shows a Gothic niche containing a shield with a five-petaled rose. The helmet above the shield is also ornamented with such a rose. — S. Vlrici . De . Roseberg.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13800125_6%2CXII_v.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13800125_6%2CXII_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

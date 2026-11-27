@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++50f21f0d-e92e-4cc5-8e60-43aaedaef2bd&parent_id="
       ],
       "german": "Copia Kaufbriefs über den großen und kleinen Zehnten zu Unter- und Obern Schüpf des Georg Sigmund von Rosenberg zu Haldermannstetten, d. dato Onolzbach",
-      "english": "Copy of the deed of sale for the greater and lesser tithes at Unter- and Obern Schüpf by Georg Siegmund von Rosenberg zu Haldermannstetten, dated at Onolzbach.",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        },
-        {
-          "place": "oberschuepf"
-        }
+      "english": "Copy of the deed of sale for the greater and lesser tithes at Unter- and Obern Schüpf by Georg Siegmund von Rosenberg zu Haldermannstetten, dated at Onolzbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
+    },
+    {
+      "place": "oberschuepf"
     }
   ]
 }

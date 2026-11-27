@@ -6,25 +6,25 @@
       "source": "Staatsarchiv Freiburg T 101/1 Nr. 1927",
       "url": "https://www.landesarchiv-bw.de/plink/?f=5-2401151",
       "german": "Elisabeth von Steinkallenfels, geb. von Rosenberg, Witwe des Hans Melchior vom Stein-Kallenfels, verkauft im Namen ihrer Kinder Einkünfte in Heidelsheim (Haydelsheim), Eppingen, Neuenheim (Newhenheim), Lachen und Mannheim.\n\nLaufzeit: 1556 Mai 15\n\nSiegelbeschreibung: zwei anghängte Siegel in Wachsschale",
-      "english": "Elisabeth von Steinkallenfels, née von Rosenberg, widow of Hans Melchior vom Stein-Kallenfels, sells on behalf of her children income from Heidelsheim (Haydelsheim), Eppingen, Neuenheim (Newhenheim), Lachen and Mannheim.\n\nPeriod: May 15, 1556",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans Melchior von Steinkallenfels",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Elisabeth von Rosenberg"
-        },
-        {
-          "person": "Elisabeth von Rosenberg",
-          "type": "generic",
-          "content": "sold income in Heidelsheim, Eppingen, Neuenheim, Lachen and Mannheim on behalf of her children."
-        }
-      ]
+      "english": "Elisabeth von Steinkallenfels, née von Rosenberg, widow of Hans Melchior vom Stein-Kallenfels, sells on behalf of her children income from Heidelsheim (Haydelsheim), Eppingen, Neuenheim (Newhenheim), Lachen and Mannheim.\n\nPeriod: May 15, 1556"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Melchior von Steinkallenfels",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Elisabeth von Rosenberg"
+    },
+    {
+      "person": "Elisabeth von Rosenberg",
+      "type": "generic",
+      "content": "sold income in Heidelsheim, Eppingen, Neuenheim, Lachen and Mannheim on behalf of her children."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

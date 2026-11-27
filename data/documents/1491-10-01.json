@@ -6,37 +6,37 @@
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Oberamt Uffenheim, Urkunden 144",
       "url": "https://www.gda.bayern.de/gvl/document/7d218e60-6a23-4165-b460-566c630022dd",
       "german": "Entscheid: Kurfürst Berthold von Mainz entscheidet über die zwischen Cunz von Rosenberg zu Waldmannshofen und Philipp d. Ä. Herrn zu Winsperg wegen eines Riethwasens bei Gulichsheim obgewaltete Irrungen.",
-      "english": "Decision: Elector Berthold of Mainz adjudicates the dispute between Kunz von Rosenberg of Waldmannshofen and Philipp the Elder von Weinsberg, concerning a Riethwasen (riparian meadow) near Gülchsheim.",
-      "mention": [
-        {
-          "person": "Berthold",
-          "personTitle": [
-            "Kurfürst zu Mainz"
-          ]
-        },
-        {
-          "person": "Philipp von Weinsberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "weinsberg"
-        }
+      "english": "Decision: Elector Berthold of Mainz adjudicates the dispute between Kunz von Rosenberg of Waldmannshofen and Philipp the Elder von Weinsberg, concerning a Riethwasen (riparian meadow) near Gülchsheim."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
       ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ],
-          "type": "generic",
-          "content": "was party to a dispute with Philipp der Ältere, Herr zu Weinsberg, over a Riethwasen near Gülchsheim, decided by Elector Berthold of Mainz."
-        }
+      "type": "generic",
+      "content": "was party to a dispute with Philipp der Ältere, Herr zu Weinsberg, over a Riethwasen near Gülchsheim, decided by Elector Berthold of Mainz."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Berthold",
+      "personTitle": [
+        "Kurfürst zu Mainz"
       ]
+    },
+    {
+      "person": "Philipp von Weinsberg",
+      "personTitle": [
+        "der Ältere"
+      ]
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "weinsberg"
     }
   ]
 }

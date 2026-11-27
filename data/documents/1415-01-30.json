@@ -10,17 +10,6 @@
       ],
       "german": "Ritter und Schultheiß Hanns von Rosemberg und die Schöffen der Stadt Nürnberg beurkunden, dass Hermann Stoer, Heintz Schen und Mertein Romsteck Vormund Heintzleins, des Fritzen Romstecken sel., Söhnleins, Heintz und Anna Sneyder an Heintz Planckensteiner die Ziegelhütte beim Frauentor und den dabei gelegenen Acker mit Genehmigung des Eigenherrn Cuntzen Haller, die Wiese bei dem Galgenhof, die an einer Seite anstößt an Peter Stromeyrs sel. Wiese, wie sie Anna Großmanin Zieglerin besessen hat, verkaufen. Siegler: das Gericht zu Nürnberg. Zeugen: Wilhelm Mendell und Görg Stromeyr.\n\nBesiegelung/Beglaubigung: mit anh. (stark defektem) Sg.",
       "english": "Ritter and Schultheiß Hans von Rosenberg and the lay judges of the city of Nürnberg certify that Hermann Stoer, Heintz Schen, and Mertein Romsteck, guardians of little Heintz, the son of the late Fritz Romsteck, sold to Heintz Planckensteiner the tile works by the Frauen Tor and the adjoining field, with the approval of the owner, Cuntzen Haller, and the meadow by the Galgenhof, which borders on one side the meadow of the late Peter Stromeyr, as Anna Großmanin Zieglerin had held them. Sealer: the court of Nürnberg. Witnesses: Wilhelm Mendell and Görg Stromeyr.\n\nSealing/authentication: with an attached (badly damaged) seal.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Schultheiß"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f9ddb775-6d11-47b6-bc28-f728096e2108/1/full/max/0/default.jpg"
@@ -29,6 +18,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f9ddb775-6d11-47b6-bc28-f728096e2108/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Schultheiß"
+      ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

@@ -12,11 +12,6 @@
       ],
       "german": "Schuldverschreibung des Friedrich Rödel von Reifenberg.",
       "english": "Debt instrument of Friedrich Rödel von Reifenberg.",
-      "mention": [
-        {
-          "person": "Friedrich Rödel von Reifenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._1/1527/hstam_urk._1_nr_1527_1r.jpg"
@@ -29,6 +24,11 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich Rödel von Reifenberg"
     }
   ]
 }

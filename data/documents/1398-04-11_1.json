@@ -7,34 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1771320",
       "german": "Engelhard von Rosenberg d. Ä., Edelknecht, übergibt die ihm vom Reich verpfändeten Königsleute dem Pfalzgrafen Ruprecht, der sie von ihm um dieselbe Summe ausgelöst hat, um die sie ihm vom Reich verpfändet waren.\n\nLaufzeit: 1398 April 11 (Donnerstag nach Ostern 1398)\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Engelhard von Rosenberg der Ältere, Edelknecht, hands over the royal people pledged to him by the Empire to Count Palatine Ruprecht, who has redeemed them from him for the same sum for which they were pledged to him by the Empire.",
-      "facts": [
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht",
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "held royal subjects pledged to him by the Empire."
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht",
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "transferred the royal subjects pledged to him by the Empire to Count Palatine Ruprecht."
-        },
-        {
-          "person": "Ruprecht",
-          "personTitle": [
-            "Pfalzgraf"
-          ],
-          "type": "generic",
-          "content": "redeemed the royal subjects from Engelhard von Rosenberg der Ältere for the sum for which the Empire had pledged them."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001771320%2F04_0001771320_0001_4-1771320-1.jpg",
@@ -59,6 +31,34 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht",
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "held royal subjects pledged to him by the Empire."
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht",
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "transferred the royal subjects pledged to him by the Empire to Count Palatine Ruprecht."
+    },
+    {
+      "person": "Ruprecht",
+      "personTitle": [
+        "Pfalzgraf"
+      ],
+      "type": "generic",
+      "content": "redeemed the royal subjects from Engelhard von Rosenberg der Ältere for the sum for which the Empire had pledged them."
     }
   ]
 }

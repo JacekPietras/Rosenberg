@@ -7,34 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1786779",
       "german": "Graf Philipp von Rieneck d. Ä. und Jörg von Rosenberg machen einen Vergleich zwischen Wilhelm von Dottenheim, Ritter, und Arnold von Rosenberg im Streit um den Schaftrieb und die Schafweide zu Oberschüpf und zu Sachsenflur.\n\nLaufzeit: 1482 September 9 (Montag nach Mariae Geburt 1482)\n\nSiegelbeschreibung: Mit 3 von 4 Siegeln",
       "english": "Count Philipp von Rieneck the Elder and Georg von Rosenberg make an agreement between Wilhelm von Dottenheim, Knight, and Arnold von Rosenberg in a dispute over sheep driving and sheep grazing at Oberschüpf and Sachsenflur.\n\nDuration: 1482 September 9 (Monday after the Nativity of Mary 1482)",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "person": "Philipp von Rieneck",
-          "personTitle": [
-            "Graf von Rieneck",
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Wilhelm von Dottenheim",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "with Count Philipp von Rieneck der Ältere settled a dispute between Wilhelm von Dottenheim and Arnold von Rosenberg about sheep grazing at Oberschüpf and Sachsenflur."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786779%2F04_0001786779_0001_4-1786779-1.jpg"
@@ -45,6 +17,34 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786779%2F04_0001786779_0003_4-1786779-3.jpg"
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "with Count Philipp von Rieneck der Ältere settled a dispute between Wilhelm von Dottenheim and Arnold von Rosenberg about sheep grazing at Oberschüpf and Sachsenflur."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "person": "Philipp von Rieneck",
+      "personTitle": [
+        "Graf von Rieneck",
+        "der Ältere"
+      ]
+    },
+    {
+      "person": "Wilhelm von Dottenheim",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

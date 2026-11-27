@@ -7,22 +7,22 @@
       "source": "Regesta Boica 13",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
       "german": "Johann Pfalzgraf bey Rhein und Herzog in Bayern beauftragt den Conrad von Rosenberg, Vicedom in Amberg, die Burgerschaft der Stadt Amberg von der Fortsetzung ihres in seiner Herrschaft Sulzbach begonnenen Bergbaues bis zu einem Austrag abzuhalten. D. Sulzbach Sabato ante Dominicam Cantate. (B.)",
-      "english": "Johann, Pfalzgraf bei Rhein and Herzog in Bayern, instructs Konrad von Rosenberg, Vizedom zu Amberg, to prevent the citizens of Amberg from continuing the mining they had begun in his lordship of Sulzbach until the dispute is settled. Given at Sulzbach on the Saturday before Cantate Sunday. (B.)",
-      "mention": [
-        {
-          "place": "amberg"
-        }
+      "english": "Johann, Pfalzgraf bei Rhein and Herzog in Bayern, instructs Konrad von Rosenberg, Vizedom zu Amberg, to prevent the citizens of Amberg from continuing the mining they had begun in his lordship of Sulzbach until the dispute is settled. Given at Sulzbach on the Saturday before Cantate Sunday. (B.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "was instructed by Johann, Pfalzgraf bei Rhein and Herzog in Bayern, to prevent the citizens of Amberg from continuing their mining in the lordship of Sulzbach until the dispute was settled."
-        }
-      ]
+      "type": "generic",
+      "content": "was instructed by Johann, Pfalzgraf bei Rhein and Herzog in Bayern, to prevent the citizens of Amberg from continuing their mining in the lordship of Sulzbach until the dispute was settled."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
     }
   ]
 }

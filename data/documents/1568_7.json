@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++300f2295-4966-4aad-9ffd-8f9529806cdb&parent_id="
       ],
       "german": "Balthasar Frisch von Würzburg, v. rosenberg'scher Pfarrer zu Waldmannshofen, an Rothenburg (bittet um eine rothenburgische Pfarrei nach seiner Entlassung aus rosenerg'schem Dienst, wegen Ausfälle gegen die Päpste in seinen Predigten)",
-      "english": "Balthasar Frisch of Würzburg, pastor serving the von Rosenberg family at Waldmannshofen, to Rothenburg: he asks for a Rothenburg parish after being dismissed from Rosenberg service because of his attacks on the popes in his sermons.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Balthasar Frisch of Würzburg, pastor serving the von Rosenberg family at Waldmannshofen, to Rothenburg: he asks for a Rothenburg parish after being dismissed from Rosenberg service because of his attacks on the popes in his sermons."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

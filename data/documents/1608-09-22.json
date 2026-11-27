@@ -9,42 +9,42 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++eeb50743-db03-4309-a363-9a332dca2b8c&parent_id="
       ],
       "german": "Der kaiserliche Notar Stephan Weiner von Weigenheim beglaubigt im Schloss Sugenheim in Gegenwart der Vormünder Albrecht Christoph von und zu Rosenberg auf Waldmannshofen, Knetzgau und Schüpf, Eberhard von Eltershofen und Georg Friedrich von Seckendorff die Aufstellung des Anteils an Fahrnis und Schmuck, der der wiederverheirateten Witwe Brigitta, geborenen von Rosenberg, zusteht.",
-      "english": "The imperial notary Stephan Weiner von Weigenheim authenticates at Sugenheim Castle, in the presence of the guardians Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, Knetzgau, and Schüpf, Eberhard von Eltershofen, and Georg Friedrich von Seckendorf, an inventory of the movable goods and jewelry share belonging to the remarried widow Brigitta, née von Rosenberg.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "personTitle": [
-            "zu Rosenberg"
-          ]
-        },
-        {
-          "person": "Brigitta von Rosenberg"
-        },
-        {
-          "person": "Georg Friedrich von Seckendorf"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "sugenheim-st-erhard"
-        },
-        {
-          "place": "waldmannshofen"
-        }
+      "english": "The imperial notary Stephan Weiner von Weigenheim authenticates at Sugenheim Castle, in the presence of the guardians Albrecht Christoph von Rosenberg zu Rosenberg of Waldmannshofen, Knetzgau, and Schüpf, Eberhard von Eltershofen, and Georg Friedrich von Seckendorf, an inventory of the movable goods and jewelry share belonging to the remarried widow Brigitta, née von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "personTitle": [
+        "zu Knetzgau",
+        "zu Schüpf",
+        "zu Waldmannshofen"
       ],
-      "facts": [
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "personTitle": [
-            "zu Knetzgau",
-            "zu Schüpf",
-            "zu Waldmannshofen"
-          ],
-          "type": "generic",
-          "content": "was present with the other guardians when the notary authenticated an inventory of Brigitta’s share of movable goods and jewelry."
-        }
+      "type": "generic",
+      "content": "was present with the other guardians when the notary authenticated an inventory of Brigitta’s share of movable goods and jewelry."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "personTitle": [
+        "zu Rosenberg"
       ]
+    },
+    {
+      "person": "Brigitta von Rosenberg"
+    },
+    {
+      "person": "Georg Friedrich von Seckendorf"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "sugenheim-st-erhard"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

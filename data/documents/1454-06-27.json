@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198245",
       "german": "Lehnrevers Hansens von Rosenberg über das in No. 2 decensirte Mannlehen, an H. Grafen Johann zu Wertheim ausgestellet.\n\nLaufzeit: 1454 Juni 27 (am donerstag nach St. Johannes Baptist)",
       "english": "Hans von Rosenberg's feudal acknowledgment issued to Lord Count Johann zu Wertheim concerning the manorial fief described under no. 2.\n\nDate range: 27 June 1454 (Thursday after Saint John the Baptist's Day).",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Hans zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198245%2F07_0000198245_0001_7-198245-1.jpg"
@@ -25,6 +14,17 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198245%2F07_0000198245_0002_7-198245-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Hans zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

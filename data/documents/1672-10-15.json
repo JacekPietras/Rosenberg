@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/AUR/AT-KLA_418-B-A_3208_St/charter",
       "german": "Georg Niklas Graf von Rosenberg verkauft dem Abt Wilhelm von Viktring das zu seiner Herrschaft Keutschach gehörige sogenannte Chor- und Opferholz samt drei darin befindlichen Keuschlern. Siegler: Aussteller\n\nSiegel: 1 Sig. pend.",
       "english": "Georg Niklas, Graf von Rosenberg, sells Abbot Wilhelm of Viktring the so-called Choir and Offering Wood belonging to his lordship of Keutschach, together with three cottages located in it. Sealer: issuer\n\nSeal: 1 pendant seal.",
-      "mention": [
-        {
-          "person": "Georg Niklas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_A_3208_16721015_r.JPG"
@@ -22,6 +14,14 @@
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_A_3208_16721015_v.JPG"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Niklas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
       ]
     }
   ]

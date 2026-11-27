@@ -14,14 +14,6 @@
       ],
       "german": "Abt Wilhelm von St. Gallen beurkundet, dass der Dienstmann Ulrich von Bünishofen auf seine Rechte an Eigenleuten verzichtet habe.\n\nWilh. dei gratia abbas monasterii sancti Galli 1 omnibus intuentibus presens scriptum salutem in domino et notitiam subscriptorum. || Noverint universi, quos nosce fuerit oportunum, quod veniens ad nostri presentiam V ol. de Bünishouin 2 ministerialis II monasterii nostri resignavit publice ad manus nostras Walt, et Adilh. pueros H. dicti Muller de Turego 3, quos || ipse a nostro monasterio in feodum tenuit et possedit, cedendo et renuntiando omni iuri sibi in eisdem quomodolibet conpetenti. In cuius rei testimonium sigillum nostrum presentibus duximus apponendum. Ego V ol. prenotatus de Bünishouin confiteor omnia et singula premissorum fore vera et in singnum a) veritatis sigillum proprium presentibus apposui. Dat. apud sanctum Gallum, anno domini millesimo CCC°.I°. XVIII. kal. febr. ind. XIIII a, presentibus H. portario 4, Hilteboldo custode 5, H. preposito 6 monasterii nostri, domino Egl. milite de Rosinberg 7, R. Sculteto 8 et aliis quam pluribus fidedignis.\n\nSiegel: 2 Siegel abh., 1. fehlt; 2. schildf. ca. 3/3,5 cm, stark besch., ...ISHOV...",
       "english": "Abbot Wilhelm of St. Gallen certifies that the ministerial Ulrich von Bünishofen renounced his rights over serfs.\n\nWilhelm, by God's grace abbot of the monastery of St. Gallen, wishes salvation in the Lord and knowledge of the following to all who see this present document. Let all who need to know understand that Volrich von Bünishofen, a ministerial of our monastery, having come into our presence, publicly surrendered into our hands Walt and Adelheid, the children of H. called Müller of Thurgau, whom he had held and possessed as a fief from our monastery, relinquishing and renouncing every right he might have had in them. In witness of this we have caused our seal to be affixed to this document. I, the aforementioned Volrich von Bünishofen, acknowledge that all the foregoing is true, and have affixed my own seal to this document as a sign of truth. Issued at St. Gallen in the year of the Lord 1301, on the eighteenth day before the Kalends of February, in the fourteenth indiction, in the presence of H., the porter; Hiltebold, the sacristan; H., the provost of our monastery; Lord Egilolf von Rosenberg, Ritter; R., the reeve; and many other trustworthy people.\n\nSeals: two seals hang from the document; the first is missing; the second is shield-shaped, about 3 by 3.5 cm, badly damaged, with the surviving inscription ...ISHOV...",
-      "mention": [
-        {
-          "person": "Egilolf von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_13010115_FF4-E23_r.jpg"
@@ -35,6 +27,14 @@
         {
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG2jpgweb._%7EStiASG_13010115_FF4-E23_v.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Egilolf von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

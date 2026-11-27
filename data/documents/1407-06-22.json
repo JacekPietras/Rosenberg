@@ -9,17 +9,17 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1407_VI_22/charter"
       ],
       "german": "König Wenzel IV. befiehlt dem Heinrich von Rosenberg, den Abt Adam von Goldenkron in der Regierung seines Klosters fürderhin friedlich zu belassen.",
-      "english": "King Wenceslaus IV orders Heinrich von Rosenberg henceforth to leave Abbot Adam of Goldenkron in peaceful possession of the governance of his monastery.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "person": "König Wenceslaus",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "King Wenceslaus IV orders Heinrich von Rosenberg henceforth to leave Abbot Adam of Goldenkron in peaceful possession of the governance of his monastery."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "König Wenceslaus",
+      "personTitle": [
+        "König"
       ]
     }
   ]

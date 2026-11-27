@@ -7,21 +7,21 @@
       "source": "[RI XIII] H. 26 n. 9",
       "url": "https://www.regesta-imperii.de/id/1440-08-28_2_0_13_26_0_9_9",
       "german": "Kg.F. schreibt desgleichen an Ulrich von Rosenberg, Meinhard von Neuhaus, Hinko von Birkenstein, Alesch von Sternberg, Jan von Riesenburg, Sbinko von Hasenburg und an andere Herren, Ritter und Knechte sowie an die Prager und andere Städte, die zu einem Tag nach Cham kommen werden.",
-      "english": "King Frederick likewise writes to Ulrich von Rosenberg, Meinhard von Neuhaus, Hinko von Birkenstein, Alesch von Sternberg, Jan von Riesenburg, Sbinko von Hasenburg, and other lords, knights, and men-at-arms, as well as to Prague and other cities that will come to a court day at Cham.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "neuhaus"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Frederick likewise writes to Ulrich von Rosenberg, Meinhard von Neuhaus, Hinko von Birkenstein, Alesch von Sternberg, Jan von Riesenburg, Sbinko von Hasenburg, and other lords, knights, and men-at-arms, as well as to Prague and other cities that will come to a court day at Cham."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "neuhaus"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

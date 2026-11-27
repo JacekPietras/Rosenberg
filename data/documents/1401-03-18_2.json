@@ -6,24 +6,24 @@
       "source": "Generallandesarchiv Karlsruhe D Nr. 457 a",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3933638",
       "german": "König Ruprecht belehnt als Pfalzgraf bei Rhein Konrad von Rosenberg mit einem Viertel des Schlosses Boxberg\n\nLaufzeit: 1401 März 18",
-      "english": "King Ruprecht enfeoffs Konrad von Rosenberg, as Count Palatine of the Rhine, with one quarter of Boxberg Castle",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "received one quarter of Boxberg Castle as a fief from King Ruprecht, Count Palatine of the Rhine."
-        }
+      "english": "King Ruprecht enfeoffs Konrad von Rosenberg, as Count Palatine of the Rhine, with one quarter of Boxberg Castle"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "received one quarter of Boxberg Castle as a fief from King Ruprecht, Count Palatine of the Rhine."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
     }
   ]

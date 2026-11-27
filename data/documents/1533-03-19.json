@@ -12,37 +12,37 @@
         "https://www.landesarchiv-bw.de/plink/?f=5-2387990"
       ],
       "german": "Die Brüder Wolf und Friedrich von Fleckenstein, Söhne des Heinrich von Fleckenstein, ihr Onkel Ludwig von Fleckenstein, pfälzischer Hofmeister, Friedrich von Fleckenstein, Vogt zu Germersheim und Balthasar von Rosenberg als Vormund der Kinder des Jakob von Fleckenstein mit Namen Philipp, Jakob, Ursula und Margret teilen die Fleckenstein'schen Besitzungen unter sich auf.\n\nLaufzeit: 1533 März 19\n\nSiegelbeschreibung: fünf angehängte Siegel in Wachsschale, davon eines beschädigt",
-      "english": "The brothers Wolf and Friedrich von Fleckenstein, sons of Heinrich von Fleckenstein, their uncle Ludwig von Fleckenstein, Palatinate court master, Friedrich von Fleckenstein, Vogt of Germersheim, and Balthasar von Rosenberg as guardian of the children of Jakob von Fleckenstein named Philipp, Jakob, Ursula, and Margret divide the Fleckenstein possessions among themselves.\n\nDate range: March 19, 1533",
-      "mention": [
-        {
-          "place": "fleckenstein"
-        },
-        {
-          "person": "Friedrich von Fleckenstein",
-          "personTitle": [
-            "Vogt zu Germersheim"
-          ]
-        },
-        {
-          "person": "Heinrich von Fleckenstein"
-        },
-        {
-          "person": "Jakob von Fleckenstein"
-        },
-        {
-          "person": "Ludwig von Fleckenstein"
-        },
-        {
-          "person": "Wolf von Fleckenstein"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Balthasar von Rosenberg",
-          "type": "generic",
-          "content": "served as guardian of Jakob von Fleckenstein’s children during the division of the Fleckenstein family’s properties."
-        }
+      "english": "The brothers Wolf and Friedrich von Fleckenstein, sons of Heinrich von Fleckenstein, their uncle Ludwig von Fleckenstein, Palatinate court master, Friedrich von Fleckenstein, Vogt of Germersheim, and Balthasar von Rosenberg as guardian of the children of Jakob von Fleckenstein named Philipp, Jakob, Ursula, and Margret divide the Fleckenstein possessions among themselves.\n\nDate range: March 19, 1533"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Balthasar von Rosenberg",
+      "type": "generic",
+      "content": "served as guardian of Jakob von Fleckenstein’s children during the division of the Fleckenstein family’s properties."
+    }
+  ],
+  "mention": [
+    {
+      "place": "fleckenstein"
+    },
+    {
+      "person": "Friedrich von Fleckenstein",
+      "personTitle": [
+        "Vogt zu Germersheim"
       ]
+    },
+    {
+      "person": "Heinrich von Fleckenstein"
+    },
+    {
+      "person": "Jakob von Fleckenstein"
+    },
+    {
+      "person": "Ludwig von Fleckenstein"
+    },
+    {
+      "person": "Wolf von Fleckenstein"
     }
   ]
 }

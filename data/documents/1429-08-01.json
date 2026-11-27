@@ -10,35 +10,6 @@
       ],
       "german": "Anna von Rosenberg, Ehefrau Hans von Rosenbergs, verkauft an Eberhard von Hardheim alle Gülten und Zinse, die sie bis dato in Königheim, Eiersheim, Rinderfeld und Schweinberg hatte.\n\nLaufzeit: 1429 August 1 (1429 Petri vincula)\n\nSiegelbeschreibung: 2 Siegel",
       "english": "Anna von Rosenberg, wife of Hans von Rosenberg, sold to Eberhard von Hartheim all the rents and interest that she had previously had in Königheim, Eiersheim, Rinderfeld and Schweinberg.",
-      "mention": [
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Eberhard von Hartheim"
-        },
-        {
-          "place": "eiersheim"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "place": "rinderfeld"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "spouse",
-          "of": "Anna von Rosenberg"
-        },
-        {
-          "person": "Anna von Rosenberg",
-          "type": "generic",
-          "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001790839%2F04_0001790839_0001_4-1790839-1.jpg",
@@ -63,6 +34,35 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "spouse",
+      "of": "Anna von Rosenberg"
+    },
+    {
+      "person": "Anna von Rosenberg",
+      "type": "generic",
+      "content": "sold to Eberhard von Hardheim all rents and interest she held in Königheim, Eiersheim, Rinderfeld, and Schweinberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "person": "Eberhard von Hartheim"
+    },
+    {
+      "place": "eiersheim"
+    },
+    {
+      "place": "koenigheim"
+    },
+    {
+      "place": "rinderfeld"
     }
   ]
 }

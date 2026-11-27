@@ -6,27 +6,27 @@
       "source": "HStAD, B 8, 9/578",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4829794",
       "german": "Erzbischof Anselm Franz von Mainz: Verleihung eines Burglehens von 6 fl. jährlicher Gülte aus der Kellerei Steinheim an Franz Christoph und Johann Konrad v. Rosenbach, für sich und die Kinder ihres verstorbenen Bruders Franz Rudolf v. Rosenbach, Philipp Ludwig, Johann Hartmann,Franz Albrechtund Konrad Anton Philibert\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. in Holzkapsel\n\nSiegler: SAussteller - Kanzleivermerk: Konstantin Bertram, Kanzler, und Dr. Albrecht Steinbach, Lehenspropst\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Archbishop Anselm Franz of Mainz: grants an annual rent of 6 florins from the Steinheim treasury as a castle fief to Franz Christoph and Hans Konrad von Rosenberg, for themselves and for the children of their late brother Franz Rudolf von Rosenberg: Philipp Ludwig, Johann Hartmann, Franz Albrecht, and Konrad Anton Philibert.\n\nFormal description: Original, parchment, attached seal in a wooden capsule\n\nSeal bearer: Issuer. Note by the chancery: Konstantin Bertram, Chancellor, and Dr. Albrecht Steinbach, provost of fiefs\n\n(Former) provenance: von Rosenbach",
-      "mention": [
-        {
-          "person": "Erzbischof Anselm Franz",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Archbishop Anselm Franz of Mainz: grants an annual rent of 6 florins from the Steinheim treasury as a castle fief to Franz Christoph and Hans Konrad von Rosenberg, for themselves and for the children of their late brother Franz Rudolf von Rosenberg: Philipp Ludwig, Johann Hartmann, Franz Albrecht, and Konrad Anton Philibert.\n\nFormal description: Original, parchment, attached seal in a wooden capsule\n\nSeal bearer: Issuer. Note by the chancery: Konstantin Bertram, Chancellor, and Dr. Albrecht Steinbach, provost of fiefs\n\n(Former) provenance: von Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Anselm Franz",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

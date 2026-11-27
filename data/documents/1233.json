@@ -7,32 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234101",
       "german": "L(udwig), Graf von Rieneck, beurkundet, dass sein Getreuer Heinrich zu Eiersheim sein Gesamtbesitztum zu Uissigheim um 44 Mark Silber an die Abtei Bronnbach verkauft habe, wobei sein Bruder Eberhard, Arnold und Albert von Uissigheim Bürgen und Salmannen waren.\n\nLaufzeit: 1233\n\nSiegelbeschreibung: Siegel ab\n\nVermerke: Auf der Rückseite: \"De bonis in Ussincheim ab Heinrico des Isersheim emptis\"",
       "english": "L(udwig) von Rieneck, Graf, certifies that his liegeman Heinrich zu Eiersheim sold all his property at Uissigheim to Bronnbach Abbey for 44 marks of silver, with his brother Eberhard, Arnold, and Albrecht von Uissigheim acting as sureties and feoffees.\n\nPeriod covered: 1233.\n\nSeal description: seal detached.\n\nNotes: On the reverse: “On the properties at Uissigheim purchased from Heinrich zu Eiersheim.”",
-      "mention": [
-        {
-          "person": "Albrecht von Uissigheim"
-        },
-        {
-          "person": "Arnold von Uissigheim"
-        },
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Eberhard von Uissigheim"
-        },
-        {
-          "person": "Heinrich zu Eiersheim"
-        },
-        {
-          "person": "Ludwig von Rieneck",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234101%2F07_0000234101_0001_7-234101-1.jpg"
@@ -41,6 +15,32 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234101%2F07_0000234101_0002_7-234101-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Uissigheim"
+    },
+    {
+      "person": "Arnold von Uissigheim"
+    },
+    {
+      "place": "bronnbach"
+    },
+    {
+      "person": "Eberhard von Uissigheim"
+    },
+    {
+      "person": "Heinrich zu Eiersheim"
+    },
+    {
+      "person": "Ludwig von Rieneck",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

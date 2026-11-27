@@ -7,36 +7,36 @@
       "source": "RIplus Regg. EB Mainz 2,1 n. 2056",
       "url": "https://www.regesta-imperii.de/id/fa8ff246-fb9e-44b5-ac3e-d6b875e88621",
       "german": "Erzbischof Gerlach, Pfalzgraf Ruprecht d. Ä. Herzog Rudolf von Sachsen und Markgraf Otto von Brandenburg, Kurfürsten; (venerabiles) Erzbischof Johann von Prag und die Bischöfe Johann von Olmütz, kaiserlicher Hofkanzler, Lamprecht von Speier, Albrecht von Leitomischl, Rudolf von Verden und Peter von Chur; (illustres) die Herzöge Ruprecht von Liegnitz und Heinrich von Brieg; (spectabiles) die Grafen Eberhard von Württemberg, Johann von Nassau, Ulrich von Helfenstein, Heinrich von Schwarzburg (Swarczpurg) und Eberhard von Wertheim und Johann, Landgraf von Leuchtenberg; (nobiles) Gottfried und Kraft von Hohenlohe (-loch), Wanco, Jesco und Benesch von Wartenberg (-em-), Johann von Michalowitz (Michelperg), die Brüder Jodok und Johann von Rosenberg, Wilhelm von Hasenberg (-burg) und Thimo von Kolditz, magistri camere, sind Zeugen Kaiser Karls IV. der die eingerückten (gefälschten) Privilegien Karls des Großen vom Mai 794 und von 812 sowie Ottos III. vom 10. April 1000 für das Kloster Neustadt O. S. B. Würzburger Diözese, bestätigt.",
-      "english": "Archbishop Gerlach; Count Palatine Ruprecht the Elder, Duke Rudolf of Saxony, and Margrave Otto of Brandenburg, electors; (venerabiles) Archbishop Johann of Prague and Bishops Johann of Olomouc, imperial court chancellor, Lamprecht of Speyer, Albrecht of Leitomischl, Rudolf of Verden, and Peter of Chur; (illustres) Dukes Ruprecht of Liegnitz and Heinrich of Brieg; (spectabiles) Counts Eberhard of Württemberg, Johann of Nassau, Ulrich of Helfenstein, Heinrich of Schwarzburg, and Eberhard of Wertheim, and Johann, Landgrave of Leuchtenberg; (nobiles) Gottfried and Kraft of Hohenlohe, Wanco, Jesco, and Benesch of Wartenberg, Johann of Michalowitz, the brothers Jodok and Johann of Rosenberg, Wilhelm of Hasenberg, and Thimo of Kolditz, chamberlains, are witnesses to Emperor Charles IV, who confirms for the Benedictine monastery of Neustadt in the Diocese of Würzburg the inserted (forged) privileges of Charlemagne of May 794 and of 812, and of Otto III of 10 April 1000.",
-      "mention": [
-        {
-          "person": "Eberhard of Wertheim"
-        },
-        {
-          "person": "Gotfried of Hohenlohe"
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg"
-          ]
-        },
-        {
-          "person": "Hans of Rosenberg"
-        },
-        {
-          "person": "Heinrich of Schwarzburg"
-        },
-        {
-          "person": "Kraft of Hohenlohe"
-        },
-        {
-          "place": "speyer"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Archbishop Gerlach; Count Palatine Ruprecht the Elder, Duke Rudolf of Saxony, and Margrave Otto of Brandenburg, electors; (venerabiles) Archbishop Johann of Prague and Bishops Johann of Olomouc, imperial court chancellor, Lamprecht of Speyer, Albrecht of Leitomischl, Rudolf of Verden, and Peter of Chur; (illustres) Dukes Ruprecht of Liegnitz and Heinrich of Brieg; (spectabiles) Counts Eberhard of Württemberg, Johann of Nassau, Ulrich of Helfenstein, Heinrich of Schwarzburg, and Eberhard of Wertheim, and Johann, Landgrave of Leuchtenberg; (nobiles) Gottfried and Kraft of Hohenlohe, Wanco, Jesco, and Benesch of Wartenberg, Johann of Michalowitz, the brothers Jodok and Johann of Rosenberg, Wilhelm of Hasenberg, and Thimo of Kolditz, chamberlains, are witnesses to Emperor Charles IV, who confirms for the Benedictine monastery of Neustadt in the Diocese of Würzburg the inserted (forged) privileges of Charlemagne of May 794 and of 812, and of Otto III of 10 April 1000."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard of Wertheim"
+    },
+    {
+      "person": "Gotfried of Hohenlohe"
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
       ]
+    },
+    {
+      "person": "Hans of Rosenberg"
+    },
+    {
+      "person": "Heinrich of Schwarzburg"
+    },
+    {
+      "person": "Kraft of Hohenlohe"
+    },
+    {
+      "place": "speyer"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

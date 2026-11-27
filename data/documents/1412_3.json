@@ -6,18 +6,18 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 5642",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1639404",
       "german": "Streitigkeiten zwischen Ritter Martin von Helmstatt und Bering von Rosenbach um einen Hof in Bensheim.\n\nLaufzeit: 1412\n\nEnthält: Darin: Feder-Skizze des strittigen Objekts.\n\nUmfang: 2 Bl.",
-      "english": "Dispute between Martin von Helmstatt, Ritter and Bering von Rosenbach over a farm at Bensheim.\n\nTerm: 1412\n\nContains: A pen sketch of the disputed property.\n\nExtent: 2 leaves",
-      "mention": [
-        {
-          "person": "Martin von Helmstatt",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Dispute between Martin von Helmstatt, Ritter and Bering von Rosenbach over a farm at Bensheim.\n\nTerm: 1412\n\nContains: A pen sketch of the disputed property.\n\nExtent: 2 leaves"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Martin von Helmstatt",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

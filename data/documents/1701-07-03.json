@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-SOAPraha/VS-Malesnov/514/charter",
       "german": "Svatba a svatební smlouva mezi zesnulým panem Philippem Franzem Eberhardem, komorníkem ve Wormsu, svobodným pánem von Dalberg, pánem zu Herresheim, Essingen a Crobsberg, cís. bývalým radou a prezidentem komory ve Wetzlaru, zesnulou paní Annou Katharinou Franziskou, komornicí ve Wormsu, svobodnou paní von Dalberg, rozenou svobodnou paní von Dalberg, manželským synem panem Franzem Eckenbertem, komorníkem ve Wormsu, svobodným pánem von Dalberg, v kurfiřtství trevírském a v biskupství Speyer radou a vrchním v Kirrweileru a Drüdesheimu z jedné strany, a zesnulým panem Johannem Fuchsem von Dornheim na Mainsondheimu, bývalým radou knížete würzburského, vrchním v Proseltzheimu a Unter Pleichfeldu a přísedícího císařského zemského soudu vévodství Franky (Franken), paní Marií Johannou von Dornheim, rozenou von Rosenbach, pozůstalou manželskou dcerou slečnou Marií Franziskou Fuchs von Dornheim, ze strany druhé.\n\nSiegel: přivěšeno 10 pečetí na černožluté šňůře",
       "english": "Marriage and marriage contract between the late Philipp Franz Eberhard, chamberlain at Worms, Baron von Dalberg, lord zu Herresheim, Essingen, and Crobsberg, former imperial councillor and president of the chamber at Wetzlar; the late Anna Katharina Franziska, chamberlain at Worms, Baroness von Dalberg, née Baroness von Dalberg; and their legitimate son Franz Eckenbert, chamberlain at Worms, Baron von Dalberg, councillor in the Electorate of Trier and the Diocese of Speyer, and chief administrator at Kirrweiler and Drüdesheim, on the one side; and the late Johann Fuchs von Dornheim zu Mainsondheim, former councillor to the Prince-Bishop of Würzburg, chief administrator at Proseltzheim and Unter Pleichfeld, and assessor of the Imperial Land Court of the Duchy of Franconia; Maria Johanna von Dornheim, née von Rosenbach; and the surviving legitimate daughter, Maria Franziska Fuchs von Dornheim, on the other side.\n\nSeals: ten seals attached on black-and-yellow cords.",
-      "mention": [
-        {
-          "place": "essingen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "speyer"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/CZ-SOAPraha/VS-Malesnov//SOAPrag_VS-Malesov_514_17010703_01.jpg"
@@ -41,6 +27,20 @@
           "src": "https://images.monasterium.net/img/CZ-SOAPraha/VS-Malesnov//SOAPrag_VS-Malesov_514_17010703_06.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "essingen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "speyer"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -6,30 +6,30 @@
       "source": "Staatsarchiv Wertheim G-Rep. 52 Nr. 182",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-5310",
       "german": "Schreiben Phillips von Üssigheim an Graf Michael II. von Wertheim wegen der Beschwerden der Untertanen in Lauda gegen Ludwig von Hutten\n\nLaufzeit: 1503\n\nEnthält: Enthält auch: Schreiben Üssigheims an Conrad von Hutten und Schreiben Conrads von Hutten an Graf Michael II. von Wertheim",
-      "english": "Letter from Philipp von Uissigheim to Graf Michael II von Wertheim concerning complaints by the subjects in Lauda against Ludwig von Hutten.\n\nDate range: 1503.\n\nContents: Also includes a letter from Uissigheim to Konrad von Hutten and a letter from Konrad von Hutten to Graf Michael II von Wertheim.",
-      "mention": [
-        {
-          "person": "Konrad von Hutten"
-        },
-        {
-          "place": "lauda"
-        },
-        {
-          "person": "Ludwig von Hutten"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Philipp von Uissigheim"
-        },
-        {
-          "place": "uissigheim"
-        }
+      "english": "Letter from Philipp von Uissigheim to Graf Michael II von Wertheim concerning complaints by the subjects in Lauda against Ludwig von Hutten.\n\nDate range: 1503.\n\nContents: Also includes a letter from Uissigheim to Konrad von Hutten and a letter from Konrad von Hutten to Graf Michael II von Wertheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Hutten"
+    },
+    {
+      "place": "lauda"
+    },
+    {
+      "person": "Ludwig von Hutten"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "person": "Philipp von Uissigheim"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

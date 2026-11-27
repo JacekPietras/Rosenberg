@@ -7,11 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7362637",
       "german": "Eingelegte Protestation des Propstes von Rosenbach zu Blankenau gegen die von Riedesel wegen der Grenze\n\nLaufzeit: 1671",
       "english": "Protest lodged by the provost of Rosenbach at Blankenau against the von Riedesel family concerning the boundary.\n\nDate range: 1671",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1289/hstam_94_nr_1289_0001.jpg"
@@ -29,6 +24,11 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1289/hstam_94_nr_1289_0005.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

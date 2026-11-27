@@ -6,33 +6,33 @@
       "source": "Staatsarchiv Wertheim R-US 1519 März 6 in 1531 Juni 15",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235425",
       "german": "Kunz von Dottenheim, Amtmann zu Krautheim (Krautten), schreibt an Abt Johann zu Bronnbach (Brunbach), dass die von Steten und Georg und Eberhard von Rosenberg den Hans und Georg Schaden ihre Schatzung nachlassen wollen, wenn die von Kupprichhausen Melchior von Rosenberg mit dessen Brüdern keine Hilfe gegen sie leisten wollten, und ersucht ihn, in diesem Sinne an jene zu schreiben.\n\nLaufzeit: 1519 März 6 (\"Datum sontag Esto michi im XIX.\")\n\nSiegler: Kunz von Dottenheim",
-      "english": "Kunz von Dottenheim, Amtmann zu Krautheim, writes to Abbot Johann zu Bronnbach that the von Steten family and Georg and Eberhard von Rosenberg wish to waive Hans and Georg Schaden's tax assessment if the people of Kupprichhausen will provide Melchior von Rosenberg and his brothers no assistance against them, and asks him to write to those parties accordingly.\n\nDate range: 6 March 1519 (dated Sunday Esto mihi in 1519)\n\nSeal: Kunz von Dottenheim.",
-      "mention": [
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Abt zu Bronnbach"
-          ]
-        },
-        {
-          "person": "Kunz von Dottenheim",
-          "personTitle": [
-            "Amtmann zu Krautheim"
-          ]
-        },
-        {
-          "place": "kupprichhausen"
-        },
-        {
-          "person": "Melchior von Rosenberg"
-        }
+      "english": "Kunz von Dottenheim, Amtmann zu Krautheim, writes to Abbot Johann zu Bronnbach that the von Steten family and Georg and Eberhard von Rosenberg wish to waive Hans and Georg Schaden's tax assessment if the people of Kupprichhausen will provide Melchior von Rosenberg and his brothers no assistance against them, and asks him to write to those parties accordingly.\n\nDate range: 6 March 1519 (dated Sunday Esto mihi in 1519)\n\nSeal: Kunz von Dottenheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Abt zu Bronnbach"
       ]
+    },
+    {
+      "person": "Kunz von Dottenheim",
+      "personTitle": [
+        "Amtmann zu Krautheim"
+      ]
+    },
+    {
+      "place": "kupprichhausen"
+    },
+    {
+      "person": "Melchior von Rosenberg"
     }
   ]
 }

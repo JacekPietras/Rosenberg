@@ -7,18 +7,18 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 4391",
       "url": "https://www.regesta-imperii.de/id/bca3d503-b302-4873-90da-a2174aef2ef4",
       "german": "Conrad von Rosenberg, ritter, vitztum zu Heidelberg, gibt Ruprecht d. ältern, jüngern u. jüngsten ein viertel von Boxberg zu lehen auf. Karlsr. Copb. 532b,139. Stuttg. Pf. Copb. 34.",
-      "english": "Konrad von Rosenberg, Ritter, Vizedom zu Heidelberg, surrenders one quarter of Boxberg as a fief to Ruprecht the Elder, the Younger, and the Youngest. Karlsruhe copybook 532b, fol. 139; Stuttgart Palatine copybook 34.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Ritter",
-            "Vizedom zu Heidelberg"
-          ]
-        }
+      "english": "Konrad von Rosenberg, Ritter, Vizedom zu Heidelberg, surrenders one quarter of Boxberg as a fief to Ruprecht the Elder, the Younger, and the Youngest. Karlsruhe copybook 532b, fol. 139; Stuttgart Palatine copybook 34."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Ritter",
+        "Vizedom zu Heidelberg"
       ]
     }
   ]

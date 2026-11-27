@@ -7,16 +7,16 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1431159",
       "german": "Adam Hektor von Rosenbach erhält von Markgraf Georg Friedrich zu Baden das Recht der kleinen Jagd im Bann von Hiltlingen am Rhein.\n\nLaufzeit: 1606 Februar 19\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Adam Hektor von Rosenbach receives from Margrave Georg Friedrich of Baden the right to small-game hunting within the jurisdiction of Hiltlingen on the Rhine.\n\nDate range: 19 February 1606\n\nSeal description: 1 seal",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3202&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003202%2Ftitlaufn_0001431159%2F04_0001431159_0001_4-1431159-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

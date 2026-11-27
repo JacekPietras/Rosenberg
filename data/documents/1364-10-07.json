@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1965B1C4-CEF8-44B3-A23C-5DECBD4FC69A&parent_id="
       ],
       "german": "Cunrad von Rosenberg, Vitztum zu Amberg, gibt dem Nörtweiner als Vertreter des Klosters zu Kastel Brief über das Urteil der Landschranne zu Lengvelt, das dem Kloster gegen Hans und Peter die Ernvelser die Mittermül und die Görenmül bei Wesenacker(1) an der Laber zuspricht. Landgerichtssiegel. Hinweis: (1) O. u. Unterwiesenacker B. Parsberg.",
-      "english": "Konrad von Rosenberg, vicegerent at Amberg, issues a letter to the Nörtweiner, representing the monastery of Kastel, concerning the judgment of the regional court at Lengvelt. The judgment awards the monastery the Mittermül and Görenmül mills near Wesenacker on the Laber in its dispute with Hans and Peter Ernvelser. With the seal of the regional court. The catalog identifies Wesenacker as Unterwiesenacker near Parsberg.",
-      "mention": [
-        {
-          "place": "amberg"
-        }
+      "english": "Konrad von Rosenberg, vicegerent at Amberg, issues a letter to the Nörtweiner, representing the monastery of Kastel, concerning the judgment of the regional court at Lengvelt. The judgment awards the monastery the Mittermül and Görenmül mills near Wesenacker on the Laber in its dispute with Hans and Peter Ernvelser. With the seal of the regional court. The catalog identifies Wesenacker as Unterwiesenacker near Parsberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "issued the monastery of Kastel a record of the judgment of the Landschranne at Lengfeld awarding it the Mittermül and Görenmül near Wesenacker."
-        }
-      ]
+      "type": "generic",
+      "content": "issued the monastery of Kastel a record of the judgment of the Landschranne at Lengfeld awarding it the Mittermül and Görenmül near Wesenacker."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
     }
   ]
 }

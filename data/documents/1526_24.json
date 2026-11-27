@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++c8560772-db0d-44e8-9a24-346612e1f7f0&parent_id="
       ],
       "german": "Zaisolph von Rosenberg an Statthalter und Räte zu Ansbach: Bestimmte Zeugen wollen nicht in Haldermannstetten verhört werden.",
-      "english": "Zaisolph von Rosenberg to the Lieutenant and Councillors of Ansbach: Certain witnesses do not wish to be examined in Haldermannstetten.",
-      "mention": [
-        {
-          "place": "schloss-haltenbergstetten"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten."
-        }
-      ]
+      "english": "Zaisolph von Rosenberg to the Lieutenant and Councillors of Ansbach: Certain witnesses do not wish to be examined in Haldermannstetten."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "informed the Ansbach governors and councilors that certain witnesses did not want to be examined at Haltenbergstetten."
+    }
+  ],
+  "mention": [
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

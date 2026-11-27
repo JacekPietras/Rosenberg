@@ -7,15 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-196096",
       "german": "Georg von Rosenberg zu Boxberg, Edelknecht; Siegel: Georg von Rosenberg.\n\nLaufzeit: 1490\n\nUmfang: 1 Urkunde, Pergament",
       "english": "Georg von Rosenberg zu Boxberg, Edelknecht; seal: Georg von Rosenberg.\n\nTerm: 1490\n\nExtent: One parchment charter",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Edelknecht",
-            "zu Boxberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196096%2F03_0000196096_0001_3-196096-1.jpg"
@@ -23,6 +14,15 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196096%2F03_0000196096_0002_3-196096-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Edelknecht",
+        "zu Boxberg"
       ]
     }
   ]

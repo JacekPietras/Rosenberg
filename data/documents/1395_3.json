@@ -13,15 +13,15 @@
         "https://www.regesta-imperii.de/id/dd524826-a569-46be-8f95-67580f192751"
       ],
       "german": "Wenzel verspricht Markgraf Jost von Mähren, Heinrich von Rosenberg, Heinrich von Neuhaus, Brenek von Skala und ihrem Anhang sicheres Geleit.",
-      "english": "Wenzel promises safe conduct to Margrave Jost of Moravia, Heinrich von Rosenberg, Heinrich von Neuhaus, Brenek von Skala, and their retinue.",
-      "mention": [
-        {
-          "person": "Heinrich von Neuhaus"
-        },
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ]
+      "english": "Wenzel promises safe conduct to Margrave Jost of Moravia, Heinrich von Rosenberg, Heinrich von Neuhaus, Brenek von Skala, and their retinue."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Neuhaus"
+    },
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

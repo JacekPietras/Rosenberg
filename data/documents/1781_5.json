@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EAD8CE38-93B3-4840-8988-90279C71CE5B&parent_id="
       ],
       "german": "Zins-, Gült- und Lehenbuch über die teils ausschließlich würzburgischen, teils mit den Herren v. Rosenbach sog. halbierten Lehenschaften zu Maßbach, dann über die zwei \"Schrimpfen-Güter\" zu Weichtungen und über die im Jahr 1686 vom Amt Ebenhausen überwiesenen Pfennigzinsen zu Brünn, beschrieben 1781 von dem Lehenrenovator und Notar Johann Michael Bauer (Teil II, beglaubigt, mit Vorbemerkungen)",
-      "english": "Register of rents, dues, and fiefs for properties belonging partly exclusively to Würzburg and partly to the lords von Rosenbach as so-called “divided fief holdings” in Maßbach, and for the two “Schrimpfen estates” in Weichtungen and the penny rents in Brünn transferred in 1686 from the Ebenhausen district; recorded in 1781 by the fief renovator and notary Johann Michael Bauer (Part II, certified, with introductory notes)",
-      "mention": [
-        {
-          "place": "massbach-st-bartholomaeus"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Register of rents, dues, and fiefs for properties belonging partly exclusively to Würzburg and partly to the lords von Rosenbach as so-called “divided fief holdings” in Maßbach, and for the two “Schrimpfen estates” in Weichtungen and the penny rents in Brünn transferred in 1686 from the Ebenhausen district; recorded in 1781 by the fief renovator and notary Johann Michael Bauer (Part II, certified, with introductory notes)"
+    }
+  ],
+  "mention": [
+    {
+      "place": "massbach-st-bartholomaeus"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

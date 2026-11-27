@@ -7,48 +7,48 @@
       "source": "[RI XIII] H. 8 n. 47",
       "url": "https://www.regesta-imperii.de/id/1442-08-09_1_0_13_8_0_12055_47",
       "german": "Kg. F. gebietet Eb. (Dietrich) von Mainz, Bf. Sigmund von Würzburg, den Gff. von Wertheim, Rieneck, Katzenelnbogen und Hanau, den Herren von Eppstein, Königstein, Isenburg, Büdingen und Bickenbach, den Bggff. zu Friedberg und Gelnhausen und den Bürgermeistern, Räten und Gemeinden zu Würzburg, Frankfurt, Worms, Oppenheim, Friedberg, Gelnhausen, Aschaffenburg, Miltenberg und Bischofsheim unter wörtlicher Wiederholung der Urkunde von 1440 Mai 20 den Schutz der Mainzer Geistlichkeit zu gewährleisten.",
-      "english": "King Frederick orders the Archbishop of Mainz, Bishop Sigmund of Würzburg, the counts of Wertheim, Rieneck, Katzenelnbogen, and Hanau, the lords of Eppstein, Königstein, Isenburg, Büdingen, and Bickenbach, the burgraves of Friedberg and Gelnhausen, and the mayors, councils, and communities of Würzburg, Frankfurt, Worms, Oppenheim, Friedberg, Gelnhausen, Aschaffenburg, Miltenberg, and Bischofsheim to guarantee the protection of the clergy of Mainz, repeating verbatim the charter of 20 May 1440.",
-      "mention": [
-        {
-          "place": "bickenbach"
-        },
-        {
-          "person": "Bischof Siegmund",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "gelnhausen"
-        },
-        {
-          "place": "katzenelnbogen"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "oppenheim"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "King Frederick orders the Archbishop of Mainz, Bishop Sigmund of Würzburg, the counts of Wertheim, Rieneck, Katzenelnbogen, and Hanau, the lords of Eppstein, Königstein, Isenburg, Büdingen, and Bickenbach, the burgraves of Friedberg and Gelnhausen, and the mayors, councils, and communities of Würzburg, Frankfurt, Worms, Oppenheim, Friedberg, Gelnhausen, Aschaffenburg, Miltenberg, and Bischofsheim to guarantee the protection of the clergy of Mainz, repeating verbatim the charter of 20 May 1440."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bickenbach"
+    },
+    {
+      "person": "Bischof Siegmund",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "gelnhausen"
+    },
+    {
+      "place": "katzenelnbogen"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "oppenheim"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

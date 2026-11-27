@@ -6,57 +6,57 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 6 Qu. 10",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-754148",
       "german": "Schiedspruch des Grafen Wolfgang von Hohenlohe[-Schillingsfürst-Weikersheim], Philipp [d.Ä.] von Berlichingen zu Bieringen, Marx Stumpf von Schweinberg, Amtmann zu Krautheim, Lorenz von [und zu] Rosenberg, Hans Albrecht von Adelsheim, Amtmann zu Lauda, Ludwig [I.] von Neipperg, Burggraf zu Starkenburg, Wolf von Vellberg, Amtmann zu Möckmühl, Daniel Treutwein, Amtmann zu Boxberg, und Stefan von Adelsheim zwischen Wolfgang von Bibra, Kt, und Wolfgang von Rosenberg, Hkt Mgh, namens des DM einerseits und Franz von Adelsheim, Kanoniker zu Bruchsal, andererseits wegen des durch letzteren an Konrad von Rodenstein, DOR, Trappier zu Mgh, verübten Totschlags, 1527 Sept. 4 [Regest].\n\nLaufzeit: 1526-1543",
-      "english": "Arbitration award by Count Wolfgang von Hohenlohe[-Schillingsfürst-Weikersheim], Philipp von Berlichingen zu Bieringen der Ältere, Marx Stumpf von Schweinberg, Amtmann zu Krautheim, Lorenz von [und zu] Rosenberg, Hans Albrecht von Adelsheim, Amtmann zu Lauda, Ludwig [I.] von Neipperg, Burggraf zu Starkenburg, Wolf von Vellberg, Amtmann zu Möckmühl, Daniel Treutwein, Amtmann zu Boxberg, and Stephan von Adelsheim between Wolfgang von Bibra, commander, and Wolfgang von Rosenberg, commander at Mergentheim, on behalf of the Deutschmeister on the one hand, and Franz von Adelsheim, canon at Bruchsal, on the other, concerning the homicide committed by the latter against Konrad von Rodenstein, a Teutonic Order member and Trappier at Mergentheim, 4 September 1527 [regest].\n\nDate range: 1526–1543",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Franz von Adelsheim"
-        },
-        {
-          "person": "Hans Albrecht von Adelsheim",
-          "personTitle": [
-            "Amtmann zu Lauda"
-          ]
-        },
-        {
-          "person": "Konrad von Rodenstein"
-        },
-        {
-          "person": "Lorenz von Rosenberg",
-          "personTitle": [
-            "zu Rosenberg"
-          ]
-        },
-        {
-          "person": "Ludwig von Neipperg",
-          "personTitle": [
-            "Burggraf zu Starkenburg"
-          ]
-        },
-        {
-          "person": "Philipp von Berlichingen"
-        },
-        {
-          "person": "Stephan von Adelsheim"
-        },
-        {
-          "person": "Wolfgang von Bibra"
-        },
-        {
-          "person": "Wolfgang von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Wolfgang von Rosenberg"
-        }
+      "english": "Arbitration award by Count Wolfgang von Hohenlohe[-Schillingsfürst-Weikersheim], Philipp von Berlichingen zu Bieringen der Ältere, Marx Stumpf von Schweinberg, Amtmann zu Krautheim, Lorenz von [und zu] Rosenberg, Hans Albrecht von Adelsheim, Amtmann zu Lauda, Ludwig [I.] von Neipperg, Burggraf zu Starkenburg, Wolf von Vellberg, Amtmann zu Möckmühl, Daniel Treutwein, Amtmann zu Boxberg, and Stephan von Adelsheim between Wolfgang von Bibra, commander, and Wolfgang von Rosenberg, commander at Mergentheim, on behalf of the Deutschmeister on the one hand, and Franz von Adelsheim, canon at Bruchsal, on the other, concerning the homicide committed by the latter against Konrad von Rodenstein, a Teutonic Order member and Trappier at Mergentheim, 4 September 1527 [regest].\n\nDate range: 1526–1543"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "person": "Franz von Adelsheim"
+    },
+    {
+      "person": "Hans Albrecht von Adelsheim",
+      "personTitle": [
+        "Amtmann zu Lauda"
       ]
+    },
+    {
+      "person": "Konrad von Rodenstein"
+    },
+    {
+      "person": "Lorenz von Rosenberg",
+      "personTitle": [
+        "zu Rosenberg"
+      ]
+    },
+    {
+      "person": "Ludwig von Neipperg",
+      "personTitle": [
+        "Burggraf zu Starkenburg"
+      ]
+    },
+    {
+      "person": "Philipp von Berlichingen"
+    },
+    {
+      "person": "Stephan von Adelsheim"
+    },
+    {
+      "person": "Wolfgang von Bibra"
+    },
+    {
+      "person": "Wolfgang von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
+      ]
+    },
+    {
+      "person": "Wolfgang von Rosenberg"
     }
   ]
 }

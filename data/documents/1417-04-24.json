@@ -11,19 +11,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ff8650a4-03ec-4d4b-bcfb-1b412b0ab638&parent_id="
       ],
       "german": "Mortificationsbrief Cunsens von Rosenberg über eine von Burggraf [= Markgraf] Friedrich über Uffenheim gehabte Verschreibung.\n\nBesiegelung/Beglaubigung: 1 Sg. am Ende aufgedrückt",
-      "english": "Cunsen von Rosenberg issued a letter of cancellation concerning an assignment held by Margrave Friedrich over Uffenheim.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "issued a Mortificationsbrief concerning a pledge held by Margrave Friedrich over Uffenheim."
-        }
-      ]
+      "english": "Cunsen von Rosenberg issued a letter of cancellation concerning an assignment held by Margrave Friedrich over Uffenheim."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "issued a Mortificationsbrief concerning a pledge held by Margrave Friedrich over Uffenheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

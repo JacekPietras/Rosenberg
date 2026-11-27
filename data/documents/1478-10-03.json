@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-527170",
       "german": "1478 Okt. 3 (samßtag nach sant Michels des heiligen erczengels tag)\nPhilipp von Bettendorf vidimiert einen wörtlich inserierten Schuldbrief der Brüder Hans und Jörg von Aschhausen (Aschhusen) zu Aschhausen für die Vettern Philipp d.Ä. und Wilhelm von Braubach gen. von Angelloch (Angelach), ihre Verwandten, über 900 fl rh, für die die von Braubach [am 7. Nov. 1477; s. U 152] denen von Aschhausen ihren Teil des Schlosses Aschhausen verkauft haben; Bürgen dieses am 2. Feb. (purificationis Marie) 1478 ausgestellten Schuldbriefs sind die Brüder Jörg und Albrecht Göler von Ravensburg (Rauenspurg), Hans von Rosenberg, Simon von Stetten, Arnold von Rosenberg, Konrad von Wittstadt gen. Hagenbach (Wittigstatt genant Hagenbuch), Philipp von Wittstadt gen. Hagenbach, Hans von Dottenheim (Tottenheym) und Götz von Stetten.\nSiegler: der A.\nAusf. Perg. - 1 Sg. anh. - Rv.\nBem.: Laut Nachtrag im Findbuch von 1825 S. 45c am 21./22. März 1867 vom [Neben-]Archiv Mergentheim im [Haupt-]Staatsarchiv Stuttgart eingekommen.\nProv.: Braubach, von gen. von Angelloch\n\nLaufzeit: 1478\n\nUmfang: 1 U",
       "english": "3 October 1478 (Saturday after the feast of Saint Michael the Archangel): Philipp von Bettendorf authenticates a debt charter, transcribed verbatim, made out to the brothers Hans and Jörg von Aschhausen zu Aschhausen by their cousins Philipp der Ältere and Wilhelm von Braubach, called von Angelloch, and their kinsmen, for 900 Rhenish florins. The debt arose because on 7 November 1477 the von Braubach family had sold their share of Aschhausen Castle to the von Aschhausen family. Sureties for this debt charter, issued on 2 February 1478 (the Purification of Mary), were the brothers Jörg and Albrecht Göler von Ravensburg, Hans von Rosenberg, Simon von Stetten, Arnold von Rosenberg, Konrad von Wittstadt, called Hagenbach, Philipp von Wittstadt, called Hagenbach, Hans von Dottenheim, and Götz von Stetten.\n\nSealer: the issuer.\n\nFair copy on parchment; one seal attached; endorsement on the reverse.\n\nNote: According to an addition in the finding aid of 1825, p. 45c, it arrived at the (branch) archive Mergentheim in the (main) State Archive Stuttgart on 21/22 March 1867.\n\nProvenance: von Braubach, called von Angelloch.\n\nDate range: 1478.\n\nExtent: one charter.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "place": "gauangelloch"
-        },
-        {
-          "person": "Hans von Dottenheim"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000527170%2F02_0000527170_0003_2-527170-3.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000527170%2F02_0000527170_0004_2-527170-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "place": "gauangelloch"
+    },
+    {
+      "person": "Hans von Dottenheim"
+    },
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

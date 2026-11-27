@@ -9,57 +9,57 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3232E2E4-02A5-42CA-A149-D46DDD88CCF2&parent_id="
       ],
       "german": "Erzbischof Konrad von Mainz und Bischof Johann von Würzburg fällen ihren Schiedsspruch in der Angelegenheit des Überfalles der Nürnberger Kaufleute bei Neustadt a. d. Aisch durch Wilhelm von Rechberg, Cuntzen und Thoman von Rosenberg, Walter von Cronberg, Hannsen vom Hirßhorn jun., Karel und Sigmund von Thüngen und bestimmen, dass die zu zahlende Entschädigung in Hannsen Tuchscherers Haus zu Würzburg erlegt werde.",
-      "english": "Archbishop Konrad of Mainz and Hans zu Würzburg, Bischof issued an arbitration award concerning the attack on Nuremberg merchants near Neustadt an der Aisch by Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, Karl and Siegmund von Thüngen. They ordered that the compensation be paid at Hans Tuchscherer’s house in Würzburg. The GDA catalog dates the record to 4 August 1426 and notes that it survives as an insert in a vidimus dated 29 November 1426.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "cronberg"
-        },
-        {
-          "person": "Erzbischof Konrad",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Hans vom Hirschhorn",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Karl von Thüngen"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the Bishop zu Würzburg issued an arbitration award."
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the Bishop zu Würzburg issued an arbitration award."
-        }
+      "english": "Archbishop Konrad of Mainz and Hans zu Würzburg, Bischof issued an arbitration award concerning the attack on Nuremberg merchants near Neustadt an der Aisch by Wilhelm von Rechberg, Kunz von Rosenberg and Thomas von Rosenberg, Walther von Cronberg, Hans vom Hirschhorn the Younger, Karl and Siegmund von Thüngen. They ordered that the compensation be paid at Hans Tuchscherer’s house in Würzburg. The GDA catalog dates the record to 4 August 1426 and notes that it survives as an insert in a vidimus dated 29 November 1426."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the Bishop zu Würzburg issued an arbitration award."
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "was named in the dispute over the attack on Nuremberg merchants near Neustadt an der Aisch for which the archbishop of Mainz and the Bishop zu Würzburg issued an arbitration award."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "cronberg"
+    },
+    {
+      "person": "Erzbischof Konrad",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Hans vom Hirschhorn",
+      "personTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Karl von Thüngen"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

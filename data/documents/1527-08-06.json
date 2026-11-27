@@ -10,14 +10,6 @@
       ],
       "german": "Der Hofmeister Jakob von Oberkirch, Dr. Franziskus Paul und Wolf von Windeck, Amtmann zu Ortenberg, als Beauftragte des Bischofs von Straßburg, ferner Jost Münch von Rosenberg und der Schaffner Georg Berger als Beauftragte des Herrn von Fürstenberg, entscheiden einen Streit zwischen dem markgräflichen Kanzler Hieronymus Vheus und Wilhelm Hummel von Staufenberg einerseits und den Kindern des verstorbenen Hans von Schauenburg, Statthalter zu Luxemburg andererseits, wegen des Zehntens zu Zimmern.\n\nLaufzeit: 1527 August 6 (am zinstag nach Vincula Petri)",
       "english": "Jakob von Oberkirch, Hofmeister; Dr Franziskus Paul; and Wolf von Windeck, Amtmann zu Ortenberg, acting as commissioners of the Bishop of Strasbourg, together with Jost Mönch von Rosenberg and Georg Berger, Schaffner, acting for the Lord of Fürstenberg, settle a dispute over the tithe at Zimmern between the margravial chancellor Hieronymus Vheus and Wilhelm Hummel von Staufenberg on one side and the children of the late Hans von Schauenburg, governor at Luxembourg, on the other.\n\nTerm: 6 August 1527 (Tuesday after the Feast of St Peter in Chains)",
-      "mention": [
-        {
-          "person": "Jost Mönch von Rosenberg"
-        },
-        {
-          "place": "zimmern"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3206&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003206%2Ftitlaufn_0001454300%2F04_0001454300_0001_4-1454300-1.png"
@@ -26,6 +18,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3206&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003206%2Ftitlaufn_0001454300%2F04_0001454300_0002_4-1454300-2.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Jost Mönch von Rosenberg"
+    },
+    {
+      "place": "zimmern"
     }
   ]
 }

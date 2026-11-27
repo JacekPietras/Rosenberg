@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7362653",
       "german": "Schreiben des Fürstabtes Joachim an Joh. Philipp von Rosenbach, Propst zu Blankenau, um sämtliche von dem Propst von Rabenau hinterlassene Schulden zu bezahlen\n\nLaufzeit: 1653-1654",
       "english": "Letter from Prince-Abbot Joachim to Hans Philipp von Rosenberg, provost of Blankenau, requesting payment of all debts left by Provost von Rabenau.\n\nDate range: 1653–1654.",
-      "mention": [
-        {
-          "person": "Hans Philipp von Rosenberg",
-          "personTitle": [
-            "Propst zu Blankenau"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1296/hstam_94_nr_1296_0001.jpg"
@@ -37,6 +29,14 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/94/1296/hstam_94_nr_1296_0007.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Philipp von Rosenberg",
+      "personTitle": [
+        "Propst zu Blankenau"
       ]
     }
   ]

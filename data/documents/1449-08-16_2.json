@@ -7,36 +7,36 @@
       "source": "[RI XIII] H. 14 n. 492",
       "url": "https://www.regesta-imperii.de/id/1449-08-16_1_0_13_14_0_490_492",
       "german": "Kg. F. verkündet allen Reichsuntertanen, daß er über Bürgermeister, Rat und Bürger der Stadt Würzburg, nachdem er bereits auf Klage Jakob Püttrichs von Reichertshausen die Acht verhängt hatte, nun die Aberacht verhängt hat und gebietet den namentlich folgenden, dieses Urteil zu vollziehen und Püttrich in allen Belangen zu unterstützen: den Ebb. Dietrich von Mainz, Dietrich von Köln und Jakob von Trier, den Bff. Anton von Bamberg und Johann von Eichstätt, den Kff. Pfgf. Ludwig (IV.) bei Rhein, Hz. Friedrich (II.) von Sachsen und Mgf. Friedrich (II.) von Brandenburg, den Pfgff. bei Rhein und Hzz. von Bayern Stephan, Otto (I.), Heinrich (IV.), Albrecht (III.) und Friedrich (I.), Hz. Wilhelm (III.) von Sachsen, Ldgf. Ludwig (I.) von Hessen, den Gff. Ludwig und Ulrich von Fürstenberg, Philipp von Katzenelnbogen, Ulrich und Wilhelm von Oettingen (Otting), Konrad, Ulrich, Friedrich und Ludwig von Helfenstein, Reinhard d. Ä. und Reinhard d. J. von Hanau, Wilhelm von Wertheim, den Herren Konrad und Johann von Heideck (Haydegg), Ulrich von Laaber (Laber), Johann von Abensberg, Jakob Truchseß von Waldburg (Walpurg), Frank (d. Ä.), Frank (d. J.), Philipp und Walter von Kronberg (Cronemberg), Karl, Dietz, Conz und Simon von Thüngen, Thomas, Anselm, Eberhard, Ulrich und Georg von Rosenberg, Hans von Frankenstein, Conz von Hutten, Heinz und Simon Steinrück (Stainruken), Georg, Konrad und Diebold von Bebenburg, Wilhelm, Ulrich, Hans, Ber und Heinrich von Rechberg, Hans Stornschatz, Hans Aberdar, Konrad, Fritz und Jakob von Seckendorff, Martin und Wilhelm von Waldenfels, Eberhard, Wilhelm, Konrad zu Waal (Wal), Konrad zu Mietingen (Muting), Lutz, Eberhard, Heinrich und Hans von Freyberg (Freiberg), Konrad und Georg Gumppenberger, Georg von Ehenheim, Hans Fraunberger zu Haag (Hag), Hans Fraunberger zu Prunn (Brunn), Leonhard, Jakob, Wolf gang, Georg und Arnold von Kammer (Kamern), Erhard, Heinrich und Hans Zenger, Dietrich, Hans und Albrecht Staufer, Markward Stör, Georg, Erhard, Friedrich und Albrecht Muracher, Martin von Wildenstein, Wilhelm, Friedrich, Hans, Christoph und Jakob Wolfsteiner, Hans und Hans von Degenberg, Hermann und Dietrich den Haibeck (Haybeken), Erhard Vorster, Wilhelm und Heinrich Paulsdorf er, Hans, Hartung, Konrad und Veit von Egloffstein, Georg Auer zu Pullach, Oswald Ötlinger (Otlinger), Hans Kemnater, Wilhelm und Ludwig Maxlrainer (Machselrainer), Konrad und Heinrich Marschall von Pappenheim (Bappenheim), Engelhard, Ulrich und Wolfgang Marschall von Oberndorf, Albrecht, Hans, Heinz und Arnold von Redwitz (Radwitz), Oswald und Georg Törringer, Wolfgang und Friedrich Bienzenauer (Pentzenawer), Erasmus, Eberhard und Georg Torer, Sigmund, Hans, Christoph, Georg und Heinrich Seibersdorfer (Sewberstorffer), Werner und Hans Rorbeck (Forbeck), den Bürgermeistern, Räten und Gemeinden der Städte Regensburg, Augsburg, Nürnberg, Frankfurt, Ulm, Esslingen, Heilbronn, (Schwäbisch) Hall, Nördlingen, Dinkelsbühl, Schweinfurt, Windsheim, Weißenburg, München, Amberg, Bamberg, Ochsenfurt, Leipzig, Altenburg, Landshut, Kitzingen, Straubing, Ingolstadt, Heidelberg, Eichstätt und Neustadt an der Aisch.",
-      "english": "King Frederick announces to all subjects of the Empire that, after already imposing the ban on the mayor, council, and citizens of Würzburg at Jakob Püttrich von Reichertshausen's complaint, he has now imposed the aggravated ban, and orders the persons named to enforce the judgment and support Püttrich. They include the archbishops of Mainz, Cologne, and Trier; the bishops of Bamberg and Eichstätt; the electors and princes, counts, lords, knights, and cities listed in the document, including Thomas, Anselm, Eberhard, Ulrich, and Georg von Rosenberg, and the mayors, councils, and communities of the named cities.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "King Frederick announces to all subjects of the Empire that, after already imposing the ban on the mayor, council, and citizens of Würzburg at Jakob Püttrich von Reichertshausen's complaint, he has now imposed the aggravated ban, and orders the persons named to enforce the judgment and support Püttrich. They include the archbishops of Mainz, Cologne, and Trier; the bishops of Bamberg and Eichstätt; the electors and princes, counts, lords, knights, and cities listed in the document, including Thomas, Anselm, Eberhard, Ulrich, and Georg von Rosenberg, and the mayors, councils, and communities of the named cities."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Thomas von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -9,121 +9,121 @@
         "https://www.digitale-sammlungen.de/en/view/bsb11443026"
       ],
       "german": "Eberhart und Cunrad Edelknecht Gebrüder von Rosenberg bekennen die Leute die da heissen des Königs Leute welche ihr Vater Herr Eberhard von Rosenberg zu Durn ihnen beiden einerseits, und ihren Brüdern Engelhart und Herman anderseits gegeben hat, nicht mit unrechten Beten, unbescheidenlichen Herbergen, oder von andern Dingen übergreifen zu wollen. Würden zwei das brechen, so sollen sie es auf der andern Klage richten in dem nächsten Munden als die drei ihre gemeinen Freund sprechen, nämlich Eberhard, Cunrad, und Heinz alle drei von Rosenberg genannt. G. an unser Frauen Tak Kerzwihe. (c. 2 S.)",
-      "english": "Eberhard and Konrad, Edelknechte and brothers of the von Rosenberg family, acknowledge that they will not encroach upon the people called the King's people—whom their father, Lord Eberhard von Rosenberg zu Dürn, had given to the two of them on the one hand, and to their brothers Engelhard and Herman on the other hand—with unjust exactions, excessive lodging demands, or other things. Should any two of them break this, they shall, upon the complaint of the others, have the matter settled within the next month as their three common friends—namely Eberhard, Konrad, and Heinz, all three called von Rosenberg—shall decide. Given on Our Lady's Day of the Consecration of the Candles.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Eberhard and Konrad, Edelknechte and brothers of the von Rosenberg family, acknowledge that they will not encroach upon the people called the King's people—whom their father, Lord Eberhard von Rosenberg zu Dürn, had given to the two of them on the one hand, and to their brothers Engelhard and Herman on the other hand—with unjust exactions, excessive lodging demands, or other things. Should any two of them break this, they shall, upon the complaint of the others, have the matter settled within the next month as their three common friends—namely Eberhard, Konrad, and Heinz, all three called von Rosenberg—shall decide. Given on Our Lady's Day of the Consecration of the Candles."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "sibling",
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "sibling",
-          "of": "Herman von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "sibling",
-          "of": "Engelhard von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "sibling",
-          "of": "Herman von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "sibling",
-          "of": "Engelhard von Rosenberg"
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "zu Dürn"
-          ],
-          "type": "parent",
-          "of": "Eberhard von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "zu Dürn"
-          ],
-          "type": "parent",
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "Edelknecht"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "generic",
-          "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "type": "generic",
-          "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "generic",
-          "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
-        },
-        {
-          "person": "Herman von Rosenberg",
-          "type": "generic",
-          "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "generic",
-          "content": "promised not to subject the people called the King’s people to unjust exactions, excessive lodging demands, or other encroachments."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Edelknecht"
-          ],
-          "type": "generic",
-          "content": "promised not to subject the people called the King’s people to unjust exactions, excessive lodging demands, or other encroachments."
-        }
+      "type": "sibling",
+      "of": "Konrad von Rosenberg",
+      "ofTitle": [
+        "Edelknecht"
       ]
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "sibling",
+      "of": "Herman von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "sibling",
+      "of": "Engelhard von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "sibling",
+      "of": "Herman von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "sibling",
+      "of": "Engelhard von Rosenberg"
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "zu Dürn"
+      ],
+      "type": "parent",
+      "of": "Eberhard von Rosenberg",
+      "ofTitle": [
+        "Edelknecht"
+      ]
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "zu Dürn"
+      ],
+      "type": "parent",
+      "of": "Konrad von Rosenberg",
+      "ofTitle": [
+        "Edelknecht"
+      ]
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "generic",
+      "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "type": "generic",
+      "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "generic",
+      "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
+    },
+    {
+      "person": "Herman von Rosenberg",
+      "type": "generic",
+      "content": "received people called the King’s people from Eberhard von Rosenberg zu Dürn."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "generic",
+      "content": "promised not to subject the people called the King’s people to unjust exactions, excessive lodging demands, or other encroachments."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Edelknecht"
+      ],
+      "type": "generic",
+      "content": "promised not to subject the people called the King’s people to unjust exactions, excessive lodging demands, or other encroachments."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

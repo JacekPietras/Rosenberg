@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1bfce221-533f-4570-b50e-7edfad45ff41&parent_id="
       ],
       "german": "Zeisolf von Rosenberg an Rothenburg: fordert Entschädigung von den Rothenburger Hintersassen wegen im Bauernkrieg erlittener Schäden.",
-      "english": "Zaisolph von Rosenberg to Rothenburg: demands compensation from the Rothenburg dependents for damages suffered during the Peasants' War.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War."
-        }
-      ]
+      "english": "Zaisolph von Rosenberg to Rothenburg: demands compensation from the Rothenburg dependents for damages suffered during the Peasants' War."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "demanded compensation from Rothenburg’s subjects for damage he suffered during the Peasants’ War."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

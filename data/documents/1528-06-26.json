@@ -7,21 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723972",
       "german": "Die Stadtgemeinde Boxberg übergibt unter gewissen Vorbehalten dem Kurfürsten Ludwig V. von der Pfalz ihren Stadtgraben.",
       "english": "The municipality of Boxberg hands over its moat to Elector Ludwig V of the Palatinate, with certain reservations.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "generic",
-          "content": "received Boxberg’s city moat from the municipality subject to certain reservations."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723972%2F04_0001723972_0001_4-1723972-1.jpg"
@@ -31,6 +16,21 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ludwig von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "generic",
+      "content": "received Boxberg’s city moat from the municipality subject to certain reservations."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

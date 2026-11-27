@@ -7,21 +7,21 @@
       "source": "[RIplus] Regg. Wenzel [n. 789]",
       "url": "https://www.regesta-imperii.de/id/c0c97755-1ee1-4044-b95e-9f2140296f5a",
       "german": "Wenzel entscheidet den Streit zwischen Herzog Albrecht von Österreich und Peter, Ulrich und Johann von Rosenberg und Heinrich von Neuhaus.",
-      "english": "Wenceslas settles the dispute between Duke Albrecht of Austria and Peter, Ulrich, and Hans von Rosenberg and Heinrich von Neuhaus.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Neuhaus"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ]
+      "english": "Wenceslas settles the dispute between Duke Albrecht of Austria and Peter, Ulrich, and Hans von Rosenberg and Heinrich von Neuhaus."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Heinrich von Neuhaus"
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

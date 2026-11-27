@@ -6,22 +6,22 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Altman Kemnater Pfleger zu Sulzbach verkauft seine vom Reiche zu Lehen gehenden Güter zu Dannbach und in der Vogtey daselbst, welche von Hans dem Ilekchlein an ihn gekommen sind, an Ludwig Herzog in Beyern. Mitsiegler: Jörg der Zenger Pfleger zu Rosenberg. G. am Sontag vor Michels Tag. (c. 2 Sig.)",
-      "english": "Altman Kemnater, Pfleger zu Sulzbach, sells Ludwig, Herzog in Bayern, his imperial fief properties at Dannbach and in the Vogtei there, which had come to him from Hans der Ilekchlein. Co-sealer: Georg der Zenger, Pfleger zu Rosenberg. Given on the Sunday before St. Michael’s Day. (With two seals.)",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Altman Kemnater, Pfleger zu Sulzbach, sells Ludwig, Herzog in Bayern, his imperial fief properties at Dannbach and in the Vogtei there, which had come to him from Hans der Ilekchlein. Co-sealer: Georg der Zenger, Pfleger zu Rosenberg. Given on the Sunday before St. Michael’s Day. (With two seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg der Zenger",
+      "personTitle": [
+        "Pfleger zu Rosenberg"
       ],
-      "facts": [
-        {
-          "person": "Georg der Zenger",
-          "personTitle": [
-            "Pfleger zu Rosenberg"
-          ],
-          "type": "generic",
-          "content": "co-sealed Altman Kemnater’s sale of imperial fief properties at Dannbach to Ludwig, Herzog in Bayern."
-        }
-      ]
+      "type": "generic",
+      "content": "co-sealed Altman Kemnater’s sale of imperial fief properties at Dannbach to Ludwig, Herzog in Bayern."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

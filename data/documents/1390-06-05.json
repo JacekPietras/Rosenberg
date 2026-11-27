@@ -10,23 +10,6 @@
       ],
       "german": "Engelhard von Rosenberg und sein Sohn Eberhard verzichten auf ihre Ansprüche gegenüber den Johanniter wegen des Kaufs zu Boxberg und eines Burgguts auf dem Hof zu Gräfingen.\n\nLaufzeit: 1390 Juni 5\n\nSiegelbeschreibung: Die Siegel der beiden Aussteller",
       "english": "Engelhard von Rosenberg and his son Eberhard renounce their claims against the Knights of St. John because of the purchase of Boxberg and a castle estate on the farm in Gräfingen.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Engelhard von Rosenberg",
-          "type": "generic",
-          "content": "renounced, with his son Eberhard, claims against the Johanniter Order concerning the Boxberg purchase and a Burggut at the Hof zu Gräfingen."
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "type": "parent",
-          "of": "Eberhard von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001725531%2F04_0001725531_0001_4-1725531-1.jpg",
@@ -59,6 +42,23 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Engelhard von Rosenberg",
+      "type": "generic",
+      "content": "renounced, with his son Eberhard, claims against the Johanniter Order concerning the Boxberg purchase and a Burggut at the Hof zu Gräfingen."
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "type": "parent",
+      "of": "Eberhard von Rosenberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

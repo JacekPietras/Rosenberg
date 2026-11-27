@@ -7,23 +7,23 @@
       "source": "Chmel n. 2894",
       "url": "https://www.regesta-imperii.de/id/1452-07-04_1_0_13_0_0_2893_2894",
       "german": "K. Friedrich erlaubt dem Hanns von Helmstat, seiner Hausfrau Elsbeth von Rosenberg 1400 fl. ihrer Widerlage auf seinen Theil am Schlosse und Dorfe Helmstadt zu verweisen.",
-      "english": "King Frederick permits Hans von Helmstatt to assign to his wife Elisabeth von Rosenberg 1,400 florins of her dower upon his share of the castle and village of Helmstadt.",
-      "mention": [
-        {
-          "person": "Elisabeth von Rosenberg"
-        },
-        {
-          "person": "Hans von Helmstatt"
-        },
-        {
-          "place": "helmstatt"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "King Frederick permits Hans von Helmstatt to assign to his wife Elisabeth von Rosenberg 1,400 florins of her dower upon his share of the castle and village of Helmstadt."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Elisabeth von Rosenberg"
+    },
+    {
+      "person": "Hans von Helmstatt"
+    },
+    {
+      "place": "helmstatt"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
     }
   ]

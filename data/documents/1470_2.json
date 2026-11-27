@@ -6,34 +6,34 @@
       "source": "ISG FFM, H.06.02, 5692",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10600271",
       "german": "Fehde des Bischofs Rudolf von Würzburg mit Michel, Arnold und Jorge von Rosenberg",
-      "english": "Feud of Rudolf zu Würzburg, Bischof against Michel, Arnold von Rosenberg and Georg von Rosenberg",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        }
+      "english": "Feud of Rudolf zu Würzburg, Bischof against Michel, Arnold von Rosenberg and Georg von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Rudolf von Würzburg",
+      "personTitle": [
+        "Bischof"
       ],
-      "facts": [
-        {
-          "person": "Rudolf von Würzburg",
-          "personTitle": [
-            "Bischof"
-          ],
-          "type": "generic",
-          "content": "was in feud with Michel, Arnold and Jorge von Rosenberg."
-        }
+      "type": "generic",
+      "content": "was in feud with Michel, Arnold and Jorge von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Michael von Rosenberg"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4246648",
       "german": "Revers Karls von und zu Mansbach und weiterer namentlich genannter Personen bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Maximilian [III. Erzherzog von Vorderösterreich], kaiserlicher Kommissar des Klosters Fulda\n\nKarl von und zu Mansbach (Manspach), Quirin Riedesel von Bellersheim (Bellerszhaim), Adam Hektor von Rosenbach und weitere namentlich genannte Personen bestätigen für sich und andere namentlich genannte Personen die Belehnung mit Schackau (Schacken) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Maximilian [III. Erzherzog von Vorderösterreich], kaiserlicher Kommissar des Klosters Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, sechs anhängende Siegel, ab und verloren\n\nSiegler: Georg (Iorg) Daniel von Mansbach, Quirin Riedesel von Bellersheim, Adam Hektor von Rosenbach, Georg Christoph und Friedrich Giso (Geusz) von und zu Mansbach, Hans Reinhard von Fechenbach (Vechenbach)\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Acknowledgment by Karl von und zu Mansbach and other named persons concerning their enfeoffment with Schackau and the other fiefs listed individually by Maximilian [III, Archduke of Further Austria], imperial commissioner of the monastery of Fulda.\n\nKarl von und zu Mansbach, Quirin Riedesel von Bellersheim, Adam Hektor von Rosenbach, and other named persons confirm, for themselves and other named persons, their enfeoffment by Maximilian [III], imperial commissioner of the monastery of Fulda, with Schackau, including all its appurtenances in woodland and fields and an estate there, as well as Kleinsassen, Gerharts, and the other fiefs listed individually. The fief charter is inserted. Seals are announced.\n\nFormal description: Original instrument on parchment, six pendant seals, detached and lost.\n\nSealers: Georg (Iorg) Daniel von Mansbach; Quirin Riedesel von Bellersheim; Adam Hektor von Rosenbach; Georg Christoph and Friedrich Giso von und zu Mansbach; Hans Reinhard von Fechenbach.\n\nAdditional information: The acknowledgment has no date of its own and refers instead to the date of the inserted instrument.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/1108/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/1108/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

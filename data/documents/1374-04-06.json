@@ -6,21 +6,21 @@
       "source": "OÖUB 8 (Wien 1883), S. 691ff., Nr. 683, 1374 IV 06",
       "url": "https://www.monasterium.net/mom/OOEUB/1374_IV_06/charter",
       "german": "Ulrich von Rosenberg verheiratet seinen Sohn Heinrich von Rosenberg mit Barbara der Tochter des Grafen Heinrich von Schaunberg.",
-      "english": "Ulrich von Rosenberg marries his son Heinrich von Rosenberg to Barbara, daughter of Count Heinrich von Schaunberg.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Schaunberg",
-          "personTitle": [
-            "Graf von Schaunberg"
-          ]
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "Ulrich von Rosenberg marries his son Heinrich von Rosenberg to Barbara, daughter of Count Heinrich von Schaunberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "Heinrich von Schaunberg",
+      "personTitle": [
+        "Graf von Schaunberg"
       ]
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

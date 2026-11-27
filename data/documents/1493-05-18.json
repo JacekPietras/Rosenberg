@@ -6,35 +6,35 @@
       "source": "Generallandesarchiv Karlsruhe 43 Nr. 5086 Verweisung",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1787104",
       "german": "Arnold und Friedrich von Rosenberg, Gebrüder, verbürgen sich für Wolf von Hardheim wegen des von diesem um 400 Gulden an Margarethe, Hans Heußlins von Eußenheim Witwe, geb. von Neideck, unter Vorbehalt des Wiederkaufs verkauften halben Hofs Schwarzenbrunn bei Gerstetten.\n\nLaufzeit: 1493 Mai 18 (Samstag nach Vocem jocunditatis 1493)\n\nSiegelbeschreibung: Siegel des Abts Johannes von Brombach\n\nVermerke: Zusammen mit GLA 43/5087 in einem Vidimus des Abts von Brombach von 1523 April 24 enthalten",
-      "english": "Arnold von Rosenberg and Friedrich von Rosenberg, brothers, stand surety for Wolf von Hartheim regarding the half-farm Schwarzenbrunn near Gerstetten that he sold to Margarethe, widow of Hans Heußlin of Eußenheim, née von Neideck, for 400 gulden, subject to a right of repurchase.\n\nValidity: May 18, 1493 (Saturday after Vocem jocunditatis 1493)",
-      "mention": [
-        {
-          "person": "Margaretha von Niedeck"
-        },
-        {
-          "place": "niedeck"
-        },
-        {
-          "person": "Wolf von Hartheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "sibling",
-          "of": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
-        },
-        {
-          "person": "Friedrich von Rosenberg",
-          "type": "generic",
-          "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
-        }
-      ]
+      "english": "Arnold von Rosenberg and Friedrich von Rosenberg, brothers, stand surety for Wolf von Hartheim regarding the half-farm Schwarzenbrunn near Gerstetten that he sold to Margarethe, widow of Hans Heußlin of Eußenheim, née von Neideck, for 400 gulden, subject to a right of repurchase.\n\nValidity: May 18, 1493 (Saturday after Vocem jocunditatis 1493)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "sibling",
+      "of": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
+    },
+    {
+      "person": "Friedrich von Rosenberg",
+      "type": "generic",
+      "content": "stood surety for Wolf von Hardheim’s sale of half of the Schwarzenbrunn farm near Gerstetten to Margarethe von Neideck, widow of Hans Heußlin von Eußenheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Margaretha von Niedeck"
+    },
+    {
+      "place": "niedeck"
+    },
+    {
+      "person": "Wolf von Hartheim"
     }
   ]
 }

@@ -7,18 +7,18 @@
       "source": "Chmel n. 7113",
       "url": "https://www.regesta-imperii.de/id/1477-04-20_2_0_13_0_0_7112_7113",
       "german": "Die böhmischen Landherren Wohuslaw von Swannberg, N. von Rosenberg und Jan von Swannberg verschreiben sich gegen K. Friedrich wegen Haltung eines Waffenstillstandes mit Ihm, seinen Landen und Leuten, bis Michaelis.",
-      "english": "The Bohemian lords Wohuslaw von Swannberg, N. von Rosenberg, and Jan von Swannberg bind themselves to King Friedrich to observe a truce with him, his lands, and his people until Michaelmas.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "The Bohemian lords Wohuslaw von Swannberg, N. von Rosenberg, and Jan von Swannberg bind themselves to King Friedrich to observe a truce with him, his lands, and his people until Michaelmas."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++15ca3747-9aa5-408b-865f-2a16a509f04c&parent_id="
       ],
       "german": "Rothenburg an die Bauernschaft vor Würzburg: Schädigung des Zeisolf von Rosenberg.",
-      "english": "Rothenburg to the peasants before Würzburg: damage to Zaisolph von Rosenberg.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of a report by Rothenburg to the peasantry before Würzburg concerning damage inflicted on him."
-        }
-      ]
+      "english": "Rothenburg to the peasants before Würzburg: damage to Zaisolph von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of a report by Rothenburg to the peasantry before Würzburg concerning damage inflicted on him."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

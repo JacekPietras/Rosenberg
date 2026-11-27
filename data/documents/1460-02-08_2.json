@@ -10,49 +10,6 @@
       ],
       "german": "Ulrich von Rosenberg, Rüdiger von Mergentheim genannt Sützel, Wilhelm von Tottenheim (Dottenheim), der Junge zu Messelhausen, Martin von Uissigheim (Ussickeim) beurkunden, daß sie dem Landkomtur und der Deutschordensballei zu Franken 1150 rheinische Gulden schulden und ihnen dafür jährlich am Sankt Martinstag 56 Gulden Zins bezahlen müssen. Bürgen sind: 1) Herr Heinrich Zobel, 2) Eberhart von Berlichingen, 3) Jörg Hund, 4) Dieter von Berlichingen, 5) Eberhart Truchseß, 6) Hans Truchseß, 7) Raben Truchseß, 8) Hans von Absberg (Abßberg),\n\nLaufzeit: 1460 Februar 8 (am frutdag nach Dorathea)\n\nSiegler: Ulrich von Rosenberg; Rüdiger von Mergentheim gen. Sützel; Wilhelm von Tottenheim der Junge zu Messelhausen; Martin von Uissigheim; Herr Heinrich Zobel; Eberhart von Berlichingen; Jörg Hund; Dieter von Berlichingen; Eberhart Truchseß; Hans Truchseß; Raben Truchseß; Hans von Absberg (Abßberg)\n\nSiegelbeschreibung: 12 Sg., 4, 6. u. 7. Sg. besch.\n\nVermerke: 4 Rv.",
       "english": "Ulrich von Rosenberg, Rüdiger von Mergentheim called Sützel, Wilhelm von Dottenheim, the Younger of Messelhausen, Martin von Uissigheim certify that they owe the Land Commander and the Bailiwick of the Teutonic Order in Franconia 1,150 Rhenish guilders and must pay them interest of 56 guilders annually on St. Martin's Day. Guarantors are: 1) Lord Heinrich Zobel, 2) Eberhard von Berlichingen, 3) Jörg Hund, 4) Diether von Berlichingen, 5) Eberhart Truchsess, 6) Hans Truchsess, 7) Raben Truchsess, 8) Hans von Absberg (Abßberg),\n\nDate: February 8, 1460 (on Friday after Dorothea)\n\nSealers: Ulrich von Rosenberg; Rüdiger von Mergentheim called Sützel; Wilhelm von Dottenheim the Younger of Messelhausen; Martin von Uissigheim; Lord Heinrich Zobel; Eberhard von Berlichingen; Jörg Hund; Diether von Berlichingen; Eberhart Truchsess; Hans Truchsess; Raben Truchsess; Hans von Absberg (Abßberg)",
-      "mention": [
-        {
-          "person": "Diether von Berlichingen"
-        },
-        {
-          "person": "Eberhard Truchsess"
-        },
-        {
-          "person": "Eberhard von Berlichingen"
-        },
-        {
-          "person": "Georg Hund"
-        },
-        {
-          "person": "Hans Truchsess"
-        },
-        {
-          "person": "Hans von Absberg"
-        },
-        {
-          "person": "Heinrich Zobel"
-        },
-        {
-          "person": "Martin von Uissigheim"
-        },
-        {
-          "person": "Raban Truchsess"
-        },
-        {
-          "person": "Wilhelm von Dottenheim",
-          "personTitle": [
-            "der Jüngere",
-            "zu Messelhausen"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "owed the Teutonic Order’s Franconian bailiwick a share of a 1,150-Rhenish-guilder debt and annual interest, together with the other named debtors."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001232051%2F02_0001232051_0003_2-1232051-3.jpg",
@@ -82,6 +39,49 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001232051%2F02_0001232051_0004_2-1232051-4.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "owed the Teutonic Order’s Franconian bailiwick a share of a 1,150-Rhenish-guilder debt and annual interest, together with the other named debtors."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Diether von Berlichingen"
+    },
+    {
+      "person": "Eberhard Truchsess"
+    },
+    {
+      "person": "Eberhard von Berlichingen"
+    },
+    {
+      "person": "Georg Hund"
+    },
+    {
+      "person": "Hans Truchsess"
+    },
+    {
+      "person": "Hans von Absberg"
+    },
+    {
+      "person": "Heinrich Zobel"
+    },
+    {
+      "person": "Martin von Uissigheim"
+    },
+    {
+      "person": "Raban Truchsess"
+    },
+    {
+      "person": "Wilhelm von Dottenheim",
+      "personTitle": [
+        "der Jüngere",
+        "zu Messelhausen"
       ]
     }
   ]

@@ -6,27 +6,27 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 40 Qu. 5",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-757511",
       "german": "Abschriften aus Valentin Ferdinand von Gudenus [teilweise leicht gekürzt]: Nr. 74: Urteil Erzbischof Gerhards [II.] von Mainz auf Grund der Nachforschungen des Hermann, Vitztum in Aschaffenburg, und des Heinrich, Mainzer Amtmann in Wildenberg, wegen der zwischen Kt und Brüdern des DOH Röllbach einerseits und den Brüdern Philipp und Gottfried von Bickenbach andererseits strittigen Gerichtsbarkeit in [Groß-]Heubach, 1291 Juli 23.",
-      "english": "Copies from Valentin Ferdinand von Gudenus [partly slightly abridged]: No. 74: Judgment by Archbishop Gerhard [II.] of Mainz, based on the investigations of Hermann, vicedom at Aschaffenburg, and Heinrich, Mainz's official at Wildenberg, concerning the jurisdiction in [Groß-]Heubach disputed on the one hand between the commander and brothers of the Teutonic Order house at Röllbach and on the other hand the brothers Philipp and Gotfried von Bickenbach, 23 July 1291.",
-      "mention": [
-        {
-          "person": "Erzbischof Gerhard",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Gotfried von Bickenbach"
-        },
-        {
-          "person": "Heinrich Mainz"
-        },
-        {
-          "person": "Philipp von Bickenbach"
-        },
-        {
-          "place": "wildenberg-castle"
-        }
+      "english": "Copies from Valentin Ferdinand von Gudenus [partly slightly abridged]: No. 74: Judgment by Archbishop Gerhard [II.] of Mainz, based on the investigations of Hermann, vicedom at Aschaffenburg, and Heinrich, Mainz's official at Wildenberg, concerning the jurisdiction in [Groß-]Heubach disputed on the one hand between the commander and brothers of the Teutonic Order house at Röllbach and on the other hand the brothers Philipp and Gotfried von Bickenbach, 23 July 1291."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Gerhard",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "person": "Gotfried von Bickenbach"
+    },
+    {
+      "person": "Heinrich Mainz"
+    },
+    {
+      "person": "Philipp von Bickenbach"
+    },
+    {
+      "place": "wildenberg-castle"
     }
   ]
 }

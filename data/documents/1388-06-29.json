@@ -10,28 +10,6 @@
       ],
       "german": "Heinz Seman, dessen Ehefrau Else von Rosenberg, sein Bruder Eckhard (Ege) Seman und dessen Ehefrau Anne von Leiningen (Leningen) beurkunden, daß sie Hans Spannrücken, Sohn des Seitz Ludener aus Hirschlanden (Hirßlanden), der ihr Leibeigener war (der unser gotzlehen waz), dem Komtur und den Herren des Deutschen Hauses zu Mergentheim für 19 Pfund und 4 Schilling Heller verkauft haben und verzichten auf alle Rechte an dem bereits erwähnten Hans Spannrücken",
       "english": "Heinrich Seman, his wife Elisabeth von Rosenberg, his brother Eckhard Seman and his wife Anne von Leiningen certify that they have sold Hans Spannrücken, son of Seitz Ludener from Hirschlanden, who was their serf (who was our godzlehen), to the Commander and the Lords of the German House in Mergentheim for 19 pounds and 4 shillings and renounce all rights to the aforementioned Hans Spannrücken",
-      "facts": [
-        {
-          "person": "Heinrich Seman",
-          "type": "spouse",
-          "of": "Elisabeth von Rosenberg"
-        },
-        {
-          "person": "Elisabeth von Rosenberg",
-          "type": "generic",
-          "content": "joined her husband Heinrich Seman, her brother-in-law Eckhard Seman, and his wife Anne von Leiningen in selling their serf Hans Spannrücken to the Teutonic Order at Mergentheim."
-        },
-        {
-          "person": "Eckhard Seman",
-          "type": "sibling",
-          "of": "Heinrich Seman"
-        },
-        {
-          "person": "Eckhard Seman",
-          "type": "spouse",
-          "of": "Anna von Leiningen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001555745%2F02_0001555745_0003_2-1555745-3.jpg"
@@ -41,6 +19,28 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich Seman",
+      "type": "spouse",
+      "of": "Elisabeth von Rosenberg"
+    },
+    {
+      "person": "Elisabeth von Rosenberg",
+      "type": "generic",
+      "content": "joined her husband Heinrich Seman, her brother-in-law Eckhard Seman, and his wife Anne von Leiningen in selling their serf Hans Spannrücken to the Teutonic Order at Mergentheim."
+    },
+    {
+      "person": "Eckhard Seman",
+      "type": "sibling",
+      "of": "Heinrich Seman"
+    },
+    {
+      "person": "Eckhard Seman",
+      "type": "spouse",
+      "of": "Anna von Leiningen"
     }
   ]
 }

@@ -10,23 +10,6 @@
       ],
       "german": "Lehenrevers Eberhardts von Rosenberg an H. Graf Johann ausgestellt über das Mannlehen den halbtheil des Zehnten zu Hohenstadt (Hohenstatt) klein und groß, den bisher Marquard von Hohenstadt (Hohenstatt) von der Herrschaft zu Wertheim zu Lehen getragen.",
       "english": "Lehenrevers Eberhard von Rosenberg issued to H. Graf Hans over the male fief the half part of the tithes in Hohenstadt small and large, which until now Marquard von Hohenstadt had borne as a fief from the lordship of Wertheim.",
-      "mention": [
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "held half the small and large tithes at Hohenstadt as a Mannlehen from Count Hans."
-        },
-        {
-          "person": "Marquard von Hohenstadt",
-          "type": "generic",
-          "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198228%2F07_0000198228_0001_7-198228-1.jpg"
@@ -46,6 +29,23 @@
           ]
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "held half the small and large tithes at Hohenstadt as a Mannlehen from Count Hans."
+    },
+    {
+      "person": "Marquard von Hohenstadt",
+      "type": "generic",
+      "content": "had previously held the tithes at Hohenstadt as a fief from the lordship of Wertheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

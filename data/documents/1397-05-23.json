@@ -9,12 +9,12 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1397_V_23/charter"
       ],
       "german": "Indulgentiae 40 dierum pro ecclesia Cajoviensi datae a Wolframo archiepiscopo Pragensi ad instantiam Hendrici de Rosenberg.",
-      "english": "Indulgences of 40 days granted for the church of Cajov by Wolfram, Archbishop of Prague, at the request of Hendricus de Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Indulgences of 40 days granted for the church of Cajov by Wolfram, Archbishop of Prague, at the request of Hendricus de Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

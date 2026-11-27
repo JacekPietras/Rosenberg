@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/IT-StiAMB/urkunden/VII_18/charter",
       "german": "Eva Katharina von Rosenberg verkauft mit Zustimmung ihres Mannes Martin Murr zu Laas eine Behausung mit Gütern zu Glurns, die sie von ihrer Mutter Eva geb. Verdross geerbt, an ihren Sohn Abt Johann Baptist Murr",
       "english": "Eva Katharina von Rosenberg sells with the consent of her husband Martin Murr zu Laas a dwelling with goods in Glurns, which she inherited from her mother Eva née Verdross, to her son Abbot Johann Baptist Murr",
-      "mention": [
-        {
-          "person": "Eva Katharina von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/IT-StiAMB/Urkunden/StAMbg_VII_18_01.jpg"
@@ -26,6 +21,11 @@
           "src": "https://images.monasterium.net/img/IT-StiAMB/Urkunden/StAMbg_VII_18_04.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eva Katharina von Rosenberg"
     }
   ]
 }

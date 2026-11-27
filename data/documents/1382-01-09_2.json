@@ -10,24 +10,6 @@
       ],
       "german": "Herr Eberhard Schenck zu Resperg, Ritter Heintz Pleich, Egen Seman, Amtmann zu Bischofsheim, Contze von Buechheim, Albrecht Stetenberger, Ruprecht Stetenberger der Lange, Contze von Vssinkeim der Junge, bezeugen, dass Bruder Conrad Rued, Meister des Deutschen Ordens, und Bruder Mertein von Mergentheim, Komtur zu Regenspurg, nach Ablehnung der Vorschläge, die der Meister dem Komtur auf Grund des Schiedsspruches des Herzogs Friderich in Bayern gemacht hat, übereingekommen sind, ihre Streitigkeit neuerdings dem gleichen Schiedsrichter zu unterbreiten.",
       "english": "Herr Eberhard Schenck zu Resperg, Ritter; Heintz Pleich, Ritter, Egen Seman, Amtmann zu Bischofsheim, Contze von Buechheim, Albrecht Stetenberger, Ruprecht Stetenberger the Tall, and Kunz von Uissigheim the Younger testify that Brother Conrad Rued, Master of the Teutonic Order, and Brother Mertein von Mergentheim, Komtur zu Regensburg, after rejecting the proposals the Master had made to the Komtur pursuant to the arbitration award of Duke Friderich in Bavaria, agreed to submit their dispute anew to the same arbitrator.",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Eberhard Schenk",
-          "personTitle": [
-            "Ritter",
-            "zu Resperg"
-          ]
-        },
-        {
-          "person": "Kunz von Uissigheim",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/bbd6474a-2853-4825-8413-b785702237ba/1/full/max/0/default.jpg"
@@ -38,6 +20,24 @@
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/bbd6474a-2853-4825-8413-b785702237ba/3/full/max/0/default.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Eberhard Schenk",
+      "personTitle": [
+        "Ritter",
+        "zu Resperg"
+      ]
+    },
+    {
+      "person": "Kunz von Uissigheim",
+      "personTitle": [
+        "der Jüngere"
       ]
     }
   ]

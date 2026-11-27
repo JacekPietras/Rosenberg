@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++627d793f-fb82-4593-9143-5b93732a624c&parent_id="
       ],
       "german": "Kaufbrief: Jörg von Ehenheim zu Geyern und BraunedXXX verkauft dem Abt Endres auf dem Münchsberg und sseinem Konvent seinen dritten Teil der Vogtei zu Welbhausen um 700 Gulden rhein. Währung. - Zeugen: Erasmus von Rosenberg Ritter Amtmann zu Uffenheim, des Verkäufers SchwanserXXX.",
-      "english": "Deed of sale: Georg von Ehenheim of Geyern and BraunedXXX sells to Abbot Endres at Münchsberg and his convent his one-third share of the Vogtei (bailiwick) of Welbhausen for 700 Rhine guilders. - Witnesses: Erasmus von Rosenberg, Knight, Amtmann (bailiff) of Uffenheim, the seller's brother-in-law.",
-      "facts": [
-        {
-          "person": "Erasmus von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Uffenheim",
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "witnessed Georg von Ehenheim’s sale of his share of the Vogtei at Welbhausen to Münchsberg monastery."
-        }
-      ]
+      "english": "Deed of sale: Georg von Ehenheim of Geyern and BraunedXXX sells to Abbot Endres at Münchsberg and his convent his one-third share of the Vogtei (bailiwick) of Welbhausen for 700 Rhine guilders. - Witnesses: Erasmus von Rosenberg, Knight, Amtmann (bailiff) of Uffenheim, the seller's brother-in-law."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Erasmus von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Uffenheim",
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "witnessed Georg von Ehenheim’s sale of his share of the Vogtei at Welbhausen to Münchsberg monastery."
     }
   ]
 }

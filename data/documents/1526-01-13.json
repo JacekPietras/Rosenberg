@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++936634a3-f79c-4aaf-a9fc-9472aa0a8f42&parent_id="
       ],
       "german": "Cunz von Rosenberg an Rothenburg: Fürbitte für Hintersassen zu Ohrenbach.",
-      "english": "Kunz von Rosenberg to Rothenburg: intercession for dependents at Ohrenbach.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach."
-        }
-      ]
+      "english": "Kunz von Rosenberg to Rothenburg: intercession for dependents at Ohrenbach."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "wrote to Rothenburg interceding for Hintersassen at Ohrenbach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

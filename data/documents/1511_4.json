@@ -7,16 +7,16 @@
       "url": "https://www.monasterium.net/mom/AT-StiAHe/HerzogenburgCanReg/1511_IX_07/charter",
       "german": "Hans von Wehing verkauft das Kirchenlehen zu St. Veit in Inzersdorf an Herrn Christoph Grabner zu Rosenberg.\n\nSiegel: Siegel aufgedrückt",
       "english": "Hans von Wehing sells the church fief at St. Veit in Inzersdorf to Lord Christoph Grabner zu Rosenberg.\n\nSeal: impressed seal.",
-      "mention": [
-        {
-          "person": "Christoph Grabner von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/119/K.._MOM-Bilddateien._%7EHerzogenburgjpgweb._%7EStAH__H_15110907.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph Grabner von Rosenberg"
     }
   ]
 }

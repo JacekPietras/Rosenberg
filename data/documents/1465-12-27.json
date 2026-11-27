@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-28158",
       "german": "Agnes von Staffort, Hans Münchs von Rosenberg, Ritters, Ehefrau, quittiert über 39 fl. 1 Ort Leibgeding.\n\nLaufzeit: 1465 Dezember 27",
       "english": "Agnes von Staffort, wife of Hans Münch von Rosenberg, Ritter, acknowledges receipt of a life annuity of 39 gulden and 1 ort.\n\nDate: 1465 December 27",
-      "mention": [
-        {
-          "person": "Hans Mönch von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000028158%2F01_0000028158_0001_1-28158-1.jpg"
@@ -22,6 +14,14 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000028158%2F01_0000028158_0002_1-28158-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Mönch von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
     }
   ]

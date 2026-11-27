@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++C433B5F3-D4B3-40D7-8EDF-C7A32628536C&parent_id="
       ],
       "german": "Predigtverbot für den Präceptor des protestantischen Pfarrers von Maßbach in Rothhausen, ausgesprochen durch den rosenbachischen Verwalter zu Thundorf",
-      "english": "Ban on preaching by the preceptor of the Protestant parish priest of Maßbach in Rothhausen, issued by the von Rosenbach administrator at Thundorf.",
-      "mention": [
-        {
-          "place": "massbach-st-bartholomaeus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Ban on preaching by the preceptor of the Protestant parish priest of Maßbach in Rothhausen, issued by the von Rosenbach administrator at Thundorf."
+    }
+  ],
+  "mention": [
+    {
+      "place": "massbach-st-bartholomaeus"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

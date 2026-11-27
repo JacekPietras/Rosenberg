@@ -10,17 +10,6 @@
       ],
       "german": "Liste der Domherren in Mainz, darin an Einzelfällen:\nKesselstatt, Hugo Wolfgang Baron von, Hoheneck, Wildrich Marsilius Baron von, Eltz, Philipp Karl Baron von, Waldenburg, Johann Adolf Baron von, Guimnich, Friedrich Wilhelm Baron von, Warsberg, Anselm Franz Ernst Baron von, Ingelheim, Anselm Franz Baron von, Hoheneck, Johann Franz Jakob Anton Baron von, Sickingen, Kasimir Anton Baron von, Sickingen, Heinrich Oswald Baron von, Walderdorff, Johann Hugo Baron von, Greiffenklau, Philipp Karl Heinrich Baron von, Rosenbach, Johann Christoph Rudolf Baron von, Knebel, Franz Anton Gottfried Baron von, Bettendorf, Anselm Friedrich Baron von, Kesselstatt, Joseph Franz Baron von, Groschlag, Franz Rudolf Baron von, Eltz, Hugo Franz Karl Baron von, Erthal, Johann Ludwig Christian von, Bubenheim, Lothar Franz Ignaz von, Sickingen, Johann Philipp Baron von, Stadion, Lothar Georg Joseph Graf von, Breidenbach, Emrich Joseph Baron von, Wolffskehl, Johann Philipp Otto Friedrich von, Metternich, Lothar Ferdinand Graf von, Bettendorf, Lothar Franz Baron von, Breidenbach, Karl Wilhelm Joseph Adam Baron von, Schönborn, Melchior Friedrich Graf von, Schenck von Schmidberg, Karl Joseph, Eltz-Utingen, Philipp Anton von, Waldbott von Bassenheim, Franz Karl Graf von, Dalberg, Franz Karl Anton Eberhard Baron von, Greiffenklau, Johann Philipp Baron von, Galen, Franz Arnold Baron von, Schenk Graf zu Castel, Franz Joseph, Hatzfeld, Karl Friedrich Anton Graf von, Waldenburg, Karl Joseph Baron von, Dalberg, Karl Joseph Baron von und Erthal, Friedrich Karl Joseph Baron von",
       "english": "List of the canons of Mainz, including in individual cases: Kesselstatt, Hugo Wolfgang Baron von; Hoheneck, Wildrich Marsilius Baron von; Eltz, Philipp Karl Baron von; Waldenburg, Johann Adolf Baron von; Guimnich, Friedrich Wilhelm Baron von; Warsberg, Anselm Franz Ernst Baron von; Ingelheim, Anselm Franz Baron von; Hoheneck, Johann Franz Jakob Anton Baron von; Sickingen, Kasimir Anton Baron von; Sickingen, Heinrich Oswald Baron von; Walderdorff, Johann Hugo Baron von; Greiffenklau, Philipp Karl Heinrich Baron von; Rosenbach, Johann Christoph Rudolf Baron von; Knebel, Franz Anton Gottfried Baron von; Bettendorf, Anselm Friedrich Baron von; Kesselstatt, Joseph Franz Baron von; Groschlag, Franz Rudolf Baron von; Eltz, Hugo Franz Karl Baron von; Erthal, Johann Ludwig Christian von; Bubenheim, Lothar Franz Ignaz von; Sickingen, Johann Philipp Baron von; Stadion, Lothar Georg Joseph Graf von; Breidenbach, Emrich Joseph Baron von; Wolffskehl, Johann Philipp Otto Friedrich von; Metternich, Lothar Ferdinand Graf von; Bettendorf, Lothar Franz Baron von; Breidenbach, Karl Wilhelm Joseph Adam Baron von; Schönborn, Melchior Friedrich Graf von; Schenck von Schmidberg, Karl Joseph; Eltz-Utingen, Philipp Anton von; Waldbott von Bassenheim, Franz Karl Graf von; Dalberg, Franz Karl Anton Eberhard Baron von; Greiffenklau, Johann Philipp Baron von; Galen, Franz Arnold Baron von; Schenk Graf zu Castel, Franz Joseph; Hatzfeld, Karl Friedrich Anton Graf von; Waldenburg, Karl Joseph Baron von; Dalberg, Karl Joseph Baron von; and Erthal, Friedrich Karl Joseph Baron von.",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "sickingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a7b25ebc-5966-418d-8eeb-2b6d3adf9447/1/full/max/0/default.jpg"
@@ -35,6 +24,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a7b25ebc-5966-418d-8eeb-2b6d3adf9447/4/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "sickingen"
     }
   ]
 }

@@ -9,45 +9,45 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D1536A9E-965D-4376-B368-9D372D8E0B7F&parent_id="
       ],
       "german": "Gerichtsbrief des Jörg v. Bebenburg, Hofmeister des Würzburger Bischofs Johann, der mit den Räten Appel v. Lichtenstein, Albrecht Truchsess zu Wetzhausen, Ritter Caspar v. Bibra, Appel v. Stein, Balthasar v. Wenkeim, Heinz v. Hutten und Jörg v. Saunsheim zu Westerndorf Gericht hält; es erscheint Erkinger v. Saunsheim zu Wiesenbrunn für sich und seine Tochter Katharina wegen des halben Zehenden zu Hengstvelt, welcher der Barbara v. Rosenberg von ihrem Hauswirt Reinbot Streckfuss zu Erb verschrieben. Katharina sei der Barbara rechte Tochter und habe gen. Zehend geerbt. Peter Tanner zu Törzbach irre sie in diesem Erbe und am Landgericht Würzburg habe er, Erkinger, den gen. Zehend erklagt. Peter Tanner gibt an, dass sein Vater Weiprecht Tanner sel. diesen Zehend von Reinbot Streckfuss und seiner Frau Barbara v. Rosenberg gekauft und ohne Einspruch bis an sein Ende besessen habe; den Kaufbrief mit Quittung und Lossagung des Leibgedings seitens der Barbara v. Rosenberg bringt Peter Tanner vor Gericht. Der Zehend wird dem Peter Tanner zugesprochen\nGeben uff Mittwochen vor Sant Martinstag 1436",
-      "english": "Court record of Jörg von Bebenburg, steward to Bishop Johann of Würzburg, who holds court at Westerndorf with the councillors Appel von Lichtenstein, Albrecht Truchsess zu Wetzhausen, Ritter Caspar von Bibra, Appel von Stein, Balthasar von Wenkeim, Heinrich von Hutten, and Georg von Seinsheim. Erkinger von Seinsheim zu Wiesenbrunn appears for himself and his daughter Katharina concerning half of the tithe at Hengstvelt, which her husband Reinbot Streckfuss had assigned to Barbara von Rosenberg in hereditary right. Katharina is said to be Barbara's legitimate daughter and to have inherited the said tithe. Peter Tanner zu Törzbach is disputing her inheritance, and at the Würzburg regional court Erkinger had sued for the said tithe. Peter Tanner states that his late father Weiprecht Tanner had bought this tithe from Reinbot Streckfuss and his wife Barbara von Rosenberg and possessed it without objection until his death; Peter produces the deed of sale, with a receipt and Barbara von Rosenberg's release of her life annuity. The tithe is awarded to Peter Tanner.\nIssued on the Wednesday before St Martin's Day, 1436.",
-      "mention": [
-        {
-          "person": "Albrecht Truchsess",
-          "personTitle": [
-            "zu Wetzhausen"
-          ]
-        },
-        {
-          "person": "Barbara von Rosenberg"
-        },
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Caspar von Bibra",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Erkinger von Seinsheim"
-        },
-        {
-          "person": "Georg von Seinsheim"
-        },
-        {
-          "person": "Heinrich von Hutten"
-        },
-        {
-          "place": "lichtenstein"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Court record of Jörg von Bebenburg, steward to Bishop Johann of Würzburg, who holds court at Westerndorf with the councillors Appel von Lichtenstein, Albrecht Truchsess zu Wetzhausen, Ritter Caspar von Bibra, Appel von Stein, Balthasar von Wenkeim, Heinrich von Hutten, and Georg von Seinsheim. Erkinger von Seinsheim zu Wiesenbrunn appears for himself and his daughter Katharina concerning half of the tithe at Hengstvelt, which her husband Reinbot Streckfuss had assigned to Barbara von Rosenberg in hereditary right. Katharina is said to be Barbara's legitimate daughter and to have inherited the said tithe. Peter Tanner zu Törzbach is disputing her inheritance, and at the Würzburg regional court Erkinger had sued for the said tithe. Peter Tanner states that his late father Weiprecht Tanner had bought this tithe from Reinbot Streckfuss and his wife Barbara von Rosenberg and possessed it without objection until his death; Peter produces the deed of sale, with a receipt and Barbara von Rosenberg's release of her life annuity. The tithe is awarded to Peter Tanner.\nIssued on the Wednesday before St Martin's Day, 1436."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Truchsess",
+      "personTitle": [
+        "zu Wetzhausen"
       ]
+    },
+    {
+      "person": "Barbara von Rosenberg"
+    },
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Caspar von Bibra",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Erkinger von Seinsheim"
+    },
+    {
+      "person": "Georg von Seinsheim"
+    },
+    {
+      "person": "Heinrich von Hutten"
+    },
+    {
+      "place": "lichtenstein"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

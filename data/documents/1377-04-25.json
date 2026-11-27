@@ -6,33 +6,33 @@
       "source": "Regesta Boica 9, 25 Apr. 1377",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
       "german": "Hanns von Appsperg übergibt sein Schloss zu Liebeneck nach vorgängiger Entscheidung des Hilpolt vom Stain des ältern, Ritter Konrads von Rosenberg, Vizthum zu Amberg und Albrechts von Wolfstein dem Herzoge Rupprecht und empfängt selbes von ihm wieder als Lehen. D. feria Sabita post Georgii. (c. S.)",
-      "english": "Hans von Absberg transfers his castle at Liebeneck to Ruprecht, Herzog, following the prior decision of Hilpolt vom Stain der Ältere; Konrad von Rosenberg, Ritter, Vizedom zu Amberg; and Albrecht von Wolfstein, and receives it back from Ruprecht as a fief. Given on the Saturday after St. George’s day. (With seal.)",
-      "mention": [
-        {
-          "place": "burg-liebeneck-greding"
-        }
+      "english": "Hans von Absberg transfers his castle at Liebeneck to Ruprecht, Herzog, following the prior decision of Hilpolt vom Stain der Ältere; Konrad von Rosenberg, Ritter, Vizedom zu Amberg; and Albrecht von Wolfstein, and receives it back from Ruprecht as a fief. Given on the Saturday after St. George’s day. (With seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Ritter",
+        "Vizedom zu Amberg"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Ritter",
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "participated with Hilpolt vom Stain der Ältere and Albrecht von Wolfstein in a decision preceding Hans von Absberg’s transfer of Liebeneck to Duke Ruprecht."
-        },
-        {
-          "person": "Hans von Absberg",
-          "type": "generic",
-          "content": "transferred his castle at Liebeneck to Duke Ruprecht."
-        },
-        {
-          "person": "Hans von Absberg",
-          "type": "generic",
-          "content": "received his castle at Liebeneck back as a fief from Duke Ruprecht."
-        }
-      ]
+      "type": "generic",
+      "content": "participated with Hilpolt vom Stain der Ältere and Albrecht von Wolfstein in a decision preceding Hans von Absberg’s transfer of Liebeneck to Duke Ruprecht."
+    },
+    {
+      "person": "Hans von Absberg",
+      "type": "generic",
+      "content": "transferred his castle at Liebeneck to Duke Ruprecht."
+    },
+    {
+      "person": "Hans von Absberg",
+      "type": "generic",
+      "content": "received his castle at Liebeneck back as a fief from Duke Ruprecht."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-liebeneck-greding"
     }
   ]
 }

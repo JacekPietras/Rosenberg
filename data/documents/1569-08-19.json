@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4b94dcd6-3874-4050-8562-740b3264a7ff&parent_id="
       ],
       "german": "Konrad von Rosenberg zu Waldmannshofen läd den Johanniterkomtur Hans Jörg von Schönborn zu Worms, Schleißingen und Rothenburg auf die Hochzeit seines Sohnes Hans Konrad von Rosenberg mit Jungfer Waldburga Geyerin, Tochter des verstorbenen Sebastian Geyer von Giebelstadt\n\nEnthält-/Darin-Vermerke: Beiage: Zettel mit Bitte um Übersendung von Wildpret",
-      "english": "Konrad von Rosenberg zu Waldmannshofen invites the commander of the Knights Hospitaller Hans Jörg von Schönborn zu Worms, Schleißingen, and Rothenburg to the wedding of his son Hans Konrad von Rosenberg and the young woman Waldburga Geyerin, daughter of the late Sebastian Geyer von Giebelstadt. Enclosure: a note requesting that game meat be sent.",
-      "mention": [
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "place": "rothenburg"
-        },
-        {
-          "person": "Sebastian Geyer von Giebelstadt"
-        }
+      "english": "Konrad von Rosenberg zu Waldmannshofen invites the commander of the Knights Hospitaller Hans Jörg von Schönborn zu Worms, Schleißingen, and Rothenburg to the wedding of his son Hans Konrad von Rosenberg and the young woman Waldburga Geyerin, daughter of the late Sebastian Geyer von Giebelstadt. Enclosure: a note requesting that game meat be sent."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
       ]
+    },
+    {
+      "place": "rothenburg"
+    },
+    {
+      "person": "Sebastian Geyer von Giebelstadt"
     }
   ]
 }

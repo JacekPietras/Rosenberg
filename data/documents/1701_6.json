@@ -7,11 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6669061",
       "german": "Stammbäume und Attestate stiftsfähiger Familien\n\nEnthält: von Bastheim,\nvon Dalwigk,\nvon Droste (mit Wappenzeichnung),\nGremp von Freudenstein,\nvon Gravenegg,\nvon Haun,\nvon Kippenheim,\nvon Rabenau,\nvon Radenhausen,\nvon Rindorff,\nvon Rosenbach,\nvon Rosenbusch,\nvon Schleifras,\nvon Schungell,\nvon Weinhold und\nvon Zertschen\n\nLaufzeit: 17., 18. Jh.",
       "english": "Family trees and attestations of families eligible for canonries.\n\nContains: von Bastheim, von Dalwigk, von Droste (with coat-of-arms drawing), Gremp von Freudenstein, von Gravenegg, von Haun, von Kippenheim, von Rabenau, von Radenhausen, von Rindorff, von Rosenbach, von Rosenbusch, von Schleifras, von Schungell, von Weinhold, and von Zertschen.\n\nDate range: seventeenth and eighteenth centuries.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/96/131/hstam_96_nr_131_0001.jpg"
@@ -44,6 +39,11 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/96/131/hstam_96_nr_131_0010.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

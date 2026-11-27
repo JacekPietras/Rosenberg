@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5ea57c52-15fd-4bba-9aef-9b662494652e&parent_id="
       ],
       "german": "Limberger, Johann Konrad, von Rosenbach/Feuchtwangen, Dienstknecht; Verheiratung mit Schaffner, Johanna Maria, von Breitenau/Feuchtwangen",
-      "english": "Johann Konrad Limberger, from Rosenbach/Feuchtwangen, farm servant; marriage to Johanna Maria Schaffner, from Breitenau/Feuchtwangen",
-      "mention": [
-        {
-          "person": "Johanna Maria Schaffner"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Konrad Limberger, from Rosenbach/Feuchtwangen, farm servant; marriage to Johanna Maria Schaffner, from Breitenau/Feuchtwangen"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Johanna Maria Schaffner"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

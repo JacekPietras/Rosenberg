@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++E04C9115-CD18-4DEB-97DB-A344F74C9EAB&parent_id="
       ],
       "german": "Forderung des Reichsfuriers Salomon Störl zu Leidersdorf gegen Hans Heinrich von Kaisersberg zu Rosenberg nach Bezahlung der von Hans Doles und den Doles'schen Vormündern bei seinem Schwiegervater Dr. Hans Georg Agricola, Arzt zu Amberg, aufgenommenen 1.400 fl.",
-      "english": "Claim by Reichsfurier Salomon Störl of Leidersdorf against Hans Heinrich von Kaisersberg zu Rosenberg for payment of the 1,400 florins borrowed by Hans Doles and the Doles guardians from his father-in-law, Dr Hans Georg Agricola, physician at Amberg.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Claim by Reichsfurier Salomon Störl of Leidersdorf against Hans Heinrich von Kaisersberg zu Rosenberg for payment of the 1,400 florins borrowed by Hans Doles and the Doles guardians from his father-in-law, Dr Hans Georg Agricola, physician at Amberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

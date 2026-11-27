@@ -7,35 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-165753",
       "german": "Eberhart, Graf zu Wertheim und Katherin, seine eheliche Frau, haben Greten, Tochter des Grafen Gerhart von Rieneck, und Mene, seiner Frau, für die Ehe mit einem ihrer drei Söhne, welcher denne benennet wird, als Morgengabe 2000 Pfund alter Heller oder Würzburger Währung versprochen, so daß ihr diese Summe innerhalb eines Mondes nach dem Beilager geschlagen wird auf dem 1/2 Teil oder den 1/4 Teil des Hauses zu Breuberg, und dazu 100 Pfund Geldes und 200 Malter Korn jährlicher Gülte, so daß ein Pfund Geldes gebührt für 10 Pfund h. und 1 Malter Korn für 5 Pf. h. Hierfür setzen sie als Bürgen Eberhart Rüden und Gundelwin, Ritter, Walther Kotbüssen und den großen Kotbüssen, seinen Bruder, gesessen zu Sumerauwe, Arnold von Talheim, Hermann Seman, Fuchs von Kannenberg, Heinrich von Ussenkein, Walther Kotbüssen, Schultheißen zu Wertheim, Walter von Hartheim, Dyczen von Ertal und Cunczen von Hartheim, die Knechte. Diese sollen auf Mahnung im Fall des Wortbruchs zu einem offenen Marte zu Lohr (Lare) einfahren und dort leisten ein jeder mit einem Knechte und einem Pferde auf des Grafen und seiner Erben Schaden bis die 2000 Pfund h. bezahlt oder Gült verschrieben ist. Geht ein Bürge ab, so soll er ersetzt werden.\n\nLaufzeit: 1354 Juli 13 (gegeben an sanct Margareten tage der heiligen juncfrauwen)\n\nSiegelbeschreibung: 13 Siegel sehr gut erhalten, das Siegel des Dytze von Ertal fehlt\n\nSiegler: Der Graf; seine Frau; Eberhart; Gundelwin; Walther Kotbuz; Großer Kotbuz; Arnold von Talheim; Herman Fuchs; Heinrich; Walther Kotbuz; Schultheiße zu Wertheim; Walther; Dytze; Cuncz",
       "english": "Eberhart, Count of Wertheim, and Katherin, his lawful wife, promised Greten, daughter of Count Gerhart von Rieneck and his wife Mene, a dowry of 2,000 pounds of old Heller or Würzburg currency for her marriage to whichever one of their three sons should be designated. This sum was to be secured within one month after the wedding on one half or one quarter of Breuberg Castle, together with 100 pounds of income and an annual rent of 200 Malter of grain, with one pound of income valued at 10 pounds of Heller and one Malter of grain at 5 pounds of Heller. As sureties they pledged Eberhart Rüde and Gundelwin, knights; Walther Kotbüssen and the elder Kotbüssen, his brother, resident at Sumerauwe; Arnold von Talheim; Hermann Seman; Fuchs von Kannenberg; Heinrich von Uissigheim; Walther Kotbüssen, mayor of Wertheim; Walter von Hartheim; Dyczen von Ertal; and Cunczen von Hartheim, squires. If they defaulted, these sureties were to go, when summoned, to an open court at Lohr and remain there, each with a servant and horse, at the Count’s and his heirs’ expense until the 2,000 pounds of Heller were paid or an annuity secured. If a surety withdrew, he was to be replaced.\n\nDate: 13 July 1354 (given on the feast of St Margaret, the holy virgin).\n\nSeal description: 13 seals, very well preserved; Dytze von Ertal’s seal is missing.\n\nSealers: the Count; his wife; Eberhart; Gundelwin; Walther Kotbuz; the elder Kotbuz; Arnold von Talheim; Herman Fuchs; Heinrich; Walther Kotbuz, mayor of Wertheim; Walter; Dytze; Cuncz.",
-      "mention": [
-        {
-          "person": "Arnold von Talheim"
-        },
-        {
-          "person": "Eberhard von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "hartheim"
-        },
-        {
-          "person": "Heinrich von Uissigheim"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "person": "Walter von Hartheim"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=657&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000657%2Ftitlaufn_0000165753%2F07_0000165753_0001_7-165753-1.jpg"
@@ -44,6 +15,35 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=657&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000657%2Ftitlaufn_0000165753%2F07_0000165753_0002_7-165753-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Talheim"
+    },
+    {
+      "person": "Eberhard von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "hartheim"
+    },
+    {
+      "person": "Heinrich von Uissigheim"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "person": "Walter von Hartheim"
+    },
+    {
+      "place": "wertheim-stiftskirche"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

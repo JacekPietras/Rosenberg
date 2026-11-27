@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199404",
       "german": "Reinhart von Üssigheim verkauft an Arnold von Rosenberg d. J., seinen Vetter, seine Wiese zu Üssigheim an der Maßenbach gen. der Boden, die Mühle und die Zinse, die zu der Wiese gehören, um 105 fl. rh., über die er quittiert.\n\nLaufzeit: 1403 Februar 10 (Sa. v. Valentin)\n\nSiegelbeschreibung: 3 Siegel, 2. Rest\n\nVermerke: Rückvermerk: H",
       "english": "Reinhard von Uissigheim sells to Arnold von Rosenberg der Jüngere, his cousin, his meadow at Uissigheim on the Maßenbach, called der Boden, together with the mill and the rents belonging to the meadow, for 105 Rhenish florins, receipt of which he acknowledges.\n\nTerm: 10 February 1403 (Saturday before St Valentine’s Day).\n\nSeal description: Three seals, two attached; the second is a remnant.\n\nEndorsements: Back endorsement: H.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Reinhard von Uissigheim"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199404%2F07_0000199404_0001_7-199404-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199404%2F07_0000199404_0002_7-199404-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Reinhard von Uissigheim"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

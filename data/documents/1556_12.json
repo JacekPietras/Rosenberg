@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1408686",
       "german": "Schriftwechsel zwischen Pfalzgraf Ottheinrich und Herzog Christoph von Württemberg bezüglich des Ritters Albrecht von Rosenbergs und dessen Streit um die Herrschaft Boxberg.\n\nLaufzeit: Juli 1556\n\nUmfang: 4 Blatt",
       "english": "Correspondence between Count Palatine Ottheinrich and Duke Christoph of Württemberg concerning Ritter Albrecht von Rosenberg and his dispute over the lordship of Boxberg. Date range: July 1556. Extent: 4 leaves.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "boxberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001408686%2F01_0001408686_0001_1-1408686-1.jpg"
@@ -41,6 +30,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001408686%2F01_0001408686_0007_1-1408686-7.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "boxberg"
     }
   ]
 }

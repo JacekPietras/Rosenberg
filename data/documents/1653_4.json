@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++94B097AE-9CD8-48F4-B60D-6335B5377ECE&parent_id="
       ],
       "german": "Schreiben des Wolf Hartmann Kämmerer von Worms gen. von Dalberg in Höchst an Johann Hartmann von Rosenbach, Propst zum Stift Neumünster und Statthalter von Würzburg, bezüglich der kaiserlichen Kommission zur Abteilung Talheims und des Zehnten daselbst, welchen der Freiherr von Dalberg vom Hochstift Würzburg zum Lehen trägt",
-      "english": "Letter from Wolf Hartmann Kämmerer von Worms, called von Dalberg, in Höchst to Hans Hartmann von Rosenberg, provost of Stift Neumünster and governor of Würzburg, concerning the imperial commission for dividing Talheim and its tithe, which the Baron von Dalberg holds in fief from the Prince-Bishopric of Würzburg.",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Propst zu Stift"
-          ]
-        },
-        {
-          "place": "talheim"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Letter from Wolf Hartmann Kämmerer von Worms, called von Dalberg, in Höchst to Hans Hartmann von Rosenberg, provost of Stift Neumünster and governor of Würzburg, concerning the imperial commission for dividing Talheim and its tithe, which the Baron von Dalberg holds in fief from the Prince-Bishopric of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Propst zu Stift"
       ]
+    },
+    {
+      "place": "talheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

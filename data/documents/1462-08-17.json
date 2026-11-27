@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2185426",
       "german": "Mosbach: Vergleich zwischen Eckhart v. Gonsrat, Kommentur zu Mosbach und Magdalenen v. Rosenbach Meisterin und dem Konvent zu Höchst wegen des Zehntens auf dem Ortenberge von den Gütern, die Frau Walpurg v. Rheinstein in das Kloster zu Hoest gegeben hat\n\n(Vor-) Provenienzen: Mosbach, Johanniter",
       "english": "Mosbach: Settlement between Eckhart von Gonsrat, commander at Mosbach, and Magdalenen von Rosenbach, abbess, and the convent at Höchst concerning the tithe on Ortenberg from the properties that Frau Walpurg von Rheinstein gave to the monastery at Höchst.\n\n(Former) provenance: Mosbach, Hospitallers",
-      "mention": [
-        {
-          "place": "mosbach-st-juliana"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/156--24/hstad_a_1_nr_156--24_0001.jpg"
@@ -26,6 +18,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/156--24/hstad_a_1_nr_156--24_0003.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "mosbach-st-juliana"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

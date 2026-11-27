@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CH-StiASG/Urkunden/QQ1_C54/charter",
       "german": "Burkhart (von Krenkingen), Abt des Gotteshauses Unserer lieben Frau zu Einsiedeln (ze den Einsidellen), gibt die Margareta von Rossberg, Ehefrau des Heini Schmitz von Illnau (Ilnow), Leibeigene seines Gotteshauses, mit ihren Kindern dem Abt Ulrich II. von\n\nSiegel: 1 S.",
       "english": "Burkhart von Krenkingen, abbot of Our Lady’s monastery at Einsiedeln, gives Margaretha von Rosenberg, wife of Heini Schmitz of Illnau and a serf of his monastery, together with her children, to Abbot Ulrich II. Seal: 1 seal.",
-      "mention": [
-        {
-          "person": "Margaretha von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_14320118_QQ1-C54_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/StiASG_14320118_QQ1-C54_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Margaretha von Rosenberg"
     }
   ]
 }

@@ -7,27 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1786781",
       "german": "Erzbischof Berthold von Mainz verkündet einen Schiedsspruch im Streit zwischen Konz von Dottenheim und Arnold von Rosenberg um den Besitz des Schlosses Schüpf samt Zubehör.\n\nLaufzeit: 1493 Mai 9 (Donnerstag nach Cantate 1493)\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Archbishop Berthold of Mainz announces an arbitration ruling in the dispute between Kunz von Dottenheim and Arnold von Rosenberg over possession of Schloss Schüpf and its appurtenances.\n\nValidity: May 9, 1493 (Thursday after Cantate 1493)",
-      "mention": [
-        {
-          "person": "Erzbischof Berthold",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Kunz von Dottenheim"
-        },
-        {
-          "place": "oberschuepf-castle"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "was party to a dispute with Kunz von Dottenheim over possession of Schloss Schüpf and its appurtenances, decided by Archbishop Berthold of Mainz."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786781%2F04_0001786781_0001_4-1786781-1.jpg"
@@ -51,6 +30,27 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786781%2F04_0001786781_0007_4-1786781-7.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "was party to a dispute with Kunz von Dottenheim over possession of Schloss Schüpf and its appurtenances, decided by Archbishop Berthold of Mainz."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Berthold",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Kunz von Dottenheim"
+    },
+    {
+      "place": "oberschuepf-castle"
     }
   ]
 }

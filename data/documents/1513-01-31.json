@@ -6,19 +6,19 @@
       "source": "ISG FFM, H.06.09, 2093",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10279974",
       "german": "31.01.1513: Eberhard, Graf zu Königstein und Dietz, bittet den Rat zu Frankfurt, Wygell, Diener des Seivfridt von Rossenberg, ohne peinliche Strafe aus der Haft zu entlassen, da er von dem erschlagenen Veltin provoziert worden sei. (Beh. Ausf.)\n\nSiegler: Eberhard, Graf zu Königstein und Dietz (aufgedrücktes Wachssiegel)",
-      "english": "Eberhard, Graf zu Königstein und Dietz, asks the council of Frankfurt to release Wygell, servant of Siegfried von Rosenberg, from custody without corporal punishment, since he had been provoked by the slain Veltin. (Official copy.)\n\nSeal: Eberhard, Graf zu Königstein und Dietz (seal impressed in wax).",
-      "mention": [
-        {
-          "person": "Siegfried von Rosenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Wygell",
-          "type": "generic",
-          "content": "served Seivfridt von Rosenberg."
-        }
-      ]
+      "english": "Eberhard, Graf zu Königstein und Dietz, asks the council of Frankfurt to release Wygell, servant of Siegfried von Rosenberg, from custody without corporal punishment, since he had been provoked by the slain Veltin. (Official copy.)\n\nSeal: Eberhard, Graf zu Königstein und Dietz (seal impressed in wax)."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wygell",
+      "type": "generic",
+      "content": "served Seivfridt von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Siegfried von Rosenberg"
     }
   ]
 }

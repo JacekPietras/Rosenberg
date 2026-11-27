@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++2BFED6FE-67C2-4F68-9FA4-877494A122CC&parent_id="
       ],
       "german": "Verteidigungsschrift des Ritters Albrecht von Rosenberg an den Kaiser gegen die vom Kurfürsten von Sachsen und dem Fürstbischof von Würzburg erhobenen schwerwiegenden Vorwürfe insbesondere im Zusammenhang mit den Grumbachschen Händeln\n\nEnthält-/Darin-Vermerke: Enthält auch: verschiedene beigeheftete Schriftstücke aus den Jahren 1553-1564 (Abschriften)",
-      "english": "Defense submitted by Albrecht von Rosenberg, Ritter, to the emperor against the serious accusations brought by the Elector of Saxony and the Prince-Bishop of Würzburg, particularly in connection with the Grumbach disputes.\n\nContains: Various attached documents from 1553–1564 (copies).",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "grumbach"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Defense submitted by Albrecht von Rosenberg, Ritter, to the emperor against the serious accusations brought by the Elector of Saxony and the Prince-Bishop of Würzburg, particularly in connection with the Grumbach disputes.\n\nContains: Various attached documents from 1553–1564 (copies)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "grumbach"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

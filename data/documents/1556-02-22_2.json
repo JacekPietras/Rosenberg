@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B10FA696-7F11-42AF-A460-E652F2D32BAD&parent_id="
       ],
       "german": "Schadlosbrief des Landgrafen Ludwig Heinrich von Leuchtenberg für den Amtmann zu Grünsfeld, Rochius von (...), über eine von diesem dem Ritter Albrecht von Rosenberg abgetretene Schuld.\nMitbürgen: die drei Brüder Reichhart, Domherr zu Würzburg, Konrad und Reinhard",
-      "english": "Letter of indemnity from Landgrave Ludwig Heinrich of Leuchtenberg for the bailiff at Grünsfeld, Rochius von (...), concerning a debt that the latter had assigned to Albrecht von Rosenberg, Ritter. Co-sureties: the three brothers Reichhart, canon of Würzburg, Konrad, and Reinhard.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "grunsfeld"
-        },
-        {
-          "person": "Ludwig Heinrich",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Letter of indemnity from Landgrave Ludwig Heinrich of Leuchtenberg for the bailiff at Grünsfeld, Rochius von (...), concerning a debt that the latter had assigned to Albrecht von Rosenberg, Ritter. Co-sureties: the three brothers Reichhart, canon of Würzburg, Konrad, and Reinhard."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "place": "grunsfeld"
+    },
+    {
+      "person": "Ludwig Heinrich",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

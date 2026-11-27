@@ -7,20 +7,6 @@
       "url": "https://www.archive.nrw.de/archivsuche?link=VERZEICHUNGSEINHEIT-A92x46635079383850020250319072325283",
       "german": "Auszug aus dem Testament des Hofmedikus Dr. Johan Friedrich Travelman.\n\nDer Auszug betrifft die Stiftung zweier Stipendien an der Universität Mainz und Bericht der Testamentsvollstrecker Philipp Wolff von Rosenbach u. Bernhard Fraisbach an den Erzbischof Wolfgang von Mainz betr. den Gotfrid Travelman, der zu der Stiftung nicht qualifiziert ist, wenn auch der Vater des Stifters Gotthard Travelman von den Münsterschen Travelmans abstammt. Der Erzbischof teilt dem Rat Münster, der sich für Gotfrid Tr. verwandt hatte, den Inhalt des Berichts vom 7. Juni 1599 mit.",
       "english": "Extract from the will of the court physician Dr. Johan Friedrich Travelman. It concerns the foundation of two scholarships at the University of Mainz and a report by the executors, Philipp Wolf von Rosenberg and Bernhard Fraisbach, to Archbishop Wolfgang of Mainz about Gotfrid Travelman, who does not qualify for the foundation, although the founder’s father, Gotthard Travelman, descended from the Münster Travelmans. The archbishop informs the Münster council, which had interceded for Gotfrid as a relative, of the report dated June 7, 1599.",
-      "mention": [
-        {
-          "person": "Erzbischof Wolfgang",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Philipp Wolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.stadt-muenster.de/archiv-nrw/Archive-Stadt-Muenster/B-Testa/B-Testa_I%20381/B-Testa_I%20381_1.jpg/full/max/0/default.jpg"
@@ -44,6 +30,20 @@
           "src": "https://www.stadt-muenster.de/archiv-nrw/Archive-Stadt-Muenster/B-Testa/B-Testa_I%20381/B-Testa_I%20381_7.jpg/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Wolfgang",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Philipp Wolf von Rosenberg"
     }
   ]
 }

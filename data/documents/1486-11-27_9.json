@@ -7,29 +7,29 @@
       "source": "[RI XIII] H. 7 n. 718",
       "url": "https://www.regesta-imperii.de/id/1486-11-27_3_0_13_7_0_11885_718",
       "german": "K. F. verhängt die Reichsacht über Jörg, Arnold und Friedrich von Rosenberg und befiehlt Beistand zugunsten Bf. Rudolfs von Würzburg.",
-      "english": "King Friedrich imposes the imperial ban on Jörg, Arnold, and Friedrich von Rosenberg and orders assistance in favor of Bishop Rudolf of Würzburg.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "King Friedrich imposes the imperial ban on Jörg, Arnold, and Friedrich von Rosenberg and orders assistance in favor of Bishop Rudolf of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
     }
   ]

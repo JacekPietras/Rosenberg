@@ -11,36 +11,6 @@
       ],
       "german": "Eberhard von Rosenberg zu Boxberg (Boxberck) beurkundet, daß er Heinrich Hotz zu Apfelbach (Appfelbach) genannte Einkünfte von einem Gut in der Gemarkung Apfelbach, das früher einmal Seibott Butz inne gehabt hatte, um 26 Gulden verkauft hat. Eberhard von Rosenberg zu Boxberg",
       "english": "Eberhard von Rosenberg zu Boxberg documented that he sold the income of an estate in the Apfelbach district, formerly owned by Seibott Butz, to Heinrich Hotz zu Apfelbach for 26 guilders. Eberhard von Rosenberg zu Boxberg",
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sold revenues from an estate in the Apfelbach district to Heinrich Hotz zu Apfelbach."
-        },
-        {
-          "person": "Heinrich Hotz",
-          "personTitle": [
-            "zu Apfelbach"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Seibott Butz",
-          "type": "generic",
-          "content": "had formerly held the estate in the Apfelbach district."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sealed the charter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5249&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005249%2Ftitlaufn_0001866150%2F02_0001866150_0003_2-1866150-3.jpg"
@@ -50,6 +20,36 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sold revenues from an estate in the Apfelbach district to Heinrich Hotz zu Apfelbach."
+    },
+    {
+      "person": "Heinrich Hotz",
+      "personTitle": [
+        "zu Apfelbach"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Seibott Butz",
+      "type": "generic",
+      "content": "had formerly held the estate in the Apfelbach district."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sealed the charter."
     }
   ]
 }

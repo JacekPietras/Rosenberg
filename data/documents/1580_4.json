@@ -6,25 +6,25 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 751",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-75688",
       "german": "Vertrag zwischen Sigmund Truchseß und Baldersheim zu Aub und Conrad von Rosenberg d.J. zu Gnötzheim über den Schaftrieb und die Jagensgerechtigkeiten auf der Markung Rodheim.\n\nLaufzeit: 1580\n\nUmfang: 1 Schr., Ausf.",
-      "english": "Treaty between Sigmund Truchseß und Baldersheim zu Aub and Konrad von Rosenberg the Younger zu Gnötzheim concerning sheep grazing and hunting rights in the Rodheim district.\n\nDates: 1580\n\nExtent: 1 document, original.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "place": "baldersheim"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere",
-            "zu Gnötzheim"
-          ]
-        },
-        {
-          "person": "Siegmund Truchsess"
-        }
+      "english": "Treaty between Sigmund Truchseß und Baldersheim zu Aub and Konrad von Rosenberg the Younger zu Gnötzheim concerning sheep grazing and hunting rights in the Rodheim district.\n\nDates: 1580\n\nExtent: 1 document, original."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "place": "baldersheim"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere",
+        "zu Gnötzheim"
       ]
+    },
+    {
+      "person": "Siegmund Truchsess"
     }
   ]
 }

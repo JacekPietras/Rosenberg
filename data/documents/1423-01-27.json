@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199563",
       "german": "Agnes Kreyßin, Witwe des Heinrich von Sickingen, Hans Truchseß von Baldersheim und Kunz von Rosenberg zu Bartenstein tauschen mit Graf Johann von Wertheim ihre Eigenleute zu Unterwittighausen gegen die des Grafen zu Röttingen.\n\nLaufzeit: 1423 Januar 27 (Mi v. Lichtmeß)\n\nSiegelbeschreibung: 3 Siegel\n\nVermerke: Rückvermerk: Wechselbr. Nro. 15",
       "english": "Agnes Kreyßin, widow of Heinrich von Sickingen, Hans Truchseß von Baldersheim, and Kunz von Rosenberg zu Bartenstein exchange their serfs at Unterwittighausen with Count Johann von Wertheim for the count's serfs at Röttingen.\n\nDate: 27 January 1423 (Wednesday before Candlemas)\n\nSeal description: 3 seals\n\nEndorsement on the back: “Exchange charter No. 15”",
-      "mention": [
-        {
-          "person": "Hans Truchsess von Baldersheim"
-        },
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Heinrich von Sickingen"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "roettingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199563%2F07_0000199563_0001_7-199563-1.jpg"
@@ -38,6 +15,29 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199563%2F07_0000199563_0002_7-199563-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Truchsess von Baldersheim"
+    },
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "person": "Heinrich von Sickingen"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "roettingen"
     }
   ]
 }

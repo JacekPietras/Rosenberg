@@ -10,27 +10,27 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1387_III_11/charter"
       ],
       "german": "Nicolaus Puchnik Official der erzbischöflichen Curie zu Prag und der Pfarrer Wenzel von Cernitz als Delegaten des Erzbischofs Johann von Prag untersuchen und genehmigen die Wahl des Abtes Arnold von Goldenkron.\n\nGobelinus abbas Sanctae Coronae ,a. 1384. ad instantiam conventus auctoritate abbatis Morimundensis, habentis auctoritate capituli generalis potestatem monasteria in Alemanniae partibus visitandi et reformandi, et Ebracensis Ottonis 1 per delegatum magistrum Conradum de Ebraco religiosum fuit exauthoratus‘ - propter vitam inordinatam ut dicitur. In praesentia fratris Conradi delegati abbatum Morimundensis et Ebracensis et abbatis Pomucensis Arnoldus eligitur eodem anno, Gobelinus autem videtur ,ad initium anni 1387. commissionem ab Urbano VI. pontifice maximo ad Joannem archiepiscopum Pragensem impetrasse, ubi jubebatur archiepiscopo, depositionem Gobelini et electionem Arnoldi abbatum, an sint legitimae, judicialiter cognoscere, quod et factum 11. Martii 2 anni praefati 1387. in monasterio Sanctae Coronae in capella abbatiali, ubi delegati archiepiscopi Nicolaus Puchnik officialis eiusdem et Wenceslaus plebanus Czernicensis ad recipiendum et examinandum testes specialiter deputati existentes, Arnoldum abbatem in persona propria suo et conventus sui nomine, Gobelinum vero per procuratorem Arnoldum quendam nomine praefati Gobelini audierunt ac abbatem Arnoldum (producentem literas 1 o suae electionis per fratres; 2 o commissionis datae abbati Ebracensi Ottoni ab abbate Morimundensi visitandi et reformandi monasteria quaedam in Alemanniae partibus; 3 o instrumentum publicum per notarios publicos distinctum duplex; 4 o tandem literas generosi domini Joannis de Rosenberg) absolverunt, Gobelino exploso‘.",
-      "english": "Nicolaus Puchnik, official of the archiepiscopal court at Prague, and the parish priest Wenzel of Cernitz, as delegates of Archbishop Johann of Prague, investigate and approve the election of Abbot Arnold of Goldenkron.\n\nGobelinus, abbot of Goldenkron, was deposed in 1384 at the convent’s request, under the authority of the abbot of Morimond, who by authority of the General Chapter had power to visit and reform monasteries in the German lands, and of Otto of Ebrach, acting through his delegate Master Conrad of Ebrach, on account, it is said, of his disorderly life. In the same year Arnold was elected in the presence of Brother Conrad, delegate of the abbots of Morimond and Ebrach, and the abbot of Pomuk. Gobelinus appears to have obtained from Pope Urban VI, at the beginning of 1387, a commission to Archbishop Johann of Prague, ordering him judicially to determine whether Gobelinus’s deposition and Arnold’s election as abbots were lawful. This was done on 11 March 1387 at Goldenkron Monastery, in the abbot’s chapel. The archbishop’s delegates, Nicolaus Puchnik, his official, and Wenceslaus, parish priest of Czernice, had been specially appointed to receive and examine witnesses. They heard Abbot Arnold in person on his own behalf and that of his convent, and Gobelinus through an attorney named Arnold. Arnold produced documents: first, his election by the brothers; second, the commission given by the abbot of Morimond to Abbot Otto of Ebrach to visit and reform certain monasteries in the German lands; third, two separate public instruments drawn up by public notaries; and finally, letters of the noble Lord Hans von Rosenberg. They acquitted Abbot Arnold and rejected Gobelinus.",
-      "mention": [
-        {
-          "place": "ebrach"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Konrad of Ebrach"
-        },
-        {
-          "person": "Otto",
-          "personTitle": [
-            "Abt zu Ebrach"
-          ]
-        },
-        {
-          "person": "Otto of Ebrach"
-        }
+      "english": "Nicolaus Puchnik, official of the archiepiscopal court at Prague, and the parish priest Wenzel of Cernitz, as delegates of Archbishop Johann of Prague, investigate and approve the election of Abbot Arnold of Goldenkron.\n\nGobelinus, abbot of Goldenkron, was deposed in 1384 at the convent’s request, under the authority of the abbot of Morimond, who by authority of the General Chapter had power to visit and reform monasteries in the German lands, and of Otto of Ebrach, acting through his delegate Master Conrad of Ebrach, on account, it is said, of his disorderly life. In the same year Arnold was elected in the presence of Brother Conrad, delegate of the abbots of Morimond and Ebrach, and the abbot of Pomuk. Gobelinus appears to have obtained from Pope Urban VI, at the beginning of 1387, a commission to Archbishop Johann of Prague, ordering him judicially to determine whether Gobelinus’s deposition and Arnold’s election as abbots were lawful. This was done on 11 March 1387 at Goldenkron Monastery, in the abbot’s chapel. The archbishop’s delegates, Nicolaus Puchnik, his official, and Wenceslaus, parish priest of Czernice, had been specially appointed to receive and examine witnesses. They heard Abbot Arnold in person on his own behalf and that of his convent, and Gobelinus through an attorney named Arnold. Arnold produced documents: first, his election by the brothers; second, the commission given by the abbot of Morimond to Abbot Otto of Ebrach to visit and reform certain monasteries in the German lands; third, two separate public instruments drawn up by public notaries; and finally, letters of the noble Lord Hans von Rosenberg. They acquitted Abbot Arnold and rejected Gobelinus."
+    }
+  ],
+  "mention": [
+    {
+      "place": "ebrach"
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Konrad of Ebrach"
+    },
+    {
+      "person": "Otto",
+      "personTitle": [
+        "Abt zu Ebrach"
       ]
+    },
+    {
+      "person": "Otto of Ebrach"
     }
   ]
 }

@@ -7,20 +7,20 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 3771",
       "url": "https://www.regesta-imperii.de/id/d1f732b8-e873-4a14-b70a-f8ce86c5d44b",
       "german": "erklärt, dass Else von Seckendorf Conrads von Rosenberg, vitztums zu Amberg frau, falls sie\n\nihren mann überlebe in der feste und dem dorfe Mure leibzucht und nahrung haben solle, Karlsr. Copb. 464,118.",
-      "english": "He declares that, should Elisabeth von Seckendorf, wife of Konrad von Rosenberg, Viztum zu Amberg, outlive her husband, she is to have a life interest and maintenance in the fortress and village of Mure. Karlsruhe copybook 464, fol. 118.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "person": "Elisabeth von Seckendorf"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ]
-        }
+      "english": "He declares that, should Elisabeth von Seckendorf, wife of Konrad von Rosenberg, Viztum zu Amberg, outlive her husband, she is to have a life interest and maintenance in the fortress and village of Mure. Karlsruhe copybook 464, fol. 118."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "person": "Elisabeth von Seckendorf"
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
       ]
     }
   ]

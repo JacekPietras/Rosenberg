@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk80/539/charter",
       "german": "Fulda. - Adalbert [von Harstall], Abt zu Fulda, verleiht Schackau, Eckweisbach etc. an Karl Joseph von Rosenbach. Es folgen nähere Bestimmungen.\n\nSiegler: Aussteller\n\nSiegel: Siegel ab und verloren Aussteller",
       "english": "Fulda. Adalbert [von Harstall], Abbot of Fulda, grants Schackau, Eckweisbach, and other places to Karl Joseph von Rosenbach. Further provisions follow.\n\nSealer: Issuer.\n\nSeal: The issuer’s seal has detached and is lost.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20539%20Vorderseite%20%281789%20Juni%2017%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20539%20Rueckseite%20%281789%20Juni%2017%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

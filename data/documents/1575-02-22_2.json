@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B4FED148-05CE-471B-AEFA-A6196BDD8BB4&parent_id="
       ],
       "german": "Sebastian von Crailsheim zu Morstein (Stadt Gerabronn, LK Schwäbisch Hall), fürstbischöflich würzburgischer Rat, leiht von Philipp Jakob von und zu Rossenberg, Konrad Geyer von Giebelstadt, Valentin von Berlichingen 3000 fl (Schuldbrief).\n\nVermerke: Registraturvermerk: Nr. V, No. 64, 20, Lit. V.",
-      "english": "Sebastian von Crailsheim zu Morstein (town of Gerabronn, Schwäbisch Hall district), councillor to the Prince-Bishop of Würzburg, borrows 3,000 florins from Philipp Jakob von und zu Rossenberg, Konrad Geyer von Giebelstadt, and Valentin von Berlichingen (debt instrument).\n\nNotes: Registry note: No. V, No. 64, 20, Lit. V.",
-      "mention": [
-        {
-          "person": "Konrad Geyer von Giebelstadt"
-        },
-        {
-          "person": "Philipp Jakob von Rosenberg",
-          "personTitle": [
-            "zu Rosenberg"
-          ]
-        },
-        {
-          "person": "Valentin von Berlichingen"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Sebastian von Crailsheim zu Morstein (town of Gerabronn, Schwäbisch Hall district), councillor to the Prince-Bishop of Würzburg, borrows 3,000 florins from Philipp Jakob von und zu Rossenberg, Konrad Geyer von Giebelstadt, and Valentin von Berlichingen (debt instrument).\n\nNotes: Registry note: No. V, No. 64, 20, Lit. V."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad Geyer von Giebelstadt"
+    },
+    {
+      "person": "Philipp Jakob von Rosenberg",
+      "personTitle": [
+        "zu Rosenberg"
       ]
+    },
+    {
+      "person": "Valentin von Berlichingen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

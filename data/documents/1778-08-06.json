@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-299_St/charter",
       "german": "Der von der k. k. Landeshauptmannschaft bestellte Kommissar Franz Anton von Glaunach zu Katzenstein zeigt dem Grafen Vinzenz Orsini von Rosenberg, Landeshauptmann in Kärnten, als Besitzer der Herrschaft Welzenegg den zu dieser Herrschaft gekauften Reisjagd-Bezirk (das Erzstift Salzburg hat die Reisjagden in Kärnten versteigern lassen) an: von der Franzmühle nach dem Weg bei dem Jodl vorbei, dann nach dem Weg hinter dem Welzenegger \"Schachten\" auf die Landstraße, diese entlang bis St. Jakob, dann nach Pokeritsch in das Moos beim Herzog - der Pokeritscher Schachten wird Welzenegg zugeteilt - bis auf den Rababach, diesen entlang bis an die Landstraße, zurück herauf bis St. Jakob und die Welzenegger Brücke (Grenze zwischen Welzenegg und Harbach), dann die Glan aufwärts bis zur Franzmühle. Siegler und Unterschrift: Aussteller\n\nSiegel: 1 Sig. imp.",
       "english": "The commissioner Franz Anton von Glaunach zu Katzenstein, appointed by the Imperial and Royal provincial government, reports to Graf Vinzenz Orsini von Rosenberg, Landeshauptmann in Carinthia and owner of the lordship of Welzenegg, the Reisjagd district purchased for that lordship (the Archbishopric of Salzburg had auctioned the Reisjagd rights in Carinthia), with the following boundaries: from the Franzmühle past the road at the Jodl, then along the road behind the Welzenegg \"Schachten\" to the country road; along it to St. Jakob; then to Pokeritsch, into the marsh at the Herzog—the Pokeritsch Schachten is assigned to Welzenegg—then to the Rababach; along it to the country road; back up to St. Jakob and the Welzenegg bridge (the boundary between Welzenegg and Harbach); then upstream along the Glan to the Franzmühle. Sealer and signature: issuer\n\nSeal: 1 impressed seal.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_299_17780806_%282%29_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_299_17780806_%282%29_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -7,77 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129229",
       "german": "Kaufbrief des Arnold von Rosenberg zu Boxberg und seiner Frau Christine von Handschuhsheim über ihre Güter zu Hochhausen, Werbach, Niklashausen und Höhefeld, die sie der Carthause Grünau um 350 fl verkauft. Bürgen: Hans von Rosenberg der ältere, Ulrich von Rosenberg, Amtmann zu Krautheim, Eberhard von Rosenberg zu Jagstberg.\n\nSiegel 1) Arnolt von Rosenberg (verwischt), 2) Christina von Handschuhsheim (Doppelwappen, unkenntlich), 3) Eberhard von Rosenberg (vgl. U 48), 4) Helm mit Rose zwischen Schwanenhälsen",
       "english": "Purchase deed of Arnold von Rosenberg of Boxberg and his wife Christiana von Handschuhsheim for their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld, which they sold to the Grünau Carthusian Order for 350 florins. Guarantors: Hans von Rosenberg der Ältere, Ulrich von Rosenberg, Amtmann zu Krautheim, Eberhard von Rosenberg of Jagstberg  \n\nSeal 1) Arnold von Rosenberg (blurred), 2) Christiana von Handschuhsheim (double coat of arms, unrecognizable), 3) Eberhard von Rosenberg (cf. U 48), 4) Helmet with rose between swan necks",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "jagstberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "spouse",
-          "of": "Christiana von Handschuhsheim"
-        },
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sold their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld to the Grünau Charterhouse together with his wife Christine von Handschuhsheim."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "acted as a surety for the sale to the Grünau Charterhouse."
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Krautheim"
-          ],
-          "type": "generic",
-          "content": "acted as a surety for the sale to the Grünau Charterhouse."
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "personTitle": [
-            "zu Jagstberg"
-          ],
-          "type": "generic",
-          "content": "acted as a surety for the sale to the Grünau Charterhouse."
-        },
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "Christiana von Handschuhsheim",
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "personTitle": [
-            "zu Jagstberg"
-          ],
-          "type": "generic",
-          "content": "sealed the charter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129229%2F07_0000129229_0001_7-129229-1.jpg"
@@ -87,6 +16,77 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "zu Boxberg"
+      ],
+      "type": "spouse",
+      "of": "Christiana von Handschuhsheim"
+    },
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sold their properties in Hochhausen, Werbach, Niklashausen, and Höhefeld to the Grünau Charterhouse together with his wife Christine von Handschuhsheim."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "acted as a surety for the sale to the Grünau Charterhouse."
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Krautheim"
+      ],
+      "type": "generic",
+      "content": "acted as a surety for the sale to the Grünau Charterhouse."
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "personTitle": [
+        "zu Jagstberg"
+      ],
+      "type": "generic",
+      "content": "acted as a surety for the sale to the Grünau Charterhouse."
+    },
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "Christiana von Handschuhsheim",
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "personTitle": [
+        "zu Jagstberg"
+      ],
+      "type": "generic",
+      "content": "sealed the charter."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "jagstberg"
     }
   ]
 }

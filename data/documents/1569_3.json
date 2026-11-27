@@ -6,36 +6,36 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 8",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97884",
       "german": "Lehensangelegenheiten und Vasallendienste der Herren von Rosenberg.\n\nLaufzeit: 1569-1603, 1612, 1630-1631\n\nEnthält: Enthält: 1. Aufforderungen an die Herren von Rosenberg zur Teilname an Lehengerichten von: Bischof von Würzburg, 1570-1586;\nMarkgraf von Brandenburg-Ansbach, 1591-1603; Graf Wolfgang von Hohenlohe-Weikersheim, 1595; Graf Konrad von Castell, 1576;\n2. Aufforderungen an die Herren von Rosenberg zu Aufwartungen von: Bischof von Würzburg, 1589-1593; Markgraf von Brandenburg-Ansbach, 1591-1599, 1612; Grafen von Hohenlohe, 1591-1595;\n3. Gesuche der Herren von Rosenberg um Belehnungen mit ihren hohenlohischen Lehen bei Mannfällen, 1576-1582;\n4. Gesuch des Zaisolf von Rosenberg an Graf Eberhard von Hohenlohe-Waldenburg um Belehnung nach dem Tod des Grafen Ludwig Kasimir von Hohenlohe-Neuenstein, 1569;\n5. Gesuch des Albrecht Christoph von Rosenberg an Graf Georg Friedrich von Hohenlohe-Weikersheim um Belehnung nach dem Tod des Georg Sigmund von Rosenberg, 1630-1631;\n6. Gesuchte der Herren von Rosenberg an Graf Heinrich von Castell um Belehnung nach dem Tod Konrads d.Ä. von Rosenberg, 1582.\n\nUmfang: 1 Bd.",
-      "english": "Feudal affairs and vassal services of the von Rosenberg lords. Dates: 1569–1603, 1612, 1630–1631. Includes demands to attend feudal courts and render service; requests for enfeoffment with Hohenlohe fiefs after deaths; Zaisolph von Rosenberg's 1569 request to Count Eberhard von Hohenlohe-Waldenburg; Albrecht Christoph von Rosenberg's 1630–1631 request after Georg Siegmund von Rosenberg's death; and requests after the death of Konrad von Rosenberg der Ältere (1582). Extent: 1 volume.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Feudal affairs and vassal services of the von Rosenberg lords. Dates: 1569–1603, 1612, 1630–1631. Includes demands to attend feudal courts and render service; requests for enfeoffment with Hohenlohe fiefs after deaths; Zaisolph von Rosenberg's 1569 request to Count Eberhard von Hohenlohe-Waldenburg; Albrecht Christoph von Rosenberg's 1630–1631 request after Georg Siegmund von Rosenberg's death; and requests after the death of Konrad von Rosenberg der Ältere (1582). Extent: 1 volume."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "person": "Georg Siegmund von Rosenberg"
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

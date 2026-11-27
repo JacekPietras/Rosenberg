@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166689",
       "german": "Hans Keren, Bürger zu Würzburg, bekundet, dass ihm Graf Michael von Wertheim 1 Morgen Weingarten in der Sanderau zu Würzburg bei dem Siechenhaus, den sein Vater von Hans Mülich gekauft hatte, zu rechtem Mannlehen verliehen hat (Lehnsbrief inseriert).\n\nLaufzeit: 1506 Juli 5 (sonntags nach unser lieben frawen tag visitationis genant)\n\nSiegelbeschreibung: 1 Siegel, anhängend an Pergamentstreifen\n\nVermerke: Dorsualvermerk\n\nSiegler: Philipp von Uissigheim (Ussigkein), Vogt zu Wertheim (auf Bitten des Ausstellers)",
       "english": "Hans Keren, burgher of Würzburg, certifies that Michael von Wertheim, Graf, has granted him, as a proper man’s fief, one morgen of vineyard in the Sanderau in Würzburg, near the leper hospital; his father had bought it from Hans Mülich (the fief charter is inserted).\n\nTerm: 5 July 1506 (Sunday after the day of Our Lady called the Visitation)\n\nSeal description: One seal, pendant from a parchment strip.\n\nNotes: Dorsal note.\n\nSealer: Philipp von Uissigheim, Vogt zu Wertheim (at the issuer’s request)",
-      "mention": [
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Philipp von Uissigheim",
-          "personTitle": [
-            "Vogt zu Wertheim"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166689%2F07_0000166689_0001_7-166689-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166689%2F07_0000166689_0002_7-166689-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Philipp von Uissigheim",
+      "personTitle": [
+        "Vogt zu Wertheim"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

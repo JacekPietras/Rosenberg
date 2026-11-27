@@ -13,11 +13,6 @@
       ],
       "german": "Die Brüder Eberhard und Albrecht von Bürglen 1 und ihre Mutter schliessen mit den Brüdern Ulrich und Eberhard von Sax 2 als Mitinhaber der Burg Bürglen auf zehn Jahre einen Burgfrieden. Unter den Schiedsrichtern, die auch siegeln, . . . Růdolfen von Rosenberg 3 . . .\n\nSiegel: 8. Siegel leicht besch., Abb. 615.",
       "english": "The brothers Eberhard and Albrecht von Bürglen and their mother conclude a ten-year castle peace with the brothers Ulrich and Eberhard von Sax, co-owners of Bürglen Castle. Among the arbitrators, who also seal the agreement, is Rudolf von Rosenberg.\n\nSeal note: Seal 8 is slightly damaged; illustration 615.",
-      "mention": [
-        {
-          "person": "Rudolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StadtASG/Urkunden/StadtASG_13850508_StadtASG-BueA-13_r.jpg"
@@ -38,6 +33,11 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EChartularium_Siegel._%7EX._%7E615.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Rudolf von Rosenberg"
     }
   ]
 }

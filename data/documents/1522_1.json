@@ -13,18 +13,6 @@
       ],
       "german": "Entschädigungsforderungen des Johann Thomas von Rosenberg vom Schwäbischen Bund für die Geldforderungen seines Bruders Albrecht von Rosenberg",
       "english": "Compensation claims of Hans Thomas von Rosenberg against the Swabian League for the monetary claims of his brother Albrecht von Rosenberg",
-      "facts": [
-        {
-          "person": "Hans Thomas von Rosenberg",
-          "type": "generic",
-          "content": "sought compensation from the Swabian League for monetary claims belonging to his brother Albrecht von Rosenberg."
-        },
-        {
-          "person": "Hans Thomas von Rosenberg",
-          "type": "sibling",
-          "of": "Albrecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/r_510/00001.jpg"
@@ -57,6 +45,18 @@
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/r_510/00010.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Thomas von Rosenberg",
+      "type": "generic",
+      "content": "sought compensation from the Swabian League for monetary claims belonging to his brother Albrecht von Rosenberg."
+    },
+    {
+      "person": "Hans Thomas von Rosenberg",
+      "type": "sibling",
+      "of": "Albrecht von Rosenberg"
     }
   ]
 }

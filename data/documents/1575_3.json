@@ -6,25 +6,25 @@
       "source": "Staatsarchiv Ludwigsburg B 297 Bü 80",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2871888",
       "german": "Deutschmeister gegen die Brüder und Vettern (Hans Christoph, Conrad etc.) von Rosenberg zu Waldmannshofen, Gült des Spitals Mergentheim zu Bobstadt betr.\n\nLaufzeit: 1575-1584\n\nUmfang: 1 Bü",
-      "english": "German Masters regarding the brothers and cousins (Hans Christoph, Conrad etc.) von Rosenberg zu Waldmannshofen, revenue of the Mergentheim hospital concerning Bobstadt.\n\nPeriod: 1575-1584\n\nExtent: 1 file",
-      "mention": [
-        {
-          "place": "bobstadt"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the brothers and cousins von Rosenberg zu Waldmannshofen",
-          "type": "generic",
-          "content": "were opposed by the Teutonic Order in a dispute over the Mergentheim Hospital’s rent at Bobstadt."
-        }
-      ]
+      "english": "German Masters regarding the brothers and cousins (Hans Christoph, Conrad etc.) von Rosenberg zu Waldmannshofen, revenue of the Mergentheim hospital concerning Bobstadt.\n\nPeriod: 1575-1584\n\nExtent: 1 file"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the brothers and cousins von Rosenberg zu Waldmannshofen",
+      "type": "generic",
+      "content": "were opposed by the Teutonic Order in a dispute over the Mergentheim Hospital’s rent at Bobstadt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bobstadt"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

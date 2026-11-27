@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6d4c2e13-79dc-4e02-89f8-fb5e65740159&parent_id="
       ],
       "german": "Hieronymus Öfner an Albrecht von Adeltzheim. Gütlicher Vergleich im Streit zwischen Rothenburg und Zeisolf von Rosenberg.",
-      "english": "Hieronymus Öfner to Albrecht von Adelsheim. Amicable settlement in the dispute between Rothenburg and Zaisolph von Rosenberg.",
-      "mention": [
-        {
-          "person": "Albrecht von Adelsheim"
-        },
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably."
-        }
-      ]
+      "english": "Hieronymus Öfner to Albrecht von Adelsheim. Amicable settlement in the dispute between Rothenburg and Zaisolph von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was involved in a dispute with Rothenburg that Hieronymus Öfner helped settle amicably."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Adelsheim"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

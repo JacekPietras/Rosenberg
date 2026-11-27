@@ -9,32 +9,6 @@
       "summary": "Fürstenkorrespondenz (Mindensche Fehde und Ravensberger Angelegenheiten)\n\nDarin: Heinrich Herzog zu BRAUNSCHWEIG-LÜNEBURG: Streit mit Lübbecke; Tag zu Hagen mit Wilhelm von BERG, Elekten zu PADERBORN; Streit mit HILLEGUNDIS, Äbtissin zu Herford; Johann von HOYA, Bischof von HILDESHEIM: Sendung von Hilfstruppen; Schicksal des Elekten von PADERBORN; Erich Graf von HOYA: Sendung des Vogtes Johann ROSENBERG; Simon Edelherr zu LIPPE: Beraubung der Meierin zu BENNENTORP; Beraubung eines Bürgers zu BLOMBERG durch die von HÜCKESWAGEN (s. Sandow, Lippischer Kalender 1958, 104 ff.); Fehde mit Lubbert und Heinrich de Wend; Werner Edelherr zu LIPPE: Fehde der \"Kanne von LUDE\"; Otto von HOYA, Bischof von MÜNSTER: Gefangenhaltung des Hermann de BLAWE; Domkapitel und Stadt OSNABRÜCK: Zug vor ASCHEN; Kurt Graf von RIETBERG: Fehdesachen (Brüder von LINDEMANN); Konrad von d. RIETBERG, Domdechant zu KÖLN: Beraubung seines Knechtes auf dem SPARENBERGE; Johann Edelherr von RIETBERG: Freigabe eines Knechtes; Klas Graf von TECKLENBURG: Streit mit Heinrich Ledebur; Beraubung von Bürgern aus LINGEN; Plünderung der TECKLENBURGISCHEN Lande; Adolf Graf zu WALDECK: Sendung seines Sohnes; METTEL von WALDECK, Äbtissin von NEUENHERRSE: Zusammenkunft mit ihrem Bruder Heinrich; Gefangenschaft des Elekten von PADERBORN (s. Nr. 34)",
       "german": "[…] Minen vruntliken denst mit mynem grote to voren. leue here Ik bidde iu vruntliken\ndat gy louen willen Johanne Rosenberge mynem voghede bringere desses breues wes\nhe an iu werfft [?] to desser tijt van mynen weghen likerwijs offt Ik sulven by iu\nwere vnde mundliken mit iu redede vnde willen my dar an [?] to willen wesen\ndat wil Ik gerne tegen iu verdenen. Datum Stoltenouwe [?] mea [?] sub secreto\nErich van godes gnaden\nGreue to der Hoyen",
       "english": "[…] My friendly service, with my greeting beforehand. Dear lord, I kindly ask you that you be willing to believe Johann Rosenberg, my Vogt, bearer of this letter, in whatever he negotiates [?] with you at this time on my behalf, just as if I myself were with you and spoke with you in person. And if you are willing to oblige me in this [?], I will gladly deserve it from you. Given at Stolzenau [?] under my secret [seal] [?].\n\nErich, by the grace of God, Count of Hoya",
-      "facts": [
-        {
-          "person": "Hans Rosenberg",
-          "personTitle": [
-            "Vogt"
-          ],
-          "type": "generic",
-          "content": "served as Vogt of Erich von Hoya, Graf von Hoya."
-        },
-        {
-          "person": "Hans Rosenberg",
-          "personTitle": [
-            "Vogt"
-          ],
-          "type": "generic",
-          "content": "was the bearer of Erich von Hoya's letter to its addressee."
-        },
-        {
-          "person": "Hans Rosenberg",
-          "personTitle": [
-            "Vogt"
-          ],
-          "type": "generic",
-          "content": "was to negotiate with the addressee on behalf of Erich von Hoya."
-        }
-      ],
       "img": [
         {
           "src": "https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/LAV_NRW_R_AA_0030_00039_0001.jpg",
@@ -296,6 +270,32 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Rosenberg",
+      "personTitle": [
+        "Vogt"
+      ],
+      "type": "generic",
+      "content": "served as Vogt of Erich von Hoya, Graf von Hoya."
+    },
+    {
+      "person": "Hans Rosenberg",
+      "personTitle": [
+        "Vogt"
+      ],
+      "type": "generic",
+      "content": "was the bearer of Erich von Hoya's letter to its addressee."
+    },
+    {
+      "person": "Hans Rosenberg",
+      "personTitle": [
+        "Vogt"
+      ],
+      "type": "generic",
+      "content": "was to negotiate with the addressee on behalf of Erich von Hoya."
     }
   ]
 }

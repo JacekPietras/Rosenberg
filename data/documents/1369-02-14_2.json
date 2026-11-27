@@ -7,17 +7,17 @@
       "source": "[RIplus] Regg. Karl IV. n. 7141",
       "url": "https://www.regesta-imperii.de/id/c9ce5337-1a66-41de-9a5c-f8b07e9f7d64",
       "german": "Karl IV. empfiehlt Landgraf Ulrich von Leuchtenberg sein Amt der Stadt zu Rothenburg mit allem Nutzen und Zugehör, wie es Johann, dessen Bruder, vorher von ihm gehabt hat, den Bürgern von Rothenburg gebietend, dem Ulrich in allen Sachen, die das Amt berühren, zu gewarten.",
-      "english": "Charles IV entrusts Landgrave Ulrich of Leuchtenberg with his office in the town of Rothenburg, together with all its revenues and appurtenances, as his brother Johann had previously held it from him, and commands the citizens of Rothenburg to obey Ulrich in all matters concerning the office.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        },
-        {
-          "person": "Ulrich",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg"
-          ]
-        }
+      "english": "Charles IV entrusts Landgrave Ulrich of Leuchtenberg with his office in the town of Rothenburg, together with all its revenues and appurtenances, as his brother Johann had previously held it from him, and commands the citizens of Rothenburg to obey Ulrich in all matters concerning the office."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
+    },
+    {
+      "person": "Ulrich",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
       ]
     }
   ]

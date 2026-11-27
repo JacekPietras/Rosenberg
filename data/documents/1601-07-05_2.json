@@ -7,20 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3559867",
       "german": "Revers Adam Hektors von Rosenbach und seiner Brüder bezüglich der Belehnung mit einem Steinhaus in Berstadt und weiteren im Einzelnen aufgeführten Lehen durch Maximilian [III. Erzherzog von Vorderösterreich], kaiserlicher Kommissar des Klosters Fulda\n\nAdam Hektor, Johann Konrad und Johann (Hans) Dietrich von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Lankzendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Maximilian [III. Erzherzog von Vorderösterreich], kaiserlicher Kommissar des Klosters Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Johann (Hans) Dietrich von Rosenbach\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Acknowledgment by Adam Hektor von Rosenbach and his brothers concerning their enfeoffment with a stone house in Berstadt and other individually listed fiefs by Maximilian [III, Archduke of Further Austria], imperial commissioner of Fulda Abbey.\n\nAdam Hektor, Johann Konrad, and Hans Dietrich von Rosenberg confirm their enfeoffment by Maximilian [III, Archduke of Further Austria], imperial commissioner of Fulda Abbey, with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the revenue at Langsdorf (?) (Lankzendorff) [part of the municipality of Lich, Gießen district]. The fief charter is transcribed within. Seal announcement.\n\nFormal description: Original, parchment, pendant seal in wooden case\n\nSealer: Hans Dietrich von Rosenberg\n\nAdditional information: The acknowledgment has no date of its own, but refers to the date of the inserted document.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3331/00001.jpg"
@@ -29,6 +15,20 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3331/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

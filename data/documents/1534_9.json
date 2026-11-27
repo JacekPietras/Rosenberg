@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-189489",
       "german": "Vertrag zwischen Albrecht und Hans von Adelsheim und Hans von Berlichingen wegen Schrozberg; Siegel: Jörg von Rosenberg, Bernhard von Hartheim, Amtmann zu Krautheim, Wolf von Berlichingen, Albrecht von Adelsheim und Hans von Berlichingen.\n\nLaufzeit: 1534\n\nUmfang: 1 Urkunde, Pergament",
       "english": "Agreement between Albrecht and Hans von Adelsheim and Hans von Berlichingen concerning Schrozberg; seals: Georg von Rosenberg, Bernhard von Hartheim, Amtmann zu Krautheim, Wolf von Berlichingen, Albrecht von Adelsheim, and Hans von Berlichingen.\n\nTerm: 1534.\n\nExtent: 1 parchment charter.",
-      "mention": [
-        {
-          "person": "Albrecht von Adelsheim"
-        },
-        {
-          "person": "Bernhard von Hartheim",
-          "personTitle": [
-            "Amtmann zu Krautheim"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans von Adelsheim"
-        },
-        {
-          "person": "Hans von Berlichingen"
-        },
-        {
-          "person": "Wolf von Berlichingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189489%2F03_0000189489_0001_3-189489-1.jpg"
@@ -38,6 +15,29 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189489%2F03_0000189489_0002_3-189489-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Adelsheim"
+    },
+    {
+      "person": "Bernhard von Hartheim",
+      "personTitle": [
+        "Amtmann zu Krautheim"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans von Adelsheim"
+    },
+    {
+      "person": "Hans von Berlichingen"
+    },
+    {
+      "person": "Wolf von Berlichingen"
     }
   ]
 }

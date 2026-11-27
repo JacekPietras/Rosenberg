@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=576568",
       "german": "Revers Georg Adolf von Hettersdorf bezüglich der Belehnung mit einem Steinhaus in Berstadt und weiteren im Einzelnen aufgeführten Lehen durch Placidus [von Droste], Abt von Fulda\n\nGeorg Adolf von Hettersdorf (Hetterszdorff) bestätigt für die namentlich genannten Söhne des verstorbenen Franz Rudolf von Rosenbach die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Placidus [von Droste], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Aussteller\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Georg Adolf von Hettersdorf’s acknowledgment of the enfeoffment by Placidus [von Droste], Abbot of Fulda, with a stone house at Berstadt and other fiefs specified individually\n\nGeorg Adolf von Hettersdorf (Hetterszdorff) confirms, for the sons of the late Franz Rudolf von Rosenberg named in the document, the enfeoffment by Placidus [von Droste], Abbot of Fulda, with a stone house, two farms, and three Hufen of land at Berstadt (Berstatt) [district of the municipality of Wölfersheim, Wetterau district], as well as their share of the rent at Langsdorf (?) (Langendorff) [district of the municipality of Lich, Giessen district]. The charter of enfeoffment is inserted. A seal is announced.\n\nFormal description: Original, parchment, attached seal in a wooden capsule\n\nSeal bearer: Issuer\n\nAdditional information: The acknowledgment has no separate date of its own and instead refers to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3341/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3341/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

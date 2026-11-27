@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EAE26DA2-D8C1-466E-9AFC-EA730E571AA5&parent_id="
       ],
       "german": "Von Rosenberg gegen Mainz wegen strittiger Grenzen zwischen den Gemarkungen Hohenstadt und Helmesheimer Hof",
-      "english": "Von Rosenberg against Mainz over disputed boundaries between the Hohenstadt and Helmesheim Farm districts.",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Von Rosenberg against Mainz over disputed boundaries between the Hohenstadt and Helmesheim Farm districts."
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

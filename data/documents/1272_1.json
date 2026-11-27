@@ -8,14 +8,6 @@
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/792fa846-8228-41af-abfa-2630c4191b42/charter",
       "german": "1272. 19. März, Rosenberch. — Die Gebrüder Heinrich und Witko von Rosen berg schenken dem Abt und Convent des Klosters zu Hohenfurt das Paironats- recht über die Kirche zu Raabs in Niederösterreich.\n\nIn nomine sanete et individue trinitatis amen. Quoniam eorum que geruntur in tempore, obliuio solet memoriam resecare, necesse est, ea tam scripturarum quam testium munimine perhennari. Igitur nos Hanricus et Witko fratres de Rosenberch confkemur et constare volumus presencium inspectoribus vniuersis, quod nos de consensu et expressa voluntate matris nostre dilecte domine Hedewigis vene- rabili patri abbati de Hohenivrt et conuentui eiusdem loci ordinis Cysterciensis, quem conventum pater noster dominus Vocho bone memorie in honore beate et gloriose Virginia Marie inchoauit et ex nouella plantacione pro sue suorumque progenitorum et heredum salute et animarum remedio fundauit, quorum defectui condolentes et pura mente profectui mudis omnibus intendentes ius patronatos ecclesie in Rakz Patauiensis dyocesis quod ad nos ex vero patrimonio pertinebat, donantes resignauimus fauorabiliter atque plane. Et in hac parte cessimus in perpetuum iuri nostro excepcione quelibet 26 (sic) pretermissa, vt conferendi velud nos habuimus prefatam eccle- siam, plenam et Hberam habeant potestatem. Vt autem supradicta robur optineant firmitatis presentem litteram in euisdens (sic) testi- monium scribi iussimus et sigilii nostri munimine roborari cum testi- bus subnotatis, qui sunt: Dominus Werenhardus et Hanricus fratres de Schowenberg, dominus Vlricus de Nouadomo, dominus Hoyerus de Klocot, dominus Zewis, dominus Witigo, Wocho lili i domini Bu- dewoy de Krummenow, Hanricus et Wocho domini Witigonis filii de Krummenow, dominus Albertus de Porsow, dominus Benysius frater suus, dominus Hanricus de Hvritzh, dominus Benysius de Horach et fratres sui Johannes Johan Bohuzlaus, dominus Zwate- mirus miles, dominus Predota frater suus, dominus Benata purcra- uius et frater eius Vlricus de Wisle, Ozle et frater suus Bezpri, Kunas de Strizendorf, et alii quam plures. Datum et actum in Rosen- berch anno gracie domini millesimo ducentesimo septuagesimo se cundo xinj° Kalendas Aprilis. 1. Etwas beschädigtes, an gelb-weisser Seide hängendes Siegel in weissem Wachs. Vergl. XXII. 2. Kurz Ölt. und Alb. II, p. 178, n. 4. Mlliauer p. 62, n. 9.",
       "english": "Heinrich von Rosenberg and Witko von Rosenberg, give the abbot and convent of Hohenfurt the right of patronage over the church at Raabs in the diocese of Passau. With the consent of their mother Hedwig, they relinquish forever the patronage that belonged to them by inheritance, granting the monastery full and free power to appoint to the church. Their father, Woko, had founded the monastery for the salvation of his ancestors and heirs. Done at Rosenberg on 20 March 1272.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000039.png"
@@ -24,6 +16,14 @@
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000040.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

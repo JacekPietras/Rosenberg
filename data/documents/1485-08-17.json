@@ -7,39 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1811310",
       "german": "Kurfürst Philipp von der Pfalz verkündet den Spruch seines Hofgerichts in der Streitsache zwischen dem Kloster Hirsau und der Gemeinde Bauerbach. Streitpunkte betreffen u. a. eine Verschreibung des Konvents über 300 Gulden Ungarnhilfe an Kaiser Friedrich III., Frondienste, Huldigung, Abgaben von Fastnachtshühnern, den Verkauf von Gütern des Klosters sowie weitere Gefälle und Gerechtsame der Vogtei. Verwiesen wird dabei u.a. auf Verträge zwischen dem verstorbenen Abt Bernhard von Hirsau und der Gemeinde und Rechtsverhältnisse unter Peter von Talheim. Richter und Räte des Pfalzgrafen in der Angelegenheit sind: Graf Bernhard von Leiningen, Hofrichter; Friedrich von Fleckenstein, Ritter; Doktor Konrad Aberlin; Dieter von Handschuhsheim; Hans von Stetten; Hans von Rosenberg zu Uissigheim; Blicker von Gemmingen und Eucharius von Hirschhorn, Lizenziat.\n\nLaufzeit: 1485 August 17 (uff mitwoch nach unser lieben frauwen dag assumptionis)\n\nSiegler: Kurfürst Philipp von der Pfalz (Hofgerichtssiegel)\n\nSiegelbeschreibung: anhängend, schwer beschädigt\n\nVermerke: Dorsalnotiz u.a.: \"Ein urteyl brieff gangen zu Heydelberg vor dem hoff gericht, lutet wie die von Buerbach sollen geben die keyserlich schatzung und die vogt hunr, item von nüen globen und schweren abbt Blasio zu Hyrsaw\".",
       "english": "Elector Philipp of the Palatinate announces the ruling of his court in the dispute between Hirsau monastery and the community of Bauerbach. Disputed matters include, among others: a pledge by the convent for 300 guilders as Hungarian aid to Emperor Friedrich III; corvée services; homage; payments of Shrove Tuesday chickens; the sale of monastery properties; and other revenues and rights of the bailiwick. Reference is made, among other things, to contracts between the deceased Abt Bernhard of Hirsau and the community, and legal relations involving Peter von Talheim. The judges and councillors of the Palatine Count in this matter are: Count Bernhard von Leiningen, chief judge; Friedrich von Fleckenstein, knight; Doctor Konrad Aberlin; Diether von Handschuhsheim; Hans von Stetten; Hans von Rosenberg of Uissigheim; Blicker von Gemmingen; and Eucharius von Hirschhorn, licentiate.\n\nDuration: 1485 August 17 (on Wednesday after Our Lady's Day of the Assumption)\n\nSeal: Elector Philipp of the Palatinate (court seal)",
-      "mention": [
-        {
-          "person": "Diether von Handschuhsheim"
-        },
-        {
-          "person": "Eucharius von Hirschhorn"
-        },
-        {
-          "person": "Friedrich von Fleckenstein",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "gemmingen"
-        },
-        {
-          "person": "Peter von Talheim"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "zu Uissigheim"
-          ],
-          "type": "generic",
-          "content": "served among the judges and councillors deciding the dispute between Hirsau monastery and the community of Bauerbach."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001811310%2F04_0001811310_0001_4-1811310-1.jpg"
@@ -54,6 +21,39 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=775024&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000775024%2Ftitlaufn_0001811310%2F04_0001811310_0004_4-1811310-4.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "zu Uissigheim"
+      ],
+      "type": "generic",
+      "content": "served among the judges and councillors deciding the dispute between Hirsau monastery and the community of Bauerbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Diether von Handschuhsheim"
+    },
+    {
+      "person": "Eucharius von Hirschhorn"
+    },
+    {
+      "person": "Friedrich von Fleckenstein",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "gemmingen"
+    },
+    {
+      "person": "Peter von Talheim"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

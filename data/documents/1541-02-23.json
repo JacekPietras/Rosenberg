@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9e541a61-19a2-453c-bbae-e81ed304e1e7&parent_id="
       ],
       "german": "Ritter Casimir v. Seckendorf Aberdar zu Kreßberg bekennt, seinen Schwägern, den Brüdern Wolf, Christoph, Ludwig und Zaysolf v. Rosenberg zu Haldermanstätten, 1000 fl rh zu schulden, die er nächsten Tag Kathedra Petri [1542 Febr. 22] zusammen mit 50 fl rh Zins in Wirtzburgk oder Ochssenfurt zurückzahlen will. Ort des Einlagers: Wirtzburgk oder Ochssenfurt. - B: 1. Endres vom Stain zum Alten Stain, Amtmann zu Raueneck, 2. Wolf v. Craylßhaim, Amtmann zu Kitzingen und Steffanßberg, 3. Friedrich v. Lenterßhaim zu Neuen Mur, Amtmann zur Neuenstatt an der Aysch, 4. Pauls v. Seckendorff Hohenecker zu Triesdorff, 5. Wolf v. Kindßberg zu Weyltingen, 6. Arnold v. Seckendorff, Amtmann zu Wembdingen. - S: 1. A, 2. B 1, 3. B 2, 4. B 3, 5. B 4, 6. B 5, 7. B 6.",
-      "english": "Ritter Casimir von Seckendorf Aberdar zu Kreßberg acknowledges that he owes his brothers-in-law, the brothers Wolf, Christoph, Ludwig and Zaysolf von Rosenberg zu Haldermanstätten, 1,000 Rhenish gulden, which he will repay together with 50 Rhenish gulden interest on the coming feast of the Chair of Saint Peter [22 February 1542] in Würzburg or Ochsenfurt. Place of lodging as security: Würzburg or Ochsenfurt. Bondsmen: 1. Endres vom Stein zum Alten Stein, Amtmann zu Raueneck; 2. Wolf von Crailsheim, Amtmann zu Kitzingen and Steffansberg; 3. Friedrich von Lenterßheim zu Neuen Mur, Amtmann zu Neustadt an der Aisch; 4. Pauls von Seckendorf Hohenecker zu Triesdorf; 5. Wolf von Kindsberg zu Weiltingen; 6. Arnold von Seckendorf, Amtmann zu Wemding. Seals: 1. borrower; 2. bondsman 1; 3. bondsman 2; 4. bondsman 3; 5. bondsman 4; 6. bondsman 5; 7. bondsman 6.",
-      "mention": [
-        {
-          "person": "Arnold von Seckendorf",
-          "personTitle": [
-            "Amtmann zu Wemding"
-          ]
-        },
-        {
-          "person": "Casimir von Seckendorf",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Pauls von Seckendorf"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Ritter Casimir von Seckendorf Aberdar zu Kreßberg acknowledges that he owes his brothers-in-law, the brothers Wolf, Christoph, Ludwig and Zaysolf von Rosenberg zu Haldermanstätten, 1,000 Rhenish gulden, which he will repay together with 50 Rhenish gulden interest on the coming feast of the Chair of Saint Peter [22 February 1542] in Würzburg or Ochsenfurt. Place of lodging as security: Würzburg or Ochsenfurt. Bondsmen: 1. Endres vom Stein zum Alten Stein, Amtmann zu Raueneck; 2. Wolf von Crailsheim, Amtmann zu Kitzingen and Steffansberg; 3. Friedrich von Lenterßheim zu Neuen Mur, Amtmann zu Neustadt an der Aisch; 4. Pauls von Seckendorf Hohenecker zu Triesdorf; 5. Wolf von Kindsberg zu Weiltingen; 6. Arnold von Seckendorf, Amtmann zu Wemding. Seals: 1. borrower; 2. bondsman 1; 3. bondsman 2; 4. bondsman 3; 5. bondsman 4; 6. bondsman 5; 7. bondsman 6."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Seckendorf",
+      "personTitle": [
+        "Amtmann zu Wemding"
       ]
+    },
+    {
+      "person": "Casimir von Seckendorf",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Pauls von Seckendorf"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

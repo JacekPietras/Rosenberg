@@ -6,17 +6,17 @@
       "source": "Regesta Boica 9, 4 Oct. 1367",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
       "german": "Conrad von Rosenberg Vitztum zu Amberg bestätigt dass der Abt Ulreich von Prüffing Wilhelm den Raydenbucher mit den Rechten anbehabt hat dass zu Art kein Urfar über die Donau seyn soll, sondern zu Prüfling, wesshalb denn genanntes Kloster von Wilhelm dem Raydenbucher ungehindert bleiben soll. D. eod. d",
-      "english": "Konrad von Rosenberg, Vizedom zu Amberg, confirms that Abbot Ulrich of Prüffing prevailed at law against Wilhelm Raydenbucher: there is to be no ferry across the Danube at Art, but at Prüfling, and the monastery is to remain unhindered by Wilhelm Raydenbucher. Given on the same day.",
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "confirmed that Abbot Ulrich of Prüffing prevailed at law against Wilhelm Raydenbucher over the ferry across the Danube, which was to be at Prüfling rather than Art, and that Wilhelm was not to hinder the monastery."
-        }
-      ]
+      "english": "Konrad von Rosenberg, Vizedom zu Amberg, confirms that Abbot Ulrich of Prüffing prevailed at law against Wilhelm Raydenbucher: there is to be no ferry across the Danube at Art, but at Prüfling, and the monastery is to remain unhindered by Wilhelm Raydenbucher. Given on the same day."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
+      ],
+      "type": "generic",
+      "content": "confirmed that Abbot Ulrich of Prüffing prevailed at law against Wilhelm Raydenbucher over the ferry across the Danube, which was to be at Prüfling rather than Art, and that Wilhelm was not to hinder the monastery."
     }
   ]
 }

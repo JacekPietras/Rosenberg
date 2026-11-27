@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/1073/charter",
       "german": "Peter von Rosenberg bittet im Auftrag von Wenzel von Schönburg auf Hoyerswerda (Watzlaw Schonberck Her vonn Howschwerda) Bürgermeister und Rat von Bautzen, dass sie den gefangenen Martin Rober an die Gerichte von Hoyerswerda überstellen und möchten ihre entsprechende Antwort dem Boten mitteilen.\n\nSiegel: ohne",
       "english": "On behalf of Wenzel von Schönburg of Hoyerswerda (Watzlaw Schonberck Her vonn Howschwerda), Peter von Rosenberg asks the mayor and council of Bautzen to transfer the imprisoned Martin Rober to the court at Hoyerswerda and to give their reply to the messenger.\n\nSeal: None.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1073_1511-11-30_1-orig_c_1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1073_1511-11-30_1-orig_c_2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

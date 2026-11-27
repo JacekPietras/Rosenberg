@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-234_St/charter",
       "german": "Wolf Andre Graf von Rosenberg, landschaftlicher Burggraf, verleiht dem Ernst Wilhelm Freiherrn von Kulmer zum Rosenbichl den halben Hof am Kulm, welcher dem Ernreich Kulmer von der mittlerweile verstorbenen Margarethe Elisabeth Landgräfin von Hessen, geb. Gräfin Leiningen, als damaliger Eigentümerin der Herrschaft Sonnegg zu Lehen gegeben worden ist. Siegler und Unterschrift: Aussteller\n\nSiegel: 1 Sig. pend. in Holzkapsel",
       "english": "Wolf Andre, Graf von Rosenberg, estates' Burggraf, grants Ernst Wilhelm Freiherr von Kulmer zum Rosenbichl the half farm at Kulm, which had been granted in fief to Ernreich Kulmer by Margarethe Elisabeth, Landgräfin von Hessen, née Gräfin Leiningen, now deceased, as the then owner of the lordship of Sonnegg. Sealer and signature: issuer\n\nSeal: 1 pendant seal in a wooden capsule.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_234_16690402_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_234_16690402_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

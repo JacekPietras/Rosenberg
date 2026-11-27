@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++591d6c88-e5d1-4680-941a-9b71a2d9b866&parent_id="
       ],
       "german": "Thomas Zweifel (zu Ansbach) an Rothenburg: Bericht über die Verhandlungen mit Zaisolph von Rosenberg.",
-      "english": "Thomas Zweifel (of Ansbach) to Rothenburg: Report on the negotiations with Zaisolph von Rosenberg.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of Thomas Zweifel’s report to Rothenburg concerning their negotiations."
-        }
-      ]
+      "english": "Thomas Zweifel (of Ansbach) to Rothenburg: Report on the negotiations with Zaisolph von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of Thomas Zweifel’s report to Rothenburg concerning their negotiations."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

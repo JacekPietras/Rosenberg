@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3340/charter",
       "german": "Franz Christoph und Johann Konrad von Rosenbach bestätigen für sich und in Vormundschaft für ihre namentlich genannten Vettern die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstat) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Georg Adolf von Hettersdorf (Hettersdorff)\n\nSiegel: anhängendes Siegel in Holzkapsel Georg Adolf von Hettersdorf (Hettersdorff)",
       "english": "Franz Christoph and Hans Konrad von Rosenberg confirm, for themselves and as guardians of their cousins named individually, the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with a stone house, two farms, and three hides of land in Berstadt (Berstat) [part of Wölfersheim municipality, Wetterau district], as well as their share of the rent at Langsdorf (?) (Langendorff) [part of Lich, Gießen district]. The feudal letter is inserted. Seal clause.\n\nSealer: Georg Adolf von Hettersdorf (Hettersdorff).\n\nSeal: Attached seal in wooden capsule of Georg Adolf von Hettersdorf (Hettersdorff).",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203340%20Vorderseite%20%281676%20August%2021%29.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203340%20Rueckseite%20%281676%20August%2021%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

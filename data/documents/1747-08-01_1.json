@@ -9,33 +9,33 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0D5612F2-7D20-4FE6-B73D-1A4B60A8CB78&parent_id="
       ],
       "german": "Anselm Franz [von Ingelheim], Bischof zu Würzburg, verleiht den Gebrüdern Johann Philipp, Domherr in Würzburg, und Adalbert Friedrich von Rosenbach, bischöflicher Rat und Amtmann zu Arnstein, Söhne des verstorbenen bischöflichen Rates und Amtmanns zu Grünsfeld Anton Philibert von Rosenbach, vier Morgen Weinberg am Stein in Würzburg zu Mannlehen.\nSiegler: Der Bischof mit seinem Sekretsiegel.\n\nVermerke: Inhaltsangabe (18. Jh.)",
-      "english": "Anselm Franz [von Ingelheim], Bischof zu Würzburg, grants the brothers Johann Philipp, Domherr zu Würzburg, and Adalbert Friedrich von Rosenberg, bischöflicher Rat und Amtmann zu Arnstein, sons of the late bischöflicher Rat und Amtmann zu Grünsfeld Anton Philibert von Rosenbach, four acres of vineyard at Stein in Würzburg as a male fief.\nSealed by: the bishop, with his secret seal.\n\nAnnotations: abstract (18th century).",
-      "mention": [
-        {
-          "place": "arnstein-maria-sondheim"
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "grunsfeld"
-        },
-        {
-          "person": "Hans Philipp",
-          "personTitle": [
-            "Domherr zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Steyn in Würzburg"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Anselm Franz [von Ingelheim], Bischof zu Würzburg, grants the brothers Johann Philipp, Domherr zu Würzburg, and Adalbert Friedrich von Rosenberg, bischöflicher Rat und Amtmann zu Arnstein, sons of the late bischöflicher Rat und Amtmann zu Grünsfeld Anton Philibert von Rosenbach, four acres of vineyard at Stein in Würzburg as a male fief.\nSealed by: the bishop, with his secret seal.\n\nAnnotations: abstract (18th century)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "arnstein-maria-sondheim"
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "grunsfeld"
+    },
+    {
+      "person": "Hans Philipp",
+      "personTitle": [
+        "Domherr zu Würzburg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Steyn in Würzburg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

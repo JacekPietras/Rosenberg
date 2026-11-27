@@ -10,24 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723968",
       "german": "Kurfürst Ludwig V. von der Pfalz schlichtet einen Streit zwischen Jörg von Rosenberg und der Bürgerschaft zu Boxberg wegen des Holzes genannt die Klingen.\n\nLaufzeit: 1525 September 2 (Samstag nach Aegidii 1525)\n\nSiegelbeschreibung: Mit Siegel",
       "english": "Elector Ludwig V of the Palatinate sets up a dispute between Georg von Rosenberg and the citizenship to Boxberg because of the wood called the blades.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "generic",
-          "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723968%2F04_0001723968_0001_4-1723968-1.jpg"
@@ -41,6 +23,24 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ludwig von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "generic",
+      "content": "settled a dispute with Jörg von Rosenberg and the citizens of Boxberg concerning the woodland called die Klingen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
     }
   ]
 }

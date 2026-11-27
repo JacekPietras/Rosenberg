@@ -6,24 +6,24 @@
       "source": "Staatsarchiv Wertheim S-V 10 Sg 471",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-374485",
       "german": "\"Graf Asmus von Wertheim und Ritter Kunz von Rosenberg oder der Zweikampf im Kürasgarten. Eine geschichtliche Begebenheit durch welche das Drei-Uhr-Läuten in Wertheim seine Entstehung hat und zwar um das Jahr 1485\"\n\nLaufzeit: 1920/25\n\nEnthält: Enthält: 2 Denkschriften\n\nUmfang: 2 Hefte (1 cm)",
-      "english": "“Graf Asmus von Wertheim and Ritter Kunz von Rosenberg, or the duel in the Kürasgarten. A historical event through which the three o’clock bell-ringing in Wertheim originated, around the year 1485”\n\nDate range: 1920/25\n\nContains: 2 memoranda\n\nExtent: 2 booklets (1 cm)",
-      "mention": [
-        {
-          "person": "Asmus von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
+      "english": "“Graf Asmus von Wertheim and Ritter Kunz von Rosenberg, or the duel in the Kürasgarten. A historical event through which the three o’clock bell-ringing in Wertheim originated, around the year 1485”\n\nDate range: 1920/25\n\nContains: 2 memoranda\n\nExtent: 2 booklets (1 cm)"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Asmus von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++3502e022-1357-4402-aec6-ade14dc01a64&parent_id="
       ],
       "german": "Lehenbrief: Franz Christoph von Rosenbach, Domdechant zu Würzburg, als Propst, dann Dechant, Senior und Kapitel des Stifts Neuenmünster zu Würzburg, belehnen Heinrich Wolfgang Geyer von Giebelstadt mit 5 1/4 Huben zu Giebelstadt.\n\nBesiegelung/Beglaubigung: 1 Sg. anhängend",
-      "english": "Feudal grant: Franz Christoph von Rosenberg, Domdechant zu Würzburg, acting as provost, then dean, senior member, and chapter of the Neumünster collegiate foundation in Würzburg, enfeoff Heinrich Wolfgang Geyer von Giebelstadt with 5¼ hides at Giebelstadt.\n\nSealing/authentication: one seal attached.",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg",
-          "personTitle": [
-            "Domdekan zu Würzburg"
-          ]
-        },
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "person": "Heinrich Wolfgang Geyer von Giebelstadt"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Feudal grant: Franz Christoph von Rosenberg, Domdechant zu Würzburg, acting as provost, then dean, senior member, and chapter of the Neumünster collegiate foundation in Würzburg, enfeoff Heinrich Wolfgang Geyer von Giebelstadt with 5¼ hides at Giebelstadt.\n\nSealing/authentication: one seal attached."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg",
+      "personTitle": [
+        "Domdekan zu Würzburg"
       ]
+    },
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "person": "Heinrich Wolfgang Geyer von Giebelstadt"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

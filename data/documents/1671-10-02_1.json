@@ -7,23 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=576590",
       "german": "Revers Johann Hartmanns von Rosenbach und weiterer namentlich genannter Personen bezüglich der Belehnung mit einem Steinhaus in Berstadt und weiteren im Einzelnen aufgeführten Lehen durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda\n\nJohann Hartmann, Johann Konrad, Franz Christoph und Franz Rudolf von Rosenbach bestätigen die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstadt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Johann Hartmann von Rosenbach\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Acknowledgment by Hans Hartmann von Rosenberg and other named persons concerning the enfeoffment with a stone house at Berstadt and other individually listed fiefs by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda.\n\nJohann Hartmann, Johann Konrad, Franz Christoph, and Franz Rudolf von Rosenberg acknowledge the grant by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, of a stone house, two farms, and three hides of land at Berstadt (Berstadt) [part of the municipality of Wölfersheim, Wetterau district], as well as their share of the rent at Langsdorf (?) (Langendorff) [part of the municipality of Lich, Giessen district]. The fief charter is inserted. Seal clause.\n\nArchival description: Original, parchment, pendant seal in a case.\n\nSealer: Hans Hartmann von Rosenberg\n\nAdditional information: The acknowledgment has no separate date and refers instead to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3338/00001.jpg"
@@ -32,6 +15,23 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3338/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

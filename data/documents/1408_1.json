@@ -6,30 +6,30 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9880",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641642",
       "german": "Aufsagung seiner würzburgischen Lehen zugunsten seines Sohnes Ulrich durch Eberhard d. Ä. von Rosenberg.\n\nLaufzeit: 1408\n\nUmfang: 1 Schr.",
-      "english": "Eberhard von Rosenberg der Ältere renounces his Würzburg fiefdoms in favor of his son Ulrich von Rosenberg.",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
+      "english": "Eberhard von Rosenberg der Ältere renounces his Würzburg fiefdoms in favor of his son Ulrich von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "parent",
-          "of": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg."
-        }
-      ]
+      "type": "parent",
+      "of": "Ulrich von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "renounced his Würzburg fiefs in favor of his son Ulrich von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

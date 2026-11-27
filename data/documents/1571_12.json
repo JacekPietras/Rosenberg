@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++D372DFEE-93D3-4E5E-AAC2-84F25966721A&parent_id="
       ],
       "german": "Zehntstreitigkeiten auf der Markung von Martinsheim zwischen den dortigen markgräflichen Untertanen und denjenigen des Zeisolf von Rosenberg in Gnötzheim",
-      "english": "Disputes over tithes in the Martinsheim district between the margravial subjects there and the subjects of Zaisolph von Rosenberg in Gnötzheim.",
-      "mention": [
-        {
-          "place": "gnoetzheim"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
-      ]
+      "english": "Disputes over tithes in the Martinsheim district between the margravial subjects there and the subjects of Zaisolph von Rosenberg in Gnötzheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "gnoetzheim"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

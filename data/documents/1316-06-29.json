@@ -10,29 +10,6 @@
       ],
       "german": "Konrad von Rosenberg und Kloster Schöntal beenden ihre Fehde und Auseinandersetzung um den Hof zu Seilach durch einen Schiedsspruch Konrads von Weinsberg, Friedrichs von Heinriet und Konrads von Helmstatt. Konrad von Rosenberg erhält den Hof und verpflichtet sich, dem Kloster bis Fastnacht 1317 den Kaufpreis zu bezahlen, den das Kloster für den Hof aufgewendet hatte. Das Klostervieh darf die Weide des Hofes nutzen, soweit dies nicht durch die Gemeinde untersagt ist. Ausfertigung auf beschädigtem Pergament mit vier Siegeln, davon drei abgegangen. Ausgestellt zu Scheuerberg am 29. Juni 1316.",
       "english": "Konrad von Rosenberg and Schöntal Abbey settle their feud and dispute over the farm at Seilach through an arbitration by Konrad von Weinsberg, Friedrich von Heinriet, and Konrad von Helmstatt. Konrad von Rosenberg receives the farm and undertakes to pay the abbey by Shrovetide 1317 the purchase price the abbey had paid for it. The abbey’s livestock may graze on the farm’s pasture when this is not prohibited by the community. Original on damaged parchment with four seals, three detached. Issued at Scheuerberg on 29 June 1316.",
-      "mention": [
-        {
-          "person": "Konrad von Helmstatt"
-        },
-        {
-          "person": "Konrad von Weinsberg"
-        },
-        {
-          "place": "schoental-monastery"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "received the farm at Seilach under an arbitration settlement with Schöntal Abbey."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "agreed to reimburse Schöntal Abbey for the purchase price by Shrovetide 1317."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000834962%2F02_0000834962_0001_2-834962-1.jpg",
@@ -51,6 +28,29 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "received the farm at Seilach under an arbitration settlement with Schöntal Abbey."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "agreed to reimburse Schöntal Abbey for the purchase price by Shrovetide 1317."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Helmstatt"
+    },
+    {
+      "person": "Konrad von Weinsberg"
+    },
+    {
+      "place": "schoental-monastery"
     }
   ]
 }

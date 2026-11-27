@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166681",
       "german": "Karl Reitwieser (Karell Reittwyeser), Hofschultheiß zu Würzburg, bekundet, dass ihm Graf Johann von Wertheim 1 Morgen Weingarten in der Sanderau (Senderawe) bei Würzburg, welchen Urban Lutz innehatte, nach dem Heimfall zu rechtem Mannlehen verliehen hat (Lehnsbrief ist inseriert).\n\nLaufzeit: 1495 Juli 18 (samstags noch der zwolffboitten schidunge)\n\nSiegelbeschreibung: 1 Siegel, aufgedrückt\n\nVermerke: Dorsualvermerk\n\nSiegler: Philipp von Uissigheim (Ussigkein), (auf Bitten des Ausstellers)",
       "english": "Karl Reitwieser, chief town mayor of Würzburg, certifies that Johann von Wertheim, Graf granted him, as a proper male fief after its reversion, a vineyard of one Morgen in the Sanderau near Würzburg, formerly held by Urban Lutz (the fief charter is inserted).\n\nDate: 18 July 1495 (Saturday after the Twelve Brothers' division).\n\nSeal description: one impressed seal.\n\nEndorsement on the back.\n\nSeal bearer: Philipp von Uissigheim, at the issuer's request.",
-      "mention": [
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Philipp von Uissigheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166681%2F07_0000166681_0001_7-166681-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166681%2F07_0000166681_0002_7-166681-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf"
+      ]
+    },
+    {
+      "person": "Philipp von Uissigheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

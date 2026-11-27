@@ -6,25 +6,25 @@
       "source": "Regesta Boica 4",
       "url": "https://www.digitale-sammlungen.de/de/view/bsb10799643",
       "latin": "Eckehardus dictus Rosenberg Bertoldo, Episcopo Herbipolensi, in feudum offert redditus suos apud Durrebach, Bogenleiten, Schoennowe et in platea Blecha. Datum Sabbato proximo post festum Sanctae Margarethae (18. Jul.). Pontif. Bertoldi anno II.",
-      "english": "Eckehard, called Rosenberg, offers his rents at Durrebach, Bogenleiten, Schoennowe, and in Blecha street as a fief to Bertold, Bishop of Würzburg. Given on the Saturday following the feast of Saint Margaret (18 July), in the second year of Bertold’s pontificate.",
-      "mention": [
-        {
-          "person": "Bischof Berthold",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eckehard Rosenberg",
-          "type": "generic",
-          "content": "offered his rents at Durrebach, Bogenleiten, Schoennowe, and in Blecha street as a fief to Bertold, Bishop of Würzburg."
-        }
+      "english": "Eckehard, called Rosenberg, offers his rents at Durrebach, Bogenleiten, Schoennowe, and in Blecha street as a fief to Bertold, Bishop of Würzburg. Given on the Saturday following the feast of Saint Margaret (18 July), in the second year of Bertold’s pontificate."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eckehard Rosenberg",
+      "type": "generic",
+      "content": "offered his rents at Durrebach, Bogenleiten, Schoennowe, and in Blecha street as a fief to Bertold, Bishop of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Berthold",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

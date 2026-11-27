@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=13140",
       "german": "Bleichenbach: Henne Löw v. Steinfurt zu Echzell verkauft seine Besitzungen zu Bleichenbach am Wyprecht v.n Rosenbach\n\n(Vor-) Provenienzen: v. Rosenbach",
       "english": "Bleichenbach: Henne Löw von Steinfurt zu Echzell sells his properties at Bleichenbach to Wiprecht von Rosenberg.\n\n(Previous) provenances: von Rosenbach.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wiprecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/37--2/hstad_a_3_nr_37--2_0001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/37--2/hstad_a_3_nr_37--2_0002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wiprecht von Rosenberg"
     }
   ]
 }

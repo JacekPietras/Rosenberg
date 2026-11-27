@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3363/charter",
       "german": "Johann Philipp und Adalbert Friedrich von Rosenbach (Roszenbach) bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Amand [von Buseck], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Ernst Johann Philipp Hartmann Freiherr von Buseck\n\nSiegel: anhängendes Siegel in Holzkapsel Ernst Johann Philipp Hartmann Freiherr von Buseck",
       "english": "Johann Philipp and Adalbert Friedrich von Rosenberg confirm their enfeoffment by Amand [von Buseck], Abbot of Fulda, with Schackau together with all its appurtenances in woodland and fields and an estate there, with Kleinsassen, Gerharts [all places in the municipality of Hofbieber, Fulda district], and other fiefs specified in detail. The letter of enfeoffment is transcribed within the instrument. A seal is announced.\n\nSealer: Ernst Johann Philipp Hartmann Freiherr von Buseck\n\nSeal: Attached seal in a wooden case, belonging to Ernst Johann Philipp Hartmann Freiherr von Buseck",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203363%20Vorderseite%20%281742%20August%2030%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203363%20Rueckseite%20%281742%20August%2030%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

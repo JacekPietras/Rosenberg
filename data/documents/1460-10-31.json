@@ -10,14 +10,6 @@
       ],
       "german": "Schiedsspruch zwischen Abt Melchior zu St. Ulrich und Afra zu Augspurg und der Witwe Ursula v. Rosenberg, geb. v. Honburg, wegen der zwei Güter zu Belser und der von letzterer über Seitz Franck verhängte Strafe. Jeder Meier soll demnach nur auf Lebenszeit das Gut bzw. einen Anteil daran innehaben und wenn er seinen Anteil verkaufen will, ihn zunächst dem Inhaber des anderen Teils anbieten. Wenn ein Inhaber mit Tod abgeht, soll die Teilung nicht mehr aufrecht erhalten, sondern das betreffende Gut durch das Kloster als Ganzes vergeben werden unbeschadet der Rosenbergischen Vogteirechte. - Schiedsleute: Hans Schoff, Pfleger zu Fuessen, Wolfgang v. Huppingen. - Meier: Kögelmartin, Seitz Franck, Stefan Mair, Hans Clainschnider. - Siegler sind die Spruchleute.",
       "english": "Arbitration award between Abbot Melchior of St. Ulrich and Afra in Augsburg and the widow Ursula von Rosenberg, née von Honburg, concerning the two estates at Belser and the penalty the latter imposed on Seitz Franck. Accordingly, each tenant farmer is to hold the estate or a share of it only for life; if a holder wishes to sell his share, he must first offer it to the holder of the other share. When a holder dies, the division is to cease, and the monastery is to grant the estate concerned as a whole, without prejudice to the Rosenberg bailiwick rights. Arbitrators: Hans Schoff, custodian at Füssen, and Wolfgang von Huppingen. Tenant farmers: Kögelmartin, Seitz Franck, Stefan Mair, and Hans Clainschnider. The arbitrators are the sealers.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ursula von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1bedcb6e-cfb8-4a66-a537-f2a09d75b3d2/1/full/max/0/default.jpg"
@@ -38,6 +30,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1bedcb6e-cfb8-4a66-a537-f2a09d75b3d2/6/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ursula von Rosenberg"
     }
   ]
 }

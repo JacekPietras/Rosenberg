@@ -6,31 +6,31 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 U 34",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-74946",
       "german": "1538 März 18 (Mo n. Reminiscere). Bischof Konrad von Würzburg belehnt Zaisolf von Rosenberg zu Haltenbergstetten nach dem Tod des Konrad von Rosenberg mit der Helfte der Dörfer Neubronn und Oberndorf; Sr.; der A.",
-      "english": "1538 March 18 (Monday after Reminiscere). Konrad zu Würzburg, Bischof enfeoffs Zaisolph von Rosenberg of Haltenbergstetten, following the death of Konrad von Rosenberg, with half of the villages of Neubronn and Oberndorf; Sr.; der A.",
-      "mention": [
-        {
-          "person": "Bischof Konrad",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
+      "english": "1538 March 18 (Monday after Reminiscere). Konrad zu Würzburg, Bischof enfeoffs Zaisolph von Rosenberg of Haltenbergstetten, following the death of Konrad von Rosenberg, with half of the villages of Neubronn and Oberndorf; Sr.; der A."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ],
-          "type": "generic",
-          "content": "received half of Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of Konrad von Rosenberg."
-        }
+      "type": "generic",
+      "content": "received half of Neubronn and Oberndorf as fiefs from Bishop Konrad of Würzburg after the death of Konrad von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Konrad",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e1c7b29a-bb06-4dcd-895a-8102a0c59a99&parent_id="
       ],
       "german": "Zwei Prozeßakten (der eine mit 1 anh. Siegel) in Sachen Zeisolf v. Rosenberg zu Haldenbergstetten ./. Veit v. Lichtenstein zum Geiersberg und dessen Frau Eva geb. v. Hutten betreffend eine der Mutter des Klägers, Ursula, Tochter Ludwigs v. Hutten, des Älteren, für den Fall des Aussterbens der männlichen Linie Ludwigs ausgemachten Summe von 4000 fl.\n\nEnthält-/Darin-Vermerke: (Mit älteren Abschriften)",
-      "english": "Two court files concerning Zaisolph von Rosenberg against Veit von Lichtenstein zum Geiersberg and his wife Eva, née von Hutten, over 4,000 florins promised to the plaintiff’s mother if the male line of Ludwig von Hutten the Elder became extinct.",
-      "mention": [
-        {
-          "person": "Eva von Hutten"
-        },
-        {
-          "person": "Ludwig von Hutten",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Veit von Lichtenstein"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Two court files concerning Zaisolph von Rosenberg against Veit von Lichtenstein zum Geiersberg and his wife Eva, née von Hutten, over 4,000 florins promised to the plaintiff’s mother if the male line of Ludwig von Hutten the Elder became extinct."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eva von Hutten"
+    },
+    {
+      "person": "Ludwig von Hutten",
+      "personTitle": [
+        "der Ältere"
       ]
+    },
+    {
+      "person": "Veit von Lichtenstein"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

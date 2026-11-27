@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153946",
       "german": "Jorg Drache, Hans Ebertille, Hans Offemerge und Linhart Herzoge bezeugen eidlich, daß sie von Hans von der Eiche zu Kirchbrombach i.O. (Bronbach) gehört haben, daß die Weiden und Äcker vor dem \"Eichholze\", die Wiese in der Kedemen, die Wiese in der Balsbach, der Acker in der Strüde, ein Acker im Hasengrunde wertheimisch seien und, daß diese der Schultheiß zu Kirchbrombach allezeit von der Herrschaft von Wertheim innehatte. Sie gehören nicht in den Eppensteiner Hof zu Kirchbrombach (Bronbach), Hans Ebatille weiß das auch aus eigener Erinnerung.\n\nLaufzeit: 1432\n\nSiegelbeschreibung: 2 vorne aufgedrückte Siegel fast ganz abgefallen\n\nSiegler: Junker Hans Monche von Rosenberg; Junker Hans Schelm",
       "english": "Jorg Drache, Hans Ebertille, Hans Offemerge, and Linhart Herzoge swear that they heard from Hans von der Eiche of Kirchbrombach that the pastures and fields before the Eichholz, the meadow in the Kedemen, the meadow in Balsbach, the field in the Strüde, and a field in Hasengrund belonged to Wertheim, and that the reeve of Kirchbrombach had always held them from the lordship of Wertheim. They do not belong to the Eppenstein court at Kirchbrombach. Hans Ebatille also knows this from his own recollection.\n\nDate: 1432.\n\nSeal description: Two seals impressed on the front, almost entirely fallen off.\n\nSealers: Squire Hans Monche von Rosenberg; Squire Hans Schelm.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153946%2F07_0000153946_0001_7-153946-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153946%2F07_0000153946_0002_7-153946-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

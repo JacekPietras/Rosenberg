@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ff98b527-c42b-4c46-b3d3-f6f518e78623&parent_id="
       ],
       "german": "Zeisolf von Rosenberg an Rothenburg: in gleicher Sache wie fol 540.",
-      "english": "Zaisolph von Rosenberg to Rothenburg: in the same matter as fol. 540.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "wrote to Rothenburg about the same matter as folio 540."
-        }
-      ]
+      "english": "Zaisolph von Rosenberg to Rothenburg: in the same matter as fol. 540."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "wrote to Rothenburg about the same matter as folio 540."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

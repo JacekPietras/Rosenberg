@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-ADG/PA/ADG_Urk_P0366/charter",
       "german": "Die Verordneten der Kärntner Landschaft stellen dem Pfarrer von Gmünd einen modifizierten Schuldbrief über die 1633, 1637 und 1639 für die Extraordinari-Kriegskontribution aufgenommenen Darlehen aus (gen.: der Generaleinnehmer Wolff Gottfried Strasser zu Neidegg).\n\nSiegler: Johann Andre Graf von Rosenberg, Dompropst Johann von St. Andrä, N. Freiherr von Windischgrätz\n\nSiegel: 6 Sig. imp. Johann Andre Graf von Rosenberg, Dompropst Johann von St. Andrä, N. Freiherr von Windischgrätz Ludwig Graf von Thurn Balthasar Grimming Neidthart von Staudach (eigenhändige Unterschriften)",
       "english": "The deputies of the Carinthian Estates issue the pastor of Gmünd a modified debt certificate for the loans taken out in 1633, 1637, and 1639 for the extraordinary war contribution (namely, the chief tax collector Wolff Gottfried Strasser zu Neidegg).\n\nSealers: Johann Andre von Rosenberg, Graf; Johann von St. Andrä, Dompropst; N. von Windischgrätz, Freiherr.\n\nSeals: 6 impressed seals: Johann Andre von Rosenberg, Graf; Johann von St. Andrä, Dompropst; N. von Windischgrätz, Freiherr; Ludwig von Thurn, Graf; Balthasar Grimming; Neidthart von Staudach (signatures in their own hands).",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P0366r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-ADG/Urkunden-P/ADG_Urk_P0366v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

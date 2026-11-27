@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1371_III_31/charter",
       "german": "Peter, Pfarrer von Höritz, unterwirft sich in dem zwischen ihm und dem Stifte Hohenfurt wegen eines Hauses sammt dazu gehörigen Grundstücken in Höritz obschwebenden Streite dem Schiedsspruche des Herrn Peter von Rosenberg.\n\nSiegel: Drei kleine, an Pergamentstreifen hängende Siegel in weissem Wachs. Sämmtlich beschädigt. a) St . Katherina. - . . Petri . Plbi . De . Horitz. b) St . Wenzl. - . . Boh . . . De . Wele . . . c) St. Veit. - . . . . stislay. [Plbni?] . . .",
       "english": "Peter, parish priest of Höritz, submits to the arbitration of Lord Peter von Rosenberg in the pending dispute between him and the monastery at Hohenfurt concerning a house and its associated plots in Höritz.\n\nSeal: Three small, damaged seals in white wax hang from parchment strips. (a) St Catherine. — . . Petri . Plbi . De . Horitz. (b) St Wenceslas. — . . Boh . . . De . Wele . . . (c) St Vitus. — . . . . stislay. [Plbni?] . . .",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_137103xx-04xx%7E13710399_85%2CII_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_137103xx-04xx%7E13710399_85%2CII_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

@@ -7,14 +7,14 @@
       "source": "StAN, Fürstentum Ansbach, Geheimes Archiv: Bestallungsbriefe 2/e",
       "url": "https://www.gda.bayern.de/gvl/document/06d68368-d289-41dd-83c6-44f05b779bf0",
       "german": "Revers Jörgs von Rosenberg als Markgraf Albrechts von Brandenburg Dieners auf zehn Jahre.",
-      "english": "Georg von Rosenberg undertook to serve Margrave Albrecht of Brandenburg for ten years.",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "served Margrave Albrecht of Brandenburg for ten years."
-        }
-      ]
+      "english": "Georg von Rosenberg undertook to serve Margrave Albrecht of Brandenburg for ten years."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "served Margrave Albrecht of Brandenburg for ten years."
     }
   ]
 }

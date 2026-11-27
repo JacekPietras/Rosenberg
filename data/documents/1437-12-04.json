@@ -6,24 +6,24 @@
       "source": "HStAD, B 8, 9/16",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5360702",
       "german": "Erzbischof Dietrich von Mainz: Verleihung eines Mannlehens von 16 Schilling Heller jährlicher Gülte aus Orb, die dem Stift Mainz von Todes wegen nach Ableben Ewalds und seines Sohnes Johann v. Schlitz gen. v. Heusenstamm verfallen seien, an Peter v. Rosenbach\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. am Rand besch.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Dietrich, Erzbischof von Mainz: grant to Peter von Rosenberg of a fief held by a man, consisting of an annual rent of 16 shillings heller from Orb, which had reverted to Mainz Cathedral by right of death following the deaths of Ewald and his son Johann von Schlitz, called von Heusenstamm.\n\nFormal description: fair copy, parchment, attached seal damaged at the edge.\n\nSealer: the issuer.\n\n(Previous) provenances: von Rosenbach.",
-      "mention": [
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof von Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Dietrich, Erzbischof von Mainz: grant to Peter von Rosenberg of a fief held by a man, consisting of an annual rent of 16 shillings heller from Orb, which had reverted to Mainz Cathedral by right of death following the deaths of Ewald and his son Johann von Schlitz, called von Heusenstamm.\n\nFormal description: fair copy, parchment, attached seal damaged at the edge.\n\nSealer: the issuer.\n\n(Previous) provenances: von Rosenbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof von Mainz"
       ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

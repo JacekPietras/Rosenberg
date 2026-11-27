@@ -6,89 +6,89 @@
       "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "Rūdolf grave zu Wertheim, Gotfrid von Brunek und Ludwig von Hohenloch vermitteln eine Sühne zwischen Kraft von Hohenloch, ihrem lieben Oheim und Vetter, einerseits und den vesten ehrbaren Mannen Eberhart von Rosemberg Vogt zu Durn, Eberhart von Rosemberg von Zymmern gnant, Eberhart und Cunraten des genannten Vogts Söhnen, und Hansen von Rosemberg andererseits: Kraft soll dem genannten Eberhard von Rechts wegen um den Brief nichts gebunden oder schuldig sein; er soll ferner den Kindern Dietrichs seligen von Zymmern und ihrem Vormund die 500 Pfund Heller, die er Katherin zu einem ehelichen Mann geben soll, verbürgen, und wenn man der Jungfrau einen Ehemann giebt mit ihrer Freunde Rat, ihr die Summe in den nächsten 3 Jahren in ebensoviel Raten bezahlen. Dagegen sollen jene ihm verbürgen, daß von Katharinens und ihres Mannes Seite wegen der Veste zu Zymmern kein Anspruch an ihn gemacht werde. Weiter soll Kraft die zehn Pfund Gelds, die er den kinden in kloster solte geben, auch verbürgen, und falls das Kind stirbt, sollen die 10 Pfund an das Kloster fallen. Beide Teile sollen fortan gute Freunde sein. Mit den Siegeln der Aussteller gegeben 1347, an dem nehsten tage nach sant Vincencyen tage.",
-      "english": "On January 23, 1347, Count Rudolf von Wertheim, Gotfried von Bruneck, and Ludwig von Hohenlohe mediate a settlement between Kraft von Hohenlohe, their dear uncle and cousin, on one side, and the honorable men Eberhard von Rosenberg, Vogt zu Dürn; Eberhard von Rosenberg called von Zimmern; Eberhard and Konrad, sons of the aforementioned Vogt; and Hans von Rosenberg, on the other. Kraft is to be under no legal obligation or debt to the aforementioned Eberhard concerning the letter. He is further to stand surety to the children of the late Dietrich von Zimmern and their guardian for the 500 pounds Heller that he is to give Katharina as a marriage portion. When a husband is provided for the maiden with the consent of her relatives, he is to pay her the sum in equal installments over the next three years. In return, those men are to guarantee for Kraft that neither Katharina nor her husband will make any claim against him concerning Zimmern Castle. Kraft is also to guarantee the ten pounds of rent he was to give the children to the monastery; if the child dies, the ten pounds shall go to the monastery. Both parties are to remain good friends from then on. Given in 1347, on the day after St. Vincent’s Day, with the issuers’ seals.",
-      "mention": [
-        {
-          "person": "Dietrich von Zimmern"
-        },
-        {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Ludwig von Hohenlohe"
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "zimmern"
-        }
+      "english": "On January 23, 1347, Count Rudolf von Wertheim, Gotfried von Bruneck, and Ludwig von Hohenlohe mediate a settlement between Kraft von Hohenlohe, their dear uncle and cousin, on one side, and the honorable men Eberhard von Rosenberg, Vogt zu Dürn; Eberhard von Rosenberg called von Zimmern; Eberhard and Konrad, sons of the aforementioned Vogt; and Hans von Rosenberg, on the other. Kraft is to be under no legal obligation or debt to the aforementioned Eberhard concerning the letter. He is further to stand surety to the children of the late Dietrich von Zimmern and their guardian for the 500 pounds Heller that he is to give Katharina as a marriage portion. When a husband is provided for the maiden with the consent of her relatives, he is to pay her the sum in equal installments over the next three years. In return, those men are to guarantee for Kraft that neither Katharina nor her husband will make any claim against him concerning Zimmern Castle. Kraft is also to guarantee the ten pounds of rent he was to give the children to the monastery; if the child dies, the ten pounds shall go to the monastery. Both parties are to remain good friends from then on. Given in 1347, on the day after St. Vincent’s Day, with the issuers’ seals."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Vogt zu Dürn"
       ],
-      "facts": [
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
-          "type": "generic",
-          "content": "was named in the settlement as the party to whom Kraft von Hohenlohe owed no legal obligation or debt concerning the letter."
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
-          "type": "generic",
-          "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
-        },
-        {
-          "person": "eberhard_genannt_von_zimmern",
-          "personTitle": [
-            "genannt von Zimmern"
-          ],
-          "type": "generic",
-          "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
-          "type": "parent",
-          "of": "eberhard_son_of_vogt_zu_Durn"
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "personTitle": [
-            "Vogt zu Dürn"
-          ],
-          "type": "parent",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "eberhard_son_of_vogt_zu_Durn",
-          "type": "sibling",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "eberhard_son_of_vogt_zu_Durn",
-          "type": "generic",
-          "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
-        }
+      "type": "generic",
+      "content": "was named in the settlement as the party to whom Kraft von Hohenlohe owed no legal obligation or debt concerning the letter."
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Vogt zu Dürn"
+      ],
+      "type": "generic",
+      "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
+    },
+    {
+      "person": "eberhard_genannt_von_zimmern",
+      "personTitle": [
+        "genannt von Zimmern"
+      ],
+      "type": "generic",
+      "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Vogt zu Dürn"
+      ],
+      "type": "parent",
+      "of": "eberhard_son_of_vogt_zu_Durn"
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "personTitle": [
+        "Vogt zu Dürn"
+      ],
+      "type": "parent",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "eberhard_son_of_vogt_zu_Durn",
+      "type": "sibling",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "eberhard_son_of_vogt_zu_Durn",
+      "type": "generic",
+      "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "guaranteed for Kraft von Hohenlohe that Katharina and her future husband would make no claim against him concerning Zimmern Castle."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich von Zimmern"
+    },
+    {
+      "person": "Kraft von Hohenlohe"
+    },
+    {
+      "person": "Ludwig von Hohenlohe"
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "place": "zimmern"
     }
   ]
 }

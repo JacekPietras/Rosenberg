@@ -7,56 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1087417",
       "german": "Jörg Balbach und Jörg Otte, gefangengesetzt auf Betreiben des Eberhart von Rosenberg des Alten, schwören nach der auf Fürbitte des Yttel Faut von Ryneck erfolgten Entlassung aus der Haft gegen Jost von Venningen, Komtur zu Mergentheim, Urfehde. Sr.: 1) Arnold Stetenberger, 2) Hans von Tottenheim zu Messelhausen (Messelhusen)",
       "english": "Jörg Balbach and Jörg Otte, imprisoned at the instigation of Eberhard von Rosenberg der Alte, swear a pledge of allegiance to Jost von Venningen, Commander of Mergentheim, after their release from prison at the intercession of Yttel Faut von Ryneck. Sirs: 1) Arnold Stetenberger, 2) Hans von Dottenheim of Messelhausen",
-      "mention": [
-        {
-          "person": "Hans von Dottenheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "generic",
-          "content": "instigated the imprisonment of Jörg Balbach."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "generic",
-          "content": "instigated the imprisonment of Jörg Otte."
-        },
-        {
-          "person": "Yttel Faut von Ryneck",
-          "type": "generic",
-          "content": "interceded for Jörg Balbach’s release from custody."
-        },
-        {
-          "person": "Yttel Faut von Ryneck",
-          "type": "generic",
-          "content": "interceded for Jörg Otte’s release from custody."
-        },
-        {
-          "person": "Georg Balbach",
-          "type": "generic",
-          "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
-        },
-        {
-          "person": "Georg Otte",
-          "type": "generic",
-          "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
-        },
-        {
-          "person": "Jost von Venningen",
-          "personTitle": [
-            "Komtur zu Mergentheim"
-          ],
-          "type": "title"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5317&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005317%2Ftitlaufn_0001087417%2F02_0001087417_0001_2-1087417-1.jpg"
@@ -66,6 +16,56 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Alte"
+      ],
+      "type": "generic",
+      "content": "instigated the imprisonment of Jörg Balbach."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Alte"
+      ],
+      "type": "generic",
+      "content": "instigated the imprisonment of Jörg Otte."
+    },
+    {
+      "person": "Yttel Faut von Ryneck",
+      "type": "generic",
+      "content": "interceded for Jörg Balbach’s release from custody."
+    },
+    {
+      "person": "Yttel Faut von Ryneck",
+      "type": "generic",
+      "content": "interceded for Jörg Otte’s release from custody."
+    },
+    {
+      "person": "Georg Balbach",
+      "type": "generic",
+      "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
+    },
+    {
+      "person": "Georg Otte",
+      "type": "generic",
+      "content": "swore an Urfehde against Jost von Venningen, Komtur zu Mergentheim."
+    },
+    {
+      "person": "Jost von Venningen",
+      "personTitle": [
+        "Komtur zu Mergentheim"
+      ],
+      "type": "title"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Dottenheim"
     }
   ]
 }

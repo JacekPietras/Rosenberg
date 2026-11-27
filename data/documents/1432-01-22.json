@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-27456",
       "german": "Ulrich von Rosenberg quittiert über 150 fl. für seine in Böhmen verlorene Habe und 50 fl. Dienstgeld.\n\nLaufzeit: 1432 Januar 22",
       "english": "Ulrich von Rosenberg acknowledges receipt of 150 gulden for his possessions lost in Bohemia and 50 gulden in service pay.\n\nDate: January 22, 1432",
-      "mention": [
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000027456%2F01_0000027456_0001_1-27456-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000027456%2F01_0000027456_0002_1-27456-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

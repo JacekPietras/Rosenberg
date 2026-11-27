@@ -10,11 +10,6 @@
       ],
       "german": "Kaiser Karl V. läßt die Irrungen zwischen den Ständen des gewesenen elfjährigen Schwäbischen Bundes einerseits und Albrecht von Rosenburg bzw. dessen Bevollmächtigten Sebastian und Valtin den Rüden andererseits insbesondere wegen der Gefangennahme Hieronymus Baumgartners und Christoff Grethers d.J. von Biberach durch seine Kommissäre, Kardinalbischof Otto von Augsburg und Friedrich Graf zu Fürstenberg einstweilig bis zu einem endgültigen Austrag auf einem Tage zu Donauwörth beilegen. - Siegler: der Aussteller.",
       "english": "Karl V., Kaiser, through his commissioners, Otto, Kardinalbischof von Augsburg and Friedrich Graf zu Fürstenberg, provisionally settles until a final resolution at a session in Donauwörth the disputes between the estates of the former eleven-year Swabian League, on the one hand, and Albrecht von Rosenberg and his representatives Sebastian and Valtin den Rüden, on the other, especially concerning the capture of Hieronymus Baumgartner and Christoff Grether der Jüngere of Biberach. — Sealer: the issuer.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8f3a5e77-0143-46dd-abd9-08f3dfd9a00e/1/full/max/0/default.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/8f3a5e77-0143-46dd-abd9-08f3dfd9a00e/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
     }
   ]
 }

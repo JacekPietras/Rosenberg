@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-194_St/charter",
       "german": "Georg Sigmund Khemetter zu Tribein und Truttendorf verkauft sein Eigengut bei Grafenstein, die Rumplnighube, dem Johann Andre Grafen von Rosenberg, Burggrafen zu Klagenfurt. Siegler und Unterschrift: Aussteller\n\nSiegel: 1 Sig. pend. beschädigt",
       "english": "Georg Sigmund Khemetter zu Tribein und Truttendorf sells his allodial property near Grafenstein, the Rumplnighube, to Johann Andre, Graf von Rosenberg, Burggraf zu Klagenfurt. Sealer and signature: issuer\n\nSeal: 1 damaged pendant seal.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_194_16490705_r.JPG"
@@ -26,6 +21,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_194a_16490705_02.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

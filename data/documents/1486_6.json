@@ -7,27 +7,27 @@
       "source": "[RI XIII] H. 10 n. 531",
       "url": "https://www.regesta-imperii.de/id/1486-11-27_1_0_13_10_0_13491_531",
       "german": "K. F. gebietet den Brüdern und Vettern Georg, Arnold und Friedrich von Rosenberg, Kunigunde, der Hausfrau Hans Pesserers, und anderen bei Strafe, Bf. Rudolf (II.) von Würzburg sowie dessen Nachfolger, Kapitel, Stift und Untertanen nicht wegen der Habe und dem Gut zu bekümmern, die der durch Selbstmord verstorbene Anselm von Rosenberg hinterlassen hat, sondern ihre vermeintlichen Ansprüche vor ihn als K. zu bringen.",
-      "english": "The King and Emperor commands, under penalty, the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg, Kunigunde, the wife of Hans Pesserer, and others not to trouble Bishop Rudolf (II) of Würzburg, his successors, chapter, see, or subjects over the property and goods left by Anselm von Rosenberg, who died by suicide, but to bring their alleged claims before him as King and Emperor.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "person": "Georg von Rosenberg"
-        }
+      "english": "The King and Emperor commands, under penalty, the brothers and cousins Georg, Arnold, and Friedrich von Rosenberg, Kunigunde, the wife of Hans Pesserer, and others not to trouble Bishop Rudolf (II) of Würzburg, his successors, chapter, see, or subjects over the property and goods left by Anselm von Rosenberg, who died by suicide, but to bring their alleged claims before him as King and Emperor."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg"
+    },
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "person": "Georg von Rosenberg"
     }
   ]
 }

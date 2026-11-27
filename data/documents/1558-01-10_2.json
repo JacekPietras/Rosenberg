@@ -6,18 +6,18 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 150",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755556",
       "german": "Verkauf der anderen Hälfte des Lehens Neunkirchen und Althausen an Gottfried von Berlichingen zu Hornberg durch Christoph Sützel von Mergentheim zu Unterbalbach, 1558 Jan. 10 [Regest].",
-      "english": "Sale of the other half of the fief of Neunkirchen and Althausen to Gotfried von Berlichingen zu Hornberg by Christoph Sützel von Mergentheim zu Unterbalbach, 10 January 1558 [abstract].",
-      "mention": [
-        {
-          "person": "Gotfried von Berlichingen",
-          "personTitle": [
-            "zu Hornberg"
-          ]
-        },
-        {
-          "place": "unterbalbach"
-        }
+      "english": "Sale of the other half of the fief of Neunkirchen and Althausen to Gotfried von Berlichingen zu Hornberg by Christoph Sützel von Mergentheim zu Unterbalbach, 10 January 1558 [abstract]."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gotfried von Berlichingen",
+      "personTitle": [
+        "zu Hornberg"
       ]
+    },
+    {
+      "place": "unterbalbach"
     }
   ]
 }

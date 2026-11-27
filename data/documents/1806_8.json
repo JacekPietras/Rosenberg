@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f9a81cd2-2812-440d-94c6-201b5d973419&parent_id="
       ],
       "german": "Musterungsrolle von Rosenberg.",
-      "english": "Muster roll of Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Muster roll of Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

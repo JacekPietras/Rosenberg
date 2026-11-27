@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=570603",
       "german": "Leihe des Steinhauses zu Berstadt und eines Zinses an Dietrich von Rosenbach durch Abt Balthasar von Fulda\n\nFulda. - Balthasar [von Dernbach], Abt zu Fulda, verleiht das Steinhaus zu Berstadt nebst Zubehör und den Teil am Zins zu Lanzendorf dem Dietz von Rosenbach, anstatt seiner Frau Walpurgis, Tochter des Philipp von Karsbach. Es folgen nähere Bestimmungen.\n\nFormalbeschreibung: Ausfertigung, Pergament, Siegel ab und verloren\n\nSiegler: Aussteller",
       "english": "Balthasar [von Dernbach], Abbot of Fulda, grants Dietz von Rosenbach, in place of his wife Walpurgis, daughter of Philipp von Karsbach, the stone house at Berstadt with its appurtenances and the share of the rent at Lanzendorf. Further provisions follow. Description: fair copy, parchment, seal removed and lost. Seal: issuer.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/532/hstam_urk._80_nr_532_0001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._80/532/hstam_urk._80_nr_532_0002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

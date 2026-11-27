@@ -7,17 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3296079",
       "german": "Rekreditiv für den Würzburger Kapitular Joh. Hartmann v. Rosenbach als Gesandten nach Fulda\n\nLaufzeit: 1645",
       "english": "Letter of recall for the Würzburg canon Hans Hartmann von Rosenberg as envoy to Fulda\n\nDate range: 1645",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1655/hstam_90_nr_b_1655_0001.jpg"
@@ -32,6 +21,17 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/90/b_1655/hstam_90_nr_b_1655_0004.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

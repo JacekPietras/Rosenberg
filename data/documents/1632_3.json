@@ -6,18 +6,18 @@
       "source": "Staatsarchiv Wertheim G-Rep. 45 Nr. 29",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-7944",
       "german": "Pfarrei Buch am Ahorn und Brehmen\n\nLaufzeit: 1632, 1638\n\nEnthält: Enthält: Bericht des Pfarrers von Buch, Marcus Hollenbach, an den Keller von Gerichtstetten, Johann Weißenfelder, wegen der Ansprüche des Vogts von Rosenberg auf die Filialkirche Brehmen (1632); Supplik Hollenbachs an Johann Dietrich von Löwenstein-Wertheim-Rochefort mit der Bitte um materielle und finanzielle Untersützung",
-      "english": "Parish of Buch am Ahorn and Brehmen\n\nDates: 1632, 1638\n\nContains: Report by the pastor of Buch, Marcus Hollenbach, to the steward of Gerichtstetten, Johann Weißenfelder, concerning the claims of the bailiff of Rosenberg to the filial church at Brehmen (1632); Hollenbach’s petition to Johann Dietrich von Löwenstein-Wertheim-Rochefort requesting material and financial support",
-      "mention": [
-        {
-          "place": "buch"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ]
+      "english": "Parish of Buch am Ahorn and Brehmen\n\nDates: 1632, 1638\n\nContains: Report by the pastor of Buch, Marcus Hollenbach, to the steward of Gerichtstetten, Johann Weißenfelder, concerning the claims of the bailiff of Rosenberg to the filial church at Brehmen (1632); Hollenbach’s petition to Johann Dietrich von Löwenstein-Wertheim-Rochefort requesting material and financial support"
+    }
+  ],
+  "mention": [
+    {
+      "place": "buch"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1371_IV_10/charter",
       "german": "Peter von Rosenberg, Probst der königlichen Capelle zu allen Heiligen auf der Prager Burg, schlichtet den zwischen dem Stifte Hohenfurt und dem Hoeritzer Pfarrer Peter obschwebenden Streit um ein Haus sammt dazu gehörigen Grundstücken in Höritz.\n\nSiegel: Drei kleine, an Pergamentstreifen hängende Siegel, a in rothem, b und c in weissem Wachs. a) Das kleine Siegel Peter's v. R. S. CIV. b) und c) Die Siegel der Pfarrer von Höritz und Krumau wie bei der vorhergehenden Urkunde und gleichfalls beschädigt. - . . Petri . Pl . . . De . Hori . . - + S. Hostislay . . . . i. [ . . . nicht lesbar.].",
       "english": "Peter von Rosenberg, provost of the royal Chapel of All Saints at Prague Castle, settles the pending dispute between the monastery at Hohenfurt and Peter, the parish priest of Höritz, concerning a house and its associated plots in Höritz.\n\nSeal: Three small seals hang from parchment strips: (a) in red wax, (b) and (c) in white wax. (a) The small seal of Peter von Rosenberg; see CIV. (b) and (c) The seals of the parish priests of Höritz and Krumau, as in the preceding charter, likewise damaged. — . . Petri . Pl . . . De . Hori . . — + S. Hostislay . . . . i. [ . . . illegible.].",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg",
-          "personTitle": [
-            "Propst"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_137103xx-04xx%7E13710399_85%2CIII_r.jpg"
@@ -22,6 +14,14 @@
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_137103xx-04xx%7E13710399_85%2CIII_v.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg",
+      "personTitle": [
+        "Propst"
       ]
     }
   ]

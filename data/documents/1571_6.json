@@ -6,24 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein We 10 Bü 2069",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-259577",
       "german": "Hohenlohe gegen Rosenberg: Acta Judicialia Graf Ludwig Kasimir von Hohenlohe, Kläger gegen Zeisolf von Rosenberg, Beklagter in Sachen turbatae possesionis (Besitzstörungen).\n\nLaufzeit: 1571-1583\n\nUmfang: Qu. 54-114",
-      "english": "Hohenlohe against Rosenberg: judicial acts concerning Count Ludwig Kasimir von Hohenlohe, plaintiff, against Zaisolph von Rosenberg, defendant, in a case of disturbed possession. Dates: 1571–1583. Extent: items 54–114.",
-      "mention": [
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Hohenlohe against Rosenberg: judicial acts concerning Count Ludwig Kasimir von Hohenlohe, plaintiff, against Zaisolph von Rosenberg, defendant, in a case of disturbed possession. Dates: 1571–1583. Extent: items 54–114."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Ludwig Kasimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

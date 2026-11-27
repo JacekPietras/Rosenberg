@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-37382",
       "german": "Angelegenheiten der Pfarrei Münster.\n\nLaufzeit: 1550\n\nEnthält: Enthält: Konzept eines Schreibens an Zeisolf von Rosenberg.\n\nUmfang: 1 Schr.",
       "english": "Matters concerning the parish of Münster.\n\nDate range: 1550\n\nContents: draft of a letter to Zaisolph von Rosenberg.\n\nExtent: 1 document",
-      "mention": [
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=578&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000578%2Ftitlaufn_0000037382%2F03_0000037382_0001_3-37382-1.jpg"
@@ -26,6 +21,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=578&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000578%2Ftitlaufn_0000037382%2F03_0000037382_0004_3-37382-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

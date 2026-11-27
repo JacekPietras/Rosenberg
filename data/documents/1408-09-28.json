@@ -9,30 +9,30 @@
         "https://www.digitale-sammlungen.de/en/view/bsb10001855"
       ],
       "german": "König Rupertus befehlt der Stadt Dinckelsbühl, die Steuer dem Conrad von Rosenberg dem alten zu geben. C.",
-      "english": "King Ruprecht commands the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte. C.",
-      "mention": [
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ]
-        }
+      "english": "King Ruprecht commands the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte. C."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ruprecht",
+      "personTitle": [
+        "König"
       ],
-      "facts": [
-        {
-          "person": "Ruprecht",
-          "personTitle": [
-            "König"
-          ],
-          "type": "generic",
-          "content": "ordered the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte."
-        }
+      "type": "generic",
+      "content": "ordered the city of Dinkelsbühl to give the tax to Konrad von Rosenberg der Alte."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Alte"
       ]
     }
   ]

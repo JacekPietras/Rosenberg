@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/IlluminierteUrkunden/1581-12-14_Marburg/charter",
       "german": "Wappenbrief (recte: Verleihung eines Siegels): Philipp Wolff von Rosenbach, Doktor der Rechte, kurfürstlich-mainzischer Rat und kaiserlicher Hof- und Pfalzgraf ( comes palatinus), inseriert den Wortlaut einer von Kaiser Rudolf [II. von Habsburg] ausgestellten Urkunde von 1581 Juli 20, Prag wieder: Rudolf [II. von Habsburg], römischer Kaiser, ernennt Philipp Wolff von Rosenbach, Doktor der Rechte, der bereits unter Kaiser Maximilian [II. von Habsburg] und als Rat des Mainzer Erzbischofs Daniel [Brendel von Homburg] diente, zum kaiserlichen Hof- und Pfalzgraf und verleiht ihm die nachfolgend genannten Rechte und Privilegien. In seiner Funktion als kaiserlicher Hof- und Pfalzgraf verleiht Philipp Wolff von Rosenbach auf Bitten des Johann Wolfgang Schott von Memmelsdorf [Lkr. Bamberg], Propst von Holzkirchen und Konventuale des Klosters Fulda, dem Hospital von Fulda ein Wappen (Siegel). Es folgt eine ausführliche Beschreibung des Siegels und die Erlaubnis für das Hospital, das Siegel zu führen.",
       "english": "Armorial letter (properly: granting of a seal): Philipp Wolf von Rosenberg, Doctor of Laws, electoral Mainz councillor and imperial court and palatine count (comes palatinus), inserts and reproduces the wording of a charter issued by Emperor Rudolf II of Habsburg on 20 July 1581 at Prague. Rudolf, Roman Emperor, appoints Philipp Wolf von Rosenberg, who had already served under Emperor Maximilian II of Habsburg and as councillor to Mainz Archbishop Daniel Brendel von Homburg, imperial court and palatine count and grants him the rights and privileges named below. In his capacity as imperial court and palatine count, at the request of Johann Wolfgang Schott von Memmelsdorf, provost of Holzkirchen and conventual of Fulda Abbey, Philipp grants the Hospital of Fulda a coat of arms (seal). A detailed description of the seal and permission for the hospital to use it follow.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "homburg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Philipp Wolf von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "http://images.monasterium.net/illum/IllUrk/1581-12-14_Pfalzgraf-Wolf-v-Rosenbach-Wappen-f-Hospital-v-Fulda_arcinsys.jpg"
@@ -29,6 +15,20 @@
           "src": "http://images.monasterium.net/illum/IllUrk/1581-12-14_Pfalzgraf-Wolf-v-Rosenbach-Wappen-f-Hospital-v-Fulda_arcinsys_det.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "homburg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Philipp Wolf von Rosenberg"
     }
   ]
 }

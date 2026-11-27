@@ -6,15 +6,15 @@
       "source": "HStAM, 86, 29284",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1877078",
       "german": "Verwendung des böhmischen Landeshauptmanns Peter von Rosenberg bei Graf Reinhard von Hanau-Münzenberg für Prager Bürger, die von Frowin von Hutten, Eitel von Felberg und anderen niedergeworfen und gefangen wurden",
-      "english": "Intervention by Peter von Rosenberg, Bohemian Landeshauptmann, with Count Reinhard von Hanau-Münzenberg on behalf of Prague citizens who had been assaulted and taken prisoner by Frowin von Hutten, Eitel von Felberg, and others.",
-      "mention": [
-        {
-          "place": "hutten"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ]
+      "english": "Intervention by Peter von Rosenberg, Bohemian Landeshauptmann, with Count Reinhard von Hanau-Münzenberg on behalf of Prague citizens who had been assaulted and taken prisoner by Frowin von Hutten, Eitel von Felberg, and others."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hutten"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

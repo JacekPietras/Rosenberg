@@ -10,61 +10,6 @@
       ],
       "german": "Eberhard der Jüngere und Konrad, Söhne und andere benannte Verwandte des weiland Ritters Eberhard von Rosenberg (Rosinberg) der Ältere verkaufen an die Abtei Bronnbach eine Hube in Uissigheim (Vssinkeim) mit einem jährlichen Ertrag von 6 Malter Korn und 2 Malter Weizen um 27 Pfund Heller und stellen Bürgen für diesen Verkauf.\n\nSiegler: Konrad von Uissigheim",
       "english": "Eberhard and Konrad, sons and other named relatives of the deceased Eberhard von Rosenberg, Ritter, sell to the Bronnbach Abbey a Hube in Uissigheim with an annual yield of 6 malters of grain and 2 malters of wheat for 27 pounds of Heller and provide guarantors for this sale.\n\nSiegler: Konrad von Uissigheim",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Eberhard von Rosenberg",
-          "ofTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg."
-        },
-        {
-          "person": "Konrad von Uissigheim",
-          "type": "generic",
-          "content": "sealed the transaction."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "der Ältere"
-          ],
-          "type": "death",
-          "diedBefore": "1300-05-18"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234225%2F07_0000234225_0001_7-234225-1.jpg",
@@ -82,6 +27,61 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Eberhard von Rosenberg",
+      "ofTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "sold a Hube at Uissigheim to Bronnbach Abbey together with Konrad von Rosenberg."
+    },
+    {
+      "person": "Konrad von Uissigheim",
+      "type": "generic",
+      "content": "sealed the transaction."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "der Ältere"
+      ],
+      "type": "death",
+      "diedBefore": "1300-05-18"
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

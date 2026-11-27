@@ -6,18 +6,18 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 22 Qu. 107",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755810",
       "german": "Verkauf von Leibeigenen zu Harthausen an Nikolaus Vehe, Amtsverweser zu Neuhaus, durch Franz Rüdt von Bödigheim zu Wachbach, 1530 [o.M. o.T.; Regest].",
-      "english": "Franz Rüdt von Bödigheim zu Wachbach sells serfs at Harthausen to Nikolaus Vehe, administrator at Neuhaus, 1530 [no month or day; regest].",
-      "mention": [
-        {
-          "person": "Franz Rüd von Bödigheim",
-          "personTitle": [
-            "zu Wachbach"
-          ]
-        },
-        {
-          "place": "neuhaus"
-        }
+      "english": "Franz Rüdt von Bödigheim zu Wachbach sells serfs at Harthausen to Nikolaus Vehe, administrator at Neuhaus, 1530 [no month or day; regest]."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Rüd von Bödigheim",
+      "personTitle": [
+        "zu Wachbach"
       ]
+    },
+    {
+      "place": "neuhaus"
     }
   ]
 }

@@ -9,55 +9,7 @@
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508: Karlsr. Coph. 466,86r.",
       "url": "https://archive.org/details/bub_gb_dnQ-AAAAYAAJ/page/n348/mode/1up",
       "german": "Ruprecht schuldet Conrad von Rosenberg, vitztum zu Heidelberg, und seiner frau Margarethe von Hirschhorn von Ruprecht I her 810 gulden, wofür derselbe Minneberg von Contze Monich, vogt zu Steinsberg, gelöst, 1000 gulden, welche der pfalzgraf des von Rosenberg tochter verschrieben, und 1000 gulden für sich, zusammen 2810 gulden, wofür ihm Minneberg als pfand bleibt.",
-      "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margaretha von Hirschhorn 810 gulden dating from Ruprecht I. Konrad used that sum to redeem Minneburg from Kunz Mönch von Rosenberg, Vogt zu Steinsberg. The debt also includes 1,000 gulden that the Count Palatine had pledged to Rosenberg's daughter and 1,000 gulden for himself, making 2,810 gulden in total, for which Minneburg remains pledged to Konrad.",
-      "mention": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ]
-        },
-        {
-          "place": "minneburg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Heidelberg"
-          ],
-          "type": "spouse",
-          "of": "Margaretha von Hirschhorn"
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Heidelberg"
-          ],
-          "type": "generic",
-          "content": "had a daughter to whom the Count Palatine had pledged money."
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Heidelberg"
-          ],
-          "type": "generic",
-          "content": "was owed money by Ruprecht and also held claims to money pledged to his daughter and to himself."
-        },
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Heidelberg"
-          ],
-          "type": "generic",
-          "content": "held Minneburg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn."
-        }
-      ]
+      "english": "Ruprecht owes Konrad von Rosenberg, Vitztum zu Heidelberg, and his wife Margaretha von Hirschhorn 810 gulden dating from Ruprecht I. Konrad used that sum to redeem Minneburg from Kunz Mönch von Rosenberg, Vogt zu Steinsberg. The debt also includes 1,000 gulden that the Count Palatine had pledged to Rosenberg's daughter and 1,000 gulden for himself, making 2,810 gulden in total, for which Minneburg remains pledged to Konrad."
     },
     {
       "source": [
@@ -65,24 +17,65 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Pfalzgraf Ruprecht bekennt, dass er Konrad v. Rosenberg u.a. 810 Gulden schuldet, die letzterer zur Auslösung der Minneburg von Kunz Münch benutzt hat. KOCH & WILLE 1894, Nr. 5448; WÜST 1976:139",
-      "english": "Pfalzgraf Ruprecht acknowledges that he owes Konrad von Rosenberg and others 810 gulden, which the latter used to redeem the Minneburg from Kunz Mönch von Rosenberg.",
-      "mention": [
-        {
-          "place": "minneburg"
-        }
+      "english": "Pfalzgraf Ruprecht acknowledges that he owes Konrad von Rosenberg and others 810 gulden, which the latter used to redeem the Minneburg from Kunz Mönch von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Heidelberg"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "type": "generic",
-          "content": "was acknowledged by Pfalzgraf Ruprecht as a creditor, having used the money to redeem the Minneburg from Kunz Mönch von Rosenberg."
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "type": "generic",
-          "content": "held the Minneburg before its redemption."
-        }
+      "type": "spouse",
+      "of": "Margaretha von Hirschhorn"
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Heidelberg"
+      ],
+      "type": "generic",
+      "content": "had a daughter to whom the Count Palatine had pledged money."
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Heidelberg"
+      ],
+      "type": "generic",
+      "content": "was owed money by Ruprecht and also held claims to money pledged to his daughter and to himself."
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Heidelberg"
+      ],
+      "type": "generic",
+      "content": "held Minneburg as security for debts owed by Ruprecht to him and Margarethe von Hirschhorn."
+    },
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "type": "generic",
+      "content": "was acknowledged by Pfalzgraf Ruprecht as a creditor, having used the money to redeem the Minneburg from Kunz Mönch von Rosenberg."
+    },
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "type": "generic",
+      "content": "held the Minneburg before its redemption."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
       ]
+    },
+    {
+      "place": "minneburg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

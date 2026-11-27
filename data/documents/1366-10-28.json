@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1366_X_28.1/charter",
       "german": "Abt Heinrich und der Convent des Klosters zu Hohenfurt verpflichten sich und ihre Nachfolger zur Abhaltung eines immerwährenden Jahrtages für Heinrich Bogner von Rosenberg und dessen Sohn Seidlin.\n\nSiegel: Die Siegel fehlen.",
       "english": "Abbot Heinrich and the convent of the monastery at Hohenfurt bind themselves and their successors to hold an annual perpetual memorial service for Heinrich Bogner von Rosenberg and his son Seidlin.\n\nSeals: The seals are missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13660128_70%2CI_v.jpg"
@@ -26,11 +21,6 @@
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/ed21a108-48f3-400a-a20e-b7d5d7ec4545/charter",
       "german": "1366. 28. October. 0. �?0. — Abt Heinrich und der Convent des Klosters гu Ho- henfurt verpflichten sich und ihre Nachfolger zuг Abhaltung eines immerwäh renden Jahrtages für Heinrich Bogner von Rosenberg und dessen Sohn Seidlin.",
       "english": "[28 October 1366. Abbot Heinrich and the convent of the monastery at Hohenfurt bind themselves and their successors to hold an annual perpetual memorial service for Heinrich Bogner von Rosenberg and his son Seidlin.]",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000149.png"
@@ -39,6 +29,11 @@
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000150.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

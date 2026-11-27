@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++cfa4db83-53f3-4fae-a24e-d966f8b19242&parent_id="
       ],
       "german": "Bau und Unterhalt einer Gemeindestraße von Rosenberg nach Neustetten.",
-      "english": "Construction and maintenance of a municipal road from Rosenberg to Neustetten.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Construction and maintenance of a municipal road from Rosenberg to Neustetten."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

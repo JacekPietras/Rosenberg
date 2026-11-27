@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2924078",
       "german": "Katharina von Ussigheim, Conzen Witwe von Ussigheim, und Arnold, ihr Sohn, bekennen, dass außer einem Brief über 136 fl. die anderen Briefe, so sich bei ihnen noch finden möchten, H. Gerlach von Hohenlohe keinen Schaden bringen sollten.\n\nLaufzeit: 1380 (Freitag nach St. Michael)\n\nSiegelbeschreibung: 2 Siegel anhängend\n\nSiegler: Die 2 Aussteller",
       "english": "Katharina von Uissigheim, Conzen’s widow von Uissigheim, and Arnold, her son, acknowledge that, except for a letter concerning 136 florins, any other letters that may still be found among their papers are not to cause H. Gerlach von Hohenlohe any harm.\n\nTerm: 1380 (Friday after St Michael’s Day)\n\nSeal description: Two seals attached.\n\nSeal holders: The two issuers.",
-      "mention": [
-        {
-          "person": "Gerlach von Hohenlohe"
-        },
-        {
-          "person": "Katharina von Uissigheim"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4941&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004941%2Ftitlaufn_0002924078%2F02_0002924078_0001_2-2924078-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=4941&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000004941%2Ftitlaufn_0002924078%2F02_0002924078_0002_2-2924078-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gerlach von Hohenlohe"
+    },
+    {
+      "person": "Katharina von Uissigheim"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

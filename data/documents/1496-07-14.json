@@ -8,33 +8,33 @@
       "summary": "Das Hofgericht in Ansbach (onoltzbach) erlässt ein Urteil, dass Herr Erasmus von Rosenberg (her Erasmus von Rosenberg) seinen Schafstrieb aus Baldersheim (Baltersheim) in die Mark Gülchsheim (mark gulchsheim) bei Herrn Philipp von Weinsberg (hern philipsen von weinsberg) eintragen muss. Weiterhin sollen in der Mark Gülchsheim keine pfeich gebraucht und der Trieb nicht in den Wald gelegt werden, allerdings darf Erasmus von Rosenberg seine Schafe aus Waltershofen weiterhin nach Gülchsheim in die Mark treiben, wie es bisher der Fall war.",
       "german": "[fol. 308r] Des Schaftribs halben aus baldershaim in der mark Gulchsheim ist am donerstag nach petri vnd pauli anno 1496 am hofgerichte zu onoltzbach ein vrteil gangen das her Erasmus von Rosenberg hern philipsen von weinsberg an dem tribe mit seinen Schaffen zu Baltersheim auf vnd in der mark zu gulchsheim im irren nach ime des eintrag ihm vnd solle auch in der marck zu gulchsheim [fol. 308v] keine pfeich gebrauchen nach der Schaf daselbst zu Gulchshaim oder in der marck mit lege nit holtz aber seinen trib mit den Schaffen von walternshofen mag er gen Gulrichshaim in die marck geprauchen wie von alter herkommen ist Recepta I contractum Conradi fo 191",
       "english": "Concerning the sheep drive from Baldersheim into the district of Gülchsheim, the court issued a judgment on Thursday after St Peter and St Paul’s Day, 1496. The archive summary identifies the court’s place, written as Onoltzbach in the transcription, as Ansbach. It ruled that Erasmus von Rosenberg, Ritter, was to have his sheep drive from Baldersheim entered in the district of Gülchsheim under Philipp von Weinsberg. The summary explains that no `pfeich` (an unclear term in the transcription) was to be used and the sheep drive was not to be routed through woodland there; Erasmus could still drive his sheep from Waltershofen into the district according to longstanding custom. Recorded in Conrad’s first register of contracts, fol. 191.",
-      "mention": [
-        {
-          "place": "baldersheim"
-        },
-        {
-          "person": "Philipp von Weinsberg"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Erasmus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_308.jpg",
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Erasmus von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "was permitted by a court judgment to drive his sheep at Baltersheim and in the district of Gülchsheim; he was barred from using sheepfolds or cutting wood in Gülchsheim but could drive sheep there from Waldmannshofen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "baldersheim"
+    },
+    {
+      "person": "Philipp von Weinsberg"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

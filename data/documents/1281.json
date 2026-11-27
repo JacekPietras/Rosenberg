@@ -8,32 +8,32 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "summary": "Die Brüder Boppo und Ludwig von Dürn (de Důrne fratres Bobbo et Ludwicus) eignen den Johannitern zu Mergentheim die Güter zu Sol, die von ihnen der Ritter Gottfried Kozlin der ältere (Gotfridus miles dictus Kozlinus senior) zu Lehen trug, nachdem ihnen derselbe seine Eigengüter zu Luogesbrunnen als Lehen aufgetragen hatte.",
       "latin": "Testes huius rei sunt dominus Krafto de Hohenloch, dominus Boppo filius eius, dominus Ruodolfus comes de Wertheim, dominus Heinricus de Brunekke, Eberhardus de Uºssenkhein. Acta sunt hec anno domini Mº.CC.LXXXIº.",
-      "english": "The brothers Boppo and Ludwig von Dürn grant to the Hospitallers at Mergentheim the properties at Sol, which the knight Gottfried Kozlin the Elder held from them as a fief, after he had enfeoffed them with his own properties at Luogesbrunnen. Witnesses were Lord Kraft von Hohenlohe; Lord Boppo, his son; Lord Rudolf, Count of Wertheim; Lord Heinrich von Bruneck; and Eberhard von Ussenkhein. Done in the year of the Lord 1281.",
-      "mention": [
-        {
-          "person": "Boppe von Dürn"
-        },
-        {
-          "person": "Ludwig von Dürn"
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kraft von Hohenlohe",
-          "type": "parent",
-          "of": "Boppe von Hohenlohe"
-        },
-        {
-          "person": "Eberhard von Ussenkhein",
-          "type": "generic",
-          "content": "was named among the witnesses to the grant by Boppo and Ludwig von Dürn to the Hospitallers at Mergentheim."
-        }
+      "english": "The brothers Boppo and Ludwig von Dürn grant to the Hospitallers at Mergentheim the properties at Sol, which the knight Gottfried Kozlin the Elder held from them as a fief, after he had enfeoffed them with his own properties at Luogesbrunnen. Witnesses were Lord Kraft von Hohenlohe; Lord Boppo, his son; Lord Rudolf, Count of Wertheim; Lord Heinrich von Bruneck; and Eberhard von Ussenkhein. Done in the year of the Lord 1281."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kraft von Hohenlohe",
+      "type": "parent",
+      "of": "Boppe von Hohenlohe"
+    },
+    {
+      "person": "Eberhard von Ussenkhein",
+      "type": "generic",
+      "content": "was named among the witnesses to the grant by Boppo and Ludwig von Dürn to the Hospitallers at Mergentheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Boppe von Dürn"
+    },
+    {
+      "person": "Ludwig von Dürn"
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
     }
   ]

@@ -9,31 +9,31 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++bbff79a8-b88d-4770-a325-7546a186b59f&parent_id="
       ],
       "german": "Rothenburg an Contz von Rosenberg, Amtmann zu Röttingen und Raigelberg: Zehrschulden Rothenburger Bürger zu Röttingen während des Bauernkriegs.",
-      "english": "Rothenburg to Kunz von Rosenberg, Amtmann zu Röttingen und Raigelberg: debts of Rothenburg citizens in Röttingen incurred during the Peasants' War.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Röttingen"
-          ]
-        },
-        {
-          "place": "roettingen"
-        },
-        {
-          "place": "rothenburg"
-        }
+      "english": "Rothenburg to Kunz von Rosenberg, Amtmann zu Röttingen und Raigelberg: debts of Rothenburg citizens in Röttingen incurred during the Peasants' War."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Röttingen und Reigelberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Röttingen und Reigelberg"
-          ],
-          "type": "generic",
-          "content": "was addressed in a letter from Rothenburg about debts incurred by Rothenburg citizens in Röttingen during the Peasants' War."
-        }
+      "type": "generic",
+      "content": "was addressed in a letter from Rothenburg about debts incurred by Rothenburg citizens in Röttingen during the Peasants' War."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Röttingen"
       ]
+    },
+    {
+      "place": "roettingen"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

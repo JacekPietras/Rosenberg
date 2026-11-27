@@ -17,14 +17,6 @@
       ],
       "german": "Bestallung des Georg von Rosenberg als Amtmann zu Hanau, 1530",
       "english": "Appointment of Georg von Rosenberg, Amtmann zu Hanau, 1530",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Amtmann zu Hanau"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00001.jpg",
@@ -58,6 +50,14 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hhstaw/171/b_459/00010.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Amtmann zu Hanau"
       ]
     }
   ]

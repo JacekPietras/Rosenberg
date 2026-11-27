@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++031c726b-6e9b-460c-b370-2e0046eeecaf&parent_id="
       ],
       "german": "Rügland: 139. Beschuldigung des cr. Gärtners Ludwig Christian Kern wegen Diebstahls durch Johann Leonhard Schiennagel von Rosenberg.",
-      "english": "Rügland: 139. Accusation of the subject gardener Ludwig Christian Kern of theft by Johann Leonhard Schiennagel von Rosenberg.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Rügland: 139. Accusation of the subject gardener Ludwig Christian Kern of theft by Johann Leonhard Schiennagel von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

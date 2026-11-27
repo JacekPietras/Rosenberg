@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++21d91d0a-4990-4bd7-b976-601294dd8fb2&parent_id="
       ],
       "german": "Rothenburg an den Stadtschreiber Thomas Zweifel: Rothenburg gestattet nicht, daß die adligen Zeugen des Zaisolph von Rosenberg nur auf \"Edelmanns Glauben\" verhört werden.",
-      "english": "Rothenburg to the city scribe Thomas Zweifel: Rothenburg does not permit that the noble witnesses of Zaisolph von Rosenberg be interrogated based only on \"nobleman's oath.\"",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "presented noble witnesses in the process, whose testimony Rothenburg refused to accept solely on an Edelmann’s word."
-        }
-      ]
+      "english": "Rothenburg to the city scribe Thomas Zweifel: Rothenburg does not permit that the noble witnesses of Zaisolph von Rosenberg be interrogated based only on \"nobleman's oath.\""
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "presented noble witnesses in the process, whose testimony Rothenburg refused to accept solely on an Edelmann’s word."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

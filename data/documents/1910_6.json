@@ -6,18 +6,18 @@
       "source": "Generallandesarchiv Karlsruhe J-C B 11",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1014983",
       "german": "Epitaphien in der Kirche\n\nLaufzeit: Ca. 1910\n\nEnthält: \"Effigies Georgii de Rosenberg equitis cum Inscriptione.\" - \"Effigies Johannae de Rosenberg Natae ab Aicholshe.\"\nAus dem: \"Thesaurus Palatinus\"",
-      "english": "Epitaphs in the church\n\nDate: circa 1910\n\nContains, among other things: “Effigy of Georg von Rosenberg, knight, with inscription.” – “Effigy of Johanna von Rosenberg, née von Aicholz.”\nFrom the “Thesaurus Palatinus”",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Johanna von Rosenberg"
-        }
+      "english": "Epitaphs in the church\n\nDate: circa 1910\n\nContains, among other things: “Effigy of Georg von Rosenberg, knight, with inscription.” – “Effigy of Johanna von Rosenberg, née von Aicholz.”\nFrom the “Thesaurus Palatinus”"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Johanna von Rosenberg"
     }
   ]
 }

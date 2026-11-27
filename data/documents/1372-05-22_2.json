@@ -11,14 +11,6 @@
       ],
       "german": "Niklas von Raydenbach zu Rosenberg verkauft Wirdlin dem Wirt von Rosenberg, Bürger zu Sulzbach, die Wiese Smydin, den Schmiedacker und einen weitern Acker [bei Sulzbach?], welche vom Bischof von Bamberg zu Lehen gehen.\nS:\n\nBesiegelung/Beglaubigung: beide S anhängend",
       "english": "Niklas von Raydenbach zu Rosenberg sells to Wernlein Wirt von Rosenberg, citizen of Sulzbach, the meadow Smydin, the smith's field, and another acre [near Sulzbach?], which are held as fiefs from the Bishop of Bamberg.\nS:",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wernlein Wirt von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/44300ce1-d2fe-496e-b3f6-e54ba10fb17e/1/full/max/0/default.jpg"
@@ -28,6 +20,14 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wernlein Wirt von Rosenberg"
     }
   ]
 }

@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++987a21e3-0bbb-408c-bd67-c95428fe5479&parent_id="
       ],
       "german": "Pfeifer, Johann Leonhard, von Ruppersdorf, Dienstknecht; Verheiratung mit Schuh, Anna Barbara, von Rosenberg",
-      "english": "Johann Leonhard Pfeifer, from Ruppersdorf, farmhand; marriage to Anna Barbara Schuh, from Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Leonhard Pfeifer, from Ruppersdorf, farmhand; marriage to Anna Barbara Schuh, from Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

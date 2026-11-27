@@ -7,39 +7,39 @@
       "source": "RI VIII n. 183",
       "url": "https://www.regesta-imperii.de/id/1353-10-29_1_0_8_0_0_6938_183",
       "german": "Ruprecht der ältere Rheinpfalzgraf verpfändet dem römischen könige Karl und der krone Böhmen für die 12000 mark silber, um welche dieser seinen bruderssohn Ruprecht den iüngern aus der sächsischen gefangenschaft befreite, die vesten Neustadt, Sternstein, Hirschau und Lichtenstein und für die 20000 mark, die derselbe in den nutzen seines bruders weiland des pfalzgrafen Rudolf verwandte, die vesten und städte Sulzbach, Rosenberg, Hertenstein, Neidstein, Thurndorf, Hilpoldstein, Hohenstein, Lichteneck, Frankenberg, Laufen, Eschenbach, Hersbruck, Auerbach, Velden, Regnitur (Pegnitz) und Bleth (Blech) und was sein genannter bruder in Baiern hatte. Es siegeln auf seine bitte: erzbischof Gerlach v. Mainz, die bischöfe Albert v. Wirzburg und Gerard v. Speier, Rudolf herzog v. Oesterreich, Albert Rheinpfalzgraf, die grafen Johann v. Katzenellenbogen und Ludwig und Friedrich v. Oettingen und Lutzo v. Hohenlohe. Balbin Miscell. dec. I. 8,64. Goldast De iuribus regni Boh. App. 77. Lünig Cod. Germ. 1,1109. Lünig R. A. 8,10. Verhandlungen des hist. Ver. von Oberpfalz und Regensburg 24,126.",
-      "english": "Ruprecht der Ältere, Rhine Count Palatine, pledges to the Roman King Karl and the Crown of Bohemia, for the 12,000 marks of silver for which the latter freed his brother’s son Ruprecht den Jüngeren from Saxon captivity, the fortresses of Neustadt, Sternstein, Hirschau, and Lichtenstein; and, for the 20,000 marks which he spent for the benefit of his late brother Count Palatine Rudolf, the fortresses and towns of Sulzbach, Rosenberg, Hertenstein, Neidstein, Thurndorf, Hilpoldstein, Hohenstein, Lichteneck, Frankenberg, Laufen, Eschenbach, Hersbruck, Auerbach, Velden, Regnitur (Pegnitz), and Bleth (Blech), and whatever his said brother possessed in Bavaria. At his request the following seal: Archbishop Gerlach of Mainz; Bishops Albert of Würzburg and Gerard of Speyer; Rudolf, Duke of Austria; Albert, Rhine Count Palatine; Counts Johann of Katzenelnbogen, Ludwig and Friedrich of Oettingen, and Lutzo of Hohenlohe. References: Balbin Miscell. dec. I. 8, 64; Goldast De iuribus regni Boh. App. 77; Lünig Cod. Germ. 1, 1109; Lünig R. A. 8, 10; Verhandlungen des historischen Vereins von Oberpfalz und Regensburg 24, 126.",
-      "mention": [
-        {
-          "person": "Albrecht of Würzburg"
-        },
-        {
-          "person": "Erzbischof Gerlach",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Hans of Katzenelnbogen"
-        },
-        {
-          "person": "König Karl",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "lichtenstein"
-        },
-        {
-          "person": "Ludwig of Hohenlohe"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "speyer"
-        }
+      "english": "Ruprecht der Ältere, Rhine Count Palatine, pledges to the Roman King Karl and the Crown of Bohemia, for the 12,000 marks of silver for which the latter freed his brother’s son Ruprecht den Jüngeren from Saxon captivity, the fortresses of Neustadt, Sternstein, Hirschau, and Lichtenstein; and, for the 20,000 marks which he spent for the benefit of his late brother Count Palatine Rudolf, the fortresses and towns of Sulzbach, Rosenberg, Hertenstein, Neidstein, Thurndorf, Hilpoldstein, Hohenstein, Lichteneck, Frankenberg, Laufen, Eschenbach, Hersbruck, Auerbach, Velden, Regnitur (Pegnitz), and Bleth (Blech), and whatever his said brother possessed in Bavaria. At his request the following seal: Archbishop Gerlach of Mainz; Bishops Albert of Würzburg and Gerard of Speyer; Rudolf, Duke of Austria; Albert, Rhine Count Palatine; Counts Johann of Katzenelnbogen, Ludwig and Friedrich of Oettingen, and Lutzo of Hohenlohe. References: Balbin Miscell. dec. I. 8, 64; Goldast De iuribus regni Boh. App. 77; Lünig Cod. Germ. 1, 1109; Lünig R. A. 8, 10; Verhandlungen des historischen Vereins von Oberpfalz und Regensburg 24, 126."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht of Würzburg"
+    },
+    {
+      "person": "Erzbischof Gerlach",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "person": "Hans of Katzenelnbogen"
+    },
+    {
+      "person": "König Karl",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "place": "lichtenstein"
+    },
+    {
+      "person": "Ludwig of Hohenlohe"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "speyer"
     }
   ]
 }

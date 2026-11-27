@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/1112/charter",
       "german": "Ulrich von Kronberg (Cronbergk), Johann Konrad und Adam Hektor von Rosenbach sowie weitere namentlich genannte Personen bestätigen für sich und andere namentlich genannte Personen die Belehnung mit Schackau (Schacken) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Sassen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Johann Friedrich [von Schwalbach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Ulrich von Kronberg, Georg Daniel von und zu Mansbach (Manspach) und Daniel Adam von Fechenbach (Vechenbach)\n\nSiegel: drei anhängende Siegel, zwei davon in Holzkapseln, das dritte ab und verloren Ulrich von Kronberg, Georg Daniel von und zu Mansbach (Manspach) und Daniel Adam von Fechenbach (Vechenbach)",
       "english": "Ulrich von Kronberg, Johann Konrad and Adam Hektor von Rosenbach, and other named persons acknowledge for themselves and others their enfeoffment by Johann Friedrich von Schwalbach, Abbot of Fulda, with Schackau and all its woodland and field appurtenances, an estate there, Kleinsassen, Gerharts, and other specified fiefs (all these places are in the municipality of Hofbieber, district of Fulda). The enfeoffment charter is inserted; seals are announced.\n\nSealers: Ulrich von Kronberg, Georg Daniel von und zu Mansbach, and Daniel Adam von Fechenbach.\nSeals: Three attached seals, two in wooden capsules; the third is detached and lost.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201112%20Vorderseite%20%281608%20Mai%2019%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%201112%20Rueckseite%20%281608%20Mai%2019%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

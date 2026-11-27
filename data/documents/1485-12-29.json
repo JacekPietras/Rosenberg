@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++70CFE1F8-2B27-413E-9506-FD23CE5CC2A2&parent_id="
       ],
       "german": "Lehenrevers: Asmus von Rosenberg gibt Lehenrevers gegen Markgraf Albrecht von Brandenburg um den halben Teil an Schloss, Dorf, Gericht zu Waldmannshofen, mit allen Zugehörungen. - Siegler: Asmus von Rosenberg, Ritter.\n\nBesiegelung/Beglaubigung: 1 Sg.",
-      "english": "Fief acknowledgment: Asmus von Rosenberg gives fief acknowledgment to Margrave Albrecht of Brandenburg regarding half of the Schloss, village, and court at Waldmannshofen, with all appurtenances. - Seal: Asmus von Rosenberg, knight.",
-      "mention": [
-        {
-          "place": "waldmannshofen"
-        }
+      "english": "Fief acknowledgment: Asmus von Rosenberg gives fief acknowledgment to Margrave Albrecht of Brandenburg regarding half of the Schloss, village, and court at Waldmannshofen, with all appurtenances. - Seal: Asmus von Rosenberg, knight."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Asmus von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Asmus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "acknowledged receiving half of Schloss, village and court of Waldmannshofen as a fief from Margrave Albrecht of Brandenburg."
-        },
-        {
-          "person": "Asmus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "sealed his fief acknowledgment for Waldmannshofen."
-        }
-      ]
+      "type": "generic",
+      "content": "acknowledged receiving half of Schloss, village and court of Waldmannshofen as a fief from Margrave Albrecht of Brandenburg."
+    },
+    {
+      "person": "Asmus von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "sealed his fief acknowledgment for Waldmannshofen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

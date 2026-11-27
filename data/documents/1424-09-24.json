@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b7c87c56-cb31-4ac3-88b0-171b5a8c7c95&parent_id="
       ],
       "german": "Graf Johann von Wertheim befreit auf Bitten des Hans Münch von Rosenberg dessen Gut zu Hainstadt, das Zörnleinsgut, aus der Lehenbarkeit der Grafschaft Wertheim, damit Hans Münch es dem Gotteshaus zu Hainstadt schenken kann.",
-      "english": "Count Johann von Wertheim, at the request of Hans Münch von Rosenberg, releases his estate at Hainstadt, the Zörnlein estate, from the feudal obligations of the County of Wertheim, so that Hans Münch may give it to the church at Hainstadt.",
-      "mention": [
-        {
-          "place": "hainstadt"
-        },
-        {
-          "person": "Hans Mönch"
-        },
-        {
-          "person": "Hans Mönch von Rosenberg"
-        },
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
+      "english": "Count Johann von Wertheim, at the request of Hans Münch von Rosenberg, releases his estate at Hainstadt, the Zörnlein estate, from the feudal obligations of the County of Wertheim, so that Hans Münch may give it to the church at Hainstadt."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hainstadt"
+    },
+    {
+      "person": "Hans Mönch"
+    },
+    {
+      "person": "Hans Mönch von Rosenberg"
+    },
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

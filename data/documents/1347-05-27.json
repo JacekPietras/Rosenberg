@@ -9,41 +9,41 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EC1AE4FD-E958-4A7B-B031-A0FAA27D4E93&parent_id="
       ],
       "german": "Revers des Ritters Engelhard v. Hirschhorn über inserierte Verschreibung von 1347 Mai 26: Kono v. Falkenstein, Scholaster, Nikolaus vom Steine, Kanoniker, und die Ritter Eberhard v. Rosenberg, Johann v. Randecke und Johann v. Bellersheim (\"Beldirsheim\") beurkunden als Vormünder des Stifts zu Mainz, daß Erzbischof Heinrich von Mainz, der Kustos Heinrich und das Mainzer Domkapitel dem Ritter Eberhard v. Hirschhorn für 5.200 lb. h. die Burg Scheuerberg und die Stadt Neckarsulm (\"Sulme\") mitsamt zugehörigen Dörfern, Gerichten und sonstigem Zubehör verschrieben haben.",
-      "english": "Counter-reversal by Engelhard von Hirschhorn, Ritter, concerning an inserted pledge dated 26 May 1347: Kono von Falkenstein, scholaster; Nikolaus vom Steine, canon; and Eberhard von Rosenberg, Ritter; Johann von Randecke, Ritter; and Johann von Bellersheim, Ritter certify, as guardians of the Mainz foundation, that Archbishop Heinrich of Mainz, Custodian Heinrich, and the Mainz cathedral chapter pledged Scheuerberg Castle and the town of Neckarsulm, with their associated villages, courts, and other appurtenances, to Eberhard von Hirschhorn, Ritter",
-      "mention": [
-        {
-          "person": "Eberhard von Hirschhorn",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Engelhard von Hirschhorn",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Erzbischof Heinrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        }
+      "english": "Counter-reversal by Engelhard von Hirschhorn, Ritter, concerning an inserted pledge dated 26 May 1347: Kono von Falkenstein, scholaster; Nikolaus vom Steine, canon; and Eberhard von Rosenberg, Ritter; Johann von Randecke, Ritter; and Johann von Bellersheim, Ritter certify, as guardians of the Mainz foundation, that Archbishop Heinrich of Mainz, Custodian Heinrich, and the Mainz cathedral chapter pledged Scheuerberg Castle and the town of Neckarsulm, with their associated villages, courts, and other appurtenances, to Eberhard von Hirschhorn, Ritter"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Vormund des Stifts Mainz"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Vormund des Stifts Mainz"
-          ],
-          "type": "generic",
-          "content": "with the other guardians, certified the pledge of Scheuerberg Castle and Neckarsulm to Eberhard von Hirschhorn."
-        }
+      "type": "generic",
+      "content": "with the other guardians, certified the pledge of Scheuerberg Castle and Neckarsulm to Eberhard von Hirschhorn."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Hirschhorn",
+      "personTitle": [
+        "Ritter"
       ]
+    },
+    {
+      "person": "Engelhard von Hirschhorn",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Erzbischof Heinrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

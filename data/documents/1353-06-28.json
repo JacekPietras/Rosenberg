@@ -7,28 +7,28 @@
       "source": "Regesta Boica 8",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11697672",
       "german": "Conrat von Kirckel, Vormünder des Stiftes zu Mentz, bekennt dass mit Wissen und\nWillen Heinrichs Erzbischofes zu Mentze, Heinrichs von Bienbach, Costers des Kapitels des\nDomes zu Mentze, Kune von Falckenstein Schulmeisters, Nyclaus von dem Steyne Canonikers,\nEberhard von Rosenberg, Johannes von Randeck, Johans von Velderssheim, Ritter, Vormünder\ndes Stiftes zu Mentz, die 100 Pfund Geldes welche um 800 Pfd. Heller dem Siffrit von Le-\nbenstein und Burgel dessen ehlicher Hausfrau von des Stiftes wegen verkauft wurden zu rech-\ntem Wiederkaufe, nunmehr dem Wernher von Stoghein und obiger Burgeln, dessen ehlicher\nHausfrau zu geben seien, welches Geld jährlich auf sant Mertins Tag auf der Bede zu\nAschaffenburg zu heben und zu nehmen ist; dass der Wiederkauf in dem Monate zwischen\nden 2 Frauentagen zu geschehen habe; dass, fiele das Geld nicht zu rechter Zeit, Wernher\ndas Stift ohne Zorn pfänden dürfe, auch, wenn er des Stiftes Feind würde, sein Geld fort-\nbeziehe; dass, fänden sich etwa die dem Siffrit gegebenen Briefe, diese kraftlos seien; dass end-\nlich dem Inhaber dieses Briefes die Stadt Aschaffenburg die genannte Gült reichen solle. G.\nzu Mentz des Freitages allernächst sancti Petri et Pauli apostolorum. (c. 3 S.)",
-      "english": "Konrad von Kirckel, guardian of the Mainz foundation, declares that, with the knowledge and consent of Heinrich, Erzbischof zu Mainz, and the foundation’s guardians Heinrich von Bienbach, custodian of the Mainz cathedral chapter; Kune von Falckenstein, schoolmaster; Nyclaus von dem Steyne, canon; and Eberhard von Rosenberg, Hans von Randeck and Hans von Velderssheim, Ritter, the annual income of 100 pounds formerly sold on behalf of the foundation for 800 pounds Heller to Siffrit von Lebenstein and his wife Burgel, subject to redemption, is now to be paid to Wernher von Stoghein and his wife Burgel. The income is to be collected annually on St. Martin’s Day from the Bede at Aschaffenburg. Redemption is to take place during the month between the two feasts of Our Lady. If payment is late, Wernher may distrain against the foundation without incurring its anger; even if he becomes its enemy, he shall continue to receive the income. Any documents previously issued to Siffrit that may be found are to be void, and the town of Aschaffenburg is to pay the income to the holder of this charter. Given at Mainz on the Friday nearest the feast of Saints Peter and Paul. With three seals.",
-      "mention": [
-        {
-          "person": "Erzbischof Heinrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        }
+      "english": "Konrad von Kirckel, guardian of the Mainz foundation, declares that, with the knowledge and consent of Heinrich, Erzbischof zu Mainz, and the foundation’s guardians Heinrich von Bienbach, custodian of the Mainz cathedral chapter; Kune von Falckenstein, schoolmaster; Nyclaus von dem Steyne, canon; and Eberhard von Rosenberg, Hans von Randeck and Hans von Velderssheim, Ritter, the annual income of 100 pounds formerly sold on behalf of the foundation for 800 pounds Heller to Siffrit von Lebenstein and his wife Burgel, subject to redemption, is now to be paid to Wernher von Stoghein and his wife Burgel. The income is to be collected annually on St. Martin’s Day from the Bede at Aschaffenburg. Redemption is to take place during the month between the two feasts of Our Lady. If payment is late, Wernher may distrain against the foundation without incurring its anger; even if he becomes its enemy, he shall continue to receive the income. Any documents previously issued to Siffrit that may be found are to be void, and the town of Aschaffenburg is to pay the income to the holder of this charter. Given at Mainz on the Friday nearest the feast of Saints Peter and Paul. With three seals."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "consented, as a guardian of the Mainz foundation, to the assignment of an annual income from the Bede at Aschaffenburg to Wernher von Stoghein and his wife Burgel."
-        }
+      "type": "generic",
+      "content": "consented, as a guardian of the Mainz foundation, to the assignment of an annual income from the Bede at Aschaffenburg to Wernher von Stoghein and his wife Burgel."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Heinrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

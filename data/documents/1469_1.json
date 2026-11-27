@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++f2f2c570-7a41-4b88-9487-fd175d7f0d84&parent_id="
       ],
       "german": "Die Streitigkeiten der Stadt Windsheim mit Arnold von Rosenberg",
-      "english": "The disputes of the city of Windsheim with Arnold von Rosenberg",
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "was involved in disputes with the city of Windsheim."
-        }
-      ]
+      "english": "The disputes of the city of Windsheim with Arnold von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "was involved in disputes with the city of Windsheim."
     }
   ]
 }

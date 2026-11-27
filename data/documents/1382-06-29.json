@@ -9,34 +9,6 @@
       "summary": "Absagebrief von Weyreich von Truchtlingen, Hans von Plaunheim (Plawenheim), Kuntz von Rosenberg, Wilhelm von Huenheim (?) und Ras von Helmstat an Eb Pilgrim.",
       "german": "hern der Bischof von Saltzburg ich Weyreich von Trawtlingen\nHanns von Plawnhem Chunz von Rosenberg Wilhelm von Hunhem\nund Rasen von Helmstat lassen ew wissen daz wir in der hochgeboren\nfürsten unsers lieben genedigen hern Herczog Stephans Herczog Fridrichs Herczog\nRuffen [?] des jungen und Herczog Johansen von Bayrn fride und\nunfride sein wellen und wellen uns des gen ew bewart haben mit\ndem brief der geben ist zu der newenmarkt an sand peters und\nsand pauls tag mit Hannsen von Plawnhem aufgedruckten\ninsigl wann wir unser insigl all bey uns nicht haben",
       "english": "Lord Bishop of Salzburg, I, Wirich von Treuchtlingen, Hanns von Plawnhem, Kunz von Rosenberg, Wilhelm von Hürnheim and Raban von Helmstatt let you know that we wish to be in the peace and in the enmity of the high-born princes, our dear gracious lords Herczog Stephan, Herczog Friedrich, Herczog Ruprecht des Jungen and Herczog Johann of Bavaria, in both peace and war. And we intend, by this letter, to have duly notified you of this declaration. Given at Neumarkt on the day of St. Peter and St. Paul, with the impressed seal of Hanns von Plawnhem, because we do not all have our seals with us.",
-      "mention": [
-        {
-          "person": "Raban von Helmstatt"
-        },
-        {
-          "person": "Wilhelm von Hürnheim"
-        },
-        {
-          "person": "Wirich von Treuchtlingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "issued a letter to the Bishop of Salzburg together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "declared to the Bishop of Salzburg, together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat, that they wish to be in the peace and enmity of Duke Stephan, Duke Friedrich and Duke Johann of Bavaria."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "issued the letter at Neumarkt on St. Peter and St. Paul's day, sealed with the impressed seal of Hans von Plawnhem because the issuers did not all have their own seals with them."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1382_00_00-1-21.jpg",
@@ -51,6 +23,34 @@
           ]
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "issued a letter to the Bishop of Salzburg together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "declared to the Bishop of Salzburg, together with Weyreich von Trawtlingen, Hans von Plawnhem, Wilhelm von Hunhem and Rasen von Helmstat, that they wish to be in the peace and enmity of Duke Stephan, Duke Friedrich and Duke Johann of Bavaria."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "issued the letter at Neumarkt on St. Peter and St. Paul's day, sealed with the impressed seal of Hans von Plawnhem because the issuers did not all have their own seals with them."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Raban von Helmstatt"
+    },
+    {
+      "person": "Wilhelm von Hürnheim"
+    },
+    {
+      "person": "Wirich von Treuchtlingen"
     }
   ]
 }

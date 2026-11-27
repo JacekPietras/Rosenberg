@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++e6e2b5de-c4ab-4317-9420-257d559c0847&parent_id="
       ],
       "german": "Zeisolf von Rosenberg zu \"Halmersteten\" (= Haldermanstetten, Niederstetten) an Rothenburg: Schadenersatzforderung,",
-      "english": "Zaisolph von Rosenberg zu Halmersteten to Rothenburg: claim for damages,",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
+      "english": "Zaisolph von Rosenberg zu Halmersteten to Rothenburg: claim for damages,"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Halmersteten"
       ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Halmersteten"
-          ],
-          "type": "generic",
-          "content": "claimed compensation from Rothenburg."
-        }
-      ]
+      "type": "generic",
+      "content": "claimed compensation from Rothenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

@@ -6,27 +6,27 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GL 5 U 433",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-152043",
       "german": "Zehnten zu Wolkersfelden, Wiesemer Zehnten, kleiner Zehnt zu Münster, Gült zu Streichental; Pgt. Siegel: Graf Ludwig Casimir von Hohenlohe, Zeisolf von Rosenberg (ausgebrochen), Conrad von Vellberg, Hans von Steinach genannt Steinrur, Philipp Geyer zu Giebelstadt.\n\nLaufzeit: 1578\n\nUmfang: 1 Urkunde",
-      "english": "Tithes at Wolkersfelden, Wiesem tithes, the small tithe at Münster, and rent at Streichental; parchment. Seals: Count Ludwig Casimir von Hohenlohe, Zaisolph von Rosenberg (broken off), Conrad von Vellberg, Hans von Steinach called Steinrur, Philipp Geyer zu Giebelstadt.\n\nTerm: 1578\n\nExtent: 1 document",
-      "mention": [
-        {
-          "person": "Hans von Steinach"
-        },
-        {
-          "person": "Ludwig Casimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Philipp Geyer",
-          "personTitle": [
-            "zu Giebelstadt"
-          ]
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Tithes at Wolkersfelden, Wiesem tithes, the small tithe at Münster, and rent at Streichental; parchment. Seals: Count Ludwig Casimir von Hohenlohe, Zaisolph von Rosenberg (broken off), Conrad von Vellberg, Hans von Steinach called Steinrur, Philipp Geyer zu Giebelstadt.\n\nTerm: 1578\n\nExtent: 1 document"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Steinach"
+    },
+    {
+      "person": "Ludwig Casimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "person": "Philipp Geyer",
+      "personTitle": [
+        "zu Giebelstadt"
+      ]
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-213/AT-KLA_213-B-176_St/charter",
       "german": "Kaiser Ferdinand II. belehnt Johann Andre von Rosenberg mit dem ursprünglich zur Herrschaft Tanzenberg gehörigen und von Rosenberg käuflich erworbenen Prändtlhof samt einer Wiese. Siegler: (Aussteller)\n\nSiegel: 1 Sig. pend. fehlt",
       "english": "Emperor Ferdinand II enfeoffs Johann Andre von Rosenberg with the Prändtlhof, originally belonging to the lordship of Tanzenberg and acquired by Rosenberg by purchase, together with a meadow. Sealer: (issuer)\n\nSeal: 1 pendant seal missing.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_176_16360410_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/213/KLA_213_B_176_16360410_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -7,21 +7,21 @@
       "source": "[RI XIII] H. 26 n. 486",
       "url": "https://www.regesta-imperii.de/id/1449-03-29_1_0_13_26_0_486_486",
       "german": "Kg.F. antwortet Ulrich von Rosenberg auf dessen Hilfeersuchen, weil der von Podiebrad zum Feldzug aufgebrochen sei und ihm (Kg.F.) nicht antworten werde und es Ulrich und dem von Neuhaus hartt zustee. Da ihm Podiebrad noch nicht geantwortet habe, müsse er (Kg.F.) nun den anderen Weg einschlagen und den Papst und die Kff. durch eine Botschaft um Unterstützung bitten, in dieser Angelegenheit stätlich und redlich zu handeln. Er erwarte dabei weiterhin Ulrichs Treue.",
-      "english": "King Frederick answers Ulrich von Rosenberg's request for help because Poděbrad has set out on campaign and will not answer the king, while the situation is hard for Ulrich and the lord of Neuhaus. Since Poděbrad has not replied, Frederick must now take the other course and ask the pope and the electors through an embassy to act firmly and honestly in this matter. He nevertheless continues to expect Ulrich's loyalty.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "neuhaus"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Frederick answers Ulrich von Rosenberg's request for help because Poděbrad has set out on campaign and will not answer the king, while the situation is hard for Ulrich and the lord of Neuhaus. Since Poděbrad has not replied, Frederick must now take the other course and ask the pope and the electors through an embassy to act firmly and honestly in this matter. He nevertheless continues to expect Ulrich's loyalty."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "neuhaus"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

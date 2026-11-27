@@ -7,35 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-193359",
       "german": "Hans Schelm von Bergen bekennt, daß er gegen Kraft, Georg und Albrecht von Hohenlohe 2.000 fl Schulden hat; Siegel: Schelm von Bergen, Conz von Rosenberg, Heinrich von Ernberg, Schweiker von Sickingen, Adel und Hans von Tottenheim, Ludwig von Sickingen, Schweiker von Helmstadt und Hans von Turn.\n\nLaufzeit: 1431\n\nUmfang: 1 Urkunde",
       "english": "Hans Schelm von Bergen acknowledges that he owes Kraft, Georg, and Albrecht von Hohenlohe 2,000 gulden. Seals: Schelm von Bergen, Kunz von Rosenberg, Heinrich von Ernberg, Schweiker von Sickingen, Adel and Hans von Dottenheim, Ludwig von Sickingen, Schweiker von Helmstadt, and Hans von Turn.\n\nDate: 1431\n\nExtent: 1 charter",
-      "mention": [
-        {
-          "person": "Adel von Dottenheim"
-        },
-        {
-          "person": "Albrecht von Hohenlohe"
-        },
-        {
-          "person": "Georg von Hohenlohe"
-        },
-        {
-          "person": "Hans von Dottenheim"
-        },
-        {
-          "place": "helmstatt"
-        },
-        {
-          "person": "Kraft von Hohenlohe"
-        },
-        {
-          "person": "Kunz von Rosenberg"
-        },
-        {
-          "person": "Ludwig von Sickingen"
-        },
-        {
-          "place": "sickingen"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000193359%2F03_0000193359_0001_3-193359-1.jpg"
@@ -44,6 +15,35 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000193359%2F03_0000193359_0002_3-193359-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Adel von Dottenheim"
+    },
+    {
+      "person": "Albrecht von Hohenlohe"
+    },
+    {
+      "person": "Georg von Hohenlohe"
+    },
+    {
+      "person": "Hans von Dottenheim"
+    },
+    {
+      "place": "helmstatt"
+    },
+    {
+      "person": "Kraft von Hohenlohe"
+    },
+    {
+      "person": "Kunz von Rosenberg"
+    },
+    {
+      "person": "Ludwig von Sickingen"
+    },
+    {
+      "place": "sickingen"
     }
   ]
 }

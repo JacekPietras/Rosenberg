@@ -7,34 +7,34 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-236225",
       "german": "Bischof Philipp Adolf zu Würzburg (Wirtzburg) belehnt den Albrecht Christoph von Rosenberg mit 1/3 an Burg und Stadt Rosenberg, dem halben Zehnten zu Sindolsheim, einem Hof zu Hohenstadt 1/3 des Zehnten zu Zimmern, 1/4 des Zehnten zu Elintz und Didickhen, den Zehnten zu Bronnacker, dem Dorf Brehmen und dem Zehnten zu Bofsheim.\n\nLaufzeit: 1623 Dezember 5 (\"[...] der geben ist den fünfften Decembris nach Christi [...] geburt sechzehenhundert und in dem drey und zwantzigsten jahre\")\n\nSiegelbeschreibung: An Pergamentstreif das Siegel des Ausstellers (in Holzschale).\n\nSiegler: Bischof Philipp Adolf zu Würzburg (Wirtzburg)",
       "english": "Bishop Philipp Adolf zu Würzburg (Wirtzburg) enfeoffs Albrecht Christoph von Rosenberg with one third of Rosenberg Castle and town, half of the tithe at Sindolsheim, one farm at Hohenstadt, one third of the tithe at Zimmern, one quarter of the tithe at Elintz and Didickhen, the tithe at Bronnacker, the village of Brehmen, and the tithe at Bofsheim.\n\nDate range: 1623 December 5 (“[…] which was given on the fifth of December after the birth of Christ […] in the year sixteen hundred and twenty-three”).\n\nSeal description: The issuer’s seal, attached by a parchment strip (in a wooden case).\n\nSealer: Bishop Philipp Adolf zu Würzburg (Wirtzburg).",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Bischof Philipp Adolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "boffsheim"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "sindolsheim-church"
-        },
-        {
-          "place": "zimmern"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000236225%2F07_0000236225_0003_7-236225-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Bischof Philipp Adolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "boffsheim"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "sindolsheim-church"
+    },
+    {
+      "place": "zimmern"
     }
   ]
 }

@@ -6,18 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 5 Bü 409",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-75290",
       "german": "Zins- und Gültbuch des ... Georg Sigmund von Rosenberg zu Haltenbergstetten.\n\nLaufzeit: 1591\n\nEnthält: Enthält: Niederstetten, Adolzhausen, Herbsthausen, Oberstetten, Sichertshausen und Ermershausen.\n\nUmfang: 1 Bd., Fol. 1-180 mit Personenregister.",
-      "english": "Rent and dues register of … Georg Siegmund von Rosenberg zu Haltenbergstetten.\n\nTerm: 1591.\n\nContents: Niederstetten, Adolzhausen, Herbsthausen, Oberstetten, Sichertshausen, and Ermershausen.\n\nExtent: 1 volume, folios 1–180, with an index of persons.",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        },
-        {
-          "place": "niederstetten"
-        }
+      "english": "Rent and dues register of … Georg Siegmund von Rosenberg zu Haltenbergstetten.\n\nTerm: 1591.\n\nContents: Niederstetten, Adolzhausen, Herbsthausen, Oberstetten, Sichertshausen, and Ermershausen.\n\nExtent: 1 volume, folios 1–180, with an index of persons."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
+    },
+    {
+      "place": "niederstetten"
     }
   ]
 }

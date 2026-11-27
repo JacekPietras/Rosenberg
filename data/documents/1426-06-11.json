@@ -6,42 +6,42 @@
       "source": "ISG FFM, H.06.03, 2547",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=10760538",
       "german": "Fehde Nürnbergs mit Wilhelm von Rechberg, Kunz von Rosenberg zu Bartenstein, Walther von Kronberg, Hans vom Hirschhorn d. J., Karl von Thüngen zum Reussenberg, Thomas von Rosenberg und Sigmund von Thüngen wegen des Überfalls auf neun Nürnberger Bürger auf der Reichsstraße bei Neustadt an der Aisch.",
-      "english": "War between Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg of Bartenstein, Walther von Kronberg, Hans vom Hirschhorn the Younger, Karl von Thüngen of Reussenberg, Thomas von Rosenberg, and Siegmund von Thüngen regarding the attack on nine Nuremberg citizens on the imperial road at Neustadt an der Aisch.",
-      "mention": [
-        {
-          "place": "bartenstein"
-        },
-        {
-          "person": "Hans vom Hirschhorn",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Karl von Thüngen"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        }
+      "english": "War between Nuremberg and Wilhelm von Rechberg, Kunz von Rosenberg of Bartenstein, Walther von Kronberg, Hans vom Hirschhorn the Younger, Karl von Thüngen of Reussenberg, Thomas von Rosenberg, and Siegmund von Thüngen regarding the attack on nine Nuremberg citizens on the imperial road at Neustadt an der Aisch."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
       ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "was involved in Nuremberg’s feud with the named nobles over the attack on nine Nuremberg citizens on the imperial road near Neustadt an der Aisch."
-        },
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "was involved in Nuremberg’s feud with the named nobles over the attack on nine Nuremberg citizens on the imperial road near Neustadt an der Aisch."
-        }
+      "type": "generic",
+      "content": "was involved in Nuremberg’s feud with the named nobles over the attack on nine Nuremberg citizens on the imperial road near Neustadt an der Aisch."
+    },
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "was involved in Nuremberg’s feud with the named nobles over the attack on nine Nuremberg citizens on the imperial road near Neustadt an der Aisch."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bartenstein"
+    },
+    {
+      "person": "Hans vom Hirschhorn",
+      "personTitle": [
+        "der Jüngere"
       ]
+    },
+    {
+      "person": "Karl von Thüngen"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
     }
   ]
 }

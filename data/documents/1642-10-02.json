@@ -6,21 +6,21 @@
       "source": "HStAM, Urk. 96, 306",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1533181",
       "german": "Abt Hermann Georg von Fulda macht bekannt, daß er Philipp Christoph von Rosenbach die Verwaltung der Probstei zu Höchst übertragen habe.\n\nFormalbeschreibung: Original, Pergament, Siegel\n\nZusatzinformationen: Aus Abtheilung Fulda Klosterl. Höchst",
-      "english": "Abbot Hermann Georg of Fulda announces that he has entrusted Philipp Christoph von Rosenberg with the administration of the provostry of Höchst.\n\nFormal description: Original, parchment, seal\n\nAdditional information: From the Fulda, monastic Höchst section",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Herman Georg",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        },
-        {
-          "person": "Philipp Christoph von Rosenberg"
-        }
+      "english": "Abbot Hermann Georg of Fulda announces that he has entrusted Philipp Christoph von Rosenberg with the administration of the provostry of Höchst.\n\nFormal description: Original, parchment, seal\n\nAdditional information: From the Fulda, monastic Höchst section"
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Herman Georg",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
+    },
+    {
+      "person": "Philipp Christoph von Rosenberg"
     }
   ]
 }

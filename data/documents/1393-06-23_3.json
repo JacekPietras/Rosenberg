@@ -10,56 +10,6 @@
       ],
       "german": "Kurfürst Ruprecht [II.] d.Ä. Pfalzgraf bei Rhein bewilligt Else von Erligheim, Witwe des Eberhard von Rosenberg, Ritter, die Stiftung einer Ewigen Messe an den Altar ULF in der Pfarrei Wölchingen (Wolching) mit vom Schloss Boxberg (Bocksberg) und dem A. zu Lehen rührenden Gütern zu Gommersdorf (Gümersdorff), Angeltürn (Angertal) und Wölchingen. - Der A. verpflichtet sich, die Ewige Messe und den jeweiligen Priester am Bezug der Stiftungsgüter nicht zu irren.",
       "english": "Elector Ruprecht II der Ältere, Count Palatine of the Rhine, grants Elisabeth von Erligheim, widow of Eberhard von Rosenberg, Ritter, the foundation of an Eternal Mass at the altar of St. ULF in the parish of Wölchingen, with the properties in Gommersdorf, Angeltürn, and Wölchingen, which are fiefs of Boxberg Castle and the A. - The A. undertakes not to mislead the Eternal Mass and the respective priest regarding the use of the foundation's properties.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "gommersdorf"
-        },
-        {
-          "place": "wehrkirche-angeltuern"
-        },
-        {
-          "place": "wolchingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "vogt_zu_Lauda",
-          "personTitle": [
-            "Ritter"
-          ],
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Elisabeth von Erligheim"
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "type": "death",
-          "diedBefore": "1393-06-24"
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "generic",
-          "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen."
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "generic",
-          "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen."
-        },
-        {
-          "person": "Ruprecht",
-          "personTitle": [
-            "Kurfürst",
-            "Pfalzgraf bei Rhein",
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000601054%2F02_0000601054_0003_2-601054-3.jpg"
@@ -69,6 +19,56 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Lauda",
+      "personTitle": [
+        "Ritter"
+      ],
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Elisabeth von Erligheim"
+    },
+    {
+      "person": "vogt_zu_Lauda",
+      "type": "death",
+      "diedBefore": "1393-06-24"
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "generic",
+      "content": "was authorized by Elector Ruprecht II der Ältere to endow a perpetual Mass at the altar of Our Lady in the parish of Wölchingen."
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "generic",
+      "content": "was authorized to endow the Mass with fiefs from Boxberg Castle at Gommersdorf, Angeltürn, and Wölchingen."
+    },
+    {
+      "person": "Ruprecht",
+      "personTitle": [
+        "Kurfürst",
+        "Pfalzgraf bei Rhein",
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the altar of Our Lady in Wölchingen using the specified fiefs."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "gommersdorf"
+    },
+    {
+      "place": "wehrkirche-angeltuern"
+    },
+    {
+      "place": "wolchingen"
     }
   ]
 }

@@ -6,30 +6,30 @@
       "source": "HStAM, Urk. 146, 74",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1428784",
       "german": "Lehnbrief des Abt Joachim von Fulda für die von Rosenbach\n\nAbt Joachim von Fulda belehnt Johann Dietrich, Johann Conrad, Franz Rudolph und Franz Christoph von Rosenbach (zu zwei Fünfteln), Erhard Friedrich und Johann Friedrich von Mansbach (zu zwei Fünfteln) sowie Adolf Ernst, Johann Reinhard Ernst und Hans Georg von Fechenbach zu Sommerau (zu einem Fünftel) mit von Philipp von Karsbach, Ludiger von Mansbach und Oswald von Fechenbach ererbten bzw. erkauften (ursprünglich von Ebersteinschen) Höfen, Gütern, Mühlstätten und Frohnwiesenanteilen zu Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, Bad Soden, Eckweisbach und Bad Brückenau.\n\nFormalbeschreibung: Pgt., Siegel ab",
-      "english": "Fief charter of Abbot Joachim of Fulda for the von Rosenbach family\n\nAbbot Joachim of Fulda enfeoffs Johann Dietrich, Johann Conrad, Franz Rudolph, and Franz Christoph von Rosenberg (with two fifths); Erhard Friedrich and Johann Friedrich von Mansbach (with two fifths); and Adolf Ernst, Johann Reinhard Ernst, and Hans Georg von Fechenbach zu Sommerau (with one fifth) with farms, properties, mill sites, and shares in manorial meadows at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, Bad Soden, Eckweisbach, and Bad Brückenau, inherited or purchased from Philipp von Karsbach, Ludiger von Mansbach, and Oswald von Fechenbach (originally belonging to the von Eberstein family).\n\nFormal description: parchment, seal missing",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "person": "Franz Rudolf von Rosenberg"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "person": "Joachim",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Fief charter of Abbot Joachim of Fulda for the von Rosenbach family\n\nAbbot Joachim of Fulda enfeoffs Johann Dietrich, Johann Conrad, Franz Rudolph, and Franz Christoph von Rosenberg (with two fifths); Erhard Friedrich and Johann Friedrich von Mansbach (with two fifths); and Adolf Ernst, Johann Reinhard Ernst, and Hans Georg von Fechenbach zu Sommerau (with one fifth) with farms, properties, mill sites, and shares in manorial meadows at Schackau, Sassen, Gerhards, Langenbieber, Weyhers, Langenberg, †Weses, Alhards, Döllbach, Landenhausen, Niederbieber, Bieberstein, †Harbach, Bad Soden, Eckweisbach, and Bad Brückenau, inherited or purchased from Philipp von Karsbach, Ludiger von Mansbach, and Oswald von Fechenbach (originally belonging to the von Eberstein family).\n\nFormal description: parchment, seal missing"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "person": "Franz Rudolf von Rosenberg"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "person": "Joachim",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

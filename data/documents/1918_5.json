@@ -6,24 +6,24 @@
       "source": "HStAD, O 61 Moeller, 7/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5360112",
       "german": "Odenwald und Bergstraße\n\nEnthält: Familien Bach zu Neustadt/Bach zu Waschenbach/Brensbach/Dubborn/Starkerad/v. Dieburg/Echter v. Mespelbrunn/v. Erbach/Gayling v. Altheim/Groschlag v. Dieburg/v. Albini/Hardenau/v. Heusenstamm/Kalb v. Reinheim/v. Katzenelnbogen/Pieckfisch v. Winden/Mosbach v. Lindenfels/Rabenolt/Merkel/v. Rodenstein/v. Rosenbach/v. Schauenburg/Schwende v. Weinheim/Spore (Sporelin)/v. Hirschberg/v. Strahlenberg/v. Wallbrunn/v. Ramstadt/v. Hohenfels/ v. Starkenburg/Werberg v. Lindenfels/v. Zwingenberg\n\nLaufzeit: 1918-1958",
-      "english": "Odenwald and Bergstraße\n\nContains: Families Bach zu Neustadt/Bach zu Waschenbach/Brensbach/Dubborn/Starkerad/v. Dieburg/Echter v. Mespelbrunn/v. Erbach/Gayling v. Altheim/Groschlag v. Dieburg/v. Albini/Hardenau/v. Heusenstamm/Kalb v. Reinheim/v. Katzenelnbogen/Pieckfisch v. Winden/Mosbach v. Lindenfels/Rabenolt/Merkel/v. Rodenstein/v. Rosenbach/v. Schauenburg/Schwende v. Weinheim/Spore (Sporelin)/v. Hirschberg/v. Strahlenberg/v. Wallbrunn/v. Ramstadt/v. Hohenfels/v. Starkenburg/Werberg v. Lindenfels/v. Zwingenberg\n\nDate range: 1918-1958",
-      "mention": [
-        {
-          "place": "erbach"
-        },
-        {
-          "place": "katzenelnbogen"
-        },
-        {
-          "place": "mosbach-st-juliana"
-        },
-        {
-          "place": "rodenstein"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Odenwald and Bergstraße\n\nContains: Families Bach zu Neustadt/Bach zu Waschenbach/Brensbach/Dubborn/Starkerad/v. Dieburg/Echter v. Mespelbrunn/v. Erbach/Gayling v. Altheim/Groschlag v. Dieburg/v. Albini/Hardenau/v. Heusenstamm/Kalb v. Reinheim/v. Katzenelnbogen/Pieckfisch v. Winden/Mosbach v. Lindenfels/Rabenolt/Merkel/v. Rodenstein/v. Rosenbach/v. Schauenburg/Schwende v. Weinheim/Spore (Sporelin)/v. Hirschberg/v. Strahlenberg/v. Wallbrunn/v. Ramstadt/v. Hohenfels/v. Starkenburg/Werberg v. Lindenfels/v. Zwingenberg\n\nDate range: 1918-1958"
+    }
+  ],
+  "mention": [
+    {
+      "place": "erbach"
+    },
+    {
+      "place": "katzenelnbogen"
+    },
+    {
+      "place": "mosbach-st-juliana"
+    },
+    {
+      "place": "rodenstein"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

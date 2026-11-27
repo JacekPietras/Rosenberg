@@ -6,35 +6,35 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9892",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641660",
       "german": "Eigentumsansprüche der Kurpfalz auf ein Viertel des Schlosses Rosenberg aus Anlaß des von dem gegenwärtigen Besitzer, Graf Heinrich von Hatzfeld, geplanten Neubaus.\n\nLaufzeit: 1678",
-      "english": "Property claims by the Electoral Palatinate on a quarter of Rosenberg Castle due to the planned new construction by the current owner, Count Heinrich von Hatzfeld.\n\nPeriod: 1678",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Property claims by the Electoral Palatinate on a quarter of Rosenberg Castle due to the planned new construction by the current owner, Count Heinrich von Hatzfeld.\n\nPeriod: 1678"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich von Hatzfeld",
+      "personTitle": [
+        "Graf"
       ],
-      "facts": [
-        {
-          "person": "Heinrich von Hatzfeld",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "generic",
-          "content": "held Rosenberg Castle."
-        },
-        {
-          "person": "Heinrich von Hatzfeld",
-          "personTitle": [
-            "Graf"
-          ],
-          "type": "generic",
-          "content": "planned a new building at Rosenberg Castle."
-        },
-        {
-          "subject": "The Electoral Palatinate",
-          "type": "generic",
-          "content": "claimed ownership of a quarter of Rosenberg Castle."
-        }
-      ]
+      "type": "generic",
+      "content": "held Rosenberg Castle."
+    },
+    {
+      "person": "Heinrich von Hatzfeld",
+      "personTitle": [
+        "Graf"
+      ],
+      "type": "generic",
+      "content": "planned a new building at Rosenberg Castle."
+    },
+    {
+      "subject": "The Electoral Palatinate",
+      "type": "generic",
+      "content": "claimed ownership of a quarter of Rosenberg Castle."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -7,60 +7,60 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-235981",
       "german": "Die Brüder Konrad, Albrecht Christoph und Georg Sigmund von Rosenberg (Rosenbergh) errichten einen Vertrag über die Teilung einiger Güter, welche sie mit ihren verstorbenen Vettern Konrad dem Älteren zu Waldmannshofen, Philipp Jacob und Hans Christoph, alle von Rosenberg, gemeinsam inne hatten.\n\nSiegler: Konrad von Rosenberg; Albrecht Christoph von Rosenberg; Georg Sigmund von Rosenberg; 5 Vormünder bzw. Schwäger",
       "english": "The brothers Konrad, Albrecht Christoph, and Georg Siegmund von Rosenberg establish an agreement regarding the division of certain properties which they jointly held with their deceased kinsmen Konrad von Rosenberg zu Waldmannshofen der Ältere, Philipp Jakob von Rosenberg, and Hans Christoph von Rosenberg.\n\nSealer: Konrad von Rosenberg; Albrecht Christoph von Rosenberg; Georg Siegmund von Rosenberg; 5 guardians or brothers-in-law",
-      "mention": [
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "zu Waldmannshofen"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the brothers and cousins von Rosenberg",
-          "type": "generic",
-          "content": "divided goods they had held jointly with their deceased cousins Konrad the Elder, Philipp Jakob and Hans Christoph."
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "kin",
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "der Ältere"
-          ],
-          "ofDeceased": true,
-          "term": "Vetter"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "kin",
-          "of": "Philipp Jakob von Rosenberg",
-          "ofDeceased": true,
-          "term": "Vetter"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "kin",
-          "of": "Hans Christoph von Rosenberg",
-          "ofDeceased": true,
-          "term": "Vetter"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "sibling",
-          "of": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "sibling",
-          "of": "Georg Siegmund von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000235981%2F07_0000235981_0001_7-235981-1.jpg"
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the brothers and cousins von Rosenberg",
+      "type": "generic",
+      "content": "divided goods they had held jointly with their deceased cousins Konrad the Elder, Philipp Jakob and Hans Christoph."
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "kin",
+      "of": "Konrad von Rosenberg",
+      "ofTitle": [
+        "der Ältere"
+      ],
+      "ofDeceased": true,
+      "term": "Vetter"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "kin",
+      "of": "Philipp Jakob von Rosenberg",
+      "ofDeceased": true,
+      "term": "Vetter"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "kin",
+      "of": "Hans Christoph von Rosenberg",
+      "ofDeceased": true,
+      "term": "Vetter"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "sibling",
+      "of": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "sibling",
+      "of": "Georg Siegmund von Rosenberg"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere",
+        "zu Waldmannshofen"
       ]
     }
   ]

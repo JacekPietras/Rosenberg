@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/74/charter",
       "german": "Ritter Hans von Rosemberg, Schultheiß, und die Schöffen der Stadt Nürnberg beurkunden, daß das Stadtgericht der Els Krewsin zu Ludersheim ein Erbe zu Ludersheim, das ihr Schwager Ulrich Hubmeyr zu Leymburg (Leinburg) in Anspruch genommen vor dem Gerichte des Neuen Spitales (Richter: der Überreiter Hans) zugesprochen hat. – Zeugen: Hans Grolant, Sohn des Seitz Grolant, Wernher Lemblein und Erhart Vetter.",
       "english": "Ritter Hans von Rosenberg, the mayor, and the aldermen of the city of Nürnberg certify that the city court awarded Els Krewsin an inheritance at Ludersheim, which her brother-in-law Ulrich Hubmeyr zu Leinburg had claimed before the court of the New Hospital (judge: Hans the Überreiter). Witnesses: Hans Grolant, son of Seitz Grolant; Wernher Lemblein; and Erhart Vetter.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0074-1412-dezember-3__d360e702-ac2d-4601-9364-83014d568e48_r.JPG"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0074-1412-dezember-3__d360e702-ac2d-4601-9364-83014d568e48_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

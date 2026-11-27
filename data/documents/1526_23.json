@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++12ce79e8-e0af-443b-b2b8-9bf8ec143b01&parent_id="
       ],
       "german": "Statthalter und Räte zu Ansbach an Zaisolph von Rosenberg: Gründe für die Verzögerung des Zeugenverhörs.",
-      "english": "Deputy and councillors of Ansbach to Zaisolph von Rosenberg: reasons for the delay in the examination of witnesses.",
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "received from the Ansbach governors and councilors reasons for delaying the witness examination."
-        }
-      ]
+      "english": "Deputy and councillors of Ansbach to Zaisolph von Rosenberg: reasons for the delay in the examination of witnesses."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "received from the Ansbach governors and councilors reasons for delaying the witness examination."
     }
   ]
 }

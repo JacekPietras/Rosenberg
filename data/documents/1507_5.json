@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b19e7be9-cc60-4db3-97da-96768a9c751e&parent_id="
       ],
       "german": "Lehengegenbrief des Lionhart von Rosenberg zu Uttenhoven für Herzog Albrecht über: 4 Höfe u. 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Swartzach.\nVorbesitzer: Ritter Jheronimus von Rosenberg",
-      "english": "Fief counterletter of Lionhart von Rosenberg of Uttenhoven for Duke Albrecht concerning: 4 farms and 2 smallholdings at Oberried near Uttenhoven in the Seglau near the Schwartzach.\nPrevious owner: Knight Hieronymus von Rosenberg",
-      "mention": [
-        {
-          "person": "Lionhart von Rosenberg"
-        }
+      "english": "Fief counterletter of Lionhart von Rosenberg of Uttenhoven for Duke Albrecht concerning: 4 farms and 2 smallholdings at Oberried near Uttenhoven in the Seglau near the Schwartzach.\nPrevious owner: Knight Hieronymus von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Leonhard von Rosenberg",
+      "personTitle": [
+        "zu Uttenhoven"
       ],
-      "facts": [
-        {
-          "person": "Leonhard von Rosenberg",
-          "personTitle": [
-            "zu Uttenhoven"
-          ],
-          "type": "generic",
-          "content": "issued a fief counterletter to Herzog Albrecht for farms and smallholdings at Oberried near Uttenhoven."
-        },
-        {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "had previously held the farms and smallholdings at Oberried near Uttenhoven listed in Leonhard von Rosenberg’s fief counterletter."
-        }
-      ]
+      "type": "generic",
+      "content": "issued a fief counterletter to Herzog Albrecht for farms and smallholdings at Oberried near Uttenhoven."
+    },
+    {
+      "person": "Hieronymus von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "had previously held the farms and smallholdings at Oberried near Uttenhoven listed in Leonhard von Rosenberg’s fief counterletter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Lionhart von Rosenberg"
     }
   ]
 }

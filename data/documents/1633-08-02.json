@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-029/AT-KLA_29-B-8_F_St/charter",
       "german": "Kaiser Ferdinand II. erhebt Hans Andreas Rosenberger wegen seiner und seiner Vorfahren Verdienste um das Reich (genannt: Bruder seines Ahnherrn, Christoph Georg Rosenberger, Oberhauptmann der ungarischen Festung Dottis; Verdienste des Hans Andreas selbst als Landmarschall und Vizedom in Kärnten) in den Freiherrenstand und verleiht ihm und seinen Nachkommen den Titel von Rosenberg, Freiherren von Lerchenau, Herren auf Mageregg und Grafenstein; gleichzeitig verleiht er ihm ein Wappen, das sich aus den zwei anererbten Rosenberger Wappen und dem der erloschenen Familie seiner Gattin von Hagendorf zusammensetzt. Siegler und Unterschrift: Kaiser Ferdinand II. (größeres Siegel)\n\nSiegel: Sig. pend.",
       "english": "Emperor Ferdinand II elevates Hans Andreas Rosenberger to the rank of baron because of his and his ancestors’ services to the Empire (including those of his ancestor’s brother, Christoph Georg Rosenberger, Oberhauptmann of the Hungarian fortress of Dottis, and Hans Andreas’s own services as Landmarschall and Vizedom in Carinthia) and grants him and his descendants the title von Rosenberg, Freiherren von Lerchenau, Herren auf Mageregg und Grafenstein. At the same time, he grants him a coat of arms composed of the two inherited Rosenberger coats of arms and that of his wife’s extinct family, von Hagendorf. Sealer and signatory: Emperor Ferdinand II (larger seal)\n\nSeal: hanging seal.",
-      "mention": [
-        {
-          "person": "Christoph Georg Rosenberg"
-        },
-        {
-          "person": "Hans Andreas Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_8_16330802_01.jpg"
@@ -53,6 +42,17 @@
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_8_16330802_11.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph Georg Rosenberg"
+    },
+    {
+      "person": "Hans Andreas Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

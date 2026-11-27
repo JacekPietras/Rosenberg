@@ -9,25 +9,25 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++AAD81188-E159-4737-BDC9-0E79AC1E5B82&parent_id="
       ],
       "german": "Korrespondenz und Aktenstücke der würzburgischen Geheimen Kanzlei, betrifft die Fehde des Markgrafen Albrecht gegen Bischof Johann als Helfer des Arnold und Eberhard von Rosenberg wider Peter von Stettenberg, auch sonstige Irrungen zwischen Brandenburg und Würzburg.",
-      "english": "Correspondence and documents of the Würzburg Privy Chancellery concerning Margrave Albrecht's feud against Bishop Johann, who aided Arnold von Rosenberg and Eberhard von Rosenberg against Peter von Stettenberg, as well as other disputes between Brandenburg and Würzburg.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the feud involving Arnold and Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of correspondence and records in the Würzburg secret chancery."
-        }
-      ]
+      "english": "Correspondence and documents of the Würzburg Privy Chancellery concerning Margrave Albrecht's feud against Bishop Johann, who aided Arnold von Rosenberg and Eberhard von Rosenberg against Peter von Stettenberg, as well as other disputes between Brandenburg and Würzburg."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the feud involving Arnold and Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of correspondence and records in the Würzburg secret chancery."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

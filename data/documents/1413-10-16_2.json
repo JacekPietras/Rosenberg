@@ -7,22 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-StAN/hlgeistspital/76/charter",
       "german": "Ritter Hans von Rosenberg, Schultheiß und die Schöffen der Stadt Nürnberg beurkunden auf Zeugnis des Eckhart Neydung und Cristan Coler, daß Eberhart Eck, Bürger zu Nürnberg dem Neuen Spital daselbst (Pfleger: Herdegen Valczner) seinen der Herrschaft zu Prawneck lehenbaren selben Zehnten zu Heroldsberg (dem genannten Spital) zur Abhaltung von Seelmessen vermacht.",
       "english": "Knight Hans von Rosenberg, Schultheiß (magistrate), and the aldermen of the city of Nürnberg certify on the testimony of Eckhart Neydung and Cristan Coler that Eberhart Eck, citizen of Nürnberg, has bequeathed to the New Hospital there (Steward: Herdegen Valczner) his tithe at Heroldsberg, which is a fief of the lordship of Prawneck, for the holding of memorial masses.",
-      "mention": [
-        {
-          "place": "nuremberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß zu Nürnberg"
-          ],
-          "type": "generic",
-          "content": "recorded with the Nürnberg aldermen Eberhard Eck’s bequest of his tithe at Heroldsberg to the New Hospital."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-StANuernberg/hl-geist-spital/de_sta-nuernberg_hl-geist-spital-uk_0076-1413-oktober-16__9688fac3-2a95-4082-9213-8025899b518b_r.JPG"
@@ -32,6 +16,22 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß zu Nürnberg"
+      ],
+      "type": "generic",
+      "content": "recorded with the Nürnberg aldermen Eberhard Eck’s bequest of his tithe at Heroldsberg to the New Hospital."
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
     }
   ]
 }

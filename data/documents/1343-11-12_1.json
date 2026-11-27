@@ -6,58 +6,58 @@
       "source": "Regesta Boica 7",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11443026",
       "german": "Heinrich der Truehsezze von Holnstein verkauft dem Kloster zu Kastl den Hof zu Fran-\nkenhof für lediges Eigen um on zwai fünfzig Pfd. Haller. Bürgen: H. Johann von Mistel-\nbach, H. Dietrich der Spies, Ulrich der Freudenberger zu dem Ruprehtstain, Hermann der\nPraitenstainer, Eberhard der Mistelbeck, Dietrich der Zudenreuter, Friedrich der alt' Vogt von\nRosenberg etc. G. an dem nächsten Tag nach S. Marteins Tag. (c. 7 S.) M. B. XXIV, 388.",
-      "english": "Heinrich der Truehsezze von Holnstein sells the farm at Frankenhof to Kastl Abbey as free property for 48 pounds Heller. Sureties include Lord Hans von Mistelbach; Lord Dietrich der Spies; Ulrich der Freudenberger zu dem Ruprehtstain; Herman der Praitenstainer; Eberhard der Mistelbeck; Dietrich der Zudenreuter; and Friedrich von Rosenberg der Alte, Vogt. Given on the day after St. Martin’s Day. With seven seals. Monumenta Boica, volume 24, page 388.",
-      "mention": [
-        {
-          "place": "kastl-oberpfalz"
-        }
+      "english": "Heinrich der Truehsezze von Holnstein sells the farm at Frankenhof to Kastl Abbey as free property for 48 pounds Heller. Sureties include Lord Hans von Mistelbach; Lord Dietrich der Spies; Ulrich der Freudenberger zu dem Ruprehtstain; Herman der Praitenstainer; Eberhard der Mistelbeck; Dietrich der Zudenreuter; and Friedrich von Rosenberg der Alte, Vogt. Given on the day after St. Martin’s Day. With seven seals. Monumenta Boica, volume 24, page 388."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich der Truehsezze von Holnstein",
+      "type": "generic",
+      "content": "sold the farm at Frankenhof as free property to Kastl Abbey."
+    },
+    {
+      "person": "Friedrich von Rosenberg",
+      "personTitle": [
+        "Vogt",
+        "der Alte"
       ],
-      "facts": [
-        {
-          "person": "Heinrich der Truehsezze von Holnstein",
-          "type": "generic",
-          "content": "sold the farm at Frankenhof as free property to Kastl Abbey."
-        },
-        {
-          "person": "Friedrich von Rosenberg",
-          "personTitle": [
-            "Vogt",
-            "der Alte"
-          ],
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Hans von Mistelbach",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Dietrich der Spies",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Ulrich der Freudenberger zu dem Ruprehtstain",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Herman der Praitenstainer",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Eberhard der Mistelbeck",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        },
-        {
-          "person": "Dietrich der Zudenreuter",
-          "type": "generic",
-          "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
-        }
-      ]
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Hans von Mistelbach",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Dietrich der Spies",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Ulrich der Freudenberger zu dem Ruprehtstain",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Herman der Praitenstainer",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Eberhard der Mistelbeck",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    },
+    {
+      "person": "Dietrich der Zudenreuter",
+      "type": "generic",
+      "content": "stood surety for Heinrich der Truehsezze von Holnstein’s sale of the farm at Frankenhof to Kastl Abbey."
+    }
+  ],
+  "mention": [
+    {
+      "place": "kastl-oberpfalz"
     }
   ]
 }

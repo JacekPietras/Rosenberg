@@ -10,39 +10,6 @@
       ],
       "german": "Friedrich Wolfskehl, Ritter, Thoman von Rosenberg, Else, Ehefrau Friedrich Wolfskehls, Eberhard Wolfskehl und Jörg Fuchs zu Breitbach verkaufen an Konrad und Reinhard von Hardheim die ihnen von Werner von Hardheim zugefallenen Güter und Rechte zu Hardheim, Höpfingen, Bretzingen, Gerichtstetten und Betzwiesen für 1.600 Gulden rheinisch. Datiert 30. Oktober 1435.",
       "english": "Friedrich Wolfskehl, Ritter, Thomas von Rosenberg, Elisabeth, wife of Friedrich Wolfskehl, Eberhard Wolfskehl, and Jörg Fuchs of Breitbach sell to Konrad and Reinhard von Hartheim the properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen that had devolved to them from Wernher von Hartheim, for 1,600 Rhenish gulden. Dated 30 October 1435.",
-      "mention": [
-        {
-          "place": "bretzingen"
-        },
-        {
-          "person": "Eberhard Wolffskeel"
-        },
-        {
-          "person": "Friedrich Wolffskeel",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "place": "hartheim"
-        },
-        {
-          "person": "Konrad von Hartheim"
-        },
-        {
-          "person": "Reinhard von Hartheim"
-        },
-        {
-          "person": "Wernher von Hartheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "sold properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen to Konrad and Reinhard von Hardheim jointly with Friedrich Wolfskehl, Ritter, Else, Eberhard Wolfskehl, and Jörg Fuchs; the properties had devolved to the sellers from Werner von Hardheim."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199690%2F07_0000199690_0001_7-199690-1.jpg"
@@ -52,6 +19,39 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "sold properties and rights at Hardheim, Höpfingen, Bretzingen, Gerichtstetten, and Betzwiesen to Konrad and Reinhard von Hardheim jointly with Friedrich Wolfskehl, Ritter, Else, Eberhard Wolfskehl, and Jörg Fuchs; the properties had devolved to the sellers from Werner von Hardheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bretzingen"
+    },
+    {
+      "person": "Eberhard Wolffskeel"
+    },
+    {
+      "person": "Friedrich Wolffskeel",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "place": "hartheim"
+    },
+    {
+      "person": "Konrad von Hartheim"
+    },
+    {
+      "person": "Reinhard von Hartheim"
+    },
+    {
+      "person": "Wernher von Hartheim"
     }
   ]
 }

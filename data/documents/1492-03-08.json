@@ -9,17 +9,17 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7BF4F039-70C0-46FF-8EB9-BCB23560CB3E&parent_id="
       ],
       "german": "Lehenbrief des Bischofs Wilhelm von Eichstätt für den Ritter Hieronymus von Rosenberg über das Schloss Uttenhofen.\n\nSiegler: der Bischof",
-      "english": "Deed of enfeoffment by Bishop Wilhelm of Eichstätt for the knight Hieronymus von Rosenberg concerning Schloss Uttenhofen.\nSealer: the bishop",
-      "facts": [
-        {
-          "person": "Hieronymus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "received Schloss Uttenhofen as a fief from Bishop Wilhelm of Eichstätt."
-        }
-      ]
+      "english": "Deed of enfeoffment by Bishop Wilhelm of Eichstätt for the knight Hieronymus von Rosenberg concerning Schloss Uttenhofen.\nSealer: the bishop"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hieronymus von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "received Schloss Uttenhofen as a fief from Bishop Wilhelm of Eichstätt."
     }
   ]
 }

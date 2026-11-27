@@ -6,54 +6,54 @@
       "source": "StAWü, Urkunden (HV) Urkunden 426 (Archivische Altsignatur: Historischer Verein von Unterfranken 314)",
       "url": "https://www.gda.bayern.de/gvl/archive.jsf?id=Vz++++++d8314969-3c94-4497-a5ae-b35959d05785",
       "german": "Lehenrevers Ulrichs von Rosenberg, Eberhards von Rosenberg seligen Sohn, für Erzbischof Dietrich von Mainz über Burglehen, die bisher sein Bruder Kunz zu Lehen trug, bei einer Güterteilung mit seinem Bruder jedoch ihm, Ulrich, zugefallen sind, nämlich 20 Pfund Heller jährlich auf dem Hof zu Greuenwinde, drei Pfund Gelds auf der Bede zu Bischofsheim, beides Burglehen zu Bischofsheim, und vier Pfund Gelds auf der Kellerei zu Walldürn ('Dorne'), letztere vom Erzbischof ablösbar mit 40 Pfund Geldes.",
-      "english": "Ulrich von Rosenberg's fief reversal to Archbishop Dietrich of Mainz, Ulrich being the son of the late Eberhard von Rosenberg, concerning castle fiefs previously held by his brother Kunz and assigned to Ulrich in a division of property with his brother: an annual rent of 20 pounds Heller from the farm at Greuenwinde, 3 pounds of revenue from the tax at Bischofsheim, both castle fiefs at Bischofsheim, and 4 pounds of revenue from the cellarer's office at Dürn, the last redeemable by the archbishop for 40 pounds.",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "wallduern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "death",
-          "diedBefore": "1435-09-19"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "sibling",
-          "of": "Ulrich von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "received in a division of property with his brother Kunz the castle fiefs previously held by Kunz."
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz."
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Dürn."
-        }
+      "english": "Ulrich von Rosenberg's fief reversal to Archbishop Dietrich of Mainz, Ulrich being the son of the late Eberhard von Rosenberg, concerning castle fiefs previously held by his brother Kunz and assigned to Ulrich in a division of property with his brother: an annual rent of 20 pounds Heller from the farm at Greuenwinde, 3 pounds of revenue from the tax at Bischofsheim, both castle fiefs at Bischofsheim, and 4 pounds of revenue from the cellarer's office at Dürn, the last redeemable by the archbishop for 40 pounds."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Ulrich von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "death",
+      "diedBefore": "1435-09-19"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "sibling",
+      "of": "Ulrich von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "received in a division of property with his brother Kunz the castle fiefs previously held by Kunz."
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "held castle fiefs at Bischofsheim from Archbishop Dietrich of Mainz."
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "held a fief from Archbishop Dietrich of Mainz consisting of revenue from the cellarer’s office at Dürn."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "wallduern"
     }
   ]
 }

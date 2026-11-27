@@ -11,18 +11,6 @@
       ],
       "german": "Die Aussteller veräußern den Empfängern ihre Rechte an zwei Weinbergen in der Gemarkung Würzburg, die von den Empfängern zu Lehen gehen und die Margarete Schopper von ihrem Vetter, dem Hauger Kanoniker Johann Reiss, geerbt hat. Der von den Weinbergen zu zahlende jährliche Zins fällt an das Präsenzamt des Stifts und dient zum Totengedächtnis des Bischofs Johann von Egloffstein.\n\nAussteller: Bernhard Schopper, Diener des Bischofs von Würzburg, und seine Ehefrau Margarete\n\nEmpfänger: Dekan und Kapitel des Stifts Neumünster\n\nBesiegelung/Beglaubigung: Friedrich von Rosenberg, fehlt\n\nVermerke: Rückvermerke:  L; procuracey lad. 26 stiffts procuracey eigene weinberg N° 14 [Standbuch 207, S. 337]; capsel 7; reg.",
       "english": "The sellers transfer to the buyers their rights to two vineyards in the municipality of Würzburg, which are held from the buyers as a fief and which Margarete Schopper inherited from her cousin, the Hauger canon Johann Reiss. The annual rent payable from the vineyards falls to the prebendal office of the foundation and serves for the memorial mass of Bishop Johann von Egloffstein.\n\nSellers: Bernhard Schopper, servant of the Bishop zu Würzburg, and his wife Margarete\n\nBuyers: Dean and chapter of the Neumünster foundation\n\nSealing/authentication: Friedrich von Rosenberg, missing",
-      "mention": [
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Friedrich von Rosenberg",
-          "type": "generic",
-          "content": "was named as sealer of Bernhard and Margarete Schopper’s sale of their rights to two vineyards in Würzburg to the dean and chapter of Neumünster."
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1dc4f41a-126d-4b5a-98c3-c02f6bb16ac8/1/full/max/0/default.jpg"
@@ -34,6 +22,18 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/1dc4f41a-126d-4b5a-98c3-c02f6bb16ac8/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Friedrich von Rosenberg",
+      "type": "generic",
+      "content": "was named as sealer of Bernhard and Margarete Schopper’s sale of their rights to two vineyards in Würzburg to the dean and chapter of Neumünster."
+    }
+  ],
+  "mention": [
+    {
+      "place": "wurzburg"
     }
   ]
 }

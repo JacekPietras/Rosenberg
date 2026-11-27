@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-129271",
       "german": "Zeugnis des Asmus von Rosenberg, daß er die Hofgebäude bei dem Kirchhof zu Hochhausen in der damaligen Fehde als mainzischer Amtmann zu Bischofsheim durch die Gemeinde daselbst aus strategischen Rücksichten habe abbrechen lassen.\n\nLaufzeit: 1468 August 28",
       "english": "Testimony of Asmus von Rosenberg that, during the feud then underway, he had the farm buildings by the churchyard at Hochhausen demolished by the local community for strategic reasons while serving as bailiff of Mainz at Bischofsheim.\n\nTerm: 28 August 1468.",
-      "mention": [
-        {
-          "person": "Asmus von Rosenberg"
-        },
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "place": "mainz"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129271%2F07_0000129271_0001_7-129271-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129271%2F07_0000129271_0002_7-129271-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Asmus von Rosenberg"
+    },
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

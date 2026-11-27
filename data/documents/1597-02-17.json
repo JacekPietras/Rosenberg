@@ -6,14 +6,14 @@
       "source": "HStAD, A 14, 3822",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1863867",
       "german": "Ehevertrag zwischen dem Georg Orth von Wachenheim und der Margarethe v. Rosenberg.",
-      "english": "Marriage contract between Georg Orth von Wachenheim and Margaretha von Rosenberg.",
-      "facts": [
-        {
-          "person": "Margaretha von Rosenberg",
-          "type": "generic",
-          "content": "entered into a marriage contract with Georg Orth von Wachenheim."
-        }
-      ]
+      "english": "Marriage contract between Georg Orth von Wachenheim and Margaretha von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Margaretha von Rosenberg",
+      "type": "generic",
+      "content": "entered into a marriage contract with Georg Orth von Wachenheim."
     }
   ]
 }

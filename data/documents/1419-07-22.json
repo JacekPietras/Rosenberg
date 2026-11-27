@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-624350",
       "german": "1419 Juli 22 (samßtag nach sand Margareten tag)\nKurfürst Ludwig [III.] Pfalzgraf bei Rhein bewilligt Arnold von Rosenberg den Verkauf einer Gült aus Gütern zu Gommersdorf (Gümerßdorff), Zugehörden von Arnolds [viertem] Teil des Schlosses Boxberg (Bocksperg) und Lehen des A. und der Pfalz, an Kloster Schöntal und übereignet die Gült den Käufern.\nSiegler: der A.\nAusf. Perg. - 1 Sg. anh. - Rv.: Littera domini Ludowici ducis de et super libertate facta census quartae partis in Gumersdorff; - Ein Brieff ... , mit dem er freyet undt eignet den 1/4 der Num. 18 etc. gemelten Gült zu Gommersdorff\nBem.: S. den Kaufbrief vom 30. Juli 1419; U 441. - Arnold von Rosenberg trug 1/4 von Burg und Stadt Boxberg von der Pfalz zu Lehen; s. Karl-Heinz Spieß, Das älteste Lehnsbuch der Pfalzgrafen bei Rhein Nr. 77 S. 31 und S. 77.\n\nLaufzeit: 1419\n\nUmfang: 1 U",
       "english": "22 July 1419 (Saturday after St Margaret's Day). Elector Ludwig [III], Count Palatine of the Rhine, grants Arnold von Rosenberg permission to sell to Schönthal Abbey an annual rent from properties at Gommersdorf, appurtenances of Arnold's [fourth] part of Boxberg Castle and fiefs of Arnold and the Palatinate, and transfers the rent to the purchasers.\nSealer: Arnold.\nOriginal parchment; 1 pendant seal. Reverse: Charter of Lord Ludwig, Duke, concerning and granting the exemption of the rent from the fourth part at Gommersdorf; “A letter ... by which he frees and conveys the rent at Gommersdorf mentioned in no. 18 etc., one quarter.”\nNote: See the purchase charter of 30 July 1419, U 441. Arnold von Rosenberg held one quarter of Boxberg Castle and town as a fief from the Palatinate; see Karl-Heinz Spieß, Das älteste Lehnsbuch der Pfalzgrafen bei Rhein, no. 77, pp. 31 and 77.\n\nTerm: 1419\n\nExtent: 1 charter",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "gommersdorf"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000624350%2F02_0000624350_0003_2-624350-3.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000624350%2F02_0000624350_0004_2-624350-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "gommersdorf"
     }
   ]
 }

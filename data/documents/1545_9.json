@@ -6,25 +6,25 @@
       "source": "Dochnahl, Chronik von Neustadt an der Haardt, p. 104",
       "url": "https://stiftung-pfalz.de/dls/Dochnahl2009korrDruckversion2.pdf",
       "german": "Weil das Wolfsberger Schloß demolirt war, so erhält Michael von Rosenberg, Vicedom dahier, die Haardter Burg, und der Kurfürst erneuert demselben das seinem Vater ertheilte Lehen daselbst.",
-      "english": "Because Wolfsberg Castle had been demolished, Michael von Rosenberg, Vicedom zu Neustadt, receives Haardt Castle, and the Elector renews for him the fief there that had been granted to his father.",
-      "mention": [
-        {
-          "place": "burg-winzingen"
-        },
-        {
-          "place": "haardt"
-        }
+      "english": "Because Wolfsberg Castle had been demolished, Michael von Rosenberg, Vicedom zu Neustadt, receives Haardt Castle, and the Elector renews for him the fief there that had been granted to his father."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "personTitle": [
+        "Vizedom zu Neustadt"
       ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "personTitle": [
-            "Vizedom zu Neustadt"
-          ],
-          "type": "generic",
-          "content": "received Burg Winzingen at Haardt when the elector renewed the fief there previously granted to his father."
-        }
-      ]
+      "type": "generic",
+      "content": "received Burg Winzingen at Haardt when the elector renewed the fief there previously granted to his father."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-winzingen"
+    },
+    {
+      "place": "haardt"
     }
   ]
 }

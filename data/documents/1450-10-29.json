@@ -10,26 +10,6 @@
       ],
       "german": "Abt Georius von St. Aegydien zu Nürnberg vidimiert die Urkunde der Bischöfe Gottfried von Würzburg und Sylvester von Chiemsee, des Pfalzgrafen Friedrich, Hanns von Neitperg, Ulrich Riedrer, des römischen Königs, und Graf Jorg von Hennenberg und Jorg Fuchs zu Sweinhaupten, des Bischofs von Würzburg Hofmeister, Jobst von Vennyngen, Deutschordensmeister in deutschen und welchen Landen, Heß Graf zu Leyningen, Peter von Talheim, Hofmeister, und Ulrich von Rosemberg, Marschalle des Pfalzgrafen, Johanns Dustier, des Erzbischofs Friedrich von Salzburg, und Ott Pientzenawer zu Kemnaten und Jacob Püttrich zu Richartshausen, Herzog Albrechts von Bayern Räte, in welchem diese im Namen des römischen Königs die Zwietracht und Fehde zwischen Markgraf Albrecht von Brandenburg einerseits und der Stadt Nürnberg und Konrad von Heydegk andererseits bis zu einem königlichen Spruche vertragen. - Siegler: der Aussteller mit Abteisiegel.",
       "english": "Abt Georius of St Aegydien at Nuremberg authenticates by vidimus the charter of Gotfried von Würzburg, Bischof; Sylvester von Chiemsee, Bischof; Friedrich, Pfalzgraf; Hanns von Neitperg and Ulrich Riedrer, councillors of the Roman King; Jorg von Hennenberg, Graf; Jorg Fuchs zu Sweinhaupten, Hofmeister of the Bishop of Würzburg; Jobst von Vennyngen, Deutschordensmeister in the German and Wendish lands; Heß zu Leyningen, Graf; Peter von Talheim, Hofmeister; Ulrich von Rosenberg, Marschall des Pfalzgrafen; Johanns Dustier, councillor of Erzbischof Friedrich von Salzburg; and Ott Pientzenawer zu Kemnaten and Jacob Püttrich zu Richartshausen, councillors of Herzog Albrecht von Bayern. In that charter, acting in the name of the Roman King, they settle the dispute and feud between Albrecht von Brandenburg, Markgraf, on one side, and the city of Nuremberg and Konrad von Heydegk on the other, pending a royal judgment.\n\nSealer: the issuer with the abbey seal.",
-      "mention": [
-        {
-          "person": "Gotfried von Würzburg",
-          "personTitle": [
-            "Bischof"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Peter von Talheim"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/490b57ac-2c3d-443c-a72c-ce3b83d33775/1/full/max/0/default.jpg"
@@ -38,6 +18,26 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/490b57ac-2c3d-443c-a72c-ce3b83d33775/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gotfried von Würzburg",
+      "personTitle": [
+        "Bischof"
+      ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Peter von Talheim"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

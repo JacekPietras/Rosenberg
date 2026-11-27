@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++95D8A6EA-E9D0-4160-A6EA-D1CF546A2147&parent_id="
       ],
       "german": "Veräußerung des öden Schlossbergs zu Rosenberg an den Freiherren von Malcomes",
-      "english": "Sale of the barren Schlossberg at Rosenberg to Baron von Malcomes.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Sale of the barren Schlossberg at Rosenberg to Baron von Malcomes."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

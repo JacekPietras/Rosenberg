@@ -7,18 +7,18 @@
       "source": "Chmel n. 7877",
       "url": "https://www.regesta-imperii.de/id/1486-11-27_1_0_13_0_0_7876_7877",
       "german": "ächtet die Brüder und Vettern von Rosenberg, Jörg, Arnold und Friedrich und ihre unbenannten Anhänger, weil sie dem Bischof Rudolph von Würzburg, seinem Capitel, Stift und Unterthanen unerfolgt des gebührlichen Rechtens, wider die goldene Bulle, Röm. königl. Reformation und den zehnjährigen Frieden, Fehde und Feindschaft zugesandt, sie mit Mord, Brand, Gefängniss etc. etc. beschädigt haben.",
-      "english": "He places under the imperial ban the brothers and cousins of Rosenberg—Jörg, Arnold, and Friedrich—and their unnamed followers because, without first pursuing the proper legal process and contrary to the Golden Bull, the Roman royal Reformation, and the ten-year peace, they sent feud and hostility against Bishop Rudolf of Würzburg, his chapter, see, and subjects and harmed them through murder, arson, imprisonment, and other acts.",
-      "mention": [
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "He places under the imperial ban the brothers and cousins of Rosenberg—Jörg, Arnold, and Friedrich—and their unnamed followers because, without first pursuing the proper legal process and contrary to the Golden Bull, the Roman royal Reformation, and the ten-year peace, they sent feud and hostility against Bishop Rudolf of Würzburg, his chapter, see, and subjects and harmed them through murder, arson, imprisonment, and other acts."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

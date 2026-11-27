@@ -6,21 +6,21 @@
       "source": "Staatsarchiv Wertheim F-Rep. 182 Nr. 29",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-76579",
       "german": "Ein in dem limpurgischen Archiv vorgefundener alter Reversbrief von Kunz von Rosenberg zu Bocksberg über den ihm von Limpurg anno 1415 verkauften halben Flecken und Schloß Haldenbergstetten\n\nLaufzeit: 1794",
-      "english": "An old letter of acknowledgment found in the Limpurg archive, issued by Kunz von Rosenberg zu Bocksberg concerning the half-town and castle of Haldenbergstetten sold to him by Limpurg in 1415.\n\nTerm: 1794.",
-      "mention": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ]
-        },
-        {
-          "place": "limpurg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
+      "english": "An old letter of acknowledgment found in the Limpurg archive, issued by Kunz von Rosenberg zu Bocksberg concerning the half-town and castle of Haldenbergstetten sold to him by Limpurg in 1415.\n\nTerm: 1794."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
       ]
+    },
+    {
+      "place": "limpurg"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

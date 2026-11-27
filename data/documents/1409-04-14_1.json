@@ -9,34 +9,7 @@
         "https://www.digitale-sammlungen.de/en/view/bsb10001855"
       ],
       "german": "König Rupertus befiehlt der Stadt Schweinfurt, die Steuer dem Arnolt von Rosenberg dem Jungen zu geben. C.",
-      "english": "King Ruprecht commands the city of Schweinfurt to give the tax to Arnold von Rosenberg der Jüngere. C.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ruprecht",
-          "personTitle": [
-            "König"
-          ],
-          "type": "generic",
-          "content": "ordered the city of Schweinfurt to give the tax to [arnold_boxberg] der Jüngere."
-        }
-      ]
+      "english": "King Ruprecht commands the city of Schweinfurt to give the tax to Arnold von Rosenberg der Jüngere. C."
     },
     {
       "source": [
@@ -49,18 +22,37 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1409 April 14, Heidelberg. Befiehlt der Stadt Schweinfurt, die Jahressteuer an Arnolt von Rosenberg dem Jungen zu zahlen.",
-      "english": "1409 April 14, Heidelberg. He orders the city of Schweinfurt to pay the annual tax to Arnold von Rosenberg der Jüngere.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "place": "heidelberg"
-        }
+      "english": "1409 April 14, Heidelberg. He orders the city of Schweinfurt to pay the annual tax to Arnold von Rosenberg der Jüngere."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ruprecht",
+      "personTitle": [
+        "König"
+      ],
+      "type": "generic",
+      "content": "ordered the city of Schweinfurt to give the tax to [arnold_boxberg] der Jüngere."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
       ]
+    },
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "place": "heidelberg"
     }
   ]
 }

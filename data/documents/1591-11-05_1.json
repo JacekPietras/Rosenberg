@@ -6,21 +6,21 @@
       "source": "HStAD, B 8, 9/351",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5181345",
       "german": "Erzbischof Wolfgang von Mainz: Verleihung eines Burglehens von 6 Gulden jährlicher Gülte aus der Kellerei Steinheim an die Söhne des verstorbenen Dietrich v. Rosenbach, Adam Hektor, Konrad und Dietrich - Kanzleivermerk: Petrus Kraych, secretarius\n\nFormalbeschreibung: Ausf., Perg., anh. Sg. in Holzkapsel gut erh.\n\nSiegler: Aussteller\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Archbishop Wolfgang of Mainz: grant of a castle fief consisting of an annual rent of 6 florins from the treasury at Steinheim to the sons of the late Dietrich von Rosenberg—Adam Hektor, Konrad, and Dietrich. Chancery note: Petrus Kraych, secretary.\n\nFormal description: Original, parchment, intact pendant seal in a wooden case.\n\nSealer: Issuer.\n\n(Former) provenance: von Rosenbach.",
-      "mention": [
-        {
-          "person": "Dietrich von Rosenberg"
-        },
-        {
-          "person": "Erzbischof Wolfgang",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Archbishop Wolfgang of Mainz: grant of a castle fief consisting of an annual rent of 6 florins from the treasury at Steinheim to the sons of the late Dietrich von Rosenberg—Adam Hektor, Konrad, and Dietrich. Chancery note: Petrus Kraych, secretary.\n\nFormal description: Original, parchment, intact pendant seal in a wooden case.\n\nSealer: Issuer.\n\n(Former) provenance: von Rosenbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich von Rosenberg"
+    },
+    {
+      "person": "Erzbischof Wolfgang",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

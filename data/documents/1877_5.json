@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++116577d8-bbc4-40f4-87dd-a7c9a861ee0f&parent_id="
       ],
       "german": "Schuh, Johann Friedrich, von Rügland, Schreinermeister; Verheiratung mit Spang, Wilhelmine, von Rosenbach",
-      "english": "Johann Friedrich Schuh, from Rügland, master carpenter; marriage to Wilhelmine Spang, from Rosenbach",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Friedrich Schuh, from Rügland, master carpenter; marriage to Wilhelmine Spang, from Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

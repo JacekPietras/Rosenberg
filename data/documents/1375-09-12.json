@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1375_IX_12/charter",
       "german": "Peter und Johann von Rosenberg schenken der Kirche in Friedberg ihr Dorf Wegnerschlag (Watnau[?]) und einen Wald zum Roden, wofür sie jedoch einen größeren Waldteil bei Friedau zurückfordern und den Pfarrer verpflichten, einen Kaplan zu halten.\n\nSiegel: Siegel (an Pergamentbändchen hängend, in Holzkapseln mit Deckel): 1) Peter von Rosenberg. Braunes Wachs, rund, 40 mm Dm. Umschrift: \"+ S PETRI DE ROSENBERK.\" Wappen: Fünfblättrige Rose. Runde Kapsel, 70 mm Dm. 2) Johann von Rosenberg. Braunes Wachs, rund, 40 mm Dm. Umschrift: \"Sigillum iohannis de Rosenberk.\" Wappen: Gespalten und geteilt, 1. u. 4. Feld drei Nadelbäume, 2. u. 3. Feld die fünfblättrige Rose. Runde Kapsel, 70 mm Dm.",
       "english": "Peter and Hans von Rosenberg give the church at Friedberg their village of Wegnerschlag (Watnau[?]) and a wood to be cleared; in return, however, they reclaim a larger tract of forest near Friedau and require the parish priest to maintain a chaplain.\n\nSeals: Seals hanging from parchment ribbons in wooden boxes with lids. (1) Peter von Rosenberg. Brown wax, round, 40 mm in diameter. Inscription: “+ S PETRI DE ROSENBERK.” Arms: a five-petaled rose. Round box, 70 mm in diameter. (2) Hans von Rosenberg. Brown wax, round, 40 mm in diameter. Inscription: “Sigillum iohannis de Rosenberk.” Arms: divided per pale and quarterly; fields 1 and 4 contain three fir trees, fields 2 and 3 the five-petaled rose. Round box, 70 mm in diameter.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_13750912_135_r.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_13750912_135_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

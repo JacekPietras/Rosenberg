@@ -7,13 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5492661",
       "german": "Kurfürst Philipp von der Pfalz bekundet, dass sein Getreuer Jörg von Rosenberg ihm 1.000 Gulden schuldig ist, für die dieser Schillingstadt zu Unterpfand gesetzt hatte. Nachdem die Rückzahlung zu verschiedenen Zielen versäumt worden war, hat Jörg den Schultheißen, das Gericht und die Gemeinde zu Schillingstadt mitsamt Gerichten, Vogteien sowie anderen Rechten und Zugehörungen bis zur Zahlung der 1.000 Gulden an den Pfalzgrafen gewiesen. Kurfürst Philipp gibt seinem Keller zu Möckmühl, Hans Schifflin, kraft dieses Briefes Befehl und Vollmacht, bis zum Dienstag nach St. Georgstag [= 24.04.] die von Jörg von Rosenberg ledig gesagten Leute und Güter bis zur Rückzahlung der Summe in Empfang und Pflicht zu nehmen.\n\nLaufzeit: 1487 April 20 (uff fritag nach ostern)\n\nSiegler: Kurfürst Philipp von der Pfalz (dorsal aufgedrücktes Sekretsiegel)",
       "english": "Elector Philipp of the Palatinate certifies that his loyal servant Georg von Rosenberg owes him 1,000 gulden, for which the village of Schillingstadt had been pledged as security. After repayment was delayed on several occasions, Jörg assigned the sheriff, court, and community of Schillingstadt, together with courts, jurisdictions, and other rights and appurtenances, until payment of the 1,000 gulden, to the Count Palatine. Elector Philipp hereby instructs and empowers his cellarer at Möckmühl, Hans Schifflin, to take into his possession and custody, by Tuesday after St. George's Day [= April 24], the people and estates formerly released by Georg von Rosenberg until repayment of the sum.\n\nDuration: April 20, 1487 (on Friday after Easter)\n\nSealer: Elector Philipp of the Palatinate (secret seal pressed on the reverse)",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "assigned the community and rights of Schillingstadt to Elector Philipp of the Palatinate until repayment of his debt secured on the village."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005492661%2F04_0005492661_0001_4-5492661-1.jpg"
@@ -22,6 +15,13 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005492661%2F04_0005492661_0002_4-5492661-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "assigned the community and rights of Schillingstadt to Elector Philipp of the Palatinate until repayment of his debt secured on the village."
     }
   ]
 }

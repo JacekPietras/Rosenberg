@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1786785",
       "german": "Kaiser Ferdinand verleiht auf Bitten Albrecht von Rosenbergs dessen Flecken Unterschüpf Marktrecht und verleiht ihm ein Wappen.\n\nLaufzeit: 1562 November 9\n\nVermerke: Abschrift des Generallandesarchivs von 1921 nach dem Original im Gemeindearchiv Unterschöpf",
       "english": "At Albrecht von Rosenberg’s request, Emperor Ferdinand grants his town of Unterschüpf market rights and grants him a coat of arms.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "unterschuepf"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786785%2F04_0001786785_0001_4-1786785-1.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001786785%2F04_0001786785_0004_4-1786785-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "unterschuepf"
     }
   ]
 }

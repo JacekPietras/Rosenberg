@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-215085",
       "german": "Kaufbrief des Cunz von Uissigheim über seine von Würzburg zu Lehen rührenden Güter zu Rettersheim, die er dem Kloster Triefenstein um 500 fl. zu Eigen verkauft.\n\nLaufzeit: 1370 November 12\n\nSiegler: Conradi de Ussenkeim (Helm mit zwei Schwanenhälsen); Heinrici Zobel de Gutenberg (Pferdskopf); Cunradi de Ussenkeim der alt (wie 1); Cunradi de Ussenkem (v. Kannenberg) (wie 1); Heinrici dicti Bleiche (Pferdskopf wie Zobel); Götz Schezlin (eine Kanne = Stettenberg); Conradi Cresse de Hohenburg (wie 1409 Febr. 14); Heinrich von Reinstein (wie 1409 Febr. 14); Fritz von Tierberg (undeutlich)",
       "english": "Sale charter of Kunz von Uissigheim for his estates at Rettersheim, held as fiefs from Würzburg, which he sold to Triefenstein Monastery as freehold property for 500 florins.\n\nDate: 12 November 1370.\n\nSeal bearers: Conrad von Uissenkeim (helmet with two swan necks); Heinrich Zobel von Gutenberg (horse's head); Cunrad von Uissenkeim der Ältere (as in 1); Cunrad von Ussenkem (von Kannenberg) (as in 1); Heinrich called Bleiche (horse's head as Zobel's); Götz Schezlin (a jug = Stettenberg); Conrad Cresse von Hohenburg (as on 14 February 1409); Heinrich von Reinstein (as on 14 February 1409); Fritz von Tierberg (unclear).",
-      "mention": [
-        {
-          "person": "Heinrich Zobel"
-        },
-        {
-          "person": "Kunz von Uissigheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215085%2F07_0000215085_0001_7-215085-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3631&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003631%2Ftitlaufn_0000215085%2F07_0000215085_0002_7-215085-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich Zobel"
+    },
+    {
+      "person": "Kunz von Uissigheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

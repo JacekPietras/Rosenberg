@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++bca726b4-0897-4a91-bf3d-86ffb485d051&parent_id="
       ],
       "german": "Deffner, Johann Andreas, von Rosenberg, Landwirt; Verheiratung mit Prägert, Margaretha Barbara, von Rügland/Nürnberg",
-      "english": "Deffner, Johann Andreas, from Rosenberg, farmer; marriage to Prägert, Margaretha Barbara, from Rügland/Nuremberg",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Deffner, Johann Andreas, from Rosenberg, farmer; marriage to Prägert, Margaretha Barbara, from Rügland/Nuremberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

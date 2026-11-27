@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1278_VI_24/charter",
       "german": "Heinrich von Rosenberg bestätigt die Schenkung, welche sein Bruder Wittigo den Hohenfurter Cisterciensern mit den Dörfern Schönhub, Sonnberg, Rukendorf und Unter-Schlagl machte.\n\nSiegel: Etwas beschädigtes, an Pergamentstreifen hängendes Siegel in weissem Wachs. Sonst wie XXII.",
       "english": "Heinrich von Rosenberg confirms the donation made by his brother Wittigo to the Hohenfurt Cistercians with the villages of Schönhub, Sonnberg, Rukendorf and Unter-Schlagl.\n\nSeal: Somewhat damaged seal hanging on parchment strips in white wax. Otherwise as XXII.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_12780624_7%2CI_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_12780624_7%2CI_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5fec3fbe-c7c2-4cce-aa51-df0b8bb3c5c6&parent_id="
       ],
       "german": "Der Schafknecht Johann Lorenz Riegel von Rosenberg klagt gegen den dortigen Schäfer Heinrich Meyerhöfer wegen nach misslungener „Fensterung“ des Meyerhöferschen Sohns bei der Magd Katharina Eichenbrenner in Rügland erfolgter Beleidigung.",
-      "english": "The shepherd's hired hand Johann Lorenz Riegel von Rosenberg sues the local shepherd Heinrich Meyerhöfer for insulting him after the latter's son unsuccessfully attempted a Fensterung (a courtship custom involving a window) with the maid Katharina Eichenbrenner in Rügland.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "The shepherd's hired hand Johann Lorenz Riegel von Rosenberg sues the local shepherd Heinrich Meyerhöfer for insulting him after the latter's son unsuccessfully attempted a Fensterung (a courtship custom involving a window) with the maid Katharina Eichenbrenner in Rügland."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

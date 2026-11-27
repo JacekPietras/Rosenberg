@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1109033",
       "german": "Hans Zaß (Im Dorsualregest: Hans Haß), Zimmermann auf dem Rupertsberg [G. Langenschiltach], zum Kloster St. Georgen gehörig, wegen Diebstahlsverdachts in Hornberg gef., jedoch auf Bitten seines Herrn, des Grafen Friedrich zu Fürstenberg, seiner Ehefrau und anderer Personen gegen Bezahlung einer Geldstrafe und der Kosten freigel., schwört U.. Er hatte sich dadurch verdächtig gemacht, daß er sich gegen die Verleumdung nicht zur Wehr gesetzt hatte, er habe des Nachts aus dem Kasten seines verstorbenen Vaters Frucht entwendet.\n\nLaufzeit: 1532 Dezember 2 (02.12.1532 (Mo. nach Konrad))\n\nSiegelbeschreibung: die ehrsamen und weisen Schultheiß, Bm. und Rat der Stadt Hornberg (mit dem S. der Stadt)\n\nVermerke: 1 S. Rv.: Notiz vom 09.06.1535 über eine Anweisung des Hofmeisters und der Räte an den Obervogt auf dem Schwarzwald, Jos Munich von Rosenberg, betr. die Wiederherstellung der Ehrenrechte des Hans Haß und das Verbleiben der U. bei der Kanzlei.",
       "english": "Hans Zaß (the dorsal regest has Hans Haß), carpenter on the Rupertsberg [G. Langenschiltach], belonging to the monastery of St. Georgen, was arrested at Hornberg on suspicion of theft but, at the request of his lord, Count Friedrich zu Fürstenberg, his wife, and other persons, was released on payment of a fine and the costs and swore the oath of release. He had aroused suspicion by failing to defend himself against the accusation that he had stolen grain at night from the chest of his deceased father.\n\nTerm: 2 December 1532.\n\nSeals: the honorable and prudent Schultheiß, mayor, and council of the town of Hornberg (with the town seal).\n\nNotes: reverse: note of 9 June 1535 concerning an instruction by the chamberlain and councillors to the chief bailiff in the Black Forest, Jos Munich von Rosenberg, concerning the restoration of Hans Haß’s honor and the retention of the oath of release by the chancery.",
-      "mention": [
-        {
-          "place": "hornberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3520&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003520%2Ftitlaufn_0001109033%2F01_0001109033_0001_1-1109033-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3520&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003520%2Ftitlaufn_0001109033%2F01_0001109033_0002_1-1109033-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "hornberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++523A5677-BE47-4691-8A7E-C03D86F0ADDB&parent_id="
       ],
       "german": "Heinrich Truchsezze von Holnstain verkauft an Abt Herman zu Chastel um 248 Pfund h den Fraenkenhof(1).  Bürgen mit Leistungspflicht zu Amberg: H. Johans von Mistelbach; H. Dietreich der Spies; Ulreich der Freudenberger zu dem Ruprehtstain (Ruprechtsstein B. Sulzbach); Herman der Praitenstainer; Eberhard der Mistelbech; Dietreich der Zudenreuter; Fridereich der alte Vogt von Rosemberch; der ältere Ulreich der Vogt daselbst; Otl der Kürbenreuter; (Kürmreuth BA Abg.) Erhard der Löhel.  Ms: die Bürgen.\n\nEnthält-/Darin-Vermerke: Hinweis:\n(1) Frankenhof B. Sulzbach.",
-      "english": "Heinrich Truchsezze von Holnstain sells the Fraenkenhof to Abbot Herman zu Chastel for 248 pounds of Heller. Sureties bound to perform at Amberg: H. Johans von Mistelbach; H. Dietreich der Spies; Ulreich der Freudenberger zu dem Ruprehtstain (Ruprechtsstein, district of Sulzbach); Herman der Praitenstainer; Eberhard der Mistelbech; Dietreich der Zudenreuter; Fridereich der alte Vogt von Rosemberch; der ältere Ulreich der Vogt there; Otl der Kürbenreuter (Kürmreuth, district of Amberg); and Erhard der Löhel. Manuscript: the sureties.\nContents note: (1) Frankenhof, district of Sulzbach.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "person": "Friedrich von Rosenberg",
-          "personTitle": [
-            "Vogt",
-            "der Alte"
-          ]
-        },
-        {
-          "person": "Herman",
-          "personTitle": [
-            "Abt zu Kastl"
-          ]
-        }
+      "english": "Heinrich Truchsezze von Holnstain sells the Fraenkenhof to Abbot Herman zu Chastel for 248 pounds of Heller. Sureties bound to perform at Amberg: H. Johans von Mistelbach; H. Dietreich der Spies; Ulreich der Freudenberger zu dem Ruprehtstain (Ruprechtsstein, district of Sulzbach); Herman der Praitenstainer; Eberhard der Mistelbech; Dietreich der Zudenreuter; Fridereich der alte Vogt von Rosemberch; der ältere Ulreich der Vogt there; Otl der Kürbenreuter (Kürmreuth, district of Amberg); and Erhard der Löhel. Manuscript: the sureties.\nContents note: (1) Frankenhof, district of Sulzbach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "person": "Friedrich von Rosenberg",
+      "personTitle": [
+        "Vogt",
+        "der Alte"
+      ]
+    },
+    {
+      "person": "Herman",
+      "personTitle": [
+        "Abt zu Kastl"
       ]
     }
   ]

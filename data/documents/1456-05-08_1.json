@@ -9,41 +9,41 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ecadf2c7-2f1c-4e27-97c4-8693a8eaf7ba&parent_id="
       ],
       "german": "Ulrich von Rechberg, Thomas von Rosenberg, Heinrich Zobel, Hans von Absberg, Ulrich und Jörg von Rosenberg, Heinz von Rechberg und Heinz von Seckendorff bestätigen, dass Bischof Johann von Würzburg ihnen mit Einverständnis des Domkapitels 150 rheinische Gulden jährlichen Zins aus der Steuer (\"Bete\"), und zwar aus der Stadt Haßfurt 100, aus der Stadt Volkach 40 und aus dem Dorf \"Keller\" 10 Gulden, um 3000 rheinische Gulden verschrieben hat",
-      "english": "Ulrich von Rechberg, Thomas von Rosenberg, Heinrich Zobel, Hans von Absberg, Ulrich von Rosenberg and Georg von Rosenberg, Heinz von Rechberg, and Heinrich von Seckendorf confirm that Bishop Johann of Würzburg has, with the consent of the cathedral chapter, assigned them 150 Rhenish gulden annual interest from the tax (\"Bete\"), namely 100 from the city of Haßfurt, 40 from the city of Volkach, and 10 from the village of \"Keller,\" for a principal of 3,000 Rhenish gulden.",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Hans von Absberg"
-        },
-        {
-          "person": "Heinrich von Seckendorf"
-        },
-        {
-          "person": "Heinrich Zobel"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Thomas von Rosenberg",
-          "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
-        }
+      "english": "Ulrich von Rechberg, Thomas von Rosenberg, Heinrich Zobel, Hans von Absberg, Ulrich von Rosenberg and Georg von Rosenberg, Heinz von Rechberg, and Heinrich von Seckendorf confirm that Bishop Johann of Würzburg has, with the consent of the cathedral chapter, assigned them 150 Rhenish gulden annual interest from the tax (\"Bete\"), namely 100 from the city of Haßfurt, 40 from the city of Volkach, and 10 from the village of \"Keller,\" for a principal of 3,000 Rhenish gulden."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Thomas von Rosenberg",
+      "type": "generic",
+      "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "received from Bishop Johann of Würzburg, with the cathedral chapter’s consent, a redeemable annual rent of 150 Rhenish guilders from taxes on Haßfurt, Volkach, and Keller for 3,000 Rhenish guilders."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Hans von Absberg"
+    },
+    {
+      "person": "Heinrich von Seckendorf"
+    },
+    {
+      "person": "Heinrich Zobel"
     }
   ]
 }

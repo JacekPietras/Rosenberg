@@ -6,15 +6,15 @@
       "source": "Staatsarchiv Trebon (Wittingau), Herrschaft Krumau (http://www.ceskearchivy.cz/soa-tb/index.php), 1470",
       "url": "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1470/charter",
       "german": "Johann von Rosenberg bestätigt dem Stift Schlägl die früheren Schenkungen der Rosenberger und stellt das Kloster unter seinen besonderen Schutz.\n\nSiegel: Keine Angabe.",
-      "english": "Hans von Rosenberg confirms to Schlägl Abbey the Rosenbergs' earlier gifts and places the monastery under his special protection.\n\nSeal: Not specified.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Hans von Rosenberg confirms to Schlägl Abbey the Rosenbergs' earlier gifts and places the monastery under his special protection.\n\nSeal: Not specified."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

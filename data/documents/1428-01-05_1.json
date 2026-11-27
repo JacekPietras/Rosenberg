@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-199611",
       "german": "Eberhard von Üssigheim, Amtmann zu Freudenberg, den Graf Johann von Wertheim in den Dienst des Erzbischofs von Mainz gestellt hat zum Krieg gegen den Landgrafen von Thüringen und Markgrafen zu Meißen und dem Landgrafen zu Hessen, quittiert über 33 fl. 4 t. 4 d. Sold für zwei reisige Pferde.\n\nLaufzeit: 1428 Januar 5 (Mo n. Jahrstag)\n\nSiegelbeschreibung: 1 Siegel, besch.\n\nVermerke: Rückvermerk: quitanze hh",
       "english": "Eberhard von Uissigheim, Amtmann zu Freudenberg, whom Count Johann von Wertheim has placed in the service of the Archbishop of Mainz for the war against the Landgrave of Thuringia and the Margrave of Meissen and the Landgrave of Hesse, acknowledges receipt of 33 florins, 4 [shillings], and 4 [pennies] in pay for two warhorses.\n\nDate: 5 January 1428 (Monday after New Year’s Day).\n\nSeal description: 1 damaged seal.\n\nNotes: Endorsement: “quitanze hh”.",
-      "mention": [
-        {
-          "person": "Eberhard von Uissigheim",
-          "personTitle": [
-            "Amtmann zu Freudenberg"
-          ]
-        },
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "mainz"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199611%2F07_0000199611_0001_7-199611-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=729&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000729%2Ftitlaufn_0000199611%2F07_0000199611_0002_7-199611-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Uissigheim",
+      "personTitle": [
+        "Amtmann zu Freudenberg"
+      ]
+    },
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "mainz"
     }
   ]
 }

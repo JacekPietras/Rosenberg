@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++57E9EBAE-D74C-481A-9101-A24B21DF733B&parent_id="
       ],
       "german": "Irrungen zwischen den Herren von Schletten und Heußlein einerseits und dem Hochstift Würzburg, dem Keller zu Kissingen, den Herren von Rosenbach sowie bewaffneten Bauernschützen andererseits wegen der Jagdgerechtigkeit auf Nüdlinger Markung.",
-      "english": "Disputes between the lords von Schletten and Heußlein on the one hand and the Würzburg bishopric, the fiscal officer at Kissingen, the lords von Rosenbach, and armed peasant marksmen on the other, concerning hunting rights in the Nüdlingen district.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Disputes between the lords von Schletten and Heußlein on the one hand and the Würzburg bishopric, the fiscal officer at Kissingen, the lords von Rosenbach, and armed peasant marksmen on the other, concerning hunting rights in the Nüdlingen district."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

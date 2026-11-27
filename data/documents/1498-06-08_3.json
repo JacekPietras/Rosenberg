@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166684",
       "german": "Karl Reitwieser (Karell Reytwyser), Hofschultheiß zu Würzburg, bekundet, dass ihm Graf Michael von Wertheim 1 Morgen Weingarten in der Sanderau (Senderawe) bei Würzburg, den Urban Lutz innehatte, zu rechtem Mannlehen verliehen hat (Lehnsbrief ist inseriert).\n\nLaufzeit: 1498 Juni 8 (freitags nach Bonifacii)\n\nSiegelbeschreibung: 1 Siegel, aufgedrückt\n\nVermerke: Dorsualvermerk\n\nSiegler: Philipp von Uissigheim (Ussigkein), Junker (auf Bitten des Ausstellers)",
       "english": "Karl Reitwieser (Karell Reytwyser), court mayor of Würzburg, certifies that Graf Michael von Wertheim granted him, as a proper manorial fief, one acre of vineyard in the Sanderau near Würzburg, formerly held by Urban Lutz (the fief charter is inserted).\n\nTerm: 8 June 1498 (Friday after Boniface).\n\nSeal description: One applied seal.\n\nNotes: Endorsement on the reverse.\n\nSealer: Philipp von Uissigheim, Junker (at the issuer’s request).",
-      "mention": [
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "person": "Philipp von Uissigheim",
-          "personTitle": [
-            "Junker"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166684%2F07_0000166684_0001_7-166684-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000166684%2F07_0000166684_0002_7-166684-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "person": "Philipp von Uissigheim",
+      "personTitle": [
+        "Junker"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -7,23 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3339/charter",
       "german": "Johann Hartmann [von Rosenbach], Bischof von Würzburg, Franz Christoph und Johann Konrad von Rosenbach (Roszenbach) bestätigen für sich und ihre minderjährigen Vettern die Belehnung mit einem Steinhaus, zwei Höfen und drei Huben Land in Berstadt (Berstatt) [Ortsteil der Gem. Wölfersheim, Wetteraukrs.] sowie ihrem Teil an der Gült in Langsdorf (?) (Langendorff) [Stadtteil der Gem. Lich, Lkr. Gießen] durch Bernhard Gustav [Markgraf von Baden-Durlach], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Johann von Schlitz genannt von Görtz\n\nSiegel: anhängendes Siegel in Holzkapsel Johann von Schlitz genannt von Görtz",
       "english": "Johann Hartmann [von Rosenbach], Bishop of Würzburg, Franz Christoph, and Hans Konrad von Rosenberg (Roszenbach) confirm, for themselves and their minor cousins, the enfeoffment by Bernhard Gustav [Margrave of Baden-Durlach], Abbot of Fulda, with a stone house, two farms, and three hides of land in Berstadt (Berstatt) [part of Wölfersheim municipality, Wetterau district], as well as their share of the rent at Langsdorf (?) (Langendorff) [part of Lich, Gießen district]. The feudal letter is inserted. Seal clause.\n\nSealer: Johann von Schlitz genannt von Görtz.\n\nSeal: Attached seal in wooden capsule of Johann von Schlitz genannt von Görtz.",
-      "mention": [
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203339%20Vorderseite%20%281674%20Dezember%2003%29.jpg"
@@ -32,6 +15,23 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203339%20Rueckseite%20%281674%20Dezember%2003%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
     }
   ]
 }

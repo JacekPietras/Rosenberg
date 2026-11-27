@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-196084",
       "german": "Jörg von Rosenberg, Diener; Siegel: Jörg von Rosenberg.\n\nLaufzeit: 1467\n\nUmfang: 1 Urkunde, Pergament",
       "english": "Georg von Rosenberg, Diener; seal: Georg von Rosenberg.\n\nTerm: 1467\n\nExtent: 1 parchment charter.",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196084%2F03_0000196084_0001_3-196084-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000196084%2F03_0000196084_0002_3-196084-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
     }
   ]
 }

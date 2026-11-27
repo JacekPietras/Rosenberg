@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7B899148-5DF7-47F6-BEF9-388CE9911C38&parent_id="
       ],
       "german": "Ritter von Rosenberg zu Boxberg",
-      "english": "Ritter von Rosenberg zu Boxberg",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Ritter von Rosenberg zu Boxberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

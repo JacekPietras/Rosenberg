@@ -7,47 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723845",
       "german": "Erzbischof Dietrich von Mainz gelobt, den zwischen seinem Vorgänger Adolf und dem Pfalzgrafen Friedrich sowie Bischof Rudolf von Würzburg geschlossenen Burgfrieden zu Boxberg zu halten.",
       "english": "Archbishop Dietrich von Mainz praised the castle keep the castle fried to Boxberg between his predecessor Adolf and the Count Palatine Frederick and Bishop Rudolf von Würzburg.",
-      "mention": [
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof von Würzburg"
-          ]
-        },
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Erzbischof Adolf",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Erzbischof Dietrich",
-          "personTitle": [
-            "Erzbischof von Mainz"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Dietrich von Mainz",
-          "personTitle": [
-            "Erzbischof von Mainz"
-          ],
-          "type": "generic",
-          "content": "promised to uphold the castle peace at Boxberg."
-        },
-        {
-          "person": "Friedrich von der Pfalz",
-          "personTitle": [
-            "Pfalzgraf"
-          ],
-          "type": "generic",
-          "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723845%2F04_0001723845_0001_4-1723845-1.jpg"
@@ -60,6 +19,47 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723845%2F04_0001723845_0003_4-1723845-3.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Dietrich von Mainz",
+      "personTitle": [
+        "Erzbischof von Mainz"
+      ],
+      "type": "generic",
+      "content": "promised to uphold the castle peace at Boxberg."
+    },
+    {
+      "person": "Friedrich von der Pfalz",
+      "personTitle": [
+        "Pfalzgraf"
+      ],
+      "type": "generic",
+      "content": "concluded the castle peace at Boxberg jointly with Archbishop Adolf of Mainz and Bishop Rudolf of Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof von Würzburg"
+      ]
+    },
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Erzbischof Adolf",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Erzbischof Dietrich",
+      "personTitle": [
+        "Erzbischof von Mainz"
       ]
     }
   ]

@@ -13,18 +13,6 @@
       ],
       "german": "Erblehnrevers genannter Einwohner von Boxberg gegenüber Albrecht von Rosenberg wegen zweier ihnen daselbst verliehener Freihöfe.\n\nLaufzeit: 1553 Februar 23 (Donnerstag nach cathedra Petri 1553)\n\nSiegelbeschreibung: Mit dem Siegel des Eberhard von Stetten zu Kocherstetten",
       "english": "Erblrevers called residents of Boxberg opposite Albrecht von Rosenberg because of two Freihöfe granted them their self.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "type": "generic",
-          "content": "received an Erblehnrevers from unnamed residents of Boxberg concerning two freeholds granted to them there."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724077%2F04_0001724077_0001_4-1724077-1.jpg"
@@ -34,6 +22,18 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "type": "generic",
+      "content": "received an Erblehnrevers from unnamed residents of Boxberg concerning two freeholds granted to them there."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

@@ -9,22 +9,22 @@
         "https://www.digitale-sammlungen.de/en/view/bsb10799645"
       ],
       "german": "Eberhard von Rosenberg verkauft dem Kloster Bronnbach zwei Höfe zu Sindolsheim um 70 Pfd. Häller. Geb. an dem Fritag in dar Pfingswochen. (c. Sig.)",
-      "english": "Eberhard von Rosenberg sells to the Bronnbach Monastery two farms at Sindolsheim for 70 pounds of Heller. Given on the Friday in the week of Pentecost. (with seal.)",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "sindolsheim-church"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "sold two farms at Sindolsheim to Bronnbach Abbey."
-        }
-      ]
+      "english": "Eberhard von Rosenberg sells to the Bronnbach Monastery two farms at Sindolsheim for 70 pounds of Heller. Given on the Friday in the week of Pentecost. (with seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "sold two farms at Sindolsheim to Bronnbach Abbey."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "sindolsheim-church"
     }
   ]
 }

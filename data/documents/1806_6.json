@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++83A49730-A168-46FF-9D9F-5314A4C0BE0A&parent_id="
       ],
       "german": "Gesuch des Carl Freiherrn von Malcomes in Rosenberg um Überlassung des Rosenbergs zur Kultur",
-      "english": "Petition by Carl, Baron von Malcomes of Rosenberg, for the transfer of Rosenberg for cultivation.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Petition by Carl, Baron von Malcomes of Rosenberg, for the transfer of Rosenberg for cultivation."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

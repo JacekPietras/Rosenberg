@@ -7,29 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198212",
       "german": "Lehnrevers von Thomas von Rosenberg an H. Graf Johann zu Wertheim ausgestellet über folgende Mannlehen, das Zweiteil des Kornzehnten zu Schweigern, item des Bergs ein Teil obwendig des Pfades zwischen Ober- und Unterschüpf (den beiden Schiefen), item eines Weingartens ein Teil hinter dem Schloß zu Schüpf (Schiefe) gelegen die Wilhelm Sommers gewest ist und ist mit Namen beteydingt, ob hernacher sich mehr Lehengüter finden würden die von H. Graf Johann und von dessen Grafschaft Wertheim zu Mannlehen gingen und in das obgen. Mannlehen oder in das Mannlehen, das der Thomas Conrad Kresser von Sachsenflur verkauft hat, gehöreten, daß das der obgen. Thomas von Rosenberg und seine Lehenserben von der Grafschaft Wertheim mit dem obgen. Mannlehen empfahen und tragen sollen.\n\nLaufzeit: 1428 August 23 (am St. Bartholmaei Abend)",
       "english": "Feudal acknowledgment by Thomas von Rosenberg to Lord Count Johann von Wertheim concerning the following fiefs held by male-line heirs: two thirds of the grain tithe at Schweigern; one part of the mountain above the path between Ober- and Unterschüpf (the two Schüpf villages); and one part of a vineyard behind the castle at Schüpf, formerly belonging to Wilhelm Sommer and specifically agreed upon by name. It was further agreed that, should more fief property later be found which was held as a fief from Lord Count Johann and his County of Wertheim and belonged either to the aforesaid fief or to the fief that Thomas had purchased from Konrad Kresser of Sachsenflur, the aforesaid Thomas von Rosenberg and his heirs to the fief were to receive and hold it from the County of Wertheim together with the aforesaid fief.\n\nTerm: 23 August 1428 (on the eve of Saint Bartholomew).",
-      "mention": [
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "schweigern"
-        },
-        {
-          "person": "Thomas von Rosenberg"
-        },
-        {
-          "place": "unterschuepf"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198212%2F07_0000198212_0001_7-198212-1.jpg"
@@ -38,6 +15,29 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198212%2F07_0000198212_0002_7-198212-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "schweigern"
+    },
+    {
+      "person": "Thomas von Rosenberg"
+    },
+    {
+      "place": "unterschuepf"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

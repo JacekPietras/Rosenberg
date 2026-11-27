@@ -7,48 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5397371",
       "german": "Erzbischof Diether von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg verpflichten sich - so wie in dem Urteil Markgraf Albrechts von Brandenburg und Bischof Philipps von Bamberg zwischen ihnen einerseits und Jörg, Michel und Arnold von Rosenberg andererseits festgehalten -, dass sie den Ganerben des Schlosses Schüpf ihre Teile zurückgeben, wenn diese auf Forderungen aufgrund der Einnahme und der Zerstörung des Schlosses verzichten. Außerdem verpflichten sie sich einander gegen die Ganerben oder Rosenbergs beizustehen, wenn diese dem nicht nachkommen oder das Urteil brechen sollten.\n\nLaufzeit: 1477 Oktober 6 (am montag nach sant Franciscen tag)\n\nSiegler: Erzbischof Dieter von Mainz; Kurfürst Philipp von dre Pfalz; Bischof Rudolf von Würzburg",
       "english": "Archbishop Diether of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof commit themselves—as recorded in the judgment of Margrave Albrecht of Brandenburg and Bishop Philipp of Bamberg between them on one side and Jörg, Michel, and Arnold von Rosenberg on the other—to return their shares of Schloss Schüpf to the joint heirs (Ganerben) if they renounce claims arising from the capture and destruction of the castle. Furthermore, they commit themselves to support each other against the joint heirs or the Rosenbergs should they fail to comply or break the judgment.\n\nTime span: October 6, 1477 (on Monday after Saint Francis' Day)\n\nSealers: Archbishop Dieter of Mainz; Elector Philipp of the Palatinate; Rudolf zu Würzburg, Bischof",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Erzbischof Diether",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "place": "oberschuepf-castle"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "Schloss Schüpf",
-          "type": "generic",
-          "content": "was to have its shares restored to its Ganerben by the princes of Mainz, the Palatinate and Würzburg if they renounced claims arising from its capture and destruction, under the judgment concerning Georg, Michael and Arnold von Rosenberg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005397371%2F04_0005397371_0001_4-5397371-1.jpg"
@@ -60,6 +18,48 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005397371%2F04_0005397371_0003_4-5397371-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "subject": "Schloss Schüpf",
+      "type": "generic",
+      "content": "was to have its shares restored to its Ganerben by the princes of Mainz, the Palatinate and Würzburg if they renounced claims arising from its capture and destruction, under the judgment concerning Georg, Michael and Arnold von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Erzbischof Diether",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Michael von Rosenberg"
+    },
+    {
+      "place": "oberschuepf-castle"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

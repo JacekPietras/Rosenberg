@@ -6,27 +6,27 @@
       "source": "Staatsarchiv Wertheim G-Rep. 52 Nr. 225",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-5363",
       "german": "Schreiben von Johannes von Schwarzenberg, Jörg von Rosenberg, Alweg von Bleichover, Kilian Münch, Sigmund von Thüngen, Ott Voyt und Peter von Aufseß an Graf Michael II. von Wertheim wegen Geldanleihen\n\nLaufzeit: 1511",
-      "english": "Letter from Hans von Schwarzenberg, Georg von Rosenberg, Alweg von Bleichover, Kilian Münch, Siegmund von Thüngen, Ott Voyt, and Peter von Aufseß to Michael II von Wertheim, Graf concerning loans.\n\nPeriod: 1511",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans von Schwarzenberg"
-        },
-        {
-          "person": "Kilian Mönch"
-        },
-        {
-          "person": "Michael von Wertheim",
-          "personTitle": [
-            "Graf"
-          ]
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        }
+      "english": "Letter from Hans von Schwarzenberg, Georg von Rosenberg, Alweg von Bleichover, Kilian Münch, Siegmund von Thüngen, Ott Voyt, and Peter von Aufseß to Michael II von Wertheim, Graf concerning loans.\n\nPeriod: 1511"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans von Schwarzenberg"
+    },
+    {
+      "person": "Kilian Mönch"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf"
       ]
+    },
+    {
+      "person": "Siegmund von Thüngen"
     }
   ]
 }

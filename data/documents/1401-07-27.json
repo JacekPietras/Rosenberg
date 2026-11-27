@@ -7,54 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723547",
       "german": "Eberhart von Rosenberg leiht von seinem Bruder Arnold von Rosenberg 415 Gulden für die Dauer eines Jahres unter Leistungsbürgschaft seiner Vettern Arnold d. Ä. und Hans von Rosenberg.\n\nLaufzeit: 1401 Juli 27 (Mittwoch nach Jakob)\n\nSiegelbeschreibung: Von 3 Siegeln hängen zwei Fragmente an",
       "english": "Eberhard von Rosenberg borrows 415 guilders from his brother Arnold von Rosenberg for the duration of one year under the performance guarantee of his kinsmen Arnold der Ältere and Hans von Rosenberg.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "jagstberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "eberhard_jagstberg",
-          "type": "sibling",
-          "of": "arnold_boxberg"
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "kin",
-          "of": "eberhard_jagstberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "kin",
-          "of": "eberhard_jagstberg",
-          "term": "Vetter"
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "type": "generic",
-          "content": "borrowed money from his brother [arnold_boxberg]."
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "der Ältere"
-          ],
-          "type": "generic",
-          "content": "acted as a surety for [eberhard_jagstberg]."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "acted as a surety for [eberhard_jagstberg]."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723547%2F04_0001723547_0001_4-1723547-1.jpg",
@@ -96,6 +48,54 @@
           ]
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "eberhard_jagstberg",
+      "type": "sibling",
+      "of": "arnold_boxberg"
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "kin",
+      "of": "eberhard_jagstberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "kin",
+      "of": "eberhard_jagstberg",
+      "term": "Vetter"
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "type": "generic",
+      "content": "borrowed money from his brother [arnold_boxberg]."
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "der Ältere"
+      ],
+      "type": "generic",
+      "content": "acted as a surety for [eberhard_jagstberg]."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "acted as a surety for [eberhard_jagstberg]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "jagstberg"
     }
   ]
 }

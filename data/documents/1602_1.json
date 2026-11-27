@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A95F2801-A1B1-4082-A5A1-3AD0D3EB15DD&parent_id="
       ],
       "german": "Ein Produkt (supplic. pro mand.) in Sachen des Hochstifts Würzburg gegen Albrecht Christoph v. Rosenberg, betr. die von letzterem ausgeübte geistliche Jurisdiktion und Konsistorialgerichtsbarkeit innerhalb der vom Hochstift lehenbaren Herrschaft Rosenberg, insbesondere über einen Würzburger Untertanen zu Bossheim (Rosenberg hatte dort auch das jus patronatus)",
-      "english": "A petition (supplic. pro mand.) in the matter of the Prince-Bishopric of Würzburg against Albrecht Christoph von Rosenberg, concerning the spiritual jurisdiction and consistory court jurisdiction exercised by the latter within the lordship of Rosenberg, held as a fief from the Prince-Bishopric, especially over a Würzburg subject at Bossheim (Rosenberg also held the jus patronatus there).",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "A petition (supplic. pro mand.) in the matter of the Prince-Bishopric of Würzburg against Albrecht Christoph von Rosenberg, concerning the spiritual jurisdiction and consistory court jurisdiction exercised by the latter within the lordship of Rosenberg, held as a fief from the Prince-Bishopric, especially over a Würzburg subject at Bossheim (Rosenberg also held the jus patronatus there)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

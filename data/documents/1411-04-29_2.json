@@ -11,40 +11,40 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1e51023e-807c-4d8a-828d-5895d74e5caf&parent_id="
       ],
       "german": "Die Brüder Hainrich, Go(e)rg und Chu(o)nrad Marschalk von Pappenheim verkaufen ihrem Vetter Sigmünd Marschalk von Pappenheim 2 fl.rh. aus ihrem Anteil an der Stadtsteuer von Pappenheim, die diesem jährlich durch die Stadtsteurer auszuzahlen sind, für 56 fl., die sie erhalten haben. Der Käufer muß den Steueranteil und die Urkunde zurückgeben, wenn sie ihm Güter auf dem Land verkaufen, die jährlich 2 fl. erbringen. - S. 1: A.1 - 2: ihr Schwager Hans von Rosenberg, unter denen sich Go(e)rg und Chu(o)nrad Marschalk binden.",
-      "english": "The brothers Heinrich, Georg, and Konrad Marschalk von Pappenheim sold their cousin Sigmund an annual 2-florin share of Pappenheim’s town tax for 56 florins. The buyer was to return the tax share and deed if the sellers later transferred rural properties yielding 2 florins a year. Hans von Rosenberg, their brother-in-law, was named as a sealer; the archive describes the seals as missing.",
-      "mention": [
-        {
-          "place": "pappenheim"
-        },
-        {
-          "person": "Siegmund Marschalk von Pappenheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "kin",
-          "of": "Heinrich Marschalk von Pappenheim",
-          "term": "Schwager"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "kin",
-          "of": "Georg Marschalk von Pappenheim",
-          "term": "Schwager"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "kin",
-          "of": "Konrad Marschalk von Pappenheim",
-          "term": "Schwager"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "sealed the sale of an annual share of the Pappenheim town tax by Heinrich, Georg and Konrad Marschalk von Pappenheim to Sigmund Marschalk von Pappenheim."
-        }
-      ]
+      "english": "The brothers Heinrich, Georg, and Konrad Marschalk von Pappenheim sold their cousin Sigmund an annual 2-florin share of Pappenheim’s town tax for 56 florins. The buyer was to return the tax share and deed if the sellers later transferred rural properties yielding 2 florins a year. Hans von Rosenberg, their brother-in-law, was named as a sealer; the archive describes the seals as missing."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "kin",
+      "of": "Heinrich Marschalk von Pappenheim",
+      "term": "Schwager"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "kin",
+      "of": "Georg Marschalk von Pappenheim",
+      "term": "Schwager"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "kin",
+      "of": "Konrad Marschalk von Pappenheim",
+      "term": "Schwager"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "sealed the sale of an annual share of the Pappenheim town tax by Heinrich, Georg and Konrad Marschalk von Pappenheim to Sigmund Marschalk von Pappenheim."
+    }
+  ],
+  "mention": [
+    {
+      "place": "pappenheim"
+    },
+    {
+      "person": "Siegmund Marschalk von Pappenheim"
     }
   ]
 }

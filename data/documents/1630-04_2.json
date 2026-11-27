@@ -6,24 +6,24 @@
       "source": "HStAD, B 8, 9/495",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4658602",
       "german": "Erzbischoff. Anselm Kasimir von Mainz: Verleihung eines Burglehens von 6 fl. jährlicher Gülte aus der Kellerei Steinheim an Gebrüder Adam Hektor und Johann Dietrich v. Rosenbach. - Kanzleivermerk: Nikolaus Gereon, kurmainzischer Kanzler\n\nFormalbeschreibung: Ausf., Perg., von anh. Sg. nur Perg.str.\n\nSiegler: Siegler Ausstelle\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Archbishop Anselm Kasimir of Mainz: grant of a castle fief yielding an annual rent of 6 florins from the Steinheim revenue office to the brothers Adam Hektor and Hans Dietrich von Rosenberg. — Chancery note: Nikolaus Gereon, councillor of Mainz.\n\nFormal description: Fair copy, parchment; only the parchment strip remains from the attached seal.\n\nSealer: Issuer.\n\n(Previous) provenances: von Rosenbach.",
-      "mention": [
-        {
-          "person": "Erzbischof Anselm Kasimir",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Archbishop Anselm Kasimir of Mainz: grant of a castle fief yielding an annual rent of 6 florins from the Steinheim revenue office to the brothers Adam Hektor and Hans Dietrich von Rosenberg. — Chancery note: Nikolaus Gereon, councillor of Mainz.\n\nFormal description: Fair copy, parchment; only the parchment strip remains from the attached seal.\n\nSealer: Issuer.\n\n(Previous) provenances: von Rosenbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Anselm Kasimir",
+      "personTitle": [
+        "Erzbischof zu Mainz"
       ]
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

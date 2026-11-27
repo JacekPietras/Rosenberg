@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-3988486",
       "german": "Georg von Rosenberg",
       "english": "Georg von Rosenberg",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003988486%2F04_0003988486_0001_4-3988486-1.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0003988486%2F04_0003988486_0003_4-3988486-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
     }
   ]
 }

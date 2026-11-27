@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++10e5fac1-62b2-43ba-9a7e-32192d772748&parent_id="
       ],
       "german": "Held, Johann Konrad, von Rügland, Schneidermeister; Verheiratung mit Spang, Maria Rosina, von Rosenbach",
-      "english": "Johann Konrad Held, from Rügland, master tailor; marriage to Maria Rosina Spang, from Rosenbach",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Johann Konrad Held, from Rügland, master tailor; marriage to Maria Rosina Spang, from Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

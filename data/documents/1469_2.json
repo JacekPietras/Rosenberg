@@ -6,30 +6,30 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 10 Schubl. 28 Nr. G2",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-149271",
       "german": "Konfirmationsbrief Bischof Rudolfs von Würzburg über die von Wilhelm von Tottenheim (=Dottenheim), Michel, Georg und Arnold von Rosenberg und Andreas Blümlein gestiftete ewige Messe in der Kapelle zu Sachsenflur, als einem zur Pfarrei Schüpf gehörigem Filial.\n\nLaufzeit: 1469\n\nUmfang: 1 Urkunde",
-      "english": "Confirmation charter by Bishop Rudolf of Würzburg concerning the perpetual Mass founded by Wilhelm von Dottenheim, Michel, Georg, and Arnold von Rosenberg, and Andreas Blümlein in the chapel at Sachsenflur, a filial church belonging to the parish of Schüpf.\n\nTerm: 1469.\n\nExtent: one charter.",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "person": "Wilhelm von Dottenheim"
-        }
+      "english": "Confirmation charter by Bishop Rudolf of Würzburg concerning the perpetual Mass founded by Wilhelm von Dottenheim, Michel, Georg, and Arnold von Rosenberg, and Andreas Blümlein in the chapel at Sachsenflur, a filial church belonging to the parish of Schüpf.\n\nTerm: 1469.\n\nExtent: one charter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Michael von Rosenberg"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "person": "Wilhelm von Dottenheim"
     }
   ]
 }

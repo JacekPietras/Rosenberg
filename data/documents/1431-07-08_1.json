@@ -6,50 +6,39 @@
       "source": "Or. Würzburg; Vid. Sigmunds v. 1433 Mai 31 Nürnberg]., RI XI,2 n. 8683",
       "url": "https://www.monasterium.net/mom/RIXIii/1431-07-08_1_0_11_2_0_2824_8683/charter",
       "german": "Sigmund bekennt, dass ihm die St. Nürnberg schon früher 9000 Gulden geliehen, dass sie jetzt auf seinen Befehl an Ulrich v. Rosenberg 2000 Gulden bezahlt u. um 4100 Gulden die von ihm an Balthasar u. Sigmund v. Tüngen verpfändeten Städte Heidingsfeld u. Bernheim gelöst habe. Dafür überantwortet er der Stadt bis zur Wiederbezahlung der Schuldsumme von 15100 Gulden diese beiden Städte pfandweise. ─ [Ad m. d. r. Casp. Sligk ─ R ta M. Bris.",
-      "english": "Sigismund declares that the city of Nürnberg had previously lent him 9,000 gulden, and that it has now, by his order, paid 2,000 gulden to Ulrich von Rosenberg and redeemed for 4,100 gulden the cities of Heidingsfeld and Bernheim, which he had pledged to Balthasar and Siegmund von Thüngen. In return, he transfers these two cities to the city as pledges until repayment of the debt of 15,100 gulden. — By mandate of the Roman king, Caspar Sligk — R ta M. Bris.",
-      "mention": [
-        {
-          "person": "Balthasar von Thüngen"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ]
+      "english": "Sigismund declares that the city of Nürnberg had previously lent him 9,000 gulden, and that it has now, by his order, paid 2,000 gulden to Ulrich von Rosenberg and redeemed for 4,100 gulden the cities of Heidingsfeld and Bernheim, which he had pledged to Balthasar and Siegmund von Thüngen. In return, he transfers these two cities to the city as pledges until repayment of the debt of 15,100 gulden. — By mandate of the Roman king, Caspar Sligk — R ta M. Bris."
     },
     {
       "source": "Regesta Boica 13",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798276",
       "german": "Sigmund römischer König bekennt, dass ihm die Stadt Nuremberg schon vormals 9000 Gulden geliehen, gegenwärtig auf seinen Befehl dem Ulrich von Rosemberg 2000 Gulden bezahlt, und um 4100 Gulden die von ihm an Balthasar und Sigmund von Tüngen verpfändeten Städte Haidingsfelt und Bernhaim gelöset habe, daher er derselben bis zur Wiederbezahlung der Schuldsumme von 15100 Gulden die, erwähnten zwey Städte pfandweise einantwortet. G. zu Nuremberg am Suntag nach S. Ulrichs Tag. (Vidim.) (F.)",
-      "english": "Sigmund, King of the Romans, acknowledges that the city of Nürnberg had previously lent him 9,000 florins, has now paid Ulrich von Rosenberg 2,000 florins at his command, and has redeemed for 4,100 florins the cities of Haidingsfelt and Bernhaim, which he had pledged to Balthasar von Thüngen and Siegmund von Thüngen. He therefore delivers those two cities to Nürnberg as pledges until the debt of 15,100 florins is repaid. Given at Nürnberg on the Sunday after St. Ulrich’s Day. (Vidimus.) (F.)",
-      "mention": [
-        {
-          "person": "Balthasar von Thüngen"
-        },
-        {
-          "person": "König Siegmund",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Siegmund von Thüngen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "type": "generic",
-          "content": "received payment from Nürnberg at the command of King Sigmund."
-        }
+      "english": "Sigmund, King of the Romans, acknowledges that the city of Nürnberg had previously lent him 9,000 florins, has now paid Ulrich von Rosenberg 2,000 florins at his command, and has redeemed for 4,100 florins the cities of Haidingsfelt and Bernhaim, which he had pledged to Balthasar von Thüngen and Siegmund von Thüngen. He therefore delivers those two cities to Nürnberg as pledges until the debt of 15,100 florins is repaid. Given at Nürnberg on the Sunday after St. Ulrich’s Day. (Vidimus.) (F.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "type": "generic",
+      "content": "received payment from Nürnberg at the command of King Sigmund."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar von Thüngen"
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Siegmund von Thüngen"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
+    },
+    {
+      "person": "König Siegmund",
+      "personTitle": [
+        "König"
       ]
     }
   ]

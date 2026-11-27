@@ -11,21 +11,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B1161483-6C9C-4C46-AD79-A96E5657619C&parent_id="
       ],
       "german": "Hans von Rosenberg bestätigt Vlrich Mittelburger, Kastner zu Wassertrüdingen (Wazzertrühendingen), namens Burggraf Friedrichs zu Nürnberg 45 fl rh empfangen zu haben.",
-      "english": "Hans von Rosenberg confirms that Vlrich Mittelburger, castellan at Wassertrüdingen, paid him 45 Rhenish florins on behalf of Burgrave Friedrich zu Nuremberg.",
-      "mention": [
-        {
-          "person": "Friedrich",
-          "personTitle": [
-            "Burggraf zu Nürnberg"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "acknowledged receiving money from Ulrich Mittelburger, Kastner zu Wassertrüdingen, on behalf of Friedrich, Burggraf zu Nürnberg."
-        }
+      "english": "Hans von Rosenberg confirms that Vlrich Mittelburger, castellan at Wassertrüdingen, paid him 45 Rhenish florins on behalf of Burgrave Friedrich zu Nuremberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "acknowledged receiving money from Ulrich Mittelburger, Kastner zu Wassertrüdingen, on behalf of Friedrich, Burggraf zu Nürnberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich",
+      "personTitle": [
+        "Burggraf zu Nürnberg"
       ]
     }
   ]

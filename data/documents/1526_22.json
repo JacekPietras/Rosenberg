@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6a889507-c006-484f-a189-8f4c4db43ed0&parent_id="
       ],
       "german": "Zaisolph von Rosenberg an Rothenburg: Bitte um Geduld wegen des Zeugenverhörs.",
-      "english": "Zaisolph von Rosenberg to Rothenburg: request for patience regarding the examination of witnesses.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "asked Rothenburg for patience regarding the witness examination."
-        }
-      ]
+      "english": "Zaisolph von Rosenberg to Rothenburg: request for patience regarding the examination of witnesses."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "asked Rothenburg for patience regarding the witness examination."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-167278",
       "german": "Sinolt von Rosenbach und Elsse von Vechinbach, seine eheliche Hausfrau, verschreiben dem Kaplan des Altars Unserer lieben Frau, St. Pankratiens und St. Nicolaus zu Breuberg einen jährlich auf Martini zahlbaren Zins von 1 Pfund h auf 2 Hofstätten und Güter zu Hainstadt, auf deren einem der alte Henne Garrecht und auf deren anderen Heilmann Engeler zu Zeit sitzt. Dafür hat der Kaplan in der Woche nach Mitfasten und in der Woche nach Andreas ihnen Familienanniversare mit Vigilien und Messe zu halten, widrigenfalls sie über die Güter wieder verfügen können.\n\nLaufzeit: 1399 Februar 22 (anno domini M CCC nonagesimo nono in die Kathedra sancti Petri apostoli)\n\nSiegelbeschreibung: 2 Siegel",
       "english": "Sinolt von Rosenbach and Elsse von Vechinbach, his lawful wife, assign to the chaplain of the altar of Our Lady, St Pankratius, and St Nicholas at Breuberg an annual rent of 1 pound H, payable at Martinmas, from two homesteads and estates at Hainstadt. At present, old Henne Garrecht occupies one of them and Heilmann Engeler the other. In return, during the week after Mid-Lent and the week after St Andrew's, the chaplain is to celebrate family anniversaries for them with vigils and a Mass; otherwise they may dispose of the estates again.\n\nTerm: 22 February 1399 (in the year of the Lord 1399, on the Feast of the Chair of St Peter the Apostle).\n\nSeal description: 2 seals.",
-      "mention": [
-        {
-          "place": "hainstadt"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167278%2F07_0000167278_0001_7-167278-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=717&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000717%2Ftitlaufn_0000167278%2F07_0000167278_0002_7-167278-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "hainstadt"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -6,24 +6,24 @@
       "source": "HStAM, 46 c, 294",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=9370369",
       "german": "Auszahlung des Kapitals aus einer Rente im Zuge der Testamentsausführung der Gräfin Sophie von Coudehoven (4 Blatt)\n\nEnthält: Abtretung der Renteneinkünfte des Domdechanten Johann Hartmann von Rosenbach zu Würzburg an seine Mutter Anna Maria von Rosenbach, geb. von und zu Cronberg, 1657\n\nLaufzeit: (1657), 1825",
-      "english": "Payment of principal from an annuity during the execution of Countess Sophie von Coudenhoven’s will (4 leaves).\n\nIncludes the assignment, in 1657, of the annuity income of Würzburg cathedral dean Hans Hartmann von Rosenberg to his mother Anna Maria von Rosenberg, née von und zu Cronberg.\n\nDate range: (1657), 1825.",
-      "mention": [
-        {
-          "person": "Anna Maria von Rosenberg"
-        },
-        {
-          "place": "cronberg"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Domdekan"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Payment of principal from an annuity during the execution of Countess Sophie von Coudenhoven’s will (4 leaves).\n\nIncludes the assignment, in 1657, of the annuity income of Würzburg cathedral dean Hans Hartmann von Rosenberg to his mother Anna Maria von Rosenberg, née von und zu Cronberg.\n\nDate range: (1657), 1825."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna Maria von Rosenberg"
+    },
+    {
+      "place": "cronberg"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Domdekan"
       ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

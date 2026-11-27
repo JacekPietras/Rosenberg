@@ -7,23 +7,23 @@
       "source": "[RI XIII] H. 38 n. 295",
       "url": "https://www.regesta-imperii.de/id/ff8153f5-a70b-4c89-962f-106dc5123ac9",
       "german": "K.F. verwendet sich bei Bf. Rudolf (II.) von Würzburg für eine Zahlung von 1000 fl. rh. aus der Hinterlassenschaft Anselms von Rosenberg an dessen Tochter Kunigunde Besserer.",
-      "english": "King Friedrich intercedes with Bishop Rudolf II of Würzburg on behalf of a payment of 1,000 Rhenish florins from Anselm von Rosenberg’s estate to his daughter Kunigunde Besserer.",
-      "mention": [
-        {
-          "person": "Anselm von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "King Friedrich intercedes with Bishop Rudolf II of Würzburg on behalf of a payment of 1,000 Rhenish florins from Anselm von Rosenberg’s estate to his daughter Kunigunde Besserer."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anselm von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
     }
   ]

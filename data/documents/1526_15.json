@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++009d751f-4ea3-49af-8204-7c3fc4f94b09&parent_id="
       ],
       "german": "Zaisolph von Rosenberg an Markgraf Casimir: Verhör der adligen Zeugen.",
-      "english": "Zaisolph von Rosenberg to Margrave Casimir: Examination of the noble witnesses.",
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "wrote to Markgraf Casimir concerning the questioning of noble witnesses."
-        }
-      ]
+      "english": "Zaisolph von Rosenberg to Margrave Casimir: Examination of the noble witnesses."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "wrote to Markgraf Casimir concerning the questioning of noble witnesses."
     }
   ]
 }

@@ -9,30 +9,30 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1DE581D7-3088-436C-9679-2CAD5F23648E&parent_id="
       ],
       "german": "Schaftrieb- und Schafweidestreitigkeiten im (Kastenamt ?) Creglingen.\n\nEnthält: Streitigkeiten zwischen Cuntz Schäfer von Oberickelsheim und Asinus von Rosenberg, Ritter, 1493.\nStreitigkeiten zwischen des Schäfers Witwe Ursula zu Creglingen und den von Rosenbergs Untertanen zu Rinderfeld und Streichental, 1493.\n\nEnthält-/Darin-Vermerke: Enthält: Streitigkeiten zwischen Cuntz Schäfer von Oberickelsheim und Asinus von Rosenberg, Ritter, 1493.\nStreitigkeiten zwischen des Schäfers Witwe Ursula zu Creglingen und den von Rosenbergs Untertanen zu Rinderfeld und Streichental, 1493.\nStreitigkeiten zwischen der Gemeinde Obernbreit und dem Schäfer, 1505.\nWeidgeld des Schäfers zu Oberickelheim, 1510.",
-      "english": "Disputes over sheep driving and sheep pasturing in the (castellan's office ?) of Creglingen.\n\nContains: Disputes between Cuntz Schäfer of Oberickelsheim and Asmus von Rosenberg, Knight, 1493.\nDisputes between the shepherd's widow Ursula of Creglingen and the Rosenbergs' subjects in Rinderfeld and Streichental, 1493.",
-      "mention": [
-        {
-          "place": "rinderfeld"
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Disputes over sheep driving and sheep pasturing in the (castellan's office ?) of Creglingen.\n\nContains: Disputes between Cuntz Schäfer of Oberickelsheim and Asmus von Rosenberg, Knight, 1493.\nDisputes between the shepherd's widow Ursula of Creglingen and the Rosenbergs' subjects in Rinderfeld and Streichental, 1493."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Asmus von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Asmus von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "was involved in a sheep-driving and sheep-pasture dispute at Creglingen in 1493."
-        },
-        {
-          "subject": "the von Rosenberg family’s subjects at Rinderfeld and Streichental",
-          "type": "generic",
-          "content": "were involved in sheep-driving and sheep-pasture disputes with Ursula, widow of the shepherd, at Creglingen in 1493."
-        }
-      ]
+      "type": "generic",
+      "content": "was involved in a sheep-driving and sheep-pasture dispute at Creglingen in 1493."
+    },
+    {
+      "subject": "the von Rosenberg family’s subjects at Rinderfeld and Streichental",
+      "type": "generic",
+      "content": "were involved in sheep-driving and sheep-pasture disputes with Ursula, widow of the shepherd, at Creglingen in 1493."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rinderfeld"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

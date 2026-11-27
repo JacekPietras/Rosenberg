@@ -9,25 +9,25 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "summary": "Konrad Lesch von Uissigheim verkauft dem Deutschen Hause in Mergentheim die Einkünfte von jährlich 14 Malter Winterweizen (siliginis) aus seinem Hof in Bolzhausen.",
       "latin": "Et ut hec omnia firma et irrefragabilia permaneant, supplicavimus domino nostro Craftoni nobili de Hoenloch, de cuius consensu et voluntate sepedictum contractum inivimus, accedente etiam consensu et assensu filiorum suorum C. et K., ut presenti instrumento super hoc confecto suum sigillum apponere dignaretur. Nos quoque Crafto nobilis de Hohenloch in testimonium et robur omnium predictorum ad peticionem et instanciam C. militis ac commendatoris et fratrum domus Theutonice, de quibus predicitur, presenti instrumento nostrum sigillum duximus appendendum. Testes sunt frater Heinricus Lescho, commendator in Mergentheim, frater Eberswinus, frater Lupuldus de Wendingen, frater Eberhardus pincerna, frater Ludewicus de Grunsfelt, Hermannus Lescho miles et alii quam plures fide digni. Datum et actum Mergentheim anno domini Mº.CCº.LXXXXVIº, in festo ad vincula Petri.",
-      "english": "Konrad Lesch von Uissigheim sells the Teutonic House in Mergentheim an annual rent of 14 malters of winter wheat (siliginis) from his farm in Bolzhausen. To ensure that the agreement remains firm and irrevocable, the parties ask their lord Kraft, a nobleman of Hohenlohe, with whose consent and approval they made the agreement, and with the additional consent and approval of his sons C. and K., to attach his seal to this instrument. Kraft, nobleman of Hohenlohe, also attaches his seal as testimony and confirmation of the foregoing, at the request of C., the knight and commander, and the brothers of the Teutonic House mentioned above. Witnesses include Brother Heinrich Lescho, commander in Mergentheim; Brother Eberswin; Brother Lupold von Wendingen; Brother Eberhard, the cupbearer; Brother Ludwig von Grünsfeld; Hermann Lescho, knight; and many other trustworthy people. Given and done at Mergentheim in the year of the Lord 1296, on the feast of Saint Peter in Chains.",
-      "mention": [
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Ludwig von Grünsfeld"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad Lesch von Uissigheim",
-          "type": "generic",
-          "content": "sold the Teutonic House in Mergentheim an annual rent of 14 malters of winter wheat from his farm in Bolzhausen."
-        }
-      ]
+      "english": "Konrad Lesch von Uissigheim sells the Teutonic House in Mergentheim an annual rent of 14 malters of winter wheat (siliginis) from his farm in Bolzhausen. To ensure that the agreement remains firm and irrevocable, the parties ask their lord Kraft, a nobleman of Hohenlohe, with whose consent and approval they made the agreement, and with the additional consent and approval of his sons C. and K., to attach his seal to this instrument. Kraft, nobleman of Hohenlohe, also attaches his seal as testimony and confirmation of the foregoing, at the request of C., the knight and commander, and the brothers of the Teutonic House mentioned above. Witnesses include Brother Heinrich Lescho, commander in Mergentheim; Brother Eberswin; Brother Lupold von Wendingen; Brother Eberhard, the cupbearer; Brother Ludwig von Grünsfeld; Hermann Lescho, knight; and many other trustworthy people. Given and done at Mergentheim in the year of the Lord 1296, on the feast of Saint Peter in Chains."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad Lesch von Uissigheim",
+      "type": "generic",
+      "content": "sold the Teutonic House in Mergentheim an annual rent of 14 malters of winter wheat from his farm in Bolzhausen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Ludwig von Grünsfeld"
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

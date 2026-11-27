@@ -7,44 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2356607",
       "german": "Brief von Engelhard von Rosenberg, Ritter, wie derselbe 100 Gulden von Gottfried von Hanau, Landkomtur der Ballei Franken, empfangen, dagegen sich als einen getreuen Burgmann an das Haus Mergentheim sich und sein Gut zu Sailach (Selhech) verspricht\n\nLaufzeit: 1356 April 9 (Sonntag nach St. Ambrositag)\n\nSiegelbeschreibung: 1 anh. Sg.",
       "english": "Letter from Engelhard von Rosenberg, Ritter, about how he received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia, in return for which he promised himself and his estate at Sailach as a loyal castle guard to the House of Mergentheim",
-      "mention": [
-        {
-          "place": "sailach"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia."
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "pledged to serve the Teutonic House at Mergentheim as a Burgmann."
-        },
-        {
-          "person": "Engelhard von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann."
-        },
-        {
-          "person": "Gotfried von Hanau",
-          "personTitle": [
-            "Landkomtur der Ballei Franken"
-          ],
-          "type": "title"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5439&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005439%2Ftitlaufn_0002356607%2F02_0002356607_0001_2-2356607-1.jpg",
@@ -64,6 +26,44 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5439&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005439%2Ftitlaufn_0002356607%2F02_0002356607_0002_2-2356607-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "received 100 guilders from Gotfried von Hanau, Landkomtur of the Bailiwick of Franconia."
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "pledged to serve the Teutonic House at Mergentheim as a Burgmann."
+    },
+    {
+      "person": "Engelhard von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "pledged his estate at Sailach to the Teutonic House at Mergentheim as security for his service as a Burgmann."
+    },
+    {
+      "person": "Gotfried von Hanau",
+      "personTitle": [
+        "Landkomtur der Ballei Franken"
+      ],
+      "type": "title"
+    }
+  ],
+  "mention": [
+    {
+      "place": "sailach"
     }
   ]
 }

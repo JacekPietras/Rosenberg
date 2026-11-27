@@ -10,57 +10,6 @@
       ],
       "german": "Eberhard von Rosenberg und seine Ehefrau Irmtraut (Irmendrut) verkaufen auf Wiederkauf Kloster Schöntal (Schönntal) um 90 lb hl ihre Mühle gen. die Hohe Mühle (Hohe Mül), also die der Burg Rosenberg zunächst gelegene Mühle, und ihre unmittelbar danach an der Kirnau (an demselben bache) zwischen Sindolsheim (Sindoltshein) und Rosenberg gelegene Mühle, die zuvor Eberhard Rüdt (Rude), Ritter, innehatte. Bürgen: 1) Arnold von Rosenberg, 2) Herr Konrad von Rossriet (Rosseriet), 3) Herr Dieter (Dyetrichen) von Berlichingen (Berlichen), [alle] Ritter, und 4) Hermann von Berlichingen Super molendinum, quod dicitur Hohemul iuxta castrum Roßenberg et super molendinum situm infra Sindeltzhein et et Roßenberg",
       "english": "Eberhard von Rosenberg and his wife Irmtraut sell their mill, called the Hohe Mühle, the mill located next to Rosenberg Castle, and their mill located immediately adjacent to it on the Kirnau (on the same stream) between Sindolsheim and Rosenberg, which was previously held by Eberhard Rüdt, Ritter, to Schöntal Abbey for 90 lb hl.  Guardians: 1) Arnold von Rosenberg, 2) Lord Konrad von Rossriet, 3) Lord Diether von Berlichingen, [all] Ritter, and 4) Herman von Berlichingen  Above the mill, which is called Hohemul, next to the castle of Rosenberg and above the mill located below Sindeltzhein and Rosenberg",
-      "mention": [
-        {
-          "person": "Diether von Berlichingen"
-        },
-        {
-          "person": "Eberhard Rüd",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Herman von Berlichingen"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schoental-monastery"
-        },
-        {
-          "place": "sindolsheim-church"
-        },
-        {
-          "place": "wallduern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "vogt_zu_Durn",
-          "type": "spouse",
-          "of": "irmtraut_wife_of_vogt_zu_Durn"
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
-        },
-        {
-          "person": "vogt_zu_Durn",
-          "type": "generic",
-          "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "acted as a surety for the sale."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000829214%2F02_0000829214_0001_2-829214-1.jpg",
@@ -79,6 +28,57 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Durn",
+      "type": "spouse",
+      "of": "irmtraut_wife_of_vogt_zu_Durn"
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "type": "generic",
+      "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold the Hohe Mühle beside Rosenberg Castle to Schöntal Abbey."
+    },
+    {
+      "person": "vogt_zu_Durn",
+      "type": "generic",
+      "content": "with his wife [irmtraut_wife_of_vogt_zu_Durn], sold another mill on the Kirnau between Sindolsheim and Rosenberg to Schöntal Abbey."
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "acted as a surety for the sale."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Diether von Berlichingen"
+    },
+    {
+      "person": "Eberhard Rüd",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Herman von Berlichingen"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schoental-monastery"
+    },
+    {
+      "place": "sindolsheim-church"
+    },
+    {
+      "place": "wallduern"
     }
   ]
 }

@@ -9,83 +9,6 @@
       "summary": "Schreiben des Wilhelm von Rechberg, Erinze von Rosenberg, Hans von Krezhorn der Jüngere, Karl von Tüngen an Eb Eberhard von Salzburg.",
       "german": "Wissent hochwirdiger fürste und herre her Eberhart Ertzbischoff zu Saltzburg\\ndaz och [?] Wilhelm von Rechberg Cuncze von Rosenberg zum Bartenstein\\nHans vom Hirczhorn der junge Karle von Tungen zum Ruszenberge alle\\nund uns gebroten knecht die wir aczunt haben oder hernach gewinne mogen\\nuwer und der uwern uwers landes und lute viint wollen sin umb willen\\nWalthers von Cronberg unsers lieben swagers und ziehen uns des in\\nsine feiden und unfriden und wollen wir alle und unser knecht unser\\nere an uch und die uwern bewart han geben under Wilhelms von\\nRechberg und hansen vom Hirczhorn des Jungen Ingesygel dar under\\nwir andern alle bekennen gebrechen halp der unsern zu diser zyt\\nIn den jaren nach kristus unsers herren geburt vierczehenhundert jar\\nund dar nach in dem sechsund zwenczigsten jar uff dinstag vor dem\\nsundag Oculi [?] an der fasten",
       "english": "Know, most worthy prince and lord, Lord Eberhard, Archbishop of Salzburg, that also [?] Wilhelm von Rechberg, Kunz von Rosenberg zum Bartenstein, Hans von Hirschhorn der Junge, Karl von Thüngen zum Ruszenberge [?], all, and our Knechte, whom we now have or may acquire hereafter, are enemies of you and of yours, of your land and people, on account of Walter von Cronberg, our dear brother-in-law, and we draw ourselves into his feud and enmity. We all and our Knechte have preserved our honor against you and yours. Given under the seals of Wilhelm von Rechberg and Hans von Hirschhorn der Junge, under which we others all acknowledge [?] for lack of [?] ours at this time, after the birth of Christ our Lord fourteen hundred years and thereafter in the twenty-sixth year, on Tuesday before Sunday Oculi [?] in Lent.",
-      "facts": [
-        {
-          "person": "Wilhelm von Rechberg",
-          "type": "kin",
-          "of": "Walter von Cronberg",
-          "term": "Schwager"
-        },
-        {
-          "person": "Wilhelm von Rechberg",
-          "type": "generic",
-          "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "kin",
-          "of": "Walter von Cronberg",
-          "term": "Schwager"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
-        },
-        {
-          "person": "Hans von Hirschhorn",
-          "personTitle": [
-            "der Junge"
-          ],
-          "type": "kin",
-          "of": "Walter von Cronberg",
-          "term": "Schwager"
-        },
-        {
-          "person": "Hans von Hirschhorn",
-          "personTitle": [
-            "der Junge"
-          ],
-          "type": "generic",
-          "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
-        },
-        {
-          "person": "Karl von Thüngen",
-          "personTitle": [
-            "zu Ruszenberge"
-          ],
-          "type": "kin",
-          "of": "Walter von Cronberg",
-          "term": "Schwager"
-        },
-        {
-          "person": "Karl von Thüngen",
-          "personTitle": [
-            "zu Ruszenberge"
-          ],
-          "type": "generic",
-          "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
-        },
-        {
-          "person": "Wilhelm von Rechberg",
-          "type": "generic",
-          "content": "sealed the letter to Archbishop Eberhard of Salzburg."
-        },
-        {
-          "person": "Hans von Hirschhorn",
-          "personTitle": [
-            "der Junge"
-          ],
-          "type": "generic",
-          "content": "sealed the letter to Archbishop Eberhard of Salzburg."
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1426_02_27-1.jpg",
@@ -103,6 +26,83 @@
           "src": "https://images.monasterium.net/pics/AT-OeStA-HHStA/AUR-Salzburg-Erzstift/HHSTA_Salzburg_1426_02_27-1v.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wilhelm von Rechberg",
+      "type": "kin",
+      "of": "Walter von Cronberg",
+      "term": "Schwager"
+    },
+    {
+      "person": "Wilhelm von Rechberg",
+      "type": "generic",
+      "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ],
+      "type": "kin",
+      "of": "Walter von Cronberg",
+      "term": "Schwager"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ],
+      "type": "generic",
+      "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
+    },
+    {
+      "person": "Hans von Hirschhorn",
+      "personTitle": [
+        "der Junge"
+      ],
+      "type": "kin",
+      "of": "Walter von Cronberg",
+      "term": "Schwager"
+    },
+    {
+      "person": "Hans von Hirschhorn",
+      "personTitle": [
+        "der Junge"
+      ],
+      "type": "generic",
+      "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
+    },
+    {
+      "person": "Karl von Thüngen",
+      "personTitle": [
+        "zu Ruszenberge"
+      ],
+      "type": "kin",
+      "of": "Walter von Cronberg",
+      "term": "Schwager"
+    },
+    {
+      "person": "Karl von Thüngen",
+      "personTitle": [
+        "zu Ruszenberge"
+      ],
+      "type": "generic",
+      "content": "declared himself, with his Knechte, an enemy of Archbishop Eberhard of Salzburg, his land and his people, on account of Walter von Cronberg."
+    },
+    {
+      "person": "Wilhelm von Rechberg",
+      "type": "generic",
+      "content": "sealed the letter to Archbishop Eberhard of Salzburg."
+    },
+    {
+      "person": "Hans von Hirschhorn",
+      "personTitle": [
+        "der Junge"
+      ],
+      "type": "generic",
+      "content": "sealed the letter to Archbishop Eberhard of Salzburg."
     }
   ]
 }

@@ -7,18 +7,18 @@
       "source": "Chmel n. 7627",
       "url": "https://www.regesta-imperii.de/id/1483-09-14_2_0_13_0_0_7626_7627",
       "german": "Wokh und Peter von Rosenberg schliessen mit K. Friedrich und seinen Unterthanen einen ewigen Frieden.",
-      "english": "Wokh and Peter von Rosenberg conclude a perpetual peace with King Friedrich and his subjects.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
+      "english": "Wokh and Peter von Rosenberg conclude a perpetual peace with King Friedrich and his subjects."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153954",
       "german": "Waldrechte in der Herrschaft Breuberg\nClas Ernbecker, Peter Hurre, Henn Fogel, Peter Gremer, Michel und Linhart Kussman, Gebrüder, bekennen eidlich, daß der \"gemeinwalt\" der Herrschaft von Wertheim ihrem Wissen nach zu 1/3, den Schenken von Erbach zu 2/3 gehörn. Ernbecker erinnert sich zurück auf 50 Jahre, Hurre auf 50 Jahre 30 Jahre war er Waldhüter und Förster, Fogel 60 Jahre, Gremer 30 Jahre.\n\nLaufzeit: 1432 ([1432])\n\nSiegelbeschreibung: 1 Siegel abgefallen, 1 vorne aufgedruckt\n\nSiegler: Junker Hans Monch von Rosenberg; Junker Hans Schelm",
       "english": "Clas Ernbecker, Peter Hurre, Henn Fogel, Peter Gremer, and the brothers Michel and Linhart Kussman swear that, to their knowledge, one third of the ‘common forest’ belongs to the lordship of Wertheim and two thirds to the Schenks of Erbach. Ernbecker’s recollection goes back fifty years; Hurre’s goes back fifty years, and he served as forest guard and forester for thirty years; Fogel’s goes back sixty years; and Gremer’s thirty years.\n\nDate: 1432.\n\nSeal description: One seal has fallen off and one is impressed on the front.\n\nSealers: Squire Hans Monch von Rosenberg; Squire Hans Schelm.",
-      "mention": [
-        {
-          "place": "erbach"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153954%2F07_0000153954_0001_7-153954-1.jpg"
@@ -26,6 +15,17 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=693&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000693%2Ftitlaufn_0000153954%2F07_0000153954_0002_7-153954-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "erbach"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-StaAWuerzburg/Heidingsfeld/114/charter",
       "german": "Johann [von Egloffstein], Bischof zu Würzburg, beleiht unter Vorbehalt der Rechte des Hochstifts den Hermann Mynner, gesessen zu Heidingsfeld mit dem Schleehof jenseits Rossberg, den Mynner von Eberhart Schenk von Rossberg gekauft hatte, der den Hof in die Hände des Bischofs aufgegeben hatte. Geben zu Wurzburg am dinstage nach dem suntage Judica a. D. 1401.\n\nSiegel: Siegelreste an Pergamentstreifen anhängend.",
       "english": "Johann von Egloffstein, Bishop zu Würzburg, while reserving the rights of the see, enfeoffs Hermann Mynner, resident at Heidingsfeld, with the Schleehof beyond Rossberg, which Mynner bought from Eberhart Schenk von Rossberg after Eberhart had surrendered the farm to the bishop. Given at Würzburg on the Tuesday after Judica Sunday, 1401. Seal remnants hang from parchment strips.",
-      "mention": [
-        {
-          "person": "Eberhard Schenk von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/DE-StadtAWuerzburg/Heidingsfeld/de_stadtarchivwuerzburg_heidingsfeld_114_14010322_r.JPG"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/pics/DE-StadtAWuerzburg/Heidingsfeld/de_stadtarchivwuerzburg_heidingsfeld_114_14010322_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard Schenk von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

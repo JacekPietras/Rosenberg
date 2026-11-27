@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3602/charter",
       "german": "Thoman v. Rosenberg erwidert auf die Antwort des Stefan v. Hoppingen Komtur v. Mergentheim vom selben Tage, oben Nr. 3601.",
       "english": "Thomas von Rosenberg replies to Stefan von Hoppingen’s response of the same day (above, no. 3601).",
-      "mention": [
-        {
-          "person": "Thomas von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_r-1.jpg"
@@ -38,6 +33,11 @@
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_144805_v-4.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Thomas von Rosenberg"
     }
   ]
 }

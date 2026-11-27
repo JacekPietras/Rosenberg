@@ -7,22 +7,22 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1211668",
       "german": "Schreiben benachbarter Fürsten an Herzog Ulrich betreffend v.a. Unterstützung gegen den Aufruhr des Armen Conrad.\n\nLaufzeit: Mai - August 1514\n\nEnthält: Enthält: Schreiben der Bischöfe Hugo von Konstanz, Lorenz von Würzburg iund Reinhard von Worms, der Herzöge Friedrich und Johann von Sachsen, des Markgrafen Philipp von Baden und des Pfalzgrafen Ludwig bei Rhein.\nDabei: Antwortschreiben Herzog Ulrichs an den Bischof von Worms, Schreiben des Hofmeisters Blicker Landschad von Steinach und Jörg von Rosenbergs an Herzog Ulrich.\n\nUmfang: Q. 1-25 (2 cm)",
       "english": "Letters from neighboring princes to Duke Ulrich, chiefly concerning assistance against the uprising of Poor Conrad.\n\nDate range: May–August 1514\n\nContents: Letters from Bishops Hugo of Constance, Lorenz of Würzburg, and Reinhard of Worms; Dukes Friedrich and Johann of Saxony; Margrave Philipp of Baden; and Count Palatine Ludwig by the Rhine.\nAlso included: Duke Ulrich’s reply to the Bishop of Worms, and letters from the steward Blicker Landschad von Steinach and Georg von Rosenberg to Duke Ulrich.\n\nExtent: Items 1–25 (2 cm)",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Lorenz of Würzburg"
-        },
-        {
-          "place": "steinach"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3525&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003525%2Ftitlaufn_0001211668%2F01_0001211668_0001_1-1211668-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Lorenz of Würzburg"
+    },
+    {
+      "place": "steinach"
     }
   ]
 }

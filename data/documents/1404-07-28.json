@@ -7,21 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-33345",
       "german": "Eberhard von Menzingen, Ritter, und seine Frau Ela von Rosenberg verkaufen ihre Güter zu Großgartach an Kloster Odenheim um 750 fl.",
       "english": "Eberhard von Menzingen, Ritter, and his wife Ela von Rosenberg sold their properties in Großgartach to Odenheim Monastery for 750 florins.",
-      "facts": [
-        {
-          "person": "Eberhard von Menzingen",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "spouse",
-          "of": "Ela von Rosenberg"
-        },
-        {
-          "person": "Ela von Rosenberg",
-          "type": "generic",
-          "content": "sold their property in Großgartach to Odenheim Abbey jointly with her husband Eberhard von Menzingen, Ritter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1238&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000001238%2Ftitlaufn_0000033345%2F01_0000033345_0001_1-33345-1.jpg"
@@ -31,6 +16,21 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Menzingen",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "spouse",
+      "of": "Ela von Rosenberg"
+    },
+    {
+      "person": "Ela von Rosenberg",
+      "type": "generic",
+      "content": "sold their property in Großgartach to Odenheim Abbey jointly with her husband Eberhard von Menzingen, Ritter."
     }
   ]
 }

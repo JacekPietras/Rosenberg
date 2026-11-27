@@ -10,17 +10,6 @@
       ],
       "german": "Eberhard Schenk von Roßberg und seine Ehefrau Walburga verkaufen Abt Gerhard [Klinkhart] und dem Konvent des Klosters St. Stephan in Würzburg ein Haus mit Hofstatt und Garten in Veitshöchheim (Veiczhocheim), das derzeit Weiglein Effeltrech zu Erbrecht besitzt. Dieser zinst davon jährlich 1 rheinischen Gulden und 1 Fastnachtshuhn. Zudem ist er verpflichtet, das Haus in gutem Bauzustand zu halten. Außerdem verkaufen sie dem Kloster einen jährlichen Zins von 3 Pfennigen Würzburger Währung. Dieser gefällt von einem Weinberg in der Gemarkung Veitshöchheim, den derzeit Konrad Heußler bewirtschaftet. Die Verkäufer haben dafür von den Käufern 21 rheinische Gulden erhalten. Sie übernehmen daher die Gewährleistung für den Verkauf.\nDer geben ist 1405 am freitag vor dem suntag Letare.\nAussteller:  Eberhard und Walburga Schenk von Roßberg\nEmpfänger:  Kloster St. Stephan\n\nVermerke: Rückvermerke:  Inhaltsangabe (15. Jh.)\n\nBesiegelung/Beglaubigung: Eberhard Schenk von Roßberg; an Pergamentstreifen anhängend, gut erhalten",
       "english": "Eberhard Schenk von Roßberg and his wife Walburga sell to Abbot Gerhard [Klinkhart] and the convent of St. Stephan monastery in Würzburg a house with homestead and garden at Veitshöchheim, currently held by Weiglein Effeltrech by hereditary tenure. He is to pay annual rent of 1 Rhenish gulden and one Shrovetide capon, and must keep the house in good repair. They also sell the monastery an annual rent of 3 Würzburg pennies, deriving from a vineyard in the district of Veitshöchheim currently cultivated by Konrad Heußler. The sellers have received 21 Rhenish gulden from the buyers and therefore warrant the sale.\nIt was given in 1405 on the Friday before Laetare Sunday.\nGrantors: Eberhard and Walburga Schenk von Roßberg.\nRecipient: St. Stephan monastery.\n\nEndorsements: note of contents (15th century).\n\nSealing/authentication: Eberhard Schenk von Roßberg; attached to a parchment strip, well preserved.",
-      "mention": [
-        {
-          "person": "Eberhard Schenk"
-        },
-        {
-          "person": "Walpurga Schenk"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/10d5c934-d070-4150-b3d2-e4b9440dc434/1/full/max/0/default.jpg"
@@ -32,6 +21,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/10d5c934-d070-4150-b3d2-e4b9440dc434/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard Schenk"
+    },
+    {
+      "person": "Walpurga Schenk"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

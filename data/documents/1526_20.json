@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++61173f06-928f-4948-a71c-e169abde6ec3&parent_id="
       ],
       "german": "Rothenburg an Zaisolph von Rosenberg: Zeugenverhör.",
-      "english": "Rothenburg to Zaisolph von Rosenberg: examination of witnesses.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of a witness examination arranged by Rothenburg."
-        }
-      ]
+      "english": "Rothenburg to Zaisolph von Rosenberg: examination of witnesses."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of a witness examination arranged by Rothenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

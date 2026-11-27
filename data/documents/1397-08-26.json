@@ -9,25 +9,25 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Pfalzgraf Ruprecht entscheidet zwischen Markgraf Bernhard v. Baden und der Stadt Speyer; einer der Schiedsleute ist Contz Mönch (v. Rosenberg), Vogt zu Steinsberg. GLA; KOCH & WILLE 1894, Nr. 5713; KRIEGER 1905:1086; GEHRIG 1970:86, 1979:30; WÜST 1976:139",
-      "english": "Pfalzgraf Ruprecht decides between Markgraf Bernhard von Baden and the town of Speyer; one of the arbitrators is Kunz Mönch von Rosenberg, Vogt zu Steinsberg.",
-      "mention": [
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "speyer"
-        }
+      "english": "Pfalzgraf Ruprecht decides between Markgraf Bernhard von Baden and the town of Speyer; one of the arbitrators is Kunz Mönch von Rosenberg, Vogt zu Steinsberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ],
-          "type": "generic",
-          "content": "was one of the arbitrators in the decision between Markgraf Bernhard von Baden and the town of Speyer."
-        }
-      ]
+      "type": "generic",
+      "content": "was one of the arbitrators in the decision between Markgraf Bernhard von Baden and the town of Speyer."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
+    },
+    {
+      "place": "speyer"
     }
   ]
 }

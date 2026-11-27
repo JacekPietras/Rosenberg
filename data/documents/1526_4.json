@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++985a9259-e5fb-4712-b9ed-d81ae51b056a&parent_id="
       ],
       "german": "Rothenburg an Contz von Rosenberg: Beteiligung des Lutz Kutrolf am Bauernkrieg.",
-      "english": "Rothenburg to Kunz von Rosenberg: Involvement of Lutz Kutrolf in the Peasants' War.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War."
-        }
-      ]
+      "english": "Rothenburg to Kunz von Rosenberg: Involvement of Lutz Kutrolf in the Peasants' War."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "was addressed in a letter from Rothenburg concerning Lutz Kutrolf’s participation in the Peasants’ War."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

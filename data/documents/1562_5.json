@@ -6,24 +6,24 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 57",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97936",
       "german": "Differenzen zwischen Rosenberg und Hohenlohe-Waldenburg.\n\nLaufzeit: 1562-1570\n\nEnthält: Enthält: 1. Fol. 1-79 Tod des Melchior Fuchs zu Niederstetten nach Mißhandlung durch den Schultheiß Hans Kittler zu Pfitzingen und Einwohner zu Pfitzingen, 1562-1570;\n2. Fol.80-152 Rechtsstreit vor dem Reichskammergericht zwischen Graf Eberhard von Hohenlohe-Waldenburg als Kläger und Zaisolf von Rosenberg wegen Beleidigung, 1563-1566;\n3. Fol.153-182 Vorbereitung einer Konferenz zwischen Hohenlohe-Waldenburg und Rosenberg in Riedbach zur Beilegung von Streitigkeiten, 1569;\n4. Fol.183-212 Streitigkeiten zwischen Hans Haylig zu Pfitzingen und Rosenberg wegen eines Holzes; Verhaftung des Haylig durch Rosenberg, 1563-1569.\n\nUmfang: 1 Bd., Fol. 1-212",
-      "english": "Disputes between Rosenberg and Hohenlohe-Waldenburg, including the death of Melchior Fuchs, litigation between Count Eberhard and Zaisolph von Rosenberg, preparations for a conference, and woodland disputes involving Hans Haylig.",
-      "mention": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        },
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
+      "english": "Disputes between Rosenberg and Hohenlohe-Waldenburg, including the death of Melchior Fuchs, litigation between Count Eberhard and Zaisolph von Rosenberg, preparations for a conference, and woodland disputes involving Hans Haylig."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
       ]
+    },
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

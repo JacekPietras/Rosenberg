@@ -6,24 +6,24 @@
       "source": "Regesta Boica 9, 14 July 1370",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798272",
       "german": "Johan von Rosenberg verschreibt seiner Gemahlin Elisabeth einer geb. von Hals für ihr Heyrathgut pr. 500 Schock Prager Groschen, und für Wiederlag und Morgengab pr. 750 derley Groschen, die Veste Wildenstein. G. Suntag nach sand Margarethen tag. (c. 3 S.)",
-      "english": "Hans von Rosenberg assigns the fortress of Vlčtejn to his wife Elisabeth von Hals as security for her marriage portion of 500 Schock of Prague groschen and for his counter-settlement and morning gift of 750 of the same groschen. Given on the Sunday after St. Margaret’s day. (With three seals.)",
-      "mention": [
-        {
-          "place": "vlctejn-castle"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "spouse",
-          "of": "Elisabeth von Hals"
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "assigned the fortress of Vlčtejn as security to his wife Elisabeth von Hals for her marriage portion, counter-settlement and morning gift."
-        }
-      ]
+      "english": "Hans von Rosenberg assigns the fortress of Vlčtejn to his wife Elisabeth von Hals as security for her marriage portion of 500 Schock of Prague groschen and for his counter-settlement and morning gift of 750 of the same groschen. Given on the Sunday after St. Margaret’s day. (With three seals.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "spouse",
+      "of": "Elisabeth von Hals"
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "assigned the fortress of Vlčtejn as security to his wife Elisabeth von Hals for her marriage portion, counter-settlement and morning gift."
+    }
+  ],
+  "mention": [
+    {
+      "place": "vlctejn-castle"
     }
   ]
 }

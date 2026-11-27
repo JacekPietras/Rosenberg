@@ -13,46 +13,46 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1401 März 18, Nürnberg. Verleiht als Pfalzgraf Conrad von Rosenberg, Sohn Conrads von Rosenberg, Vitztum (zu Amberg) ein Viertel an dem Schlosse zu Boxberg. Or. K. Select, D. Kaiser- u. Königsurk. nr. 457a und Copb. 006, 15b.",
-      "english": "1401 March 18, Nuremberg. As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg and Vitztum (in Amberg), grants a quarter of Boxberg Castle. Original: K. Select, D. Kaiser- und Königsurkunden no. 457a and copybook 006, fol. 15b.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "1401 March 18, Nuremberg. As Count Palatine, Konrad von Rosenberg, son of Konrad von Rosenberg and Vitztum (in Amberg), grants a quarter of Boxberg Castle. Original: K. Select, D. Kaiser- und Königsurkunden no. 457a and copybook 006, fol. 15b."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg",
+        "der Ältere"
       ],
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg",
-            "der Ältere"
-          ],
-          "type": "parent",
-          "of": "Konrad von Rosenberg",
-          "ofTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine."
-        }
+      "type": "parent",
+      "of": "Konrad von Rosenberg",
+      "ofTitle": [
+        "der Jüngere"
       ]
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "received a quarter of Boxberg Castle from King Ruprecht, acting as Count Palatine."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
+      ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

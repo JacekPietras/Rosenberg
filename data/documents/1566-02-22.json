@@ -9,35 +9,35 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5BAAB500-173A-4042-872E-7119097E00DB&parent_id="
       ],
       "german": "Zaisolf von Rosenberg zu Haldenbergstetten verkauft an Konrad von Rosenberg zu Waldmannshofen seine Hälfte einer unbebauten Hofstatt in Aub für 400 fl. - T1: Albrecht von Rosenberg; T2: Bastian Diener, Amtmann zu Gemünden; T3: Konrad Geyer von Giebelstadt; T4: Heinrich von Wasen, Amtmann zu Babenhausen; T5: Wolff von Hartheim zu Hartheim. - S1 = A; S2 = T1; S3 = T2; S4 = T3; S5 = T4; S6 = T5.\n\nBesiegelung/Beglaubigung: 6 Siegel, anhängend in Holzkapseln",
-      "english": "Zaisolph von Rosenberg zu Haltenbergstetten sells to Konrad von Rosenberg zu Waldmannshofen his half of an undeveloped homestead in Aub for 400 gulden. T1: Albrecht von Rosenberg; T2: Bastian Diener, Amtmann zu Gemünden; T3: Konrad Geyer von Giebelstadt; T4: Heinrich von Wasen, Amtmann zu Babenhausen; T5: Wolf von Hartheim zu Hartheim. S1 = A; S2 = T1; S3 = T2; S4 = T3; S5 = T4; S6 = T5.\n\nSealing/authentication: six seals attached in wooden cases.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "aub"
-        },
-        {
-          "person": "Konrad Geyer von Giebelstadt"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "person": "Wolf von Hartheim",
-          "personTitle": [
-            "zu Hartheim"
-          ]
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        }
+      "english": "Zaisolph von Rosenberg zu Haltenbergstetten sells to Konrad von Rosenberg zu Waldmannshofen his half of an undeveloped homestead in Aub for 400 gulden. T1: Albrecht von Rosenberg; T2: Bastian Diener, Amtmann zu Gemünden; T3: Konrad Geyer von Giebelstadt; T4: Heinrich von Wasen, Amtmann zu Babenhausen; T5: Wolf von Hartheim zu Hartheim. S1 = A; S2 = T1; S3 = T2; S4 = T3; S5 = T4; S6 = T5.\n\nSealing/authentication: six seals attached in wooden cases."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "aub"
+    },
+    {
+      "person": "Konrad Geyer von Giebelstadt"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
+      ]
+    },
+    {
+      "person": "Wolf von Hartheim",
+      "personTitle": [
+        "zu Hartheim"
+      ]
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
     }
   ]

@@ -10,14 +10,6 @@
       ],
       "german": "Gegenbrief des Cristoffel Hack von Dinckelssbuhel, Priesters, für das Deutsche Haus zu Virnsperg über die ihm verliehene Pfarrei Obernzenn. - Komtur: Herr Wolfgang von Rosenberg. - Siegler: Junker Gotz Lochinger, Amtmann zu Hoeneck.",
       "english": "Counter-letter of Cristoffel Hack von Dinckelssbuhel, priest, for the German House at Virnsberg concerning the parish of Obernzenn granted to him. — Commander: Herr Wolfgang von Rosenberg. — Sealer: Junker Gotz Lochinger, Amtmann zu Hoheneck.",
-      "mention": [
-        {
-          "place": "virnsberg"
-        },
-        {
-          "person": "Wolfgang von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/789880c4-6fb3-42a9-9f23-f37e682c7843/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/789880c4-6fb3-42a9-9f23-f37e682c7843/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "virnsberg"
+    },
+    {
+      "person": "Wolfgang von Rosenberg"
     }
   ]
 }

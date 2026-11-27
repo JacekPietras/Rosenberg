@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5480085",
       "german": "Quirin Gangolf von Hohengeroldseck und Sulz verleiht seinem lieben Getreuen Hans Jakob Münch von Rosenberg benannte Äcker und Wiesen zu Haslach \"im nidernhof, an dem muelebach\" und hinter der Seematte als rechtes Mannlehen\n\nLaufzeit: 1564 März 2 (uff donnstag nach Reminiscere)\n\nSiegler: Aussteller\n\nSiegelbeschreibung: anhängend, stark verdrückt\n\nVermerke: Rückvermerke: u.a. Lehenenbrieff Hans Jacob Münch von Rosenberg Tax 2 goldtgulden; Betreffendt drey jeuch ackers",
       "english": "Quirin Gangolf von Hohengeroldseck und Sulz enfeoffs his dear faithful servant Hans Jakob Mönch von Rosenberg with the named fields and meadows at Haslach, “im nidernhof, an dem muelebach” and behind the Seematte, as a proper male-line fief.\n\nTerm: 2 March 1564 (Thursday after Reminiscere)\n\nSealer: the issuer.",
-      "mention": [
-        {
-          "person": "Hans Jakob Mönch von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3369&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003369%2Ftitlaufn_0005480085%2F04_0005480085_0001_4-5480085-1.jpg"
@@ -23,6 +18,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3369&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003369%2Ftitlaufn_0005480085%2F04_0005480085_0003_4-5480085-3.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Jakob Mönch von Rosenberg"
     }
   ]
 }

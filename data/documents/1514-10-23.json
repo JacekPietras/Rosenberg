@@ -10,59 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723961",
       "german": "Die Ritter Sigmund von Thüngen und Jörg Truchsess von Baldersheim als verordnete Obmänner des Kurfürsten Ludwig von der Pfalz schlichten durch Austrag die Streitigkeiten zwischen den Söhnen des verstorbenen Arnold von Rosenberg und ihren Vettern Friedrich, Jörg und Hans von Rosenberg wegen deren Anteil an Bastei und Stadt Boxberg etc.\n\nLaufzeit: 1514 Oktober 23",
       "english": "The Siegmund von Thüngen, Ritter and Jörg Truchsess von Baldersheim, as en signatures of Elector Ludwig of the Palatinate, were simply confiscated by causing the disputes between the sons of the late Arnold von Rosenberg and their cousins Friedrich, Georg von Rosenberg and Hans von Rosenberg because of their share in Bastei and the city of Boxberg etc.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "person": "Georg Truchsess von Baldersheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "death",
-          "diedBefore": "1514-10-24"
-        },
-        {
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Friedrich von Rosenberg",
-          "type": "generic",
-          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
-        },
-        {
-          "person": "Siegmund von Thüngen",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
-        },
-        {
-          "person": "Georg Truchsess von Baldersheim Aub",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723961%2F04_0001723961_0001_4-1723961-1.jpg",
@@ -123,6 +70,59 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "death",
+      "diedBefore": "1514-10-24"
+    },
+    {
+      "person": "Ludwig von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Friedrich von Rosenberg",
+      "type": "generic",
+      "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "was identified as a cousin of the sons of the late Arnold von Rosenberg."
+    },
+    {
+      "person": "Siegmund von Thüngen",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
+    },
+    {
+      "person": "Georg Truchsess von Baldersheim Aub",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "served as an appointed arbitrator for Elector Ludwig von der Pfalz in the dispute between Arnold von Rosenberg’s sons and their cousins Friedrich, Jörg, and Hans over their shares in the Boxberg bastion and town."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "person": "Georg Truchsess von Baldersheim"
     }
   ]
 }

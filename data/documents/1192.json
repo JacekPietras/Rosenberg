@@ -8,34 +8,34 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "summary": "Bischof Heinrich von Würzburg bekundet, daß der Pleban Rugger von Reicholzheim seiner Pfarrei mehrere Güter zu Üssigheim übertragen habe, zum Ersatz für den abgeschafften Meßpfennig.",
       "latin": "Testes: laici Fridericus comes de Abenberc, Boppo comes de Wertheim, Wolfradus de Cruteim, Heinricus et frater eius Albertus de Hohenloch, Albertus de Ense, Henricus de Rabenesburc, Wolframus de Zabelstein et frater eius Cunradus, Cunradus de Buchele, Heinricus de Binezvelt, Heroldus de Fore, Wernhardus, Adelhunus, et tota sinodus. Acta sunt hec anno dominice incarnacionis Mº.C.XCº.II°., indictione X., regnante gloriosissimo Romanorum imperatore Heinrico, anno ordinationis sue primo, Bertholdo de Hennenberc Wirzeburgensis urbis prefecturam tenente.",
-      "english": "Bishop Heinrich of Würzburg certifies that Rugger, parish priest of Reicholzheim, transferred several properties at Uissigheim to his parish in compensation for the abolished Mass penny. Lay witnesses included Friedrich, Count of Abenberg; Boppo, Count of Wertheim; Wolfrad von Crutheim; Heinrich and his brother Albrecht von Hohenlohe; Albert von Ense; Heinrich von Rabensburg; Wolfram von Zabelstein and his brother Konrad; Konrad von Buchele; Heinrich von Binsfeld; Herold von Fore; Wernhard; Adelhun; and the entire synod. This was done in the year of the Lord's incarnation 1192, indiction 10, during the reign of the most glorious Roman Emperor Heinrich, in the first year of his ordination, while Berthold von Henneberg held the prefecture of the city of Würzburg.",
-      "mention": [
-        {
-          "person": "Bischof Heinrich",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Boppe von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "uissigheim"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Heinrich von Hohenlohe",
-          "type": "sibling",
-          "of": "Albrecht von Hohenlohe"
-        }
+      "english": "Bishop Heinrich of Würzburg certifies that Rugger, parish priest of Reicholzheim, transferred several properties at Uissigheim to his parish in compensation for the abolished Mass penny. Lay witnesses included Friedrich, Count of Abenberg; Boppo, Count of Wertheim; Wolfrad von Crutheim; Heinrich and his brother Albrecht von Hohenlohe; Albert von Ense; Heinrich von Rabensburg; Wolfram von Zabelstein and his brother Konrad; Konrad von Buchele; Heinrich von Binsfeld; Herold von Fore; Wernhard; Adelhun; and the entire synod. This was done in the year of the Lord's incarnation 1192, indiction 10, during the reign of the most glorious Roman Emperor Heinrich, in the first year of his ordination, while Berthold von Henneberg held the prefecture of the city of Würzburg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich von Hohenlohe",
+      "type": "sibling",
+      "of": "Albrecht von Hohenlohe"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Heinrich",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "person": "Boppe von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "uissigheim"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

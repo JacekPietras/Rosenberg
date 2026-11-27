@@ -6,28 +6,28 @@
       "source": "HStAM, Urk. 61, 339",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2673758",
       "german": "Ritter Georg von Rosenberg verpflichtet sich Johann Grafen von Wertheim, Philipp Grafen von Hanau-Lichtenberg, Michel und Asmus Grafen von Wertheim sechs Jahre zu dienen und sie bei ihren Fehden unter gewissen Ausnahmen zu unterstützen.",
-      "english": "Knight Georg von Rosenberg pledges to serve Johann, Graf von Wertheim, Philipp, Count of Hanau-Lichtenberg, Michel and Asmus, Counts of Wertheim, for six years and to support them in their feuds, subject to certain exceptions.",
-      "mention": [
-        {
-          "person": "Hans von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
+      "english": "Knight Georg von Rosenberg pledges to serve Johann, Graf von Wertheim, Philipp, Count of Hanau-Lichtenberg, Michel and Asmus, Counts of Wertheim, for six years and to support them in their feuds, subject to certain exceptions."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "pledged six years of service and support in feuds, subject to exceptions, to Johann and Michel and Asmus, counts of Wertheim, and Philipp, count of Hanau-Lichtenberg."
-        }
+      "type": "generic",
+      "content": "pledged six years of service and support in feuds, subject to exceptions, to Johann and Michel and Asmus, counts of Wertheim, and Philipp, count of Hanau-Lichtenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
       ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

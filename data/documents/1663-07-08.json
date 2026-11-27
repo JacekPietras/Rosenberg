@@ -6,33 +6,33 @@
       "source": "HStAD, B 8, 7/12",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4829788",
       "german": "Matthias Benedikt v. Rindtorf, Dekan des Stifts Fulda und Propst zu Neuenberg: Verkauf von 2/3 des Stadener, des großen und kleinen Stammheimer Zehnten samt Patronatsrecht für 3.000 Rtr. an den Johann Hartmann v. Rosenbach, Domherr der Stifte Bamberg, Würzburg und Komburg\n\nFormalbeschreibung: Entwurf, Papier\n\nSiegler: Abt Joachim von Fulda, Stiftskapitel, Propstei zu Neuenburg\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Matthias Benedikt von Rindtorf, dean of Fulda collegiate church and provost of Neuenberg: sale to Hans Hartmann von Rosenberg, canon of Bamberg, Würzburg and Comburg, of two thirds of the Staden, large Stammheim and small Stammheim tithes, together with the right of patronage, for 3,000 Reichstaler\n\nFormal description: Draft, paper\n\nSealers: Abbot Joachim of Fulda, the collegiate chapter, the provostship of Neuenburg\n\nPrevious provenance(s): von Rosenbach",
-      "mention": [
-        {
-          "place": "comburg-stiftskirche"
-        },
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "person": "Hans Hartmann von Rosenberg"
-        },
-        {
-          "person": "Joachim",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        },
-        {
-          "place": "neuburg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Matthias Benedikt von Rindtorf, dean of Fulda collegiate church and provost of Neuenberg: sale to Hans Hartmann von Rosenberg, canon of Bamberg, Würzburg and Comburg, of two thirds of the Staden, large Stammheim and small Stammheim tithes, together with the right of patronage, for 3,000 Reichstaler\n\nFormal description: Draft, paper\n\nSealers: Abbot Joachim of Fulda, the collegiate chapter, the provostship of Neuenburg\n\nPrevious provenance(s): von Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "place": "comburg-stiftskirche"
+    },
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "person": "Hans Hartmann von Rosenberg"
+    },
+    {
+      "person": "Joachim",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
+    },
+    {
+      "place": "neuburg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

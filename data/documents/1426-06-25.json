@@ -10,24 +10,6 @@
       ],
       "german": "Conrad Kurfürst von Mainz verkauft an Eberhard von Rosenberg 225 fl. Rente zu Bischofsheim für 4500 fl. Dienstag nach St. Johannstag. Regest frankfurt.",
       "english": "Konrad, Elector of Mainz, sells to Eberhard von Rosenberg an annuity of 225 florins from Bischofsheim for 4500 florins. Tuesday after St. John's Day. Frankfurt Register.",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Konrad",
-          "personTitle": [
-            "Kurfürst zu Mainz"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins."
-        }
-      ],
       "img": [
         {
           "src": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb11628151_00439/full/full/0/default.jpg"
@@ -38,21 +20,28 @@
       "source": "HHStAW, 333, 136",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6928888",
       "german": "Konrad Kurfürst von Mainz verkauft Eberhard von Rosenberg eine jährliche Gülte von 225 fl. zu Bischofsheim um 4500 fl.",
-      "english": "Konrad, Elector of Mainz, sells Eberhard von Rosenberg an annual payment of 225 florins from Bischofsheim for 4,500 florins.",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Konrad",
-          "personTitle": [
-            "Kurfürst zu Mainz"
-          ]
-        }
+      "english": "Konrad, Elector of Mainz, sells Eberhard von Rosenberg an annual payment of 225 florins from Bischofsheim for 4,500 florins."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "purchased a 225-florin annuity at Bischofsheim from Konrad, Elector of Mainz, for 4,500 florins."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Konrad",
+      "personTitle": [
+        "Kurfürst zu Mainz"
       ]
+    },
+    {
+      "person": "Eberhard von Rosenberg"
     }
   ]
 }

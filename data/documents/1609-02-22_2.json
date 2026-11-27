@@ -6,20 +6,20 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Oe 1 U 180",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-170465",
       "german": "Zinsverschreibung des Grafen Wolfgang II. von Hohenlohe an Georg Sigmund von Rosenberg zu Haltenbergstetten auf Einkünfte aus seiner Grafschaft.\n\nLaufzeit: 1609 (1609-02-22)\n\nSiegelbeschreibung: Anhängendes Siegel ab\n\nZeugen: keine\n\nSiegler: Graf Wolfgang II. von Hohenlohe",
-      "english": "Interest obligation of Count Wolfgang II of Hohenlohe to Georg Siegmund von Rosenberg of Haltenbergstetten, secured on income from his county.\n\nDate: 1609 (22 February 1609). Seal description: attached seal missing.\nWitnesses: none.\nSealer: Count Wolfgang II of Hohenlohe.",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
-          "person": "Wolfgang von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        }
+      "english": "Interest obligation of Count Wolfgang II of Hohenlohe to Georg Siegmund von Rosenberg of Haltenbergstetten, secured on income from his county.\n\nDate: 1609 (22 February 1609). Seal description: attached seal missing.\nWitnesses: none.\nSealer: Count Wolfgang II of Hohenlohe."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
+    },
+    {
+      "person": "Wolfgang von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
     }
   ]

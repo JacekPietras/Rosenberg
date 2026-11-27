@@ -7,40 +7,40 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5114",
       "german": "Ahnenprobe des Anton Johann Baptist v. Roll z. Bernau. - ausgefertigt 1750 November 9, Pergament\n\nEnthält: 1. Roll z. Bernau, Anton Johann Baptist v.\n2. Roll z. Bernau, Carl Hartmann v.\n3. Reinach, Maria Ursula v.\n4. Roll z. Bernau, Johann Walter v.\n5. Roggenbach, Maria Ursula v.\n6. Reinach, Jakob Sigismund v.\n7. Pfundt, Salome Lucia v.\n8. Roll z. Bernau, Franz Ludwig v.\n9. Schönau, Maria Agnes v.\n10. Roggenbach, Johann Franz v.\n11. Münch v. Rosenberg, Maria Jacobe\n12. Reinach, Sigmund v.\n13. Stadion, Scholstica v.\n14. Pfördt, Philiph Jacob v.\n15. Schönau, Maria Anna v.\n16. Roll z. Bernau, Carl Emanuel v.\n17. Schmidt v. Altdorf, Maria Regina\n18. Schönau, Marx Jacob v.\n19. Steinach Margarete v.\n20. Roggenbach, Hans Hartmann v.\n21. Rhein, Maria Susanna z.\n22. Münch v. Rosenberg, Hans Jacob\n23. Dormentz, Maria Sibylla v.\n24. Reinach Johann Theobald v.\n25. Degel v. Wengen, Maria Cleopatra\n26. Stadion, Johann Christoph v.\n27. Sickingen, Margarete v.\n28. Pfördt, Hans Adam v.\n29. Sickingen, Anastasia v.\n30. Schönau Urth Rudolf v.\n31. Rhein, Salome zu\nAttestate: Domkapitel Worms, 1751 29 Kapitel Wimpfen",
       "english": "Proof of ancestry of Anton Johann Baptist von Roll zu Bernau. Issued on parchment, 9 November 1750.\n\n1. Anton Johann Baptist von Roll zu Bernau\n2. Carl Hartmann von Roll zu Bernau\n3. Maria Ursula von Reinach\n4. Johann Walter von Roll zu Bernau\n5. Maria Ursula von Roggenbach\n6. Jakob Sigismund von Reinach\n7. Salome Lucia von Pfundt\n8. Franz Ludwig von Roll zu Bernau\n9. Maria Agnes von Schönau\n10. Johann Franz von Roggenbach\n11. Maria Jacobe Mönch von Rosenberg\n12. Sigmund von Reinach\n13. Scholstica von Stadion\n14. Philiph Jacob von Pfördt\n15. Maria Anna von Schönau\n16. Carl Emanuel von Roll zu Bernau\n17. Maria Regina Schmidt von Altdorf\n18. Marx Jacob von Schönau\n19. Margaretha von Steinach\n20. Hans Hartmann von Roggenbach\n21. Maria Susanna zu Rhein\n22. Hans Jacob Mönch von Rosenberg\n23. Maria Sibylla von Dormentz\n24. Johann Theobald von Reinach\n25. Maria Cleopatra von Degel von Wengen\n26. Johann Christoph von Stadion\n27. Margaretha von Sickingen\n28. Hans Adam von Pfördt\n29. Anastasia von Sickingen\n30. Urth Rudolf von Schönau\n31. Salome zu Rhein\n\nAttestations: Worms cathedral chapter; Wimpfen chapter, 29 [date unclear].",
-      "mention": [
-        {
-          "person": "Anastasia von Sickingen"
-        },
-        {
-          "person": "Hans Jakob Mönch von Rosenberg"
-        },
-        {
-          "person": "Margaretha von Sickingen"
-        },
-        {
-          "person": "Margaretha von Steinach"
-        },
-        {
-          "person": "Maria Agnes von Schönau"
-        },
-        {
-          "person": "Maria Anna von Schönau"
-        },
-        {
-          "person": "Marx Jakob von Schönau"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Rudolf von Schönau"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_12/324/a_12%23324.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anastasia von Sickingen"
+    },
+    {
+      "person": "Hans Jakob Mönch von Rosenberg"
+    },
+    {
+      "person": "Margaretha von Sickingen"
+    },
+    {
+      "person": "Margaretha von Steinach"
+    },
+    {
+      "person": "Maria Agnes von Schönau"
+    },
+    {
+      "person": "Maria Anna von Schönau"
+    },
+    {
+      "person": "Marx Jakob von Schönau"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Rudolf von Schönau"
     }
   ]
 }

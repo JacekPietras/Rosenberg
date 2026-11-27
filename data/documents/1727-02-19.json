@@ -7,23 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-029/AT-KLA_29-B-25.1_St/charter",
       "german": "Vergleich zwischen den Grafen Leopold, Philipp Joseph und Wolf Sigmund von Orsini und Rosenberg über den Wolf-Andreischen und den Karolinisch-Rosenbergischen Fideikommiss: 1. Die Erbeinigung, die Wolf Andreas von Rosenberg mit seinem Bruder Georg Niklas am 3. Dezember 1679 in Klagenfurt aufgesetzt hat, wurde im Jahr 1711 so verändert, dass die Belastungen des Wolf Andreas zwar getilgt wurden, sein Sohn Philipp von Rosenberg dafür aber das Freihaus in Wien und das Kapital bei den Kärntner Landständen ersetzen soll. Der Fideikommiss aus dem Jahr 1679 soll von Philipp von Rosenberg auf den Gütern aufgehoben werden. 2. Davon sollen die Schulden bezahlt werden. 3. Vom obgenannten Vermögen sollen 40.000 Gulden an die Kinder des Grafen Sigmund Khevenhüller gehen. 4. Vom übrigen Vermögen soll das Quarta Falcidia abgezogen werden und der Rest als neuer Karolinischer Fideikommiss anzusehen sein, der wiederum folgende Punkte beinhaltet: 1. Die Herrschaften von Wolf Andreas (Sonnegg, Höchenbergen, Stein, Feuersberg, Rechberg und Maria Loretto am Wörthersee) sind auf ewig zum Fideikommiss für den Mannesstamm festgesetzt. 2. Für das halbe Haus in Klagenfurt samt der von Karl von Rosenberg 1705 verkauften Untertanen von Thalheim, die nun der Herrschaft Höhenbergen gehören, und der von den Landständen gekauften Landtaz soll das davor bezahlte Kapital haften. 3. Landwirtschaftliche Aufzeichnungen sollen in das Fideikommiss mitaufgenommen werden. 4. Die von Philipp von Rosenberg auf allen Herrschaften errichteten Fischteiche sollen ebenfalls hinzugefügt werden. Dazu wurden vier Exemplare ausgefertigt, von denen je eines an Leopold, Philipp Joseph und Wolf Sigmund geht. (Siegler: Joseph Leopold Graf von Orsini und Rosenberg; Philipp Orsini Graf von Rosenberg; Wolf Sigmund Orsini Graf Rosenberg)",
       "english": "Settlement between Counts Leopold, Philipp Joseph and Wolf Sigmund von Orsini und Rosenberg concerning the Wolf-Andrean and Carolinian-Rosenberg Fideikommiss: 1. The inheritance agreement that Wolf Andreas von Rosenberg drew up with his brother Georg Niklas in Klagenfurt on 3 December 1679 was altered in 1711 so that Wolf Andreas's liabilities were discharged, but his son Philipp von Rosenberg was to replace them with the free house in Vienna and the capital held by the Carinthian estates. The 1679 Fideikommiss is to be dissolved by Philipp von Rosenberg on the properties. 2. The debts are to be paid from it. 3. Of the aforementioned assets, 40,000 guilders are to go to the children of Graf Sigmund Khevenhüller. 4. The Quarta Falcidia is to be deducted from the remaining assets, and the rest is to be regarded as a new Carolinian Fideikommiss, which includes the following points: 1. Wolf Andreas's lordships (Sonnegg, Höchenbergen, Stein, Feuersberg, Rechberg and Maria Loretto on Lake Wörth) are permanently established as a Fideikommiss for the male line. 2. The capital previously paid is to stand as security for the half house in Klagenfurt, together with the subjects of Thalheim sold by Karl von Rosenberg in 1705, which now belong to the lordship of Höhenbergen, and the Landtaz purchased from the estates. 3. Agricultural records are to be included in the Fideikommiss. 4. The fishponds established by Philipp von Rosenberg on all the lordships are likewise to be added. Four copies were drawn up, one each for Leopold, Philipp Joseph and Wolf Sigmund. Sealers: Joseph Leopold, Graf von Orsini und Rosenberg; Philipp Orsini, Graf von Rosenberg; Wolf Sigmund, Graf Orsini Rosenberg.",
-      "mention": [
-        {
-          "person": "Karl von Rosenberg"
-        },
-        {
-          "person": "Philipp von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "talheim"
-        },
-        {
-          "person": "Wolf Andreas von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_25_1_17270219_01.JPG"
@@ -77,6 +60,23 @@
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_25_1_17270219_17.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Karl von Rosenberg"
+    },
+    {
+      "person": "Philipp von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "talheim"
+    },
+    {
+      "person": "Wolf Andreas von Rosenberg"
     }
   ]
 }

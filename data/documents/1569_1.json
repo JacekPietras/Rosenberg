@@ -6,21 +6,21 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ba 30 Bü 195",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-69760",
       "german": "Mutung ihrer hohenlohischen Lehen durch die Herren von Rosenberg nach dem Tod des Grafen Ludwig Kasimir von Hohenlohe-Neuenstein.\n\nLaufzeit: 1569\n\nUmfang: 4 Schr.",
-      "english": "Claim for the Hohenlohe fiefs by the von Rosenberg lords after the death of Count Ludwig Kasimir von Hohenlohe-Neuenstein. Dates: 1569. Extent: 4 documents.",
-      "mention": [
-        {
-          "place": "hohenlohe"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Claim for the Hohenlohe fiefs by the von Rosenberg lords after the death of Count Ludwig Kasimir von Hohenlohe-Neuenstein. Dates: 1569. Extent: 4 documents."
+    }
+  ],
+  "mention": [
+    {
+      "place": "hohenlohe"
+    },
+    {
+      "person": "Ludwig Kasimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

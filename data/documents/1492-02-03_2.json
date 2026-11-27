@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/2b2cb891-b8d1-41db-8068-850a787d06a6/charter",
       "german": "1492. 3. Februar. Krumau. — Peter von Rosenberg leistet auf alle seine An sprüche auf den Hof Muscherad zu Gunsten seines Kanzlers, Wenzels von Rиben, Verzicht und übergibt ihm zugleich diesen Hof.",
       "english": "3 February 1492, Krumau. Peter von Rosenberg renounces all his claims to the farm at Muscherad in favor of his chancellor, Wenzel von Ruben, and at the same time transfers the farm to him.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000375.png"
@@ -23,6 +18,11 @@
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000377.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

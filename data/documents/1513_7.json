@@ -8,24 +8,24 @@
       "summary": "Johann von Rosenberg verkauft etliche Rechte und Dienstleute in Lauda (Lauda), Maibach (Maibach), Königshofen (konigshofen), Herbfelt und weiteren Städten an das Hochstift Würzburg.",
       "german": "Hans von Rosenberg hat etliche gerechtigkait, aigenleut vnd anders zu lauda, Maibach, Konigshofen herbfelt vnd anders dem Stift verkauft Recepta in contractum originale sub litera R Kommentar: Die Datumsangabe orientiert sich an der Lebenszeit von Johann von Rosenberg.",
       "english": "Hans von Rosenberg sold the bishopric several rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere. Recorded in the register of contracts; the original is filed under letter R. The editorial comment says that the date assigned to the entry is based on the lifespan of Hans von Rosenberg.",
-      "mention": [
-        {
-          "place": "lauda"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1012_446.jpg",
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "sold rights, serfs, and other things at Lauda, Maibach, Königshofen, Herbfeld, and elsewhere to the bishopric."
+    }
+  ],
+  "mention": [
+    {
+      "place": "lauda"
     }
   ]
 }

@@ -10,20 +10,6 @@
       ],
       "german": "Ulrich von Rosenbergk schreibt an die Stadt Nürnberg in Sachen des von Schwannberg und des von Landgraf Leopold von Leuchtenberg unternommenen Versöhnungsversuches.\n\nBesiegelung/Beglaubigung: mit Verschlußsiegel.",
       "english": "Ulrich von Rosenberg writes to the City of Nuremberg concerning the man from Schwannberg and the attempted reconciliation undertaken by Landgraf Leopold of Leuchtenberg. Sealing/authentication: with closure seal.",
-      "mention": [
-        {
-          "person": "Leopold",
-          "personTitle": [
-            "Landgraf zu Leuchtenberg"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/cd27d5df-ece6-462f-8288-0b652a648d33/1/full/max/0/default.jpg"
@@ -32,6 +18,20 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/cd27d5df-ece6-462f-8288-0b652a648d33/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Leopold",
+      "personTitle": [
+        "Landgraf zu Leuchtenberg"
+      ]
+    },
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

@@ -10,62 +10,6 @@
       ],
       "german": "Eberhard von Rosenberg, gen. der Alte, und Anna, seine Ehefrau, verkaufen an das Kloster Bronnbach benannte Zehnten, Güter und Zinsen zu Wagenbuch, Höhefeld (Hoevelt) und Lindelbach um 80 Gulden.\n\nSiegler: Eberhard von Rosenberg d. Ä.; Anna, seine Ehefrau; Knebel von Huesen, Bürge; Fritz Stetenberg, Bürge; Peter Stetenberg, Fritzes Bruder, Bürge",
       "english": "Eberhard von Rosenberg der Alte, and Anna, his wife, sold tithes, goods, and interest in Wagenbuch, Höhefeld, and Lindelbach to the Bronnbach Monastery for 80 guilders.\n\nSeal: Eberhard von Rosenberg der Ältere; Anna, his wife; Knebel von Huesen, surety; Fritz Stetenberg, surety; Peter Stetenberg, Fritz's brother, surety",
-      "mention": [
-        {
-          "place": "bronnbach"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "generic",
-          "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "spouse",
-          "of": "Anna"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "der Alte"
-          ],
-          "type": "generic",
-          "content": "sealed the sale deed."
-        },
-        {
-          "person": "Anna",
-          "type": "generic",
-          "content": "sealed the sale deed."
-        },
-        {
-          "person": "Knebel von Huesen",
-          "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
-        },
-        {
-          "person": "Friedrich Stetenberg",
-          "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
-        },
-        {
-          "person": "Peter Stetenberg",
-          "type": "sibling",
-          "of": "Friedrich Stetenberg"
-        },
-        {
-          "person": "Peter Stetenberg",
-          "type": "generic",
-          "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234557%2F07_0000234557_0001_7-234557-1.jpg"
@@ -75,6 +19,62 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Alte"
+      ],
+      "type": "generic",
+      "content": "sold the named tithes, goods, and rents at Wagenbuch, Höhefeld, and Lindelbach to Bronnbach Monastery jointly with his wife Anna."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Alte"
+      ],
+      "type": "spouse",
+      "of": "Anna"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "der Alte"
+      ],
+      "type": "generic",
+      "content": "sealed the sale deed."
+    },
+    {
+      "person": "Anna",
+      "type": "generic",
+      "content": "sealed the sale deed."
+    },
+    {
+      "person": "Knebel von Huesen",
+      "type": "generic",
+      "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+    },
+    {
+      "person": "Friedrich Stetenberg",
+      "type": "generic",
+      "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+    },
+    {
+      "person": "Peter Stetenberg",
+      "type": "sibling",
+      "of": "Friedrich Stetenberg"
+    },
+    {
+      "person": "Peter Stetenberg",
+      "type": "generic",
+      "content": "served as surety for the sale by Eberhard von Rosenberg and Anna."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
     }
   ]
 }

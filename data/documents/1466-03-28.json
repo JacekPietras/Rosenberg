@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166311",
       "german": "Jorg von Hardheim und Walpurg von Rosenberg, seine eheliche Hausfrau, verkaufen ihrem Herrn Graf Wilhelm zu Wertheim und dessen ehelicher Gemahlin Agnes geb. von Isenburg für 300 fl. rh. Frankfurter Währung ihre Güter und Gerechtssame in Stadt und Markung Schweinberg, nämlich von einer Hube, die die Mönche innehaben, 1/2 Malter Korn, 1/2 Malter Weizen, 1/2 Fastnachtshuhn, 5 1/2 Sommerhühner, 1/2 Gans und 17 ß minder 4 h, halb auf Martini, halb auf Walpurgis zu erlegen; von einer Hube, die Komerlin innehat, 1/2 Malter Korn, 1/2 Fastnachtshuhn, 2 1/2 Sommerhühner, 8 ß 1 h Geld; von einer Hube, die Tausch Heintz innehat, 10 ß auf Martini, 1/2 Fasnachtshuhn und 1 1/2 Sommerhühner; von einem Hause vor dem obern Tor, das Hans Hase innehat, 20 alte h und 1/2 Fastnachtshuhn; von einem Hause das Egenburg innehat, 1/2 Fastnachtshuhn; von einem Garten, den dass Wirtlin innehat, 6 D; von einem Garten hinter Contz Dorwarts Scheuer, den jetzt Hoffhans innehat, 1 Martinshuhn; von einem auf dem Kaplan zinspflichtigen Garten vor dem obern Tor 1 Sommerhuhn; von einem Acker im Leybererstall, der zu einem Garten gehört, jetzt in Händen des Heintz Hase, 1/2 Martinshuhn; ein drittel an Natural-, großem wie kleinem Zehnten in Mark und Stadt; 2 Simmer Frucht (flurlich) von einem Acker im Contzgrunde, den Heintz Hase innehat; ein Viertel an den gemeinen Zinsen, die sich pro Morgen auf 1 D belaufen; 15 ß und 1 Fastanachtshuhn von Hans Smytts Hofreite; 2 Simmer Korn von Smytts Garten by dem ussern Riegel; von Schmydlin von einem Acker uff der Heyde was sweyß gilt in someren; Hocken Gütlein bei dem oberen Tor.\n\nLaufzeit: 1466 März 28 (1466 am nehsten freytag nach dem sontag so man in der heligen Kirchen singet Judica me domine)\n\nSiegelbeschreibung: 3 Siegel\n\nSiegler: Jorg von Hardheim; Walpurg von Rosenberg; Hans von Hartheim, Bruder und Schwager der Verkäufer",
       "english": "Georg von Hartheim and Walpurg von Rosenberg, his lawful wife, sell to their lord Wilhelm zu Wertheim, Graf zu Wertheim and his lawful wife Agnes, née von Isenburg, for 300 Rhenish gulden in Frankfurt currency, their properties and rights in the town and district of Schweinberg, namely: from a hide held by the monks, ½ malter of rye, ½ malter of wheat, ½ Shrovetide hen, 5½ summer hens, ½ goose, and 17 shillings less 4 Heller, payable half at Martinmas and half at Walpurgis; from a hide held by Komerlin, ½ malter of rye, ½ Shrovetide hen, 2½ summer hens, and 8 shillings 1 Heller; from a hide held by Tausch Heintz, 10 shillings at Martinmas, ½ Shrovetide hen, and 1½ summer hens; from a house outside the upper gate held by Hans Hase, 20 old Heller and ½ Shrovetide hen; from a house held by Egenburg, ½ Shrovetide hen; from a garden held by Wirtlin, 6 denarii; from a garden behind Contz Dorwart’s barn, now held by Hoffhans, 1 Martinmas hen; from a garden before the upper gate subject to a rent to the chaplain, 1 summer hen; from a field at Leybererstall belonging to a garden, now held by Heintz Hase, ½ Martinmas hen; one third of the natural, great, and small tithes in the district and town; 2 Simmer of grain, payable in the field, from a field in Contzgrund held by Heintz Hase; one quarter of the common rents, amounting to 1 denarius per morgen; 15 shillings and 1 Shrovetide hen from Hans Smytt’s farmstead; 2 Simmer of rye from Smytt’s garden by the outer barrier; from Schmydlin, whatever a field on the heath yields in summer; and Hocken’s smallholding by the upper gate.\n\nDate: 1466 March 28 (the next Friday after the Sunday on which the Holy Church sings “Judica me, Domine”)\n\nDescription of seals: 3 seals\n\nSealers: Georg von Hartheim; Walpurg von Rosenberg; Hans von Hartheim, brother and brother-in-law of the sellers",
-      "mention": [
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Georg von Hartheim"
-        },
-        {
-          "person": "Hans von Hartheim"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wilhelm zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166311%2F07_0000166311_0001_7-166311-1.jpg"
@@ -34,6 +14,26 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166311%2F07_0000166311_0002_7-166311-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "person": "Georg von Hartheim"
+    },
+    {
+      "person": "Hans von Hartheim"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wilhelm zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

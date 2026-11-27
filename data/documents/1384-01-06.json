@@ -7,43 +7,43 @@
       "source": "Monumenta Boica 43, Monumenta Episcopatus Wirziburgensis",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb11326533?page=495",
       "german": "Jch Hans Pfall von Rosenberg bekenne offenlich an die-\nsem briefe, daz mir der erwirdige in got vater vnd herre myne\ngnediger herre her Gerhart bischoff tzu Wirtzburg betzalt hatt\nhur vnd fert XII pfunt heller wirtzburger werůnge von myns burk-\ngůtes wegen zu Hohenbůrg. Vnd sage in der zwolff pfunt heller\nvff diese zwey jare quit ledig vnd losz.\nVnd gieb im dez diesen offen brieff, besiegelt mit mynem eygen\njnsiegel. Datum jn die epiphanie dominj anno dominj millesimo\nCCCmo LXXX quarto.",
-      "english": "I, Hans Pfall von Rosenberg, openly acknowledge by this letter that the venerable father in God and lord, my gracious lord Lord Gerhard, bishop of Würzburg, has paid me this year and last year twelve pounds Heller in Würzburg currency for my Burggut at Hohenburg. And I declare him quit, free and released of these twelve pounds Heller for these two years. And I give him this open letter, sealed with my own seal. Dated on Epiphany in the year of the Lord one thousand three hundred and eighty-four.",
-      "mention": [
-        {
-          "person": "Bischof Gerhard",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans Pfall von Rosenberg",
-          "type": "generic",
-          "content": "acknowledged payment by Bishop Gerhard of Würzburg for the years 1383 and 1384 for his Burggut at Hohenburg."
-        },
-        {
-          "person": "Hans Pfall von Rosenberg",
-          "type": "generic",
-          "content": "held a Burggut at Hohenburg."
-        },
-        {
-          "person": "Hans Pfall von Rosenberg",
-          "type": "generic",
-          "content": "released Bishop Gerhard of Würzburg from the payment for these two years."
-        },
-        {
-          "person": "Hans Pfall von Rosenberg",
-          "type": "generic",
-          "content": "sealed the receipt with his own seal."
-        }
+      "english": "I, Hans Pfall von Rosenberg, openly acknowledge by this letter that the venerable father in God and lord, my gracious lord Lord Gerhard, bishop of Würzburg, has paid me this year and last year twelve pounds Heller in Würzburg currency for my Burggut at Hohenburg. And I declare him quit, free and released of these twelve pounds Heller for these two years. And I give him this open letter, sealed with my own seal. Dated on Epiphany in the year of the Lord one thousand three hundred and eighty-four."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans Pfall von Rosenberg",
+      "type": "generic",
+      "content": "acknowledged payment by Bishop Gerhard of Würzburg for the years 1383 and 1384 for his Burggut at Hohenburg."
+    },
+    {
+      "person": "Hans Pfall von Rosenberg",
+      "type": "generic",
+      "content": "held a Burggut at Hohenburg."
+    },
+    {
+      "person": "Hans Pfall von Rosenberg",
+      "type": "generic",
+      "content": "released Bishop Gerhard of Würzburg from the payment for these two years."
+    },
+    {
+      "person": "Hans Pfall von Rosenberg",
+      "type": "generic",
+      "content": "sealed the receipt with his own seal."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Gerhard",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

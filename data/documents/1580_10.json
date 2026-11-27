@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A8C20157-71B2-4F81-8255-715639BA7028&parent_id="
       ],
       "german": "Bitte Conrads von Rosenberg sen. zu Waldmannshofen um Belehnung mit den durch den Tod seines Bruders Philipp Jakob erledigten Lehen, welche von Hans Eucharius von Rosenberg herrühren",
-      "english": "Petition by Konrad von Rosenberg the Elder zu Waldmannshofen for enfeoffment with the fiefs, originating from Hans Eucharius von Rosenberg, that became vacant through the death of his brother Philipp Jakob.",
-      "mention": [
-        {
-          "person": "Hans Eucharius von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "der Ältere",
-            "zu Waldmannshofen"
-          ]
-        }
+      "english": "Petition by Konrad von Rosenberg the Elder zu Waldmannshofen for enfeoffment with the fiefs, originating from Hans Eucharius von Rosenberg, that became vacant through the death of his brother Philipp Jakob."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Eucharius von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "der Ältere",
+        "zu Waldmannshofen"
       ]
     }
   ]

@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166542",
       "german": "Markgraf Albrecht von Brandenburg verkündet als kaiserlicher Kommissär auf Anrufen des Burkhard Schenk von Roßberg, der sich durch des Commissars Graf Wilhelm von Henneberg Urteil vom 23. Jan. 1458 beschwert fühlt, den Entschluß des Gerichts, wonach das Urteil der kaiserlichen Commision bestätigt und Burkhard Schenk mit seiner Forderung abgewiesen wird. (S. StAWt-G Rep. 7a Lade XXIII D Nr. 68 & 69)\n\nLaufzeit: 1459 April 2 (Montag nach Quasimodo, 2. April 1459)",
       "english": "Albrecht von Brandenburg, Markgraf, acting as imperial commissioner upon the appeal of Burkhard Schenk von Roßberg, who considers himself aggrieved by the judgment of Commissioner Count Wilhelm von Henneberg of 23 January 1458, announces the court’s decision. The judgment of the imperial commission is upheld, and Burkhard Schenk’s claim is rejected. (See StAWt-G Rep. 7a Lade XXIII D Nr. 68 and 69.)\n\nTerm: 2 April 1459 (Monday after Quasimodo, 2 April 1459)",
-      "mention": [
-        {
-          "person": "Burkhard Schenk"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=697&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000697%2Ftitlaufn_0000166542%2F07_0000166542_0001_7-166542-1.jpg"
@@ -47,6 +42,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=697&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000697%2Ftitlaufn_0000166542%2F07_0000166542_0011_7-166542-11.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Burkhard Schenk"
     }
   ]
 }

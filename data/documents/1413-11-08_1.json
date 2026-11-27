@@ -10,22 +10,6 @@
       ],
       "german": "Der Nürnberger Schultheiß, Ritter Hans von Rosemberg, vidimiert für Cunrad Haller das Testament der Katrein, Tochter Ulrichs und Katrein Hallers und Witwe des Ritters Erckinger Zollner. Das Testament war am 27. September 1411 errichtet worden. Zeugen der Vidimierung: Weygell Graser und Cunrad Paumgartner. Siegler: das Gerichtssiegel von Nürnberg. Datiert auf den Mittwoch vor Martinstag 1413 (8. November 1413).",
       "english": "Hans von Rosenberg, Ritter, Schultheiß zu Nuremberg, authenticates for Konrad Haller a copy of the testament of Katrein, daughter of Ulrich and Katrein Haller and widow of Erckinger Zollner, Ritter. The testament had been made on 27 September 1411. Witnesses to the authentication: Weygell Graser and Konrad Paumgartner. Sealer: the court seal of Nuremberg. Dated Wednesday before Martinmas 1413 (8 November 1413).",
-      "mention": [
-        {
-          "place": "nuremberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß zu Nürnberg"
-          ],
-          "type": "generic",
-          "content": "authenticated for Konrad Haller a copy of Katrein Haller’s testament, made on 27 September 1411."
-        }
-      ],
       "img": [
         {
           "src": "https://iiif.deutsche-digitale-bibliothek.de/image/2/d4932952-b4af-46ac-b775-7d1c8d14daa5/full/full/0/default.jpg"
@@ -44,107 +28,116 @@
       "source": "Regesta Boica 12",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10333804",
       "german": "Ritter Hans von Rosemberg, Schultheiss und die Schöpfen der Stadt Nuremberg ertheilen dem Conrat Haller seinet- und der Vormundschaft über die Haller-Pfründe wegen auf Ansuchen eine besiegelte Abschrift des von Katrey, Erckinger Zollners, Ritters seligen Wittib unterm 27. Sept. 1411 errichteten Testaments, in welchem dieselbe verordnet, in das Grab ihrer Mutter Katreyn, der Vlrich Hallerin seligen, gelegt zu werden; dann zu der Pfründe, welche die Haller in der Sebalds-Kirche auf S. Erharts Altar gestiftet, ein Messgewand und 70 fl, zu einem Jahrtage, etliche Legate an Kirchen und Klöster in und um Nuremberg, sofort ihrem Bruder Vlrich und ihren Vettern Mertein, Peter und Cunczen den Hallern, jedem ein Kleinod, und ihrer Tochter zu sanct Claren 200 fl. zu einem Leibgeding vermacht; falls Burggraf Johannes Dachspach wieder lösen würde, sollen ihm 100 ft. daran erlassen seyn; ihrer Tochter Beatrix, Wirichs von Trewtlingen ehelichen Wirthin, aber solle das Leibgeding zu Dachspach, die Veste Rympach, das Dorf Geysellwinden und alles werden, was sie weiter hinterlasse. Zeugen: Weygell Graser und Cunrad Paumgartner der Elter. G. am Mitwochen vor sand Marteinstag",
-      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen issue a sealed copy to Konrad Haller at his request, for himself and in connection with his guardianship of the Haller benefice. It is a copy of the will made on 27 September 1411 by Katrey, widow of Erkinger Zollner, Ritter. She directs that she be buried in the grave of her late mother Katreyn, described as “der Vlrich Hallerin”; leaves a vestment and 70 guilders for an anniversary to the benefice founded by the Hallers at St. Erhard’s altar in St. Sebald’s church; and makes several bequests to churches and monasteries in and around Nürnberg. She leaves a jewel each to her brother Ulrich and her cousins Mertein, Peter and Kunz Haller, and 200 guilders as a life annuity to her daughter at St. Claren. Should Burggraf Hans redeem Dachspach, 100 ft. is to be remitted to him. Her daughter Beatrix, lawful wife of Wirich von Trewtlingen, is to receive the life annuity at Dachspach, the fortress Rympach, the village of Geysellwinden and all else she leaves. Witnesses: Weygell Graser and Konrad Paumgartner der Elter. Given on the Wednesday before St. Martin’s Day.",
-      "mention": [
-        {
-          "place": "nuremberg"
-        }
+      "english": "Hans von Rosenberg, Ritter and Schultheiß zu Nürnberg, and the city’s Schöpfen issue a sealed copy to Konrad Haller at his request, for himself and in connection with his guardianship of the Haller benefice. It is a copy of the will made on 27 September 1411 by Katrey, widow of Erkinger Zollner, Ritter. She directs that she be buried in the grave of her late mother Katreyn, described as “der Vlrich Hallerin”; leaves a vestment and 70 guilders for an anniversary to the benefice founded by the Hallers at St. Erhard’s altar in St. Sebald’s church; and makes several bequests to churches and monasteries in and around Nürnberg. She leaves a jewel each to her brother Ulrich and her cousins Mertein, Peter and Kunz Haller, and 200 guilders as a life annuity to her daughter at St. Claren. Should Burggraf Hans redeem Dachspach, 100 ft. is to be remitted to him. Her daughter Beatrix, lawful wife of Wirich von Trewtlingen, is to receive the life annuity at Dachspach, the fortress Rympach, the village of Geysellwinden and all else she leaves. Witnesses: Weygell Graser and Konrad Paumgartner der Elter. Given on the Wednesday before St. Martin’s Day."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß zu Nürnberg"
       ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß zu Nürnberg"
-          ],
-          "type": "generic",
-          "content": "issued with the Schöpfen of Nürnberg a sealed copy of Katrey’s will to Konrad Haller for himself and in connection with his guardianship of the Haller benefice."
-        },
-        {
-          "person": "Weygell Graser",
-          "type": "generic",
-          "content": "witnessed the issue of a sealed copy of Katrey’s will by Hans von Rosenberg and the Schöpfen of Nürnberg."
-        },
-        {
-          "person": "Konrad Paumgartner",
-          "personTitle": [
-            "der Elter"
-          ],
-          "type": "generic",
-          "content": "witnessed the issue of a sealed copy of Katrey’s will by Hans von Rosenberg and the Schöpfen of Nürnberg."
-        },
-        {
-          "person": "Katrey",
-          "type": "spouse",
-          "of": "Erkinger Zollner",
-          "ofTitle": [
-            "Ritter"
-          ],
-          "ofDeceased": true,
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Erkinger Zollner",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "death",
-          "diedBefore": "1411-09-28",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Katreyn",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Katrey",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Katreyn",
-          "type": "death",
-          "diedBefore": "1411-09-28",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Katrey",
-          "type": "sibling",
-          "of": "Ulrich",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Katrey",
-          "type": "parent",
-          "of": "Beatrix",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Beatrix",
-          "type": "spouse",
-          "of": "Wirich von Trewtlingen",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Mertein Haller",
-          "type": "kin",
-          "of": "Katrey",
-          "term": "Vettern",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Peter Haller",
-          "type": "kin",
-          "of": "Katrey",
-          "term": "Vettern",
-          "date": "1411-09-27"
-        },
-        {
-          "person": "Kunz Haller",
-          "type": "kin",
-          "of": "Katrey",
-          "term": "Vettern",
-          "date": "1411-09-27"
-        }
-      ]
+      "type": "generic",
+      "content": "authenticated for Konrad Haller a copy of Katrein Haller’s testament, made on 27 September 1411."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß zu Nürnberg"
+      ],
+      "type": "generic",
+      "content": "issued with the Schöpfen of Nürnberg a sealed copy of Katrey’s will to Konrad Haller for himself and in connection with his guardianship of the Haller benefice."
+    },
+    {
+      "person": "Weygell Graser",
+      "type": "generic",
+      "content": "witnessed the issue of a sealed copy of Katrey’s will by Hans von Rosenberg and the Schöpfen of Nürnberg."
+    },
+    {
+      "person": "Konrad Paumgartner",
+      "personTitle": [
+        "der Elter"
+      ],
+      "type": "generic",
+      "content": "witnessed the issue of a sealed copy of Katrey’s will by Hans von Rosenberg and the Schöpfen of Nürnberg."
+    },
+    {
+      "person": "Katrey",
+      "type": "spouse",
+      "of": "Erkinger Zollner",
+      "ofTitle": [
+        "Ritter"
+      ],
+      "ofDeceased": true,
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Erkinger Zollner",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "death",
+      "diedBefore": "1411-09-28",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Katreyn",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Katrey",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Katreyn",
+      "type": "death",
+      "diedBefore": "1411-09-28",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Katrey",
+      "type": "sibling",
+      "of": "Ulrich",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Katrey",
+      "type": "parent",
+      "of": "Beatrix",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Beatrix",
+      "type": "spouse",
+      "of": "Wirich von Trewtlingen",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Mertein Haller",
+      "type": "kin",
+      "of": "Katrey",
+      "term": "Vettern",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Peter Haller",
+      "type": "kin",
+      "of": "Katrey",
+      "term": "Vettern",
+      "date": "1411-09-27"
+    },
+    {
+      "person": "Kunz Haller",
+      "type": "kin",
+      "of": "Katrey",
+      "term": "Vettern",
+      "date": "1411-09-27"
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
     }
   ]
 }

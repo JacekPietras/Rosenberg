@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk80/536/charter",
       "german": "Fulda. - Amand [von Buseck], Abt zu Fulda, belehnt die Brüder Johann Philipp und Adalbert Friedrich von Rosenbach mit Schackau und Eckweisbach. Es folgen nähere Bestimmungen.\n\nSiegler: Aussteller\n\nSiegel: Siegel ab und verloren Aussteller",
       "english": "Fulda. Amand [von Buseck], Abbot zu Fulda, enfeoffs the brothers Johann Philipp and Adalbert Friedrich von Rosenberg with Schackau and Eckweisbach. Further provisions follow.\n\nSealer: Issuer\n\nSeal: Issuer’s seal detached and lost",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20536%20Vorderseite%20%281742%20August%2030%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk80/Urk.%2080%20Nr.%20536%20Rueckseite%20%281742%20August%2030%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

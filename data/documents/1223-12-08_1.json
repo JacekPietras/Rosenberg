@@ -9,59 +9,42 @@
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "summary": "Erzbischof Siegfried (II.) von Mainz genehmigt, daß der Edle Albert von Ingelstatt die Güter zu Ussenkeim, die er von dem Erzstift Mainz zu Lehen trägt, dem Kloster Brunnebach als Eigen übergibt und dafür dem Erzstift Eigengüter in Hochusen zu Lehen aufträgt.",
       "latin": "Laienzeugen: Konrat von Hohenloch, Friderich von Boppenhusen, Gotfrit von Elpersheim, Hermann Lesche u. a. Datum Frankvort VI. idus Decembris pontificatus anno 23.",
-      "english": "Archbishop Siegfried II of Mainz consents to the noble Albert von Ingelstatt transferring to Bronnbach Abbey as free property the holdings at Uissigheim that he holds in fief from the archbishopric of Mainz, and in return enfeoffing the archbishopric with freehold properties at Hochhausen. Lay witnesses included Konrad von Hohenlohe, Friedrich von Boppenhausen, Gotfried von Elpersheim, Hermann Lesche, and others. Given at Frankfurt on the sixth day before the Ides of December, in the 23rd year of the archbishop's pontificate.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Erzbischof Siegfried",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Hohenlohe",
-          "type": "generic",
-          "content": "witnessed Archbishop Siegfried II of Mainz's consent to Albert von Ingelstatt's exchange of properties with Bronnbach Abbey."
-        }
-      ]
+      "english": "Archbishop Siegfried II of Mainz consents to the noble Albert von Ingelstatt transferring to Bronnbach Abbey as free property the holdings at Uissigheim that he holds in fief from the archbishopric of Mainz, and in return enfeoffing the archbishopric with freehold properties at Hochhausen. Lay witnesses included Konrad von Hohenlohe, Friedrich von Boppenhausen, Gotfried von Elpersheim, Hermann Lesche, and others. Given at Frankfurt on the sixth day before the Ides of December, in the 23rd year of the archbishop's pontificate."
     },
     {
       "source": "Hohenlohisches Urkundenbuch. 1",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076105",
       "german": "Erzbischof Siegfried (II.) von Mainz beurkundet, daß Graf Ludwig von Rienecke, der mainzische Lehengüter zu Uskein an das Kloster Bronnbach geschenkt hat, dem Erzstift dafür seine Eigengüter in Helkinberg zu Lehen aufgetragen habe. Mit fast den nämlichen Zeugen wie die vorhergehende Urkunde. Datum Frankinvort VI. idus Decembris, pontificatus anno 23.",
-      "english": "Archbishop Siegfried II of Mainz certifies that Count Ludwig von Rieneck, who donated Mainz fiefs at Uissigheim to Bronnbach Abbey, has enfeoffed the archbishopric with his own freehold properties at Helkinberg in return. The witnesses were almost the same as those of the preceding charter. Given at Frankfurt on the sixth day before the Ides of December, in the 23rd year of the archbishop's pontificate.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Erzbischof Siegfried",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Ludwig von Rieneck",
-          "personTitle": [
-            "Graf von Rieneck"
-          ]
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "uissigheim"
-        }
+      "english": "Archbishop Siegfried II of Mainz certifies that Count Ludwig von Rieneck, who donated Mainz fiefs at Uissigheim to Bronnbach Abbey, has enfeoffed the archbishopric with his own freehold properties at Helkinberg in return. The witnesses were almost the same as those of the preceding charter. Given at Frankfurt on the sixth day before the Ides of December, in the 23rd year of the archbishop's pontificate."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Hohenlohe",
+      "type": "generic",
+      "content": "witnessed Archbishop Siegfried II of Mainz's consent to Albert von Ingelstatt's exchange of properties with Bronnbach Abbey."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "person": "Erzbischof Siegfried",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "uissigheim"
+    },
+    {
+      "person": "Ludwig von Rieneck",
+      "personTitle": [
+        "Graf von Rieneck"
       ]
     }
   ]

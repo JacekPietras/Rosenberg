@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++8664e6d7-0a68-4da6-b688-75048c86db90&parent_id="
       ],
       "german": "Albrecht Christoph von Rosenberg zu Waldmannshofen an Rothenburg (in gleicher Sache) (Examination und Ordination eines Geistlichen, Giebelstadt)",
-      "english": "Albrecht Christoph von Rosenberg zu Waldmannshofen to Rothenburg (on the same matter) (examination and ordination of a clergyman, Giebelstadt).",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg",
-          "personTitle": [
-            "zu Waldmannshofen"
-          ]
-        },
-        {
-          "place": "giebelstadt"
-        },
-        {
-          "place": "rothenburg"
-        }
+      "english": "Albrecht Christoph von Rosenberg zu Waldmannshofen to Rothenburg (on the same matter) (examination and ordination of a clergyman, Giebelstadt)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "personTitle": [
+        "zu Waldmannshofen"
       ]
+    },
+    {
+      "place": "giebelstadt"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

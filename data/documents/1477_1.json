@@ -6,31 +6,31 @@
       "source": "Generallandesarchiv Karlsruhe 72 Nr. 9881",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1641643",
       "german": "Allodiale und lehnbare Güter der von Rosenberg.\n\nLaufzeit: 1477-1577\n\nEnthält: Enthält: Die mainzischen Lehen in Epplingen, Ober- und Unterschüpf, Teilungsvertrag der Erben Albrecht von Rosenbergs (1577).",
-      "english": "Allodial and fief-holdable goods of the von Rosenberg.\n\nTime span: 1477–1577\n\nContains: Contains: The Mainz fiefs in Epplingen, Ober- and Unterschüpf, division agreement of the heirs of Albrecht von Rosenberg (1577).",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "unterschuepf"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the von Rosenberg family",
-          "type": "generic",
-          "content": "held allodial and fief properties, including Mainz fiefs at Epplingen, Oberschüpf, and Unterschüpf, and an inheritance division agreement dated 1577, during the period 1477–1577."
-        }
-      ]
+      "english": "Allodial and fief-holdable goods of the von Rosenberg.\n\nTime span: 1477–1577\n\nContains: Contains: The Mainz fiefs in Epplingen, Ober- and Unterschüpf, division agreement of the heirs of Albrecht von Rosenberg (1577)."
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the von Rosenberg family",
+      "type": "generic",
+      "content": "held allodial and fief properties, including Mainz fiefs at Epplingen, Oberschüpf, and Unterschüpf, and an inheritance division agreement dated 1577, during the period 1477–1577."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "unterschuepf"
     }
   ]
 }

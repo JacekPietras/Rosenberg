@@ -9,14 +9,14 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++caad88eb-09b1-44b0-aaa7-878bafa7b817&parent_id="
       ],
       "german": "Markgraf Casimir an Zeisolf von Rosenberg: bietet sich als Schiedsrichter an.",
-      "english": "Margrave Casimir to Zaisolph von Rosenberg: offers himself as arbitrator.",
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was offered arbitration by Markgraf Casimir."
-        }
-      ]
+      "english": "Margrave Casimir to Zaisolph von Rosenberg: offers himself as arbitrator."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was offered arbitration by Markgraf Casimir."
     }
   ]
 }

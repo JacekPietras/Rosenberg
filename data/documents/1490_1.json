@@ -10,33 +10,6 @@
       ],
       "german": "Jörg von Rosenberg und Martin von Adelsheim richten zwischen Conrad von Berlichingen und Eberhard von Schrozberg einen Burgfrieden in Schrozberg aus;\n\nSiegel: Jörg von Rosenberg, Martin von Adelsheim und drei Siegel ohne Aufdruck.",
       "english": "Georg von Rosenberg and Martin von Adelsheim establish a truce in Schrozberg between Konrad von Berlichingen and Eberhard von Schrozberg;\n\nseals: Georg von Rosenberg, Martin von Adelsheim and three seals without imprint.",
-      "mention": [
-        {
-          "person": "Konrad von Berlichingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "established a Burgfrieden at Schrozberg with Martin von Adelsheim between Konrad von Berlichingen and Eberhard von Schrozberg."
-        },
-        {
-          "person": "Martin von Adelsheim",
-          "type": "generic",
-          "content": "established a Burgfrieden at Schrozberg with Jörg von Rosenberg between Konrad von Berlichingen and Eberhard von Schrozberg."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "Martin von Adelsheim",
-          "type": "generic",
-          "content": "sealed the charter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000189473%2F03_0000189473_0001_3-189473-1.jpg",
@@ -56,6 +29,33 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "established a Burgfrieden at Schrozberg with Martin von Adelsheim between Konrad von Berlichingen and Eberhard von Schrozberg."
+    },
+    {
+      "person": "Martin von Adelsheim",
+      "type": "generic",
+      "content": "established a Burgfrieden at Schrozberg with Jörg von Rosenberg between Konrad von Berlichingen and Eberhard von Schrozberg."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "Martin von Adelsheim",
+      "type": "generic",
+      "content": "sealed the charter."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Berlichingen"
     }
   ]
 }

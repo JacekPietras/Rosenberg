@@ -6,21 +6,21 @@
       "source": "HStAD, B 8, 9/554",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=3784198",
       "german": "Johann Reichard Staudt, rosenbachischer Verwalter zu Lindheim, namens des Johann Hartmann v. Rosenbach, Dekan zu Würzburg (u. a.): Verkauf eines Weinbergs zu Mörlen, gelegen im Faulenstein, für 20 fl. an Johann Matheß, Johann Kirstein und Hans Pöppler, Einwohner zu Ober-Mörlen\n\nFormalbeschreibung: Abschr.\n\n(Vor-) Provenienzen: v. Rosenbach",
-      "english": "Johann Reichard Staudt, administrator of the Rosenbach estate at Lindheim, acting in the name of Hans Hartmann von Rosenberg, dean at Würzburg, among other capacities: sale of a vineyard at Mörlen, situated in Faulenstein, for 20 florins to Johann Matheß, Johann Kirstein and Hans Pöppler, residents of Ober-Mörlen\n\nFormal description: Copy\n\nPrevious provenance(s): von Rosenbach",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Domdekan"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "Johann Reichard Staudt, administrator of the Rosenbach estate at Lindheim, acting in the name of Hans Hartmann von Rosenberg, dean at Würzburg, among other capacities: sale of a vineyard at Mörlen, situated in Faulenstein, for 20 florins to Johann Matheß, Johann Kirstein and Hans Pöppler, residents of Ober-Mörlen\n\nFormal description: Copy\n\nPrevious provenance(s): von Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Domdekan"
       ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

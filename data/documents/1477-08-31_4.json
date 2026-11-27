@@ -7,51 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5403083",
       "german": "Georg (Jorg) von Tottenheim verzichtet auf jegliche Forderungen und Ansprüche, nachdem er seinen Teil des Schlosses Schüpf mit zugehöriger Nutzung von Erzbischof Dieter von Mainz, Kurfürst Philipp von der Pfalz und Bischof Rudolf von Würzburg zurückerhalten hat. Zuvor war besagtes Schloss in der Fehde von Erzbischof Adolf von Mainz, Kurfürst Friedrich I. von der Pfalz und Bischof Rudolf von Würzburg gegen Jörg, Arnold und Michael von Rosenberg gewonnen worden.\n\nLaufzeit: 1477 August 31 (uff sontag vor sant Egidien tag)\n\nSiegler: Georg (Jorg) von Tottenheim",
       "english": "Georg von Dottenheim renounces all claims and demands after he has regained his share of Schloss Schüpf with associated usage rights from Archbishop Dieter of Mainz, Elector Philipp of the Palatinate, and Rudolf zu Würzburg, Bischof. Previously, said castle had been captured in the feud of Archbishop Adolf of Mainz, Elector Friedrich I of the Palatinate, and Rudolf zu Würzburg, Bischof against Jörg, Arnold, and Michael von Rosenberg.\n\nTime span: August 31, 1477 (on Sunday before Saint Giles' Day)\n\nSealer: Georg von Dottenheim",
-      "mention": [
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "Bischof Rudolf",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "person": "Erzbischof Adolf",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Erzbischof Diether",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Michael von Rosenberg"
-        },
-        {
-          "place": "oberschuepf-castle"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Dottenheim",
-          "type": "generic",
-          "content": "renounced claims after his share of Schloss Schüpf, captured in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005403083%2F04_0005403083_0001_4-5403083-1.jpg"
@@ -60,6 +15,51 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005403083%2F04_0005403083_0002_4-5403083-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Dottenheim",
+      "type": "generic",
+      "content": "renounced claims after his share of Schloss Schüpf, captured in the feud against Georg, Arnold and Michael von Rosenberg, was restored by the princes of Mainz, the Palatinate and Würzburg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Arnold von Rosenberg"
+    },
+    {
+      "person": "Bischof Rudolf",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Erzbischof Adolf",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Erzbischof Diether",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Michael von Rosenberg"
+    },
+    {
+      "place": "oberschuepf-castle"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

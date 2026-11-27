@@ -10,17 +10,6 @@
       ],
       "german": "Eberhard Schenk von Roßberg und seine Ehefrau Walburga verkaufen Abt Gerhard [Klinkhart] und dem Konvent des Klosters St. Stephan in Würzburg Haus, Hofstatt und Garten in dem Dorf Veitshöchheim (Veiczhocheim). Die Güter besitzt derzeit Weiglein Effeltrech zu Erbrecht, der davon jährlich 1 rheinischen Gulden und 1 Fastnachtshuhn als Zins geben soll und das Haus in gutem Bauzustand zu halten hat. Außerdem verkaufen sie dem Kloster einen jährlichen Zins von 3 Würzburger Pfennigen von einem Weinberg in der Gemarkung Veitshöchheim und ein Seelein dort. Die Verkäufer haben dafür von den Käufern 21 rheinischen Gulden erhalten. Sie geben die Güter dem Kloster daher mit Hand und Halmen auf und übernehmen die Gewährleistung für den Verkauf.\nDer geben ist 1406 am freytag vor dem suntag Letare.\nAussteller:  Eberhard und Walburga Schenk von Roßberg\nEmpfänger:  Kloster St. Stephan\n\nVermerke: Rückvermerke:  Inhaltsangaben (15. u. 17./18. Jh.)\n\nSiegel:  S 1: Eberhard Schenk; an Pergamentstreifen anhängend, besch.\nS 2: Walburga Schenk; an Pergamentstreifen anhängend, leicht besch.\n\nBesiegelung/Beglaubigung: siehe Feld: Äußere Beschreibung",
       "english": "Eberhard Schenk von Roßberg and his wife Walburga sell to Abbot Gerhard [Klinkhart] and the convent of St. Stephan monastery in Würzburg a house, homestead, and garden in the village of Veitshöchheim. These properties are currently held by Weiglein Effeltrech by hereditary tenure; he is to pay annual rent of 1 Rhenish gulden and one Shrovetide capon and keep the house in good repair. They also sell the monastery an annual rent of 3 Würzburg pennies from a vineyard in the district of Veitshöchheim, as well as a small lake there. The sellers have received 21 Rhenish gulden from the buyers. They accordingly surrender the properties to the monastery by hand and straw and warrant the sale.\nIt was given in 1406 on the Friday before Laetare Sunday.\nGrantors: Eberhard and Walburga Schenk von Roßberg.\nRecipient: St. Stephan monastery.\n\nEndorsements: notes of contents (15th and 17th/18th centuries).\n\nSeals: S 1: Eberhard Schenk, attached to a parchment strip, damaged. S 2: Walburga Schenk, attached to a parchment strip, slightly damaged.\n\nSealing/authentication: see external description field.",
-      "mention": [
-        {
-          "person": "Eberhard Schenk"
-        },
-        {
-          "person": "Walpurga Schenk"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f8a36c05-202d-4a58-8e0d-652fd2b2842e/1/full/max/0/default.jpg"
@@ -29,6 +18,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/f8a36c05-202d-4a58-8e0d-652fd2b2842e/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard Schenk"
+    },
+    {
+      "person": "Walpurga Schenk"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -13,17 +13,6 @@
       ],
       "german": "Rudolf von Rosenberg von Berneck gelobt als Vogt von Margareta und Ursula von Rosenberg, dem Kloster St. Gallen mit der Burg Buchenstein zu warten.\n\nSiegel: 4 Siegel, 1. Abb. 633; 2. wie 4. in Nr. 5185; 3. abgeschliffen, Abb. 615; 4. wie in Nr. 5985.",
       "english": "Rudolf von Rosenberg von Berneck, as guardian of Margaretha von Rosenberg and Ursula von Rosenberg, promises to hold Buchenstein Castle at the disposal of St. Gallen Abbey.\n\nSeals: four seals, the first fig. 633; the second like the fourth in no. 5185; the third worn smooth, fig. 615; the fourth like that in no. 5985.",
-      "mention": [
-        {
-          "person": "Margaretha von Rosenberg"
-        },
-        {
-          "person": "Rudolf von Rosenberg"
-        },
-        {
-          "person": "Ursula von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/CH-StiASG/Urkunden/Chartularium_Siegel._%7EX._%7E615.jpg"
@@ -50,6 +39,17 @@
           "src": "https://images.monasterium.net/pics/903/K.._MOM-Bilddateien._%7EStiASG1jpgweb._%7EStiASG_13881112_Z5-C3_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Margaretha von Rosenberg"
+    },
+    {
+      "person": "Rudolf von Rosenberg"
+    },
+    {
+      "person": "Ursula von Rosenberg"
     }
   ]
 }

@@ -7,17 +7,17 @@
       "source": "RIplus Regg. Pfalzgrafen 1 n. 3388",
       "url": "https://www.regesta-imperii.de/id/f3ba1e14-6d23-4a92-9b8b-65525b34a633",
       "german": "gebietet allen seinen unterthanen in Bayern für seinen vetter Meinhard von Tirol, den befehlen Conrads von Rosenberg vitztums zu Amberg oder in dessen Verhinderung dem landschreiber gehorsam zu sein. Karlsr. Copb. 463,61 (durchstrichen).",
-      "english": "He orders all his subjects in Bavaria, on behalf of his cousin Meinhard von Tirol, to obey the commands of Konrad von Rosenberg, vitztum at Amberg, or, if Conrad is unavailable, the land scribe. Karlsruhe copybook 463, fol. 61 (crossed out).",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "person": "Konrad von Rosenberg",
-          "personTitle": [
-            "Vizedom"
-          ]
-        }
+      "english": "He orders all his subjects in Bavaria, on behalf of his cousin Meinhard von Tirol, to obey the commands of Konrad von Rosenberg, vitztum at Amberg, or, if Conrad is unavailable, the land scribe. Karlsruhe copybook 463, fol. 61 (crossed out)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "person": "Konrad von Rosenberg",
+      "personTitle": [
+        "Vizedom"
       ]
     }
   ]

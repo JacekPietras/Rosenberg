@@ -6,25 +6,25 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 188",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-98070",
       "german": "Rechtsstreit vor dem Reichskammergericht zwischen den Eigentumserben des verstorbenen Konrad von Rosenberg als Klägern und Albrecht Christoph von Rosenberg als Lehenserbe wegen einer der Pfarrei Waldmannshofen zustehenden Korngült von einem Gut zu Sechselbach.\n\nLaufzeit: (1400,1582-1590) 1591-1594",
-      "english": "Legal dispute before the Imperial Chamber Court between the property heirs of the deceased Konrad von Rosenberg as plaintiffs and Albrecht Christoph von Rosenberg as the inheritance heir, regarding a grain rent owed to the parish of Waldmannshofen from a property at Sechselbach.\n\nDuration: (1400, 1582-1590) 1591-1594",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "a grain rent owed to the parish of Waldmannshofen from an estate at Sechselbach",
-          "type": "generic",
-          "content": "was the subject of a dispute between the property heirs of the deceased Konrad von Rosenberg and Albrecht Christoph von Rosenberg as fief heir."
-        }
-      ]
+      "english": "Legal dispute before the Imperial Chamber Court between the property heirs of the deceased Konrad von Rosenberg as plaintiffs and Albrecht Christoph von Rosenberg as the inheritance heir, regarding a grain rent owed to the parish of Waldmannshofen from a property at Sechselbach.\n\nDuration: (1400, 1582-1590) 1591-1594"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "a grain rent owed to the parish of Waldmannshofen from an estate at Sechselbach",
+      "type": "generic",
+      "content": "was the subject of a dispute between the property heirs of the deceased Konrad von Rosenberg and Albrecht Christoph von Rosenberg as fief heir."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

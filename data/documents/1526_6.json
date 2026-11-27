@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ca9d9b6d-db49-462c-a076-d5bdbf021ef4&parent_id="
       ],
       "german": "Rothenburg an (Markgraf Casimir): Klage des Zeisolf von Rosenberg wegen der im Bauernkrieg erlittenen Schäden.",
-      "english": "Rothenburg to (Margrave Casimir): Complaint of Zaisolph von Rosenberg regarding the damages suffered during the Peasants' War.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "complained to Rothenburg about damages he suffered during the Peasants’ War."
-        }
-      ]
+      "english": "Rothenburg to (Margrave Casimir): Complaint of Zaisolph von Rosenberg regarding the damages suffered during the Peasants' War."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "complained to Rothenburg about damages he suffered during the Peasants’ War."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

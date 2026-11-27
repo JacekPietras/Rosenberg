@@ -6,31 +6,31 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Vertrag zwischen Albrecht von Rosenberg zu Boxberg als Erbherr zu Buch am Ahorn einerseits, Wolfgang von Hartheim, Daniel und Gottfried von Adelsheim als gemeine Dorfsherren zu Gerichtstetten andererseits über die Beilegung von Markungs- und Triebstreitigkeiten ihrer Untertanen zu Buch am Ahorn und Gerichtstetten",
-      "english": "Agreement between Albrecht von Rosenberg zu Boxberg as hereditary lord at Buch am Ahorn on one side, Wolfgang von Hartheim, Daniel and Gotfried von Adelsheim as common village lords at Gerichtstetten on the other side on settling boundary and driving disputes of their subjects at Buch am Ahorn and Gerichtstetten",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "place": "buch"
-        },
-        {
-          "person": "Gotfried von Adelsheim"
-        },
-        {
-          "person": "Wolfgang von Hartheim"
-        }
+      "english": "Agreement between Albrecht von Rosenberg zu Boxberg as hereditary lord at Buch am Ahorn on one side, Wolfgang von Hartheim, Daniel and Gotfried von Adelsheim as common village lords at Gerichtstetten on the other side on settling boundary and driving disputes of their subjects at Buch am Ahorn and Gerichtstetten"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
       ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "made an agreement with Wolfgang von Hartheim, Daniel von Adelsheim and Gottfried von Adelsheim to settle boundary and livestock-passage disputes between their subjects at Buch am Ahorn and Gerichtstetten."
-        }
-      ]
+      "type": "generic",
+      "content": "made an agreement with Wolfgang von Hartheim, Daniel von Adelsheim and Gottfried von Adelsheim to settle boundary and livestock-passage disputes between their subjects at Buch am Ahorn and Gerichtstetten."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "place": "buch"
+    },
+    {
+      "person": "Gotfried von Adelsheim"
+    },
+    {
+      "person": "Wolfgang von Hartheim"
     }
   ]
 }

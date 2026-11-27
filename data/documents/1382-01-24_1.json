@@ -6,27 +6,27 @@
       "source": "HHStA Wien (www.oesta.gv.at), 1382 I 24",
       "url": "https://www.monasterium.net/mom/OOEUB/1382_I_24/charter",
       "german": "König Wenzel entscheidet den Streit zwischen Herzog Albrecht von Österreich und Peter, Ulrich und Johann von Rosenberg und Heinrich von Neuhaus.",
-      "english": "King Wenceslaus settles the dispute between Duke Albrecht of Austria and Peter, Ulrich, and Hans von Rosenberg and Heinrich von Neuhaus.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Neuhaus"
-        },
-        {
-          "person": "König Wenceslaus",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "King Wenceslaus settles the dispute between Duke Albrecht of Austria and Peter, Ulrich, and Hans von Rosenberg and Heinrich von Neuhaus."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Heinrich von Neuhaus"
+    },
+    {
+      "person": "König Wenceslaus",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

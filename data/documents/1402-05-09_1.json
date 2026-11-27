@@ -9,22 +9,7 @@
         "https://www.digitale-sammlungen.de/en/view/bsb10001855"
       ],
       "german": "König Rupertus weiset die Stadt Schweinfurt an, die nächste Jahressteuer dem Arnolt von Rosenberg zu geben. C.",
-      "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C.",
-      "mention": [
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "type": "generic",
-          "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax."
-        }
-      ]
+      "english": "King Ruprecht instructs the city of Schweinfurt to give the next annual tax to Arnold von Rosenberg. C."
     },
     {
       "source": [
@@ -37,21 +22,28 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1402 Mai 9, Amberg. König Ruprecht befiehlt der Stadt Schweinfurt, die nächste fällige Reichssteuer Arnolt von Rosenberg zu geben.",
-      "english": "1402 May 9, Amberg. King Rupert orders the city of Schweinfurt to pay the next imperial tax due to Arnold von Rosenberg.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "person": "Arnold von Rosenberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "1402 May 9, Amberg. King Rupert orders the city of Schweinfurt to pay the next imperial tax due to Arnold von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "type": "generic",
+      "content": "was designated by King Ruprecht to receive Schweinfurt’s next annual tax."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "amberg"
+    },
+    {
+      "person": "Arnold von Rosenberg"
     }
   ]
 }

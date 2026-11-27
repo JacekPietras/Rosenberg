@@ -9,24 +9,24 @@
         "https://api.pageplace.de/preview/DT0400.9783503188321_A41274912/preview-9783503188321_A41274912.pdf"
       ],
       "german": "Kläger: Dalberg, Friedrich von; Hentschuchsheim, Christoph von; Katzenelnbogen, Philipp Knebel von\n\nGesuch um Privilegierung mit Halsgerichtsbarkeit im Dorf Gerolsheim.\n\nAntragsteller erklären, sie hätten von Balthasar von Rosenberg das im Bistum Worms gelegene Dorf Gerolsheim geerbt. Von den Ältesten des Dorfes sei ihnen berichtet worden, dass sich früher an der Straße nach Lambsheim eine Richtstätte befunden habe, an die der Flurname „Halsgerichtsacker“ erinnere. Antragsteller bitten den Kaiser, sie mit der unter den Rosenbergern in Abgang geratenen Halsgerichtsbarkeit zu privilegieren.",
-      "english": "Petitioners: Friedrich von Dalberg, Christoph von Handschuhsheim, and Philipp Knebel von Katzenelnbogen.\n\nPetition for a grant of high criminal jurisdiction in the village of Gerolsheim.\n\nThe petitioners state that they inherited the village of Gerolsheim in the diocese of Worms from Balthasar von Rosenberg. The village elders told them that an execution site had formerly stood on the road to Lambsheim, recalled by the field name Halsgerichtsacker. The petitioners ask the emperor to grant them the high criminal jurisdiction that had fallen into disuse under the Rosenbergs.",
-      "mention": [
-        {
-          "person": "Balthasar von Rosenberg"
-        },
-        {
-          "person": "Christoph von Handschuhsheim"
-        },
-        {
-          "place": "katzenelnbogen"
-        },
-        {
-          "place": "lambsheim"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Petitioners: Friedrich von Dalberg, Christoph von Handschuhsheim, and Philipp Knebel von Katzenelnbogen.\n\nPetition for a grant of high criminal jurisdiction in the village of Gerolsheim.\n\nThe petitioners state that they inherited the village of Gerolsheim in the diocese of Worms from Balthasar von Rosenberg. The village elders told them that an execution site had formerly stood on the road to Lambsheim, recalled by the field name Halsgerichtsacker. The petitioners ask the emperor to grant them the high criminal jurisdiction that had fallen into disuse under the Rosenbergs."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Balthasar von Rosenberg"
+    },
+    {
+      "person": "Christoph von Handschuhsheim"
+    },
+    {
+      "place": "katzenelnbogen"
+    },
+    {
+      "place": "lambsheim"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

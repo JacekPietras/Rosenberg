@@ -15,14 +15,6 @@
       ],
       "german": "Der Abt des Klosters St. Stephan in Würzburg Konrad [Herloch] bekennt: Der Abt des Klosters Michelfeld Friedrich [Trautenberger] hat von Prior und Konvent der Kartause in Astheim deren Zehnten, Güter und Einkünfte in Dorf und Gemarkung Hoheim bei Kitzingen auf Wiederkauf erworben. Käufer und Verkäufer haben ihn nun gebeten, in der Urkunde aufgelistete Schriftstücke über den verkauften Besitz im Kloster St. Stephan bis zum Ablauf der Gewährleistungsfrist hinterlegen zu dürfen. Der Abt erklärt sich dazu bereit. Nach Ablauf der Gewährleistungsfrist soll er diese dem Abt des Klosters Michelfeld übergeben. Macht dagegen die Kartause Astheim von ihrem Wiederkaufsrecht Gebrauch, dann soll er die Schriftstücke der Kartause zurückgeben.\nGescheen am montag nach dem suntag Letare 1504.\n\nAussteller: Abt des Klosters St. Stephan\n\nEmpfänger: Kloster Michelfeld und Kartause Astheim\n\nVermerke: Rückvermerke:  Inhaltsangabe (16. Jh.); idem tenor (16. Jh.)\n\nBesiegelung/Beglaubigung: Kloster St. Stephan, Abt; an Pergamentstreifen anhängend, leicht besch.\n\nBesiegelung/Beglaubigung: Kloster St. Stephan, Abt; an Pergamentstreifen anhängend, gebrochen aber gut erhalten",
       "english": "Konrad [Herloch], Abbot of St Stephen's monastery in Würzburg, certifies: Friedrich [Trautenberger], Abbot of Michelfeld monastery, acquired for repurchase from the prior and convent of the Carthusian house at Astheim their tithes, properties, and revenues in the village and district of Hoheim near Kitzingen. Buyer and seller have now asked him to deposit at St Stephen's monastery, until the warranty period expires, the documents listed in the charter concerning the property sold. The abbot agrees. Once the warranty period has expired, he is to deliver the documents to the Abbot of Michelfeld. If the Carthusian house at Astheim exercises its right of repurchase, he is to return the documents to the Carthusian house. Done on Monday after Laetare Sunday, 1504.\n\nIssuer: Abbot of St Stephen's monastery.\nRecipients: Michelfeld monastery and Astheim Carthusian house.\n\nNotes on the reverse: abstract (sixteenth century); same wording (sixteenth century).\n\nSealing/authentication: Abbot of St Stephen's monastery; attached to a parchment strip, slightly damaged.\n\nSealing/authentication: Abbot of St Stephen's monastery; attached to a parchment strip, broken but well preserved.",
-      "mention": [
-        {
-          "place": "michelfeld"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/6e804af8-439d-4ba6-9e7e-b855ca4afe61/1/full/max/0/default.jpg"
@@ -37,6 +29,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/998ea591-9d43-445f-889a-6cabd55a68a1/2/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "michelfeld"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

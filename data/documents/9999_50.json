@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++08af2d84-dcbe-4437-aa11-0bd8174e28c5&parent_id="
       ],
       "german": "Rothenburg im Streit mit Zaisolph von Rosenberg (Verfahrensfragen).",
-      "english": "Rothenburg in dispute with Zaisolph von Rosenberg (procedural matters).",
-      "mention": [
-        {
-          "place": "rothenburg"
-        },
-        {
-          "person": "Zaisolph von Rosenberg"
-        }
-      ]
+      "english": "Rothenburg in dispute with Zaisolph von Rosenberg (procedural matters)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
+    },
+    {
+      "person": "Zaisolph von Rosenberg"
     }
   ]
 }

@@ -9,21 +9,21 @@
         "https://www.monasterium.net/mom/CZ-NA/AZK/1528_X_08/charter"
       ],
       "german": "Adam von Neuhaus oberster Kanzler in Böhmen überlässt die ihm vom Könige Ludwig eingeräumten Rechte auf die Goldenkroner Klostergüter den Gebrüdern Johann, Jodok und Peter von Rosenberg.",
-      "english": "Adam von Neuhaus, oberster Kanzler in Böhmen, transfers to the brothers Johann, Jodok, and Peter von Rosenberg the rights over the Goldenkron Monastery estates that King Ludwig had granted to him.",
-      "mention": [
-        {
-          "person": "Adam von Neuhaus"
-        },
-        {
-          "person": "König Ludwig",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
+      "english": "Adam von Neuhaus, oberster Kanzler in Böhmen, transfers to the brothers Johann, Jodok, and Peter von Rosenberg the rights over the Goldenkron Monastery estates that King Ludwig had granted to him."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Adam von Neuhaus"
+    },
+    {
+      "person": "König Ludwig",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

@@ -10,28 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1724360",
       "german": "Bürgermeister und Rat der Reichsstadt Rothenburg ob der Tauber vidimieren auf Ansuchen des Deutsch-Ordens-Komturs zu Mergentheim, Wolfgang von Bibra, eine Urkunde von 1516 April 7 über die Streitigkeiten des Hauses Mergentheim mit den Gebrüdern von Rosenberg.\n\nLaufzeit: 1528 Oktober 9 (1528 Freitag, Dionysius)\n\nSiegelbeschreibung: Mit Siegel",
       "english": "At the request of the Order of the German Order of Mergentheim, Wolfgang von Bibra, the mayor and the council of the imperial city of Rothenburg ob der Tauber provide a document from 1516 April 7 on the disputes of the House of Mergentheim with the brothers von Rosenberg.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Wolfgang von Bibra",
-          "personTitle": [
-            "Deutsch-Ordens-Komtur zu Mergentheim"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Wolfgang von Bibra",
-          "type": "generic",
-          "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724360%2F04_0001724360_0001_4-1724360-1.jpg"
@@ -45,6 +23,28 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Wolfgang von Bibra",
+      "personTitle": [
+        "Deutsch-Ordens-Komtur zu Mergentheim"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Wolfgang von Bibra",
+      "type": "generic",
+      "content": "requested that Rothenburg’s mayor and council authenticate the charter of 7 April 1516 concerning disputes between the House of Mergentheim and the Rosenberg brothers."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

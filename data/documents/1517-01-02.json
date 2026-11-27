@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-AVBautzen/Urkunden/1232/charter",
       "german": "Peter von Rosenberg (Peter Herr von Rosenbergk) auf Böhmisch Krumau (Crummaue), Zdenko Lew von Rozmital auf Blatna (Zdenko Lew Herr von Rosenthal), Oberster Burggraf zu Prag, Ladislaus von Sternberg (Ladislaus Herr von Sternbergk), Oberster Kanzler des Königsreichs Böhmen, teilen dem Bürgermeister und dem Rat zu Bautzen mit, dass Albrecht von Sternberg (Albrecht Herr von Sternbergk) auf Grünberg (Grunnpergk) sein Amt als Landvogt der Oberlausitz niedergelegt und Ludwig II. König von Böhmen und Ungarn Wilhelm von Eilenburg (Wilhelm Herrn von Eilenburgk) auf Rohnau (Ronaw) zum neuen Landvogt ernannt hat, wozu die Herren und Ritterschaft des Königreichs Böhmen ihre Zustimmung geben, und verlangen Gehorsam gegenüber dem neuen Landvogt.\n\nSiegel: 3 Drucksiegel auf der Rückseite, verbunden mit einem Papierstreifen, der mittels zweiter Einschnitte mit dem Papierbogen verbunden ist, darauf ein breiter Papierstreifen",
       "english": "Peter von Rosenberg, Herr zu Böhmisch Krumau; Zdenko Lew von Rozmital zu Blatna, chief burgrave of Prague; and Ladislaus von Sternberg, chief chancellor of the Kingdom of Bohemia, inform the mayor and council of Bautzen that Albrecht von Sternberg zu Grünberg has resigned his office as provincial governor of Upper Lusatia, and that Ludwig II, King of Bohemia and Hungary, has appointed Wilhelm von Eilenburg zu Rohnau as the new governor. The lords and knights of the Kingdom of Bohemia have consented to this appointment. They demand obedience to the new governor.\n\nSeals: Three impressed seals on the reverse, connected by a paper strip attached to the sheet by two slits; a broad paper strip is on top.",
-      "mention": [
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1232_1517-01-02_1-orig_c_1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/DE-SABautzen/Urkunden/1232_1517-01-02_1-orig_c_2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

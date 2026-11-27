@@ -13,43 +13,43 @@
         "https://www.regesta-imperii.de/id/c78e5253-f599-4fdd-afbb-418a6960d8e9"
       ],
       "german": "Ruprecht bewilligt Else von Erlikeim, wittwe Eberhards von Rosenberg, die Stiftung einer ewigen messe mit zum schlosse Bocksberg gehörigen gütern für den frauenaltar zu Wolching.",
-      "english": "Ruprecht granted Elisabeth von Erligheim, widow of Eberhard von Rosenberg, granted the foundation of a perpetual fair with property belonging to Boxberg Castle for the women's altar in Wölchingen.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "wolchingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "vogt_zu_Lauda",
-          "personDeceased": true,
-          "type": "spouse",
-          "of": "Elisabeth von Erligheim"
-        },
-        {
-          "person": "vogt_zu_Lauda",
-          "type": "death",
-          "diedBefore": "1393-06-24"
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "generic",
-          "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
-        },
-        {
-          "person": "Elisabeth von Erligheim",
-          "type": "generic",
-          "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
-        },
-        {
-          "person": "Ruprecht",
-          "type": "generic",
-          "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle."
-        }
-      ]
+      "english": "Ruprecht granted Elisabeth von Erligheim, widow of Eberhard von Rosenberg, granted the foundation of a perpetual fair with property belonging to Boxberg Castle for the women's altar in Wölchingen."
+    }
+  ],
+  "facts": [
+    {
+      "person": "vogt_zu_Lauda",
+      "personDeceased": true,
+      "type": "spouse",
+      "of": "Elisabeth von Erligheim"
+    },
+    {
+      "person": "vogt_zu_Lauda",
+      "type": "death",
+      "diedBefore": "1393-06-24"
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "generic",
+      "content": "was authorized by Ruprecht to endow a perpetual Mass at the women’s altar in Wölchingen."
+    },
+    {
+      "person": "Elisabeth von Erligheim",
+      "type": "generic",
+      "content": "was authorized to fund the endowment with properties belonging to Boxberg Castle."
+    },
+    {
+      "person": "Ruprecht",
+      "type": "generic",
+      "content": "authorized Elisabeth von Erligheim to endow a perpetual Mass at the women’s altar in Wölchingen with properties belonging to Boxberg Castle."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "wolchingen"
     }
   ]
 }

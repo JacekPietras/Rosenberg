@@ -9,26 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B3E9D55F-2698-4D6B-A359-10C8B9EF3753&parent_id="
       ],
       "german": "Aussteller:  Ludwig Mönch von Rosenberg und seine Ehefrau Agnes\nEmpfänger:  Kloster Seligental\nRegestierung:  Der Ritter Ludwig Mönch von Rosenberg und seine Ehefrau Agnes schenken mit Zustimmung ihrer Söhne Konrad und Ludwig Äbtissin und Konvent des Klosters Seligental ihren Hof in Seckach (\"Segka\") mit allen Zugehörungen zu einem Seelgerät.",
-      "english": "Issuer:  Ludwig Monk von Rosenberg and his wife Agnes\nRecipient:  Seligental Monastery\nRegesta:  The knight Ludwig Monk von Rosenberg and his wife Agnes, with the consent of their sons Konrad and Ludwig, donate to the abbess and convent of Seligental Monastery their estate in Seckach (\"Segka\") with all appurtenances for a memorial mass.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Issuer:  Ludwig Monk von Rosenberg and his wife Agnes\nRecipient:  Seligental Monastery\nRegesta:  The knight Ludwig Monk von Rosenberg and his wife Agnes, with the consent of their sons Konrad and Ludwig, donate to the abbess and convent of Seligental Monastery their estate in Seckach (\"Segka\") with all appurtenances for a memorial mass."
     },
     {
       "source": "Regesta Boica 5",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798268",
       "latin": "udovicus miles dictus Münch de Rosenberg et conthoralis sua Agnes monasterio in Seli-\n15. Juli. genthal curiam in Segka donant. Sigillatores: Ludovicus Münch dictus de Rosenberg, Wiper-\ntus de Rudenowe, et Cunradus de Nidenowe, milites. (c. 3. Sig.)",
-      "english": "Ludwig, a Ritter called Münch von Rosenberg, and his wife Agnes donate an estate at Seckach to Seligental Monastery. Sealers: Ludwig Münch, called von Rosenberg; Wipert von Rudenowe; and Konrad von Nidenowe, all Ritter. With three seals.",
-      "mention": [
-        {
-          "person": "Ludwig Mönch"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Ludwig, a Ritter called Münch von Rosenberg, and his wife Agnes donate an estate at Seckach to Seligental Monastery. Sealers: Ludwig Münch, called von Rosenberg; Wipert von Rudenowe; and Konrad von Nidenowe, all Ritter. With three seals."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ludwig Mönch"
     }
   ]
 }

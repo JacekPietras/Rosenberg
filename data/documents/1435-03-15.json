@@ -10,14 +10,6 @@
       ],
       "german": "Paulus Holczschuher, Bürger zu Nürnberg, überlässt dem Alten Spital zu Nürnberg (Spitalmeister: Paulus v. Ussigheim) genannte Gülten (Inhaber: der Pleyen) auf der Furreut zu Roetenbach (Inhaber: Contz Sneyder, Cristan Wuerffel) und zwei Gütlein (Inhaber: Puntaner, Heincz Hickel) zu Steynpuehel tauschweise für zwei Gütlein () zu Vischbach. - Siegel: Aussteller und seine Brüder Karll und Berchtold die Holczschuher.",
       "english": "Paulus Holczschuher, citizen of Nuremberg, transfers to the Old Hospital in Nuremberg (Pauls von Uissigheim, Spitalmeister), in exchange, the specified rents on the Furreut at Roetenbach (held by Contz Sneyder and Cristan Wuerffel) and two small holdings at Steynpuehel (held by Puntaner and Heincz Hickel), in return for two small holdings at Vischbach. Seals: the issuer and his brothers Karll and Berchtold die Holczschuher.",
-      "mention": [
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Pauls von Uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/987ae8bf-217c-4802-aa14-09bc3455407d/1/full/max/0/default.jpg"
@@ -29,6 +21,14 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/987ae8bf-217c-4802-aa14-09bc3455407d/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "nuremberg"
+    },
+    {
+      "person": "Pauls von Uissigheim"
     }
   ]
 }

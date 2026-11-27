@@ -7,24 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-DOZA/Urkunden/3165/charter",
       "german": "Kunz v. Rosenberg der Jüngere zu Bartenstein, Kunz v. Ochsenfurt, Rudeger Suczel, Hans v. Dettenheim, Dietrich Geyer und Hartrecht, Truchseß, bürgen dem Deutschmeister Eberhard v. Saunsheim für Reinhard v. Ossiken über 2.800 fl für Schloß Zimmern.\n\nSiegel: 7 Siegel der Aussteller an Perg.-Streifen, 4. fehlt.",
       "english": "Kunz von Rosenberg der Jüngere zu Bartenstein, Kunz von Ochsenfurt, Rudeger Suczel, Hans von Dettenheim, Dietrich Geyer, and Hartrecht Truchseß stand surety to the Teutonic Order's Grand Master Eberhard von Seinsheim for Reinhard von Ossiken for 2,800 florins for Zimmern Castle.\n\nSeals: Seven seals of the issuers on parchment strips; the fourth is missing.",
-      "mention": [
-        {
-          "person": "Dietrich Geyer"
-        },
-        {
-          "person": "Eberhard von Seinsheim"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "der Jüngere",
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "zimmern"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14240425_r.jpg"
@@ -33,6 +15,24 @@
           "src": "https://images.monasterium.net/pics/AT-DOZA/Urkunden/DOZA-Urkunden_14240425_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Dietrich Geyer"
+    },
+    {
+      "person": "Eberhard von Seinsheim"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "der Jüngere",
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "zimmern"
     }
   ]
 }

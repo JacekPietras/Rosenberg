@@ -9,24 +9,24 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++31114929-a94e-4441-af7c-8810f75f3d29&parent_id="
       ],
       "german": "Reversbrief des Albrecht Christoph von Rosenberg als Lehenträger der beiden Brüder Georg Albrecht und Philipp Ludwig von Seckendorff (\"Seckendorf\") Aberdar zu Sugenheim über verschiedene Lehenstücke und Güter zu Ezelheim (\"Etzelheim\").",
-      "english": "Acknowledgment by Albrecht Christoph von Rosenberg, acting as feudal representative for the two brothers Georg Albrecht and Philipp Ludwig von Seckendorf (‘Seckendorf’) Aberdar of Sugenheim, concerning various fief properties and estates at Ezelheim (‘Etzelheim’).",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "person": "Georg Albrecht von Seckendorf"
-        },
-        {
-          "person": "Philipp Ludwig von Seckendorf"
-        },
-        {
-          "place": "seckendorff"
-        },
-        {
-          "place": "sugenheim-st-erhard"
-        }
-      ]
+      "english": "Acknowledgment by Albrecht Christoph von Rosenberg, acting as feudal representative for the two brothers Georg Albrecht and Philipp Ludwig von Seckendorf (‘Seckendorf’) Aberdar of Sugenheim, concerning various fief properties and estates at Ezelheim (‘Etzelheim’)."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "person": "Georg Albrecht von Seckendorf"
+    },
+    {
+      "person": "Philipp Ludwig von Seckendorf"
+    },
+    {
+      "place": "seckendorff"
+    },
+    {
+      "place": "sugenheim-st-erhard"
     }
   ]
 }

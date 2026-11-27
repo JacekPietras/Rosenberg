@@ -6,24 +6,24 @@
       "source": "OÖUB 9 (Wien 1906), S. 817-818, 1380 III 11",
       "url": "https://www.monasterium.net/mom/OOEUB/1380_III_11/charter",
       "german": "Die Brüder Ulrich, Peter und Johann von Rosenberg und Ulrichs Sohn, Heinrich, geben dem Grafen Heinrich von Schaunberg ein Zertifikat über die ihnen vom letzteren zur Sicherung des Heiratsgutes versetzte Stadt Eferding und die Zurücklösung derselben.",
-      "english": "The brothers Ulrich, Peter, and Hans von Rosenberg, and Ulrich’s son Heinrich, give Count Heinrich von Schaunberg a certificate concerning the town of Eferding, which the latter pledged to them as security for the marriage portion, and its redemption.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Schaunberg",
-          "personTitle": [
-            "Graf von Schaunberg"
-          ]
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
+      "english": "The brothers Ulrich, Peter, and Hans von Rosenberg, and Ulrich’s son Heinrich, give Count Heinrich von Schaunberg a certificate concerning the town of Eferding, which the latter pledged to them as security for the marriage portion, and its redemption."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Heinrich von Schaunberg",
+      "personTitle": [
+        "Graf von Schaunberg"
       ]
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++b5ac344c-1c60-4e10-ba2c-b07af20372f5&parent_id="
       ],
       "german": "Lehengegenbrief des Rudolf von Hürnheym (zugleich namens seiner Brüder) über 4 Höfe und 2 Sölden zu Oberried bei Uttenhoven in der Seglau bei der Schwarzach.\nLehenherr: Herzog Wilhelm IV.\nVorbesitzer: Cauntz und Philipps von Rosenberg",
-      "english": "Counter-document of enfeoffment by Rudolf von Hürnheym (simultaneously on behalf of his brothers) concerning four farms and two smallholdings at Oberried near Uttenhoven in the Seglau near the Schwarzach.\nLord enfeoffing: Duke Wilhelm IV.\nPrevious holders: Kunz von Rosenberg and Philipp von Rosenberg",
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
-        },
-        {
-          "person": "Philipp von Rosenberg",
-          "type": "generic",
-          "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
-        }
-      ]
+      "english": "Counter-document of enfeoffment by Rudolf von Hürnheym (simultaneously on behalf of his brothers) concerning four farms and two smallholdings at Oberried near Uttenhoven in the Seglau near the Schwarzach.\nLord enfeoffing: Duke Wilhelm IV.\nPrevious holders: Kunz von Rosenberg and Philipp von Rosenberg"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
+    },
+    {
+      "person": "Philipp von Rosenberg",
+      "type": "generic",
+      "content": "had previously held the four farms and two smallholdings at Oberried near Uttenhoven."
     }
   ]
 }

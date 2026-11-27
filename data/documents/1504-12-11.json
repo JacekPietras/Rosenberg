@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5523899",
       "german": "Kurfürst Philipp von der Pfalz stellt seinem Münzmeister Martin Lerch ein Haus zu, das in Heidelberg bei den Barfüßern liegt. Dieses hatte der Pfalzgraf dem Hans von Rosenberg, Münzmeister des Markgrafen Christoph von Brandenburg [s. Bemerkung], aufgrund der Fehde mit dem Markgrafen abgenommen. Martin hatte auf das kleine Häuslein etliches Geld verliehen, das ihm noch nicht zurückgezahlt wurde. Daher hat Philipp ihm nun das Häuslein zwischen dem großen Haus des markgräflichen Münzmeisters und dem Haus von Hans Kern für das geliehene Geld mitsamt Gerechtigkeit zugestellt. Sollten auf dem Häuslein etwas geliehen oder zinsbar sein, soll Martin dies ausrichten und sich mit dem Pfalzgrafen um etwaige Schuldenreste vertraglich einigen.\n\nLaufzeit: 1504 Dezember 11 (ufft mitwoch nach conceptionis Marie)\n\nSiegler: Kurfürst Philipp von der Pfalz (aufgedrücktes Sekretsiegel)",
       "english": "Elector Philipp of the Palatinate assigns his mint master Martin Lerch a house located in Heidelberg near the Barfüßers church. The Count Palatine had previously seized this house from Hans von Rosenberg, mint master to Margrave Christoph of Brandenburg [see note], due to the feud with the Margrave. Martin had lent considerable sums on the small house that had not yet been repaid. Therefore, Philipp now assigns the small house—situated between the large house of the margravial mint master and the house of Hans Kern—to Martin as security for the outstanding loan, along with all associated rights. If anything is owed or subject to interest on the small house, Martin shall settle those obligations and negotiate with the Count Palatine regarding any remaining debts.\n\nDuration: December 11, 1504 (Wednesday after the Conception of Mary)\n\nSeal: Elector Philipp of the Palatinate (impressed secret seal)",
-      "mention": [
-        {
-          "place": "heidelberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "had a house in Heidelberg taken from him by Philipp, Kurfürst von der Pfalz."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "served as Münzmeister of Christoph, Markgraf von Brandenburg."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005523899%2F04_0005523899_0001_4-5523899-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1309&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001309%2Ftitlaufn_0005523899%2F04_0005523899_0002_4-5523899-2.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "had a house in Heidelberg taken from him by Philipp, Kurfürst von der Pfalz."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "served as Münzmeister of Christoph, Markgraf von Brandenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "heidelberg"
     }
   ]
 }

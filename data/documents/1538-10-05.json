@@ -10,11 +10,6 @@
       ],
       "german": "Der Aussteller bekennt, dass er den beiden Empfängern wegen eines Gutes in Waigolshausen genannt das Lorenzengut zins- und handlohnpflichtig ist.\nAussteller:  Jakob Berin, gesessen zu Waigolshausen\nEmpfänger:  Friedrich Zint, bischöflicher Stebler, bzw. Jakob Hack von Sul, Kanoniker im Stift Neumünster\n\nVermerke: Rückvermerke:  B; procuracey lad. 38 leuchtenambt güldt- vndt zinßbrieff N° 7 [Standbuch 207, S. 488]; capsel 9; reg. in tom. 4 copiarum fol. 96.\n\nBesiegelung/Beglaubigung: Christoph Schenk, unbesch.",
       "english": "The grantor acknowledges that he is liable to the two recipients for rent and hand-payment in respect of an estate in Waigolshausen called the Lorenz estate.\nGrantor: Jakob Berin, residing at Waigolshausen\nRecipients: Friedrich Zint, episcopal steward, and/or Jakob Hack von Sul, canon of the collegiate church of Neumünster\n\nNotes: endorsements: B; procuracy, shelf 38, Leuchtenamt tax and rent charters No. 7 [Standbuch 207, p. 488]; box 9; register in copybook vol. 4, fol. 96.\n\nSealing/authentication: Christoph Schenk, intact.",
-      "mention": [
-        {
-          "person": "Christoph Schenk"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/19bd7390-2637-4f3e-b3ff-d36bdc4bbf80/1/full/max/0/default.jpg"
@@ -26,6 +21,11 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/19bd7390-2637-4f3e-b3ff-d36bdc4bbf80/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph Schenk"
     }
   ]
 }

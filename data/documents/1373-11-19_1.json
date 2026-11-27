@@ -7,19 +7,19 @@
       "url": "https://www.monasterium.net/mom/AT-StiAK/KlosterneuburgCanReg/1373_XI_19/charter",
       "summary": "Agnes von Rosenberg befiehlt ihren Unterthanen zu Krizendorf, den stiftlichen Zehentnern freien Eingang in die Keller zu gestatten.",
       "german": "Wier Agnes von Rosemberch enpieten den erbern vnsern getrewen hansen dem vinczler vnd der gemain vnser holden dacz dem Obern Chriczendorf vnser genad vnd vnsern gruss. wir enphelhen vnd gepieten euch allen gemeinleich mit ernst, vnd wellen, daz ir den erbern vnd dimitigen herren oder iren zehenten des Chlosters von Newnburch alle iar in dem lesen all ewer cheller vnd ander ewer gadem, do wein inn leit, auf sliesset vnd auftuet, daz si die beschawen dar vmb, daz si von euch vnd von andern gesten, di ze euch wein in legen, iren zehent dester paz vnd recht mugen geuarden, vnd auch meinen, waer aber daz, daz es andern herren huelden recht do Chriczendorf oder anderswo nicht were, oder auch von\nalter nicht ein recht gewesen wer, sv main wir euch mit dem enpieten vnd auch mit dem prief in diser sach nicht beswaren, vnd der sach ze einem waren vrchvnd haben wir vnser Insigel angedrucht ze disem prief. Geben ze Chrumpnaw Anno Domini Millesimo CCC° LXXIII° die beate Elysabeth.\n\nSource Fulltext: ZEIBIG, Klosterneuburg (=FRA II/10, Wien 1857) S. 454",
-      "english": "We, Agnes von Rosenberg, send our favor and greetings to the honorable Hans der Vintzler, our faithful servant, and to the community of all our tenants at Obern Kritzendorf. We earnestly command and order you all together, and require that each year during the grape harvest you open and unlock all your cellars and other chambers in which wine is stored for the honorable and devout lords, or their tithe collectors, of the monastery of Neuburg, so that they may inspect them and thereby more properly and justly collect their tithe from you and from other guests who store wine with you. However, if other lords’ tenants at Kritzendorf or elsewhere do not have this right, or if it has not been a right from of old, we do not intend to burden you in this matter by this command or by this letter. As true evidence of the matter, we have affixed our seal to this letter. Given at Český Krumlov in the year of Our Lord 1373, on the day of blessed Elizabeth.",
-      "mention": [
-        {
-          "place": "neuburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Agnes von Rosenberg",
-          "type": "generic",
-          "content": "ordered her subjects at Krizendorf to admit the chapter's tithe collectors freely to the cellars."
-        }
-      ]
+      "english": "We, Agnes von Rosenberg, send our favor and greetings to the honorable Hans der Vintzler, our faithful servant, and to the community of all our tenants at Obern Kritzendorf. We earnestly command and order you all together, and require that each year during the grape harvest you open and unlock all your cellars and other chambers in which wine is stored for the honorable and devout lords, or their tithe collectors, of the monastery of Neuburg, so that they may inspect them and thereby more properly and justly collect their tithe from you and from other guests who store wine with you. However, if other lords’ tenants at Kritzendorf or elsewhere do not have this right, or if it has not been a right from of old, we do not intend to burden you in this matter by this command or by this letter. As true evidence of the matter, we have affixed our seal to this letter. Given at Český Krumlov in the year of Our Lord 1373, on the day of blessed Elizabeth."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Agnes von Rosenberg",
+      "type": "generic",
+      "content": "ordered her subjects at Krizendorf to admit the chapter's tithe collectors freely to the cellars."
+    }
+  ],
+  "mention": [
+    {
+      "place": "neuburg"
     }
   ]
 }

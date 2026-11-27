@@ -7,18 +7,18 @@
       "source": "[RI XIII] H. 19 n. 94",
       "url": "https://www.regesta-imperii.de/id/1451-01-00_2_0_13_19_0_94_94",
       "german": "Kg. F. fordert Alesch von Sternberg auf, das in dessen Auseinandersetzung mit Bürgermeistern und Rat der Stadt Nürnberg wegen der Nürnberger Bürgerin Margarete Vogel auf ihn (Kg.) lautende Rechtserbieten der Nürnberger anzunehmen.",
-      "english": "King Frederick asks Alesch von Sternberg to accept the legal offer made by the people of Nuremberg, addressed to the king, in his dispute with the city's mayor and council concerning the Nuremberg citizen Margarete Vogel.",
-      "mention": [
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "King Frederick asks Alesch von Sternberg to accept the legal offer made by the people of Nuremberg, addressed to the king, in his dispute with the city's mayor and council concerning the Nuremberg citizen Margarete Vogel."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

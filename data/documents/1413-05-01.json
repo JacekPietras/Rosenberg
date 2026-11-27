@@ -6,53 +6,53 @@
       "source": "Staatsarchiv Ludwigsburg B 474 S U 87",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-2098397",
       "german": "Johann [II.], Erzbischof von Mainz, bekundet, dass sein verstorbener Amtsvorgänger Konrad die Mainzer Teile von Magenheim (Mogenheim), Cleebronn (Cleeborn) und Rauhenklingen (Ruwenclyngen) mit ihrem Zubehör sowie jährlich 40 Gulden aus den Mainzer Einkünften zu Bönnigheim (Bunnickeyn) an die Ritter Dieter von Gemmingen, Hans von Hirschhorn (Hirßhorn), Eberhard von Neipperg (Nypperg), an die Brüder Kunz und Dieter Münch von Rosenberg und an Reinhard von Sickingen d.J. für 800 Gulden verpfändet hat. Mit Zustimmung des Dechanten Eberhard und des Kapitels des Domstifts Mainz überträgt er nun diese Pfandschaft mit allen Gefällen an Ludwig von Sickingen, der sie mit 800 Gulden von den genannten Pfandinhabern ausgelöst hat; Erzbischof Johann behält sich das Recht zur jederzeitigen Auslösung des Pfandes am St. Georgstag in Heilbronn nach vierteljährlicher Kündigung vor und verpflichtet sich, dabei eine etwa für den Bau aufgewandte Summe von 100 Gulden mit zu bezahlen und rechte Gewährschaft zu leisten.\n\nLaufzeit: 1413 Mai 1 (Philipp und Jakob Apostolorum)\n\nSiegler: Johann [II.], Erzbischof von Mainz mit dem großen S.; Eberhard, Dechant; Kapitel des Mainzer Dom mit dem KapitelsS.",
-      "english": "Johann [II.], Erzbischof von Mainz, declares that his deceased predecessor in office, Konrad, had pledged the Mainz portions of Magenheim, Cleebronn, and Rauhenklingen, with their appurtenances, as well as an annual 40 florins from Mainz revenues at Bönnigheim, to Diether von Gemmingen, Ritter; Hans von Hirschhorn, Ritter; Eberhard von Neipperg, Ritter; the brothers Kunz and Dieter Münch von Rosenberg, and Reinhard von Sickingen der Jüngere for 800 florins. With the consent of Dean Eberhard and the chapter of Mainz Cathedral, he now transfers this pledge, with all its revenues, to Ludwig von Sickingen, who redeemed it from the named pledge holders for 800 florins. Erzbischof Johann reserves the right to redeem the pledge at any time on St George’s Day at Heilbronn after three months’ notice, and undertakes in that event to pay as well any sum of 100 florins that may have been spent on construction, and to provide proper warranty.\n\nTerm: 1 May 1413 (Feast of the Apostles Philip and James)\n\nSeals: Johann [II], Archbishop of Mainz, with the great seal; Eberhard, Dean; and the chapter of Mainz Cathedral with the chapter seal.",
-      "mention": [
-        {
-          "place": "boennigheim"
-        },
-        {
-          "person": "Diether Mönch von Rosenberg"
-        },
-        {
-          "person": "Diether von Gemmingen",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Eberhard von Neipperg",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Erzbischof Hans",
-          "personTitle": [
-            "Erzbischof von Mainz"
-          ]
-        },
-        {
-          "person": "Hans von Hirschhorn",
-          "personTitle": [
-            "Ritter"
-          ]
-        },
-        {
-          "person": "Kunz Mönch von Rosenberg"
-        },
-        {
-          "person": "Ludwig von Sickingen"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "person": "Reinhard von Sickingen",
-          "personTitle": [
-            "der Jüngere"
-          ]
-        }
+      "english": "Johann [II.], Erzbischof von Mainz, declares that his deceased predecessor in office, Konrad, had pledged the Mainz portions of Magenheim, Cleebronn, and Rauhenklingen, with their appurtenances, as well as an annual 40 florins from Mainz revenues at Bönnigheim, to Diether von Gemmingen, Ritter; Hans von Hirschhorn, Ritter; Eberhard von Neipperg, Ritter; the brothers Kunz and Dieter Münch von Rosenberg, and Reinhard von Sickingen der Jüngere for 800 florins. With the consent of Dean Eberhard and the chapter of Mainz Cathedral, he now transfers this pledge, with all its revenues, to Ludwig von Sickingen, who redeemed it from the named pledge holders for 800 florins. Erzbischof Johann reserves the right to redeem the pledge at any time on St George’s Day at Heilbronn after three months’ notice, and undertakes in that event to pay as well any sum of 100 florins that may have been spent on construction, and to provide proper warranty.\n\nTerm: 1 May 1413 (Feast of the Apostles Philip and James)\n\nSeals: Johann [II], Archbishop of Mainz, with the great seal; Eberhard, Dean; and the chapter of Mainz Cathedral with the chapter seal."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boennigheim"
+    },
+    {
+      "person": "Diether Mönch von Rosenberg"
+    },
+    {
+      "person": "Diether von Gemmingen",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Eberhard von Neipperg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Erzbischof Hans",
+      "personTitle": [
+        "Erzbischof von Mainz"
+      ]
+    },
+    {
+      "person": "Hans von Hirschhorn",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
+      "person": "Kunz Mönch von Rosenberg"
+    },
+    {
+      "person": "Ludwig von Sickingen"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "person": "Reinhard von Sickingen",
+      "personTitle": [
+        "der Jüngere"
       ]
     }
   ]

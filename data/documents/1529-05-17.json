@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9bdb8d29-fda0-4c64-9fe6-ece5706e1c9d&parent_id="
       ],
       "german": "Lutz Kuttroff an Rothenburg: Fürbitte durch Conrad von Rosenberg.",
-      "english": "Lutz Kuttroff to Rothenburg: intercession by Konrad von Rosenberg.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "interceded on behalf of Lutz Kuttroff in his request to Rothenburg."
-        }
-      ]
+      "english": "Lutz Kuttroff to Rothenburg: intercession by Konrad von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "interceded on behalf of Lutz Kuttroff in his request to Rothenburg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

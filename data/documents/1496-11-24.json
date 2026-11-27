@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-198251",
       "german": "Lehenrevers Lorentzens von Rosenberg an H. Graf Johann ausgestellet über das Num. 2 benannte Mannlehen.\n\nLaufzeit: 1496 November 24 (an Sanct Catharien abend)",
       "english": "Lorentz von Rosenberg's fief acknowledgment issued to His Grace Count Johann concerning the male fief specified as No. 2.\n\nDate: 24 November 1496 (on Saint Catherine's Eve).",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198251%2F07_0000198251_0001_7-198251-1.jpg"
@@ -20,6 +15,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=637&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000637%2Ftitlaufn_0000198251%2F07_0000198251_0002_7-198251-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

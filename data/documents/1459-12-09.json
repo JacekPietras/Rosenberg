@@ -10,11 +10,6 @@
       ],
       "german": "Paul von Kapellen, Abt von Vyssí Brod (Hohenfurt), und Gerhard, Abt von Zlatá Koruna (Goldenkron), stellen dem Stift Schlägl ein Vidimus über die Urkunde Kaiser Friedrichs III. (Urk 376) aus, die auch vom Notar Johannes Püchler bestätigt wird.\n\nSiegel: Siegel an blauer Kordel am Pergament hängend: 1) Paul von Kapellen, Abt von Hohenfurt. Braune Schale, rotes Siegel, spitzoval, 90 x 50 mm. Abtfigur mit Krummstab in gotischem Gesprenge, zu Füßen zweimal die fünfblättrige Rose der Rosenberger. Umschrift: \"sigillum pavli ~ abbatis in alto vado\". 2) Gerhard, Abt von Goldenkron. Braune Schale, schwarzes Siegel, spitzoval, 70 x 35 mm. Abtfigur mit Krummstab in gotischem Gesprenge. Umschrift: \"S gerhardi abbatis [sancte] corone\". (linke Seite abgebröckelt)\n\nSiegel: Siegel (Papier auf Pergament gedruckt, Petschaft): Paul von Kapellen, Abt von Hohenfurt. Spitzoval, 80 x 45 mm. Keine Details erkennbar.",
       "english": "Paul von Kapellen, Abt of Vyssí Brod, and Gerhard, Abt of Zlatá Koruna, issue a vidimus for Schlägl Abbey of the charter of Kaiser Friedrich III (charter 376), also authenticated by the notary Johannes Püchler.\n\nSeals: A seal hangs from a blue cord attached to the parchment. (1) Paul von Kapellen, Abt of Hohenfurt. Brown counter, red seal, pointed oval, 90 × 50 mm. Figure of an abbot with a crozier in a Gothic architectural frame; at his feet, twice, the five-petalled rose of the Rosenbergs. Inscription: “sigillum pavli ~ abbatis in alto vado”. (2) Gerhard, Abt of Goldenkron. Brown counter, black seal, pointed oval, 70 × 35 mm. Figure of an abbot with a crozier in a Gothic architectural frame. Inscription: “S gerhardi abbatis [sancte] corone”. (The left side has flaked off.)\n\nSeal: A seal (signet) on paper impressed onto parchment: Paul von Kapellen, Abt of Hohenfurt. Pointed oval, 80 × 45 mm. No details are discernible.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_14591209_262_r.jpg"
@@ -29,6 +24,11 @@
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_14591209_263_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

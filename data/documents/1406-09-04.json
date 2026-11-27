@@ -10,80 +10,6 @@
       ],
       "german": "Erbbestandsbrief des Arnold von Rosenberg d.J. zu Boxberg und seiner Gemahlin Christina von Handschuhsheim für Cuntz Pfister und Cuntz Fuchs zu Eiersheim über Wiesen, Gülten und Zinsen ober Massenbach.\n\nSiegel: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (Bruder), 3, Reinhard von Uessigheim (Vetter, fehlt), 4) Cunz von Rosenberg (Vetter)",
       "english": "Deed of inheritance from Arnold von Rosenberg der Jüngere of Boxberg and his wife Christiana von Handschuhsheim for Kunz Pfister and Kunz Fuchs of Eiersheim regarding meadows, rents, and interest above Massenbach.\n\nSeal: 1) Arnold von Rosenberg, 2) Eberhard von Rosenberg (brother), 3) Reinhard von Uissigheim (kinsman, missing), 4) Kunz von Rosenberg (kinsman)",
-      "mention": [
-        {
-          "place": "eiersheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "der Jüngere",
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim."
-        },
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "spouse",
-          "of": "Christiana von Handschuhsheim"
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "type": "sibling",
-          "of": "arnold_boxberg",
-          "ofTitle": [
-            "der Jüngere"
-          ]
-        },
-        {
-          "person": "Reinhard von Uissigheim",
-          "type": "kin",
-          "of": "arnold_boxberg",
-          "ofTitle": [
-            "der Jüngere"
-          ],
-          "term": "Vetter"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "kin",
-          "of": "arnold_boxberg",
-          "ofTitle": [
-            "der Jüngere"
-          ],
-          "term": "Vetter"
-        },
-        {
-          "person": "arnold_boxberg",
-          "personTitle": [
-            "der Jüngere",
-            "zu Boxberg"
-          ],
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "type": "generic",
-          "content": "sealed the charter."
-        },
-        {
-          "person": "Reinhard von Uissigheim",
-          "type": "generic",
-          "content": "was listed as a sealer, but his seal is missing."
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "sealed the charter."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3627&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003627%2Ftitlaufn_0000129215%2F07_0000129215_0001_7-129215-1.jpg"
@@ -93,6 +19,80 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "der Jüngere",
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "issued an Erbbestandsbrief for Kunz Pfister and Kunz Fuchs of Eiersheim concerning meadows, rents, and dues above Massenbach together with Christina von Handschuhsheim."
+    },
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "spouse",
+      "of": "Christiana von Handschuhsheim"
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "type": "sibling",
+      "of": "arnold_boxberg",
+      "ofTitle": [
+        "der Jüngere"
+      ]
+    },
+    {
+      "person": "Reinhard von Uissigheim",
+      "type": "kin",
+      "of": "arnold_boxberg",
+      "ofTitle": [
+        "der Jüngere"
+      ],
+      "term": "Vetter"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "kin",
+      "of": "arnold_boxberg",
+      "ofTitle": [
+        "der Jüngere"
+      ],
+      "term": "Vetter"
+    },
+    {
+      "person": "arnold_boxberg",
+      "personTitle": [
+        "der Jüngere",
+        "zu Boxberg"
+      ],
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "type": "generic",
+      "content": "sealed the charter."
+    },
+    {
+      "person": "Reinhard von Uissigheim",
+      "type": "generic",
+      "content": "was listed as a sealer, but his seal is missing."
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "sealed the charter."
+    }
+  ],
+  "mention": [
+    {
+      "place": "eiersheim"
     }
   ]
 }

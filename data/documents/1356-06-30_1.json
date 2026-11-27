@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-NA/ACK/570/charter",
       "german": "Jošt z Rožmberka odvolává všechna nařčení proti Karlovi, císaři římskému a králi českému.Jost von Rosenberg widerruft alle Beschuldigungen, die er gegen Karl, den römischen Kaiser und König von Böhmen ausgesprochen hat.\n\nSiegel: decem sigilla in scidulis membranaceis appendent: 1) sigillum Jodoci de Rosenberg rubri coloris d 23 mm, 2) Arnesti archiepiscopi Pragensis rubri coloris d 39 mm, 3) Marquardi episcopi de Augsburg viridis coloris d 34 mm, 4) Johannis episcopi Litomyslensis rubri coloris d 31 mm, 5) Bolconis ducis de Falkemberg rubri coloris d 26 mm, 6) Johannis ducis Opaviae rubri coloris d 30 mm, 7) Przemyslai ducis Tessinensis rubri coloris laesum, 8) Conradi ducis Olesnicensis rubri coloris d 33 mm, 9) Friderici ducis de Teck rubri coloris d 23 mm, 10) Sbynconis de Hazenburg rubri coloris d 23 mm.",
       "english": "Jodok von Rosenberg revokes all accusations he made against Charles, Roman Emperor and King of Bohemia.\n\nSeals: Ten seals hang from parchment strips: 1) the seal of Jodok von Rosenberg, red, diameter 23 mm; 2) of Ernst, Archbishop zu Prague, red, diameter 39 mm; 3) of Marquard, Bishop zu Augsburg, green, diameter 34 mm; 4) of Johann, Bishop zu Litomyšl, red, diameter 31 mm; 5) of Bolko, Duke of Falkenberg, red, diameter 26 mm; 6) of Johann, Duke of Opava, red, diameter 30 mm; 7) of Przemysl, Duke of Teschen, damaged; 8) of Konrad, Duke of Oels, red, diameter 33 mm; 9) of Friedrich, Duke of Teck, red, diameter 23 mm; and 10) of Sbynko von Hasenburg, red, diameter 23 mm.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_13560630_00570_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_13560630_00570_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

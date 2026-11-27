@@ -7,14 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234483",
       "german": "Konrad von Uissigheim (Ussinkein), genannt der junge von Rannenberg, bekennt, dass Wolz Bagna, Landsiedel in Kembach (Kentbach), mit seiner Zustimmung an das Kloster Bronnbach (Bruenbach) eine Wiese mit Wässerungsrecht zu Kembach (Kentbach), welche er von Konrad zu Erblehen hat, den Morgen um 25 Pfund Heller verkauft habe.\n\nLaufzeit: 1370 Dezember 9 (\"Der geben ist, da man zalt von Cristus geburte druzehenhundert iare und siebenzig iar an dem nehsten montage vor sant Lucien dage\")\n\nSiegelbeschreibung: Siegel abgefallen\n\nVermerke: Auf der Rückseite: \"Kembach. Kaufbrief über ein wiesen mit dem wässerungs recht und erlaubnis domini directi (!) Conradi von Üssigheim, welche auch obgenannte wiesen von allen ... frey gemacht. Anno 1370\"\n\nSiegler: Konrad von Uissigheim gen. der junge von Rannenberg, Aussteller",
       "english": "Konrad von Uissigheim, called the Younger of Rannenberg, acknowledges that, with his consent, Wolz Bagna, a hereditary tenant at Kembach, sold to Bronnbach Monastery a meadow at Kembach with the right of irrigation, which he held from Konrad as an inheritable fief, for 25 pounds of Heller per acre.\n\nDate: 9 December 1370 (‘Given on the nearest Monday before St Lucy’s Day, when 1,370 years from the birth of Christ were counted.’ )\n\nSeal description: Seal detached.\n\nNotes: On the reverse: “Kembach. Sale charter for a meadow with the right of irrigation and the permission of the direct lord (!) Konrad von Üssigheim, who also freed the aforementioned meadow from all [obligations]. Year 1370.”\n\nSeal bearer: Konrad von Uissigheim, called the Younger of Rannenberg, issuer.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "person": "Konrad von Uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234483%2F07_0000234483_0001_7-234483-1.jpg"
@@ -23,6 +15,14 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234483%2F07_0000234483_0002_7-234483-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "person": "Konrad von Uissigheim"
     }
   ]
 }

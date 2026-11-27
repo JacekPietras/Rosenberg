@@ -9,39 +9,39 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++B81BCF77-BCB7-44E8-AD6D-E2BE7E353311&parent_id="
       ],
       "german": "Schiedsbrief des Markgrafen Kasimir von Brandenburg zwischen den Vettern Zeisolf und Lorenz von Rosenberg einerseits und den Brüdern Philipp und Contz von Berlichingen sowie Wolf von Adelsheim andererseits wegen Irrungen\n\nEnthält-/Darin-Vermerke: Hinweis: Siehe auch Hohenlohe Zentralarchiv Neuenstein, Bestand Ni10: Rosenberg-Hatzfeldsche Herrschaften",
-      "english": "Arbitration letter of Margrave Kasimir of Brandenburg between the cousins Zaisolph von Rosenberg and Lorenz von Rosenberg on one side and the brothers Philipp and Konrad von Berlichingen as well as Wolf von Adelsheim on the other side regarding disputes",
-      "mention": [
-        {
-          "person": "Konrad von Berlichingen"
-        },
-        {
-          "person": "Kunz von Berlichingen"
-        },
-        {
-          "person": "Philipp von Berlichingen"
-        },
-        {
-          "person": "Wolf von Adelsheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
-        },
-        {
-          "person": "Lorenz von Rosenberg",
-          "type": "generic",
-          "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
-        },
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "kin",
-          "of": "Lorenz von Rosenberg",
-          "term": "Vettern"
-        }
-      ]
+      "english": "Arbitration letter of Margrave Kasimir of Brandenburg between the cousins Zaisolph von Rosenberg and Lorenz von Rosenberg on one side and the brothers Philipp and Konrad von Berlichingen as well as Wolf von Adelsheim on the other side regarding disputes"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
+    },
+    {
+      "person": "Lorenz von Rosenberg",
+      "type": "generic",
+      "content": "participated in an arbitration by Markgraf Kasimir of Brandenburg concerning disputes with Philipp and Contz von Berlichingen and Wolf von Adelsheim."
+    },
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "kin",
+      "of": "Lorenz von Rosenberg",
+      "term": "Vettern"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Konrad von Berlichingen"
+    },
+    {
+      "person": "Kunz von Berlichingen"
+    },
+    {
+      "person": "Philipp von Berlichingen"
+    },
+    {
+      "person": "Wolf von Adelsheim"
     }
   ]
 }

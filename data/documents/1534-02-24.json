@@ -7,18 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1726549",
       "german": "Georg von Rosenberg trifft mit seinen Untertanen zu Buch ein Übereinkommen wegen der von diesen jährlich zu leistenden Frondienste.\n\nLaufzeit: 1534 Februar 24 (Dienstag nach Invocavit 1534)\n\nSiegelbeschreibung: Mit 2 Siegeln des Georg von Rosenberg und des Bernhard von Hardheim, Amtmanns zu Krautheim",
       "english": "Georg von Rosenberg reaches an agreement with his subjects at Buch regarding the corvée labor services they are to perform annually.\n\nPeriod: February 24, 1534 (Tuesday after Invocavit 1534)",
-      "mention": [
-        {
-          "place": "buch"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "agreed with his subjects at Buch on the annual labor services they owed."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001726549%2F04_0001726549_0001_4-1726549-1.jpg"
@@ -30,6 +18,18 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001726549%2F04_0001726549_0003_4-1726549-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "agreed with his subjects at Buch on the annual labor services they owed."
+    }
+  ],
+  "mention": [
+    {
+      "place": "buch"
     }
   ]
 }

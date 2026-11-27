@@ -6,18 +6,18 @@
       "source": "Staatsarchiv Ludwigsburg JL 425 Bd 20 Qu. 150",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-755556",
       "german": "Schiedsspruch des Kurfürsten Philipp Pfalzgraf bei Rhein zwischen Melchior Sützel von Mergentheim, Ritter, und Bischof Lorenz von Würzburg wegen des Gartens und Grabens um das Schloß zu Unterbalbach sowie wegen eines Holzes und einer Mühle [daselbst], 1502 [Apr. 1; Regest].",
-      "english": "Arbitration award by Elector Philipp, Count Palatine of the Rhine, between Melchior Sützel von Mergentheim, Ritter, and Bishop Lorenz of Würzburg concerning the garden and moat around Unterbalbach Castle and a wood and mill [there], 1 April 1502 [abstract].",
-      "mention": [
-        {
-          "person": "Bischof Lorenz",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "unterbalbach"
-        }
+      "english": "Arbitration award by Elector Philipp, Count Palatine of the Rhine, between Melchior Sützel von Mergentheim, Ritter, and Bishop Lorenz of Würzburg concerning the garden and moat around Unterbalbach Castle and a wood and mill [there], 1 April 1502 [abstract]."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Lorenz",
+      "personTitle": [
+        "Bischof zu Würzburg"
       ]
+    },
+    {
+      "place": "unterbalbach"
     }
   ]
 }

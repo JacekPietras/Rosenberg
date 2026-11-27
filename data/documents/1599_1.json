@@ -6,15 +6,15 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Vermischte Differenzen zwischen Rosenberg und Kurmainz, u.a. Jagd- und Centstr eitigkeiten, öde Markung Grieß, Fron zu Hohenstadt",
-      "english": "Mixed disputes between Rosenberg and Electoral Mainz, including hunting and lower court disputes, barren Grieß boundary, serf labor at Hohenstadt",
-      "mention": [
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Mixed disputes between Rosenberg and Electoral Mainz, including hunting and lower court disputes, barren Grieß boundary, serf labor at Hohenstadt"
+    }
+  ],
+  "mention": [
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

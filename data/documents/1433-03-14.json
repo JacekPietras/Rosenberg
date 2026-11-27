@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-188345",
       "german": "Samstag nach St. Gregor; Abt Gottfried von Comburg verleiht Conz von Rosenberg zu Bartenstein alle Güter, die Conz Lecher gehabt hat;\n\nSiegel abgefallen.",
       "english": "Saturday after St. Gregory; Abbot Gotfried zu Comburg grants Kunz von Rosenberg zu Bartenstein all the property that Kunz Lecher had owned;\n\nseal removed.",
-      "mention": [
-        {
-          "person": "Gotfried",
-          "personTitle": [
-            "Abt zu Comburg"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ],
-          "type": "generic",
-          "content": "received from Abbot Gotfried of Comburg all the property formerly held by Kunz Lecher."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188345%2F03_0000188345_0001_3-188345-1.jpg"
@@ -33,6 +15,24 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000188345%2F03_0000188345_0002_3-188345-2.jpg",
           "deleted": true
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ],
+      "type": "generic",
+      "content": "received from Abbot Gotfried of Comburg all the property formerly held by Kunz Lecher."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Gotfried",
+      "personTitle": [
+        "Abt zu Comburg"
       ]
     }
   ]

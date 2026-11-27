@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk77/445/charter",
       "german": "Christoph von Uissigheim bestätigt, dass Simon Beutler, Küster des Stifts Fulda, ihn mit der großen freien Kemenate unterm Dienstagsmarkt in Fulda sowie einem kleinen Häuslein und Garten daneben belehnt habe.\n\nSiegel: Dt., Siegel.",
       "english": "Christoph von Uissigheim confirms that Simon Beutler, sacristan of Fulda Collegiate Church, enfeoffed him with the large free fortified house below the Tuesday market in Fulda, together with a small house and garden beside it.\n\nSeal: German, seal.",
-      "mention": [
-        {
-          "person": "Christoph von Uissigheim"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20445%20Vorderseite%20%281551%20Dezember%2022%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk77/Urk.%2077%20Nr.%20445%20Rueckseite%20%281551%20Dezember%2022%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Christoph von Uissigheim"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

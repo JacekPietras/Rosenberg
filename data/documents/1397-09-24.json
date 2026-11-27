@@ -9,39 +9,39 @@
         "https://www.digitale-sammlungen.de/en/view/bsb11697675"
       ],
       "german": "Johann, Landgraf zu Leichtenberg verbündet sich mit seinem Schwager Johann Herrn zu Abensperg in der Art, dass auch Heinrich Herr zu Rosenberg, sein Sohn und Sweher, und Graf Ulrich zu Schawnberg sein Schwager dieser Eynung, wenn sie wollen, beitreten können. Geb. an montag nach sand Mathei. (c. Sig.)",
-      "english": "Hans, Landgraf zu Leichtenberg, forms an alliance with his Schwager Hans, Herr zu Abensperg. Heinrich, Herr zu Rosenberg, described as “sein Sohn und Sweher,” and Ulrich zu Schaunberg, Graf, described as his Schwager, may also join the alliance if they wish. Given on the Monday after St. Matthew’s Day. (With seal.)",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich zu Schaunberg",
-          "personTitle": [
-            "Graf"
-          ]
-        }
+      "english": "Hans, Landgraf zu Leichtenberg, forms an alliance with his Schwager Hans, Herr zu Abensperg. Heinrich, Herr zu Rosenberg, described as “sein Sohn und Sweher,” and Ulrich zu Schaunberg, Graf, described as his Schwager, may also join the alliance if they wish. Given on the Monday after St. Matthew’s Day. (With seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Heinrich",
+      "personTitle": [
+        "Herr zu Rosenberg"
       ],
-      "facts": [
-        {
-          "person": "Heinrich",
-          "personTitle": [
-            "Herr zu Rosenberg"
-          ],
-          "type": "generic",
-          "content": "was named among those who could join the alliance between Hans, Landgraf zu Leichtenberg, and Hans, Herr zu Abensperg; the regest describes him as “sein Sohn und Sweher.”"
-        },
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Landgraf zu Leichtenberg"
-          ],
-          "type": "kin",
-          "of": "Hans zu Abensperg",
-          "ofTitle": [
-            "Herr zu Abensperg"
-          ],
-          "term": "Schwager"
-        }
+      "type": "generic",
+      "content": "was named among those who could join the alliance between Hans, Landgraf zu Leichtenberg, and Hans, Herr zu Abensperg; the regest describes him as “sein Sohn und Sweher.”"
+    },
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Landgraf zu Leichtenberg"
+      ],
+      "type": "kin",
+      "of": "Hans zu Abensperg",
+      "ofTitle": [
+        "Herr zu Abensperg"
+      ],
+      "term": "Schwager"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich zu Schaunberg",
+      "personTitle": [
+        "Graf"
       ]
     }
   ]

@@ -6,17 +6,17 @@
       "source": "Regesta Boica 10",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb10798273",
       "german": "Ott der Aderzhauser zu Lengenfeld quittirt 24 Pfd. Regensb. Pfeninge, welche ihm für seine von wegen des Herzogs Ruprecht erlittenen Schäden, durch Cunrad von Rosenberg Vizdom zu Amberg entrichtet worden. D. eod. d. (c. Sig.)",
-      "english": "Ott der Aderzhauser, zu Lengenfeld, acknowledges receipt of 24 pounds of Regensburg pennies paid to him by Konrad von Rosenberg, Vizedom zu Amberg, for damages he suffered on account of Duke Ruprecht. Dated the same day. (With seal.)",
-      "facts": [
-        {
-          "person": "vitztum_zu_Heidelberg",
-          "personTitle": [
-            "Vizedom zu Amberg"
-          ],
-          "type": "generic",
-          "content": "paid Ott der Aderzhauser, zu Lengenfeld, compensation for damages he suffered on account of Duke Ruprecht."
-        }
-      ]
+      "english": "Ott der Aderzhauser, zu Lengenfeld, acknowledges receipt of 24 pounds of Regensburg pennies paid to him by Konrad von Rosenberg, Vizedom zu Amberg, for damages he suffered on account of Duke Ruprecht. Dated the same day. (With seal.)"
+    }
+  ],
+  "facts": [
+    {
+      "person": "vitztum_zu_Heidelberg",
+      "personTitle": [
+        "Vizedom zu Amberg"
+      ],
+      "type": "generic",
+      "content": "paid Ott der Aderzhauser, zu Lengenfeld, compensation for damages he suffered on account of Duke Ruprecht."
     }
   ]
 }

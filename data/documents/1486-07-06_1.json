@@ -7,21 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=7784118",
       "german": "Schlichtung eines Streits zwischen Siegfried von Rosenberg und den Kindern des Otto Küchenmeister\n\nAbt Johann von Fulda schlichtet den Streit zwischen Siegfried von Rosenberg und den Kindern des verstorbenen Otto Küchenmeister, dessen Witwe Rosenberg geheiratet hat, um Herausgabe von Heiratsgut, Morgengabe und Heimsteuer.",
       "english": "Abbot Johann zu Fulda settled the dispute between Siegfried von Rosenberg and the children of the late Otto Küchenmeister over the return of marriage property, a morning gift, and dowry. Otto’s widow had married Siegfried.",
-      "mention": [
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Siegfried von Rosenberg",
-          "type": "generic",
-          "content": "was party to a dispute with the children of the deceased Otto Küchenmeister concerning marriage property, a morning gift and dowry, settled by Abbot Johann zu Fulda."
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._100/5279/hstam_urk._100_nr_5279_0000.jpg"
@@ -38,6 +23,21 @@
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._100/5279/hstam_urk._100_nr_5279_0004.jpg"
         }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Siegfried von Rosenberg",
+      "type": "generic",
+      "content": "was party to a dispute with the children of the deceased Otto Küchenmeister concerning marriage property, a morning gift and dowry, settled by Abbot Johann zu Fulda."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
     }
   ]

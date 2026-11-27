@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-029/AT-KLA_29-B-25_F_St/charter",
       "german": "Maria Theresia, Königin von Ungarn und Böhmen, Erzherzogin von Österreich etc., bestätigt den im Wortlaut inserierten Vergleich vom 19. Februar 1727 zwischen den Grafen Leopold, Philipp Joseph und Wolf Sigmund von Orsini und Rosenberg über den Wolf-Andreischen und den Karolinisch-Rosenbergischen Fideikommiss und konfirmiert gesondert: 1. Die im dortigen Punkt 3 geschlossenen Bestimmungen in einem Verzeichnis von Meierschaftszugehörigkeiten, Schlossmobilien und Getreidevorräten in den Schlössern Höhenbergen und Sonnegg wurden auf einen Wert von 8.000 Gulden geschätzt und tabellarisch inseriert. 2. Aus der karolinischen Hinterlassenschaft (die Landtaz, die Thalheimer Gülten und die Fischteiche und Schafzucht) soll Philipp von Rosenberg nichts einfordern, wie er es bei der Hofkommission schon getan hat. 3. Die 10.000 Gulden von Philipp sollen auf dem Haus in Wien bleiben, bis dieselbe Summe auf Kärntner Grundstücken angelegt wird. Die diesbezügliche Resolution vom 26. Oktober 1740 wird hiermit erneut. ratifiziert. Siegel und Unterschrift: Maria Theresia\n\nSiegel: Sig. pend. (in Holzschatulle)",
       "english": "Maria Theresa, Queen of Hungary and Bohemia, Archduchess of Austria, etc., confirms the settlement of 19 February 1727, inserted in full, between Counts Leopold, Philipp Joseph and Wolf Sigmund von Orsini und Rosenberg concerning the Wolf-Andrean and Carolinian-Rosenberg Fideikommiss, and separately confirms the following: 1. The provisions concluded in point 3 there, in an inventory of manorial appurtenances, castle furnishings and grain stores at the castles of Höhenbergen and Sonnegg, were valued at 8,000 guilders and inserted in tabular form. 2. Philipp von Rosenberg is to make no claim from the Carolinian estate (the Landtaz, the Thalheim rents, and the fishponds and sheep breeding), as he has already done before the Hofkommission. 3. Philipp's 10,000 guilders are to remain on the house in Vienna until the same sum is invested in Carinthian properties. The related resolution of 26 October 1740 is hereby ratified again. Seal and signature: Maria Theresa\n\nSeal: pendant seal (in a wooden box).",
-      "mention": [
-        {
-          "person": "Philipp von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "talheim"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_25_1_17270219_01.JPG"
@@ -71,6 +60,17 @@
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_25_1_17270219_17.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Philipp von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "talheim"
     }
   ]
 }

@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++268ba1dc-db35-4dae-baa8-7e102f836411&parent_id="
       ],
       "german": "Ritter Hans v. Rosemberg, Schultheiß, und die Schöffen des Stadtgerichts Nuremberg machen bekannt, daß Heinrich Rumell von Heinrich Wyener gegen einen jährlichen Zins von 10 fl (je halb an Walpurgis [Mai 1] und an Michaelis [Sept. 29]) das Haus \"auf der Full zenehst am Scho(e)neck gelegen, das des Clas Wollsacks erb war\", gekauft hat, wobei laut vorgelegten Briefs Gerhart Zollner und Hans Volkmeir Zeugen waren. - S: Stadtgericht.",
-      "english": "Ritter Hans von Rosenberg, Schultheiß, and the lay judges of the city court of Nuremberg announce that Heinrich Rumell bought from Heinrich Wyener, for an annual rent of 10 florins (half payable each at Walpurgis [May 1] and Michaelmas [September 29]), the house “situated on the Full, right next to the Scho(e)neck, which was the inheritance of Clas Wollsack”; according to the submitted charters, Gerhart Zollner and Hans Volkmeir were witnesses. Sealer: the city court.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "Schultheiß"
-          ]
-        },
-        {
-          "place": "nuremberg"
-        }
+      "english": "Ritter Hans von Rosenberg, Schultheiß, and the lay judges of the city court of Nuremberg announce that Heinrich Rumell bought from Heinrich Wyener, for an annual rent of 10 florins (half payable each at Walpurgis [May 1] and Michaelmas [September 29]), the house “situated on the Full, right next to the Scho(e)neck, which was the inheritance of Clas Wollsack”; according to the submitted charters, Gerhart Zollner and Hans Volkmeir were witnesses. Sealer: the city court."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "Schultheiß"
       ]
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

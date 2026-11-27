@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++ACDD9CE2-A28F-47DE-B18F-7B31F3CC94A4&parent_id="
       ],
       "german": "Befehl Markgraf Kasimirs an die Räte zu Ansbach, den an Jörg Truchseß abzuordnenden Knecht Hansolfs von Rosenberg betreffend",
-      "english": "Order of Margrave Kasimir to the councillors at Ansbach, concerning the servant of Zaisolph von Rosenberg to be assigned to Jörg Truchseß",
-      "mention": [
-        {
-          "person": "Georg Truchsess"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "had a Knecht whose assignment to Jörg Truchseß was the subject of a command by Markgraf Kasimir to the Ansbach councillors."
-        }
-      ]
+      "english": "Order of Margrave Kasimir to the councillors at Ansbach, concerning the servant of Zaisolph von Rosenberg to be assigned to Jörg Truchseß"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "had a Knecht whose assignment to Jörg Truchseß was the subject of a command by Markgraf Kasimir to the Ansbach councillors."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Truchsess"
     }
   ]
 }

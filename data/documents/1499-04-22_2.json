@@ -8,20 +8,6 @@
       "url": "https://www.monasterium.net/mom/UrkCistercienserHoh/93005537-9f97-4f56-8b65-870fdcfa1e98/charter",
       "german": "1499. 22. April. Krumaa. — Chwalvon Kollenelz und Wratzau tritt dag Dorf Obst dem Herrn Peter von Rosenberg ab.\n\nCCXCII. Ja Chwal z Kolenecz a z Wraczowa wyznawam tiemto listem obecznie a przedewssemi, ktoz geig vzrzie ancho cztucze slisseti budu, j¡ikoz mam list hlawnij dobry czely na pargamenie s wysutymi peczetmi na wes rzeczenu Obczi s plnym panstwim mnie Chwalowi a diediczom y buduczim mym swiedcziczij, w kterymzto listu gistenz gest vrozeny panosse Albrecht Ywan z Trogian a rukoymie a zprawcze snim a zan vrozenij panosse Jan Sokolik z Dube purkrabie na Roznbercze, Jan Bielablawa z Porzessina a Mikulass Ywan z Trogian, kterehozto listu datum gest leta ed narozenie syna bozieho tisiczieho ctirzsteho osmdesateho cztwrteho ten patek przed swafymi Philippeni a Jakubem aposstoly boziemi, jakoz ten list sam w sobie ssine swiedczij a swiellegij wykazuge; ten list hlawnij y wsseczko prawo to, kterez gest mnie diediczom a buduczim mym przislussalo mieti, dal sem a moczij listu toboto dawam s swu dobru swobodnu a o wssem priznamu plnu wolij vrozenemu panu panu Petrowi z Roznberka haithmanu kralowstwie Czeskeho etc., geho milosti diediczom a buduczim, ¡iby giz to tez prawo wsseczko w tom listu, iakoz sem drzel przislussalo mocznie, swobodnie y vplnie bez zmatku wsselik terakeho. Tomu na swiedomie peczet swu wlastnij kazal sem prziwiesiti k tomnto listu dobrowolnie a pro dalssie toho swiedomie prosil sem vrozeneho pana pana Oldrzicha z Roznberka etc., a vrozenych panossij Petra z Dobrohosstie, Albrechta z Budakow a Waczlawa z Rowneho canczlerze panuow z Roznberka gich milosti, ze gsu swe peczeti wlastnij kazali prziwiesiti k tomuto listu na swiedomie sobie a swym buduczim bez sskody. Genz gest dan na Krumlowie leta od narozenie syna bozieho tisiczieho cztirzstebo dewadesateho dewateho w pondielij przed swatym Girzim. Fünf kleine, an Pergamentstreifen hängende, zum Theile beschädigte Siegel ¡n schwarzem, nur b in rothem Wachs. — a) Ein Schild, »uf 369 dem nur mehr die Hälse zweier mit einander schnäbelnder Vögel zu erblicken sind. — S . Chw . . . Z . Kolenecz. b) Das bekannte Siegel Ulrich's von RosenUerg mit der böhmischen Umschrift. c) Bekanntes Siegel des (S.) Petr. Z. Dobrohosstye. d) Schild mit einer, einem r ähnelnden Zeichnung. — . . Ibrecht . . . e) Ein Schild mit dem Bruchstück eines negerähnlichen Mannes, darüber ein Helm mit einem Federbusch. — S. Wenceslai. De. Rowna. Sämmt- liche Pergamentstreifen sind mit den Namen der Siegler bezeichnet.",
       "english": "22 April 1499, Krumau. Chwal of Kolenecz and Wratzau cedes the village of Obst to Lord Peter von Rosenberg.\n\nCCXCII. I, Chwal of Kolenecz and Wraczow, declare publicly by this present letter, before all who see or hear it read, that I possess a principal, sound and complete charter on parchment with attached seals concerning the whole village of Obst, with full lordship, granted to me, Chwal, and to my heirs and successors. That charter names the noble Albrecht Ywan of Trogian, with the noble Jan Sokolik of Dube, burgrave at Rosenberg, as guarantor and representative for him, and Jan Bielablawa of Porzessina and Mikulass Ywan of Trogian. Its date is the Friday before Saints Philip and James the Apostles in the year 1484, as the charter itself shows and proves. I have freely and of my own full accord given and conveyed that principal charter, and all the rights that belonged to me, my heirs and successors, by this instrument to the noble Lord Peter of Rosenberg, captain of the Kingdom of Bohemia, etc., and his heirs and successors, so that he may hold all the rights contained therein as I held them, firmly, freely and fully, without any impediment. In witness of this I have willingly ordered my own seal attached to this charter. For further testimony I asked the noble Lord Oldřich of Rosenberg, and the noble lords Petr of Dobrohosstie, Albrecht of Budakow and Waczlaw of Rowneho, chancellor of their Graces the Lords of Rosenberg, to attach their own seals as witness, for themselves and their successors, without prejudice. Given at Krumau on the Monday before Saint George’s Day, in the year 1499.\n\nFive small seals, partly damaged, hang from parchment strips; four are black wax and one red. (a) A shield showing only the necks of two birds beak to beak: seal of Chwal of Kolenecz. (b) The known seal of Ulrich von Rosenberg, with Bohemian inscription. (c) The known seal of Petr of Dobrohosstye. (d) A shield with a design resembling the letter r; inscription partly illegible. (e) A shield with part of a figure resembling a Moor, above it a helmet with plume; seal of Wenceslas of Rowna. The parchment strips are labeled with the sealers’ names.",
-      "mention": [
-        {
-          "person": "Peter of Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000382.png"
@@ -30,6 +16,20 @@
           "src": "https://images.monasterium.net/img/collections/UrkCistercienserHoh/00000383.png"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Peter of Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

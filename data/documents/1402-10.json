@@ -9,18 +9,7 @@
       ],
       "url": "https://www.historischekommission-muenchen.de/fileadmin/user_upload/dateien/abteilungen/Schriftenreihe/fouquet-2022-die-geliehene-zeit-eines-koenigs.pdf",
       "german": "Im Oktober 1402 veräußerte Eberhard von Hirschhorn einen nicht näher bezifferten Anteil am Heilbronner Fruchtzehnten für 300 rheinische Gulden an Werner Winther von Alzey und seine Ehefrau Katharina von Rosenberg. Der Vorgang wird bei Fouquet unter Verweis auf RP II, Nr. 2571 behandelt.\n\nQuellenauszug: „Werner Winther von Alzey und dessen Ehefrau Katharina von Rosenberg“\n\nHinweis zur Quellenlage: Weder Tagesdatum noch Signatur der mittelalterlichen Vorlage aus dem eingesehenen Text ersichtlich. RP II Nr. 2571 ist eine Regestennummer, keine Archivsignatur.\n\nVerifikation: belegt durch wissenschaftliche Publikation; Originalurkunde nicht eingesehen",
-      "english": "In October 1402, Eberhard von Hirschhorn sold an unspecified share of the fruit tithe at Heilbronn to Werner Winther von Alzey and his wife Katharina von Rosenberg for 300 Rhenish florins. Fouquet discusses the transaction with reference to RP II, no. 2571.\n\nSource excerpt: “Werner Winther von Alzey und dessen Ehefrau Katharina von Rosenberg”\n\nSource note: Neither the exact day nor the archival signature of the medieval original is given in the consulted text. RP II no. 2571 is a regest number, not an archival signature.\n\nVerification: Supported by scholarly publication; the original charter was not consulted.",
-      "mention": [
-        {
-          "person": "Eberhard von Hirschhorn"
-        },
-        {
-          "person": "Katharina von Rosenberg"
-        },
-        {
-          "person": "Wernher Winther von Alzey"
-        }
-      ]
+      "english": "In October 1402, Eberhard von Hirschhorn sold an unspecified share of the fruit tithe at Heilbronn to Werner Winther von Alzey and his wife Katharina von Rosenberg for 300 Rhenish florins. Fouquet discusses the transaction with reference to RP II, no. 2571.\n\nSource excerpt: “Werner Winther von Alzey und dessen Ehefrau Katharina von Rosenberg”\n\nSource note: Neither the exact day nor the archival signature of the medieval original is given in the consulted text. RP II no. 2571 is a regest number, not an archival signature.\n\nVerification: Supported by scholarly publication; the original charter was not consulted."
     },
     {
       "source": [
@@ -33,28 +22,31 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1402 Oktober 11, Nürnberg. Gestattet Eberhard vom Hirschhorn, den Fruchtzehnten zu Heilbronn, der Reichslehen ist, an Werner Winther von Alzey und Katharina von Rosenberg, seine eheliche Hausfrau, für 3000 rheinische Gulden zu verkaufen. Vermerk: „Registretur ad aliud Registrum.“",
-      "english": "1402 October 11, Nuremberg. He permits Eberhard vom Hirschhorn to sell the fruit tithe at Heilbronn, an imperial fief, to Werner Winther von Alzey and Katharina von Rosenberg, his lawful wife, for 3,000 Rhenish florins. Note: “Registretur ad aliud Registrum.”",
-      "mention": [
-        {
-          "person": "Eberhard vom Hirschhorn"
-        },
-        {
-          "person": "Katharina von Rosenberg"
-        },
-        {
-          "place": "nuremberg"
-        },
-        {
-          "person": "Wernher Winther von Alzey"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Eberhard von Hirschhorn",
-          "type": "generic",
-          "content": "received permission to sell the imperial fief of the fruit tithe at Heilbronn to Werner Winther von Alzey and Katharina von Rosenberg for 3,000 Rhenish florins."
-        }
-      ]
+      "english": "1402 October 11, Nuremberg. He permits Eberhard vom Hirschhorn to sell the fruit tithe at Heilbronn, an imperial fief, to Werner Winther von Alzey and Katharina von Rosenberg, his lawful wife, for 3,000 Rhenish florins. Note: “Registretur ad aliud Registrum.”"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Hirschhorn",
+      "type": "generic",
+      "content": "received permission to sell the imperial fief of the fruit tithe at Heilbronn to Werner Winther von Alzey and Katharina von Rosenberg for 3,000 Rhenish florins."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Hirschhorn"
+    },
+    {
+      "person": "Katharina von Rosenberg"
+    },
+    {
+      "person": "Wernher Winther von Alzey"
+    },
+    {
+      "person": "Eberhard vom Hirschhorn"
+    },
+    {
+      "place": "nuremberg"
     }
   ]
 }

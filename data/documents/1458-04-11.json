@@ -6,19 +6,19 @@
       "source": "Hessisches Staatsarchiv Marburg, Urk. 76, 811",
       "url": "https://www.deutsche-digitale-bibliothek.de/item/5PXM3GGGSWS63YGRDQHN27MO7P2A3QKF",
       "german": "Revers Herting Deysenrods und Konrad Rosenbergs bezüglich der Belehnung mit der Vockenmühle und weiteren im Einzelnen aufgeführten Lehen durch Reinhard [von Weilnau], Abt von Fulda.",
-      "english": "Reversal by Herting Deysenrod and Konrad von Rosenberg concerning their enfeoffment with the Vockenmühle and other individually listed fiefs by Reinhard [von Weilnau], abbot of Fulda.",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Konrad von Rosenberg",
-          "type": "generic",
-          "content": "was enfeoffed, together with Herting Deysenrod, with the Vockenmühle and other listed fiefs by Abbot Reinhard [von Weilnau]."
-        }
-      ]
+      "english": "Reversal by Herting Deysenrod and Konrad von Rosenberg concerning their enfeoffment with the Vockenmühle and other individually listed fiefs by Reinhard [von Weilnau], abbot of Fulda."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "generic",
+      "content": "was enfeoffed, together with Herting Deysenrod, with the Vockenmühle and other listed fiefs by Abbot Reinhard [von Weilnau]."
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

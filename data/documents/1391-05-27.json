@@ -9,25 +9,25 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Pfalzgraf Ruprecht II. gestattet u.a. Contz Mönch (v. Rosenberg), Vogt von Steinsberg, als Vormund die Veste Streichenberg an Hans v. Gemmingen zu verkaufen. GLA 67/466:47v; KOCH & WILLE 1894, Nr. 5335; GEHRIG 1979:30; WÜST 1976:139",
-      "english": "Pfalzgraf Ruprecht II permits, among others, Kunz Mönch von Rosenberg, Vogt von Steinsberg, to sell the Veste Streichenberg to Hans von Gemmingen as guardian.",
-      "mention": [
-        {
-          "person": "Hans von Gemmingen"
-        },
-        {
-          "place": "heidelberg"
-        }
+      "english": "Pfalzgraf Ruprecht II permits, among others, Kunz Mönch von Rosenberg, Vogt von Steinsberg, to sell the Veste Streichenberg to Hans von Gemmingen as guardian."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt von Steinsberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt von Steinsberg"
-          ],
-          "type": "generic",
-          "content": "was permitted by Pfalzgraf Ruprecht II to sell the Veste Streichenberg to Hans von Gemmingen as guardian."
-        }
-      ]
+      "type": "generic",
+      "content": "was permitted by Pfalzgraf Ruprecht II to sell the Veste Streichenberg to Hans von Gemmingen as guardian."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Gemmingen"
+    },
+    {
+      "place": "heidelberg"
     }
   ]
 }

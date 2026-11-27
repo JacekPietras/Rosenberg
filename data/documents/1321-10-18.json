@@ -7,131 +7,131 @@
       "source": "Hohenlohisches Urkundenbuch. 2, 1311–1350",
       "url": "https://www.digitale-sammlungen.de/en/view/bsb12076106",
       "german": "1321 Oktober 18. Arnold ein ritter geheisen von Rosinberg und Ebbirhard und Wipreht gebrudere sune des cleinen Ebberartis seligin von Rosinberg eignen zwei Drittel des Weinzehnten der Mark des Dorfes zu Ruchesheim bi Megcemuln mit der Hand ihres Lehensherrn, des Grafen Ruprehts von Durne, dem Kloster Seligintal, wogegen ihnen das Kloster 11 Pfund Gült in dem Dorf zu Sindoltsheim giebt, die sie nun ihrem Lehensherrn zu Lehen auftragen. Graf Rupreht von Durne bestätigt, daß er den genannten Zehnten mit Willen seines Lehensherrn bischofs Gotfrids von Wirzeburg dem Kloster zu rechtem Eigen gegeben hat. Mit den Siegeln des Grafen Ruprecht, der Ritter Ebberhard, Cunrad und Arnolt und der Knechte Ebbirhard und Wipreht von Rosinberg gegeben 1321, an dem nehestem suntage vor der eilf tusend meide tage.",
-      "english": "On October 18, 1321, Arnold, a Ritter called von Rosenberg, and Eberhard and Wiprecht, brothers and sons of the late Eberhard von Rosenberg der Kleine, grant to Seligenthal Monastery, through the hand of their liege lord Count Ruprecht von Dürn, two thirds of the wine tithe of the district of Ruchsheim near Mergentheim. In return, the monastery gives them 11 pounds of rent in Syndoltsheim, which they then enfeoff to their liege lord. Count Ruprecht von Dürn confirms that, with the consent of his liege lord Bishop Gottfried of Würzburg, he gave the aforementioned tithe to the monastery as freehold. Given in 1321, on the Sunday before the feast of the eleven thousand virgins, with the seals of Count Ruprecht; the knights Eberhard, Konrad, and Arnold; and the squires Eberhard and Wiprecht von Rosenberg.",
-      "mention": [
-        {
-          "person": "Bischof Gotfried",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wurzburg"
-        }
+      "english": "On October 18, 1321, Arnold, a Ritter called von Rosenberg, and Eberhard and Wiprecht, brothers and sons of the late Eberhard von Rosenberg der Kleine, grant to Seligenthal Monastery, through the hand of their liege lord Count Ruprecht von Dürn, two thirds of the wine tithe of the district of Ruchsheim near Mergentheim. In return, the monastery gives them 11 pounds of rent in Syndoltsheim, which they then enfeoff to their liege lord. Count Ruprecht von Dürn confirms that, with the consent of his liege lord Bishop Gottfried of Würzburg, he gave the aforementioned tithe to the monastery as freehold. Given in 1321, on the Sunday before the feast of the eleven thousand virgins, with the seals of Count Ruprecht; the knights Eberhard, Konrad, and Arnold; and the squires Eberhard and Wiprecht von Rosenberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
-        },
-        {
-          "person": "Wiprecht von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
-        },
-        {
-          "person": "Eberhard von Rosenberg der Kleine",
-          "type": "death",
-          "diedBefore": "1321-10-19"
-        },
-        {
-          "person": "Eberhard von Rosenberg der Kleine",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Eberhard von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg der Kleine",
-          "personDeceased": true,
-          "type": "parent",
-          "of": "Wiprecht von Rosenberg"
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "sibling",
-          "of": "Wiprecht von Rosenberg",
-          "ofTitle": [
-            "Knecht"
-          ]
-        },
-        {
-          "person": "Arnold von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
-        },
-        {
-          "person": "Wiprecht von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
-        },
-        {
-          "person": "Ruprecht von Dürn",
-          "personTitle": [
-            "Graf von Dürn"
-          ],
-          "type": "generic",
-          "content": "confirmed that he had granted the Ruchsheim wine tithe to Seligenthal Monastery as freehold with Bishop Gottfried of Würzburg's consent, and received the Syndoltsheim rents as a fief from the Rosenbergs before granting them onward as a fief to the Bishopric of Würzburg."
-        },
-        {
-          "person": "Gotfried von Würzburg",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ],
-          "type": "generic",
-          "content": "consented to Count Ruprecht von Dürn's grant of the Ruchsheim wine tithe to Seligenthal Monastery as freehold."
-        },
-        {
-          "person": "Eberhard von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "sealed the charter with Wiprecht von Rosenberg."
-        },
-        {
-          "person": "Wiprecht von Rosenberg",
-          "personTitle": [
-            "Knecht"
-          ],
-          "type": "generic",
-          "content": "sealed the charter with Eberhard von Rosenberg."
-        }
+      "type": "generic",
+      "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
+    },
+    {
+      "person": "Wiprecht von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "transferred two thirds of the wine tithe of Ruchsheim to Seligenthal Monastery in exchange for 11 pounds of rent in Syndoltsheim, with Count Ruprecht von Dürn acting as his liege lord."
+    },
+    {
+      "person": "Eberhard von Rosenberg der Kleine",
+      "type": "death",
+      "diedBefore": "1321-10-19"
+    },
+    {
+      "person": "Eberhard von Rosenberg der Kleine",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Eberhard von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg der Kleine",
+      "personDeceased": true,
+      "type": "parent",
+      "of": "Wiprecht von Rosenberg"
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "sibling",
+      "of": "Wiprecht von Rosenberg",
+      "ofTitle": [
+        "Knecht"
       ]
+    },
+    {
+      "person": "Arnold von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
+    },
+    {
+      "person": "Wiprecht von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "enfeoffed Count Ruprecht von Dürn with the rents in Syndoltsheim received from Seligenthal Monastery."
+    },
+    {
+      "person": "Ruprecht von Dürn",
+      "personTitle": [
+        "Graf von Dürn"
+      ],
+      "type": "generic",
+      "content": "confirmed that he had granted the Ruchsheim wine tithe to Seligenthal Monastery as freehold with Bishop Gottfried of Würzburg's consent, and received the Syndoltsheim rents as a fief from the Rosenbergs before granting them onward as a fief to the Bishopric of Würzburg."
+    },
+    {
+      "person": "Gotfried von Würzburg",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ],
+      "type": "generic",
+      "content": "consented to Count Ruprecht von Dürn's grant of the Ruchsheim wine tithe to Seligenthal Monastery as freehold."
+    },
+    {
+      "person": "Eberhard von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "sealed the charter with Wiprecht von Rosenberg."
+    },
+    {
+      "person": "Wiprecht von Rosenberg",
+      "personTitle": [
+        "Knecht"
+      ],
+      "type": "generic",
+      "content": "sealed the charter with Eberhard von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Gotfried",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

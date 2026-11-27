@@ -7,11 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=1-1412034",
       "german": "Pfalzgraf Wolfgang antwortet Herzog Christoph von Württemberg bezüglich einer angefragten Fürschrift für Albrecht von Rosenberg und der militärischen Werbungen des Herzogs Heinrich von Guise.\n\nLaufzeit: September 1567\n\nUmfang: 4 Blatt",
       "english": "Count Palatine Wolfgang replies to Duke Christoph of Württemberg concerning a requested letter of recommendation for Albrecht von Rosenberg and Duke Heinrich of Guise's military recruiting.\n\nDuration: September 1567\n\nExtent: 4 sheets",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001412034%2F01_0001412034_0001_1-1412034-1.jpg"
@@ -32,6 +27,11 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3581&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_1%2Folf%2Fbestand_0000003581%2Ftitlaufn_0001412034%2F01_0001412034_0006_1-1412034-6.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
     }
   ]
 }

@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-223077",
       "german": "Rudolf Graf von Wertheim verkauft mit Zustimmung seiner Frau Mechtild und seiner Schwägerin Mechtild, Witwe seines verstorbenen Bruders Boppo, für 200 Pfund Heller weniger 3 Pfund und 30 Pfennig Heller an die Kirche zu Aschaffenburg vier Höfe in Kirschfurt (Kyrsefurth), nämlich den Fronhof und jene Höfe, die Hartmann, Cunrad Winthersbacher und Sifridus Geizebacher bewohnen, mit allem Zubehör zu näher beschriebenen Bedingungen. Als Bürgen setzt er Mechthild, die Witwe seines verstorbenen Bruders Boppo, Eberhard Rufus von Üssigheim (Ussinkeim) und dessen Bruder Cunrad, Eberhard Vicedom von Üssigheim und dessen Bruder Friedrich Stahel, Ritter, ein.\n\nLaufzeit: 1285 Januar 14 (in crastino octave Epyphanie)\n\nSiegelbeschreibung: 3 Sg. (l. besch.)\n\nZeugen: Zeugen: Hermann, Dekan, und Gerhard, Scholaster der Aschaffenburger Kirche sowie die Bürgen.\n\nVermerke: Rve.\n\nSiegler: Rudolf, Graf von Wertheim; Mechthild, Gräfin von Wertheim",
       "english": "Rudolf, Count of Wertheim, with the consent of his wife Mechtild and his sister-in-law Mechtild, widow of his late brother Boppo, sells to the church of Aschaffenburg four farms in Kirschfurt for 200 pounds Heller less 3 pounds and 30 Heller. These are the Fronhof and the farms occupied by Hartmann, Cunrad Winthersbacher, and Sifridus Geizebacher, with all appurtenances, under the conditions described in detail. He appoints as sureties Mechthild, widow of his late brother Boppo; Eberhard Rufus von Uissigheim and his brother Cunrad; Eberhard Vicedom von Uissigheim; and his brother Friedrich Stahel, knights.\n\nDate: 14 January 1285 (the day after the octave of Epiphany).\n\nDescription of seals: Three seals, partly damaged.\n\nWitnesses: Hermann, dean, and Gerhard, scholasticus of the church of Aschaffenburg, as well as the sureties.\n\nNotes: Rve.\n\nSeal-bearers: Rudolf, Count of Wertheim; Mechthild, Countess of Wertheim.",
-      "mention": [
-        {
-          "person": "Eberhard von Uissigheim",
-          "personTitle": [
-            "Vizedom",
-            "der Rote"
-          ]
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ]
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3623&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003623%2Ftitlaufn_0000223077%2F07_0000223077_0001_7-223077-1.jpg"
@@ -33,6 +15,24 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3623&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000003623%2Ftitlaufn_0000223077%2F07_0000223077_0002_7-223077-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eberhard von Uissigheim",
+      "personTitle": [
+        "Vizedom",
+        "der Rote"
+      ]
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

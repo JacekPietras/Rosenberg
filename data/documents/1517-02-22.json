@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-822168",
       "german": "1517 Feb. 22 (Petri Cathedra)\nGabriel von Stetten zu Kocherstetten verkauft Kloster Schöntal seinen Hof Ruwental (zum Rewenntall) mit allen Zugehörden und dem kleinen Zehnten, nachdem er ihm zuvor schon den großen Zehnten und die Nutzung der Äcker verkauft hatte.\nSiegler: 1) der A. sowie seine Verwandten 2) Kilian von Stetten und 3) Sigmund von Uissigheim (Ussicken), [mainzischer] Amtmann zu Nagelsberg\nAusf. Perg. - 3 Sg., 2. besch., Holzkapseln abg. - Rv.\n\nLaufzeit: 1517\n\nUmfang: 1 U",
       "english": "22 February 1517 (Cathedra of St. Peter)\nGabriel von Stetten zu Kocherstetten sells to Schöntal Monastery his farm at Ruwental with all appurtenances and the small tithe, having previously sold it the great tithe and the use of the fields.\nSealers: 1) The issuer; and his relatives 2) Kilian von Stetten and 3) Siegmund von Uissigheim, Amtmann zu Nagelsberg [for Mainz].\nOriginal, parchment. Three seals; the second damaged, wooden capsules missing. Endorsement.\n\nDate range: 1517\n\nExtent: 1 document",
-      "mention": [
-        {
-          "place": "kocherstetten-marienkirche"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "schoental-monastery"
-        },
-        {
-          "person": "Siegmund von Uissigheim",
-          "personTitle": [
-            "Amtmann zu Nagelsberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000822168%2F02_0000822168_0001_2-822168-1.jpg"
@@ -31,6 +14,23 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1771&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001771%2Ftitlaufn_0000822168%2F02_0000822168_0002_2-822168-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "kocherstetten-marienkirche"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "schoental-monastery"
+    },
+    {
+      "person": "Siegmund von Uissigheim",
+      "personTitle": [
+        "Amtmann zu Nagelsberg"
       ]
     }
   ]

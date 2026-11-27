@@ -6,15 +6,15 @@
       "source": "HStAD, F 23 A, 423/1",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=2403613",
       "german": "Erbteilung zwischen Johann Dietrich v. Rosenbach und seinem Schwager v. Gemmingen\n\nLaufzeit: 1608-1615",
-      "english": "Inheritance division between Hans Dietrich von Rosenberg and his brother-in-law von Gemmingen.\n\nDate span: 1608–1615.",
-      "mention": [
-        {
-          "place": "gemmingen"
-        },
-        {
-          "person": "Hans Dietrich von Rosenberg"
-        }
-      ]
+      "english": "Inheritance division between Hans Dietrich von Rosenberg and his brother-in-law von Gemmingen.\n\nDate span: 1608–1615."
+    }
+  ],
+  "mention": [
+    {
+      "place": "gemmingen"
+    },
+    {
+      "person": "Hans Dietrich von Rosenberg"
     }
   ]
 }

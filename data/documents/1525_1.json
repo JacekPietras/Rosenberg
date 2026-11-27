@@ -9,20 +9,20 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++09343A5C-A633-445A-80A4-FAE175B611CD&parent_id="
       ],
       "german": "Philipp von Bibern, Amtmann zu Creglingen, Bericht an Markgraf Casimir den Aufenthalt der Hausfrau Zeyholfs von Rosenberg daselbst, d.d. Sonntag Judic. 2. April",
-      "english": "Philipp von Bibern, Amtmann zu Creglingen, reports to Margrave Casimir about the stay of Zeyhold's wife at Rosenberg there, dated Sunday Judicive, April 2",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "had his wife staying at Creglingen, as reported by Philipp von Bibern, Amtmann zu Creglingen.",
-          "date": "1525-04-02"
-        }
-      ]
+      "english": "Philipp von Bibern, Amtmann zu Creglingen, reports to Margrave Casimir about the stay of Zeyhold's wife at Rosenberg there, dated Sunday Judicive, April 2"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "had his wife staying at Creglingen, as reported by Philipp von Bibern, Amtmann zu Creglingen.",
+      "date": "1525-04-02"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

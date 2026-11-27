@@ -7,14 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=576569",
       "german": "Revers der Brüder Johann Philipp und Adalbert Friedrich von Rosenbach bezüglich der Belehnung mit Schackau und weiteren im Einzelnen aufgeführten Lehen durch Amand [von Buseck], Abt von Fulda\n\nJohann Philipp und Adalbert Friedrich von Rosenbach (Roszenbach) bestätigen die Belehnung mit Schackau samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Amand [von Buseck], Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nFormalbeschreibung: Ausfertigung, Pergament, anhängendes Siegel in Holzkapsel\n\nSiegler: Ernst Johann Philipp Hartmann Freiherr von Buseck\n\nZusatzinformationen: Revers bietet kein eigenes Datum, sondern verweist auf dasjenige des Inserts.",
       "english": "Revers of the brothers Johann Philipp and Adalbert Friedrich von Rosenberg concerning their enfeoffment with Schackau and other fiefs specified in detail by Amand [von Buseck], Abbot of Fulda\n\nJohann Philipp and Adalbert Friedrich von Rosenberg confirm their enfeoffment by Amand [von Buseck], Abbot of Fulda, with Schackau together with all its appurtenances in woodland and fields and an estate there, with Kleinsassen, Gerharts [all places in the municipality of Hofbieber, Fulda district], and other fiefs specified in detail. The letter of enfeoffment is transcribed within the instrument. A seal is announced.\n\nFormal description: Original instrument, parchment, with an attached seal in a wooden case.\n\nSealer: Ernst Johann Philipp Hartmann Freiherr von Buseck\n\nAdditional information: The revers gives no date of its own but refers to the date of the inserted document.",
-      "mention": [
-        {
-          "person": "Friedrich von Rosenberg"
-        },
-        {
-          "place": "fulda-cathedral"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3363/00001.jpg"
@@ -23,6 +15,14 @@
           "src": "https://digitalisate-he.arcinsys.de/hstam/urk._76/3363/00002.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Friedrich von Rosenberg"
+    },
+    {
+      "place": "fulda-cathedral"
     }
   ]
 }

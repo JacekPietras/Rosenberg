@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/AUR/AT-KLA_418-B-A_4609_St/charter",
       "german": "Burggraf und Verordnete des Erzherzogtums Kärnten verleihen dem Johann Franz Benaglio Freiherrn von Rosenbach die Landmannschaft. Siegler: Burggraf Orsini-Rosenberg, Verordnete: Virgilius Abt von Ossiach, Franz Josef Graf von Aicholt, Franz Karl Graf von Grottenegg, Wolf Franz Freiherr von Kulmer, Andre Sigmund Graf von Welz\n\nSiegel: 6 Sig. imp.",
       "english": "The Burgrave and deputies of the Archduchy of Carinthia grant Johann Franz Benaglio Freiherr von Rosenbach membership in the estates. Sealers: Burgrave Orsini-Rosenberg and deputies Virgilius, Abbot of Ossiach; Franz Josef Graf von Aicholt; Franz Karl Graf von Grottenegg; Wolf Franz Freiherr von Kulmer; and Andre Sigmund Graf von Welz. Six applied seals.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_B_A_4609_17360801_r.JPG"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-KLA/418/KLA_418_B_A_4609_17360801_v.JPG"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

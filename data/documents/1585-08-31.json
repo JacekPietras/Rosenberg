@@ -6,18 +6,18 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein GA 20 U 1666",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-209208",
       "german": "31. August; Georg Sigmund von Rosenberg zu Haltenbergstetten/Haltermannstetten;\nSiegel: Georg Sigmund von Rosenberg.\n\nLaufzeit: 31. August 1585\n\nUmfang: 1 Urkunde",
-      "english": "31 August; Georg Siegmund von Rosenberg zu Haltenbergstetten/Haltermannstetten.\nSeal: Georg Siegmund von Rosenberg.\n\nTerm: 31 August 1585\n\nExtent: 1 document",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "personTitle": [
-            "zu Haltenbergstetten"
-          ]
-        },
-        {
-          "place": "niederstetten"
-        }
+      "english": "31 August; Georg Siegmund von Rosenberg zu Haltenbergstetten/Haltermannstetten.\nSeal: Georg Siegmund von Rosenberg.\n\nTerm: 31 August 1585\n\nExtent: 1 document"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "personTitle": [
+        "zu Haltenbergstetten"
       ]
+    },
+    {
+      "place": "niederstetten"
     }
   ]
 }

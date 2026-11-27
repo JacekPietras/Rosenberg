@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++1db7f5e6-997b-4948-8636-fbf7b1a94ef4&parent_id="
       ],
       "german": "Rothenburg an Zeisolf von Rosenberg zu Haldenbergsteten: Brandschatzung von Oberstetten und Wildentierbach.",
-      "english": "Rothenburg to Zaisolph von Rosenberg zu Haldenbergsteten: pillaging by fire of Oberstetten and Wildentierbach.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
+      "english": "Rothenburg to Zaisolph von Rosenberg zu Haldenbergsteten: pillaging by fire of Oberstetten and Wildentierbach."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "personTitle": [
+        "zu Haldenbergsteten"
       ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "personTitle": [
-            "zu Haldenbergsteten"
-          ],
-          "type": "generic",
-          "content": "received correspondence from Rothenburg concerning arson damage at Oberstetten and Wildentierbach."
-        }
-      ]
+      "type": "generic",
+      "content": "received correspondence from Rothenburg concerning arson damage at Oberstetten and Wildentierbach."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

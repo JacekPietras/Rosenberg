@@ -7,20 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-NA/ACK/822/charter",
       "german": "Bratři Petr, Jošt, Oldřich a Jan z Rožmberka prohlašují, že od Karla, císaře římského a krále českého, přijali v léno hrad a ves Nové Hrady se vším, co k tomu náleží.Fratres Petrus, Jodocus, Ulricus et Johannes de Rosenberg recognoscunt se castrum et villam Gratzen (Nové Hrady) cum omnibus pertinentiis a Karolo, Romanorum imperatore et Bohemiae rege, nec non a Corona regni Bohemiae in feudum accepisse.\n\nSiegel: quattuor sigilla in scidulis membranaceis appendent: 1) Petri de Rosenberg d 30 mm, 2) Jodoci de Rosenberg d 25 mm, 3) Ulrici de Rosenberg d 31 mm, 4) Johannis de Rosenberg d 24 mm.",
       "english": "The brothers Peter, Jodok, Ulrich, and Hans von Rosenberg acknowledge that they have received Nové Hrady Castle and village, with all their appurtenances, as a fief from Charles, Roman Emperor and King of Bohemia, and from the Crown of Bohemia.\n\nSeals: four seals hanging from parchment strips: Peter von Rosenberg (30 mm), Jodok von Rosenberg (25 mm), Ulrich von Rosenberg (31 mm), and Hans von Rosenberg (24 mm).",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Ulrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_13620307_00822_v.jpg"
@@ -29,6 +15,20 @@
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_13620307_00822_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Ulrich von Rosenberg"
     }
   ]
 }

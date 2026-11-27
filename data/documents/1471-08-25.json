@@ -6,30 +6,30 @@
       "source": "Generallandesarchiv Karlsruhe 69 von Helmstatt U 1032",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-2111122",
       "german": "Hans Drutze, entwichener und gefangengesetzter Knecht des Junkers Hans von Helmstatt zu Grombach (\"Grun-\"), schwört, sich nach seiner Freilassung nicht zu rächen, seine Ansprüche an Hans von Helmstatt durch Wiprecht von Helmstatt, +Reinhards Sohn, und Dieter von Angelloch entscheiden zu lassen und keine weiteren Forderungen an die Gemeiner zu Bischofsheim zu stellen.\nSiegler: \"Lenhart\" von Rosenbach\n\nLaufzeit: 1471 (1471 August 25 - So n Bartholomäus)",
-      "english": "Hans Drutze, a servant of Junker Hans von Helmstatt zu Grombach who had fled and been taken prisoner, swears that after his release he will not take revenge; that he will have his claims against Hans von Helmstatt decided by Wiprecht von Helmstatt, son of the late Reinhard, and Diether von Gauangelloch; and that he will make no further claims against the co-owners at Bischofsheim.\n\nSealer: “Lenhart” von Rosenbach.\n\nTerm: 1471 (25 August 1471, Sunday after St Bartholomew).",
-      "mention": [
-        {
-          "place": "bischofsheim"
-        },
-        {
-          "person": "Diether von Gauangelloch"
-        },
-        {
-          "person": "Hans von Helmstatt",
-          "personTitle": [
-            "Junker"
-          ]
-        },
-        {
-          "person": "Reinhard von Gauangelloch"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wiprecht von Helmstatt"
-        }
+      "english": "Hans Drutze, a servant of Junker Hans von Helmstatt zu Grombach who had fled and been taken prisoner, swears that after his release he will not take revenge; that he will have his claims against Hans von Helmstatt decided by Wiprecht von Helmstatt, son of the late Reinhard, and Diether von Gauangelloch; and that he will make no further claims against the co-owners at Bischofsheim.\n\nSealer: “Lenhart” von Rosenbach.\n\nTerm: 1471 (25 August 1471, Sunday after St Bartholomew)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bischofsheim"
+    },
+    {
+      "person": "Diether von Gauangelloch"
+    },
+    {
+      "person": "Hans von Helmstatt",
+      "personTitle": [
+        "Junker"
       ]
+    },
+    {
+      "person": "Reinhard von Gauangelloch"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wiprecht von Helmstatt"
     }
   ]
 }

@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++0F291C1F-EDC6-47DE-B775-02F9C2BF7DBB&parent_id="
       ],
       "german": "Zwei Abschriften einer Gerichtsurkunde vom 9. Februar 1478 in Sachen des Ritterstifts gegen Georg Arnold und Michael von Rosenberg wegen der Gerechtsamen im Dorf Kirchheim",
-      "english": "Two copies of a court record dated February 9, 1478, regarding the Ritterstift (knights' foundation) in a dispute against Georg Arnold von Rosenberg and Michael von Rosenberg over rights in the village of Kirchheim",
-      "mention": [
-        {
-          "person": "Georg Arnold von Rosenberg"
-        },
-        {
-          "place": "kirchheim"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim."
-        }
-      ]
+      "english": "Two copies of a court record dated February 9, 1478, regarding the Ritterstift (knights' foundation) in a dispute against Georg Arnold von Rosenberg and Michael von Rosenberg over rights in the village of Kirchheim"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "was a party to court proceedings brought by the Ritterstift concerning rights in Kirchheim."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Arnold von Rosenberg"
+    },
+    {
+      "place": "kirchheim"
     }
   ]
 }

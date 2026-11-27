@@ -7,32 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234520",
       "german": "Petersch von Dachsbach, Konrads von Uissingheim (Ussinkein) des Älteren Witwe, verkauft an das Kloster Bronnbach (Brunbach) benannte Eigenleute zu Reicholzheim (Richolsheim), Kembach (Kentbach), Sonderriet (Sunderriet), Ebenheid (Ebenoet), Neunkirchen, Lindelbach, Dietenhan, Dertingen (Terdingen), Hochhausen (Hochhusen), Uissigheim (Ussinkein), Bettingen, Königheim (Kennikein), Umpfingen (Umphickein), Werbachhausen (Werpachhusen), Höhefeld (Hoefeld), Ensinkein und Gutenberg um 55 Pfund Heller.\n\nLaufzeit: 1376 Januar 14 (\"Der geben wart do man zalt von Cristes burt druzehenhundert iar und sehs und sybenzig iar am nehsten montage vor sant Antonie tag\")\n\nSiegelbeschreibung: 4 Siegel an Pergamentstreifen, das 3. beschädigt\n\nVermerke: Auf der Rückseite.: \"Proprii homines empti a Petrissa relicta senioris Cunradi de Ussenkein\"\n\nSiegler: Petersch von Dachsbach, Ausstellerin; Heinrich Bleichen von Nunbrunne, Bürge; Konrad von Uissigheim, Arnold sel. Sohn, Bürge; Konrad von Uissigheim, Eberhard sel. Sohn, Bürge",
       "english": "Petersch von Dachsbach, widow of Konrad von Uissigheim der Ältere, sells to Bronnbach Abbey the named serfs at Reicholzheim, Kembach, Sonderriet, Ebenheid, Neunkirchen, Lindelbach, Dietenhan, Dertingen, Hochhausen, Uissigheim, Bettingen, Königheim, Umpfingen, Werbachhausen, Höhefeld, Ensinkein, and Gutenberg for 55 pounds Heller.\n\nDate: 14 January 1376.\n\nDate wording: ‘… on the Monday immediately before St Anthony’s day.’\n\nSeal description: Four seals on parchment strips; the third is damaged.\n\nNote on the reverse: ‘Proprii homines empti a Petrissa relicta senioris Cunradi de Ussenkein’ (‘Serfs purchased from Petrissa, widow of the elder Konrad of Ussenkein’).\n\nSeal bearers: Petersch von Dachsbach, the issuer; Heinrich Bleichen von Nunbrunne, surety; Konrad von Uissigheim, son of the late Arnold, surety; and Konrad von Uissigheim, son of the late Eberhard, surety.",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "dertingen"
-        },
-        {
-          "place": "koenigheim"
-        },
-        {
-          "person": "Konrad of Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "person": "Konrad von Uissigheim",
-          "personTitle": [
-            "der Ältere"
-          ]
-        },
-        {
-          "place": "uissigheim"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234520%2F07_0000234520_0001_7-234520-1.jpg"
@@ -41,6 +15,32 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234520%2F07_0000234520_0002_7-234520-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "dertingen"
+    },
+    {
+      "place": "koenigheim"
+    },
+    {
+      "person": "Konrad of Uissigheim",
+      "personTitle": [
+        "der Ältere"
+      ]
+    },
+    {
+      "person": "Konrad von Uissigheim",
+      "personTitle": [
+        "der Ältere"
+      ]
+    },
+    {
+      "place": "uissigheim"
     }
   ]
 }

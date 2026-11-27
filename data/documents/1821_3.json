@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7DC4B42A-6378-401C-94D9-1C1A9BD91529&parent_id="
       ],
       "german": "Auswanderungsgesuch der Eva Maria Rosenberger, Bauerstochter von Rosenberg (LG Wegscheid), nach Österreich",
-      "english": "Emigration petition of Eva Maria Rosenberger, farmer’s daughter from Rosenberg (Wegscheid District Court), to Austria",
-      "mention": [
-        {
-          "person": "Eva Maria Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Emigration petition of Eva Maria Rosenberger, farmer’s daughter from Rosenberg (Wegscheid District Court), to Austria"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Eva Maria Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

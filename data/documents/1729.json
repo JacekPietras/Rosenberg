@@ -7,37 +7,37 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=5183734",
       "german": "Ahnenprobe des Johann Baptist v. Roll z. Bernau. - ausgefertigt 1729 August 25, Pergament, beglaubigte Kopie 172 August 5, Mergentheim\n\nEnthält: 1. Roll z. Bernau, Johann Baptist v.\n2. Roll z. Bernau, Johann Walter v.\n3. Roggenbach, Maria Ursula v.\n4. Roll z. Bernau, Franz Ludwig v.\n5. Schönau, Maria Agnes v. u. z.\n6. Roggenbach, Johann Franz v.\n7. Münch v. Rosenburg, Jacobea\n8. Roll z. Bernau, Carl Emanuel v.\n9. Schmidt v. Altdorf, Maria Regina\n10. Schönau, Marx Jakob v.\n11. Steinach, Margarete v.\n12. Roggenbach, Hans Hartmann v.\n13. Rhein, Maria Susanna zu\n14. Münch z. Rosenburg, Hans Jacob\n15. Dormenz, Sibylla v.\n16. Roll, Walter v.\n17. Zollikhofen, Maria Ursula v.\n18. Schmidt v. Altdorf, Jost\n19. Berolding, Helena v.\n20. Schönau Eitel (?) , Eckard v.\n21. Reischach, Beatrix v.\n22. Reinach, Jost v.\n23. Schönau, Anna v.\n24. Roggenbach, Adolph v.\n25. Pforr, Maria v.\n26. Rhein, Johann Jakob z.\n27. Andlau, Agnes v.\n28. Münch v. Rosenburg, Johann Caspar\n29. Jestetten, Sophia v.\n30. Dormenz, Johann Sebastian v.\n31. Reinach, Maria Katharina v.\n\nLaufzeit: 1729\n\n(Vor-) Provenienzen: Friedberg",
       "english": "Proof of ancestry of Johann Baptist von Roll zu Bernau, executed 25 August 1729, parchment; certified copy dated 5 August 172 [year incomplete], Mergentheim. Contents: 1 Johann Baptist von Roll zu Bernau; 2 Johann Walter von Roll zu Bernau; 3 Maria Ursula von Roggenbach; 4 Franz Ludwig von Roll zu Bernau; 5 Maria Agnes von Schönau von und zu; 6 Johann Franz von Roggenbach; 7 Jacobea Münch von Rosenburg; 8 Carl Emanuel von Roll zu Bernau; 9 Maria Regina Schmidt von Altdorf; 10 Marx Jakob von Schönau; 11 Margaretha von Steinach; 12 Hans Hartmann von Roggenbach; 13 Maria Susanna zu Rhein; 14 Hans Jacob Münch zu Rosenburg; 15 Sibylla von Dormenz; 16 Walter von Roll; 17 Maria Ursula von Zollikhofen; 18 Jost Schmidt von Altdorf; 19 Helena von Berolding; 20 Eckard von Schönau Eitel (uncertain); 21 Beatrix von Reischach; 22 Jost von Reinach; 23 Anna von Schönau; 24 Adolph von Roggenbach; 25 Maria von Pforr; 26 Johann Jakob zu Rhein; 27 Agnes von Andlau; 28 Johann Caspar Münch von Rosenburg; 29 Sophia von Jestetten; 30 Johann Sebastian von Dormenz; 31 Maria Katharina von Reinach. Date range: 1729. (Previous) provenance: Friedberg.",
-      "mention": [
-        {
-          "person": "Anna von Schönau"
-        },
-        {
-          "person": "Hans Caspar Mönch von Rosenberg"
-        },
-        {
-          "person": "Hans Jakob Mönch von Rosenberg"
-        },
-        {
-          "person": "Margaretha von Steinach"
-        },
-        {
-          "person": "Maria Agnes von Schönau"
-        },
-        {
-          "person": "Marx Jakob von Schönau"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schonau"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_12/325/a_12%23325.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Anna von Schönau"
+    },
+    {
+      "person": "Hans Caspar Mönch von Rosenberg"
+    },
+    {
+      "person": "Hans Jakob Mönch von Rosenberg"
+    },
+    {
+      "person": "Margaretha von Steinach"
+    },
+    {
+      "person": "Maria Agnes von Schönau"
+    },
+    {
+      "person": "Marx Jakob von Schönau"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schonau"
     }
   ]
 }

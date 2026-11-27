@@ -7,17 +7,17 @@
       "source": "[RI XIII] H. 26 n. 487",
       "url": "https://www.regesta-imperii.de/id/1449-05-05_1_0_13_26_0_487_487",
       "german": "Kg.F. schreibt Sigmund von Ebersdorf, Hubmeister in Österreich, wegen des ausstehenden Soldes Heinrichs von Rosenberg.",
-      "english": "King Frederick writes to Sigmund von Ebersdorf, master of the mint in Austria, concerning Heinrich von Rosenberg's unpaid wages.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "person": "König Friedrich",
-          "personTitle": [
-            "König"
-          ]
-        }
+      "english": "King Frederick writes to Sigmund von Ebersdorf, master of the mint in Austria, concerning Heinrich von Rosenberg's unpaid wages."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "König Friedrich",
+      "personTitle": [
+        "König"
       ]
     }
   ]

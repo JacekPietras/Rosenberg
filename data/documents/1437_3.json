@@ -6,36 +6,36 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein Ni 10 Bd 1",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-97876",
       "german": "Ulrich von Rosenberg d.J. verkauft mit Zustimmung seines Bruders Konrad von Rosenberg für 400 fl. sein Viertel am großen und kleinen Zehnten zu Sindolsheim an Hans Rüdt von Bödigheim zu Eberstadt und behält sich Wiederkauf vor",
-      "english": "Ulrich von Rosenberg the Younger sells with the consent of his brother Konrad von Rosenberg for 400 florins his quarter of the great and small tithe at Sindolsheim to Hans Rüdt von Bödigheim at Eberstadt, retaining the right of repurchase",
-      "mention": [
-        {
-          "person": "Hans Rüd von Bödigheim",
-          "personTitle": [
-            "zu Eberstadt"
-          ]
-        },
-        {
-          "place": "sindolsheim-church"
-        }
+      "english": "Ulrich von Rosenberg the Younger sells with the consent of his brother Konrad von Rosenberg for 400 florins his quarter of the great and small tithe at Sindolsheim to Hans Rüdt von Bödigheim at Eberstadt, retaining the right of repurchase"
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ulrich von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
       ],
-      "facts": [
-        {
-          "person": "Ulrich von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "sibling",
-          "of": "Konrad von Rosenberg"
-        },
-        {
-          "person": "Ulrich von Rosenberg",
-          "personTitle": [
-            "der Jüngere"
-          ],
-          "type": "generic",
-          "content": "sold his quarter share in the great and small tithes at Sindolsheim to Hans Rüdt von Bödigheim zu Eberstadt with the consent of his brother Konrad von Rosenberg, retaining the right of repurchase."
-        }
+      "type": "sibling",
+      "of": "Konrad von Rosenberg"
+    },
+    {
+      "person": "Ulrich von Rosenberg",
+      "personTitle": [
+        "der Jüngere"
+      ],
+      "type": "generic",
+      "content": "sold his quarter share in the great and small tithes at Sindolsheim to Hans Rüdt von Bödigheim zu Eberstadt with the consent of his brother Konrad von Rosenberg, retaining the right of repurchase."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Rüd von Bödigheim",
+      "personTitle": [
+        "zu Eberstadt"
       ]
+    },
+    {
+      "place": "sindolsheim-church"
     }
   ]
 }

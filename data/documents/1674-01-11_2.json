@@ -10,17 +10,6 @@
       ],
       "german": "Der Würzburger Bischof Johann Hartmann [von Rosenbach] verleiht Johann Rudolf von Steinau genannt Steinrück, dem Sohn des Sebastian von Steinau genannt Streinrück, die folgenden Güter zu Mannlehen:\n- Einen Hof in Burglauer.\n- 4,75 Morgen Weinberg am Höhberg bei Burglauer.\n- 4 Morgen Weinberg am Hohnberg in Strahlungen (Strolingen).\n- Den Kleinzehnten unterhalb des Höhberg auf Burglauer zu.\n- Zwei Güter in Heufurt, die Moritz Diemar und Konrad Schubart bewirtschaften.\nDiese Güter waren nach dem Tod des Johann Dietrich von Steinau an seinen Vetter Sebastian von Steinau gefallen. Von diesem hatte sie sein Sohn geerbt.\nAussteller:  Bischof von Würzburg\nEmpfänger:  Johann Rudolf von Steinau genannt Steinrück\n\nVermerke: Rückvermerke:  Inhaltsangabe (18. Jh.)\n\nBesiegelung/Beglaubigung: Bischof; an Pergamentstreifen anhängendes Sekretsiegel, gut erhalten",
       "english": "The Hans Hartmann von Rosenberg, Bischof zu Würzburg, grants the following properties as male fiefs to Johann Rudolf von Steinau called Steinrück, son of Sebastian von Steinau called Steinrück:\n- A farm at Burglauer.\n- 4.75 morgens of vineyard on the Höhberg near Burglauer.\n- 4 morgens of vineyard on the Hohnberg at Strahlungen.\n- The small tithe below the Höhberg, toward Burglauer.\n- Two estates at Heufurt, worked by Moritz Diemar and Konrad Schubart.\n\nAfter Johann Dietrich von Steinau's death, these properties had passed to his cousin Sebastian von Steinau. Sebastian's son inherited them from him.\n\nIssuer: Bishop of Würzburg\nRecipient: Johann Rudolf von Steinau called Steinrück\n\nEndorsements: Reverse endorsement: summary (18th century).\n\nSealing/authentication: Bishop's secret seal, attached by a parchment strip, well preserved.",
-      "mention": [
-        {
-          "person": "Hans Hartmann von Rosenberg",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a62538a7-be3c-4006-aa74-415072a3db14/1/full/max/0/default.jpg"
@@ -32,6 +21,17 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/a62538a7-be3c-4006-aa74-415072a3db14/3/full/max/0/default.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans Hartmann von Rosenberg",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

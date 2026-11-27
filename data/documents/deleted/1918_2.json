@@ -5,22 +5,22 @@
       "source": "Generallandesarchiv Karlsruhe 338 Nr. 3273",
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-4321295",
       "german": "Beschwerde von Grundstückseigentümern in Sindolsheim gegen den Strombezugsverband Buchen wegen Bau einer Hochspannungsleitung von Rosenberg nach Hardheim\n\nLaufzeit: 1918\n\nUmfang: 0,7 cm",
-      "facts": [
-        {
-          "subject": "The high-voltage line from Rosenberg to Hardheim",
-          "type": "generic",
-          "content": "was the subject of a complaint by property owners in Sindolsheim against Strombezugsverband Buchen concerning its construction."
-        }
-      ],
-      "mention": [
-        {
-          "place": "buchen"
-        },
-        {
-          "place": "sindolsheim-church"
-        }
-      ],
       "english": "Complaint by landowners in Sindolsheim against the Buchen Electricity Supply Association concerning construction of a high-voltage power line from Rosenberg to Hardheim\n\nPeriod covered: 1918\n\nExtent: 0.7 cm"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "The high-voltage line from Rosenberg to Hardheim",
+      "type": "generic",
+      "content": "was the subject of a complaint by property owners in Sindolsheim against Strombezugsverband Buchen concerning its construction."
+    }
+  ],
+  "mention": [
+    {
+      "place": "buchen"
+    },
+    {
+      "place": "sindolsheim-church"
     }
   ]
 }

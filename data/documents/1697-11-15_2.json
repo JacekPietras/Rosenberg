@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HLBFulda/urkunden/184/charter",
       "german": "Placidus [von Droste], Abt von Fulda, schreibt an Benedikt von Rosenbach, Propst von Thulba, dass er Gregor von Rauschenberg mit der Überbringung der Briefe an die Propstei beauftragt hat. Damit sei der Hochachtung seitens des Abtes gegenüber der Propstei genüge getan.\n\nSiegel: Latein, aufgedrücktes Briefsiegel",
       "english": "Placidus [von Droste], Abt von Fulda, writes to Benedikt von Rosenbach, Propst von Thulba, that he has commissioned Gregor von Rauschenberg to deliver the letters to the provostry. In this way, the abbot's respect for the provostry will have been adequately demonstrated.\n\nSeal: Latin, impressed letter seal",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HLBFulda/urkunden/Urk.%20184%20Nr.%201%20Seite%201%20%281697%20November%2015%29.jpg"
@@ -29,6 +21,14 @@
           "src": "https://images.monasterium.net/img/DE-HLBFulda/urkunden/Urk.%20184%20Nr.%201%20Seite%204%20%281697%20November%2015%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

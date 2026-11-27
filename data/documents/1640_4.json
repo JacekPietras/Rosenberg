@@ -12,27 +12,27 @@
         "https://www.landesarchiv-bw.de/plink/?f=3-98096"
       ],
       "german": "Spezifikation aller und jeder eigentümlichen Schlösser, Dörfern, Untertanen, Zinsen, Güter, Zehnten, Hölzer, Äcker, Wiesen, Weinberge samt alle Rechten und Gerechtigkeiten.... so in den vier Vogteien Haltenbergstetten, Rosenberg, Unterschüpf und Waldmannshofen weiland des.... Albrecht Christoph von Rosenberg nachgelassene Eigentumsrechten innegehabt, genossen und gebraucht, auch hernacher dem hochwürdigsten Fürsten.... Francisco, Bischof zu Bamberg und Würzburg...., und Ihrer Gnaden Herrn Gebrüdern den 22. August 1640 eigentümlich verkauft und übergeben.\n\nLaufzeit: 1640\n\nUmfang: 1 Bd., Fol. 1-90",
-      "english": "Inventory of all privately owned castles, villages, subjects, rents, properties, tithes, woods, fields, meadows, vineyards, and all rights and privileges held and enjoyed as property in the four bailiwicks of Haltenbergstetten, Rosenberg, Unterschüpf and Waldmannshofen, inherited from the late Albrecht Christoph von Rosenberg, and subsequently sold and transferred as property on 22 August 1640 to the most reverend prince Francisco, Bishop of Bamberg and Würzburg, and his brothers.\n\nDate span: 1640.\n\nExtent: 1 volume, fols. 1–90.",
-      "mention": [
-        {
-          "person": "Albrecht Christoph von Rosenberg"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        },
-        {
-          "place": "unterschuepf"
-        },
-        {
-          "place": "waldmannshofen"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ]
+      "english": "Inventory of all privately owned castles, villages, subjects, rents, properties, tithes, woods, fields, meadows, vineyards, and all rights and privileges held and enjoyed as property in the four bailiwicks of Haltenbergstetten, Rosenberg, Unterschüpf and Waldmannshofen, inherited from the late Albrecht Christoph von Rosenberg, and subsequently sold and transferred as property on 22 August 1640 to the most reverend prince Francisco, Bishop of Bamberg and Würzburg, and his brothers.\n\nDate span: 1640.\n\nExtent: 1 volume, fols. 1–90."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Christoph von Rosenberg"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
+    },
+    {
+      "place": "unterschuepf"
+    },
+    {
+      "place": "waldmannshofen"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

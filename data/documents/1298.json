@@ -9,18 +9,18 @@
         "https://www.ruegland.de/download.php?file=Chronik-Ruegland.pdf"
       ],
       "german": "Nach der lokalgeschichtlichen Darstellung werden 1298 Vertreter der Familie von Vestenberg in einem Kaufbrief über das Gut Rügland nachweisbar und erscheinen in Verbindung mit der dortigen Wasserburg sowie Burg Rosenberg. Die beteiligten Personen, der genaue Rechtsgegenstand und das Archivoriginal müssen anhand der zugrunde liegenden Urkunde noch bestimmt werden.",
-      "english": "A local history reports that members of the Vestenberg family appear in a 1298 purchase deed concerning the Rügland estate and connects them with the moated castle there and Rosenberg Castle. The parties, transaction and original charter remain to be established.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "vestenberg"
-        }
-      ]
+      "english": "A local history reports that members of the Vestenberg family appear in a 1298 purchase deed concerning the Rügland estate and connects them with the moated castle there and Rosenberg Castle. The parties, transaction and original charter remain to be established."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "vestenberg"
     }
   ]
 }

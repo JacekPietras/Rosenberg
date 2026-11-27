@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++EF7AAFD7-B427-4F7E-80B4-6E74C8DC0E9E&parent_id="
       ],
       "german": "Fragmente betr. die Klage des Albrecht von Rosenberg wegen Herausgabe des Schlosses Boxberg etc.",
-      "english": "Fragments concerning Albrecht von Rosenberg's complaint for the restitution of Boxberg Castle and other matters.",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg"
-        },
-        {
-          "place": "boxberg"
-        }
-      ]
+      "english": "Fragments concerning Albrecht von Rosenberg's complaint for the restitution of Boxberg Castle and other matters."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg"
+    },
+    {
+      "place": "boxberg"
     }
   ]
 }

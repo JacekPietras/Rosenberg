@@ -13,44 +13,7 @@
         "https://www.landesarchiv-bw.de/plink/?f=4-1787122"
       ],
       "german": "König Ruprecht gestattet den Brüdern Arnold und Eberhard von Rosenberg in ihrem Dorf Schweigern ein Halsgericht, Stock und Galgen zu haben.\n\nLaufzeit: 1400 Dezember 10 (1400 Freitag nach Nikolaus)\n\nSiegelbeschreibung: 1 Siegel",
-      "english": "King Ruprecht allows the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "jagstberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "arnold_boxberg",
-          "type": "sibling",
-          "of": "eberhard_jagstberg"
-        },
-        {
-          "person": "arnold_boxberg",
-          "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern."
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern."
-        }
-      ]
+      "english": "King Ruprecht allows the brothers Arnold von Rosenberg and Eberhard von Rosenberg to have a neck court, stocks and gallows in their village of Schweigern."
     },
     {
       "source": [
@@ -63,44 +26,54 @@
         "https://www.digitale-sammlungen.de/de/view/bsb00009261"
       ],
       "german": "1400 Dezember 10, Heidelberg. Erlaubt den Brüdern Arnold und Eberhard von Rosenberg, dass sie in ihrem dorfe „Sweyern (Schweigern bei Boxberg) und in synem begriffe schultheissen und scheffln und nemlich ein halßgericht stock und galgen da selbis furbasser mere eweclichen haben und auch mit dem selben gerichte richten und gefarn sollen, als daz in andern gerichten daby gewonheit ist“. Or. K. Kaiser- und Königsurk. nr. 456. Schweigern Gerichtsbarkeit 43/238. Copb. 801, 7b u. Copb. 956, 94. K. Wien, RR. C. Chmel, Reg. Rup. nr. 32.",
-      "english": "1400 December 10, Heidelberg. He permits the brothers Arnold and Eberhard von Rosenberg to have a reeve and aldermen, namely a high court, stocks, and gallows, henceforth forever in their village of Schweigern and its jurisdiction, and to judge and proceed with that court according to the custom of other nearby courts. Original: Kaiser- und Königsurkunden no. 456; Schweigern jurisdiction 43/238; copies 801, fol. 7b, and 956, fol. 94; Vienna, Reichsregister C; Chmel, Regesta Ruperti no. 32.",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "heidelberg"
-        },
-        {
-          "place": "jagstberg"
-        },
-        {
-          "person": "König Ruprecht",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "arnold_boxberg",
-          "type": "sibling",
-          "of": "eberhard_jagstberg"
-        },
-        {
-          "person": "arnold_boxberg",
-          "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
-        },
-        {
-          "person": "eberhard_jagstberg",
-          "type": "generic",
-          "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
-        }
+      "english": "1400 December 10, Heidelberg. He permits the brothers Arnold and Eberhard von Rosenberg to have a reeve and aldermen, namely a high court, stocks, and gallows, henceforth forever in their village of Schweigern and its jurisdiction, and to judge and proceed with that court according to the custom of other nearby courts. Original: Kaiser- und Königsurkunden no. 456; Schweigern jurisdiction 43/238; copies 801, fol. 7b, and 956, fol. 94; Vienna, Reichsregister C; Chmel, Regesta Ruperti no. 32."
+    }
+  ],
+  "facts": [
+    {
+      "person": "arnold_boxberg",
+      "type": "sibling",
+      "of": "eberhard_jagstberg"
+    },
+    {
+      "person": "arnold_boxberg",
+      "type": "generic",
+      "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to have a high court, stocks, and gallows in Schweigern."
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "type": "generic",
+      "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to have a high court, stocks, and gallows in Schweigern."
+    },
+    {
+      "person": "arnold_boxberg",
+      "type": "generic",
+      "content": "received King Ruprecht’s permission jointly with his brother [eberhard_jagstberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
+    },
+    {
+      "person": "eberhard_jagstberg",
+      "type": "generic",
+      "content": "received King Ruprecht’s permission jointly with his brother [arnold_boxberg] to appoint a reeve and aldermen and to have a high court, stocks, and gallows in Schweigern and its jurisdiction."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "heidelberg"
+    },
+    {
+      "place": "jagstberg"
+    },
+    {
+      "person": "König Ruprecht",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "schweigern"
     }
   ]
 }

@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6BFCB110-BF25-4448-9F88-93B85965052A&parent_id="
       ],
       "german": "Gerichtsprotokolle unter dem Komtur der Deutschordenskommende Virnsberg, Wolfgang von Rosenberg",
-      "english": "Court records under Wolfgang von Rosenberg, commander of the Teutonic Order commandery at Virnsberg",
-      "mention": [
-        {
-          "place": "virnsberg"
-        },
-        {
-          "person": "Wolfgang von Rosenberg"
-        }
-      ]
+      "english": "Court records under Wolfgang von Rosenberg, commander of the Teutonic Order commandery at Virnsberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "virnsberg"
+    },
+    {
+      "person": "Wolfgang von Rosenberg"
     }
   ]
 }

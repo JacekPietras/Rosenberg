@@ -8,27 +8,27 @@
       "summary": "Konrad von Rosenberg (Rosenberg) empfängt von Bischof Johann von Egloffstein im Dorf Brehmen (Bremen) eine Hube, die Vogtei, das Gericht und etliche Leibeigene. Betroffen sind laut einem späteren Schreiber auch Arnsfeld (evtl. Erfeld) und Buch Buch .",
       "german": "Bremen, als Cuntz von Rosenberg ain hube, die vogtei, das gericht vnd etliche aigene leute [gestrichen: daselbst] im dorf zu den Bremen [Nachtragshand: Arnsfeld, Buch] von B. Johannsen von Egloffstain entpfangen hat, Anno 1406. In Emptionum fo 187.",
       "english": "In 1406, the transcription records that Kunz von Rosenberg received from Bishop Johann von Egloffstein a farm, the bailiwick, the court, and several dependent people in the village it calls Bremen. The archive summary identifies Cuntz as Konrad von Rosenberg and Bremen as Brehmen. Recorded in the Register of Acquisitions, fol. 187. A later hand also notes Arnsfeld (possibly Erfeld) and Buch.",
-      "mention": [
-        {
-          "place": "buch"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "type": "generic",
-          "content": "received a Hube, the Vogtei, the court, and several serfs in Brehmen as a fief from Johann von Egloffstein, Bischof."
-        }
-      ],
       "img": [
         {
           "src": "https://www.historisches-unterfranken.uni-wuerzburg.de/fries/Bilder/Sta_Wue_Standbuch_1011_118.jpg",
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "type": "generic",
+      "content": "received a Hube, the Vogtei, the court, and several serfs in Brehmen as a fief from Johann von Egloffstein, Bischof."
+    }
+  ],
+  "mention": [
+    {
+      "place": "buch"
+    },
+    {
+      "person": "Konrad von Rosenberg"
     }
   ]
 }

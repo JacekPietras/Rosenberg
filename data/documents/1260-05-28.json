@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-StiAW/Urkunden/1260_V_28/charter",
       "german": "Wok von Rosenberg bittet den Abt und das Capitel zu Citeaux, seine Stiftung (Vyssi Brod -Hohenfurt) dem Orden einzuverleiben.\n\nSiegel: Mit einem zerbröckelten Siegel.",
       "english": "Wok von Rosenberg petitions the abbot and chapter of Cîteaux to incorporate his foundation (Vyšší Brod / Hohenfurt) into the order.\n\nSeal: With a crumbling seal.",
-      "mention": [
-        {
-          "person": "Wok von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-StiAW/Urkunden/StAWilhering_12600528_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/AT-StiAW/Urkunden/StAWilhering_12600528.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Wok von Rosenberg"
     }
   ]
 }

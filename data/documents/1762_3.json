@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++A5649494-1D7B-44E4-842B-CB625C6E66A9&parent_id="
       ],
       "german": "Klage des Christian Albrecht Freiherr Truchseß von Wetzhausen zu Oberlauringen gegen die Gebrüder v. Rosenbach zu Maßbach und deren Amtsverweser zu Thundorf wegen Eingriffes in die Vogteigerechtsamen auf der neuen Mühle unterhalb von Maßbach",
-      "english": "Lawsuit by Christian Albrecht Truchseß von Wetzhausen, Freiherr zu Oberlauringen against the brothers von Rosenbach zu Maßbach and their acting official at Thundorf for encroachment on bailiff-jurisdiction rights at the new mill below Maßbach.",
-      "mention": [
-        {
-          "person": "Albrecht Truchsess"
-        },
-        {
-          "place": "massbach-st-bartholomaeus"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Lawsuit by Christian Albrecht Truchseß von Wetzhausen, Freiherr zu Oberlauringen against the brothers von Rosenbach zu Maßbach and their acting official at Thundorf for encroachment on bailiff-jurisdiction rights at the new mill below Maßbach."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht Truchsess"
+    },
+    {
+      "place": "massbach-st-bartholomaeus"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

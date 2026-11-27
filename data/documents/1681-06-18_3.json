@@ -7,26 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=4846549",
       "german": "Mörlen: Erzbischof Anselm Franz von Mainz verleiht ein näher bezeichnetes Lehen in Ober-Mörlen - Behausung mit Wassergraben etc. - an Franz Christoph und Joh. Konr[ad] v. Rosenbach, Domdekan und Domsänger in Würzburg für sie selbst und die unmündigen Söhne ihres verstorbenen Bruders Joh. Diether\n\nFormalbeschreibung: Original - Pergament, Siegel ab\n\n(Vor-) Provenienzen: Mainz, Erzstift\n\nZusatzinformationen: Z.B. 1933/29",
       "english": "Mörlen: Archbishop Anselm Franz of Mainz grants Franz Christoph and Hans Konrad von Rosenberg, cathedral dean and cantor of Würzburg, for themselves and the minor sons of their late brother Johann Diether, a specified fief at Ober-Mörlen—a residence with a moat, etc.\n\nFormal description: Original, parchment, seal missing\n\n(Former) provenance: Archbishopric of Mainz\n\nAdditional information: For example, 1933/29",
-      "mention": [
-        {
-          "person": "Erzbischof Anselm Franz",
-          "personTitle": [
-            "Erzbischof zu Mainz"
-          ]
-        },
-        {
-          "person": "Franz Christoph von Rosenberg"
-        },
-        {
-          "person": "Hans Konrad von Rosenberg"
-        },
-        {
-          "place": "mainz"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/242--114/hstad_a_3_nr_242--114_001.jpg"
@@ -38,6 +18,26 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_3/242--114/hstad_a_3_nr_242--114_003.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Erzbischof Anselm Franz",
+      "personTitle": [
+        "Erzbischof zu Mainz"
+      ]
+    },
+    {
+      "person": "Franz Christoph von Rosenberg"
+    },
+    {
+      "person": "Hans Konrad von Rosenberg"
+    },
+    {
+      "place": "mainz"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

@@ -9,19 +9,19 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++7bfb68fd-e550-46cc-a847-09b360204093&parent_id="
       ],
       "german": "Rothenburg an Zeisolf von Rosenberg: dessen Beschwerde wegen Schädigung durch Rothenburger Untertanen.",
-      "english": "Rothenburg to Zaisolph von Rosenberg: his complaint regarding damage caused by Rothenburg subjects.",
-      "mention": [
-        {
-          "place": "rothenburg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Zaisolph von Rosenberg",
-          "type": "generic",
-          "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects."
-        }
-      ]
+      "english": "Rothenburg to Zaisolph von Rosenberg: his complaint regarding damage caused by Rothenburg subjects."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Zaisolph von Rosenberg",
+      "type": "generic",
+      "content": "was the subject of his complaint to Rothenburg concerning damage caused by the city’s subjects."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rothenburg"
     }
   ]
 }

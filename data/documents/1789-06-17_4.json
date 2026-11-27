@@ -7,14 +7,6 @@
       "url": "https://www.monasterium.net/mom/DE-HStAMa/urk76/3366/charter",
       "german": "Karl Joseph von Rosenbach bestätigt die Belehnung mit Schackau (Schackaw) samt allen seinen Zubehörungen in Holz und Feld sowie einem Gut ebendort, mit Kleinsassen (Saszen), Gerharts (Gerhardts) [alle Orte Gem. Hofbieber, Lkr. Fulda] und weiteren im Einzelnen aufgeführten Lehen durch Adalbert [von Harstall], Bischof und Abt von Fulda. Lehenbrief inseriert. Siegelankündigung.\n\nSiegler: Freiherr von Tann (Thann)\n\nSiegel: anhängendes Siegel in Holzkapsel Freiherr von Tann (Thann)",
       "english": "Karl Joseph von Rosenbach confirms the enfeoffment by Adalbert [von Harstall], Bishop and Abbot of Fulda, with Schackau (Schackaw), including all its appurtenances in woodland and fields and an estate there, with Kleinsassen (Saszen), Gerharts (Gerhardts) [all places in the municipality of Hofbieber, Fulda district], and other fiefs listed individually. The fief charter is inserted. Notice of seal.\n\nSealer: Baron von Tann (Thann).\n\nSeal: pendant seal in a wooden case, Baron von Tann (Thann).",
-      "mention": [
-        {
-          "place": "fulda-cathedral"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203366%20Vorderseite%20%281789%20Juni%2017%29.jpg"
@@ -23,6 +15,14 @@
           "src": "https://images.monasterium.net/img/DE-HStAMa/Urk76/Urk.%2076%20Nr.%203366%20Rueckseite%20%281789%20Juni%2017%29.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "fulda-cathedral"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

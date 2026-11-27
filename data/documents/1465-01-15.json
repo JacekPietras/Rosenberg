@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-StiASchl/Urkunden/1465_I_15/charter",
       "german": "Abt Thomas von Hohenfurt stellt dem Stift Schlägl ein Vidimus über die Schenkung des Jan von Rosenberg (Urk 360) aus; dies bestätigt der kaiserliche Notar Erhard Pruckner.\n\nSiegel: Siegel an Pergamentbändchen hängend: Thomas II. Hohenfurter, Abt von Hohenfurt. Braune Schale, schwarzes Siegel, spitzoval, ca. 100 x 65 mm. Wappen: Stehende Abtfigur in gotischem Gesprenge. Von der Umschrift zu lesen: \"[Si]gillum thu[me ... ab]batis in alto vado\". Beschädigt.",
       "english": "Abbot Thomas of Hohenfurt issues to Schlägl Abbey a vidimus (authenticated copy) of the donation by Hans von Rosenberg (charter 360); this is certified by the imperial notary Erhard Pruckner.\n\nSeal: A seal hanging from a parchment ribbon: Thomas II of Hohenfurt, Abbot of Hohenfurt. Brown wax matrix, black wax impression, pointed oval, about 100 × 65 mm. Arms: standing abbot figure in an elaborate Gothic architectural frame. Legible part of the inscription: “[Si]gillum thu[me ... ab]batis in alto vado.” Damaged.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_14640626_283_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/73/K.._MOM-Bilddateien._%7ESchlaegljpgweb._%7EStASchl_14640626_283_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
     }
   ]
 }

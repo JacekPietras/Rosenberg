@@ -7,37 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-5379529",
       "german": "Michael von Rosenberg verpflichtet sich gegenüber Kurfürst Philipp von der Pfalz, dass er die an seinen Schwager Hans von Adelsheim um 300 Gulden verpfändeten drei Fuder Weißwein Tauber (Duber) Maß auf seiner Hälfte am Weinzehnten zu Schweigern bei Boxberg binnen sechs Jahren wieder lösen wird. Nach versäumter Lösung mag der Pfalzgraf den Anteil zu seinen Händen nehmen.\n\nLaufzeit: 1480 August 9 (uff mitwoch nach Ciriaci)\n\nSiegler: Michel von Rosenberg\n\nSiegelbeschreibung: abgegangen",
       "english": "Michael von Rosenberg obligates himself to Elector Philipp of the Palatinate that he will redeem within six years the three fuder of white wine in Tauber (Duber) measure, pledged to his brother-in-law Hans von Adelsheim for 300 gulden, on his half of the wine tithe at Schweigern near Boxberg. After failed redemption, the Count Palatine may take the share into his hands.\n\nDuration: August 9, 1480 (on Wednesday after Ciriaci)\n\nSeal: Michael von Rosenberg",
-      "mention": [
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "schweigern"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Michael von Rosenberg",
-          "type": "kin",
-          "of": "Hans von Adelsheim",
-          "term": "Schwager"
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "pledged wine from his half of the wine tithe at Schweigern to his Schwager Hans von Adelsheim."
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years."
-        },
-        {
-          "person": "Michael von Rosenberg",
-          "type": "generic",
-          "content": "sealed his pledge concerning the wine tithe at Schweigern."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001255%2Ftitlaufn_0005379529%2F04_0005379529_0001_4-5379529-1.jpg"
@@ -49,6 +18,37 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000001255%2Ftitlaufn_0005379529%2F04_0005379529_0003_4-5379529-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Michael von Rosenberg",
+      "type": "kin",
+      "of": "Hans von Adelsheim",
+      "term": "Schwager"
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "pledged wine from his half of the wine tithe at Schweigern to his Schwager Hans von Adelsheim."
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "promised Elector Philipp of the Palatinate to redeem the pledged wine tithe at Schweigern within six years."
+    },
+    {
+      "person": "Michael von Rosenberg",
+      "type": "generic",
+      "content": "sealed his pledge concerning the wine tithe at Schweigern."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "schweigern"
     }
   ]
 }

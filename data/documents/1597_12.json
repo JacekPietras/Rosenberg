@@ -9,21 +9,21 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++5DCF4802-92F6-4BFD-B867-4C84558047E6&parent_id="
       ],
       "german": "Verkauf des Anteils am Groß- und Kleinzehnten zu Unter- und Oberschüpf und von Zinsen zu Sachsenflur an Georg Sigmund von Rosenberg zu Haltermannstetten (= Haltenbergstetten)",
-      "english": "Sale to Georg Siegmund von Rosenberg zu Haltermannstetten (= Haltenbergstetten) of a share in the major and minor tithes at Unter- and Oberschüpf and of rents at Sachsenflur.",
-      "mention": [
-        {
-          "person": "Georg Siegmund von Rosenberg",
-          "personTitle": [
-            "zu Niederstetten"
-          ]
-        },
-        {
-          "place": "oberschuepf"
-        },
-        {
-          "place": "schloss-haltenbergstetten"
-        }
+      "english": "Sale to Georg Siegmund von Rosenberg zu Haltermannstetten (= Haltenbergstetten) of a share in the major and minor tithes at Unter- and Oberschüpf and of rents at Sachsenflur."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Siegmund von Rosenberg",
+      "personTitle": [
+        "zu Niederstetten"
       ]
+    },
+    {
+      "place": "oberschuepf"
+    },
+    {
+      "place": "schloss-haltenbergstetten"
     }
   ]
 }

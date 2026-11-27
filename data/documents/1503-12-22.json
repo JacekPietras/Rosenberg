@@ -6,26 +6,26 @@
       "source": "HStAM, Urk. 140, 1033",
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=6835002",
       "german": "Belehnung des Philipp und Hans von Rosenberg mit der Fackenmühle an der Haun\n\nAbt Johann von Fulda belehnt Philipp und Hans von Rosenberg mit der Fackenmühle an der Haun.",
-      "english": "Enfeoffment of Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun\n\nAbbot Johann zu Fulda enfeoffs Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun.",
-      "mention": [
-        {
-          "person": "Hans",
-          "personTitle": [
-            "Abt zu Fulda"
-          ]
-        }
-      ],
-      "facts": [
-        {
-          "person": "Philipp von Rosenberg",
-          "type": "generic",
-          "content": "was enfeoffed with the Fackenmühle on the Haun by Johann, Abt von Fulda, together with Hans von Rosenberg."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "type": "generic",
-          "content": "was enfeoffed with the Fackenmühle on the Haun by Johann, Abt von Fulda, together with Philipp von Rosenberg."
-        }
+      "english": "Enfeoffment of Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun\n\nAbbot Johann zu Fulda enfeoffs Philipp von Rosenberg and Hans von Rosenberg with the Fackenmühle on the Haun."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Philipp von Rosenberg",
+      "type": "generic",
+      "content": "was enfeoffed with the Fackenmühle on the Haun by Johann, Abt von Fulda, together with Hans von Rosenberg."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "type": "generic",
+      "content": "was enfeoffed with the Fackenmühle on the Haun by Johann, Abt von Fulda, together with Philipp von Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans",
+      "personTitle": [
+        "Abt zu Fulda"
       ]
     }
   ]

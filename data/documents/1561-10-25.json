@@ -7,21 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1724080",
       "german": "Albrecht von Rosenberg, Ritter, quittiert gegenüber Kurfürst Friedrich II. von der Pfalz wegen des ihm für die Abtretung von Boxberg samt allem Zubehör ausbezahlten Kaufpreises von 27.000 Gulden.\n\nLaufzeit: 1561 Oktober 25\n\nSiegelbeschreibung: Mit Siegel",
       "english": "Albrecht von Rosenberg, Knight, acknowledges receipt from Elector Friedrich II of the Palatinate of the purchase price of 27,000 gulden paid to him for the cession of Boxberg along with all its appurtenances.\n\nTime span: October 25, 1561",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "acknowledged receipt of the purchase price from Elector Friedrich of the Palatinate for surrendering Boxberg and its appurtenances."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724080%2F04_0001724080_0001_4-1724080-1.jpg"
@@ -33,6 +18,21 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001724080%2F04_0001724080_0003_4-1724080-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "acknowledged receipt of the purchase price from Elector Friedrich of the Palatinate for surrendering Boxberg and its appurtenances."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

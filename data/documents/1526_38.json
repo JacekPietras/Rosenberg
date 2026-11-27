@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++57d01001-4ea7-4a65-94d9-f2fa8155d588&parent_id="
       ],
       "german": "Rothenburg an Statthalter und Räte zu Ansbach: Stellungnahme zum v. Rosenberg'schen Zeugenverhör.",
-      "english": "Rothenburg to the governor and councillors at Ansbach: statement concerning the interrogation of witnesses in the von Rosenberg case.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "rothenburg"
-        }
-      ]
+      "english": "Rothenburg to the governor and councillors at Ansbach: statement concerning the interrogation of witnesses in the von Rosenberg case."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

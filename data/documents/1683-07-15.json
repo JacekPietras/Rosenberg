@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-KLA/KLA-029/AT-KLA_29-B-16_F_St/charter",
       "german": "Der kaiserliche Notar Johann Baptist Mayr stellt Wolf Andreas Grafen von Rosenberg, Freiherrn von Lerchenau etc., auf Bitten seines Gewaltträgers Johann Ludwig Grafen von Lamberg, ein Instrument über die Besichtigung und die Beschaffenheit des Grabsteins des Christian Rosenberg ( verstorben am 7. Oktober 1231) in der St.-Bartholomäus-Kirche in Friesach aus. Zeugen: Bischof Johann von Gurk, Graf Johann Jakob Katzianer von Katzenstein, Graf Johann Anton von Lamberg, Johann Peter Sticklberger, Propst von Friesach und Erzpriester in Unterkärnten und Pfarrer in Kappl am Krappfeld, Dr. Johann Stieff von Kränzen, Propst von Kraig, Georg Sigmund von und zu Aichelburg. Die Inschrift auf dem Grabstein lautet: ANNO D(OMI)NI MCCXXXI N[ON]AS OC[T]OBRIS OBIIT CHRISTANUS FILIUS D(OMI)NI HEINRICI DE URS[...]E ROSENBERG. Dargestellt ist das Wappen mit der fünfblättrigen Rose. Siegler und Unterschriften: Bischof Johann von Gurk; Johann Ludwig von Lamberg; Johann Jakob Katzianer von Katzenstein; Johann Anton von Lamberg; Johann Peter Stickelberger; Johann Stieff von Kränzen; Georg Sigmund von Aichelburg.\n\nSiegel: 7 Sig. pend. (in Holzschatullen)",
       "english": "The imperial notary Hans Baptist Mayr draws up for Wolf Andreas von Rosenberg, Graf von Rosenberg, Freiherr von Lerchenau, etc., at the request of his authorized representative Hans Ludwig von Lamberg, Graf von Lamberg, an instrument concerning the inspection and condition of the tombstone of Christian Rosenberg (who died on October 7, 1231) in the Church of St. Bartholomew in Friesach. Witnesses: Hans, Bischof von Gurk; Hans Jakob Katzianer von Katzenstein, Graf; Hans Anton von Lamberg, Graf; Hans Peter Sticklberger, Propst von Friesach, Erzpriester in Unterkärnten, and Pfarrer in Kappl am Krappfeld; Dr. Hans Stieff von Kränzen, Propst von Kraig; Georg Sigmund von und zu Aichelburg. The inscription on the tombstone reads: `ANNO D(OMI)NI MCCXXXI N[ON]AS OC[T]OBRIS OBIIT CHRISTANUS FILIUS D(OMI)NI HEINRICI DE URS[...]E ROSENBERG.` The coat of arms depicts a five-petaled rose. Sealing parties and signatories: Hans, Bischof von Gurk; Hans Ludwig von Lamberg; Hans Jakob Katzianer von Katzenstein; Hans Anton von Lamberg; Hans Peter Stickelberger; Hans Stieff von Kränzen; Georg Sigmund von Aichelburg.\n\nSeal: seven hanging seals (in wooden cases).",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wolf Andreas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_16_16830715_00%20Umschlag%20vorne.jpg"
@@ -40,6 +29,17 @@
         {
           "src": "https://images.monasterium.net/img/AT-KLA/29/KLA_29_B_16_16830715_03%20Siegel.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wolf Andreas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
       ]
     }
   ]

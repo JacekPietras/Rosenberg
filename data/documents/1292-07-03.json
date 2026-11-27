@@ -8,17 +8,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1292_VII_03/charter",
       "german": "König Wenzel II gibt dem Stifte Hohenfurt für die Dörfer Strodenitz, Malschitz und Záboř acht andere Dörfer, worunter Stričitz, nebst der dasigen Kirche, und einen Theil des Waldes bei Dobschitz.\n\nNos Wencezlaus dei gratia rex Boemie dux Cracouie et Sandomerie marchioque Morauie harum serie notum esse uolumus tam presentibus quam futuris, quod felicis memorie dominus Otakarus illustris rex Boemie karissimus pater noster villam forensem dictam Zdradonicz circa ciuitatem nostram Budiwoyz necnon Plawen Malshiez et Zaborsi ad monasterium in Altovado Cisterciensis ordinis pertinentes accepit, quarum tres videlicet Zdradonicz Malschicz et Zaborsi dicte ciuitati adiunxit, pro quibus quatuor villis dictus pater noster villas dictas Nencitz Bellela Craschan et Tupes quondam Zuatumiri militis de Nemcicz in commutacionem prefato monasterio assignauit. Cumque per heredes dicti militis, quod eedem ville videlicet Nemchicz Bellela Craschän et Tupes ad eos racionabiliter pertinerent, nobis facta fuerit plena fides, eas restituendas duximus heredibus memoratis. Volentes itaque monasterium ipsum indempne super commutatione predicta seruare, villam predictam Plawen prefato monasterio restituimus et pro dictis tribus villis Zdradonicz Malshicz et Zaborsi villas nostras dictas Strishicz cum ecclesia in ea sita Borach Zaborsi Badiczi Holaschawicz Shemil Dubshicz Lupanawicz et partem silue Chraski usque ad metas inter bona monasterii Sancte Corone ac Henrici de Rosemberch et Johannis de Monte Michaelis, cum pratis pascuis agris cultis et incultis aquis et aquarum desursibus piscationibus et uenationibus ac iuribus omnibus racionibus et pertinenciis villarum ipsarum dicto monasterio de Altovado in cummutacionem damus tradimus et etiam assignamus, per abbatem et conuentum ipsius monasterii de Altovado commutationis titulo in perpetuum possidendas. In cuius rei testimonium presentes litteras fieri et sigillorum nostrorum munimine iussimus communiri. Datum Prage per manus magistri Petri prothonotarii nostri Pragensis Wratislauiensis et Wissegradensis ecclesiarum canonici. Anno domini millesimo ducentesimo nonagesimo secundo V o Nonas Julii. Indictionis quinte.\n\nSiegel: Beschädigtes Siegel wie in XXXVIII.",
       "english": "King Wenceslaus II gives Hohenfurt Monastery, in exchange for the villages of Strobnitz, Malschitz, and Záboř, the eight villages Stričitz with its church, Borach, Záboř, Badiczi, Holaschawicz, Shemil, Dobschitz, and Lupanawicz, together with part of the Chraski forest. The forest extends to the boundaries between the monastery of Saint Corona’s estates and those of Heinrich von Rosenberg and Johann von Monte Michaelis; the villages and forest are granted with their meadows, pastures, cultivated and uncultivated fields, waters, fishing, hunting, rights, and appurtenances, to be held by Hohenfurt in perpetuity.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "person": "König Wenceslaus",
-          "personTitle": [
-            "König"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_12920703_6%2CVI_r.jpg"
@@ -26,6 +15,17 @@
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_12920703_6%2CVI_v.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "König Wenceslaus",
+      "personTitle": [
+        "König"
       ]
     }
   ]

@@ -7,16 +7,16 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-153495",
       "german": "Annahme des cand. iur. Georg Gottfried Hammer von Gerichtstetten zum Zentgrafen von Rosenberg\n\nLaufzeit: 1768\n\nEnthält: Mit Buntpapierumschlag:\nBuntpapierart bzw. -unterart: Geädertes Kleisterpapier\nFarben; Grundfarbenverteilung; Muster: Einfarbig braun; Äderung wechselnd ausgerichtet ¿ Pinselborstenspuren partiell\nHerstellungstechnik: Farbkleisterverformung direkt auf Papier",
       "english": "Acceptance of the law candidate Georg Gottfried Hammer von Gerichtstetten as centgrave of Rosenberg.\n\nTerm: 1768\n\nContains a colored-paper cover:\nType/subtype of colored paper: marbled paste paper\nColors; distribution of base colors; pattern: monochrome brown; veining with varying orientation, partial brush-bristle traces\nProduction technique: colored paste deformation applied directly to paper",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=921&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000921%2Ftitlaufn_0000153495%2F07_0000153495_0001_7-153495-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

@@ -6,54 +6,54 @@
       "source": "Hohenlohe-Zentralarchiv Neuenstein La 30 U 27",
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-11306",
       "german": "Albrecht von Adelsheim, Amtmann zu Krautheim, verkauft für 20.000 fl. das Schloß Schrozberg, das halbe Dorf Schrozberg mit 21 Untertanen, der halben Pfarrkollatur und genannten Geld- und Naturalgülten zu Schrozberg, Kälberbach, Zell und Heuchlingen, den Weiler Kälberbach und genannte Liegenschaften (Wiesen, Äcker, Wälder und Seen) an Graf Ludwig Kasimir von Hohenlohe.\nBürgen: Eberhard und Sebastian Rüdt, Albrecht von Rosenberg zu Boxberg, Johann von Stockheim, Daniel von Adelsheim, Moritz von Liebenstein, Dietrich von Erenberg, Georg Sigmund von Adelsheim, Georg Ludwig von Seinsheim, Veit Ulrich von Schaumberg, Philipp von Liebenstein, Philipp Soldan Voit von Rineck, Dietrich von Thüngen.\nSr.: 1. der A.; 2.-13. die Bürgen.\nPerg., 14 S. (abg.) 6 Siegel liegen lose bei.\n\nLaufzeit: 1558 Okt. 26.\n\nUmfang: Ausf. (Libell)",
-      "english": "Albrecht von Adelsheim, official at Krautheim, sells to Count Ludwig Kasimir von Hohenlohe, for 20,000 florins, Schrozberg Castle, half the village of Schrozberg with 21 subjects, half the parish collation, and specified monetary and natural rents at Schrozberg, Kälberbach, Zell, and Heuchlingen; the hamlet of Kälberbach; and specified real property (meadows, fields, woods, and ponds). Sureties: Eberhard and Sebastian Rüdt; Albrecht von Rosenberg zu Boxberg; Hans von Stockheim; Daniel von Adelsheim; Moritz von Liebenstein; Dietrich von Erenberg; Georg Siegmund von Adelsheim; Georg Ludwig von Seinsheim; Veit Ulrich von Schaumberg; Philipp von Liebenstein; Philipp Soldan Voit von Rineck; and Dietrich von Thüngen. Seals: 1. the seller; 2–13. the sureties. Parchment, 14 seals (detached), six seals lying loose.\n\nTerm: 26 October 1558.\n\nExtent: original (booklet).",
-      "mention": [
-        {
-          "place": "adelsheim"
-        },
-        {
-          "person": "Albrecht von Adelsheim"
-        },
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "zu Boxberg"
-          ]
-        },
-        {
-          "person": "Dietrich von Thüngen"
-        },
-        {
-          "person": "Eberhard Rüd"
-        },
-        {
-          "person": "Georg Ludwig von Seinsheim"
-        },
-        {
-          "person": "Georg Siegmund von Adelsheim"
-        },
-        {
-          "person": "Hans von Stockheim"
-        },
-        {
-          "place": "liebenstein-castle"
-        },
-        {
-          "person": "Ludwig Kasimir von Hohenlohe",
-          "personTitle": [
-            "Graf von Hohenlohe"
-          ]
-        },
-        {
-          "person": "Philipp von Liebenstein"
-        },
-        {
-          "place": "rieneck"
-        },
-        {
-          "person": "Sebastian Rüd"
-        }
+      "english": "Albrecht von Adelsheim, official at Krautheim, sells to Count Ludwig Kasimir von Hohenlohe, for 20,000 florins, Schrozberg Castle, half the village of Schrozberg with 21 subjects, half the parish collation, and specified monetary and natural rents at Schrozberg, Kälberbach, Zell, and Heuchlingen; the hamlet of Kälberbach; and specified real property (meadows, fields, woods, and ponds). Sureties: Eberhard and Sebastian Rüdt; Albrecht von Rosenberg zu Boxberg; Hans von Stockheim; Daniel von Adelsheim; Moritz von Liebenstein; Dietrich von Erenberg; Georg Siegmund von Adelsheim; Georg Ludwig von Seinsheim; Veit Ulrich von Schaumberg; Philipp von Liebenstein; Philipp Soldan Voit von Rineck; and Dietrich von Thüngen. Seals: 1. the seller; 2–13. the sureties. Parchment, 14 seals (detached), six seals lying loose.\n\nTerm: 26 October 1558.\n\nExtent: original (booklet)."
+    }
+  ],
+  "mention": [
+    {
+      "place": "adelsheim"
+    },
+    {
+      "person": "Albrecht von Adelsheim"
+    },
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "zu Boxberg"
       ]
+    },
+    {
+      "person": "Dietrich von Thüngen"
+    },
+    {
+      "person": "Eberhard Rüd"
+    },
+    {
+      "person": "Georg Ludwig von Seinsheim"
+    },
+    {
+      "person": "Georg Siegmund von Adelsheim"
+    },
+    {
+      "person": "Hans von Stockheim"
+    },
+    {
+      "place": "liebenstein-castle"
+    },
+    {
+      "person": "Ludwig Kasimir von Hohenlohe",
+      "personTitle": [
+        "Graf von Hohenlohe"
+      ]
+    },
+    {
+      "person": "Philipp von Liebenstein"
+    },
+    {
+      "place": "rieneck"
+    },
+    {
+      "person": "Sebastian Rüd"
     }
   ]
 }

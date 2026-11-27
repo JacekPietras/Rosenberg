@@ -9,22 +9,22 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++de4395a4-f2f4-42ef-a874-246a3ed08d76&parent_id="
       ],
       "german": "Ritter Albrecht von Rosenberg zu Boxberg (Annahme des Rothenburger Prädikanten Conrad Hochmut zu einem Prediger in Boxberg)",
-      "english": "Albrecht von Rosenberg zu Boxberg, Ritter (acceptance of the Rothenburg preacher Konrad Hochmut as a preacher in Boxberg)",
-      "mention": [
-        {
-          "person": "Albrecht von Rosenberg",
-          "personTitle": [
-            "Ritter",
-            "zu Boxberg"
-          ]
-        },
-        {
-          "place": "boxberg"
-        },
-        {
-          "place": "rothenburg"
-        }
+      "english": "Albrecht von Rosenberg zu Boxberg, Ritter (acceptance of the Rothenburg preacher Konrad Hochmut as a preacher in Boxberg)"
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Rosenberg",
+      "personTitle": [
+        "Ritter",
+        "zu Boxberg"
       ]
+    },
+    {
+      "place": "boxberg"
+    },
+    {
+      "place": "rothenburg"
     }
   ]
 }

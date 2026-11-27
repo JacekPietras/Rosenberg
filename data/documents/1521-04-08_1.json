@@ -10,42 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723963",
       "german": "Hans Melchior von Rosenberg tritt mit Rücksicht auf seine Krankheit und aus anderen Gründen seinen Antheil an Boxberg, Bastei und Städtlein samt Zubehör, an seine Lehnsherren, die Kurfürst Ludwig von der Pfalz und Pfalzgraf Friedrich ab.\n\nLaufzeit: 1521 April 8 (Montag nach Quasimidigeniti 1521)\n\nSiegelbeschreibung: Mit 4 Siegeln: 1. des Ausstellers; 2. des Hans Ulrich von Rosenberg, seines Bruders; 3. des Peter von Ehrenberg; 4. des Bartholomäus Hund (von Wenkheim)",
       "english": "Hans Melchior von Rosenberg, reject his Antheil, with respect for his illness and for other reasons, including accessories, to his lords, the Elector Ludwig von derPfalz and Count Palatine Frederick.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Ludwig von der Pfalz",
-          "personTitle": [
-            "Kurfürst"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Friedrich von der Pfalz",
-          "personTitle": [
-            "Pfalzgraf"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Hans Melchior von Rosenberg",
-          "type": "generic",
-          "content": "relinquished his share in Boxberg, its bastion and town, and their appurtenances to his liege lords Elector Ludwig and Count Palatine Friedrich."
-        },
-        {
-          "person": "Hans Melchior von Rosenberg",
-          "type": "generic",
-          "content": "cited his illness and other reasons for relinquishing his share in Boxberg."
-        },
-        {
-          "person": "Hans Melchior von Rosenberg",
-          "type": "generic",
-          "content": "held Boxberg, its bastion and town, and their appurtenances as fiefs from Elector Ludwig and Count Palatine Friedrich."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723963%2F04_0001723963_0001_4-1723963-1.jpg",
@@ -78,6 +42,42 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Ludwig von der Pfalz",
+      "personTitle": [
+        "Kurfürst"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Friedrich von der Pfalz",
+      "personTitle": [
+        "Pfalzgraf"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Hans Melchior von Rosenberg",
+      "type": "generic",
+      "content": "relinquished his share in Boxberg, its bastion and town, and their appurtenances to his liege lords Elector Ludwig and Count Palatine Friedrich."
+    },
+    {
+      "person": "Hans Melchior von Rosenberg",
+      "type": "generic",
+      "content": "cited his illness and other reasons for relinquishing his share in Boxberg."
+    },
+    {
+      "person": "Hans Melchior von Rosenberg",
+      "type": "generic",
+      "content": "held Boxberg, its bastion and town, and their appurtenances as fiefs from Elector Ludwig and Count Palatine Friedrich."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

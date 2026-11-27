@@ -10,13 +10,6 @@
       ],
       "german": "Bertold von Zwingenberg verpflichtet sich, wieder im Schloß Lichteneck bei Ingelfingen sich zu stellen;\n\nSiegel: Bertold von Zwingenberg und Eberhard von Rosenberg.",
       "english": "Bertold von Zwingenberg undertakes to present himself again at Lichteneck Castle near Ingelfingen;\n\nseal: Bertold von Zwingenberg and Eberhard von Rosenberg.",
-      "facts": [
-        {
-          "person": "Eberhard von Rosenberg",
-          "type": "generic",
-          "content": "sealed Bertold von Zwingenberg’s undertaking to return to Lichteneck Castle."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190271%2F03_0000190271_0001_3-190271-1.jpg",
@@ -40,15 +33,20 @@
       "source": "Hohenlohisches Urkundenbuch. 3, 268,18",
       "url": "https://archive.org/details/HohenlohischesUrkundenbuch3/page/268/mode/1up",
       "german": "Der Edelknecht Berhtold von Zwingenberg, der Gefangener dez herrn Kraftes von Hohenloch dez elteren ist, verpflichtet sich eidlich, sich bis zum nächsten weißen Sonntag ungemahnt wieder gen Lychtenek in die burg zu stellen; „wer aber, daz min der edel herre herre Kraft von Hohenloch der elter oder sin erben ê bedorften, so haben sie gewalt mich ze manen mit boten, mit briefen in Eberharts hus von Rosenberg, mins swagers, dez swester ich hon“, worauf er sich innerhalb 14 Tagen stellen will. Mit seinem Siegel und dem seines Schwagers gegeben 1364, an dem nehsten montage vor sante Urbans tage. Nach dem Orig.-Perg. im gemeinschaftlichen Archiv zu Öhringen, mit 2 Siegeln. Abgedruckt: Hanselmann II S. 100 Nr. 34. — Vgl. Nr. 275 und 317.",
-      "english": "The Edelknecht Berhtold von Zwingenberg, a prisoner of Lord Kraft of Hohenloch der Ältere, undertakes under oath to present himself again at Lichteneck Castle by the next White Sunday without being summoned. “But if Lord Kraft of Hohenloch der Ältere or his heirs need me before then, they may summon me by messenger or letter at the house of my brother-in-law Eberhard von Rosenberg, whose sister I have married,” whereupon he will present himself within 14 days. Given with his seal and that of his brother-in-law in 1364, on the Monday before St. Urban’s Day. According to the original parchment in the joint archives in Öhringen, with two seals. Reprinted: Hanselmann II p. 100 no. 34. — See nos. 275 and 317.",
-      "facts": [
-        {
-          "person": "Berthold von Zwingenberg",
-          "type": "kin",
-          "of": "Eberhard von Rosenberg",
-          "term": "Schwager"
-        }
-      ]
+      "english": "The Edelknecht Berhtold von Zwingenberg, a prisoner of Lord Kraft of Hohenloch der Ältere, undertakes under oath to present himself again at Lichteneck Castle by the next White Sunday without being summoned. “But if Lord Kraft of Hohenloch der Ältere or his heirs need me before then, they may summon me by messenger or letter at the house of my brother-in-law Eberhard von Rosenberg, whose sister I have married,” whereupon he will present himself within 14 days. Given with his seal and that of his brother-in-law in 1364, on the Monday before St. Urban’s Day. According to the original parchment in the joint archives in Öhringen, with two seals. Reprinted: Hanselmann II p. 100 no. 34. — See nos. 275 and 317."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Eberhard von Rosenberg",
+      "type": "generic",
+      "content": "sealed Bertold von Zwingenberg’s undertaking to return to Lichteneck Castle."
+    },
+    {
+      "person": "Berthold von Zwingenberg",
+      "type": "kin",
+      "of": "Eberhard von Rosenberg",
+      "term": "Schwager"
     }
   ]
 }

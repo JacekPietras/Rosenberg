@@ -7,23 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-1958827",
       "german": "Das Domkapitel zu Würzburg verkauft an Wilhelm von Stetten d. J. und dessen Hausfrau Margrete mit dem Rechte des Wiederkaufs nach des Käufers Tod um 2000 rheinischen Gulden an Gold des Stifts Oblei zu Steinkirchen mit aller Zubehörden, namentlich den Zehnten zu Steinkirchen, Kocherstetten (Kahensteten), Reinsberg (Reinoltzberg) und Michelfeld, wobei sich die Käufer zu bestimmten Leistungen aus dem verkauften Zehnten an die betr. Pfarrer verpflichten. Bürgen sind: Contz von Rosenberg zu Bartenstein, Seyfrid Wild zu Ochsenfurt, Endres Voyt zu Karlburg und Peter Haberkorn zu Lautenbach\n\nLaufzeit: 1424 Februar 22 (an sant Petres tage ad cathedram genant)\n\nSiegelbeschreibung: 5 Sg. (?), abg.\n\nSiegler: Wilhelm von Stetten d. J.; Contz von Rosenberg zu Bartenstein; Seyfrid Wild zu Ochsenfurt; Endres Voyt zu Karlburg; Peter Haberkorn zu Lautenbach",
       "english": "The cathedral chapter of Würzburg sells to Wilhelm von Stetten der Jüngere and his wife Margrete, with a right of repurchase after the buyer's death and for 2,000 Rhenish gold florins, the chapter's prebendary estate at Steinkirchen with all appurtenances, especially the tithes at Steinkirchen, Kocherstetten, Reinsberg, and Michelfeld. The buyers undertake to make specified payments from the tithe they have purchased to the respective parish priests. The guarantors are Kunz von Rosenberg zu Bartenstein, Seyfrid Wild zu Ochsenfurt, Endres Voyt zu Karlburg, and Peter Haberkorn zu Lautenbach.\n\nDate: 22 February 1424 (on the day of St Peter's Chair)\n\nSeal description: 5 seals (?), detached\n\nSeal holders: Wilhelm von Stetten der Jüngere; Kunz von Rosenberg zu Bartenstein; Seyfrid Wild zu Ochsenfurt; Endres Voyt zu Karlburg; Peter Haberkorn zu Lautenbach",
-      "mention": [
-        {
-          "place": "kocherstetten-marienkirche"
-        },
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Bartenstein"
-          ]
-        },
-        {
-          "place": "michelfeld"
-        },
-        {
-          "place": "wurzburg"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1419&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001419%2Ftitlaufn_0001958827%2F02_0001958827_0001_2-1958827-1.jpg"
@@ -32,6 +15,23 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=1419&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000001419%2Ftitlaufn_0001958827%2F02_0001958827_0002_2-1958827-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "kocherstetten-marienkirche"
+    },
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Bartenstein"
+      ]
+    },
+    {
+      "place": "michelfeld"
+    },
+    {
+      "place": "wurzburg"
     }
   ]
 }

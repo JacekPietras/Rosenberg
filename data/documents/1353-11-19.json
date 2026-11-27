@@ -7,18 +7,18 @@
       "source": "RIplus Regg. EB Mainz 1,2 n. 6460",
       "url": "https://www.regesta-imperii.de/id/db310b0f-03c2-4cd9-8db7-49a70ea8d635",
       "german": "Erzbischof Gerlach entscheidet im Verein mit Erzbischof Wilhelm v. Köln zwischen Bischof Leupold v. Bamberg u. seiner Kirche u. d. Pfalzgrafen Ruprecht d. Ä. u. d. J. (consanguinei et fideles nostri dilecti) über die Burgen Hertenstein u. Neidstein u. a. Güter in Baiern, die die Pfalzgrafen an d. röm. König Karl u. s. Nachfolger verkauft haben, während d. Bischof behauptet, daß ein Teil davon s. Kirche als Lehen gehöre, dahin, daß Bamberg an diesen Burgen kein Recht habe, sondern dieselben wie die Befestigungen Sulzbach, Rosenberg, Hiltpoltstein, Lichteneck (-e), Frankenberg u. a. den Pfalzgrafen zustehen u. daß der Bischof ausdrücklich auf alle diese Güter verzichten müsse außer Burg Velden u. 1/3} forestarie V. die des B.s Lehen sind, bei Strafe von 1000 Mk. r. Gold an d. König u. s. Nachfolger.",
-      "english": "Archbishop Gerlach, together with Archbishop Wilhelm of Cologne, gives judgment between Bishop Leupold of Bamberg and his church, and Count Palatine Ruprecht der Ältere and der Jüngere (our beloved kinsmen and faithful men) concerning Hertenstein and Neidstein castles and other properties in Bavaria, which the counts palatine had sold to the Roman King Karl and his successors, while the bishop claimed that some belonged to his church as fiefs. The judgment is that Bamberg has no right to these castles, which belong to the counts palatine, as do the fortifications of Sulzbach, Rosenberg, Hiltpoltstein, Lichteneck, Frankenberg, and others; the bishop must expressly renounce all these properties except Velden Castle and one third of the forest of Velden, which are fiefs of the bishop, under penalty of 1,000 marks of red gold payable to the king and his successors.",
-      "mention": [
-        {
-          "person": "König Karl",
-          "personTitle": [
-            "König"
-          ]
-        },
-        {
-          "place": "rosenberg-town"
-        }
+      "english": "Archbishop Gerlach, together with Archbishop Wilhelm of Cologne, gives judgment between Bishop Leupold of Bamberg and his church, and Count Palatine Ruprecht der Ältere and der Jüngere (our beloved kinsmen and faithful men) concerning Hertenstein and Neidstein castles and other properties in Bavaria, which the counts palatine had sold to the Roman King Karl and his successors, while the bishop claimed that some belonged to his church as fiefs. The judgment is that Bamberg has no right to these castles, which belong to the counts palatine, as do the fortifications of Sulzbach, Rosenberg, Hiltpoltstein, Lichteneck, Frankenberg, and others; the bishop must expressly renounce all these properties except Velden Castle and one third of the forest of Velden, which are fiefs of the bishop, under penalty of 1,000 marks of red gold payable to the king and his successors."
+    }
+  ],
+  "mention": [
+    {
+      "person": "König Karl",
+      "personTitle": [
+        "König"
       ]
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

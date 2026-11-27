@@ -7,26 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-166111",
       "german": "Jorg von Hardheim, Walpurg von Rosenberg, seine eheliche Hausfrau, und Eberhart von Hardheim, beider Sohn, verkaufen dem Grafen Wilhelm zu Wertheim den Hof Betzwiesen bei Schweinberg (Sweinburg) für 240 fl. (Frankfurter Währung, Churfüsten muntz) erblich zu eigen. Verletzung des Kaufbriefs mindert nicht das Recht.\n\nLaufzeit: 1480 Juli 1 (geg. 1480 uff sampstag nach sant Peter und Pauls tag der zweiyer zwolffpottenn)\n\nSiegelbeschreibung: 3 Siegel der Aussteller erhalten\n\nSiegler: Jorg von Hardheim; Walpurg von Rosenberg, seine Ehefrau; Eberhart von Hardheim, deren Sohn",
       "english": "Georg von Hartheim, Walpurg von Rosenberg, his lawful wife, and Eberhard von Hartheim, their son, sell Betzwiesen farm near Schweinberg to Count Wilhelm zu Wertheim for 240 florins (Frankfurt currency, the Electors' coinage), in perpetuity as free property. Any breach of the purchase charter does not diminish the right.\n\nDate: 1 July 1480 (given in 1480 on Saturday after the feast of Saints Peter and Paul, the two apostles).\n\nDescription of seals: all three seals of the issuers survive.\n\nSealers: Georg von Hartheim; Walpurg von Rosenberg, his wife; Eberhard von Hartheim, their son.",
-      "mention": [
-        {
-          "place": "burg-schweinberg"
-        },
-        {
-          "person": "Eberhard von Hartheim"
-        },
-        {
-          "person": "Georg von Hartheim"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "person": "Wilhelm zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166111%2F07_0000166111_0001_7-166111-1.jpg"
@@ -34,6 +14,26 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=689&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000689%2Ftitlaufn_0000166111%2F07_0000166111_0002_7-166111-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "person": "Eberhard von Hartheim"
+    },
+    {
+      "person": "Georg von Hartheim"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "person": "Wilhelm zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

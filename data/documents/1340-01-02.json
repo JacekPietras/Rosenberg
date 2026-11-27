@@ -14,43 +14,6 @@
       ],
       "german": "Graf Rudolf von Wertheim erteilt seine Zustimmung dazu, dass Eberhard von Rosenberg, gen. von Zimmern, an Abt und Konvent des Klosters zu Bronnbach (Brunnbach) seinen Zehenten zu \"Wulfingsloch\", der von dem Grafen von Wertheim zu Lehen geht, gegen einen Weinberg zu Hochhausen vertauscht. Auf der Rückseite: \"Hochhausen. Permutatio vinearum, quas monasterium pro decima in Wolfingsloch dedit Eberhardo de Rosenberg cum consensu Rudolfi comitis de Wertheim, qui decimam hanc in feudum dederat dicto Rosenberg, de anno 1340\".",
       "english": "Count Rudolf von Wertheim gives his consent to Eberhard von Rosenberg, called von Zimmern, exchanging his tithes from \"Wulfingsloch\", which are held as a fief by the Graf von Wertheim, for a vineyard in Hochhausen to the abbot and convent of the monastery in Bronnbach. On the back: \"Hochhausen. Exchange of vineyards, which the monastery gave in return for tithes in Wolfingsloch to Eberhard von Rosenberg with the consent of Rudolf von Wertheim, Graf, who had given this tithe in fee to the said Rosenberg, in the year 1340\"",
-      "mention": [
-        {
-          "place": "bronnbach"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "wertheim-stiftskirche"
-        }
-      ],
-      "facts": [
-        {
-          "person": "eberhard_genannt_von_zimmern",
-          "personTitle": [
-            "genannt von Zimmern"
-          ],
-          "type": "generic",
-          "content": "held the tithe at Wulfingsloch as a fief from the Graf von Wertheim."
-        },
-        {
-          "person": "eberhard_genannt_von_zimmern",
-          "personTitle": [
-            "genannt von Zimmern"
-          ],
-          "type": "generic",
-          "content": "exchanged the tithe at Wulfingsloch for a vineyard at Hochhausen."
-        },
-        {
-          "person": "Rudolf von Wertheim",
-          "personTitle": [
-            "Graf von Wertheim"
-          ],
-          "type": "generic",
-          "content": "consented to Eberhard von Rosenberg’s exchange of the tithe at Wulfingsloch for a vineyard at Hochhausen."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234387%2F07_0000234387_0001_7-234387-1.jpg"
@@ -63,6 +26,43 @@
           "src": "https://images.monasterium.net/img/collections/Wertheim/00000127.png"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "eberhard_genannt_von_zimmern",
+      "personTitle": [
+        "genannt von Zimmern"
+      ],
+      "type": "generic",
+      "content": "held the tithe at Wulfingsloch as a fief from the Graf von Wertheim."
+    },
+    {
+      "person": "eberhard_genannt_von_zimmern",
+      "personTitle": [
+        "genannt von Zimmern"
+      ],
+      "type": "generic",
+      "content": "exchanged the tithe at Wulfingsloch for a vineyard at Hochhausen."
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ],
+      "type": "generic",
+      "content": "consented to Eberhard von Rosenberg’s exchange of the tithe at Wulfingsloch for a vineyard at Hochhausen."
+    }
+  ],
+  "mention": [
+    {
+      "place": "bronnbach"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "wertheim-stiftskirche"
     }
   ]
 }

@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1368_IV_24/charter",
       "german": "Ulrich Drochauer gibt zu einem ewigen Seelgeräth dem Abte und der Samnung des Klosters zu Hohenfurt ein Schock und vier grosse Prager Pfenninge Zinse in dem Dorfe Stiegesdorf zu Eigen.\n\nSiegel: Drei gut erhaltene, kleine, an Pergamentstreifen hängende Siegel in weissem Wachs. a) und c) Ein Helm mit einem Paar Hörner. - + S . Ulrici . De . Kwietonow. b) Das Siegel Jobst's von Rosenberg ist nicht mehr vorhanden. d) + S . Zayfridy . De . Mosokov . Vergl. CXXV. c.",
       "english": "Ulrich Drochauer grants the abbot and convent of the monastery at Hohenfurt, as a perpetual endowment for the soul, an annual rent of one Schock and four groschen of Prague currency from the village of Stiegesdorf, held in freehold.\n\nSeal: Three small, well-preserved seals in white wax hang from parchment strips. (a) and (c) A helm with a pair of horns. — + S . Ulrici . De . Kwietonow. (b) The seal of Jobst von Rosenberg is no longer present. (d) + S . Zayfridy . De . Mosokov. See CXXV, c.",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13680423_9%2CXIII_r.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13680423_9%2CXIII_v.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

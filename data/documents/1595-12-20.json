@@ -9,27 +9,27 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++F30CE427-E6A3-484E-BF9C-E4538B3FF28F&parent_id="
       ],
       "german": "Christoph Rüdt von und zu Bödigheim und Collenberg quittiert dem Konrad v. Rosenberg zu Gnotzheim und Schüpf den Erhalt von 500 fl., für welche Summe er seinen Teil am Zehnten zu Buch am Ahorn verkauft hatte",
-      "english": "Christoph Rüdt von und zu Bödigheim und Collenberg acknowledges receipt from Konrad von Rosenberg zu Gnotzheim und Schüpf of 500 fl, the sum for which he had sold his share of the tithe at Buch am Ahorn.",
-      "mention": [
-        {
-          "place": "boedigheim-kreuzkirche"
-        },
-        {
-          "place": "buch"
-        },
-        {
-          "person": "Christoph Rüd"
-        },
-        {
-          "place": "kollenberg"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "oberschuepf"
-        }
-      ]
+      "english": "Christoph Rüdt von und zu Bödigheim und Collenberg acknowledges receipt from Konrad von Rosenberg zu Gnotzheim und Schüpf of 500 fl, the sum for which he had sold his share of the tithe at Buch am Ahorn."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boedigheim-kreuzkirche"
+    },
+    {
+      "place": "buch"
+    },
+    {
+      "person": "Christoph Rüd"
+    },
+    {
+      "place": "kollenberg"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "oberschuepf"
     }
   ]
 }

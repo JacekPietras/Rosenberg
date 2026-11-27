@@ -10,30 +10,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1723958",
       "german": "Bürgermeister, Schultheiß und Gemeinde zu Boxberg geben dem Ritter Jörg von Rosenberg Güter, die zu seinem Hof in Boxberg gehören, und die sie von ihm gekauft hatten, um 538 Gulden wiederzukaufen und quittieren darüber.\n\nLaufzeit: 1498 März 13 (Dienstag nach Reminiscere 1498)\n\nSiegelbeschreibung: Mit Siegel",
       "english": "The mayor, Schultheiß and municipality of Boxberg give Georg von Rosenberg, Ritter estates that belong to his farm in Boxberg and which they had bought from him to repurchase and acknowledge 538 guilders.",
-      "mention": [
-        {
-          "place": "boxberg"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "title"
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders."
-        },
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "received a quittance documenting the transaction."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001723958%2F04_0001723958_0001_4-1723958-1.jpg"
@@ -47,6 +23,30 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "title"
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "received back from Boxberg’s mayor, Schultheiß, and community goods belonging to his farm that they had previously bought from him in a transaction valued at 538 guilders."
+    },
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "received a quittance documenting the transaction."
+    }
+  ],
+  "mention": [
+    {
+      "place": "boxberg"
     }
   ]
 }

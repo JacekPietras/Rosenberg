@@ -7,13 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1748102",
       "german": "Jörg von Rosenberg verkauft der Pfarrkirche zu Impfingen näher bezeichnete Gülten aus seinem Hof daselbst um 228 Gulden.\n\nLaufzeit: 1467 August 24 (1467 Bartholomäus)\n\nSiegelbeschreibung: Von den 3 Siegeln: des Ausstellers, des Asmus und des Arnold von Rosenberg (Leistungsbürgen), hängt nur noch 1 an",
       "english": "Georg von Rosenberg sells to the parish church of Impfingen specified revenues from his estate there for 228 guilders.\n\nDuration: 1467 August 24 (St. Bartholomew's Day 1467)",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "sold specified rents from his estate at Impfingen to the parish church there for 228 guilders."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748102%2F04_0001748102_0001_4-1748102-1.jpg"
@@ -25,6 +18,13 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3198&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003198%2Ftitlaufn_0001748102%2F04_0001748102_0003_4-1748102-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg von Rosenberg",
+      "type": "generic",
+      "content": "sold specified rents from his estate at Impfingen to the parish church there for 228 guilders."
     }
   ]
 }

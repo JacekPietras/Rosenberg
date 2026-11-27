@@ -10,27 +10,6 @@
       ],
       "german": "Johannes, Bischof zu Würzburg (Wirtzpurg) erlaubt Kuntz von Rosenberg zu Röttingen (Rotingen), den Zoll zu Riedbach (Rietbach) von Otto Koch für 48 rheinische Gulden zu kaufen.\n\nLaufzeit: 1419 Januar 9 (am montage nach dem heiligen obersten tage)\n\nSiegler: Johannes, Bischof zu Würzburg\n\nSiegelbeschreibung: 1 Sg.\n\nVermerke: 2 Rv.",
       "english": "Johannes, Bishop zu Würzburg (Wirtzpurg), permits Kunz von Rosenberg of Röttingen to purchase the toll at Riedbach (Rietbach) from Otto Koch for 48 Rhine gulden.\n\nDuration: January 9, 1419 (on Monday after the holy supreme day)\n\nSealer: Johannes, Bishop zu Würzburg",
-      "mention": [
-        {
-          "person": "Bischof Hans",
-          "personTitle": [
-            "Bischof zu Würzburg"
-          ]
-        },
-        {
-          "place": "roettingen"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Kunz von Rosenberg",
-          "personTitle": [
-            "zu Röttingen"
-          ],
-          "type": "generic",
-          "content": "was permitted by Bishop Johannes of Würzburg to buy the toll at Riedbach from Otto Koch for 48 Rhenish gulden."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=5255&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_2%2Folf%2Fbestand_0000005255%2Ftitlaufn_0001555810%2F02_0001555810_0003_2-1555810-3.jpg"
@@ -40,6 +19,27 @@
           "deleted": true
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz von Rosenberg",
+      "personTitle": [
+        "zu Röttingen"
+      ],
+      "type": "generic",
+      "content": "was permitted by Bishop Johannes of Würzburg to buy the toll at Riedbach from Otto Koch for 48 Rhenish gulden."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Hans",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "place": "roettingen"
     }
   ]
 }

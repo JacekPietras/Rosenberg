@@ -9,15 +9,15 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++6e108efd-53bf-4288-9d9f-586a2255f4b5&parent_id="
       ],
       "german": "Benz, Elias Jakob, von Colmberg/Rügland, Taglöhner; Verheiratung mit Dietrich, Barbara Katharina, von Rosenberg",
-      "english": "Elias Jakob Benz, from Colmberg/Rügland, day laborer; marriage to Barbara Katharina Dietrich, from Rosenberg.",
-      "mention": [
-        {
-          "place": "burgruine-rosenberg-rugland"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Elias Jakob Benz, from Colmberg/Rügland, day laborer; marriage to Barbara Katharina Dietrich, from Rosenberg."
+    }
+  ],
+  "mention": [
+    {
+      "place": "burgruine-rosenberg-rugland"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

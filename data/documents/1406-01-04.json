@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-NA/ACK/1400/charter",
       "german": "Oldřich z Hradce prohlašuje, že prodal hrad Žleby s veškerým příslušenstvím Petrovi, řečenému Zmrzlík, ze Svojšína, mincmistrovi v Kutné Hoře, za 2800 kop pražských grošů. Slibuje odevzdat [zápisnou] listinu uherského krále [Zikmunda] na tento hrad do svátku sv. Jana Křtitele [24. června] a zavazuje se, že se zastane pana Petra v případě nátlaku ze strany uvedeného krále.Ulricus de Hradec [de Nova Domo] recognoscit se castrum Žleby cum omnibus pertinentiis Petro dicto Zmrzlík de Svojšín, magistro monetae Montibus Chutnis, pro 2800 sex. gr. Prag. vendidisse. Item promittit se litteras obligatorias [Sigismundi], regis Hungariae, hoc castrum pertinentes, ad festum s. Johannis Baptistae [24. iun.] tradere et dominum Petrum contra regis praefati coactum defendere velle.\n\nSiegel: quattuor sigilla in scidulis membranaceis appendent seu appendebant: 1/ Ulrici de Hradec deest, 2/ Henrici de Rosenberg d 34 mm rubri coloris, 3/ Iohannis de Ústí d 24 mm rubri coloris, 4/ Petri de Stráž d 26 mm rubri coloris.",
       "english": "Ulrich von Hradec declares that he has sold Žleby Castle with all its appurtenances to Petr, called Zmrzlík, von Svojšín, mintmaster at Kutná Hora, for 2,800 score Prague groschen. He promises to deliver by the feast of St John the Baptist [24 June] the mortgage charter of the King of Hungary [Sigismund] concerning the castle, and undertakes to defend Herr Petr against any coercion by the said king.\n\nUlrich von Hradec acknowledges that he has sold Žleby Castle, with all its appurtenances, to Petr, called Zmrzlík, von Svojšín, mintmaster at Kutná Hora, for 2,800 score Prague groschen. He also promises to deliver by the feast of St John the Baptist [24 June] the obligation charter of [Sigismund], King of Hungary, concerning this castle, and is willing to defend Herr Petr against coercion by the aforesaid king.\n\nSeal: Four seals hang or formerly hung from parchment tags: 1. Ulrich von Hradec, missing; 2. Heinrich von Rosenberg, diameter 34 mm, red; 3. Johann von Ústí, diameter 24 mm, red; 4. Petr von Stráž, diameter 26 mm, red.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_14060104_01400_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/img/CZ-NA-I/ACK/NA-ACK_14060104_01400_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

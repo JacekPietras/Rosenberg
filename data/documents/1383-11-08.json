@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1383_XI_08/charter",
       "german": "Peter und Johann von Rosenberg geben dem Kloster in Hohenfurt das Dorf Bretterschlag mit allem Zubehör zu Eigen.\n\nSiegel: Über die Siegel der Urkundenaussteller siehe CIV und CXIV. Das Siegel Heinrich's von Rosenberg zeigt einen von einem rosengezierten Helme bedeckten Schild, worauf gleichfalls eine Rose. - ++ S. Heynryci. + De . Rosenberk. Sämmtliche Siegel an Pergamentstreifen und in rothem Wachs.",
       "english": "Peter and Hans von Rosenberg give the village of Bretterschlag, with all its appurtenances, to Hohenfurt Monastery as freehold.\n\nSeals: For the seals of the charter's issuers, see CIV and CXIV. Heinrich von Rosenberg's seal shows a shield bearing a rose, surmounted by a helmet decorated with roses and likewise bearing a rose. Inscription: ++ S. Heynryci. + De. Rosenberk. All the seals hang from parchment strips and are made of red wax.",
-      "mention": [
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Heinrich von Rosenberg"
-        },
-        {
-          "person": "Peter von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_13831111vor%7E13831111_6%2CXIII_v.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_13831111vor%7E13831111_6%2CXIII_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Heinrich von Rosenberg"
+    },
+    {
+      "person": "Peter von Rosenberg"
     }
   ]
 }

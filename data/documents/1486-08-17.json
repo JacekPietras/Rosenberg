@@ -7,17 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-154382",
       "german": "In dem Streit zwischen Fuchs von Cannenberg und dem Grafen Johann zu Wertheim vermittelt Jorge von Rosenberg wie folgt: Symon Fuchs gibt alle Fehde gegen den Grafen auf. Dient er einem Fürsten, der mit dem Grafen in Streit gerät, so soll er ihm weiterdienen dürfen. Doch soll er keinen Herrn aufsuchen, der bereits in Fehde mit dem Grafen liegt. Hat er Ansprüche gegen den Grafen, so soll dieser innerhalb 2 Monaten Räte von sich ernennen, die die Sache schlichten. Das gelobt Symon eidlich.\n\nLaufzeit: 1486 August 17 (Geb. u. gesch. Donnerstags nach U. L. Fr. tag Assumptionis 1486)\n\nSiegelbeschreibung: das unten aufgedrückte Siegel abgefallen",
       "english": "In the dispute between Fuchs von Cannenberg and Count Johann zu Wertheim, Georg von Rosenberg mediates as follows: Symon Fuchs renounces all feuding against the count. If he serves a prince who enters into a dispute with the count, he may continue serving that prince. However, he shall not seek out a lord who is already feuding with the count. If he has claims against the count, the count shall appoint councillors of his own within two months to settle the matter. Symon swears to uphold this agreement.\n\nDate range: 17 August 1486 (Thursday after the Assumption of Our Lady, according to the stated dating).\n\nSeal description: The seal impressed below has fallen off.",
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
-        },
-        {
-          "person": "Hans zu Wertheim",
-          "personTitle": [
-            "Graf zu Wertheim"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=703&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000703%2Ftitlaufn_0000154382%2F07_0000154382_0001_7-154382-1.jpg"
@@ -25,6 +14,17 @@
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=703&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000000703%2Ftitlaufn_0000154382%2F07_0000154382_0002_7-154382-2.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg von Rosenberg"
+    },
+    {
+      "person": "Hans zu Wertheim",
+      "personTitle": [
+        "Graf zu Wertheim"
       ]
     }
   ]

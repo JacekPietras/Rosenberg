@@ -7,23 +7,6 @@
       "url": "https://arcinsys.hessen.de/arcinsys/showArchivalDescriptionDetails.action?archivalDescriptionId=1451601",
       "german": "Groß-Rohrheim: Bischof Eckhard von Worms, Burggraf Heinrich Graslag auf Starkenburg und Ritter Emich v. Borntze vermitteln einen Vergleich zwischen Else v. Katzenelnbogen, Frau zu Erbach, einer- und Ritter Gerlach v. Breidenbach und seiner Frau Lucke andererseits wegen des Hofes zu Rohrheim. Zeugen: Hans Schenk, Herr zu Erbach und die Edelknechte Werner Gawir, Heinrich v. Hatzstein, Hamann v. Sickingen, Ulrich Colling und Brising v. Rosenbach\n\nFormalbeschreibung: Original, Pergament, drei Siegel anhangend, das des Graslag leicht beschädigt. Siegler: die Aussteller\n\n(Vor-) Provenienzen: Grafen zu Erbach\n\nZusatzinformationen: Gedruckt Baur, Hessische Urkunden I, 1, 487",
       "english": "Groß-Rohrheim: Bishop Eckhard of Worms, Burgrave Heinrich Graslag of Starkenburg, and Ritter Emich von Borntze mediate a settlement between Elisabeth von Katzenelnbogen, wife of the lord of Erbach, on one side, and Ritter Gerlach von Breidenbach and his wife Lucke on the other, concerning the farm at Rohrheim. Witnesses: Hans Schenk, lord of Erbach, and the squires Werner Gawir, Heinrich von Hatzstein, Hamann von Sickingen, Ulrich Colling, and Brising von Rosenbach.\n\nFormal description: Original parchment, with three attached seals; the seal of Graslag is slightly damaged. The issuers sealed it.\n\nEarlier provenance: Counts of Erbach.\n\nAdditional information: Printed in Baur, Hessische Urkunden I, 1, 487.",
-      "mention": [
-        {
-          "person": "Elisabeth von Katzenelnbogen"
-        },
-        {
-          "place": "erbach"
-        },
-        {
-          "person": "Hans Schenk"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "sickingen"
-        }
-      ],
       "img": [
         {
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/82--7/hstad_a_1_nr_82--7_0001.jpg"
@@ -35,6 +18,23 @@
           "src": "https://digitalisate-he.arcinsys.de/hstad/a_1/82--7/hstad_a_1_nr_82--7_0003.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Elisabeth von Katzenelnbogen"
+    },
+    {
+      "place": "erbach"
+    },
+    {
+      "person": "Hans Schenk"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "sickingen"
     }
   ]
 }

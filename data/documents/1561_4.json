@@ -6,22 +6,22 @@
       "source": "Staatsarchiv Ludwigsburg B 114 Bü 6902",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-13473",
       "german": "Limpurgisches Lehen der Familie von Rosenberg zu Sachsenflur\n\nLaufzeit: 1561, 1572-1573\n\nUmfang: 1 Bü",
-      "english": "Limpurg fief held by the von Rosenberg family at Sachsenflur\n\nDuration: 1561, 1572-1573\n\nExtent: 1 file bundle",
-      "mention": [
-        {
-          "place": "limpurg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "subject": "the von Rosenberg family",
-          "type": "generic",
-          "content": "held a fief of Limpurg at Sachsenflur."
-        }
-      ]
+      "english": "Limpurg fief held by the von Rosenberg family at Sachsenflur\n\nDuration: 1561, 1572-1573\n\nExtent: 1 file bundle"
+    }
+  ],
+  "facts": [
+    {
+      "subject": "the von Rosenberg family",
+      "type": "generic",
+      "content": "held a fief of Limpurg at Sachsenflur."
+    }
+  ],
+  "mention": [
+    {
+      "place": "limpurg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

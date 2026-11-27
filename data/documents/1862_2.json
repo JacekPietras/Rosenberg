@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++13B5B54F-DA96-46C1-9FA9-518FC35979ED&parent_id="
       ],
       "german": "Zahner, Pfarrer von Rosenberg, gegen Rubenbauer Franz, Bäcker von Sulzbach, wegen Grenzstreitigkeiten",
-      "english": "Pastor Zahner of Rosenberg against Franz Rubenbauer, baker from Sulzbach, concerning boundary disputes",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Pastor Zahner of Rosenberg against Franz Rubenbauer, baker from Sulzbach, concerning boundary disputes"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

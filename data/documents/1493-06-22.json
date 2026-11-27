@@ -7,24 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1328095",
       "german": "Philipp von Rosenberg, Dr., Domherr und Propst zu S. German und Mauricien-Stift in Speyer, Vikar der Geistlichkeit daselbst, beurkundet, daß das Stift zu Baden und der Kirchherr zu Au, Andres Duchrherer sich hinsichtlich des halben Groß- und Kleinzehntens zu Au, der früher durch Großweier an Philipp von Seldeneck und von diesem pfandweise an das Stift gekommen war, und wegen dessen sich Irrung ergeben hatte, dahin verglichen haben, daß das Stift den halben Groß-, der Kirchherr den halben Kleinzehnten (Gersten- und Mattenzehent ausgenommen) erheben soll, wozu Philipp von Seldeneck, Amtmann zum Nuweneberstein [Neu Eberstein], seine Zustimmung gibt\n\nLaufzeit: 1493 Juni 22 (Geb. uff Samstag der heil. zehntausend ritter und mertler Tag 1493)\n\nSiegelbeschreibung: Mit 4 Siegeln: 1. des Phil. von Rosenberg, 2. des Stifts zu Baden, 3. des Pfarrers Hans Mur von Rastetten, 4. des Phil. von Seldeneck",
       "english": "Philipp von Rosenberg, Dr., canon and provost of St. German and the Mauritius foundation in Speyer, vicar of the clergy there, certifies that the Baden foundation and the parish priest of Au, Andreas Duchrherer, have reached a settlement regarding half of the great and small tithes at Au — which had previously passed through Großweier to Philipp von Seldeneck and from him by pledge to the foundation — and the resulting dispute between them. They agreed that the foundation shall collect half the great tithe, and the parish priest half the small tithe (excluding barley and meadow tithes), to which Philipp von Seldeneck, Amtmann zu Neu Eberstein, gives his consent.\n\nValidity: June 22, 1493 (born on Saturday of Holy Ten Thousand Knights and Martyrs Day 1493)",
-      "mention": [
-        {
-          "person": "Philipp von Seldeneck",
-          "personTitle": [
-            "Amtmann zu Neu"
-          ]
-        },
-        {
-          "place": "speyer"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Philipp von Rosenberg",
-          "type": "generic",
-          "content": "as canon and provost of St. German and Mauritius in Speyer and vicar of its clergy recorded a settlement between Baden foundation and parish priest Andreas Duchrherer concerning the tithe at Au."
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3188&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003188%2Ftitlaufn_0001328095%2F04_0001328095_0001_4-1328095-1.jpg"
@@ -36,6 +18,24 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3188&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003188%2Ftitlaufn_0001328095%2F04_0001328095_0003_4-1328095-3.jpg"
         }
       ]
+    }
+  ],
+  "facts": [
+    {
+      "person": "Philipp von Rosenberg",
+      "type": "generic",
+      "content": "as canon and provost of St. German and Mauritius in Speyer and vicar of its clergy recorded a settlement between Baden foundation and parish priest Andreas Duchrherer concerning the tithe at Au."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Philipp von Seldeneck",
+      "personTitle": [
+        "Amtmann zu Neu"
+      ]
+    },
+    {
+      "place": "speyer"
     }
   ]
 }

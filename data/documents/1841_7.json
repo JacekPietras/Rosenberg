@@ -9,12 +9,12 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++208378fd-f935-423f-b717-f317d52936c1&parent_id="
       ],
       "german": "Heimat der Marg. Schmidt von Rosenbach",
-      "english": "Place of origin of Marg. Schmidt of Rosenbach",
-      "mention": [
-        {
-          "place": "rosenberg-town"
-        }
-      ]
+      "english": "Place of origin of Marg. Schmidt of Rosenbach"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

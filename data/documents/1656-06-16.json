@@ -7,18 +7,18 @@
       "url": "https://www.monasterium.net/mom/AT-ADG/AGDK/109-D-6/charter",
       "german": "Ferdinand Orefici, Administrator des Bischofs Sigismund Franz zu Gurk, bestätigt den Verkauf von sechs genannten Gütern durch Propst Johann Georg, Dekan Johann Baptist Textor, Senior Franz Gottfried Morndell und das Kapitel zu Gurk an Georg Niklas Graf von Rosenberg um 1200 Gulden.\n\nSiegler: 1\n\nSiegel: Siegelankündigung 1: Ferdinand Orefici. 1",
       "english": "Ferdinand Orefici, administrator for Bishop Sigismund Franz of Gurk, confirms the sale for 1,200 gulden of six specified properties by Hans Georg, Propst; Hans Baptist Textor, Dekan; Franz Gottfried Morndell, Senior; and the chapter of Gurk to Georg Niklas von Rosenberg, Graf von Rosenberg.\n\nSealer: 1\n\nSeal: seal announcement 1: Ferdinand Orefici. 1",
-      "mention": [
-        {
-          "person": "Georg Niklas von Rosenberg",
-          "personTitle": [
-            "Graf von Rosenberg"
-          ]
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/AT-ADG/DKA/109-D-6.jpg"
         }
+      ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Georg Niklas von Rosenberg",
+      "personTitle": [
+        "Graf von Rosenberg"
       ]
     }
   ]

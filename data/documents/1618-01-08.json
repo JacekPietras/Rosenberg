@@ -7,17 +7,6 @@
       "url": "https://www.monasterium.net/mom/AT-VLA/HohenemsRgft/5265/charter",
       "german": "Adam Hektor von Rosenbach zu Heltelingen, Marx Jakob von Schönau für sich selbst, beide auch im Namen der Brüder des von Schönau, Hans Kaspar, Otto Rudolf, Hans und Heinrich Hyrus von Schönau, verkaufen dem Grafen Kaspar von Hohenems ihre Rechte an dem 6. Teil des Reichshofs Lustenau, Widnau und Haslach, wie sie von den Herren von Ems an ihre Voreltern gelangt sind, um 5.000 Gulden.",
       "english": "Adam Hektor von Rosenbach zu Heltelingen and Marx Jakob von Schönau, the latter on his own behalf and both also acting for Schönau’s brothers Hans Kaspar, Otto Rudolf, Hans, and Heinrich Hyrus von Schönau, sell Count Kaspar von Hohenems their rights to one sixth of the imperial estate of Lustenau, Widnau, and Haslach, which had passed from the lords von Ems to their ancestors, for 5,000 gulden.",
-      "mention": [
-        {
-          "person": "Marx Jakob von Schönau"
-        },
-        {
-          "place": "rosenberg-town"
-        },
-        {
-          "place": "schonau"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/img/VLA/HohenemsRgft/K.._MOM-Bilddateien._%7EVLAjpgweb._%7EVLA_16180108_05265_v.jpg"
@@ -26,6 +15,17 @@
           "src": "https://images.monasterium.net/img/VLA/HohenemsRgft/K.._MOM-Bilddateien._%7EVLAjpgweb._%7EVLA_16180108_05265_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Marx Jakob von Schönau"
+    },
+    {
+      "place": "rosenberg-town"
+    },
+    {
+      "place": "schonau"
     }
   ]
 }

@@ -7,20 +7,6 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=3-190377",
       "german": "Kundschaft über die Rechte in der Kelter zu Rohenkeim in der Streitsache zwischen Kraft von Hohenlohe und Boppo von Adelsheim; Siegel: Götz von Berlichingen, Hans von Rosenberg und Engelhard von Bachenstein (abgefallen).\n\nLaufzeit: 1361\n\nUmfang: 1 Urkunde",
       "english": "Testimony concerning rights in the wine press at Rohenkeim in the dispute between Kraft von Hohenlohe and Boppe von Adelsheim. Seals: Götz von Berlichingen, Hans von Rosenberg, and Engelhard von Bachenstein (detached).\n\nTerm: 1361.\n\nExtent: one document.",
-      "mention": [
-        {
-          "person": "Boppe von Adelsheim"
-        },
-        {
-          "person": "Götz von Berlichingen"
-        },
-        {
-          "person": "Hans von Rosenberg"
-        },
-        {
-          "person": "Kraft von Hohenlohe"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190377%2F03_0000190377_0001_3-190377-1.jpg"
@@ -29,6 +15,20 @@
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=338&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_3%2Folf%2Fbestand_0000000338%2Ftitlaufn_0000190377%2F03_0000190377_0002_3-190377-2.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Boppe von Adelsheim"
+    },
+    {
+      "person": "Götz von Berlichingen"
+    },
+    {
+      "person": "Hans von Rosenberg"
+    },
+    {
+      "person": "Kraft von Hohenlohe"
     }
   ]
 }

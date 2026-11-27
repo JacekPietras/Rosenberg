@@ -7,11 +7,6 @@
       "url": "https://www.monasterium.net/mom/CZ-KAVB/VYBRO/1286_VI_29/charter",
       "german": "Heinrich von Rosenberg und Albert von Payreschau wiederholen die Schenkung der Kirche in Strobnitz an das Stift Hohenfurt.\n\nSiegel: a) Siegel Heinrich's von Rosenberg wie in XXXIII., etwas beschädigt und ehemals an grünrother Seide hängend b) Das gut erhaltene Siegel desAlbert von Stropnitz, ehemals an grünen Seidenfäden hängend. Vergl. XXXIII.",
       "english": "Heinrich von Rosenberg and Albert von Payreschau repeat the donation of the church in Strobnitz to the Stift Hohenfurt.\n\nSeal: a) Seal of Heinrich von Rosenberg as in XXXIII., slightly damaged and formerly hanging on green-red silk b) The well-preserved seal of Albert von Stropnitz, formerly hanging on green silk threads. Cf. XXXIII.",
-      "mention": [
-        {
-          "person": "Heinrich von Rosenberg"
-        }
-      ],
       "img": [
         {
           "src": "https://images.monasterium.net/pics/871/VYBRO_12860629_104%2CII_v.jpg"
@@ -20,6 +15,11 @@
           "src": "https://images.monasterium.net/pics/871/VYBRO_12860629_104%2CII_r.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "person": "Heinrich von Rosenberg"
     }
   ]
 }

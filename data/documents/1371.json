@@ -8,22 +8,22 @@
       ],
       "url": "https://regionalia.blb-karlsruhe.de/frontdoor/deliver/index/docId/17078/file/BLB_Hildebrandt_Regesten_Burg_Steinsberg.pdf",
       "german": "Die Minneburg ist Pfandbesitz des Contz Mönch v. Rosenberg, Vogt auf dem Steinsberg. BRINKMANN 1917:XVIII; GEHRIG 1979:30",
-      "english": "The Minneburg is held in pledge by Kunz Mönch von Rosenberg, Vogt zu Steinsberg.",
-      "mention": [
-        {
-          "place": "minneburg"
-        }
+      "english": "The Minneburg is held in pledge by Kunz Mönch von Rosenberg, Vogt zu Steinsberg."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Kunz Mönch von Rosenberg",
+      "personTitle": [
+        "Vogt zu Steinsberg"
       ],
-      "facts": [
-        {
-          "person": "Kunz Mönch von Rosenberg",
-          "personTitle": [
-            "Vogt zu Steinsberg"
-          ],
-          "type": "generic",
-          "content": "held the Minneburg in pledge."
-        }
-      ]
+      "type": "generic",
+      "content": "held the Minneburg in pledge."
+    }
+  ],
+  "mention": [
+    {
+      "place": "minneburg"
     }
   ]
 }

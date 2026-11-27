@@ -10,22 +10,22 @@
       ],
       "url": "https://www.digitale-sammlungen.de/de/view/bsb00009261",
       "german": "febr. 1 Amberg. Pfgf. Johann bekennt Jörg Zenger von Velburg 350 fl. rhein. zu schulden. Dafür gibt er ihm die veste und pflege Rosenberg by Sultzpach gelegen in amtsweise nebst 40 fl. jährl. (20 an Walpurgis, 20 an Michaelis). Die lösung kann jährlich an Lichtmess oder 14 tage vor- oder nachher erfolgen. München, R.-A. Copb. d. 0. nr. 152, 23a.",
-      "english": "1410 February 1, Amberg. Count Palatine Johann acknowledges owing Jörg Zenger von Velburg 350 Rhenish florins. In return, he grants him Rosenberg Castle and the Pflege at Rosenberg near Sulzbach as an office, together with 40 florins annually (20 at Walpurgis and 20 at Michaelmas). The pledge may be redeemed each year at Candlemas or 14 days before or after. Munich, Reichsarchiv, copybook of the Upper Palatinate no. 152, fol. 23a.",
-      "mention": [
-        {
-          "place": "amberg"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
-      "facts": [
-        {
-          "person": "Georg Zenger von Velburg",
-          "type": "generic",
-          "content": "was owed 350 Rhenish florins by Count Palatine Johann, who pledged Rosenberg Castle and its Pflege near Sulzbach to him as an office and granted 40 florins annually, with redemption permitted each year around Candlemas."
-        }
-      ]
+      "english": "1410 February 1, Amberg. Count Palatine Johann acknowledges owing Jörg Zenger von Velburg 350 Rhenish florins. In return, he grants him Rosenberg Castle and the Pflege at Rosenberg near Sulzbach as an office, together with 40 florins annually (20 at Walpurgis and 20 at Michaelmas). The pledge may be redeemed each year at Candlemas or 14 days before or after. Munich, Reichsarchiv, copybook of the Upper Palatinate no. 152, fol. 23a."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Georg Zenger von Velburg",
+      "type": "generic",
+      "content": "was owed 350 Rhenish florins by Count Palatine Johann, who pledged Rosenberg Castle and its Pflege near Sulzbach to him as an office and granted 40 florins annually, with redemption permitted each year around Candlemas."
+    }
+  ],
+  "mention": [
+    {
+      "place": "amberg"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

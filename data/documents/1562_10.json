@@ -9,18 +9,18 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++9209BD13-50BF-4CF8-A373-E7DCE4F13018&parent_id="
       ],
       "german": "Aub\nZehntforderung des Conrad von Rosenberg für zwei Morgen, der Pfarrei zu Aub (LK Ochsenfurt) lehenbarer Äcker auf der Markung von Waldmannshofen (Kr. Bad Mergentheim)",
-      "english": "Aub. Tithe claim by Konrad von Rosenberg for two morgens of arable land held in fief by the parish of Aub in the Waldmannshofen territory.",
-      "mention": [
-        {
-          "place": "aub"
-        },
-        {
-          "person": "Konrad von Rosenberg"
-        },
-        {
-          "place": "waldmannshofen"
-        }
-      ]
+      "english": "Aub. Tithe claim by Konrad von Rosenberg for two morgens of arable land held in fief by the parish of Aub in the Waldmannshofen territory."
+    }
+  ],
+  "mention": [
+    {
+      "place": "aub"
+    },
+    {
+      "person": "Konrad von Rosenberg"
+    },
+    {
+      "place": "waldmannshofen"
     }
   ]
 }

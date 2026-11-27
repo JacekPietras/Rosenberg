@@ -7,19 +7,19 @@
       "url": "https://www.landesarchiv-bw.de/plink/?f=4-1431158",
       "german": "Markgraf Georg Friedrich zu Baden gestattet Adam Hektor von Rosenbach die kleine Jagd im Bann von Hiltlingen (später mit Haltingen vereinigt) und Kirchheim.\n\nLaufzeit: 1598 August 8\n\nSiegelbeschreibung: 1 Siegel",
       "english": "Margrave Georg Friedrich of Baden permits Adam Hektor von Rosenbach to engage in small-game hunting within the hunting district of Hiltlingen (later united with Haltingen) and Kirchheim.\n\nTerm: 8 August 1598.\n\nSeal description: one seal.",
-      "mention": [
-        {
-          "place": "kirchheim"
-        },
-        {
-          "place": "rosenberg-town"
-        }
-      ],
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=3202&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000003202%2Ftitlaufn_0001431158%2F04_0001431158_0001_4-1431158-1.jpg"
         }
       ]
+    }
+  ],
+  "mention": [
+    {
+      "place": "kirchheim"
+    },
+    {
+      "place": "rosenberg-town"
     }
   ]
 }

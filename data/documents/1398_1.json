@@ -6,41 +6,41 @@
       "source": "Regesten der Pfalzgrafen am Rhein 1214 - 1508",
       "url": "https://archive.org/details/bub_gb_dnQ-AAAAYAAJ/page/n392/mode/1up",
       "german": "Hans von Rosenberg, ritter: burg und dorf Mure und ein haus zu Heidelberg, gelegen an Albrechts von Erlekeim haus.",
-      "english": "Hans von Rosenberg, Ritter: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erligheim's house.",
-      "mention": [
-        {
-          "person": "Albrecht von Erligheim"
-        },
-        {
-          "place": "heidelberg"
-        }
+      "english": "Hans von Rosenberg, Ritter: Mure castle and village and a house in Heidelberg, situated next to Albrecht von Erligheim's house."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
       ],
-      "facts": [
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "held Mure Castle and village."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "owned a house in Heidelberg."
-        },
-        {
-          "person": "Hans von Rosenberg",
-          "personTitle": [
-            "Ritter"
-          ],
-          "type": "generic",
-          "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house."
-        }
-      ]
+      "type": "generic",
+      "content": "held Mure Castle and village."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "owned a house in Heidelberg."
+    },
+    {
+      "person": "Hans von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ],
+      "type": "generic",
+      "content": "had a house in Heidelberg next to Albrecht von Erligheim’s house."
+    }
+  ],
+  "mention": [
+    {
+      "person": "Albrecht von Erligheim"
+    },
+    {
+      "place": "heidelberg"
     }
   ]
 }
