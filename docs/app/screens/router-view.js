@@ -184,6 +184,7 @@ export async function renderActiveScreen({
   const personLinkTargets = content.querySelectorAll('[data-person-links-path]');
   const hydratePersonLinks = (article) => {
     if (!article.isConnected) return;
+    if (article.querySelector('.document-text-input')) return;
     const path = article.dataset.personLinksPath;
     const index = Number(article.dataset.personLinksIndex);
     const doc = state.documents.get(path);

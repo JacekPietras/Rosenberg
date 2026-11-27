@@ -195,7 +195,9 @@ export function createDocumentRenderer({
       places: state.places,
     }) : '';
     const listRenderer = treeMarkup;
-    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, undefined, listRenderer) : ''}${!deferredDetails && image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${!deferredDetails && entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
+    const editableText = state.active === 'documents' && state.canEditDocuments && path.startsWith('data/documents/') && index !== null
+      ? (markup, language) => `<div data-document-text-path="${escapeHtml(path)}" data-document-text-index="${index}" data-document-text-language="${language}">${markup}</div>` : undefined;
+    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, editableText, listRenderer) : ''}${!deferredDetails && image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${!deferredDetails && entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
     if (!content) return '';
     return `<article class="entry"${anchor}>${content}</article>`;
   }

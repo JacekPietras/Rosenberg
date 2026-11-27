@@ -242,6 +242,10 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .text { color: var(--text); overflow-wrap: anywhere; }
 .text p { margin: 0 0 .8rem; }
 .text p:last-child { margin-bottom: 0; }
+.document-text-input { box-sizing: border-box; width: 100%; min-height: 8rem; padding: .5rem; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; font: inherit; line-height: 1.5; resize: vertical; }
+.document-text-actions { display: flex; align-items: center; gap: .5rem; margin-top: .5rem; }
+.document-text-actions button { padding: .35rem .7rem; color: var(--ink); background: var(--surface-raised); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.document-text-actions span { color: var(--muted); }
 .text strong { color: var(--ink); font-weight: 650; }
 
 .source-list { margin: 1rem 0 0; padding: .15rem 0 .15rem 1.25rem; color: var(--text); font-size: .9rem; }
