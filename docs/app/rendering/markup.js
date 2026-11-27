@@ -149,7 +149,7 @@ export function createMarkupRenderer({ state }) {
     personMarkup,
     markdownMarkup,
     treeMarkup,
-    markdownLinks: (value = '') => Array.isArray(value) ? value.map((item) => `<span class="source-line">${inlineMarkup(item)}</span>`).join('') : inlineMarkup(value),
+    markdownLinks: (value = '', linkEntities = true) => Array.isArray(value) ? value.map((item) => `<span class="source-line">${inlineMarkup(item, linkEntities)}</span>`).join('') : inlineMarkup(value, linkEntities),
     diagramMarkup: (value = '') => { const source = String(value).replace(/^\s*```mermaid\s*\n?/, '').replace(/\n?\s*```\s*$/, '').trim(); return source ? `<div class="diagram mermaid">${escapeHtml(source)}</div>` : ''; },
   };
 }

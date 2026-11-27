@@ -197,7 +197,7 @@ export function createDocumentRenderer({
     const listRenderer = treeMarkup;
     const editableText = state.active === 'documents' && state.canEditDocuments && path.startsWith('data/documents/') && index !== null
       ? (markup, language) => `<div data-document-text-path="${escapeHtml(path)}" data-document-text-index="${index}" data-document-text-language="${language}">${markup}</div>` : undefined;
-    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, editableText, listRenderer) : ''}${!deferredDetails && image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${!deferredDetails && entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
+    const content = `${title && entry.title ? `<p class="entry-title">${markdownLinks(entry.title, false)}</p>` : ''}${subheading && entry.subheading ? `<h3 class="entry-subheading">${markdownLinks(entry.subheading, false)}</h3>` : ''}${entryDate}${source && entry.source ? `<p class="source">${markdownLinks(entry.source, false)}</p>` : ''}${entry.url ? urlMarkup(entry.url) : ''}${entry.german || entry.latin || entry.english ? languageMarkup(entry, editableText, listRenderer) : ''}${!deferredDetails && image && entry.img ? imageMarkup(entry.img, [], { path, index, showRegions: false }) : ''}${!deferredDetails && entry.diagram ? diagramMarkup(entry.diagram) : ''}${facts}`;
     if (!content) return '';
     return `<article class="entry"${anchor}>${content}</article>`;
   }
@@ -256,7 +256,7 @@ export function createDocumentRenderer({
       }).join('');
     }
     const research = !deferredDetails && typeof doc.research === 'string' && doc.research.trim()
-      ? `<section class="document-research" aria-label="Research"><h3>Research</h3><div class="document-research-text">${inlineMarkup(doc.research)}</div></section>`
+      ? `<section class="document-research" aria-label="Research"><h3>Research</h3><div class="document-research-text">${inlineMarkup(doc.research, false)}</div></section>`
       : '';
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), deferredDetails, documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
     const documentFacts = path.startsWith('data/documents/') ? renderEntry({ facts: doc.facts, guesses: doc.guesses, mention: doc.mention }, { path, deferredDetails, documentDate: doc.date || '' }) : '';
@@ -265,7 +265,7 @@ export function createDocumentRenderer({
     const deferredPersonLinks = state.active === 'documents' && path.startsWith('data/documents/')
       ? ` data-person-links-path="${escapeHtml(path)}" data-person-links-index="${index}"`
       : '';
-    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${research}${content}${documentFacts}</article>`;
+    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title, false)}</h2>${url}</div>${headingAside}</div>${research}${content}${documentFacts}</article>`;
   }
 
   function renderDocumentWithPersonLinks(doc, path, index) {
