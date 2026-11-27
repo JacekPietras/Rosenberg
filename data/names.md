@@ -179,7 +179,7 @@ Kunne
 Magdalena
 Margaretha, Margareta, Margarete, Margarethe, Margarethå, Margeth, Margett, Margret, Margreth, Margretha
 Maria
-Osanna
+Osanna, Joanna
 Ottilia, Otilia, Ottilie
 Petrisa, Petrissa
 Regina
