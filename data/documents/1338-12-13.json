@@ -15,13 +15,16 @@
           "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/1/full/max/0/default.jpg"
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/2/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/2/full/max/0/default.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/3/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/3/full/max/0/default.jpg",
+          "deleted": true
         },
         {
-          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/4/full/max/0/default.jpg"
+          "src": "https://www.gda.bayern.de/digitalisat/iiif/df29c084-3e1b-4cc1-98ae-972df58d61b4/4/full/max/0/default.jpg",
+          "deleted": true
         }
       ]
     }
