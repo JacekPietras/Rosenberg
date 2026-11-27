@@ -174,7 +174,7 @@ def validate_evidence(metadata, registry, root=None, cache=None, settings=None):
             or not re.fullmatch(r'data/(books|documents|notes|images)/[^\0]+\.json', path)
             or '..' in path.split('/') or not re.fullmatch(r'sha256:[a-f0-9]{64}', ref.get('fingerprint', ''))
             or not (re.search(r'/(facts|guesses)/[0-9]+$', pointer)
-                    or re.search(r'^/entries/[0-9]+/mention$', pointer))
+                    or re.search(r'^(?:/entries/[0-9]+)?/mention$', pointer))
             or view == 'facts' and '/guesses/' in pointer):
             raise ValueError('invalid reconstructed source reference')
         if root is None:

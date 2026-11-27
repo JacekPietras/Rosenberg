@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Regenerate every `mention` list: the people recognized in a document entry's
-// `english` text and in each generic fact's `content`. Existing lists are
+// Regenerate every `mention` list: the people recognized in a document's
+// entry texts and in each generic fact's `content`. Existing lists are
 // discarded first, so the output depends only on the text and the dictionaries.
 // `--check` reports files whose stored lists are stale and exits non-zero.
 import { readdir, readFile, writeFile } from 'node:fs/promises';
@@ -138,7 +138,7 @@ function isStated(item, stated) {
   return (stated.get(item.person) || []).some((titles) => titleForms.covers(titles, item.personTitle || []));
 }
 
-function regenerate(value, file, counter, issuance = []) {
+export function regenerate(value, file, counter, issuance = []) {
   if (Array.isArray(value)) {
     value.forEach((item) => regenerate(item, file, counter, issuance));
     return;
@@ -146,6 +146,21 @@ function regenerate(value, file, counter, issuance = []) {
   if (!value || typeof value !== 'object') return;
   delete value.mention;
   const isDocument = file.includes('/data/documents/') && Array.isArray(value.entries);
+  if (isDocument) {
+    for (const entry of value.entries) delete entry.mention;
+    const stated = statedPeople(value.facts ?? []);
+    const texts = [...value.entries.map((entry) => entry.english).filter((text) => typeof text === 'string'), ...factTexts(value)];
+    const issuance = typeof value.place === 'string' ? recognizeMentions(value.place, { placesOnly: true }) : [];
+    const items = [...texts.flatMap((text) => recognizeMentions(text, { stated })), ...issuance];
+    const unique = new Map(mergePeople(items).map((item) => [JSON.stringify(item), item]));
+    const name = (item) => item.person ?? item.place;
+    const mention = [...unique.values()].filter((item) => item.person === undefined || !isStated(item, stated))
+      .map((item) => resolveMentionPerson(item))
+      .sort((left, right) => name(left).localeCompare(name(right)) || JSON.stringify(left).localeCompare(JSON.stringify(right)));
+    if (mention.length) value.mention = mention;
+    counter.mentions += mention.length;
+    return;
+  }
   const hasEnglish = typeof value.english === 'string' && file.includes('/data/documents/');
   const isEntry = !isDocument && (hasEnglish || Array.isArray(value.facts) || Array.isArray(value.guesses));
   if (isEntry) {

@@ -755,6 +755,19 @@ test('context participants are verified against the cited entry mention list', a
   }
 });
 
+test('context participants can cite a document-level mention list', async () => {
+  const data = await probabilityFixture();
+  const doc = data.documents.get(source.path);
+  doc.mention = [{ person: 'Bea von East' }];
+  const ref = { path: source.path, pointer: '/mention', fingerprint: await evidenceFingerprint(doc.mention) };
+  data.tree.evidence.facts.nodes.find((node) => !node.registry).mentions.push({
+    source: ref, field: 'text', reference: 'Bea von East', date: '1393',
+  });
+  await updateFixtureBuild(data);
+  const result = await verifyFamilyGraph(data.people, data.documents, data.repository, [...data.documents.keys()], data.tree);
+  assert.equal(result.valid, true, result.reason);
+});
+
 test('legacy text context participants are rejected', async () => {
   const data = await probabilityFixture();
   const doc = data.documents.get(source.path);

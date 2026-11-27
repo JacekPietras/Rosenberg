@@ -12,18 +12,17 @@ family relationship assertions.
 
 Recognition runs only in the linter. `scripts/linters/generate_mentions.mjs`
 uses `docs/app/data/person-name-recognition.js` and the place list to write a
-`mention` list on each document entry (for its `english` text and the
+`mention` list on each document (for its entries' `english` text and the
 document's place) and on each generic fact (for its `content`); see
 `specs/json-formats.md`. The family graph reads those lists and never
 recognizes names or places itself.
 
-- Each observation points at the exact `/entries/N/english` value (or the
-  fact) and fingerprints it. A `person` item is the mention reference. Offsets
+- Each observation points at the document `/mention` list (or the fact) and fingerprints it. A `person` item is the mention reference. Offsets
   are never stored.
 - Mentions feed existing contextual matching only. Typed facts and guesses are
   the sole source of relationships.
 - Browser verification checks that a prose mention's name appears in the stored
-  `mention` list of its entry or fact.
+  `mention` list of its document or fact.
 
 ## Evidence and ambiguity rules
 

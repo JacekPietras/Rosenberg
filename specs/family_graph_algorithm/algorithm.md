@@ -32,23 +32,22 @@ and images are all collected regardless of labels. Skipped documents add no
 facts, guesses, or prose observations to the reconstruction.
 
 Contextual people and places come from the generated `mention` lists
-(see `specs/json-formats.md`): an entry's list covers its `english` text and the
+(see `specs/json-formats.md`): a document's list covers its entries' `english` text and the
 document's place, and a generic fact's list covers its `content`. The algorithm
 reads these lists and does not recognize names or places in prose. Provenance
-points at the entry's `/english` pointer or the fact. Mentions may support
+points at the document's `/mention` pointer or the fact. Mentions may support
 identity matching and contextual links, but never create family relationship
 assertions. See [document English recognition](person-name-text-migration.md).
 
 An explicit fact date, including a generic fact's date, overrides the enclosing
-document or entry date for its assertions and fact-text context. Entry English
-text retains the enclosing date.
+document or entry date for its assertions and fact-text context. Document mentions retain the document date.
 
 ## Terms
 
 - **Mention**: one typed participant (`person` or `of`) of one assertion, or a
   context mention taken from prose.
-- **Passage**: one source entry at one historical date (path, entry pointer,
-  date). **Section**: one document file, or one entry of a book, notes or
+- **Passage**: one document, or one other source entry, at one historical date
+  (path, containing pointer, date). **Section**: one document file, or one entry of a book, notes or
   images file.
 - **Identity**: a set of mentions believed to be one person. Mentions with an
   exact registry ID start as one fixed identity per ID.

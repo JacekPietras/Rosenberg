@@ -57,6 +57,21 @@ class FamilyGraphTests(unittest.TestCase):
             value = {**value, 'label': 'Franken'}
         path.write_text(value if isinstance(value, str) else json.dumps(value, ensure_ascii=False), encoding='utf-8')
 
+    def test_document_level_assertions_and_mentions_build_and_export(self):
+        self.write('data/people.json', [person('a', 'Alex'), person('b', 'Bea')])
+        self.write('data/documents/test.json', {'date': '1393',
+            'entries': [{'english': 'Alex and Bea at North.'}, {'english': 'Another account.'}],
+            'facts': [relation('a', 'b', 'spouse')],
+            'guesses': [{'type': 'generic', 'person': 'Alex', 'content': 'may have held North'}],
+            'mention': [{'person': 'Alex'}, {'person': 'Bea'}, {'place': 'north'}]})
+        inputs = load_inputs(self.root, validate=False)
+        tree = serialize(inputs, [build(inputs, include_guesses=True)])
+        validate_generated(tree, inputs.people, self.root)
+        pointers = {ref['pointer'] for ref in tree['evidence']['with-guesses']['sources']}
+        self.assertTrue({'/facts/0', '/guesses/0'} <= pointers)
+        self.assertEqual('/mention', inputs.observations[0].source.pointer)
+        apply(inputs, tree)
+
     def test_source_selection_requires_franken_only_for_documents(self):
         self.write('data/people.json', [person('a', 'Alex')])
         self.write('data/documents/included.json', {'label': ['Franken', 'Schenk'], 'date': '1393',

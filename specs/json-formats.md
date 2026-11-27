@@ -5,9 +5,11 @@ directly, preserve its existing structure, and validate it afterwards.
 
 ## Facts and guesses
 
-Facts and guesses are typed objects in an entry's `facts` and optional
-`guesses` arrays; the containing entry is their source. Guesses use exactly the
-same formats; the `guesses` array marks them as uncertain.
+Facts and guesses are typed objects in `facts` and optional `guesses` arrays.
+For documents these arrays belong to the document and cover all its entries;
+for books and other sources they belong to the containing entry. Guesses use
+the same formats; the `guesses` array marks them as uncertain. Do not duplicate
+an assertion across entries of the same document.
 
 | `type` | Required | Optional | Meaning |
 | --- | --- | --- | --- |
@@ -58,7 +60,7 @@ A date is `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`, at the source's precision. It is
 the date of the event or attestation, never a publication date, and not the
 start of a relationship.
 
-- **Documents**: facts inherit the entry or document date, including intervals
+- **Documents**: facts inherit the document date, including intervals
   (`YYYY-YYYY`, ISO endpoints joined by `/` or `--`), which stay intervals.
   Facts of any type have their own `date` when it differs from the inherited
   date. A fact without an enclosing date needs its own.
@@ -107,7 +109,9 @@ support. An ID-like string that matches no ID is a warning.
 
 ## Generated `mention` lists
 
-Each entry carries an optional generated `mention` array, which lists the people not already stated by the entry's facts, and places. Items
+Each document carries an optional generated `mention` array covering all its
+entries. Other sources carry it on the relevant entry. It lists people not
+already stated by the corresponding facts, and places. Items
 are unique and sorted alphabetically; order carries no meaning:
 
 - `{"person": …, "personTitle": […]}`: a recognized person. `person` is the
@@ -117,15 +121,14 @@ are unique and sorted alphabetically; order carries no meaning:
 - `{"place": …}`: a recognized place, as its ID (or name when it has no ID).
   Text inside a recognized person name or title is not a place.
 
-The recognized text is the entry's `english` (documents), the `content` of its
-generic facts, and the `circumstances` of its death facts; guesses are not
-included, so the facts view never depends on them. Each document entry also
-includes the places of its document's `place`, so the document root has no
-`mention`. Facts never carry `mention`.
+The recognized text is the document entries' `english`, the `content` of
+generic facts, and the `circumstances` of death facts; guesses are not
+included, so the facts view never depends on them. Document mentions also
+include the document's `place`. Facts never carry `mention`.
 
 Mentions of the same `person` merge into one with the union of their titles,
 unless both carry titles from different groups of `data/titles-age.md`. A
-person already stated by one of the entry's facts (`person`+`personTitle` or
+person already stated by one of the corresponding facts (`person`+`personTitle` or
 `of`+`ofTitle` equal) is not listed.
 
 ```json
@@ -198,13 +201,13 @@ lists.
   "date": "1399-02-01",
   "place": "Boxberg",
   "transcribed": true,
+  "facts": [{"type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
   "entries": [
     {
       "source": ["43 Nr. 5290", "Regest Nr. 123"],
       "url": ["http://...", "https://example.org/document"],
       "german": "Original text",
       "english": "English translation",
-      "facts": [{"type": "generic", "person": "Example person", "content": "witnessed the agreement at Boxberg."}],
       "img": [{"src": "https://.../page.jpg", "seals": [{"person": "Eberhard", "position": "0.3,0.8", "size": 0.05, "type": "full"}]}]
     }
   ]
@@ -225,7 +228,8 @@ lists.
   attribute it to a Rosenberg house.
 - Entries keep `source` (the citation) and `url` as either a string or an array
   of strings, when there is one reference/link or several; they also keep their
-  text fields and `facts`.
+  text fields. The document holds its merged `facts`, `guesses`, and generated
+  `mention` arrays at the top level.
 - `img[]`: `src`; `deleted: true` for a removed image (kept so it is not
   imported again); optional `tags`, and `regions` (named rectangles with
   normalized `x`, `y`, `width`, `height` from 0 to 1; the first gives the
@@ -299,10 +303,9 @@ A graph has `sources`, `nodes`, `relationships`, and `comparisons` (only `merged
 **Sources.** `sources` lists each reference once; elsewhere references are
 integer indexes into it (full objects are also accepted). A reference has
 exactly `path`, `pointer` (RFC 6901, ending in `/facts/N`, `/guesses/N`, or a
-document entry's `/english` field), and `fingerprint` of the referenced
-assertion or text value. A stale pointer is never relocated to another
-identical assertion. English-text references are contextual evidence and do
-not support relationship assertions.
+document's `/mention` list), and `fingerprint` of the referenced value. A stale
+pointer is never relocated to another identical assertion. Mention-list
+references are contextual evidence and do not support relationship assertions.
 
 **Nodes.** `key`, `name`, `titles`, `dates`, `status`, `identityProbability`,
 `mentions`, `identitySources`, optional `possiblySame`.

@@ -104,7 +104,7 @@ Inspect connections in the saved graph without rebuilding or writing files:
 ```text
 python3 scripts/print_graph_connections.py vogt_zu_Lauda
 python3 scripts/print_graph_connections.py '@evidence/KEY' --details
-python3 scripts/print_graph_connections.py 'data/documents/1397-04-29.json#/entries/0/facts/0'
+python3 scripts/print_graph_connections.py 'data/documents/1397-04-29.json#/facts/0'
 ```
 
 Accepts a person ID, evidence node key, exact full name, or source JSON pointer

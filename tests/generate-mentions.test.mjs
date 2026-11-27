@@ -1,6 +1,18 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { recognizeMentions, resolveMentionPerson } from '../scripts/linters/generate_mentions.mjs';
+import { recognizeMentions, regenerate, resolveMentionPerson } from '../scripts/linters/generate_mentions.mjs';
+
+test('document mentions combine entry text and exclude people stated anywhere in its facts', () => {
+  const document = { place: 'Boxberg', entries: [
+    { english: 'Arnold von Rosenberg and Kunz von Rosenberg witnessed this.', mention: [{ place: 'stale' }] },
+    { english: 'Arnold von Rosenberg appeared again.' },
+  ], facts: [{ type: 'generic', person: 'Kunz von Rosenberg', content: 'witnessed this.' }] };
+  regenerate(document, '/project/data/documents/example.json', { mentions: 0 });
+  assert.equal(document.entries.some((entry) => 'mention' in entry), false);
+  assert.equal(document.mention.filter((item) => item.person === 'Arnold von Rosenberg').length, 1);
+  assert.equal(document.mention.some((item) => item.person === 'Kunz von Rosenberg'), false);
+  assert.equal(document.mention.some((item) => item.place === 'boxberg'), true);
+});
 
 test('resolves a shared title only when it identifies one registry person', () => {
   const item = { person: 'Konrad von Rosenberg', personTitle: ['Vizedom zu Amberg'] };

@@ -185,6 +185,36 @@ test('document facts use the shared view and respect the facts toggle', () => {
   assert.equal(renderEntry({ facts }), '');
 });
 
+test('document-level facts and mentions render once after the entries', () => {
+  const { renderDocument } = createDocumentRenderer({
+    state: { showFacts: true }, escapeHtml, formatDate: String, ...options,
+    getPeople: () => options.people, documentTitle: () => 'Document', documentYear: () => '',
+    entryAnchor: () => 'entry', markdownLinks: escapeHtml, languageMarkup: () => '',
+    distinctFamilies: new Set(),
+  });
+  const doc = { date: '1383', entries: [{ title: 'First' }, { title: 'Second' }],
+    facts: [{ type: 'generic', person: 'eberhard', content: 'appeared.' }],
+    guesses: [{ type: 'generic', person: 'eberhard', content: 'may have appeared.' }],
+    mention: [{ person: 'Elsewhere' }] };
+  const html = renderDocument(doc, 'data/documents/example.json', 0);
+  assert.equal((html.match(/class="facts facts-view"/g) || []).length, 1);
+  assert.match(html, /may have appeared/);
+  assert.match(html, /Elsewhere/);
+  assert.match(html, /datetime="1383"/);
+});
+
+test('entity pages collect document-level facts only once for multiple matching entries', () => {
+  const state = { person: 'eberhard' };
+  const doc = { date: '1383', entries: [{ english: 'Eberhard' }, { english: 'Eberhard' }],
+    facts: [{ type: 'generic', person: 'eberhard', content: 'appeared.' }] };
+  const { renderPersonPage } = createEntityScreens({ state, getPeople: () => options.people,
+    getDocuments: () => new Map([['data/documents/example.json', doc]]), buildPersonPattern,
+    escapeHtml, inlineMarkup: escapeHtml, markdownLinks: escapeHtml, dateSortValue: Number,
+    formatDate: String, documentTitle: () => 'Document', documentNavigationUrl: () => '#',
+    displayedLanguagesFor: () => [] });
+  assert.equal((renderPersonPage().match(/appeared\./g) || []).length, 1);
+});
+
 test('document facts and guesses share a chronological list', () => {
   const { renderEntry } = createDocumentRenderer({ state: { showFacts: true }, escapeHtml, ...options, getPeople: () => options.people });
   const html = renderEntry({ facts: [

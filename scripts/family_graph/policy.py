@@ -67,7 +67,7 @@ class OfficeRule:
 # These rules deliberately make no claim about all holders of either office.
 OFFICE_RULES = (
     OfficeRule('Eberhard von Rosenberg', 'Vogt zu Lauda', 'vogt_zu_Lauda', '1385', '1385',
-               'data/documents/1385_2.json', '/entries/0/facts/3'),
+               'data/documents/1385_2.json', '/facts/3'),
     OfficeRule('Eberhard von Rosenberg', 'Vogt zu Dürn', 'vogt_zu_Durn', '1342-09-03', '1342-09-03',
-               'data/documents/1342-09-03.json', '/entries/0/facts/0'),
+               'data/documents/1342-09-03.json', '/facts/0'),
 )

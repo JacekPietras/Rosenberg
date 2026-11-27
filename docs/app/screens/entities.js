@@ -33,7 +33,14 @@ export function createEntityScreens({
   function mentionsFor(entity, kind) {
     const patterns = kind === 'person' ? buildPersonPattern([entity]).map(({ pattern }) => pattern) : [buildPlacePattern([entity])];
     const mentions = [];
-    getDocuments().forEach((doc, path) => (Array.isArray(doc?.entries) ? doc.entries : []).forEach((entry, index) => {
+    getDocuments().forEach((doc, path) => {
+      const documentFacts = path.startsWith('data/documents/') ? [...(doc.facts || []), ...(doc.guesses || [])] : [];
+      const documentMatch = kind === 'person'
+        ? documentFacts.some((fact) => factPersonMatch(fact, state.person || entity.id || entity.name, getPeople()))
+        : documentFacts.some((fact) => patterns.some((pattern) => { pattern.lastIndex = 0; return pattern.test(factText(fact, getPeople())); }));
+      const entries = Array.isArray(doc?.entries) ? doc.entries : [];
+      const start = mentions.length;
+      entries.forEach((entry, index) => {
       const factMatch = kind === 'person' && [...(entry.facts || []), ...(entry.guesses || [])].some((fact) => factPersonMatch(fact, state.person || entity.id || entity.name, getPeople()));
       if (factMatch || patterns.some((pattern) => pattern && fields.some((field) => {
         if (kind === 'person' && field === 'facts') return false;
@@ -41,23 +48,32 @@ export function createEntityScreens({
         return pattern.test(fieldText(entry, field))
           || (field === 'title' && pattern.test(String(doc.place || '')));
       }))) mentions.push({ doc, path, entry, index });
-    }));
+      });
+      if (documentMatch && mentions.length === start) mentions.push({ doc, path, entry: entries[0] || {}, index: 0 });
+    });
     return mentions;
   }
 
   function renderFacts(mentions, factMatches = () => true) {
     const people = getPeople();
     const personQuery = state.person || '';
-    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => ['facts', 'guesses'].flatMap((kind) => (Array.isArray(entry[kind]) ? entry[kind] : [])
+    const seenDocuments = new Set();
+    const facts = mentions.flatMap(({ doc, path, entry, index }, mentionIndex) => {
+      const isDocument = path.startsWith('data/documents/') && (Array.isArray(doc.facts) || Array.isArray(doc.guesses));
+      if (isDocument && seenDocuments.has(path)) return [];
+      if (isDocument) seenDocuments.add(path);
+      const source = isDocument ? doc : entry;
+      return ['facts', 'guesses'].flatMap((kind) => (Array.isArray(source[kind]) ? source[kind] : [])
       .map((fact, factIndex) => ({
         isGuess: kind === 'guesses',
         ...fact,
         sourceLabel: doc.label,
-        date: sourceFactDate(fact, doc, entry, path),
-        mentionIndex, factIndex, sourceHref: documentNavigationUrl(path, index),
+        date: sourceFactDate(fact, doc, isDocument ? {} : entry, path),
+        mentionIndex, factIndex, sourceHref: documentNavigationUrl(path, isDocument ? 0 : index),
         personMatch: personQuery ? factPersonMatch(fact, personQuery, people) : 'direct',
       }))
-      .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch)))
+      .filter((fact) => factText(fact, people).trim() && factMatches(factText(fact, people)) && fact.personMatch));
+    })
       .sort((left, right) => dateSortValue(left.date) - dateSortValue(right.date) || left.mentionIndex - right.mentionIndex || left.factIndex - right.factIndex);
     if (!facts.length) return '';
     const previousDeferredLinks = state.deferDocumentMarkupLinks;

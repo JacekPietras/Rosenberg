@@ -5,7 +5,7 @@ distinguishes them ([domain rules](domain-rules.md#what-makes-two-records-differ
 
 ## Distinctions within a passage
 
-A **passage** is one source entry at one historical date. Two same-name
+A **passage** is one document, or one other source entry, at one historical date. Two same-name
 mentions of one passage are different people if:
 
 - they are the two participants of one relationship fact;
@@ -52,10 +52,10 @@ merge pairwise.
 ## Prose context
 
 Prose is not turned into relationships, and the algorithm does not read prose.
-The `mention` list generated for an entry lists the people it names beyond
-its facts' participants, and its places. The entry's company is those people
+The `mention` list generated for a document lists the people its entries name beyond
+its facts' participants, and its places. The document's company is those people
 united with the typed participants (`person`, `of`) of its facts and, in the
-with-guesses view, guesses. Every typed participant gets the entry's places and
+with-guesses view, guesses. Every typed participant gets the document's places and
 the rest of the company as associates, except the other participant of its own
 relation fact (already family evidence) and except when the passage holds
 several same-name people with overlapping dates, since their company cannot be

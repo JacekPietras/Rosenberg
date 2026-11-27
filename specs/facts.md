@@ -1,9 +1,10 @@
 # Fact extraction and verification
 
 Read this file when adding, changing, reviewing, or removing facts and guesses
-in the JSON under `data/`. Facts are extracted from one entry's text into that
-entry's `facts` and `guesses`; each states what that entry says. The object
-formats are in [`json-formats.md`](json-formats.md).
+in the JSON under `data/`. Document facts and guesses are stored once at the
+document level and may be supported by any of its entries. Other sources store
+assertions on the relevant entry. The object formats are in
+[`json-formats.md`](json-formats.md).
 
 ## Source fields
 
@@ -23,8 +24,8 @@ a fact; correct the translation or report the difference.
 An entry may be a continuation: its original text can refer back to a person,
 bond, or event in an adjacent passage. Read the connected original passages to
 resolve such references, and report the passages and evidence for continuity.
-The event itself must be supported by the entry in which its fact is stored;
-context can identify its participants, but does not add events or details to it.
+The event itself must be supported by the document or source entry containing
+its fact; context can identify its participants, but does not add events or details to it.
 Do not equate people merely because their names or circumstances resemble one
 another. If continuity or identity is uncertain, preserve the source's own
 designation and report the uncertainty instead of asserting an identification.

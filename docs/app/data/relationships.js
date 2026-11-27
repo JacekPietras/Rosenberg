@@ -140,7 +140,7 @@ export async function verifyFamilyGraph(people, documents, repository, paths = [
       const checked = new Map();
       const sourceFact = async (source, view) => {
         if (!sourcePath.test(source.path) || !Object.hasOwn(metadata.inputs, source.path)
-          || !(/\/(facts|guesses)\/[0-9]+$/.test(source.pointer) || /^\/entries\/[0-9]+\/mention$/.test(source.pointer))
+          || !(/\/(facts|guesses)\/[0-9]+$/.test(source.pointer) || /^(?:\/entries\/[0-9]+)?\/mention$/.test(source.pointer))
           || view === 'facts' && source.pointer.includes('/guesses/')) throw new Error('Invalid reconstructed source');
         const key = JSON.stringify(source);
         if (!checked.has(key)) {

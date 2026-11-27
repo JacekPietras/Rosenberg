@@ -48,7 +48,7 @@ export function createDocumentRenderer({
       const name = peopleById.get(reference) || reference;
       add(personRouteName(name, state.personNameTitlesText, state.nameConnectorsText, state.nobiliaryParticlesText, state.personNamesText, state.byNamesText, state.places), titles);
     };
-    for (const entry of doc.entries || []) {
+    for (const entry of [doc, ...(doc.entries || [])]) {
       for (const item of [...(entry.facts || []), ...(entry.guesses || [])]) {
         addReference(item?.person, item?.personTitle);
         addReference(item?.of, item?.ofTitle);
@@ -259,12 +259,13 @@ export function createDocumentRenderer({
       ? `<section class="document-research" aria-label="Research"><h3>Research</h3><div class="document-research-text">${inlineMarkup(doc.research)}</div></section>`
       : '';
     const content = entries.map((entry) => renderEntry(entry, { path, index: allEntries.indexOf(entry), deferredDetails, documentDate: path.startsWith('data/documents/') ? doc.date || '' : '' })).join('');
+    const documentFacts = path.startsWith('data/documents/') ? renderEntry({ facts: doc.facts, guesses: doc.guesses, mention: doc.mention }, { path, deferredDetails, documentDate: doc.date || '' }) : '';
     const important = labelKeys.includes('important') ? ' important' : '';
     const dimmed = labelKeys.some((label) => distinctFamilies.has(label)) ? ' dimmed' : '';
     const deferredPersonLinks = state.active === 'documents' && path.startsWith('data/documents/')
       ? ` data-person-links-path="${escapeHtml(path)}" data-person-links-index="${index}"`
       : '';
-    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${research}${content}</article>`;
+    return `<article class="document${important}${dimmed}"${anchor}${mentionLabelTargets}${deferredPersonLinks}><div class="document-heading"><div><h2>${inlineMarkup(title)}</h2>${url}</div>${headingAside}</div>${research}${content}${documentFacts}</article>`;
   }
 
   function renderDocumentWithPersonLinks(doc, path, index) {

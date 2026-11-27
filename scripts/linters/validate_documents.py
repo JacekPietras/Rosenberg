@@ -20,9 +20,9 @@ from given_names import name_groups
 from place_names import resolve_place_names
 
 ROOT = Path(__file__).resolve().parents[2]
-DOCUMENT_FIELDS = ("date", "place", "label", "research", "transcribed", "deleted", "entries")
+DOCUMENT_FIELDS = ("date", "place", "label", "research", "transcribed", "deleted", "entries", "facts", "guesses", "mention")
 RESEARCH_LABELS = {"to review", "IDK", "Suspicious", "Unrelated"}
-ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "mention", "facts", "guesses", "img", "research")
+ENTRY_FIELDS = ("source", "url", "subheading", "summary", "german", "latin", "english", "img", "research")
 SOURCE_SUFFIX = " (http://www.klaster.vyssibrod.cz)"
 LANDESARCHIV_BW_HTTP_PREFIX = "http://www.landesarchiv-bw.de/plink/"
 LANDESARCHIV_BW_HTTPS_PREFIX = "https://www.landesarchiv-bw.de/plink/"
