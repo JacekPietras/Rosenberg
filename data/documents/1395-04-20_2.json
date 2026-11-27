@@ -12,7 +12,10 @@
   ],
   "mention": [
     {
-      "place": "rosenberg-town"
+      "person": "Rudolf von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "place": "zwingenstein"

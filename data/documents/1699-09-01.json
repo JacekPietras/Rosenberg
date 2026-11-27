@@ -11,13 +11,13 @@
   ],
   "mention": [
     {
-      "place": "amberg"
-    },
-    {
       "place": "mainz"
     },
     {
       "place": "rosenberg-town"
+    },
+    {
+      "person": "Sebastian von Amberg"
     }
   ]
 }
