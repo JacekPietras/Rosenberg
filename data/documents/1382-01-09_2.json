@@ -25,9 +25,6 @@
   ],
   "mention": [
     {
-      "place": "bischofsheim"
-    },
-    {
       "person": "Eberhard Schenk",
       "personTitle": [
         "Ritter",
@@ -38,6 +35,12 @@
       "person": "Kunz von Uissigheim",
       "personTitle": [
         "der Jüngere"
+      ]
+    },
+    {
+      "person": "Seman",
+      "personTitle": [
+        "Amtmann zu Bischofsheim"
       ]
     }
   ]

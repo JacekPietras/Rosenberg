@@ -6,13 +6,10 @@
       "source": "Staatsarchiv Ludwigsburg B 503 II Bü 995",
       "url": "https://www.landesarchiv-bw.de/plink/?f=2-26688",
       "german": "Schiedspruch in einem Streit zwischen Abt Bernhard von Schöntal und Kun von Dürn wegen eines dem Schultheißen von Bieringen abgenommenen Stückes Vieh durch Götz von Adelsheim, Ritter Ludwig von Sickingen, Hans von Rosenberg, Wilhelm Sützel, Simon von Adelsheim und Conz von Berlichingen, Ausf., Pap., 3 S. aufgedr.\n\nLaufzeit: 17. März 1477\n\nUmfang: 1 Schr.",
-      "english": "Arbitration award in a dispute between Abbot Bernhard von Schöntal and Kun von Dürn concerning a piece of livestock taken from the mayor of Bieringen. The arbitrators were Götz von Adelsheim, Ritter Ludwig von Sickingen, Hans von Rosenberg, Wilhelm Sützel, Simon von Adelsheim, and Kunz von Berlichingen. Fair copy, paper, three sheets, folded.\n\nDate: 17 March 1477.\n\nExtent: one document."
+      "english": "Arbitration award in a dispute between Abbot Bernhard von Schöntal and Kun von Dürn concerning a piece of livestock taken from the mayor of Bieringen. The arbitrators were Götz von Adelsheim, Ritter Ludwig von Sickingen, Hans von Rosenberg, Wilhelm Sützel, Seman von Adelsheim, and Kunz von Berlichingen. Fair copy, paper, three sheets, folded.\n\nDate: 17 March 1477.\n\nExtent: one document."
     }
   ],
   "mention": [
-    {
-      "place": "adelsheim"
-    },
     {
       "person": "Bernhard von Schöntal",
       "personTitle": [
@@ -33,6 +30,9 @@
       "personTitle": [
         "Ritter"
       ]
+    },
+    {
+      "person": "Seman von Adelsheim"
     },
     {
       "place": "wallduern"

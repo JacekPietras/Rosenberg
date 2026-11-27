@@ -22,16 +22,16 @@
       "place": "bischofsheim"
     },
     {
-      "place": "burg-schweinberg"
-    },
-    {
       "place": "dienstadt"
     },
     {
       "person": "Eberhard von Uissigheim"
     },
     {
-      "place": "koenigheim"
+      "person": "Heinrich Seman von Königheim",
+      "personTitle": [
+        "Vogt zu Schweinberg"
+      ]
     },
     {
       "place": "uissigheim"

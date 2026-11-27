@@ -21,15 +21,21 @@
   ],
   "mention": [
     {
-      "place": "bischofsheim"
-    },
-    {
-      "person": "Eberhard Schenk"
+      "person": "Eberhard Schenk von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "person": "Konrad Rüd",
       "personTitle": [
         "Deutschmeister"
+      ]
+    },
+    {
+      "person": "Seman Bischofsheim",
+      "personTitle": [
+        "Amtmann zu Tauber-"
       ]
     }
   ]

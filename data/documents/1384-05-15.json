@@ -34,9 +34,6 @@
       "person": "Adolf of Mainz"
     },
     {
-      "place": "bischofsheim"
-    },
-    {
       "place": "bürgstadt"
     },
     {
@@ -71,6 +68,12 @@
     },
     {
       "person": "Raban Rüd"
+    },
+    {
+      "person": "Seman",
+      "personTitle": [
+        "Vogt zu Bischofsheim"
+      ]
     },
     {
       "place": "speyer"

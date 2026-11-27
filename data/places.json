@@ -1481,6 +1481,7 @@
       "Rosinberg",
       "Rosemberg",
       "Rossenberg",
+      "Roßberg",
       "Rosenbergh",
       "Rosenbeg",
       "Rosenbürgk",
@@ -1489,7 +1490,6 @@
       "Rosemberch",
       "Rosenburgk",
       "Rosenburch",
-      "Rossberg",
       "Rusenberg",
       "Rosperg",
       "Rosenperg",
@@ -1514,6 +1514,18 @@
       "Rodenburch",
       "ROTENBVRCH",
       "Rotenburch"
+    ],
+    "showOnMap": false
+  },
+  {
+    "id": "riedern",
+    "variations": [
+      "Riedern",
+      "Ridern",
+      "Rydern",
+      "Ryederem",
+      "Ryderin",
+      "Ryedern"
     ],
     "showOnMap": false
   },
@@ -1740,6 +1752,9 @@
     "variations": [
       "Thüngen",
       "Thungen",
+      "Tüngeda",
+      "Tungden",
+      "Tungend",
       "Tüngen",
       "Tungen"
     ],
