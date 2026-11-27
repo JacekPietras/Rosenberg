@@ -25,13 +25,16 @@
   ],
   "mention": [
     {
+      "person": "Anselm von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
+    },
+    {
       "person": "Georg von Rosenberg"
     },
     {
       "person": "Kunz von Rosenberg"
-    },
-    {
-      "place": "rosenberg-town"
     },
     {
       "person": "Thomas von Rosenberg",

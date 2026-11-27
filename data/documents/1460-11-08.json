@@ -21,7 +21,10 @@
   ],
   "mention": [
     {
-      "person": "Anselm von Rosenberg"
+      "person": "Anselm von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
       "person": "Diether of Mainz"
@@ -31,9 +34,6 @@
     },
     {
       "place": "oberschuepf"
-    },
-    {
-      "place": "rosenberg-town"
     }
   ]
 }

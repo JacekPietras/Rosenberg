@@ -26,9 +26,6 @@
       "person": "Hans von Rosenberg"
     },
     {
-      "place": "kocherstetten-marienkirche"
-    },
-    {
       "person": "Margaretha von Berlichingen",
       "personTitle": [
         "von Sickingen"
@@ -39,6 +36,12 @@
     },
     {
       "person": "Sebastian Geyer"
+    },
+    {
+      "person": "Wolf von Stetten",
+      "personTitle": [
+        "zu Kocherstetten"
+      ]
     }
   ]
 }

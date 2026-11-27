@@ -9,7 +9,7 @@
         "https://www.gda.bayern.de/gvl/archive.xhtml?id=Vz++++++4E14E511-0704-49CA-9009-9F8D0C34BF07&parent_id="
       ],
       "german": "Fürstbischof Johann von Wurtzburg beurkundet den von den Parteien angenommenen Schiedsspruch zwischen Ritter Symon v. Steten und seinem gleichnamigen Sohn einerseits und Jorg v. Rosenbergk, Hermann v. Hornbergk, Wilhelm Rud d.J. von Bedicken, und Renwalt v. Aletzheym andererseits. Demnach soll die Fehde der genannten Personen ohne gegenseitigen Schadenersatz und mit Loslassung der beiderseitigen Gefangenen beendet sein. - Schiedsleute: Aussteller, Ritter Conrad v. Eybe, Hans v. Meyental, Heintz Seybot, Wilhelm v. Velbergk, Hans v. Berlichen, Hans v. Eychsoltzheym. - Siegler: Aussteller, Hans v. Meyental und Hans v. Echsoltzheym.",
-      "english": "Prince-Bishop Johann of Würzburg records the arbitration accepted by the parties between Symon von Steten, Ritter, and his namesake son on one side, and Georg von Rosenberg, Herman von Hornberg, Wilhelm Rud the Younger of Bedicken, and Renwalt von Aletzheym on the other. The named persons are to end their feud without compensation to one another and release their respective prisoners. Arbitrators: the issuer, Ritter Conrad von Eybe, Hans von Meyental, Heintz Seybot, Wilhelm von Velbergk, Hans von Berlichen, and Hans von Eychsoltzheym. Sealers: the issuer, Hans von Meyental, and Hans von Echsoltzheym.",
+      "english": "Prince-Bishop Johann of Würzburg records the arbitration accepted by the parties between Seman von Stetten, Ritter, and his namesake son on one side, and Georg von Rosenberg, Herman von Hornberg, Wilhelm Rud the Younger of Bedicken, and Renwalt von Aletzheym on the other. The named persons are to end their feud without compensation to one another and release their respective prisoners. Arbitrators: the issuer, Ritter Conrad von Eybe, Hans von Meyental, Heintz Seybot, Wilhelm von Velbergk, Hans von Berlichen, and Hans von Eychsoltzheym. Sealers: the issuer, Hans von Meyental, and Hans von Echsoltzheym.",
       "img": [
         {
           "src": "https://www.gda.bayern.de/digitalisat/iiif/39be8dc0-dc61-4f11-b048-8d5713026a5c/1/full/max/0/default.jpg"
@@ -35,6 +35,12 @@
     },
     {
       "person": "Herman von Hornberg"
+    },
+    {
+      "person": "Seman von Stetten",
+      "personTitle": [
+        "Ritter"
+      ]
     }
   ]
 }

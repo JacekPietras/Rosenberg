@@ -6,7 +6,7 @@
       "source": "Staatsarchiv Wertheim R-US 1448 Mai 8",
       "url": "https://www.landesarchiv-bw.de/plink/?f=7-234884",
       "german": "Gottfrid, Bischof zu Würzburg und Herzog zu Franken, verleiht dem Ansshelm von Rosenberg, Ritter, genannte Zehnte und Güter zu Bretzingen, Zimmern, Möckmühl und anderen Orten (Bretzikein, Brunacker, Zymern, Huglessdorf, Busenssheim, Erffelt, Meckmulen).\n\nLaufzeit: 1448 Mai 8 (\".. der geben ist am mitwochen vor den pfingstheiligen tagen nach Cristi unsers herren geburt virtzehenhundert und dornach im acht undvirtzigisten jaren\")\n\nSiegelbeschreibung: An Pergamentstreif das Siegel des Ausstellers.\n\nSiegler: Gottfrid, Bischof zu Würzburg und Herzog zu Franken",
-      "english": "Gottfrid, Bischof zu Würzburg and Herzog zu Franken, grants Ansshelm von Rosenberg, Ritter, the specified tithes and properties at Bretzingen, Zimmern, Möckmühl, and other places.\n\nDate range: May 8, 1448 (“given on the Wednesday before the holy days of Pentecost, after the birth of Christ our Lord, in the fourteen hundred and forty-eighth year”).\n\nSeal description: The issuer’s seal is attached to a parchment strip.\n\nSealer: Gottfrid, Bischof zu Würzburg and Herzog zu Franken.",
+      "english": "Gottfrid, Bischof zu Würzburg and Herzog zu Franken, grants Anselm von Rosenberg, Ritter, the specified tithes and properties at Bretzingen, Zimmern, Möckmühl, and other places.\n\nDate range: May 8, 1448 (“given on the Wednesday before the holy days of Pentecost, after the birth of Christ our Lord, in the fourteen hundred and forty-eighth year”).\n\nSeal description: The issuer’s seal is attached to a parchment strip.\n\nSealer: Gottfrid, Bischof zu Würzburg and Herzog zu Franken.",
       "img": [
         {
           "src": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=2561&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_7%2Folf%2Fbestand_0000002561%2Ftitlaufn_0000234884%2F07_0000234884_0001_7-234884-1.jpg"
@@ -19,10 +19,13 @@
   ],
   "mention": [
     {
-      "place": "bretzingen"
+      "person": "Anselm von Rosenberg",
+      "personTitle": [
+        "Ritter"
+      ]
     },
     {
-      "place": "rosenberg-town"
+      "place": "bretzingen"
     },
     {
       "place": "wurzburg"

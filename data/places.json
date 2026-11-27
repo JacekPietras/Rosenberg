@@ -1371,6 +1371,15 @@
     "showOnMap": false
   },
   {
+    "id": "Stetten",
+    "variations": [
+      "Stetten",
+      "Steten",
+      "Stetn"
+    ],
+    "showOnMap": false
+  },
+  {
     "id": "ramschwag",
     "variations": [
       "Ramschwag"
@@ -1666,6 +1675,8 @@
     "variations": [
       "Seinsheim",
       "Sainsheim",
+      "Sanßheim",
+      "Sansheim",
       "Sawensheim",
       "Sovensheim",
       "Saunsheim"

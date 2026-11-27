@@ -6,7 +6,7 @@ Adolf
 Alban, Albanus
 Albrecht, Abbrecht, Adalbrecht, Albert, Albertus
 Andreas
-Anselm, Anshelm
+Anselm, Anshelm, Anßhelm
 Anton
 Aplo
 Arnold, Arnolt
