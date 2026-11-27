@@ -29,6 +29,16 @@ test('recognizes the documented canonical and reordered name forms', () => {
   }
 });
 
+test('recognizes a parenthesized von in a debt acknowledgment', () => {
+  const scenarioPattern = buildSourcePersonPattern(projectNames, particles, places,
+    `${titles}\n${projectTitles}`, connectors, byNames);
+  const sentence = 'Reinhart (von) Uissigheim acknowledges owing';
+  const match = sentence.match(scenarioPattern)?.[0];
+  assert.equal(match, 'Reinhart (von) Uissigheim');
+  assert.equal(personRouteName(match, `${titles}\n${projectTitles}`, connectors, particles,
+    projectNames, byNames, places), 'Reinhart von Uissigheim');
+});
+
 test('recognizes the parties in a pledge debt description, including King Sigmund', () => {
   const scenarioNames = projectNames;
   const scenarioTitles = `${titles}\n${projectTitles}`;
