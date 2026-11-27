@@ -195,6 +195,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 1.5rem max(1.25rem, 0px) 4rem
 .seal-entry-media .seal-crop img, .image-lightbox-seal-preview .seal-crop img { position: absolute; max-width: none; max-height: none; object-fit: initial; border-radius: 0; }
 .place-link { color: var(--place-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--place-link) 55%, transparent); text-underline-offset: .14em; }
 .place-link:hover, .place-link:focus { color: var(--place-link-hover); }
+.place-link[href="?place=rosenberg-town"], .place-link[href="?place=Rosenberg"], .place-link[href="?place=Uissigheim"] { color: var(--person-id-link); text-decoration-color: color-mix(in srgb, var(--person-id-link) 55%, transparent); }
+.place-link[href="?place=rosenberg-town"]:hover, .place-link[href="?place=rosenberg-town"]:focus, .place-link[href="?place=Rosenberg"]:hover, .place-link[href="?place=Rosenberg"]:focus, .place-link[href="?place=Uissigheim"]:hover, .place-link[href="?place=Uissigheim"]:focus { color: var(--person-id-link-hover); }
 .person-link { color: var(--person-link); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--person-link) 55%, transparent); text-underline-offset: .14em; }
 .person-link:hover, .person-link:focus { color: var(--person-link-hover); }
 .person-link.person-mention { color: var(--place-link); text-decoration-color: color-mix(in srgb, var(--place-link) 55%, transparent); }
