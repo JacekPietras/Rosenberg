@@ -1393,7 +1393,13 @@
     "id": "riedern",
     "variations": [
       "Riedern",
-      "Ryederen"
+      "Ryederen",
+      "Riedern",
+      "Ridern",
+      "Rydern",
+      "Ryederem",
+      "Ryderin",
+      "Ryedern"
     ],
     "showOnMap": false
   },
@@ -1514,18 +1520,6 @@
       "Rodenburch",
       "ROTENBVRCH",
       "Rotenburch"
-    ],
-    "showOnMap": false
-  },
-  {
-    "id": "riedern",
-    "variations": [
-      "Riedern",
-      "Ridern",
-      "Rydern",
-      "Ryederem",
-      "Ryderin",
-      "Ryedern"
     ],
     "showOnMap": false
   },
