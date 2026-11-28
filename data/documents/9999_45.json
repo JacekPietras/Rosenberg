@@ -1,6 +1,9 @@
 {
   "date": "9999",
-  "label": "to review",
+  "label": [
+    "to review",
+    "Split"
+  ],
   "entries": [
     {
       "source": "StAWü, Archiv der Grafen Wolffskeel zu Reichenberg Bände 15",
