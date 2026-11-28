@@ -11,5 +11,19 @@
       "german": "Anwartschaftsbrief des Bischofs Andreas von Würzburg für die Grafen Rudolf III. und Rudolf IV. von Wertheim über das in Händen des Konrad von Bocksberg befindliche Erbkämmereramt 1313 (Lit. Ss)",
       "english": "expectancy charter of Bishop Andreas of Würzburg to Counts Rudolf III and Rudolf IV von Wertheim for the hereditary office of chamberlain, then held by Konrad von Boxberg, 1313 (Lit. Ss)"
     }
+  ],
+  "mention": [
+    {
+      "person": "Bischof Andreas",
+      "personTitle": [
+        "Bischof zu Würzburg"
+      ]
+    },
+    {
+      "person": "Konrad von Boxberg"
+    },
+    {
+      "person": "Rudolf von Wertheim"
+    }
   ]
 }

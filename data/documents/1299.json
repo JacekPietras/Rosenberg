@@ -11,5 +11,22 @@
       "german": "Revers des Konrad Rupert von Bocksberg über die Übergabe der Schlösser und Dörfer Schweinberg, Königheim und Widdern an Graf Rudolf II. von Wertheim 1299 (Lit. Fff)",
       "english": "reversal by Konrad Ruprecht von Boxberg concerning transfer of the castles and villages of Schweinberg, Königheim, and Widdern to Count Rudolf II von Wertheim, 1299 (Lit. Fff)"
     }
+  ],
+  "mention": [
+    {
+      "place": "burg-schweinberg"
+    },
+    {
+      "place": "koenigheim"
+    },
+    {
+      "person": "Konrad Ruprecht von Boxberg"
+    },
+    {
+      "person": "Rudolf von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    }
   ]
 }
