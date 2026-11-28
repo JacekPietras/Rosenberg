@@ -3882,40 +3882,6 @@
       ]
     },
     {
-      "title": "Boxberg castle, building memorial of Jörg von Rosenberg and Osanna von Rosenberg, née von Eycholtzheim",
-      "date": "1493",
-      "label": "effigy",
-      "placeId": "boxberg",
-      "source": "https://drive.google.com/file/d/1l7DObHTunxziPyv02CPrQbt-rTLxD41j/view",
-      "description": "Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
-      "url": "https://drive.google.com/thumbnail?id=1l7DObHTunxziPyv02CPrQbt-rTLxD41j&sz=w1600",
-      "facts": [
-        {
-          "person": "Georg von Rosenberg",
-          "type": "generic",
-          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493."
-        },
-        {
-          "person": "Osanna von Eycholtzheim",
-          "personTitle": [
-            "von Rosenberg"
-          ],
-          "type": "generic",
-          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
-        },
-        {
-          "subject": "The rebuilding of Boxberg Castle commemorated by the memorials",
-          "type": "generic",
-          "content": "began in 1480."
-        }
-      ],
-      "mention": [
-        {
-          "person": "Osanna von Rosenberg"
-        }
-      ]
-    },
-    {
       "type": "link",
       "label": "effigy",
       "title": "Beckstein St Kilian, monument of Martin Hund von Wenkheim and Philips Hardtman von Merlau",
@@ -4148,7 +4114,16 @@
       "source": "https://lagis.hessen.de/de/personen/grabdenkmaeler/alle-eintraege/2499?suchbegriff=Rosenberg&kontext=gsearch&zeiger=7",
       "description": "Memorial in Eppstein. Photograph shows a Madonna and Child above a crucifixion scene, with surrounding figures and heraldic panels.",
       "url": "https://drive.google.com/thumbnail?id=1L9Go6HqPZ93TJZhkZ8QtgmksEICeRHWi&sz=w1600",
-      "date": "1625"
+      "date": "1625",
+      "regions": [
+        {
+          "x": 0.1439,
+          "y": 0.5133,
+          "width": 0.1617,
+          "height": 0.0764,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Elisabeth Rosenberger",
@@ -4156,7 +4131,16 @@
       "label": "effigy",
       "source": "https://lagis.hessen.de/de/personen/grabdenkmaeler/alle-eintraege/77?suchbegriff=Rosenberg&kontext=gsearch&zeiger=6",
       "description": "Gravestone inscription identifies Elisabeth as the wife of Christof Rosenberger, Kellner zu Seeheim, and states that she died on 10 February 1564, aged 34. The record title also includes 1578 and 1625.",
-      "url": "https://drive.google.com/thumbnail?id=1MwOYuGKaJ_j525SFtHOomR_IU4-6J8--&sz=w1600"
+      "url": "https://drive.google.com/thumbnail?id=1MwOYuGKaJ_j525SFtHOomR_IU4-6J8--&sz=w1600",
+      "regions": [
+        {
+          "x": 0.0502,
+          "y": 0.7252,
+          "width": 0.246,
+          "height": 0.2194,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "title": "Wenpert Rosenberg",
@@ -4203,6 +4187,97 @@
       "source": "https://digi.hadw-bw.de/view/di002/0505/image,info — Die deutschen Inschriften, vol. 2 (Heidelberger Reihe, vol. 2): Die Inschriften der Stadt Mainz von frühmittelalterlicher Zeit bis 1650, based on preparatory work by Konrad F. Bauer",
       "description": "Weißfrauen tombstone drawing of Anna Rosenberg, who died 30 April 1499. The upper edge of the drawing, including the date on the stone, is cut off. It shows a woman with hands folded in prayer; beside her head are two coats of arms: on the right, a divided shield with a running dog above a star; on the left, a half-rampant lion above a bar. The printed inscription reads: “Anno . . MCCCCIC. Vll Kal. Mali 0 Honesta Matrona ANNA Rosenberg, Johannis zum Jungen quondam Relicta, & Christi pauperum specialis Amica, cuius anima requiscat in pace.” The German rendering states that on 20 April 1499 the honorable Anna Rosenberg died, widow of Johannes zum Jungen and special friend of Christ’s poor. A variant on the drawing reads “Domina Anna Katharina Rosenbergern.”",
       "url": "https://digi.hadw-bw.de/view/di002/0505/image"
+    },
+    {
+      "title": "Town view from Thesaurus Palatinus",
+      "placeId": "boxberg",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 2702: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3449331",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001080321%2F04_0001080321_0001_4-1080321-1.png"
+    },
+    {
+      "title": "Town and castle from Thesaurus Palatinus",
+      "placeId": "boxberg",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 2699: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3449328",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001080318%2F04_0001080318_0001_4-1080318-1.png"
+    },
+    {
+      "title": "Jörg von Rosenberg",
+      "date": "1493",
+      "label": "effigy",
+      "placeId": "boxberg",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 3414: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3449327 — https://drive.google.com/file/d/1l7DObHTunxziPyv02CPrQbt-rTLxD41j/view",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001081192%2F04_0001081192_0001_4-1081192-1.png",
+      "description": "Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
+      "facts": [
+        {
+          "person": "Georg von Rosenberg",
+          "type": "generic",
+          "content": "is commemorated on a building memorial alongside Osanna von Rosenberg, née von Eycholtzheim, made in 1493."
+        },
+        {
+          "subject": "The rebuilding of Boxberg Castle commemorated by the memorials",
+          "type": "generic",
+          "content": "began in 1480."
+        }
+      ]
+    },
+    {
+      "title": "Osanna von Rosenberg, née von Eycholtzheim",
+      "date": "1493",
+      "label": "effigy",
+      "placeId": "boxberg",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 3413: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3449326 — https://drive.google.com/file/d/1l7DObHTunxziPyv02CPrQbt-rTLxD41j/view",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001081191%2F04_0001081191_0001_4-1081191-1.png",
+      "description": "Description supplied by the user: Two separate figure stones, 1493, commemorating the rebuilding begun in 1480. Originally outside the chapel at Boxberg castle, above a gate; since 1856 in Karlsruhe, Landessammlungen, stone hall, museum nos. C 101 and C 102. Approximately life-sized reliefs on tomb-like slabs, made during their lifetimes. Jörg wears a knee-length coat and hat and carries an axe and rosary. Osanna carries a rosary, bottle, handled basket with bread(?) and double basket-covered bottle. The editors identify these as a building memorial. Original image filename: C 00101-C 00102_D 4988.jpg.",
+      "facts": [
+        {
+          "person": "Osanna von Eycholtzheim",
+          "personTitle": [
+            "von Rosenberg"
+          ],
+          "type": "generic",
+          "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
+        }
+      ]
+    },
+    {
+      "title": "Hans Caspar von Rosenberg zu Rosenberg",
+      "date": "1570-02-04",
+      "label": "effigy",
+      "placeId": "rosenberg-evangelical-church",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 2960: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3466275",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001080738%2F04_0001080738_0001_4-1080738-1.png",
+      "regions": [
+        {
+          "x": 0.0912,
+          "y": 0.2089,
+          "width": 0.2254,
+          "height": 0.1287,
+          "name": "Rosenberg"
+        }
+      ]
+    },
+    {
+      "title": "Unidentified von Rosenberg",
+      "label": "effigy",
+      "placeId": "rosenberg-evangelical-church",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 2963: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3466276",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001080741%2F04_0001080741_0001_4-1080741-1.png"
+    },
+    {
+      "title": "Unidentified memorial",
+      "label": "effigy",
+      "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 4408: https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3441993",
+      "url": "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/bild.php?drehen=&zoom=100&gamma=1&jpegQualitaetZoombild=60&scopeid_besta=455070&originalBilddatei=%2Fdata%2Fbildcms%2Finternetbilder%2Farchiv_4%2Folf%2Fbestand_0000455070%2Ftitlaufn_0001082155%2F04_0001082155_0001_4-1082155-1.jpg",
+      "regions": [
+        {
+          "x": 0.6221,
+          "y": 0.2301,
+          "width": 0.0552,
+          "height": 0.0563,
+          "name": "Rosenberg"
+        }
+      ]
     }
   ]
 }
