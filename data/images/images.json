@@ -1980,6 +1980,13 @@
           "width": 0.1615,
           "height": 0.1425,
           "name": "Rosenberg"
+        },
+        {
+          "x": 0.6268,
+          "y": 0.0116,
+          "width": 0.1423,
+          "height": 0.1326,
+          "name": "Erligheim"
         }
       ],
       "facts": [
@@ -2006,6 +2013,20 @@
           "y": 0.2766,
           "width": 0.1174,
           "height": 0.101,
+          "name": "Rosenberg"
+        },
+        {
+          "x": 0.6018,
+          "y": 0.271,
+          "width": 0.1026,
+          "height": 0.0886,
+          "name": "Erligheim"
+        },
+        {
+          "x": 0.3715,
+          "y": 0.0026,
+          "width": 0.251,
+          "height": 0.2516,
           "name": "Rosenberg"
         }
       ],
@@ -2110,7 +2131,7 @@
       "placeId": "amlishagen"
     },
     {
-      "title": "Arnstein Maria Sondheim, epitaph of Anna von Hutten, born von Rosenberg",
+      "title": "Anna von Hutten, born von Rosenberg",
       "source": "https://drive.google.com/file/d/1eEG2AFJSA8RU4UOQ5GPvqOPvTUSlw4T3/view",
       "url": "https://drive.google.com/thumbnail?id=1eEG2AFJSA8RU4UOQ5GPvqOPvTUSlw4T3&sz=w1600",
       "date": "1528",
@@ -2481,7 +2502,7 @@
       "placeId": "giebelstadt"
     },
     {
-      "title": "Mosbach St Juliana, possible grave slab of canon Eberhard von Rosenberg, active 1363-1368",
+      "title": "Possible grave slab of canon Eberhard von Rosenberg, active 1363-1368",
       "source": "https://drive.google.com/file/d/1IEso8oIr82_XH6QhVIgiO1gjcak0pW6B/view",
       "url": "https://drive.google.com/thumbnail?id=1IEso8oIr82_XH6QhVIgiO1gjcak0pW6B&sz=w1600",
       "date": "1368",
@@ -3460,7 +3481,7 @@
       ]
     },
     {
-      "title": "Kenzingen St Laurentius, epitaph of Wolf von Hürnheim",
+      "title": "Wolf von Hürnheim",
       "date": "1533",
       "label": "effigy",
       "placeId": "kenzingen-st-laurentius",
