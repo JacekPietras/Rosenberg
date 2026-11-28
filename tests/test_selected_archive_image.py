@@ -128,6 +128,18 @@ class SelectionTests(unittest.TestCase):
         with self.assertRaises(DownloadError):
             resolve(url, FakeClient(), page=2)
 
+    def test_landesarchiv_bw_viewer_uses_selected_image(self):
+        url = "https://www2.landesarchiv-bw.de/ofs21/bild_zoom/zoom.php?bestand=22964&id=3449331"
+        endpoint = "bild.php?zoom=100&originalBilddatei=%2Farchive%2Fselected.png"
+        image = resolve(url, FakeClient({url: "imageSource: '" + endpoint + "'"}))
+        self.assertEqual("https://www2.landesarchiv-bw.de/ofs21/bild_zoom/" + endpoint, image.image_url)
+        self.assertEqual("selected.png", image.filename)
+        self.assertEqual(url, image.source)
+        with self.assertRaises(DownloadError):
+            resolve(url, FakeClient({url: "<title>No selected image</title>"}))
+        with self.assertRaises(DownloadError):
+            resolve(url, FakeClient({url: "imageSource: 'https://other.example/bild.php'"}))
+
     def test_landesarchiv_nrw_strips_broken_iiif_suffix(self):
         base = ("https://www.landesarchiv-nrw.de/data02/Abt_Rheinland/AA_0030/~000/00039/"
                 "LAV_NRW_R_AA_0030_00039_0001.jpg")

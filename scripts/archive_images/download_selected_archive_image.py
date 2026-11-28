@@ -178,15 +178,26 @@ def findbuch(url, client, folio, page):
 
 
 def landesarchiv_bw(url, client, folio, page):
-    """Download an exact Landesarchiv BW image URL recorded by its catalog."""
+    """Resolve a selected Landesarchiv BW viewer or exact image URL."""
     if folio or page is not None:
         raise DownloadError("Landesarchiv BW needs the exact selected bild.php image URL")
     parts = urlsplit(url)
+    if parts.path == "/ofs21/bild_zoom/zoom.php":
+        matches = re.findall(r"\bimageSource\s*:\s*['\"]([^'\"]+)['\"]", client.text(url))
+        if len(matches) != 1:
+            raise DownloadError("Cannot identify a unique selected Landesarchiv BW viewer image")
+        image_url = urljoin(url, html.unescape(matches[0]))
+        resolved = urlsplit(image_url)
+        if resolved.netloc != parts.netloc or resolved.path != "/ofs21/bild_zoom/bild.php":
+            raise DownloadError("Unexpected Landesarchiv BW viewer image endpoint")
+        image = landesarchiv_bw(image_url, client, None, None)
+        image.source = url
+        return image
     if not re.fullmatch(r"/ofs21/bild_zoom/bild\.php", parts.path):
         raise DownloadError("Expected a Landesarchiv BW /ofs21/bild_zoom/bild.php image URL")
     selected = parse_qs(parts.query).get("originalBilddatei", [""])[0]
-    if not selected or not selected.lower().endswith((".jpg", ".jpeg")):
-        raise DownloadError("Landesarchiv BW image URL has no selected JPEG filename")
+    if not selected or not selected.lower().endswith((".jpg", ".jpeg", ".png")):
+        raise DownloadError("Landesarchiv BW image URL has no selected image filename")
     return Image(url, url, Path(selected).name,
                  notes=[f"Selected catalog image: {selected}"])
 

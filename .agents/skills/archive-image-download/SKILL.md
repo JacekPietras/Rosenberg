@@ -13,7 +13,7 @@ python3 scripts/archive_images/download_selected_archive_image.py 'https://digi.
 ```
 
 Supports Internet Archive, DigiVatLib, BLB Karlsruhe, GNM, LOC RBC, Findbuch,
-and Bavarikon. For a Bavarikon object with multiple images, `--page` selects a
+Bavarikon, and Landesarchiv Baden-Württemberg viewer and selected image URLs. For a Bavarikon object with multiple images, `--page` selects a
 one-based image sequence entry; a URL `p=` selector is used when present.
 `--resolve-only` prints image details without downloading. `--page` is a
 one-based viewer sequence number; Internet Archive `nNNN` URLs use zero-based
