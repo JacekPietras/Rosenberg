@@ -1,0 +1,34 @@
+{
+  "date": "1515-06-06",
+  "place": "Rosenberg",
+  "label": "to review",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Heinrich Koellenberger, Die Inschriften der Landkreise Mosbach, Buchen und Miltenberg (Die deutschen Inschriften, Bd. 8, 1964)",
+      "url": "https://digi.hadw-bw.de/view/di008",
+      "german": "Anno 1515 auff unsers Herrn Leichnams abend starb die ... fraw\nElcha von Rosenberg geborn von Ridern des edlen und ervesten\nConradts von Rosenberg hausfraw gewesen (etc.)",
+      "english": "In 1515, on the eve of Corpus Christi, Lady Elcha von Rosenberg, born von Ridern, died; she had been the wife of the noble and steadfast Konrad von Rosenberg (etc.)."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Elcha von Rosenberg",
+      "type": "death",
+      "diedOn": "1515-06-06"
+    },
+    {
+      "person": "Elcha von Rosenberg",
+      "type": "spouse",
+      "of": "Konrad von Rosenberg"
+    }
+  ],
+  "mention": [
+    {
+      "place": "riedern"
+    },
+    {
+      "place": "rosenberg-town"
+    }
+  ]
+}

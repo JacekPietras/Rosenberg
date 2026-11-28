@@ -39,8 +39,7 @@
         {
           "person": "Lorenz von Rosenberg",
           "type": "death",
-          "diedOn": "1552-10-19",
-          "date": "1552-10-19"
+          "diedOn": "1552-10-19"
         }
       ]
     },
@@ -4285,6 +4284,11 @@
           "type": "generic",
           "content": "began in 1480."
         }
+      ],
+      "mention": [
+        {
+          "person": "Osanna von Rosenberg"
+        }
       ]
     },
     {
@@ -4305,6 +4309,11 @@
           ],
           "type": "generic",
           "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
+        }
+      ],
+      "mention": [
+        {
+          "person": "Georg von Rosenberg"
         }
       ]
     },

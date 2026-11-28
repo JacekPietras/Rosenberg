@@ -1,0 +1,26 @@
+{
+  "date": "1489-04-27",
+  "place": "Rosenberg",
+  "label": "to review",
+  "transcribed": true,
+  "entries": [
+    {
+      "source": "Heinrich Koellenberger, Die Inschriften der Landkreise Mosbach, Buchen und Miltenberg (Die deutschen Inschriften, Bd. 8, 1964)",
+      "url": "https://digi.hadw-bw.de/view/di008",
+      "german": "Anno Dni M. CCCC. LXXXIX uff montag nach sant Georgen starb der\nerber und vest Conrad von Rosenberg (etc.)",
+      "english": "In the year of the Lord 1489, on Monday after St George’s Day, the honorable and steadfast Konrad von Rosenberg died (etc.)."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Konrad von Rosenberg",
+      "type": "death",
+      "diedOn": "1489-04-27"
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
+    }
+  ]
+}
