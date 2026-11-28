@@ -4,7 +4,7 @@
     {
       "label": "effigy",
       "title": "Epitaph of Lorenz von Rosenberg",
-      "date": "1552",
+      "date": "1552-10-19",
       "source": "https://drive.google.com/file/d/1Q1C9uxUYhonBgRTz7KUEhFzW8jKtmt8K/view",
       "url": "https://drive.google.com/thumbnail?id=1Q1C9uxUYhonBgRTz7KUEhFzW8jKtmt8K&sz=w1600",
       "facts": [
@@ -4255,11 +4255,6 @@
           "type": "generic",
           "content": "began in 1480."
         }
-      ],
-      "mention": [
-        {
-          "person": "Osanna von Rosenberg"
-        }
       ]
     },
     {
@@ -4278,11 +4273,6 @@
           ],
           "type": "generic",
           "content": "is commemorated on a building memorial alongside Jörg von Rosenberg made in 1493."
-        }
-      ],
-      "mention": [
-        {
-          "person": "Georg von Rosenberg"
         }
       ]
     },

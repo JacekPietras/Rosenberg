@@ -11,5 +11,16 @@
       "german": "Kaufbrief des Hans von Rechenberg und seiner Ehefrau Anna von Rosenberg für Graf Michael II. von Wertheim über ein Gehölz bei Brehmen 1434 (fol. 728r ff.)",
       "english": "deed of sale by Hans von Rechenberg and his wife Anna von Rosenberg to Count Michael II von Wertheim for a wood near Brehmen, 1434 (fol. 728r ff.)"
     }
+  ],
+  "mention": [
+    {
+      "person": "Anna von Rosenberg"
+    },
+    {
+      "person": "Michael von Wertheim",
+      "personTitle": [
+        "Graf von Wertheim"
+      ]
+    }
   ]
 }
