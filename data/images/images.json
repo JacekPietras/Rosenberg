@@ -7,7 +7,16 @@
       "source": "Landesarchiv Baden-Württemberg, Generallandesarchiv Karlsruhe 498-1 Nr. 7185 — https://www.landesarchiv-bw.de/plink/?f=4-1084376 — https://drive.google.com/file/d/1ITC_p9UtyqMrzolkqQrgswtvPr7sJaVl/view",
       "description": "The archive identifies the arms as Rosenberg on the left and Schin on the right, and says the inscription refers to the cemetery's foundation in 1576. It suggests that the stone formerly stood in the old cemetery by the church.",
       "url": "https://drive.google.com/thumbnail?id=1ITC_p9UtyqMrzolkqQrgswtvPr7sJaVl&sz=w1600",
-      "placeId": "rosenberg-town"
+      "placeId": "rosenberg-town",
+      "regions": [
+        {
+          "x": 0.2372,
+          "y": 0.473,
+          "width": 0.2778,
+          "height": 0.2456,
+          "name": "Rosenberg"
+        }
+      ]
     },
     {
       "label": "effigy",
