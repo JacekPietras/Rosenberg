@@ -1,20 +1,26 @@
 {
   "date": "1610",
   "place": "Rosenberg",
+  "label": "to review",
   "transcribed": true,
-  "facts": [
-    {
-      "type": "generic",
-      "person": "Albrecht Christoph von Rosenberg",
-      "content": "had the church at Rosenberg enlarged."
-    }
-  ],
   "entries": [
     {
       "source": "Heinrich Koellenberger, Die Inschriften der Landkreise Mosbach, Buchen und Miltenberg (Die deutschen Inschriften, Bd. 8, 1964)",
       "url": "https://digi.hadw-bw.de/view/di008",
       "german": "Von Rosenberg dem Edlen Stam= / Albrecht Christoff genant mit\nNam= / Hatt dise Kirch erweittern Lahn= / Wie sie hie thut Vor\naugen sthan / Alß nach Christi geburt Zehlet War / Tausent\nSechshundert Vndt Zehen Jar / Zu Gottes Ehrn Vnd das Zugleich /\nHierin Weit gmehrt werdt Christi Reich / Den Stam Vnd grundt\nnun Wöll all Zeit / Erhaltten die Höchst Dreyfaltigkeit",
       "english": "Albrecht Christoph von Rosenberg, of the noble family, had this church enlarged, as it stands before our eyes, in the year 1610 after Christ’s birth, to the glory of God and so that Christ’s kingdom might be greatly increased here. May the Holy Trinity preserve the family and its foundation for all time."
+    }
+  ],
+  "facts": [
+    {
+      "person": "Albrecht Christoph von Rosenberg",
+      "type": "generic",
+      "content": "had the church at Rosenberg enlarged."
+    }
+  ],
+  "mention": [
+    {
+      "place": "rosenberg-town"
     }
   ]
 }
